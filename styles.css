@@ -26,6 +26,10 @@ body {
   letter-spacing: 0.3px;
   padding: 30px 23% 180px 23%;
   }
+#exear {
+  font-size: 95%;
+  text-align: center;
+  }
 img {
   border-radius: 10px;
   }
