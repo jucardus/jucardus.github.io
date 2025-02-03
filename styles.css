@@ -18,7 +18,7 @@ a:focus, a:hover {
   text-decoration: underline;
   }
 body {
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   color: #333;
   font-family: 'Ubuntu', serif;
   font-size: 110%;
@@ -32,6 +32,7 @@ li {
   }
 #nvgcn {
   font-size: 95%;
+  margin-left: 20px;
   }
 ul, ol {
   margin-left: -16px;
