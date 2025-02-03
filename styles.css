@@ -1,0 +1,29 @@
+@media only screen and (max-device-width: 480px) {
+  body {
+    padding: 15px 2px 240px 2px !important;
+    }
+  html, body {
+    width: auto !important;
+    overflow-x: hidden !important
+    }
+  img {
+    }
+  }
+a:link, a:visited, a:hover, a:active {
+  color: Green;
+  text-decoration: none;
+  }
+a:focus, a:hover {
+  color: OrangeRed;
+  text-decoration: underline;
+  }
+body {
+  background-color: #f0f0f0;
+  color: #444;
+  font-family: 'Ubuntu', serif;
+  font-size: 100%;
+  padding: 40px 25% 180px 25%;
+  }
+img {
+  border-radius: 10px;
+  }
