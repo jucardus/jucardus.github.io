@@ -40,6 +40,12 @@ li {
   font-size: 95%;
   margin-left: 10px;
   }
+.qr {
+  width: 200px;
+  }
+#qr {
+  text-align: center;
+  }
 ul, ol {
   margin-left: -15px;
   }
