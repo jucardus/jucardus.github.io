@@ -3,10 +3,11 @@
     padding: 15px 2px 150px 2px !important;
     }
   html, body {
-    width: auto !important;
-    overflow-x: hidden !important
+    width: auto!important;
+    overflow-x: hidden!important
     }
-  img {
+  #nvgcn {
+    line-height: 1.5!important;
     }
   }
 a:link, a:visited, a:hover, a:active {
