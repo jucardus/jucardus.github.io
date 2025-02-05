@@ -8,6 +8,7 @@
 }
 @media only screen and (max-device-width: 480px) {
   body {
+    font-size: 105%!important;
     padding: 15px 2px 150px 2px !important;
   }
   html, body {
