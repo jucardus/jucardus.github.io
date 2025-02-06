@@ -134,6 +134,7 @@
               var nuevaLinea = '<!--' + orden + '--><img id="favicones" src="' + favicon + '" /><b>' + tema + '</b> <span class="barrita">┋</span> ' + subtema + ' <span class="barrita">┋</span> ' + enlace;
             resultado.push(nuevaLinea);
             contador = contador + 1;
+        }
         resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
         resultado = [...new Set(resultado)]; // eliminar elementos repetidos
         resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
