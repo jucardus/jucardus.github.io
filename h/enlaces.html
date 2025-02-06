@@ -98,7 +98,7 @@
       }
     </style>
   </head>
-<body>
+<body onload='recientes()'>
   <h1>Enlaces varios</h1>
   <div id='nvgcn'><p><a href='../'>Inicio</a> | <a href='./'>Índice</a> | <a href='../actividad'>Actividad</a> | <a href='../az'>A-Z</a> | <a href='https://x.com/intent/tweet?text=Herramientas web en Jucardus: Enlaces varios de cosas muchas.%20→%20jucardus.github.io/h/enlaces%0A%0A@jucardus%20%23' target='_blank'>Compartir</a></div>
     <div id="formulario">
@@ -110,6 +110,36 @@
     <div id="mostrar"></div>
   <script src="enlaces.js"></script>
   <script type="text/javascript">
+    function recientes() {
+      var array = base;
+      var contador = 0;
+      var resultado = [];
+        for (var i = 0; i < array.length; i++) {
+            var linea = array[i].split(' ¶ ');
+              var tema = linea[0];
+              var subtema = linea[1];
+              var url = linea[2];
+                var dominio = url?.slice(url.indexOf('://') + 3);
+                  var dominio = dominio?.replace(/\/.*/g,'');
+                  if (dominio == 'cardus' || dominio == 'jucardus') {var dominio = 'https://jucardus.blogspot.com';}
+                  if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
+                  if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
+                var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
+              var orden = tema + subtema;
+                var orden = orden.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
+              var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + url + '</a>';
+              if (dominio == 'https://jucardus.blogspot.com') {
+                var enlace = 'jucardus';
+              }
+              var nuevaLinea = '<!--' + orden + '--><img id="favicones" src="' + favicon + '" /><b>' + tema + '</b> <span class="barrita">┋</span> ' + subtema + ' <span class="barrita">┋</span> ' + enlace;
+            resultado.push(nuevaLinea);
+            contador = contador + 1;
+        resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
+        resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+        resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+        var enlaces = resultado.join('<p>');
+        document.getElementById('mostrar').innerHTML = enlaces;
+    }
     function teclaBuscar (event) {
       if (event.key === "Enter") {
         event.preventDefault();
@@ -122,7 +152,7 @@
       var resultado = [];
       var recibidoOriginal = recibido.replace(/ /g,'%20');
       if (recibido.length >= 2 && recibido != ' ' && recibido != '  ') {
-        document.getElementById('mostrar').innerHTML =  '<span class="previo">[ BUSCANDO ]</span>';
+        document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
         var buscadores = '<div id="buscadores">';
           var buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoOriginal + '" target="_blank">Bing</a>';
           var buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoOriginal + '" target="_blank">Brave</a>';
