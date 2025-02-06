@@ -112,6 +112,7 @@
   <script type="text/javascript">
     function teclaBuscar (event) {
       if (event.key === "Enter") {
+        document.getElementById('mostrar').innerHTML =  '<span class="previo">[ BUSCANDO ]</span>';
         event.preventDefault();
         buscar('');
       }
