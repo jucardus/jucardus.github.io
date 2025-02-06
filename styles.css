@@ -44,6 +44,9 @@ code {
   font-size: 95%;
   text-align: center;
 }
+h1 {
+  color: #444;
+}
 img {
   border-radius: 10px;
 }
