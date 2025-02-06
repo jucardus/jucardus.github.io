@@ -112,7 +112,6 @@
   <script type="text/javascript">
     function teclaBuscar (event) {
       if (event.key === "Enter") {
-        document.getElementById('mostrar').innerHTML =  '<span class="previo">[ BUSCANDO ]</span>';
         event.preventDefault();
         buscar('');
       }
@@ -123,6 +122,7 @@
       var resultado = [];
       var recibidoOriginal = recibido.replace(/ /g,'%20');
       if (recibido.length >= 2 && recibido != ' ' && recibido != '  ') {
+        document.getElementById('mostrar').innerHTML =  '<span class="previo">[ BUSCANDO ]</span>';
         var buscadores = '<div id="buscadores">';
           var buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoOriginal + '" target="_blank">Bing</a>';
           var buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoOriginal + '" target="_blank">Brave</a>';
