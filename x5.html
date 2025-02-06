@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body onload="hacer()">
+<script>
+function hacer() {
+    var url = window.location.href.replace(/.*sitiow\.web\.app\/x5\?=/g,'');
+    var cadena = url.split('---');
+    var exear = 'https://x.com/intent/tweet?text=' + cadena[0].toString() + '%0A%0A%E2%9C%B6%20' + cadena[1].toString() + '%20%E2%9C%B6%0A%0A%23' + cadena[2].toString() + 'jucardus%20%7E%20%23' + cadena[3].toString() + 'jucardus%20%7E%20%23' + cadena[4].toString() + 'jucardus';
+    window.location.replace(exear);
+    }
+</script>
+</body>
+</html>
