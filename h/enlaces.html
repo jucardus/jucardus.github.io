@@ -171,7 +171,7 @@
         resultado = [...new Set(resultado)]; // eliminar elementos repetidos
         resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
         var enlaces = resultado.join(', ');
-        document.getElementById('mostrar').innerHTML = "&lt;p class='temas'&gt;" + enlaces ++ '&lt;/p&gt;';
+        document.getElementById('mostrar').innerHTML = "&lt;p class='temas'&gt;" + enlaces + '&lt;/p&gt;';
       }
       if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != '{{{temas}}}') {
         document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
