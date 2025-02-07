@@ -165,12 +165,12 @@
         resultado = [...new Set(resultado)]; // eliminar elementos repetidos
         resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
         var enlaces = resultado.join('<p>');
-        if (enlaces.indexOf('http') == -1) {var enlaces = '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';}
+        if (enlaces.indexOf('href') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
         document.getElementById('buscar').value = '';
         document.getElementById('mostrar').innerHTML = '<p>' + enlaces;
       } else {
         document.getElementById('buscar').value = '';
-        document.getElementById('mostrar').innerHTML =  '<span class="previo">[ MÍNIMO DOS CARACTERES DE BUSCA. ]</span>';
+        document.getElementById('mostrar').innerHTML =  '<span class="previo">[ mínimo dos caracteres de busca ]</span>';
       }
     }
   </script>
