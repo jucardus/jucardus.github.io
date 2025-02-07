@@ -4,43 +4,10 @@ a.buscadores {
 a.enlacista {
   word-break: break-all!important;
 }
-.arriba {
-  color: Green;
-  font-size: 180%;
-  font-weight: bold;
-  position: fixed;
-  right: 20px;
-  z-index: 1;
-}
-.arriba:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
-.barrita {
-  color: OrangeRed;
-  opacity: 0.7;
-}
-.broken {
-  word-break: break-all;
-}
-#buscadores {
-  line-height: 2;
-  margin-bottom: 25px;
-  margin-top: -10px;
-}
 button#boton {
   font-size: 104%;
   padding: 5px;
   display: none;
-}
-#formulario {
-  margin-left: 10px;
-}
-img#favicones {
-  border-radius: 2px;
-  float: left;
-  width: 22px;
-  margin: 0px 8px 10px 0px;
 }
 input {
   border: 2px dotted Silver;
@@ -57,16 +24,9 @@ input {
   margin-bottom: 40px;
   margin-top: 30px;
 }
-.numero {
-  color: #999;
-  font-size: small;
-}
 ::placeholder {
   color: DarkTurquoise;
   text-align: right;
-}
-p.temas {
-  font-size: 90%!important;
 }
 .previo {
   color: OrangeRed;
