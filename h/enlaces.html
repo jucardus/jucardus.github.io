@@ -137,6 +137,7 @@
       for (var i = 0; i < array.length; i++) {
         var linea = array[i].split(' ¶ ');
         var tema = linea[0];
+        var subtema = linea[1];
         var url = linea[2];
           var dominio = url?.slice(url.indexOf('://') + 3);
           var dominio = dominio?.replace(/\/.*/g,'');
@@ -168,18 +169,6 @@
       var array = base;
       var resultado = [];
       var recibidoOriginal = recibido.replace(/ /g,'%20');
-      if (recibido == 'temastemastemas') {
-        for (var i = 0; i < array.length; i++) {
-          var linea = array[i].split(' ¶ ');
-            var tema = linea[0];
-            resultado.push(tema);
-        }
-        resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
-        resultado = [...new Set(resultado)]; // eliminar elementos repetidos
-        resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
-        var enlaces = resultado.join(', ');
-        document.getElementById('mostrar').innerHTML = "&lt;p class='temas'&gt;" + enlaces + '&lt;/p&gt;';
-      }
       if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != 'temastemastemas') {
         document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
         var buscadores = '<div id="buscadores">';
