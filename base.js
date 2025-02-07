@@ -1,4 +1,5 @@
 let base = [
+  "Inicio ¶ / ¶ inicio, página de inicio, index, página principal",
   "Herramientas web | Generador de claves ¶ /h/claves ¶ generador de claves, generador de contraseñas, claves seguras, contraseñas seguras, número, números, letra, letras, letra mayúscula, letras mayúsculas, caracteres especiales, carácter, carácter especial",
   "Herramientas web | Enlaces varios ¶ /h/enlaces ¶ enlaces varios, enlace, hipervínculos, hipervínculos varios, vínculos, vínculos varios, enlace, hipervínculo, vinculo, temas, subtemas",
   "Herramientas web | Colores CSS con nombre ¶ /h/colores ¶ colores, colores css, color css, color, colores css con nombre, hexadecimal, valores hexadecimales, valor hexadecimal, valor rgb, valores rgb",
