@@ -158,7 +158,7 @@
       var array = base;
       var resultado = [];
       var recibidoOriginal = recibido.replace(/ /g,'%20');
-      if (recibido == '{{{temas}}}') {
+      if (recibido == 'temastemastemas') {
         for (var i = 0; i < array.length; i++) {
           var linea = array[i].split(' ¶ ');
             var tema = linea[0];
@@ -170,7 +170,7 @@
         var enlaces = resultado.join(', ');
         document.getElementById('mostrar').innerHTML = "&lt;p class='temas'&gt;" + enlaces + '&lt;/p&gt;';
       }
-      if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != '{{{temas}}}') {
+      if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != 'temastemastemas') {
         document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
         var buscadores = '<div id="buscadores">';
           var buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoOriginal + '" target="_blank">Bing</a>';
