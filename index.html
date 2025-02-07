@@ -153,7 +153,7 @@
             var linea = array[i].split(' ¶ ');
               var titulo = linea[0];
               var url = linea[1];
-              var orden = tema + enlace;
+              var orden = titulo + enlace;
                 var orden = orden.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
               var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + titulo + '</a>';
               var nuevaLinea = '<!--' + orden + '-->' + enlace;
