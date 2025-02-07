@@ -9,6 +9,9 @@ button#boton {
   padding: 5px;
   display: none;
 }
+#formulario {
+  margin-left: 10px;
+}
 input {
   border: 2px dotted Silver;
   border-radius: 4px;
