@@ -159,13 +159,10 @@
       var resultado = [];
       var recibidoOriginal = recibido.replace(/ /g,'%20');
       if (recibido == '{{{temas}}}') {
-        var array = base;
-        var contador = 0;
-        var resultado = [];
         for (var i = 0; i < array.length; i++) {
           var linea = array[i].split(' ¶ ');
-          var tema = linea[0];
-          resultado.push(tema);
+            var tema = linea[0];
+            resultado.push(tema);
         }
         resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
         resultado = [...new Set(resultado)]; // eliminar elementos repetidos
