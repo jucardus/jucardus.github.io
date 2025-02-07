@@ -157,7 +157,7 @@
               var orden = titulo + url;
                 var orden = orden.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
               var enlace = '<a class="enlacista" href="' + url + '">' + titulo + '</a>';
-              var nuevaLinea = '<!--' + orden + '-->' + enlace;
+              var nuevaLinea = '<li><!--' + orden + '-->' + enlace + '</li>';
             resultado.push(nuevaLinea);
           }
         }
@@ -167,7 +167,7 @@
         var enlaces = resultado.join('<p>');
         if (enlaces.indexOf('href') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
         document.getElementById('buscar').value = '';
-        document.getElementById('mostrar').innerHTML = '<p>' + enlaces;
+        document.getElementById('mostrar').innerHTML = '<ul>' + enlaces + '</ul';
       } else {
         document.getElementById('buscar').value = '';
         document.getElementById('mostrar').innerHTML =  '<span class="previo">[ mínimo dos caracteres de busca ]</span>';
