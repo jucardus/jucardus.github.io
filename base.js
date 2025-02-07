@@ -8,7 +8,7 @@ let base = [
   "Herramientas web | Enlaces acortados ¶ /cortos ¶ enlaces acortados, vínculos acortados, hipervínculos acortados, enlaces cortos, vínculos coros, hipervínculos cortos",
   "Escritos varios ¶ /e ¶ escritos, escritos varios, apotegmas, aforismos, citas, cuentos, poesía, reflexiones, apotegma, aforismo, cuento, citas, reflexión",
   "Herramientas web ¶ /h ¶ herramientas web, colores css con nombres, generador de claves, generador de contraseñas, enlaces varios",
-  "Índice alfabético ¶ /az ¶ índice, índice alfabético, subpáginas, subpáginas todas",
+  "Índice alfabético ¶ /az ¶ índice, índice alfabético, subpáginas, subpáginas todas, índices",
   "Programación básica ¶ /p ¶ líneas básicas de programación, programación básica, bash, javascript, html, google apps script, css, blogger, firebase,linux mint",
   "Traducciones al español ¶ /t ¶ texto traducido, textos traducidos, traducción al español, traducciones al español"
 ]
