@@ -19,27 +19,8 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../favicon.ico" />
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles-claves.css">
     <title>CLAVES | HERRAMIENTAS | JUCARDUS</title>
-    <style>
-      .boton {
-        background-color: #e0e0e0;
-        border: 1px solid Red;
-        border-radius: 4px;
-        cursor: pointer;
-        padding: 5px;
-      }
-      #boton {
-        margin-bottom: 30px;
-        margin-top: 20px;
-        text-align: center;
-      }
-      #mostrar {
-        font-family: 'Courier New';
-        font-weight: bold;
-        margin-top: 25px;
-        word-break: break-all;
-      }
-    </style>
   </head>
 <body onload='generar()'>
   <h1>Generador de claves</h1>
@@ -48,32 +29,6 @@
     <div id='mostrar'></div>
     <div id='boton'><button class="boton" type="button" onclick="generar()">GENERAR</button></div>
   <div id='qr'><img class='qr' src='https://quickchart.io/qr?text=jucardus.github.io/h/claves&size=250x250&margin=2&ecLevel=M&dark=555&light=f5f5f5&format=png'></img></div>
-  <script type="text/javascript">
-    function generar() {
-      let array = ['&#94;','&#94;','&#33;','&#33;','&#35;','&#35;','&#37;','&#37;','&#38;','&#38;','&#40;','&#40;','&#41;','&#41;','&#42;','&#42;','&#64;','&#64;','&#36;','&#36;','0','1','2','3','4','5','6','7','8','9','0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-      var desde = 10;
-      var hasta = 60;
-      var resultado1 = desordenar(array).slice(desde,hasta).join('');
-      var resultado2 = desordenar(array).slice(desde,hasta).join('');
-      var resultado3 = desordenar(array).slice(desde,hasta).join('');
-      var resultado4 = desordenar(array).slice(desde,hasta).join('');
-      var resultado5 = desordenar(array).slice(desde,hasta).join('');
-      var resultado6 = desordenar(array).slice(desde,hasta).join('');
-      var resultado7 = desordenar(array).slice(desde,hasta).join('');
-      var resultado8 = desordenar(array).slice(desde,hasta).join('');
-      var resultado9 = desordenar(array).slice(desde,hasta).join('');
-      var resultado0 = desordenar(array).slice(desde,hasta).join('');
-      document.getElementById('mostrar').innerHTML = resultado1 + resultado2 + resultado3 + resultado4 + resultado5 + resultado6 + resultado7 + resultado8 + resultado9 + resultado0;
-    }
-    function desordenar(array) {
-      let currentIndex = array.length, randomIndex;
-      while (currentIndex > 0) {
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex--;
-          [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-      }
-      return array;
-    }
-  </script>
+  <script src='claves.js'></script>
 </body>
 </html>
