@@ -165,9 +165,10 @@
         resultado = [...new Set(resultado)]; // eliminar elementos repetidos
         resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
         var enlaces = resultado.join('');
+          var enlaces = '<ul>' + enlaces + '</ul';
         if (enlaces.indexOf('href') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
         document.getElementById('buscar').value = '';
-        document.getElementById('mostrar').innerHTML = '<ul>' + enlaces + '</ul';
+        document.getElementById('mostrar').innerHTML = enlaces;
       } else {
         document.getElementById('buscar').value = '';
         document.getElementById('mostrar').innerHTML =  '<span class="previo">[ mínimo dos caracteres de busca ]</span>';
