@@ -68,6 +68,9 @@ li {
   margin-top: 15px;
   text-align: center;
 }
+p.inicial {
+  margin-top: -15px;
+}
 .qr {
   width: 100px;
 }
