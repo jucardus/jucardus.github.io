@@ -53,7 +53,8 @@
                 var dos = parseInt(rgb.slice(2,4), 16);
                 var tres = parseInt(rgb.slice(4,6), 16);
                 var decimales = '(' + uno + ', ' + dos + ', ' + tres + ')';
-            var linea = '<p><span style="color: ' + codigo + '; background-color: ' + codigo + '; padding: 10px; border-radius: 4px;">██████</span>&#12288;' + '<span class="copiadores" onclick="copiar(\'' + nombre + '\')">' + nombre + '</span>' + '&#12288;' + '<span class="copiadores" onclick="copiar(\'' + codigo + '\')">' + codigo + '</span>' + '&#12288;' + '<span class="copiadores" onclick="copiar(\'' + decimales + '\')">' + decimales + '</span>' + '</p>';
+                  var decimalesCopia = 'rgb' + decimales;
+            var linea = '<p><span style="color: ' + codigo + '; background-color: ' + codigo + '; padding: 10px; border-radius: 4px;">██████</span>&#12288;' + '<span class="copiadores" onclick="copiar(\'' + nombre + '\')">' + nombre + '</span>' + '&#12288;' + '<span class="copiadores" onclick="copiar(\'' + codigo + '\')">' + codigo + '</span>' + '&#12288;' + '<span class="copiadores" onclick="copiar(\'' + decimalesCopia + '\')">' + decimales + '</span>' + '</p>';
             todo.push(linea);
         }
         var enviar = todo.join('');
