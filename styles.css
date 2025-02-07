@@ -53,6 +53,9 @@ img {
 li {
   padding-bottom: 6px;
 }
+.noticia {
+  background-color: LightYellow;
+}
 #nvgcn {
   font-size: 90%;
   margin-bottom: 35px;
