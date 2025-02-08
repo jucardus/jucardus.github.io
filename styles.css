@@ -15,6 +15,7 @@ a:link, a:visited, a:hover, a:active {
   color: DarkGreen;
   color: Teal;
   color: #007070;
+  font-weight: 400;
   text-decoration: none;
 }
 a:focus, a:hover {
