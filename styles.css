@@ -30,7 +30,9 @@ body {
   padding: 30px 23% 180px 23%;
 }
 code {
-  background-color: #e7edf2;
+  background-color: #eaeaea;
+  border-radius: 3px;
+  padding: 0px 3px 1px 3px;
 }
 #exear {
   font-size: 95%;
