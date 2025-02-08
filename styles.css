@@ -1,3 +1,9 @@
+.roboto-slab-<uniquifier> {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 .ubuntu-sans-<uniquifier> {
   font-family: "Ubuntu Sans", serif;
   font-optical-sizing: auto;
@@ -33,6 +39,7 @@ body {
   font-family: 'Times New Roman', serif;
   font-family: 'Ubuntu', serif;
   font-family: 'Arial', sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 110%;
   letter-spacing: 0.5px;
   padding: 30px 23% 180px 23%;
