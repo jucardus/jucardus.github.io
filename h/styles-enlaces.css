@@ -2,6 +2,7 @@ a.buscadores {
   word-break: revert!important;
 }
 a.enlacista {
+  font-weight: normal!important;
   word-break: break-all!important;
 }
 .arriba {
