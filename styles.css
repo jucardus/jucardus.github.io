@@ -12,9 +12,9 @@
   }
 }
 a:link, a:visited, a:hover, a:active {
-  color: Black;
+  color: #333;
   text-decoration: none;
-  border-bottom: 10px solid black;
+  border-bottom: 0.5px solid #333;
 }
 a:focus, a:hover {
   color: OrangeRed;
