@@ -1,4 +1,6 @@
 let base = [
+  "películas ¶ The Mist -- en inglés y con subtítulos ¶ https://youtu.be/Mwx6tpqhHTc",
+  "películas ¶ The Mist -- en español ¶ https://youtu.be/Xfnkic16lx4",
   "vocabulario español ¶ salpullido, sarpullido ¶ https://dle.rae.es/salpullido",
   "piedra alumbre ¶ Desmitificando la piedra alumbre: una alternativa natural y segura ¶ https://www.claravalenzuela.com/blogs/cosmetica-natural/desmitificando-la-piedra-alumbre-una-alternativa-natural-y-segura",
   "vocabulario español ¶ fabulador, fabulista ¶ https://dle.rae.es/fabulador",
