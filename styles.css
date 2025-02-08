@@ -12,8 +12,8 @@
   }
 }
 a:link, a:visited, a:hover, a:active {
-  color: DarkGreen;
-  text-decoration: none;
+  color: Black;
+  text-decoration: underline;
 }
 a:focus, a:hover {
   color: OrangeRed;
