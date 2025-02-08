@@ -12,8 +12,7 @@
   }
 }
 a:link, a:visited, a:hover, a:active {
-  color: #0551af;
-  color: #04409e;
+  color: #3571a3;
   text-decoration: none;
 }
 a:focus, a:hover {
@@ -24,8 +23,8 @@ body {
   background-color: #f4f4f4;
   background-color: White;
   color: Black;
-  font-family: 'Arial', sans-serif;
   font-family: 'Times New Roman', serif;
+  font-family: 'Arial', sans-serif;
   font-size: 110%;
   letter-spacing: 0.5px;
   padding: 30px 23% 180px 23%;
