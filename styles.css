@@ -3,6 +3,8 @@
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 .ubuntu-sans-<uniquifier> {
   font-family: "Ubuntu Sans", serif;
@@ -36,9 +38,9 @@ a:focus, a:hover {
 body {
   background-color: #f4f4f4;
   color: Black;
-  font-family: 'Times New Roman', serif;
   font-family: 'Ubuntu', serif;
   font-family: 'Arial', sans-serif;
+  font-family: 'Times New Roman', serif;
   font-family: "Roboto Slab", serif;
   font-size: 110%;
   letter-spacing: 0.5px;
