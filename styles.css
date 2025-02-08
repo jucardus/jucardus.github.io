@@ -13,8 +13,7 @@
 }
 a:link, a:visited, a:hover, a:active {
   color: DarkGreen;
-  color: DarkCyan;
-  color: Purple;
+  color: Teal;
   text-decoration: none;
 }
 a:focus, a:hover {
