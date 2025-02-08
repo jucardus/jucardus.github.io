@@ -34,7 +34,7 @@ function recientes() {
   resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
   resultado = [...new Set(resultado)]; // eliminar elementos repetidos
   resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
-  var enlaces = resultado.join('<p>');
+  var enlaces = resultado.join('<p>').replace(/ -- /g,' – ');
   document.getElementById('mostrar').innerHTML = enlaces;
 }
 function teclaBuscar (event) {
@@ -86,7 +86,7 @@ function buscar() {
     resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
     resultado = [...new Set(resultado)]; // eliminar elementos repetidos
     resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
-    var enlaces = resultado.join('<p>');
+    var enlaces = resultado.join('<p>').replace(/ -- /g,' – ');
     if (enlaces.indexOf('http') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
     document.getElementById('buscar').value = '';
     document.getElementById('mostrar').innerHTML = '<span style="padding: 10px 0px 10px 0px;">' + buscadores + '</span><p>' + enlaces;
