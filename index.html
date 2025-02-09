@@ -46,8 +46,8 @@
   <h4 style='color: OrangeRed;'>[ EN RECONSTRUCCIÓN ]</h4>
   <div id='mostrar'></div>
   <script>
+    let texto = '';
     function hacer () {
-      let texto = '';
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
