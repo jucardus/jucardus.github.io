@@ -60,6 +60,13 @@
       margin-top: 30px;
       text-align: center;
     }
+    .temas {
+      color: #105080;
+      font-weight: bold;
+    }
+    .temas:hover {
+      cursor: pointer;
+    }
     #temas {
       line-height: 1.7;
     }
@@ -76,18 +83,8 @@
     Poesía · 
     Reflexiones · 
     Vocabulario · 
-    <a class='temas' href='#autor'>Autor</a> · 🔍</div>
+    <span class='temas' onclick='autor()'>Autor</a> · 🔍</span>
   <div id='mostrar'></div>
-  <a name='autor'></a>
-  <div id="pie">~ • ~</div>
-    <div id='contenidoPie'>
-      <b>Autor:</b> Julio Cárdenas Pelizzari ©
-      <br/><b>Contacto:</b> jucardus en gmail.com
-      <br/><b>Donaciones:</b> pp.jucardus.com
-      <br/><b>Invitación a pCloud:</b> i.jucardus.com
-      <br/><b>Facebook:</b> fb.jucardus.com
-      <br/><b>X Twitter:</b> x.jucardus.com
-    </div>
   <div id="pie">~ • ~</div>
   <script>
     function hacer () {
@@ -122,6 +119,10 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
+    }
+    function autor() {
+      var contenidoAutor = "<div id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail.com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</div>";
+      document.getElementById('mostrar').innerHTML = 'contenidoAutor';
     }
   </script>
 </body>
