@@ -74,14 +74,15 @@
           var nmr = linea[0];
             var nmr = '<span class="numeros">' + nmr + '</span> • ';
           var tm = linea[1];
+            var tm = '<b>' + tm + '</b>';
           var cntnd = linea[2];
             var cntnd = ' — ' + cntnd;
           var enlc = linea[3];
             if (enlc != '') {var enlc = ' — ' + enlc;}
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch + '</span>';
-          var nuevaLinea = nmr + '<b>' + tm + '</b>' + cntnd + enlc + fch;
-          if (tm != undefined) {
+          var nuevaLinea = nmr + tm + cntnd + enlc + fch;
+          if (tm != '<b>undefined</b>') {
             resultado.push(nuevaLinea);
           }
       }
