@@ -69,19 +69,18 @@
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
-      for (var i = 1; i < arrayContenido.length; i++) {
+      for (var i = 0; i < arrayContenido.length; i++) {
         var linea = arrayContenido[i].split(',');
           var nmr = linea[0];
             var nmr = '<span class="numeros">' + nmr + '</span> • ';
           var tm = linea[1];
-            var tm = '<b>' + tm + '</b>';
           var cntnd = linea[2];
             var cntnd = ' — ' + cntnd;
           var enlc = linea[3];
             if (enlc != '') {var enlc = ' — ' + enlc;}
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch + '</span>';
-          var nuevaLinea = nmr + tm + cntnd + enlc + fch;
+          var nuevaLinea = nmr + '<b>' + tm + '</b>' + cntnd + enlc + fch;
           if (tm != undefined) {
             resultado.push(nuevaLinea);
           }
