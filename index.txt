@@ -1,17 +1,12 @@
-╔══════════════╗
-║ JUCARDUS.COM ║
-╚══════════════╝
+█ JUCARDUS.COM █
 
-┏━━━━━━━━━━━━━━┓
-┃ JUCARDUS.COM ┃
-┗━━━━━━━━━━━━━━┛
 
-█ 2025-01-31 █
+█ 2025-01-31
 
 Vocabulario inglés-español → pinprick [s.] pinchazo; alfilerazo; puntada; agujerito; pequeño inconveniente; pequeña molestia; irritación
 
 
-2025-01-30
+█ 2025-01-30
 
 Diario → Acabo de agregar la sección «Vocabulario», con sinonimos y traducciones del inglés y el francés al español. Algunas de las entradas contienen frases de ejemplo.
 
@@ -30,12 +25,12 @@ Vocabulario inglés-español → gilded [adj.] dorado (recubierto de oro) → A 
 Diario → Muy probablemente empiece a agregar entradas de programación y de vocabulario en este sitio, para simplificar el trabajo y para no tener contenido disperso.
 
 
-2025-01-29
+█ 2025-01-29
 
 Reflexiones → Que no te quite mucho el sueño el hecho de que busques estar solo en lugar de estar con tus amigos. Es muy probable que prefieras el recuerdo que tienes de ellos a aquello en lo que se han convertido.
 
 
-2025-01-28
+█ 2025-01-28
 
 Reflexiones → Las discusiones y debates entre cristianos e hinduistas y budistas, acerca de la supuesta reencarnación, por lo común no terminan en nada. La razón es que el concepto de alma cambia de religión en religión y también el de espíritu. Luego, las refutaciones son totalmente inútiles.
 
@@ -48,12 +43,12 @@ Poesía → LIBERTAD ¶ Sin libertad en ti ¦ no hay Dios Verdadero, ¦ ¿quiere
 Reflexiones → Así como el Sol a simple vista parece parte de nuestro cielo, así también Dios parece parte del reino de los cielos, pero en realidad está mucho más allá y es muchísimo más que eso. No que el Sol sea Dios, sino que la creación manifiesta los atributos de la Divinidad.
 
 
-2025-01-27
+█ 2025-01-27
 
 Apotegmas → La vida es eterna y debe ser vivida como tal.
 
 
-2025-01-26
+█ 2025-01-26
 
 Apotegmas → Cuando tu destino es andar, lo único necesario es que des el primer paso.
 
@@ -66,7 +61,7 @@ Citas → You will never understand bureaucracies until you understand that for 
 Citas → Después de tantos años estudiando la ética, he llegado a la conclusión de que toda ella se resume en tres virtudes: coraje para vivir, generosidad para convivir y prudencia para sobrevivir. – Fernando Savater
 
 
-2025-01-24
+█ 2025-01-24
 
 Apotegmas → Con cada beso entre un hombre y una mujer, el reino de los cielos tiembla y Dios se regocija.
 
@@ -81,7 +76,7 @@ Citas → The task is not to see what has never been seen before, but to think w
 Citas → Las aptitudes morales y las aptitudes intelectuales van juntas. Un hombre bueno es inteligente, y uno malo es, además, imbécil. – Jorge Luis Borges
 
 
-2025-01-23
+█ 2025-01-23
 
 Apotegmas → Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.
 
@@ -95,27 +90,27 @@ Reflexiones → También puedes convertirte en un fanático de la verdad. No es 
 
 Apotegmas → La simplicidad de Dios es tal, que los seres humanos queremos diversificarla y complicarla; tanto, que a veces quedamos atrapados en nuestra propia creación. ¿Cómo restaurar dicha simplicidad? Con la luz de Dios.
 
-144,Apotegmas,"Sin verdad no hay amor. Pero no por eso repatirás verdades para dañar a las personas, porque el fin de la verdad es el amor.",,2025-01-23 11:13
+Apotegmas → Sin verdad no hay amor. Pero no por eso repatirás verdades para dañar a las personas, porque el fin de la verdad es el amor.
 
-143,Reflexiones,"El Hijo de Hombre no viene del reino de los cielos, sino que sale de Dios, y Dios está muy en tu interior, o en tu interior más secreto. Por eso se ha escrito que, mediante el sacrificio del Hijo se rasgó el velo del templo, que es tu cuerpo, abriendo entrada al lugar santísimo.",,2025-01-23 11:09
-
-
-2025-01-21
-
-142,Poesía,"AGUA Y PIEDRAS ¶ Mira lo que hace ¦ el agua entre las piedras, ¦ Escucha lo que dice ¦ y desaparecerán las penas.",,2025-01-21 19:09
-
-141,Apotegmas,"Solo Dios te librará de todo mal, confortará tu corazón, te guiará y protegerá en el camino de regreso a casa, contra todo el ejército de los cielos.",,2025-01-21 19:08
-
-140,Apotegmas,"Hay una guerra en los cielos, y es una guerra para apoderarse de todo tu ser. Refúgiate en Dios.",,2025-01-21 19:04
-
-139,Poesía,CORRAL DE ESTRELLAS ¶ Si se pudiera vivir de estrellas ¦ Tendrías un corral de ellas.,,2025-01-21 18:59
-
-138,Apotegmas,"Nunca dejes de hacer justicia por mano propia: Ayuda al necesitado, protege al débil, perdona a quien busca tu mal, ora por tu enemigo.",,2025-01-21 18:58
-
-137,Apotegmas,Todo populista es un fascista con disfraz de campechano.,,2025-01-21 18:52
+Reflexiones → El Hijo de Hombre no viene del reino de los cielos, sino que sale de Dios, y Dios está muy en tu interior, o en tu interior más secreto. Por eso se ha escrito que, mediante el sacrificio del Hijo se rasgó el velo del templo, que es tu cuerpo, abriendo entrada al lugar santísimo.
 
 
-2025-01-20
+█ 2025-01-21
+
+Poesía → AGUA Y PIEDRAS ¶ Mira lo que hace ¦ el agua entre las piedras, ¦ Escucha lo que dice ¦ y desaparecerán las penas.
+
+Apotegmas → Solo Dios te librará de todo mal, confortará tu corazón, te guiará y protegerá en el camino de regreso a casa, contra todo el ejército de los cielos.
+
+Apotegmas → Hay una guerra en los cielos, y es una guerra para apoderarse de todo tu ser. Refúgiate en Dios.
+
+Poesía → CORRAL DE ESTRELLAS ¶ Si se pudiera vivir de estrellas ¦ Tendrías un corral de ellas.
+
+Apotegmas → Nunca dejes de hacer justicia por mano propia: Ayuda al necesitado, protege al débil, perdona a quien busca tu mal, ora por tu enemigo.
+
+Apotegmas → Todo populista es un fascista con disfraz de campechano.
+
+
+█ 2025-01-20
 
 136,Citas,"Cuando veas un alma que anuncia el aborto como un acto benigno, sabrás que en ella reina el príncipe de las tinieblas y que está en peligro de muerte eterna. – Pío de Pietrelcina",,2025-01-20 16:19
 
