@@ -31,13 +31,6 @@
 
   function hacer () {
 
-    fetch('= JUCARDUS =_= contenido =.csv')
-    .then(r=>r.text())
-    .then(r => {
-      lines = text.split("\n")
-    }
-    document.getElementById('mostrar').innerHTML = lines;
-      
     /*
     const response = await fetch(url);
     const data = await response.text();
@@ -49,13 +42,12 @@
     document.getElementById('mostrar').innerHTML = texto;
     */
 
-    /*
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      document.getElementById('mostrar').innerHTML = contenido;
+      lines = textString.split("\n")
     });
-    */
+    document.getElementById('mostrar').innerHTML = lines;
     
   }
 </script>
