@@ -116,7 +116,7 @@
       for (var i = 0; i < arrayContenido.length; i++) {
         var linea = arrayContenido[i].split(',');
           var nmr = linea[0];
-            var nmr = '<span class="numeros">' + nmr + '</span> • ';
+            var nmr = '<a class="numeros" href="https://x.com/intent/tweet?text=\'' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + '%0A%0A@jucardus%20%23\')">' + nmr + '</a> • ';
           var tm = linea[1];
             var tm = '<span class="temas" onclick="segunTema(\'<b>' + tm.replace(/ .*/g,'') + '\')"><b>' + tm + '</b></span>';
           var cntnd = linea[2];
@@ -136,7 +136,7 @@
       window.scrollTo(0, 0);
     }
     function autor() {
-      var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail.com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
+      var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail punto com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
       document.getElementById('mostrar').innerHTML = contenidoAutor;
       window.scrollTo(0, 0);
     }
