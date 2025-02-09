@@ -27,12 +27,12 @@
         padding: 15px 3px 140px 3px !important;
       }
     }
-    a#temas:link, a#temas:visited, a#temas:hover, a#temas:active {
+    a.temas:link, a.temas:visited, a.temas:hover, a.temas:active {
       color: #105080;
       font-weight: bold;
       text-decoration: none;
     }
-    a#temas:focus, a#temas:hover {
+    a.temas:focus, a.temas:hover {
       color: OrangeRed;
       text-decoration: none;
     }
@@ -67,7 +67,16 @@
 </head>
 <body onload='hacer()'>
   <h1>Jucardus.com</h1>
-  <div id='temas'>Inicio · Apotegmas · Citas · Cuentos · Enlaces · Poesía · Reflexiones · Vocabulario · <a href='#autor'>Autor</a> · 🔍</div>
+  <div id='temas'>
+    Inicio · 
+    Apotegmas · 
+    Citas · 
+    Cuentos · 
+    Enlaces · 
+    Poesía · 
+    Reflexiones · 
+    Vocabulario · 
+    <a class ='temas' href='#autor'>Autor</a> · 🔍</div>
   <div id='mostrar'></div>
   <a name='autor'></a>
   <div id="pie">~ • ~</div>
