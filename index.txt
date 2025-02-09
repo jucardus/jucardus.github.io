@@ -10,84 +10,85 @@ Vocabulario inglés-español → pinprick [s.] pinchazo; alfilerazo; puntada; ag
 
 Diario → Acabo de agregar la sección «Vocabulario», con sinonimos y traducciones del inglés y el francés al español. Algunas de las entradas contienen frases de ejemplo.
 
-175,Vocabulario inglés-español,"and whatnot [loc.] y demás; y etcétera; y esas cosas; y cosas por el estilo → Bring some snacks, cookies and whatnot to the party.",,2025-01-30 10:56
+Vocabulario inglés-español → and whatnot [loc.] y demás; y etcétera; y esas cosas; y cosas por el estilo → Bring some snacks, cookies and whatnot to the party.
 
-174,Sinónimos españoles,"llovizna, lloviznar = mollina, mollinear; mollizna, molliznar, molliznear; pintear; garúa, garuar",,2025-01-30 10:55
+Sinónimos españoles → llovizna, lloviznar = mollina, mollinear; mollizna, molliznar, molliznear; pintear; garúa, garuar
 
-173,Sinónimos españoles,"atisbo [m.] barrunto, conjetura, destello, índice (indicio), indicio, presunción, reflejo, señal, vislumbre",,2025-01-30 10:54
+Sinónimos españoles → atisbo [m.] barrunto, conjetura, destello, índice (indicio), indicio, presunción, reflejo, señal, vislumbre
 
-172,Vocabulario español,tomar alguien el tole [loc.coloq.] Partir apresuradamente.,,2025-01-30 10:49
+Vocabulario español → tomar alguien el tole [loc.coloq.] Partir apresuradamente.
 
-171,Vocabulario inglés-español,"bedding [s.] ropa de cama; sábanas; prendas de cama → He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.",,2025-01-30 10:06
-170,Vocabulario inglés-español,"gilded [adj.] dorado (recubierto de oro) → A collection of textile samples lay spread out on the table—Samsa was a travelling salesman—and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.",,2025-01-30 10:02
+Vocabulario inglés-español → bedding [s.] ropa de cama; sábanas; prendas de cama → He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.
 
-169,Diario,"Muy probablemente empiece a agregar entradas de programación y de vocabulario en este sitio, para simplificar el trabajo y para no tener contenido disperso.",,2025-01-30 09:22
+Vocabulario inglés-español → gilded [adj.] dorado (recubierto de oro) → A collection of textile samples lay spread out on the table—Samsa was a travelling salesman—and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.
+
+Diario → Muy probablemente empiece a agregar entradas de programación y de vocabulario en este sitio, para simplificar el trabajo y para no tener contenido disperso.
 
 
 2025-01-29
 
-Reflexiones,Que no te quite mucho el sueño el hecho de que busques estar solo en lugar de estar con tus amigos. Es muy probable que prefieras el recuerdo que tienes de ellos a aquello en lo que se han convertido.
+Reflexiones → Que no te quite mucho el sueño el hecho de que busques estar solo en lugar de estar con tus amigos. Es muy probable que prefieras el recuerdo que tienes de ellos a aquello en lo que se han convertido.
 
 
 2025-01-28
 
-167,Reflexiones,"Las discusiones y debates entre cristianos e hinduistas y budistas, acerca de la supuesta reencarnación, por lo común no terminan en nada. La razón es que el concepto de alma cambia de religión en religión y también el de espíritu. Luego, las refutaciones son totalmente inútiles.",,2025-01-28 22:19
+Reflexiones → Las discusiones y debates entre cristianos e hinduistas y budistas, acerca de la supuesta reencarnación, por lo común no terminan en nada. La razón es que el concepto de alma cambia de religión en religión y también el de espíritu. Luego, las refutaciones son totalmente inútiles.
 
-166,Apotegmas,"Dice el necio en su corazón: te haré esclavo de mi dios y si no adhieres a mi secta, irás al infierno que yo mismo estoy creando.",,2025-01-28 22:18
+Apotegmas → Dice el necio en su corazón: te haré esclavo de mi dios y si no adhieres a mi secta, irás al infierno que yo mismo estoy creando.
 
-165,Apotegmas,"Algunas religiones son una forma piadosa de evitar a Dios, de no verlo cara a cara.",,2025-01-28 22:17
+Apotegmas → Algunas religiones son una forma piadosa de evitar a Dios, de no verlo cara a cara.
 
-164,Poesía,"LIBERTAD ¶ Sin libertad en ti ¦ no hay Dios Verdadero, ¦ ¿quieres esa libertad? ¦ sacrifica la carne primero.",,2025-01-28 21:24
+Poesía → LIBERTAD ¶ Sin libertad en ti ¦ no hay Dios Verdadero, ¦ ¿quieres esa libertad? ¦ sacrifica la carne primero.
 
-163,Reflexiones,"Así como el Sol a simple vista parece parte de nuestro cielo, así también Dios parece parte del reino de los cielos, pero en realidad está mucho más allá y es muchísimo más que eso. No que el Sol sea Dios, sino que la creación manifiesta los atributos de la Divinidad.",,2025-01-28 21:01
+Reflexiones → Así como el Sol a simple vista parece parte de nuestro cielo, así también Dios parece parte del reino de los cielos, pero en realidad está mucho más allá y es muchísimo más que eso. No que el Sol sea Dios, sino que la creación manifiesta los atributos de la Divinidad.
 
 
 2025-01-27
 
-162,Apotegmas,La vida es eterna y debe ser vivida como tal.,,2025-01-27 13:16
+Apotegmas → La vida es eterna y debe ser vivida como tal.
 
 
 2025-01-26
 
-161,Apotegmas,"Cuando tu destino es andar, lo único necesario es que des el primer paso.",,2025-01-26 22:14
+Apotegmas → Cuando tu destino es andar, lo único necesario es que des el primer paso.
 
-160,Apotegmas,"Allí donde la razón se queda estupefacta, empieza la fe.",,2025-01-26 22:10
+Apotegmas → Allí donde la razón se queda estupefacta, empieza la fe.
 
-159,Apotegmas,De vez en cuando la religión es un infierno de santidad. De vez en cuando.,,2025-01-26 20:18
+Apotegmas → De vez en cuando la religión es un infierno de santidad. De vez en cuando.
 
-158,Citas,You will never understand bureaucracies until you understand that for bureaucrats procedure is everything and outcomes are nothing. – Thomas Sowell,,2025-01-26 08:37
+Citas → You will never understand bureaucracies until you understand that for bureaucrats procedure is everything and outcomes are nothing. – Thomas Sowell
 
-157,Citas,"Después de tantos años estudiando la ética, he llegado a la conclusión de que toda ella se resume en tres virtudes: coraje para vivir, generosidad para convivir y prudencia para sobrevivir. – Fernando Savater",,2025-01-26 08:33
+Citas → Después de tantos años estudiando la ética, he llegado a la conclusión de que toda ella se resume en tres virtudes: coraje para vivir, generosidad para convivir y prudencia para sobrevivir. – Fernando Savater
 
 
 2025-01-24
 
-156,Apotegmas,"Con cada beso entre un hombre y una mujer, el reino de los cielos tiembla y Dios se regocija.",,2025-01-24 17:33
+Apotegmas → Con cada beso entre un hombre y una mujer, el reino de los cielos tiembla y Dios se regocija.
 
-155,Apotegmas,Lo bueno de no tener dinero es que puedes gastarlo en lo que se te ocurra.,,2025-01-24 17:32
+Apotegmas → Lo bueno de no tener dinero es que puedes gastarlo en lo que se te ocurra.
 
-154,Apotegmas,"No estés con dos o más mujeres a la vez. Es decir, no adoptes más de una doctrina o no hagas más de un pacto con Dios. Sólo el pacto puro trae la Luz al mundo.",,2025-01-24 15:17
+Apotegmas → No estés con dos o más mujeres a la vez. Es decir, no adoptes más de una doctrina o no hagas más de un pacto con Dios. Sólo el pacto puro trae la Luz al mundo.
 
-153,Reflexiones,"Dios es lo más cotidiano y humano que existe, lo más pequeño. Lo del misticismo ha sido usado por eones para manipular a las gentes y obtener poder mundano. Los delirios de grandeza, el misticismo y el misterio son propios del reino de los cielos, no de Dios.",,2025-01-24 15:16
+Reflexiones → Dios es lo más cotidiano y humano que existe, lo más pequeño. Lo del misticismo ha sido usado por eones para manipular a las gentes y obtener poder mundano. Los delirios de grandeza, el misticismo y el misterio son propios del reino de los cielos, no de Dios.
 
-152,Citas,"The task is not to see what has never been seen before, but to think what has never been thought before about what you see everyday. – Erwin Schrödinger",,2025-01-24 10:21
+Citas → The task is not to see what has never been seen before, but to think what has never been thought before about what you see everyday. – Erwin Schrödinger
 
-151,Citas,"Las aptitudes morales y las aptitudes intelectuales van juntas. Un hombre bueno es inteligente, y uno malo es, además, imbécil. – Jorge Luis Borges",,2025-01-24 10:14
+Citas → Las aptitudes morales y las aptitudes intelectuales van juntas. Un hombre bueno es inteligente, y uno malo es, además, imbécil. – Jorge Luis Borges
 
 
 2025-01-23
 
-150,Apotegmas,"Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.",,2025-01-23 22:11
+Apotegmas → Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.
 
-149,Reflexiones,"Hubo un tiempo en que los hombres éramos dichosos habitando en el Ser, pero de alguna forma, o por alguna razón, desviamos la mirada y anhelamos lo de fuera. Es así que empezamos a existir. Si deseas volver al Ser, te parecerá mal. Si deseas lo de fuera, te parecerá normal.",,2025-01-23 22:06
+Reflexiones → Hubo un tiempo en que los hombres éramos dichosos habitando en el Ser, pero de alguna forma, o por alguna razón, desviamos la mirada y anhelamos lo de fuera. Es así que empezamos a existir. Si deseas volver al Ser, te parecerá mal. Si deseas lo de fuera, te parecerá normal.
 
-148,Reflexiones,"Si Dios no habita en templos hechos por manos humanas, ¿qué o quién era la entidad que habitaba en el tabernáculo? ¿Un ángel de Dios?",,2025-01-23 22:05
+Reflexiones → Si Dios no habita en templos hechos por manos humanas, ¿qué o quién era la entidad que habitaba en el tabernáculo? ¿Un ángel de Dios?
 
-147,Diario,"Me salen cabellos de plata, literalmente. Un día tengo que reunirlos, fundirlos en un crisol y salir a hacer dinero. Fácil.",,2025-01-23 22:03
+Diario → Me salen cabellos de plata, literalmente. Un día tengo que reunirlos, fundirlos en un crisol y salir a hacer dinero. Fácil.
 
-146,Reflexiones,También puedes convertirte en un fanático de la verdad. No es tan recomendable como parece.,,2025-01-23 22:02
+Reflexiones → También puedes convertirte en un fanático de la verdad. No es tan recomendable como parece.
 
-145,Apotegmas,"La simplicidad de Dios es tal, que los seres humanos queremos diversificarla y complicarla; tanto, que a veces quedamos atrapados en nuestra propia creación. ¿Cómo restaurar dicha simplicidad? Con la luz de Dios.",,2025-01-23 11:17
+Apotegmas → La simplicidad de Dios es tal, que los seres humanos queremos diversificarla y complicarla; tanto, que a veces quedamos atrapados en nuestra propia creación. ¿Cómo restaurar dicha simplicidad? Con la luz de Dios.
 
 144,Apotegmas,"Sin verdad no hay amor. Pero no por eso repatirás verdades para dañar a las personas, porque el fin de la verdad es el amor.",,2025-01-23 11:13
 
