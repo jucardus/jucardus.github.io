@@ -30,7 +30,7 @@
     body {
       font-family: 'Times New Roman', serif;
       font-size: 120%;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
       padding: 25px 20% 160px 20%;
     }
     .fecha {
@@ -82,7 +82,7 @@
           resultado.push(nuevaLinea);
       }
       var enviar = resultado.join('<p>');
-        var enviar = enviar.replace(/— —/g,'—');
+        var enviar = enviar.replace(/ŧ /g,', ');
       var pie = '<div id="pie">~ • ~</div>';
       document.getElementById('mostrar').innerHTML = enviar + pie;
     }
