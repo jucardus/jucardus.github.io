@@ -35,8 +35,8 @@
     #mostrar {
       margin-top: 30px!important;
     }
-    .pie {
-      padding-top: 30px;
+    #pie {
+      margin-top: 30px!important;
       text-align: center;
     }
   </style>
@@ -52,7 +52,7 @@
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>') + '<p/><span class="pie">~ • ~</span>';
+      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
     });
 
   }
