@@ -28,12 +28,12 @@
 <body onload='hacer()'>
   <div id='mostrar'></div>
 <script>
-  var url = '= JUCARDUS =_= contenido =.csv';
+
   function hacer () {
 
-    fetch(url)
+    fetch('= JUCARDUS =_= contenido =.csv')
     .then(r=>r.text())
-    .then(text => {
+    .then(r => {
       lines = text.split("\n")
     }
     document.getElementById('mostrar').innerHTML = lines;
