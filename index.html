@@ -86,17 +86,17 @@
   <h1>Jucardus.com</h1>
   <div id='temas'>
     <span class='temas' id='inicio' onclick='inicio()'>Inicio</span> ·
-    <span class='temas' id='apotegmas' onclick='segunTema("Apotegmas")'>Apotegmas</span> ·
-    <span class='temas' id='citas' onclick='segunTema("Citas")'>Citas</span> ·
-    <span class='temas' id='cuentos' onclick='segunTema("Cuentos")'>Cuentos</span> ·
-    <span class='temas' id='diario' onclick='segunTema("Diario")'>Diario</span> ·
-    <span class='temas' id='enlaces' onclick='segunTema("Enlaces")'>Enlaces</span> ·
-    <span class='temas' id='poesia' onclick='segunTema("Poesía")'>Poesía</span> ·
-    <span class='temas' id='reflexiones' onclick='segunTema("Reflexiones")'>Reflexiones</span> ·
-    <span class='temas' id='sinonimos' onclick='segunTema("Sinónimos")'>Sinónimos</span> ·
-    <span class='temas' id='vocabulario' onclick='segunTema("Vocabulario")'>Vocabulario</span> ·
-    <span class='temas' id='aclaraciones' onclick='aclaraciones("Aclaraciones")'>Aclaraciones</span> ·
-    <span class='temas' id='autor' onclick='autor("Autor")'>Autor</span> ·
+    <span class='temas' id='apotegmas' onclick='segunTema("apotegmas")'>Apotegmas</span> ·
+    <span class='temas' id='citas' onclick='segunTema("citas")'>Citas</span> ·
+    <span class='temas' id='cuentos' onclick='segunTema("cuentos")'>Cuentos</span> ·
+    <span class='temas' id='diario' onclick='segunTema("diario")'>Diario</span> ·
+    <span class='temas' id='enlaces' onclick='segunTema("enlaces")'>Enlaces</span> ·
+    <span class='temas' id='poesia' onclick='segunTema("poesía")'>Poesía</span> ·
+    <span class='temas' id='reflexiones' onclick='segunTema("reflexiones")'>Reflexiones</span> ·
+    <span class='temas' id='sinonimos' onclick='segunTema("sinónimos")'>Sinónimos</span> ·
+    <span class='temas' id='vocabulario' onclick='segunTema("vocabulario")'>Vocabulario</span> ·
+    <span class='temas' id='aclaraciones' onclick='aclaraciones("aclaraciones")'>Aclaraciones</span> ·
+    <span class='temas' id='autor' onclick='autor("autor")'>Autor</span> ·
     🔍
   </div>
   <div id='mostrar'></div>
@@ -145,7 +145,7 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
-      subrayar('Inicio');
+      subrayar('inicio');
       window.scrollTo(0, 0);
     }
     function autor() {
@@ -177,14 +177,16 @@
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
-          if (tm.indexOf('<b>' + temaRecibido) >= 0) {
+          //if (temaRecibido == 'poesia') {temaRecibido = 'poesía';}
+          //if (temaRecibido == 'sinonimos') {temaRecibido = 'sinónimos';}
+          if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
             resultado.push(nuevaLinea);
           }
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
-      subrayar('temaRecibido');
+      subrayar(temaRecibido);
       window.scrollTo(0, 0);
     }
     function subrayar (temaSubrayar) {
@@ -195,9 +197,9 @@
         document.getElementById('cuentos').style.borderBottom = fondoNoClicados;
         document.getElementById('diario').style.borderBottom = fondoNoClicados;
         document.getElementById('enlaces').style.borderBottom = fondoNoClicados;
-        document.getElementById('poesía').style.borderBottom = fondoNoClicados;
+        document.getElementById('poesia').style.borderBottom = fondoNoClicados;
         document.getElementById('reflexiones').style.borderBottom = fondoNoClicados;
-        document.getElementById('sinónimos').style.borderBottom = fondoNoClicados;
+        document.getElementById('sinonimos').style.borderBottom = fondoNoClicados;
         document.getElementById('vocabulario').style.borderBottom = fondoNoClicados;
         document.getElementById('aclaraciones').style.borderBottom = fondoNoClicados;
         document.getElementById('autor').style.borderBottom = fondoNoClicados;
