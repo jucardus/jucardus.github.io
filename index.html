@@ -30,8 +30,14 @@
 <script>
   function hacer () {
 
+    const response = await fetch('= JUCARDUS =_= contenido =.csv');
+    const data = await response.text();
+    document.getElementById('mostrar').innerHTML = data;
+
+    /*
     var texto = fetch('= JUCARDUS =_= contenido =.csv').text().toString();
     document.getElementById('mostrar').innerHTML = texto;
+    */
 
     /*
     fetch('= JUCARDUS =_= contenido =.csv')
