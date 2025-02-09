@@ -80,7 +80,7 @@
           var enlc = linea[3];
             if (enlc != '') {var enlc = ' — ' + enlc;}
           var fch = linea[4];
-            var fch = ' <span class="fecha">  — ' + fch + '</span>';
+            var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm != '<b>undefined</b>') {
             resultado.push(nuevaLinea);
