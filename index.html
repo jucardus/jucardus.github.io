@@ -104,7 +104,7 @@
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
         let string = recibido;
         let searchString = '¶¶¶¶¶';
-        let occurrence = 50;
+        let occurrence = 20;
         let regex = new RegExp(searchString, 'g');
         let matches = Array.from(string.matchAll(regex));
         if(matches.length >= occurrence) {
@@ -132,7 +132,7 @@
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
-      document.getElementById('mostrar').innerHTML = enviar + '<p>...';
+      document.getElementById('mostrar').innerHTML = enviar + '<p>... clica en los temas para ver todas las entradas ...';
       window.scrollTo(0, 0);
     }
     function autor() {
