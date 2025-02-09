@@ -102,6 +102,15 @@
       texto = recibido;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+        let string = recibido;
+        let searchString = '¶¶¶¶¶';
+        let occurrence = 50;
+        let regex = new RegExp(searchString, 'g');
+        let matches = Array.from(string.matchAll(regex));
+        if(matches.length >= occurrence) {
+          let nthIndex = matches[occurrence - 1].index;
+          var recibido = recibido.slice(0,nthIndex) + 'qqqqqqqqq';
+        } else {}
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
       for (var i = 0; i < arrayContenido.length; i++) {
