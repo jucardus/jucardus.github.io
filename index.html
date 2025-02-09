@@ -75,13 +75,13 @@
   <h1>Jucardus.com</h1>
   <div id='temas'>
     <span class='temas' onclick='inicio()'>Inicio</span> ·
-    <span class='temas' onclick='segunTema("<b>Apotegmas</b>")'>Apotegmas</span> ·
-    <span class='temas' onclick='segunTema("<b>Citas</b>")'>Citas</span> ·
-    <span class='temas' onclick='segunTema("<b>Cuentos</b>")'>Cuentos</span> ·
-    <span class='temas' onclick='segunTema("<b>Diario</b>")'>Diario</span> ·
-    <span class='temas' onclick='segunTema("<b>Enlaces</b>")'>Enlaces</span> ·
-    <span class='temas' onclick='segunTema("<b>Poesía</b>")'>Poesía</span> ·
-    <span class='temas' onclick='segunTema("<b>Reflexiones</b>")'>Reflexiones</span> ·
+    <span class='temas' onclick='segunTema("<b>Apotegmas")'>Apotegmas</span> ·
+    <span class='temas' onclick='segunTema("<b>Citas")'>Citas</span> ·
+    <span class='temas' onclick='segunTema("<b>Cuentos")'>Cuentos</span> ·
+    <span class='temas' onclick='segunTema("<b>Diario")'>Diario</span> ·
+    <span class='temas' onclick='segunTema("<b>Enlaces")'>Enlaces</span> ·
+    <span class='temas' onclick='segunTema("<b>Poesía")'>Poesía</span> ·
+    <span class='temas' onclick='segunTema("<b>Reflexiones")'>Reflexiones</span> ·
     <span class='temas' onclick='segunTema("<b>Sinónimos")'>Sinónimos</span> ·
     <span class='temas' onclick='segunTema("<b>Vocabulario")'>Vocabulario</span> ·
     <span class='temas' onclick='autor()'>Autor</span> ·
@@ -118,7 +118,7 @@
           var nmr = linea[0];
             var nmr = '<span class="numeros">' + nmr + '</span> • ';
           var tm = linea[1];
-            var tm = '<span class="temas" onclick="segunTema(\'<b>' + tm + '</b>\')"><b>' + tm + '</b></span>';
+            var tm = '<span class="temas" onclick="segunTema(\'<b>' + tm.replace(/ .*/g,'') + '\')"><b>' + tm + '</b></span>';
           var cntnd = linea[2];
             var cntnd = ' — ' + cntnd;
           var enlc = linea[3];
