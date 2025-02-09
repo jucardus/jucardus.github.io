@@ -35,6 +35,9 @@
     #mostrar {
       margin-top: 20px;
     }
+    .pie {
+      padding-top: 20px;
+    }
   </style>
 </head>
 <body onload='hacer()'>
@@ -48,7 +51,7 @@
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>') + '<p/><br/><center>~ • ~</center>';
+      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>') + '<p/><span class='pie'>~ • ~</span>';
     });
 
   }
