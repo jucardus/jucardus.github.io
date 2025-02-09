@@ -29,11 +29,20 @@
   <div id='mostrar'></div>
 <script>
   var url = '= JUCARDUS =_= contenido =.csv';
-  async function hacer (url) {
+  function hacer () {
 
+    fetch(url)
+    .then(r=>r.text())
+    .then(text => {
+      lines = text.split("\n")
+    }
+    document.getElementById('mostrar').innerHTML = lines;
+      
+    /*
     const response = await fetch(url);
     const data = await response.text();
     document.getElementById('mostrar').innerHTML = data;
+    */
 
     /*
     var texto = fetch('= JUCARDUS =_= contenido =.csv').text().toString();
