@@ -1,0 +1,233 @@
+@media only screen and (max-device-width: 480px) {
+    #apotegmas {
+        border-radius: 5px !important;
+        font-size: 108% !important;
+        padding: 7px !important;
+        text-align: center !important;
+        }
+    body {
+        padding: 15px 2px 50px 2px !important;
+        }
+    form {
+        margin-left: revert !important;
+        }
+    #formulario {
+        text-align: center !important;
+        }
+    h1 {
+        font-size: revert !important;
+        text-align: left !important;
+        }
+    html, body {
+        width: auto !important;
+        overflow-x: hidden !important;
+        }
+    input {
+        width: 85% !important;
+        }
+    pre {
+        font-size: 100% !important;
+        }
+    #subtitulo {
+        }
+    }
+
+::-moz-selection { /* para Firefox */
+    color: DarkRed;
+    background: LightGreen;
+}
+::selection {
+    color: DarkRed;
+    background: LightGreen;
+}
+
+a:link, a:visited, a:active {
+    color: White;
+    text-decoration: none;
+    word-break: break-all;
+    }
+a:hover, a:focus {
+    color: Red;
+    color: SpringGreen;
+    opacity: 1;
+    text-decoration: underline;
+    word-break: break-all;
+    }
+a.buscadores {
+    word-break: normal;
+    }
+a.tuit {
+    color: #909090;
+    color: SkyBlue;
+    color: White;
+    font-family: "Roboto Mono", monospace;
+    opacity: 0.8;
+    }
+a.tuit:hover, a.tuit:focus {
+    color: DarkViolet;
+    color: Yellow;
+    color: Gold;
+    opacity: 1;
+    }
+#apotegmas {
+    background-color: LightYellow;
+    border-radius: 7px;
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+    }
+#apotegmas:after {
+    content: "\a ~ jucardus ~";
+    font-size: 70%;
+    font-style: italic;
+    white-space: pre;
+    }
+.barrita {
+    color: Orange;
+    color: LightCyan;
+    color: Yellow;
+    opacity: 0.7;
+    }
+body {
+    background-color: #003c3c;
+    color: LightCyan;
+    color: White;
+    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto Slab", serif;
+    font-kerning: none;
+    letter-spacing: 0.3px;
+    padding: 15px 20% 150px 20%;
+    text-align: justify;
+    }
+#buscadores {
+    line-height: 2;
+    margin-bottom: 25px;
+    }
+button#boton {
+    font-size: 104%;
+    padding: 5px;
+    display: none;
+    }
+.copyright {
+    font-size: 90%;
+    padding-left: 15px;
+    opacity: 0.6;
+    }
+#desarrollos {
+    margin: 20px;
+    }
+.fechiquetas {
+    opacity: 0.8;
+    }
+form {
+    margin-left: 20px;
+    margin-bottom: 55px;
+    margin-top: 45px;
+    }
+h1 {
+    color: WhiteSmoke;
+    color: LightYellow;
+    font-size: 250%;
+    padding-bottom: 15px;
+    text-align: left !important;
+    }
+hr {
+    text-align: center;
+    }
+#iframes {
+    text-align: center;
+    }
+iframe#insertado {
+    border-left: 10px solid #e0e0e0;
+    width: 90%;
+    }
+#imagenes {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    }
+img {
+    border-radius: 6px;
+    }
+img.insertadas {
+    border-radius: 5px;
+    width: 80%;
+    }
+img#favicones {
+    border-radius: 2px;
+    float: left;
+    width: 22px;
+    margin: 0px 8px 10px 0px;
+    }
+input {
+    background-color: White;
+    border: 2px dotted Silver;
+    border-radius: 4px;
+    color: DarkSlateGray;
+    font-family: 'Arial';
+    font-family: "Roboto Mono", monospace;
+    font-size: 110%;
+    font-weight: bold;
+    /*letter-spacing: 1px;*/
+    opacity: 0.9;
+    padding: 2px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-top: 2px;
+    width: 310px;
+    }
+li {
+    padding-bottom: 8px;
+    }
+.manito {
+    color: Green;
+    text-decoration: underline;
+    }
+.manito:hover {
+    background-color: LightYellow;
+    color: OrangeRed;
+    cursor: pointer;
+    text-decoration: underline;
+    }
+.manito:focus {
+    background-color: LightYellow;
+    color: Red;
+    text-decoration: underline;
+    }
+#mostrar {
+    margin-top: 35px;
+    margin-bottom: 45px;
+    }
+ol, ul {
+    margin-left: -10px;
+    }
+#pie {
+    text-align: center;
+    }
+::placeholder {
+    color: #b0b0b0;
+    text-align: right;
+    }
+pre {
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    font-size: 110%;
+    padding: 5px;
+    text-align: left;
+    white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;
+    white-space: pre-wrap; word-wrap: break-word;
+    }
+.previo {
+    color: OrangeRed;
+    padding-left: 20px;
+    }
+#subtitulo {
+    font-weight: bold;
+    font-size: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+    }
+.titulo:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    }

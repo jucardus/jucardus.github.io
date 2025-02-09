@@ -1,0 +1,46 @@
+<html>
+
+<body onload = "generar()">
+
+<script type="text/javascript">
+
+function generar() {
+
+  var date = new Date();
+  var year = date.getYear().toString().slice(1);
+  var month = date.getMonth() + 1; if(month.toString().length==1){var month = '0'+month;}
+  var day = date.getDate(); if(day.toString().length==1){var day = '0'+day;}
+  var hour = date.getHours(); if(hour.toString().length==1){var hour = '0'+hour;}
+  var minu = date.getMinutes(); if(minu.toString().length==1){var minu = '0'+minu;}
+  var seco = date.getSeconds(); if(seco.toString().length==1){var seco = '0'+seco;}
+  var fecha = year + '/' + month + '/' + day + ' - ' + hour + ':' + minu + ':' + seco;
+
+  let array = [
+    "0","1","2","3","4","5","6","7","8","9","0","1","2","3","4","5","6","7","8","9",
+    "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
+    "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"
+    ];
+
+  var resultado = shuffle(array).slice(10,30).join('');
+  var tuitear = 'https://twitter.com/intent/tweet?text=' + fecha + ' - ' + resultado;
+  window.location.href = tuitear;
+
+}
+
+function shuffle(array) {
+
+  let currentIndex = array.length, randomIndex;
+  while (currentIndex > 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
+  return array;
+
+}
+
+</script>
+
+</body>
+
+</html>

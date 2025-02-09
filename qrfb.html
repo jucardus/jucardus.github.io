@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--Herramientas - Generador de códigos QR mediante Quickchart, con parámetros, para entradas de Facebook únicamente.-->
+<html>
+<head>
+<body onload="hacer()">
+<script>
+function hacer() {
+    var parametro = window.location.href.replace(/.*sitiow\.web\.app\/qrfb\?=/g,'');
+        var url = parametro;
+        var leyenda = parametro.replace('https://www.facebook.com/share/p/','').replace('/','');
+    var numero = Math.floor(Math.random()*999999) + 111111;
+    var color = numero.toString().slice(0,6);
+    var codigoQR = 'https://quickchart.io/qr?text=' + url + '&size=250x250&margin=5&ecLevel=M&dark=' + color + '&light=fff&caption=' + leyenda + '&captionFontFamily=Courier&captionFontSize=17&format=png';
+    window.location.replace(codigoQR);
+    }
+</script>
+</head>
+</html>
