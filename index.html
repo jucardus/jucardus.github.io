@@ -95,11 +95,10 @@
     <span class='temas' id='reflexiones' onclick='segunTema("Reflexiones")'>Reflexiones</span> ·
     <span class='temas' id='sinonimos' onclick='segunTema("Sinónimos")'>Sinónimos</span> ·
     <span class='temas' id='vocabulario' onclick='segunTema("Vocabulario")'>Vocabulario</span> ·
-    <span class='temas' id='aclaraciones' onclick='autor("Aclaraciones")'>Aclaraciones</span> ·
+    <span class='temas' id='aclaraciones' onclick='aclaraciones("Aclaraciones")'>Aclaraciones</span> ·
     <span class='temas' id='autor' onclick='autor("Autor")'>Autor</span> ·
     🔍
   </div>
-  <p><small>La página de inicio muestra las veinte entradas más recientes. &ndash; Clica en los temas para ver todas las entradas. &ndash; Clica en los números verdes para compartir el párrafo en X Twitter.</small></p>
   <div id='mostrar'></div>
   <div id="pie">~ • ~</div>
   <script>
@@ -151,6 +150,11 @@
     }
     function autor() {
       var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail punto com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
+      document.getElementById('mostrar').innerHTML = contenidoAutor;
+      window.scrollTo(0, 0);
+    }
+    function aclaraciones() {
+      var contenidoAutor = "La página de inicio muestra las veinte entradas más recientes. &ndash; Clica en los temas para ver todas las entradas. &ndash; Clica en los números verdes para compartir el párrafo en X Twitter.";
       document.getElementById('mostrar').innerHTML = contenidoAutor;
       window.scrollTo(0, 0);
     }
