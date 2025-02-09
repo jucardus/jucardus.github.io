@@ -53,7 +53,7 @@
       .then(textString => {
         texto.push(textString);
       });
-      document.getElementById('mostrar').innerHTML = texto.split('\n').replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
+      document.getElementById('mostrar').innerHTML = texto.replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
     }
   </script>
 </body>
