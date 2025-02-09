@@ -45,7 +45,7 @@
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>');
+      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>') + '<p/><br/><center>~ • ~</center>';
     });
 
   }
