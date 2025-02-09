@@ -22,39 +22,15 @@
   </head>
 
   <style>
-    * {
-      bottom: 0;
-      left: 0;
-      margin: 0;
-      padding: 0;
-      top: 0;
-    }
     @media only screen and (max-device-width: 480px) {}
-    body {
-      background-color: #efd;
-      font-family: monospace, sans-serif;
-      font-weight: bold;
-      height: 100%;
-      overflow: hidden;
-      width: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 100vh;
-    }
   </style>
 </head>
-<body>
-  <iframe src='index.txt' id='iframe' frameborder='0'></iframe>
-</body>
+<body onload='hacer()'>
+  <div id='mostrar'></div>
 <script>
-  var frame = document.getElementById('iframe');
-  frame.onload = function () {
-    var body = frame.contentWindow.document.querySelector('body');
-      body.style.color = 'Black';
-      body.style.fontFamily = 'monospace, sans-serif';
-      body.style.fontSize = '120%';
-      body.style.lineHeight = '1.4';
-  };
+  let documento = '= JUCARDUS =_= contenido =.csv';
+  const extraer = fetch(documento);
+  const texto = extraer.text();
+  document.getElementById('mostrar').innerHTML = texto;
 </script>
 </html>
