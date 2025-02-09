@@ -109,7 +109,7 @@
         let matches = Array.from(string.matchAll(regex));
         if(matches.length >= occurrence) {
           let nthIndex = matches[occurrence - 1].index;
-          var recibido = recibido.slice(0,nthIndex) + 'qqqqqqqqq';
+          var recibido = recibido.slice(0,nthIndex);
         } else {}
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
@@ -132,7 +132,7 @@
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
-      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('mostrar').innerHTML = enviar + '<p>...';
     }
     function autor() {
       var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail.com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
