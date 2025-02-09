@@ -46,9 +46,7 @@
   <h4 style='color: OrangeRed;'>[ EN RECONSTRUCCIÓN ]</h4>
   <div id='mostrar'></div>
 <script>
-
   function hacer () {
-
     var texto = '';
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
@@ -57,7 +55,6 @@
       texto = textString;
     });
     document.getElementById('mostrar').innerHTML = texto.replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
-
   }
 </script>
 </html>
