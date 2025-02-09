@@ -28,9 +28,10 @@
 <body onload='hacer()'>
   <div id='mostrar'></div>
 <script>
-  function hacer () {
+  var url = '= JUCARDUS =_= contenido =.csv';
+  async function hacer (url) {
 
-    const response = await fetch('= JUCARDUS =_= contenido =.csv');
+    const response = await fetch(url);
     const data = await response.text();
     document.getElementById('mostrar').innerHTML = data;
 
