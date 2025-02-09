@@ -45,6 +45,16 @@
   </style>
 </head>
 <body>
-    <iframe src='index.txt' frameborder='0'></iframe>
+  <iframe src='index.txt' frameborder='0'></iframe>
 </body>
+<script>
+  var frame = document.getElementById('myFrame');
+  frame.onload = function () {
+    var body = frame.contentWindow.document.querySelector('body');
+      body.style.color = 'Black';
+      body.style.fontFamily = 'monospace, sans-serif';
+      body.style.fontSize = '110%';
+      //body.style.lineHeight = '20px';
+  };
+</script>
 </html>
