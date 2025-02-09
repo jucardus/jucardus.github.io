@@ -133,10 +133,12 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar + '<p>...';
+      window.scrollTo(0, 0);
     }
     function autor() {
       var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail.com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
       document.getElementById('mostrar').innerHTML = contenidoAutor;
+      window.scrollTo(0, 0);
     }
     function segunTema (temaRecibido) {
       var recibido = texto;
@@ -164,6 +166,7 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
+      window.scrollTo(0, 0);
     }
   </script>
 </body>
