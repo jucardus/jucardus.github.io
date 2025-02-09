@@ -76,14 +76,15 @@
   <h1>Jucardus.com</h1>
   <div id='temas'>
     <span class='temas' onclick='hacer()'>Inicio</a></span> ·
-    <span class='temas' onclick='apotegmas()'>Apotegmas</a></span> ·
-    Citas ·
-    Cuentos ·
-    Diario ·
+    <span class='temas' onclick='segunTema("<b>Apotegmas</b>")'>Apotegmas</a></span> ·
+    <span class='temas' onclick='segunTema("<b>Citas</b>")'>Citas</a></span> ·
+    <span class='temas' onclick='segunTema("<b>Cuentos</b>")'>Cuentos</a></span> ·
+    <span class='temas' onclick='segunTema("<b>Diario</b>")'>Diario</a></span> ·
     Enlaces ·
-    Poesía ·
-    Reflexiones ·
-    Vocabulario ·
+    <span class='temas' onclick='segunTema("<b>Poesía</b>")'>Poesía</a></span> ·
+    <span class='temas' onclick='segunTema("<b>Reflexiones</b>")'>Reflexiones</a></span> ·
+    <span class='temas' onclick='segunTema("<b>Sinónimos")'>Sinónimos</a></span> ·
+    <span class='temas' onclick='segunTema("<b>Vocabulario")'>Vocabulario</a></span> ·
     <span class='temas' onclick='autor()'>Autor</a></span> ·
     🔍
   </div>
@@ -129,7 +130,7 @@
       var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail.com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
       document.getElementById('mostrar').innerHTML = contenidoAutor;
     }
-    function apotegmas () {
+    function segunTema (temaRecibido) {
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
@@ -148,7 +149,7 @@
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
-          if (tm == '<b>Apotegmas</b>') {
+          if (tm.indexOf(temaRecibido) >= 0) {
             resultado.push(nuevaLinea);
           }
       }
