@@ -31,15 +31,12 @@
 
   function hacer () {
 
-    let url = '= JUCARDUS =_= contenido =.csv';
-    var lines = '';
-    fetch(url)
+    fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      lines = textString;
+      document.getElementById('mostrar').innerHTML = '<h2>EN RECONSTRUCCIÓN</h2>' + textString.replace(/\n/g,'<p>');
     });
-    document.getElementById('mostrar').innerHTML = '<h2>EN RECONSTRUCCIÓN</h2>' + lines.toString().replace(/\n/g,'<p>');
-    
+
   }
 </script>
 </html>
