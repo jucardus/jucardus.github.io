@@ -135,7 +135,7 @@
           var nmr = linea[0];
             var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
           var tm = linea[1];
-            var tm = '<span class="temas" onclick="segunTema(\'' + tm.replace(/ .*/g,'') + '\')"><b>' + tm + '</b></span>';
+            var tm = '<span class="temas" onclick="segunTema(\'' + tm.replace(/ .*/g,'').toLowerCase() + '\')"><b>' + tm + '</b></span>';
           var cntnd = linea[2];
             var cntnd = ' — ' + cntnd;
           var enlc = linea[3];
