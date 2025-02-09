@@ -74,27 +74,29 @@
       font-weight: bold;
     }
     .temas:hover {
+      color: OrangeRed;
       cursor: pointer;
     }
     #temas {
-      line-height: 1.2;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body onload='inicio()'>
   <h1>Jucardus.com</h1>
   <div id='temas'>
-    <span class='temas' onclick='inicio()'>Inicio</span> ·
-    <span class='temas' onclick='segunTema("<b>Apotegmas")'>Apotegmas</span> ·
-    <span class='temas' onclick='segunTema("<b>Citas")'>Citas</span> ·
-    <span class='temas' onclick='segunTema("<b>Cuentos")'>Cuentos</span> ·
-    <span class='temas' onclick='segunTema("<b>Diario")'>Diario</span> ·
-    <span class='temas' onclick='segunTema("<b>Enlaces")'>Enlaces</span> ·
-    <span class='temas' onclick='segunTema("<b>Poesía")'>Poesía</span> ·
-    <span class='temas' onclick='segunTema("<b>Reflexiones")'>Reflexiones</span> ·
-    <span class='temas' onclick='segunTema("<b>Sinónimos")'>Sinónimos</span> ·
-    <span class='temas' onclick='segunTema("<b>Vocabulario")'>Vocabulario</span> ·
-    <span class='temas' onclick='autor()'>Autor</span> ·
+    <span class='temas' id='inicio' onclick='inicio()'>Inicio</span> ·
+    <span class='temas' id='apotegmas' onclick='segunTema("Apotegmas")'>Apotegmas</span> ·
+    <span class='temas' id='citas' onclick='segunTema("Citas")'>Citas</span> ·
+    <span class='temas' id='cuentos' onclick='segunTema("Cuentos")'>Cuentos</span> ·
+    <span class='temas' id='diario' onclick='segunTema("Diario")'>Diario</span> ·
+    <span class='temas' id='enlaces' onclick='segunTema("Enlaces")'>Enlaces</span> ·
+    <span class='temas' id='poesia' onclick='segunTema("Poesía")'>Poesía</span> ·
+    <span class='temas' id='reflexiones' onclick='segunTema("Reflexiones")'>Reflexiones</span> ·
+    <span class='temas' id='sinonimos' onclick='segunTema("Sinónimos")'>Sinónimos</span> ·
+    <span class='temas' id='vocabulario' onclick='segunTema("Vocabulario")'>Vocabulario</span> ·
+    <span class='temas' id='aclaraciones' onclick='autor("Aclaraciones")'>Aclaraciones</span> ·
+    <span class='temas' id='autor' onclick='autor("Autor")'>Autor</span> ·
     🔍
   </div>
   <p><small>La página de inicio muestra las veinte entradas más recientes. &ndash; Clica en los temas para ver todas las entradas. &ndash; Clica en los números verdes para compartir el párrafo en X Twitter.</small></p>
@@ -144,6 +146,7 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
+      subrayar('Inicio');
       window.scrollTo(0, 0);
     }
     function autor() {
@@ -170,14 +173,31 @@
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
-          if (tm.indexOf(temaRecibido) >= 0) {
+          if (tm.indexOf('<b>' + temaRecibido) >= 0) {
             resultado.push(nuevaLinea);
           }
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
+      subrayar('temaRecibido');
       window.scrollTo(0, 0);
+    }
+    function subrayar (temaSubrayar) {
+      var fondoNoClicados = 'thick solid #ffffff';
+        document.getElementById('Inicio').style.borderBottom = fondoNoClicados;
+        document.getElementById('Apotegmas').style.borderBottom = fondoNoClicados;
+        document.getElementById('Citas').style.borderBottom = fondoNoClicados;
+        document.getElementById('Cuentos').style.borderBottom = fondoNoClicados;
+        document.getElementById('Diario').style.borderBottom = fondoNoClicados;
+        document.getElementById('Enlaces').style.borderBottom = fondoNoClicados;
+        document.getElementById('Poesía').style.borderBottom = fondoNoClicados;
+        document.getElementById('Reflexiones').style.borderBottom = fondoNoClicados;
+        document.getElementById('Sinónimos').style.borderBottom = fondoNoClicados;
+        document.getElementById('Vocabulario').style.borderBottom = fondoNoClicados;
+        document.getElementById('Aclaraciones').style.borderBottom = fondoNoClicados;
+        document.getElementById('Autor').style.borderBottom = fondoNoClicados;
+      document.getElementById(temaSubrayar).style.borderBottom = 'thick solid Orange';
     }
   </script>
 </body>
