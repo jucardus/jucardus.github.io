@@ -28,9 +28,11 @@
 <body onload='hacer()'>
   <div id='mostrar'></div>
 <script>
-  let documento = '= JUCARDUS =_= contenido =.csv';
-  const extraer = fetch(documento);
-  const texto = extraer.text();
-  document.getElementById('mostrar').innerHTML = texto;
+  function hacer () {
+    let documento = '= JUCARDUS =_= contenido =.csv';
+    const extraer = fetch(documento);
+    const texto = extraer.text();
+    document.getElementById('mostrar').innerHTML = texto;
+  }
 </script>
 </html>
