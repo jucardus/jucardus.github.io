@@ -27,6 +27,14 @@
         padding: 15px 3px 140px 3px !important;
       }
     }
+    a:link, a:visited, a:hover, a:active {
+      color: #105080;
+      text-decoration: none;
+    }
+    a:focus, a:hover {
+      color: OrangeRed;
+      text-decoration: none;
+    }
     body {
       font-family: 'Times New Roman', serif;
       font-size: 120%;
@@ -44,6 +52,7 @@
       color: Green;
     }
     #pie {
+      margin-bottom: 30px!important;
       margin-top: 30px!important;
       text-align: center;
     }
@@ -54,8 +63,17 @@
 </head>
 <body onload='hacer()'>
   <h1>Jucardus.com</h1>
-  <div id='temas'>Apotegmas · Citas · Cuentos · Poesía · Reflexiones · Vocabulario</div>
+  <div id='temas'>Inicio · Apotegmas · Citas · Cuentos · Poesía · Reflexiones · Vocabulario · <a href='#autor'>Autor</a></div>
   <div id='mostrar'></div>
+  <a name='autor'></a>
+  <div id="pie">~ • ~</div>
+    <b>Autor:</b> Julio Cárdenas Pelizzari ©
+    <br/><b>Contacto:</b> jucardus en gmail.com
+    <br/><b>Donaciones:</b> pp.jucardus.com
+    <br/><b>Invitación a pCloud:</b> i.jucardus.com
+    <br/><b>Facebook:</b> fb.jucardus.com
+    <br/><b>X Twitter:</b> x.jucardus.com
+  <div id="pie">~ • ~</div>
   <script>
     function hacer () {
       fetch('= JUCARDUS =_= contenido =.csv')
@@ -88,8 +106,7 @@
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
-      var pie = '<div id="pie">~ • ~</div>';
-      document.getElementById('mostrar').innerHTML = enviar + pie;
+      document.getElementById('mostrar').innerHTML = enviar;
     }
   </script>
 </body>
