@@ -30,19 +30,16 @@
 <script>
   function hacer () {
 
-    /*
-    let documento = '= JUCARDUS =_= contenido =.csv';
-    const extraer = fetch(documento);
-    const texto = extraer.text();
+    var texto = fetch('= JUCARDUS =_= contenido =.csv').text().toString();
     document.getElementById('mostrar').innerHTML = texto;
-    */
-    
+
+    /*
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      var contenido = textString
+      document.getElementById('mostrar').innerHTML = contenido;
     });
-    document.getElementById('mostrar').innerHTML = contenido;
+    */
     
   }
 </script>
