@@ -45,9 +45,9 @@
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      lines = textString.split("\n")
+      lines = textString.split("<p>")
     });
-    document.getElementById('mostrar').innerHTML = lines;
+    document.getElementById('mostrar').innerHTML = '<h2>EN RECONSTRUCCIÓN</h2>' + lines;
     
   }
 </script>
