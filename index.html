@@ -27,7 +27,7 @@
   <style>
     @media only screen and (max-device-width: 480px) {
       body {
-        padding: 10px 3px 140px 3px !important;
+        padding: 7px 2px 140px 2px !important;
       }
     }
     /*
@@ -54,6 +54,9 @@
     .fecha {
       font-size: 85%;
       opacity: 0.5;
+    }
+    li {
+      padding-bottom: 8px;
     }
     #mostrar {
       margin-top: 35px;
@@ -157,7 +160,7 @@
       window.scrollTo(0, 0);
     }
     function aclaraciones() {
-      var aclaraciones = "La página de inicio muestra las veinte entradas más recientes. &ndash; Clica en los temas para ver todas las entradas. &ndash; Clica en los números verdes para compartir el párrafo en X Twitter.";
+      var aclaraciones = "<ul><li>La página de inicio muestra las veinte entradas más recientes.</li><li>Clica en los temas para ver todas las entradas.</li><li>Clica en los números verdes para compartir el párrafo en X Twitter.</li></ul>";
       document.getElementById('mostrar').innerHTML = aclaraciones;
       subrayar('aclaraciones');
       window.scrollTo(0, 0);
@@ -192,7 +195,7 @@
       window.scrollTo(0, 0);
     }
     function subrayar (temaSubrayar) {
-      var fondoNoClicados = '3px solid White';
+      var fondoNoClicados = '4px solid White';
         document.getElementById('inicio').style.borderBottom = fondoNoClicados;
         document.getElementById('apotegmas').style.borderBottom = fondoNoClicados;
         document.getElementById('citas').style.borderBottom = fondoNoClicados;
@@ -207,7 +210,7 @@
         document.getElementById('autor').style.borderBottom = fondoNoClicados;
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       if (temaSubrayar == 'sinónimos') {temaSubrayar = 'sinonimos';}
-      document.getElementById(temaSubrayar).style.borderBottom = '3px solid Orange';
+      document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
     }
   </script>
 </body>
