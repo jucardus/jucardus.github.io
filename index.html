@@ -58,7 +58,7 @@
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
-      for (var i = 0; i < arrayContenido.length; i++) {
+      for (var i = 1; i < arrayContenido.length; i++) {
         var linea = arrayContenido[i].split(',');
           var nmr = linea[0];
           var tm = linea[1];
