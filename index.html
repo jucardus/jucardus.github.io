@@ -46,14 +46,16 @@
   <h4 style='color: OrangeRed;'>[ EN RECONSTRUCCIÓN ]</h4>
   <div id='mostrar'></div>
   <script>
-    let texto = '';
+    //let texto = '';
     function hacer () {
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
-        texto = textString
+        formateo(textString);
       });
-      document.getElementById('mostrar').innerHTML = texto.replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
+    }
+    function formateio (recibido) {
+      document.getElementById('mostrar').innerHTML = recibido.toString().replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
     }
   </script>
 </body>
