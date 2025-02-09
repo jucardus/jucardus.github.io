@@ -45,10 +45,10 @@
   </style>
 </head>
 <body>
-  <iframe src='index.txt' frameborder='0'></iframe>
+  <iframe src='index.txt' id='iframe' frameborder='0'></iframe>
 </body>
 <script>
-  var frame = document.getElementById('myFrame');
+  var frame = document.getElementById('iframe');
   frame.onload = function () {
     var body = frame.contentWindow.document.querySelector('body');
       body.style.color = 'Black';
