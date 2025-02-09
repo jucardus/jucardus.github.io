@@ -177,8 +177,6 @@
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
-          //if (temaRecibido == 'poesia') {temaRecibido = 'poesía';}
-          //if (temaRecibido == 'sinonimos') {temaRecibido = 'sinónimos';}
           if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
             resultado.push(nuevaLinea);
           }
@@ -190,7 +188,7 @@
       window.scrollTo(0, 0);
     }
     function subrayar (temaSubrayar) {
-      var fondoNoClicados = 'thick solid White';
+      var fondoNoClicados = '2px solid White';
         document.getElementById('inicio').style.borderBottom = fondoNoClicados;
         document.getElementById('apotegmas').style.borderBottom = fondoNoClicados;
         document.getElementById('citas').style.borderBottom = fondoNoClicados;
@@ -203,7 +201,9 @@
         document.getElementById('vocabulario').style.borderBottom = fondoNoClicados;
         document.getElementById('aclaraciones').style.borderBottom = fondoNoClicados;
         document.getElementById('autor').style.borderBottom = fondoNoClicados;
-      document.getElementById(temaSubrayar).style.borderBottom = 'thick solid Orange';
+      if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
+      if (temaSubrayar == 'sinónimos') {temaSubrayar = 'sinonimos';}
+      document.getElementById(temaSubrayar).style.borderBottom = '2px solid Orange';
     }
   </script>
 </body>
