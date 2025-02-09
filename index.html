@@ -65,8 +65,8 @@
       });
     }
     function formateo (recibido) {
-      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
       for (var i = 1; i < arrayContenido.length; i++) {
