@@ -47,12 +47,13 @@
   <div id='mostrar'></div>
   <script>
     function hacer () {
-      let texto = [];
+      let texto = '';
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
-        document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
+        texto = textString;
       });
+      document.getElementById('mostrar').innerHTML = texto.replace(/\n/g,'<p>') + '<div id="pie">~ • ~</div>';
     }
   </script>
 </body>
