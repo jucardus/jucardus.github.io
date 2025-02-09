@@ -1,0 +1,25 @@
+<html>
+
+<div id = "mostrarEtiquetas"></div>
+
+<script>
+  function cat(json){
+    var label = json.feed.category;
+    var lst = [];
+    var todo = [];
+    for (i = 0; i < label.length; i++){
+      var lema = label[i].term.toString();
+      var orden = lema.toString().toUpperCase().replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^a-z0-9]/gi, '').replace(/ /g,'');
+      var ides = orden.toLowerCase();
+      var enlace = '<!--' + orden + '--><a href="/search/label/' + lema + '" id="' + ides + '">' + lema + '</a>';
+      todo.push(enlace);
+    }
+    todo = todo.sort((a, b) => a.localeCompare(b))
+    var etiquetas = '<div id="etiquetasPie">' + todo.join(' • ') + '</div>';
+    var url = window.location.href;
+    document.getElementById('mostrarEtiquetas').innerHTML = etiquetas.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+</script>
+<script src="https://jucardus.blogspot.com/feeds/posts/summary?alt=json&max-results=0&callback=cat"></script>
+
+</html>
