@@ -32,6 +32,10 @@
       font-size: 120%;
       padding: 25px 20% 160px 20%;
     }
+    .fecha {
+      font-size: small;
+      opacity: 0.5;
+    }
     #mostrar {
       margin-top: 30px!important;
     }
@@ -65,10 +69,12 @@
           var cntnd = linea[2];
           var enlc = linea[3];
           var fch = linea[4];
+            var fch = '<span class="fecha">' + fch + '</span>';
           var nuevaLinea = nmr + ' • ' + tm + ' — ' + cntnd + ' — ' + enlc + ' — ' + fch;
           resultado.push(nuevaLinea);
       }
       var enviar = resultado.join('<p>');
+        var enviar = enviar.replace(/— —/g,'—');
       var pie = '<div id="pie">~ • ~</div>';
       document.getElementById('mostrar').innerHTML = enviar + pie;
     }
