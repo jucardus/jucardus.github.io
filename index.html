@@ -31,22 +31,12 @@
 
   function hacer () {
 
-    /*
-    const response = await fetch(url);
-    const data = await response.text();
-    document.getElementById('mostrar').innerHTML = data;
-    */
-
-    /*
-    var texto = fetch('= JUCARDUS =_= contenido =.csv').text().toString();
-    document.getElementById('mostrar').innerHTML = texto;
-    */
-
+    let url = '= JUCARDUS =_= contenido =.csv';
     let lines = '';
-    fetch('= JUCARDUS =_= contenido =.csv')
+    fetch(url)
     .then(response => response.text()) 
     .then(textString => {
-      lines = textString.split("<p>");
+      lines = textString.replace(/\n/g,'<p>');
     });
     document.getElementById('mostrar').innerHTML = '<h2>EN RECONSTRUCCIÓN</h2>' + lines;
     
