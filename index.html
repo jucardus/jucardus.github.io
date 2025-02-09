@@ -33,11 +33,14 @@
       padding: 25px 20% 160px 20%;
     }
     .fecha {
-      font-size: 100%;
+      font-size: revert!important;
       opacity: 0.5;
     }
     #mostrar {
       margin-top: 30px!important;
+    }
+    .numeros {
+      color: Green;
     }
     #pie {
       margin-top: 30px!important;
@@ -65,7 +68,7 @@
       for (var i = 1; i < arrayContenido.length; i++) {
         var linea = arrayContenido[i].split(',');
           var nmr = linea[0];
-            var nmr = nmr + ' • ';
+            var nmr = '<span class="numeros">' + nmr + '</span> • ';
           var tm = linea[1];
             var tm = '<b>' + tm + '</b>';
           var cntnd = linea[2];
