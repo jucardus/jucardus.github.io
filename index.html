@@ -95,8 +95,8 @@
     <span class='temas' id='reflexiones' onclick='segunTema("reflexiones")'>Reflexiones</span> ·
     <span class='temas' id='sinonimos' onclick='segunTema("sinónimos")'>Sinónimos</span> ·
     <span class='temas' id='vocabulario' onclick='segunTema("vocabulario")'>Vocabulario</span> ·
-    <span class='temas' id='aclaraciones' onclick='aclaraciones("aclaraciones")'>Aclaraciones</span> ·
-    <span class='temas' id='autor' onclick='autor("autor")'>Autor</span> ·
+    <span class='temas' id='aclaraciones' onclick='aclaraciones()'>Aclaraciones</span> ·
+    <span class='temas' id='autor' onclick='autor()'>Autor</span> ·
     🔍
   </div>
   <div id='mostrar'></div>
@@ -151,11 +151,13 @@
     function autor() {
       var contenidoAutor = "<span id='contenidoAutor'><b>Autor:</b> Julio Cárdenas Pelizzari ©<br/><b>Contacto:</b> jucardus en gmail punto com<br/><b>Donaciones:</b> pp.jucardus.com<br/><b>Invitación a pCloud:</b> i.jucardus.com<br/><b>Facebook:</b> fb.jucardus.com<br/><b>X Twitter:</b> x.jucardus.com</span>";
       document.getElementById('mostrar').innerHTML = contenidoAutor;
+      subrayar('autor');
       window.scrollTo(0, 0);
     }
     function aclaraciones() {
       var aclaraciones = "La página de inicio muestra las veinte entradas más recientes. &ndash; Clica en los temas para ver todas las entradas. &ndash; Clica en los números verdes para compartir el párrafo en X Twitter.";
       document.getElementById('mostrar').innerHTML = aclaraciones;
+      subrayar('aclaraciones');
       window.scrollTo(0, 0);
     }
     function segunTema (temaRecibido) {
