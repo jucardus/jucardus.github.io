@@ -22,10 +22,19 @@
   </head>
 
   <style>
-    @media only screen and (max-device-width: 480px) {}
+    @media only screen and (max-device-width: 480px) {
+      padding: 15px 3px 140px 3px;
+    }
+    body {
+      font-family: 'Times New Roman', serif;
+      font-size: 120%;
+      padding: 25px 20% 160px 20%;
+    }
   </style>
 </head>
 <body onload='hacer()'>
+  <h1>Jucardus.com</h1>
+  <h3 style='color: OrangeRed;'>EN RECONSTRUCCIÓN</h3>
   <div id='mostrar'></div>
 <script>
 
@@ -34,7 +43,7 @@
     fetch('= JUCARDUS =_= contenido =.csv')
     .then(response => response.text()) 
     .then(textString => {
-      document.getElementById('mostrar').innerHTML = '<h2>EN RECONSTRUCCIÓN</h2>' + textString.replace(/\n/g,'<p>');
+      document.getElementById('mostrar').innerHTML = textString.replace(/\n/g,'<p>');
     });
 
   }
