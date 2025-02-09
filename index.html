@@ -29,10 +29,17 @@
   <div id='mostrar'></div>
 <script>
   function hacer () {
+    /*
     let documento = '= JUCARDUS =_= contenido =.csv';
     const extraer = fetch(documento);
     const texto = extraer.text();
     document.getElementById('mostrar').innerHTML = texto;
+    */
+    fetch('= JUCARDUS =_= contenido =.csv')
+    .then(response => response.text()) 
+    .then(textString => {
+      document.getElementById('mostrar').innerHTML = textString;
+    });
   }
 </script>
 </html>
