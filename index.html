@@ -283,7 +283,7 @@
             resultadoBusca.push(nuevaLineaBusca);
         }
       }
-      var enviar = resultado.join('<p>');
+      var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       if (enviar.indexOf('<') == 1) {enviar = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
       document.getElementById('mostrar').innerHTML = enviar;
