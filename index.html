@@ -135,6 +135,11 @@
     let direccion = '';
     function inicio () {
       direccion = window.location.href.replace(/.*=/g,'');
+        let str1 = '-'; let str2 = ' '; let str3 = ':';
+        let idx = 2; diccionario = diccionario.substring(0, idx) + str1 + diccionario.substring(idx);
+        let idx = 5; diccionario = diccionario.substring(0, idx) + str1 + diccionario.substring(idx);
+        let idx = 8; diccionario = diccionario.substring(0, idx) + str2 + diccionario.substring(idx);
+        let idx = 11; diccionario = diccionario.substring(0, idx) + str3 + diccionario.substring(idx);
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
