@@ -136,10 +136,10 @@
     function inicio () {
       direccion = window.location.href.replace(/.*=/g,'');
         let str1 = '-'; let str2 = ' '; let str3 = ':';
-        let idx1 = 2; diccionario = diccionario.substring(0, idx1) + str1 + diccionario.substring(idx1);
-        let idx2 = 5; diccionario = diccionario.substring(0, idx2) + str1 + diccionario.substring(idx2);
-        let idx3 = 8; diccionario = diccionario.substring(0, idx3) + str2 + diccionario.substring(idx3);
-        let idx4 = 11; diccionario = diccionario.substring(0, idx4) + str3 + diccionario.substring(idx4);
+        let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
+        let idx2 = 5; direccion = direccion.substring(0, idx2) + str1 + direccion.substring(idx2);
+        let idx3 = 8; direccion = direccion.substring(0, idx3) + str2 + direccion.substring(idx3);
+        let idx4 = 11; direccion = direccion.substring(0, idx4) + str3 + direccion.substring(idx4);
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
