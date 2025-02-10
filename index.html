@@ -221,9 +221,9 @@
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
             resultado.push(nuevaLinea);
+            contador = contador + 1;
+              if (contador == 20) {break;}
           }
-          contador = contador + 1;
-            if (contador == 20) {break;}
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
