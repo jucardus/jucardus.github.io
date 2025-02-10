@@ -134,7 +134,7 @@
     let texto = '';
     let direccion = '';
     function inicio () {
-      direccion = window.location.href.replace(/.*jucardus\.github\.io\/\?=/g,'');
+      direccion = window.location.href.replace(/.*=/g,'');
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
@@ -249,6 +249,8 @@
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
+      //history.replaceState(stateObj, 'Another Page Title', newUrl);
+      history.replaceState(stateObj, '', '');
     }
     function mostrarBuscador () {
       document.getElementById('buscador').style.display = 'block';
