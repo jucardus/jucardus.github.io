@@ -141,19 +141,9 @@
     }
     function formateo (recibido) {
       texto = recibido;
+      var contador = 0;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
-      /*
-        let string = recibido;
-        let searchString = '¶¶¶¶¶';
-        let occurrence = 20;
-        let regex = new RegExp(searchString, 'g');
-        let matches = Array.from(string.matchAll(regex));
-        if(matches.length >= occurrence) {
-          let nthIndex = matches[occurrence - 1].index;
-          var recibido = recibido.slice(0,nthIndex);
-        } else {}
-      */
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
       for (var i = 0; i < arrayContenido.length; i++) {
@@ -179,9 +169,10 @@
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm != '<b>undefined</b>') {
             resultado.push(nuevaLinea);
+            contador = contador + 1;
+              if (contador == 20) {break;}
           }
       }
-      resultado.slice(0,19);
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
@@ -202,6 +193,7 @@
     }
     function segunTema (temaRecibido) {
       var recibido = texto;
+      var contador = 0;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
       var resultado = [];
@@ -230,8 +222,9 @@
           if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
             resultado.push(nuevaLinea);
           }
+          contador = contador + 1;
+            if (contador == 20) {break;}
       }
-      resultado.slice(0,19);
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
