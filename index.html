@@ -176,7 +176,7 @@
               var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
             } else {enlc = '';}
           var fch = linea[4];
-            var fechaSimple = simplificarFecha(fch);
+            var fechaSimple = simplificarFecha(linea[4]);
             var fch = ' <span onclick="copiarEnlace(' + fechaSimple + ')" class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm != '<b>undefined</b>') {
