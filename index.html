@@ -262,7 +262,7 @@
     }
     function buscar (recibidoDireccion) {
       let lema = document.getElementById("buscar").value.toUpperCase();
-      if (recibidoDireccion != '') {lema = direccion;}
+      if (recibidoDireccion != '') {lema = direccion.toUpperCase();}
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
