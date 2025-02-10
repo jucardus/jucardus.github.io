@@ -132,6 +132,7 @@
   <div id="pie">~ • ~</div>
   <script>
     let texto = '';
+    var direccion = window.location.href.replace(/.*jucardus\.github\.io\//g,'');
     function inicio () {
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
@@ -179,6 +180,9 @@
       document.getElementById('buscador').style.display = 'none';
       subrayar('inicio');
       window.scrollTo(0, 0);
+      if (direccion != '') {
+        buscar(direccion);
+      }
     }
     function autor() {
       var contenidoAutor = "<ul><li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li><li><b>Contacto:</b> jucardus en gmail punto com</li><li><b>Donaciones:</b> pp.jucardus.com</li><li><b>Invitación a pCloud:</b> i.jucardus.com</li><li><b>Facebook:</b> fb.jucardus.com</li><li><b>X Twitter:</b> x.jucardus.com</li></ul>";
@@ -255,8 +259,9 @@
         buscar('');
       }
     }
-    function buscar () {
+    function buscar (recibidoDireccion) {
       let lema = document.getElementById("buscar").value.toUpperCase();
+      if (recibidoDireccion != '') {lema = recibidoDireccion;}
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
