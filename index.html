@@ -176,6 +176,7 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
       subrayar('inicio');
       window.scrollTo(0, 0);
     }
@@ -228,6 +229,7 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
       window.scrollTo(0, 0);
     }
