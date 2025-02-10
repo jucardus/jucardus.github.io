@@ -134,7 +134,7 @@
     let texto = '';
     let direccion = '';
     function inicio () {
-      direccion = window.location.href.replace(/.*io\/\?=/g,'');
+      direccion = window.location.href.replace(/.*=/g,'');
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
