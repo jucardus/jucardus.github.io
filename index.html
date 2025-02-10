@@ -160,8 +160,9 @@
       for (var i = 0; i < arrayContenido.length; i++) {
         var linea = arrayContenido[i].split(',');
           var nmr = linea[0];
+            var fechaSimple = 'jucardus.github.io/' + linea[4].slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             if (linea[3] == '') {
-              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
             }
             if (linea[3] != '') {
               var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + linea[3] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
@@ -203,7 +204,7 @@
       window.scrollTo(0, 0);
     }
     function aclaraciones() {
-      var aclaraciones = "<ul><li>La página de inicio, y todos los temas, muestran las veinte entradas más recientes.</li><li>Clica en la lupa para buscar entre todas las entradas del sitio, sin límite de coincidencias.</li><li>Clica en los números verdes para compartir el párrafo en X Twitter.</li><li>Para copiar el enlace a una entrada en particular, clica en la fecha al final de esta.</li><li>Si deseas hacer comentarios, críticas o correcciones a mi contenido, sírvete escribir a jucardus en gmail punto com.</li></ul>";
+      var aclaraciones = "<ul><li>La página de inicio, y todos los temas, muestran las veinte entradas más recientes.</li><li>Clica en la lupa para buscar entre todas las entradas del sitio, sin límite de coincidencias.</li><li>Clica en los números verdes para compartir el párrafo en X Twitter.</li><li>Si deseas hacer comentarios, críticas o correcciones a mi contenido, sírvete escribir a jucardus en gmail punto com.</li></ul>";;
       document.getElementById('mostrar').innerHTML = aclaraciones;
       subrayar('aclaraciones');
       document.getElementById('buscador').style.display = 'none';
@@ -219,8 +220,9 @@
       for (var i = 0; i < arrayContenido.length; i++) {
         var linea = arrayContenido[i].split(',');
           var nmr = linea[0];
+            var fechaSimple = 'jucardus.github.io/' + linea[4].slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             if (linea[3] == '') {
-              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
             }
             if (linea[3] != '') {
               var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + linea[3] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
@@ -283,8 +285,9 @@
         if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
           var linea = arrayContenido[i].split(',');
             var nmr = linea[0];
+              var fechaSimple = 'jucardus.github.io/' + linea[4].slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
               if (linea[3] == '') {
-                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
               }
               if (linea[3] != '') {
                 var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + linea[3] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
