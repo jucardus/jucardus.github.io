@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--meta http-equiv="refresh" content="0; url=https://jucardus.github.io" /-->
 </head>
 <body>
   <script>
-    var url = window.location.href.replace(/.*\//g,'');
-    window.location.href = 'https://jucardus.github.io/' + url;
+    var url = window.location.href.replace(/.*io\//g,'');
+    if (url != '') {
+      var visitar = 'https://jucardus.github.io/?=' + url;
+      window.location.replace(vistar);
+    } else {
+      window.location.replace('https://jucardus.github.io');
+    }
   </script>
 </body>
 </html>
