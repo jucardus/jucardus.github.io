@@ -177,7 +177,7 @@
             } else {enlc = '';}
           var fch = linea[4];
             var fechaSimple = simplificarFecha(linea[4]);
-            var fch = ' <span onclick="copiarEnlace(' + fechaSimple + ')" class="fecha">  — ' + fch?.slice(2) + '</span>';
+            var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm != '<b>undefined</b>') {
             resultado.push(nuevaLinea);
