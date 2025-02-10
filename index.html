@@ -249,10 +249,12 @@
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
+      /*
       const nextURL = 'https://jucardus.github.io/';
       const nextTitle = 'My new page title';
       const nextState = { additionalInformation: 'Updated the URL with JS' };
       window.history.replaceState(nextState, nextTitle, nextURL);
+      */
     }
     function mostrarBuscador () {
       document.getElementById('buscador').style.display = 'block';
@@ -266,7 +268,7 @@
     }
     function buscar (recibidoDireccion) {
       let lema = document.getElementById("buscar").value.toUpperCase();
-      if (recibidoDireccion != '' && window.location.href != 'https://jucardus.github.io/' || window.location.href != 'https://jucardus.github.io') {lema = direccion.toUpperCase();}
+      if (recibidoDireccion != '') {lema = direccion.toUpperCase();}
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
