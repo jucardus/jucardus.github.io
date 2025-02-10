@@ -266,7 +266,7 @@
     }
     function buscar (recibidoDireccion) {
       let lema = document.getElementById("buscar").value.toUpperCase();
-      if (recibidoDireccion != '') {lema = direccion.toUpperCase();}
+      if (recibidoDireccion != '' && window.location.href != 'https://jucardus.github.io/' || window.location.href != 'https://jucardus.github.io') {lema = direccion.toUpperCase();}
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
