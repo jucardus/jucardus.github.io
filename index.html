@@ -97,6 +97,12 @@
     <span class='temas' id='autor' onclick='autor()'>Autor</span> ·
     🔍
   </div>
+  <div id="buscador">
+    <form method="post">
+      <input type="text" autocomplete="on" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
+      <button id="boton" type="button" onclick="buscar()">🔍</button>
+    </form>
+  </div>
   <div id='mostrar'></div>
   <div id="pie">~ • ~</div>
   <script>
@@ -211,6 +217,52 @@
       }
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
+    }
+    function teclaBuscar (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        buscar('');
+      }
+    }
+    function buscar () {
+      let lema = document.getElementById("buscar").value.toUpperCase();
+      var recibido = texto;
+      var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      var resultadoBusca = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {}
+          var linea = arrayContenido[i].split(',');
+            var nmr = linea[0];
+              if (linea[3] == '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
+              }
+              if (linea[3] != '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + linea[3] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
+              }
+            var tm = linea[1];
+              var tm = '<b>' + tm + '</b>';
+            var cntnd = linea[2];
+              var cntnd = ' — ' + cntnd;
+            var enlc = linea[3];
+              if (enlc != '') {
+                var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+                var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+              } else {enlc = '';}
+            var fch = linea[4];
+              var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
+            var nuevaLineaBusca = nmr + tm + cntnd + enlc + fch;
+            if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
+              resultadoBusca.push(nuevaLineaBusca);
+            }
+        }
+      }
+      var enviar = resultado.join('<p>');
+        var enviar = enviar.replace(/ŧ /g,', ');
+      if (enviar.indexOf('<') == 1) {}
+      document.getElementById('mostrar').innerHTML = enviar;
+      window.scrollTo(0, 0);
     }
   </script>
 </body>
