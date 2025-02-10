@@ -115,7 +115,7 @@
     <span class='temas' id='vocabulario' onclick='segunTema("vocabulario")'>Vocabulario</span> ·
     <span class='temas' id='aclaraciones' onclick='aclaraciones()'>Aclaraciones</span> ·
     <span class='temas' id='autor' onclick='autor()'>Autor</span> ·
-    🔍
+    <span class='temas' id='buscador' onclick='mostrarBuscador()'>🔍</span>
   </div>
   <div id="buscador">
     <form method="post">
@@ -238,6 +238,9 @@
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
     }
+    function mostrarBuscador () {
+      document.getElementById('buscador').style.display = 'block';
+    }
     function teclaBuscar (event) {
       if (event.key === "Enter") {
         event.preventDefault();
@@ -273,15 +276,14 @@
             var fch = linea[4];
               var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
             var nuevaLineaBusca = nmr + tm + cntnd + enlc + fch;
-            if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
-              resultadoBusca.push(nuevaLineaBusca);
-            }
+            resultadoBusca.push(nuevaLineaBusca);
         }
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       if (enviar.indexOf('<') == 1) {enviar = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
       document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
       window.scrollTo(0, 0);
     }
   </script>
