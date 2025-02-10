@@ -44,7 +44,7 @@
     }
     #buscador {
       margin-left: 10px;
-      margin-top: 30px;
+      margin-top: 20px;
       display: none;
     }
     button#boton {
@@ -287,7 +287,7 @@
       }
       var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
-      if (enviar.indexOf('<') == -1) {enviar = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
+      if (enviar.indexOf('<') == -1) {enviar = '&#12288;<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscar').value = '';
       document.getElementById('buscador').style.display = 'none';
