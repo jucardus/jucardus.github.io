@@ -143,6 +143,7 @@
       texto = recibido;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      /*
         let string = recibido;
         let searchString = '¶¶¶¶¶';
         let occurrence = 20;
@@ -152,6 +153,7 @@
           let nthIndex = matches[occurrence - 1].index;
           var recibido = recibido.slice(0,nthIndex);
         } else {}
+      */
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
       for (var i = 0; i < arrayContenido.length; i++) {
@@ -179,6 +181,7 @@
             resultado.push(nuevaLinea);
           }
       }
+      resultado.slice(0,19);
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
@@ -201,6 +204,7 @@
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      /*
         let string = recibido;
         let searchString = '¶¶¶¶¶';
         let occurrence = 20;
@@ -210,6 +214,7 @@
           let nthIndex = matches[occurrence - 1].index;
           var recibido = recibido.slice(0,nthIndex);
         } else {}
+      */
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
       for (var i = 0; i < arrayContenido.length; i++) {
@@ -237,6 +242,7 @@
             resultado.push(nuevaLinea);
           }
       }
+      resultado.slice(0,19);
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
