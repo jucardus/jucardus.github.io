@@ -132,8 +132,9 @@
   <div id="pie">~ • ~</div>
   <script>
     let texto = '';
+    let direccion = '';
     function inicio () {
-      var direccion = window.location.href.replace(/.*jucardus\.github\.io\//g,'');
+      direccion = window.location.href.replace(/.*jucardus\.github\.io\//g,'');
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
@@ -261,7 +262,7 @@
     }
     function buscar (recibidoDireccion) {
       let lema = document.getElementById("buscar").value.toUpperCase();
-      if (recibidoDireccion != '') {lema = recibidoDireccion;}
+      if (recibidoDireccion != '') {lema = direccion;}
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
