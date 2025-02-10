@@ -176,7 +176,7 @@
               var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
             } else {enlc = '';}
           var fch = linea[4];
-            var fechaSimple = linea[4].slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm != '<b>undefined</b>') {
@@ -235,7 +235,7 @@
               var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
             } else {enlc = '';}
           var fch = linea[4];
-            var fechaSimple = linea[4].slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
@@ -299,7 +299,7 @@
                 var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
               } else {enlc = '';}
             var fch = linea[4];
-              var fechaSimple = linea[4].slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+              var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
               var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
             var nuevaLineaBusca = nmr + tm + cntnd + enlc + fch;
             resultadoBusca.push(nuevaLineaBusca);
