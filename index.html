@@ -45,6 +45,7 @@
     #buscador {
       margin-left: 10px;
       margin-top: 30px;
+      display: none;
     }
     button#boton {
       font-size: 104%;
@@ -123,7 +124,7 @@
   </div>
   <div id="buscador">
     <form method="post">
-      <input type="text" autocomplete="on" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
+      <input type="text" autofocus="on" autocomplete="off" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
       <button id="boton" type="button" onclick="buscar()">🔍</button>
     </form>
   </div>
@@ -285,8 +286,9 @@
       }
       var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
-      if (enviar.indexOf('<') == 1) {enviar = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
+      if (enviar.indexOf('<') == -1) {enviar = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
       document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscar').value = '';
       document.getElementById('buscador').style.display = 'none';
       window.scrollTo(0, 0);
     }
