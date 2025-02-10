@@ -196,25 +196,10 @@
     }
     function subrayar (temaSubrayar) {
       var fondoNoClicados = '4px solid White';
-      //document.getElementsByClassName('temas').style.borderBottom = fondoNoClicados;
       const temasTodos = document.getElementsByClassName('temas');
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
-      /*
-        document.getElementById('inicio').style.borderBottom = fondoNoClicados;
-        document.getElementById('apotegmas').style.borderBottom = fondoNoClicados;
-        document.getElementById('citas').style.borderBottom = fondoNoClicados;
-        document.getElementById('cuentos').style.borderBottom = fondoNoClicados;
-        document.getElementById('diario').style.borderBottom = fondoNoClicados;
-        document.getElementById('enlaces').style.borderBottom = fondoNoClicados;
-        document.getElementById('poesia').style.borderBottom = fondoNoClicados;
-        document.getElementById('reflexiones').style.borderBottom = fondoNoClicados;
-        document.getElementById('sinonimos').style.borderBottom = fondoNoClicados;
-        document.getElementById('vocabulario').style.borderBottom = fondoNoClicados;
-        document.getElementById('aclaraciones').style.borderBottom = fondoNoClicados;
-        document.getElementById('autor').style.borderBottom = fondoNoClicados;
-        */
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       if (temaSubrayar == 'sinónimos') {temaSubrayar = 'sinonimos';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
