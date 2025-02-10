@@ -176,7 +176,7 @@
               var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
             } else {enlc = '';}
           var fch = linea[4];
-            var fechaSimple = simplificarFecha(linea[4]);
+            var fechaSimple = linea[4].replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
           if (tm != '<b>undefined</b>') {
@@ -319,15 +319,6 @@
       const nextTitle = 'My new page title';
       const nextState = { additionalInformation: 'Updated the URL with JS' };
       window.history.replaceState(nextState, nextTitle, nextURL);
-    }
-    function simplificarFecha (recibida) {
-      var fechaSimplificada = recibida;
-      let str1 = '-'; let str2 = ' '; let str3 = ':';
-      let idx1 = 2; fechaSimplificada = fechaSimplificada.substring(0, idx1) + str1 + fechaSimplificada.substring(idx1);
-      let idx2 = 5; fechaSimplificada = fechaSimplificada.substring(0, idx2) + str1 + fechaSimplificada.substring(idx2);
-      let idx3 = 8; fechaSimplificada = fechaSimplificada.substring(0, idx3) + str2 + fechaSimplificada.substring(idx3);
-      let idx4 = 11; fechaSimplificada = fechaSimplificada.substring(0, idx4) + str3 + fechaSimplificada.substring(idx4);
-      return fechaSimplificada;
     }
     function copiarEnlace (fechaSimpleRecibida) {
       var urlFecha = 'https://jucardus.github.io/' + fechaSimpleRecibida;
