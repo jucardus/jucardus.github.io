@@ -196,6 +196,8 @@
     }
     function subrayar (temaSubrayar) {
       var fondoNoClicados = '4px solid White';
+        document.getElementByClassName('temas').style.borderBottom = fondoNoClicados;
+      /*
         document.getElementById('inicio').style.borderBottom = fondoNoClicados;
         document.getElementById('apotegmas').style.borderBottom = fondoNoClicados;
         document.getElementById('citas').style.borderBottom = fondoNoClicados;
@@ -208,6 +210,7 @@
         document.getElementById('vocabulario').style.borderBottom = fondoNoClicados;
         document.getElementById('aclaraciones').style.borderBottom = fondoNoClicados;
         document.getElementById('autor').style.borderBottom = fondoNoClicados;
+        */
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       if (temaSubrayar == 'sinónimos') {temaSubrayar = 'sinonimos';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
