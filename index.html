@@ -249,12 +249,6 @@
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
-      
-      const nextURL = 'https://jucardus.github.io/';
-      const nextTitle = 'My new page title';
-      const nextState = { additionalInformation: 'Updated the URL with JS' };
-      window.history.replaceState(nextState, nextTitle, nextURL);
-      
     }
     function mostrarBuscador () {
       document.getElementById('buscador').style.display = 'block';
@@ -311,6 +305,10 @@
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
       window.scrollTo(0, 0);
+      const nextURL = 'https://jucardus.github.io/';
+      const nextTitle = 'My new page title';
+      const nextState = { additionalInformation: 'Updated the URL with JS' };
+      window.history.replaceState(nextState, nextTitle, nextURL);
     }
   </script>
 </body>
