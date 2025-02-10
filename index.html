@@ -27,17 +27,14 @@
         padding: 0px 2px 140px 2px !important;
       }
     }
-    /*
-    a.temas:link, a.temas:visited, a.temas:active {
-      color: #105080;
-      font-weight: bold;
+    a.enlacista:link, a.enlacista:visited, a.enlacista:active {
+      color: Green;
       text-decoration: none;
     }
-    a.temas:hover {
+    a.enlacista:hover {
       color: OrangeRed;
       text-decoration: none;
     }
-    */
     body {
       font-family: 'Times New Roman', serif;
       font-size: 120%;
@@ -178,7 +175,10 @@
           var cntnd = linea[2];
             var cntnd = ' — ' + cntnd;
           var enlc = linea[3];
-            if (enlc != '') {var enlc = ' — ' + enlc;}
+            if (enlc != '') {
+              var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+              var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+            } else {enlc = '';}
           var fch = linea[4];
             var fch = ' <span class="fecha">  — ' + fch?.slice(2) + '</span>';
           var nuevaLinea = nmr + tm + cntnd + enlc + fch;
