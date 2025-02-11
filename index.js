@@ -223,5 +223,5 @@ function buscar (recibidoDireccion) {
 function copiarEnlace (fechaSimpleRecibida) {
   var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
   navigator.clipboard.writeText(urlFecha);
-  buscar(fechaSimpleRecibida);
+  //buscar(fechaSimpleRecibida);
 }
