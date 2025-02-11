@@ -70,7 +70,7 @@
       color: Blue;
     }
     h3.titulos {
-      margin-bottom: 0px;
+      margin-bottom: 3px;
       margin-top: 40px!important;
     }
     input {
@@ -200,7 +200,7 @@
               var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
             } else {enlc = '';}
           var cntnd = linea[3];
-            var cntnd = cntnd.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+            var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
             var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
           var imgn = linea[5];
           var fch = linea[6];
