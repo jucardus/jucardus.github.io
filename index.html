@@ -219,6 +219,7 @@
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar('inicio');
@@ -289,6 +290,7 @@
       }
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
@@ -369,6 +371,7 @@
       }
       var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
       if (enviar.indexOf('<') == -1) {enviar = '&#12288;<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscar').value = '';
