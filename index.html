@@ -276,7 +276,17 @@
     }
     function buscar (recibidoDireccion) {
       let lema = document.getElementById("buscar").value.toUpperCase();
-      if (recibidoDireccion != '') {lema = direccion.toUpperCase();}
+      if (recibidoDireccion != '') {
+        lema = direccion
+          .replace(/%C3%A1/g,'Á')
+          .replace(/%C3%A9/g,'É')
+          .replace(/%C3%AD/g,'Í')
+          .replace(/%C3%B3/g,'Ó')
+          .replace(/%C3%BA/g,'Ú')
+          .replace(/%C3%BC/g,'Ü')
+          .replace(/%C3%B1/g,'Ñ')
+          .toUpperCase();
+      }
       var recibido = texto;
       var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
