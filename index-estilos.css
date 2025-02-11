@@ -45,7 +45,7 @@ button#boton {
   cursor: pointer;
 }
 .fecha {
-  color: Gainsboro;
+  color: SlateGray;
   font-size: 85%;
 }
 .fecha:hover {
