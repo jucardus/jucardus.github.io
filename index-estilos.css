@@ -99,7 +99,7 @@ li {
   font-weight: bold;
 }
 .temas:hover {
-  color: Orange;
+  color: DarkOrange;
   cursor: pointer;
 }
 #temas {
