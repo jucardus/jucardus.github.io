@@ -132,7 +132,7 @@ function segunTema (temaRecibido) {
   window.scrollTo(0, 0);
 }
 function subrayar (temaSubrayar) {
-  var fondoNoClicados = '4px solid #f3f3f3';
+  var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
   for (let i = 0; i < temasTodos.length; i++) {
     temasTodos[i].style.borderBottom = fondoNoClicados;
@@ -209,7 +209,7 @@ function buscar (recibidoDireccion) {
   document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscar').value = '';
   document.getElementById('buscador').style.display = 'none';
-  var fondoNoClicados = '4px solid #f3f3f3';
+  var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
   for (let i = 0; i < temasTodos.length; i++) {
     temasTodos[i].style.borderBottom = fondoNoClicados;
