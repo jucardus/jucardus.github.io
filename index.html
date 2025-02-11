@@ -134,7 +134,7 @@
     }
   </style>
 </head>
-<body onload='inicio()'>
+<body onload='hacer()'>
   <h1>Jucardus.com</h1>
   <div id='temas'>
     <span class='temas' id='inicio' onclick='inicio()'>Inicio</span> ·
@@ -161,7 +161,7 @@
   <script>
     let texto = '';
     let direccion = '';
-    function inicio () {
+    function hacer () {
       direccion = window.location.href.replace(/.*io\/\?=/g,'');
         if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
           let str1 = '-'; let str2 = ' '; let str3 = ':';
@@ -173,10 +173,10 @@
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
-        formateo(textString);
+        inicio(textString);
       });
     }
-    function formateo (recibido) {
+    function inicio (recibido) {
       texto = recibido;
       var contador = 0;
       var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
