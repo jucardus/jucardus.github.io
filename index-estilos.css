@@ -45,8 +45,8 @@ button#boton {
   cursor: pointer;
 }
 .fecha {
+  color: #ddd;
   font-size: 85%;
-  opacity: 0.5;
 }
 .fecha:hover {
   cursor: pointer;
