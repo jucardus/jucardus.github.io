@@ -146,8 +146,8 @@
     <span class='temas' id='poesia' onclick='segunTema("poesía")'>Poesía</span> ·
     <span class='temas' id='reflexiones' onclick='segunTema("reflexiones")'>Reflexiones</span> ·
     <span class='temas' id='vocabulario' onclick='segunTema("vocabulario")'>Vocabulario</span> ·
-    <span class='temas' id='aclaraciones' onclick='aclaraciones()' style='border-bottom: 0.5px solid Orange;'>Aclaraciones</span> ·
-    <span class='temas' id='autor' onclick='autor()' style='border-bottom: 0.5px solid Orange;'>Autor</span> ·
+    <span class='temas' id='aclaraciones' onclick='aclaraciones()'><u>Aclaraciones</u></span> ·
+    <span class='temas' id='autor' onclick='autor()'><u>Autor</u></span> ·
     <span class='temas' id='lupa' onclick='mostrarBuscador()'>🔍</span>
   </div>
   <div id="buscador">
@@ -233,8 +233,6 @@
       document.getElementById('mostrar').innerHTML = contenidoAutor;
       subrayar('autor');
       document.getElementById('buscador').style.display = 'none';
-      document.getElementById('aclaraciones').style.borderBottom = '1px solid Orange';
-      document.getElementById('autor').style.borderBottom = '1px solid Orange';
       window.scrollTo(0, 0);
     }
     function aclaraciones() {
@@ -242,8 +240,6 @@
       document.getElementById('mostrar').innerHTML = aclaraciones;
       subrayar('aclaraciones');
       document.getElementById('buscador').style.display = 'none';
-      document.getElementById('aclaraciones').style.borderBottom = '1px solid Orange';
-      document.getElementById('autor').style.borderBottom = '1px solid Orange';
       window.scrollTo(0, 0);
     }
     function segunTema (temaRecibido) {
@@ -303,8 +299,6 @@
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
-      document.getElementById('aclaraciones').style.borderBottom = '1px solid Orange';
-      document.getElementById('autor').style.borderBottom = '1px solid Orange';
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
     }
