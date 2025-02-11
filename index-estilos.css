@@ -103,7 +103,11 @@ li {
   cursor: pointer;
 }
 #temas {
+  background-color: White;
   line-height: 1.5;
+  padding: 2px 0px 3px 0px;
+  position: sticky;
+  top: 0;
 }
 ul {
   margin-left: -15px;
