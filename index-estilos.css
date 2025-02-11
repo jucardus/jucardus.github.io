@@ -1,0 +1,110 @@
+@media only screen and (max-device-width: 480px) {
+  body {
+    padding: 0px 2px 140px 2px !important;
+  }
+}
+a.enlacista:link, a.enlacista:visited, a.enlacista:active {
+  color: Green;
+  text-decoration: none;
+}
+a.enlacista:hover {
+  color: OrangeRed;
+  text-decoration: none;
+}
+body {
+  background-color: #f3f3f3;
+  font-family: 'Times New Roman', serif;
+  font-size: 120%;
+  letter-spacing: 0.3px;
+  padding: 25px 20% 160px 20%;
+}
+#buscador {
+  margin-left: 10px;
+  margin-top: 20px;
+  display: none;
+}
+button#boton {
+  font-size: 104%;
+  padding: 5px;
+  display: none;
+}
+#clasificacion {
+  margin-left: 10px;
+}
+#entrada {
+  /*border: 1px solid #ccc;*/
+  /*border-radius: 15px;*/
+  /*padding: 5px;*/
+  margin-bottom: 45px;
+}
+.etiquetas {
+  color: #105080;
+}
+.etiquetas:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+.fecha {
+  font-size: 85%;
+  opacity: 0.5;
+}
+.fecha:hover {
+  cursor: pointer;
+  color: Blue;
+}
+h3.titulos {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+input {
+  border: 2px dotted Silver;
+  border-radius: 4px;
+  color: #222;
+  font-family: monospace, sans-serif;
+  font-size: 90%;
+  letter-spacing: 0.1px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-top: 4px;
+}
+li {
+  padding-bottom: 8px;
+}
+#mostrar {
+  margin-top: 35px;
+}
+.numeros {
+  color: Green;
+  text-decoration: none;
+}
+.numeros:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+#pie {
+}
+::placeholder {
+  color: DarkTurquoise;
+  text-align: right;
+}
+.qr {
+  width: 90px;
+}
+#qr {
+  margin-top: 35px;
+  text-align: center;
+}
+.temas {
+  color: #105080;
+  font-weight: bold;
+}
+.temas:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+#temas {
+  line-height: 1.5;
+}
+ul {
+  margin-left: -15px;
+}
