@@ -297,6 +297,8 @@
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
       if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
+      document.getElementById('aclaraciones').style.borderBottom = '1px solid Orange';
+      document.getElementById('autor').style.borderBottom = '1px solid Orange';
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
     }
@@ -359,7 +361,7 @@
               var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
             var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
             resultadoBusca.push(nuevaLineaBusca);
-        }
+            }
       }
       var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
