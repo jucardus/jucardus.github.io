@@ -109,7 +109,7 @@ li {
   padding: 2px 0px 0px 0px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  /*z-index: 1;*/
 }
 ul {
   margin-left: -15px;
