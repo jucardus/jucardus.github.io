@@ -178,17 +178,20 @@
             }
           var tm = linea[1];
             var tm = '<span class="temas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')"><b>' + tm + '</b></span>';
+          var ttl = linea[2];
+            if (linea[2] == '') {ttl = linea[3]?.slice(0,39);}
+            var ttl = '</3>' + ttl + '</3>';
           var cntnd = linea[3];
-            var cntnd = ' — ' + cntnd;
           var enlc = linea[4];
             if (enlc != '') {
               var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
               var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
             } else {enlc = '';}
+          var imgn = linea[5];
           var fch = linea[6];
             var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
-          var nuevaLinea = nmr + tm + cntnd + enlc + fch;
+          var nuevaLinea = ttl + nmr + tm + fch + cntnd + enlc + imgn;
           if (tm != '<b>undefined</b>') {
             resultado.push(nuevaLinea);
             contador = contador + 1;
