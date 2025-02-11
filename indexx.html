@@ -326,34 +326,41 @@
           .toUpperCase();
       }
       var recibido = texto;
-      var recibido = recibido.replace(/,T,C,E,F\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
       var resultadoBusca = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
       for (var i = 0; i < arrayContenido.length; i++) {
         if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
-          var linea = arrayContenido[i].split(',');
-            var nmr = linea[0];
-              var fechaSimple = 'jucardus.github.io/' + linea[4]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-              if (linea[3] == '') {
-                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2]?.slice(0,200) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
-              }
-              if (linea[3] != '') {
-                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + linea[3] + '%0A%0A@jucardus%20%23">' + nmr + '</a> • ';
-              }
-            var tm = linea[1];
-              var tm = '<b>' + tm + '</b>';
-            var cntnd = linea[2];
-              var cntnd = ' — ' + cntnd;
-            var enlc = linea[3];
-              if (enlc != '') {
-                var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
-                var enlc = ' — <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
-              } else {enlc = '';}
-            var fch = linea[4];
-              var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-              var fch = ' <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">  — ' + fch?.slice(2) + '</span>';
-            var nuevaLineaBusca = nmr + tm + cntnd + enlc + fch;
+
+        var linea = arrayContenido[i].split(',');
+          var nmr = linea[0];
+            var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            if (linea[4] == '') {
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,200) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+            }
+            if (linea[4] != '') {
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+            }
+          var tm = linea[1];
+            var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var ttl = linea[2];
+            if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+            var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+          var enlc = linea[4];
+            if (enlc != '') {
+              var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+              var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+            } else {enlc = '';}
+          var cntnd = linea[3];
+            var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+            var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+          var imgn = linea[5];
+          var fch = linea[6];
+            var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+          var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+
             resultadoBusca.push(nuevaLineaBusca);
         }
       }
