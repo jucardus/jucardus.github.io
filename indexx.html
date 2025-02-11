@@ -67,7 +67,7 @@
       color: Blue;
     }
     h3.titulos {
-      margin-bottom: -20px;
+      margin-bottom: -10px;
     }
     input {
       border: 2px dotted Silver;
@@ -202,7 +202,7 @@
           var fch = linea[6];
             var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = ' • <span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-          var nuevaLinea = ttl + nmr + tm + fch + cntnd + enlc + imgn;
+          var nuevaLinea = ttl + '<div id="clasificacion">' + nmr + tm + fch + '</div>' + cntnd + enlc + imgn;
           if (tm != '<b>undefined</b>') {
             resultado.push(nuevaLinea);
             contador = contador + 1;
