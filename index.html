@@ -145,7 +145,7 @@
           let idx2 = 5; direccion = direccion.substring(0, idx2) + str1 + direccion.substring(idx2);
           let idx3 = 8; direccion = direccion.substring(0, idx3) + str2 + direccion.substring(idx3);
           let idx4 = 11; direccion = direccion.substring(0, idx4) + str3 + direccion.substring(idx4);
-        } else {direccion = direccion.toUpperCase();}
+        } else {direccion = '';}
       fetch('= JUCARDUS =_= contenido =.csv')
       .then(response => response.text()) 
       .then(textString => {
