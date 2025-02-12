@@ -206,7 +206,7 @@ function buscar (recibidoDireccion) {
   var enviar = resultadoBusca.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
     var enviar = enviar.replace(/ŧ/g,', ');
-  if (enviar.indexOf('<') == -1) {enviar = '&#12288;<div id="ninguna">[ ninguna coincidencia ]</div>';}
+  if (enviar.indexOf('<') == -1) {enviar = '<div id="ninguna">&#12288;[ ninguna coincidencia ]</div>';}
   document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscar').value = '';
   document.getElementById('buscador').style.display = 'none';
