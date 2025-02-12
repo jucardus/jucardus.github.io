@@ -1,4 +1,7 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). - [s.] Persona de ojos azulados.",,,2025-02-12 14:42
+205,Vocabulario inglés-español,drool [v.],drool [v.] babear,,,2025-02-12 14:40
+204,Citas,,"Recordad el pasado con gratitud, vivid el presente con entusiasmo y mirad hacia el futuro con confianza. – Juan Pablo II",,,2025-02-12 14:38
 203,Apotegmas,,"Cuando alguien cuestione tus convicciones acerca de Dios, no le respondas con sinsentidos filosóficos, historicistas, teológicos y seudoreligiosos. La solución es ser humilde de verdad y expresar con simpleza la única verdad con fundamento: Es un asunto de fe.",,,2025-02-12 13:14
 202,Apotegmas,,Hay quien escupe al cielo para sentirse bendecido con la lluvia de Dios.,,,2025-02-11 20:38
 201,Reflexiones,,"Bajo la palabra Dios se hace alusión a más variedad de cosas que lo que piensas. Si el contenido de esa palabra en ti es el equivocado, estarás adorando a un falso dios, lo cual es idolatría sin importar si haces una estátua de él o no, pero mucho más si la haces. Tacto, cautela.",,,2025-02-11 20:36
