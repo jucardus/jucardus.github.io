@@ -508,7 +508,7 @@
       var enviar = resultado.join('');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
-      document.getElementById('mostrar').innerHTML = enviar + '<p><br/>';
+      document.getElementById('mostrar').innerHTML = '<span style="padding-bottom: 30px">' + enviar + '</span>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('az');
       window.scrollTo(0, 0);
@@ -545,7 +545,7 @@
       var enviar = desordenar(resultado).slice(9,12).join('');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
-      document.getElementById('mostrar').innerHTML = enviar + '<p><br/>';
+      document.getElementById('mostrar').innerHTML = '<span style="padding-bottom: 30px">' + enviar + '</span>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('azar');
       window.scrollTo(0, 0);
