@@ -66,6 +66,7 @@ h3.titulos {
 }
 h3.titulos:hover {
   color: OrangeRed;
+  cursor: pointer;
 }
 hr {
   width: 30%
