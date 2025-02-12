@@ -1,6 +1,6 @@
 let texto = '';
 let direccion = '';
-function inicio () {
+function hacer () {
   direccion = window.location.href.replace(/.*io\/\?=/g,'');
     if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
       let str1 = '-'; let str2 = ' '; let str3 = ':';
