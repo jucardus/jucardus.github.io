@@ -512,13 +512,12 @@
       var enviar = resultado.join('');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
-      document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + enviar + '</div>';
+      document.getElementById('mostrar').innerHTML = '<div id="azarAZ">Total de entradas: ' + contador + '<p>' + enviar + '</div>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('az');
       window.scrollTo(0, 0);
     }
     function azar () {
-      var contador = 0;
       var recibido = texto;
       var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
@@ -544,7 +543,6 @@
             var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
           var nuevaLinea = '<div id="entradaAzarAZ">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
           resultado.push(nuevaLinea);
-          contador = contador + 1;
       }
       var enviar = desordenar(resultado).slice(9,12).join('');
       var enviar = enviar.replace(/ŧ /g,', ');
