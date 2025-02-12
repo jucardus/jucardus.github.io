@@ -62,8 +62,6 @@ h3.titulos {
   margin-top: 3px;
 }
 hr {
-  margin: 10px 0px 20px 0px;
-  text-align: center;
   width: 30%
 }
 input {
@@ -79,6 +77,10 @@ input {
 }
 li {
   padding-bottom: 8px;
+}
+#linea {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 #mostrar {
   margin-top: 35px;
