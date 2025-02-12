@@ -142,6 +142,7 @@ function subrayar (temaSubrayar) {
   document.getElementById('buscador').style.display = 'none';
 }
 function mostrarBuscador () {
+  document.getElementById('mostrar').innerHTML = '';
   document.getElementById('buscador').style.display = 'block';
   document.getElementById('buscar').focus();
 }
@@ -205,7 +206,7 @@ function buscar (recibidoDireccion) {
   var enviar = resultadoBusca.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
     var enviar = enviar.replace(/ŧ/g,', ');
-  if (enviar.indexOf('<') == -1) {enviar = '&#12288;<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
+  if (enviar.indexOf('<') == -1) {enviar = '&#12288;<span class="ninguna">[ ninguna coincidencia ]</span>';}
   document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscar').value = '';
   document.getElementById('buscador').style.display = 'none';
