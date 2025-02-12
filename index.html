@@ -508,10 +508,10 @@
             var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
           var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-          //if (ttl != '<h3 class="titulos">undefined</h3>') {
+          if (nuevaLinea.indexOf("'undefined'") == -1) {
             resultado.push(nuevaLinea);
             contador = contador + 1;
-          //}
+          }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
       var enviar = resultado.join('');
@@ -547,7 +547,9 @@
             var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
           var nuevaLinea = '<div id="entradaAzarAZ">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-          resultado.push(nuevaLinea);
+          if (nuevaLinea.indexOf("'undefined'") == -1) {
+            resultado.push(nuevaLinea);
+          }
       }
       var enviar = desordenar(resultado).slice(9,12).join('');
       var enviar = enviar.replace(/ŧ /g,', ');
