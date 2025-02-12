@@ -139,37 +139,37 @@ function copiarEnlace (fechaSimpleRecibida) {
   navigator.clipboard.writeText(urlFecha);
   //buscar(fechaSimpleRecibida);
 }
-function procesamiento(recibido);
+function procesamiento (recibido) {
   var linea = recibido;
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        if (linea[4] == '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
-        }
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
-      var enlc = linea[4];
-        if (enlc != '') {
-          var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
-          var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
-        } else {enlc = '';}
-      var cntnd = linea[3];
-        var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-        var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-      var imgn = linea[5];
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
-      if (ttl != '<h3 class="titulos">undefined</h3>') {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-          if (contador == 10) {break;}
-      }
+  var nmr = linea[0];
+    var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+    if (linea[4] == '') {
+      var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+    }
+    if (linea[4] != '') {
+      var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+    }
+  var tm = linea[1];
+    var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+  var ttl = linea[2];
+    if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+    var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+  var enlc = linea[4];
+    if (enlc != '') {
+      var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+      var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+    } else {enlc = '';}
+  var cntnd = linea[3];
+    var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+    var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+  var imgn = linea[5];
+  var fch = linea[6];
+    var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+    var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+  var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+  if (ttl != '<h3 class="titulos">undefined</h3>') {
+    resultado.push(nuevaLinea);
+    contador = contador + 1;
+      if (contador == 10) {break;}
+  }
 }
