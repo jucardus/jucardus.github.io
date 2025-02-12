@@ -18,8 +18,148 @@
     <meta name = "author" content = "Julio Cárdenas Pelizzari" />
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="stylesheet" href="index-estilos.css">
     <title>JUCARDUS.COM</title>
+    <style>
+      @media only screen and (max-device-width: 480px) {
+        body {
+          padding: 0px 2px 140px 2px !important;
+        }
+      }
+      a.enlacista:link, a.enlacista:visited, a.enlacista:active {
+        color: Green;
+        text-decoration: none;
+      }
+      a.enlacista:hover {
+        color: OrangeRed;
+        text-decoration: none;
+      }
+      body {
+        background-color: White;
+        font-family: 'Times New Roman', serif;
+        font-size: 120%;
+        letter-spacing: 0.3px;
+        padding: 15px 22% 160px 22%;
+      }
+      #buscador {
+        margin-left: 10px;
+        margin-top: 20px;
+        display: none;
+      }
+      button#boton {
+        font-size: 104%;
+        padding: 5px;
+        display: none;
+      }
+      #clasificacion {
+        margin-left: 10px;
+      }
+      #entrada {
+        /*border: 1px solid #ccc;*/
+        /*border-radius: 15px;*/
+        /*padding: 5px;*/
+        margin-bottom: 45px;
+      }
+      .etiquetas {
+        color: #105080;
+      }
+      .etiquetas:hover {
+        color: OrangeRed;
+        cursor: pointer;
+      }
+      .fecha {
+        color: SlateGray;
+        font-size: 85%;
+      }
+      .fecha:hover {
+        cursor: pointer;
+        color: Blue;
+      }
+      #footer {
+        background-color: #efd;
+        border-radius: 10px;
+        padding: 0px 5px 0px 5px;
+      }
+      h3.aclaraciones {
+        padding-top: 3px;
+      }
+      h3.titulos {
+        margin-bottom: 3px;
+        margin-top: 3px;
+      }
+      h3.titulos:hover {
+        color: OrangeRed;
+        cursor: pointer;
+      }
+      hr {
+        width: 30%
+      }
+      input {
+        border: 2px dotted Silver;
+        border-radius: 4px;
+        color: #222;
+        font-family: monospace, sans-serif;
+        font-size: 90%;
+        letter-spacing: 0.1px;
+        padding: 2px;
+        padding-left: 5px;
+        padding-top: 4px;
+      }
+      li {
+        padding-bottom: 8px;
+      }
+      #linea {
+        margin: 0px 0px 30px 0px;
+        text-align: center;
+      }
+      #mostrar {
+        margin-top: 35px;
+      }
+      #ninguna {
+        color: OrangeRed;
+        margin-bottom: 25px;
+      }
+      .numeros {
+        color: Green;
+        text-decoration: none;
+      }
+      .numeros:hover {
+        color: OrangeRed;
+        cursor: pointer;
+      }
+      #pie {
+      }
+      ::placeholder {
+        color: DarkTurquoise;
+        text-align: right;
+      }
+      .qr {
+        width: 90px;
+      }
+      #qr {
+        margin-top: 35px;
+        text-align: center;
+      }
+      .temas {
+        color: #105080;
+        font-weight: bold;
+      }
+      .temas:hover {
+        color: DarkOrange;
+        cursor: pointer;
+      }
+      #temas {
+        background-color: White;
+        border-bottom: 4px solid Green;
+        line-height: 1.5;
+        padding: 2px 0px 3px 0px;
+        position: sticky;
+        top: 0;
+        /*z-index: 1;*/
+      }
+      ul {
+        margin-left: -15px;
+      }
+    </style>
   </head>
 <body onload='inicio ()'>
   <h1>Jucardus.com</h1>
@@ -68,6 +208,282 @@
       </ul>
   </div>
   <div id='qr'><img class='qr' src='qr.png'></img></div>
-  <script src="index.js"></script>  
+  <script>
+    let texto = '';
+    let direccion = '';
+    function inicio () {
+      direccion = window.location.href.replace(/.*io\/\?=/g,'');
+        if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
+          let str1 = '-'; let str2 = ' '; let str3 = ':';
+          let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
+          let idx2 = 5; direccion = direccion.substring(0, idx2) + str1 + direccion.substring(idx2);
+          let idx3 = 8; direccion = direccion.substring(0, idx3) + str2 + direccion.substring(idx3);
+          let idx4 = 11; direccion = direccion.substring(0, idx4) + str3 + direccion.substring(idx4);
+        } else {}
+      fetch('index.txt')
+      .then(response => response.text()) 
+      .then(textString => {
+        formateo(textString);
+      });
+    }
+    function formateo (recibido) {
+      texto = recibido;
+      var contador = 0;
+      var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      var resultado = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        var linea = arrayContenido[i].split(',');
+          var nmr = linea[0];
+            var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            if (linea[4] == '') {
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+            }
+            if (linea[4] != '') {
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+            }
+          var tm = linea[1];
+            var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var ttl = linea[2];
+            if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+            var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...') + '</h3>';
+          var enlc = linea[4];
+            if (enlc != '') {
+              var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+              var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+            } else {enlc = '';}
+          var cntnd = linea[3];
+            var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+            var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+          var imgn = linea[5];
+          var fch = linea[6];
+            var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+          var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+          if (ttl != '<h3 class="titulos">undefined</h3>') {
+            resultado.push(nuevaLinea);
+            contador = contador + 1;
+              if (contador == 10) {break;}
+          }
+      }
+      var enviar = resultado.join('<p>');
+        var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
+      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
+      subrayar('inicio');
+      window.scrollTo(0, 0);
+      if (direccion != '' && direccion.indexOf('jucardus') == -1) {
+        buscar(direccion);
+      }
+    }
+    function autor() {
+      var contenidoAutor = "<ul><li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li><li><b>Contacto:</b> jucardus en gmail punto com</li><li><b>Donaciones:</b> pp.jucardus.com</li><li><b>Invitación a pCloud:</b> i.jucardus.com</li><li><b>Facebook:</b> fb.jucardus.com</li><li><b>X Twitter:</b> x.jucardus.com</li></ul>";
+      document.getElementById('mostrar').innerHTML = contenidoAutor;
+      subrayar('autor');
+      document.getElementById('buscador').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+    function aclaraciones() {
+      var aclaraciones = "<ul><li>La página de inicio, y todas las etiquetas o temas, muestran las diez entradas más recientes.</li><li>Clica en la lupa para buscar entre todas las entradas del sitio, sin límite de coincidencias. El mínimo de caracteres de búsqueda es dos.</li><li>Clica en los números verdes debajo de los títulos para compartir la entrada en X Twitter.</li><li>Para copiar el enlace a una entrada en particular, clica en la fecha en color gris debajo del título correspondiente.</li><li>Si deseas hacer comentarios, críticas o correcciones a mi contenido, sírvete escribir a jucardus en gmail punto com.</li></ul>";;
+      document.getElementById('mostrar').innerHTML = aclaraciones;
+      subrayar('aclaraciones');
+      document.getElementById('buscador').style.display = 'none';
+      window.scrollTo(0, 0);
+    }
+    function segunTema (temaRecibido) {
+      var recibido = texto;
+      var contador = 0;
+      var contador = 0;
+      var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      var resultado = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        var linea = arrayContenido[i].split(',');
+          var nmr = linea[0];
+            var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            if (linea[4] == '') {
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+            }
+            if (linea[4] != '') {
+              var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+            }
+          var tm = linea[1];
+            var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var ttl = linea[2];
+            if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+            var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...') + '</h3>';
+          var enlc = linea[4];
+            if (enlc != '') {
+              var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+              var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+            } else {enlc = '';}
+          var cntnd = linea[3];
+            var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+            var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+          var imgn = linea[5];
+          var fch = linea[6];
+            var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+          var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+          if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
+            resultado.push(nuevaLinea);
+            contador = contador + 1;
+              if (contador == 10) {break;}
+          }
+      }
+      var enviar = resultado.join('<p>');
+        var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
+      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
+      subrayar(temaRecibido);
+      window.scrollTo(0, 0);
+    }
+    function subrayar (temaSubrayar) {
+      var fondoNoClicados = '4px solid White';
+      const temasTodos = document.getElementsByClassName('temas');
+      for (let i = 0; i < temasTodos.length; i++) {
+        temasTodos[i].style.borderBottom = fondoNoClicados;
+      }
+      if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
+      document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
+      document.getElementById('buscador').style.display = 'none';
+    }
+    function mostrarBuscador () {
+      document.getElementById('mostrar').innerHTML = '';
+      document.getElementById('buscador').style.display = 'block';
+      document.getElementById('buscar').focus();
+    }
+    function teclaBuscar (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        buscar('');
+      }
+    }
+    function buscar (recibidoDireccion) {
+      let lema = document.getElementById("buscar").value.toUpperCase();
+      if (recibidoDireccion != '') {
+        lema = direccion
+          .replace(/%C3%A1/g,'Á')
+          .replace(/%C3%A9/g,'É')
+          .replace(/%C3%AD/g,'Í')
+          .replace(/%C3%B3/g,'Ó')
+          .replace(/%C3%BA/g,'Ú')
+          .replace(/%C3%BC/g,'Ü')
+          .replace(/%C3%B1/g,'Ñ')
+          .replace(/%20/g,' ')
+          .toUpperCase();
+      }
+      var recibido = texto;
+      var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      var resultadoBusca = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
+          var linea = arrayContenido[i].split(',');
+            var nmr = linea[0];
+              var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+              if (linea[4] == '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+              }
+              if (linea[4] != '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+              }
+            var tm = linea[1];
+              var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+            var ttl = linea[2];
+              if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+              var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...') + '</h3>';
+            var enlc = linea[4];
+              if (enlc != '') {
+                var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+                var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+              } else {enlc = '';}
+            var cntnd = linea[3];
+              var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+              var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+            var imgn = linea[5];
+            var fch = linea[6];
+              var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+              var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+            var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+            resultadoBusca.push(nuevaLineaBusca);
+            }
+      }
+      var enviar = resultadoBusca.join('<p>');
+        var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
+      if (enviar.indexOf('<') == -1) {enviar = '<div id="ninguna">&#12288;[ ninguna coincidencia ]</div>';}
+      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscar').value = '';
+      document.getElementById('buscador').style.display = 'none';
+      var fondoNoClicados = '4px solid White';
+      const temasTodos = document.getElementsByClassName('temas');
+      for (let i = 0; i < temasTodos.length; i++) {
+        temasTodos[i].style.borderBottom = fondoNoClicados;
+      }
+      window.scrollTo(0, 0);
+      const nextURL = 'https://jucardus.github.io/';
+      const nextTitle = 'My new page title';
+      const nextState = { additionalInformation: 'Updated the URL with JS' };
+      window.history.replaceState(nextState, nextTitle, nextURL);
+    }
+    function copiarEnlace (fechaSimpleRecibida) {
+      var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
+      navigator.clipboard.writeText(urlFecha);
+    }
+    function mostrarUnico (lema) {
+      texto = texto.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'').replace(/\n/g,'¶¶¶¶¶');
+      var resultadoBusca = [];
+      var arrayContenido = texto.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
+          var linea = arrayContenido[i].split(',');
+            var nmr = linea[0];
+              var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+              if (linea[4] == '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+              }
+              if (linea[4] != '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+              }
+            var tm = linea[1];
+              var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+            var ttl = linea[2];
+              if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+              var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+            var enlc = linea[4];
+              if (enlc != '') {
+                var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+                var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+              } else {enlc = '';}
+            var cntnd = linea[3];
+              var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+              var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+            var imgn = linea[5];
+            var fch = linea[6];
+              var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+              var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+            var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+            resultadoBusca.push(nuevaLineaBusca);
+            }
+      }
+      var enviar = resultadoBusca.join('<p>');
+        var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
+      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
+      var fondoNoClicados = '4px solid White';
+      const temasTodos = document.getElementsByClassName('temas');
+      for (let i = 0; i < temasTodos.length; i++) {
+        temasTodos[i].style.borderBottom = fondoNoClicados;
+      }
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 </html>
