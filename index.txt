@@ -1,4 +1,5 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+203,Apotegmas,,"Cuando alguien cuestione tus convicciones acerca de Dios, no le respondas con sinsentidos filosóficos, historicistas, teológicos y seudoreligiosos. La solución es ser humilde de verdad y expresar con simpleza la única verdad con fundamento: Es un asunto de fe.",,,2025-02-12 13:14
 202,Apotegmas,,Hay quien escupe al cielo para sentirse bendecido con la lluvia de Dios.,,,2025-02-11 20:38
 201,Reflexiones,,"Bajo la palabra Dios se hace alusión a más variedad de cosas que lo que piensas. Si el contenido de esa palabra en ti es el equivocado, estarás adorando a un falso dios, lo cual es idolatría sin importar si haces una estátua de él o no, pero mucho más si la haces. Tacto, cautela.",,,2025-02-11 20:36
 200,Vocabulario inglés-español,lecherous [adj.],"lecherous [adj.] lascivo, lujurioso, libidinoso, licencioso",,,2025-02-11 20:33
@@ -27,8 +28,8 @@
 177,Vocabulario inglés-español,pinprick [s.],pinprick [s.] pinchazo; alfilerazo; puntada; agujerito; pequeño inconveniente; pequeña molestia; irritación,,,2025-01-31 10:00
 176,Apotegmas,,Los cielos se oscurecen para que Dios resplandezca más.,,,2025-01-30 11:25
 175,Vocabulario inglés-español,and whatnot [loc.],"and whatnot [loc.] y demás; y etcétera; y esas cosas; y cosas por el estilo — <i>Bring some snacks, cookies and whatnot to the party.</i>",,,2025-01-30 10:56
-174,Vocabulario español,"llovizna, lloviznar","SINÓNIMOS ¶ llovizna, lloviznar; mollina, mollinear; mollizna, molliznar, molliznear; pintear; garúa, garuar",,,2025-01-30 10:55
-173,Vocabulario español,atisbo [m.],"SINÓNIMOS ¶ atisbo [m.] barrunto, conjetura, destello, índice (indicio), indicio, presunción, reflejo, señal, vislumbre",,,2025-01-30 10:54
+174,Vocabulario español,"llovizna, lloviznar","SINÓNIMOS: llovizna, lloviznar; mollina, mollinear; mollizna, molliznar, molliznear; pintear; garúa, garuar",,,2025-01-30 10:55
+173,Vocabulario español,atisbo [m.],"SINÓNIMOS: atisbo [m.] barrunto, conjetura, destello, índice (indicio), indicio, presunción, reflejo, señal, vislumbre",,,2025-01-30 10:54
 172,Vocabulario español,tomar alguien el tole [loc.coloq.],tomar alguien el tole [loc.coloq.] Partir apresuradamente.,,,2025-01-30 10:49
 171,Vocabulario inglés-español,bedding [s.],"bedding [s.] ropa de cama; sábanas; prendas de cama — He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.",,,2025-01-30 10:06
 170,Vocabulario inglés-español,gilded [adj.],"gilded [adj.] dorado (recubierto de oro) — A collection of textile samples lay spread out on the table—Samsa was a travelling salesman—and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.",,,2025-01-30 10:02
@@ -78,7 +79,7 @@
 126,Reflexiones,,"La pregunta no es cómo puedes probar que Dios existe; la pregunta es cómo puedes probar que tú existes. Una vez que logres responder esto, no tendrás dudas respecto de lo primero.",,,2025-01-20 09:22
 125,Reflexiones,,"¿Sabías que puedes idolatrar a Dios? No lo hagas, porque no es compatible con su naturaleza ni con la naturaleza humana. Más bien, céntrate por completo en su amor.",,,2025-01-20 09:20
 124,Apotegmas,,"Si no sirves a Dios con lo poco que tienes, servirás al Enemigo con lo que te sobra.",,,2025-01-20 09:18
-123,Apotegmas,,"La verdad siempre cambia, pero sigue siendo una; como el árbol que brotó de una semilla, creció y finalmente dio fruto.",,,2025-01-19 22:38
+123,Apotegmas,,"La verdad siempre cambia, pero sigue siendo una; como el árbol que brotó de una semilla, creció y finalmente dio fruto. Pero, a medida que el árbol llega a su desarrollo comapleto, los cambios en él no son tan notorios.",,,2025-01-19 22:38
 122,Reflexiones,,"Ya son unas cuantas las décadas cinematográficas en las que se ha intentado infantilizar la brujería para hacerla pasar como trivial o como un simple juego, con películas diseñadas para difundir las prácticas y hacerlas parte de la cultura.",,,2025-01-19 22:36
 121,Diario,,"Hoy entré a una iglesia muy antigua, católica obviamente, y hacia el final, el sacerdote le dijo a los feligreses que pasaran a recibir el agua bendita. Todos hicieron fila en el pasillo principal de la nave central y a medida que salían les daban el agua a cada uno para llevar.",,,2025-01-17 23:15
 120,Apotegmas,,"Sé un buen patriarca, para que las mujeres no se vean forzadas a fingir empoderamiento y para que no sean usadas por el mundo. ¿Que no tienes los arrestos necesarios? Pídeselos a Dios.",,,2025-01-16 22:48
