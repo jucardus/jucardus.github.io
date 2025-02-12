@@ -1,4 +1,11 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+202,Apotegmas,,Hay quien escupe al cielo para sentirse bendecido con la lluvia de Dios.,,,2025-02-11 20:38
+201,Reflexiones,,"Bajo la palabra Dios se hace alusión a más variedad de cosas que lo que piensas. Si el contenido de esa palabra en ti es el equivocado, estarás adorando a un falso dios, lo cual es idolatría sin importar si haces una estátua de él o no, pero mucho más si la haces. Tacto, cautela.",,,2025-02-11 20:36
+200,Vocabulario inglés-español,lecherous [adj.],"lecherous [adj.] lascivo, lujurioso, libidinoso, licencioso",,,2025-02-11 20:33
+199,Apotegmas,,"La santidad está más allá de los vaivenes entre el bien y el mal; pero cuando dices que el bien y el mal no existen, pierdes la posibilidad de acceder a ella.",,,2025-02-11 20:32
+198,Reflexiones,,Adivina adivinador: ¿En qué se asemejan la verdad y la mentira? En que ambas separan a las personas.,,,2025-02-11 20:30
+197,Reflexiones,,Would you rather be a happy slave or a suffering freeman? Is there an intermediate option to meet your criteria?,,,2025-02-11 20:27
+196,Vocabulario inglés-español,vermin [s.],"vermin [s.] parásito, alimañas — One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. – Metamorphosis, by Franz Kafka. Translated by David Wyllie.",,,2025-02-11 20:23
 195,Apotegmas,,Take it for granted: God cannot forsake you. It's not of his nature. But you can do things that make you forget about him almost forever.,,,2025-02-11 12:32
 194,Enlaces,,música - Johann Sebastian Bach / Variaciones Goldberg,https://youtu.be/i4P6F9-4uq8,,2025-02-10 19:11
 193,Citas,,Foreign aid is taking money from poor people in rich countries and giving it to rich people in poor countries. – Ron Paul,,,2025-02-10 12:09
