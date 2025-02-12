@@ -176,7 +176,7 @@
     <span class='temas' id='poesia' onclick='segunTema("poesía")'>Poesía</span> ·
     <span class='temas' id='reflexiones' onclick='segunTema("reflexiones")'>Reflexiones</span> ·
     <span class='temas' id='vocabulario' onclick='segunTema("vocabulario")'>Vocabulario</span> ·
-    <span>A-Z</span> ·
+    <span class='temas' id='az' onclick='az()'>AZ</span> ·
     <!--span class='temas' id='aclaraciones' onclick='aclaraciones()'>Aclaraciones</span> · -->
     <!--span class='temas' id='autor' onclick='autor()'>Autor</span> · -->
     <span class='temas' id='lupa' onclick='mostrarBuscador()'>🔍</span>
@@ -472,6 +472,43 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
+      window.scrollTo(0, 0);
+    }
+    function az () {
+      var recibido = texto;
+      var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      var resultado = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        var linea = arrayContenido[i].split(',');
+          var nmr = linea[0];
+            var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+              if (linea[4] == '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,108) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+              }
+              if (linea[4] != '') {
+                var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+              }
+          var tm = linea[1];
+            var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var ttl = linea[2];
+            if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+            var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'');
+            var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...') + '</h3>';
+          var fch = linea[6];
+            var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+            var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+          var nuevaLinea = '<!--' + orden + '--><div id="entradaAZ">' + ttl + ' - ' + nmr + ' - ' + tm + ' - ' + fch + '</div>';
+          resultado.push(nuevaLinea);
+      }
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+      var enviar = resultado.join('<p>');
+      var enviar = enviar.replace(/ŧ /g,', ');
+      var enviar = enviar.replace(/ŧ/g,', ');
+      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('buscador').style.display = 'none';
+      subrayar('az');
       window.scrollTo(0, 0);
     }
   </script>
