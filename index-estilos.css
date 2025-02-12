@@ -88,9 +88,9 @@ li {
 #mostrar {
   margin-top: 35px;
 }
-.ninguna {
+#ninguna {
   color: OrangeRed;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 .numeros {
   color: Green;
