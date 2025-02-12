@@ -36,7 +36,7 @@ function formateo (recibido) {
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+        var ttl = '<h3 class="titulos" onclick="\'' + linea[6] + '\'">' + ttl?.replace('....','...') + '</h3>';
       var enlc = linea[4];
         if (enlc != '') {
           var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -225,4 +225,59 @@ function copiarEnlace (fechaSimpleRecibida) {
   var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
   navigator.clipboard.writeText(urlFecha);
   //buscar(fechaSimpleRecibida);
+}
+function mostrarUnico (lema) {
+  /*
+  let str1 = '-'; let str2 = ' '; let str3 = ':';
+  let idx1 = 2; lema = lema.substring(0, idx1) + str1 + lema.substring(idx1);
+  let idx2 = 5; lema = lema.substring(0, idx2) + str1 + lema.substring(idx2);
+  let idx3 = 8; lema = lema.substring(0, idx3) + str2 + lema.substring(idx3);
+  let idx4 = 11; lema = lema.substring(0, idx4) + str3 + lema.substring(idx4);
+  */
+  texto = texto.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'').replace(/\n/g,'¶¶¶¶¶');
+  var resultadoBusca = [];
+  var arrayContenido = texto.split('¶¶¶¶¶');
+  for (var i = 0; i < arrayContenido.length; i++) {
+    if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
+      var linea = arrayContenido[i].split(',');
+        var nmr = linea[0];
+          var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+          if (linea[4] == '') {
+            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,140) + '... ← ' + fechaSimple + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+          }
+          if (linea[4] != '') {
+            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A@jucardus%20%23">' + nmr + '</a>';
+          }
+        var tm = linea[1];
+          var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var ttl = linea[2];
+          if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+          var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+        var enlc = linea[4];
+          if (enlc != '') {
+            var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+            var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+          } else {enlc = '';}
+        var cntnd = linea[3];
+          var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+          var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+        var imgn = linea[5];
+        var fch = linea[6];
+          var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+          var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+        var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+        resultadoBusca.push(nuevaLineaBusca);
+        }
+  }
+  var enviar = resultadoBusca.join('<p>');
+    var enviar = enviar.replace(/ŧ /g,', ');
+    var enviar = enviar.replace(/ŧ/g,', ');
+  document.getElementById('mostrar').innerHTML = enviar;
+  document.getElementById('buscador').style.display = 'none';
+  var fondoNoClicados = '4px solid White';
+  const temasTodos = document.getElementsByClassName('temas');
+  for (let i = 0; i < temasTodos.length; i++) {
+    temasTodos[i].style.borderBottom = fondoNoClicados;
+  }
+  window.scrollTo(0, 0);
 }
