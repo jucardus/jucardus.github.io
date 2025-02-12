@@ -59,6 +59,9 @@
         /*padding: 5px;*/
         margin-bottom: 45px;
       }
+      #entradaAzarAZ {
+        margin-bottom: 0px;
+      }
       .etiquetas {
         color: #105080;
       }
@@ -500,7 +503,7 @@
           var fch = linea[6];
             var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-          var nuevaLinea = '<!--' + orden + '--><div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
+          var nuevaLinea = '<!--' + orden + '--><div id="entradaAzarAZ">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
           resultado.push(nuevaLinea);
           contador = contador + 1;
       }
@@ -538,7 +541,7 @@
           var fch = linea[6];
             var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
             var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-          var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificación">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
+          var nuevaLinea = '<div id="entradaAzarAZ">' + ttl + '<div id="clasificación">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
           resultado.push(nuevaLinea);
           contador = contador + 1;
       }
