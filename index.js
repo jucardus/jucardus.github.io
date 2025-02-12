@@ -17,7 +17,6 @@ function inicio () {
 }
 function formateo (recibido) {
   texto = recibido;
-  var contador = 0;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
@@ -53,8 +52,6 @@ function aclaraciones() {
 }
 function segunTema (temaRecibido) {
   var recibido = texto;
-  var contador = 0;
-  var contador = 0;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
@@ -137,10 +134,10 @@ function buscar (recibidoDireccion) {
 function copiarEnlace (fechaSimpleRecibida) {
   var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
   navigator.clipboard.writeText(urlFecha);
-  //buscar(fechaSimpleRecibida);
 }
 function procesamiento (recibido) {
   var linea = recibido;
+  var contador = 0;
   var nmr = linea[0];
     var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
     if (linea[4] == '') {
