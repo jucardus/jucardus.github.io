@@ -103,7 +103,7 @@ function segunTema (temaRecibido) {
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...') + '</h3>';
       var enlc = linea[4];
         if (enlc != '') {
           var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -186,7 +186,7 @@ function buscar (recibidoDireccion) {
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+          var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...') + '</h3>';
         var enlc = linea[4];
           if (enlc != '') {
             var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -224,16 +224,8 @@ function buscar (recibidoDireccion) {
 function copiarEnlace (fechaSimpleRecibida) {
   var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
   navigator.clipboard.writeText(urlFecha);
-  //buscar(fechaSimpleRecibida);
 }
 function mostrarUnico (lema) {
-  /*
-  let str1 = '-'; let str2 = ' '; let str3 = ':';
-  let idx1 = 2; lema = lema.substring(0, idx1) + str1 + lema.substring(idx1);
-  let idx2 = 5; lema = lema.substring(0, idx2) + str1 + lema.substring(idx2);
-  let idx3 = 8; lema = lema.substring(0, idx3) + str2 + lema.substring(idx3);
-  let idx4 = 11; lema = lema.substring(0, idx4) + str3 + lema.substring(idx4);
-  */
   texto = texto.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'').replace(/\n/g,'¶¶¶¶¶');
   var resultadoBusca = [];
   var arrayContenido = texto.split('¶¶¶¶¶');
@@ -252,7 +244,7 @@ function mostrarUnico (lema) {
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
+          var ttl = '<h3 class="titulosNoClic">' + ttl?.replace('....','...') + '</h3>';
         var enlc = linea[4];
           if (enlc != '') {
             var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
