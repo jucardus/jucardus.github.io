@@ -1,3 +1,5 @@
+¶¶¶¶¶ REDIRECCIONAMIENTOS ¶¶¶¶¶
+
 <!DOCTYPE html>
 <!--▓▓▓ - ▓▓▓-->
 <html>
@@ -5,3 +7,83 @@
 <meta http-equiv="refresh" content="0; url=▓▓▓" />
 </head>
 </html>
+
+¶¶¶¶¶ CARACTERES ¶¶¶¶¶
+
+░▒▓
+═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬
+•••‣‣‣
+⁰¹²³⁴⁵⁶⁷⁸⁹
+≠ --- U+2260 --- %E2%89%A0 --- &#8800;
+Reino de los cielos ≠ Reino de Dios
+✶ %E2%9C%B6 U+2736 &#10038;
+ ↬↹⍨⍩⍣
+ ⍗⍗⍗⍗⍗⍗⍗⍗⍗
+ ！＂＃＄％＆＇（）＊＋，－．／：；＜＝＞？＠［＼］＾＿｛｜｝～
+ ₀₁₂₃₄₅₆₇₈₉
+'• --- %E2%80%A2 --- &#8226; ---U+2022'
+'→ %E2%86%92'
+'┋ %E2%94%8B'
+'✶ --- %E2%9C%B6 --- U+2736'
+'／ --- %EF%BC%8F --- U+FF0F'
+'🏷 %F0%9F%8F%B7'
+'🔍 --- %F0%9F%94%8D --- U+1F50D'
+'🔗 %F0%9F%94%97'
+ ℍℕℙℚℝℤℼℽℾℿ⅀ⅅⅆⅇⅈⅉ
+ 𝑗𝑢𝑐𝑎𝑟𝑑𝑢𝑠
+ 𝒋𝒖𝒄𝒂𝒓𝒅𝒖𝒔
+ 𝒿𝓊𝒸𝒶𝓇𝒹𝓊𝓈
+ 𝓳𝓾𝓬𝓪𝓻𝓭𝓾𝓼
+ 𝖏𝖚𝖈𝖆𝖗𝖉𝖚𝖘
+ 𝘫𝘶𝘤𝘢𝘳𝘥𝘶𝘴
+ 𝚓𝚞𝚌𝚊𝚛𝚍𝚞𝚜
+'– U+2013'
+'— U+2014'
+'𝕏 -- %F0%9D%95%8F -- U+1D54F -- &#120143;'
+ 、。〃〄〆〈〉《》「」『』【】〒〓〔〕〖〗〘〙〚〛〜〝〞〟〠〰
+♩♪♫♬♭♮♯𝄞𝄡𝄚
+gtranslatec.blogspot.com
+𝐠𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐜.𝐛𝐥𝐨𝐠𝐬𝐩𝐨𝐭.𝐜𝐨𝐦
+caracteres | agostos.web.app
+𝗮𝗴𝗼𝘀𝘁𝗼𝘀.𝘄𝗲𝗯.𝗮𝗽𝗽
+caracteres | agostos@mail.com
+𝗮𝗴𝗼𝘀𝘁𝗼𝘀@𝗺𝗮𝗶𝗹.𝗰𝗼𝗺
+caracteres | barra horizontal ―
+― &#8213; \2015
+caracteres | bullet •
+• &#8226; \2022
+caracteres | check ✅
+☑✅✓✔
+caracteres | em dash —
+— &#8212; \2014 &mdash;
+caracteres | espacio chino - Ideographic space
+=　=
+&#12288;
+\3000
+、
+caracteres | Fullwith Marks
+！＂＃＄％＆＇（）＊＋，－．／０１２３４５６７８９：；＜＝＞？＠［＼］＾＿｀｛｜｝～｟｠｡｢｣､･ｰﾞﾟ
+caracteres | Ideographic description
+⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻
+caracteres | jeringa 💉
+💉☠️💉💀
+caracteres | link enlace eslabown 🔗
+🔗 &#128279; \1F517
+caracteres | Mathematical Bold
+𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙
+𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳
+𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
+caracteres | Mathematical Monospace
+𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉
+𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣
+𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿
+caracteres | Mathematical Sans-Serif Bold
+𝗔𝗕𝗖𝗗𝗘𝗙𝗚𝗛𝗜𝗝𝗞𝗟𝗠𝗡𝗢𝗣𝗤𝗥𝗦𝗧𝗨𝗩𝗪𝗫𝗬𝗭
+𝗮𝗯𝗰𝗱𝗲𝗳𝗴𝗵𝗶𝗷𝗸𝗹𝗺𝗻𝗼𝗽𝗾𝗿𝘀𝘁𝘂𝘃𝘄𝘅𝘆𝘇
+𝟬𝟭𝟮𝟯𝟰𝟱𝟲𝟳𝟴𝟵
+caracteres | puntuación china
+、。〃〄〆〈〉《》「」『』【】〒〓〔〕〖〗〘〙〚〛〜
+caracteres | slash chino ／
+／ &#65295; \FF0F
+caracteres | ⏹⏺⏪⏩
+⏩⏪⏫⏬⏭⏮⏯⏸⏹⏺
