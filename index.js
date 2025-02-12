@@ -244,7 +244,6 @@ function mostrarUnico (lema) {
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-          //var ttl = '<h3 class="titulosNoClic">' + ttl?.replace('....','...') + '</h3>';
           var ttl = '<h3 class="titulos">' + ttl?.replace('....','...') + '</h3>';
         var enlc = linea[4];
           if (enlc != '') {
