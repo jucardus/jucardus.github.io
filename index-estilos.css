@@ -59,6 +59,10 @@ h3.titulos {
   margin-bottom: 3px;
   margin-top: 3px;
 }
+hr {
+  margin: 10px 0px 10px 0px;
+  width: 30%
+}
 input {
   border: 2px dotted Silver;
   border-radius: 4px;
