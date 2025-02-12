@@ -1,2 +1,0 @@
-  var file = DriveApp.getFileById('1XHLXrE5RJVD-50qb-yLdl9d2XtVlg3_p');
-  file.setContent('<p>' + temasTodos + '</p>');
