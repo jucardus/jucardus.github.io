@@ -24,7 +24,7 @@ function formateo (recibido) {
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
-    procesamiento(linea);
+    var resultado = procesamiento(linea);
   }
   var enviar = resultado.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
@@ -61,7 +61,7 @@ function segunTema (temaRecibido) {
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
-    procesamiento(linea);
+    var resultado = procesamiento(linea);
   }
   var enviar = resultado.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
@@ -114,7 +114,7 @@ function buscar (recibidoDireccion) {
   for (var i = 0; i < arrayContenido.length; i++) {
     if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
       var linea = arrayContenido[i].split(',');
-    procesamiento(linea);
+      var resultadoBusca = procesamiento(linea);
   }
   var enviar = resultadoBusca.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
@@ -172,4 +172,5 @@ function procesamiento (recibido) {
     contador = contador + 1;
       if (contador == 10) {break;}
   }
+  return resultado;
 }
