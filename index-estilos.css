@@ -68,14 +68,6 @@ h3.titulos:hover {
   color: OrangeRed;
   cursor: pointer;
 }
-h3.titulosNoClic {
-  margin-bottom: 3px;
-  margin-top: 3px;
-}
-h3.titulosNoClic:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
 hr {
   width: 30%
 }
