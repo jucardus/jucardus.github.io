@@ -546,7 +546,7 @@
       var enviar = desordenar(resultado).slice(9,12).join('<p>');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
-      document.getElementById('mostrar').innerHTML = enviar;
+      document.getElementById('mostrar').innerHTML = enviar + '<p>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('azar');
       window.scrollTo(0, 0);
