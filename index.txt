@@ -1,4 +1,5 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+207,Enlaces,soliviar,vocabulario español / soliviar,https://dle.rae.es/soliviar,,2025-02-12 18:45
 206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). - [s.] Persona de ojos azulados.",,,2025-02-12 14:42
 205,Vocabulario inglés-español,drool [v.],drool [v.] babear,,,2025-02-12 14:40
 204,Citas,,"Recordad el pasado con gratitud, vivid el presente con entusiasmo y mirad hacia el futuro con confianza. – Juan Pablo II",,,2025-02-12 14:38
