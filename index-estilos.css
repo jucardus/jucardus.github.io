@@ -85,6 +85,10 @@ li {
 #mostrar {
   margin-top: 35px;
 }
+.ninguna {
+  color: OrangeRed;
+  padding-bottom: 25px;
+}
 .numeros {
   color: Green;
   text-decoration: none;
