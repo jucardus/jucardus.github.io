@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-JT627KMWEJ'/>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-JT627KMWEJ&#39;);
+</script>
+
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <meta content='apotegmas, aforismos, cuentos, poesía, noticias, vocabulario, vocabulario español, sinónimos, sinónimos españoles, reflexiones, música, diario, memorabilia, enlaces, hipervínculos, links' name='keywords'/>
+    <meta content='Escritos varios y otras cosas.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+
+    <link href='https://fonts.googleapis.com' rel='preconnect'/>
+    <link crossorigin='' href='https://fonts.gstatic.com' rel='preconnect'/>
+    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap' rel='stylesheet'/>
+
+    <b:if cond='data:blog.isMobile'>
+      <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+   <b:skin><![CDATA[/*
+	]]></b:skin>
+
+    <style>
+      @media only screen and (max-device-width: 480px) {
+        .arriba {
+          display: none;
+          }
+        body {
+          font-size: 120%!important;
+          padding: 10px 3px 150px 4px !important;
+          }
+        input#textInput {
+          font-size: 100%!important;
+          width: 90%!important;
+          }
+      }
+      a:link, a:visited, a:active {
+        color: DarkGreen;
+        opacity: 1;
+        text-decoration: none;
+        word-break: break-all;
+        }
+      a:hover, a:focus {
+        color: Red;
+        opacity: 1;
+        text-decoration: underline;
+        word-break: break-all;
+        }
+      a.buscadores {
+        word-break: revert!important;
+        }
+      .arriba {
+        color: Green;
+        font-size: 180%;
+        font-weight: bold;
+        position: fixed;
+        right: 20px;
+        z-index: 1;
+        }
+      .arriba:hover {
+        color: OrangeRed;
+        cursor: pointer;
+        }
+      body {
+        background-color: #f0f0f0;
+        font-family: &quot;Ubuntu&quot;, serif;
+        font-size: 110%;
+        padding: 4% 23% 150px 23%;
+        }
+      #buscadores {
+        line-height: 2;
+        margin-bottom: 25px;
+        }
+      .barrita {
+        color: OrangeRed;
+        opacity: 0.7;
+        }
+      .broken {
+        word-break: break-all;
+        }
+      html, body {
+        width: auto !important;
+        overflow-x: hidden !important
+        }
+      h1 {
+        margin-bottom: 30px;
+        }
+      iframe {
+        background-color: #f0f0f0;
+        border-radius: 15px;
+        }
+      img#favicones {
+        border-radius: 2px;
+        float: left;
+        width: 22px;
+        margin: 0px 8px 10px 0px;
+        }
+      li {
+        padding-bottom: 9px;
+        }
+      #mostrar {
+        margin-bottom: 70px;
+        margin-top: 40px;
+        }
+      .numero {
+        color: #999;
+        font-size: small;
+        }
+      p.temas {
+        font-size: 90%!important;
+        }
+      .previo {
+        color: OrangeRed;
+        margin-left: 20px;
+        }
+      ul {
+        margin-left: -18px;
+        }
+    </style>
+
+  </head>
+  <body>
+
+<h1><a href='https://jucardus.blogspot.com'>Jucardus.com</a></h1>
+
+<iframe frameborder='0' height='40px' scrolling='no' src='https://script.google.com/macros/s/AKfycbypEsUpIr6E90sJRfOSCSuBYyxG-3TnkD-dmUbjYJFHu0Gvm8Y3AiXogDncjSUPelLIvw/exec' width='100%'/>
+
+<script>
+  var url = window.location.href;
+    window.addEventListener(&quot;message&quot;,
+      function (e) {
+        if(e.origin == &quot;https://script.google.com/macros/s/AKfycbypEsUpIr6E90sJRfOSCSuBYyxG-3TnkD-dmUbjYJFHu0Gvm8Y3AiXogDncjSUPelLIvw/exec&quot;){ return; }
+          document.getElementById(&quot;mostrar&quot;).innerHTML = e.data;
+      },
+    false);
+</script>
+
+<div id='mostrar'/>
+
+    <h3>Aclaraciones</h3>
+
+    <ul>
+      <li>Este sitio contiene tanto entradas de mi autoría como enlaces de interés a sitios externos clasificados por <a href='#temas'><u>temas</u></a> y subtemas. Mi contenido puede encontrarse buscando un asterisco seguido de un espacio (* ) o mejor buscando el nombre <i>jucardus</i>.</li>
+	  <li>Al hacer una busca se mostrarán, además y antes de las coincidencias en la base de datos, enlaces a ciertos sitios y buscadores que se suelen usar, de utilidad para ampliar los resultados. Las buscas no diferencian entre mayúsculas y minúsculas.</li>
+      <!--li>Para que la busca sea efectiva, el mínimo de caracteres permitido es dos. Esto para evitar el listado de todas las entradas, por tomar demasiado tiempo.</li-->
+      <li>Al clicar en cualquier enlace enumerado después de una busca, el sitio web correspondiente se abrirá en una nueva pestaña y el enlace quedará marcado en color rojo para referencia.</li>
+      <li>El botón en la parte inferior derecha, sirve para dirigirse al inicio de la página directamente y sin usar la barra de desplazamiento manual. Sólo está presente en las pantallas de escritorio.</li>
+      <li>Si deseas informar de algún enlace roto, hacer comentarios o correcciones acerca de mi contenido, o agregar algún enlace a la lista, no dudes en contactar conmigo mediante el <a href='#contacto'><u>correo electrónico</u></a> que se muestra al pie de página.</li>
+    </ul>
+
+    <a name='temas'/>
+
+    <h3>Temas incluidos</h3>
+
+    <p class='temas'>Abenaki, administradores de contraseñas, adrenocromo, aerofagia, Algoritmo de Fisher-Yates, Amazon, ameba, anabaptismo, Android, Android Studio, anglicismos españoles, Apartheid, aplicaciones Android, apocatástasis, apotegmas, arco de medio punto, Atentados del 11 de marzo de 2004, audiolibros, Banchero, bandas sonoras, Bash, Biblias, Biblias interlineales, bibliografías, bibliotecas, Bibliotecas, billeteras, biografías, biografías de 888, biografías de escritores, biografías de lingüístas, biografías de músicos, biografías de presidentes, Blogger, Blogger API, bolígrafos, canales en Rumble, canales en YouTube, cantárida, caracteres, caracteres Unicode, cartón piedra, Caso Dreyfus, caso penal y caso civil, celulares, CGT, Chubut, cibercondría, cibercondríaco, citas, ciudades, códigos QR, códigos swift, colores CSS, coma juanina, comedia, comitente, composiciones musicales, concordancia bíblica, CONICET, contraseñas, Cours de linguistique générale, creación del hombre, cristianismo, crítica a la Trinidad, CSS, CSS para Blogger, cuentas en X Twitter, cuentos, cursos, debates cristianos, debates de Sucesión apostólica, descargas, descargas directas, diáspora, diccionarios, diccionarios de sinónimos, diferencias, Dionisio, dispensacionalismo, dispensationalism, doctrina católica, documentales, documentales de Relojería, ebionitas, Edad Media, Edesur, edificios, ejercicios para los ojos, El diálogo,de santa Catalina, elaboraciones, Elohim, enciclopedias, enlaces acortados, enlaces especiales, esoterismo, estructuralismo en lingüística, etimologías españolas, etopeya, Evangelio de Marción, evangelios, Expulsión de los moriscos, Facebook, falacia del arenque rojo, falacias, figuras retóricas, Firebase, Firefox, Fisher&#8211;Yates shuffle, foros, fotografías, Françafrique, frases de ejemplo en inglés, fuentes, Gayatri Mantra, genealogía de Jesús, Gerardo, gestación subrogada,vientre de alquiler, glosarios, Gmail, Google, Google Analytics, Google Apps Script, Google Apps Script para Blogger, Google Charts, Google Chrome, Google Docs, Google Drive, Google Search Console, Google Search Console y Blogger, gramática china, gramática española, gramática italiana, Guerra de los Treinta Años, henoteísmo, henoteísmo hebreo, herejía cátara, herramientas, herramientas para chino, herramientas para el estudio de la Biblia, hipálage, homeostasis, HTML, HTML y JS, iconos, imágenes, índices, informática, inquest, instrumentos músicos, Interbank Perú, interjecciones españolas, internet, interpolaciones en el Nuevo Testamento, invitaciones, Israel, JAB code, JavaScript, JavaScript para Blogger, Johann Sebastian Bach, JSON, Juan Bautista Alberdi, Jupiter, katechon, La Folia, lanyard, laticífero, latín, lemarios, Les Folies D&#39;Espagne, letras de canciones, letras de himnos, libros, libros de lingüística, libros en español, libros en español de lingüística, libros en francés, libros en inglés, libros online, Liga Santa (1571), lingüística, Linktree, Linux Mint, listas, lugares, mapas, marcionismo, medios sociales, Medium, Mega, Merriam-Webster&#39;s English Dictionary, metonimia, mi correo de contacto, mitos creacionistas, Mollendo,Arequipa,Perú, Moncloa, monofilético, Motorola MB632, música, música - Alfredo Casero, música - Ástor Piazzolla, música - Boccherini, música - Camille Saint-Saëns, música - Johann Sebastian Bach, música - Yanouv, Name.com, naturalismo, naturalismo filosófico, naturalismo religioso, navegador Brave, navegadores, Nebuchadnezzar, Netlify, neuralgia, New Google Sites, nisei, noticias de Arequipa, nudos, origen del islamismo, ortografía, ortografía española, páginas de literatura, países, Pastebin, PayPal, pCloud, pecado original, pelagianismo, películas, petitio principii,ad ignorantiam, PhoenixCard, Pinocho, plataformas de vídeos, plenitudo potestatis, poesía, poesías, pornocracia, prefijos españoles, preposición, preposiciones españolas, preterismo, protón, proveedores de dominios, radicales chinos, radios argentinas, Real Academia Española, recetas de cocina, Reconquista, recursos bíblicos, reflexiones, regla mnemotécnica, relojes, relojes de bolsillo, Revolución de Mayo, rucio, sacerdotalismo, secta, shirtwaist, significados de nombres, signos ortográficos, sinónimos españoles, sinónimos ingleses, sitios católicos, slip-off slope, socialismo y comunismo, software, software para Linux Mint, Sol Invictus, sola fide, Squarespace, submarino, sui generis, sui géneris, suigéneris, Talmud, técnicas de tortura, tema y rema, teodicea, tesauros, theotokos, tipografía, tipos de gafas con protección, tourbillon, trabajo de traducción, Trinidad, tripofobia, trypophobia, tuits, Tutanota, Twitter, univariable, ventana de Overton, versículos bíblicos, versículos bíblicos controvertidos, viajes en tren, vídeos de Adoctrinamiento, vídeos de Arqueología, vídeos de Ayuno, vídeos de Biblia, vídeos de Brujería, vídeos de Calentamiento global, vídeos de Canon bíblico, vídeos de Catolicismo, vídeos de Cerámica, vídeos de Cristianismo, vídeos de Egiptología, vídeos de Geografía, vídeos de Geología, vídeos de Globalismo, vídeos de Historia, vídeos de Ideología de género, vídeos de Iglesia católica, vídeos de Insectos, vídeos de Jesuitas, vídeos de Judaísmo, vídeos de Judaísmo mesiánico, vídeos de Lingüística, vídeos de Lugares, vídeos de Manipulación social, vídeos de Masonería, vídeos de Mesianismo judaico, vídeos de Moral cristiana, vídeos de Nuevo Testamento, vídeos de Pablo de Tarso, vídeos de Pecado original, vídeos de Política, vídeos de Posesiones, vídeos de protestantismo, vídeos de Relojería, vídeos de Relojes, vídeos de Respiracionismo, vídeos de Socialismo, vídeos de Trinitarianismo cristiano, vídeos de Yhwh, vídeos de Zoroastrismo, vídeos divertidos, Virtual private network, Visual Studio Code, vocabulario alemán-español, vocabulario chino-español, vocabulario chino-inglés, vocabulario de lingüística, vocabulario español, Vocabulario español, vocabulario español en imágenes, vocabulario español-inglés, vocabulario francés, vocabulario francés-español, vocabulario francés-inglés, vocabulario inglés, vocabulario inglés en imágenes, vocabulario inglés-español, vocabulario latín-español, vocabulario latín-inglés, vocabulario latino, vocabulario latino-inglés, vocabulario poético español, vocabulario portugués-español, vocabularios, VPN, waterboarding, WebDAV, wokeism, X Twitter, X Twitter @jucardus, YouTube</p>
+
+    <a name='contacto'/>
+
+    <h3 style='padding-top: 20px;'>Autor y contacto</h3>
+
+    <ul>
+      <li><b>Autor:</b> Julio Cárdenas Pelizzari &#169;</li>
+      <li><b>Contacto:</b> jucardus en gmail.com</li>
+      <li><b>Invitación a pCloud:</b> i.jucardus.com</li>
+      <li><b>X Twitter:</b> x.jucardus.com</li>
+    </ul>
+
+    <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
+
+    <script>
+      function arriba() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+
+  <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'/>
+
+  </body>
+</html>
