@@ -505,7 +505,7 @@
           contador = contador + 1;
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('<p>');
+      var enviar = resultado.join('');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
       document.getElementById('mostrar').innerHTML = enviar;
