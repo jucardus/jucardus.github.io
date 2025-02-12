@@ -57,6 +57,9 @@ button#boton {
   border-radius: 10px;
   padding: 0px 5px 0px 5px;
 }
+h3.aclaraciones {
+  padding-top: 2px;
+}
 h3.titulos {
   margin-bottom: 3px;
   margin-top: 3px;
