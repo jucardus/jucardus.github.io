@@ -1,0 +1,36 @@
+a:link, a:visited, a:hover, a:active {
+    color: #006565;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+body {
+    font-size: 120%;
+    padding: 20px 0px 140px 0px;
+    background-color: #f2f2f2;
+}
+
+#estrella {
+    padding-top: 40px;
+}
+
+#iconos {
+    height: 38px;
+}
+
+#mostrar {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+#previo {
+    color: #ff4500;
+    font-weight: bold;
+    font-size: 110%;
+}

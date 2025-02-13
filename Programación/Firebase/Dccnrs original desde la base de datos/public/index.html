@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="diccionario, diccionarios, diccionario inglés-español, inglés, español, inglés-español, nombres bíblicos, Bible names, multilingüe, diccionario multilingüe">
+    <meta name="description" content="Diccionarios varios">
+    <meta name="author" content="Julio Cárdenas Pelizzari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link rel="shortcut icon" type="image/jpg" href="favicon.png"/-->
+    <title>DCCNRS.WEB.APP</title>
+  <style>
+    @media only screen and (max-device-width: 480px) {
+        body {
+            padding: 10px 10px 10px 10px !important;
+        }
+    }
+    a:link, a:visited, a:hover, a:active {color: #005050; text-decoration: none; font-weight: 550;}
+    a:hover {color: #ff3000; text-decoration: underline;}
+    body {
+        font-size: 120%;
+        padding: 30px 20% 170px 20%;
+        background-color: #f2f2f2;
+    }
+    img {
+        width: 20px;
+    }
+    li {
+        padding-bottom: 12px;
+    }
+    #mostrar {
+        padding-top: 10px;
+    }
+    #previo {
+        color: #ff4500;
+        font-weight: bold;
+        font-size: 120%;
+    }
+    ul {
+        margint-left: -20;
+    }
+  </style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+
+    <!--img src="https://chart.apis.google.com/chart?choe=UTF-8&cht=qr&chs=120x120&chld=M|1&chco=009000&chl=vocabloso.web.app"></img-->
+
+    <h2>Diccionarios varios <small><small>&#8212; <a href="https://agostos.web.app" target="_blank">agostos.web.app</a></small></small></h2>
+
+    <div id = "mostrar"></div>
+
+<script type="module">
+
+    document.getElementById('mostrar').innerHTML = '<span id="previo">&#12288;c a r g a n d o . . .</span>';
+
+    import {getFirestore,collection,getDocs} from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js";
+
+//============================================================================
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDgz",
+    authDomain: "dccnrs.firebaseapp.com",
+    projectId: "dccnrs",
+    storageBucket: "dccnrs.appspot.com",
+    messagingSenderId: "1036227478429",
+    appId: "1:103622749:web:888",
+    measurementId: "G-FGMEHFSB66"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+//==============================================================================
+
+	const db = getFirestore(app);
+
+	window.onload = LeerMostrar();
+
+	async function LeerMostrar()
+	{
+		let datos = [];
+		let value = '';
+        let array = [];
+
+		const referencia = collection(db, "dccnrs-db");
+
+		try {
+			datos = await getDocs(referencia);
+		} catch(err) {
+			console.log('mensaje en caso de error', err)
+		}
+
+		datos.forEach(elemento =>
+		{
+            var dominio = elemento.data().e;
+                var dominio = dominio.slice(dominio.indexOf('://')+3);
+                var dominio = dominio.slice(0,dominio.indexOf('/'));
+            var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio;
+            value = '<li><!--' + elemento.id + '--><a href="' + elemento.data().e + '" target="_blank">' + elemento.id + '</a></li>';
+            array.push(value);
+		});
+        array.sort((a,b) => a.localeCompare(b));
+		var enviar = array.join('');
+		document.getElementById('mostrar').innerHTML = '<ul>' + enviar + '</ul>';
+	}
+	</script>
+  </body>
+</html>

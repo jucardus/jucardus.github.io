@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="sitio central, Julio, Cárdenas, Pelizzari, Julio Cárdenas Pelizzari">
+    <meta name="description" content="Mi sitio central">
+    <meta name="author" content="Julio Cárdenas Pelizzari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>AGOSTOS.WEB.APP</title>
+</head>
+<body>
+    <header></header>
+
+    <center>
+
+        <img id="qr" src="https://chart.apis.google.com/chart?choe=UTF-8&cht=qr&chs=120x120&chld=M|1&chco=009000&chl=https://agostos.web.app"></img>
+
+        <h2>Julio Cárdenas Pelizzari</h2>
+
+        <div id = "mostrar"></div>
+
+        <a href="https://www.facebook.com/sharer.php?u=https://agostos.web.app" target="_blank"><img id="iconos" src="fb.png"></img></a>
+        <a href="https://plus.google.com/share?url=https://agostos.web.app" target="_blank"><img id="iconos" src="gp.png"></img></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://agostos.web.app" target="_blank"><img id="iconos" src="li.png"></img></a>
+        <a href="https://pinterest.com/pin/create/button/?url=https://agostos.web.app" target="_blank"><img id="iconos" src="pn.png"></img></a>
+        <a href="https://www.reddit.com/submit?url=https://agostos.web.app" target="_blank"><img id="iconos" src="rt.png"></img></a>
+        <a href="http://www.stumbleupon.com/badge/?url=https://agostos.web.app" target="_blank"><img id="iconos" src="su.png"></img></a>
+        <a href="https://twitter.com/share?url=https://agostos.web.app" target="_blank"><img id="iconos" src="tw.png"></img></a>
+
+        <div id="estrella">&#8277;</div>
+
+    </center>
+
+<script type="module">
+
+    document.getElementById('mostrar').innerHTML = '<span id="previo">c a r g a n d o</span>';
+
+    import {getFirestore,collection,getDocs} from "https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js";
+
+//============================================================================
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDZ9e0jo8c",
+    authDomain: "agostos.firebaseapp.com",
+    projectId: "agostos",
+    storageBucket: "agostos.appspot.com",
+    messagingSenderId: "433924791688",
+    appId: "1:433924791688:web:0d5e677",
+    measurementId: "G-CJLNHKJEKD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+//==============================================================================
+
+	const db = getFirestore(app);
+	window.onload = LeerMostrar();
+
+	async function LeerMostrar()
+	{
+		let datos = [];
+		let value = '';
+
+		const referencia = collection(db, "agostos");
+
+		try {
+			datos = await getDocs(referencia);
+		} catch(err) {
+			console.log('mensaje en caso de error', err)
+		}
+
+		datos.forEach(elemento =>
+		{
+            value += '<a href="' + elemento.data().e + '" target="_blank">' + elemento.id + '</a><p>';
+		});
+        var valores = value.replace(/·/g,'•');
+		document.getElementById('mostrar').innerHTML = valores;
+	}
+	</script>
+</body>
+</html>
