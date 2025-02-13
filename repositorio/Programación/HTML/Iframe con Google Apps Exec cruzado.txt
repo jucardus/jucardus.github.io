@@ -135,13 +135,13 @@
 
 <h1><a href='https://jucardus.blogspot.com'>Jucardus.com</a></h1>
 
-<iframe frameborder='0' height='40px' scrolling='no' src='https://script.google.com/macros/s/AKfycbypEsUpIr6E90sJRfOSCSuBYyxG-3TnkD-dmUbjYJFHu0Gvm8Y3AiXogDncjSUPelLIvw/exec' width='100%'/>
+<iframe frameborder='0' height='40px' scrolling='no' src='https://script.google.com/macros/s/AKfycbypEsUpIr6E90sJRfOSCSuBYyxG/exec' width='100%'/>
 
 <script>
   var url = window.location.href;
     window.addEventListener(&quot;message&quot;,
       function (e) {
-        if(e.origin == &quot;https://script.google.com/macros/s/AKfycbypEsUpIr6E90sJRfOSCSuBYyxG-3TnkD-dmUbjYJFHu0Gvm8Y3AiXogDncjSUPelLIvw/exec&quot;){ return; }
+        if(e.origin == &quot;https://script.google.com/macros/s/AKfycbypEsUpIr6E90sJRfOSCSuBYyxG/exec&quot;){ return; }
           document.getElementById(&quot;mostrar&quot;).innerHTML = e.data;
       },
     false);
