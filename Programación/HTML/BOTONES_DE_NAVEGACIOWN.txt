@@ -1,0 +1,18 @@
+.nvgcn {
+    font-size: 180%;
+    position: fixed;
+    right: 15px;
+    z-index: 1;
+}
+
+<a class="nvgcn" style="bottom: 215px;" href="#">⿵</a>
+<a class="nvgcn" style="bottom: 175px;" href="https://jucardus.blogspot.com">⿴</a>
+<a class="nvgcn" style="bottom: 135px;" href="/busca">⿻</a>
+<a class="nvgcn" style="bottom: 95px;" href="/alfabetico">⿳</a>
+<a class="nvgcn" style="bottom: 55px;" href="/etiquetas">⿲</a>
+<a class="nvgcn" style="bottom: 15px;" href="#abajo">⿶</a>
+
+<a name="abajo"></a>
+
+
+⿴ ⿳ ⿲ ⿸ ⿹ ⿵ ⿶ ⿻

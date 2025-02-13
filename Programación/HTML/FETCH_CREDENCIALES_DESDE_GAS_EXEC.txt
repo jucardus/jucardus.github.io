@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta content='nada todavía' name='keywords'/>
+    <meta content='Nada todavía.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <title>AGOSTOS WEB APP</title>
+
+    <style>
+
+      body {
+        }
+      div#navbar.navbar.no-items.section {
+      	}
+      iframe {
+        }
+
+    </style>
+
+  </head>
+
+<body>
+
+<div id="mostrando"></div>
+
+<iframe style="display: none;" src="https://script.google.com/macros/s/AKfycbzPzYycuIYS-sPMgchWz_1S2CZUwdf1VvyOgK9hJcoRqTHXjia6GxXruHcpNIE9gULPwg/exec"></iframe>
+
+<script>
+    document.getElementById("mostrando").innerHTML = "<div id='previo'>L L A M A N D O . . .</div>";
+	window.addEventListener("message",
+		function (e) {
+			if(e.origin == "https://script.google.com/macros/s/AKfycbzPzYycuIYS-sPMgchWz_1S2CZUwdf1VvyOgK9hJcoRqTHXjia6GxXruHcpNIE9gULPwg/exec"){ return; }
+            var credencial = e.data;
+			document.getElementById("mostrando").innerHTML = credencial;
+		},
+	false);
+</script>
+
+</body>
+</html>
