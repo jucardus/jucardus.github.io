@@ -1,4 +1,7 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+211,Diario,,"Acabo de cargar el contenido de mis líneas de programación básica (Bash, Blogger, CSS, Firebase, Google, HTML, JavaScript, Linux Mint, PayPal) a mi repositorio en GitHub (jucardus.github.io/r). Ahora hace falta darle formato a todos los documentos *.txt.",https://jucardus.github.io/r,,2025-02-13 13:53
+210,Enlaces,,vocabulario español / mascullar,https://dle.rae.es/mascullar,,2025-02-13 12:01
+209,Enlaces,,vocabulario español / sicalíptico,https://dle.rae.es/sicalíptico,,2025-02-13 11:52
 208,Enlaces,,canales en YouTube / Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
 207,Enlaces,,vocabulario español / soliviar,https://dle.rae.es/soliviar,,2025-02-12 18:45
 206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). - [s.] Persona de ojos azulados.",,,2025-02-12 14:42
