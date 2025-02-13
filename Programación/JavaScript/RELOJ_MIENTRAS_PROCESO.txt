@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <style>
+    a:link, a:visited, a:active {
+      color: Green;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    a:hover {
+      background-color: LightYellow;
+      color: Red;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    a:focus {
+      background-color: LightYellow;
+      color: Red;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    body {
+      background-color: #f0ece4;
+      background-color: White;
+      font-family: 'Times New Roman', Times, serif;
+      font-kerning: none;
+      letter-spacing: 0.4px;
+      padding: 15px 5px 200px 5px !important;
+    }
+    h1 {
+      padding-bottom: 30px;
+    }
+    #mostrar {
+      padding-bottom: 30px;
+    }
+    .manito {
+    }
+    .manito:hover {
+      color: OrangeRed;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .pie {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    #haciendo {
+      animation: blinker 1s linear infinite;
+      color: OrangeRed;
+      font-size: 100%;
+      font-weight: bold;
+      padding-left: 20px;
+      text-align: center;
+    }
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .reloj {
+      color: OrangeRed;
+      font-size: 75%;
+      font-weight: bold;
+    }
+    .ruta {
+      line-height: 1.8;
+    }
+  </style>
+</head>
+
+<div id='inicio'></div>
+
+<body onload='hacer("11o_c_4ZQrAD0SwI0xz4UJwhADnmPDNXS")'>
+
+<h1 class='manito' onclick='reestablecerN(); hacer("11o_c_4ZQrAD0SwI0xz4UJwhADnmPDNXS")'>Diccionarios varios <span id='haciendo' style='font-size: 100%;'></span></h1> <!--span id='previo'></span-->
+
+<div id='mostrar'></div>
+
+<h3>Aclaraciones</h3>
+
+<p>Para navegar en este sitio, clica en cualquiera de los enlaces que se muestran después del título principal. Al hacerlo, se desplegará el nuevo contenido, que es a su vez el siguiente nivel de navegación, hasta llegar al lema que buscas. El sitio está subdividido de esta forma para clasificar los lemas y así facilitar la búsqueda manual, pero eventualmente se implementará un recuadro de busca directa, cuando el contenido lo valga.</p>
+
+<p>Siempre que cliques en un enlace se mostrará un subtítulo actualizado en negrita, detallando la ruta por la que estás navegando y facilitando el regreso al o a los niveles superiores. Dondequiera que te encuentres, puedes clicar en el título para volver al inicio de los tiempos.</p>
+
+<h3>Autor y contacto</h3>
+
+<p>Autor → Julio Cárdenas Pelizzari</p>
+
+<p>Enlace corto → agostos.web.app/d</p>
+
+<p>Servicio de traducciones → jucardus@gmail.com</p>
+
+<p>Donaciones mediante PayPal → jucardus@gmail.com</p>
+
+<p>Mis sitios → <a href='https://agostos.web.app' target='_blank'>agostos.web.app &#8599;</a></p>
+
+<div class='pie'>~ &bull; ~</div>
+
+<script>
+
+  //let n = 20;
+  //let corriendo = false;
+
+  function hacer(recibido) {
+    //var reloj = "⠿";
+    window.scrollTo(0, 0);
+    document.getElementById('haciendo').innerHTML = '⁕';
+    /*
+    if(corriendo == false){
+      n--;
+      setTimeout(hacer,175)
+      if (n == 20) {var reloj = "⠧";}
+      if (n == 19) {var reloj = "⠏";}
+      if (n == 18) {var reloj = "⠛";}
+      if (n == 17) {var reloj = "⠹";}
+      if (n == 16) {var reloj = "⠼";}
+      if (n == 15) {var reloj = "⠶";}
+      if (n == 14) {var reloj = "⠧";}
+      if (n == 13) {var reloj = "⠏";}
+      if (n == 12) {var reloj = "⠛";}
+      if (n == 11) {var reloj = "⠹";}
+      if (n == 10) {var reloj = "⠼";}
+      if (n == 9) {var reloj = "⠶";}
+      if (n == 8) {var reloj = "⠧";}
+      if (n == 7) {var reloj = "⠏";}
+      if (n == 6) {var reloj = "⠛";}
+      if (n == 5) {var reloj = "⠹";}
+      if (n == 4) {var reloj = "⠼";}
+      if (n == 3) {var reloj = "⠶";}
+      if (n == 2) {var reloj = "⠧";}
+      if (n == 1) {var reloj = "⠏";}
+    }
+    */
+    //document.getElementById('previo').innerHTML = '<span class="reloj">' + reloj + '</span>';
+    google.script.run
+      .withSuccessHandler(mostrar)
+      .listar(recibido);
+  }
+
+  function reestablecerN () {
+    n = 20;
+    corriendo = false;
+  }
+
+  function mostrar(resultado) {
+    document.getElementById('mostrar').innerHTML = resultado;
+    document.getElementById('haciendo').innerHTML = '';
+    corriendo = true;
+    window.scrollTo(0, 0);
+  }
+
+</script>
+
+</body>
+</html>

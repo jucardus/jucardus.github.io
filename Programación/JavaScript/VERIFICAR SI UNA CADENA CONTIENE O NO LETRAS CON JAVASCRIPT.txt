@@ -1,0 +1,7 @@
+VERIFICAR SU UNA CADENA CONTIENE O NO LETRAS CON JAVASCRIPT
+
+
+numero.match(/[^0-9.]/g) != null
+
+
+~ finis ~

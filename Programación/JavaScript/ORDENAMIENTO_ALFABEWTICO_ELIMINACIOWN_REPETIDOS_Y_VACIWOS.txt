@@ -1,0 +1,3 @@
+array = array.sort((a, b) => a.localeCompare(b));
+array = [...new Set(array)];
+array = array.filter(Boolean);

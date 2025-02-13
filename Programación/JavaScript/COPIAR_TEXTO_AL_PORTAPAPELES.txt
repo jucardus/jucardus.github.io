@@ -1,0 +1,3 @@
+function copiar(ideCopiar) {
+  navigator.clipboard.writeText(ideCopiar);
+}

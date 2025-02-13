@@ -1,0 +1,7 @@
+        <script type="text/javascript">
+            window.onload = function () {
+                if (location.hostname.indexOf('traducciones.one') === -1) {
+                    location.replace("https://traducciones.one");
+                    }
+                }
+        </script>
