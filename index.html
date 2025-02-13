@@ -171,7 +171,7 @@
   <div id='temas'>
     <span class='temas' id='inicio' onclick='inicio ()'>Inicio</span> ·
     <span class='temas' id='apotegmas' onclick='segunTema ("apotegmas")'>Apotegmas</span> ·
-    <span class='temas' id='azar' onclick='azar ()'>Azar</span> ·
+    <span class='temas' id='azar' onclick='azar ("azar")'>Azar</span> ·
     <span class='temas' id='citas' onclick='segunTema ("citas")'>Citas</span> ·
     <span class='temas' id='cuentos' onclick='segunTema ("cuentos")'>Cuentos</span> ·
     <span class='temas' id='diario' onclick='segunTema ("diario")'>Diario</span> ·
@@ -180,7 +180,7 @@
     <span class='temas' id='reflexiones' onclick='segunTema ("reflexiones")'>Reflexiones</span> ·
     <span class='temas' id='vocabulario' onclick='segunTema ("vocabulario")'>Vocabulario</span> ·
     <span class='temas' id='az' onclick='az ("az")'>AZ</span> ·
-    <span class='temas' id='lupa' onclick='mostrarBuscador("busca")'>🔍</span>
+    <span class='temas' id='lupa' onclick='mostrarBuscador ("busca")'>🔍</span>
   </div>
   <div id="buscador">
     <form method="post">
@@ -426,6 +426,10 @@
       }
       window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
       if (recibidoDireccion != '') {
+        recibidoDireccion.replace(/-/g,'')
+          .replace(/:/g,'')
+          .replace(/ /g,'')
+          .replace(/%20/g,'');
         window.history.replaceState({}, document.title, '/' + recibidoDireccion.toLowerCase());
       }
       window.scrollTo(0, 0);
