@@ -1,0 +1,17 @@
+<p><a href="/indice" class="madre">[ Índice ]</a></p>
+
+<iframe style="" src="https://script.google.com/macros/s/AKfycbw3lTrLtDDhwBQGPBCKVeo3JdixmyCF34LvFtn1-qZ5oMz6Vln9MedLqlIZ-21jPXmc/exec" frameborder=0 scrolling="no" width=100% height=50px></iframe>
+
+<div id="mostrarEnlacista">Clica en el título de este post para poder buscar entre los miles de enlaces de la base de datos. Una vez que hayas escrito en el recuadro lo que deseas encontrar, presiona ENTER para iniciar la busca.</div>
+
+<script>
+  var url = window.location.href;
+  if (url.indexOf('293v0edkr94a') >= 0) {
+    window.addEventListener("message",
+    function (e) {
+      if(e.origin == "https://script.google.com/macros/s/AKfycbw3lTrLtDDhwBQGPBCKVeo3JdixmyCF34LvFtn1-qZ5oMz6Vln9MedLqlIZ-21jPXmc/exec"){ return; }
+          document.getElementById("mostrarEnlacista").innerHTML = e.data;
+    },
+    false);
+  }
+</script>

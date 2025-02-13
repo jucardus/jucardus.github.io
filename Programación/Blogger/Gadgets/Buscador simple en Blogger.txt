@@ -1,0 +1,5 @@
+BUSCADOR SIMPLE EN BLOGGER
+
+<form action="/search" id="searchthis" method="get" style="display: inline;"><input autocomplete="off" autofocus="" class="busca" id="busca" name="q" placeholder="🔍" size="23" style="padding-left: 4px;" /> <input id="search-btn" value="Search" type="submit"></form>
+
+~ finis ~

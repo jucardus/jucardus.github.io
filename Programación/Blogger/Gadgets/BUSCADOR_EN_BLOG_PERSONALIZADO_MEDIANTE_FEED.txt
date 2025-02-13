@@ -1,0 +1,124 @@
+<style>
+  button#boton {display: none;}
+  input#textInput {
+    border: 2px dotted Gray;
+    border-radius: 4px;
+    color: DarkSlateGray;
+    font-family: monospace, sans-serif;
+    font-size: 105%;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 2px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+  ::placeholder {text-align: right; color: Gray;}
+</style>
+
+<div style="margin-top: 20px!important; margin-bottom: 40px!important; margin-left: 20px!important;">
+<form>
+  <input type="text" autocomplete="off" placeholder=". . . 🔍" size="23" autofocus="" id="textInput" onkeydown="teclaBuscar(event)" />
+  <button id="boton" type="button" onclick="buscar()"> · </button>
+</form>
+</div>
+
+<div id="postList12">Escribe en el recuadro y presiona ENTER para buscar entre todas las entradas del blog, incluyendo los índices.</div>
+
+<script type="text/javascript">
+
+let recibido = '';
+var startIndex = 1;
+var maxResults = 150;
+var allResults = [];
+var contador = 0;
+
+
+function teclaBuscar (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        buscar();
+    }
+}
+
+function buscar() {
+    recibido = document.getElementById("textInput").value.toUpperCase();
+  	document.getElementById('postList12').innerHTML = '[ BUSCANDO ]';
+    allResults = [];
+    startIndex = 1;
+    sendQuery12();
+}
+
+var scpt =null;
+
+function sendQuery12()
+{
+    if(scpt !== null)document.body.removeChild(scpt);
+    scpt = document.createElement("script");
+    scpt.src = "/feeds/posts/summary?alt=json&callback=processPostList12&start-index=" + startIndex + "&max-results=" + maxResults;
+    document.body.appendChild(scpt);
+    exist_scpt = true;
+}
+
+function printArrayResults(root)
+{
+    allResults = allResults.sort((a, b) => a.localeCompare(b));
+    var mostrar = allResults.join("");
+    if (mostrar.indexOf('<') == -1) {mostrar = '[ NINGUNA COINCIDENCIA ]';}
+    document.getElementById('postList12').innerHTML = mostrar;
+    document.getElementById('textInput').value = '';
+    document.getElementById('textInput').focus();
+}
+
+function processPostList12(root)
+{
+    var elmt = document.getElementById("postList12");
+    if (!elmt)
+      return;
+    var feed = root.feed;
+    if (feed.entry.length > 0)
+    {
+      for (var i = 0; i < feed.entry.length; i++)
+      {
+        var entry = feed.entry[i];
+          var title = entry.title.$t;
+          var date = entry.published.$t;
+          var summary = entry.summary.$t.toString();
+          var labels = [];
+            for (var k = 0; k < entry.category.length; k++) {
+              labels.push(entry.category[k].term);
+            }
+        var etiquetas = labels.join(' · ');
+        for (var j = 0; j < entry.link.length; j++)
+        {
+          if (entry.link[j].rel == "alternate")
+          {
+            var url = entry.link[j].href;
+            var orden = url.toString().toUpperCase().replace(/.*\//g, '').replace(/-/g,'').replace(/.*\//g,'').replace(/\.HTML.*/g,'');
+            if (url && url.length > 0 && title && title.length > 0)
+            {
+              var fecha = date.substr(2,8).replace(/-/g,'·')
+              var textoBusca = title + etiquetas + summary;
+                var textoBusca = textoBusca.toUpperCase();
+              var entrada = '<!--' + orden + '--><b><a href="' + url + '">' + title + '</a></b> <span class="fechiquetas">&ndash; ' + fecha + ' - ' + etiquetas + '<div style="font-family: Times; padding: 5px; background-color: #f2f2f2; border-radius: 7px; margin-left: 10px;">' + summary + '...</div></span>';
+              if (textoBusca.indexOf(recibido) >= 0) {
+                allResults.push('<p>' + entrada + '</p>');
+              }
+              contador = contador + 1;
+            }
+            break;
+          }
+        }
+      }
+      if (feed.entry.length >= maxResults)
+      {
+        startIndex += maxResults;
+        sendQuery12();
+      }
+      else {
+        printArrayResults();
+      }
+    }
+}
+
+</script>

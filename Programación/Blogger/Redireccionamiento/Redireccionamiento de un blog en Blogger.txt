@@ -1,0 +1,9 @@
+REDIRECCIONAMIENTO DE UN BLOG EN BLOGGER
+
+Con este código se redirecciona toda visita al blog a cualquiera de sus publicaciones y subpáginas a una dirección web determinada. Colóquese el siguiente código dentro de la etiqueta <head> y en primera posición, en el HTML del blog. Cámbiese la URL https://agostos.web.app por la dirección pertinente.
+
+<script type='text/javascript'>
+  var d='<data:blog.url/>';
+  d=d.replace(/.*\/\/[^\/]*/, '');
+  location.href = 'https://agostos.web.app';
+</script>

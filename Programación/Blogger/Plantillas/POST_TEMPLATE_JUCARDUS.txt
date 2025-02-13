@@ -1,0 +1,97 @@
+<p><a href="***" class="madre">[ ← *** ]</a> <a href="***" class="madre">[ ← *** ]</a> <a href="***" class="madre">[ ← *** ]</a></p>
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ INCRUSTACIOWN PARA PASTEBIN
+
+<iframe src="https://pastebin.com/embed_iframe/***" style="border:none; width:100%; height:300px; padding-top:10px;"></iframe>
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ APOTEGMAS
+
+<p style="padding-top: 10px"><big>*****</big></p>
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ INCRUSTACIOWN SHORT DE YOUTUBE
+
+<center><iframe width="315" height="560" src="https://www.youtube.com/embed/***" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ REDIRECCIONAMIENTO
+
+<p>Redireccionando a → <b>pastebin.com</b>.</p>
+
+<script type="text/javascript">
+    window.location.href = "***";
+</script>
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ IWNDICE TREINTA RECIENTES DE ETIQUETA
+
+<ul style="padding-top: 10px;" id = "mostrar***"></ul>
+<script type="text/javascript">
+  function listaEntradasRecientes(json) {
+    var todo = [];
+    for (var i = 0; i < json.feed.entry.length; i++) {
+      for (var j = 0; j < json.feed.entry[i].link.length; j++) {
+        if (json.feed.entry[i].link[j].rel == 'alternate') {
+          break;
+        }
+      }
+      var url = "'" + json.feed.entry[i].link[j].href + "'";
+      var titulo = json.feed.entry[i].title.$t;
+      var orden = titulo.toString().toUpperCase().replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^a-z0-9]/gi, '').replace(/ /g,'');
+      var item = "<li><!--" + orden + "--><a href="+ url + '">' + titulo + "</a>";
+      todo.push(item);
+    }
+    todo = todo.sort((a, b) => a.localeCompare(b))
+    var entradas = todo.join('</li>');
+    document.getElementById('mostrar***').innerHTML = entradas;
+  }
+</script>
+<script src="/feeds/posts/summary/-/***?max-results=30&alt=json-in-script&callback=listaEntradasRecientes"></script>
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ IWNDICE TREINTA RECIENTES & CONTEO
+
+<div id = "***"></div>
+
+<script style="text/javascript">
+function mbhTotalCount(json) {
+  var conteo = parseInt(json.feed.openSearch$totalResults.$t,10);
+  document.getElementById('***').innerHTML = 'Lista de las quince entradas más recientes. Para buscar entre las ' + conteo + ' entradas del diccionario, clica <a href="/busca"><b>AQUÍ</b></a>.';
+}
+</script>
+<script src="/feeds/posts/default/-/etiqueta***?alt=json-in-script&callback=mbhTotalCount"></script>
+
+<ul style="padding-top: 10px;" id = "mostrar***"></ul>
+
+<script type="text/javascript">
+  function listaEntradasRecientes(json) {
+    var todo = [];
+    for (var i = 0; i < json.feed.entry.length; i++) {
+      for (var j = 0; j < json.feed.entry[i].link.length; j++) {
+        if (json.feed.entry[i].link[j].rel == 'alternate') {
+          break;
+        }
+      }
+      var url = "'" + json.feed.entry[i].link[j].href + "'";
+      var titulo = json.feed.entry[i].title.$t;
+      var item = "<li><a href="+ url + '">' + titulo + "</a>";
+      todo.push(item);
+    }
+    var entradas = todo.join('</li>');
+    document.getElementById('mostrar***').innerHTML = entradas;
+  }
+</script>
+<script src="/feeds/posts/summary/-/etiqueta+++?max-results=30&alt=json-in-script&callback=listaEntradasRecientes"></script>
+
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ INCRUSTACIOWN GAS CROSSED
+
+<div id="mostrar***"></div>
+<iframe style="display: none;" src="exec***"></iframe>
+<script>
+  var url = window.location.href;
+  if (url.indexOf('url***') >= 0) {
+    window.addEventListener("message",
+    function (e) {
+      if(e.origin == "exec***"){ return; }
+          document.getElementById("mostrar***").innerHTML = e.data;
+    },
+    false);
+  }
+</script>

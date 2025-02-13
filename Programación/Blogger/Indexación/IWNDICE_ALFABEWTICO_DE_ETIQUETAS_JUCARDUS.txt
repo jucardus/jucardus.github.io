@@ -1,0 +1,22 @@
+<ul class='margenReducido' id = "mostrarEtiquetas"></ul>
+
+<script>
+  function cat(json){
+    var label = json.feed.category;
+    var lst = [];
+    var todo = [];
+    for (i = 0; i < label.length; i++){
+      var lema = label[i].term.toString();
+      var orden = lema.toString().toUpperCase().replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^a-z0-9]/gi, '').replace(/ /g,'').replace(/-/g,'');
+      var enlace = '<!--' + orden + '--><li><a href="/search/label/' + lema + '">' + lema + '</a></li>';
+      //var enlace = '<!--' + orden + '--><a href="/search/label/' + lema + '">' + lema + '</a>';
+      todo.push(enlace);
+    }
+    todo = todo.sort((a, b) => a.localeCompare(b))
+    var etiquetas = todo.join('');
+    //var etiquetas = todo.join(' &bull; ');
+    document.getElementById('mostrarEtiquetas').innerHTML = '<b>🏷 ' + etiquetas + '</b>';
+    document.getElementById('mostrarEtiquetas').innerHTML = etiquetas;
+  }
+</script>
+<script src="/feeds/posts/summary?alt=json&max-results=0&callback=cat"></script>

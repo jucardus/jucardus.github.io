@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-JT627KMWEJ'/>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-JT627KMWEJ&#39;);
+</script>
+
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <meta content='abreviaturas, apotegmas, Bash, Bash - Bourne-Again Shell, Blogger, Bourne Again Shell, Cascading Style Sheets, chino, chino-español, clásicos de la música, CSS, CSS - Cascading Style Sheets, cuentos, diccionario, diccionario chino-español, diccionario de nombres, diccionario de nombres bíblicos, diccionario inglés-español, diccionario multilingüe, diccionarios, diccionarios todos, enlaces, enlaces muchos, enlacista, Escritos varios, español, etiquetas, etiquetas de los diccionarios, Firebase, frases, frases chinas, frases chinas traducidas, Google Apps Script, herramientas, Herramientas algunas, herramientas web, inglés, inglés-español, JavaScript, Moby Thesaurus, multilingüe, música, música clásica, nombres, nombres bíblicos, programación, programación básica, radicales chinos, reflexiones, sinónimos, tesauros, thesauros, traducciones, traducciones al español, traducciones inglés-español' name='keywords'/>
+    <meta content='Diccionarios varios, traducciones al español, programación básica y algunas cosas más.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <link href='https://fonts.googleapis.com' rel='preconnect'/>
+    <link crossorigin='' href='https://fonts.gstatic.com' rel='preconnect'/>
+    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap' rel='stylesheet'/>
+    <b:if cond='data:blog.isMobile'>
+      <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+   <b:skin><![CDATA[/*
+	]]></b:skin>
+
+  <style>
+    * {
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: White;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(155, 155, 155, 0.5);
+      background-color: #eee;
+      border-radius: 20px;
+      border: transparent;
+      border: 1px #333 solid;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: LimeGreen;
+      border: 1px LimeGreen solid;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      div#a {
+        display: none!important;
+        }
+      div#b {
+        width: 100%!important;
+        }
+      div#c {
+        display: none!important;
+        }
+      iframe {
+        border-left: none!important;
+        width: 100vw!important;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+        }
+      input#textInput {
+        font-size: 100%!important;
+        width: 90%!important;
+        }
+      }
+
+    a:link, a:visited, a:active {
+      color: Green;
+      text-decoration: none;
+      }
+    a:hover {
+      color: #ff6600;
+      text-decoration: underline;
+      }
+    a:focus {
+      color: #ff6600;
+      text-decoration: underline;
+      }
+    a.enlaceBreakAll {
+      word-break: break-all;
+    }
+    body {
+      font-family: &quot;Ubuntu&quot;, sans-serif;
+      height: 99%;
+      overflow: hidden;
+      width: 100%;
+      }
+    .desdeLateral {
+      color: Green;
+      }
+    .desdeLateral:hover, .desLateral:focus, .desLateral:active {
+      color: #ff6600;
+      cursor: pointer;
+      }
+    div#a {
+      float: left;
+      height: 100%;
+      overflow-y: auto;
+      width: 23%;
+      }
+    div#b {
+      float: left;
+      height: 100%;
+      width: 54%;
+      }
+    div#c {
+      float: left;
+      height: 100%;
+      overflow-y: auto;
+      width: 23%;
+      }
+    div#contenidoA {
+      background-color: White;
+      color: Black;
+      font-kerning: none;
+      font-size: 97%;
+      line-height: 1.4;
+      padding: 20px 20px 120px 10px;
+      }
+    div#contenidoB {
+      }
+    div#contenidoC {
+      background-color: White;
+      color: Black;
+      font-kerning: none;
+      font-size: 97%;
+      line-height: 1.4;
+      padding: 10px 20px 120px 10px;
+      }
+    h2 {
+      padding: 20px 0px 20px 0px;
+      }
+    #head {
+      margin-left: 5px;
+      }
+    iframe {
+      height: 100%;
+      position: relative;
+      width: 100%;
+      }
+    li {
+      padding-bottom: 7px;
+      }
+    ol, ul {
+      margin-left: 25px;
+      }
+    p {
+      padding-bottom: 15px;
+      }
+
+  </style>
+
+  </head>
+  <body>
+
+  <div id='a'>
+    <div id='contenidoA'>
+      <div id='head'>
+        <img src='https://quickchart.io/qr?text=https://jucardus.blogspot.com&amp;size=300x300&amp;margin=1&amp;ecLevel=M&amp;dark=666&amp;light=fff&amp;format=png' width='100px'/>
+      </div>
+    <h2>Actividad reciente</h2>
+      <p>El nombre bíblico <b><span class='desdeLateral' onclick='desdeLateral(&apos;1hdioLezs5ym2oeQ1NmLFY1ZrKhGUfCWf&apos;)'>亞比大 (亚比大)</span></b> ahora está incluido en el <i>Diccionario chino-español</i>. &amp;mdash; 24-09-02</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&apos;11PMcG_fu33mX0f32VgHNA9ohEPBPQdvG&apos;)'>亞伯頓 (亚伯顿) [ya4 bo2 dun4] Abdón</span></b> agregado al <i>Diccionario chino-español</i>. &amp;mdash; 24-09-02</p>
+      <p>Cambios en los nombres bíblicos <b><span class='desdeLateral' onclick='desdeLateral(&apos;1OhXJq25R0YCzIbhGVZ80tZdorHtDk99S&apos;)'>Abadón [m.]</span></b>, <b><span class='desdeLateral' onclick='desdeLateral(&apos;1gGWJ9x_RZsUSoUsfOgxigYEHh_wo9Cql&apos;)'>Abagta [m.]</span></b>, <b><span class='desdeLateral' onclick='desdeLateral(&apos;1At-cf2oPq7f4SVwWSnPGydFTmfd1saOd&apos;)'>Abana [f.]</span></b>, <b><span class='desdeLateral' onclick='desdeLateral(&apos;1jvEdDNteNzRUVC6Qr0Xv_GCMF3pouITi&apos;)'>Abarim [pl.]</span></b>, <b><span class='desdeLateral' onclick='desdeLateral(&apos;1ZaZ0jMuhUiBsAvV0g9rhefK-sfhMSQee&apos;)'>Abba [m.]</span></b>, <b><span class='desdeLateral' onclick='desdeLateral(&apos;1HiMKXQ8QsHPLsLYgful56adNZan8aSyu&apos;)'>Abdá [m.]</span></b>, <b><span class='desdeLateral' onclick='desdeLateral(&apos;17s-LAErBwli2cnrxnlYt1RDerLuxtpy6&apos;)'>Abdón [m.]</span></b> y otros &amp;mdash; 24-09-02</p>
+      <p>Se ha creado una nueva sección para los <b><span class='desdeLateral' onclick='desdeLateral(&apos;1SHJ3_-LZK8eiKmrANzoboEjQ21fDtKmW&apos;)'>Símbolos en los diccionarios</span></b>, de modo que estén separados de las <i>Categorías gramaticales de los diccionarios</i>. &amp;mdash; 24-08-31</p>
+      <p>La entrada <b><span class='desdeLateral' onclick='desdeLateral(&apos;1UfZf--43VFVrO1tkZ6onW2UlLQMEhC2p&apos;)'>comprise [v.]</span></b> ha sido agregada al <i>Diccionario inglés-español</i>. &amp;mdash; 24-08-31</p>
+      <p>Unas cuantas traducciones para <b><span class='desdeLateral' onclick='desdeLateral(&apos;1ngl8P-GyjKkPVWdiKpc0Hdw7TPMbDMF_&apos;)'>a stranger to [loc.]</span></b> y una traducción en contexto. &amp;mdash; 24-08-31</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&apos;1k83FaF0u4v-cO6BT-tj7z8FF_AHCIfCF&apos;)'>Endeavor</span></b> en contexto. &amp;mdash; 24-08-31</p>
+      <p><b>La busca ha sido optimizada.</b> Al hacer una búsqueda usando el recuadro, se muestran rápidamente los resultados extraídos de la base de datos. Luego el usuario debe clicar en <code>{ruta}</code> para ver cuál de los resultados es el que se debe abrir. &amp;mdash; 24-08-31</p>
+      <p>Cómo crear un <b><span class='desdeLateral' onclick='desdeLateral(&apos;1F-mrejbzSJeazYQgTuGFlA-kTtMtbe3d&apos;)'>Blog en blanco con redireccionamiento</span></b> para reenviar un blog a otra dirección URL. &amp;mdash; 24-08-30</p>
+      <p>Cómo crear un <b><span class='desdeLateral' onclick='desdeLateral(&apos;11QUG3FDj3ej3q2XR4Kt-eoKKWAH1Duff&apos;)'>Blog en blanco con Google Doc mobilebasic insertado</span></b> como cuerpo completo. &amp;mdash; 24-08-30</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&apos;1B83FfVnbBldh1S4w-2IUJeeV2kgT5gNi&apos;)'>Reemplazar uno o más caracteres con Bash</span></b> agregado a <i>Bash - Bourne-Again Shell</i>. &amp;mdash; 24-08-30</p>
+      <p>Se agregó <b><span class='desdeLateral' onclick='desdeLateral(&apos;1TFK8Sad9l0_9Q4ajKIdEhWEG5AFdLPEG&apos;)'>Reemplazar los saltos de línea por un carácter con Bash</span></b> a <i>Bash - Bourne-Again Shell</i>. &amp;mdash; 24-08-30</p>
+      <p>Se agregó <b><span class='desdeLateral' onclick='desdeLateral(&apos;1Zjjp-Cbw61rV1ZKDq8dHsabrZ3K8kaQr&apos;)'>Inserción de un salto de línea con echo en Bash</span></b> a <i>Bash - Bourne-Again Shell</i>. &amp;mdash; 24-08-30</p>
+      <p>Si vas de paseo a la costa, seguramente necesitarás la palabra <b><span class='desdeLateral' onclick='desdeLateral(&apos;1Q9TMlHwTLYKOolel8TgK07U3SRRYGidA&apos;)'>seaside resort [s.c.]</span></b>. Ha sido agregada al <i>Diccionario inglés-español</i>. &amp;mdash; 24-08-28</p>
+      <p>La manida frase inglesa <b><span class='desdeLateral' onclick='desdeLateral(&apos;1t_prkXNxJtkLf1PJ4Shrxd6dT-_7Gc_O&apos;)'>you should know better [fr.]</span></b> agregada al <i>Diccionario inglés-español</i>. &amp;mdash; 24-08-28</p>
+      <p>El pronombre <b><span class='desdeLateral' onclick='desdeLateral(&apos;1sUerSTBaGqUXOKlvHOUDhGotVEbod4_c&apos;)'>you [pron.]</span></b> ha sido agregado al <i>Diccionario inglés-español</i>. &amp;mdash; 24-08-28</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&apos;1JyGS4h4S4KiAcAJMDq_IURh6EBWgQqDf&apos;)'>Concierto para flauta en Do mayor</span></b>, de Friedrich der Grosse, agredo a <i>Música clásica</i>. &amp;mdash; 24-8-27</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&apos;1paPxhmS2Sl_ZBgJ9EQ9-hQ8EpIoQqYqW&apos;)'>At all hazards [loc.]</span></b> tiene una traducción en contexto, tomado de <cite>Charlie Codman&#39;s Cruise</cite>. &amp;mdash; 24-8-27</p>
+      <p>Traducciones agregadas para <b><span class='desdeLateral' onclick='desdeLateral(&apos;1810flrDoZNuX_z_N_MxCQTkbVDXqEcJM&apos;)'>main hub [s.c.]</span></b> &amp;mdash; 24-8-27</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&apos;15GGMZPC3D7c15BryD-ZsRpJKVVJIKtma&apos;)'>Twit [s.]</span></b> aumentado en el <i>Diccionario inglés-español</i>. &amp;mdash; 24-8-27</p>
+      <p>Unas cuantas líneas en <i>JavaScript</i> para <b><span class='desdeLateral' onclick='desdeLateral(&apos;1QLVfT8qheDgoBt3YjNM7qK5k-Zfpo1OI&apos;)'>Obtener la fecha, hora, minutos y segundos</span></b>. &amp;mdash; 24-8-27</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&quot;1QohAHDPDM_Gx6nu0mXu_H7QFAoiux93Y&quot;)'>Verbatim [adv.]</span></b> agregado al <i>Diccionario inglés-español</i>, con sinónimos. &amp;mdash; 24-8-26</p>
+      <p><b><span class='desdeLateral' onclick='desdeLateral(&quot;1L6zZqcQEMrPf2h2OqCH1yUiyhSZ-ImYF&quot;)'>Verbatim [adj.]</span></b> agregado al <i>Diccionaro inglés-español</i>. &amp;mdash; 24-8-26</p>
+      <p>Adiciones al <i>Diccionario chino-español</i>: <b><span class='desdeLateral' onclick='desdeLateral(&quot;1-tVG-9RgjbczF_BROHGPliivy96ZpW3V&quot;)'>一字</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&quot;1wwy-yZ8vIp01nnfl62-OZtyCwFpLWtXs&quot;)'>一字一淚</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&quot;1ClNl0QWO-eIPlvpIN-f0sa-iiD5NiKIm&quot;)'>一字不差</span></b> &amp;mdash; 24-8-26</p>
+      <p>Numerosas correcciones en <i>Enlaces muchos</i>, en especial en los <b><span class='desdeLateral' onclick='desdeLateral(&quot;1_upOP6OBbfRD4udybztlDMupYEWYnssQ&quot;)'>enlaces acortados</span></b> y en <b><span class='desdeLateral' onclick='desdeLateral(&quot;1BeRu_0TibeLxFYW49FIMtqvWTpbespGe&quot;)'>códigos QR</span></b>. &amp;mdash; 24-8-26</p>
+      <p>Terminé de traducir el <b><span class='desdeLateral' onclick='desdeLateral(&quot;1fmzVZXrpLIL_uj3GXbYy_bOEA-ECNBrZ&quot;)'>Prefacio</span></b> de <cite>Charlie Codman&#39;s Cruise</cite>, con la equivalencia de las palabras importantes y traducción párrafo por párrafo. &amp;mdash; 24-8-25</p>
+      <p>Se han importado numerosos enlaces a la sección <b><span class='desdeLateral' onclick='desdeLateral(&quot;1zhj_a7P9ALWjOQg1-AGQExytGfJ1loUH&quot;)'>Enlaces muchos</span></b>, clasificados alfabéticamente por temas y subtemas. &amp;mdash; 24-8-25</p>
+      <p>Adiciones al <i>Diccionario inglés-español</i>: <b><span class='desdeLateral' onclick='desdeLateral(&apos;1lJ_D-aGIYNQ8Q7LkUf6INPvZVVLemodE&apos;)'>down the street [loc.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1qg01GyYNHyr0OcbxoTdVR8zE-BVyLLDz&apos;)'>downwards [adv.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1lJzd_Ac8dO3ZM7VUP3lkVVks42whYFW6&apos;)'>do you fancy a bite [fr.Q.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;18LpD-dFqVHU_AmDmF22gHEahE0O21urt&apos;)'>each and every one [loc.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1iWo3Ry81M2SIfBGqDZTw3fABHIdWWZfH&apos;)'>easel [s.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1MECQpEUQko1m-_nCoytTKl1pPgppRtja&apos;)'>be financially embarrassed [fr.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1307l5YSYbCWt9QA9b8kOlu4-xeEixllj&apos;)'>embarrass [v.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1atfF-oQRpd95mZ-bPxJMF-KHN2Da4ksM&apos;)'>enormous [adj.]</span></b>. &amp;mdash; 24-3-20</p>
+      <p>Diccionario inglés-español: <b><span class='desdeLateral' onclick='desdeLateral(&apos;1QKmrpcxPqaDRpdUpM3p3dNpNLq6X3Q4R&apos;)'>dejection [s.]</span></b>. &amp;mdash; 24-3-17</p>
+      <p>Diccionario inglés-español: <b><span class='desdeLateral' onclick='desdeLateral(&apos;1dIMVe1LO5CMYgOuw5AXuFK-BUriDx1Iu&apos;)'>dejected [adj.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1FaDvVeABOdQSpPDOn1s9rF4y9vtFskEm&apos;)'>withdraw [v.]</span></b>. &amp;mdash; 24-3-15</p>
+      <p>Diccionario chino-español: <b><span class='desdeLateral' onclick='desdeLateral(&apos;1RfMir4fdr09fMVNJ4RpfWcGXVx5PTKLA&apos;)'>一一對應 (一一对应) [yi1 yi1 dui4 ying4]</span></b>. &amp;mdash; 24-3-14</p>
+      <p>Diccionario inglés-español: <b><span class='desdeLateral' onclick='desdeLateral(&apos;11O2xDICmQzqtlnvkTP0FQJCu5q-P0Yx3&apos;)'>deal with [loc.]</span></b>; <b><span class='desdeLateral' onclick='desdeLateral(&apos;1ixj_OXU38TRmiCbEoA9c1JKQ6dmYiinw&apos;)'>pass under review [loc.]</span></b>. &amp;mdash; 24-3-14</p>
+    </div>
+  </div>
+
+  <div id='b'>
+    <!--div id='contenidoB'-->
+      <iframe class='iframe' frameborder='0' height='100%' id='iframe' src='' width='100%'/>
+    <!--/div-->
+  </div>
+
+  <div id='c'>
+    <div id='contenidoC'>
+      <h2>Índice alfabético</h2>
+      <ul>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1EAiOwdrJPIwBNJWSRK2ms55s_9bKcw95&quot;)'>INICIO</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1I88UeuTpnVgNooN9z-ycN50WDQZ0-p19&quot;)'>Abreviaturas de los diccionarios</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1l5OK-pe1-N00j-X1nhqbSC3hFkY_Q-ec&quot;)'>Apotegmas</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1SUlw7CHo2o9LOvVvxM3BDQtqlKihlCSs&quot;)'>Bash - Bourne-Again Shell</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1jY3LKSaPvpA_TIben9n7PeQyuWZxCIzs&quot;)'>Blogger, algunas herramientas</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&apos;1Ef7EAj5gYbzajXuPXCEj1fBzFfP8fAch&apos;)'>Categorías gramaticales de los diccionarios</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;11bOGBTDJZllqEMSMQMFWCFYwtKlFc2V-&quot;)'>CSS - Cascading Style Sheets</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1RVJZdNwd1N9J4YdnDUP2DIBA8-8HCAnS&quot;)'>Diccionario chino-español</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1WYqV7OVVYsvMiQvZd-FLRHs0mABYD7qn&quot;)'>Diccionario de nombres bíblicos</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1N6zXkEyw5SVDE9Q5SNbwiN5LjGf1my5M&quot;)'>Diccionario inglés-español</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;13VKl2JHxepfJr1kBWgVdAbS8xzRzCmB0&quot;)'>Diccionario multilingüe</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;18Op-kRxBVbZJTlSUJbhU1-d60klIRaPj&quot;)'>Diccionarios todos</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1zhj_a7P9ALWjOQg1-AGQExytGfJ1loUH&quot;)'>Enlaces muchos</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1Jz1KWFZ3KF7Bry2VHQn5f6sqcXmhFCn7&quot;)'>Escritos varios</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;12_Sd43nhnPAI-TM4WltHTc-4kyME4-fH&quot;)'>Etiquetas de los diccionarios</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1MQinsvgf4xYORM5Q6O-YBbCHSG9hQulk&quot;)'>Frases chinas</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1Nlb9A4QlOar6gnxviTHjCGHQFqhutUbn&quot;)'>Google Apps Script</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1mJGsL2SyasWWSz61u7GE8UcFiLMM9vPi&quot;)'>Herramientas algunas</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;18VMd_knKNWmVuwLMMwjWhEtiVIDLLFRJ&quot;)'>JavaScript</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;18EOhKtVZMdGqeilIxTdPGYK71x_zQpFE&quot;)'>Moby Thesaurus</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1PusqmvqFSeruf6MyRfZ6xG367uoFm2G4&quot;)'>Música clásica</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;10ZBpLnTjru2XG-HV4cIN5K5BJmCOfdyr&quot;)'>Programación básica</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1RVJZdNwd1N9J4YdnDUP2DIBA8-8HCAnS&quot;)'>Radicales chinos</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1tRo8YT9VzPGmh30gJYBPXkAMSCNfYkRb&quot;)'>Traducciones al español</span></li>
+      </ul>
+      <h2>Más contenido</h2>
+      <ul>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1izgdm5sfrNt__64xH1UPO0rYPfVWRfeT&quot;)'>Charlie Codman&#39;s Cruise, A Story for Boys, by Jr. Horatio Alger</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1z6hpWKuDV4BwxXaLRrwt4lhmW4nFRQK3&quot;)'>Hoja mnemotécnica</span></li>
+        <li><span class='desdeLateral' onclick='desdeLateral(&quot;1V178BUHXIj_Yy2DgXyoF_O0DTt3UQdjz&quot;)'>Invitación a pCloud</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+
+    var ejecutable = &#39;https://script.google.com/macros/s/AKfycbwC2HFzyX0_ya-XLeeTN2bXdfytHn30EJT6Vpdwlpg3ZZucOOqkE9ZABULtUHUV2xGCrg/exec?q=&#39;;
+
+    var busca = window.location.href.replace(/.*\.com\//g,&#39;&#39;).replace(&#39;?m=1&#39;,&#39;&#39;).replace(/\?.*/g,&#39;&#39;);
+
+    if (busca == &#39;?m=1&#39;) {busca = &#39;&#39;;}
+
+    document.getElementById(&#39;iframe&#39;).src = ejecutable + busca;
+
+    setTimeout(() =&gt; { window.history.replaceState({}, document.title, &quot;/&quot; + &quot;&quot;) }, 8000);
+
+    function desdeLateral(recibido) {
+      document.getElementById(&#39;iframe&#39;).src = ejecutable + recibido;
+    }
+
+  </script>
+
+  <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'/>
+
+  </body>
+</html>

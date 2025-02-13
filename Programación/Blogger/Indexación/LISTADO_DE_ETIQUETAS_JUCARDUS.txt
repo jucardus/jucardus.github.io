@@ -1,0 +1,21 @@
+<div id = "mostrarEtiquetas" style="line-height: 1.8;">Recopilando...</div>
+
+<script>
+  function cat(json){
+    var label = json.feed.category;
+    var lst = [];
+    var todo = [];
+    for (i = 0; i < label.length; i++){
+      var lema = label[i].term.toString();
+      if (lema != 'dicingesp') {
+        var orden = lema.toString().replace(/[^a-z0-9]/gi, '').replace(/ /g,'').toUpperCase();
+      	var enlace = '<!--' + orden + '--><li><a href="/search/label/' + lema + '">' + lema + '</a>';
+      	todo.push(enlace);
+      }
+    }
+    todo = todo.sort((a, b) => a.localeCompare(b))
+    var etiquetas = todo.join('</li>');
+    document.getElementById('mostrarEtiquetas').innerHTML = '<ul>' + etiquetas + '</ul>';
+  }
+</script>
+<script src="https://jucardus.blogspot.com/feeds/posts/summary?alt=json&max-results=0&callback=cat"></script>

@@ -1,0 +1,26 @@
+<style>
+  input#search-box {
+    border: 2px dotted Gray;
+    border-radius: 4px;
+    color: DarkSlateGray;
+    font-family: monospace, sans-serif;
+    font-size: 105%;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 2px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+  input#search-btn {display: none;}
+  ::placeholder {text-align: right; color: Gray;}
+</style>
+
+<div style="margin-top: 30px!important; margin-left: 20px!important;">
+  <form id="searchthis" action="/search" style="DISPLAY: inline" method="get">
+  <input id="search-box" name="q" size="25" placeholder="...🔍" autofocus="" style="padding-left: 4px;" autocomplete="off">
+  <input id="search-btn" value="Search" type="submit">
+  </form>
+</div>
+
+<p style="padding-top: 15px;">Escribe en el recuadro y presiona ENTER para buscar entre todas las entradas del blog, incluyendo los índices.</p>

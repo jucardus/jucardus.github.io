@@ -1,0 +1,77 @@
+<div style="color: OrangeRed; font-size: 125%; font-weight: bold; text-align: center">BUSCANDO</div>
+
+<script>
+
+var sub = window.location.href.replace(/.*jucardus\.blogspot\.com\//g,"");
+
+var url = "https://jucardus.blogspot.com/search?q=" + sub;
+
+if (sub == "notas") {var url = "https://www.blogger.com/blog/page/edit/4666086615889417898/2552185907768086792";}
+
+if (sub == "perfil") {var url = "https://www.blogger.com/profile/11502776202696943567";}
+
+if (sub == "autor") {var url = "https://www.blogger.com/blog/page/edit/4666086615889417898/1273980677834747854";}
+
+if (sub == "customize") {var url = "https://www.blogger.com/blog/themes/customizer/4666086615889417898";}
+
+if (sub == "layout") {var url = "https://www.blogger.com/blog/layout/4666086615889417898";}
+
+if (sub == "posts") {var url = "https://www.blogger.com/blog/posts/4666086615889417898";}
+
+if (sub == "settings") {var url = "https://www.blogger.com/blog/settings/4666086615889417898";}
+
+if (sub == "stats") {var url = "https://www.blogger.com/blog/stats/week/4666086615889417898";}
+
+if (sub == "themes") {var url = "https://www.blogger.com/blog/themes/4666086615889417898";}
+
+if (sub == "tracking") {var url = "https://jucardus.blogspot.com/b/statsCookieManage?hl=en";}
+
+if (sub == "etqtsz") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/9216435522369875477";}
+
+if (sub == "etqtsv") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/714999161518841355";}
+
+if (sub == "etqtsu") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1363250842039540737";}
+
+if (sub == "etqtst") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/9077886483488477717";}
+
+if (sub == "etqtss") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1745005881322201503";}
+
+if (sub == "etqtsr") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/2836958646717901858";}
+
+if (sub == "etqtsq") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/4057213175319741636";}
+
+if (sub == "etqtsp") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/7016664641071698561";}
+
+if (sub == "etqtso") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1917617377400997218";}
+
+if (sub == "etqtsn") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/8260440332527284930";}
+
+if (sub == "etqtsm") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/5885048730259060684";}
+
+if (sub == "etqtsl") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1074808584901326370";}
+
+if (sub == "etqtsj") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/6224981112777274672";}
+
+if (sub == "etqtsh") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1551499938357585028";}
+
+if (sub == "etqtsi") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1972831621093284432";}
+
+if (sub == "etqtsc") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/7887046162701933684";}
+
+if (sub == "etqtsd") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1365214844674645945";}
+
+if (sub == "etqtse") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/4452700590092772741";}
+
+if (sub == "etqtsf") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/1030487653132750215";}
+
+if (sub == "etqtsg") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/8236101027530205567";}
+
+if (sub == "etqtsa") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/7820418953086772840";}
+
+if (sub == "etqtsb") {var url = "https://www.blogger.com/blog/post/edit/4666086615889417898/5881143252716420669";}
+
+if (window.location.href.indexOf("undefined") >= 0 && window.location.href.indexOf("/") >= 4) {var url = "/undefined";}
+
+window.location.href = url;
+
+</script>

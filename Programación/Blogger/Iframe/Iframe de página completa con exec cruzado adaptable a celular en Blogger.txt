@@ -1,0 +1,100 @@
+IFRAME DE PÁGINA COMPLETA CON EXEC CRUZADO ADAPTABLE A CELULAR EN BLOGGER
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-JT627KMWEJ'/>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-JT627KMWEJ&#39;);
+</script>
+
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <meta content='nada todavía' name='keywords'/>
+    <meta content='Nada todavía.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <b:if cond='data:blog.isMobile'>
+      <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+   <b:skin><![CDATA[]]></b:skin>
+
+    <style>
+      @media only screen and (max-device-width: 480px) {
+        body {
+          padding: 15px 2px 150px 2px !important;
+          }
+        h1 {
+          padding-top: 20px!important;
+          }
+        }
+      a {
+        color: DarkGreen;
+        text-decoration: none;
+        word-break: break-all;
+        }
+      a:hover {
+        color: OrangeRed;
+        }
+      body {
+        background-color: #efd;
+        letter-spacing: 0.3px;
+        padding: 5% 24% 150px 24%;
+        }
+      #contenedor {
+        margin: 5px;
+        }
+      .fecha {
+        font-size: 85%;
+        }
+      h1 {
+        padding-bottom: 27px;
+        }
+      h2 {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        }
+      h3 {
+        padding-top: 14px;
+        }
+      #pie {
+        margin-top: 50px;
+        text-align: center;
+        }
+      .previo {
+        color: OrangeRed;
+        font-size: 90%;
+        font-weight: bold;
+        }
+    </style>
+
+  </head>
+<body>
+  <div id='contenedor'>
+    <h1>Jucardus.com</h1>
+    <div id='mostrar'/>
+    <div id='pie'>&#10038;</div>
+    <iframe src='https://script.google.com/macros/s/AKfycbwjZlcAT4Uun3dfyPC0C_AULEXZI0i_1ZaVgkTN1cCzXrCGRaf4oXGdC21HHj2uJf4s/exec' style='display: none;'/>
+  </div>
+  <script>
+      window.addEventListener(&quot;message&quot;,
+          function (e) {
+              if(e.origin == &quot;https://script.google.com/macros/s/AKfycbwjZlcAT4Uun3dfyPC0C_AULEXZI0i_1ZaVgkTN1cCzXrCGRaf4oXGdC21HHj2uJf4s/exec&quot;){ return; }
+              document.getElementById(&quot;mostrar&quot;).innerHTML = e.data;
+          },
+      false);
+  </script>
+<b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'/>
+</body>
+</html>
+
+~ finis ~

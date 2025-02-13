@@ -1,0 +1,148 @@
+<style>a:link, a:visited, a:hover, a:active {color: DarkGreen; text-decoration: none;} body {white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;} button {font-size: 90%;} input {font-size: 100%; width: 95%; border-radius: 4px; padding: 3px; letter-spacing: 1.2px;} #mostrar {font-size: 100%; font-family: 'Courier'; font-weight: bold; padding-top: 30px; text-align: left;} ::placeholder {color: #c0c0c0;}
+</style>
+
+<body>
+
+<form method="post">
+    <input type="text" name="titulo" id="titulo" placeholder="título" autocomplete="off" autofocus /><p></p>
+    <input type="text" name="contenido" id="contenido" placeholder="contenido" autocomplete="off" /><p></p>
+    <input type="text" name="enlace1" id="enlace1" placeholder="enlace 1" autocomplete="off" /><p></p>
+    <input type="text" name="twitter" id="twitter" placeholder="mi cuenta" autocomplete="off" /><p></p>
+    <input type="text" name="etiqueta" id="etiqueta" placeholder="etiquetas" autocomplete="off" /><p></p>
+    <input type="text" name="cuentas" id="cuentas" placeholder="cuentas" autocomplete="off" /><p></p>
+    <input type="text" name="enlace2" id="enlace2" placeholder="enlace 2" autocomplete="off" /><p></p>
+    <button type="button" onclick="limpiar()">Limpiar</button>&#12288;<button type="button" onclick="crear()">Generar / Actualizar</button>
+</form>
+
+<div id="conteo"></div>
+<div id="mostrar"></div>
+
+<p/><br/><hr style="width: 20%;"><p/><br/>
+
+<p><b>Título:</b> Título principal del tuit, convertido automáticamente a mayúsculas.</p>
+<p><b>Contenido:</b> Texto principal del tuit, separado del título por un guión largo.</p>
+<p><b>Enlace 1:</b> Enlace principal que deseas compartir, por lo común a un sitio externo.</p>
+<p><b>Mi cuenta:</b> Nombre de usuario de tu cuenta, sin incluir el símbolo @. Si agregas tu nombre de usuario, éste acompañará como sufijo a todas las etiquetas que agregues.</p>
+<p><b>Etiquetas:</b> Separadas por comas, sin espacios y sin incluir el simbolo #. Serán ordenadas automática y alfabéticamente.</p>
+<p><b>Cuentas:</b> Para agregar otros nombres de usuario además del tuyo; separados por comas, sin espacios y sin incluir el símbolo @. Serán ordenados automática y alfabéticamente.</p>
+<p><b>Enlace 2:</b> Enlace secundario para retuitear el contenido de otro usuario.</p>
+El primer resultado en texto verde es un enlace que crea automáticamente el tuit en la cuenta que esté activa en el navegador. El texto simple después del enlace en verde está allí para copiarlo y pegarlo manualmente en caso que el enlace no funcione y para contar con una vista previa de cómo se verá el tuit.
+
+<script>
+
+function crear() {
+
+    var titulo = document.getElementById('titulo').value;
+        var titulo = titulo.replace(/  /g,' ').trim();
+        var titulo = titulo.toUpperCase();
+    var contenido = document.getElementById('contenido').value;
+        var contenido = contenido.replace(/  /g,' ').trim();
+    if (titulo != '' && contenido != '') {var titulo = titulo + ' — ';}
+    if (titulo != '' && contenido == '') {var titulo = titulo;}
+    var twitter = document.getElementById('twitter').value;
+    var enlace1 = document.getElementById('enlace1').value;
+        if (enlace1 != '') {var enlace1 = '<p></p>🔗 ' + enlace1;}
+    var etiqueta = document.getElementById('etiqueta').value;
+        if (etiqueta != '') {
+            let arrayTXT = etiqueta.split(',');
+            let todoTXT = [];
+          	if (twitter != '') {
+                for (let i = 0; i < arrayTXT.length; i++) {
+                    var parcialTXT = '#' + arrayTXT[i].toString() + '_' + twitter;
+                    todoTXT.push(parcialTXT);
+                }
+            } else {
+                for (let i = 0; i < arrayTXT.length; i++) {
+                    var parcialTXT = '#' + arrayTXT[i].toString();
+                    todoTXT.push(parcialTXT);
+                }
+            }
+            todoTXT = todoTXT.sort((a, b) => a.localeCompare(b));
+            todoTXT = [...new Set(todoTXT)];
+            var etiquetas = '<p></p>' + todoTXT.join('<br/>');
+        } else {var etiquetas = '<br/>'}
+    var cuentas = document.getElementById('cuentas').value;
+        if (cuentas != '') {
+            let arrayCuentas = cuentas.split(',');
+            let todasCuentas = [];
+            for (let i = 0; i < arrayCuentas.length; i++) {
+                var cuenta = '@' + arrayCuentas[i].toString();
+                todasCuentas.push(cuenta);
+            }
+            todasCuentas = todasCuentas.sort((a, b) => a.localeCompare(b));
+            todasCuentas = [...new Set(todasCuentas)];
+            var cuentas = '<br/>' + todasCuentas.join('<br/>');
+        } else {var cuentas = '';}
+    var enlace2 = document.getElementById('enlace2').value;
+        if (enlace2 != '') {
+            var enlace2 = '<br/>' + enlace2;
+        } else {var enlace2 = '';}
+
+    var texto = titulo + contenido + enlace1 + etiquetas + cuentas + '<p></p>⿻' + enlace2;
+    var texto = texto.replace(/  /g,' ');
+  		var contador = texto.replace(/<p>/g,' ').replace(/<\/p>/g,' ').replace(/<br\/>/g,' ').length;
+  		if (contador >= 281) {var contador = '<span style="color: OrangeRed;">' + contador + '</span>';}
+  			document.getElementById('conteo').innerHTML = '<p>&#12288;<b>' + contador + '</b> caracteres de 280</p>';
+  	var textoParaTwitter = texto.replace(/—/g,'%E2%80%94').replace(/🔗/g,'%F0%9F%94%97').replace(/⿻/g,'%E2%BF%BB');
+
+  	var twitter = textoParaTwitter;
+    var twitter = twitter.replace(/<p><\/p>/g,'%0D%0D');
+    var twitter = twitter.replace(/<br\/>/g,'%0D');
+    var twitter = twitter.replace(/ /g,'%20');
+    //var twitter = twitter.replace(/\%/g,'%25');
+    var twitter = twitter.replace(/\$/g,'%24');
+    var twitter = twitter.replace(/\!/g,'%21');
+    //var twitter = twitter.replace(/\"/g,'%22');
+    var twitter = twitter.replace(/\#/g,'%23');
+    var twitter = twitter.replace(/\&/g,'%26');
+    var twitter = twitter.replace(/\'/g,'%27');
+    var twitter = twitter.replace(/\(/g,'%28');
+    var twitter = twitter.replace(/\)/g,'%29');
+    var twitter = twitter.replace(/\*/g,'%2A');
+    var twitter = twitter.replace(/\+/g,'%2B');
+    var twitter = twitter.replace(/\,/g,'%2C');
+    var twitter = twitter.replace(/\-/g,'%2D');
+    var twitter = twitter.replace(/\./g,'%2E');
+    //var twitter = twitter.replace(/\//g,'%2F');
+    //var twitter = twitter.replace(/\:/g,'%3A');
+    var twitter = twitter.replace(/\;/g,'%3B');
+    var twitter = twitter.replace(/\</g,'%3C');
+    //var twitter = twitter.replace(/\=/g,'%3D');
+    var twitter = twitter.replace(/\>/g,'%3E');
+    //var twitter = twitter.replace(/\?/g,'%3F');
+    var twitter = twitter.replace(/\@/g,'%40');
+    var twitter = twitter.replace(/\[/g,'%5B');
+    var twitter = twitter.replace(/\\/g,'%5C');
+    var twitter = twitter.replace(/\]/g,'%5D');
+    var twitter = twitter.replace(/\^/g,'%5E');
+    //var twitter = twitter.replace(/\_/g,'%5F');
+    var twitter = twitter.replace(/\`/g,'%60');
+    var twitter = twitter.replace(/\{/g,'%7B');
+    var twitter = twitter.replace(/\|/g,'%7C');
+    var twitter = twitter.replace(/\}/g,'%7D');
+    var twitter = twitter.replace(/\~/g,'%7E');
+    var twitter = twitter.replace(/\¡/g,'%A1');
+    var twitter = twitter.replace(/\·/g,'%B7');
+    var twitter = twitter.replace(/\¿/g,'%BF');
+
+    var url = 'https://twitter.com/intent/tweet?text=' + twitter;
+
+    document.getElementById('mostrar').innerHTML = 'Clícame ↴<br/><a href="' + url + '" target="_blank">' + twitter + '</a><p></p><br/>' + texto;
+
+}
+
+function limpiar() {
+    document.getElementById('titulo').value = "";
+    document.getElementById('contenido').value = "";
+    document.getElementById('enlace1').value = "";
+    document.getElementById('etiqueta').value = "";
+    document.getElementById('cuentas').value = "";
+    document.getElementById('enlace2').value = "";
+    document.getElementById('twitter').value = "";
+    document.getElementById('conteo').innerHTML = "";
+    document.getElementById('mostrar').innerHTML = "";
+}
+
+</script>
+
+</body>

@@ -1,0 +1,78 @@
+IFRAME DE PÁGINA COMPLETA CON SRC VARIABLE PARA CELULARES EN BLOGGER
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-JT627KMWEJ'/>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+
+  gtag(&#39;config&#39;, &#39;G-JT627KMWEJ&#39;);
+</script>
+
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <meta content='Apotegmas, Bash, Biografías, Compositores, CSS, Cuentos, Descargas, Diario, Diccionarios, Escritos, Franz Benda, Johannes Brahms, Jules Massenet, Lugares, Lugares históricos, Memorabilia, Música, Películas, Poesía, Programación, Reflexiones, Sinónimos españoles, Vocabulario español, Vocabulario inglés, Wolfgang Amadeus Mozart, abreviaturas, apotegmas, Bash, Bash - Bourne-Again Shell, Blogger, Bourne Again Shell, Cascading Style Sheets, chino, chino-español, clásicos de la música, CSS, CSS - Cascading Style Sheets, cuentos, diccionario, diccionario chino-español, diccionario de nombres, diccionario de nombres bíblicos, diccionario inglés-español, diccionario multilingüe, diccionarios, diccionarios todos, enlaces, enlaces muchos, enlacista, Escritos varios, español, etiquetas, etiquetas de los diccionarios, Firebase, frases, frases chinas, frases chinas traducidas, Google Apps Script, herramientas, Herramientas algunas, herramientas web, inglés, inglés-español, JavaScript, Moby Thesaurus, multilingüe, música, música clásica, nombres, nombres bíblicos, programación, programación básica, radicales chinos, reflexiones, sinónimos, tesauros, thesauros, traducciones, traducciones al español, traducciones inglés-español' name='keywords'/>
+    <meta content='Diccionarios varios, traducciones al español, programación básica y algunas cosas más.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <link href='https://fonts.googleapis.com' rel='preconnect'/>
+    <link crossorigin='' href='https://fonts.gstatic.com' rel='preconnect'/>
+    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap' rel='stylesheet'/>
+    <b:if cond='data:blog.isMobile'>
+      <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+   <b:skin><![CDATA[/*
+	]]></b:skin>
+
+    <style>
+
+      body {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        }
+      div#navbar.navbar.no-items.section {
+      	display: none;
+      	}
+      iframe {
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        }
+
+    </style>
+
+  </head>
+<body>
+
+  <iframe frameborder='0' height='100%' id='iframe' src='https://script.google.com/macros/s/AKfycbzfigSkvjXKtCNfecgtQE-spfLGX9yY9BIwkkS2X7mbpNfYr90zJ9zDoDYJE7B6IoFp/exec' width='100%'/>
+
+  <script>
+      var celular = &#39;https://script.google.com/macros/s/AKfycbyBYaDTQdxlLo6loDNnDr9AAZP45J-DCMZoemb6kQp-mLvWNw1x8K7vTlMG2l7XrD3ScQ/exec&#39;;
+      var url = window.location.href;
+      if (url.indexOf(&#39;/?m=1&#39;) &gt;= 0) {
+        document.getElementById(&#39;iframe&#39;).src = celular;
+      }
+  </script>
+
+<b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'/>
+
+</body>
+</html>
+
+~ finis ~
