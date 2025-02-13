@@ -221,6 +221,7 @@
     let direccion = '';
     function inicio () {
       direccion = window.location.href.replace(/.*io\/\?=/g,'');
+      window.history.pushState(stateObj, 'title', '*/' + direccion;
         if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
           let str1 = '-'; let str2 = ' '; let str3 = ':';
           let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
@@ -334,6 +335,7 @@
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
+      window.history.pushState(stateObj, 'title', '*/' + temaRecibido);
       window.scrollTo(0, 0);
     }
     function subrayar (temaSubrayar) {
@@ -359,7 +361,7 @@
     }
     function buscar (recibidoDireccion) {
       var lema = document.getElementById("buscar").value.toUpperCase();
-      var lemaOriginal = lema;
+      var lemaOriginal = lema.replace('?=','');
       if (recibidoDireccion != '') {
         lema = direccion
           .replace(/%C3%A1/g,'Á')
