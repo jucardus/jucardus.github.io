@@ -1,1 +1,0 @@
-Algunas cosas básicas de Google Apps Script.

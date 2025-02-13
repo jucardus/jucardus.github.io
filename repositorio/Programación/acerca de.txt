@@ -1,1 +1,0 @@
-Programación básica: JavaScript, Bash, HTML, CSS, Google Apps Script, Firebase.

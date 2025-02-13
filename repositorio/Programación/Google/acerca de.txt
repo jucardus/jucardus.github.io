@@ -1,1 +1,0 @@
-Programación básica para Google Apps Script, Google Analytics, Google Chrome, Google Docs, Google Drive.
