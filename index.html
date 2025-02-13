@@ -221,7 +221,7 @@
     let direccion = '';
     function inicio () {
       direccion = window.location.href.replace(/.*io\/\?=/g,'');
-      //window.history.pushState(stateObj, 'title', '*/' + direccion);
+      //window.history.pushState(stateObj, 'title', '*/');
         if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
           let str1 = '-'; let str2 = ' '; let str3 = ':';
           let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
@@ -335,16 +335,16 @@
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
-      window.history.pushState(stateObj, 'title', '*/' + temaRecibido);
       window.scrollTo(0, 0);
     }
     function subrayar (temaSubrayar) {
       var fondoNoClicados = '4px solid White';
       const temasTodos = document.getElementsByClassName('temas');
-      for (let i = 0; i < temasTodos.length; i++) {
-        temasTodos[i].style.borderBottom = fondoNoClicados;
-      }
-      if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
+        for (let i = 0; i < temasTodos.length; i++) {
+          temasTodos[i].style.borderBottom = fondoNoClicados;
+        }
+        if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
+      window.history.pushState(stateObj, 'title', '*/' + temaSubrayar);
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
     }
