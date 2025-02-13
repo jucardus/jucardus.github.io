@@ -1,0 +1,5 @@
+ENLACE PARA ACCEDER AL JSON DE UN BLOG EN BLOGGER
+
+https://mi_sitio.blogspot.com/feeds/posts/summary
+
+~ finis ~

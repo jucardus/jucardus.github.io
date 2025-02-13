@@ -1,0 +1,48 @@
+a.blog-pager-older-link.flat-button.ripple {color: #0b8043!important;}
+a.blog-pager-older-link.flat-button.ripple:hover {color: #d52c1f!important;}
+#anuncio:hover {background-color: LightYellow; border: 0.1px CadetBlue solid;}
+#anuncio {text-align: center!important; margin-bottom: 25px!important; border-radius: 57px; border: 0.1px Orange solid; padding: 10px; font-weight: bold!important; word-break: break-all; width: 60%; background-color: AliceBlue; background-color: #f7f7f7; opacity: 0.75;}
+article.post-outer-container {border-radius: 8px!important;}
+a.snippet-fade.r-snippet-fade {display: none!important;} /* tres puntos al pie derecho de las entradas en la pawgina de inicio */
+blockquote {font-family: Times!important; background-color: White; color: #222; padding: 10px; border: 1px LightGray solid; border-radius: 8px; text-align: left; font-size: 110%; margin-left: 2px!important; margin-right: 2px!important;}
+body {padding-bottom: 150px;}
+.broken {word-break: break-all;}
+code {padding: 2px!important; font-size: 90%; background-color: #e8e8e8; border-radius: 8px; font-weight: bold; word-break: break-all;}
+div.blogger {display: none!important;}
+div.jump-link.flat-button.ripple {display: none!important;}
+div.post-body:after {/*content: "jucardus.blogspot.com"; font-size: 70%; color: Gray; display: block; width: 100%; text-align: center;*/}
+div.post-body {/*border-top: 1px #368 dotted; padding-top: 10px; text-align: justify;*/}
+div.post-bottom {/*margin-top: -20px!important; font-size: 90%;*/}
+div.post-filter-message {background-color: #ddd!important; color: #333!important;}
+div.post-header {/*margin-bottom: -17px!important;*/}
+div.post-outer {/*margin-bottom: -20px!important;*/}
+div.post-snippet.snippet-container.r-snippet-container {filter: blur(3px); color: #789;}
+div#Stats1.widget.Stats {text-align: center!important;}
+#etiquetasPie {line-height: 1.8; padding-bottom: 15px; padding-left: 15px; padding-right: 15px; text-align: center;}
+#exear {border-radius: 50px; border: 3px White Solid; background-color: #f4f4f4; margin: 4px; padding: 6px; width: max-content; font-weight: bold;}
+#exearFlotante {/*position: fixed; width: 100%; right: 0px; bottom: 20px; z-index: 10;*/}
+#exear:hover {background-color: #efd;}
+.fechiquetas {color: DimGrey;}
+h3 {font-size: 120%;}
+h3.post-title.entry-title {/*margin-bottom: -4px!important;*/}
+.Header a {font-size: 112%!important; font-weight: bold!important;}
+header.centered-top-container.sticky.animating {display: none;}
+img {border-radius: 8px;}
+i {padding-right: 2px;}
+li {padding-bottom: 6px;}
+.madre {font-size: 90%;}
+@media only screen and (max-device-width: 480px) { img#urlQr {display: none!important;} #anuncio {width: 90%!important;} #exear {width: 90%!important;} div.post-body {text-align: left!important;} #exearFlotante {/*bottom: 5px!important;*/} }
+.no-posts-message:after {content: "en la búsqueda o quizá la dirección URL fue escrita incorrectamente. Cuentas con el Índice general para buscar la página manualmente y con la Busca 🔍 inmediata.";}
+.no-posts-message {background-color: LightYellow; border-radius: 8px; padding: 8px; font-size: 110%;}
+.no-posts-message {color: #333; font-weight: bold; text-align: center;}
+ol, ul {margin-left: -10px!important;}
+.parrafoOpaco {opacity: 0.7;}
+#postList12 {margin-top: -3px!important;}
+pre {padding: 10px!important; font-size: 87%; background-color: White; border: 1px LightGray solid; border-radius: 8px; text-align: left;}
+pre {white-space: -moz-pre-wrap; white-space: -o-pre-wrap; /*word-wrap: break-word;*/ word-break: break-all;}
+pre {white-space: pre-wrap; /*word-wrap: break-word;*/ word-break: break-all;}
+section#comments.comments {display: none!important;}
+span.byline.post-labels {font-size: 95%;}
+span#Stats1_totalCount.counter-wrapper.text-counter-wrapper::after {content: " ~";}
+span#Stats1_totalCount.counter-wrapper.text-counter-wrapper::before {content: "~ ";}
+span#Stats1_totalCount.counter-wrapper.text-counter-wrapper {font-size: 135%!important; color: DarkRed!important; font-weight: bold!important;}

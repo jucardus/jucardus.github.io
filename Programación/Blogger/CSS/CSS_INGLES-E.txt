@@ -1,0 +1,24 @@
+.aclaraciones {}
+.categorias1 {color: Gray; font-weight: bold;}
+.categorias2 {color: Gray;}
+.cursivas {font-style: italic;}
+.endash {color: Gray;}
+.etiquetas {}
+.lemas {color: DarkCyan; font-weight: bold;}
+.silabeos {}
+.sinonimos {font-style: italic;}
+.traducciones {}
+.variantes {font-size: smaller; vertical-align: super;}
+
+
+section#comments.comments {display: none;}
+
+div#header.container.section {margin-bottom: 20px; margin-top: -10px;}
+
+div.post-snippet.snippet-container.r-snippet-container {filter: blur(3px);}
+
+div.popular-posts-snippet.snippet-container.r-snippet-container {filter: blur(3px); color: Gray; font-size: 90%;}
+
+article.post-outer-container {border-radius: 6px;}
+
+li {padding-bottom: 5px;}
