@@ -1,0 +1,5 @@
+ELIMINAR LA PRIMERA LÍNEA DE UN DOCUMENTO CON BASH
+
+sed -i -e '1d' documento.txt
+
+~ finis ~

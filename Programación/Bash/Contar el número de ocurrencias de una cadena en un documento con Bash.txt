@@ -1,0 +1,6 @@
+CONTAR EL NÚMERO DE OCURRENCIAS DE UNA CADENA EN UN DOCUMENTO CON BASH
+
+conteo=$(grep -o -i → documento.txt | wc -l);
+echo $conteo
+
+~ finis ~

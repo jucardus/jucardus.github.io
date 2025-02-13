@@ -1,0 +1,7 @@
+REEMPLAZO DE CARACTERES DENTRO DE UNA VARIABLE CON BASH
+
+enlace="asasdf\!qrq\!wer";
+enlace="${enlace//\!/¶¶¶}";
+echo $enlace
+
+~ finis ~

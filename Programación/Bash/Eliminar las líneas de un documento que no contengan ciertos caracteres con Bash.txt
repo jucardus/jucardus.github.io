@@ -1,0 +1,13 @@
+ELIMINAR LAS LÍNEAS DE UN DOCUMENTO QUE NO CONTENGAN CIERTOS CARACTERES CON BASH
+
+sed -i -e '/asdf/!d' lemario-20101017.txt
+
+sed '/á\|é\|í\|ó\|ú\|ü\|ñ\|Á\|É\|Í\|Ó\|Ú\|Ü\|Ñ/!d' lemario-20101017.txt > aaaaa.txt
+
+sed '/▓ vocabulario /!d' ENLACISTA.txt > vocabulario.txt
+
+sed -i -e '/\"name\"\: \"/!d' '/\"folderid\"\: /!d' pcloud.txt
+
+sed '/\"name\"\:\|\"folderid\"\: /!d' pcloud.txt > aaaaa.txt
+
+~ finis ~

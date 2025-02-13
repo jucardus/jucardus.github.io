@@ -1,0 +1,5 @@
+EXTRACTOR DE ENTRADAS DE LOS DICCIONARIOS EN BASH - 1
+
+madre="${PWD##*/}"; arbol="$(tree -d --noreport)"; arbol="${arbol//├── /• }"; arbol="${arbol//└── /• }"; final="$madre $arbol"; final="${final// \./}"; final="${final//#/\/}"; echo $final | xclip -sel clip; exit;
+
+~ finis ~

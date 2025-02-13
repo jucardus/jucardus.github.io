@@ -1,0 +1,15 @@
+CÓMO COPIAR EL RESULTADO DE UN COMANDO DIRECTAMENTE AL PORTAPAPELES CON BASH
+
+# PASO PREVIO: INSTALACIÓN DE XCLIP
+
+sudo apt-get install xclip
+
+# O TAMBIÉN
+
+sudo apt install xclip
+
+# EJEMPLO DE COPIA DE LOS RESULTADOS DE TREE AL PORTAPAPELES
+
+tree --noreport | xclip -selection clipboard; exit;
+
+~ finis ~

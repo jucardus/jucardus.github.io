@@ -1,0 +1,5 @@
+COMPRIMIR UN DOCUMENTO AL FORMATO ZIP EN BASH
+
+zip documento_comprimido.zip documento_a_comprimir.txt
+
+~ finis ~

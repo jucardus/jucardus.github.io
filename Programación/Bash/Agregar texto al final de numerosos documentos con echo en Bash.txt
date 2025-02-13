@@ -1,0 +1,5 @@
+AGREGAR TEXTO AL FINAL DE NUMEROSOS DOCUMENTOS CON ECHO EN BASH
+
+echo "texto ha agregar" | tee -a "prefijo-*.html"
+
+~ finis ~

@@ -1,0 +1,13 @@
+BUCLE SIMPLE EN BASH
+
+#!/bin/bash
+
+read -p "LEMA : " cadena
+IFS=' ' read -r -a array <<< "$cadena"
+for element in "${array[@]}"
+  do
+    elementM=${element^^}
+    echo $elementM >> documento.txt
+done
+
+~ finis ~

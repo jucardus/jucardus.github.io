@@ -1,0 +1,31 @@
+EXTRAER EL CONTENIDO, LA RUTA Y EL NOMBRE DE NUMEROSOS DOCUMENTOS CON BASH
+
+grep "" public/*.html
+
+¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+more * | cat public/*.html
+
+more * | cat */*/*/*.html
+
+grep "" */*/*/*.html
+
+#¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+This should do the trick as well:
+
+find . -type f -print -exec cat {} \;
+
+Means:
+
+find    = linux `find` command finds filenames, see `man find` for more info
+.       = in current directory
+-type f = only files, not directories
+-print  = show found file
+-exec   = additionally execute another linux command
+cat     = linux `cat` command, see `man cat`, displays file contents
+{}      = placeholder for the currently found filename
+\;      = tell `find` command that it ends now here
+You further can combine searches trough boolean operators like -and or -or. find -ls is nice, too.
+
+~ finis ~

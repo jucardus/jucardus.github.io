@@ -1,0 +1,259 @@
+CREADOR DE INDEX HTML PARA LEXICOC CON JS PARA LISTADO
+
+#!/bin/bash
+
+echo ""
+read -p "ACCIÓN : " accion
+echo ""
+
+##### AGREGAMIENTO #####
+
+if [ $accion = "a" ]
+    then
+        read -p "LEMA : " lema
+            mkdir -p "exportar/${lema%% (*}"
+        read -p "PINYIN : " pinyin
+        read -p "SIGNIFICADO : " significado
+        read -p "ACLARACIÓN : " aclaracion
+        read -p "ETIQUETAS : " etiquetas
+        echo "▓ $lema [$pinyin] = $significado ($aclaracion) ¦$etiquetas¦ ░" >> diccionario.txt
+        sed -i -e 's/ () / /g' diccionario.txt
+        sed -i -e 's/ ¦¦ / /g' diccionario.txt
+        sed -i -e 's/ \[\] / /g' diccionario.txt
+        sed -i '/^ $/d' diccionario.txt
+        echo ""
+        tail -n 40 diccionario.txt
+fi
+
+###### ABREVIATURAS #####
+
+if [ $accion = "abr" ]
+    then
+        read -p "CATEGORÍA / ETIQUETA / LIBRROS : " recibido
+        if [ $recibido = "c" ]
+            then
+                read -p "CATEGORÍA : " categoria
+                mkdir -p "abreviaturas/categorías/$categoria"
+        fi
+        if [ $recibido = "e" ]
+            then
+                read -p "ETIQUETA : " etiqueta
+                    etiquetaM=${etiqueta^^}
+                    prima=${etiquetaM:0:1}
+                mkdir -p "abreviaturas/etiquetas/=$prima=/$etiqueta"
+        fi
+        if [ $recibido = "l" ]
+            then
+                read -p "LIBRO : " libro
+                mkdir -p "abreviaturas/libros/$libro"
+        fi
+        if [ $recibido = "i" ]
+            then
+                clear
+                bash diccionario.sh
+        fi
+    bash diccionario.sh
+fi
+
+##### BUWSQUEDA #####
+
+if [ $accion = "b" ]
+    then
+        read -p "BUSCAR : " buscar
+        echo ""
+        grep -w -s -i $buscar diccionario.txt
+fi
+
+##### ELIMINACIOWN #####
+
+if [ $accion = "e" ]
+    then
+        read -p "ELIMINAR : " eliminar
+            mkdir -p "exportar/${eliminar%% (*}"
+        grep -Fn "$eliminar" diccionario.txt
+        read -p "LÍNEA : " linea
+        if [ $linea = "i" ]
+            then
+                bash diccionario.sh
+            else
+                sed -i  "${linea}d" diccionario.txt
+        fi
+fi
+
+##### EXPORTACIOWN BLOGGER #####
+
+if [ $accion = "exp" ]
+    then
+        fecha=$(date +"%Y·%m·%d")
+        read -p "EXPORTAR : " exportar
+        grep -s -i $exportar diccionario.txt >> $fecha.txt
+        #sed -i -e "s/$exportar/<span id\=\'buscada\'>$exportar<\/span>/g" $fecha.txt
+        sed -i -e 's/▓ /<p id\=\"parrafos\"><span id\=\"lemas\">/g' $fecha.txt
+        sed -i -e 's/ ░/<\/p>/g' $fecha.txt
+        sed -i -e 's/ \= /<\/span> <span id\=\"flechas\">→<\/span> /g' $fecha.txt
+        sed -i -e 's/ _/ <i id\=\"cursivas\">/g' $fecha.txt
+        sed -i -e 's/(_/(<i id\=\"cursivas\">/g' $fecha.txt
+        sed -i -e 's/_/<\/i>/g' $fecha.txt
+        sed -i -e 's/ ¦/ <span id\=\"etiquetas\">¶¶¶/g' $fecha.txt
+        sed -i -e 's/¦/¦<\/span>/g' $fecha.txt
+        sed -i -e 's/¶¶¶/¦/g' $fecha.txt
+        sed -i -e 's/ -- / \&mdash\; /g' $fecha.txt
+        sed -i -e 's/\[/<span id="pinyin">\[/g' $fecha.txt
+        sed -i -e 's/\]/\]<\/span>/g' $fecha.txt
+        xclip -sel c < $fecha.txt
+        rm -f $fecha.txt
+        clear
+        bash diccionario.sh
+fi
+
+##### JAVASCRIPT #####
+
+if [ $accion = "j" ]
+    then
+        # ORDENAMIENTO
+        sort diccionario.txt > diccionario_sorted.txt
+        uniq diccionario_sorted.txt diccionario.txt
+        rm -f diccionario_sorted.txt
+        sed -i '/^$/d' diccionario.txt
+        # JAVASCRIPT
+        cp diccionario.txt diccionario_js.txt
+        sed -i -e 's/▓ /\"/g' diccionario_js.txt
+        sed -i -e 's/ ░/\"\,/g' diccionario_js.txt
+fi
+
+##### INICIO + CLEAR #####
+
+if [ $accion = "i" ]
+    then
+        clear
+        bash diccionario.sh
+fi
+
+##### MOSTRAR #####
+
+if [ $accion = "m" ]
+    then
+        echo ""
+        tail -n 40 diccionario.txt
+fi
+
+##### ORDENAMIENTO / RESPALDO #####
+
+if [ $accion = "o" ]
+    then
+        # ORDENAMIENTO
+        sort diccionario.txt > diccionario_sorted.txt
+        uniq diccionario_sorted.txt diccionario.txt
+        rm -f diccionario_sorted.txt
+        sed -i '/^$/d' diccionario.txt
+        sed -i '/^ $/d' diccionario.txt
+        sed -i -e 's/  / /g' diccionario.txt
+        sed -i -e 's/  / /g' diccionario.txt
+        sed -i -e 's/  / /g' diccionario.txt
+        # ETIQUETAS
+        tree --noreport abreviaturas/etiquetas > etiquetas.txt
+        sed -i -e 's/abreviaturas\/etiquetas/<b>ETIQUETAS<\/b>\n\│/g' etiquetas.txt
+fi
+
+##### PROPAGANDA EN TWITTER #####
+
+if [ $accion = "t" ]
+    then
+        read -p "TUITEAR : " twitter
+            echo "" >> tuitear/tuitear.txt
+            echo "#chino_espanol_agostoswebapp ¶¶¶ $twitter → https://agostos.web.app/diccionarios/chino_espanol/index.html" >> tuitear/tuitear.txt
+        sed -i -e 's/ _/_/g' tuitear/tuitear.txt
+fi
+
+##### ELIMINAR UWLTIMA LIWNEA #####
+
+if [ $accion = "u" ]
+    then
+        sed -i -e '$ d' diccionario.txt
+        echo ""
+        tail -n 40 diccionario.txt
+fi
+
+##### INDEXAR #####
+
+if [ $accion = "x" ]
+    then
+        # ORDENAMIENTO
+        sort diccionario.txt > diccionario_sorted.txt
+        uniq diccionario_sorted.txt diccionario.txt # repetidas
+        rm -f diccionario_sorted.txt
+        sed -i '/^$/d' diccionario.txt # vaciwas
+        sed -i '/^ $/d' diccionario.txt # vaciwas
+        sed -i -e 's/  / /g' diccionario.txt
+        sed -i -e 's/  / /g' diccionario.txt
+        sed -i -e 's/  / /g' diccionario.txt
+        # JAVASCRIPT
+        cp diccionario.txt diccionario_js.txt
+        sed -i -e 's/▓ /\"/g' diccionario_js.txt
+        sed -i -e 's/ ░/\"\,/g' diccionario_js.txt
+        truncate -s-2 diccionario_js.txt
+        # INDEX.HTML
+        echo '<!DOCTYPE html>' > index.html
+        echo '<html lang="">' >> index.html
+        echo '<head>' >> index.html
+        echo '    <meta charset="utf-8">' >> index.html
+        echo '    <meta name="keywords" content="diccionario, diccionario chino, diccionario chino-español, chino-español, inglés">' >> index.html
+        echo '    <meta name="description" content="Diccionario chino-español">' >> index.html
+        echo '    <meta name="author" content="Julio Cárdenas Pelizzari">' >> index.html
+        echo '    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>' >> index.html
+        echo '    <link rel="shortcut icon" type="image/jpg" href="../../favicon.png"/>' >> index.html
+        echo '    <link rel="stylesheet" href="../../styles.css"/>' >> index.html
+        echo '    <title>AGOSTOS.WEB.APP</title>' >> index.html
+        echo '</head>' >> index.html
+        echo '<body onload="listar()">' >> index.html
+        echo '' >> index.html
+        echo '<h1>Diccionario chino-español</h1>' >> index.html
+        echo '' >> index.html
+        echo '<div id="ruta" ><a href="../../index.html">inicio</a> | <a href="../index.html">índice</a> | <a href="../../indice/index.html">A-Z</a> | anterior | siguiente</div>' >> index.html
+        echo '' >> index.html
+        echo '<ul id="mostrar"></ul>' >> index.html
+        echo '' >> index.html
+        echo '<div id="ruta" ><a href="../../index.html">inicio</a> | <a href="../index.html">índice</a> | <a href="../../indice/index.html">A-Z</a> | anterior | siguiente | <a href="#">arriba</a></div>' >> index.html
+        echo '' >> index.html
+        echo '<script>' >> index.html
+        echo 'function listar () {' >> index.html
+        echo '' >> index.html
+        echo 'let base = [' >> index.html
+        cat diccionario_js.txt >> index.html
+        echo '' >> index.html
+        echo ']' >> index.html
+        echo '' >> index.html
+        echo 'let todo = [];' >> index.html
+        echo 'let entrada = [];' >> index.html
+        echo 'for (let i = 0; i < base.length; i++) {' >> index.html
+        echo '    var orden = base[i].toString();' >> index.html
+        echo '        var orden = orden.toUpperCase();' >> index.html
+        echo '        var orden = orden.replace(/ /g, "").replace(/888/g, "").replace(/#/g, "").replace(/--/g, "").replace(/-/g, "").replace(/=/g, "").replace(/\"/g, "").replace(/\(/g, "").replace(/\)/g, "").replace(/\,/g, "").replace(/\./g, "").replace(/\;/g, "").replace(/\[/g, "").replace(/\]/g, "").replace(/_/g, "").replace(/{/g, "").replace(/}/g, "").replace(/¦/g, "").replace(/«/g, "").replace(/»/g, "").replace(/Á/g, "A").replace(/É/g, "E").replace(/Í/g, "I").replace(/Ñ/g, "N").replace(/Ó/g, "O").replace(/Ú/g, "U").replace(/Ü/g, "U");' >> index.html
+        echo '        var orden = "<!--" + orden + "-->";' >> index.html
+        echo '    entrada = "<li>" + base[i].toString().replace(/ \= /g," → ");' >> index.html
+        echo '    entrada = entrada.replace(/ #/g," \\ ");' >> index.html
+        echo '    entrada = entrada.replace(/#/g," \\");' >> index.html
+        echo '    entrada = entrada.replace(/ -- /g," &mdash; ");' >> index.html
+        echo '    entrada = entrada.replace(/ _/g," <i>");' >> index.html
+        echo '    entrada = entrada.replace(/\(_/g,"(<i>");' >> index.html
+        echo '    entrada = entrada.replace(/_/g,"</i>");' >> index.html
+        echo '    entrada = entrada.replace(/\"\"/g,"¨");' >> index.html
+        echo '    todo.push(entrada);' >> index.html
+        echo '}' >> index.html
+        echo 'todo.sort((a,b) => a.localeCompare(b));' >> index.html
+        echo 'todo = [...new Set(todo)];' >> index.html
+        echo 'var enviar = todo.join("</li>");' >> index.html
+        echo 'document.getElementById("mostrar").innerHTML = enviar;' >> index.html
+        echo '}' >> index.html
+        echo '</script>' >> index.html
+        echo '' >> index.html
+        echo '</body>' >> index.html
+        echo '</html>' >> index.html
+        rm -f diccionario_js.txt
+fi
+
+##### DESPUEWS DE TODO #####
+
+bash diccionario.sh
+
+~ finis ~

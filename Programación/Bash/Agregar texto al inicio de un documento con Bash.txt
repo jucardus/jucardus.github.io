@@ -1,0 +1,9 @@
+AGREGAR TEXTO AL INICIO DE UN DOCUMENTO CON BASH
+
+Con la siguiente línea se puede agregar texto al inicio de uno (o varios) documentos.
+
+sed -i -e '1s/^/texto agregado\n/' documento.txt
+
+Nótese el uso de \n, de modo que la nueva línea de texto agregada no quede unida al texto ya existente, sino que se separe de él con un salto de línea.
+
+~ finis ~

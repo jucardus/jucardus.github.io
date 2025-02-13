@@ -1,0 +1,21 @@
+EXTRACTOR DE ENTRADAS EN LOS DICCIONARIOS EN BASH - 2
+
+#!/bin/bash
+
+madre="${PWD##*/}";
+arbol="$(tree -d --noreport)";
+arbol="${arbol//├── /<li>}";
+arbol="${arbol//└── /<li>}";
+arbol="${arbol// ~/ ¶¶¶}";
+arbol="${arbol//\~/<\/i>\~}";
+arbol="${arbol// ¶¶¶/ ~<i>}";
+arbol="$madre<ul>$arbol </ul>";
+arbol="${arbol/<ul>./<ul class=\"margenReducido\">}";
+echo $arbol | xclip -sel clip;
+echo $arbol;
+echo $arbol > prueba.html;
+exit
+
+madre="${PWD##*/}"; arbol="$(tree -d --noreport)"; arbol="${arbol//├── /<li>}"; arbol="${arbol//└── /<li>}"; arbol="${arbol// ~/ ¶¶¶}"; arbol="${arbol//\~/<\/i>\~}"; arbol="${arbol// ¶¶¶/ ~<i>}"; arbol="$madre<ul>$arbol </ul>"; arbol="${arbol/<ul>./<ul class=\"margenReducido\">}"; echo $arbol | xclip -sel clip; echo $arbol;
+
+~ finis ~

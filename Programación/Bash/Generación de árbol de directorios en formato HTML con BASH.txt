@@ -1,0 +1,19 @@
+GENERACIÓN DE ÁRBOL DE DIRECTORIOS EN FORMATO HTML CON BASH
+
+Para poder generar un árbol de directorios en formato HTML, primero se debe instalar el comando tree con la siguiente línea:
+
+sudo apt install tree
+
+La línea a continuación extrae todos los nombres de carpetas de MI_CARPETA y los presenta en una estructura de árbol, con cada nombre como enlace a la carpeta correspondiente. Los resultados son almacenados en el documento arbol_carpetas.html
+
+tree -d -H baseHREF --noreport MI_CARPETA > arbol_carpetas.html
+
+La instrucción -d es para que únicamente se incluyan carpetas en el árbol y no los nombres de documentos en dichas carpetas.
+
+La instrucción -H baseHREF le indica al comando que el documento resultante estará en formato HTML.
+
+La instrucción --noreport tiene como fin evitar que el comando tree haga una acotación al pie del árbol generado para indicar el número de carpetas enumeradas. Puede obviarse en caso de que se desee mostrar esa información.
+
+Son muchas más las opciones al usar el comando tree; todas ellas pueden verse escribiendo tree --help en el Terminal y presinando ENTER.
+
+~ finis ~

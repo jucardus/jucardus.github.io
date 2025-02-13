@@ -1,0 +1,5 @@
+ACTUALIZACIÓN DE GOOGLE CHROME EN LINUX MINT CON BASH
+
+sudo apt install google-chrome-stable
+
+~ finis ~

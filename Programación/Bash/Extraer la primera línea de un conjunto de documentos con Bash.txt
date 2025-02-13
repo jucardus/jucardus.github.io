@@ -1,0 +1,5 @@
+EXTRAER LA PRIMERA LÍNEA DE UN CONJUNTO DE DOCUMENTOS CON BASH
+
+head -1 ines-*.txt > documento.txt
+
+~ finis ~

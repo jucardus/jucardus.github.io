@@ -1,0 +1,5 @@
+ELIMINAR LAS LÍNEAS EN BLANCO DE UN DOCUMENTO CON BASH
+
+sed -i -e '/^$/d' documento.html
+
+~ finis ~
