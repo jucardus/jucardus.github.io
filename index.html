@@ -425,11 +425,11 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
-      window.scrollTo(0, 0);
       window.history.replaceState({}, document.title, '/' + '');
-      if (lema.match(/^[0-9]+$/) != null && lema.length == 10) {
+      if (recibidoDireccion.match(/^[0-9]+$/) != null && recibidoDireccion.length == 10) {
         window.history.replaceState({}, document.title, '/' + lema);
       }
+      window.scrollTo(0, 0);
     }
     function copiarEnlace (fechaSimpleRecibida) {
       var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
