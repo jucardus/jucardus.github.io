@@ -428,7 +428,7 @@
         var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
         window.history.replaceState({}, document.title, '/' + numero);
       } else {
-        //+++
+        window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
       }
       window.scrollTo(0, 0);
     }
