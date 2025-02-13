@@ -424,17 +424,11 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
-      lema.replace(/-/g,'')
-        .replace(/:/g,'')
-        .replace(/ /g,'')
-        .replace(/%20/g,'')
-      window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
       if (recibidoDireccion != '') {
-        recibidoDireccion.replace(/-/g,'')
-          .replace(/:/g,'')
-          .replace(/ /g,'')
-          .replace(/%20/g,'');
-        window.history.replaceState({}, document.title, '/' + recibidoDireccion.toLowerCase());
+        var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+        window.history.replaceState({}, document.title, '/' + numero);
+      } else {
+        //+++
       }
       window.scrollTo(0, 0);
     }
