@@ -1,0 +1,50 @@
+function generadorEntradas() {
+
+  var lema = "abaci";
+
+  var id = '1zZpknH81na076q9PEo40LBqYZo0tKtHt';
+  var file = DriveApp.getFileById(id);
+  var contenido = file.getBlob().getDataAsString();
+
+  var array = contenido.split('\n');
+  var resultado = [];
+    for (var i = 0; i < array.length; i++) {
+      if (array[i].toString().indexOf('▓ ' + lema + ' [') >= 0) {
+        resultado.push(array[i]);
+      }
+    }
+  resultado = resultado.sort(); // ordenar alfabewticamente
+  resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+  resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+  var enviar = resultado.join('<p>');
+
+  var enviar = enviar.replace(/ #/g,' <span id="silabeos">\\');
+  var enviar = enviar.replace(/#/g,'\\</span>');
+  var enviar = enviar.replace(/ = /g,'</b> <span id="flechas">→</span> ');
+  var enviar = enviar.replace(/▓ /g,'<b class="negritas">');
+  var enviar = enviar.replace(/ _/g,' <i class="cursivas">');
+  var enviar = enviar.replace(/\(_/g,'(<i class="cursivas">');
+  var enviar = enviar.replace(/_/g,'</i>');
+  var enviar = enviar.replace(/ ¦/g,' <span id="etiquetas">¶¶¶');
+  var enviar = enviar.replace(/¦/g,'¦</span>');
+  var enviar = enviar.replace(/¶¶¶/g,'¦');
+  var enviar = enviar.replace(/ -- /g,' &mdash; ');
+  var enviar = enviar.replace(/\'\'/g,'¨');
+  var enviar = enviar.replace(/\{AL\}/g,'<span id="banderas">🇩🇪</span>');
+  var enviar = enviar.replace(/\{CH\}/g,'<span id="banderas">🇨🇳</span>');
+  var enviar = enviar.replace(/\{FR\}/g,'<span id="banderas">🇫🇷</span>');
+
+// MOSTRANDO EN TXT
+
+  var doc = DocumentApp.openById('1rfdGoNBgw40P8XX0ZtevY3hhNo-aqGVuU0BSKG3UPY4');
+  doc.setText('');
+  var body = doc.getBody();
+  body.appendParagraph(enviar);
+
+  // https://docs.google.com/document/d/1rfdGoNBgw40P8XX0ZtevY3hhNo-aqGVuU0BSKG3UPY4/mobilebasic
+
+// LOGGER.LOG
+
+  Logger.log(enviar);
+
+}

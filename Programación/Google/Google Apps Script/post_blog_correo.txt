@@ -1,0 +1,5 @@
+function post_blog_correo() {
+
+  MailApp.sendEmail('jcrdnsp.rSAoRK1Ypej35q8yXj9s@blogger.com','prueba blogger','contenido del mensaje')
+
+}

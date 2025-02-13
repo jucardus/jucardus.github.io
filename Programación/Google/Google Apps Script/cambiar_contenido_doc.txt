@@ -1,0 +1,12 @@
+function cambiar_contenido_doc() {
+
+  var id = '1zZpknH81na076q9PEo40LBqYZo0tKtHt';
+  var file = DriveApp.getFileById(id);
+  var contenido = file.getBlob().getDataAsString();
+
+  var doc = DocumentApp.openById('1vdbOmKnGJd269VSLeFUl7G2KfUWBdEzZuwBdhUEyc90');
+  doc.setText('');
+  var body = doc.getBody();
+  body.appendParagraph(contenido);
+
+}

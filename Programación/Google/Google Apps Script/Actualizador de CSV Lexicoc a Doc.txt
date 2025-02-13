@@ -1,0 +1,44 @@
+function actualizador_csv_lexicoc_a_doc () {
+
+  var idCarpeta = '1S9D8KCOBb1_VEyRp41LkCmfIdjuVUjAB';
+    // https://drive.google.com/drive/folders/1S9D8KCOBb1_VEyRp41LkCmfIdjuVUjAB
+  var carpeta = DriveApp.getFolderById(idCarpeta);
+  var nombreCarpeta = carpeta.getName();
+  var idCSV = nombreCarpeta.slice(32).replace(/\/.*/g,'');
+
+  var file = DriveApp.getFileById(idCSV);
+  var contenido = file.getBlob().getDataAsString();
+  var array = contenido.split('\n');
+    let resultado = [];
+    for (var i = 0; i < array.length; i++) {
+      if (array[i].toString() != ',E') {
+        var linea = array[i].toString().replace(/.*= /g,''); // •
+        resultado.push(linea);
+        }
+      }
+  resultado = [...new Set(resultado)];
+  var contenido = resultado.join('\n\n');
+  var contenido = contenido.replace(/#/g,'\\');
+  var contenido = contenido.replace(/ -- /g,' — ');
+  var contenido = contenido.replace(/\"/g,'');
+
+  var date = new Date();
+  var year = date.getYear();
+  var month = date.getMonth() + 1; if(month.toString().length==1){var month = '0'+month;}
+  var day = date.getDate(); if(day.toString().length==1){var day = '0'+day;}
+  var hour = date.getHours(); if(hour.toString().length==1){var hour = '0'+hour;}
+  var minu = date.getMinutes(); if(minu.toString().length==1){var minu = '0'+minu;}
+  var seco = date.getSeconds(); if(seco.toString().length==1){var seco = '0'+seco;}
+  //var fecha = year+'·'+month+'·'+day+'·'+hour+'·'+minu+'·'+seco;
+  var fecha = year+'·'+month+'·'+day;
+  var fecha = fecha.slice(1);
+
+  var contenido = 'LÉXICO CHINO-ESPAÑOL\n\nActualización: ' + fecha + '\nAutor: bit.ly/m/agosto' + '\n\n\n' + contenido;
+
+  var doc = DocumentApp.openById('1KkMKJfWHiAz7cDYQBl550GGWBDlFuDh0oahqS4hfBA0');
+    // https://docs.google.com/document/d/1KkMKJfWHiAz7cDYQBl550GGWBDlFuDh0oahqS4hfBA0/mobilebasic
+  doc.setText('');
+  var body = doc.getBody();
+  body.appendParagraph(contenido + '\n\n\n\n');
+
+}

@@ -1,0 +1,16 @@
+function listar_subcarpetas_drive() {
+
+var parentFolderId = "1tv2VfVA68rJKh5D88VPnHofK7JKeXojw";
+var parentFolder = DriveApp.getFolderById(parentFolderId);
+var folders = parentFolder.getFolders();
+var folder;
+while (folders.hasNext()) {
+    folder = folders.next();
+      var primero = folder.getName();
+      var primeroID = folder.getId();
+      if (primero != "") {break;}
+}
+
+Logger.log(primero + ' → ' + primeroID);
+
+}

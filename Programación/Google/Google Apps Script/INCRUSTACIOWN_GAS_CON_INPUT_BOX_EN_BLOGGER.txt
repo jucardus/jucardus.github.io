@@ -1,0 +1,52 @@
+<p><a href="/enlacista" class="madre">[ Enlacista ]</a></p>
+
+<iframe style="padding-top: 10px;" width=100% height=50px frameborder=0 scrolling=no src="https://script.google.com/macros/s/AKfycbyAnTiWCJpCqtgVSC020wtxJzX51Zh4gpnc8EkZRZI1xIRoTvSVxKde0RKV-EHvqbWi/exec"></iframe>
+
+<div id="mostrarEnlacesTodos"></div>
+
+<h3 style="padding-top: 25px;">Aclaraciones</h3>
+
+<ul>
+  <li>Subpágina de enlaces varios de cosas muchas.</li>
+  <li>Una vez que hayas clicado en el <a href="/2023/10/i8e673c0qq2d.html"><b>título de esta subpágina</b></a> y para buscar entre todos los enlaces, escribe el texto en el recuadro de busca y presiona ENTER. El buscador no hace diferencia entre mayúsculas y minúsculas, y los resultados son mostrados en orden alfabético.</li>
+  <li>Cada línea resultante de la búsqueda está dividida en tres partes por una barra (<span class="barrita">┋</span>). La primera parte es el tema principal del enlace, la segunda el subtema dentro del tema principal y la tercera el enlace en sí. Todos los enlaces abren la URL que muestran en una nueva pestaña del navegador.</li>
+</ul>
+
+<script>
+  var url = window.location.href;
+  if (url.indexOf('i8e673c0qq2d') >= 0) {
+    window.addEventListener("message",
+    function (e) {
+      if(e.origin == "https://script.google.com/macros/s/AKfycbyAnTiWCJpCqtgVSC020wtxJzX51Zh4gpnc8EkZRZI1xIRoTvSVxKde0RKV-EHvqbWi/exec"){ return; }
+          document.getElementById("mostrarEnlacesTodos").innerHTML = e.data;
+    },
+    false);
+  }
+</script>
+
+<h3>Enlaces específicos</h3>
+
+<ul id = "mostrarEnlacista2"></ul>
+<script type="text/javascript">
+  function recentpostslist(json) {
+    var todo = [];
+    for (var i = 0; i < json.feed.entry.length; i++) {
+      for (var j = 0; j < json.feed.entry[i].link.length; j++) {
+        if (json.feed.entry[i].link[j].rel == 'alternate') {
+          break;
+        }
+      }
+      var url = "'" + json.feed.entry[i].link[j].href + "'";
+      var titulo = json.feed.entry[i].title.$t;
+      var orden = titulo.toString().toUpperCase().replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^a-z0-9]/gi, '').replace(/ /g,'');
+      var item = "<li><!--" + orden + "--><a href="+ url + '">' + titulo + "</a>";
+        if (item.indexOf('i8e673c0qq2d') >= 0) {var item = '';}
+      todo.push(item);
+    }
+    todo = todo.sort((a, b) => a.localeCompare(b))
+    var entradas = todo.join('</li>');
+      var entradas = entradas;
+    document.getElementById('mostrarEnlacista2').innerHTML = entradas;
+  }
+</script>
+<script src="https://jucardus.blogspot.com/feeds/posts/summary/-/Enlacista?max-results=100&alt=json-in-script&callback=recentpostslist"></script>

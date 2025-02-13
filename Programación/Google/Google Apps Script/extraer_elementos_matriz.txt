@@ -1,0 +1,13 @@
+function extraer_elementos_matriz() {
+
+  var etiqueta = 'aaa,bbb,ccc,ddd,eee';
+  let array = etiqueta.split(',');
+  let todo = [];
+  for (let i = 0; i < array.length; i++) {
+    var parcial = '#' + array[i].toString();
+    todo.push(parcial);
+  }
+  var etiquetas = todo.join('%0D');
+  Logger.log(etiquetas);
+
+}

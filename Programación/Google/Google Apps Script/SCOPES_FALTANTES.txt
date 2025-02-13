@@ -1,0 +1,9 @@
+Exception: You do not have permission to call DriveApp.getFileById. Required permissions: (https://www.googleapis.com/auth/drive.readonly || https://www.googleapis.com/auth/drive)
+aaa	@ aaa.gs:3
+
+"https://www.googleapis.com/auth/drive.readonly", "https://www.googleapis.com/auth/drive"
+
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/drive.readonly",
+    "https://www.googleapis.com/auth/drive"
+    ],

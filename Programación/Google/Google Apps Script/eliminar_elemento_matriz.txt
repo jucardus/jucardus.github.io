@@ -1,0 +1,8 @@
+function eliminar_elemento_matriz() {
+
+  var array = ['a','b','c','d'];
+  array.shift();
+  var mostrar = array.toString();
+  Logger.log(mostrar);
+
+}

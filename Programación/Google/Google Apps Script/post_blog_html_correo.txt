@@ -1,0 +1,10 @@
+function post_blog_html_correo() {
+
+  var recipientEmail = 'jcrdnsp.rSAoRK1Ypej35q8yXj9s@blogger.com';
+  var subject = 'prueba blogger email html';
+  var message = '<a href="https://bit.ly/m/abc">bit.ly/m/abc</a>';
+
+  MailApp.sendEmail(recipientEmail, subject, message, {htmlBody : message});
+  MailApp.sendEmail(recipientEmail, subject, "", {htmlBody : message});
+
+}

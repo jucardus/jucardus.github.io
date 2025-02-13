@@ -1,0 +1,14 @@
+function crear_documento_y_moverlo() {
+
+  var nombre = 'nuevo_documento.txt';
+  var contenido = 'Contenido del documento TXT.';
+
+  ide = DriveApp.createFile(nombre, contenido).setSharing(DriveApp.Access.ANYONE, DriveApp.Permission.VIEW).getId();
+
+  var idDocumentoTXT = ide;
+  var idCarpetaDestino = '1EAnhTZMHC4H...';
+
+  var file = DriveApp.getFileById(idDocumentoTXT);
+  DriveApp.getFolderById(idCarpetaDestino).addFile(file);
+
+}

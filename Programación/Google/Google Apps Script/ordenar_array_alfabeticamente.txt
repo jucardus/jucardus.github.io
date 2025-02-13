@@ -1,0 +1,10 @@
+function ordenar_array_alfabeticamente() {
+
+  var array = ['n','e','t','c','á','S','#a','#S','#á','\\a','\\t'];
+  array = array.sort();
+  array = array.sort((a, b) => a.localeCompare(b));
+  array = array.reverse();
+  var mostrar = array.join(',').toString();
+  Logger.log(mostrar);
+
+}

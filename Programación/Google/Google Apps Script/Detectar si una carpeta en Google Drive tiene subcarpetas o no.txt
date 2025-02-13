@@ -1,0 +1,16 @@
+<h2>Detectar si una carpeta en Google Drive tiene subcarpetas o no</h2>
+
+<p>Cuando la carpeta, definida por la variable <code>idCarpeta</code>, tiene subcarpetas, el mensaje resultante será <code>SÍ hay subcarpetas</code>.</p>
+
+<pre style="padding-top: 30px;">
+function abo() {
+  var idCarpeta = '1XfqH-xx9G07He...';
+  const carpetas = DriveApp.getFolderById(idCarpeta).getFolders();
+  if(carpetas.hasNext()) {
+    Logger.log('SÍ hay subcarpetas');
+  }
+  else {
+    Logger.log('NO hay subcarpetas');
+  }
+}
+</pre>

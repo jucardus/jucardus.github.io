@@ -1,0 +1,39 @@
+function palabros() {
+
+var lema = 'WITHDRAW';
+
+var file = DriveApp.getFileById('1zZpknH81na076q9PEo40LBqYZo0tKtHt');
+var contenido = file.getBlob().getDataAsString();
+var array = contenido.split('\n');
+  let resultado1 = [];
+  for (var i = 0; i < array.length; i++) {
+      if (array[i].toString().toUpperCase().indexOf(' ' + lema + ' ') >= 0) {
+        resultado1.push(array[i]);
+      }
+    }
+resultado1 = resultado1.sort((a, b) => a.localeCompare(b));
+resultado1 = [...new Set(resultado1)];
+resultado1 = resultado1.filter(Boolean)
+var palabros = resultado1.join(' ');
+var palabros = palabros.replace(/▓/g,'');
+var palabros = palabros.replace(/░/g,'');
+var palabros = palabros.replace(/=/g,'');
+var palabros = palabros.replace(/888/g,'');
+var palabros = palabros.replace(/¦¦/g,'');
+var palabros = palabros.replace(/\(/g,'');
+var palabros = palabros.replace(/\)/g,'');
+var palabros = palabros.replace(/,/g,' ');
+var palabros = palabros.replace(/_/g,'');
+var palabros = palabros.replace(/¦/g,'');
+var palabros = palabros.replace(/  /g,' ');
+var palabros = palabros.replace(/  /g,' ');
+var palabros = palabros.replace(/  /g,' ');
+var palabros = palabros.replace(/  /g,' ');
+var palabros = palabros.trim();
+var randomear = palabros.split(' ');
+var randomear = randomear.sort(() => Math.random() - 0.5);
+var mostrar = randomear.join(' ').toString();
+
+Logger.log(mostrar);
+
+}

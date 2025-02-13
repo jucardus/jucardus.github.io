@@ -1,0 +1,12 @@
+function extraer_title_pawgina() {
+
+  var url = 'https://bit.ly/m/abc';
+  var url = 'https://start.me/p/1kRRkj/vocabulario';
+  var url = 'https://en.wiktionary.org/wiki/accrocher#French';
+  var url = 'https://vncls.blogspot.com';
+  var contenido = UrlFetchApp.fetch(url).getContentText();
+  var titulo = contenido.slice(0,contenido.indexOf('</title>'));
+  var titulo = titulo.slice(titulo.indexOf('<title>')+7);
+  Logger.log ('[ '+titulo+' ]');
+
+}

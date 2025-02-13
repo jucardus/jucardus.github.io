@@ -1,0 +1,16 @@
+<p><a href="/enlacista" class="padre">[ Enlacista ]</a></p>
+
+<div id="mostrarAplicacionesAndroidEnlacista"></div>
+
+<iframe style="display: none;" src="https://script.google.com/macros/s/AKfycbzn_2ntYWMAa4RjiF7xzYdMYrYB2wwMtuaHNrP6v9IO8WB6ce0UDIGNjK-bvXQon-mw9A/exec"></iframe>
+<script>
+  var url = window.location.href;
+  if (url.indexOf('58viiw8cf25x') >= 0) {
+    window.addEventListener("message",
+      function (e) {
+        if(e.origin == "https://script.google.com/macros/s/AKfycbzn_2ntYWMAa4RjiF7xzYdMYrYB2wwMtuaHNrP6v9IO8WB6ce0UDIGNjK-bvXQon-mw9A/exec"){ return; }
+          document.getElementById("mostrarAplicacionesAndroidEnlacista").innerHTML = e.data;
+      },
+    false);
+  }
+</script>

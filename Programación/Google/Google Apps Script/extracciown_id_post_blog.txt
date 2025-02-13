@@ -1,0 +1,10 @@
+function extracciown_id_post_blog() {
+
+  var blogFeed = UrlFetchApp.fetch("https://lexicoi.blogspot.com/feeds/posts/summary").toString();
+  var titulo = 'DOWNSTAIRS';
+  var ide = blogFeed.slice(blogFeed.indexOf("<title type='text'>" + titulo + '</title>') + 19);
+  var ide = ide.slice(ide.indexOf("1848218132717699798/posts/default/") + 34);
+  var ide = ide.slice(0,19);
+  Logger.log('===' + ide + '===');
+
+}

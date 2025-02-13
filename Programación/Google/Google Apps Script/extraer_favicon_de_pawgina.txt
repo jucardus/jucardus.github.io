@@ -1,0 +1,10 @@
+function extraer_favicon_de_pawgina() {
+
+  var url = 'https://vncls.blogspot.com';
+  var url = 'https://www.labnol.org/internet/get-favicon-image-of-websites-with-google/4404/';
+  var contenido = UrlFetchApp.fetch(url).getContentText();
+  var favicon = contenido.slice(0,contenido.indexOf('favicon')+11);
+  //var favicon = favicon.slice(favicon.lastIndexOf('://')+3);
+  Logger.log ('¶¶¶¶¶'+favicon+'¶¶¶¶¶');
+
+}

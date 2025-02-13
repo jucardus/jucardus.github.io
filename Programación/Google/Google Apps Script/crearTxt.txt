@@ -1,0 +1,13 @@
+function crearTxt() {
+
+  timeStamp = new Date(); //Create a new date
+  dateTimeAsString = timeStamp.toString().slice(0,15);
+
+  content = "This is test file content, created at: " + dateTimeAsString; //Create content for new file
+  newFileName = 'Test File ' + dateTimeAsString; //Create new file name with date/time appended to name
+
+  file = DriveApp.createFile(newFileName + '.txt', content).setSharing(DriveApp.Access.ANYONE, DriveApp.Permission.VIEW).getId(); //Create a new file
+
+  Logger.log(file);
+
+}
