@@ -1,0 +1,8 @@
+REEMPLAZAR UN TEXTO DE UN GOOGLE DOC POR UN ENLACE USANDO GOOGLE APPS SCRIPT
+
+body.appendParagraph('{{googleLink}}');
+const text = body.findText('{{googleLink}}').getElement().asText()
+text.setText('Link to google')
+text.setLinkUrl('www.google.com')
+
+~ finis ~

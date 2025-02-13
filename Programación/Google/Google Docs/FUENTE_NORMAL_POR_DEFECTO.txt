@@ -1,0 +1,13 @@
+How to Change the Default Normal Text Font in Google Docs
+
+Open your document.
+Select some text.
+Click the Font dropdown and select the default font you want.
+
+Choose the Format tab.
+Select Paragraph styles.
+Click Normal text, then Update normal text to match.
+
+Click the Format tab again.
+Choose Paragraph styles again.
+Click Save as my default styles.
