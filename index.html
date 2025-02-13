@@ -280,6 +280,7 @@
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar('inicio');
+      window.history.replaceState({}, document.title, '/' + '');
       window.scrollTo(0, 0);
       if (direccion != '' && direccion.indexOf('jucardus') == -1) {
         buscar(direccion);
@@ -342,6 +343,7 @@
           temasTodos[i].style.borderBottom = fondoNoClicados;
         }
         if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
+      window.history.replaceState({}, document.title, '/' + temaSubrayar);
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
     }
@@ -482,6 +484,7 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
+      window.history.replaceState({}, document.title, '/' + lema);
       window.scrollTo(0, 0);
     }
     function az () {
@@ -523,6 +526,7 @@
       document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + contador + ' entradas en total.<p>' + enviar + '</div>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('az');
+      window.history.replaceState({}, document.title, '/' + 'az');
       window.scrollTo(0, 0);
     }
     function azar () {
@@ -560,6 +564,7 @@
       document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + enviar + '</div>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('azar');
+      window.history.replaceState({}, document.title, '/' + 'azar');
       window.scrollTo(0, 0);
     }
     function desordenar(array) {
