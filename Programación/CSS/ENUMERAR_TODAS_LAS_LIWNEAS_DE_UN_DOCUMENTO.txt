@@ -1,0 +1,1 @@
+nl -w1 -s'. ' aaaaa.txt > bbbbb.txt

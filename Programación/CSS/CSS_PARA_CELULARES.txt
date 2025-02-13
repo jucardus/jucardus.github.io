@@ -1,0 +1,5 @@
+@media only screen and (max-device-width: 480px) {
+    body {
+        padding-bottom: 130px!important;
+        }
+    }

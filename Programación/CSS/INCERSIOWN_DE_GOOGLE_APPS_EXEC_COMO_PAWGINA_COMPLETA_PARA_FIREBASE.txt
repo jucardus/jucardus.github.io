@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta content='nada todavía' name='keywords'/>
+    <meta content='Nada todavía.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <title>ENLACISTA WEB APP</title>
+
+    <style>
+
+      body {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        }
+      div#navbar.navbar.no-items.section {
+      	display: none;
+      	}
+      iframe {
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px
+        right: 0px;
+        bottom: 0px;
+        }
+
+    </style>
+
+  </head>
+<body>
+
+  <iframe frameborder='0' height='100%' src='https://script.google.com/macros/s/AKfycbxPo-tTgF8lXNUlh2unRFEg3Lp3GI33vbTWaIsNflxX6LAA306llSREHaxAhvr0I3p3/exec' width='100%'/>
+
+</body>
+</html>

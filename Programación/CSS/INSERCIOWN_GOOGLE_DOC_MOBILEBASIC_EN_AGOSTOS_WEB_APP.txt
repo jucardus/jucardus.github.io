@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VE3MX7LH9D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VE3MX7LH9D');
+</script>
+
+    <meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+    <meta content='nada todavía' name='keywords'/>
+    <meta content='Nada todavía.' name='description'/>
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <b:if cond='data:blog.isMobile'>
+      <!--meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/-->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <b:else/>
+      <meta content='width=1100' name='viewport'/>
+    </b:if>
+    <title>AGOSTOS WEB APP</title>
+
+    <style>
+
+      body {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        }
+      div#navbar.navbar.no-items.section {
+      	display: none;
+      	}
+      iframe {
+        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px
+        right: 0px;
+        bottom: 0px;
+        }
+
+    </style>
+
+  </head>
+<body>
+
+  <iframe frameborder='0' height='100%' src='https://docs.google.com/document/d/1jzFe2a_xsGGDWygBIknN4hbkfd0-0mn7bWjliaILp14/mobilebasic' width='100%'/>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+    Colores CSS con nombre
+    Enlaces invariables
+    Evitar el desplazamiento horizontal en celulares
+    Forzar los saltos de línea en el texto de un elemento
+    Fuente en versalitas
+    Fuente Roboto Mono
+    Lista <ul> sin marcadores
+    Llamada a la hoja CSS de estilos
+    Llamada al favicon de la página
+    Meta de redireccionamiento
+    Meta para adaptar el formato a celulares
+    Meta para incluir caracteres UTF-8
+    Texto parpadeante
+
+
+
+Colores CSS con nombre
+Los colores CSS con nombre (y con el código hexadecimal correspondiente) cuentan con su propia subpágina en Colores CSS con nombre. Son en total ciento cuarenta y siete.
+
+Enlaces invariables
+
+a:link, a:visited, a:active {color: Navy !important; text-decoration: none !important;}
+a:hover {color: DarkRed !important;}
+
+Evitar el desplazamiento horizontal en celulares
+
+@media only screen and (max-device-width: 480px) {
+    html, body {
+        width: auto !important;
+        overflow-x: hidden !important
+        }
+    }
+
+Forzar los saltos de línea en el texto de un elemento
+
+white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;
+white-space: pre-wrap; word-wrap: break-word;
+
+Fuente en versalitas
+
+font-variant: small-caps;
+
+Fuente Roboto Mono
+
+<head>
+    <link href=”https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel=”stylesheet”>
+</head>
+
+<style>
+    body {font-family: 'Roboto', sans-serif;}
+</style>
+
+Lista <ul> sin marcadores
+
+De esta forma se crea una lista de elementos sin marcadores (•).
+
+<ul style="list-style: none;">
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+    <li>Tercer elemento</li>
+</ul>
+
+Como se ve a continuación, los elementos de la lista afectados por style="list-style: none;" conservan la sangría propia de los tags <ul> y de <ol>, pero pierden los marcadores (•).
+
+    Primer elemento
+    Segundo elemento
+    Tercer elemento
+    Cuarto elemento
+
+Llamada a la hoja CSS de estilos
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+Llamada al favicon de la página
+
+<head>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+</head>
+
+Meta de redireccionamiento
+
+En este caso el redireccionamiento se efectuará después de tres segundos.
+
+<head>
+    <meta http-equiv="refresh" content="3; url=https://agostos.web.app" />
+</head>
+
+Meta para adaptar el formato a celulares
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+Meta para incluir caracteres UTF-8
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+Texto parpadeante
+
+.texto {
+    animation: blinker 1s linear infinite;
+    color: OrangeRed;
+    font-weight: bold;
+    padding-left: 20px;
+    }
+@keyframes blinker {
+    50% {
+        opacity: 0;
+        }
+    }

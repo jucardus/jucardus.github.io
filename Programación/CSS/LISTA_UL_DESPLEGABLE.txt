@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<style>
+#uno {
+    padding-left: 15px;
+    }
+#dos {
+    padding-left: 30px;
+    }
+</style>
+
+</head>
+<body>
+
+<details>
+  <summary>See More</summary>
+    <div id="uno">
+        <br>This text will be hidden if your browser supports it.</br>
+        <br>This text will be hidden if your browser supports it.</br>
+        <br>This text will be hidden if your browser supports it.</br>
+    </div>
+    <div id="dos">
+        <details>
+          <summary>See More</summary>
+            <br>This text will be hidden if your browser supports it.</br>
+            <ul>
+                <li>añsdlkfj añslkd fñalskd jf</li>
+                <li>añsdlkfj añslkd fñalskd jf</li>
+                <li>añsdlkfj añslkd fñalskd jf</li>
+            </ul>
+            <p>This text will be hidden if your browser supports it.</p>
+        </details>
+    </div>
+
+</details>
+
+</body>
+</html>

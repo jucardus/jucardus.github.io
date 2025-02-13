@@ -1,0 +1,17 @@
+a:link, a:visited, a:active {
+    color: Green;
+    text-decoration: none;
+    word-break: break-all;
+    }
+a:hover {
+    background-color: LightYellow;
+    color: Red;
+    text-decoration: underline;
+    word-break: break-all;
+    }
+a:focus {
+    background-color: LightYellow;
+    color: Red;
+    text-decoration: underline;
+    word-break: break-all;
+    }

@@ -1,0 +1,12 @@
+    .previo {
+      animation: blinker 1s linear infinite;
+      color: OrangeRed;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }

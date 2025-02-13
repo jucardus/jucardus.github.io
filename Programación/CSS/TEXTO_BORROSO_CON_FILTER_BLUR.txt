@@ -1,0 +1,1 @@
+div.post-snippet.snippet-container.r-snippet-container {filter: blur(3px);}

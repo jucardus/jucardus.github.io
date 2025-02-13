@@ -1,0 +1,1 @@
+h3.post-title.entry-title {background: rgba(99, 22, 11, .1);}

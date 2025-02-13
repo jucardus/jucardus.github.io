@@ -1,0 +1,1 @@
+div.header-drawer.sticky.open {text-transform: uppercase;}
