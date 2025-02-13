@@ -221,7 +221,6 @@
     let direccion = '';
     function inicio () {
       direccion = window.location.href.replace(/.*io\/\?=/g,'');
-      //window.history.pushState(stateObj, 'title', '*/');
         if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
           let str1 = '-'; let str2 = ' '; let str3 = ':';
           let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
@@ -344,7 +343,6 @@
           temasTodos[i].style.borderBottom = fondoNoClicados;
         }
         if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
-      window.history.pushState(stateObj, 'title', '*/' + temaSubrayar);
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
       document.getElementById('buscador').style.display = 'none';
     }
@@ -361,7 +359,6 @@
     }
     function buscar (recibidoDireccion) {
       var lema = document.getElementById("buscar").value.toUpperCase();
-      var lemaOriginal = lema.replace('?=','');
       if (recibidoDireccion != '') {
         lema = direccion
           .replace(/%C3%A1/g,'Á')
@@ -427,13 +424,10 @@
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
       window.scrollTo(0, 0);
-      /*
       const nextURL = 'https://jucardus.github.io/';
       const nextTitle = 'My new page title';
       const nextState = { additionalInformation: 'Updated the URL with JS' };
       window.history.replaceState(nextState, nextTitle, nextURL);
-      */
-      window.history.pushState(stateObj, 'title', '*/' + lemaOriginal);
     }
     function copiarEnlace (fechaSimpleRecibida) {
       var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
