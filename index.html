@@ -425,7 +425,7 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
-      window.history.replaceState({}, document.title, '/' + 'lema');
+      window.history.replaceState({}, document.title, '/' + lema);
       if (recibidoDireccion.match(/^[0-9]+$/) != null && recibidoDireccion.length == 10) {
         window.history.replaceState({}, document.title, '/' + lema);
       }
