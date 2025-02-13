@@ -335,7 +335,7 @@
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
       // MODIFICACIOWN DE URL A URL ORIGINAL
-      const nextURL = '*/' + temaRecibido;
+      const nextURL = temaRecibido;
       const nextTitle = 'My new page title';
       const nextState = { additionalInformation: 'Updated the URL with JS' };
       window.history.replaceState(nextState, nextTitle, nextURL);
