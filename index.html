@@ -180,7 +180,7 @@
     <span class='temas' id='reflexiones' onclick='segunTema ("reflexiones")'>Reflexiones</span> ·
     <span class='temas' id='vocabulario' onclick='segunTema ("vocabulario")'>Vocabulario</span> ·
     <span class='temas' id='az' onclick='az ("az")'>AZ</span> ·
-    <span class='temas' id='lupa' onclick='mostrarBuscador ()'>🔍</span>
+    <span class='temas' id='lupa' onclick='mostrarBuscador ("busca")'>🔍</span>
   </div>
   <div id="buscador">
     <form method="post">
@@ -333,9 +333,6 @@
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
       window.scrollTo(0, 0);
-      if (temaRecibido == 'lupa') {
-        document.getElementById('buscador').style.display = 'block';
-      }
     }
     function subrayar (temaSubrayar) {
       var fondoNoClicados = '4px solid White';
@@ -346,13 +343,14 @@
         if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
       window.history.replaceState({}, document.title, '/' + temaSubrayar);
       document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
+      document.getElementById('buscador').style.display = 'none';
     }
     function mostrarBuscador () {
       window.history.replaceState({}, document.title, '/' + 'busca');
       document.getElementById('mostrar').innerHTML = '';
       document.getElementById('buscador').style.display = 'block';
       document.getElementById('buscar').focus();
-      subrayar();
+      subrayar('busca');
     }
     function teclaBuscar (event) {
       if (event.key === "Enter") {
@@ -484,7 +482,7 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
-      var lema = lema.slice(2).replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+      var lema = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
       window.history.replaceState({}, document.title, '/' + lema);
       window.scrollTo(0, 0);
     }
