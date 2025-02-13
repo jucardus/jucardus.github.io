@@ -350,7 +350,7 @@
       document.getElementById('mostrar').innerHTML = '';
       document.getElementById('buscador').style.display = 'block';
       document.getElementById('buscar').focus();
-      subrayar('lupa');
+      document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
     }
     function teclaBuscar (event) {
       if (event.key === "Enter") {
