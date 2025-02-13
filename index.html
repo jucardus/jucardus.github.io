@@ -425,10 +425,13 @@
       }
       window.scrollTo(0, 0);
       // MODIFICACIOWN DE URL A URL ORIGINAL
+      /*
       const nextURL = 'https://jucardus.github.io/';
       const nextTitle = 'My new page title';
       const nextState = { additionalInformation: 'Updated the URL with JS' };
       window.history.replaceState(nextState, nextTitle, nextURL);
+      */
+      window.history.replaceState({}, document.title, '/' + '');
     }
     function copiarEnlace (fechaSimpleRecibida) {
       var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
