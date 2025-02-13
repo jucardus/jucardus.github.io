@@ -333,6 +333,9 @@
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
       window.scrollTo(0, 0);
+      if (temaRecibido == 'lupa') {
+        document.getElementById('buscador').style.display = 'block';
+      }
     }
     function subrayar (temaSubrayar) {
       var fondoNoClicados = '4px solid White';
