@@ -358,7 +358,8 @@
       }
     }
     function buscar (recibidoDireccion) {
-      let lema = document.getElementById("buscar").value.toUpperCase();
+      var lema = document.getElementById("buscar").value.toUpperCase();
+      var lemaOriginal = lema;
       if (recibidoDireccion != '') {
         lema = direccion
           .replace(/%C3%A1/g,'Á')
@@ -424,10 +425,13 @@
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
       window.scrollTo(0, 0);
+      /*
       const nextURL = 'https://jucardus.github.io/';
       const nextTitle = 'My new page title';
       const nextState = { additionalInformation: 'Updated the URL with JS' };
       window.history.replaceState(nextState, nextTitle, nextURL);
+      */
+      window.history.pushState(stateObj, 'title', '*/' + lemaOriginal);
     }
     function copiarEnlace (fechaSimpleRecibida) {
       var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
