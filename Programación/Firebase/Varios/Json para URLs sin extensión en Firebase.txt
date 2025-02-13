@@ -1,0 +1,13 @@
+JSON PARA URLS SIN EXTENSIÓN EN FIREBASE
+
+{
+  "hosting": {
+    "cleanUrls": true,
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "cleanUrls": true,
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "00000.sh",
+      "aaaaa_original_no_borrar.txt",
+      "aaaaa.txt"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+    var url = window.location.href.replace(/.*sitiow\.web\.app\//g,'');
+    if (url != '' && url.length == 12) {
+        var visitar = 'https://app.box.com/s/wgt48nu653dp20pymvy8yv8bk5k0g8kn/folder/' + url;
+        window.location.replace(visitar);
+    } else {
+        if (url != '' && url.length == 13) {
+            var visitar = 'https://app.box.com/s/wgt48nu653dp20pymvy8yv8bk5k0g8kn/file/' + url;
+            window.location.replace(visitar);
+        } else {
+            window.location.replace('https://sitiow.web.app');
+        }
+    }
+</script>
+</body>
+</html>

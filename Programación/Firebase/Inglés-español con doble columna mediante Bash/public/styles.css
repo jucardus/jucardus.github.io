@@ -1,0 +1,133 @@
+* {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    }
+
+/*¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶*/
+
+@media only screen and (max-device-width: 480px) {
+    a:focus {
+        background-color: #333!important;
+        }
+    #actualizacion {
+        margin-top: -20px!important;
+        }
+    #contenido {
+        display: none!important;
+        margin-top: 10px!important;
+        width: 100%!important;
+        }
+    #contenidoCelular {
+        display: initial!important;
+        padding: 8px!important;
+        width: 100%!important;
+        }
+    #enlacesIndice {
+        padding: 8px!important;
+        }
+    h2 {
+        background-color: #383838!important;
+        padding-bottom: 20px!important;
+        padding-top: 20px!important;
+        }
+    #indice {
+        display: none!important;
+        }
+    #indiceCelular {
+        display: initial!important;
+        }
+    #margen {
+        margin: 5px!important;
+        }
+    #tituloCelular {
+        display: initial!important;
+        margin-top: -10px!important;
+        position: relative;
+        }
+    #traducciones {
+        margin: 10px!important;
+        }
+    }
+
+/*¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶*/
+
+a:link, a:visited, a:active {
+    color: PaleGreen;
+    text-decoration: none;
+    }
+a:focus {
+    background-color: DarkCyan;
+    color: White;
+    font-weight: bold;
+    text-decoration: none;
+    }
+a:hover {
+    color: Orange;
+    text-decoration: underline;
+    }
+#actualizacion {
+    padding: 35px 0px 50px 0px;
+    }
+body {
+    background-color: DarkSlateGray;
+    color: White;
+    font-family: monospace, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    }
+#contenido {
+    border-left: 2px solid Gray;
+    float: right;
+    height: 100%;
+    overflow-y: hidden;
+    width: 70%;
+    }
+#contenidoCelular {
+    display: none;
+    }
+h1 {
+    color: Orange;
+    }
+html {
+    height: 100%;
+    overflow: hidden;
+    }
+#enlacesIndice {
+    margin: 0px;
+    }
+iframe {
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    }
+#indice {
+    float: left;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: -70px;
+    position: fixed;
+    width: 30%;
+    }
+#indiceCelular {
+    display: none;
+    }
+li {
+    padding-bottom: 8px;
+    }
+#margen {
+    margin: 30px 10px 150px 20px;
+    }
+p {
+    padding-bottom: 10px;
+    }
+#tituloCelular {
+    display: none;
+    }
+#traducciones {
+    margin: 30px 20px 150px 40px;
+    }
