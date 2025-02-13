@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--Enlacista - Agregamiento de enlaces en Enlacista mediante parameter en GAS.-->
+<html>
+<body onload="hacer()">
+<script>
+function hacer() {
+    var enlace = window.location.href.replace(/.*enlacista\.web\.app\/ea\?=/g,'');
+    var crear = 'https://script.google.com/macros/s/AKfycbwpxm7_Q8MRXUsZBWUnHUNpf88tHAkMB7OtDeswUNoUoliQK-ExbINEgmEczSJL6KZ_/exec?q=' + enlace;
+    window.location.replace(crear);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--Herramientas - Creación de códigos QR mediante Google Charts.-->
+<html>
+<body onload="hacer()">
+<script>
+function hacer() {
+    var texto = window.location.href.replace(/.*enlacista\.web\.app\/qr\?=/g,'');
+    var color = '';
+    for (var i = 0; i < 6; i++) {
+        color += Math.floor(Math.random() * 6);
+        }
+    var crear = 'https://chart.apis.google.com/chart?choe=UTF-8&cht=qr&chs=250x250&chld=M|2&chco=' + color + '&chl=' + texto;
+    window.location.replace(crear);
+}
+</script>
+</body>
+</html>

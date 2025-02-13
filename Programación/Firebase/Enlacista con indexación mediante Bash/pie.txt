@@ -1,0 +1,10 @@
+
+<center>
+
+<div id="pie">~ • ~</div>
+
+</center>
+
+</body>
+
+</html>
