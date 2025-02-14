@@ -13,6 +13,5 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
 <a name='github'></a>
 ### GitHub
-* Cómo cambiar a otro el documento README.md que se muestra inicialmente y por defecto al abrir un repositorio. → [github.com](https://github.com/orgs/community/discussions/72144)
 * Markdown para GitHub. → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * Quickstart for writing on GitHub → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
