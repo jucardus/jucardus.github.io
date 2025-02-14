@@ -3,9 +3,6 @@
 
 Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
-> [!WARNING]
-> En construcción.
-
 * [Diccionarios](#diccionarios)
 * [GitHub](#github)
 
