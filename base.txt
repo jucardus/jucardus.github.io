@@ -1,9 +1,13 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+219,Vocabulario inglés-español,cast iron [s.c.],cast iron [s.c.] hierro fundido,,,2025-02-13 22:08
+218,Vocabulario inglés-español,wrought iron [s.c.],wrought iron [s.c.] hierro forjado,,,2025-02-13 22:07
+217,Enlaces,,canales en YouTube / Jesús G. Maestro - @JesusGMaestro,https://www.youtube.com/@JesusGMaestro/videos,,2025-02-13 22:04
+216,Enlaces,,diccionarios / Dictionnaire de l'Académie française,https://www.dictionnaire-academie.fr,,2025-02-13 22:02
 215,Vocabulario español,"extemporáneo, ea [adj.]","SINÓNIMOS: extemporáneo; inadecuado, impropio, inconveniente, inaprodiado; intempestivo, inoportuno, extemporal",,,2025-02-13 15:21
 214,Enlaces,,vocabulario español / parsimonia,https://dle.rae.es/parsimonia,,2025-02-13 15:19
 213,Enlaces,,vocabulario español / seitán,https://es.wikipedia.org/wiki/Seit%C3%A1n,,2025-02-13 15:18
 212,Enlaces,,"vocabulario español / yatrogenia, iatrogenia",https://dle.rae.es/yatrogenia,,2025-02-13 15:16
-211,Diario,,"Acabo de cargar el contenido de mis líneas de programación básica (Bash, Blogger, CSS, Firebase, Google, HTML, JavaScript, Linux Mint, PayPal) a mi repositorio en GitHub (r.jucardus.com). Ahora hace falta darle formato a todos los documentos *.txt.",https://r.jucardus.com,,2025-02-13 13:53
+211,Diario,,"Acabo de cargar el contenido de mis líneas de programación básica (Bash, Blogger, CSS, Firebase, Google, HTML, JavaScript, Linux Mint, PayPal) a mi repositorio en GitHub. Ahora hace falta darle formato a todos los documentos *.txt.",https://r.jucardus.com,,2025-02-13 13:53
 210,Enlaces,,vocabulario español / mascullar,https://dle.rae.es/mascullar,,2025-02-13 12:01
 209,Enlaces,,vocabulario español / sicalíptico,https://dle.rae.es/sicalíptico,,2025-02-13 11:52
 208,Enlaces,,canales en YouTube / Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
