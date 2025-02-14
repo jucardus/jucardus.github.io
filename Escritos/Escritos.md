@@ -1,11 +1,15 @@
 ## Escritos varios
+[inicio](https://github.com/jucardus/jucardus.github.io/blob/main/Inicio.md) | [índice](https://github.com/jucardus/jucardus.github.io/blob/main/Inicio.md) | [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/Actividad.md) | [compatir](https://x.com/intent/tweet?text=Escritos varios: apotegmas, citas, cuentos, poesía, reflexiones.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/Escritos/Escritos.md%0A%0A@jucardus%20~%20%23)
 
 Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, reflexiones y más.
 
-* Enlace corto: [jucardus.github.io/escritos](https://jucardus.github.io/escritos).
-* Compartir esto en [X Twitter](https://x.com/intent/tweet?text=Escritos%20varios:%20apotegmas,%20citas,%20cuentos,%20poesía,%20monografías,%20reflexiones%20y%20más.%20→%20jucardus.github.io/escritos%0A%0A@jucardus%20~%20%23).
+> [!WARNING]
+> Sitio en construcción
 
 ### Índice
 
-* [Apotegmas](https://github.com/jucardus/jucardus.github.io/tree/main/Escritos/Apotegmas)
-* [Reflexiones](https://github.com/jucardus/jucardus.github.io/tree/main/Escritos/Reflexiones)
+* Apotegmas
+* Citas
+* Cuentos
+* Poesía
+* Reflexiones
