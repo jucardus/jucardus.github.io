@@ -3,5 +3,7 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+#### 25-02-14
+
 * Numerosos enlaces corregidos y otros agregados.
 * Algunos cambios hechos en [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/Enlaces/Enlaces.md).
