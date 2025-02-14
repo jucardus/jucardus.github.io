@@ -3,7 +3,7 @@
 214,Enlaces,,vocabulario español / parsimonia,https://dle.rae.es/parsimonia,,2025-02-13 15:19
 213,Enlaces,,vocabulario español / seitán,https://es.wikipedia.org/wiki/Seit%C3%A1n,,2025-02-13 15:18
 212,Enlaces,,"vocabulario español / yatrogenia, iatrogenia",https://dle.rae.es/yatrogenia,,2025-02-13 15:16
-211,Diario,,"Acabo de cargar el contenido de mis líneas de programación básica (Bash, Blogger, CSS, Firebase, Google, HTML, JavaScript, Linux Mint, PayPal) a mi repositorio en GitHub (r.jucardus.com). Ahora hace falta darle formato a todos los documentos *.txt.",https://r.jucardus.cot,,2025-02-13 13:53
+211,Diario,,"Acabo de cargar el contenido de mis líneas de programación básica (Bash, Blogger, CSS, Firebase, Google, HTML, JavaScript, Linux Mint, PayPal) a mi repositorio en GitHub (r.jucardus.com). Ahora hace falta darle formato a todos los documentos *.txt.",https://r.jucardus.com,,2025-02-13 13:53
 210,Enlaces,,vocabulario español / mascullar,https://dle.rae.es/mascullar,,2025-02-13 12:01
 209,Enlaces,,vocabulario español / sicalíptico,https://dle.rae.es/sicalíptico,,2025-02-13 11:52
 208,Enlaces,,canales en YouTube / Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
