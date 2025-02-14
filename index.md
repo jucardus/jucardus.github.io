@@ -4,9 +4,9 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 
 ### Índice
 
-* Enlaces varios
-* Escritos
-* Programación básica
+* [Enlaces varios](https://github.com/jucardus/jucardus.github.io/tree/main/Enlaces)
+* [Escritos](https://github.com/jucardus/jucardus.github.io/blob/main/Escritos/acerca%20de.md#escritos-varios)
+* [Programación básica](https://github.com/jucardus/jucardus.github.io/blob/main/Programaci%C3%B3n/acerca%20de.md#programaci%C3%B3n-b%C3%A1sica)
 * Traducciones al español
 
 ### Autor y contacto
