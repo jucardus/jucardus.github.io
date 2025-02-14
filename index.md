@@ -1,5 +1,8 @@
 ## [Jucardus.com](https://jucardus.com)
 
+> [!WARNING]
+> PROBANDO EL DOCUMENTO MD DE INICIO.
+
 * [Actividad reciente](/Actividad/Actividad.md)
 * [alfabético ¦ Índice](/Índices/Alfabético.md)
 * [Enlaces muchos](/Enlaces/Enlaces.md)
