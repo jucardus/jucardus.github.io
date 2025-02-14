@@ -1,13 +1,15 @@
 # Jucardus.com
+[inicio]() | [índice]() | [actividad]() | [compartir]()
 
 Mi sitio central, con escritos, enlaces varios, programación, traducciones al español y más.
 
 ### Índice
 
-* [Enlaces varios](https://github.com/jucardus/jucardus.github.io/tree/main/Enlaces)
-* [Escritos](https://github.com/jucardus/jucardus.github.io/blob/main/Escritos/Escritos.md#escritos-varios)
-* [Programación básica](https://github.com/jucardus/jucardus.github.io/blob/main/Programaci%C3%B3n/acerca%20de.md#programaci%C3%B3n-b%C3%A1sica)
-* [Traducciones al español](https://github.com/jucardus/jucardus.github.io/blob/main/Traducciones/acerca%20de.md#traducciones-al-espa%C3%B1ol)
+* [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/Actividad.md)
+* [Enlaces muchos](https://github.com/jucardus/jucardus.github.io/blob/main/Enlaces/Enlaces.md)
+* [Escritos varios](https://github.com/jucardus/jucardus.github.io/blob/main/Escritos/Escritos.md)
+* [Programación básica](https://github.com/jucardus/jucardus.github.io/blob/main/Programaci%C3%B3n/Programaci%C3%B3n.md)
+* [Traducciones al español](https://github.com/jucardus/jucardus.github.io/blob/main/Traducciones/Traducciones.md)
 
 ### Autor y contacto
 
