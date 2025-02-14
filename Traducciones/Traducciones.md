@@ -1,5 +1,5 @@
 ## Traducciones al español
-[inicio](https://github.com/jucardus/jucardus.github.io/blob/main/Inicio.md) | [índice](https://github.com/jucardus/jucardus.github.io/blob/main/Inicio.md) | [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/Actividad.md) | [compartir]()
+[inicio](https://github.com/jucardus/jucardus.github.io/blob/main/Inicio.md) | [índice](https://github.com/jucardus/jucardus.github.io/blob/main/Inicio.md) | [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/Actividad.md) | [compartir](https://x.com/intent/tweet?text=Traducción%20de%20textos%20al%20español,%20con%20equivalencias%20en%20contexto%20y%20versiones%20párrafo%20por%20párrafo;%20en%20Jucardus.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/Traducciones/Traducciones.md%0A%0A@jucardus%20~%20%23)
 
 > [!WARNING]
 > El contenido está en preparación.
