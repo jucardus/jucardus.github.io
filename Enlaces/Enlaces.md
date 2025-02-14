@@ -11,6 +11,7 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
 <a name='diccionarios'></a>
 ### Diccionarios
+* Dictionnaire de l'Académie française → [www.dictionnaire-academie.fr](https://www.dictionnaire-academie.fr/)
 * Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
 
 <a name='github'></a>
