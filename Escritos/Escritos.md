@@ -4,7 +4,7 @@
 Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, reflexiones y más.
 
 > [!WARNING]
-> Sitio en construcción
+> Subpágina en construcción.
 
 ### Índice
 
