@@ -1,6 +1,6 @@
-ENLACES VARIOS
+## Enlaces varios
 
-Enlaces varios de cosas muchas.
+Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
 Enlace corto: [jucardus.github.io/enlaces](https://jucardus.github.io/enlaces)
 
