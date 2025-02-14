@@ -4,7 +4,7 @@
 Programación básica: Bash, Blogger, CSS, Firebase, Google Apps Script, HTML, JavaScript y más.
 
 > [!WARNING]
-> Página en construcción
+> Subpágina en construcción.
 
 ### Índice
 
