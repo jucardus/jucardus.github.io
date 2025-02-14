@@ -6,13 +6,13 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 > [!WARNING]
 > En construcción.
 
-* Diccionarios
+* [Diccionarios](#diccionarios)
 * [GitHub](#github)
 
 <a name='diccionarios'></a>
 ### Diccionarios
-* Merriam-Webster →
+* Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
 
 <a name='github'></a>
 ### GitHub
-* markdown para GitHub → [https://docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+* markdown para GitHub → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
