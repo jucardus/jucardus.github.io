@@ -1,1 +1,1 @@
-Bajo la palabra Dios se hace alusión a más variedad de cosas que lo que piensas. Si el contenido de esa _palabra en ti es el_ equivocado, estarás adorando a un falso dios, lo cual es idolatría sin importar si haces una estatua de él o no, pero mucho más si la haces.
+Bajo la palabra Dios se hace alusión a más variedad de cosas que lo que piensas. Si el contenido de esa palabra en ti es el equivocado, estarás adorando a un falso dios, lo cual es idolatría sin importar si haces una estatua de él o no, pero mucho más si la haces.
