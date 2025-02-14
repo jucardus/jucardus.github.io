@@ -482,7 +482,7 @@
       for (let i = 0; i < temasTodos.length; i++) {
         temasTodos[i].style.borderBottom = fondoNoClicados;
       }
-      var lema = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+      var lema = lema.slice(2).replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
       window.history.replaceState({}, document.title, '/' + lema);
       window.scrollTo(0, 0);
     }
