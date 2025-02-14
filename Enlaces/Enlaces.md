@@ -1,4 +1,5 @@
 ## Enlaces varios
+[inicio](https://github.com/jucardus/jucardus.github.io/blob/main/inicio.md#jucarduscom) | [índice](https://github.com/jucardus/jucardus.github.io/blob/main/inicio.md#jucarduscom) | actividad | [compartir]()
 
 Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
