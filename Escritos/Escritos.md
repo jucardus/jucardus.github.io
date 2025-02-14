@@ -3,12 +3,9 @@
 
 Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, reflexiones y más.
 
-> [!WARNING]
-> Subpágina en construcción.
-
 ### Índice
 
-* Apotegmas
+* [Apotegmas](/Escritos/Apotegmas/Apotegmas.md)
 * Citas
 * Cuentos
 * Poesía
