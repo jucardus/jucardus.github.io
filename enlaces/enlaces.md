@@ -24,4 +24,4 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * Markdown para GitHub. → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * Quickstart for writing on GitHub → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
 
-![Código QR de Enlaces muchos ><](https://quickchart.io/qr?text=jucardus.github.io/enlaces/enlaces.html&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png)
+<p align="center">◆</p>
