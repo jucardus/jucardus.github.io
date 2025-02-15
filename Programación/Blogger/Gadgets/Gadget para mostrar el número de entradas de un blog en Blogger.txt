@@ -1,7 +1,0 @@
-GADGET PARA MOSTRAR EL NÚMERO DE ENTRADAS DE UN BLOG EN BLOGGER
-
-<script style="text/javascript">function mbhTotalCount(json) {document.write(parseInt(json.feed.openSearch$totalResults.$t,10));}</script>
-
-<p><script src="http://gtranslatec.blogspot.com/feeds/posts/default?alt=json-in-script&callback=mbhTotalCount"></script> entradas.</p>
-
-~ finis ~

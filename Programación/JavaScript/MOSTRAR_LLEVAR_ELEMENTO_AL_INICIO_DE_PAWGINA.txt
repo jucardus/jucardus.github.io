@@ -1,2 +1,0 @@
-        const element = document.getElementById("estrella1");
-        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });

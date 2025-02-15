@@ -1,2 +1,0 @@
-var parentFolder = DriveApp.getFolderById(recibido).getParents();
-var fId = parentFolder.next().getId();

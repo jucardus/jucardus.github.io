@@ -1,5 +1,0 @@
-ELIMINAR LA ÚLTIMA LÍNEA DE UN DOCUMENTO CON BASH
-
-sed -i '$ d' documento.txt
-
-~ jucardus ~

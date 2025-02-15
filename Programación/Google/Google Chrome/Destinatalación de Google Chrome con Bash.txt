@@ -1,5 +1,0 @@
-DESINSTALACIÓN DE GOOGLE CHROME CON BASH
-
-sudo apt remove google-chrome-stable
-
-~ finis ~

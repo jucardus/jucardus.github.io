@@ -1,7 +1,0 @@
-function escapeo_tags_title() {
-
-  var texto = 'abcde <html> fghij';
-  var texto = texto.replace(/</g,'&#60;').replace(/>/g,'&#62;');
-  Logger.log(texto);
-
-}

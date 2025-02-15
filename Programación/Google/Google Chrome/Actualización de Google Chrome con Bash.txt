@@ -1,7 +1,0 @@
-ACTUALIZACIÓN DE GOOGLE CHROME CON BASH
-
-apt update && apt install -s google-chrome-stable
-
-sudo apt install google-chrome-stable
-
-~ finis ~

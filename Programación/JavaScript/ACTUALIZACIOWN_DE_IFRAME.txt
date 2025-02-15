@@ -1,1 +1,0 @@
-document.getElementById('cuadro').src = document.getElementById('cuadro').src;

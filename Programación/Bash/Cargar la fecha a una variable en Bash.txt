@@ -1,6 +1,0 @@
-CARGAR LA FECHA A UNA VARIABLE EN BASH
-
-fecha=$(date +"%Y·%m·%d·%H·%M·%S")
-echo $fecha
-
-~ finis ~

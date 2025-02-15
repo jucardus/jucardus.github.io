@@ -1,9 +1,0 @@
-function comparaciownMatrices() {
-
-  let array1 = ['a','b','c','d']
-  let array2 = ['a','b','c','d','e','f','g']
-  let difer = array2.filter(x => !array1.includes(x));
-
-  Logger.log(difer.toString());
-
-}

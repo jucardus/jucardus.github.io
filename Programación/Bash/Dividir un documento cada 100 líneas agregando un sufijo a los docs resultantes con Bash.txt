@@ -1,7 +1,0 @@
-DIVIDIR UN DOCUMENTO CADA 100 LÍNEAS AGREGANDO UN SUFIJO A LOS DOCS RESULTANTES CON BASH
-
-split -l 100 --suffix-length=3 --additional-suffix=.txt documento.txt ines-
-
-split -l 100 --suffix-length=3 --additional-suffix=.html documento.txt dccnr-
-
-~ finis ~

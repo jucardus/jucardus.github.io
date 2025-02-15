@@ -1,3 +1,0 @@
-
-
-<span onclick="todos()" style="color: Lime;" onmouseover="this.style.textDecoration='underline'; this.style.cursor='pointer'" onmouseout="this.style.textDecoration='none'">AQUÍ</span>

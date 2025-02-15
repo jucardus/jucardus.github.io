@@ -1,5 +1,0 @@
-DOCUMENTO DE PAGINACIÓN O SWAP
-
-sudo umount /dev/sdb1; sudo mkswap /dev/sdb1; sudo swapon -p 32767 /dev/sdb1; exit;
-
-~ finis ~

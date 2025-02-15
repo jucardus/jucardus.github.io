@@ -1,1 +1,0 @@
-//body.insertParagraph(1, texto + '\r');

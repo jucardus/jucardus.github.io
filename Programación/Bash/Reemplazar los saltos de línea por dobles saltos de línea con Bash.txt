@@ -1,5 +1,0 @@
-REEMPLAZAR LOS SALTOS DE LÍNEA POR DOBLES SALTOS DE LÍNEA CON BASH
-
-sed -i -e ':a;N;$!ba;s/\n/\n\n/g' mth_doble.txt
-
-~ finis ~

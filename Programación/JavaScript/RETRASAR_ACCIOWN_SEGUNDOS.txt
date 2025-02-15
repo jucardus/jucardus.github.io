@@ -1,1 +1,0 @@
-    setTimeout(() => { document.getElementById('postList12').innerHTML = enlaceAzar }, 500);

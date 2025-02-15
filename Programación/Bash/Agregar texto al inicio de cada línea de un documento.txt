@@ -1,5 +1,0 @@
-AGREGAR TEXTO AL INICIO DE CADA LÍNEA DE UN DOCUMENTO CON BASH
-
-sed -i -e 's/$/texto al inicio - /' documento.txt
-
-~ finis ~

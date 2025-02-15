@@ -1,8 +1,0 @@
-function extracciownDominioURL() {
-
-  var url = 'https://drive.google.com/drive/my-drive';
-  var url = url.slice(url.indexOf('://') + 3);
-  var url = url.slice(0,url.indexOf('/'));
-  Logger.log(url);
-
-}

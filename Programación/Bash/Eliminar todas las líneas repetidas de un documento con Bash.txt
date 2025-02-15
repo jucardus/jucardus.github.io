@@ -1,8 +1,0 @@
-ELIMINAR TODAS LAS LÍNEAS REPETIDAS DE UN DOCUMENTO CON BASH
-
-sort documento.txt > documento_sorted.txt
-uniq documento_sorted.txt documento.txt
-
-El paso previo de ordenamiento alfabético es indispensable para eliminar las líneas repetidas.
-
-~ finis ~

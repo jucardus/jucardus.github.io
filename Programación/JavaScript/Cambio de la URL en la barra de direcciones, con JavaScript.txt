@@ -1,5 +1,0 @@
-CAMBIO DE LA URL EN LA BARRA DE DIRECCIONES, CON JAVASCRIPT
-
-window.history.replaceState({}, document.title, '/' + 'abc');
-
-~ finis ~

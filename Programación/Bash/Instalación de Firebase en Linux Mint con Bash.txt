@@ -1,5 +1,0 @@
-INSTALACIÓN DE FIREBASE EN LINUX MINT CON BASH
-
-curl -sL https://firebase.tools | bash
-
-~ finis ~
