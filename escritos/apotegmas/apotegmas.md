@@ -5,3 +5,5 @@ Los apotegmas más recientes se muestran al inicio de la lista.
 
 * Cuando alguien cuestione tus convicciones acerca de Dios, no le respondas con sinsentidos filosóficos, historicistas, teológicos y seudoreligiosos. La solución es ser humilde de verdad y expresar con simpleza la única verdad con fundamento: Es un asunto de fe.
 * ...
+
+![Código QR de Apotegmas en Escritos varios ><](https://quickchart.io/qr?text=jucardus.github.io/escritos/apotegmas/apotegmas.html&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png)
