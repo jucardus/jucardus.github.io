@@ -23,21 +23,9 @@ a:focus, a:hover {
 }
 body {
   font-family: 'Arial', sans-serif;
-  font-size: 105%;
+  font-size: 100%;
   letter-spacing: 0.5px;
   padding: 0px 20% 100px 20%;
-}
-.arriba {
-  color: Green;
-  font-size: 180%;
-  font-weight: bold;
-  position: fixed;
-  right: 20px;
-  z-index: 1;
-}
-.arriba:hover {
-  color: OrangeRed;
-  cursor: pointer;
 }
 .barrita {
   color: OrangeRed;
