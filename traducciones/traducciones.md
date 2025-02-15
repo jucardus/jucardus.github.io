@@ -5,3 +5,5 @@
 > El contenido está en preparación.
 
 Traducción de textos ingleses y franceces al español, con equivalencias en contexto y versiones párrafo por párrafo.
+
+<p align="center">◆</p>
