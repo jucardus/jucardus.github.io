@@ -16,4 +16,4 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 * Numerosos enlaces corregidos y otros agregados.
 * Algunos cambios hechos en [Enlaces varios](../enlaces/enlaces.md).
 
-![Código QR de Actividad reciente ><](https://quickchart.io/qr?text=jucardus.github.io/actividad/actividad.html&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png)
+<p align="center">◆</p>
