@@ -9,9 +9,10 @@ La primera opción es de presentación simple, con enlaces para navegar entre to
 
 ### Títulos principales
 
-* [Actividad reciente](/actividad/actividad.md)
-* [Enlaces muchos](/enlaces/enlaces.md)
-* [Escritos varios](/escritos/escritos.md)
-* [Índice alfabético](/indices/alfabetico.md)
-* [Programación básica](/programacion/programacion.md)
-* [Traducciones al español](/traducciones/traducciones.md)
+* [Actividad reciente](https://jucardus.github.io/actividad/actividad.html)
+* [Enlaces muchos](https://jucardus.github.io/enlaces/enlaces.html)
+* [Escritos varios](https://jucardus.github.io/escritos/escritos.html)
+* [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html)
+* Música clásica
+* [Programación básica](https://jucardus.github.io/programacion/programacion.html)
+* [Traducciones al español](https://jucardus.github.io/traducciones/traducciones.html)
