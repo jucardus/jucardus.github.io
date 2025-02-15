@@ -17,3 +17,5 @@ La primera opción es de presentación simple, con enlaces para navegar entre to
 * **Índice alfabético** - Casi todas las subpáginas del sitio, ordenadas alfabéticamente.
 * **Programación básica** - Bash, Google Apps Script, HTML, CSS, Firebase, JavaScript, Blogger, Linux Mint.
 * **Traducciones al español** - Textos vertidos al español, con equivalencias en contexto y traducción párrafo por párrafo.
+
+<p align="center">◆</p>
