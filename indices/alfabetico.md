@@ -1,5 +1,5 @@
 ## Índice alfabético
-[inicio](/Inicio.md) | [índice](/index.md) | [actividad](/Actividad/Actividad.md) | [A-Z](/indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Índice%20alfabético%20de%20todas%20las%20subpáginas%20y%20entradas%20en%20Jucardus.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md%0A%0A@jucardus%20~%20%23)
+[inicio](/index.md) | [índice](/index.md) | [actividad](/actividad/actividad.md) | [A-Z](/indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Índice%20alfabético%20de%20todas%20las%20subpáginas%20y%20entradas%20en%20Jucardus.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md%0A%0A@jucardus%20~%20%23)
 
 Una lista completa de todas las subpáginas de este sitio.
 
