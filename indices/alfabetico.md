@@ -15,4 +15,4 @@ Una lista completa de todas las subpáginas de este sitio.
 * [Repositorio](https://jucardus.github.io/repo.html)
 * [Traducciones al español](../traducciones/traducciones.md)
 
-![Código QR del índice alfabético ><](https://quickchart.io/qr?text=jucardus.github.io/indices/alfabetico.html&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png)
+<p align="center">◆</p>
