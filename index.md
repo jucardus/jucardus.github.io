@@ -35,8 +35,4 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 
 * Compartir este sitio en [X Twitter](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20https://jucrdus.github.io%0A%0A@jucardus%20~%20%23).
 
-<p align="center">
-  <img src="https://picsum.photos/460/300](https://quickchart.io/qr?text=jucardus.github.io&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png">
-</p>
-
-<img style="float: center;" src="https://picsum.photos/460/300](https://quickchart.io/qr?text=jucardus.github.io&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png">
+![Código QR de jucardus.github.io ><](https://quickchart.io/qr?text=jucardus.github.io&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png)
