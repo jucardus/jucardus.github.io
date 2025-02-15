@@ -3,7 +3,7 @@
 
 Mi sitio central, con escritos, enlaces varios, programación, traducciones al español y más. Puedes visitarlo tanto con _**jucardus.github.io**_ como con _**jucardus.com**_.
 
-### Índice
+### Contenido
 
 * [**Actividad reciente**](/actividad/actividad.md) - Todas las adiciones, modificaciones y correcciones en el sitio, en orden descendente.
 * **Diccionarios todos** - Diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe.
@@ -34,3 +34,5 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 ### Compartir
 
 * Compartir este sitio en [X Twitter](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20https://jucrdus.github.io%0A%0A@jucardus%20~%20%23).
+
+![Código QR de jucardus.github.io](https://quickchart.io/qr?text=jucardus.github.io&size=100x100&margin=2&ecLevel=M&dark=222&light=fff&format=png)
