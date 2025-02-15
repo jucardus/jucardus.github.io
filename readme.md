@@ -9,10 +9,11 @@ La primera opción es de presentación simple, con enlaces para navegar entre to
 
 ### Títulos principales
 
-* [Actividad reciente](https://jucardus.github.io/actividad/actividad.html)
-* [Enlaces muchos](https://jucardus.github.io/enlaces/enlaces.html)
-* [Escritos varios](https://jucardus.github.io/escritos/escritos.html)
-* [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html)
-* Música clásica
-* [Programación básica](https://jucardus.github.io/programacion/programacion.html)
-* [Traducciones al español](https://jucardus.github.io/traducciones/traducciones.html)
+* **Actividad reciente** - Todas las adiciones, modificaciones y correcciones en el sitio, en orden descendente.
+* **Diccionarios todos** - Diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe.
+* **Enlaces muchos** - Enlaces varios de cosas muchas, clasificados por temas y subtemas.
+* **Escritos varios** - Apotegmas, citas, cuentos, reflexiones y más.
+* **Herramientas web** - Cosas que suelo usar, implementadas con algo de programación.
+* **Índice alfabético** - Casi todas las subpáginas del sitio, ordenadas alfabéticamente.
+* **Programación básica** - Bash, Google Apps Script, HTML, CSS, Firebase, JavaScript, Blogger, Linux Mint.
+* **Traducciones al español** - Textos vertidos al español, con equivalencias en contexto y traducción párrafo por párrafo.
