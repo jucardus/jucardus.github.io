@@ -9,8 +9,11 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 <a name='diccionarios'></a>
 ### Diccionarios
 
-* Dictionnaire de l'Académie française → [www.dictionnaire-academie.fr](https://www.dictionnaire-academie.fr/)
-* Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
+* chino - dict.revised.moe.edu.tw → [dict.revised.moe.edu.tw](https://dict.revised.moe.edu.tw/search.jsp?md=1)
+* chino-inglés - Cedict → [www.mdbg.net](https://www.mdbg.net/chinese/dictionary)
+* alemán-español - Langenscheidt Deutsch-Spanisch Wörterbuch → [de.langenscheidt.com](https://de.langenscheidt.com/deutsch-spanisch/)
+* francés - Dictionnaire de l'Académie française → [www.dictionnaire-academie.fr](https://www.dictionnaire-academie.fr/)
+* inglés - Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
 
 <a name='github'></a>
 ### GitHub
