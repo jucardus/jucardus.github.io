@@ -22,6 +22,9 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 body {
+  font-family: 'Arial', sans-serif;
+  font-size: 110%;
+  letter-spacing: 0.5px;
   padding: 0px 20% 100px 20%;
 }
 .arriba {
