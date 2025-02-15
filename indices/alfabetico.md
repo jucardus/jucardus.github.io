@@ -12,5 +12,5 @@ Una lista completa de todas las subpáginas de este sitio.
 * [Índice alfabético](./alfabetico.md)
 * [Inicio](../index.md)
 * [Programación básica](../programacion/programacion.md)
-* [Repositorio[(https://jucardus.github.io/repo.html)
+* [Repositorio](https://jucardus.github.io/repo.html)
 * [Traducciones al español](../traducciones/traducciones.md)
