@@ -1,15 +1,15 @@
 ## Índice alfabético
-[inicio](/Inicio.md) | [índice](/index.md) | [actividad](/Actividad/Actividad.md) | [A-Z](/indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Índice%20alfabético%20de%20todas%20las%20subpáginas%20en%20Jucardus.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/%C3%8Dndices/Alfab%C3%A9tico.md%0A%0A@jucardus%20~%20%23)
+[inicio](/Inicio.md) | [índice](/index.md) | [actividad](/Actividad/Actividad.md) | [A-Z](/indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Índice%20alfabético%20de%20todas%20las%20subpáginas%20y%20entradas%20en%20Jucardus.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md%0A%0A@jucardus%20~%20%23)
 
 Una lista completa de todas las subpáginas de este sitio.
 
-* [Actividad reciente](/Actividad/Actividad.md)
-* [alfabético ¦ Índice](/Índices/Alfabético.md)
-* [Apotegmas](/Escritos/Apotegmas/Apotegmas.md)
-* [Enlaces muchos](/Enlaces/Enlaces.md)
-* [Escritos varios](/Escritos/Escritos.md)
-* [español ¦ Traducciones al](/Traducciones/Traducciones.md)
-* [Índice alfabético](/Índices/Alfabético.md)
-* [Inicio](/Inicio.md)
-* [Programación básica](/Programación/Programación.md)
-* [Traducciones al español](/Traducciones/Traducciones.md)
+* [Actividad reciente](/actividad/actividad.md)
+* [alfabético ¦ Índice](/indices/alfabetico.md)
+* [Apotegmas](/escritos/apotegmas/apotegmas.md)
+* [Enlaces muchos](/enlaces/enlaces.md)
+* [Escritos varios](/escritos/escritos.md)
+* [español ¦ Traducciones al](/traducciones/traducciones.md)
+* [Índice alfabético](/indices/alfabetico.md)
+* [Inicio](/index.md)
+* [Programación básica](/programacion/programacion.md)
+* [Traducciones al español](/traducciones/traducciones.md)
