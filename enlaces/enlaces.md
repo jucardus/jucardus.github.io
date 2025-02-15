@@ -9,9 +9,9 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 <a name='diccionarios'></a>
 ### Diccionarios
 
+* alemán-español - Langenscheidt Deutsch-Spanisch Wörterbuch → [de.langenscheidt.com](https://de.langenscheidt.com/deutsch-spanisch/)
 * chino - dict.revised.moe.edu.tw → [dict.revised.moe.edu.tw](https://dict.revised.moe.edu.tw/search.jsp?md=1)
 * chino-inglés - Cedict → [www.mdbg.net](https://www.mdbg.net/chinese/dictionary)
-* alemán-español - Langenscheidt Deutsch-Spanisch Wörterbuch → [de.langenscheidt.com](https://de.langenscheidt.com/deutsch-spanisch/)
 * francés - Dictionnaire de l'Académie française → [www.dictionnaire-academie.fr](https://www.dictionnaire-academie.fr/)
 * inglés - Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
 * inglés-español - Lingue → [www.linguee.es](https://www.linguee.es/espanol-ingles/)
