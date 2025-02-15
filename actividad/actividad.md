@@ -5,8 +5,8 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-02-14
 
-* Se ha creado la subpágina [Apotegmas](/escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
-* Creación de la subpágina [Índice alfabético](/indices/alfabetico.md), para facilitar el acceso a todas las subpáginas.
-* Cambio de ubicación del documento de [Actividad reciente](/actividad/actividad.md).
+* Se ha creado la subpágina [Apotegmas](../escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
+* Creación de la subpágina [Índice alfabético](../indices/alfabetico.md), para facilitar el acceso a todas las subpáginas.
+* Cambio de ubicación del documento de [Actividad reciente](./actividad.md).
 * Numerosos enlaces corregidos y otros agregados.
-* Algunos cambios hechos en [Enlaces varios](/enlaces/enlaces.md).
+* Algunos cambios hechos en [Enlaces varios](../enlaces/enlaces.md).
