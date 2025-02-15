@@ -18,3 +18,5 @@ Líneas básicas de programación para Bash, Blogger, CSS, Firebase, Google Apps
 * Linux Mint
 * PayPal
 * Sistemas
+
+<p align="center">◆</p>
