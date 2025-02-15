@@ -16,6 +16,7 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 
 * **Autor:** Julio Cárdenas Pelizzari
 * **Contacto:** jucardus en gmail punto com
+* **Repositorio:** r.jucardus.com
 * **Donaciones:** pp.jucardus.com
 * **Invitación a pCloud:** i.jucardus.com
 * **Facebook:** fb.jucardus.com
