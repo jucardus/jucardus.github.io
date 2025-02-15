@@ -3,6 +3,11 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+#### 25-02-15
+
+* Se ha implementado un enlace directo al repositorio de este sitio, para copias, descargas y más: [jucardus.github.io/repo](https://jucardus.github.io/repo).
+* Ciertas modificaciones en la [página de inicio](../index.md), para especificar el contenido del sitio, además de ciertas aclaraciones.
+
 #### 25-02-14
 
 * Se ha creado la subpágina [Apotegmas](../escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
