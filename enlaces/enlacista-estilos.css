@@ -1,8 +1,37 @@
+@media only screen and (max-device-width: 480px) {
+  body {
+    padding: 10px 2px 150px 2px !important;
+  }
+  html, body {
+    width: auto!important;
+    overflow-x: hidden!important
+  }
+}
 a.buscadores {
   word-break: revert!important;
 }
 a.enlacista {
   word-break: break-all!important;
+}
+@media only screen and (max-device-width: 480px) {
+  body {
+    padding: 0px 2px 100px 2px !important;
+  }
+  html, body {
+    width: auto!important;
+    overflow-x: hidden!important
+  }
+}
+a:link, a:visited, a:hover, a:active {
+  color: #105080;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  color: OrangeRed;
+  text-decoration: underline;
+}
+body {
+  padding: 0px 20% 100px 20%;
 }
 .arriba {
   color: Green;
