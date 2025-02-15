@@ -10,3 +10,5 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, refle
 * Cuentos
 * Poesía
 * Reflexiones
+
+![Código QR de Escritos varios ><](https://quickchart.io/qr?text=jucardus.github.io/escritos/escritos.html&size=80x80&margin=1&ecLevel=M&dark=222&light=fff&format=png)
