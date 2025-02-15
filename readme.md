@@ -1,12 +1,17 @@
-## Actividad reciente
-[inicio](../index.md) | [índice](../index.md) | [actividad](./actividad.md) | [A-Z](../indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardos,%20con%20los%20cambios,%20adiciones%20y%20modificaciones%20más%20recientes.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/actividad/actividad.md%0A%0A@jucardus%20~%20%23)
+## Mi sitio web
 
-Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
+Puedes visitar y navegar en mi sitio de dos forma:
 
-#### 25-02-14
+* [**Sitio web normal**](https://jucardus.github.io) - jucardus.github.io
+* [**Repositorio Jucardus**](https://github.com/jucardus/jucardus.github.io/tree/main) - r.jucardus.com
 
-* Se ha creado la subpágina [Apotegmas](../escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
-* Creación de la subpágina [Índice alfabético](../indices/alfabetico.md), para facilitar el acceso a todas las subpáginas.
-* Cambio de ubicación del documento de [Actividad reciente](./actividad.md).
-* Numerosos enlaces corregidos y otros agregados.
-* Algunos cambios hechos en [Enlaces varios](../enlaces/enlaces.md).
+La primera opción es de presentación simple, con enlaces para navegar entre todas las subpáginas. La segunda, además de la navegación, cuenta con opciones de descarga, busca y otras opciones propias de GitHub.
+
+### Títulos principales
+
+* [Actividad reciente](/actividad/actividad.md)
+* [Enlaces muchos](/enlaces/enlaces.md)
+* [Escritos varios](/escritos/escritos.md)
+* [Índice alfabético](/indices/alfabetico.md)
+* [Programación básica](/programacion/programacion.md)
+* [Traducciones al español](/traducciones/traducciones.md)
