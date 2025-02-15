@@ -1,4 +1,4 @@
-# Jucardus.com
+# Inicio
 [inicio](/index.md) | [índice](/index.md) | [actividad](/actividad/actividad.md) | [A-Z](/indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/index.md%0A%0A@jucardus%20~%20%23)
 
 Mi sitio central, con escritos, enlaces varios, programación, traducciones al español y más. Puedes visitarlo tanto con _**jucardus.github.io**_ como con _**jucardus.com**_.
