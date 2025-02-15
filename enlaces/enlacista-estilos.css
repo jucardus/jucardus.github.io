@@ -95,3 +95,9 @@ input {
   color: OrangeRed;
   margin-left: 20px;
 }
+.qr {
+  width: 90px;
+}
+#qr {
+  align: center;
+}
