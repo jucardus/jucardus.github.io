@@ -10,6 +10,6 @@ Una lista completa de todas las subpáginas de este sitio.
 * [Escritos varios](../escritos/escritos.md)
 * [español ¦ Traducciones al](../traducciones/traducciones.md)
 * [Índice alfabético](./alfabetico.md)
-* [Inicio](../inicio.md)
+* [Inicio](../index.md)
 * [Programación básica](../programacion/programacion.md)
 * [Traducciones al español](../traducciones/traducciones.md)
