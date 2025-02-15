@@ -12,11 +12,17 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 * [Programación básica](/programacion/programacion.md)
 * [Traducciones al español](/traducciones/traducciones.md)
 
+### Acerca del sitio
+
+* El sitio está en sus inicios y en plena construcción. Intento reunir todo el material que previamente había elaborado en otros lugares, para que quede accesible y relacionado entre sí. Llevará un tiempo.
+* Cada subpágina cuenta con un pequeño índice debajo del título, para navegar fácilmente en el sitio, para ir al índice continente, para acceder al índice alfabético y para compartir el contenido abierto en X Twitter.
+* Si deseas informar de algún enlace roto, sugerir correcciones o hacer comentarios acerca de mi contenido, no dudes en contactar conmigo mediante el correo electrónico que se muestra más abajo.
+
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari
 * **Contacto:** jucardus en gmail punto com
-* **Repositorio:** r.jucardus.com
+* **Repositorio:** [r.jucardus.com](https://github.com/jucardus/jucardus.github.io/tree/main)
 * **Donaciones:** pp.jucardus.com
 * **Invitación a pCloud:** i.jucardus.com
 * **Facebook:** fb.jucardus.com
