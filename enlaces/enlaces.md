@@ -14,6 +14,7 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * alemán-español - Langenscheidt Deutsch-Spanisch Wörterbuch → [de.langenscheidt.com](https://de.langenscheidt.com/deutsch-spanisch/)
 * francés - Dictionnaire de l'Académie française → [www.dictionnaire-academie.fr](https://www.dictionnaire-academie.fr/)
 * inglés - Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
+* inglés-español - Lingue → [www.linguee.es](https://www.linguee.es/espanol-ingles/)
 
 <a name='github'></a>
 ### GitHub
