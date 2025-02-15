@@ -5,7 +5,7 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, refle
 
 ### Índice
 
-* [Apotegmas](/apotegmas/apotegmas.md)
+* [Apotegmas](./apotegmas/apotegmas.md)
 * Citas
 * Cuentos
 * Poesía
