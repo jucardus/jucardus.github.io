@@ -1,26 +1,12 @@
-## Índice general
-[inicio](/inicio.md) | [índice](/inicio.md) | [actividad](/actividad/actividad.md) | [A-Z](/indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/index.md%0A%0A@jucardus%20~%20%23)
+## Actividad reciente
+[inicio](../index.md) | [índice](../index.md) | [actividad](./actividad.md) | [A-Z](../indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardos,%20con%20los%20cambios,%20adiciones%20y%20modificaciones%20más%20recientes.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/actividad/actividad.md%0A%0A@jucardus%20~%20%23)
 
-Mi sitio central, con escritos, enlaces varios, programación, traducciones al español y más. Puedes visitarlo tanto con _**jucardus.github.io**_ como con _**jucardus.com**_.
+Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
-### Índice
+#### 25-02-14
 
-* [Actividad reciente](/actividad/actividad.md)
-* [Enlaces muchos](/enlaces/enlaces.md)
-* [Escritos varios](/escritos/escritos.md)
-* [Índice alfabético](/indices/alfabetico.md)
-* [Programación básica](/programacion/programacion.md)
-* [Traducciones al español](/traducciones/traducciones.md)
-
-### Autor y contacto
-
-* **Autor:** Julio Cárdenas Pelizzari
-* **Contacto:** jucardus en gmail punto com
-* **Donaciones:** pp.jucardus.com
-* **Invitación a pCloud:** i.jucardus.com
-* **Facebook:** fb.jucardus.com
-* **X Twitter:** x.jucardus.com
-
-### Compartir
-
-* Compartir este sitio en [X Twitter](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20https://github.com/jucardus/jucardus.github.io/blob/main/index.md%0A%0A@jucardus%20~%20%23).
+* Se ha creado la subpágina [Apotegmas](../escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
+* Creación de la subpágina [Índice alfabético](../indices/alfabetico.md), para facilitar el acceso a todas las subpáginas.
+* Cambio de ubicación del documento de [Actividad reciente](./actividad.md).
+* Numerosos enlaces corregidos y otros agregados.
+* Algunos cambios hechos en [Enlaces varios](../enlaces/enlaces.md).
