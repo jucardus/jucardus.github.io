@@ -23,7 +23,7 @@ a:focus, a:hover {
 }
 body {
   font-family: 'Arial', sans-serif;
-  font-size: 110%;
+  font-size: 105%;
   letter-spacing: 0.5px;
   padding: 0px 20% 100px 20%;
 }
@@ -99,5 +99,6 @@ input {
   width: 90px;
 }
 #qr {
-  align: center;
+  margin-top: 30px;
+  text-align: center;
 }
