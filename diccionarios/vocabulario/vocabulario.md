@@ -2,9 +2,9 @@
 
 [inicio](../../index.md) \| [índice](../../diccionarios/diccionarios.md#índice-de-diccionarios) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Vocabulario%20español20en%20Jucardus.%20→%20jucardus.github.io/diccionarios/vocabulario/vocabulario.html%0A%0A@jucardus%20~%20%23)
 
-La siguiente lista contiene tanto definiciones o significados, como sinónimos de palabra españolas.
+La siguiente lista contiene tanto definiciones o significados, como sinónimos ([sin.]) de palabra españolas.
 
-#### atisbo
+#### atisbo [sin.]
 * **atisbo:** barrunto, conjetura; destello; índice (indicio), indicio; presunción; reflejo, señal, vislumbre
 
 #### enconado [adj.]
@@ -13,7 +13,7 @@ La siguiente lista contiene tanto definiciones o significados, como sinónimos d
 #### enconar [v.]
 * **enconar [v.]** Inflamar una herida. Irritar el ánimo contra alguien.
 
-#### extemporáneo
+#### extemporáneo [sin.]
 * **extemporáneo:** inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal
 
 #### garzo, za [adj.]
@@ -22,7 +22,7 @@ La siguiente lista contiene tanto definiciones o significados, como sinónimos d
 #### ímprobo [adj.]
 * **ímprobo [adj.]** Falto de honradez, de honestidad; falto de probidad.
 
-#### lovizna, lloviznar
+#### lovizna, lloviznar [sin.]
 * **llovizna, lloviznar:** garúa, garuar; mollina, mollinear; mollizna, molliznar, molliznear; pintear
 
 #### tomar alguien el tole [loc.coloq.]
