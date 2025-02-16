@@ -1,23 +1,10 @@
-# RAW
-## Creates 2 Lines that CAN be selected as text
-## -------------------------------------------------
-### The non-breaking space ASCII character
-&nbsp;
-&nbsp;
-
-### HTML <(br)/> tag
+Línea en blanco usando \< br \/\>
 <br />
 <br />
-
-## Creates 2 Lines that CANNOT be selected as text
-## -------------------------------------------------
-### HTML Entity &NewLine;
+Línea en blanco usando nbsp
+&nbsp;
+&nbsp;
+Línea en blanco usando NewLine
 &NewLine;
 &NewLine;
-
-### Backticks with a space inside followed by two spaces
-`(space)`(space)(space)
-`(space)`(space)(space)
-#### sample:
-` `  
-` `
+~ finis ~
