@@ -2,7 +2,7 @@
 
 Puedes visitar y navegar en mi sitio de dos forma:
 
-* [**Sitio web normal**](https://jucardus.github.io) - jucardus.github.io
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Repositorio Jucardus**](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) - r.jucardus.com
 
 La primera opción es de presentación simple, con enlaces para navegar entre todas las subpáginas. La segunda, además de la navegación, cuenta con opciones de descarga, busca y otras opciones propias de GitHub.
