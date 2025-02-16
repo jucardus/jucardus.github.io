@@ -4,6 +4,6 @@
 
 ### Índice
 
-* **extemporáneo**; inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal
+* **extemporáneo:** inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal
 
 <p align="center">◆</p>
