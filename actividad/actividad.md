@@ -5,6 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-02-15
 
+* Probando cómo usar la aplicación Git Sync, para sincronizar mi repositorio en GitHub con mi celular.
 * Se ha implementado un enlace directo al repositorio de este sitio, para copias, descargas y más: [jucardus.github.io/repo](https://jucardus.github.io/repo).
 * Ciertas modificaciones en la [página de inicio](../index.md), para especificar el contenido del sitio, además de ciertas aclaraciones.
 
