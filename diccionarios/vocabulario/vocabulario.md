@@ -19,7 +19,7 @@ La siguiente lista contiene tanto definiciones o significados, como sinónimos (
 #### garzo, za [adj.]
 * **garzo, za [adj.]** Zarco; de color azulado (dícese de los ojos). Persona de ojos azulados.
 
-#### ímprobo [adj.]
+#### ímprobo, ba [adj.]
 * **ímprobo [adj.]** Falto de honradez, de honestidad; falto de probidad.
 
 #### lovizna, lloviznar [sin.]
