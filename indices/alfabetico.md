@@ -23,7 +23,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Índice; en _Escritos varios_](../escritos/escritos.md#índice)
 * [Índice; en _Programación básica_](../programacion/programacion.md#índice)
 * [Inicio](../index.md)
-* [Películas](../enlaces/enlaces.md#películas)
+* [Películas; en _Enlaces muchos_](../enlaces/enlaces.md#películas)
 * [Programación básica](../programacion/programacion.md)
 * [Repositorio](https://jucardus.github.io/repo.html)
 * [Traducciones al español](../traducciones/traducciones.md)
