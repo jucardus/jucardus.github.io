@@ -12,5 +12,6 @@
 * Diccionario inglés-español
 * Diccionario multilingüe
 * Frases chinas
+* Vocabulario español
 
 <p align="center">◆</p>
