@@ -10,6 +10,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [alfabético ¦ Índice](./alfabetico.md)
 * [Apotegmas](../escritos/apotegmas/apotegmas.md)
 * [Autor y contacto; en la página de inicio](../index.md#autor-y-contacto)
+* [Citas](../escritos/citas/citas.md)
 * [Contenido; en la página de inicio](../index.md#contenido)
 * [Diccionarios; en _Enlaces muchos_](../../enlaces/enlaces.md#diccionarios)
 * [Diccionarios todos](../diccionarios/diccionarios.md)
