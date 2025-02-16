@@ -3,7 +3,7 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
-### 25-2-16
+#### 25-2-16
 
 * Algunos cambios en la página de inicio.
 
