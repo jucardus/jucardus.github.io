@@ -5,5 +5,7 @@
 ### Índice
 
 * **extemporáneo:** inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal
+* **garzo, za [adj.]** Zarco; de color azulado (dícese de los ojos).
+* **garzo, za [m.f.]** Persona de ojos azulados.
 
 <p align="center">◆</p>
