@@ -5,6 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-16
 
+* Vocabulario español agregado: [atisbo [sin.]](../diccionarios/vocabulario/vocabulario.md#atisbo-sin); [enconado [adj.]](../diccionarios/vocabulario/vocabulario.md#enconado-adj); [enconar [v.]](../diccionarios/vocabulario/vocabulario.md#enconar-v); [extemporáneo [sin.]](../diccionarios/vocabulario/vocabulario.md#extempor%C3%A1neo-sin); [garzo, za [adj.]](../diccionarios/vocabulario/vocabulario.md#garzo-za-adj)
 * Creación de la subpágina [Vocabulario español](../diccionarios/vocabulario/vocabulario.md), como parte de _Diccionarios todos_.
 * Creación de la subpágina [Diccionarios todos](../diccionarios/diccionarios.md).
 * Algunos cambios en la página de inicio.
