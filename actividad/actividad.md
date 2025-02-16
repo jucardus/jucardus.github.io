@@ -5,6 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-16
 
+* Numeras adiciones en [Apotegmas](../escritos/apotegmas/apotegmas.md#apotegmas).
 * Numerosos [diccionarios](../enlaces/enlaces.md#diccionarios) agregados a _Enlaces muchos_.
 * Unas cuantas [películas](../enlaces/enlaces.md#películas) agregadas a _Enlaces muchos_.
 * Vocabulario español agregado: [atisbo [sin.]](../diccionarios/vocabulario/vocabulario.md#atisbo-sin); [enconado [adj.]](../diccionarios/vocabulario/vocabulario.md#enconado-adj); [enconar [v.]](../diccionarios/vocabulario/vocabulario.md#enconar-v); [extemporáneo [sin.]](../diccionarios/vocabulario/vocabulario.md#extempor%C3%A1neo-sin); [garzo, za [adj.]](../diccionarios/vocabulario/vocabulario.md#garzo-za-adj); [ímprobo, ba [adj.]](../diccionarios/vocabulario/vocabulario.md#%C3%ADmprobo-ba-adj); [llovizna, lloviznar [sin.]](../diccionarios/vocabulario/vocabulario.md#lovizna-lloviznar-sin); [tomar alguien el tole [loc.coloq.]](../diccionarios/vocabulario/vocabulario.md#tomar-alguien-el-tole-loccoloq)
