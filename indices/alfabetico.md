@@ -14,6 +14,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Enlaces muchos](../enlaces/enlaces.md)
 * [Escritos varios](../escritos/escritos.md)
 * [español ¦ Traducciones al](../traducciones/traducciones.md)
+* [español ¦ Vocabulario](../diccionarios/vocabulario/vocabulario.md)
 * [Github; en _Enlaces muchos_](../enlaces/enlaces.md#github)
 * [Índice alfabético](./alfabetico.md)
 * [Índice; en _Escritos varios_](../escritos/escritos.md#índice)
@@ -22,5 +23,6 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Programación básica](../programacion/programacion.md)
 * [Repositorio](https://jucardus.github.io/repo.html)
 * [Traducciones al español](../traducciones/traducciones.md)
+* [Vocabulario español](../diccionarios/vocabulario/vocabulario.md)
 
 <p align="center">◆</p>
