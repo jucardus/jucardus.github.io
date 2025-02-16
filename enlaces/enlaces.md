@@ -1,5 +1,5 @@
 ## Enlaces muchos
-[inicio](../index.md) | [índice](../index.md) | [actividad](../actividad/actividad.md) | [A-Z](../indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Enlaces%20varios%20de%20cosas%20muchas,%20en%20Jucardus,%20→%20https://jucardus.github.io/enlaces/enlaces.html%0A%0A@jucardus%20~%20%23)
+[inicio](../index.md) \| [índice](../index.md) \| [actividad](../actividad/actividad.md) \| [A-Z](../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Enlaces%20varios%20de%20cosas%20muchas,%20en%20Jucardus,%20→%20https://jucardus.github.io/enlaces/enlaces.html%0A%0A@jucardus%20~%20%23)
 
 Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
