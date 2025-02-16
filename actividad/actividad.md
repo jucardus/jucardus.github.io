@@ -3,13 +3,17 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
-#### 25-02-15
+### 25-2-16
+
+* Algunos cambios en la página de inicio.
+
+#### 25-2-15
 
 * Probando cómo usar la aplicación Git Sync, para sincronizar mi repositorio en GitHub con mi celular.
 * Se ha implementado un enlace directo al repositorio de este sitio, para copias, descargas y más: [jucardus.github.io/repo](https://jucardus.github.io/repo).
 * Ciertas modificaciones en la [página de inicio](../index.md), para especificar el contenido del sitio, además de ciertas aclaraciones.
 
-#### 25-02-14
+#### 25-2-14
 
 * Se ha creado la subpágina [Apotegmas](../escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
 * Creación de la subpágina [Índice alfabético](../indices/alfabetico.md), para facilitar el acceso a todas las subpáginas.
