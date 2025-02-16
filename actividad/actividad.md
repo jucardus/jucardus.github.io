@@ -5,6 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-16
 
+* Creación de la subpágina [Diccionarios todos](../diccionarios/diccionarios.md).
 * Algunos cambios en la página de inicio.
 
 #### 25-2-15
