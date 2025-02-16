@@ -2,7 +2,7 @@
 
 [inicio](../../index.md) \| [índice](../../escritos/escritos.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Citas,%20aformismos,%20frases%20célebres,%20en%20Jucardus.%20→%20jucardus.github.io/escritos/citas/citas.html%0A%0A@jucardus%20~%20%23)
 
-Las citas más recientes se muestran al inicio de la lista.
+Las citas más recientes se muestran al inicio de la lista. Se incluyen frases célebres, apotegmas, aforismos, refranes, proverbios y máximas.
 
 * Recordad el pasado con gratitud, vivid el presente con entusiasmo y mirad hacia el futuro con confianza. – Juan Pablo II
 * Foreign aid is taking money from poor people in rich countries and giving it to rich people in poor countries. – Ron Paul
