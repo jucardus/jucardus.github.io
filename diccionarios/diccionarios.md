@@ -12,6 +12,6 @@
 * Diccionario inglés-español
 * Diccionario multilingüe
 * Frases chinas
-* [Vocabulario español](/vocabulario/vocabulario.md)
+* [Vocabulario español](../diccionarios/vocabulario/vocabulario.md)
 
 <p align="center">◆</p>
