@@ -23,5 +23,6 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * Cómo implementar un documento 404.html para las páginas en GitHub. → [docs.github.com](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
 * Markdown para GitHub. → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * Quickstart for writing on GitHub → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
+* Tablas en documentos *.md → [github.com](https://github.com/github/docs/blob/main/content/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables.md)
 
 <p align="center">◆</p>
