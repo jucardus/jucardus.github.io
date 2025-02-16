@@ -5,7 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-16
 
-* Se ha creado la subpágina [Citas](../escritos/citas/citas.md), como parte de _Escritos varios_.
+* Se ha creado la subpágina [Citas](../escritos/citas/citas.md), como parte de _Escritos varios_, y se ha agregado algunos párrafos para empezar.
 * Numeras adiciones en [Apotegmas](../escritos/apotegmas/apotegmas.md).
 * Numerosos [diccionarios](../enlaces/enlaces.md#diccionarios) agregados a _Enlaces muchos_.
 * Unas cuantas [películas](../enlaces/enlaces.md#películas) agregadas a _Enlaces muchos_.
