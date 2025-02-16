@@ -6,6 +6,7 @@ Una lista completa de todas las subpáginas de este sitio.
 * [Actividad reciente](../actividad/actividad.md)
 * [alfabético ¦ Índice](./alfabetico.md)
 * [Apotegmas](../escritos/apotegmas/apotegmas.md)
+* [Contenido; en la página de inicio](../index.md#contenido)
 * [Enlaces muchos](../enlaces/enlaces.md)
 * [Escritos varios](../escritos/escritos.md)
 * [español ¦ Traducciones al](../traducciones/traducciones.md)
