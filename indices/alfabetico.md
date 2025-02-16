@@ -9,7 +9,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Apotegmas](../escritos/apotegmas/apotegmas.md)
 * [Autor y contacto; en la página de inicio](../index.md#autor-y-contacto)
 * [Contenido; en la página de inicio](../index.md#contenido)
-* [Diccionarios; en _Enlaces muchos_](../enlaces/enlaces.html#diccionarios)
+* [Diccionarios; en _Enlaces muchos_](../../enlaces/enlaces.html#diccionarios)
 * [Enlaces muchos](../enlaces/enlaces.md)
 * [Escritos varios](../escritos/escritos.md)
 * [español ¦ Traducciones al](../traducciones/traducciones.md)
