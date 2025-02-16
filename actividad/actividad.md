@@ -5,7 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-16
 
-* Creación de la subpágina [Vocabulario español](../../diccionarios/vocabulario/vocabulario.md), como parte de _Diccionarios todos_.
+* Creación de la subpágina [Vocabulario español](../diccionarios/vocabulario/vocabulario.md), como parte de _Diccionarios todos_.
 * Creación de la subpágina [Diccionarios todos](../diccionarios/diccionarios.md).
 * Algunos cambios en la página de inicio.
 
