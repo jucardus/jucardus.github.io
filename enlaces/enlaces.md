@@ -13,9 +13,15 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * alemán-español - Langenscheidt Deutsch-Spanisch Wörterbuch → [de.langenscheidt.com](https://de.langenscheidt.com/deutsch-spanisch/)
 * chino - dict.revised.moe.edu.tw → [dict.revised.moe.edu.tw](https://dict.revised.moe.edu.tw/search.jsp?md=1)
 * chino-inglés - Cedict → [www.mdbg.net](https://www.mdbg.net/chinese/dictionary)
+* español - Diccionario de la lengua española → [dle.rae.es](https://dle.rae.es/)
+* español - Diccionario panhispánico del español jurídico → [dpej.rae.es](https://dpej.rae.es/)
+* español inverso - IEDRA.es → [iedra.es](https://iedra.es/)
+* español - Tesoro de los diccionarios históricos de la lengua española → [www.rae.es](https://www.rae.es/tdhle/)
 * francés - Dictionnaire de l'Académie française → [www.dictionnaire-academie.fr](https://www.dictionnaire-academie.fr/)
 * inglés - Merriam-Webster → [www.merriam-webster.com](https://www.merriam-webster.com/)
+* inglés - The Online Plain Text English Dictionary → [www.mso.anu.edu.au](https://www.mso.anu.edu.au/~ralph/OPTED/)
 * inglés-español - Lingue → [www.linguee.es](https://www.linguee.es/espanol-ingles/)
+* nombres - Hitchcock's Bible Names Dictionary → [www.sjgames.com](http://www.sjgames.com/in-nomine/articles/biblenames.txt)
 
 <a name='github'></a>
 ### GitHub
