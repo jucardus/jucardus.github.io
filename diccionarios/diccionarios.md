@@ -13,4 +13,4 @@
 * Diccionario multilingüe
 * Frases chinas
 
-<p align="center"></p>
+<p align="center">◆</p>
