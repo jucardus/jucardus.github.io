@@ -70,7 +70,6 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * [Padre Pío](https://www.youtube.com/watch?v=SHlE80WCTZo)
 * [Redemption: for Robbing the Dead](https://youtu.be/hNYf1uawc64)
 * [San Agustín](https://youtu.be/hQGagdALGkQ)
-* [Sólo amigos](https://youtu.be/FkMoMz6rLmo)
 * [Stalker](https://youtu.be/Q3hBLv-HLEc)
 * [Stargate](https://www.youtube.com/playlist?list=PLZbXA4lyCtqoiUB8XjtZGmymyMj9O6Mru)
 * [Temporada de brujas](https://youtu.be/8zc54lGbMKc)
