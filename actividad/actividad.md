@@ -5,6 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-17
 
+* Creación de la subpágina [Diccionario inglés-español](../diccionarios/ingles-espanol/ingles-espanol.md), como parte de _Diccionarios todos_.
 * Creación de la subpágina [Charlie Codman's Cruise](../traducciones/ccc/ccc.md), como parte de las _Traducciones al español_.
 
 #### 25-2-16
