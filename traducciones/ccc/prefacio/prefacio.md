@@ -9,7 +9,7 @@
 
 > En consideración a los deseos manifiestos de algunos de sus jóvenes amigos, el autor ha intentado una historia de mar, y ahora presenta _Charlie Codman's Cruise_ como el tercer volumen de la _Campaign Series_. Se encontrará que es más temeraria que sus predecesoras y que las adversidades que Charlie es llamado a afrontar son de carácter más severo que las que le acaecieron a Frank Frost o a Paul Prescoot; pero también se verá que fueron enfrentadas con el mismo espíritu varonil y una determinación semejante a ser fiel al deber a todo trance.
 
-Though not wholly a stranger to the sea, the author is quite aware of the blunders to which a landsman is exposed in treating of matters and a mode of life which, at the best, he must comprehend but imperfectly, and has endeavored to avoid, as far as possible,[4] professional technicalities, as not essential to the interest of the story.
+Though not wholly a stranger to the sea, the author is quite aware of the blunders to which a landsman is exposed in treating of matters and a mode of life which, at the best, he must comprehend but imperfectly, and has endeavored to avoid, as far as possible, professional technicalities, as not essential to the interest of the story.
 
 With these few words he submits the present volume to his young readers, hoping for it a welcome even more generous than has been accorded to "Frank's Campaign" and "Paul Prescott's Charge."
 
