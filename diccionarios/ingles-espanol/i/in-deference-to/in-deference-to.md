@@ -7,4 +7,8 @@
 * por deferencia a [loc.]
 * por respeto a [loc.]
 
+### Contexto
+
+* <ins>In deference to</ins> the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents "Charlie Codman's Cruise," as the third volume of the Campaign Series. &mdash; [_Charlie Codman's Cruise, a Story for Boys_](../../../../traducciones/ccc/ccc.md).
+
 <p align="center">◆</p>
