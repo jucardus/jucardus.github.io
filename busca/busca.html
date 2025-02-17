@@ -117,22 +117,28 @@
     </div>
     
     <script>
-      function recientes() {
-        var array = base;
-        var contador = 0;
-        var resultado = [];
-        let temasTodos = [];
-        for (var i = 0; i < array.length; i++) {
-          var linea = array[i].split(' ¶ ');
-            var titulo = linea[0];
-            var descripcion = linea[1];
-            var enlace = linea[2];
-            var nuevaLinea = titulo + ' ¶ ' + descripcion + ' ¶ ' + enlace;
-          temasTodos.push(nuevaLinea);
-        }
-        var temasMostrar = temasTodos.join('<p>');
-        document.getElementById('mostrar').innerHTML = temasMostrar;
+    function recientes() {
+      var array = base;
+      var contador = 0;
+      var resultado = [];
+      let temasTodos = [];
+      for (var i = 0; i < array.length; i++) {
+        var linea = array[i].split(' ¶ ');
+        var tema = linea[0];
+        var subtema = linea[1];
+        var url = linea[2];
+        var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + url + '</a>';
+        var nuevaLinea = '<!--' + orden + '--><img id="favicones" src="' + favicon + '" /><b>' + tema + '</b> <span class="barrita">┋</span> ' + subtema + ' <span class="barrita">┋</span> ' + enlace;
+        resultado.push(nuevaLinea);
+        contador = contador + 1;
+        if (contador == 12) {break;}
       }
+      resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
+      resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+      resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+      var enlaces = resultado.join('<p>');
+      document.getElementById('mostrar').innerHTML = enlaces;
+    }
       function teclaBuscar (event) {
         if (event.key === "Enter") {
           event.preventDefault();
