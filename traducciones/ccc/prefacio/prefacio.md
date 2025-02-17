@@ -1,6 +1,6 @@
 ## Preface
 
-[inicio](../../index.md) \| [índice](../ccc.md) \| actividad \| A-Z \| compartir
+[inicio](../../../index.md) \| [índice](../ccc.md) \| actividad \| A-Z \| compartir
 
 > [!WARNING]
 > Subpágina en construcción.
