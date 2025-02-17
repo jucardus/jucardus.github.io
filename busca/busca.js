@@ -30,8 +30,7 @@ function buscar() {
   if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != 'temastemastemas') {
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
     for (var i = 0; i < array.length; i++) {
-      if (array[i].toUpperCase().indexOf(recibido.toUpperCase()) >= 0) {
-        var linea = array[i].split(' ¶ ');
+      if (array[i].toUpperCase().replace(/ ¶.*/g,'').indexOf(recibido.toUpperCase()) >= 0) {
         var linea = array[i].split(' ¶ ');
           var tema = linea[0];
           var subtema = linea[1];
