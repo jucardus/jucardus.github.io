@@ -1,4 +1,6 @@
 let base = [
+  "Preface ¶ Prefacio de <i>Charlie Codman's Cruise</i>, en <i>Traducciones al español</i>. ¶ https://jucardus.github.io/traducciones/ccc/prefacio/prefacio.html",
+  "Charlie Codman's Cruise, a Story for Boys ¶ Parte de <i>Traducciones al español</i>. ¶ https://jucardus.github.io/traducciones/ccc/ccc.html",
   "Apotegmas ¶ Aforismos de mi autoría, parte de <i>Escritos varios</i>. ¶ https://jucardus.github.io/escritos/apotegmas/apotegmas.html",
   "Citas ¶ Frases célebres, aforismos, refranes, proverbios. Parte de <i>Escritos varios</i>. ¶ https://jucardus.github.io/escritos/citas/citas.html",
   "Vocabulario español ¶ Algunas palabras españolas seguidas de sus significados. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html",
