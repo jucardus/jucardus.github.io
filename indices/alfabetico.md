@@ -23,7 +23,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [español ¦ Vocabulario](../diccionarios/vocabulario/vocabulario.md)
 * [Github; en _Enlaces muchos_](../enlaces/enlaces.md#github)
 * [Índice alfabético](./alfabetico.md)
-* [Índice; en _Diccionario inglés-español_](../diccionarios/ingles-espanol/ingles-espanol.md)
+* [Índice; en _Diccionario inglés-español_](../diccionarios/ingles-espanol/ingles-espanol.md#índice)
 * [Índice; en _Diccionarios todos_](../diccionarios/diccionarios.md#índice-de-diccionarios)
 * [Índice; en _Escritos varios_](../escritos/escritos.md#índice)
 * [Índice; en _Programación básica_](../programacion/programacion.md#índice)
