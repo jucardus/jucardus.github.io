@@ -104,7 +104,7 @@
 
     <div id="formulario">
       <form method="post">
-        <input type="text" autocomplete="off" placeholder="...🔍" size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
+        <input type="text" autocomplete="off" autofocus="on" placeholder="...🔍" size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
         <button id="boton" type="button" onclick="buscar()">🔍</button>
       </form>
     </div>
@@ -112,84 +112,17 @@
 
     <h3>Aclaraciones</h3>
       <ul>
-        <li>Los enlaces que se muestran al abrir la página, son las doce adiciones más recientes a la base de datos. Las buscas no diferencian entre mayúsculas y minúsculas.</li>
-        <li>Al clicar en cualquier enlace enumerado después de una busca, el sitio web correspondiente se abrirá en una nueva pestaña y el enlace quedará marcado en color rojo para referencia.</li>
+        <li>Los enlaces que se muestran al abrir la página, son las doce adiciones más recientes al sitio. Si deseas ver toda la actividad en el sitio, clica <a href="https://jucardus.github.io/actividad/actividad.html">AQUÍ</a>.</li>
+        <li>Para hacer una búsqueda, escribe en el recuadro y presiona la tecla <code>ENTER</code>. Los resultados se mostrarán en orden alfabético. Las buscas no hacen diferencia entre mayúsculas y minúsculas.</li.>
       </ul>
 
       <p align="center">◆</p>
       
     </div>
     
-    <script>
-      function recientes() {
-        var array = base;
-        var contador = 0;
-        var resultado = [];
-        let temasTodos = [];
-        for (var i = 0; i < array.length; i++) {
-          var linea = array[i].split(' ¶ ');
-            var tema = linea[0];
-            var subtema = linea[1];
-            var url = linea[2];
-          var nuevaLinea = '<p><b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema + '</p>';
-          resultado.push(nuevaLinea);
-          contador = contador + 1;
-          if (contador == 12) {break;}
-        }
-        var enlaces = resultado.join('');
-        document.getElementById('mostrar').innerHTML = enlaces;
-      }
-      function teclaBuscar (event) {
-        if (event.key === "Enter") {
-          event.preventDefault();
-          buscar('');
-        }
-      }
-      function buscar() {
-        let recibido = document.getElementById("buscar").value;
-        var array = base;
-        var resultado = [];
-        var recibidoOriginal = recibido.replace(/ /g,'%20');
-        if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != 'temastemastemas') {
-          document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
-          for (var i = 0; i < array.length; i++) {
-            if (array[i].toUpperCase().indexOf(recibido.toUpperCase()) >= 0) {
-              var linea = array[i].split(' ¶ ');
-              var linea = array[i].split(' ¶ ');
-                var tema = linea[0];
-                var subtema = linea[1];
-                var url = linea[2];
-                var orden = tema.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-              var nuevaLinea = '<p><!--' + orden + '--><b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema + '</p>';
-              resultado.push(nuevaLinea);
-            }
-          }
-          resultado = resultado.sort((a, b) => a.localeCompare(b));
-          var enlaces = resultado.join('<p>');
-          if (enlaces.indexOf('http') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
-          document.getElementById('buscar').value = '';
-          document.getElementById('mostrar').innerHTML = enlaces;
-        } else {
-          document.getElementById('buscar').value = '';
-          document.getElementById('mostrar').innerHTML =  '<span class="previo">[ mínimo dos caracteres de busca ]</span>';
-        }
-      }
+    <script src="busca.js"></script>
+    <script src="busca-base.js"></script>
 
-      // +++
-      
-      let base = [
-        "Traducciones al español ¶ Textos traducidos del inglés y del francés al español. ¶ https://jucardus.github.io/traducciones/traducciones.html",
-        "Programación básica ¶ Bash, CSS, Blogger, JavaScript, Google Apps Script. ¶ https://jucardus.github.io/programacion/programacion.html",
-        "Índice alfabético ¶ Todas las entradas y subpáginas de este sitio, en orden alfabético. ¶ https://jucardus.github.io/indices/alfabetico.html",
-        "Escritos varios ¶ Apotegmas, cuentos, citas, poesía, reflexiones. ¶ https://jucardus.github.io/escritos/escritos.html",
-        "Enlaces muchos ¶ Enlaces a sitios externos de interés ¶ https://jucardus.github.io/enlaces/enlaces.html",
-        "Diccionarios todos ¶ Inglés-español, chino-español, nombres bíblicos, multilingüe ¶ https://jucardus.github.io/diccionarios/diccionarios.html",
-        "Actividad reciente ¶ Las subpáginas y entradas más recientes de este sitio. ¶ https://jucardus.github.io/actividad/actividad.html",
-        "Repositorio ¶ El repositorio de este sitio, con busca, descarga, copia y otras opciones de GitHub. ¶ https://jucardus.github.io/repo",
-        "Inicio ¶ Página de inicio, con el contenido principal. ¶ https://jucardus.github.io/"
-        ]
-
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
   </body>
