@@ -79,6 +79,9 @@
       padding-left: 5px;
       padding-top: 4px;
     }
+    #mostrar {
+      margin-top: 20px;
+    }
     ::placeholder {
       color: DarkTurquoise;
       text-align: right;
@@ -124,15 +127,15 @@
         let temasTodos = [];
         for (var i = 0; i < array.length; i++) {
           var linea = array[i].split(' ¶ ');
-          var tema = linea[0];
-          var subtema = linea[1];
-          var url = linea[2];
-          var nuevaLinea = '<b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema;
+            var tema = linea[0];
+            var subtema = linea[1];
+            var url = linea[2];
+          var nuevaLinea = '<b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema + '<p>';
           resultado.push(nuevaLinea);
           contador = contador + 1;
           if (contador == 12) {break;}
         }
-        var enlaces = resultado.join('<p>');
+        var enlaces = resultado.join('');
         document.getElementById('mostrar').innerHTML = enlaces;
       }
       function teclaBuscar (event) {
@@ -186,7 +189,7 @@
         "Programación básica ¶ Bash, CSS, Blogger, JavaScript, Google Apps Script. ¶ https://jucardus.github.io/programacion/programacion.html",
         "Índice alfabético ¶ Todas las entradas y subpáginas de este sitio, en orden alfabético. ¶ https://jucardus.github.io/indices/alfabetico.html",
         "Escritos varios ¶ Apotegmas, cuentos, citas, poesía, reflexiones. ¶ https://jucardus.github.io/escritos/escritos.html",
-        "Enlaces muchos ¶ Enlaes a sitios externos de interés ¶ https://jucardus.github.io/enlaces/enlaces.html",
+        "Enlaces muchos ¶ Enlaces a sitios externos de interés ¶ https://jucardus.github.io/enlaces/enlaces.html",
         "Diccionarios todos ¶ Inglés-español, chino-español, nombres bíblicos, multilingüe ¶ https://jucardus.github.io/diccionarios/diccionarios.html",
         "Actividad reciente ¶ Las subpáginas y entradas más recientes de este sitio. ¶ https://jucardus.github.io/actividad/actividad.html",
         "Repositorio ¶ El repositorio de este sitio, con busca, descarga, copia y otras opciones de GitHub. ¶ https://jucardus.github.io/repo",
