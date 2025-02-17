@@ -67,7 +67,7 @@
 </head>
 
   </head>
-  <body>
+  <body onload="recientes()">
     <div class="container-lg px-3 my-5 markdown-body">
       
       <h1><a href="https://jucardus.github.io/">Jucardus.com</a></h1>
@@ -78,11 +78,94 @@
 
       [ EN CONSTRUCCIÓN ]
 
-<p align="center">◆</p>
+    <div id="formulario">
+      <form method="post">
+        <input type="text" autocomplete="off" placeholder="...🔍" size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
+        <button id="boton" type="button" onclick="buscar()">🔍</button>
+      </form>
+    </div>
+    <div id="mostrar"></div>
 
+    <h3>Aclaraciones</h3>
+      <ul>
+        <li>Los enlaces que se muestran al abrir la página, son las doce adiciones más recientes a la base de datos. Las buscas no diferencian entre mayúsculas y minúsculas.</li>
+        <li>Al clicar en cualquier enlace enumerado después de una busca, el sitio web correspondiente se abrirá en una nueva pestaña y el enlace quedará marcado en color rojo para referencia.</li>
+      </ul>
 
+      <p align="center">◆</p>
       
     </div>
+    
+    <script>
+      function recientes() {
+        var array = base;
+        var contador = 0;
+        var resultado = [];
+        let temasTodos = [];
+        for (var i = 0; i < array.length; i++) {
+          var linea = array[i].split(' ¶ ');
+            var titulo = linea[0];
+            var descripcion = linea[1];
+            var enlace = linea[2];
+            var nuevaLinea = titulo + ' ¶ ' + descripcion + ' ¶ ' enlace;
+          temasTodos.push(tema);
+        }
+        var temasMostrar = temasTodos.join('<p>');
+        document.getElementById('mostrarTemas').innerHTML = temasMostrar;
+      }
+      function teclaBuscar (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          buscar('');
+        }
+      }
+      function buscar() {
+        let recibido = document.getElementById("buscar").value;
+        var array = base;
+        var resultado = [];
+        var recibidoOriginal = recibido.replace(/ /g,'%20');
+        if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != 'temastemastemas') {
+          document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
+          for (var i = 0; i < array.length; i++) {
+            if (array[i].toUpperCase().indexOf(recibido.toUpperCase()) >= 0) {
+              var linea = array[i].split(' ¶ ');
+                var tema = linea[0];
+                var subtema = linea[1];
+                var url = linea[2];
+                  var dominio = url?.slice(url.indexOf('://') + 3);
+                    var dominio = dominio?.replace(/\/.*/g,'');
+                    if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
+                    if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
+                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
+                var orden = tema + subtema;
+                  var orden = orden.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
+                var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + url + '</a>';
+                var nuevaLinea = '<!--' + orden + '--><img id="favicones" src="' + favicon + '" /><b>' + tema + '</b> <span class="barrita">┋</span> ' + subtema + ' <span class="barrita">┋</span> ' + enlace;
+              resultado.push(nuevaLinea);
+            }
+          }
+          resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
+          resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+          resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+          var enlaces = resultado.join('<p>');
+          if (enlaces.indexOf('http') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
+          document.getElementById('buscar').value = '';
+          document.getElementById('mostrar').innerHTML = enlaces;
+        } else {
+          document.getElementById('buscar').value = '';
+          document.getElementById('mostrar').innerHTML =  '<span class="previo">[ mínimo dos caracteres de busca ]</span>';
+        }
+      }
+
+      // +++
+      
+      let base = [
+        "vocabulario español ¶ salpullido, sarpullido ¶ https://dle.rae.es/salpullido",
+        "piedra alumbre ¶ Desmitificando la piedra alumbre: una alternativa natural y segura ¶ https://www.claravalenzuela.com/blogs/cosmetica-natural/desmitificando-la-piedra-alumbre-una-alternativa-natural-y-segura",
+        "vocabulario español ¶ fabulador, fabulista ¶ https://dle.rae.es/fabulador"
+        ]
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
   </body>
