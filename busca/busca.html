@@ -108,7 +108,7 @@
             var descripcion = linea[1];
             var enlace = linea[2];
             var nuevaLinea = titulo + ' ¶ ' + descripcion + ' ¶ ' + enlace;
-          temasTodos.push(tema);
+          temasTodos.push(nuevaLinea);
         }
         var temasMostrar = temasTodos.join('<p>');
         document.getElementById('mostrarTemas').innerHTML = temasMostrar;
