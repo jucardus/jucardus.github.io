@@ -1,7 +1,7 @@
 ## Índice alfabético
 [inicio](../index.md) \| [índice](../index.md) \| [actividad](../actividad/actividad.md) \| [A-Z](../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Índice%20alfabético%20de%20todas%20las%20subpáginas%20y%20entradas%20en%20Jucardus.%20→%20jucardus.github.io/indices/alfabetico.html%0A%0A@jucardus%20~%20%23) \| [🔍](../busca/busca.html)
 
-Una lista completa de todas las subpáginas y subtítulos de este sitio.
+Una lista completa de todas las subpáginas y subtítulos principales de este sitio. Para hacer búsquedas pormenorizadas en todo el contenido del sitio, usa la [página de Busca](../busca/busca.html).
 
 ### Subpáginas principales
 
@@ -36,17 +36,5 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Repositorio](https://jucardus.github.io/repo.html)
 * [Traducciones al español](../traducciones/traducciones.md)
 * [Vocabulario español](../diccionarios/vocabulario/vocabulario.md)
-
-### Subpáginas secundarias
-
-* [atisbo [sin.]](../diccionarios/vocabulario/vocabulario.md#atisbo-sin)
-* [enconado [adj.]](../diccionarios/vocabulario/vocabulario.md#enconado-adj)
-* [enconar [v.]](../diccionarios/vocabulario/vocabulario.md#enconar-v)
-* [extemporáneo [sin.]](../diccionarios/vocabulario/vocabulario.md#extempor%C3%A1neo-sin)
-* [garzo, za [adj.]](../diccionarios/vocabulario/vocabulario.md#garzo-za-adj)
-* [ímprobo, ba [adj.]](../diccionarios/vocabulario/vocabulario.md#%C3%ADmprobo-ba-adj)
-* [in deference to [loc.]](../diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md)
-* [llovizna, lloviznar [sin.]](../diccionarios/vocabulario/vocabulario.md#lovizna-lloviznar-sin)
-* [tomar alguien el tole [loc.coloq.]](../diccionarios/vocabulario/vocabulario.md#tomar-alguien-el-tole-loccoloq)
 
 <p align="center">◆</p>
