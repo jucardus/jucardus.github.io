@@ -1,6 +1,6 @@
 ## Preface
 
-[inicio](../../../index.md) \| [índice](../ccc.md) \| [actividad](../../../actividad/actividad.md) \| [A-Z](../../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Traducción%20al%20español%20del%20prefacio%20de%20Charlie%20Codman's%20Cruise.%20→%20jucardus.github.io/traducciones/ccc/prefacio/prefacio.html%0A%0A@jucardus%20~%20%23)
+[inicio](../../../index.md) \| [índice](../ccc.md) \| [actividad](../../../actividad/actividad.md) \| [A-Z](../../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Traducción%20al%20español%20del%20prefacio%20de%20Charlie%20Codman's%20Cruise.%20→%20jucardus.github.io/traducciones/ccc/prefacio/prefacio.html%0A%0A@jucardus%20~%20%23) \| [🔍](../../../busca/busca.html)
 
 > [!WARNING]
 > Subpágina en construcción.
