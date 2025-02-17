@@ -13,4 +13,6 @@ Though not wholly a stranger to the sea, the author is quite aware of the blunde
 
 With these few words he submits the present volume to his young readers, hoping for it a welcome even more generous than has been accorded to "Frank's Campaign" and "Paul Prescott's Charge."
 
-<p align="center">◆</p>
+<p align="center">
+  [◆](https://github.com/jucardus/jucardus.github.io/edit/main/traducciones/ccc/prefacio/prefacio.md)
+</p>
