@@ -18,7 +18,7 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 ### Acerca del sitio
 
 * El sitio está en sus inicios y en plena construcción. Intento reunir todo el material que previamente había elaborado en otros lugares, para que quede accesible y relacionado entre sí. Llevará un tiempo.
-* Cada subpágina cuenta con un pequeño índice debajo del título, para navegar fácilmente en el sitio, para ir al índice continente, para acceder al índice alfabético y para compartir el contenido abierto en X Twitter.
+* Cada subpágina cuenta con un pequeño índice debajo del título, para navegar fácilmente en el sitio, para ir al índice continente, para acceder al índice alfabético, para compartir el contenido abierto en X Twitter y hacer buscas en el sitio.
 * En caso de que necesites hacer buscas entre todas las subpáginas, cuentas con el repositorio completo mediante el enlace [jucardus.github.io/repo](https://jucardus.github.io/repo). En esta presentación puedes descargar el contenido, copiarlo y otras opciones propias de GitHub.
 * Si deseas informar de algún enlace roto, sugerir correcciones o hacer comentarios acerca de mi contenido, no dudes en contactar conmigo mediante el correo electrónico que se muestra más abajo.
 
