@@ -63,7 +63,7 @@
     }
     #formulario {
       margin-left: 10px;
-      margin-top: 10px;
+      margin-top: 30px;
     }
     img[alt$="><"] {
       display: block;
@@ -155,24 +155,16 @@
           for (var i = 0; i < array.length; i++) {
             if (array[i].toUpperCase().indexOf(recibido.toUpperCase()) >= 0) {
               var linea = array[i].split(' ¶ ');
+              var linea = array[i].split(' ¶ ');
                 var tema = linea[0];
                 var subtema = linea[1];
                 var url = linea[2];
-                  var dominio = url?.slice(url.indexOf('://') + 3);
-                    var dominio = dominio?.replace(/\/.*/g,'');
-                    if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-                    if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-                var orden = tema + subtema;
-                  var orden = orden.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-                var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + url + '</a>';
-                var nuevaLinea = '<!--' + orden + '--><img id="favicones" src="' + favicon + '" /><b>' + tema + '</b> <span class="barrita">┋</span> ' + subtema + ' <span class="barrita">┋</span> ' + enlace;
+                var orden = tema.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/-/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
+              var nuevaLinea = '<p><!--' + orden + '--><b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema + '</p>';
               resultado.push(nuevaLinea);
             }
           }
-          resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
-          resultado = [...new Set(resultado)]; // eliminar elementos repetidos
-          resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+          resultado = resultado.sort((a, b) => a.localeCompare(b));
           var enlaces = resultado.join('<p>');
           if (enlaces.indexOf('http') == -1) {var enlaces = '<span class="previo">[ ninguna coincidencia ]</span>';}
           document.getElementById('buscar').value = '';
