@@ -1,4 +1,12 @@
 let base = [
+  "tomar alguien el tole [loc.coloq.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#tomar-alguien-el-tole-loccoloq",
+  "llovizna, lloviznar [sin.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#lovizna-lloviznar-sin",
+  "ímprobo, ba [adj.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#%C3%ADmprobo-ba-adj",
+  "garzo, za [adj.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#garzo-za-adj",
+  "extemporáneo [sin.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#extempor%C3%A1neo-sin",
+  "enconar [v.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#enconar-v",
+  "enconado [adj.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#enconado-adj",
+  "atisbo [sin.] ¶ En <i>Vocabulario español</i>. ¶ https://jucardus.github.io/diccionarios/vocabulario/vocabulario.html#atisbo-sin",
   "Preface ¶ Prefacio de <i>Charlie Codman's Cruise</i>, en <i>Traducciones al español</i>. ¶ https://jucardus.github.io/traducciones/ccc/prefacio/prefacio.html",
   "Charlie Codman's Cruise, a Story for Boys ¶ Parte de <i>Traducciones al español</i>. ¶ https://jucardus.github.io/traducciones/ccc/ccc.html",
   "Apotegmas ¶ Aforismos de mi autoría, parte de <i>Escritos varios</i>. ¶ https://jucardus.github.io/escritos/apotegmas/apotegmas.html",
