@@ -24,6 +24,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Índice; en _Diccionarios todos_](../diccionarios/diccionarios.md#índice-de-diccionarios)
 * [Índice; en _Escritos varios_](../escritos/escritos.md#índice)
 * [Índice; en _Programación básica_](../programacion/programacion.md#índice)
+* [Índice; en _Traducciones al español_](../traducciones/traducciones.md#índice)
 * [Inicio](../index.md)
 * [Películas; en _Enlaces muchos_](../enlaces/enlaces.md#películas)
 * [Programación básica](../programacion/programacion.md)
