@@ -128,7 +128,7 @@
           var subtema = linea[1];
           var url = linea[2];
           var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + url + '</a>';
-          var nuevaLinea = '<!--' + orden + '--><img id="favicones" src="' + favicon + '" /><b>' + tema + '</b> <span class="barrita">┋</span> ' + subtema + ' <span class="barrita">┋</span> ' + enlace;
+          var nuevaLinea = '<b>' + tema + '</b> <span class="barrita">&ndash;</span> ' + subtema + ' <span class="barrita"> -- </span> ' + enlace;
           resultado.push(nuevaLinea);
           contador = contador + 1;
           if (contador == 12) {break;}
