@@ -5,7 +5,7 @@
 > [!WARNING]
 > Subpágina en construcción.
 
-In deference to <sup>[en consideración a](../diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md)</sup> the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents "Charlie Codman's Cruise," as the third volume of the Campaign Series. It will be found more adventurous than its predecessors, and the trials which Charlie is called upon to encounter are of a severer character than befell Frank Frost or Paul Prescott. But it will be found that they were met with the same manly spirit, and a like determination to be faithful to duty at all hazards.
+In deference to <sup>[en consideración a](../../../diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md)</sup> the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents "Charlie Codman's Cruise," as the third volume of the Campaign Series. It will be found more adventurous than its predecessors, and the trials which Charlie is called upon to encounter are of a severer character than befell Frank Frost or Paul Prescott. But it will be found that they were met with the same manly spirit, and a like determination to be faithful to duty at all hazards.
 
 > En consideración a los deseos manifiestos de algunos de sus jóvenes amigos...
 
