@@ -3,6 +3,10 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+#### 25-2-17
+
+* Creación de la subpágina [Charlie Codman's Cruise](../traducciones/ccc/ccc.md), como parte de las _Traducciones al español_.
+
 #### 25-2-16
 
 * Se ha creado la subpágina [Citas](../escritos/citas/citas.md), como parte de _Escritos varios_, y se ha agregado algunos párrafos para empezar.
