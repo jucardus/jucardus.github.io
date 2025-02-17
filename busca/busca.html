@@ -127,15 +127,11 @@
           var tema = linea[0];
           var subtema = linea[1];
           var url = linea[2];
-          var enlace = '<a class="enlacista" href="' + url + '" target="_blank">' + url + '</a>';
-          var nuevaLinea = '<b>' + tema + '</b> <span class="barrita">&ndash;</span> ' + subtema + ' <span class="barrita"> -- </span> ' + enlace;
+          var nuevaLinea = '<b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema;
           resultado.push(nuevaLinea);
           contador = contador + 1;
           if (contador == 12) {break;}
         }
-        resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
-        resultado = [...new Set(resultado)]; // eliminar elementos repetidos
-        resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
         var enlaces = resultado.join('<p>');
         document.getElementById('mostrar').innerHTML = enlaces;
       }
@@ -186,9 +182,15 @@
       // +++
       
       let base = [
-        "vocabulario español ¶ salpullido, sarpullido ¶ https://dle.rae.es/salpullido",
-        "piedra alumbre ¶ Desmitificando la piedra alumbre: una alternativa natural y segura ¶ https://www.claravalenzuela.com/blogs/cosmetica-natural/desmitificando-la-piedra-alumbre-una-alternativa-natural-y-segura",
-        "vocabulario español ¶ fabulador, fabulista ¶ https://dle.rae.es/fabulador"
+        "Traducciones al español ¶ Textos traducidos del inglés y del francés al español. ¶ https://jucardus.github.io/traducciones/traducciones.html",
+        "Programación básica ¶ Bash, CSS, Blogger, JavaScript, Google Apps Script. ¶ https://jucardus.github.io/programacion/programacion.html",
+        "Índice alfabético ¶ Todas las entradas y subpáginas de este sitio, en orden alfabético. ¶ https://jucardus.github.io/indices/alfabetico.html",
+        "Escritos varios ¶ Apotegmas, cuentos, citas, poesía, reflexiones. ¶ https://jucardus.github.io/escritos/escritos.html",
+        "Enlaces muchos ¶ Enlaes a sitios externos de interés ¶ https://jucardus.github.io/enlaces/enlaces.html",
+        "Diccionarios todos ¶ Inglés-español, chino-español, nombres bíblicos, multilingüe ¶ https://jucardus.github.io/diccionarios/diccionarios.html",
+        "Actividad reciente ¶ Las subpáginas y entradas más recientes de este sitio. ¶ https://jucardus.github.io/actividad/actividad.html",
+        "Repositorio ¶ El repositorio de este sitio, con busca, descarga, copia y otras opciones de GitHub. ¶ https://jucardus.github.io/repo",
+        "Inicio ¶ Página de inicio, con el contenido principal. ¶ https://jucardus.github.io/"
         ]
 
     </script>
