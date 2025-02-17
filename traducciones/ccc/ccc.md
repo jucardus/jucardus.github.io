@@ -5,5 +5,5 @@ inicio \| índice \| actividad \| A-Z \| compartir
 > [!WARNING]
 > Subpágina en construcción.
 
-* [Preface](./prefacio.md)
+* [Preface](./prefacio/prefacio.md)
 * Chapter I
