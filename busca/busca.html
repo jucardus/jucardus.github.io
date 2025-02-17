@@ -130,7 +130,7 @@
             var tema = linea[0];
             var subtema = linea[1];
             var url = linea[2];
-          var nuevaLinea = '<b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema + '<p>';
+          var nuevaLinea = '<p><b><a href="' + url + '">' + tema + '</a></b> <span class="barrita">&ndash;</span> ' + subtema + '</p>';
           resultado.push(nuevaLinea);
           contador = contador + 1;
           if (contador == 12) {break;}
