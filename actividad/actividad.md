@@ -5,6 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-17
 
+* Ha quedado bien implementada la subpágina de [Busca](../busca/busca.html). Al iniciarla, se muestran las doce subpáginas más recientes.
 * Preparación de la [subpágina de busca](../busca/busca.html), para acceder directamente al resto de subpáginas del sitio. Pronto se implementará la base de datos.
 * Se creó la primera entrada del _Diccionario inglés-español_: [in deference to [loc.]](../diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md).
 * Creación de la subpágina [Diccionario inglés-español](../diccionarios/ingles-espanol/ingles-espanol.md), como parte de _Diccionarios todos_.
