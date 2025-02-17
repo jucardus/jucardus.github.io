@@ -24,7 +24,7 @@ function teclaBuscar (event) {
 }
 function buscar() {
   let recibido = document.getElementById("buscar").value;
-  if (recibido == 'mostrar todo') {var recibido = ' ¶ ';}
+  if (recibido == 'mostrar todo') {recibido = ' ¶ ';}
   var array = base;
   var resultado = [];
   if (recibido.length >= 2 && recibido != ' ' && recibido != '  ' && recibido != 'temastemastemas') {
