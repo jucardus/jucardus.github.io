@@ -10,6 +10,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [alfabético ¦ Índice](./alfabetico.md)
 * [Apotegmas](../escritos/apotegmas/apotegmas.md)
 * [Autor y contacto; en la página de inicio](../index.md#autor-y-contacto)
+* [Busca en el sitio](../busca/busca.html)
 * [Charlie Codman's Cruise, a Story for Boys](../traducciones/ccc/ccc.md)
 * [Citas](../escritos/citas/citas.md)
 * [Contenido; en la página de inicio](../index.md#contenido)
