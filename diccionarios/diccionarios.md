@@ -6,7 +6,7 @@
 
 * Diccionario chino-español
 * Diccionario de nombres bíblicos
-* Diccionario inglés-español
+* [Diccionario inglés-español](./ingles-espanol/ingles-espanol.md)
 * Diccionario multilingüe
 * Frases chinas
 * [Vocabulario español](../diccionarios/vocabulario/vocabulario.md)
