@@ -1,11 +1,11 @@
 ## Preface
 
-[inicio](../../../index.md) \| [índice](../ccc.md) \| actividad \| A-Z \| compartir
+[inicio](../../../index.md) \| [índice](../ccc.md) \| [actividad](../../../actividad/actividad.md) \| [A-Z](../../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Traducción%20al%20español%20del%20prefacio%20de%20Charlie%20Codman's%20Cruise.%20→%20jucardus.github.io/traducciones/ccc/prefacio/prefacio.html%0A%0A@jucardus%20~%20%23)
 
 > [!WARNING]
 > Subpágina en construcción.
 
-In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents "Charlie Codman's Cruise," as the third volume of the Campaign Series. It will be found more adventurous than its predecessors, and the trials which Charlie is called upon to encounter are of a severer character than befell Frank Frost or Paul Prescott. But it will be found that they were met with the same manly spirit, and a like determination to be faithful to duty at all hazards.
+In deference to <sup>en consideración a</sup> the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents "Charlie Codman's Cruise," as the third volume of the Campaign Series. It will be found more adventurous than its predecessors, and the trials which Charlie is called upon to encounter are of a severer character than befell Frank Frost or Paul Prescott. But it will be found that they were met with the same manly spirit, and a like determination to be faithful to duty at all hazards.
 
 > En consideración a los deseos manifiestos de algunos de sus jóvenes amigos...
 
