@@ -1,6 +1,6 @@
 ## Mi sitio web
 
-Puedes visitar y navegar en mi sitio de dos forma:
+Puedes visitar y navegar en el sitio de dos forma:
 
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Repositorio Jucardus**](https://jucardus.github.io/repo) - jucardus.github.io/repo
