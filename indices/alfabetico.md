@@ -13,6 +13,7 @@ Una lista completa de todas las subpáginas y subtítulos de este sitio.
 * [Charlie Codman's Cruise, a Story for Boys](../traducciones/ccc/ccc.md)
 * [Citas](../escritos/citas/citas.md)
 * [Contenido; en la página de inicio](../index.md#contenido)
+* [Diccionario ingles-español[(../diccionarios/ingles-espanol/ingles-espanol.md/)
 * [Diccionarios; en _Enlaces muchos_](../../enlaces/enlaces.md#diccionarios)
 * [Diccionarios todos](../diccionarios/diccionarios.md)
 * [Enlaces muchos](../enlaces/enlaces.md)
