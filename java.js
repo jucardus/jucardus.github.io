@@ -193,7 +193,7 @@ function buscar (recibidoDireccion) {
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
         var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-        if (recibidoDireccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
+        if (lema.match(/^[0-9]+$/) != null && direccion.length == 10) {
           var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
         }
         resultadoBusca.push(nuevaLineaBusca);
