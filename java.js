@@ -36,7 +36,7 @@ function formateo (recibido) {
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...').replace(' ...','...') + '</h3>';
+        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var enlc = linea[4];
         if (enlc != '') {
           var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -92,7 +92,7 @@ function segunTema (temaRecibido) {
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...').replace(' ...','...') + '</h3>';
+        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var enlc = linea[4];
         if (enlc != '') {
           var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -179,7 +179,7 @@ function buscar (recibidoDireccion) {
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...').replace(' ...','...') + '</h3>';
+          var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
         var enlc = linea[4];
           if (enlc != '') {
             var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -244,7 +244,7 @@ function mostrarUnico (lema) {
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos">' + ttl?.replace('....','...').replace(' ...','...') + '</h3>';
+          var ttl = '<h3 class="titulos">' + ttl + '</h3>';
         var enlc = linea[4];
           if (enlc != '') {
             var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
@@ -299,7 +299,7 @@ function az () {
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
         var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...').replace(' ...','...') + '</h3>';
+        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
@@ -341,7 +341,7 @@ function azar () {
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl?.replace('....','...').replace(' ...','...') + '</h3>';
+        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
