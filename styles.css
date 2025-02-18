@@ -129,6 +129,9 @@ li {
   margin-top: 35px;
   text-align: center;
 }
+#resultadosBusca {
+  margin-bottom: 40px;
+}
 .temas {
   color: #105080;
   font-weight: bold;
