@@ -26,7 +26,7 @@ function formateo (recibido) {
     var linea = arrayContenido[i].split(',');
       var nmr = linea[0];
         var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]?);
+        var hashtag = formateoHashtag (linea[1]);
         if (linea[4] == '') {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,108) + '... ← ' + fechaSimple + '%0A%0A%23' + hashtag + 'jucardus">' + nmr + '</a>';
         }
