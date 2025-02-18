@@ -1,4 +1,3 @@
-## En prueba
+## [Jucardus.com](https://jucardus.github.io)
 
-De momento estoy haciendo ciertas pruebas.
-Perdón por las molestias.
+Cosas que escribo, entre apotegmas, poesía, cuentos, citas, reflexiones. También algo de vocabulario y enlaces varios de interés. El sitio cuenta con entradas al azar, busca e índice alfabético de todas las entradas.
