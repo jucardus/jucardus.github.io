@@ -1,0 +1,146 @@
+@media only screen and (max-device-width: 480px) {
+  body {
+    padding: 0px 2px 140px 2px !important;
+  }
+}
+a.enlacista:link, a.enlacista:visited, a.enlacista:active {
+  color: Green;
+  text-decoration: none;
+}
+a.enlacista:hover {
+  color: OrangeRed;
+  text-decoration: none;
+}
+#azarAZ {
+  margin-bottom: 40px;
+}
+body {
+  background-color: White;
+  font-family: 'Times New Roman', serif;
+  font-family: 'Arial', sans-serif;
+  font-size: 120%;
+  font-size: 108%;
+  letter-spacing: 0.3px;
+  padding: 15px 22% 160px 22%;
+}
+#buscador {
+  margin-left: 10px;
+  margin-top: 20px;
+  display: none;
+}
+button#boton {
+  font-size: 104%;
+  padding: 5px;
+  display: none;
+}
+#clasificacion {
+  font-size: 90%!important;
+  margin-left: 10px;
+}
+#entrada {
+  margin-bottom: 45px;
+}
+#entradaAzarAZ {
+  margin-bottom: 15px;
+}
+.etiquetas {
+  color: #105080;
+}
+.etiquetas:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+.fecha {
+  color: SlateGray;
+}
+.fecha:hover {
+  cursor: pointer;
+  color: OrangeRed;
+}
+#footer {
+  background-color: #efd;
+  border-radius: 10px;
+  padding: 5px 5px 0px 5px;
+}
+h3.aclaraciones {
+}
+h3.autor {
+  margin-top: 0px;
+}
+h3.titulos {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+h3.titulos:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+hr {
+  width: 30%
+}
+input {
+  border: 2px dotted Silver;
+  border-radius: 4px;
+  color: #222;
+  font-family: monospace, sans-serif;
+  font-size: 90%;
+  letter-spacing: 0.1px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-top: 4px;
+}
+li {
+  padding-bottom: 8px;
+}
+#linea {
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+}
+#mostrar {
+  margin-top: 35px;
+}
+#ninguna {
+  color: OrangeRed;
+  margin-bottom: 25px;
+}
+.numeros {
+  color: Green;
+  text-decoration: none;
+}
+.numeros:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+#pie {
+}
+::placeholder {
+  color: DarkTurquoise;
+  text-align: right;
+}
+.qr {
+  width: 90px;
+}
+#qr {
+  margin-top: 35px;
+  text-align: center;
+}
+.temas {
+  color: #105080;
+  font-weight: bold;
+}
+.temas:hover {
+  color: DarkOrange;
+  cursor: pointer;
+}
+#temas {
+  background-color: White;
+  border-bottom: 4px solid Green;
+  line-height: 1.5;
+  padding: 2px 0px 3px 0px;
+  position: sticky;
+  top: 0;
+  /*z-index: 1;*/
+}
+ul {
+  margin-left: -15px;
+}
