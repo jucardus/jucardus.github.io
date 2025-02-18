@@ -146,6 +146,7 @@ function teclaBuscar (event) {
   }
 }
 function buscar (recibidoDireccion) {
+  limpiarSubrayados ();
   var lema = document.getElementById("buscar").value.toUpperCase();
   if (recibidoDireccion != '') {
     lema = direccion
@@ -374,4 +375,11 @@ function desordenar(array) {
       [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
   }
   return array;
+}
+function limpiarSubrayados () {
+  var lineaBlanca = '4px solid White';
+  const temasTodos = document.getElementsByClassName('temas');
+    for (let i = 0; i < temasTodos.length; i++) {
+      temasTodos[i].style.borderBottom = lineaBlanca;
+    }
 }
