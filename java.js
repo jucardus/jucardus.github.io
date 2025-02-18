@@ -194,7 +194,10 @@ function buscar (recibidoDireccion) {
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
         var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
         alert (lema);
-        if (lema.match(/^[0-9]+$/) != null && lema.length == 10) {
+        if (recibidoDireccion != '') {
+          var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+        }
+        if (numero.match(/^[0-9]+$/) != null && numero.length == 10) {
           var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
         }
         resultadoBusca.push(nuevaLineaBusca);
