@@ -160,6 +160,7 @@ function buscar (recibidoDireccion) {
       .replace(/%20/g,' ')
       .toUpperCase();
   }
+  var contador = 0;
   var recibido = texto;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
@@ -198,6 +199,7 @@ function buscar (recibidoDireccion) {
           var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
         } else {
           var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
+          contador = contador + 1;
         }
         resultadoBusca.push(nuevaLineaBusca);
     }
@@ -213,6 +215,7 @@ function buscar (recibidoDireccion) {
     document.getElementById('buscador').style.display = 'block';
   }
   document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
+  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + contador + ' entradas en total.<p>' + enviar + '</div>';
   document.getElementById('buscar').value = '';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
