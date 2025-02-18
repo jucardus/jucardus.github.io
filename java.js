@@ -434,7 +434,7 @@ function limpiarSubrayados () {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function formateoHashtag (recibido) {
-  var enviar = recibido.toLowerCase()
+  var enviar = recibido?.toLowerCase()
     .replace(/ .*/g,'')
     .replace(/-.*/g,'')
     .replace(/á/g,'a')
