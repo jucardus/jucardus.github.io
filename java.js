@@ -28,10 +28,10 @@ function formateo (recibido) {
         var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var hashtag = formateoHashtag (linea[1]);
         if (linea[4] == '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,108) + '... ← ' + fechaSimple + '%0A%0A%23' + hashtag + 'jucardus">' + nmr + '</a>';
+          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,108) + '... ← ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
         if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A%23' + hashtag + 'jucardus">' + nmr + '</a>';
+          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
@@ -397,5 +397,15 @@ function formateoHashtag (recibido) {
     .replace(/ú/g,'u')
     .replace(/ü/g,'u')
     .replace(/ñ/g,'n');
+  var inicial = enviar.slice(0,1);
+  var enviar = enviar.slice(1)
+    .replace(/a/g,'')
+    .replace(/e/g,'')
+    .replace(/i/g,'')
+    .replace(/o/g,'')
+    .replace(/u/g,'')
+    .replace(/u/g,'')
+    .replace(/n/g,'');
+  var enviar = inicial + enviar;
   return enviar;
 }
