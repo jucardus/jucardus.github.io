@@ -192,13 +192,14 @@ function buscar (recibidoDireccion) {
         var fch = linea[6];
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-        var lema = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-        if (lema.match(/^[0-9]+$/) != null && lema.length == 10) {
+        var buscado = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+        if (buscado.match(/^[0-9]+$/) != null && buscado.length == 10) {
           var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
         } else {
           var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
         }
         resultadoBusca.push(nuevaLineaBusca);
+    }
   }
   var enviar = resultadoBusca.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
