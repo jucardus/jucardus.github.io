@@ -215,7 +215,6 @@ function buscar (recibidoDireccion) {
     document.getElementById('buscador').style.display = 'block';
   }
   document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
-  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + contador + ' entradas en total.<p>' + enviar + '</div>';
   document.getElementById('buscar').value = '';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
@@ -324,7 +323,7 @@ function az () {
   var enviar = enviar.replace(/ŧ/g,', ');
   var enviar = enviar.replace(/\.\.\.\./g,'...');
   var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + contador + ' entradas en total.<p>' + enviar + '</div>';
+  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('az');
   window.history.replaceState({}, document.title, '/' + 'az');
