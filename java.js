@@ -203,7 +203,7 @@ function buscar (recibidoDireccion) {
     var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('buscador').style.display = 'none';
   if (enviar.indexOf('<') == -1) {
-    enviar = '<div id="ninguna">&#12288;[ ninguna coincidencia ]</div>';
+    enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
     document.getElementById('buscador').style.display = 'block';
   }
   document.getElementById('mostrar').innerHTML = enviar;
