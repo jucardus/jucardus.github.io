@@ -199,7 +199,6 @@ function buscar (recibidoDireccion) {
           var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
         }
         resultadoBusca.push(nuevaLineaBusca);
-        }
   }
   var enviar = resultadoBusca.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
