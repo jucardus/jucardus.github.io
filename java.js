@@ -1,5 +1,8 @@
 let texto = '';
 let direccion = '';
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function inicio () {
   direccion = window.location.href.replace(/.*io\/\?q=/g,'');
     if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
@@ -15,6 +18,9 @@ function inicio () {
     formateo(textString);
   });
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function formateo (recibido) {
   texto = recibido;
   var contador = 0;
@@ -71,6 +77,9 @@ function formateo (recibido) {
     buscar(direccion);
   }
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function segunTema (temaRecibido) {
   var recibido = texto;
   var contador = 0;
@@ -124,6 +133,9 @@ function segunTema (temaRecibido) {
   subrayar(temaRecibido);
   window.scrollTo(0, 0);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function subrayar (temaSubrayar) {
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
@@ -135,6 +147,9 @@ function subrayar (temaSubrayar) {
   document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
   document.getElementById('buscador').style.display = 'none';
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function mostrarBuscador () {
   limpiarSubrayados ();
   window.history.replaceState({}, document.title, '/' + 'busca');
@@ -142,12 +157,18 @@ function mostrarBuscador () {
   document.getElementById('buscador').style.display = 'block';
   document.getElementById('buscar').focus();
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function teclaBuscar (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     buscar('');
   }
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function buscar (recibidoDireccion) {
   var lema = document.getElementById("buscar").value.toUpperCase();
   if (recibidoDireccion != '') {
@@ -232,10 +253,16 @@ function buscar (recibidoDireccion) {
   }
   window.scrollTo(0, 0);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function copiarEnlace (fechaSimpleRecibida) {
   var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
   navigator.clipboard.writeText(urlFecha);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function mostrarUnico (lema) {
   texto = texto.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'').replace(/\n/g,'¶¶¶¶¶');
   var resultadoBusca = [];
@@ -289,6 +316,9 @@ function mostrarUnico (lema) {
   window.history.replaceState({}, document.title, '/' + lema);
   window.scrollTo(0, 0);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function az () {
   var contador = 0;
   var recibido = texto;
@@ -334,6 +364,9 @@ function az () {
   window.history.replaceState({}, document.title, '/' + 'az');
   window.scrollTo(0, 0);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function azar () {
   var recibido = texto;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
@@ -375,6 +408,9 @@ function azar () {
   window.history.replaceState({}, document.title, '/' + 'azar');
   window.scrollTo(0, 0);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function desordenar(array) {
   let currentIndex = array.length, randomIndex;
   while (currentIndex > 0) {
@@ -384,6 +420,9 @@ function desordenar(array) {
   }
   return array;
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function limpiarSubrayados () {
   var lineaBlanca = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
@@ -391,6 +430,9 @@ function limpiarSubrayados () {
       temasTodos[i].style.borderBottom = lineaBlanca;
     }
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function formateoHashtag (recibido) {
   var enviar = recibido.toLowerCase()
     .replace(/ .*/g,'')
