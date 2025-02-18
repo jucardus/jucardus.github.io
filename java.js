@@ -388,8 +388,8 @@ function limpiarSubrayados () {
 }
 function formateoHashtag (recibido) {
   var enviar = recibido.toLowerCase()
-    .replace(/ /g,'_')
-    .replace(/-/g,'_')
+    .replace(/ .*/g,'')
+    .replace(/-.*/g,'')
     .replace(/á/g,'a')
     .replace(/é/g,'e')
     .replace(/í/g,'i')
