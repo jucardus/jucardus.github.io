@@ -283,8 +283,8 @@ function mostrarUnico (lema) {
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {
-            var tituloOriginal = linea[3];
             ttl = linea[3]?.slice(0,39) + '...';
+            var tituloOriginal = ttl?.toUpperCase() + ' | JUCARDUS';
           }
           var ttl = '<h3 class="titulos">' + ttl + '</h3>';
         var enlc = linea[4];
@@ -309,8 +309,7 @@ function mostrarUnico (lema) {
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = enviar;
-  let metas = document.getElementsByTagName("meta"); // +++
-    metas.description.content = tituloOriginal;
+  document.getElementsByTagName('title')[0].innerHTML = tituloOriginal;
   document.getElementById('buscador').style.display = 'none';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
