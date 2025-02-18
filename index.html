@@ -277,6 +277,8 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
         var enviar = enviar.replace(/ŧ/g,', ');
+        var enviar = enviar.replace(/\.\.\.\./g,'...');
+        var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar('inicio');
@@ -331,6 +333,8 @@
       var enviar = resultado.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
         var enviar = enviar.replace(/ŧ/g,', ');
+        var enviar = enviar.replace(/\.\.\.\./g,'...');
+        var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       subrayar(temaRecibido);
@@ -352,7 +356,6 @@
       document.getElementById('mostrar').innerHTML = '';
       document.getElementById('buscador').style.display = 'block';
       document.getElementById('buscar').focus();
-      //subrayar(); +++
     }
     function teclaBuscar (event) {
       if (event.key === "Enter") {
@@ -414,6 +417,8 @@
       var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
         var enviar = enviar.replace(/ŧ/g,', ');
+        var enviar = enviar.replace(/\.\.\.\./g,'...');
+        var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('buscador').style.display = 'none';
       if (enviar.indexOf('<') == -1) {
         enviar = '<div id="ninguna">&#12288;[ ninguna coincidencia ]</div>';
@@ -477,6 +482,8 @@
       var enviar = resultadoBusca.join('<p>');
         var enviar = enviar.replace(/ŧ /g,', ');
         var enviar = enviar.replace(/ŧ/g,', ');
+        var enviar = enviar.replace(/\.\.\.\./g,'...');
+        var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('mostrar').innerHTML = enviar;
       document.getElementById('buscador').style.display = 'none';
       var fondoNoClicados = '4px solid White';
@@ -524,6 +531,8 @@
       var enviar = resultado.join('');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
+      var enviar = enviar.replace(/\.\.\.\./g,'...');
+      var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + contador + ' entradas en total.<p>' + enviar + '</div>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('az');
@@ -562,6 +571,8 @@
       var enviar = desordenar(resultado).slice(9,12).join('');
       var enviar = enviar.replace(/ŧ /g,', ');
       var enviar = enviar.replace(/ŧ/g,', ');
+      var enviar = enviar.replace(/\.\.\.\./g,'...');
+      var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + enviar + '</div>';
       document.getElementById('buscador').style.display = 'none';
       subrayar('azar');
