@@ -444,8 +444,8 @@ function formateoHashtag (recibido) {
     .replace(/ú/g,'u')
     .replace(/ü/g,'u')
     .replace(/ñ/g,'n');
-  var inicial = enviar.slice(0,1);
-  var enviar = enviar.slice(1)
+  var inicial = enviar?.slice(0,1);
+  var enviar = enviar?.slice(1)
     .replace(/a/g,'')
     .replace(/e/g,'')
     .replace(/i/g,'')
