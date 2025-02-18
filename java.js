@@ -134,6 +134,7 @@ function subrayar (temaSubrayar) {
   document.getElementById('buscador').style.display = 'none';
 }
 function mostrarBuscador () {
+  limpiarSubrayados ();
   window.history.replaceState({}, document.title, '/' + 'busca');
   document.getElementById('mostrar').innerHTML = '';
   document.getElementById('buscador').style.display = 'block';
@@ -146,7 +147,6 @@ function teclaBuscar (event) {
   }
 }
 function buscar (recibidoDireccion) {
-  limpiarSubrayados ();
   var lema = document.getElementById("buscar").value.toUpperCase();
   if (recibidoDireccion != '') {
     lema = direccion
