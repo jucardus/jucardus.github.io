@@ -2,6 +2,9 @@
   body {
     padding: 0px 2px 140px 2px !important;
   }
+  #entrada {
+    margin-bottom: 30px;
+  }
 }
 a.enlacista:link, a.enlacista:visited, a.enlacista:active {
   color: Green;
