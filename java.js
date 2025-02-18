@@ -282,7 +282,10 @@ function mostrarUnico (lema) {
         var tm = linea[1];
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
-          if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+          if (linea[2] == '') {
+            var tituloOriginal = linea[3];
+            ttl = linea[3]?.slice(0,39) + '...';
+          }
           var ttl = '<h3 class="titulos">' + ttl + '</h3>';
         var enlc = linea[4];
           if (enlc != '') {
@@ -306,6 +309,7 @@ function mostrarUnico (lema) {
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = enviar;
+  document.querySelector('meta[name="description"]').setAttribute(tituloOriginal, _desc);
   document.getElementById('buscador').style.display = 'none';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
