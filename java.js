@@ -211,7 +211,7 @@ function buscar (recibidoDireccion) {
     enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
     document.getElementById('buscador').style.display = 'block';
   }
-  document.getElementById('mostrar').innerHTML = enviar;
+  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
   document.getElementById('buscar').value = '';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
