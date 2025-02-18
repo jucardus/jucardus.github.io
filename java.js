@@ -165,7 +165,7 @@ function buscar (recibidoDireccion) {
   var resultadoBusca = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
-    if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
+    if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 1 && lema != ' ') {
       var linea = arrayContenido[i].split(',');
         var nmr = linea[0];
           var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
@@ -192,7 +192,7 @@ function buscar (recibidoDireccion) {
         var fch = linea[6];
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-        var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+        var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
         resultadoBusca.push(nuevaLineaBusca);
         }
   }
