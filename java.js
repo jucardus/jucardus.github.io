@@ -192,10 +192,8 @@ function buscar (recibidoDireccion) {
         var fch = linea[6];
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-        if (recibidoDireccion != '') {
-          var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-        }
-        if (numero.match(/^[0-9]+$/) != null && numero.length == 10) {
+        var lema = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+        if (lema.match(/^[0-9]+$/) != null && lema.length == 10) {
           var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
         } else {
           var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
