@@ -309,7 +309,6 @@ function mostrarUnico (lema) {
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = enviar;
-  document.getElementsByTagName('title')[0].innerHTML = tituloOriginal;
   document.getElementById('buscador').style.display = 'none';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
