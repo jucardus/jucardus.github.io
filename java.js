@@ -134,6 +134,7 @@ function segunTema (temaRecibido) {
   document.getElementById('buscador').style.display = 'none';
   subrayar(temaRecibido);
   var enlaceQR = 'https://quickchart.io/qr?text=jucardus.github.io/' + temaRecibido + '&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
+  alert (enlaceQR); // +++
   document.getElementById('qr').src = enlaceQR;
   window.scrollTo(0, 0);
 }
