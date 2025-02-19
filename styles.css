@@ -86,12 +86,12 @@ hr {
 }
 .icono {
   width: 40px;
-  animation: rotate 2s ease;
+  animation: rotate 2s infinite;
 }
     @keyframes rotate {
-        /*100% {*/
-            transform: rotate(120deg);
-        /*}*/
+      100% {
+        transform: rotate(900deg);
+      }
     }
 #icono {
   margin-top: 35px;
