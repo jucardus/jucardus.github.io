@@ -136,8 +136,8 @@ li {
   margin-bottom: 40px;
 }
 .rombo {
-  width: 18px;
-  animation: rotate 5s infinite linear;
+  width: 20px;
+  animation: rotate 4s infinite linear;
 }
     @keyframes rotate {
       100% {
