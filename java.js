@@ -49,7 +49,7 @@ function formateo (recibido) {
           var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
-        if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+        if (linea[4]?.indexOf('://') == -1) {
           var dominio = linea[4]?.replace(/.*\//g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
         }
@@ -113,7 +113,7 @@ function segunTema (temaRecibido) {
           var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
-        if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+        if (linea[4]?.indexOf('://') == -1) {
           var dominio = linea[4]?.replace(/.*\//g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
         }
@@ -219,7 +219,7 @@ function buscar (recibidoDireccion) {
             var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+          if (linea[4]?.indexOf('://') == -1) {
             var dominio = linea[4]?.replace(/.*\//g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
           }
@@ -304,7 +304,7 @@ function mostrarUnico (lema) {
             var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+          if (linea[4]?.indexOf('://') == -1) {
             var dominio = linea[4]?.replace(/.*\//g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
           }
