@@ -109,13 +109,13 @@ function segunTema (temaRecibido) {
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
         var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var enlc = linea[4];
-        if (enlc != '') {
-          var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
-          var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+        if (linea[4] != '') {
+          var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
+          var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
-        if (enlc.indexOf('jucardus.github.io') >= 0) {
-          var dominio = enlc?.replace(/.*\//g,'');
-          var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+        if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+          var dominio = linea[4]?.replace(/.*\//g,'');
+          var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
         }
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
@@ -215,13 +215,13 @@ function buscar (recibidoDireccion) {
           if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
           var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
         var enlc = linea[4];
-          if (enlc != '') {
-            var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
-            var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+          if (linea[4] != '') {
+            var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
+            var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (enlc.indexOf('jucardus.github.io') >= 0) {
-            var dominio = enlc?.replace(/.*\//g,'');
-            var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+          if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+            var dominio = linea[4]?.replace(/.*\//g,'');
+            var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
           }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
@@ -300,13 +300,13 @@ function mostrarUnico (lema) {
           }
           var ttl = '<h3 class="titulos">' + ttl + '</h3>';
         var enlc = linea[4];
-          if (enlc != '') {
-            var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
-            var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
+          if (linea[4] != '') {
+            var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
+            var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (enlc.indexOf('jucardus.github.io') >= 0) {
-            var dominio = enlc?.replace(/.*\//g,'');
-            var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+          if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
+            var dominio = linea[4]?.replace(/.*\//g,'');
+            var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
           }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
