@@ -49,6 +49,10 @@ function formateo (recibido) {
           var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
+        if (enlc.indexOf('jucardus.github.io') >= 0) {
+          var dominio = enlc?.replace(/.*\//g,'');
+          var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+        }
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -109,6 +113,10 @@ function segunTema (temaRecibido) {
           var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
+        if (enlc.indexOf('jucardus.github.io') >= 0) {
+          var dominio = enlc?.replace(/.*\//g,'');
+          var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+        }
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -211,6 +219,10 @@ function buscar (recibidoDireccion) {
             var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
+          if (enlc.indexOf('jucardus.github.io') >= 0) {
+            var dominio = enlc?.replace(/.*\//g,'');
+            var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+          }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -292,6 +304,10 @@ function mostrarUnico (lema) {
             var dominio = enlc?.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + enlc + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
+          if (enlc.indexOf('jucardus.github.io') >= 0) {
+            var dominio = enlc?.replace(/.*\//g,'');
+            var enlc = ' → <a class="enlacista" href="' + enlc + '">' + dominio + '</a>';
+          }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
