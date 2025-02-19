@@ -86,7 +86,13 @@ hr {
 }
 .icono {
   width: 40px;
+  animation: rotate 2s infinite;
 }
+    @keyframes rotate {
+        100% {
+            transform: rotateY(90deg);
+        }
+    }
 #icono {
   margin-top: 35px;
   text-align: center;
