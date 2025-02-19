@@ -90,7 +90,7 @@ hr {
 }
     @keyframes rotate {
         100% {
-            transform: rotateY(90deg);
+            transform: rotateY(180deg);
         }
     }
 #icono {
