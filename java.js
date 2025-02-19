@@ -47,11 +47,11 @@ function formateo (recibido) {
       var enlc = linea[4];
         if (enlc != '') {
           var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-          var enlc = ' → <a class="enlacista" href="' + linea[4]? + '" target="_blank">' + dominio + '</a>';
+          var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
         if (linea[4]?.indexOf('jucardus.github.io') >= 0) {
           var dominio = linea[4]?.replace(/.*\//g,'');
-          var enlc = ' → <a class="enlacista" href="' + linea[4]? + '">' + dominio + '</a>';
+          var enlc = ' → <a class="enlacista" href="' + linea[4] + '">' + dominio + '</a>';
         }
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
