@@ -84,6 +84,13 @@ h3.titulos:hover {
 hr {
   width: 30%
 }
+.icono {
+  width: 50px;
+}
+#icono {
+  margin-top: 35px;
+  text-align: center;
+}
 input {
   border: 2px dotted Silver;
   border-radius: 4px;
@@ -126,7 +133,7 @@ li {
   text-align: right;
 }
 .qr {
-  width: 50px;
+  width: 90px;
 }
 #qr {
   margin-top: 35px;
