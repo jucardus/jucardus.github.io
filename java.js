@@ -158,7 +158,6 @@ function mostrarBuscador () {
   document.getElementById('mostrar').innerHTML = '';
   document.getElementById('buscador').style.display = 'block';
   document.getElementById('buscar').focus();
-  document.getElementById("qr").src = 'https://quickchart.io/qr?text=jucardus.github.io/busca&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
 }
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
