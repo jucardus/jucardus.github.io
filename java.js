@@ -72,7 +72,6 @@ function formateo (recibido) {
   document.getElementById('buscador').style.display = 'none';
   subrayar('inicio');
   window.history.replaceState({}, document.title, '/' + '');
-  document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   window.scrollTo(0, 0);
   if (direccion != '' && direccion.indexOf('jucardus') == -1) {
     buscar(direccion);
@@ -132,7 +131,6 @@ function segunTema (temaRecibido) {
   document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscador').style.display = 'none';
   subrayar(temaRecibido);
-  document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/' + temaRecibido + '&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   window.scrollTo(0, 0);
 }
 
@@ -158,7 +156,6 @@ function mostrarBuscador () {
   document.getElementById('mostrar').innerHTML = '';
   document.getElementById('buscador').style.display = 'block';
   document.getElementById('buscar').focus();
-  document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/busca&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
 }
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
@@ -251,10 +248,8 @@ function buscar (recibidoDireccion) {
   if (recibidoDireccion != '') {
     var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
     window.history.replaceState({}, document.title, '/' + numero);
-    document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/' + numero + '&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   } else {
     window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
-    document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/' + lema + '&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   }
   window.scrollTo(0, 0);
 }
@@ -322,7 +317,6 @@ function mostrarUnico (lema) {
   }
   var lema = lema.slice(2).replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
   window.history.replaceState({}, document.title, '/' + lema);
-  document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/' + lema + '&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   window.scrollTo(0, 0);
 }
 
@@ -371,7 +365,6 @@ function az () {
   document.getElementById('buscador').style.display = 'none';
   subrayar('az');
   window.history.replaceState({}, document.title, '/' + 'az');
-  document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/az&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   window.scrollTo(0, 0);
 }
 
@@ -416,7 +409,6 @@ function azar () {
   document.getElementById('buscador').style.display = 'none';
   subrayar('azar');
   window.history.replaceState({}, document.title, '/' + 'azar');
-  document.getElementById("qrCambiante").src = 'https://quickchart.io/qr?text=jucardus.github.io/azar&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   window.scrollTo(0, 0);
 }
 
