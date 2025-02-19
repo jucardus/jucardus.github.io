@@ -149,16 +149,8 @@ li {
   margin-bottom: 40px;
 }
 .separador {
-  width: 40px;
-  animation: rotate 30s infinite linear;
 }
-    @keyframes rotate {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
 #separador {
-  margin-top: 35px;
   text-align: center;
 }
 .temas {
