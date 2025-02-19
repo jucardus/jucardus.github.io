@@ -416,7 +416,7 @@ function azar () {
   document.getElementById('buscador').style.display = 'none';
   subrayar('azar');
   window.history.replaceState({}, document.title, '/' + 'azar');
-  document.getElementById("qr").src = 'https://quickchart.io/qr?text=jucardus.github.io/' + azar + '&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
+  document.getElementById("qr").src = 'https://quickchart.io/qr?text=jucardus.github.io/azar&size=100x100&margin=1&ecLevel=M&dark=222&light=fff&format=png';
   window.scrollTo(0, 0);
 }
 
