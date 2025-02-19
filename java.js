@@ -45,7 +45,7 @@ function formateo (recibido) {
         if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
         var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var enlc = linea[4];
-        if (enlc != '') {
+        if (linea[4] != '') {
           var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
