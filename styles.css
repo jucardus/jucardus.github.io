@@ -85,7 +85,7 @@ hr {
   width: 30%
 }
 .icono {
-  width: 40px;
+  width: 15px;
   animation: rotate 30s infinite linear;
 }
     @keyframes rotate {
