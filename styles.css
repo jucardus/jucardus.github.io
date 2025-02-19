@@ -84,19 +84,6 @@ h3.titulos:hover {
 hr {
   width: 30%
 }
-.icono {
-  width: 18px;
-  animation: rotate 15s infinite linear;
-}
-    @keyframes rotate {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-#icono {
-  margin-top: 35px;
-  text-align: center;
-}
 input {
   border: 2px dotted Silver;
   border-radius: 4px;
@@ -147,6 +134,19 @@ li {
 }
 #resultadosBusca {
   margin-bottom: 40px;
+}
+.rombo {
+  width: 18px;
+  animation: rotate 10s infinite linear;
+}
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+#rombo {
+  margin-top: 35px;
+  text-align: center;
 }
 .separador {
 }
