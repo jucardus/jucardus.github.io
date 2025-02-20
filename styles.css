@@ -14,6 +14,13 @@ a.enlacista:hover {
   color: OrangeRed;
   text-decoration: none;
 }
+.anwoMesDia {
+  line-height: 1.5;
+}
+.anwoMesDia:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
 #azarAZ {
   margin-bottom: 40px;
 }
@@ -92,13 +99,6 @@ h3.anwoMes {
   background-color: #efd;
 }
 h3.anwoMes:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
-h4.anwoMesDia {
-  margin-left: 30px;
-}
-h4.anwoMesDia:hover {
   color: OrangeRed;
   cursor: pointer;
 }
