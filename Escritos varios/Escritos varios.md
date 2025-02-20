@@ -1,3 +1,0 @@
-## Escritos varios
-
-* Reflexiones
