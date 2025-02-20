@@ -484,7 +484,7 @@ function archivo () {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwo = linea[6]?.slice(0,4);
-        var anwoEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
+        var anwoEnlace = '<!--' + anwo + '--><h3 class="anwo" onclick="buscarArchivo (\'' + anwo + '\')">' + anwo + '</h3>';
       var anwoMes = linea[6]?.slice(0,7);
         var anwoMesEnlace = '<!--' + anwoMes + '--><h4 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h4>';
       var anwoMesDia = linea[6]?.slice(0,10);
