@@ -88,6 +88,7 @@ h3.titulos:hover {
 h4.anwoMesDia:hover {
   color: OrangeRed;
   cursor: pointer;
+  margin-left: 20px;
 }
 hr {
   width: 30%
