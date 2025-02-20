@@ -482,11 +482,11 @@ function archivo () {
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
-      var anwoMes = linea[6]?.slice(0,5);
+      var anwoMes = linea[6]?.slice(0,7);
         var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscar (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
-      var anwoMesDia = linea[6]?.slice(0,8);
+      var anwoMesDia = linea[6]?.slice(0,10);
         var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscar (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
-      var nuevaLinea = anwoMes + ',' + anwoMesDia;
+      var nuevaLinea = anwoMesEnlace + ',' + anwoMesDiaEnlace;
         if (nuevaLinea.indexOf('undefined') == -1) {
           resultado.push(nuevaLinea);
         }
