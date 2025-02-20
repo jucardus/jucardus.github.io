@@ -482,7 +482,8 @@ function archivo () {
         if (linea[2] == '') {
           var tituloEntrada = linea[3]?.slice(0,39) + '...';
         }
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + ' &ndash; ' + tituloEntrada + '</h4>';
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
+        //var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + ' &ndash; ' + tituloEntrada + '</h4>';
       if (linea[6]?.indexOf('undefined') == -1) {
         resultado.push(anwoEnlace);
         resultado.push(anwoMesEnlace);
