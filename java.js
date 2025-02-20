@@ -479,13 +479,15 @@ function archivo () {
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
+  var contadorAnwoMesDia = 0;
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwoMes = linea[6]?.slice(0,7);
         var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
+        contadorAnwoMesDia = contadorAnwoMesDia + 1;
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + ' <small>' + contadorAnwoMesDia + ' entradas</small></h4>';
       if (linea[6]?.indexOf('undefined') == -1) {
         resultado.push(anwoMesEnlace);
         resultado.push(anwoMesDiaEnlace);
