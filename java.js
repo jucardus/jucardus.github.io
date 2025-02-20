@@ -476,7 +476,13 @@ function archivo () {
       var anwoMes = linea[6]?.slice(0,7);
         var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
+        if (linea[2] != '') {
+          var tituloEntrada = linea[2];
+        }
+        if (linea[2] == '') {
+          var tituloEntrada = linea[3]?.slice(0,39) + '...';
+        }
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + ' &ndash; ' + tituloEntrada + '</h4>';
       if (linea[6]?.indexOf('undefined') == -1) {
         resultado.push(anwoEnlace);
         resultado.push(anwoMesEnlace);
@@ -503,6 +509,7 @@ function buscarArchivo (fechaRecibida) {
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultadoBusca = [];
+  var contador = 0;
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     if (arrayContenido[i].toUpperCase().indexOf(fechaRecibida) >= 0) {
@@ -535,6 +542,7 @@ function buscarArchivo (fechaRecibida) {
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
         var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
         resultadoBusca.push(nuevaLineaBusca);
+        contador = contador + 1;
     }
   }
   var enviar = resultadoBusca.join('<p>');
@@ -547,7 +555,7 @@ function buscarArchivo (fechaRecibida) {
     enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
     document.getElementById('buscador').style.display = 'block';
   }
-  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
+  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca"><span style="color: OrangeRed;">' + contador + ' entrada(s) en ' + fechaRecibida + '</span></p>' + enviar + '</div>';
   document.getElementById('buscar').value = '';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
