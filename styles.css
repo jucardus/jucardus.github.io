@@ -70,6 +70,7 @@ button#boton {
 }
 h3.aclaraciones {
 }
+h3.anwoMes {}
 h3.anwoMes:hover {
   color: OrangeRed;
   cursor: pointer;
@@ -85,10 +86,12 @@ h3.titulos:hover {
   color: OrangeRed;
   cursor: pointer;
 }
+h4.anwoMesDia {
+  margin-left: 20px;
+}
 h4.anwoMesDia:hover {
   color: OrangeRed;
   cursor: pointer;
-  margin-left: 20px;
 }
 hr {
   width: 30%
