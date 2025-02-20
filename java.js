@@ -467,7 +467,7 @@ function archivo () {
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
-  var contador = 0;
+  var contador = -1;
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
@@ -492,11 +492,14 @@ function archivo () {
       }
     contador = contador + 1;
   }
-  contador = contador - 1;
   resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
   resultado = [...new Set(resultado)]; // eliminar elementos repetidos
   resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
   var enviar = resultado.join('');
+    var enviar = enviar.replace(/ŧ /g,', ');
+    var enviar = enviar.replace(/ŧ/g,', ');
+    var enviar = enviar.replace(/\.\.\.\./g,'...');
+    var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar;
   document.getElementById('buscador').style.display = 'none';
   subrayar('archivo');
