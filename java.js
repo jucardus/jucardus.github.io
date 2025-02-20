@@ -479,25 +479,25 @@ function archivo () {
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
-  var contadorAnwoMesDia = 0;
+  var contador = 0;
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwoMes = linea[6]?.slice(0,7);
         var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
-        contadorAnwoMesDia = contadorAnwoMesDia + 1;
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + ' <small>' + contadorAnwoMesDia + ' entradas</small></h4>';
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
       if (linea[6]?.indexOf('undefined') == -1) {
         resultado.push(anwoMesEnlace);
         resultado.push(anwoMesDiaEnlace);
       }
+    contador = contador + 1;
   }
   resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
   resultado = [...new Set(resultado)]; // eliminar elementos repetidos
   resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
   var enviar = resultado.join('');
-  document.getElementById('mostrar').innerHTML = enviar;
+  document.getElementById('mostrar').innerHTML = '<span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar;
   document.getElementById('buscador').style.display = 'none';
   subrayar('archivo');
   window.history.replaceState({}, document.title, '/' + 'archivo');
