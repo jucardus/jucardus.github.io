@@ -484,11 +484,11 @@ function archivo () {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwo = linea[6]?.slice(0,4);
-        var anwoEnlace = '<!--' + anwo + '--><h3 class="anwo" onclick="buscarArchivo (\'' + anwo + '\')">' + anwo + '</h3>';
+        var anwoEnlace = '<!--' + anwo + '--><h2 class="anwo" onclick="buscarArchivo (\'' + anwo + '\')">' + anwo + '</h2>';
       var anwoMes = linea[6]?.slice(0,7);
-        var anwoMesEnlace = '<!--' + anwoMes + '--><h4 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h4>';
+        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h5 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h5>';
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
       if (linea[6]?.indexOf('undefined') == -1) {
         resultado.push(anwoEnlace);
         resultado.push(anwoMesEnlace);
