@@ -556,7 +556,9 @@ function buscarArchivo (fechaRecibida) {
     enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
     document.getElementById('buscador').style.display = 'block';
   }
-  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca"><span style="color: OrangeRed;">' + contador + ' entrada(s) en ' + fechaRecibida + '</span></p>' + enviar + '</div>';
+  if (contador == 1) {var entradasEn = ' entrada en ';}
+  if (contador >= 2) {var entradasEn = ' entradas en ';}
+  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca"><span style="color: OrangeRed;">' + contador + entradasEn + fechaRecibida + '</span></p>' + enviar + '</div>';
   document.getElementById('buscar').value = '';
   var fondoNoClicados = '4px solid White';
   const temasTodos = document.getElementsByClassName('temas');
