@@ -71,7 +71,7 @@ button#boton {
 h3.aclaraciones {
 }
 h2.anwo {
-  background-color: #efd;
+  background-color: PapayaWhip;
 }
 h2.anwo:hover {
   color: OrangeRed;
@@ -89,7 +89,7 @@ h3.titulos:hover {
   cursor: pointer;
 }
 h3.anwoMes {
-  background-color: PapayaWhip;
+  background-color: #efd;
   margin-left: 15px;
 }
 h3.anwoMes:hover {
