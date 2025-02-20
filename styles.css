@@ -70,6 +70,10 @@ button#boton {
 }
 h3.aclaraciones {
 }
+h3.anwoMes:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
 h3.autor {
   margin-top: 0px;
 }
@@ -78,6 +82,10 @@ h3.titulos {
   margin-top: 3px;
 }
 h3.titulos:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+h4.anwoMesDia:hover {
   color: OrangeRed;
   cursor: pointer;
 }
