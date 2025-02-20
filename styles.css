@@ -86,10 +86,17 @@ h3.titulos:hover {
   color: OrangeRed;
   cursor: pointer;
 }
-h4.anwoMesDia {
+h4.anwoMes {
+  margin-left: 10px;
+}
+h4.anwoMes:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
+h5.anwoMesDia {
   margin-left: 20px;
 }
-h4.anwoMesDia:hover {
+h5.anwoMesDia:hover {
   color: OrangeRed;
   cursor: pointer;
 }
