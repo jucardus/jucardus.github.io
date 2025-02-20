@@ -474,7 +474,7 @@ function archivo () {
       var anwo = linea[6]?.slice(0,4);
         var anwoEnlace = '<!--' + anwo + '--><h2 class="anwo" onclick="buscarArchivo (\'' + anwo + '\')">' + anwo + '</h2>';
       var anwoMes = linea[6]?.slice(0,7);
-        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
+        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">&#12288;' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
         var anwoMesDiaEnlace = '<!--' + anwoMesDia + '-->&#12288;<span class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia?.slice(2) + '</span>';
       if (linea[6]?.indexOf('undefined') == -1) {
