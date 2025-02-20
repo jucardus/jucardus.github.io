@@ -471,3 +471,33 @@ function formateoHashtag (recibido) {
   var enviar = inicial + enviar;
   return enviar;
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function archivo () {
+  var recibido = texto;
+  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+  var resultado = [];
+  var arrayContenido = recibido.split('¶¶¶¶¶');
+  for (var i = 0; i < arrayContenido.length; i++) {
+    var linea = arrayContenido[i].split(',');
+      var anwoMes = linea[6]?.slice(0,5);
+        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscar (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
+      var anwoMesDia = linea[6]?.slice(0,8);
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscar (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
+      var nuevaLinea = anwoMes + ',' + anwoMesDia;
+        if (nuevaLinea.indexOf('undefined') == -1) {
+          resultado.push(nuevaLinea);
+        }
+  }
+  resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
+  resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+  resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+  var enviar = resultado.join('');
+  document.getElementById('mostrar').innerHTML = enviar;
+  document.getElementById('buscador').style.display = 'none';
+  subrayar('archivo');
+  window.history.replaceState({}, document.title, '/' + 'archivo');
+  window.scrollTo(0, 0);
+}
