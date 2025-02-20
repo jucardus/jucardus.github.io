@@ -79,6 +79,7 @@ h3.aclaraciones {
 }
 h2.anwo {
   background-color: PapayaWhip;
+  border-radius: 10px;
   text-align: center;
 }
 h2.anwo:hover {
@@ -98,6 +99,7 @@ h3.titulos:hover {
 }
 h3.anwoMes {
   background-color: #efd;
+  border-radius: 10px;
 }
 h3.anwoMes:hover {
   color: OrangeRed;
