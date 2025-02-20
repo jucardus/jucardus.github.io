@@ -469,7 +469,6 @@ function archivo () {
   var resultado = [];
   var contador = -1;
   var arrayContenido = recibido.split('¶¶¶¶¶');
-  var tituloEntrada = '';
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwo = linea[6]?.slice(0,4);
@@ -477,15 +476,7 @@ function archivo () {
       var anwoMes = linea[6]?.slice(0,7);
         var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
-        if (linea[2] != '') {
-          var tituloEntrada = linea[2];
-        }
-        if (linea[2] == '') {
-          var tituloEntrada = linea[3]?.slice(0,39) + '...';
-        }
-        //tituloEntradaTodas.push(tituloEntrada);
-        //var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + ' &ndash; ' + tituloEntrada + '</h4>';
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
       if (linea[6]?.indexOf('undefined') == -1) {
         resultado.push(anwoEnlace);
         resultado.push(anwoMesEnlace);
