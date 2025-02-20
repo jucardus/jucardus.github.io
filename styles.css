@@ -87,14 +87,14 @@ h3.titulos:hover {
   cursor: pointer;
 }
 h3.anwoMes {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 h3.anwoMes:hover {
   color: OrangeRed;
   cursor: pointer;
 }
 h4.anwoMesDia {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 h4.anwoMesDia:hover {
   color: OrangeRed;
