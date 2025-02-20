@@ -49,9 +49,6 @@ function formateo (recibido) {
           var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
-        if (linea[4]?.indexOf('://') == -1 && linea[4] != '') {
-          var enlc = ' → <a class="enlacista" href="https://jucardus.github.io/' + linea[4] + '">' + linea[4] + '</a>';
-        }
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -112,9 +109,6 @@ function segunTema (temaRecibido) {
           var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
           var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
         } else {enlc = '';}
-        if (linea[4]?.indexOf('://') == -1 && linea[4] != '') {
-          var enlc = ' → <a class="enlacista" href="https://jucardus.github.io/' + linea[4] + '">' + linea[4] + '</a>';
-        }
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -217,9 +211,6 @@ function buscar (recibidoDireccion) {
             var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (linea[4]?.indexOf('://') == -1 && linea[4] != '') {
-            var enlc = ' → <a class="enlacista" href="https://jucardus.github.io/' + linea[4] + '">' + linea[4] + '</a>';
-          }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -301,9 +292,6 @@ function mostrarUnico (lema) {
             var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (linea[4]?.indexOf('://') == -1 && linea[4] != '') {
-            var enlc = ' → <a class="enlacista" href="https://jucardus.github.io/' + linea[4] + '">' + linea[4] + '</a>';
-          }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
@@ -538,9 +526,6 @@ function buscarArchivo (fechaRecibida) {
             var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
             var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
           } else {enlc = '';}
-          if (linea[4]?.indexOf('://') == -1 && linea[4] != '') {
-            var enlc = ' → <a class="enlacista" href="https://jucardus.github.io/' + linea[4] + '">' + linea[4] + '</a>';
-          }
         var cntnd = linea[3];
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
