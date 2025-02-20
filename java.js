@@ -483,9 +483,11 @@ function archivo () {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwoMes = linea[6]?.slice(0,7);
-        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscar (\'' + anwoMes + '\')">' + anwoMes + '</h3>';
+        var anwoMesBusca = anwoMes.replace(/-/g,'');
+        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscar (\'' + anwoMesBusca + '\')">' + anwoMes + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscar (\'' + anwoMesDia + '\')">' + anwoMesDia + '</h4>';
+        var anwoMesDiaBusca = anwoMesDia.replace(/-/g,'');
+        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><h4 class="anwoMesDia" onclick="buscar (\'' + anwoMesDiaBusca + '\')">' + anwoMesDia + '</h4>';
       resultado.push(anwoMesEnlace);
       resultado.push(anwoMesDiaEnlace);
   }
