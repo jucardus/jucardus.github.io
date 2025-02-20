@@ -70,8 +70,8 @@ button#boton {
 }
 h3.aclaraciones {
 }
-h3.anwoMes {}
-h3.anwoMes:hover {
+h3.anwo {}
+h3.anwo:hover {
   color: OrangeRed;
   cursor: pointer;
 }
