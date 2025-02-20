@@ -493,6 +493,7 @@ function archivo () {
       }
     contador = contador + 1;
   }
+  contador = contador - 1;
   resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
   resultado = [...new Set(resultado)]; // eliminar elementos repetidos
   resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
