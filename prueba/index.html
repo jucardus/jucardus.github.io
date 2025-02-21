@@ -21,17 +21,19 @@
         .then(response => response.text())
         .then(textString => {
           if(buscar(textString, "ccc"))
-          resultado.push(recibido);
-          document.getElementById('mostrar').innerHTML = resultado;
+            formateo (recibido);
+             resultado.push(recibido);
+             document.getElementById('mostrar').innerHTML = resultado.join('<p>');
         });
     }
     function buscar(texto,palabra) {
-      if(texto.indexOf(palabra)>=0)
+      if(texto.indexOf(palabra) >= 0)
         return true;
         return false;
     }
-    function formateo () {
-      
+    function formateo (procesar) {
+      resultado.push(recibido);
+      document.getElementById('mostrar').innerHTML = resultado;      
     }
   </script>
 </body>
