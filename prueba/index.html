@@ -42,7 +42,7 @@
         return false;
     }
     function formateo (procesar) {
-      var enviar = procesar.join('<p>');
+      var enviar = '<a href="' + procesar + '">' + procesar + '</a>';
       document.getElementById('mostrar').innerHTML = enviar;
     }
   </script>
