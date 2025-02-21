@@ -32,8 +32,8 @@
         .then(response => response.text())
         .then(textString => {
           if(buscar(textString, lema))
-              //resultado.push(recibido);
-              formateo (recibido);
+              resultado.push(recibido);
+              formateo (resultado);
         });
     }
     function buscar(texto,palabra) {
