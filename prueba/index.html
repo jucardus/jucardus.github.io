@@ -1,55 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
-
-    
-    <body onload='inicio()'>
-    
-        <div id='mostrar'>RESULTADOS</div>
-        
-      <script>
-          var resultado = [];
-        function inicio() {
-        
-          var array = [
-            'documentos/uno.txt',
-            'documentos/dos.txt',
-            'documentos/tres.txt'
-          ];
-        
-        
-        
-          for (let i = 0; i < array.length; i++) {
-            recorrer(array[i]);
-            //resultado.push(elemento.toString());
-          }
-        
-          //resultado = resultado.join('<p>');
-          
-          
-        }
-        
-        function recorrer (recibido) {
-          fetch(recibido)
-          .then(response => response.text())
-          .then(textString => {
-            if(buscar(textString, "13"))
-                resultado.push(recibido);
-                document.getElementById('mostrar').innerHTML = resultado;
-          });
-        }
-
-        function buscar(texto,palabra)
-        {
-            if(texto.indexOf(palabra)>=0) return true;
-            
-            return false;
-        }
-      </script>
+<body onload='inicio()'>
+<div id='mostrar'>RESULTADOS</div>
+  <script>
+    var resultado = [];
+    function inicio() {
+      var array = [
+        'documentos/uno.txt',
+        'documentos/dos.txt',
+        'documentos/tres.txt'
+      ];
+      for (let i = 0; i < array.length; i++) {
+        recorrer(array[i]);
+      }
+    }
+    function recorrer (recibido) {
+      fetch(recibido)
+        .then(response => response.text())
+        .then(textString => {
+          if(buscar(textString, "aaa"))
+          resultado.push(recibido);
+          document.getElementById('mostrar').innerHTML = resultado;
+        });
+    }
+    function buscar(texto,palabra) {
+      if(texto.indexOf(palabra)>=0)
+        return true;
+        return false;
+    }
+    function formateo () {
+      
+    }
+  </script>
 </body>
 </html>
