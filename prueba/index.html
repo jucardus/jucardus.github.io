@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hay dos archivos en el directorio documentos y sus contenidos son:
+    <br>
+    <div id ="u">
+        ...
+    </div>
+    <script>
+        g_resultado ="";
+        const urls = [
+            'documentos/a',
+            'documentos/b',
+            // Add more URLs as needed
+        ];
+
+        Promise.all(urls.map(url => fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text(); // or response.text() or any other method to parse the response
+        })
+        .catch(error => console.error('Failed to fetch', error))
+        ))
+        .then(data => {
+            // data is an array of the fetched documents
+            g_resultado += data;
+            document.getElementById("u").innerHTML=data;
+        })
+        .catch(error => {
+            console.error('Failed to fetch all documents', error);
+        });
+    </script>
+</body>
+</html>
