@@ -8,9 +8,19 @@
     var resultado = [];
     function inicio() {
       var array = [
-        'documentos/uno.txt',
-        'documentos/dos.txt',
-        'documentos/tres.txt'
+        'actividad/actividad.md',
+        'diccionarios/diccionarios.md',
+        'diccionarios/ingles-espanol/ingles-espanol.md',
+        'diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md',
+        'diccionarios/ingles-espanol/i/i.md',
+        'enlaces/enlaces.md',
+        'escritos/apotegmas/apotegmas.md',
+        'escritos/citas/citas.md',
+        'escritos/escritos.md',
+        'indices/alfabetico.md',
+        'programacion/programacion.md',
+        'traducciones/ccc/ccc.md',
+        'traducciones/ccc/prefacio/prefacio.md'
       ];
       for (let i = 0; i < array.length; i++) {
         recorrer(array[i]);
@@ -22,7 +32,6 @@
         .then(textString => {
           if(buscar(textString, "ccc"))
               resultado.push(recibido);
-              //document.getElementById('mostrar').innerHTML = resultado;
               formateo (resultado);
         });
     }
@@ -32,7 +41,8 @@
         return false;
     }
     function formateo (procesar) {
-      document.getElementById('mostrar').innerHTML = resultado.join('<p>');
+      var enviar = procesar.join('<p>');
+      document.getElementById('mostrar').innerHTML = enviar;
     }
   </script>
 </body>
