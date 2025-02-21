@@ -42,7 +42,9 @@
         return false;
     }
     function formateo (procesar) {
-      var enviar = procesar.join('<p>');
+      var enlace = procesar.toString();
+        var enlace = '<a href="' + enlace + '"' + enlace + '</a>';
+      var enviar = enlace.join('<p>');
       document.getElementById('mostrar').innerHTML = enviar;
     }
   </script>
