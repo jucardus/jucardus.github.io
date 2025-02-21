@@ -6,6 +6,7 @@
 <div id='mostrar'>RESULTADOS</div>
   <script>
     var resultado = [];
+    var lema = 'deference';
     function inicio() {
       var array = [
         '/actividad/actividad.md',
@@ -30,7 +31,7 @@
       fetch(recibido)
         .then(response => response.text())
         .then(textString => {
-          if(buscar(textString, "ccc"))
+          if(buscar(textString, lema))
               resultado.push(recibido);
               formateo (resultado);
         });
