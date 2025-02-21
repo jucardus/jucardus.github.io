@@ -42,8 +42,8 @@
         return false;
     }
     function formateo (procesar) {
-      var enviar = procesar;
-      document.getElementById('mostrar').innerHTML = enviar + '<p>';
+      var enviar = procesar.join('<p>');
+      document.getElementById('mostrar').innerHTML = enviar;
     }
   </script>
 </body>
