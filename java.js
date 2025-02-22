@@ -102,7 +102,7 @@ function segunTema (temaRecibido) {
       var tm = linea[1];
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';} else {ttl = linea[3];}
         var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var enlc = linea[4];
         if (linea[4] != '') {
@@ -205,7 +205,7 @@ function buscar (recibidoDireccion) {
         var tm = linea[1];
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
-          if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';} else {ttl = linea[3];}
           var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
         var enlc = linea[4];
           if (linea[4] != '') {
@@ -289,10 +289,7 @@ function mostrarUnico (lema) {
         var tm = linea[1];
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
-          if (linea[2] == '') {
-            ttl = linea[3]?.slice(0,39) + '...';
-            var tituloOriginal = ttl?.toUpperCase() + ' | JUCARDUS';
-          }
+          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';} else {ttl = linea[3];}
           var ttl = '<h3 class="titulos">' + ttl + '</h3>';
         var enlc = linea[4];
           if (linea[4] != '') {
@@ -350,7 +347,7 @@ function az () {
       var tm = linea[1];
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';} else {ttl = linea[3];}
         var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
         var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var fch = linea[6];
@@ -397,7 +394,7 @@ function azar () {
       var tm = linea[1];
         var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
       var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';} else {ttl = linea[3];}
         var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
@@ -530,7 +527,7 @@ function buscarArchivo (fechaRecibida) {
         var tm = linea[1];
           var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
         var ttl = linea[2];
-          if (linea[2] == '') {ttl = linea[3]?.slice(0,39) + '...';}
+          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';} else {ttl = linea[3];}
           var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
         var enlc = linea[4];
           if (linea[4] != '') {
