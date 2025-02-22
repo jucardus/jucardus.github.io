@@ -1,6 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
 234,Citas,,Conocimiento es saber que el tomate es una fruta. Sabiduría es no ponerlo en la ensalada de frutas. – Anónimo,,,2025-02-22 08:09
-233,Enlaces,,HTML / What are Open Graph metatags and how to use them in web pages,https://okbinteractive.studio/en/insights/what-are-open-graph-metatags-and-how-to-use-them-in-web-pages,,2025-02-22 07:36
+233,Enlaces,,canales en YouTube / Andy Ward's Ancient Pottery - @AncientPottery,https://www.youtube.com/@AncientPottery/videos,,2025-02-22 07:36
 232,Enlaces,,vocabulario inglés / threshold,https://www.merriam-webster.com/dictionary/threshold,,2025-02-20 22:31
 231,Apotegmas,,"No olvides que Dios no es omnipotente, porque no puede forzarte a volverte a él. Entonces, has de definir tus intenciones, tomar las decisiones mejores, abrazar su voluntad. Y, sobre todo, no caigas en la ilusión de que has sido elegido, pues Dios nunca hace acepción de personas.",,,2025-02-20 22:29
 230,Enlaces,,Johann Sebastian Bach / lista completa de sus composiciones,https://musopen.org/music/composer/johann-sebastian-bach/pieces/,,2025-02-20 11:32
@@ -51,8 +51,8 @@
 185,Vocabulario español,enconado [adj.],"enconado [adj.] Manchado, teñido.",,,2025-02-09 21:36
 184,Vocabulario español,ímprobo [adj.],"ímprobo [adj.] Falto de honradez, de honestidad; falto de probidad.",,,2025-02-09 21:37
 183,Reflexiones,,"Si no predicas lo que Dios te pide, terminarás engullido por las ideologías y doctrinas del mundo, como Jonás en aquel gran pez. Aun así, si ya has sido tragado por el abismo y oras a Dios, volverás a la vida, serás resucitado.",,,2025-02-09 20:10
-182,Vocabulario español,enconar [v.] (1),enconar [v.] Inflamar una herida.,,,2025-02-09 20:08
-181,Vocabulario español,enconar [v.] (2),enconar [v.] Irritar el ánimo contra alguien.,,,2025-02-09 20:07
+182,Vocabulario español,enconar [v.],enconar [v.] Inflamar una herida. Irritar el ánimo contra alguien.,,,2025-02-09 20:08
+181,Enlaces,,vocabulario español / falcón,https://dle.rae.es/falcón,,2025-02-09 20:07
 180,Vocabulario español,enconado [adj.],"enconado [adj.] Violento, encarnizado, reñido, airado.",,,2025-02-09 20:06
 179,Vocabulario inglés-español,second to last [loc.],second to last [loc.] penúltimo [adj.],,,2025-02-09 20:05
 178,Vocabulario inglés-español,nib [s.],"nib [s.] plumín, punta (de una pluma para escribir)",,,2025-02-09 20:03
