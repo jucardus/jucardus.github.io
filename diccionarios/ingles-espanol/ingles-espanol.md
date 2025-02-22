@@ -4,6 +4,18 @@
 
 ### Índice
 
-=A= =B= =C= =D= =E= =F= =G= =H= [=I=](./i/i.md) =J= =K= =L= =M= =N= =O= =P= =Q= =R= =S= =T= =U= =V= =W= =X= =Y= =Z=
+=A= &nbsp; =B= &nbsp; =C= &nbsp; =D=
+
+=E= &nbsp; =F= &nbsp; =G= &nbsp; =H=
+
+[=I=](./i/i.md) &nbsp; =J= &nbsp; =K= &nbsp; =L=
+
+=M= &nbsp; =N= &nbsp; =O= &nbsp; =P=
+
+=Q= &nbsp; =R= &nbsp; =S= &nbsp; =T=
+
+=U= &nbsp; =V= &nbsp; =W= &nbsp; =X=
+
+=Y= &nbsp; =Z=
 
 <p align="center">◆</p>
