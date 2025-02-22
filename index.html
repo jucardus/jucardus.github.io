@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "es">
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44Y9CNCHR8');
+</script>
+
+    <meta charset = "utf-8" />
+    <meta name = "keywords" content = "apotegmas, citas, cuentos, diario, enlaces, vínculos, hipervínculos, reflexiones, sinónimos, vocabularios, apotegma, cita, cuento, diario, enlace, vínculo, hipervínculo, reflexión, sinónimo, vocabulario, vocabulario inglés-español, vocabulario inglés, sinónimos ingleses, sinónimos españoles" />
+    <meta name = "description" content = "Mi sitio central, con escritos varios, apotegmas, citas, cuentos, reflexiones, vocabularios y enlaces varios." />
+    <meta name = "author" content = "Julio Cárdenas Pelizzari" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <title>JUCARDUS.COM</title>
+  </head>
+<body onload='inicio ()'>
+  <h1>Jucardus.com</h1>
+  <div id='temas'>
+    <span class='temas' id='inicio' onclick='inicio ()'>Inicio</span> •
+    <span class='temas' id='apotegmas' onclick='segunTema ("apotegmas")'>Apotegmas</span> ·
+    <span class='temas' id='citas' onclick='segunTema ("citas")'>Citas</span> ·
+    <span class='temas' id='cuentos' onclick='segunTema ("cuentos")'>Cuentos</span> ·
+    <span class='temas' id='diario' onclick='segunTema ("diario")'>Diario</span> ·
+    <span class='temas' id='enlaces' onclick='segunTema ("enlaces")'>Enlaces</span> ·
+    <span class='temas' id='poesia' onclick='segunTema ("poesía")'>Poesía</span> ·
+    <span class='temas' id='reflexiones' onclick='segunTema ("reflexiones")'>Reflexiones</span> ·
+    <span class='temas' id='vocabulario' onclick='segunTema ("vocabulario")'>Vocabulario</span> •
+    <span class='temas' id='az' onclick='az ("az")'>AZ</span> ·
+    <span class='temas' id='azar' onclick='azar ("azar")'>Azar</span> ·
+    <span class='temas' id='archivo' onclick='archivo ("archivo")'>Archivo</span> ·
+    <span class='temas' id='lupa' onclick='mostrarBuscador ()'>🔍</span>
+  </div>
+  <div id="buscador">
+    <form method="post">
+      <input type="text" autofocus="on" autocomplete="off" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
+      <button id="boton" type="button" onclick="buscar()">🔍</button>
+    </form>
+  </div>
+  <div id='mostrar'></div>
+  <div id='rombo'><img class='rombo' src='data:image/png;base64,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'</img></div>
+  <div id='aclaraciones'>
+    <h3 class='aclaraciones'>Aclaraciones</h3>
+      <ul>
+        <li>La página de inicio, y todas las etiquetas o temas, muestran las diez entradas más recientes. &mdash; Clica en la lupa para buscar entre todas las entradas del sitio, sin límite de coincidencias.</li>
+        <li>Si quieres ver una entrada en particular, con exclusión de todas las demás, sólo hace falta clicar en su título.</li>
+        <li>Clica en los números verdes debajo de los títulos para compartir la entrada en X Twitter.</li>
+        <li>Para copiar el enlace a una entrada en particular, clica en la fecha en color gris debajo del título correspondiente.</li>
+        <li>Si deseas hacer sugerencias, críticas o correcciones a mi contenido, sírvete escribir a jucardus en gmail punto com.</li>
+      </ul>
+  </div>
+  <div id='footer'>
+    <h3 class='autor'>Autor y contacto</h3>
+      <ul>
+        <li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li>
+        <li><b>Contacto:</b> jucardus en gmail punto com</li>
+        <!--li><b>Donaciones:</b> pp.jucardus.com</li-->
+        <li><b>Invitación a pCloud:</b> i.jucardus.com</li>
+        <li><b>Facebook:</b> fb.jucardus.com</li>
+        <li><b>X Twitter:</b> x.jucardus.com</li>
+      </ul>
+  </div>
+  <div id='qr'><img class='qr' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAAAklEQVR4AewaftIAAAQDSURBVO3BwW0kWxIEQZ9Ei+T6SxA6zR/sYQ+FR6AaxSQJIsz+/P2Hqk82VC0YqhYMVQuGqgVD1YIXH1D5qZJwpfKVknCicpWEp1R+qiRcDVULhqoFQ9WCoWrBULXgxZuS8FVUnkrCV0rCXSpXSXhHEr6Kyl1D1YKhasFQtWCoWvDiE6g8lYTvpvIbqDyVhCeGqgVD1YKhasFQtWCoWvDil0jCicpJEq6S8JRKwVC1YKhaMFQtGKoWvPglVN6h8lWScKLyWw1VC4aqBUPVgqFqwVC14MUnSMJ3S8I7VO5KwpXKT5WE7zZULRiqFgxVC4aqBS/epPITqZwk4a4knKhcJeFE5Sup/ERD1YKhasFQtWCoWjBULfjz9x/qf1TuSsKJyhNJ+A2GqgVD1YKhasFQteDFB1ROknCXyk+VhLuScKVyVxJOVK5UTpJwl8pJEq5UnkrC1VC1YKhaMFQtGKoWDFULXnwClaeS8ITKSRJOVK6ScFcSTlSuVO5KwjtUNiThiaFqwVC1YKhaMFQtGKoWvPhAEk5UNqjclYSrJJyoPKVylYSnknCXykkSvorKSRKuhqoFQ9WCoWrBULXgxQdUTpKwQeUqCScqTyXhu6lcJeEkCScqP9FQtWCoWjBULRiqFgxVC158IAknKldJuEvlLpW7kvAOlasknCThSuUrqdyVhBOVqyRsGKoWDFULhqoFQ9WCFx9QeUrlriTcpXKlcpKEp1SuknCXylNJOFG5UjlJwl0qV0m4a6haMFQtGKoWDFULhqoFLz6BykkSrlROVO5KwldKwl0qdyXhqSRcqdylcpfKSRKuhqoFQ9WCoWrBULXgxZuScKVyonKVhBOVqyT8BCpPJOEulXck4S6Vu5LwxFC1YKhaMFQtGKoWDFUL/vz9hwOVkyRcqXy3JJyobEjCXSo/QRKuVO5Kwl1D1YKhasFQtWCoWvDiA0m4KwnfTeUkCScqdyXhqyThKZXvNlQtGKoWDFULhqoFQ9WCFx9Q+amSsCEJJypPJOFE5S6VkyTcpXKVhLtUTpJwNVQtGKoWDFULhqoFQ9WCF29KwldR2ZKEK5WTJFypnCThSuWpJHy3JNw1VC0YqhYMVQuGqgUvPoHKU0n4Sio/kcpPpXKShKuhasFQtWCoWjBULRiqFryo/0vCicoTSThR2ZCEE5UrlQ1D1YKhasFQtWCoWvDil0jCicpJEq5UTpJwpXKXyl1JeIfKlcpdSThReWKoWjBULRiqFgxVC4aqBS8+QRJ+M5UnkvCUyl1JOFG5UtkwVC0YqhYMVQuGqgUv3qTyE6m8Q+W7qTyVhCuVkyQ8oXLXULVgqFowVC0YqhYMVQv+/P2Hqk82VC0YqhYMVQuGqgX/Ae7BY9IVOxFqAAAAAElFTkSuQmCC'></img></div>
+  <script src="java.js"></script>
+</body>
+</html>
