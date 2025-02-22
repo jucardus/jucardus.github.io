@@ -52,5 +52,5 @@ function buscar(contenidoDoc,lema) {
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
   let enlace = '<b>' + titulo + '</b> → <a href="' + documento + '" target="_blank">' + documento + "</a><p>";
-  document.getElementById('mostrar').innerHTML +=  enlace;
+  document.getElementById('mostrar').innerHTML += enlace;
 }
