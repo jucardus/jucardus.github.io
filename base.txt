@@ -156,7 +156,7 @@
 80,Apotegmas,,La tolerancia es el hábito preferido de los condescendientes. ¶ La tolerancia es de los condescendientes. La comprensión y la corrección de quienes buscan la Verdad.,,,2024-12-12 17:48
 79,Apotegmas,,No te atrevas a pensar que eres justo o que tienes la razón sólo porque te persiguen.,,,2024-12-11 20:31
 78,Apotegmas,,No se llega a Dios con abstracciones.,,,2024-12-11 20:28
-77,Reflexiones,,"De niño creías que había un monstruo debajo de la cama y temblabas. Ahora que eres adulto, sabes que hay un monstruo debajo de la cama, pero te da igual.",,,2024-12-11 20:28
+77,Reflexiones,,"De niño creías que había un monstruo debajo de la cama y temblabas. Ahora que eres adulto, sabes que hay un monstruo debajo de la cama, pero te da igual.",,,2024-12-11 20:26
 76,Apotegmas,,Tú harás lo posible y Dios hará lo imposible.,,,2024-12-11 20:27
 75,Apotegmas,,"El mal que has hecho nunca salió de ti. Sigue allí agazapado, esperando el momento justo para devorarte desde dentro.",,,2024-12-10 22:07
 74,Apotegmas,,"Eventualmente tendrás que elegir entre Dios y la religión, a no ser que tu religión sea Dios.",,,2024-12-10 22:05
