@@ -1,5 +1,6 @@
 ---
-title: Actividad reciente en Jucardus.
+title: Actividad reciente
+description: actividad, cambios, modificaciones, adiciones
 ---
 
 ## Actividad reciente
