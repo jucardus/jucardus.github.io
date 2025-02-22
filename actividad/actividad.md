@@ -1,3 +1,5 @@
+<title>{% Actividad reciente en Jucardus. %}</title>
+
 ## Actividad reciente
 [inicio](../index.md) | [índice](../index.md) | [actividad](./actividad.md) | [A-Z](../indices/alfabetico.md) | [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardos,%20con%20los%20cambios,%20adiciones%20y%20modificaciones%20más%20recientes.%20→%20https://jucardus.github.io/actividad/actividad.html%0A%0A@jucardus%20~%20%23) \| [🔍](../busca/busca.html)
 
