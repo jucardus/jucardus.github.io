@@ -1,7 +1,3 @@
----
-title: Actividad reciente en Jucardus.
----
-
 ## Actividad reciente
 
 [inicio](../index.md) \| [índice](../index.md) \| [actividad](./actividad.md) \| [A-Z](../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Modificaciones,%20cambios%20y%20adiciones%20más%20recientes%20en%20Jucardus.%20→%20https://jucardus.github.io/actividad/actividad.html%0A%0A%23actvdd_jucardus) \| [🔍](../busca/busca.html)
