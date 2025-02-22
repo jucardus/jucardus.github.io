@@ -3,6 +3,10 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+#### 25-2-21
+
+* Se ha cambiado la ruta de directorios para la traducción de [Charlie Codman's Cruise](../traducciones/charlie/charlie.md).
+
 #### 25-2-17
 
 * Ha quedado bien implementada la subpágina de [Busca](../busca/busca.html). Al iniciarla, se muestran las doce subpáginas más recientes.
