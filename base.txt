@@ -1,4 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+234,Citas,,Conocimiento es saber que el tomate es una fruta. Sabiduría es no ponerlo en la ensalada de frutas. – Anónimo,,,2025-02-22 08:09
+233,Enlaces,,HTML / What are Open Graph metatags and how to use them in web pages,https://okbinteractive.studio/en/insights/what-are-open-graph-metatags-and-how-to-use-them-in-web-pages,,2025-02-22 07:36
 232,Enlaces,,vocabulario inglés / threshold,https://www.merriam-webster.com/dictionary/threshold,,2025-02-20 22:31
 231,Apotegmas,,"No olvides que Dios no es omnipotente, porque no puede forzarte a volverte a él. Entonces, has de definir tus intenciones, tomar las decisiones mejores, abrazar su voluntad. Y, sobre todo, no caigas en la ilusión de que has sido elegido, pues Dios nunca hace acepción de personas.",,,2025-02-20 22:29
 230,Enlaces,,Johann Sebastian Bach / lista completa de sus composiciones,https://musopen.org/music/composer/johann-sebastian-bach/pieces/,,2025-02-20 11:32
