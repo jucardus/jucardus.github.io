@@ -1,6 +1,10 @@
+---
+description: Diccionario inglés-español, con sinónimos, traducciones en contexto, silabeo y más.
+---
+
 ## Diccionario inglés-español
 
-[inicio](../../index.md) \| [índice](../diccionarios.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Diccionario%20inglés-español%20en%20Jucardus.%20→%20jucardus.github.io/diccionarios/ingles-espanol/ingles-espanol.html%0A%0A@jucardus%20~%20%23) \| [🔍](../../busca/busca.html)
+[inicio](../../index.md) \| [índice](../diccionarios.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Diccionario%20inglés-español%20en%20Jucardus.%20→%20jucardus.github.io/diccionarios/ingles-espanol/ingles-espanol.html%0A%0A%23diccnrs_jucardus) \| [🔍](../../busca/busca.html)
 
 ### Índice
 
