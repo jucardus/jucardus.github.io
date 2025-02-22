@@ -10,7 +10,7 @@
     <script>
     
     var resultado = [];
-    var lema = 'ccc';
+    var lema = 'ddd';
   
     var array = [
       'aaa.md',
@@ -25,24 +25,24 @@
       }
     }
     
-    function recorrer (recibido, ultimo) {
-      fetch(recibido)
+    function recorrer (documento) {
+      fetch(documento)
         .then(response => response.text())
         .then(textString => {
-          if(buscar(textString, lema)) {
-            modificar(recibido);
+          if(buscar(contenidoDoc, lema)) {
+            modificar(documento);
           }    
         });
     }
     
-    function buscar(texto,palabra) {
-      if(texto.indexOf(palabra)>=0) return true;
+    function buscar(contenidoDoc,lema) {
+      if(contenidoDoc.indexOf(lema)>=0) return true;
       return false;
     }
     
     function modificar(recibido) {
-      let txt = '<a href="' + recibido + '">' + recibido + "</a><br>";
-      document.getElementById('mostrar').innerHTML +=  txt;
+      let enlace = '<a href="' + recibido + '">' + recibido + "</a><br>";
+      document.getElementById('mostrar').innerHTML +=  enlace;
     }
     
     </script>
