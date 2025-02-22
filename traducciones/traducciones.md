@@ -5,6 +5,6 @@ Traducción de textos ingleses y franceces al español, con equivalencias en con
 
 ### Índice
 
-* [Charlie Codman's Cruise, a Story for Boys](./ccc/ccc.md)
+* [Charlie Codman's Cruise, a Story for Boys](./charlie/charlie.md)
 
 <p align="center">◆</p>
