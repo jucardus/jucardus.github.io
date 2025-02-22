@@ -5,7 +5,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 #### 25-2-21
 
-* Se ha cambiado la ruta de directorios para la traducción de [Charlie Codman's Cruise](../traducciones/charlie/charlie.md).
+* Se ha cambiado la ruta de directorios a `/traducciones/charlie/charlie.html` para la traducción de [Charlie Codman's Cruise](../traducciones/charlie/charlie.md).
 
 #### 25-2-17
 
