@@ -30,18 +30,19 @@
         .then(response => response.text())
         .then(contenidoDoc => {
           if(buscar(contenidoDoc, lema)) {
-            modificar(documento);
+            modificar(documento, contenidoDoc);
           }    
         });
     }
     
     function buscar(contenidoDoc,lema) {
-      if(contenidoDoc.indexOf(lema) >= 0) return true;
+      if (contenidoDoc.indexOf(lema) >= 0) return true;
       return false;
     }
     
-    function modificar(recibido) {
-      let enlace = '<a href="' + recibido + '">' + recibido + "</a><br>";
+    function modificar (documento, contenidoDoc) {
+      var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
+      let enlace = '<h2>' + titulo + '</h2><a href="' + documento + '">' + documento + "</a><br>";
       document.getElementById('mostrar').innerHTML +=  enlace;
     }
     
