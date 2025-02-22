@@ -43,7 +43,10 @@
     }
     function formateo (recibido) {
       let enviar = '<a href="' + recibido + '">' + recibido + '</a><p>';
-      document.getElementById('mostrar').innerHTML += enviar;
+      resultado = enviar.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
+      resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+      resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+      document.getElementById('mostrar').innerHTML += resultado;
     }
   </script>
 </body>
