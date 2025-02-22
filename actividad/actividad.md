@@ -4,11 +4,11 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
-#### 25-2-21
+### 25-2-21
 
 * Se ha cambiado la ruta de directorios a `/traducciones/charlie/charlie.html` para la traducción de [Charlie Codman's Cruise](../traducciones/charlie/charlie.md).
 
-#### 25-2-17
+### 25-2-17
 
 * Ha quedado bien implementada la subpágina de [Busca](../busca/busca.html). Al iniciarla, se muestran las doce subpáginas más recientes.
 * Preparación de la [subpágina de busca](../busca/busca.html), para acceder directamente al resto de subpáginas del sitio. Pronto se implementará la base de datos.
@@ -16,7 +16,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 * Creación de la subpágina [Diccionario inglés-español](../diccionarios/ingles-espanol/ingles-espanol.md), como parte de _Diccionarios todos_.
 * Creación de la subpágina [Charlie Codman's Cruise](../traducciones/ccc/ccc.md), como parte de las _Traducciones al español_.
 
-#### 25-2-16
+### 25-2-16
 
 * Se ha creado la subpágina [Citas](../escritos/citas/citas.md), como parte de _Escritos varios_, y se ha agregado algunos párrafos para empezar.
 * Numeras adiciones en [Apotegmas](../escritos/apotegmas/apotegmas.md).
@@ -27,13 +27,13 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 * Creación de la subpágina [Diccionarios todos](../diccionarios/diccionarios.md).
 * Algunos cambios en la página de inicio.
 
-#### 25-2-15
+### 25-2-15
 
 * Probando cómo usar la aplicación Git Sync, para sincronizar mi repositorio en GitHub con mi celular.
 * Se ha implementado un enlace directo al repositorio de este sitio, para copias, descargas y más: [jucardus.github.io/repo](https://jucardus.github.io/repo).
 * Ciertas modificaciones en la [página de inicio](../index.md), para especificar el contenido del sitio, además de ciertas aclaraciones.
 
-#### 25-2-14
+### 25-2-14
 
 * Se ha creado la subpágina [Apotegmas](../escritos/apotegmas/apotegmas.md), dentro de _Escritos varios_.
 * Creación de la subpágina [Índice alfabético](../indices/alfabetico.md), para facilitar el acceso a todas las subpáginas.
