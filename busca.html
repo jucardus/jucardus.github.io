@@ -42,8 +42,11 @@
     
     function modificar (documento, contenidoDoc) {
       var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-      let enlace = '<h2>' + titulo + '</h2><a href="' + documento + '">' + documento + "</a><br>";
-      document.getElementById('mostrar').innerHTML +=  enlace;
+      let enlaces = '<h2>' + titulo + '</h2><a href="' + documento + '">' + documento + "</a><br>";
+      resultado = enlaces.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
+      resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+      resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
+      document.getElementById('mostrar').innerHTML +=  resultado;
     }
     
     </script>
