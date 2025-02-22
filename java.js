@@ -170,6 +170,7 @@ function teclaBuscar (event) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscar (recibidoDireccion) {
+  var lemaOriginal = recibidoDireccion;
   var lema = document.getElementById("buscar").value.toUpperCase();
   if (recibidoDireccion != '') {
     lema = direccion
@@ -250,6 +251,9 @@ function buscar (recibidoDireccion) {
     window.history.replaceState({}, document.title, '/' + numero);
   } else {
     window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
+  }
+  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'poesia' || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
+    segunTema (lemaOriginal);
   }
   window.scrollTo(0, 0);
 }
