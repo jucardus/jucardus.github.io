@@ -43,7 +43,7 @@
     function modificar (documento, contenidoDoc) {
       var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
       let github = 'https://github.com/jucardus/jucardus.github.io/blob/main/';
-      let enlace = '<b>' + titulo + '</b> → <a href="' + github + documento + '">' + documento + "</a><br>";
+      let enlace = '<b>' + titulo + '</b> → <a href="' + github + documento + '" target="_blank">' + documento + "</a><p>";
       //resultado = enlaces.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
       //resultado = [...new Set(resultado)]; // eliminar elementos repetidos
       //resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
