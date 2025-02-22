@@ -1,5 +1,7 @@
 ---
 description: Actividad reciente, cambios y modificaciones en Jucardus.
+keywords: actividad, cambios, modificaciones
+language: es
 ---
 
 ## Actividad reciente
