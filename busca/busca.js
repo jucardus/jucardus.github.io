@@ -27,7 +27,8 @@ function buscar() {
   if (lema == 'mostrar todo') {lema = '#';}
   var array = base;
   for (let i = 0; i < array.length; i++) {
-    recorrer(array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main/','/'),lema);
+    var documento = array[i]?.replace('https://github.com/jucardus/jucardus.github.io/blob/main/','/');
+    recorrer(documento,lema);
   }
 }
 
