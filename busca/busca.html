@@ -154,6 +154,7 @@ let base = [
 function teclaBuscar (event) {
   if (event.key === "Enter") {
     event.preventDefault();
+    document.getElementById('mostrar').innerHTML = '';
     buscar('');
   }
 }
@@ -186,7 +187,9 @@ function buscar2 (contenidoDoc,lema) {
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
   let enlace = '<b>' + titulo + '</b> → <a href="' + documento.replace('.md','.html') + '">' + documento + "</a><p>";
+  document.getElementById('buscar').value = '';
   document.getElementById('mostrar').innerHTML += enlace;
+  window.scrollTo(0, 0);
 }
     </script>
 
