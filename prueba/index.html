@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload='inicio()'>
+<div id='mostrar'>RESULTADOS</div>
+  <script>
+    var resultado = [];
+    var lema = 'deference';
+    function inicio() {
+      var array = [
+        '/actividad/actividad.md',
+        '/diccionarios/diccionarios.md',
+        '/diccionarios/ingles-espanol/ingles-espanol.md',
+        '/diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md',
+        '/diccionarios/ingles-espanol/i/i.md',
+        '/enlaces/enlaces.md',
+        '/escritos/apotegmas/apotegmas.md',
+        '/escritos/citas/citas.md',
+        '/escritos/escritos.md',
+        '/indices/alfabetico.md',
+        '/programacion/programacion.md',
+        '/traducciones/ccc/ccc.md',
+        '/traducciones/ccc/prefacio/prefacio.md'
+      ];
+      for (let i = 0; i < array.length; i++) {
+        recorrer(array[i]);
+      }
+    }
+    function recorrer (recibido) {
+      fetch(recibido)
+        .then(response => response.text())
+        .then(textString => {
+          if(buscar(textString, lema))
+              resultado.push(recibido);
+              formateo (resultado);
+        });
+    }
+    function buscar(texto,palabra) {
+      if(texto.indexOf(palabra) >= 0)
+        return true;
+        return false;
+    }
+    function formateo (procesar) {
+      var enviar = procesar.join('<p>');
+      document.getElementById('mostrar').innerHTML = enviar;
+    }
+  </script>
+</body>
+</html>
