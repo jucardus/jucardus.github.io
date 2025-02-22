@@ -28,7 +28,7 @@
     function recorrer (documento) {
       fetch(documento)
         .then(response => response.text())
-        .then(textString => {
+        .then(documento => {
           if(buscar(documento, lema)) {
             modificar(documento);
           }    
