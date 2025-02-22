@@ -22,7 +22,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 * Numeras adiciones en [Apotegmas](../escritos/apotegmas/apotegmas.md).
 * Numerosos [diccionarios](../enlaces/enlaces.md#diccionarios) agregados a _Enlaces muchos_.
 * Unas cuantas [películas](../enlaces/enlaces.md#películas) agregadas a _Enlaces muchos_.
-* Vocabulario español agregado: [atisbo [sin.]](../diccionarios/vocabulario/vocabulario.md#atisbo-sin); [enconado [adj.]](../diccionarios/vocabulario/vocabulario.md#enconado-adj); [enconar [v.]](../diccionarios/vocabulario/vocabulario.md#enconar-v); [extemporáneo [sin.]](../diccionarios/vocabulario/vocabulario.md#extempor%C3%A1neo-sin); [garzo, za [adj.]](../diccionarios/vocabulario/vocabulario.md#garzo-za-adj); [ímprobo, ba [adj.]](../diccionarios/vocabulario/vocabulario.md#%C3%ADmprobo-ba-adj); [llovizna, lloviznar [sin.]](../diccionarios/vocabulario/vocabulario.md#lovizna-lloviznar-sin); [tomar alguien el tole [loc.coloq.]](../diccionarios/vocabulario/vocabulario.md#tomar-alguien-el-tole-loccoloq)
+* Vocabulario español agregado: atisbo [sin.]; enconado [adj.]; enconar [v.]; extemporáneo [sin.]; garzo, za [adj.]; ímprobo, ba [adj.]; llovizna, lloviznar [sin.]; tomar alguien el tole [loc.coloq.].
 * Creación de la subpágina [Vocabulario español](../diccionarios/vocabulario/vocabulario.md), como parte de _Diccionarios todos_.
 * Creación de la subpágina [Diccionarios todos](../diccionarios/diccionarios.md).
 * Algunos cambios en la página de inicio.
