@@ -185,7 +185,7 @@ function buscar2 (contenidoDoc,lema) {
 
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-  let enlace = '<b>' + titulo + '</b> → <a href="' + documento + '" target="_blank">' + documento + "</a><p>";
+  let enlace = '<b>' + titulo + '</b> → <a href="' + documento.replace('.md','.html') + '">' + documento + "</a><p>";
   document.getElementById('mostrar').innerHTML += enlace;
 }
     </script>
