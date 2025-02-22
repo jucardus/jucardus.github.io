@@ -29,7 +29,7 @@
       fetch(documento)
         .then(response => response.text())
         .then(textString => {
-          if(buscar(contenidoDoc, lema)) {
+          if(buscar(documento, lema)) {
             modificar(documento);
           }    
         });
