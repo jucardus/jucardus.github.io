@@ -24,7 +24,7 @@ function teclaBuscar (event) {
 
 function buscar() {
   let lema = document.getElementById("buscar").value;
-  if (lema == 'mostrar todo') {recibido = '#';}
+  if (lema == 'mostrar todo') {lema = '#';}
   var array = base;
   for (let i = 0; i < array.length; i++) {
     recorrer(array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main/','/'),lema);
