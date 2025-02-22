@@ -1,5 +1,5 @@
 let base = [
-  //'https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/traducciones/traducciones.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/traducciones/charlie/charlie.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/traducciones/charlie/prefacio/prefacio.md',
