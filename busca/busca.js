@@ -3,6 +3,7 @@ var contador = 0;
 function teclaBuscar (event) {
   if (event.key === "Enter") {
     event.preventDefault();
+    contador = 0;
     document.getElementById('contador').innerHTML = '';
     document.getElementById('mostrar').innerHTML = '';
     buscar('');
