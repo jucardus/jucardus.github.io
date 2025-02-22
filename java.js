@@ -255,6 +255,9 @@ function buscar (recibidoDireccion) {
   if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'poesia' || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
     segunTema (lemaOriginal);
   }
+  if (lemaOriginal == 'az') {az ();}
+  if (lemaOriginal == 'azar') {azar ();}
+  if (lemaOriginal == 'archivo') {archivo ();}
   window.scrollTo(0, 0);
 }
 
