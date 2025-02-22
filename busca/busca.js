@@ -36,7 +36,7 @@ function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
   let enlace = '<b>' + titulo + '</b> → <a href="' + documento.replace('.md','.html') + '">' + documento.replace('.md','') + "</a><p>";
   contador = contador + 1;
-  if (enlace == '') {enlace = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
+  if (enlace.indexOf('/') == -1) {enlace = '<span style="color: OrangeRed;">[ ninguna coincidencia ]</span>';}
   document.getElementById('buscar').value = '';
   document.getElementById('mostrar').innerHTML += enlace;
   window.scrollTo(0, 0);
