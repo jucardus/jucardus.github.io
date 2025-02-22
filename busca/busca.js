@@ -21,13 +21,14 @@ function teclaBuscar (event) {
     buscar('');
   }
 }
+
 function buscar() {
   let lema = document.getElementById("buscar").value;
   if (lema == 'mostrar todo') {recibido = '#';}
   var array = base;
   var resultado = [];
   for (let i = 0; i < array.length; i++) {
-    recorrer(array[i]);
+    recorrer(array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main','..'));
   }
 }
 
@@ -48,7 +49,6 @@ function buscar(contenidoDoc,lema) {
 
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-  let github = '../';
-  let enlace = '<b>' + titulo + '</b> → <a href="' + github + documento + '" target="_blank">' + documento + "</a><p>";
+  let enlace = '<b>' + titulo + '</b> → <a href="' + documento + '" target="_blank">' + documento + "</a><p>";
   document.getElementById('mostrar').innerHTML +=  enlace;
 }
