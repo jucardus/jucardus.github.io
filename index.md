@@ -26,14 +26,14 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 
 * **Autor:** Julio Cárdenas Pelizzari
 * **Contacto:** jucardus en gmail punto com
-* **Repositorio:** [r.jucardus.com](https://github.com/jucardus/jucardus.github.io/tree/main)
+* **Repositorio:** [r.jucardus.com](https://r.jucardus.com)
 * **Donaciones:** pp.jucardus.com
-* **Invitación a pCloud:** i.jucardus.com
+* **Invitación a pCloud:** [i.jucardus.com](https://i.jucardus.com)
 * **Facebook:** fb.jucardus.com
 * **X Twitter:** [x.jucardus.com](https://x.com/jucardus)
 
 ### Compartir
 
-* Compartir este sitio en [X Twitter](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20jucardus.github.io%0A%0A@jucardus%20~%20%23).
+* Compartir este sitio en [X Twitter](https://x.com/intent/tweet?text=Página%20de%20inicio%20de%20Jucardus.%20Índice%20general.%20→%20jucardus.github.io%0A%0A@jucardus).
 
 <p align="center">◆</p>
