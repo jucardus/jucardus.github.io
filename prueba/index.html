@@ -6,7 +6,7 @@
 <div id='mostrar'>RESULTADOS</div>
   <script>
     var resultado = [];
-    var lema = 'deference';
+    var lema = 'tiempo';
     function inicio() {
       var array = [
         '/actividad/actividad.md',
@@ -41,9 +41,9 @@
         return true;
         return false;
     }
-    function formateo (procesar) {
-      var enviar = procesar.join('<p>');
-      document.getElementById('mostrar').innerHTML = enviar;
+    function formateo (recibido) {
+      let enviar = '<a href="' + recibido + '">' + recibido + '</a><p>';
+      document.getElementById('mostrar').innerHTML += enviar;
     }
   </script>
 </body>
