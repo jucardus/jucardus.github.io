@@ -26,6 +26,7 @@ function teclaBuscar (event) {
 
 function buscar() {
   var lema = document.getElementById("buscar").value;
+  alert (lema);
   if (lema == 'mostrar todo') {lema = '#';}
   var array = base;
   for (let i = 0; i < array.length; i++) {
