@@ -1,4 +1,6 @@
-% Actividad reciente en Jucardus.
+---
+title: Actividad reciente en Jucardus.
+---
 
 ## Actividad reciente
 
