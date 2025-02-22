@@ -4,28 +4,28 @@
 
 La siguiente lista contiene tanto definiciones o significados, como sinónimos ([sin.]) de palabra españolas, y en algunos casos frases de ejemplo.
 
-#### atisbo [sin.]
+### atisbo [sin.]
 * **atisbo:** barrunto, conjetura; destello; índice (indicio), indicio; presunción; reflejo, señal, vislumbre
 
-#### enconado [adj.]
+### enconado [adj.]
 * **enconado [adj.]** Manchado, teñido. Violento, encarnizado, reñido, airado.
 
-#### enconar [v.]
+### enconar [v.]
 * **enconar [v.]** Inflamar una herida. Irritar el ánimo contra alguien.
 
-#### extemporáneo [sin.]
+### extemporáneo [sin.]
 * **extemporáneo:** inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal
 
-#### garzo, za [adj.]
+### garzo, za [adj.]
 * **garzo, za [adj.]** Zarco; de color azulado (dícese de los ojos). Persona de ojos azulados.
 
-#### ímprobo, ba [adj.]
+### ímprobo, ba [adj.]
 * **ímprobo [adj.]** Falto de honradez, de honestidad; falto de probidad.
 
-#### lovizna, lloviznar [sin.]
+### lovizna, lloviznar [sin.]
 * **llovizna, lloviznar:** garúa, garuar; mollina, mollinear; mollizna, molliznar, molliznear; pintear
 
-#### tomar alguien el tole [loc.coloq.]
+### tomar alguien el tole [loc.coloq.]
 * **tomar alguien el tole [loc.coloq.]** Partir apresuradamente.
 
 <p align="center">◆</p>
