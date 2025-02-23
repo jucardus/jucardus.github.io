@@ -261,6 +261,7 @@ function buscar (recibidoDireccion) {
   if (lemaOriginal == 'az') {az ();}
   if (lemaOriginal == 'azar') {azar ();}
   if (lemaOriginal == 'archivo') {archivo ();}
+  if (lemaOriginal == 'busca') {mostrarBuscador ();}
   window.scrollTo(0, 0);
 }
 
