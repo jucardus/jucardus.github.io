@@ -255,7 +255,7 @@ function buscar (recibidoDireccion) {
   } else {
     window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
   }
-  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'poesia' || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
+  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'poesia'  || lemaOriginal == 'poesía' || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
     segunTema (lemaOriginal);
   }
   if (lemaOriginal == 'az') {az ();}
