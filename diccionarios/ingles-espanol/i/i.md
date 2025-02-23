@@ -4,7 +4,7 @@
 
 ### Índice
 
-* [in dieference to [loc.]](./in-deference-to/in-deference-to.md)
+* [in deference to [loc.]](./in-deference-to/in-deference-to.md)
 * ...
 
 <p align="center">◆</p>
