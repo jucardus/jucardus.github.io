@@ -26,7 +26,7 @@ function recorrer (documento,lema) {
     .then(contenidoDoc => {
       if(buscar2 (contenidoDoc, lema)) {
         contador = contador + 1;
-        alert (contador);
+        if (contrador == 0) {alert ('cero coincidencias');}
           if (contador == 0) {
             document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
           } else {document.getElementById('contador').innerHTML = contador + ' concidencias.';}
