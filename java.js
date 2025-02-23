@@ -82,8 +82,8 @@ function formateo (recibido) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function segunTema (temaRecibido) {
+  if (temaRecibido == 'poesia') {temaRecibido = 'poesía';}
   var recibido = texto;
-  var contador = 0;
   var contador = 0;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
