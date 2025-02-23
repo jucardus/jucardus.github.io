@@ -6,7 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-2-22
 
-* Ahora la subpágina de [Busca](../busca/busca.html) hace las búsquedas directamente en el contenido de todas las demás subpáginas, haciendo el proceso mucho más efectivo.
+* Ahora la subpágina de [Busca](../busca/busca.html) realiza las búsquedas directamente en el contenido de todas las demás subpáginas, haciendo el proceso mucho más efectivo.
 
 ### 25-2-21
 
