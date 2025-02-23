@@ -1,4 +1,7 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+238,Vocabulario inglés-español,expressed wishes [s.c.],"expressed wishes [s.c.] deseos manifiestos ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 10:47
+237,Apotegmas,,"Que las vanas complejidades y mojigaterías del reino de los cielos no te extravíen ni te distraigan de la simpleza y el amor absoluto de Dios. Permanece firme, deséchalo todo, no te dividas.",,,2025-02-23 10:05
+236,Apotegmas,,"Del Diablo sólo viene la condenación, y de Dios solamente la salvación.",,,2025-02-23 09:51
 235,Apotegmas,,Se regocijan en el cielo por cada persona que dirige todo su ser en oración a Dios. Literalmente hay fiesta.,,,2025-02-22 10:40
 234,Citas,,Conocimiento es saber que el tomate es una fruta. Sabiduría es no ponerlo en la ensalada de frutas. – Anónimo,,,2025-02-22 08:09
 233,Enlaces,,canales en YouTube / Andy Ward's Ancient Pottery - @AncientPottery,https://www.youtube.com/@AncientPottery/videos,,2025-02-22 07:36
