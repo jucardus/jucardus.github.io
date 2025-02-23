@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 480px) {
   body {
-    font-size: 108;
+    font-size: 108%;
     padding: 0px 2px 140px 2px !important;
   }
   #entrada {
@@ -27,7 +27,6 @@ a.enlacista:hover {
 }
 body {
   background-color: White;
-  font-family: 'Times New Roman', serif;
   font-family: 'Arial', sans-serif;
   font-size: 105%;
   letter-spacing: 0.3px;
