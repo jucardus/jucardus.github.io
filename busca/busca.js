@@ -33,7 +33,7 @@ function recorrer (documento,lema) {
 }
 
 function buscar2 (contenidoDoc,lema) {
-  if (contenidoDoc.indexOf(lema) >= 0) return true;
+  if (contenidoDoc.toUpperCase().indexOf(lema.toUpperCase()) >= 0) return true;
   return false;
 }
 
