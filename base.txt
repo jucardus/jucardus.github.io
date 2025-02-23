@@ -1,4 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+240,Enlaces,,diccionarios / Diccionario histórico de la lengua española,https://www.rae.es/dhle/,,2025-02-23 11:52
+239,Enlaces,,diccionarios / chino-inglés Cedict,https://www.mdbg.net/chinese/dictionary,,2025-02-23 11:48
 238,Vocabulario inglés-español,expressed wishes [s.c.],"expressed wishes [s.c.] deseos manifiestos ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 10:47
 237,Apotegmas,,"Que las vanas complejidades y mojigaterías del reino de los cielos no te extravíen ni te distraigan de la simpleza y el amor absoluto de Dios. Permanece firme, deséchalo todo, no te dividas.",,,2025-02-23 10:05
 236,Apotegmas,,"Del Diablo sólo viene la condenación, y de Dios solamente la salvación.",,,2025-02-23 09:51
@@ -52,12 +54,12 @@
 188,Reflexiones,,"Con la búsqueda racional de Dios se puede llegar hasta cierto punto, a cierto nivel de abstracción, a especulaciones complejas. Si, por soberbia, quien busca se contenta con eso, sometiendo así la fe a la razón, no podrá seguir adelante.",,,2025-02-09 22:21
 187,Poesía,El celo de los poderosos,"Los ángeles tienen envidia, ¦ los arcángeles tienen celo, ¦ porque Dios nace en tu corazón ¦ y no en el reino de los cielos. ¶ Por qué, claman los encumbrados ¦ por qué, reclaman los poderosos, ¦ Porque en el amor humano ¦ está mi verdadero Reino.",,,2025-02-09 22:16
 186,Vocabulario inglés-español,be lost for words [loc.],be lost for words [loc.] faltarle a uno las palabras; quedarse sin palabras; no encontrar las palabras,,,2025-02-09 21:41
-185,Vocabulario español,enconado [adj.],"enconado [adj.] Manchado, teñido.",,,2025-02-09 21:36
+185,Enlaces,,vocabulario español / teleología,https://dle.rae.es/teleolog%C3%ADa,,2025-02-09 21:36
 184,Vocabulario español,ímprobo [adj.],"ímprobo [adj.] Falto de honradez, de honestidad; falto de probidad.",,,2025-02-09 21:37
 183,Reflexiones,,"Si no predicas lo que Dios te pide, terminarás engullido por las ideologías y doctrinas del mundo, como Jonás en aquel gran pez. Aun así, si ya has sido tragado por el abismo y oras a Dios, volverás a la vida, serás resucitado.",,,2025-02-09 20:10
 182,Vocabulario español,enconar [v.],enconar [v.] Inflamar una herida. Irritar el ánimo contra alguien.,,,2025-02-09 20:08
 181,Enlaces,,vocabulario español / falcón,https://dle.rae.es/falcón,,2025-02-09 20:07
-180,Vocabulario español,enconado [adj.],"enconado [adj.] Violento, encarnizado, reñido, airado.",,,2025-02-09 20:06
+180,Vocabulario español,enconado [adj.],"enconado [adj.] Violento, encarnizado, reñido, airado. Manchado, teñido.",,,2025-02-09 20:06
 179,Vocabulario inglés-español,second to last [loc.],second to last [loc.] penúltimo [adj.],,,2025-02-09 20:05
 178,Vocabulario inglés-español,nib [s.],"nib [s.] plumín, punta (de una pluma para escribir)",,,2025-02-09 20:03
 177,Vocabulario inglés-español,pinprick [s.],pinprick [s.] pinchazo; alfilerazo; puntada; agujerito; pequeño inconveniente; pequeña molestia; irritación,,,2025-01-31 10:00
