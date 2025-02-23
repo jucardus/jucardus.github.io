@@ -39,12 +39,12 @@ function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
   let enlace = '<b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.replace('.md','').replace(/\//g,' / ') + "</a><br />";
   contador = contador + 1;
+  if (contador == 0) {
+    document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
+  }
   document.getElementById('buscar').value = '';
   document.getElementById('mostrar').innerHTML += enlace;
   document.getElementById('contador').innerHTML = contador + ' concidencias.';
-  if (documento == '') {
-    document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
-  }
   window.scrollTo(0, 0);
   document.getElementById('buscar').focus();
 }
