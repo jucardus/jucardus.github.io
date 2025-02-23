@@ -43,7 +43,7 @@ function modificar (documento, contenidoDoc) {
   document.getElementById('buscar').value = '';
   document.getElementById('mostrar').innerHTML += enlace;
   document.getElementById('contador').innerHTML = contador + ' concidencias.';
-  if (contador == 0) {
+  if (documento == null) {
     document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
   }
   window.scrollTo(0, 0);
