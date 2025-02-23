@@ -25,6 +25,8 @@ function recorrer (documento,lema) {
     .then(response => response.text())
     .then(contenidoDoc => {
       if(buscar2 (contenidoDoc, lema)) {
+        contador = contador + 1;
+        document.getElementById('contador').innerHTML = contador + ' concidencias.';
         modificar(documento, contenidoDoc);
       }    
     });
@@ -38,14 +40,14 @@ function buscar2 (contenidoDoc,lema) {
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
   let enlace = '<b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.replace('.md','').replace(/\//g,' / ') + "</a><br />";
-  contador = contador + 1;
+  //contador = contador + 1;
   alert (contador);
   if (contador == 0) {
     document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
   }
   document.getElementById('buscar').value = '';
   document.getElementById('mostrar').innerHTML += enlace;
-  document.getElementById('contador').innerHTML = contador + ' concidencias.';
+  //document.getElementById('contador').innerHTML = contador + ' concidencias.';
   window.scrollTo(0, 0);
   document.getElementById('buscar').focus();
 }
