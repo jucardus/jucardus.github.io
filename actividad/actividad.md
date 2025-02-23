@@ -6,6 +6,10 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-2-21
 
+* Ahora la subpágina de [Busca](../busca/busca.md) hace las búsquedas directamente en el contenido de todas las demás subpáginas, haciendo el proceso mucho más efectivo.
+
+### 25-2-21
+
 * Se ha cambiado la ruta de directorios a `/traducciones/charlie/charlie.html` para la traducción de [Charlie Codman's Cruise](../traducciones/charlie/charlie.md).
 
 ### 25-2-17
