@@ -26,10 +26,8 @@ function recorrer (documento,lema) {
     .then(contenidoDoc => {
       if(buscar2 (contenidoDoc, lema)) {
         contador = contador + 1;
-        if (contador == 0) {alert ('cero coincidencias');}
-          if (contador == 0) {
-            document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
-          } else {document.getElementById('contador').innerHTML = contador + ' concidencias.';}
+          document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
+          document.getElementById('contador').innerHTML = contador + ' concidencias.';
         modificar(documento, contenidoDoc);
       }    
     });
