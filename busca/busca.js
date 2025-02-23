@@ -27,6 +27,9 @@ function recorrer (documento,lema) {
       if(buscar2 (contenidoDoc, lema)) {
         contador = contador + 1;
           document.getElementById('contador').innerHTML = contador + ' concidencias.';
+          if (contador == 1) {
+            document.getElementById('contador').innerHTML = 'Una concidencia.';
+          }
         modificar(documento, contenidoDoc);
       }    
     });
