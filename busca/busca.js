@@ -4,7 +4,7 @@ function teclaBuscar (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     contador = 0;
-    document.getElementById('contador').innerHTML = '';
+    document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
     document.getElementById('mostrar').innerHTML = '';
     buscar('');
   }
@@ -26,7 +26,6 @@ function recorrer (documento,lema) {
     .then(contenidoDoc => {
       if(buscar2 (contenidoDoc, lema)) {
         contador = contador + 1;
-          document.getElementById('contador').innerHTML = 'Ninguna coincidencia.';
           document.getElementById('contador').innerHTML = contador + ' concidencias.';
         modificar(documento, contenidoDoc);
       }    
