@@ -1,11 +1,11 @@
 ## trial [s.]
 
 * adversidad [f.]
-* aflicción [f.] ~affliction~
+* aflicción [f.] _affliction_
 * causa [f.] ¦Drch¦
 * dificultad [f.]
 * ensayo [m.]
-* intento [m.] ~attempt~
+* intento [m.] _attempt_
 * juicio [m.] ¦Drch¦
 * prueba [f.]
-* tribulación [f.] ~tribulation, ordeal~
+* tribulación [f.] _tribulation, ordeal_
