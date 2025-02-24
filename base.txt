@@ -49,7 +49,7 @@
 197,Reflexiones,,Would you rather be a happy slave or a suffering freeman? Is there an intermediate option to meet your criteria?,,,2025-02-11 20:27
 196,Vocabulario inglés-español,vermin [s.],"vermin [s.] parásito, alimañas ¶ One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. – Metamorphosis; by Franz Kafka. Translated by David Wyllie.",,,2025-02-11 20:23
 195,Apotegmas,,Take it for granted: God cannot forsake you. It's not of his nature. But you can do things that make you forget about him almost forever.,,,2025-02-11 12:32
-194,Enlaces,,música - Johann Sebastian Bach / Variaciones Goldberg,https://youtu.be/i4P6F9-4uq8,,2025-02-10 19:11
+194,Música,,Johann Sebastian Bach – Variaciones Goldberg (BWV 988),https://youtu.be/i4P6F9-4uq8,,2025-02-10 19:11
 193,Citas,,Foreign aid is taking money from poor people in rich countries and giving it to rich people in poor countries. – Ron Paul,,,2025-02-10 12:09
 192,Enlaces,,"glosarios, gramática / Glosario de términos gramaticales",https://rae.es/gtg/,,2025-02-10 09:38
 191,Enlaces,,"diccionarios de sinónimos ingleses / Roget’s Thesaurus, by Peter Mark Roget",https://gutenberg.org/ebooks/22,,2025-02-10 09:33
