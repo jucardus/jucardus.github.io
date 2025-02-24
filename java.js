@@ -67,7 +67,7 @@ function formateo (recibido) {
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
-        var imgn = '<img id="imagenes" src="data:image' + imgn + '" />';
+        var imgn = '<img id="imagenes" src="data:image/png;base64,' + imgn + '"></img>';
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
