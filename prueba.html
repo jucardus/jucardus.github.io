@@ -12,8 +12,9 @@
       var incremento = '';
       function formateo (recibido) {
         for (let i = 1; i < 1000; i++) {
-          var regex = new RegExp(i, 'g');
-          recibido.replaceAll(regex,"łłłłłłłłłłłłł","g");
+          //var regex = new RegExp(i, 'g');
+          //recibido.replaceAll(regex,"łłłłłłłłłłłłł","g");
+          recibido.replace(new RegExp(i, "g"), "łłłłłłłłł");
         }
         var mostrar = recibido
           .replace(/\m/g,'')
