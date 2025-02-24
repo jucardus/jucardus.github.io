@@ -12,7 +12,7 @@ function inicio () {
       let idx3 = 8; direccion = direccion.substring(0, idx3) + str2 + direccion.substring(idx3);
       let idx4 = 11; direccion = direccion.substring(0, idx4) + str3 + direccion.substring(idx4);
     } else {}
-  fetch('base.txt')
+  fetch('= JUCARDUS =_= base =.csv')
   .then(response => response.text())
   .then(textString => {
     formateo(textString);
