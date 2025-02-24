@@ -12,7 +12,8 @@
       function formateo (recibido) {
         for (let i = 1; i < 1000; i++) {
           var regex = new RegExp(i,"g");
-          recibido.match(regex,"łłł" + i + "¶¶¶");
+          var regex = /+i+/gi;
+          recibido.replaceAll(regex,"łłł" + i + "¶¶¶");
         }
         var mostrar = recibido
           .replace(/\m/g,'')
