@@ -6,6 +6,9 @@
   #entrada {
     margin-bottom: 30px;
   }
+  #temas {
+    padding: 6px 0px 3px 0px;
+  }
 }
 a.enlacista:link, a.enlacista:visited, a.enlacista:active {
   color: Green;
