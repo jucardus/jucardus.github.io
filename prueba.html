@@ -14,7 +14,8 @@
         for (let i = 1; i < 1000; i++) {
           //var regex = new RegExp(i, 'g');
           //recibido.replaceAll(regex,"łłłłłłłłłłłłł","g");
-          recibido.replace(new RegExp(i, "g"), "łłłłłłłłł");
+          var numero = i.toString();
+          recibido.replace(new RegExp(numero, "g"), "łłłłłłłłł");
         }
         var mostrar = recibido;
         document.getElementById('mostrar').innerHTML = mostrar;
