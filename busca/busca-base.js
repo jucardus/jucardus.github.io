@@ -1,4 +1,6 @@
 let base = [
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/ingles-espanol/e/expressed-wishes/expressed-wishes.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/ingles-espanol/e/e.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/index.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md',
