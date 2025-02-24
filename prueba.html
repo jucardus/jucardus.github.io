@@ -18,7 +18,7 @@
           //recibido.replace(new RegExp(numero, "g"), "łłłłłłłłł");
           recibido.replace(/3/g,'łłłłłłłłłł');
         }*/
-        recibido.replace(/\n/g,'łłłłłłłłłł');
+        recibido.replace(/\r\n/g,'łłłłłłłłłł');
         var mostrar = recibido;
         document.getElementById('mostrar').innerHTML = mostrar;
       }
