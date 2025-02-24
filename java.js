@@ -82,6 +82,7 @@ function formateo (recibido) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function segunTema (temaRecibido) {
+  if (temaRecibido == 'musica') {temaRecibido = 'música';}
   if (temaRecibido == 'poesia') {temaRecibido = 'poesía';}
   var recibido = texto;
   var contador = 0;
@@ -144,6 +145,7 @@ function subrayar (temaSubrayar) {
     for (let i = 0; i < temasTodos.length; i++) {
       temasTodos[i].style.borderBottom = fondoNoClicados;
     }
+    if (temaSubrayar == 'música') {temaSubrayar = 'musica';}
     if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
   window.history.replaceState({}, document.title, '/' + temaSubrayar);
   document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
@@ -255,7 +257,7 @@ function buscar (recibidoDireccion) {
   } else {
     window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
   }
-  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'poesia'  || lemaOriginal == 'poesía' || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
+  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'musica' || lemaOriginal == 'poesia'  || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
     segunTema (lemaOriginal);
   }
   if (lemaOriginal == 'az') {az ();}
