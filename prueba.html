@@ -12,14 +12,13 @@
       var incremento = '';
       function formateo (recibido) {
         for (let i = 1; i < 1000; i++) {
-          //var regex = new RegExp(i, 'g');
-          //recibido.replace(/3/g,'łłłłłłłłłłłłł');
-          incremento = incremento + '¶' + i;
+          var regex = new RegExp(i, 'g');
+          recibido.replace(regex,"łłłłłłłłłłłłł","g");
         }
         var mostrar = recibido
           .replace(/\m/g,'')
-          .replace(/łłł/g,'\n');
-        document.getElementById('mostrar').innerHTML = incremento;
+          .replace(/łłł/g,'<p>');
+        document.getElementById('mostrar').innerHTML = mostrar;
       }
     </script>
   </body>
