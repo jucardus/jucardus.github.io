@@ -23,6 +23,7 @@ function inicio () {
 
 function formateo (recibido) {
   var recibido = recibido
+    .replace(/\"/g,'')
     .replace(/\n0/g,'łłł0')
     .replace(/\n1/g,'łłł1')
     .replace(/\n2/g,'łłł2')
