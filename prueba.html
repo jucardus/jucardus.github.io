@@ -16,9 +16,7 @@
           //recibido.replaceAll(regex,"łłłłłłłłłłłłł","g");
           recibido.replace(new RegExp(i, "g"), "łłłłłłłłł");
         }
-        var mostrar = recibido
-          .replace(/\m/g,'')
-          .replace(/łłł/g,'<p>');
+        var mostrar = recibido;
         document.getElementById('mostrar').innerHTML = mostrar;
       }
     </script>
