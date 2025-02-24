@@ -3,26 +3,18 @@
     <div id='mostrar'></div>
     <script>
       function inicio () {
-        fetch('base.txt')
+        fetch('= JUCARDUS =_= base =.csv')
           .then(response => response.text())
           .then(textString => {
             formateo(textString);
           });
       }
       function formateo (recibido) {
-        var mostrar = recibido
-          .replace(/\n0/g,'łłł0')
-          .replace(/\n1/g,'łłł1')
-          .replace(/\n2/g,'łłł2')
-          .replace(/\n3/g,'łłł3')
-          .replace(/\n4/g,'łłł4')
-          .replace(/\n5/g,'łłł5')
-          .replace(/\n6/g,'łłł6')
-          .replace(/\n7/g,'łłł7')
-          .replace(/\n8/g,'łłł8')
-          .replace(/\n9/g,'łłł9')
-          .replace(/\n/g,'')
-          .replace(/łłł/g,'<p>');
+        for (let i = 1; i < 1000; i++) {
+          var reg = new RegEx(i, 'g');
+          recibido.replace(reg,'łłł' + i + '');
+        }
+
         document.getElementById('mostrar').innerHTML = mostrar;
       }
     </script>
