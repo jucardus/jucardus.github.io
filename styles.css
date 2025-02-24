@@ -110,6 +110,10 @@ h3.anwoMes:hover {
 hr {
   width: 30%
 }
+#imagenes {
+  text-align: center;
+  width: 97%;
+}
 input {
   border: 2px dotted Silver;
   border-radius: 4px;
