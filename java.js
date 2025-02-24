@@ -69,7 +69,7 @@ function formateo (recibido) {
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
         if (imgn != '') {
-          var imgn = '<div id="imagenes"><img class="imagenes" src="data:image/png;base64,' + imgn + '"></img></div>';
+          var imgn = '<div id="imagenes"><img class="imagenes" src="data:image/png;base64,' + imgn + '" /></div>';
         } else {imgn = '';}
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
