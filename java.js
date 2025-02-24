@@ -22,6 +22,19 @@ function inicio () {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function formateo (recibido) {
+  var recibido = recibido
+    .replace(/\n0/g,'łłł0')
+    .replace(/\n1/g,'łłł1')
+    .replace(/\n2/g,'łłł2')
+    .replace(/\n3/g,'łłł3')
+    .replace(/\n4/g,'łłł4')
+    .replace(/\n5/g,'łłł5')
+    .replace(/\n6/g,'łłł6')
+    .replace(/\n7/g,'łłł7')
+    .replace(/\n8/g,'łłł8')
+    .replace(/\n9/g,'łłł9')
+    .replace(/\n/g,'')
+    .replace(/łłł/g,'\n')
   texto = recibido;
   var contador = 0;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
