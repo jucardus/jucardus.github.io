@@ -35,7 +35,7 @@ function formateo (recibido) {
     .replace(/\n8/g,'łłł8')
     .replace(/\n9/g,'łłł9')
     .replace(/\n/g,'')
-    .replace(/łłł/g,'\n')
+    .replace(/łłł/g,'\n');
   texto = recibido;
   var contador = 0;
   var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
