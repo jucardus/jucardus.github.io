@@ -49,6 +49,9 @@ button#boton {
   font-size: 90%!important;
   margin-left: 10px;
 }
+#comentario {
+  font-size: small;
+}
 #entrada {
   margin-bottom: 35px;
 }
