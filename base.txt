@@ -1,4 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+249,Apotegmas,,"No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.",,,2025-02-24 17:07
+248,Enlaces,,vocabulario español / hipálage,https://dle.rae.es/hipálage,,2025-02-24 17:04
 247,Enlaces,,vocabulario español / hipálage,https://www.retoricas.com/2011/01/ejemplos-de-hipalage.html,,2025-02-24 16:47
 246,Enlaces,,diccionarios inglés / Dictionary.com,https://www.dictionary.com,,2025-02-24 16:45
 245,Enlaces,,vocabulario inglés / munch,https://www.merriam-webster.com/dictionary/munch,,2025-02-24 10:17
@@ -40,7 +42,7 @@
 209,Enlaces,,vocabulario español / sicalipsis,https://dle.rae.es/sicalipsis,,2025-02-13 11:52
 208,Enlaces,,canales en YouTube / Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
 207,Enlaces,,vocabulario español / soliviar,https://dle.rae.es/soliviar,,2025-02-12 18:45
-206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). — [adj.] Persona de ojos azulados.",,,2025-02-12 14:42
+206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). Persona de ojos azulados.",,,2025-02-12 14:42
 205,Vocabulario inglés-español,drool [v.],drool [v.] babear,,,2025-02-12 14:40
 204,Citas,,"Recordad el pasado con gratitud, vivid el presente con entusiasmo y mirad hacia el futuro con confianza. – Juan Pablo II",,,2025-02-12 14:38
 203,Apotegmas,,"Cuando alguien cuestione tus convicciones acerca de Dios, no le respondas con sinsentidos filosóficos, historicistas, teológicos y seudoreligiosos. La solución es ser humilde de verdad y expresar con simpleza la única verdad con fundamento: Es un asunto de fe.",,,2025-02-12 13:14
