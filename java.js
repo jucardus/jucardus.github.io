@@ -54,10 +54,10 @@ function formateo (recibido) {
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
-        if (imgn != '' && imgn?.indexOf('://') >= 0) {
+        if (imgn != '' && imgn?.slice(0,4) == 'http') {
           var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
         }
-        if (imgn != '' && imgn?.indexOf('://') == -1) {
+        if (imgn != '' && imgn?.slice(0,4) != 'http') {
           var imgn = '<div id="comentario">' + imgn + '</div>';
         }
       var fch = linea[6];
@@ -122,10 +122,10 @@ function segunTema (temaRecibido) {
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
-        if (imgn != '' && imgn?.indexOf('://') >= 0) {
+        if (imgn != '' && imgn?.slice(0,4) == 'http') {
           var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
         }
-        if (imgn != '' && imgn?.indexOf('://') == -1) {
+        if (imgn != '' && imgn?.slice(0,4) != 'http') {
           var imgn = '<div id="comentario">' + imgn + '</div>';
         }
       var fch = linea[6];
@@ -233,10 +233,10 @@ function buscar (recibidoDireccion) {
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
         var imgn = linea[5];
-          if (imgn != '' && imgn?.indexOf('://') >= 0) {
+          if (imgn != '' && imgn?.slice(0,4) == 'http') {
             var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
           }
-          if (imgn != '' && imgn?.indexOf('://') == -1) {
+          if (imgn != '' && imgn?.slice(0,4) != 'http') {
             var imgn = '<div id="comentario">' + imgn + '</div>';
           }
         var fch = linea[6];
@@ -325,10 +325,10 @@ function mostrarUnico (lema) {
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
         var imgn = linea[5];
-          if (imgn != '' && imgn?.indexOf('://') >= 0) {
+          if (imgn != '' && imgn?.slice(0,4) == 'http') {
             var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
           }
-          if (imgn != '' && imgn?.indexOf('://') == -1) {
+          if (imgn != '' && imgn?.slice(0,4) != 'http') {
             var imgn = '<div id="comentario">' + imgn + '</div>';
           }
         var fch = linea[6];
@@ -572,10 +572,10 @@ function buscarArchivo (fechaRecibida) {
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
         var imgn = linea[5];
-          if (imgn != '' && imgn?.indexOf('://') >= 0) {
+          if (imgn != '' && imgn?.slice(0,4) == 'http') {
             var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
           }
-          if (imgn != '' && imgn?.indexOf('://') == -1) {
+          if (imgn != '' && imgn?.slice(0,4) != 'http') {
             var imgn = '<div id="comentario">' + imgn + '</div>';
           }
         var fch = linea[6];
