@@ -1,4 +1,5 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+250,Diario,,"He hecho los cambios de programación necesarios para incluir imágenes en el sitio, en la parte inferior de cualquiera de las entradas. Es una función muy necesaria.",,,2025-02-24 21:00
 249,Apotegmas,,"No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.",,,2025-02-24 17:07
 248,Enlaces,,vocabulario español / hipálage,https://dle.rae.es/hipálage,,2025-02-24 17:04
 247,Enlaces,,vocabulario español / hipálage,https://www.retoricas.com/2011/01/ejemplos-de-hipalage.html,,2025-02-24 16:47
