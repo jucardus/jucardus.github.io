@@ -54,11 +54,12 @@ function formateo (recibido) {
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
-        /*
-        if (imgn != '') {
-          var imgn = '<div id="imagenes"><img class="imagenes" src="data:image/png;base64,' + imgn + '" /></div>';
-        } else {imgn = '';}
-        */
+        if (imgn != '' && imgn?.indexOf('://') >= 0) {
+          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
+        }
+        if (imgn != '' && imgn?.indexOf('://') == -1) {
+          var imgn = '<div id="comentario">' + imgn + '</div>';
+        }
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
