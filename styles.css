@@ -51,6 +51,7 @@ button#boton {
 }
 #comentario {
   font-size: small;
+  padding: 0px 5px 0px 5px;
 }
 #entrada {
   margin-bottom: 35px;
