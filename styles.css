@@ -45,6 +45,9 @@ button#boton {
   padding: 5px;
   display: none;
 }
+#cabecera {
+  font-size: 110%;
+}
 #clasificacion {
   font-size: 90%!important;
   margin-left: 10px;
@@ -110,9 +113,6 @@ h3.anwoMes {
 h3.anwoMes:hover {
   color: OrangeRed;
   cursor: pointer;
-}
-header {
-  font-size: 110%;
 }
 hr {
   width: 30%
