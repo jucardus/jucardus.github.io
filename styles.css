@@ -6,6 +6,9 @@
   #entrada {
     margin-bottom: 30px;
   }
+  .imagenes {
+    width: 98%;
+  }
   #temas {
     /*padding: 6px 0px 3px 0px;*/
   }
@@ -115,9 +118,11 @@ h3.anwoMes:hover {
 hr {
   width: 30%
 }
+.imagenes {
+  width: 98%;
+}
 #imagenes {
   text-align: center;
-  width: 98%;
 }
 input {
   border: 2px dotted Silver;
