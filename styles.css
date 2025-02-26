@@ -6,6 +6,9 @@
   #entrada {
     margin-bottom: 30px;
   }
+  html, body {
+    overflow-x: hidden;
+  }
   .imagenes {
     width: 99%;
   }
