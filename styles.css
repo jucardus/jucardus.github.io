@@ -111,6 +111,9 @@ h3.anwoMes:hover {
   color: OrangeRed;
   cursor: pointer;
 }
+header {
+  font-size: 110%;
+}
 hr {
   width: 30%
 }
