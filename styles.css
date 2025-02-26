@@ -119,6 +119,7 @@ hr {
   width: 30%
 }
 .imagenes {
+  border-radius: 8px;
   width: 98%;
 }
 #imagenes {
