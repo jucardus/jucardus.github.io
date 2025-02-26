@@ -22,7 +22,7 @@
     <title>JUCARDUS.COM</title>
   </head>
 <body onload='inicio ()'>
-  <header>
+  <div id='cabecera'>
     <h1>Jucardus.com</h1>
     <div id='temas'>
       <span class='temas' id='inicio' onclick='inicio ()'>Inicio</span> •
@@ -40,7 +40,7 @@
       <span class='temas' id='archivo' onclick='archivo ("archivo")'>Archivo</span> ·
       <span class='temas' id='lupa' onclick='mostrarBuscador ()'>🔍</span>
     </div>
-  </header>
+  </div>
   <div id="buscador">
     <form method="post">
       <input type="text" autofocus="on" autocomplete="off" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
