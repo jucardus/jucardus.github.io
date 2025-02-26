@@ -95,7 +95,7 @@ function imagenes (imgn) {
   return imgn;
 }
 
-/ ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function segunTema (temaRecibido) {
   if (temaRecibido == 'musica') {temaRecibido = 'música';}
