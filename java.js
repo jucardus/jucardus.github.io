@@ -89,7 +89,7 @@ function imagenes (imgn) {
   if (imgn != '' && imgn?.slice(0,4) != 'http' && imgn?.indexOf('data:image/jpeg.base64,') == -1) {
     var imgn = '<div id="comentario">' + imgn + '</div>';
   }
-  if (imgn != '' && imgn?.slice(0,4) != 'http' && imgn?indexOf('data:image/jpeg.base64,') >= 0) {
+  if (imgn != '' && imgn?.slice(0,4) != 'http' && imgn?.indexOf('data:image/jpeg.base64,') >= 0) {
     var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
   }
   return imgn;
