@@ -82,7 +82,7 @@ function formateo (recibido) {
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
-function imagenes (imgn);
+function imagenes (imgn) {
   if (imgn != '' && imgn?.slice(0,4) == 'http') {
     var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
   }
