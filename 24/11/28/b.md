@@ -1,0 +1,3 @@
+El relativismo dogmático te pone en la...
+2 · Apotegmas · 24-11-28 11:55
+El relativismo dogmático te pone en la posición más manipulable y débil, a la vez que te hace creer que has sido liberado. Un prodigio.
