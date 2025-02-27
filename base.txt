@@ -1,5 +1,8 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
-252,Enlaces,,biografías / Johann Sebastian Bach,https://es.wikipedia.org/wiki/Johann_Sebastian_Bach,https://upload.wikimedia.org/wikipedia/commons/6/6a/Johann_Sebastian_Bach.jpg,2025-02-26 17:03
+255,Apotegmas,,"Te parece que Dios está lejos porque nunca has sabido dónde buscarlo y porque tienes una idea equivocada de él. Dios ya es, no inventes uno.",,,2025-02-27 09:39
+254,Reflexiones,,"No es curioso, pero en todos los países que lo tienen, el populismo convierte la delicuencia en una causa social.",,,2025-02-27 09:36
+253,Apotegmas,,No llamemos identidad a la ignorancia.,,,2025-02-27 09:35
+252,Enlaces,,biografías / Johann Sebastian Bach,https://es.wikipedia.org/wiki/Johann_Sebastian_Bach,,2025-02-26 17:03
 251,Música,,"Johann Sebastian Bach – Complete Flute Sonatas - Emmanuel Pahud, Trevor Pinnock",https://www.youtube.com/watch?v=com5gPoZ8sI,,2025-02-26 16:59
 250,Diario,,"He hecho los cambios de programación necesarios para incluir imágenes en el sitio, en la parte inferior de cualquiera de las entradas. Es una función muy necesaria.",,,2025-02-24 21:00
 249,Apotegmas,,"No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.",,,2025-02-24 17:07
