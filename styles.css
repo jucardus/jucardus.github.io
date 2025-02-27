@@ -215,6 +215,6 @@ li {
   top: 0;
   z-index: 1;
 }
-ul {
+ul, ol {
   margin-left: -15px;
 }
