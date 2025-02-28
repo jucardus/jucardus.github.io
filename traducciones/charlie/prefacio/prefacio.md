@@ -2,8 +2,7 @@
 
 [inicio](../../../index.md) \| [índice](../charlie.md) \| [actividad](../../../actividad/actividad.md) \| [A-Z](../../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Traducción%20al%20español%20del%20prefacio%20de%20Charlie%20Codman's%20Cruise.%20→%20jucardus.github.io/traducciones/charlie/prefacio/prefacio.html%0A%0A@jucardus%20~%20%23) \| [🔍](../../../busca/busca.html)
 
-> [!WARNING]
-> Subpágina en construcción.
+> **¡ATENCIÓN!** Subpágina en construcción.
 
 <a name="a"></a>In deference to <sup>[en consideración a](../../../diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md)</sup> the expressed wishes <sup>deseos manifiestos</sup> of some of his young friends, the author has essayed <sup>intentar</sup> a story of the sea, <sup>historia de mar</sup> and now presents "Charlie Codman's Cruise," as the third volume of the Campaign Series. It will be found more adventurous <sup>temerario</sup> than its predecessors, and the trials <sup>adversidad</sup> which Charlie is called upon <sup>llamar</sup> to encounter <sup>afrontar</sup> are of a severer character than befell <sup>acaecer</sup> Frank Frost or Paul Prescott. But it will be found that they were met <sup>enfrentar</sup> with the same manly spirit, <sup>espíritu de valentía</sup> and a like <sup>semejante</sup> determination to be faithful to duty at all hazards. <sup>a todo trance</sup>
 
