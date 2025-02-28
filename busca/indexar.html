@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  </head>
+
+  <body onload='indexar ()'>
+    <div id="mostrar"></div>
+  </body>
+
+  <script src="busca-base.js"></script>
+
+  <script>
+    let lema = '/';
+    function indexar () {
+      var array = base;
+      for (let i = 0; i < array.length; i++) {
+        var documento = array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main','..');
+        recorrer (documento,lema);
+      }
+    }
+    
+    function recorrer (documento,lema) {
+      fetch(documento)
+        .then(response => response.text())
+        .then(contenidoDoc => {
+          if(buscar2 (contenidoDoc, lema)) {
+            contador = contador + 1;
+              document.getElementById('contador').innerHTML = contador + ' concidencias.';
+              if (contador == 1) {
+                document.getElementById('contador').innerHTML = 'Una concidencia.';
+              }
+            modificar(documento, contenidoDoc);
+          }    
+        });
+    }
+    
+    function buscar2 (contenidoDoc,lema) {
+      if (contenidoDoc.toUpperCase().indexOf(lema.toUpperCase()) >= 0) return true;
+      return false;
+    }
+    
+    function modificar (documento, contenidoDoc) {
+      var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
+      let enlace = '<a class="enlaces" href="' + documento.replace('.md','.html') + '">' + titulo + "</a><br />";
+      document.getElementById('mostrar').innerHTML += enlace;
+      window.scrollTo(0, 0);
+      document.getElementById('buscar').focus();
+    }
+        
+  </script>
+</html>
