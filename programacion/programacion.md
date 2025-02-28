@@ -8,7 +8,7 @@ Líneas básicas de programación para Bash, Blogger, CSS, Firebase, Google Apps
 
 ### Índice
 
-* Bash
+* [Bash](./bash/bash.md)
 * Blogger
 * CSS
 * Firebase
