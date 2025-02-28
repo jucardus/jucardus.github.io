@@ -57,11 +57,7 @@
         .replace(/Ü/g,'U')
         .replace(/Ñ/g,'N');
       let enlace = '<!--' + orden + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
-        enlace = enlace.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
-      /*
-        enviar = [...new Set(enviar)]; // eliminar elementos repetidos
-        enviar = enviar.filter(Boolean); // eliminar elementos vaciwos
-        */
+        enlace = enlace.sort((a, b) => a.localeCompare(b));
       document.getElementById('mostrar').innerHTML += enlace;
       window.scrollTo(0, 0);
     }
