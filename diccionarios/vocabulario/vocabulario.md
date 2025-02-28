@@ -4,15 +4,6 @@
 
 > **¡ADVERTENCIA!** Esta página está en construcción.
 
-### Índice del vocabulario
-
-#### =A= &nbsp; =B= &nbsp; =C= &nbsp; =D= &nbsp; =E=
-#### =F= &nbsp; =G= &nbsp; =H= &nbsp; =I= &nbsp; =J=
-#### =K= &nbsp; =L= &nbsp; =M= &nbsp; =N= &nbsp; =Ñ=
-#### =O= &nbsp; =P= &nbsp; =Q= &nbsp; =R= &nbsp; =S=
-#### =T= &nbsp; =U= &nbsp; =V= &nbsp; =W= &nbsp; =X=
-#### =Y= &nbsp; =Z=
-
 La siguiente lista contiene tanto definiciones o significados, como sinónimos ([sin.]) de palabra españolas, y en algunos casos frases de ejemplo.
 
 ### atisbo [sin.]
