@@ -1,9 +1,10 @@
 ## Índice alfabético
+
 [inicio](../index.md) \| [índice](../index.md) \| [actividad](../actividad/actividad.md) \| [A-Z](../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Índice%20alfabético%20de%20todas%20las%20subpáginas%20y%20entradas%20en%20Jucardus.%20→%20jucardus.github.io/indices/alfabetico.html%0A%0A@jucardus%20~%20%23) \| [🔍](../busca/busca.html)
 
 Una lista completa de todas las subpáginas y subtítulos principales de este sitio. Para hacer búsquedas pormenorizadas en todo el contenido del sitio, usa la [página de Busca](../busca/busca.html).
 
-### Subpáginas principales
+### Todas las subpáginas
 
 * [Actividad reciente](../actividad/actividad.html)
 * [Actualización de Google Chrome en Linux Mint con Bash](../programacion/bash/adgcelm/adgcelm.html)
@@ -25,5 +26,5 @@ Una lista completa de todas las subpáginas y subtítulos principales de este si
 * [Programación básica](../programacion/programacion.html)
 * [Traducciones al español](../traducciones/traducciones.html)
 * [Vocabulario español](../diccionarios/vocabulario/vocabulario.html)
- 
+
 <p align="center">◆</p>
