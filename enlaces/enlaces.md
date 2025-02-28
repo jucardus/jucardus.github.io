@@ -5,9 +5,9 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 
 * [Diccionarios](#diccionarios)
 * [GitHub](#github)
+* [Música clásica]()
 * [Películas](#peliculas)
 
-<a name='diccionarios'></a>
 ### Diccionarios
 
 * alemán-español - Langenscheidt Deutsch-Spanisch Wörterbuch → [de.langenscheidt.com](https://de.langenscheidt.com/deutsch-spanisch/)
@@ -23,7 +23,6 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * inglés-español - Lingue → [www.linguee.es](https://www.linguee.es/espanol-ingles/)
 * nombres - Hitchcock's Bible Names Dictionary → [www.sjgames.com](http://www.sjgames.com/in-nomine/articles/biblenames.txt)
 
-<a name='github'></a>
 ### GitHub
 
 * Cómo centrar una imagen en un documento *.md → [stackoverflow.com](https://stackoverflow.com/questions/255170/markdown-and-image-alignment)
@@ -32,7 +31,10 @@ Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * Quickstart for writing on GitHub → [docs.github.com](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)
 * Tablas en documentos *.md → [github.com](https://github.com/github/docs/blob/main/content/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables.md)
 
-<a name='peliculas'></a>
+### Música clásica
+
+* Numerosos enlaces clasificados por autor en [Música clásica](../musica/musica.md).
+
 ### Películas
 
 * [Absolutely Anything](https://youtu.be/NY9-vJY6Ehc)
