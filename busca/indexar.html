@@ -62,7 +62,7 @@
         enviar = [...new Set(enviar)]; // eliminar elementos repetidos
         enviar = enviar.filter(Boolean); // eliminar elementos vaciwos
         */
-      document.getElementById('mostrar').innerHTML += enlace;
+      document.getElementById('mostrar').innerHTML += enlace.sort((a, b) => a.localeCompare(b));
       window.scrollTo(0, 0);
     }
         
