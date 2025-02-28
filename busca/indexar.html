@@ -14,7 +14,9 @@
 
   <script>
     let lema = '/';
+    let todos = [];
     function indexar () {
+      todos = '';
       var array = base;
         array = array.sort((a, b) => a.localeCompare(b));
       for (let i = 0; i < array.length; i++) {
@@ -37,7 +39,7 @@
       if (contenidoDoc.toUpperCase().indexOf(lema.toUpperCase()) >= 0) return true;
       return false;
     }
-    
+
     function modificar (documento, contenidoDoc) {
       var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
       var orden = titulo.toUpperCase()
@@ -58,7 +60,8 @@
         .replace(/Ü/g,'U')
         .replace(/Ñ/g,'N');
       let enlace = '<!--' + orden + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
-      document.getElementById('mostrar').innerHTML += enlace;
+      todos.push(enlace);
+      document.getElementById('mostrar').innerHTML = todos;
       window.scrollTo(0, 0);
     }
         
