@@ -4,6 +4,10 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+### 25-2-28
+
+* Creación de la subpágina [Música clásica](../musica/musica.md), con música clasificada por autor.
+
 ### 25-2-22
 
 * Ahora la subpágina de [Busca](../busca/busca.html) realiza las búsquedas directamente en el contenido de todas las demás subpáginas, haciendo el proceso mucho más efectivo.
