@@ -16,6 +16,7 @@
     let lema = '/';
     function indexar () {
       var array = base;
+        array = array.sort((a, b) => a.localeCompare(b));
       for (let i = 0; i < array.length; i++) {
         var documento = array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main','..');
         recorrer (documento,lema);
@@ -57,7 +58,6 @@
         .replace(/Ü/g,'U')
         .replace(/Ñ/g,'N');
       let enlace = '<!--' + orden + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
-        enlace = enlace.sort((a, b) => a.localeCompare(b));
       document.getElementById('mostrar').innerHTML += enlace;
       window.scrollTo(0, 0);
     }
