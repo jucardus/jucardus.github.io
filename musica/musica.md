@@ -4,7 +4,7 @@
 
 ### Índice de autores
 
-* [Johann Sebastian Bach](/jsbach/jsbach.md)
+* [Johann Sebastian Bach](./jsbach/jsbach.md)
 * Ludwig Van Beethoven
 * Wolfgang Amadeus Mozart
 * ...
