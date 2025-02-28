@@ -1,4 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+259,Vocabulario español,tal vez [loc.],tal vez [loc.] De vez en cuando; en rara ocasión; tal cual vez.,,,2025-02-28 10:40
+258,Apotegmas,,"No pierdas el tiempo ni te entretengas con nada en los cielos ni en la tierra, ve directo con Dios. La vida es eterna, pero tu paso por ella no.",,,2025-02-28 10:31
 257,Apotegmas,,"La santidad para las aves del cielo, el sacrificio de la carne para los hijos del hombre.",,,2025-02-27 19:10
 256,Citas,,The urge to save humanity is almost always a false front for the urge to control it. – H. L. Mencken,,,2025-02-27 11:16
 255,Apotegmas,,"Te parece que Dios está lejos porque nunca has sabido dónde buscarlo y porque tienes una idea equivocada de él. Dios ya es, no inventes uno.",,,2025-02-27 09:39
