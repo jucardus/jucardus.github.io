@@ -7,7 +7,7 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 ### Contenido
 
 * [**Actividad reciente**](/actividad/actividad.md) - Todas las adiciones, modificaciones y correcciones en el sitio, en orden descendente.
-* [**Busca en el sitio**](/busca/busca.html) - Búsqueda entre todas las subpáginas de este sitio.
+* [**Busca en el sitio**](/busca/busca.html) - Búsqueda entre todas las subpáginas de este sitio y su contenido.
 * [**Diccionarios todos**](/diccionarios/diccionarios.md) - Diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe.
 * [**Enlaces muchos**](/enlaces/enlaces.md) - Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * [**Escritos varios**](/escritos/escritos.md) - Apotegmas, citas, cuentos, reflexiones y más.
