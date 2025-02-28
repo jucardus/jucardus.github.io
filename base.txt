@@ -1,4 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+257,Apotegmas,,"La santidad para las aves del cielo, el sacrificio de la carne para los hijos del hombre.",,,2025-02-27 19:10
+256,Citas,,The urge to save humanity is almost always a false front for the urge to control it. – H. L. Mencken,,,2025-02-27 11:16
 255,Apotegmas,,"Te parece que Dios está lejos porque nunca has sabido dónde buscarlo y porque tienes una idea equivocada de él. Dios ya es, no inventes uno.",,,2025-02-27 09:39
 254,Reflexiones,,"No es curioso, pero en todos los países que lo tienen, el populismo convierte la delicuencia en una causa social.",,,2025-02-27 09:36
 253,Apotegmas,,No llamemos identidad a la ignorancia.,,,2025-02-27 09:35
