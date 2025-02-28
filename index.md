@@ -12,7 +12,7 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 * [**Enlaces muchos**](/enlaces/enlaces.md) - Enlaces varios de cosas muchas, clasificados por temas y subtemas.
 * [**Escritos varios**](/escritos/escritos.md) - Apotegmas, citas, cuentos, reflexiones y más.
 * [**Índice alfabético**](/indices/alfabetico.md) - Casi todas las subpáginas del sitio, ordenadas alfabéticamente.
-* **Música clásica** - Clasificada por autor, con las mejores interpretaciones.
+* [**Música clásica**](/musica/musica.md) - Clasificada por autor, con las mejores interpretaciones.
 * [**Programación básica**](/programacion/programacion.md) - Bash, Google Apps Script, HTML, CSS, Firebase, JavaScript, Blogger, Linux Mint.
 * [**Traducciones al español**](/traducciones/traducciones.md) - Textos vertidos al español, con equivalencias en contexto y traducción párrafo por párrafo.
 
