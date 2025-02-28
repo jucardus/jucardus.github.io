@@ -6,6 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-2-28
 
+* Dos enlaces agregados a la subpágina de [Johann Sebastian Bach](../musica/jsbach/jsbach.md) en la sección de _Música clásica_.
 * Creación de la subpágina [Música clásica](../musica/musica.md), con música clasificada por autor.
 
 ### 25-2-22
