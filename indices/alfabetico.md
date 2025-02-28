@@ -39,5 +39,28 @@ Una lista completa de todas las subpáginas y subtítulos principales de este si
 * [Repositorio](https://jucardus.github.io/repo.html)
 * [Traducciones al español](../traducciones/traducciones.md)
 * [Vocabulario español](../diccionarios/vocabulario/vocabulario.md)
+ 
+### Prueba
+
+* [Actividad reciente](../actividad/actividad.html)
+* [Actualización de Google Chrome en Linux Mint con Bash](../programacion/bash/adgcelm/adgcelm.html)
+* [Apotegmas](../escritos/apotegmas/apotegmas.html)
+* [Bash - Bourne-Again Shell](../programacion/bash/bash.html)
+* [Charlie Codman's Cruise, a Story for Boys](../traducciones/charlie/charlie.html)
+* [Citas](../escritos/citas/citas.html)
+* [Diccionario inglés-español](../diccionarios/ingles-espanol/ingles-espanol.html)
+* [Diccionario inglés-español - I](../diccionarios/ingles-espanol/i/i.html)
+* [Diccionarios todos](../diccionarios/diccionarios.html)
+* [Enlaces muchos](../enlaces/enlaces.html)
+* [Escritos varios](../escritos/escritos.html)
+* [in deference to [loc.]](../diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.html)
+* [Índice alfabético](../indices/alfabetico.html)
+* [Inicio](../index.html)
+* [Johann Sebastian Bach](../musica/jsbach/jsbach.html)
+* [Música clásica](../musica/musica.html)
+* [Preface](../traducciones/charlie/prefacio/prefacio.html)
+* [Programación básica](../programacion/programacion.html)
+* [Traducciones al español](../traducciones/traducciones.html)
+* [Vocabulario español](../diccionarios/vocabulario/vocabulario.html)
 
 <p align="center">◆</p>
