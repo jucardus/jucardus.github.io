@@ -24,7 +24,7 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 
 ### Autor y contacto
 
-* **Autor:** Julio Cárdenas Pelizzari
+* **Autor:** Julio Cárdenas Pelizzari ©
 * **Contacto:** [qr.jucardus.com](https://qr.jucardus.com)
 * **Repositorio:** [r.jucardus.com](https://r.jucardus.com)
 * **Donaciones:** [pp.jucardus.com](https://pp.jucardus.com)
