@@ -12,9 +12,6 @@
   .imagenes {
     width: 98%;
   }
-  #temas {
-    /*padding: 6px 0px 3px 0px;*/
-  }
 }
 a.enlacista:link, a.enlacista:visited, a.enlacista:active {
   color: Green;
@@ -211,7 +208,7 @@ li {
   line-height: 1.5;
   margin-bottom: 30px;
   padding: 8px 0px 3px 0px;
-  position: sticky;
+  position: sticky!important;
   top: 0;
   z-index: 1;
 }
