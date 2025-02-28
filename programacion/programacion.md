@@ -4,8 +4,6 @@
 
 Líneas básicas de programación para Bash, Blogger, CSS, Firebase, Google Apps Script, HTML, JavaScript y más.
 
-> **¡ADVERTENCIA!** Subpágina en construcción.
-
 ### Índice
 
 * [Bash](./bash/bash.md)
