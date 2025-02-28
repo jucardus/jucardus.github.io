@@ -29,7 +29,6 @@ Mi sitio central, con escritos, enlaces varios, programación, traducciones al e
 * **Repositorio:** [r.jucardus.com](https://r.jucardus.com)
 * **Donaciones:** [pp.jucardus.com](https://pp.jucardus.com)
 * **Invitación a pCloud:** [i.jucardus.com](https://i.jucardus.com)
-* **Facebook:** [fb.jucardus.com](https://fb.jucardus.com)
 * **X Twitter:** [x.jucardus.com](https://x.com/jucardus)
 
 ### Compartir
