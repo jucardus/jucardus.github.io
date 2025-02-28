@@ -63,6 +63,7 @@
         .replace(/Ñ/g,'N');
       let enlace = '<!--' + orden + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
       todos.push(enlace);
+        todos = todos.sort((a, b) => a.localeCompare(b));
       document.getElementById('mostrar').innerHTML = todos;
       window.scrollTo(0, 0);
     }
