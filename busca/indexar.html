@@ -13,9 +13,12 @@
   <script src="busca-base.js"></script>
 
   <script>
+
     let lema = '/';
+    let todos = [];
+
     function indexar () {
-      let todos = [];
+      todos = [];
       var array = base;
         array = array.sort((a, b) => a.localeCompare(b));
       for (let i = 0; i < array.length; i++) {
