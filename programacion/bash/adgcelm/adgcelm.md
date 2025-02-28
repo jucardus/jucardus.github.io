@@ -6,4 +6,6 @@
 sudo apt install google-chrome-stable
 ```
 
+La línea sirve tanto para actualizar como para instalar el navegador Google Chrome en Linux Mint.
+
 <p align="center">◆</p>
