@@ -32,7 +32,7 @@ Una lista completa de todas las subpáginas y subtítulos principales de este si
 * [Índice; en _Traducciones al español_](../traducciones/traducciones.md#índice)
 * [ingles-español ¦ Diccionario](../diccionarios/ingles-espanol/ingles-espanol.md)
 * [Inicio](../index.md)
-* [Johann Sebastian Bach; en _Música clásica_](../musica/jsbach/jsbach.md)
+* [Johann Sebastian Bach](../musica/jsbach/jsbach.md)
 * [Música clásica](../musica/musica.md)
 * [Películas; en _Enlaces muchos_](../enlaces/enlaces.md#películas)
 * [Programación básica](../programacion/programacion.md)
