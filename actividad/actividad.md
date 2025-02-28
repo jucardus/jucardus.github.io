@@ -6,6 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-2-28
 
+* Agregado un enlace a _Música clásica_ en [Enlaces muchos](../enlaces/enlaces.md).
 * Se ha creado la subpágina para [Bash - Bourne-Again Shell](../programacion/bash/bash.md) dentro de la sección _Programación básica_, y se ha agregado [Actualización de Google Chrome en Linux Mint con Bash](../programacion/bash/adgcelm/adgcelm.md).
 * Dos enlaces agregados a la subpágina de [Johann Sebastian Bach](../musica/jsbach/jsbach.md), para iniciar la sección de _Música clásica_.
 * Creación de la subpágina [Música clásica](../musica/musica.md), con música clasificada por autor.
