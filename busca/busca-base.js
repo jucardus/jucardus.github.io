@@ -1,4 +1,5 @@
 let base = [
+  'https://github.com/jucardus/jucardus.github.io/blob/main/programacion/bash/adgcelm/adgcelm.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/programacion/bash/bash.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/musica/jsbach/jsbach.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/musica/musica.md',
