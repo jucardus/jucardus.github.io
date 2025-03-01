@@ -4,9 +4,13 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+### 25-3-1
+
+* Se agregó [atisbo](../diccionarios/vocabulario/vocabulario.md) al _Vocabulario español_.
+
 ### 25-2-28
 
-* Ahora, el [Índice alfabético](../indices/alfabetico.md) es exhaustivo, enumerando no sólo los títulos de todas las subpáginas, sino también las palabras intermedias como lemas para engrosar la lista.
+* Ahora, el [Índice alfabético](../indices/alfabetico.md) es exhaustivo, enumerando no sólo los títulos de todas las subpáginas, sino también las palabras intermedias como lemas para engrosar la lista. Lo siguiente será mejorarlo mediante programación, para que la lista se actualice automáticamente.
 * Agregado un enlace a _Música clásica_ en [Enlaces muchos](../enlaces/enlaces.md).
 * Se ha creado la subpágina para [Bash - Bourne-Again Shell](../programacion/bash/bash.md) dentro de la sección _Programación básica_, y se ha agregado [Actualización de Google Chrome en Linux Mint con Bash](../programacion/bash/adgcelm/adgcelm.md).
 * Dos enlaces agregados a la subpágina de [Johann Sebastian Bach](../musica/jsbach/jsbach.md), para iniciar la sección de _Música clásica_.
