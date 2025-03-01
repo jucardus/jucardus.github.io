@@ -66,9 +66,24 @@
         .replace(/Ú/g,'U')
         .replace(/Ü/g,'U')
         .replace(/Ñ/g,'N');
-      let enlace = '<!--' + orden + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
-      todos.push(enlace);
-        todos = todos.sort((a, b) => a.localeCompare(b));
+      var preArray = titulo
+        .replace(/,/g,'')
+        .replace(/\//g,' ')
+        .replace(/«/g,'')
+        .replace(/»/g,'')
+        .replace(/\?/g,'')
+        .replace(/\¿/g,'')
+        .replace(/\¡/g,'')
+        .replace(/\!/g,'')
+        .replace(/;/g,'')
+        .replace(/\:/g,'')
+        .replace(/ /g,',');
+      var arrayTitulo = preArray.split(',');
+      for (let i = 0; i < arrayTitulo.length; i++) {
+        let enlace = '<!--' + arrayTitulo[i] + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
+        todos.push(enlace);
+          todos = todos.sort((a, b) => a.localeCompare(b));
+      }
       document.getElementById('mostrar').innerHTML = todos.join('');
       window.scrollTo(0, 0);
     }
