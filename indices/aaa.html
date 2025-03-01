@@ -162,7 +162,7 @@
           .replace(/Ú/g,'U')
           .replace(/Ü/g,'U')
           .replace(/Ñ/g,'N');
-        let enlace = '<li><!--' + orden + '-->* [**' + arrayTitulo[i] + '** ¦ ' + titulo + '](' + documento.replace('.md','.html') + ')</li>';
+        let enlace = '<li><!--' + orden + '--><a href="' + documento.replace('.md','.html') + '"><b>' + arrayTitulo[i] + '</b> ¦ ' + titulo + '</a></li>';
         todos.push(enlace);
           todos = todos.sort((a, b) => a.localeCompare(b));
       }
