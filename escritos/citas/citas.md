@@ -1,6 +1,6 @@
 ## Citas
 
-[inicio](../../index.md) \| [índice](../../escritos/escritos.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Citas,%20aformismos,%20frases%20célebres,%20en%20Jucardus.%20→%20jucardus.github.io/escritos/citas/citas.html%0A%0A%23cts_jucardus) \| [🔍](../../busca/busca.html)
+[inicio](../../index.md) \| [índice](../../escritos/escritos.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.html) \| [compartir](https://x.com/intent/tweet?text=Citas,%20aformismos,%20frases%20célebres,%20en%20Jucardus.%20→%20jucardus.github.io/escritos/citas/citas.html%0A%0A%23cts_jucardus) \| [🔍](../../busca/busca.html)
 
 Las citas más recientes se muestran al inicio de la lista. Se incluyen frases célebres, apotegmas, aforismos, refranes, proverbios y máximas.
 
