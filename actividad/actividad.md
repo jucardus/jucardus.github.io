@@ -6,7 +6,8 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-1
 
-* Se agregó [atisbo](../diccionarios/vocabulario/vocabulario.md) al _Vocabulario español_.
+* Se agregó [enconado](../diccionarios/vocabulario/enconado/enconado.md) al _Vocabulario español_.
+* Se agregó [atisbo](../diccionarios/vocabulario/atisbo/atisbo.md) al _Vocabulario español_.
 
 ### 25-2-28
 
