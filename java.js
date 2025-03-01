@@ -128,6 +128,9 @@ function segunTema (temaRecibido) {
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+        if (contador >= 11) {
+          var cntnd = '';
+        }
       var imgn = linea[5];
         imgn = imagenes (imgn);
       var fch = linea[6];
@@ -137,7 +140,6 @@ function segunTema (temaRecibido) {
       if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
         resultado.push(nuevaLinea);
         contador = contador + 1;
-          if (contador == 10) {break;}
       }
   }
   var enviar = resultado.join('<p>');
