@@ -1,4 +1,11 @@
 let base = [
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/lloviznar/lloviznar.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/llovizna/llovizna.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/improbo/improbo.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/garzo/garzo.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/extemporaneo/extemporaneo.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/enconar/enconar.md',
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/enconado/enconado.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/atisbo/atisbo.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/programacion/bash/adgcelm/adgcelm.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/programacion/bash/bash.md',
