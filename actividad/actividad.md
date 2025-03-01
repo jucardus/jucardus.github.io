@@ -6,6 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-1
 
+* Se agregó algunos sinónimos para [extemporáneo](../diccionarios/vocabulario/extemporaneo/extemporaneo.md) al _Vocabulario español_.
 * Se agregó [enconar](../diccionarios/vocabulario/enconar/enconar.md) al _Vocabulario español_.
 * Se agregó [enconado](../diccionarios/vocabulario/enconado/enconado.md) al _Vocabulario español_.
 * Se agregó [atisbo](../diccionarios/vocabulario/atisbo/atisbo.md) al _Vocabulario español_.
