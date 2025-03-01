@@ -42,7 +42,7 @@ function buscar2 (contenidoDoc,lema) {
 
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-  let enlace = '<b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.replace('.md','').replace(/\//g,' / ') + "</a><br />";
+  let enlace = '<b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.slice(0,documento.lastIndexOf('/'))replace('.md','').replace(/\//g,' / ') + "</a><br />";
   document.getElementById('buscar').value = '';
   document.getElementById('mostrar').innerHTML += enlace;
   window.scrollTo(0, 0);
