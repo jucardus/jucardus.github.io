@@ -1,6 +1,6 @@
 ## Vocabulario español
 
-[inicio](../../index.md) \| [índice](../../diccionarios/diccionarios.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.md) \| [compartir](https://x.com/intent/tweet?text=Vocabulario%20español%20en%20Jucardus.%20→%20jucardus.github.io/diccionarios/vocabulario/vocabulario.html%0A%0A%23vcblr_jucardus) \| [🔍](../../busca/busca.html)
+[inicio](../../index.md) \| [índice](../../diccionarios/diccionarios.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.html) \| [compartir](https://x.com/intent/tweet?text=Vocabulario%20español%20en%20Jucardus.%20→%20jucardus.github.io/diccionarios/vocabulario/vocabulario.html%0A%0A%23vcblr_jucardus) \| [🔍](../../busca/busca.html)
 
 La siguiente lista contiene tanto definiciones o significados, como sinónimos ([sin.]) de palabra españolas, y en algunos casos frases de ejemplo.
 
