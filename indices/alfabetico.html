@@ -65,6 +65,9 @@
     ol, ul {
       margin-left: -10px!important;
     }
+    .rutas {
+      color: Silver;
+    }
   </style>
 </head>
 
@@ -162,7 +165,7 @@
           .replace(/Ú/g,'U')
           .replace(/Ü/g,'U')
           .replace(/Ñ/g,'N');
-        let enlace = '<li><!--' + orden + '--><a href="' + documento.replace('.md','.html') + '"><b>' + arrayTitulo[i] + '</b> ¦ ' + titulo + '</a> ' + documento + '</li>';
+        let enlace = '<li><!--' + orden + '--><a href="' + documento.replace('.md','.html') + '"><b>' + arrayTitulo[i] + '</b> ¦ ' + titulo + '</a> → <span class="rutas">' + documento.replace(/\.md/g,'') + '</span></li>';
         todos.push(enlace);
           todos = todos.sort((a, b) => a.localeCompare(b));
       }
