@@ -128,11 +128,14 @@ function segunTema (temaRecibido) {
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-        if (contador >= 11) {
+        if (contador >= 6) {
           var cntnd = '';
         }
       var imgn = linea[5];
         imgn = imagenes (imgn);
+        if (contador >= 6) {
+          var imgn = '';
+        }
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
