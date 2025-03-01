@@ -1,4 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+262,Enlaces,,vocabulario español / ganga,https://dle.rae.es/ganga,,2025-03-01 17:45
+261,Enlaces,,vocabulario español / sicalipsis,https://dle.rae.es/sicalipsis,,2025-03-01 17:37
 260,Apotegmas,,Dile a Dios lo que tiene que hacer y él te dará lo que necesitas.,,,2025-02-28 12:48
 259,Vocabulario español,tal vez [loc.],tal vez [loc.] De vez en cuando; en rara ocasión; tal cual vez.,,,2025-02-28 10:40
 258,Apotegmas,,"No pierdas el tiempo ni te entretengas con nada en los cielos ni en la tierra, ve directo con Dios. La vida es eterna, pero tu paso por ella no.",,,2025-02-28 10:31
@@ -43,7 +45,7 @@
 219,Vocabulario inglés-español,cast iron [s.c.],cast iron [s.c.] hierro fundido,,,2025-02-13 22:08
 218,Vocabulario inglés-español,wrought iron [s.c.],wrought iron [s.c.] hierro forjado,,,2025-02-13 22:07
 217,Enlaces,,canales en YouTube / Jesús G. Maestro - @JesusGMaestro,https://www.youtube.com/@JesusGMaestro/videos,,2025-02-13 22:04
-216,Enlaces,,diccionarios francés / Dictionnaire de l'Académie française,https://www.dictionnaire-academie.fr,,2025-02-13 22:02
+216,Enlaces,,diccionarios francés / Dictionnaire de l'Académie française – is.gd/dccnrfrncs,https://www.dictionnaire-academie.fr,,2025-02-13 22:02
 215,Vocabulario español,"extemporáneo, ea [adj.]","SINÓNIMOS: extemporáneo; inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal",,,2025-02-13 15:21
 214,Enlaces,,vocabulario español / parsimonia,https://dle.rae.es/parsimonia,,2025-02-13 15:19
 213,Enlaces,,vocabulario español / seitán,https://es.wikipedia.org/wiki/Seit%C3%A1n,,2025-02-13 15:18
