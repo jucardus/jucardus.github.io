@@ -6,6 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-1
 
+* Ahora, el [Índice alfabético](../indices/alfabetico.html) está automatizado mediante programación y muestra una enumeración exhaustiva de todos los títulos de las subpáginas en este sitio, para ahorrarme la tarea de actualizarlo manualmente.
 * La locución [tomar alguien el tole](../diccionarios/vocabulario/tomar-alguien-el-tole/tomar-alguien-el-tole.md) agregada al _Vocabulario español_.
 * Significados para el adjetivo [ímprobo](../diccionarios/vocabulario/improbo/improbo.md) en el _Vocabulario español_.
 * Se agregó algunos sinónimos para [extemporáneo](../diccionarios/vocabulario/extemporaneo/extemporaneo.md) al _Vocabulario español_.
