@@ -101,11 +101,11 @@
       var array = base;
       for (let i = 0; i < array.length; i++) {
         var documento = array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main','..');
-        recorrer (documento,lema);
+        recorrer (documento, lema);
       }
     }
     
-    function recorrer (documento,lema) {
+    function recorrer (documento, lema) {
       fetch(documento)
         .then(response => response.text())
         .then(contenidoDoc => {
@@ -115,7 +115,7 @@
         });
     }
     
-    function buscar2 (contenidoDoc,lema) {
+    function buscar2 (contenidoDoc, lema) {
       if (contenidoDoc.toUpperCase().indexOf(lema.toUpperCase()) >= 0) return true;
       return false;
     }
@@ -162,7 +162,7 @@
           .replace(/Ú/g,'U')
           .replace(/Ü/g,'U')
           .replace(/Ñ/g,'N');
-        let enlace = '<li><!--' + orden + '--><a href="' + documento.replace('.md','.html') + '"><b>' + arrayTitulo[i] + '</b> ¦ ' + titulo + '</a></li>';
+        let enlace = '<li><!--' + orden + '--><a href="' + documento.replace('.md','.html') + '"><b>' + arrayTitulo[i] + '</b> ¦ ' + titulo + '</a> ' + documento + '</li>';
         todos.push(enlace);
           todos = todos.sort((a, b) => a.localeCompare(b));
       }
