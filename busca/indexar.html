@@ -49,23 +49,6 @@
 
     function modificar (documento, contenidoDoc) {
       var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-      var orden = titulo.toUpperCase()
-        .replace(/ /g,'')
-        .replace(/-/g,'')
-        .replace(/\//g,'')
-        .replace(/\¿/g,'')
-        .replace(/\?/g,'')
-        .replace(/\!/g,'')
-        .replace(/\¡/g,'')
-        .replace(/«/g,'')
-        .replace(/»/g,'')
-        .replace(/Á/g,'A')
-        .replace(/É/g,'E')
-        .replace(/Í/g,'I')
-        .replace(/Ó/g,'O')
-        .replace(/Ú/g,'U')
-        .replace(/Ü/g,'U')
-        .replace(/Ñ/g,'N');
       var preArray = titulo
         .replace(/,/g,'')
         .replace(/\//g,' ')
@@ -80,7 +63,24 @@
         .replace(/ /g,',');
       var arrayTitulo = preArray.split(',');
       for (let i = 0; i < arrayTitulo.length; i++) {
-        let enlace = '<!--' + arrayTitulo[i] + '-->* [' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
+        var orden = arrayTitulo[i].toUpperCase()
+          .replace(/ /g,'')
+          .replace(/-/g,'')
+          .replace(/\//g,'')
+          .replace(/\¿/g,'')
+          .replace(/\?/g,'')
+          .replace(/\!/g,'')
+          .replace(/\¡/g,'')
+          .replace(/«/g,'')
+          .replace(/»/g,'')
+          .replace(/Á/g,'A')
+          .replace(/É/g,'E')
+          .replace(/Í/g,'I')
+          .replace(/Ó/g,'O')
+          .replace(/Ú/g,'U')
+          .replace(/Ü/g,'U')
+          .replace(/Ñ/g,'N');
+        let enlace = '<!--' + orden + '-->* [' + arrayTitulo[i] + ' ¦ ' + titulo + '](' + documento.replace('.md','.html') + ')<br/>';
         todos.push(enlace);
           todos = todos.sort((a, b) => a.localeCompare(b));
       }
