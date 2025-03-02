@@ -5,7 +5,7 @@ let direccion = '';
 
 function inicio () {
   direccion = window.location.href.replace(/.*io\/\?q=/g,'');
-    if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
+    if (direccion.match(\[0-9]+$/) != null && direccion.length == 10) {
       let str1 = '-'; let str2 = ' '; let str3 = ':';
       let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
       let idx2 = 5; direccion = direccion.substring(0, idx2) + str1 + direccion.substring(idx2);
@@ -128,12 +128,12 @@ function segunTema (temaRecibido) {
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-        if (contador >= 6) {
+        if (contador >= 10) {
           var cntnd = '';
         }
       var imgn = linea[5];
         imgn = imagenes (imgn);
-        if (contador >= 6) {
+        if (contador >= 10) {
           var imgn = '';
         }
       var fch = linea[6];
@@ -245,7 +245,7 @@ function buscar (recibidoDireccion) {
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
         var buscado = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-        if (buscado.match(/^[0-9]+$/) != null && buscado.length == 10) {
+        if (buscado.match(\[0-9]+$/) != null && buscado.length == 10) {
           var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
         } else {
           var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
