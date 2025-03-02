@@ -128,14 +128,8 @@ function segunTema (temaRecibido) {
       var cntnd = linea[3];
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-        if (contador >= 10) {
-          var cntnd = '';
-        }
       var imgn = linea[5];
         imgn = imagenes (imgn);
-        if (contador >= 10) {
-          var imgn = '';
-        }
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
@@ -143,6 +137,7 @@ function segunTema (temaRecibido) {
       if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
         resultado.push(nuevaLinea);
         contador = contador + 1;
+          if (contador == 10) {break;}
       }
   }
   var enviar = resultado.join('<p>');
