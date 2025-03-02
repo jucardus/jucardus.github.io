@@ -5,7 +5,7 @@ let direccion = '';
 
 function inicio () {
   direccion = window.location.href.replace(/.*io\/\?q=/g,'');
-    if (direccion.match(\[0-9]+$/) != null && direccion.length == 10) {
+    if (direccion.match(/[0-9]+$/) != null && direccion.length == 10) {
       let str1 = '-'; let str2 = ' '; let str3 = ':';
       let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
       let idx2 = 5; direccion = direccion.substring(0, idx2) + str1 + direccion.substring(idx2);
