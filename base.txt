@@ -1,4 +1,7 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+268,Apotegmas,,¿Buscas la esencia de las cosas? Te quedarás con el hollejo.,,,2025-03-03 10:47
+267,Reflexiones,,"Si ves a alguien contaminando el aire con CO₂ por respirar demasiado, denúncialo sin dudar a las autoridades competentes. Ellos se harán cargo y tú sentirás que eres un ciudadano ejemplar. ¡Que nadie te impida hacer el bien!",,,2025-03-03 10:46
+266,Apotegmas,,"La Senda antigua, la que existe desde más allá del tiempo, antes de toda creación. Si la encuentras, no la abandones.",,,2025-03-03 10:40
 265,Vocabulario inglés-español,feud [s.],"feud [s.] desavenencia, rencilla, enemistad, discordia ¶ This ferment of unrest, which was provoked in the years 1903-1904, was exacerbated in the winters that followed by the renewed outbreak of the century-long racial feud between the Tatars and the Armenians at Baku and other places.",,,2025-03-02 09:20
 264,Enlaces,,Biblias ¦ King James Bible,https://www.kingjamesbibleonline.org,,2025-03-01 22:26
 263,Vocabulario español,"carlanca, carranca [f.]","carlanca, carranca [f.] Collar ancho, por lo general de cuero y con púas de hierro, para proteger a los mastines y otros perros de las mordeduras de los lobos.",,,2025-03-01 20:45
