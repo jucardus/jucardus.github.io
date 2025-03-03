@@ -24,8 +24,6 @@ function inicio () {
 function formateo (recibido) {
   texto = recibido;
   var contador = 0;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -99,8 +97,6 @@ function segunTema (temaRecibido) {
   if (temaRecibido == 'poesia') {temaRecibido = 'poesía';}
   var recibido = texto;
   var contador = 0;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -204,8 +200,6 @@ function buscar (recibidoDireccion) {
   }
   var contador = 0;
   var recibido = texto;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultadoBusca = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -292,7 +286,6 @@ function copiarEnlace (fechaSimpleRecibida) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function mostrarUnico (lema) {
-  texto = texto.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'').replace(/\n/g,'¶¶¶¶¶');
   var resultadoBusca = [];
   var arrayContenido = texto.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -352,8 +345,6 @@ function mostrarUnico (lema) {
 function az () {
   var contador = 0;
   var recibido = texto;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -400,8 +391,6 @@ function az () {
 
 function azar () {
   var recibido = texto;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -493,8 +482,6 @@ function formateoHashtag (recibido) {
 
 function archivo () {
   var recibido = texto;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultado = [];
   var contador = -1;
   var arrayContenido = recibido.split('¶¶¶¶¶');
@@ -532,8 +519,6 @@ function archivo () {
 
 function buscarArchivo (fechaRecibida) {
   var recibido = texto;
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   var resultadoBusca = [];
   var contador = 0;
   var arrayContenido = recibido.split('¶¶¶¶¶');
