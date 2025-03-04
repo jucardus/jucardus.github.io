@@ -1,4 +1,4 @@
-## warmonger [s.]
+## [warmonger [s.]](../wa.md)
 
 * belicista [s.]
 * guerreador, -ra [m.f.]
