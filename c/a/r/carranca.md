@@ -1,4 +1,4 @@
 ## [carranca](../ca.md)
 <sup>Vocabulario español</sup>
 
-* vr. [carlanca](./carlanca.md)
+* vr. [_carlanca_](./carlanca.md)
