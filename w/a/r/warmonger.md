@@ -7,7 +7,7 @@
 
 ### Notas
 
-Véase también [monger](../../../m/o/n/monger.md).
+Véase también [_monger_](../../../m/o/n/monger.md).
 
 ### Bibliografía
 
