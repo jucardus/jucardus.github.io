@@ -4,7 +4,7 @@
 
 ### Actividad reciente
 
-[monger](./m/o/n/monger.md) · [warmonger](./w/a/r/warmonger.md)
+[carlanca, carlanca](./c/a/r/carlanca.md) · [monger](./m/o/n/monger.md) · [warmonger](./w/a/r/warmonger.md)
 
 ### Autor y contacto
 
