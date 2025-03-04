@@ -4,7 +4,7 @@
 
 ### Actividad reciente
 
-[tal vez](./t/a/l/tal-vez.md) · [carlanca, carlanca](./c/a/r/carlanca.md) · [monger](./m/o/n/monger.md) · [warmonger](./w/a/r/warmonger.md)
+[extemporáneo](./e/x/t/extemporaneo.md) · [tal vez](./t/a/l/tal-vez.md) · [carlanca, carlanca](./c/a/r/carlanca.md) · [monger](./m/o/n/monger.md) · [warmonger](./w/a/r/warmonger.md)
 
 ### Autor y contacto
 
