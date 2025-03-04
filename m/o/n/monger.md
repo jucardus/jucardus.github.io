@@ -1,5 +1,4 @@
-## [monger [s.]](../mo.md)
-<sup>Diccionario inglés-español</sup>
+## [monger [s.]](../mo.md) <sub>Diccionario inglés-español</sub>
 
 * difundido, -ra [m.f.]
 * difusor, -ra [m.f.]
