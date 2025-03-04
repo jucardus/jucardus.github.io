@@ -4,5 +4,4 @@
 
 ### Actividad reciente
 
-* [monger](./m/o/n/monger.md)
-* [warmonger](./w/a/r/warmonger.md)
+* [monger](./m/o/n/monger.md) * [warmonger](./w/a/r/warmonger.md)
