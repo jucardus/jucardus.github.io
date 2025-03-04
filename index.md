@@ -10,6 +10,7 @@
 
 * **Autor:** Julio Cárdenas Pelizzari ©
 * **Contacto:** [c.jucardus.com](https://c.jucardus.com)
+* **Pagos y donaciones:** [pp.jucardus.com](https://pp.jucardus.com)
 * **X Twitter:** [x.jucardus.com](https://x.jucardus.com)
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
