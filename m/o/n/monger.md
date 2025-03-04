@@ -1,4 +1,4 @@
-## monger [s.]
+## [monger [s.]](../mo.md)
 
 * difundido, -ra [m.f.]
 * difusor, -ra [m.f.]
