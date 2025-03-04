@@ -1,4 +1,5 @@
 ## [warmonger [s.]](../wa.md)
+<sup>Diccionario inglés-español</sup>
 
 * belicista [s.]
 * guerreador, -ra [m.f.]
