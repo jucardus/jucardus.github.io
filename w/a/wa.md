@@ -1,3 +1,3 @@
-# Índice WA
+## Índice WA
 
 * [warmonger](./r/warmonger.md)
