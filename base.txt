@@ -268,7 +268,7 @@
 7,Apotegmas,,"La gente vive de eso, de mitos e historias, de los peces. Pero tú, junto con eso y para santificarlo, no pierdas la oportunidad de darles el Pan de Vida.",,,2024-11-28 16:31
 6,Reflexiones,,"Sin importar si tu tradición es de los hombres o no, cuando Dios así lo disponga, tendrás que hallarte solo en el desierto para tomar la decisión correcta. Te parecerá el fin, pero es sólo el inicio. Creerás que mueres de hambre, pero Dios te dará el sustento, palabra de vida.",,,2024-11-28 12:27
 5,Apotegmas,,"«Unidos en la verdad» no es lo mismo que decir «la verdad une», porque la verdad separa.",,,2024-11-28 12:26
-4,Apotegmas,,"Es sólo geopolítica bañada en chocolate espiritual, para que el devoto se coma el bombón sin chistar.",,,2024-11-28 12:25
+4,Reflexiones,,"Es sólo geopolítica bañada en chocolate espiritual, para que el devoto se coma el bombón sin chistar.",,,2024-11-28 12:25
 3,Apotegmas,,"No hay forma de creer en Dios si no es por fe. Paradójicamente, si no tienes fe, puedes pedírsela a Dios.",,,2024-11-28 12:21
 2,Apotegmas,,"El relativismo dogmático te pone en la posición más manipulable y débil, a la vez que te hace creer que has sido liberado. Un prodigio.",,,2024-11-28 11:55
 1,Apotegmas,,"El universo todo confabula para que busques a Dios. Puedes intentar resistirte, mas también puedes rendirte, dejarte guiar y despertar.",,,2024-11-28 11:51
