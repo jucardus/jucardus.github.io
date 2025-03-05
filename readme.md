@@ -1,12 +1,17 @@
-## [Jucardus.com](https://jucardus.com)
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+## [Jucardus.com](https://jucardus.com) 
+
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
 
+* [Respeto y defiendo tu derecho a opinar,...](https://jucardus.github.io/2503051107)
+* [Cuídate de quienes te dicen que el mundo...](https://jucardus.github.io/2503051106)
+* [Todo el que se apodera del mundo, se hac...](https://jucardus.github.io/2503051103)
+* [En ocasiones la ciudad se mueve bajo mis...](https://jucardus.github.io/2503051053)
 * [Me cansé de ver el atardecer y no ser nu...](https://jucardus.github.io/2503042148)
 * [Todo mito es un cuento hasta que le entr...](https://jucardus.github.io/2503042146)
 * [Bibliotecas ¦ Elejandria](https://jucardus.github.io/2503042141)
@@ -103,7 +108,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [enconado [adj.]](https://jucardus.github.io/2502092006)
 * [second to last [loc.]](https://jucardus.github.io/2502092005)
 * [nib [s.]](https://jucardus.github.io/2502092003)
-* [pinprick [s.]](https://jucardus.github.io/2501311000)
-* [Los cielos se oscurecen para que Dios re...](https://jucardus.github.io/2501301125)
-* [and whatnot [loc.]](https://jucardus.github.io/2501301056)
-* [llovizna, lloviznar](https://jucardus.github.io/2501301055)
