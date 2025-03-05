@@ -1,4 +1,8 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+277,Apotegmas,,"Respeto y defiendo tu derecho a opinar, pero no necesariamente tu opinión.",,,2025-03-05 11:07
+276,Apotegmas,,Cuídate de quienes te dicen que el mundo es una ilusión para luego venderte una fórmula secreta de escape. La existencia es el propósito.,,,2025-03-05 11:06
+275,Apotegmas,,"Todo el que se apodera del mundo, se hace esclavo del mundo.",,,2025-03-05 11:03
+274,Reflexiones,,"En ocasiones la ciudad se mueve bajo mis pies, sólo para divertirse y hacerme creer que soy yo quien decidió salir y pasear.",,,2025-03-05 10:53
 273,Reflexiones,,"Me cansé de ver el atardecer y no ser nube, no ser horizonte, no ser sol.",,,2025-03-04 21:48
 272,Apotegmas,,"Todo mito es un cuento hasta que le entregas tu ser, dándole vida. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.",,,2025-03-04 21:46
 271,Enlaces,,Bibliotecas ¦ Elejandria,https://www.elejandria.com/,,2025-03-04 21:41
