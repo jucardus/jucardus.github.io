@@ -1,12 +1,20 @@
- ## [Jucardus.com](https://jucardus.com)
+## [Jucardus.com](https://jucardus.com) 
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
+
+* [bulo [m.]](https://jucardus.github.io/2503060857)
+* [parla [f.]](https://jucardus.github.io/2503060853)
+* [Sí, ya estamos en el siglo XXIII y todav...](https://jucardus.github.io/2503060852)
+* [La religión puede convertirte en un mitó...](https://jucardus.github.io/2503060851)
+* [Pídele a Dios que te despierte, de modo...](https://jucardus.github.io/2503060720)
+* [vocabulario español ¦ panenteísmo](https://jucardus.github.io/2503051346)
+* [vocabulario español ¦ panenteísmo](https://jucardus.github.io/2503051329)
 * [Respeto y defiendo tu derecho a opinar,...](https://jucardus.github.io/2503051107)
 * [Cuídate de quienes te dicen que el mundo...](https://jucardus.github.io/2503051106)
 * [Todo el que se apodera del mundo, se hac...](https://jucardus.github.io/2503051103)
@@ -100,10 +108,4 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [El celo de los poderosos](https://jucardus.github.io/2502092216)
 * [be lost for words [loc.]](https://jucardus.github.io/2502092141)
 * [vocabulario español ¦ teleología](https://jucardus.github.io/2502092136)
-* [ímprobo [adj.]](https://jucardus.github.io/2502092137)
-* [Si no predicas lo que Dios te pide, term...](https://jucardus.github.io/2502092010)
-* [enconar [v.]](https://jucardus.github.io/2502092008)
-* [vocabulario español ¦ falcón](https://jucardus.github.io/2502092007)
-* [enconado [adj.]](https://jucardus.github.io/2502092006)
-* [second to last [loc.]](https://jucardus.github.io/2502092005)
-* [nib [s.]](https://jucardus.github.io/2502092003)
+
