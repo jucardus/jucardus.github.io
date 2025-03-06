@@ -8,6 +8,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
+* [museal [adj.]](https://jucardus.github.io/2503061116)
 * [bulo [m.]](https://jucardus.github.io/2503060857)
 * [parla [f.]](https://jucardus.github.io/2503060853)
 * [Sí, ya estamos en el siglo XXIII y todav...](https://jucardus.github.io/2503060852)
@@ -107,5 +108,4 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Con la búsqueda racional de Dios se pued...](https://jucardus.github.io/2502092221)
 * [El celo de los poderosos](https://jucardus.github.io/2502092216)
 * [be lost for words [loc.]](https://jucardus.github.io/2502092141)
-* [vocabulario español ¦ teleología](https://jucardus.github.io/2502092136)
 
