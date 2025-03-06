@@ -1,13 +1,12 @@
-## [Jucardus.com](https://jucardus.com) 
+ ## [Jucardus.com](https://jucardus.com)
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
-
 * [Respeto y defiendo tu derecho a opinar,...](https://jucardus.github.io/2503051107)
 * [Cuídate de quienes te dicen que el mundo...](https://jucardus.github.io/2503051106)
 * [Todo el que se apodera del mundo, se hac...](https://jucardus.github.io/2503051103)
