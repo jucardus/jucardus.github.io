@@ -1,6 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
 284,Vocabulario español,bulo [m.],"SINÓNIMOS: camelo, infundio, trola, paparrucha, hablilla, filfa, habladuría, rumor",,,2025-03-06 08:57
-283,Vocabulario español,parla [f.],"Parlería, parola, cháchara insustancial. ¶ La parla cotidiana de la política tercermundista.",,,2025-03-06 08:53
+283,Vocabulario español,parla [f.],"parla [f.] Parlería, parola, cháchara insustancial. ¶ La parla cotidiana de la política tercermundista.",,,2025-03-06 08:53
 282,Reflexiones,,"Sí, ya estamos en el siglo XXIII y todavía hay gente que es de izquierdas o de derechas, adolescentes eternos huyendo de la realidad. Otros, más inteligentes, fingen ser de algún color político para filtrar poco a poco la verdad usando a quienes creen en los partidos. Fantástico.",,,2025-03-06 08:52
 281,Apotegmas,,La religión puede convertirte en un mitómano empedernido y sectario. Practícala conscientemente.,,,2025-03-06 08:51
 280,Apotegmas,,"Pídele a Dios que te despierte, de modo que no necesites vivir el mito de nadie más ni el creado por ti mismo. Sólo para valientes.",,,2025-03-06 07:20
