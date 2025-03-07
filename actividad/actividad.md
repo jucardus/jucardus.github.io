@@ -4,6 +4,10 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+### 25-3-7
+
+* Adiciones al _Vocabulario español_: [museal](../diccionarios/vocabulario/museal/museal.md)
+
 ### 25-3-1
 
 * Ahora, el [Índice alfabético](../indices/alfabetico.html) está automatizado mediante programación y muestra una enumeración exhaustiva de todos los títulos de las subpáginas en este sitio, para ahorrarme la tarea de actualizarlo manualmente.
