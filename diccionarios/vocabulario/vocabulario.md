@@ -12,6 +12,7 @@ La siguiente lista contiene tanto definiciones o significados, como sinónimos (
 * [ímprobo](./improbo/improbo.md)
 * [llovizna](./llovizna/llovizna.md)
 * [lloviznar](./lloviznar/lloviznar.md)
+* [museal](./museal/museal.md)
 * [tomar alguien el tole](./tomar-alguien-el-tole/tomar-alguien-el-tole.md)
 
 <p align="center">◆</p>
