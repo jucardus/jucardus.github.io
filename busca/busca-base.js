@@ -1,4 +1,5 @@
 let base = [
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/museal/museal.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/tomar-alguien-el-tole/tomar-alguien-el-tole.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/lloviznar/lloviznar.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/llovizna/llovizna.md',
