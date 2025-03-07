@@ -8,6 +8,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
+* [De amor el cuerpo se atiza ¦ De esperanz...](https://jucardus.github.io/2503061759)
 * [museal [adj.]](https://jucardus.github.io/2503061116)
 * [bulo [m.]](https://jucardus.github.io/2503060857)
 * [parla [f.]](https://jucardus.github.io/2503060853)
@@ -22,8 +23,8 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [En ocasiones la ciudad se mueve bajo mis...](https://jucardus.github.io/2503051053)
 * [Me cansé de ver el atardecer y no ser nu...](https://jucardus.github.io/2503042148)
 * [Todo mito es un cuento hasta que le entr...](https://jucardus.github.io/2503042146)
-* [Bibliotecas ¦ Elejandria](https://jucardus.github.io/2503042141)
-* [Bibliotecas ¦ Wikisource](https://jucardus.github.io/2503042139)
+* [bibliotecas ¦ Elejandria](https://jucardus.github.io/2503042141)
+* [bibliotecas ¦ Wikisource](https://jucardus.github.io/2503042139)
 * [Biblias interlineales ¦ LogosKLogos](https://jucardus.github.io/2503042138)
 * [¿Buscas la esencia de las cosas? Te qued...](https://jucardus.github.io/2503031047)
 * [Si ves a alguien contaminando el aire co...](https://jucardus.github.io/2503031046)
@@ -107,5 +108,4 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Busca primero a Dios y todo lo demás ven...](https://jucardus.github.io/2502092222)
 * [Con la búsqueda racional de Dios se pued...](https://jucardus.github.io/2502092221)
 * [El celo de los poderosos](https://jucardus.github.io/2502092216)
-* [be lost for words [loc.]](https://jucardus.github.io/2502092141)
 
