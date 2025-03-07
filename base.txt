@@ -1,5 +1,6 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
-285,Vocabulario español,museal [adj.],museal [adj.] Museístico. (Del italiano museale.),,,2025-03-06 11:16
+286,Poesía,,De amor el cuerpo se atiza ¦ De esperanza el mundo se aprisa.,,,2025-03-06 17:59
+285,Vocabulario español,museal [adj.],museal [adj.] Museístico. (Del italiano <i>museale</i>.),,,2025-03-06 11:16
 284,Vocabulario español,bulo [m.],"SINÓNIMOS: camelo, infundio, trola, paparrucha, hablilla, filfa, habladuría, rumor",,,2025-03-06 08:57
 283,Vocabulario español,parla [f.],"parla [f.] Parlería, parola, cháchara insustancial. ¶ La parla cotidiana de la política tercermundista.",,,2025-03-06 08:53
 282,Reflexiones,,"Sí, ya estamos en el siglo XXIII y todavía hay gente que es de izquierdas o de derechas, adolescentes eternos huyendo de la realidad. Otros, más inteligentes, fingen ser de algún color político para filtrar poco a poco la verdad usando a quienes creen en los partidos. Fantástico.",,,2025-03-06 08:52
@@ -13,8 +14,8 @@
 274,Diario,,"En ocasiones la ciudad se mueve bajo mis pies, sólo para divertirse y hacerme creer que soy yo quien decidió salir y pasear.",,,2025-03-05 10:53
 273,Reflexiones,,"Me cansé de ver el atardecer y no ser nube, no ser horizonte, no ser sol.",,,2025-03-04 21:48
 272,Apotegmas,,"Todo mito es un cuento hasta que le entregas tu ser, dándole vida. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.",,,2025-03-04 21:46
-271,Enlaces,,Bibliotecas ¦ Elejandria,https://www.elejandria.com/,,2025-03-04 21:41
-270,Enlaces,,Bibliotecas ¦ Wikisource,https://es.wikisource.org/wiki/Portada,,2025-03-04 21:39
+271,Enlaces,,bibliotecas ¦ Elejandria,https://www.elejandria.com/,,2025-03-04 21:41
+270,Enlaces,,bibliotecas ¦ Wikisource,https://es.wikisource.org/wiki/Portada,,2025-03-04 21:39
 269,Enlaces,,Biblias interlineales ¦ LogosKLogos,https://www.logosklogos.com/,,2025-03-04 21:38
 268,Apotegmas,,¿Buscas la esencia de las cosas? Te quedarás con el hollejo.,,,2025-03-03 10:47
 267,Reflexiones,,"Si ves a alguien contaminando el aire con CO₂ por respirar demasiado, denúncialo sin dudar a las autoridades competentes. Ellos se harán cargo y tú sentirás que eres un ciudadano ejemplar. ¡Que nadie te impida hacer el bien!",,,2025-03-03 10:46
