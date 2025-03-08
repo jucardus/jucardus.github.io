@@ -4,11 +4,9 @@
 
 ### Índice
 
-```
 #### ·A· &nbsp; ·B· &nbsp; ·C· &nbsp; ·D· &nbsp; ·E· &nbsp; [·F·](./f/f.md) &nbsp; ·G·  
 #### ·H· &nbsp; [·I·](./i/i.md) &nbsp; ·J· &nbsp; ·K· &nbsp; ·L· &nbsp; ·M· &nbsp; ·N· 
 #### ·O· &nbsp; ·P· &nbsp; ·Q· &nbsp; ·R· &nbsp; ·S· &nbsp; ·T· &nbsp; ·U·
 #### ·V· &nbsp; ·W· &nbsp; ·X· &nbsp; ·Y· &nbsp; ·Z·
-```
 
 <p align="center">◆</p>
