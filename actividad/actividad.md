@@ -6,7 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-7
 
-* Adiciones al _Vocabulario español_: [museal](../diccionarios/vocabulario/museal/museal.md), [bulo](../diccionarios/vocabulario/bulo/bulo.md)
+* Adiciones al _Vocabulario español_: [museal](../diccionarios/vocabulario/museal/museal.md), [bulo](../diccionarios/vocabulario/bulo/bulo.md), [parla](../diccionarios/vocabulario/parla/parla.md).
 
 ### 25-3-1
 
