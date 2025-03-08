@@ -28,7 +28,7 @@
       }
       function modificar (documento, contenidoDoc) {
         var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-        let enlace = '<li><b>' + titulo + '</b> → <a class="enlaces" href="' + documento + '">' + documento.slice(0,documento.lastIndexOf('/')).replace('.md','').replace(/\//g,' / ') + "</a></li>";
+        let enlace = '* [' + titulo + '](' + documento + ')<br/>';
         document.getElementById('mostrar').innerHTML += enlace;
       }
     </script>
