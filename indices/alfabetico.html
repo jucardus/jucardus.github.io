@@ -103,7 +103,7 @@
       todos = [];
       var array = base;
       for (let i = 0; i < array.length; i++) {
-        var documento = array[i].replace('https://github.com/jucardus/jucardus.github.io/blob/main','..');
+        var documento = '..' + array[i];
         recorrer (documento, lema);
       }
     }
