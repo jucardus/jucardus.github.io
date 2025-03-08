@@ -42,9 +42,9 @@ function buscar2 (contenidoDoc,lema) {
 
 function modificar (documento, contenidoDoc) {
   var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-  let enlace = '<b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.slice(0,documento.lastIndexOf('/')).replace('.md','').replace(/\//g,' / ') + "</a><br />";
+  let enlace = '<li><b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.slice(0,documento.lastIndexOf('/')).replace('.md','').replace(/\//g,' / ') + "</a></li>";
   document.getElementById('buscar').value = '';
-  document.getElementById('mostrar').innerHTML += enlace;
+  document.getElementById('mostrar').innerHTML += '<ul>' + enlace + '</ul>';
   window.scrollTo(0, 0);
   document.getElementById('buscar').focus();
 }
