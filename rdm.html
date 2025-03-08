@@ -28,9 +28,9 @@
       }
       function modificar (documento, contenidoDoc) {
         var titulo = contenidoDoc.replace(/## /g,'').replace(/\n.*/g,'');
-        let enlace = '<li><b>' + titulo + '</b> → <a class="enlaces" href="' + documento.replace('.md','.html') + '">' + documento.slice(0,documento.lastIndexOf('/')).replace('.md','').replace(/\//g,' / ') + "</a></li>";
+        let enlace = '<li><b>' + titulo + '</b> → <a class="enlaces" href="' + documento + '">' + documento.slice(0,documento.lastIndexOf('/')).replace('.md','').replace(/\//g,' / ') + "</a></li>";
         document.getElementById('mostrar').innerHTML += enlace;
-        window.scrollTo(0, 0);
+        if (contador == 5) {break;}
       }
     </script>
   </body>
