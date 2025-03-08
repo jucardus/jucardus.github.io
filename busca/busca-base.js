@@ -1,4 +1,5 @@
 let base = [
+  'https://github.com/jucardus/jucardus.github.io/blob/main/programacion/bash/adlm/adlm.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/ingles-espanol/f/feud/feud.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/ingles-espanol/f/f.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/tal-vez/tal-vez.md',
