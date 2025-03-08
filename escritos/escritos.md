@@ -7,7 +7,7 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, refle
 
 * [Apotegmas](./apotegmas/apotegmas.md)
 * [Citas](./citas/citas.md)
-* Cuentos
+* [Cuentos](./cuentos/cuentos.md)
 * Poesía
 * [Reflexiones](./reflexiones/reflexiones.md)
 
