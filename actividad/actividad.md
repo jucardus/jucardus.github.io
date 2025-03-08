@@ -6,6 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-7
 
+* Creado el índice [Diccionario inglés-español F](../diccionarios/ingles-espanol/f.md) y agregada [feud](../diccionarios/ingles-espanol/f/feud/feud.md) como la primera entrada.
 * Adiciones al _Vocabulario español_: [museal](../diccionarios/vocabulario/museal/museal.md), [bulo](../diccionarios/vocabulario/bulo/bulo.md), [parla](../diccionarios/vocabulario/parla/parla.md), [carlanca](../diccionarios/vocabulario/carlanca/carlanca.md), [tal vez](../diccionarios/vocabulario/tal-vez/tal-vez.md).
 
 ### 25-3-1
