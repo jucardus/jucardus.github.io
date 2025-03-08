@@ -6,6 +6,7 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-8
 
+* Algunos cambios en [Citas](../escritos/citas/citas.md), parte de _Escritos varios_.
 * Se ha creado la sección [Reflexiones](../escritos/reflexiones/reflexiones.md), como parte de _Escritos varios_.
 * Algunas adiciones a los [Apotegmas](../escritos/apotegmas/apotegmas.md), parte de _Escritos varios_.
 
