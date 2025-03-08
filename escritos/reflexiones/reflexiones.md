@@ -1,7 +1,7 @@
 ## Reflexiones
-[inicio](../../index.md) \| [índice](../escritos.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.html) \| [compartir](https://x.com/intent/tweet?text=Escritos%20varios%20en%20Jucardus:%20Apotegmas.%20→%20jucardus.github.io/escritos/apotegmas/apotegmas.html%0A%0A%23aptgms_jucardus) \| [🔍](../../busca/busca.html)
+[inicio](../../index.md) \| [índice](../escritos.md) \| [actividad](../../actividad/actividad.md) \| [A-Z](../../indices/alfabetico.html) \| [compartir](https://x.com/intent/tweet?text=Escritos%20varios%20en%20Jucardus:%Reflexiones.%20→%20jucardus.github.io/escritos/reflexiones/reflexiones.html%0A%0A%23escrts_jucardus) \| [🔍](../../busca/busca.html)
 
-Los apotegmas más recientes se muestran al inicio de la lista.
+Las reflexiones más recientes se muestran al inicio de la lista.
 
 * Sí, ya estamos en el siglo XXIII y todavía hay gente que es de izquierdas o de derechas, adolescentes eternos huyendo de la realidad. Otros, más inteligentes, fingen ser de algún color político para filtrar poco a poco la verdad usando a quienes creen en los partidos. Fantástico.
 * Me cansé de ver el atardecer y no ser nube, no ser horizonte, no ser sol.
@@ -55,6 +55,6 @@ Los apotegmas más recientes se muestran al inicio de la lista.
 * Que los humanos somos bichos raros en este mundo o, mejor, de naturaleza compuesta: tenemos lo terrenal o animal, lo humano, y lo divino. Lo humano es la semilla que crece en lo terrenal y se dirige a la Luz de lo divino: sin sacrificarlo, no puede dar buenos frutos de divinidad. Mas, sacrificio no implica ir en contra de lo humano o anularlo, sino depurarlo según la divinidad, para que (re)cobre su verdadero y original resplandor a imagen de lo celestial. Este proceso paulatino y paciente nunca denigra ni detesta al mundo, sino que lo ama para redimirlo. Ama, pues, al mundo; pero como lo ama Dios.
 * Cuando aliño mis alimentos con un pesto de perejil con ajo, aceite de oliva y sal, llego a entender que Dios existe y que no solamente es.
 * Sin importar si tu tradición es de los hombres o no, cuando Dios así lo disponga, tendrás que hallarte solo en el desierto para tomar la decisión correcta. Te parecerá el fin, pero es sólo el inicio. Creerás que mueres de hambre, pero Dios te dará el sustento, palabra de vida.
-* Es sólo geopolítica bañada en chocolate espiritual, para que el devoto se coma el bombón sin chistar.,,,2024-11-28 12:25
+* Es sólo geopolítica bañada en chocolate espiritual, para que el devoto se coma el bombón sin chistar.
 
 <p align="center">◆</p>
