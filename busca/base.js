@@ -24,7 +24,6 @@ let base = [
   '/musica/jsbach/jsbach.md',
   '/musica/musica.md',
   '/diccionarios/ingles-espanol/i/in-deference-to/in-deference-to.md',
-  '/index.md',
   '/traducciones/traducciones.md',
   '/traducciones/charlie/charlie.md',
   '/traducciones/charlie/prefacio/prefacio.md',
