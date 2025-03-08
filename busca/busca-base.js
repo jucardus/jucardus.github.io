@@ -1,4 +1,5 @@
 let base = [
+  'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/tal-vez/tal-vez.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/carlanca/carlanca.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/parla/parla.md',
   'https://github.com/jucardus/jucardus.github.io/blob/main/diccionarios/vocabulario/bulo/bulo.md',
