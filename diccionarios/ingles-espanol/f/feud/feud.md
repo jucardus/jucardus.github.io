@@ -2,10 +2,10 @@
 
 [inicio](../../../../index.md) \| [índice](../../f/f.md) \| [actividad](../../../../actividad/actividad.md) \| [A-Z](../../../../indices/alfabetico.html) \| [compartir](https://x.com/intent/tweet?text=«Feud»%20en%20el%20Diccionario%20inglés-español,%20en%20Jucardus.%20→%20jucardus.github.io/diccionarios/ingles-espanol/f/feud/feud.html%0A%0A%23ingls_espnl_jucardus) \| [🔍](../../../../busca/busca.html)
 
-* desavenencia
-* discordia
-* enemistad
-* rencilla
+* desavenencia [f.]
+* discordia [f.]
+* enemistad [f.]
+* rencilla [f.]
 
 ### Contexto
 
