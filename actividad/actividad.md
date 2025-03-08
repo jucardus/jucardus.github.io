@@ -4,6 +4,11 @@
 
 Las correcciones, modificaciones y adiciones más recientes se muestran al inicio de la lista.
 
+### 25-3-8
+
+* Se ha creado la sección [Reflexiones](./escritos/reflexiones/reflexiones.md), como parte de _Escritos varios_.
+* Algunas adiciones a los [Apotegmas](./escritos/apotegmas/apotegmas.md), parte de _Escritos varios_.
+
 ### 25-3-7
 
 * Cuatro líneas para la [Actualización de Linux Mint con Bash](../programacion/bash/adlm/adlm.md).
