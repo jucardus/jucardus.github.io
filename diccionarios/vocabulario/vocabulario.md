@@ -6,6 +6,7 @@ La siguiente lista contiene tanto definiciones o significados, como sinónimos (
 
 * [atisbo](./atisbo/atisbo.md)
 * [bulo](./bulo/bulo.md)
+* [carlanca, carranca](./carlanca/carlanca.md)
 * [enconado](./enconado/enconado.md)
 * [enconar](./enconar/enconar.md)
 * [extemporáneo](./extemporaneo/extemporaneo.md)
