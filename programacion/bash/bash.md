@@ -5,7 +5,7 @@
 ### Índice secundario
 
 * [Actualización de Google Chrome en Linux Mint con Bash](./adgcelm/adgcelm.md)
-* Actualización de Linux Mint con Bash
+* [Actualización de Linux Mint con Bash](./adlm/adlm.md)
 * ...
 
 <p align="center">◆</p>
