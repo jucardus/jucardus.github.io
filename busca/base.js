@@ -1,5 +1,6 @@
 let base = [
   '/escritos/cuentos/aeebdp/aeebdp.md',
+  '/escritos/cuentos/cuentos.md'
   '/escritos/reflexiones/reflexiones.md',
   '/programacion/bash/adlm/adlm.md',
   '/diccionarios/ingles-espanol/f/feud/feud.md',
