@@ -4,14 +4,14 @@
 
 ### Índice
 
-#### =A= &nbsp; =B= &nbsp; =C= &nbsp; =D= &nbsp; =E= &nbsp; [=F=](./f/f.md)
+#### ·A· &nbsp; ·B· &nbsp; ·C· &nbsp; ·D· &nbsp; ·E· &nbsp; [·F·](./f/f.md)
 
-#### =G= &nbsp; =H= &nbsp; [=I=](./i/i.md) &nbsp; =J= &nbsp; =K= &nbsp; =L=
+#### ·G· &nbsp; ·H· &nbsp; [·I·](./i/i.md) &nbsp; ·J· &nbsp; ·K· &nbsp; ·L·
 
-#### =M= &nbsp; =N= &nbsp; =O= &nbsp; =P= &nbsp; =Q= &nbsp; =R=
+#### ·M· &nbsp; ·N· &nbsp; ·O· &nbsp; ·P· &nbsp; ·Q· &nbsp; ·R·
 
-#### =S= &nbsp; =T= &nbsp; =U= &nbsp; =V= &nbsp; =W= &nbsp; =X=
+#### ·S· &nbsp; ·T· &nbsp; ·U· &nbsp; ·V· &nbsp; ·W· &nbsp; ·X·
 
-#### =Y= &nbsp; =Z=
+#### ·Y· &nbsp; ·Z·
 
 <p align="center">◆</p>
