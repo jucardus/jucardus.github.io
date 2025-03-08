@@ -14,6 +14,7 @@ La siguiente lista contiene tanto definiciones o significados, como sinónimos (
 * [llovizna](./llovizna/llovizna.md)
 * [lloviznar](./lloviznar/lloviznar.md)
 * [museal](./museal/museal.md)
+* [parla](./parla/parla.md)
 * [tomar alguien el tole](./tomar-alguien-el-tole/tomar-alguien-el-tole.md)
 
 <p align="center">◆</p>
