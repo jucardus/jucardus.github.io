@@ -6,8 +6,8 @@ Las correcciones, modificaciones y adiciones más recientes se muestran al inici
 
 ### 25-3-8
 
-* Se ha creado la sección [Reflexiones](./escritos/reflexiones/reflexiones.md), como parte de _Escritos varios_.
-* Algunas adiciones a los [Apotegmas](./escritos/apotegmas/apotegmas.md), parte de _Escritos varios_.
+* Se ha creado la sección [Reflexiones](../escritos/reflexiones/reflexiones.md), como parte de _Escritos varios_.
+* Algunas adiciones a los [Apotegmas](../escritos/apotegmas/apotegmas.md), parte de _Escritos varios_.
 
 ### 25-3-7
 
