@@ -3,6 +3,28 @@
 
 Los apotegmas más recientes se muestran al inicio de la lista.
 
+* La religión puede convertirte en un mitómano empedernido y sectario. Practícala conscientemente.
+* Pídele a Dios que te despierte, de modo que no necesites vivir el mito de nadie más ni el creado por ti mismo. Sólo para valientes.
+* Respeto y defiendo tu derecho a opinar, pero no necesariamente tu opinión.
+* Cuídate de quienes te dicen que el mundo es una ilusión para luego venderte una fórmula secreta de escape. La existencia es el propósito.
+* Todo el que se apodera del mundo, se hace esclavo del mundo.
+* Todo mito es un cuento hasta que le entregas tu ser, dándole vida. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.
+* ¿Buscas la esencia de las cosas? Te quedarás con el hollejo.
+* La Senda antigua, la que existe desde más allá del tiempo, antes de toda creación. Si la encuentras, no la abandones.
+* Dile a Dios lo que tiene que hacer y él te dará lo que necesitas.
+* No pierdas el tiempo ni te entretengas con nada en los cielos ni en la tierra, ve directo con Dios. La vida es eterna, pero tu paso por ella no.
+* La santidad para las aves del cielo, el sacrificio de la carne para los hijos del hombre.
+* Te parece que Dios está lejos porque nunca has sabido dónde buscarlo y porque tienes una idea equivocada de él. Dios ya es, no inventes uno.
+* No llamemos identidad a la ignorancia.
+* No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.
+* Que las vanas complejidades y mojigaterías del reino de los cielos no te extravíen ni te distraigan de la simpleza y el amor absoluto de Dios. Permanece firme, deséchalo todo, no te dividas.
+* Del Diablo sólo viene la condenación, y de Dios solamente la salvación.
+* Se regocijan en el cielo por cada persona que dirige todo su ser en oración a Dios. Literalmente hay fiesta.
+* No olvides que Dios no es omnipotente, porque no puede forzarte a volverte a él. Entonces, has de definir tus intenciones, tomar las decisiones mejores, abrazar su voluntad. Y, sobre todo, no caigas en la ilusión de que has sido elegido, pues Dios nunca hace acepción de personas.
+* Una vez que empiezas a usar fetiches, amuletos y baratijas para que te vaya bien, se te hará muy difícil dejar el vicio para volver a confiar en Dios. Es el mismo mecanismo que el de las apuestas.
+* No mires mi humildad, Señor, porque es falsa; tampoco mi altivez, porque es ignorancia. Sólo quiero tu amor, y con eso basta.
+* Mientras más aberraciones puede normalizar la Agenda, más feliz es. No le demos el gusto.
+* Reducir a Dios a conceptos te hará sentir fuerte y confiado; ¿pero no has leído que Dios está con los humildes, los pobres de espíritu y los niños?
 * Cuando alguien cuestione tus convicciones acerca de Dios, no le respondas con sinsentidos filosóficos, historicistas, teológicos y seudoreligiosos. La solución es ser humilde de verdad y expresar con simpleza la única verdad con fundamento: Es un asunto de fe.
 * Hay quien escupe al cielo para sentirse bendecido con la lluvia de Dios.
 * La santidad está más allá de los vaivenes entre el bien y el mal; pero cuando dices que el bien y el mal no existen, pierdes la posibilidad de acceder a ella.
@@ -47,6 +69,7 @@ Los apotegmas más recientes se muestran al inicio de la lista.
 * No se ataca al hablar; no se habla al atacar.
 * No sabes lo que estás buscando, pero cuando lo encuentres, lo vas a reconocer. Es una promesa.
 * El odio te puede convertir en un marginal, pero sólo unos pocos entre los marginales están llenos de odio.
+* Aunque la creación manifiesta los atributos de la Divinidad, no es tan aconsejable intentar conceptualizar o encasillar a Dios en contraposición a lo creado. (revisar)
 * Ve directo con Dios y no te entretengas con el reino de los cielos, ni con nada de lo que hay en él.
 * Sólo es usado quien no sabe o no quiere servir al prójimo.
 * Uno de los pasatiempos favoritos del Demonio es someter a los hombres en nombre de Dios. Lo viene haciendo desde el principio de la humanidad, si acaso hubo alguno.
@@ -106,9 +129,8 @@ Los apotegmas más recientes se muestran al inicio de la lista.
 * Mira hacia arriba para idolatrar, mira hacia abajo para despreciar, mira hacia adentro para conocer el Ser y amar.
 * La gente vive de eso, de mitos e historias, de los peces. Pero tú, junto con eso y para santificarlo, no pierdas la oportunidad de darles el Pan de Vida.
 * «Unidos en la verdad» no es lo mismo que decir «la verdad une», porque la verdad separa.
-* Es sólo geopolítica bañada en chocolate espiritual, para que el devoto se coma el bombón sin chistar.
 * No hay forma de creer en Dios si no es por fe. Paradójicamente, si no tienes fe, puedes pedírsela a Dios.
 * El relativismo dogmático te pone en la posición más manipulable y débil, a la vez que te hace creer que has sido liberado. Un prodigio.
-* El universo todo confabula para que busques a Dios. Puedes intentar resistirte; mas también puedes rendirte, dejarte guiar y despertar.
+* El universo todo confabula para que busques a Dios. Puedes intentar resistirte, mas también puedes rendirte, dejarte guiar y despertar.
 
 <p align="center">◆</p>
