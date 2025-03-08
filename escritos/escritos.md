@@ -9,6 +9,6 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, monografías, refle
 * [Citas](./citas/citas.md)
 * Cuentos
 * Poesía
-* Reflexiones
+* [Reflexiones](./reflexiones/reflexiones.md)
 
 <p align="center">◆</p>
