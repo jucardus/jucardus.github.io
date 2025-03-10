@@ -587,7 +587,7 @@ function buscarArchivo (fechaRecibida) {
 
 function mostrarMas (recibidoDireccion) {
   var lemaOriginal = recibidoDireccion;
-  var lema = document.getElementById("buscar").value.toUpperCase();
+  var lema = recibidoDireccion.toUpperCase();
   var contador = 0;
   var recibido = texto;
   var resultadoBusca = [];
