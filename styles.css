@@ -143,6 +143,12 @@ li {
 #mostrar {
   margin-top: 35px;
 }
+.mostrarMas {
+  color: OrengeRed;
+}
+.mostrarMas:hover {
+  cursor: pointer;
+}
 #ninguna {
   color: OrangeRed;
   margin-bottom: 35px;
