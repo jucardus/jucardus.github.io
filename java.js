@@ -143,7 +143,7 @@ function segunTema (temaRecibido) {
     var enviar = enviar.replace(/ŧ/g,', ');
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
-  var mostrarMas = '<span class="mostrarMas" onclick="buscar (\'' + temaRecibido + '\')">[ ver todas las entradas ]</span>';
+  var mostrarMas = '<div id="mostrarMas" onclick="mostrarMas (\'' + temaRecibido + '\')">[ ver todas las entradas ]</div>';
   document.getElementById('mostrar').innerHTML = enviar + mostrarMas;
   document.getElementById('buscador').style.display = 'none';
   subrayar(temaRecibido);
@@ -580,5 +580,88 @@ function buscarArchivo (fechaRecibida) {
     for (let i = 0; i < temasTodos.length; i++) {
       temasTodos[i].style.borderBottom = fondoNoClicados;
     }
+  window.scrollTo(0, 0);
+}
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function mostrarMas (recibidoDireccion) {
+  var lemaOriginal = recibidoDireccion;
+  var lema = document.getElementById("buscar").value.toUpperCase();
+  var contador = 0;
+  var recibido = texto;
+  var resultadoBusca = [];
+  var arrayContenido = recibido.split('¶¶¶¶¶');
+  for (var i = 0; i < arrayContenido.length; i++) {
+    if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0) {
+      var linea = arrayContenido[i].split(',');
+        var nmr = linea[0];
+          var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+          var hashtag = formateoHashtag (linea[1]);
+          if (linea[4] == '') {
+            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,108) + '... ← ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
+          }
+          if (linea[4] != '') {
+            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3] + ' → ' + linea[4] + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
+          }
+        var tm = linea[1];
+          var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var ttl = linea[2];
+          if (linea[2] == '') {ttl = linea[3];}
+          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
+          var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
+        var enlc = linea[4];
+          if (linea[4] != '') {
+            var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
+            var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
+          } else {enlc = '';}
+        var cntnd = linea[3];
+          var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+          var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+        var imgn = linea[5];
+          imgn = imagenes (imgn);
+        var fch = linea[6];
+          var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+          var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+        var buscado = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+        if (buscado.match(/^[0-9]+$/) != null && buscado.length == 10) {
+          var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+        } else {
+          var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
+          contador = contador + 1;
+        }
+        resultadoBusca.push(nuevaLineaBusca);
+    }
+  }
+  var enviar = resultadoBusca.join('<p>');
+    var enviar = enviar.replace(/ŧ /g,', ');
+    var enviar = enviar.replace(/ŧ/g,', ');
+    var enviar = enviar.replace(/\.\.\.\./g,'...');
+    var enviar = enviar.replace(/ \.\.\./g,'...');
+  document.getElementById('buscador').style.display = 'none';
+  if (enviar.indexOf('<') == -1) {
+    enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
+    document.getElementById('buscador').style.display = 'block';
+  }
+  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
+  document.getElementById('buscar').value = '';
+  var fondoNoClicados = '4px solid White';
+  const temasTodos = document.getElementsByClassName('temas');
+    for (let i = 0; i < temasTodos.length; i++) {
+      temasTodos[i].style.borderBottom = fondoNoClicados;
+    }
+  if (recibidoDireccion != '') {
+    var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
+    window.history.replaceState({}, document.title, '/' + numero);
+  } else {
+    window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
+  }
+  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'musica' || lemaOriginal == 'poesia'  || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
+    segunTema (lemaOriginal);
+  }
+  if (lemaOriginal == 'az') {az ();}
+  if (lemaOriginal == 'azar') {azar ();}
+  if (lemaOriginal == 'archivo') {archivo ();}
+  if (lemaOriginal == 'busca') {mostrarBuscador ();}
   window.scrollTo(0, 0);
 }
