@@ -49,6 +49,9 @@ button#boton {
   font-size: 90%!important;
   margin-left: 10px;
 }
+code {
+  color: #f2f9f2;
+}
 #comentario {
   font-size: small;
   padding: 0px 5px 0px 5px;
