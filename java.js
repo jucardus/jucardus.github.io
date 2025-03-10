@@ -638,11 +638,6 @@ function mostrarMas (recibidoDireccion) {
     var enviar = enviar.replace(/ŧ/g,', ');
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('buscador').style.display = 'none';
-  if (enviar.indexOf('<') == -1) {
-    enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
-    document.getElementById('buscador').style.display = 'block';
-  }
   document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
   document.getElementById('buscar').value = '';
   var fondoNoClicados = '4px solid White';
@@ -656,9 +651,11 @@ function mostrarMas (recibidoDireccion) {
   } else {
     window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
   }
+  /*
   if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'musica' || lemaOriginal == 'poesia'  || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
     segunTema (lemaOriginal);
   }
+  */
   if (lemaOriginal == 'az') {az ();}
   if (lemaOriginal == 'azar') {azar ();}
   if (lemaOriginal == 'archivo') {archivo ();}
