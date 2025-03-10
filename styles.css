@@ -145,6 +145,7 @@ li {
 }
 .mostrarMas {
   color: OrengeRed;
+  text-align: center;
 }
 .mostrarMas:hover {
   cursor: pointer;
