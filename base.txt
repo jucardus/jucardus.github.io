@@ -1,4 +1,7 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+292,Reflexiones,,Si supieras lo fácil que es esclavizarte en nombre de la libertad.,,,2025-03-10 17:19
+291,Apotegmas,,Miénteme una vez y te odiaré. Miénteme dos veces y te amaré por siempre.,,,2025-03-10 17:18
+290,Apotegmas,,Las cosas que no se pueden decir no necesariamente son una verdad.,,,2025-03-10 17:17
 289,Diario,,"Ahora los diversos temas muestran, además de las diez entradas más recientes, un mensaje clicable al pie para enumerar alfabéticamente todas las entradas del tema o etiqueta en cuestión. De utilidad en caso de que el lector desee continuar la navegación pormenorizada.",,,2025-03-09 22:29
 288,Enlaces,,música - Johann Sebastian Bach | J. S. Bach: Complete Partitas,https://youtu.be/XiG8AGn5Qz8,,2025-03-09 12:19
 287,Apotegmas,,El universo es tan grande que cabe en tu corazón.,,,2025-03-08 09:13
