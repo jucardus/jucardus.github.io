@@ -586,6 +586,7 @@ function buscarArchivo (fechaRecibida) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function mostrarMas (tema) {
+  var temaConteo = tema.charAt(0).toUpperCase() + tema.slice(1);
   var contador = 0;
   var recibido = texto;
   var resultado = [];
@@ -623,6 +624,6 @@ function mostrarMas (tema) {
   var enviar = enviar.replace(/ŧ/g,', ');
   var enviar = enviar.replace(/\.\.\.\./g,'...');
   var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
+  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para ' + temaConteo + '.</span><p>' + enviar + '</div>';
   window.scrollTo(0, 0);
 }
