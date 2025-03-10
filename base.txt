@@ -1,4 +1,5 @@
 ,TEM,TIT,CON,ENL,IMG,FEC
+288,Enlaces,,música - Johann Sebastian Bach ¦ J. S. Bach: Complete Partitas,https://youtu.be/XiG8AGn5Qz8,,2025-03-09 12:19
 287,Apotegmas,,El universo es tan grande que cabe en tu corazón.,,,2025-03-08 09:13
 286,Poesía,,De amor el cuerpo se atiza ¦ De esperanza el mundo se aprisa.,,,2025-03-06 17:59
 285,Vocabulario español,museal [adj.],museal [adj.] Museístico. (Del italiano <i>museale</i>.),,,2025-03-06 11:16
@@ -14,7 +15,7 @@
 275,Apotegmas,,"Todo el que se apodera del mundo, se hace esclavo del mundo.",,,2025-03-05 11:03
 274,Diario,,"En ocasiones la ciudad se mueve bajo mis pies, sólo para divertirse y hacerme creer que soy yo quien decidió salir y pasear.",,,2025-03-05 10:53
 273,Reflexiones,,"Me cansé de ver el atardecer y no ser nube, no ser horizonte, no ser sol.",,,2025-03-04 21:48
-272,Apotegmas,,"Todo mito es un cuento hasta que le entregas tu ser, dándole vida. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.",,,2025-03-04 21:46
+272,Apotegmas,,"Todo mito es un cuento hasta que le entregas tu ser, dándole vida, encarnándolo. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.",,,2025-03-04 21:46
 271,Enlaces,,bibliotecas ¦ Elejandria,https://www.elejandria.com/,,2025-03-04 21:41
 270,Enlaces,,bibliotecas ¦ Wikisource,https://es.wikisource.org/wiki/Portada,,2025-03-04 21:39
 269,Enlaces,,Biblias interlineales ¦ LogosKLogos,https://www.logosklogos.com/,,2025-03-04 21:38
@@ -65,7 +66,7 @@
 224,Diario,,"El sitio ha alcanzado plena funcionalidad y se han corregido las fallas de programación. Faltan algunos detalles, además de la posibilidad de mostrar imágenes desde la base de datos. Otras implementaciones vendrán después, pero con menos urgencia.",,,2025-02-18 14:38
 223,Enlaces,,vocabulario latín-inglés ¦ vincor,https://www.lingq.com/en/learn-latin-online/translate/la/vincor/,,2025-02-18 14:37
 222,Vocabulario inglés-español,in deference to [loc.],"in deference to [loc.] en consideración a ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-18 13:06
-221,Diario,,"Hoy terminé de subir todos mis enlaces de interés a un repositorio en GitHub, miles de ellos. El sitio cuenta con posibilidades de busca, copia y descarga.",https://enlcs.github.io,,2025-02-17 20:11
+221,Diario,,"Hoy terminé de subir todos mis enlaces de interés a un repositorio en GitHub, miles de ellos. El sitio cuenta con posibilidades de busca, copia y descarga. También se puede visitar con el enlace <i>e.jucardus.com</i>.",https://enlcs.github.io,,2025-02-17 20:11
 220,Reflexiones,,Ahora resulta que pie grande era un adelantado a su tiempo que se autopercibía oso o chimpancé según el día de la semana. Un incomprendido.,,,2025-02-16 00:02
 219,Vocabulario inglés-español,cast iron [s.c.],cast iron [s.c.] hierro fundido,,,2025-02-13 22:08
 218,Vocabulario inglés-español,wrought iron [s.c.],wrought iron [s.c.] hierro forjado,,,2025-02-13 22:07
