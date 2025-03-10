@@ -143,7 +143,8 @@ function segunTema (temaRecibido) {
     var enviar = enviar.replace(/ŧ/g,', ');
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = enviar;
+  var mostrarMas = '<span class="mostrarMas" onclick="buscar (' + temaRecibido + ')">[ ver todas las entradas ]</span>';
+  document.getElementById('mostrar').innerHTML = enviar + mostrarMas;
   document.getElementById('buscador').style.display = 'none';
   subrayar(temaRecibido);
   window.scrollTo(0, 0);
