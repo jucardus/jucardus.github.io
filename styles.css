@@ -143,11 +143,11 @@ li {
 #mostrar {
   margin-top: 35px;
 }
-.mostrarMas {
+#mostrarMas {
   color: OrengeRed;
   text-align: center;
 }
-.mostrarMas:hover {
+#mostrarMas:hover {
   cursor: pointer;
 }
 #ninguna {
