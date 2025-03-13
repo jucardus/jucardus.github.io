@@ -9,7 +9,7 @@
     <div id='mostrar'></div>
   <script>
     function inicio () {
-      fetch('base.txt')
+      fetch('base.csv')
       .then(response => response.text())
       .then(textString => {
         formateo(textString);
