@@ -1,5 +1,7 @@
 ## The hundred most important English literary works, according to Grok
 
+[ [original en Grok](https://grok.com/share/bGVnYWN5_838415b0-915c-46db-a00e-f25dcf624abc) ]
+
 Creating a definitive list of the "hundred most important English literary works" is a subjective task, as importance can be measured by cultural impact, historical significance, literary innovation, or enduring popularity. However, I’ll provide a balanced list of 100 notable works written in English or translated into English from Old English, Middle English, and Modern English traditions. This list spans novels, plays, poems, and essays, prioritizing works that have shaped literature, thought, and language. I’ve aimed for variety across genres, eras, and authors, while keeping it concise for your use.
 
 Here’s the list, organized roughly chronologically:
