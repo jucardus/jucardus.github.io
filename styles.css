@@ -49,6 +49,9 @@ button#boton {
   font-size: 90%!important;
   margin-left: 10px;
 }
+code {
+  background-color: #e0e7e0;
+}
 #comentario {
   font-size: small;
   padding: 0px 5px 0px 5px;
@@ -142,6 +145,13 @@ li {
 }
 #mostrar {
   margin-top: 35px;
+}
+#mostrarMas {
+  color: OrangeRed;
+  text-align: center;
+}
+#mostrarMas:hover {
+  cursor: pointer;
 }
 #ninguna {
   color: OrangeRed;
