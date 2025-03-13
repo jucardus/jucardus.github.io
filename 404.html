@@ -3,19 +3,14 @@
 <head>
 </head>
 <body>
-<script>
-    var url = window.location.href.replace(/.*jucardus\.github\.io\//g,'');
-    if (url != '' && url.length == 12) {
-        var visitar = 'https://app.box.com/s/ofmscy5k73vldl0jolpxxv8x8z9v0i0j/folder/' + url;
-        window.location.replace(visitar);
+  <script>
+    var url = window.location.href.replace(/.*io\//g,'');
+    if (url != '') {
+      var visitar = 'https://jucardus.github.io/?q=' + url;
+      window.location.replace(visitar);
     } else {
-        if (url != '' && url.length == 13) {
-            var visitar = 'https://app.box.com/s/ofmscy5k73vldl0jolpxxv8x8z9v0i0j/file/' + url;
-            window.location.replace(visitar);
-        } else {
-            window.location.replace('https://jucardus.github.io');
-        }
+      window.location.replace('https://jucardus.github.io');
     }
-</script>
+  </script>
 </body>
 </html>
