@@ -7,6 +7,10 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
+* [vocabulario inglés | hypallage](https://jucardus.github.io/2503131207)
+* [hypallage [s.]](https://jucardus.github.io/2503131153)
+* [Cambié la fuente del sitio a Inter. Es p...](https://jucardus.github.io/2503130934)
+* [obras literarias | The hundred most impo...](https://jucardus.github.io/2503130911)
 * [Si supieras lo fácil que es esclavizarte...](https://jucardus.github.io/2503101719)
 * [Miénteme una vez y te odiaré. Miénteme d...](https://jucardus.github.io/2503101718)
 * [Las cosas que no se pueden decir no nece...](https://jucardus.github.io/2503101717)
@@ -53,7 +57,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [No manches tu fe con racionalismos, con...](https://jucardus.github.io/2502241707)
 * [vocabulario español | hipálage](https://jucardus.github.io/2502241704)
 * [vocabulario español | hipálage](https://jucardus.github.io/2502241647)
-* [diccionarios inglés | Dictionary.com](https://jucardus.github.io/2502241645)
-* [vocabulario inglés | munch](https://jucardus.github.io/2502241017)
-* [trial [s.]](https://jucardus.github.io/2502231949)
-* [adventurous [adj.]](https://jucardus.github.io/2502231941)
