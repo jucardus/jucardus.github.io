@@ -618,7 +618,9 @@ function mostrarMas (tema) {
         contador = contador + 1;
       }
   }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
+  if (tema != 'diario') {
+    resultado = resultado.sort((a, b) => a.localeCompare(b));
+  }
   var enviar = resultado.join('');
   var enviar = enviar.replace(/ŧ /g,', ');
   var enviar = enviar.replace(/ŧ/g,', ');
