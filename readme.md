@@ -1,12 +1,17 @@
-# [Jucardus.com](https://jucardus.com)
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+# [Jucardus.com](https://jucardus.com) 
+
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
 
+* [Rumbo a la normalización de la brujería...](https://jucardus.github.io/2503151713)
+* [La Verdad siempre es una persona, pero e...](https://jucardus.github.io/2503151712)
+* [No existe la nada, y si existiera no pro...](https://jucardus.github.io/2503151710)
+* [El populismo es una enfermedad social qu...](https://jucardus.github.io/2503151708)
 * [Generamos el tiempo y la distancia cuand...](https://jucardus.github.io/2503141853)
 * [Entre una persona que te trata bien para...](https://jucardus.github.io/2503141852)
 * [Dale a la gente algo que idolatrar y te...](https://jucardus.github.io/2503141851)
@@ -53,7 +58,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [vocabulario español | ganga](https://jucardus.github.io/2503011745)
 * [vocabulario español | sicalipsis](https://jucardus.github.io/2503011737)
 * [Dile a Dios lo que tiene que hacer y él...](https://jucardus.github.io/2502281248)
-* [tal vez [loc.]](https://jucardus.github.io/2502281040)
-* [No pierdas el tiempo ni te entretengas c...](https://jucardus.github.io/2502281031)
-* [La santidad para las aves del cielo, el...](https://jucardus.github.io/2502271910)
-* [The urge to save humanity is almost alwa...](https://jucardus.github.io/2502271116)
