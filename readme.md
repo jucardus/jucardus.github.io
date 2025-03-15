@@ -7,6 +7,15 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
+* [Generamos el tiempo y la distancia cuand...](https://jucardus.github.io/2503141853)
+* [Entre una persona que te trata bien para...](https://jucardus.github.io/2503141852)
+* [Dale a la gente algo que idolatrar y te...](https://jucardus.github.io/2503141851)
+* [Facebook | enlace para eliminar una cuen...](https://jucardus.github.io/2503132359)
+* [blunder [s.]](https://jucardus.github.io/2503132245)
+* [at all hazards [loc.]](https://jucardus.github.io/2503132241)
+* [like [adj.]](https://jucardus.github.io/2503132239)
+* [meet [v.]](https://jucardus.github.io/2503132237)
+* [befall [v.]](https://jucardus.github.io/2503132232)
 * [vocabulario inglés | hypallage](https://jucardus.github.io/2503131207)
 * [hypallage [s.]](https://jucardus.github.io/2503131153)
 * [Cambié la fuente del sitio a Inter. Es p...](https://jucardus.github.io/2503130934)
@@ -48,12 +57,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [No pierdas el tiempo ni te entretengas c...](https://jucardus.github.io/2502281031)
 * [La santidad para las aves del cielo, el...](https://jucardus.github.io/2502271910)
 * [The urge to save humanity is almost alwa...](https://jucardus.github.io/2502271116)
-* [Te parece que Dios está lejos porque nun...](https://jucardus.github.io/2502270939)
-* [No es curioso, pero en todos los países...](https://jucardus.github.io/2502270936)
-* [No llamemos identidad a la ignorancia.](https://jucardus.github.io/2502270935)
-* [biografías | Johann Sebastian Bach](https://jucardus.github.io/2502261703)
-* [música - Johann Sebastian Bach | Complet...](https://jucardus.github.io/2502261659)
-* [He hecho los cambios de programación nec...](https://jucardus.github.io/2502242100)
-* [No manches tu fe con racionalismos, con...](https://jucardus.github.io/2502241707)
-* [vocabulario español | hipálage](https://jucardus.github.io/2502241704)
-* [vocabulario español | hipálage](https://jucardus.github.io/2502241647)
