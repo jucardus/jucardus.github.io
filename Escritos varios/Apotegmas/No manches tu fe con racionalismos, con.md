@@ -1,3 +1,0 @@
-## No manches tu fe con racionalismos, con...
-
-No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.

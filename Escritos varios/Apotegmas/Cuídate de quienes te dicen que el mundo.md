@@ -1,3 +1,0 @@
-## Cuídate de quienes te dicen que el mundo...
-
-Cuídate de quienes te dicen que el mundo es una ilusión para luego venderte una fórmula secreta de escape. La existencia es el propósito.

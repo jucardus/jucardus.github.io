@@ -1,3 +1,0 @@
-## Me cansé de ver el atardecer y no...
-
-Me cansé de ver el atardecer y no ser nube, no ser horizonte, no ser sol.

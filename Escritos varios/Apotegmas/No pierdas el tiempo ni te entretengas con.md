@@ -1,3 +1,0 @@
-## No pierdas el tiempo ni te entretengas con...
-
-No pierdas el tiempo ni te entretengas con nada en los cielos ni en la tierra, ve directo con Dios. La vida es eterna, pero tu paso por ella no.

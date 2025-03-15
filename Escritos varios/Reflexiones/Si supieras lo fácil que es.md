@@ -1,3 +1,0 @@
-## Si supieras lo fácil que es...
-
-Si supieras lo fácil que es esclavizarte en nombre de la libertad.

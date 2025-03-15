@@ -1,3 +1,0 @@
-## Conocimiento es saber que el tomate es...
-
-Conocimiento es saber que el tomate es una fruta. Sabiduría es no ponerlo en la ensalada de frutas. – Anónimo

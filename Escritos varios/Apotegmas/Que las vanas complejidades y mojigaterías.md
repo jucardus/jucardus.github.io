@@ -1,3 +1,0 @@
-## Que las vanas complejidades y mojigaterías...
-
-Que las vanas complejidades y mojigaterías del reino de los cielos no te extravíen ni te distraigan de la simpleza y el amor absoluto de Dios. Permanece firme, deséchalo todo, no te dividas.

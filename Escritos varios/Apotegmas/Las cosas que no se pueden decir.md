@@ -1,3 +1,0 @@
-## Las cosas que no se pueden decir...
-
-Las cosas que no se pueden decir no necesariamente son una verdad.

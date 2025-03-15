@@ -1,3 +1,0 @@
-## Todo mito es un cuento hasta que le...
-
-Todo mito es un cuento hasta que le entregas tu ser, dándole vida, encarnándolo. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.

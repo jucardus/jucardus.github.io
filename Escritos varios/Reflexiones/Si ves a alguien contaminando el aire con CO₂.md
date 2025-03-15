@@ -1,3 +1,0 @@
-## Si ves a alguien contaminando el aire con CO₂...
-
-Si ves a alguien contaminando el aire con CO₂ por respirar demasiado, denúncialo sin dudar a las autoridades competentes. Ellos se harán cargo y tú sentirás que eres un ciudadano ejemplar. ¡Que nadie te impida hacer el bien!

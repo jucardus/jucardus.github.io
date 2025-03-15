@@ -1,3 +1,0 @@
-### Ahora resulta que pie grande era un...
-
-Ahora resulta que pie grande era un adelantado a su tiempo que se autopercibía oso o chimpancé según el día de la semana. Un incomprendido.

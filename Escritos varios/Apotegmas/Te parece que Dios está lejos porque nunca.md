@@ -1,3 +1,0 @@
-## Te parece que Dios está lejos porque nunca...
-
-Te parece que Dios está lejos porque nunca has sabido dónde buscarlo y porque tienes una idea equivocada de él. Dios ya es, no inventes uno.

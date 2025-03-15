@@ -1,3 +1,0 @@
-## No llamemos identidad...
-
-No llamemos identidad a la ignorancia.

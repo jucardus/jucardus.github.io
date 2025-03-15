@@ -1,3 +1,0 @@
-## La Senda antigua, la que existe desde...
-
-La Senda antigua, la que existe desde más allá del tiempo, antes de toda creación. Si la encuentras, no la abandones.
