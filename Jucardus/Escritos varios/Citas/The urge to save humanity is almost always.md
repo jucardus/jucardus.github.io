@@ -1,0 +1,3 @@
+## The urge to save humanity is almost always...
+
+The urge to save humanity is almost always a false front for the urge to control it. – H. L. Mencken

@@ -1,0 +1,3 @@
+## Se regocijan en el cielo por cada persona...
+
+Se regocijan en el cielo por cada persona que dirige todo su ser en oración a Dios. Literalmente hay fiesta.

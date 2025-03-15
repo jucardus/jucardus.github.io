@@ -1,0 +1,3 @@
+## Todo el que se apodera del mundo...
+
+Todo el que se apodera del mundo, se hace esclavo del mundo.

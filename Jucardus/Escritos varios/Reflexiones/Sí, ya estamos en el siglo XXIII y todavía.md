@@ -1,0 +1,3 @@
+## Sí, ya estamos en el siglo XXIII y todavía...
+
+Sí, ya estamos en el siglo XXIII y todavía hay gente que es de izquierdas o de derechas, adolescentes eternos huyendo de la realidad. Otros, más inteligentes, fingen ser de algún color político para filtrar poco a poco la verdad usando a quienes creen en los partidos. Fantástico.

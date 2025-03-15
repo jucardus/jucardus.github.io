@@ -1,0 +1,3 @@
+## Respeto y defiendo tu derecho a...
+
+Respeto y defiendo tu derecho a opinar, pero no necesariamente tu opinión.

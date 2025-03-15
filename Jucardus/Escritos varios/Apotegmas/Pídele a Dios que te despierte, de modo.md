@@ -1,0 +1,3 @@
+## Pídele a Dios que te despierte, de modo...
+
+Pídele a Dios que te despierte, de modo que no necesites vivir el mito de nadie más ni el creado por ti mismo. Sólo para valientes.

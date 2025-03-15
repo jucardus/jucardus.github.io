@@ -1,0 +1,3 @@
+## Una vez que empiezas a usar fetiches...
+
+Una vez que empiezas a usar fetiches, amuletos y baratijas para que te vaya bien, se te hará muy difícil dejar el vicio para volver a confiar en Dios. Es el mismo mecanismo que el de las apuestas.

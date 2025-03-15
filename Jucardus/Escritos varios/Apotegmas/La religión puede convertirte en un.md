@@ -1,0 +1,3 @@
+## La religión puede convertirte en un...
+
+La religión puede convertirte en un mitómano empedernido y sectario. Practícala conscientemente.

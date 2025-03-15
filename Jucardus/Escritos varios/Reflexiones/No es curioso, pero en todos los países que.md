@@ -1,0 +1,3 @@
+## No es curioso, pero en todos los países...
+
+No es curioso, pero en todos los países que lo tienen, el populismo convierte la delicuencia en una causa social.
