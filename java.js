@@ -22,7 +22,7 @@ function inicio () {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function formateo (recibido) {
-  var recibido = recibido.replace(/,TEM,TIT,CON,ENL,IMG,FEC\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+  var recibido = recibido.replace(/,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
   var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
   texto = recibido;
   var contador = 0;
