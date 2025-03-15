@@ -1,4 +1,4 @@
-## The ex nihilo concept in Christian theology
+## The _ex nihilo_ concept in Christian theology
 
 In Christian theology, the concept of *ex nihilo* (Latin for "out of nothing") refers to the belief that God created the universe and everything within it from no pre-existing material or substance. This doctrine asserts that the act of creation was entirely dependent on God's will and power, without reliance on anything outside of Himself. It’s a foundational idea in Christian thought, distinguishing the biblical view of creation from other ancient cosmologies where gods often shaped the world from pre-existing chaos, matter, or other entities.
 
@@ -24,7 +24,7 @@ Some modern scholars debate whether *ex nihilo* is unambiguously present in Gene
 
 In short, *ex nihilo* is a cornerstone of Christian theology that celebrates God as the sole origin of all that exists, highlighting His uniqueness and authority over a universe that owes its being entirely to Him. Does that clarify it for you? Let me know if you'd like me to dig deeper into any part!
 
-## More about ex nihilo
+## More about _ex nihilo_
 
 Alright, let’s dive deeper into the *ex nihilo* concept in Christian theology, expanding on its biblical roots, philosophical implications, historical development, challenges, and theological nuances. Buckle up—this is going to be thorough!
 
