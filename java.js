@@ -54,7 +54,9 @@ function formateo (recibido) {
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
-        imgn = imagenes (imgn);
+        if (imgn != '') {
+          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
+        }
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
@@ -127,7 +129,9 @@ function segunTema (temaRecibido) {
         var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
         var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
       var imgn = linea[5];
-        imgn = imagenes (imgn);
+        if (imgn != '') {
+          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
+        }
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
@@ -232,7 +236,9 @@ function buscar (recibidoDireccion) {
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
         var imgn = linea[5];
-          imgn = imagenes (imgn);
+          if (imgn != '') {
+            var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
+          }
         var fch = linea[6];
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
@@ -318,15 +324,9 @@ function mostrarUnico (lema) {
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
         var imgn = linea[5];
-          // imgn = imagenes (imgn); +++
-
-  if (imgn != '' && imgn?.slice(0,4) == 'http') {
-    var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
-  }
-  if (imgn != '' && imgn?.slice(0,4) != 'http') {
-    var imgn = '<div id="comentario">' + imgn + '</div>';
-  }
-
+          if (imgn != '') {
+            var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
+          }
         var fch = linea[6];
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
@@ -560,7 +560,9 @@ function buscarArchivo (fechaRecibida) {
           var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
           var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
         var imgn = linea[5];
-          imgn = imagenes (imgn);
+          if (imgn != '') {
+            var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
+          }
         var fch = linea[6];
           var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
