@@ -1,13 +1,27 @@
-# [Jucardus.com](https://jucardus.com) 
+# [Jucardus.com](https://jucardus.com)
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
-
+* [La ausencia disminuye las pequeñas pasio...](https://jucardus.github.io/2503181052)
+* [Muchos hombres cometen el error de susti...](https://jucardus.github.io/2503181049)
+* [Existen verdades que pueden matar a un p...](https://jucardus.github.io/2503181047)
+* [Los fanatismos que más debemos temer son...](https://jucardus.github.io/2503181044)
+* [Quizá la existencia de una respuesta dep...](https://jucardus.github.io/2503181042)
+* [Cada uno es como Dios le hizo, y aun peo...](https://jucardus.github.io/2503181039)
+* [En el campo de la oservación, la oportun...](https://jucardus.github.io/2503181034)
+* [La fortuna llega en algunos barcos que n...](https://jucardus.github.io/2503181033)
+* [Algunas religiones están diseñadas para...](https://jucardus.github.io/2503180939)
+* [Cuando todo es para todos, no queda nada...](https://jucardus.github.io/2503180935)
+* [Nos escondemos en el bosque ideológico p...](https://jucardus.github.io/2503180932)
+* [A más mentira, más verdad, razón por la...](https://jucardus.github.io/2503180930)
+* [La fe es para el raciocinio lo que el fu...](https://jucardus.github.io/2503180928)
+* [No batalles contra los pensamientos impr...](https://jucardus.github.io/2503180926)
+* [Si alguien te pide que creas en Dios, di...](https://jucardus.github.io/2503180822)
 * [Rumbo a la normalización de la brujería...](https://jucardus.github.io/2503151713)
 * [La Verdad siempre es una persona, pero e...](https://jucardus.github.io/2503151712)
 * [No existe la nada, y si existiera no pro...](https://jucardus.github.io/2503151710)
@@ -43,18 +57,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Respeto y defiendo tu derecho a opinar,...](https://jucardus.github.io/2503051107)
 * [Cuídate de quienes te dicen que el mundo...](https://jucardus.github.io/2503051106)
 * [Todo el que se apodera del mundo, se hac...](https://jucardus.github.io/2503051103)
-* [En ocasiones la ciudad se mueve bajo mis...](https://jucardus.github.io/2503051053)
-* [Me cansé de ver el atardecer y no ser nu...](https://jucardus.github.io/2503042148)
-* [Todo mito es un cuento hasta que le entr...](https://jucardus.github.io/2503042146)
-* [bibliotecas | Elejandria](https://jucardus.github.io/2503042141)
-* [bibliotecas | Wikisource](https://jucardus.github.io/2503042139)
-* [Biblias interlineales | LogosKLogos](https://jucardus.github.io/2503042138)
-* [¿Buscas la esencia de las cosas? Te qued...](https://jucardus.github.io/2503031047)
-* [Si ves a alguien contaminando el aire co...](https://jucardus.github.io/2503031046)
-* [La Senda antigua, la que existe desde má...](https://jucardus.github.io/2503031040)
-* [feud [s.]](https://jucardus.github.io/2503020920)
-* [Biblias | King James Bible](https://jucardus.github.io/2503012226)
-* [carlanca, carranca [f.]](https://jucardus.github.io/2503012045)
-* [vocabulario español | ganga](https://jucardus.github.io/2503011745)
-* [vocabulario español | sicalipsis](https://jucardus.github.io/2503011737)
-* [Dile a Dios lo que tiene que hacer y él...](https://jucardus.github.io/2502281248)
