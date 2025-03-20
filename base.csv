@@ -1,4 +1,5 @@
 ,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA
+329,Citas,,"Acabo de aumentar la distancia entre las líneas de texto de la página, para mejorar la lectura y la presentación. Esto se hace con la siguiente línea de CSS: <code>line-height: 1.3;</code>. El resto de propiedades puede verse en <a href='https://jucardus.github.io/styles.css' target='_blank'>./styles.css</a>.",,,2025-03-19 20:16
 328,Apotegmas,,Nunca dejes que llegue al poder alguien que se desprecia a sí mismo.,,,2025-03-19 19:44
 327,Enlaces,,bibliotecas | Project Gutenberg,https://gutenberg.org/,,2025-03-19 09:52
 326,Apotegmas,,Nunca nadie ha ganado una batalla sin antes desayunar.,,,2025-03-19 09:12
