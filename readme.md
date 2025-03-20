@@ -1,5 +1,4 @@
 # [Jucardus.com](https://jucardus.com)
-
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
 * [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
@@ -7,6 +6,11 @@
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
+
+* [Nunca dejes que llegue al poder alguien...](https://jucardus.github.io/2503191944)
+* [bibliotecas | Project Gutenberg](https://jucardus.github.io/2503190952)
+* [Nunca nadie ha ganado una batalla sin an...](https://jucardus.github.io/2503190912)
+* [rascal [s.]](https://jucardus.github.io/2503181506)
 * [La ausencia disminuye las pequeñas pasio...](https://jucardus.github.io/2503181052)
 * [Muchos hombres cometen el error de susti...](https://jucardus.github.io/2503181049)
 * [Existen verdades que pueden matar a un p...](https://jucardus.github.io/2503181047)
@@ -53,7 +57,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [La religión puede convertirte en un mitó...](https://jucardus.github.io/2503060851)
 * [Pídele a Dios que te despierte, de modo...](https://jucardus.github.io/2503060720)
 * [vocabulario español | panenteísmo](https://jucardus.github.io/2503051346)
-* [vocabulario español | panenteísmo](https://jucardus.github.io/2503051329)
-* [Respeto y defiendo tu derecho a opinar,...](https://jucardus.github.io/2503051107)
-* [Cuídate de quienes te dicen que el mundo...](https://jucardus.github.io/2503051106)
-* [Todo el que se apodera del mundo, se hac...](https://jucardus.github.io/2503051103)
