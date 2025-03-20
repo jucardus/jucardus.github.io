@@ -1,6 +1,7 @@
 @media only screen and (max-device-width: 480px) {
   body {
     font-size: 110%;
+    overflow-x: hidden;
     padding: 0px 2px 140px 2px !important;
   }
   #entrada {
@@ -14,7 +15,7 @@ a.enlacista:link, a.enlacista:visited, a.enlacista:active {
   color: Green;
   text-decoration: none;
 }
-a.enlacista:hover {
+a.enlacista:hover, a.enlacista:focus {
   color: OrangeRed;
   text-decoration: none;
 }
