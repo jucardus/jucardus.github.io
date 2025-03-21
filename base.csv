@@ -1,12 +1,13 @@
 ,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA
-334,Diario,,"Vengo de preguntarle a Grok cómo hacer para crear un libro electrónico en formato Epub en el entorno Linux Mint, de forma manual y gratuita. El proceso completo, no muy extenso, está en el enlace a continuación y probablemente incluya los documentos necesarios en un documento ZIP para descarga, con algunas instrucciones.",https://grok.com/share/bGVnYWN5_27695b5e-a2a5-4748-bc03-c6b3f8454600,,2025-03-20 22:00
+335,Apotegmas,,"Si crees que eres bueno y que tienes razón sólo porque te persiguen, pronto empezarás a perseguir a los demás.",,,2025-03-20 23:35
+334,Reflexiones,,La ignorancia se convierte en una bendición cuando el relato oficial ha quedado reducido a ideologías y partidismos.,,,2025-03-20 22:00
 333,Diario,,Se agregó la línea necesaria al documento de estilos del sitio para evitar el desplazamiento horizontal de la página cuando es visitada en pantallas pequeñas de celulares: <code>@media only screen and (max-device-width: 480px) { body { overflow-x: hidden; } }</code>.,,,2025-03-20 15:29
 332,Reflexiones,,"Los deseos quedan satisfechos únicamente cuando encuentran su verdadero objeto. En otras palabras, los humanos desconocemos adrede el verdadero objeto de nuestro deseo para poder continuar buscando placeres ilusorios, temporales y pasajeros.",,,2025-03-20 09:01
 331,Enlaces,YouTube | comentarios en YouTube,Enlace para mostrar los comentarios de mi cuenta en Google hechos en YouTube.,https://myactivity.google.com/page?hl=en&utm_medium=web&utm_source=youtube&page=youtube_comments,,2025-03-19 22:33
 330,Enlaces,Real Academia Española | recursos varios,"Recursos varios, diccionarios, libros, gramática.",https://www.rae.es/recursos,,2025-03-19 22:31
 329,Diario,,"Acabo de aumentar la distancia entre las líneas de texto de la página, para mejorar la lectura y la presentación. Esto se hace con la siguiente línea de CSS: <code>line-height: 1.3;</code>. El resto de propiedades puede verse en <a class='enlacista' href='https://jucardus.github.io/styles.css' target='_blank'>./styles.css</a>.",,,2025-03-19 20:16
 328,Apotegmas,,Nunca dejes que llegue al poder alguien que se desprecia a sí mismo.,,,2025-03-19 19:44
-327,Enlaces,bibliotecas | Project Gutenberg,"<i>Project Gutenberg</i>, una biblioteca con más de setenta y cinco mil libros gratuitos, con lectura en línea y descarga en formatos Epub y Kindle. También cuenta con clasificación de obras por tema, lista de los libros más descargados y otras cuantas opciones.",https://gutenberg.org/,,2025-03-19 09:52
+327,Enlaces,bibliotecas | Project Gutenberg,"Project Gutenberg, una biblioteca con más de setenta y cinco mil libros gratuitos, con lectura en línea y descarga en formatos Epub y Kindle. También cuenta con clasificación de obras por tema, lista de los libros más descargados y otras cuantas opciones.",https://gutenberg.org/,,2025-03-19 09:52
 326,Apotegmas,,Nunca nadie ha ganado una batalla sin antes desayunar.,,,2025-03-19 09:12
 325,Vocabulario inglés-español,rascal [s.],"rascal [s.] granuja, bribón, bellaco, canalla, pillo; travieso, pícaro",,,2025-03-18 15:06
 324,Citas,,"La ausencia disminuye las pequeñas pasiones y aumenta las grandes, lo mismo que el viento apaga las velas y aviva las hogueras. – Duque de la Rochefoucauld",,,2025-03-18 10:52
@@ -40,12 +41,12 @@
 296,Enlaces,vocabulario inglés | hypallage,vocabulario inglés | hypallage,https://www.merriam-webster.com/dictionary/hypallage,,2025-03-13 12:07
 295,Vocabulario inglés-español,hypallage [s.],hypallage [s.] /hy.PAL.la.ge/ hipálage (figura retórica) ¶ Ejemplos de Grok: The weary road stretched endlessly before them. / She tossed her angry hair and stormed out. / The cold wind whispered through the trees. / He sipped the bitter silence of the empty room. / The drowsy clock ticked on through the night.,,,2025-03-13 11:53
 294,Diario,,"Cambié la fuente del sitio a Inter. Es parecida a Arial, pero con mejores proporciones y más claridad. Pensaba también en Roboto, pero de momento la elegida es Inter.",,,2025-03-13 09:34
-293,Enlaces,,"obras literarias | The hundred most important English literary works, according to Grok",https://grok.com/share/bGVnYWN5_838415b0-915c-46db-a00e-f25dcf624abc,,2025-03-13 09:11
+293,Enlaces,obras literarias | las cien obras literarias más importantes en lengua inglesa,"The hundred most important English literary works, according to Grok",https://grok.com/share/bGVnYWN5_838415b0-915c-46db-a00e-f25dcf624abc,,2025-03-13 09:11
 292,Reflexiones,,Si supieras lo fácil que es esclavizarte en nombre de la libertad.,,,2025-03-10 17:19
 291,Apotegmas,,Miénteme una vez y te odiaré. Miénteme dos veces y te amaré por siempre.,,,2025-03-10 17:18
 290,Apotegmas,,Las cosas que no se pueden decir no necesariamente son una verdad.,,,2025-03-10 17:17
 289,Diario,,"Ahora los diversos temas muestran, además de las diez entradas más recientes, un mensaje clicable al pie para enumerar alfabéticamente todas las entradas del tema o etiqueta en cuestión. De utilidad en caso de que el lector desee continuar la navegación pormenorizada.",,,2025-03-09 22:29
-288,Enlaces,,música - Johann Sebastian Bach | J. S. Bach: Complete Partitas,https://youtu.be/XiG8AGn5Qz8,,2025-03-09 12:19
+288,Enlaces,música - J. S. Bach | J. S. Bach: Complete Partitas,"Todas las partitas para clave de Johann Sebastian Bach, interpretadas por Yuan Sheng.",https://youtu.be/XiG8AGn5Qz8,,2025-03-09 12:19
 287,Apotegmas,,El universo es tan grande que cabe en tu corazón.,,,2025-03-08 09:13
 286,Poesía,,De amor el cuerpo se atiza ¦ De esperanza el mundo se aprisa.,,,2025-03-06 17:59
 285,Vocabulario español,museal [adj.],museal [adj.] Museístico. (Del italiano <i>museale</i>.),,,2025-03-06 11:16
@@ -54,25 +55,25 @@
 282,Reflexiones,,"Sí, ya estamos en el siglo XXIII y todavía hay gente que es de izquierdas o de derechas, adolescentes eternos huyendo de la realidad. Otros, más inteligentes, fingen ser de algún color político para filtrar poco a poco la verdad usando a quienes creen en los partidos. Fantástico.",,,2025-03-06 08:52
 281,Apotegmas,,La religión puede convertirte en un mitómano empedernido y sectario. Practícala conscientemente.,,,2025-03-06 08:51
 280,Apotegmas,,"Pídele a Dios que te despierte, de modo que no necesites vivir el mito de nadie más ni el creado por ti mismo. Sólo para valientes.",,,2025-03-06 07:20
-279,Enlaces,,vocabulario español | panenteísmo,https://es.wikipedia.org/wiki/Panente%C3%ADsmo,,2025-03-05 13:46
-278,Enlaces,,vocabulario español | panenteísmo,https://dle.rae.es/panente%C3%ADsmo,,2025-03-05 13:29
+279,Enlaces,vocabulario español | panenteísmo,vocabulario español | panenteísmo,https://es.wikipedia.org/wiki/Panente%C3%ADsmo,,2025-03-05 13:46
+278,Enlaces,vocabulario español | panenteísmo,vocabulario español | panenteísmo,https://dle.rae.es/panente%C3%ADsmo,,2025-03-05 13:29
 277,Reflexiones,,"Respeto y defiendo tu derecho a opinar, pero no necesariamente tu opinión.",,,2025-03-05 11:07
 276,Apotegmas,,Cuídate de quienes te dicen que el mundo es una ilusión para luego venderte una fórmula secreta de escape. La existencia es el propósito.,,,2025-03-05 11:06
 275,Apotegmas,,"Todo el que se apodera del mundo, se hace esclavo del mundo.",,,2025-03-05 11:03
 274,Diario,,"En ocasiones la ciudad se mueve bajo mis pies, sólo para divertirse y hacerme creer que soy yo quien decidió salir y pasear.",,,2025-03-05 10:53
 273,Reflexiones,,"Me cansé de ver el atardecer y no ser nube, no ser horizonte, no ser sol.",,,2025-03-04 21:48
 272,Apotegmas,,"Todo mito es un cuento hasta que le entregas tu ser, dándole vida, encarnándolo. Pero hay mitos que preceden a tu propia existencia y han dado origen a tu ser.",,,2025-03-04 21:46
-271,Enlaces,,bibliotecas | Elejandria,https://www.elejandria.com/,,2025-03-04 21:41
-270,Enlaces,,bibliotecas | Wikisource,https://es.wikisource.org/wiki/Portada,,2025-03-04 21:39
-269,Enlaces,,Biblias interlineales | LogosKLogos,https://www.logosklogos.com/,,2025-03-04 21:38
+271,Enlaces,bibliotecas | Elejandria,Con lista de libros populares y descarga de libros en formato PDF e Epub.,https://www.elejandria.com/,,2025-03-04 21:41
+270,Enlaces,bibliotecas | Wikisource,bibliotecas | Wikisource,https://es.wikisource.org/wiki/Portada,,2025-03-04 21:39
+269,Enlaces,Biblias interlineales | LogosKLogos,Biblias interlineales | LogosKLogos,https://www.logosklogos.com/,,2025-03-04 21:38
 268,Reflexiones,,¿Buscas la esencia de las cosas? Te quedarás con el hollejo.,,,2025-03-03 10:47
 267,Reflexiones,,"Si ves a alguien contaminando el aire con CO₂ por respirar demasiado, denúncialo sin dudar a las autoridades competentes. Ellos se harán cargo y tú sentirás que eres un ciudadano ejemplar. ¡Que nadie te impida hacer el bien!",,,2025-03-03 10:46
 266,Apotegmas,,"La Senda antigua, la que existe desde más allá del tiempo, antes de toda creación. Si la encuentras, no la abandones.",,,2025-03-03 10:40
 265,Vocabulario inglés-español,feud [s.],"feud [s.] desavenencia, rencilla, enemistad, discordia ¶ This ferment of unrest, which was provoked in the years 1903-1904, was exacerbated in the winters that followed by the renewed outbreak of the century-long racial feud between the Tatars and the Armenians at Baku and other places.",,,2025-03-02 09:20
-264,Enlaces,,Biblias | King James Bible,https://www.kingjamesbibleonline.org,,2025-03-01 22:26
+264,Enlaces,Biblias | King James Bible,"La Biblia King James Bible o King James Version completa, con los libros deuterocanónicos y la versión original de 1611.",https://www.kingjamesbibleonline.org,,2025-03-01 22:26
 263,Vocabulario español,"carlanca, carranca [f.]","carlanca, carranca [f.] Collar ancho, por lo general de cuero y con púas de hierro, para proteger a los mastines y otros perros de las mordeduras de los lobos.",,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Roccale_2.jpg/1200px-Roccale_2.jpg?20110622114745,2025-03-01 20:45
-262,Enlaces,,vocabulario español | ganga,https://dle.rae.es/ganga,,2025-03-01 17:45
-261,Enlaces,,vocabulario español | sicalipsis,https://dle.rae.es/sicalipsis,,2025-03-01 17:37
+262,Enlaces,vocabulario español | ganga,vocabulario español | ganga,https://dle.rae.es/ganga,,2025-03-01 17:45
+261,Enlaces,vocabulario español | sicalipsis,vocabulario español | sicalipsis,https://dle.rae.es/sicalipsis,,2025-03-01 17:37
 260,Apotegmas,,Dile a Dios lo que tiene que hacer y él te dará lo que necesitas.,,,2025-02-28 12:48
 259,Vocabulario español,tal vez [loc.],tal vez [loc.] De vez en cuando; en rara ocasión; tal cual vez.,,,2025-02-28 10:40
 258,Apotegmas,,"No pierdas el tiempo ni te entretengas con nada en los cielos ni en la tierra, ve directo con Dios. La vida es eterna, pero tu paso por ella no.",,,2025-02-28 10:31
@@ -81,52 +82,52 @@
 255,Apotegmas,,"Te parece que Dios está lejos porque nunca has sabido dónde buscarlo y porque tienes una idea equivocada de él. Dios ya es, no inventes uno.",,,2025-02-27 09:39
 254,Reflexiones,,"No es curioso, pero en todos los países que lo tienen, el populismo convierte la delicuencia en una causa social.",,,2025-02-27 09:36
 253,Apotegmas,,No llamemos identidad a la ignorancia.,,,2025-02-27 09:35
-252,Enlaces,,biografías | Johann Sebastian Bach,https://es.wikipedia.org/wiki/Johann_Sebastian_Bach,,2025-02-26 17:03
-251,Enlaces,,"música - Johann Sebastian Bach | Complete Flute Sonatas - Emmanuel Pahud, Trevor Pinnock",https://www.youtube.com/watch?v=com5gPoZ8sI,,2025-02-26 16:59
+252,Enlaces,biografías | Johann Sebastian Bach,biografías | Johann Sebastian Bach,https://es.wikipedia.org/wiki/Johann_Sebastian_Bach,,2025-02-26 17:03
+251,Enlaces,música - J. S. Bach | Complete Flute Sonatas,"Todas las sonatas para flauta y clave de Johann Sebastian Bach, interpretadas por Emmanuel Pahud (flauta) yTrevor Pinnock.",https://www.youtube.com/watch?v=com5gPoZ8sI,,2025-02-26 16:59
 250,Diario,,"He hecho los cambios de programación necesarios para incluir imágenes en el sitio, en la parte inferior de cualquiera de las entradas. Es una función muy necesaria.",,,2025-02-24 21:00
 249,Apotegmas,,"No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.",,,2025-02-24 17:07
-248,Enlaces,,vocabulario español | hipálage,https://dle.rae.es/hipálage,,2025-02-24 17:04
-247,Enlaces,,vocabulario español | hipálage,https://www.retoricas.com/2011/01/ejemplos-de-hipalage.html,,2025-02-24 16:47
-246,Enlaces,,diccionarios inglés | Dictionary.com,https://www.dictionary.com,,2025-02-24 16:45
-245,Enlaces,,vocabulario inglés | munch,https://www.merriam-webster.com/dictionary/munch,,2025-02-24 10:17
+248,Enlaces,vocabulario español | hipálage,vocabulario español | hipálage,https://dle.rae.es/hipálage,,2025-02-24 17:04
+247,Enlaces,vocabulario español | hipálage,vocabulario español | hipálage,https://www.retoricas.com/2011/01/ejemplos-de-hipalage.html,,2025-02-24 16:47
+246,Enlaces,diccionarios inglés | Dictionary.com,diccionarios inglés | Dictionary.com,https://www.dictionary.com,,2025-02-24 16:45
+245,Enlaces,vocabulario inglés | munch,vocabulario inglés | munch,https://www.merriam-webster.com/dictionary/munch,,2025-02-24 10:17
 244,Vocabulario inglés-español,trial [s.],"trial [s.] dificultad, tribulación, prueba, adversidad ¶ and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. It will be found more adventurous than its predecessors, and the trials which Charlie is called upon to encounter are of a severer character than befell Frank Frost or Paul Prescott. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 19:49
 243,Vocabulario inglés-español,adventurous [adj.],"adventurous [adj.] osado, audaz, temerario, intrépido ¶ and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. It will be found more adventurous than its predecessors, and the trials which Charlie is called upon to encounter are of a severer character than befell Frank Frost or Paul Prescott. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 19:41
 242,Vocabulario inglés-español,story of the sea [s.c.],"story of the sea [s.c.] historia de mar; relato de mar ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 19:38
 241,Vocabulario inglés-español,essay [v.],"essay [v.] intentar; ensayar ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 19:34
-240,Enlaces,,diccionarios español | Diccionario histórico de la lengua española,https://www.rae.es/dhle/,,2025-02-23 11:52
-239,Enlaces,,diccionarios chino-inglés | Cedict – is.gd/cedict,https://www.mdbg.net/chinese/dictionary,,2025-02-23 11:48
+240,Enlaces,diccionarios español | Diccionario histórico de la lengua española,diccionarios español | Diccionario histórico de la lengua española,https://www.rae.es/dhle/,,2025-02-23 11:52
+239,Enlaces,diccionarios chino-inglés | Cedict,diccionarios chino-inglés | Cedict – is.gd/cedict,https://www.mdbg.net/chinese/dictionary,,2025-02-23 11:48
 238,Vocabulario inglés-español,expressed wishes [s.c.],"expressed wishes [s.c.] deseos manifiestos ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-23 10:47
 237,Apotegmas,,"Que las vanas complejidades y mojigaterías del reino de los cielos no te extravíen ni te distraigan de la simpleza y el amor absoluto de Dios. Permanece firme, deséchalo todo, no te dividas.",,,2025-02-23 10:05
 236,Apotegmas,,"Del Diablo sólo viene la condenación, y de Dios solamente la salvación.",,,2025-02-23 09:51
 235,Apotegmas,,Se regocijan en el cielo por cada persona que dirige todo su ser en oración a Dios. Literalmente hay fiesta.,,,2025-02-22 10:40
 234,Citas,,Conocimiento es saber que el tomate es una fruta. Sabiduría es no ponerlo en la ensalada de frutas. – Anónimo,,,2025-02-22 08:09
-233,Enlaces,,canales en YouTube | Andy Ward's Ancient Pottery - @AncientPottery,https://www.youtube.com/@AncientPottery/videos,,2025-02-22 07:36
-232,Enlaces,,vocabulario inglés | threshold,https://www.merriam-webster.com/dictionary/threshold,,2025-02-20 22:31
+233,Enlaces,canales en YouTube | Andy Ward's Ancient Pottery,canales en YouTube | Andy Ward's Ancient Pottery - @AncientPottery,https://www.youtube.com/@AncientPottery/videos,,2025-02-22 07:36
+232,Enlaces,vocabulario inglés | threshold,vocabulario inglés | threshold,https://www.merriam-webster.com/dictionary/threshold,,2025-02-20 22:31
 231,Apotegmas,,"No olvides que Dios no es omnipotente, porque no puede forzarte a volverte a él. Entonces, has de definir tus intenciones, tomar las decisiones mejores, abrazar su voluntad. Y, sobre todo, no caigas en la ilusión de que has sido elegido, pues Dios nunca hace acepción de personas.",,,2025-02-20 22:29
-230,Enlaces,,Johann Sebastian Bach | lista completa de sus composiciones,https://musopen.org/music/composer/johann-sebastian-bach/pieces/,,2025-02-20 11:32
+230,Enlaces,Johann Sebastian Bach | lista completa de sus composiciones,Todas las composiciones musicales de Johann Sebastian Bach.,https://musopen.org/music/composer/johann-sebastian-bach/pieces/,,2025-02-20 11:32
 229,Reflexiones,,"No seas una oveja, sé una cabra: sube al monte al encuentro con Dios. Sabes que tú eres el monte, ¿verdad? Sabes que la zarza es la Luz de Dios en ti, ¿verdad? Sabes que quienes no suben son los que no quieren morir en la carne, que es su falsa religiosidad, ¿verdad?",,,2025-02-19 21:52
 228,Apotegmas,,"Una vez que empiezas a usar fetiches, amuletos y baratijas para que te vaya bien, se te hará muy difícil dejar el vicio para volver a confiar en Dios. Es el mismo mecanismo que el de las apuestas.",,,2025-02-19 21:48
 227,Apotegmas,,"No mires mi humildad, Señor, porque es falsa; tampoco mi altivez, porque es ignorancia. Sólo quiero tu amor, y con eso basta.",,,2025-02-19 10:01
 226,Apotegmas,,"Mientras más aberraciones puede normalizar la Agenda, más feliz es. No le demos el gusto.",,,2025-02-19 07:52
-225,Enlaces,,vocabulario español | grimorio,https://dle.rae.es/grimorio,,2025-02-18 20:30
+225,Enlaces,vocabulario español | grimorio,vocabulario español | grimorio,https://dle.rae.es/grimorio,,2025-02-18 20:30
 224,Diario,,"El sitio ha alcanzado plena funcionalidad y se han corregido las fallas de programación. Faltan algunos detalles, además de la posibilidad de mostrar imágenes desde la base de datos. Otras implementaciones vendrán después, pero con menos urgencia.",,,2025-02-18 14:38
-223,Enlaces,,vocabulario latín-inglés | vincor,https://www.lingq.com/en/learn-latin-online/translate/la/vincor/,,2025-02-18 14:37
+223,Enlaces,vocabulario latín-inglés | vincor,vocabulario latín-inglés | vincor,https://www.lingq.com/en/learn-latin-online/translate/la/vincor/,,2025-02-18 14:37
 222,Vocabulario inglés-español,in deference to [loc.],"in deference to [loc.] en consideración a ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-18 13:06
 221,Diario,,"Hoy terminé de subir todos mis enlaces de interés a un repositorio en GitHub, miles de ellos. El sitio cuenta con posibilidades de busca, copia y descarga. También se puede visitar con el enlace <code>e.jucardus.com</code>.",https://enlcs.github.io,,2025-02-17 20:11
 220,Reflexiones,,Ahora resulta que pie grande era un adelantado a su tiempo que se autopercibía oso o chimpancé según el día de la semana. Un incomprendido.,,,2025-02-16 00:02
 219,Vocabulario inglés-español,cast iron [s.c.],cast iron [s.c.] hierro fundido,,,2025-02-13 22:08
 218,Vocabulario inglés-español,wrought iron [s.c.],wrought iron [s.c.] hierro forjado,,,2025-02-13 22:07
-217,Enlaces,,canales en YouTube | Jesús G. Maestro - @JesusGMaestro,https://www.youtube.com/@JesusGMaestro/videos,,2025-02-13 22:04
-216,Enlaces,,diccionarios francés | Dictionnaire de l'Académie française – is.gd/dccnrfrncs,https://www.dictionnaire-academie.fr,,2025-02-13 22:02
+217,Enlaces,canales en YouTube | Jesús G. Maestro,canales en YouTube | Jesús G. Maestro - @JesusGMaestro,https://www.youtube.com/@JesusGMaestro/videos,,2025-02-13 22:04
+216,Enlaces,diccionarios francés | Dictionnaire de l'Académie française,diccionarios francés | Dictionnaire de l'Académie française - is.gd/dccnrfrncs,https://www.dictionnaire-academie.fr,,2025-02-13 22:02
 215,Vocabulario español,"extemporáneo, ea [adj.]","SINÓNIMOS: inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal",,,2025-02-13 15:21
-214,Enlaces,,vocabulario español | parsimonia,https://dle.rae.es/parsimonia,,2025-02-13 15:19
-213,Enlaces,,vocabulario español | seitán,https://es.wikipedia.org/wiki/Seit%C3%A1n,,2025-02-13 15:18
-212,Enlaces,,"vocabulario español | yatrogenia, iatrogenia",https://dle.rae.es/yatrogenia,,2025-02-13 15:16
+214,Enlaces,vocabulario español | parsimonia,vocabulario español | parsimonia,https://dle.rae.es/parsimonia,,2025-02-13 15:19
+213,Enlaces,vocabulario español | seitán,vocabulario español | seitán,https://es.wikipedia.org/wiki/Seit%C3%A1n,,2025-02-13 15:18
+212,Enlaces,"vocabulario español | yatrogenia, iatrogenia","vocabulario español | yatrogenia, iatrogenia",https://dle.rae.es/yatrogenia,,2025-02-13 15:16
 211,Apotegmas,,"Reducir a Dios a conceptos te hará sentir fuerte y confiado; ¿pero no has leído que Dios está con los humildes, los pobres de espíritu y los niños?",,,2025-02-13 13:53
-210,Enlaces,,vocabulario español | mascullar,https://dle.rae.es/mascullar,,2025-02-13 12:01
-209,Enlaces,,vocabulario español | sicalipsis,https://dle.rae.es/sicalipsis,,2025-02-13 11:52
-208,Enlaces,,canales en YouTube | Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
-207,Enlaces,,vocabulario español | soliviar,https://dle.rae.es/soliviar,,2025-02-12 18:45
+210,Enlaces,vocabulario español | mascullar,vocabulario español | mascullar,https://dle.rae.es/mascullar,,2025-02-13 12:01
+209,Enlaces,vocabulario español | sicalipsis,vocabulario español | sicalipsis,https://dle.rae.es/sicalipsis,,2025-02-13 11:52
+208,Enlaces,canales en YouTube | Let's Talk Religion,canales en YouTube | Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
+207,Enlaces,vocabulario español | soliviar,vocabulario español | soliviar,https://dle.rae.es/soliviar,,2025-02-12 18:45
 206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). Persona de ojos azulados.",,,2025-02-12 14:42
 205,Vocabulario inglés-español,drool [v.],drool [v.] babear,,,2025-02-12 14:40
 204,Citas,,"Recordad el pasado con gratitud, vivid el presente con entusiasmo y mirad hacia el futuro con confianza. – Juan Pablo II",,,2025-02-12 14:38
@@ -141,18 +142,18 @@
 195,Apotegmas,,Take it for granted: God cannot forsake you. It's not of his nature. But you can do things that make you forget about him almost forever.,,,2025-02-11 12:32
 194,Música,,música - Johann Sebastian Bach | Variaciones Goldberg (BWV 988) - is.gd/variaciones,https://youtu.be/i4P6F9-4uq8,,2025-02-10 19:11
 193,Citas,,Foreign aid is taking money from poor people in rich countries and giving it to rich people in poor countries. – Ron Paul,,,2025-02-10 12:09
-192,Enlaces,,"glosarios, gramática | Glosario de términos gramaticales",https://rae.es/gtg/,,2025-02-10 09:38
-191,Enlaces,,"diccionarios de sinónimos ingleses | Roget’s Thesaurus, by Peter Mark Roget",https://gutenberg.org/ebooks/22,,2025-02-10 09:33
-190,Enlaces,,libros | 1000 Mythological Characters Briefly Described by Edward Sylvester Ellis,https://gutenberg.org/ebooks/42474,,2025-02-10 08:32
+192,Enlaces,"glosarios, gramática | Glosario de términos gramaticales","glosarios, gramática | Glosario de términos gramaticales",https://rae.es/gtg/,,2025-02-10 09:38
+191,Enlaces,diccionarios de sinónimos ingleses | Roget’s Thesaurus,"diccionarios de sinónimos ingleses | Roget’s Thesaurus, by Peter Mark Roget",https://gutenberg.org/ebooks/22,,2025-02-10 09:33
+190,Enlaces,libros | 1000 Mythological Characters Briefly Described ,libros | 1000 Mythological Characters Briefly Described by Edward Sylvester Ellis,https://gutenberg.org/ebooks/42474,,2025-02-10 08:32
 189,Apotegmas,,"Busca primero a Dios y todo lo demás vendrá por sí mismo; pero lo demás ya no te importará o incluso lo despreciarás, porque ahora tienes a Dios.",,,2025-02-09 22:22
 188,Reflexiones,,"Con la búsqueda racional de Dios se puede llegar hasta cierto punto, a cierto nivel de abstracción, a especulaciones complejas. Si, por soberbia, quien busca se contenta con eso, sometiendo así la fe a la razón, no podrá seguir adelante.",,,2025-02-09 22:21
 187,Poesía,El celo de los poderosos,"Los ángeles tienen envidia, ¦ los arcángeles tienen celo, ¦ porque Dios nace en tu corazón ¦ y no en el reino de los cielos. ¶ Por qué, claman los encumbrados ¦ por qué, reclaman los poderosos, ¦ Porque en el amor humano ¦ está mi verdadero Reino.",,,2025-02-09 22:16
 186,Vocabulario inglés-español,be lost for words [loc.],be lost for words [loc.] faltarle a uno las palabras; quedarse sin palabras; no encontrar las palabras,,,2025-02-09 21:41
-185,Enlaces,,vocabulario español | teleología,https://dle.rae.es/teleolog%C3%ADa,,2025-02-09 21:36
+185,Enlaces,vocabulario español | teleología,vocabulario español | teleología,https://dle.rae.es/teleolog%C3%ADa,,2025-02-09 21:36
 184,Vocabulario español,ímprobo [adj.],"ímprobo [adj.] Falto de honradez, de honestidad; falto de probidad.",,,2025-02-09 21:37
 183,Reflexiones,,"Si no predicas lo que Dios te pide, terminarás engullido por las ideologías y doctrinas del mundo, como Jonás en aquel gran pez. Aun así, si ya has sido tragado por el abismo y oras a Dios, volverás a la vida, serás resucitado.",,,2025-02-09 20:10
 182,Vocabulario español,enconar [v.],enconar [v.] Inflamar una herida. Irritar el ánimo contra alguien.,,,2025-02-09 20:08
-181,Enlaces,,vocabulario español | falcón,https://dle.rae.es/falcón,,2025-02-09 20:07
+181,Enlaces,vocabulario español | falcón,vocabulario español | falcón,https://dle.rae.es/falcón,,2025-02-09 20:07
 180,Vocabulario español,enconado [adj.],"enconado [adj.] Violento, encarnizado, reñido, airado. Manchado, teñido.",,,2025-02-09 20:06
 179,Vocabulario inglés-español,second to last [loc.],second to last [loc.] penúltimo [adj.],,,2025-02-09 20:05
 178,Vocabulario inglés-español,nib [s.],"nib [s.] plumín, punta (de una pluma para escribir)",,,2025-02-09 20:03
