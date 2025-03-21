@@ -27,7 +27,6 @@ a.enlacista:hover, a.enlacista:focus {
   cursor: pointer;
 }
 #azarAZ {
-  margin-bottom: 40px;
 }
 body {
   background-color: White;
@@ -64,7 +63,7 @@ code {
   margin-bottom: 10px;
 }
 #entradaAzarAZ {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .etiquetas {
   color: #105080;
@@ -84,9 +83,6 @@ code {
   background-color: #efd;
   border-radius: 10px;
   padding: 5px 5px 0px 5px;
-}
-h1 {
-  /*margin-bottom: -10px;*/
 }
 h2.anwo {
   background-color: PapayaWhip;
@@ -194,7 +190,8 @@ li {
       }
     }
 #rombo {
-  margin-top: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   text-align: center;
 }
 .separador {
