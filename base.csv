@@ -1,4 +1,5 @@
 ,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA
+336,Enlaces,vocabulario inglés | glitch,"A minor malfunction, problem or irregularity.",https://www.merriam-webster.com/dictionary/glitch,,2025-03-21 09:19
 335,Apotegmas,,"Si crees que eres bueno y que tienes razón sólo porque te persiguen, pronto empezarás a perseguir a los demás.",,,2025-03-20 23:35
 334,Reflexiones,,La ignorancia se convierte en una bendición cuando el relato oficial ha quedado reducido a ideologías y partidismos.,,,2025-03-20 22:00
 333,Diario,,Se agregó la línea necesaria al documento de estilos del sitio para evitar el desplazamiento horizontal de la página cuando es visitada en pantallas pequeñas de celulares: <code>@media only screen and (max-device-width: 480px) { body { overflow-x: hidden; } }</code>.,,,2025-03-20 15:29
