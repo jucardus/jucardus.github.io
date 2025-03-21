@@ -1,12 +1,21 @@
-# [Jucardus.com](https://jucardus.com)
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+# [Jucardus.com](https://jucardus.com) 
+
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
 
+* [vocabulario inglés | glitch](https://jucardus.github.io/2503210919)
+* [Si crees que eres bueno y que tienes raz...](https://jucardus.github.io/2503202335)
+* [La ignorancia se convierte en una bendic...](https://jucardus.github.io/2503202200)
+* [Se agregó la línea necesaria al document...](https://jucardus.github.io/2503201529)
+* [Los deseos quedan satisfechos únicamente...](https://jucardus.github.io/2503200901)
+* [YouTube | comentarios en YouTube](https://jucardus.github.io/2503192233)
+* [Real Academia Española | recursos varios](https://jucardus.github.io/2503192231)
+* [Acabo de aumentar la distancia entre las...](https://jucardus.github.io/2503192016)
 * [Nunca dejes que llegue al poder alguien...](https://jucardus.github.io/2503191944)
 * [bibliotecas | Project Gutenberg](https://jucardus.github.io/2503190952)
 * [Nunca nadie ha ganado una batalla sin an...](https://jucardus.github.io/2503190912)
@@ -33,7 +42,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Generamos el tiempo y la distancia cuand...](https://jucardus.github.io/2503141853)
 * [Entre una persona que te trata bien para...](https://jucardus.github.io/2503141852)
 * [Dale a la gente algo que idolatrar y te...](https://jucardus.github.io/2503141851)
-* [Facebook | enlace para eliminar una cuen...](https://jucardus.github.io/2503132359)
+* [Facebook | enlace para eliminar una cuenta](https://jucardus.github.io/2503132359)
 * [blunder [s.]](https://jucardus.github.io/2503132245)
 * [at all hazards [loc.]](https://jucardus.github.io/2503132241)
 * [like [adj.]](https://jucardus.github.io/2503132239)
@@ -42,18 +51,11 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [vocabulario inglés | hypallage](https://jucardus.github.io/2503131207)
 * [hypallage [s.]](https://jucardus.github.io/2503131153)
 * [Cambié la fuente del sitio a Inter. Es p...](https://jucardus.github.io/2503130934)
-* [obras literarias | The hundred most impo...](https://jucardus.github.io/2503130911)
+* [obras literarias | las cien obras literarias más importantes en lengua inglesa](https://jucardus.github.io/2503130911)
 * [Si supieras lo fácil que es esclavizarte...](https://jucardus.github.io/2503101719)
 * [Miénteme una vez y te odiaré. Miénteme d...](https://jucardus.github.io/2503101718)
 * [Las cosas que no se pueden decir no nece...](https://jucardus.github.io/2503101717)
 * [Ahora los diversos temas muestran, ademá...](https://jucardus.github.io/2503092229)
-* [música - Johann Sebastian Bach | J. S. B...](https://jucardus.github.io/2503091219)
+* [música - J. S. Bach | J. S. Bach: Complete Partitas](https://jucardus.github.io/2503091219)
 * [El universo es tan grande que cabe en tu...](https://jucardus.github.io/2503080913)
-* [De amor el cuerpo se atiza ¦ De esperanz...](https://jucardus.github.io/2503061759)
-* [museal [adj.]](https://jucardus.github.io/2503061116)
-* [bulo [m.]](https://jucardus.github.io/2503060857)
-* [parla [f.]](https://jucardus.github.io/2503060853)
-* [Sí, ya estamos en el siglo XXIII y todav...](https://jucardus.github.io/2503060852)
-* [La religión puede convertirte en un mitó...](https://jucardus.github.io/2503060851)
-* [Pídele a Dios que te despierte, de modo...](https://jucardus.github.io/2503060720)
-* [vocabulario español | panenteísmo](https://jucardus.github.io/2503051346)
+
