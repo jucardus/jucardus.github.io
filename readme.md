@@ -1,12 +1,14 @@
-# [Jucardus.com](https://jucardus.com) 
+# [Jucardus.com](https://jucardus.com)
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
-* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com 
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
+* [**Repositorio**](https://r.jucardus.com) - r.jucardus.com
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
+
+[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Enlaces](https://jucardus.github.io/enlaces) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)
 
 * [bibliotecas | Internet Archive](https://jucardus.github.io/2503220913)
 * [En muchas empresas para alcanzar la glor...](https://jucardus.github.io/2503212212)
@@ -58,5 +60,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [hypallage [s.]](https://jucardus.github.io/2503131153)
 * [Cambié la fuente del sitio a Inter. Es p...](https://jucardus.github.io/2503130934)
 * [obras literarias | las cien obras literarias más importantes en lengua inglesa](https://jucardus.github.io/2503130911)
-
-
