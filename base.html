@@ -6,13 +6,13 @@
     <meta name="description" content="Base de datos CSV del contenido de jucardus.github.io.">
 </head>
 <body>
-    <h1>Base de datos CSV de Jucardus</h1>
+    <h1>Base de datos de Jucardus</h1>
     <div id="csv-content"></div>
     <script>
         fetch('base.csv')
             .then(response => response.text())
             .then(data => {
-                const rows = data.split('\n').map(row => row.replace(/\, /g,'ŧ ').split(','));
+                const rows = data.split('\n').map(row => row.split(','));
                 const table = document.createElement('table');
                 rows.forEach(row => {
                     const tr = document.createElement('tr');
@@ -23,7 +23,7 @@
                     });
                     table.appendChild(tr);
                 });
-                document.getElementById('csv-content').appendChild(table).replace(/ŧ /g,', ');
+                document.getElementById('csv-content').appendChild(table);
             });
     </script>
 </body>
