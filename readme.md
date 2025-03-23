@@ -8,6 +8,12 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
+* [bibliotecas | Internet Archive](https://jucardus.github.io/2503220913)
+* [En muchas empresas para alcanzar la glor...](https://jucardus.github.io/2503212212)
+* [La mayoría de las personas prefieren con...](https://jucardus.github.io/2503212210)
+* [Los altavoces refuerzan la voz, pero no...](https://jucardus.github.io/2503212209)
+* [¿El buen hábito de amar a unos pocos y d...](https://jucardus.github.io/2503212149)
+* [Si buscas a Dios hacia fuera corres el r...](https://jucardus.github.io/2503212146)
 * [vocabulario inglés | glitch](https://jucardus.github.io/2503210919)
 * [Si crees que eres bueno y que tienes raz...](https://jucardus.github.io/2503202335)
 * [La ignorancia se convierte en una bendic...](https://jucardus.github.io/2503202200)
@@ -52,10 +58,5 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [hypallage [s.]](https://jucardus.github.io/2503131153)
 * [Cambié la fuente del sitio a Inter. Es p...](https://jucardus.github.io/2503130934)
 * [obras literarias | las cien obras literarias más importantes en lengua inglesa](https://jucardus.github.io/2503130911)
-* [Si supieras lo fácil que es esclavizarte...](https://jucardus.github.io/2503101719)
-* [Miénteme una vez y te odiaré. Miénteme d...](https://jucardus.github.io/2503101718)
-* [Las cosas que no se pueden decir no nece...](https://jucardus.github.io/2503101717)
-* [Ahora los diversos temas muestran, ademá...](https://jucardus.github.io/2503092229)
-* [música - J. S. Bach | J. S. Bach: Complete Partitas](https://jucardus.github.io/2503091219)
-* [El universo es tan grande que cabe en tu...](https://jucardus.github.io/2503080913)
+
 
