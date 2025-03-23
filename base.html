@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My CSV Database</title>
+    <meta name="description" content="A database of [describe your data here]">
+</head>
+<body>
+    <h1>My CSV Database</h1>
+    <div id="csv-content"></div>
+    <script>
+        fetch('base.csv')
+            .then(response => response.text())
+            .then(data => {
+                const rows = data.split('\n').map(row => row.replace(/\, /g,'ŧ ').split(','));
+                const table = document.createElement('table');
+                rows.forEach(row => {
+                    const tr = document.createElement('tr');
+                    row.forEach(cell => {
+                        const td = document.createElement('td');
+                        td.textContent = cell;
+                        tr.appendChild(td);
+                    });
+                    table.appendChild(tr);
+                });
+                document.getElementById('csv-content').appendChild(table.replace(/ŧ /g,' '));
+            });
+    </script>
+</body>
+</html>
