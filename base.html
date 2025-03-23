@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44Y9CNCHR8');
+</script>
+
     <meta charset="UTF-8">
     <title>Base de datos CSV de Jucardus</title>
     <meta name="description" content="Base de datos CSV del contenido de jucardus.github.io.">
+    <meta name = "keywords" content = "apotegmas, citas, cuentos, diario, enlaces, vínculos, hipervínculos, reflexiones, sinónimos, vocabularios, apotegma, cita, cuento, diario, enlace, vínculo, hipervínculo, reflexión, sinónimo, vocabulario, vocabulario inglés-español, vocabulario inglés, sinónimos ingleses, sinónimos españoles" />
+    <meta name = "author" content = "Julio Cárdenas Pelizzari" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
 </head>
 <body>
-    <h1>Base de datos de Jucardus</h1>
+    <h1><a href='https://jucardus.github.io'>Base de datos de Jucardus</a></h1>
     <div id="csv-content"></div>
     <script>
         fetch('base.csv')
