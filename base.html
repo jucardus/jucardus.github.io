@@ -19,11 +19,11 @@
                     row.forEach(cell => {
                         const td = document.createElement('td');
                         td.textContent = cell;
-                        tr.appendChild(td.replace(/ŧ /g,', '));
+                        tr.appendChild(td);
                     });
-                    table.appendChild(tr.replace(/ŧ /g,', '));
+                    table.appendChild(tr);
                 });
-                document.getElementById('csv-content').appendChild(table);
+                document.getElementById('csv-content').appendChild(table).replace(/ŧ /g,', ');
             });
     </script>
 </body>
