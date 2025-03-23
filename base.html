@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>My CSV Database</title>
-    <meta name="description" content="A database of [describe your data here]">
+    <title>Base de datos CSV de Jucardus</title>
+    <meta name="description" content="Base de datos CSV del contenido de jucardus.github.io.">
 </head>
 <body>
-    <h1>My CSV Database</h1>
+    <h1>Base de datos CSV de Jucardus</h1>
     <div id="csv-content"></div>
     <script>
         fetch('base.csv')
@@ -19,9 +19,9 @@
                     row.forEach(cell => {
                         const td = document.createElement('td');
                         td.textContent = cell;
-                        tr.appendChild(td);
+                        tr.appendChild(td.replace(/ŧ /g,', '));
                     });
-                    table.appendChild(tr);
+                    table.appendChild(tr.replace(/ŧ /g,', '));
                 });
                 document.getElementById('csv-content').appendChild(table);
             });
