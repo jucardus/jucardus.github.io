@@ -50,7 +50,7 @@
                         }
                         historyStack.push(url);
                         currentIndex = historyStack.length - 1;
-                        const fileName = url.split('/').pop().replace('.md', ''); // e.g., "first" from "first.md"
+                        const fileName = url.split('/').pop().replace('.md', '');
                         window.history.pushState({ url: url }, '', `/${fileName}`);
                     }
 
@@ -79,8 +79,14 @@
             }
         };
 
-        // Start with first.md
-        renderMarkdown(baseUrl + 'first.md');
+        // Check initial URL path and load corresponding file
+        const initialPath = window.location.pathname;
+        if (initialPath && initialPath !== '/') {
+            const fileName = initialPath.slice(1) + '.md';
+            renderMarkdown(baseUrl + fileName);
+        } else {
+            renderMarkdown(baseUrl + 'first.md');
+        }
     </script>
 </body>
 </html>
