@@ -11,14 +11,11 @@
             height: 100%;
             font-family: Arial, sans-serif;
         }
-        #container {
+        #content {
             padding: 20px;
             max-width: 100%;
             min-height: 100%;
             box-sizing: border-box;
-        }
-        #content {
-            margin-top: 10px;
         }
         a {
             color: #0366d6;
@@ -27,28 +24,14 @@
         a:hover {
             text-decoration: underline;
         }
-        #backButton {
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            cursor: pointer;
-            display: none; /* Hidden until there's history */
-        }
-        #backButton:hover {
-            background-color: #e0e0e0;
-        }
     </style>
 </head>
 <body>
-    <div id="container">
-        <button id="backButton" onclick="goBack()">Back</button>
-        <div id="content"></div>
-    </div>
+    <div id="content"></div>
 
     <script>
         const baseUrl = 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/';
         const contentDiv = document.getElementById('content');
-        const backButton = document.getElementById('backButton');
         let historyStack = []; // Array to store visited URLs
         let currentIndex = -1; // Index in history
 
@@ -69,7 +52,6 @@
                         historyStack.push(url);
                         currentIndex = historyStack.length - 1;
                         window.history.pushState({ url: url }, '', `#${url.split('/').pop()}`);
-                        backButton.style.display = currentIndex > 0 ? 'inline-block' : 'none';
                     }
 
                     // Add click handlers to Markdown links
@@ -77,8 +59,8 @@
                         if (link.href.endsWith('.md')) {
                             link.addEventListener('click', (e) => {
                                 e.preventDefault();
-                                const newUrl = link.href.includes('raw.githubusercontent.com')
-                                    ? link.href
+                                const newUrl = link.href.includes('raw.githubusercontent.com') 
+                                    ? link.href 
                                     : baseUrl + link.pathname.replace(/^\/+/, '');
                                 renderMarkdown(newUrl);
                             });
@@ -90,20 +72,11 @@
                 });
         }
 
-        function goBack() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                renderMarkdown(historyStack[currentIndex], false);
-                backButton.style.display = currentIndex > 0 ? 'inline-block' : 'none';
-            }
-        }
-
-        // Handle browser back/forward
+        // Handle browser back/forward (Alt + ← and Alt + →)
         window.onpopstate = (event) => {
             if (event.state && event.state.url) {
                 currentIndex = historyStack.indexOf(event.state.url);
                 renderMarkdown(event.state.url, false);
-                backButton.style.display = currentIndex > 0 ? 'inline-block' : 'none';
             }
         };
 
