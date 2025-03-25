@@ -81,11 +81,11 @@
 
         // Check initial URL path and load corresponding file
         const initialPath = window.location.pathname;
-        if (initialPath && initialPath !== '/') {
-            const fileName = initialPath.slice(1) + '.md';
+        if (initialPath && initialPath !== '/' && initialPath !== '/index2.html') {
+            const fileName = initialPath.slice(1) + '.md'; // e.g., "second" -> "second.md"
             renderMarkdown(baseUrl + fileName);
         } else {
-            renderMarkdown(baseUrl + 'first.md');
+            renderMarkdown(baseUrl + 'first.md'); // Default to first.md
         }
     </script>
 </body>
