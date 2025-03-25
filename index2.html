@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Navigation with History</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        #container {
+            padding: 20px;
+            max-width: 100%;
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+        #content {
+            margin-top: 10px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #backButton {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            cursor: pointer;
+            display: none; /* Hidden until there's history */
+        }
+        #backButton:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="backButton" onclick="goBack()">Back</button>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        const baseUrl = 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/';
+        const contentDiv = document.getElementById('content');
+        const backButton = document.getElementById('backButton');
+        let historyStack = []; // Array to store visited URLs
+        let currentIndex = -1; // Index in history
+
+        function renderMarkdown(url, addToHistory = true) {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error('File not found');
+                    return response.text();
+                })
+                .then(data => {
+                    contentDiv.innerHTML = marked.parse(data);
+
+                    // Update history
+                    if (addToHistory) {
+                        if (currentIndex < historyStack.length - 1) {
+                            historyStack = historyStack.slice(0, currentIndex + 1);
+                        }
+                        historyStack.push(url);
+                        currentIndex = historyStack.length - 1;
+                        window.history.pushState({ url: url }, '', `#${url.split('/').pop()}`);
+                        backButton.style.display = currentIndex > 0 ? 'inline-block' : 'none';
+                    }
+
+                    // Add click handlers to Markdown links
+                    contentDiv.querySelectorAll('a').forEach(link => {
+                        if (link.href.endsWith('.md')) {
+                            link.addEventListener('click', (e) => {
+                                e.preventDefault();
+                                const newUrl = link.href.includes('raw.githubusercontent.com')
+                                    ? link.href
+                                    : baseUrl + link.pathname.replace(/^\/+/, '');
+                                renderMarkdown(newUrl);
+                            });
+                        }
+                    });
+                })
+                .catch(error => {
+                    contentDiv.innerHTML = `<p>Error loading Markdown file: ${error.message}</p>`;
+                });
+        }
+
+        function goBack() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                renderMarkdown(historyStack[currentIndex], false);
+                backButton.style.display = currentIndex > 0 ? 'inline-block' : 'none';
+            }
+        }
+
+        // Handle browser back/forward
+        window.onpopstate = (event) => {
+            if (event.state && event.state.url) {
+                currentIndex = historyStack.indexOf(event.state.url);
+                renderMarkdown(event.state.url, false);
+                backButton.style.display = currentIndex > 0 ? 'inline-block' : 'none';
+            }
+        };
+
+        // Start with first.md
+        renderMarkdown(baseUrl + 'first.md');
+    </script>
+</body>
+</html>
