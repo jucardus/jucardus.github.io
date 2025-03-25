@@ -1,4 +1,4 @@
-## Second file
+## Second MD
 
 [go to first.md](./first.md)[go to third.md](./third.md)
 
