@@ -32,8 +32,8 @@
     <script>
         const baseUrl = 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/';
         const contentDiv = document.getElementById('content');
-        let historyStack = []; // Array to store visited URLs
-        let currentIndex = -1; // Index in history
+        let historyStack = [];
+        let currentIndex = -1;
 
         function renderMarkdown(url, addToHistory = true) {
             fetch(url)
@@ -44,17 +44,16 @@
                 .then(data => {
                     contentDiv.innerHTML = marked.parse(data);
 
-                    // Update history
                     if (addToHistory) {
                         if (currentIndex < historyStack.length - 1) {
                             historyStack = historyStack.slice(0, currentIndex + 1);
                         }
                         historyStack.push(url);
                         currentIndex = historyStack.length - 1;
-                        window.history.pushState({ url: url }, '', `#${url.split('/').pop()}`);
+                        const fileName = url.split('/').pop().replace('.md', ''); // e.g., "first" from "first.md"
+                        window.history.pushState({ url: url }, '', `/${fileName}`);
                     }
 
-                    // Add click handlers to Markdown links
                     contentDiv.querySelectorAll('a').forEach(link => {
                         if (link.href.endsWith('.md')) {
                             link.addEventListener('click', (e) => {
