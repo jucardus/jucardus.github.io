@@ -10,6 +10,15 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Enlaces](https://jucardus.github.io/enlaces) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [El camino a la Verdad siempre es individ...](https://jucardus.github.io/2503251111)
+* [aplicaciones Android | DotDash Keyboard](https://jucardus.github.io/2503250739)
+* [Sólo los tontos son convencidos por los...](https://jucardus.github.io/2503250735)
+* [Lo que soy](https://jucardus.github.io/2503250732)
+* [Si solamente recordaras que el mundo sie...](https://jucardus.github.io/2503250729)
+* [Es increíble la cantidad de personas que...](https://jucardus.github.io/2503250727)
+* [Desamorada](https://jucardus.github.io/2503250724)
+* [Por más correcta que sea tu teología, nu...](https://jucardus.github.io/2503250715)
+* [No dejes que nadie te diga cómo pensar;...](https://jucardus.github.io/2503250705)
 * [Recuerda que Dios es pequeño, que nace e...](https://jucardus.github.io/2503241201)
 * [Dios es tan pequeñito que está en todas...](https://jucardus.github.io/2503241145)
 * [aplicaciones Android | French Dictionary - Offline](https://jucardus.github.io/2503241137)
@@ -51,12 +60,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [YouTube | comentarios en YouTube](https://jucardus.github.io/2503192233)
 * [Real Academia Española | recursos varios](https://jucardus.github.io/2503192231)
 * [Acabo de aumentar la distancia entre las...](https://jucardus.github.io/2503192016)
-* [Nunca dejes que llegue al poder alguien...](https://jucardus.github.io/2503191944)
-* [bibliotecas | Project Gutenberg](https://jucardus.github.io/2503190952)
-* [Nunca nadie ha ganado una batalla sin an...](https://jucardus.github.io/2503190912)
-* [rascal [s.]](https://jucardus.github.io/2503181506)
-* [La ausencia disminuye las pequeñas pasio...](https://jucardus.github.io/2503181052)
-* [Muchos hombres cometen el error de susti...](https://jucardus.github.io/2503181049)
-* [Existen verdades que pueden matar a un p...](https://jucardus.github.io/2503181047)
-* [Los fanatismos que más debemos temer son...](https://jucardus.github.io/2503181044)
-* [Quizá la existencia de una respuesta dep...](https://jucardus.github.io/2503181042)
