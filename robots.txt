@@ -5,4 +5,5 @@ Allow: /google2119b2e3affca446.html
 Allow: /index.html
 Allow: /rdm.html
 Allow: /sitemap.xml
+Allow: /tree.html
 Sitemap: https://jucardus.github.io/sitemap.xml
