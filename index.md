@@ -28,7 +28,7 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más,
 
 ### [Facebook](https://www.facebook.com/profile.php?id=61561035651414)
 
-Actualmente sin contenido. Ya se usará para algo, o quizá tampoco. Enlace corto: **f.jucardus.com**.
+Actualmente sin contenido. Ya se usará para algo, o quizá tampoco. Estoy esperando a que me permitan cambiar el nombre de usuario. Enlace corto: **f.jucardus.com**.
 
 ---
 
