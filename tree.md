@@ -50,6 +50,12 @@ Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis si
 
 ---
 
+### [Sitio central](https://jucardus.github.io)
+
+Con las cosas que escribo, entre apotegmas, cuentos, citas, reflexiones, diario, poesía y más. Enlace corto: **jucardus.com**.
+
+---
+
 ### [X Twitter](https://x.com/jucardus)
 
 Mi cuenta en X Twitter, con poco y nada de momento. Enlace alternativo: **x.jucardus.com**.
