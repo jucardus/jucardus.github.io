@@ -10,19 +10,19 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas. Tam
 
 ### Diccionarios todos
 
-Diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. De momento sin sitio de publicación.
+Mis diccionario en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. De momento sin sitio de publicación, pero probablemente use alguna nube o drive para ello.
 
 ---
 
 ### [Enlacista](https://enlcs.github.io/)
 
-Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Enlace corto: **e.jucardus.com**.
+Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. Enlace corto: **e.jucardus.com**.
 
 ---
 
 ### Escritos varios
 
-Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más. De momento sin sitio de publicación.
+Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gusta. De momento sin sitio de publicación.
 
 ---
 
@@ -40,24 +40,18 @@ Diez gigas gratuitos en la nube pCloud, con compartición de carpetas y document
 
 ### [Música clásica](https://www.youtube.com/@jucardus/playlists)
 
-Mis listas de reproducción en YouTube, con música clásica clasificada por autor. También accesible directamente mediante **m.jucardus.com**.
+Mis listas de reproducción en YouTube, con música clásica clasificada por autor. Reflejan mi predilección por Johann Sebastian Bach. También accesible directamente mediante **m.jucardus.com**.
 
 ---
 
 ### [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
 
-Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por traducciones. Accesible directamente con el enlace **p.jucardus.com**.
-
----
-
-### [Sitio central](https://jucardus.github.io)
-
-Con las cosas que escribo, entre apotegmas, cuentos, citas, reflexiones, diario, poesía y más. Enlace corto: **jucardus.com**.
+Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **p.jucardus.com**.
 
 ---
 
 ### [X Twitter](https://x.com/jucardus)
 
-Mi cuenta en X Twitter, con poco y nada de momento. Enlace alternativo: **x.jucardus.com**.
+Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta para hacer ciertos comentarios cáusticos o no, para retuitar el contenido de otros o para compartir mi actividad reciente. Enlace alternativo: **x.jucardus.com**.
 
 ---
