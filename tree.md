@@ -2,11 +2,11 @@
 
 ### [Contacto](https://jucardus.github.io/correo.png)
 
-Para el servicio de traducciones del inglés al español, pagas y gratuitas. También puedes contactar conmigo con el mismo correo para hacer críticas, sugerencias y correcciones al contenido de cualquiera de mis sitios. También accesible mediante **c.jucardus.com**.
+Para el servicio de traducciones del inglés al español, pagas y gratuitas. También puedes contactar conmigo con el mismo correo para hacer críticas, sugerencias y correcciones al contenido de cualquiera de mis sitios. Enlace corto: **c.jucardus.com**.
 
 ### [Enlacista](https://enlcs.github.io/)
 
-Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Enloace corto alternativo: **e.jucardus.com**.
+Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Enlace corto: **e.jucardus.com**.
 
 ### [Facebook](https://www.facebook.com/profile.php?id=61561035651414)
 
@@ -18,7 +18,7 @@ Diez gigas gratuitos en la nube pCloud, con compartición de carpetas y document
 
 ### [Música clásica](https://www.youtube.com/@jucardus/playlists)
 
-Mis listas de reproducción en YouTube, con música clásica clasificada por autores. También accesible mediante **m.jucardus.com**.
+Mis listas de reproducción en YouTube, con música clásica clasificada por autor. También accesible directamente mediante **m.jucardus.com**.
 
 ### [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
 
@@ -26,4 +26,4 @@ Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis si
 
 ### [X Twitter](https://x.com/jucardus)
 
-Mi cuenta en X Twitter, con poco y nada de momento. Enlace rápido: **x.jucardus.com**.
+Mi cuenta en X Twitter, con poco y nada de momento. Enlace alternativo: **x.jucardus.com**.
