@@ -50,6 +50,12 @@ Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis si
 
 ---
 
+### Programación básica
+
+Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **pb.jucardus.com**.
+
+---
+
 ### [X Twitter](https://x.com/jucardus)
 
 Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta para hacer ciertos comentarios cáusticos o no, para retuitar el contenido de otros o para compartir mi actividad reciente. Enlace alternativo: **x.jucardus.com**.
