@@ -9,6 +9,8 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Enlaces](https://jucardus.github.io/enlaces) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [Así como el Sol no tiene más remedio que...](https://jucardus.github.io/2503262202)
+* [aplicaciones Android | Unicode CharMap – Full](https://jucardus.github.io/2503262200)
 * [El camino a la Verdad siempre es individ...](https://jucardus.github.io/2503251111)
 * [aplicaciones Android | DotDash Keyboard](https://jucardus.github.io/2503250739)
 * [Sólo los tontos son convencidos por los...](https://jucardus.github.io/2503250735)
@@ -57,5 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Se agregó la línea necesaria al document...](https://jucardus.github.io/2503201529)
 * [Los deseos quedan satisfechos únicamente...](https://jucardus.github.io/2503200901)
 * [YouTube | comentarios en YouTube](https://jucardus.github.io/2503192233)
-* [Real Academia Española | recursos varios](https://jucardus.github.io/2503192231)
-* [Acabo de aumentar la distancia entre las...](https://jucardus.github.io/2503192016)
