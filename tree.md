@@ -10,7 +10,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas. Tam
 
 ### Diccionarios todos
 
-Mis diccionario en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. De momento sin sitio de publicación, pero probablemente use alguna nube o drive para ello.
+Mis diccionario en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Actualmente sin sitio de publicación, pero probablemente use alguna nube o drive para ello.
 
 ---
 
