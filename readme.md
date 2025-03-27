@@ -5,7 +5,7 @@
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
-### Enlaces
+### Contenido
 
 * [Contacto](https://jucardus.github.io/#contacto)
 * [Diccionarios todos](https://jucardus.github.io/#diccionarios-todos)
