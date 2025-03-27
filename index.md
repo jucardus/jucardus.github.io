@@ -10,13 +10,13 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas. Tam
 
 ### Diccionarios todos
 
-Mis diccionario en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Actualmente sin sitio de publicación, pero probablemente use alguna nube o drive para ello.
+Mis diccionario en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Actualmente sin sitio de publicación, pero probablemente use alguna nube o drive para ello. El enlace corto será **d.jucardus.com**.
 
 ---
 
 ### [Enlacista](https://enlcs.github.io/)
 
-Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. Enlace corto: **e.jucardus.com**.
+Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. El sitio cuenta con opciones de busca. Enlace corto: **e.jucardus.com**.
 
 ---
 
@@ -46,13 +46,13 @@ Mis listas de reproducción en YouTube, con música clásica clasificada por aut
 
 ### [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
 
-Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **p.jucardus.com**.
+Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **pp.jucardus.com**.
 
 ---
 
 ### Programación básica
 
-Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **pb.jucardus.com**.
+Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **p.jucardus.com**.
 
 ---
 
