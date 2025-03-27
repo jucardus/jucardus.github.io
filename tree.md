@@ -8,9 +8,21 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas. Tam
 
 ---
 
+### Diccionarios todos
+
+Diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. De momento sin sitio de publicación.
+
+---
+
 ### [Enlacista](https://enlcs.github.io/)
 
 Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Enlace corto: **e.jucardus.com**.
+
+---
+
+### Escritos varios
+
+Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más. De momento sin sitio de publicación.
 
 ---
 
