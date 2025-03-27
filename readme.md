@@ -15,4 +15,5 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Invitación a pCloud](https://jucardus.github.io/#invitaci%C3%B3n-a-pcloud)
 * [Música clásica](https://jucardus.github.io/#m%C3%BAsica-cl%C3%A1sica)
 * [Pagos y donaciones](https://jucardus.github.io/#pagos-y-donaciones)
+* [Programación básica](https://jucardus.github.io/#programaci%C3%B3n-b%C3%A1sica)
 * [X Twitter](https://jucardus.github.io/#x-twitter)
