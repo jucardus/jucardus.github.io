@@ -8,9 +8,9 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas. Tam
 
 ---
 
-### Diccionarios todos
+### [Diccionarios todos](https://mega.nz/folder/7YRWWb7R#kFSHM7B95-baqFM-vpQdqQ)
 
-Mis diccionario en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Actualmente sin sitio de publicación, pero probablemente use alguna nube o drive para ello. El enlace corto será **d.jucardus.com**.
+Mis diccionarios en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Enlace corto: **d.jucardus.com**.
 
 ---
 
