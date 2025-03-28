@@ -8,7 +8,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Autógrafos varios
 
-Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gusta. De momento sin sitio de publicación.
+Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gustan. De momento sin sitio de publicación.
 
 ---
 
