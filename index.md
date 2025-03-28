@@ -8,13 +8,13 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas. Tam
 
 ---
 
-### [Diccionarios todos](https://tr.ee/jucardus)
+### [Diccionarios todos](https://tr.ee/dccnrs)
 
 Mis diccionarios en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Enlace corto: **d.jucardus.com**.
 
 ---
 
-### [Enlacista](https://enlcs.github.io/)
+### [Enlacista](https://tr.ee/enlcs)
 
 Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. El sitio cuenta con opciones de busca. Enlace corto: **e.jucardus.com**.
 
@@ -26,25 +26,25 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más,
 
 ---
 
-### [Facebook](https://www.facebook.com/profile.php?id=61561035651414)
+### [Facebook](https://tr.ee/fbjucardus)
 
 Actualmente sin contenido. Ya se usará para algo, o quizá tampoco. Estoy esperando a que me permitan cambiar el nombre de usuario. Enlace corto: **f.jucardus.com**.
 
 ---
 
-### [Invitación a pCloud](https://is.gd/ipcloud)
+### [Invitación a pCloud](https://tr.ee/ipcloud)
 
 Diez gigas gratuitos en la nube pCloud, con compartición de carpetas y documentos, sincronización, aplicación Android disponible, tamaño de documentos ilimitado, buena velocidad de carga y descarga, encriptación TLS/SSL y más. Acceso corto: **i.jucardus.com**.
 
 ---
 
-### [Música clásica](https://www.youtube.com/@jucardus/playlists)
+### [Música clásica](https://tr.ee/musica)
 
 Mis listas de reproducción en YouTube, con música clásica clasificada por autor. Reflejan mi predilección por Johann Sebastian Bach. También accesible directamente mediante **m.jucardus.com**.
 
 ---
 
-### [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
+### [Pagos y donaciones](https://tr.ee/ppjucardus)
 
 Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **pp.jucardus.com**.
 
