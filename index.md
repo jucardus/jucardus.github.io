@@ -18,7 +18,7 @@ Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-
 
 ---
 
-### [Enlacista](https://enlcs.github.io)
+### [Enlaces muchos](https://enlcs.github.io)
 
 Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. El sitio cuenta con opciones de busca. Enlace corto: **e.jucardus.com**.
 
