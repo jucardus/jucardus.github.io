@@ -2,7 +2,7 @@
 
 ---
 
-Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante el correo [**c.jucardus.com**](https://jucardus.github.io/correo.png). También puedes usar el mismo correo para hacer críticas, sugerencias y correcciones al contenido de cualquiera de mis sitios.
+Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [**c.jucardus.com**](https://jucardus.github.io/correo.png). Puedes usar el mismo correo electrónico para hacer críticas, sugerencias y correcciones al contenido de cualquiera de mis sitios, enumerados a continuación.
 
 ---
 
