@@ -7,13 +7,14 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Contenido
 
-* [Contacto](https://jucardus.github.io/#contacto)
+* [* Contacto *](https://jucardus.github.io/correo.png)
+* [Autógrafos varios](https://jucardus.github.io/#aut%C3%B3grafos-varios)
 * [Diccionarios todos](https://jucardus.github.io/#diccionarios-todos)
-* [Enlaces muchos](https://jucardus.github.io/#enlacista)
-* [Escritos varios](https://jucardus.github.io/#escritos-varios)
+* [Enlaces muchos](https://jucardus.github.io/#enlaces-muchos)
 * [Facebook](https://jucardus.github.io/#facebook)
 * [Invitación a pCloud](https://jucardus.github.io/#invitaci%C3%B3n-a-pcloud)
 * [Música clásica](https://jucardus.github.io/#m%C3%BAsica-cl%C3%A1sica)
 * [Pagos y donaciones](https://jucardus.github.io/#pagos-y-donaciones)
 * [Programación básica](https://jucardus.github.io/#programaci%C3%B3n-b%C3%A1sica)
+* [Traducciones al español](https://jucardus.github.io/#traducciones-al-espa%C3%B1ol)
 * [X Twitter](https://jucardus.github.io/#x-twitter)
