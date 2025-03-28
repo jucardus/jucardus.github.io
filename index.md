@@ -54,6 +54,12 @@ Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blo
 
 ---
 
+### Traducciones al español
+
+Traducción de textos diversos al español, con versiones párrafo por párrafo y equivalencias en contexto. Sigo buscando un buen lugar para publicarlas, y cuando lo encuentre, el enlace corto será **t.jucardus.com**.
+
+---
+
 ### [X Twitter](https://x.com/jucardus)
 
 Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta para hacer ciertos comentarios cáusticos o no, para retuitar el contenido de otros o para compartir mi actividad reciente. Enlace alternativo: **x.jucardus.com**.
