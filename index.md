@@ -61,3 +61,5 @@ Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blo
 Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta para hacer ciertos comentarios cáusticos o no, para retuitar el contenido de otros o para compartir mi actividad reciente. Enlace alternativo: **x.jucardus.com**.
 
 ---
+
+<img src="./qr.jpg" style="display: block; margin: auto;">
