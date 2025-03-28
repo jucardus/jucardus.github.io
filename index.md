@@ -62,4 +62,4 @@ Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta
 
 ---
 
-<img src="https://quickchart.io/qr?text=jucardus.github.io&size=80x80&margin=1&ecLevel=M&dark=333&light=fff&format=png" style="display: block; margin: auto;">
+<img src="./qr.png" style="display: block; margin: auto;">
