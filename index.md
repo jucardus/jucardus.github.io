@@ -14,7 +14,7 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más,
 
 ### [Diccionarios todos](https://mega.nz/folder/7YRWWb7R#kFSHM7B95-baqFM-vpQdqQ)
 
-Mis diccionarios en desarrollo: diccionario inglés-español, chino-español, nombres bíblicos, diccionario multilingüe, frases chinas. Enlace corto: **d.jucardus.com**.
+Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe, frases chinas. Enlace corto: **d.jucardus.com**.
 
 ---
 
@@ -38,7 +38,7 @@ Diez gigas gratuitos en la nube pCloud, con compartición de carpetas y document
 
 ### [Música clásica](https://www.youtube.com/@jucardus/playlists)
 
-Mis listas de reproducción en YouTube, con música clásica clasificada por autor. Reflejan mi predilección por Johann Sebastian Bach. También accesible directamente mediante **m.jucardus.com**.
+Mis listas de reproducción en YouTube, con música clásica clasificada por autor y con Johann Sebastian Bach como compositor preferente. También accesible directamente mediante **m.jucardus.com**.
 
 ---
 
