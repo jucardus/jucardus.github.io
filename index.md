@@ -12,9 +12,11 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más,
 
 ---
 
-### [Diccionarios todos](https://mega.nz/folder/7YRWWb7R#kFSHM7B95-baqFM-vpQdqQ)
+### Diccionarios todos
 
-Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe, frases chinas. Enlace corto: **d.jucardus.com**.
+> **¡ATENCIÓN!** Temporalmente inactivo.
+
+Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe, frases chinas.
 
 ---
 
