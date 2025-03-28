@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "es">
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44Y9CNCHR8');
+</script>
+
+    <meta charset = "utf-8" />
+    <meta name = "keywords" content = "apotegmas, citas, cuentos, diario, enlaces, vínculos, hipervínculos, reflexiones, sinónimos, vocabularios, apotegma, cita, cuento, diario, enlace, vínculo, hipervínculo, reflexión, sinónimo, vocabulario, vocabulario inglés-español, vocabulario inglés, sinónimos ingleses, sinónimos españoles" />
+    <meta name = "description" content = "Apotegmas · Citas · Cuentos · Diario · Enlaces · Poesía · Reflexiones · Vocabulario" />
+    <meta name = "author" content = "Julio Cárdenas Pelizzari" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <title>JUCARDUS.COM</title>
+  </head>
+<body onload='inicio ()'>
+  <h1>Jucardus.com</h1>
+  <div id='temas'>
+    <span class='temas' id='inicio' onclick='inicio ()'>Inicio</span> •
+    <span class='temas' id='apotegmas' onclick='segunTema ("apotegmas")'>Apotegmas</span> ·
+    <span class='temas' id='citas' onclick='segunTema ("citas")'>Citas</span> ·
+    <span class='temas' id='cuentos' onclick='segunTema ("cuentos")'>Cuentos</span> ·
+    <span class='temas' id='diario' onclick='segunTema ("diario")'>Diario</span> ·
+    <span class='temas' id='poesia' onclick='segunTema ("poesía")'>Poesía</span> ·
+    <span class='temas' id='reflexiones' onclick='segunTema ("reflexiones")'>Reflexiones</span> •
+    <span class='temas' id='az' onclick='az ("az")'>AZ</span> ·
+    <span class='temas' id='azar' onclick='azar ("azar")'>Azar</span> ·
+    <span class='temas' id='archivo' onclick='archivo ("archivo")'>Archivo</span> ·
+    <span class='temas' id='lupa' onclick='mostrarBuscador ()'>🔍</span>
+  </div>
+  <div id="buscador">
+    <form method="post">
+      <input type="text" autofocus="on" autocomplete="off" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
+      <button id="boton" type="button" onclick="buscar()">🔍</button>
+    </form>
+  </div>
+  <div id='mostrar'></div>
+  <div id='rombo'><img class='rombo' src='rombo.png'</img></div>
+  <div id='aclaraciones'>
+    <h3 class='aclaraciones'>Aclaraciones</h3>
+      <ul>
+        <li>La página de inicio, y todos los temas o etiquetas, muestran el contenido de las diez entradas más recientes. Para ver una lista de todas las entradas de un tema abierto, clica en <code>[ ver todas las entradas ]</code> al pie de las diez primeras.</li>
+        <li>Clica en la lupa para buscar entre todas las entradas del sitio, sin límite de coincidencias.</li>
+        <li>Si quieres ver una entrada en particular, con exclusión de todas las demás, sólo hace falta clicar en su título.</li>
+        <li>Clica en los números verdes debajo de los títulos para compartir la entrada en X Twitter.</li>
+        <li>Para copiar el enlace a una entrada, clica en la fecha en color gris debajo del título correspondiente.</li>
+        <li>Si deseas hacer sugerencias, críticas o correcciones a mi contenido, sírvete escribir a <code>c.jucardus.com</code>.</li>
+      </ul>
+  </div>
+  <div id='footer'>
+    <h3 class='autor'>Autor y contacto</h3>
+      <ul>
+        <li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li>
+        <li><b>Contacto:</b> Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante <a class='enlacista' href='https://jucardus.github.io/correo.png' target='_blank'><b>c.jucardus.com</b></a>. También puedes usar el correo para hacer críticas, sugerencias y correcciónes al contenido del sitio.</li>
+      </ul>
+    <h3 class='autor'>Enlaces pertinentes</h3>
+      <ul>
+        <li><b>Base de datos:</b> <a class='enlacista' href='https://jucardus.github.io/base.html' target='_blank'>b.jucardus.com</a></li>
+        <li><b>Enlacista:</b> <a class='enlacista' href='https://enlcs.github.io' target='_blank'>e.jucardus.com</a></li>
+        <li><b>Facebook:</b> <a class='enlacista' href='https://www.facebook.com/profile.php?id=61561035651414' target='_blank'>f.jucardus.com</a></li>
+        <li><b>Invitación a pCloud:</b> <a class='enlacista' href='https://is.gd/ipcloud' target='_blank'>i.jucardus.com</a></li>
+        <li><b>Música clásica:</b> <a class='enlacista' href='https://www.youtube.com/@jucardus/playlists' target='_blank'>m.jucardus.com</a></li>
+        <li><b>Pagos y donaciones:</b> <a class='enlacista' href='https://www.paypal.com/paypalme/jucardus' target='_blank'>p.jucardus.com</a></li>
+        <li><b>Repositorio:</b> <a class='enlacista' href='https://github.com/jucardus/jucardus.github.io' target='_blank'>r.jucardus.com</a></li>
+        <li><b>X Twitter:</b> <a class='enlacista' href='https://x.com/jucardus' target='_blank'>x.jucardus.com</a></li>
+      </ul>
+  </div>
+  <div id='qr'><img class='qr' src='qr.png'></img></div>
+  <script src="java.js"></script>
+</body>
+</html>
