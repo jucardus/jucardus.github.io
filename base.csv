@@ -1,5 +1,5 @@
 ,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA
-384,Diario,,"Quitaré del sitio todas las entradas de vocabulario; o, mejor dicho, reemplazaré su contenido paulatinamente por otro. Lo mismo con las entradas de enlaces externos, porque ya están en el sitio <code>enlcs.github.io</code>. A partir de ahora, solamente incluiré lo que yo escribo, con excepción de la sección de <a href='https://jucardus.github.io/citas' class='enlacista'>Citas</a>.",,,2025-03-27 11:50
+384,Diario,,"Quitaré del sitio todas las entradas de enlaces, porque ya están en el sitio <code>enlcs.github.io</code>. A partir de ahora, solamente incluiré lo que yo escribo, con excepción de la sección de <a href='https://jucardus.github.io/citas' class='enlacista'>Citas</a>.",,,2025-03-27 11:50
 383,Apotegmas,,"Siempre hay un buen justificativo para iniciar una nueva inquisición, una persecución en cadena, una depuración ideológica de la sociedad.",,,2025-03-27 11:46
 382,Reflexiones,,"Una de las razones por las que el panteísmo es rechazado, es que sólo Dios puede ser adorado, y no lo que existe. La objeción no es válida, porque no discute previamente si Dios tiene o no que ser adorado.",,,2025-03-27 11:29
 381,Apotegmas,,"Si no encuentras a Dios en el mundo, en el prójimo y en tu corazón, seguirás igual de insatisfecho aunque vayas al último de los cielos.",,,2025-03-27 11:22
@@ -158,25 +158,25 @@
 228,Apotegmas,,"Una vez que empiezas a usar fetiches, amuletos y baratijas para que te vaya bien, se te hará muy difícil dejar el vicio para volver a confiar en Dios. Es el mismo mecanismo que el de las apuestas.",,,2025-02-19 21:48
 227,Apotegmas,,"No mires mi humildad, Señor, porque es falsa; tampoco mi altivez, porque es ignorancia. Sólo quiero tu amor, y con eso basta.",,,2025-02-19 10:01
 226,Apotegmas,,"Mientras más aberraciones puede normalizar la Agenda, más feliz es. No le demos el gusto.",,,2025-02-19 07:52
-225,Enlaces,vocabulario español | grimorio,vocabulario español | grimorio,https://dle.rae.es/grimorio,,2025-02-18 20:30
+225,Frases multilingües,Nosotros no estamos bien.,AL. Uns geht es nicht gut. / Wir sind nicht in Ordnung. / Es geht uns nicht gut. ¦ CH. Wǒmen bù hǎo. ¦ FR. Nous n'allons pas bien. / Nous ne allons pas bien. / Nous ne sommes pas bien. ¦ IN. We're not fine. ¦ IT. Non stiamo bene.,,,2025-02-18 20:30
 224,Diario,,"El sitio ha alcanzado plena funcionalidad y se han corregido las fallas de programación. Faltan algunos detalles, además de la posibilidad de mostrar imágenes desde la base de datos. Otras implementaciones vendrán después, pero con menos urgencia.",,,2025-02-18 14:38
-223,Enlaces,vocabulario latín-inglés | vincor,vocabulario latín-inglés | vincor,https://www.lingq.com/en/learn-latin-online/translate/la/vincor/,,2025-02-18 14:37
+223,Frases multilingües,Tú no estás bien.,AL. Es geht dir nicht gut. (informal) / Dir geht es nicht gut. (informal) / Ihnen geht es nicht gut. (formal) ¦ CH. Nǐ bù hǎo. ¦ FR. Tu ne vas pas bien. (informal) / Tu n’es pas bien. (informal) / Vous n’êtes pas bien. (formal) ¦ IN. You are not fine. ¦ IT. Non stai bene. (informal) / Non sta bene. (formal),,,2025-02-18 14:37
 222,Vocabulario inglés-español,in deference to [loc.],"in deference to [loc.] en consideración a ¶ In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents Charlie Codman's Cruise, as the third volume of the Campaign Series. – Charlie Codman's Cruise, a Story for Boys; by Horatio Alger, Jr.",,,2025-02-18 13:06
 221,Diario,,"Hoy terminé de subir todos mis enlaces de interés a un repositorio en GitHub, miles de ellos. El sitio cuenta con posibilidades de busca, copia y descarga. También se puede visitar con el enlace <code>e.jucardus.com</code>.",https://enlcs.github.io,,2025-02-17 20:11
 220,Reflexiones,,Ahora resulta que pie grande era un adelantado a su tiempo que se autopercibía oso o chimpancé según el día de la semana. Un incomprendido.,,,2025-02-16 00:02
 219,Vocabulario inglés-español,cast iron [s.c.],cast iron [s.c.] hierro fundido,,,2025-02-13 22:08
 218,Vocabulario inglés-español,wrought iron [s.c.],wrought iron [s.c.] hierro forjado,,,2025-02-13 22:07
-217,Enlaces,canales en YouTube | Jesús G. Maestro,canales en YouTube | Jesús G. Maestro - @JesusGMaestro,https://www.youtube.com/@JesusGMaestro/videos,,2025-02-13 22:04
-216,Enlaces,diccionarios francés | Dictionnaire de l'Académie française,diccionarios francés | Dictionnaire de l'Académie française - is.gd/dccnrfrncs,https://www.dictionnaire-academie.fr,,2025-02-13 22:02
+217,Frases multilingües,Yo no estoy bien.,AL. Es geht mir nicht gut. / Ich bin nicht in Ordnung. ¦ CH. Wǒ bù hǎo. ¦ FR. Je ne vais pas bien. ¦ IN. I'm not fine. ¦ IT. Non sto bene.,,,2025-02-13 22:04
+216,Frases multilingües,Nosotros estamos bien.,AL. Wir sind in Ordnung. / Uns geht es gut. ¦ CH. Wǒmen hěn hǎo. ¦ FR. Nous allons bien. ¦ IN. We are fine. ¦ IT. Stiamo bene.,,,2025-02-13 22:02
 215,Vocabulario español,"extemporáneo, ea [adj.]","SINÓNIMOS: inadecuado, impropio, inconveniente, inapropiado; intempestivo, inoportuno, extemporal",,,2025-02-13 15:21
-214,Enlaces,vocabulario español | parsimonia,vocabulario español | parsimonia,https://dle.rae.es/parsimonia,,2025-02-13 15:19
-213,Enlaces,vocabulario español | seitán,vocabulario español | seitán,https://es.wikipedia.org/wiki/Seit%C3%A1n,,2025-02-13 15:18
-212,Enlaces,"vocabulario español | yatrogenia, iatrogenia","vocabulario español | yatrogenia, iatrogenia",https://dle.rae.es/yatrogenia,,2025-02-13 15:16
+214,Frases multilingües,Tú estás bien.,AL. Dir geht es gut. (informal) / Ihnen geht es gut. (formal) ¦ CH. Nǐ hěn hǎo.) ¦ FR. Tu vas bien. (informal) / Vous allez bien. (formal) ¦ IN. You are fine. ¦ IT. Stai bene. (informal) / Sta bene. (formal),,,2025-02-13 15:19
+213,Frases multilingües,Yo estoy bien.,AL. Mir geht es gut. ¦ CH. Wǒ hěn hǎo. ¦ FR. Je vais bien. ¦ IN. I'm fine. ¦ IT. Sto bene.,,,2025-02-13 15:18
+212,Frases multilingües,Nosotros no tenemos.,AL. Wir haben nicht. ¦ CH. Wǒmen méi yǒu. ¦ FR. Nous n'avons pas. ¦ IN. We don't have. ¦ IT. Noi non abbiamo.,,,2025-02-13 15:16
 211,Apotegmas,,"Reducir a Dios a conceptos te hará sentir fuerte y confiado; ¿pero no has leído que Dios está con los humildes, los pobres de espíritu y los niños?",,,2025-02-13 13:53
-210,Enlaces,vocabulario español | mascullar,vocabulario español | mascullar,https://dle.rae.es/mascullar,,2025-02-13 12:01
-209,Enlaces,vocabulario español | sicalipsis,vocabulario español | sicalipsis,https://dle.rae.es/sicalipsis,,2025-02-13 11:52
-208,Enlaces,canales en YouTube | Let's Talk Religion,canales en YouTube | Let's Talk Religion,https://www.youtube.com/@LetsTalkReligion/videos,,2025-02-13 08:25
-207,Enlaces,vocabulario español | soliviar,vocabulario español | soliviar,https://dle.rae.es/soliviar,,2025-02-12 18:45
+210,Frases multilingües,Tú no tienes.,AL. Du hast nicht. (informal) / Sie haben nicht. (formal) ¦ CH. Nǐ méi yǒu. ¦ FR. Tu n'as pas. (informal) / Vous n'avez pas. (formal) ¦ IN. You don't have. ¦ Italian: Tu non hai. (informal) / Lei non ha. (formal),,,2025-02-13 12:01
+209,Frases multilingües,Yo no tengo.,AL. Ich habe nicht. ¦ CH. Wǒ méi yǒu. ¦ FR. Je n'ai pas. ¦ IN. I don't have. ¦ IT. Io non ho.,,,2025-02-13 11:52
+208,Frases multilingües,Nosotros no somos.,AL. Wir sind nicht. ¦ CH. Wǒmen bù shì. ¦ FR. Nous ne sommes pas. ¦ IN. We are not. ¦ IT. Noi non siamo.,,,2025-02-13 08:25
+207,Frases multilingües,Tú no eres.,AL. Du bist nicht. (informal) / Sie sind nicht. (formal) ¦ CH. Nǐ bù shì. ¦ FR. Tu n'es pas. (informal) / Vous n'êtes pas. (formal) ¦ IN. You are not. ¦ IT. Tu non sei. (informal) / Lei non è. (formal),,,2025-02-12 18:45
 206,Vocabulario español,"garzo, -za [adj.]","garzo, -za [adj.] Zarco; de color azulado (dícese de los ojos). Persona de ojos azulados.",,,2025-02-12 14:42
 205,Vocabulario inglés-español,drool [v.],drool [v.] babear,,,2025-02-12 14:40
 204,Citas,,"Recordad el pasado con gratitud, vivid el presente con entusiasmo y mirad hacia el futuro con confianza. – Juan Pablo II",,,2025-02-12 14:38
@@ -189,20 +189,20 @@
 197,Reflexiones,,Would you rather be a happy slave or a suffering freeman? Is there an intermediate option to meet your criteria?,,,2025-02-11 20:27
 196,Vocabulario inglés-español,vermin [s.],"vermin [s.] parásito, alimañas ¶ One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. – Metamorphosis; by Franz Kafka. Translated by David Wyllie.",,,2025-02-11 20:23
 195,Apotegmas,,Take it for granted: God cannot forsake you. It's not of his nature. But you can do things that make you forget about him almost forever.,,,2025-02-11 12:32
-194,Enlaces,música - J. S. Bach | Variaciones Goldberg,"Variaciones Goldberg (BWV 988), de Johann Sebastian Bach; una de las mejores versiones que he encontrado. También accesible mediante el enlace acortado is.gd/variaciones",https://youtu.be/i4P6F9-4uq8,,2025-02-10 19:11
+194,Frases multilingües,Yo no soy.,AL. Ich bin nicht. ¦ CH. Wǒ bù shì. ¦ FR. Je ne suis pas. ¦ IN. I am not. ¦ IT. Io non sono.,,,2025-02-10 19:11
 193,Citas,,Foreign aid is taking money from poor people in rich countries and giving it to rich people in poor countries. – Ron Paul,,,2025-02-10 12:09
-192,Enlaces,"glosarios, gramática | Glosario de términos gramaticales","glosarios, gramática | Glosario de términos gramaticales",https://rae.es/gtg/,,2025-02-10 09:38
-191,Enlaces,diccionarios de sinónimos ingleses | Roget’s Thesaurus,"diccionarios de sinónimos ingleses | Roget’s Thesaurus, by Peter Mark Roget",https://gutenberg.org/ebooks/22,,2025-02-10 09:33
-190,Enlaces,libros | 1000 Mythological Characters Briefly Described ,libros | 1000 Mythological Characters Briefly Described by Edward Sylvester Ellis,https://gutenberg.org/ebooks/42474,,2025-02-10 08:32
+192,Frases multilingües,Nosotros tenemos.,AL. Wir haben. ¦ CH. Wǒmen yǒu. ¦ FR. Nous avons. ¦ IN. We have. ¦ IT. Noi abbiamo.,,,2025-02-10 09:38
+191,Frases multilingües,Tú tienes.,AL. Du hast. (informal) / Sie haben. (formal) ¦ CH. Nǐ yǒu. ¦ FR. Tu as. (informal) / Vous avez. (formal) ¦ IN. You have. ¦ IT. Tu hai. (informal) / Lei ha. (formal),,,2025-02-10 09:33
+190,Frases multilingües,Yo tengo.,AL. Ich habe. ¦ CH. Wǒ yǒu. ¦ FR. J'ai. ¦ IN. I have. ¦ IT. Io ho.,,,2025-02-10 08:32
 189,Apotegmas,,"Busca primero a Dios y todo lo demás vendrá por sí mismo; pero lo demás ya no te importará o incluso lo despreciarás, porque ahora tienes a Dios.",,,2025-02-09 22:22
 188,Reflexiones,,"Con la búsqueda racional de Dios se puede llegar hasta cierto punto, a cierto nivel de abstracción, a especulaciones complejas. Si, por soberbia, quien busca se contenta con eso, sometiendo así la fe a la razón, no podrá seguir adelante.",,,2025-02-09 22:21
 187,Poesía,El celo de los poderosos,"Los ángeles tienen envidia, ¦ los arcángeles tienen celo, ¦ porque Dios nace en tu corazón ¦ y no en el reino de los cielos. ¶ Por qué, claman los encumbrados ¦ por qué, reclaman los poderosos, ¦ Porque en el amor humano ¦ está mi verdadero Reino.",,,2025-02-09 22:16
 186,Vocabulario inglés-español,be lost for words [loc.],be lost for words [loc.] faltarle a uno las palabras; quedarse sin palabras; no encontrar las palabras,,,2025-02-09 21:41
-185,Enlaces,vocabulario español | teleología,vocabulario español | teleología,https://dle.rae.es/teleolog%C3%ADa,,2025-02-09 21:36
+185,Frases multilingües,Nosotros somos.,AL. Wir sind. ¦ CH. Wǒmen shì. ¦ FR. Nous sommes. ¦ IN. We are. ¦ IT. Noi siamo.,,,2025-02-09 21:36
 184,Vocabulario español,ímprobo [adj.],"ímprobo [adj.] Falto de honradez, de honestidad; falto de probidad.",,,2025-02-09 21:37
 183,Reflexiones,,"Si no predicas lo que Dios te pide, terminarás engullido por las ideologías y doctrinas del mundo, como Jonás en aquel gran pez. Aun así, si ya has sido tragado por el abismo y oras a Dios, volverás a la vida, serás resucitado.",,,2025-02-09 20:10
 182,Vocabulario español,enconar [v.],enconar [v.] Inflamar una herida. Irritar el ánimo contra alguien.,,,2025-02-09 20:08
-181,Enlaces,vocabulario español | falcón,vocabulario español | falcón,https://dle.rae.es/falcón,,2025-02-09 20:07
+181,Frases multilingües,Tú eres.,AL. Du bist. (informal) / Sie sind. (formal) ¦ CH. Nǐ shì. ¦ FR. Tu es. (informal) / Vous êtes. (formal) ¦ IN. You are. ¦ IT. Tu sei. (informal) / Lei è. (formal),,,2025-02-09 20:07
 180,Vocabulario español,enconado [adj.],"enconado [adj.] Violento, encarnizado, reñido, airado. Manchado, teñido.",,,2025-02-09 20:06
 179,Vocabulario inglés-español,second to last [loc.],second to last [loc.] penúltimo [adj.],,,2025-02-09 20:05
 178,Vocabulario inglés-español,nib [s.],"nib [s.] plumín, punta (de una pluma para escribir)",,,2025-02-09 20:03
@@ -214,7 +214,7 @@
 172,Vocabulario español,tomar alguien el tole [loc.coloq.],tomar alguien el tole [loc.coloq.] Partir apresuradamente.,,,2025-01-30 10:49
 171,Vocabulario inglés-español,bedding [s.],"bedding [s.] ropa de cama; sábanas; prendas de cama ¶ He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. – Metamorphosis; by Franz Kafka. Translated by David Wyllie.",,,2025-01-30 10:06
 170,Vocabulario inglés-español,gilded [adj.],"gilded [adj.] dorado (recubierto de oro) ¶ A collection of textile samples lay spread out on the table—Samsa was a travelling salesman—and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. – Metamorphosis; by Franz Kafka. Translated by David Wyllie.",,,2025-01-30 10:02
-169,Enlaces,aplicaciones Android | Google Authenticator,"Google Authenticator, para la doble autenticación de las cuentas en la red.",https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2,,2025-01-30 09:22
+169,Frases multilingües,Yo soy.,AL. Ich bin. ¦ CH. Wǒ shì. ¦ FR. Je suis. ¦ IN. I am. ¦ IT. Io sono.,,,2025-01-30 09:22
 168,Reflexiones,,Que no te quite mucho el sueño el hecho de que busques estar solo en lugar de estar con tus amigos. Es muy probable que prefieras el recuerdo que tienes de ellos a aquello en lo que se han convertido.,,,2025-01-29 23:14
 167,Reflexiones,,"Las discusiones y debates entre cristianos e hinduistas y budistas, acerca de la supuesta reencarnación, por lo común no terminan en nada. La razón es que el concepto de alma cambia de religión en religión y también el de espíritu. Luego, las refutaciones son totalmente inútiles.",,,2025-01-28 22:19
 166,Apotegmas,,"Dice el necio en su corazón: te haré esclavo de mi dios y si no adhieres a mi secta, irás al infierno que yo mismo estoy creando.",,,2025-01-28 22:18
