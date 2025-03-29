@@ -1,4 +1,4 @@
-# [Jucardus.com](https://jucardus.com)
+ # [Jucardus.com](https://jucardus.com)
 
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
@@ -8,7 +8,10 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 ### Lo más reciente
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Enlaces](https://jucardus.github.io/enlaces) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
-
+* [Quitaré del sitio todas las entradas de...](https://jucardus.github.io/2503271150)
+* [Siempre hay un buen justificativo para i...](https://jucardus.github.io/2503271146)
+* [Una de las razones por las que el panteí...](https://jucardus.github.io/2503271129)
+* [Si no encuentras a Dios en el mundo, en...](https://jucardus.github.io/2503271122)
 * [Así como el Sol no tiene más remedio que...](https://jucardus.github.io/2503262202)
 * [aplicaciones Android | Unicode CharMap – Full](https://jucardus.github.io/2503262200)
 * [El camino a la Verdad siempre es individ...](https://jucardus.github.io/2503251111)
@@ -55,7 +58,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Si buscas a Dios hacia fuera corres el r...](https://jucardus.github.io/2503212146)
 * [vocabulario inglés | glitch](https://jucardus.github.io/2503210919)
 * [Si crees que eres bueno y que tienes raz...](https://jucardus.github.io/2503202335)
-* [La ignorancia se convierte en una bendic...](https://jucardus.github.io/2503202200)
-* [Se agregó la línea necesaria al document...](https://jucardus.github.io/2503201529)
-* [Los deseos quedan satisfechos únicamente...](https://jucardus.github.io/2503200901)
-* [YouTube | comentarios en YouTube](https://jucardus.github.io/2503192233)
