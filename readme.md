@@ -1,4 +1,4 @@
- # [Jucardus.com](https://jucardus.com)
+# [Jucardus.com](https://jucardus.com)
 
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
@@ -7,15 +7,26 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
-**[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Enlaces](https://jucardus.github.io/enlaces) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
+**[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
+
+* [Las aves son enseñadas a cantar por las...](https://jucardus.github.io/2503291227)
+* [No se puede alimentar hambrientos con es...](https://jucardus.github.io/2503291217)
+* [El asesinato en el cadalso es la forma m...](https://jucardus.github.io/2503291213)
+* [El hombre muere en todos aquellos que ma...](https://jucardus.github.io/2503291209)
+* [Reza, pero no dejes de remar hacia la or...](https://jucardus.github.io/2503291206)
+* [Lo malo de la caridad es que no tiene fo...](https://jucardus.github.io/2503291155)
+* [Desde que el hombre existe, ha imaginado...](https://jucardus.github.io/2503291127)
+* [Si de niño te convirtieron en un demonio...](https://jucardus.github.io/2503282046)
+* [Demonios japoneses entran en mujeres occ...](https://jucardus.github.io/2503282042)
+* [¿Quieres paz? Prepárate para la guerra.](https://jucardus.github.io/2503282041)
 * [Quitaré del sitio todas las entradas de...](https://jucardus.github.io/2503271150)
 * [Siempre hay un buen justificativo para i...](https://jucardus.github.io/2503271146)
 * [Una de las razones por las que el panteí...](https://jucardus.github.io/2503271129)
 * [Si no encuentras a Dios en el mundo, en...](https://jucardus.github.io/2503271122)
 * [Así como el Sol no tiene más remedio que...](https://jucardus.github.io/2503262202)
-* [aplicaciones Android | Unicode CharMap – Full](https://jucardus.github.io/2503262200)
+* [Dios corre un gran riesgo al darte la ca...](https://jucardus.github.io/2503262200)
 * [El camino a la Verdad siempre es individ...](https://jucardus.github.io/2503251111)
-* [aplicaciones Android | DotDash Keyboard](https://jucardus.github.io/2503250739)
+* [Olvídalo todo y déjate llevar por Dios....](https://jucardus.github.io/2503250739)
 * [Sólo los tontos son convencidos por los...](https://jucardus.github.io/2503250735)
 * [Lo que soy](https://jucardus.github.io/2503250732)
 * [Si solamente recordaras que el mundo sie...](https://jucardus.github.io/2503250729)
@@ -48,13 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [No pidas nada y lo tendrás todo.](https://jucardus.github.io/2503232314)
 * [aplicaciones Android | Santa Biblia Straubinger](https://jucardus.github.io/2503232311)
 * [aplicaciones Android | Easy Screen Recorder](https://jucardus.github.io/2503232306)
-* [El mundo ha sido siempre un Reino y lo s...](https://jucardus.github.io/2503231342)
-* [La más alta aspiración del raciocinio es...](https://jucardus.github.io/2503231340)
-* [bibliotecas | Internet Archive](https://jucardus.github.io/2503220913)
-* [En muchas empresas para alcanzar la glor...](https://jucardus.github.io/2503212212)
-* [La mayoría de las personas prefieren con...](https://jucardus.github.io/2503212210)
-* [Los altavoces refuerzan la voz, pero no...](https://jucardus.github.io/2503212209)
-* [¿El buen hábito de amar a unos pocos y d...](https://jucardus.github.io/2503212149)
-* [Si buscas a Dios hacia fuera corres el r...](https://jucardus.github.io/2503212146)
-* [vocabulario inglés | glitch](https://jucardus.github.io/2503210919)
-* [Si crees que eres bueno y que tienes raz...](https://jucardus.github.io/2503202335)
