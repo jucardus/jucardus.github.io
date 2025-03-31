@@ -34,17 +34,13 @@
                     const tr = document.createElement('tr');
                     row.forEach(cell => {
                         const td = document.createElement('td');
-                        td.textContent = extractText(cell).replace(/ŧ /g,', ');
+                        td.textContent = cell.replace(/ŧ /g,', ');
                         tr.appendChild(td);
                     });
                     table.appendChild(tr);
                 });
                 document.getElementById('csv-content').appendChild(table);
             });
-      const extractText = (htmlString) => {
-        const doc = new DOMParser().parseFromString(htmlString, 'text/html');
-        return doc.body.textContent || "";
-      };
     </script>
 </body>
 </html>
