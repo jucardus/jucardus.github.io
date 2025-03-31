@@ -647,10 +647,13 @@ function mas () {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var tm = linea[1];
+        var tm = '<span class="etiquetas" onclick="mostrarMas(\'' + linea[1] + '\')">' + tm + '</span>';
       var nuevaLinea = tm;
       resultado.push(nuevaLinea);
   }
   resultado = resultado.sort((a, b) => a.localeCompare(b));
+  resultado = [...new Set(resultado)];
+  resultado = resultado.filter(Boolean);
   var enviar = resultado.join('');
   var enviar = enviar.replace(/ŧ /g,', ');
   var enviar = enviar.replace(/ŧ/g,', ');
