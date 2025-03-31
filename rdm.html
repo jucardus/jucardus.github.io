@@ -51,7 +51,7 @@
             var fecha = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var ttl = linea[2];
             if (linea[2] == '') {ttl = extractText(linea[3]);}
-            if (linea[2] == '' && extractText(linea[3]).length >= 40) {ttl = linea[3]?.slice(0,40) + '...';}
+            if (linea[2] == '' && extractText(linea[3]).length >= 40) {ttl = extractText(linea[3]).slice(0,40) + '...';}
           var nuevaLinea = '* [' + ttl + '](https://jucardus.github.io/' + fecha + ')<br/>';
           resultado.push(nuevaLinea);
           contador = contador + 1;
