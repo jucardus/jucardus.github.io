@@ -649,17 +649,19 @@ function mas () {
       var tm = linea[1];
         var tm = '<span class="etiquetas" onclick="mostrarMas(\'' + linea[1] + '\')">' + tm + '</span>';
       var nuevaLinea = tm;
-      resultado.push(nuevaLinea);
+      if (tm.indexOf('undefined') == -1) {
+        resultado.push(nuevaLinea);
+      }
   }
   resultado = resultado.sort((a, b) => a.localeCompare(b));
   resultado = [...new Set(resultado)];
   resultado = resultado.filter(Boolean);
-  var enviar = resultado.join('');
+  var enviar = resultado.join(' · ');
   var enviar = enviar.replace(/ŧ /g,', ');
   var enviar = enviar.replace(/ŧ/g,', ');
   var enviar = enviar.replace(/\.\.\.\./g,'...');
   var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = enviar;
+  document.getElementById('mostrar').innerHTML = '<div id="mas">' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('mas');
   window.history.replaceState({}, document.title, '/' + 'mas');
