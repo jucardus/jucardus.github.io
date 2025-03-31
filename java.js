@@ -717,8 +717,7 @@ function segunMas (masRecibido) {
     var enviar = enviar.replace(/ŧ/g,', ');
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
-  var mostrarMas = '<div id="mostrarMas" onclick="mostrarMas (\'' + temaRecibido + '\')">[ ver todas las entradas ]</div>';
-  document.getElementById('mostrar').innerHTML = enviar + mostrarMas;
+  document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscador').style.display = 'none';
   subrayar(mas);
   window.scrollTo(0, 0);
