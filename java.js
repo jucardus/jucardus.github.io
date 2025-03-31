@@ -645,9 +645,10 @@ function mas () {
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
-    var tm = linea[1];
-    var nuevaLinea = tm;
-    resultado.push(nuevaLinea);
+    var linea = arrayContenido[i].split(',');
+      var tm = linea[1];
+      var nuevaLinea = tm;
+      resultado.push(nuevaLinea);
   }
   resultado = resultado.sort((a, b) => a.localeCompare(b));
   var enviar = resultado.join('');
