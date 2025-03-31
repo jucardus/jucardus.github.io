@@ -647,7 +647,7 @@ function mas () {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var tm = linea[1];
-        var tm = '<li><span class="etiquetas" onclick="mostrarMas(\'' + linea[1] + '\')">' + tm + '</span></li>';
+        var tm = '<li><span class="etiquetas" onclick="segunMas(\'' + linea[1] + '\')">' + tm + '</span></li>';
       var nuevaLinea = tm;
       if (tm.indexOf('undefined') == -1) {
         resultado.push(nuevaLinea);
@@ -665,6 +665,62 @@ function mas () {
   document.getElementById('buscador').style.display = 'none';
   subrayar('mas');
   window.history.replaceState({}, document.title, '/' + 'mas');
+  window.scrollTo(0, 0);
+}
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function segunMas (masRecibido) {
+  var recibido = texto;
+  var contador = 0;
+  var resultado = [];
+  var arrayContenido = recibido.split('¶¶¶¶¶');
+  for (var i = 0; i < arrayContenido.length; i++) {
+    var linea = arrayContenido[i].split(',');
+      var nmr = linea[0];
+        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+        var hashtag = formateoHashtag (linea[1]);
+        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[3]?.slice(0,108).replace(/\|/g,'%7C') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
+        if (linea[4] != '') {
+          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
+        }
+      var tm = linea[1];
+        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+      var ttl = linea[2];
+        if (linea[2] == '') {ttl = linea[3];}
+        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
+        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
+      var enlc = linea[4];
+        if (linea[4] != '') {
+          var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
+          var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
+        } else {enlc = '';}
+      var cntnd = linea[3];
+        var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+        var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
+      var imgn = linea[5];
+        if (imgn != '') {
+          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
+        }
+      var fch = linea[6];
+        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
+      var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+      if (tm.toUpperCase().indexOf(masRecibido.toUpperCase()) >= 0) {
+        resultado.push(nuevaLinea);
+        contador = contador + 1;
+          if (contador == 10) {break;}
+      }
+  }
+  var enviar = resultado.join('<p>');
+    var enviar = enviar.replace(/ŧ /g,', ');
+    var enviar = enviar.replace(/ŧ/g,', ');
+    var enviar = enviar.replace(/\.\.\.\./g,'...');
+    var enviar = enviar.replace(/ \.\.\./g,'...');
+  var mostrarMas = '<div id="mostrarMas" onclick="mostrarMas (\'' + temaRecibido + '\')">[ ver todas las entradas ]</div>';
+  document.getElementById('mostrar').innerHTML = enviar + mostrarMas;
+  document.getElementById('buscador').style.display = 'none';
+  subrayar(mas);
   window.scrollTo(0, 0);
 }
 
