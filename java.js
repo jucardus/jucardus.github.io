@@ -709,7 +709,7 @@ function segunMas (masRecibido) {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  subrayar('más');
+  subrayar('mas');
   window.history.replaceState({}, document.title, '/' + 'mas');
   window.scrollTo(0, 0);
 }
