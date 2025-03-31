@@ -1,7 +1,7 @@
-# [Jucardus.com](https://jucardus.com)
+# [Jucardus.com](https://jucardus.com) 
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
@@ -59,3 +59,5 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [No pidas nada y lo tendrás todo.](https://jucardus.github.io/2503232314)
 * [aplicaciones Android | Santa Biblia Straubinger](https://jucardus.github.io/2503232311)
 * [aplicaciones Android | Easy Screen Recorder](https://jucardus.github.io/2503232306)
+
+
