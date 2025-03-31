@@ -701,7 +701,9 @@ function segunMas (masRecibido) {
       }
 
   }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
+  if (masRecibido != 'Diario') {
+    resultado = resultado.sort((a, b) => a.localeCompare(b));
+  }
   var enviar = resultado.join('');
   var enviar = enviar.replace(/ŧ /g,', ');
   var enviar = enviar.replace(/ŧ/g,', ');
