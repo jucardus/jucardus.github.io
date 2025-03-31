@@ -671,8 +671,8 @@ function mas () {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function segunMas (masRecibido) {
-  var recibido = texto;
   var contador = 0;
+  var recibido = texto;
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
   for (var i = 0; i < arrayContenido.length; i++) {
@@ -689,37 +689,28 @@ function segunMas (masRecibido) {
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
+        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
         var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var enlc = linea[4];
-        if (linea[4] != '') {
-          var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-          var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
-        } else {enlc = '';}
-      var cntnd = linea[3];
-        var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-        var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-      var imgn = linea[5];
-        if (imgn != '') {
-          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
-        }
       var fch = linea[6];
         var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
         var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
       if (tm.toUpperCase().indexOf(masRecibido.toUpperCase()) >= 0) {
         resultado.push(nuevaLinea);
         contador = contador + 1;
-          if (contador == 10) {break;}
       }
+
   }
-  var enviar = resultado.join('<p>');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = enviar;
+  resultado = resultado.sort((a, b) => a.localeCompare(b));
+  var enviar = resultado.join('');
+  var enviar = enviar.replace(/ŧ /g,', ');
+  var enviar = enviar.replace(/ŧ/g,', ');
+  var enviar = enviar.replace(/\.\.\.\./g,'...');
+  var enviar = enviar.replace(/ \.\.\./g,'...');
+  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  subrayar(mas);
+  subrayar('mas');
+  window.history.replaceState({}, document.title, '/' + 'mas');
   window.scrollTo(0, 0);
 }
 
