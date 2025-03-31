@@ -1,7 +1,7 @@
-# [Jucardus.com](https://jucardus.com) 
+# [Jucardus.com](https://jucardus.com)
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
@@ -9,6 +9,9 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [Agregué la opción Más al menú principal,...](https://jucardus.github.io/2503311334)
+* [This above all: to thine own self be tru...](https://jucardus.github.io/2503302223)
+* [The fool doth think he is wise, but the...](https://jucardus.github.io/2503302218)
 * [Las aves son enseñadas a cantar por las...](https://jucardus.github.io/2503291227)
 * [No se puede alimentar hambrientos con es...](https://jucardus.github.io/2503291217)
 * [El asesinato en el cadalso es la forma m...](https://jucardus.github.io/2503291213)
@@ -56,8 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Luego que has soltado la palabra, ésta t...](https://jucardus.github.io/2503240932)
 * [El relativismo es el dogma de los hipócr...](https://jucardus.github.io/2503240926)
 * [El corazón es un niño: espera lo que des...](https://jucardus.github.io/2503240921)
-* [No pidas nada y lo tendrás todo.](https://jucardus.github.io/2503232314)
-* [aplicaciones Android | Santa Biblia Straubinger](https://jucardus.github.io/2503232311)
-* [aplicaciones Android | Easy Screen Recorder](https://jucardus.github.io/2503232306)
-
-
