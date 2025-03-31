@@ -710,6 +710,7 @@ function segunMas (masRecibido) {
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
   const temasTodos = document.getElementsByClassName('temas');
+  var fondoNoClicados = '4px solid White';
   for (let i = 0; i < temasTodos.length; i++) {
     temasTodos[i].style.borderBottom = fondoNoClicados;
   }
