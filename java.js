@@ -40,7 +40,7 @@ function formateo (recibido) {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -113,7 +113,7 @@ function segunTema (temaRecibido) {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -218,7 +218,7 @@ function buscar (recibidoDireccion) {
             var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
           }
         var tm = linea[1];
-          var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3];}
           if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -304,7 +304,7 @@ function mostrarUnico (lema) {
             var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
           }
         var tm = linea[1];
-          var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3];}
           if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -362,7 +362,7 @@ function az () {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -406,7 +406,7 @@ function azar () {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -546,7 +546,7 @@ function buscarArchivo (fechaRecibida) {
             var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
           }
         var tm = linea[1];
-          var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+          var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
         var ttl = linea[2];
           if (linea[2] == '') {ttl = linea[3];}
           if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -611,7 +611,7 @@ function mostrarMas (tema) {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
@@ -685,7 +685,7 @@ function segunMas (masRecibido) {
           var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
         }
       var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunTema(\'' + tm?.replace(/ .*/g,'').toLowerCase() + '\')">' + tm + '</span>';
+        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
       var ttl = linea[2];
         if (linea[2] == '') {ttl = linea[3];}
         if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
