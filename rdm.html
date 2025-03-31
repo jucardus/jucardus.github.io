@@ -50,14 +50,12 @@
           var fch = linea[6];
             var fecha = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
           var ttl = linea[2];
-            if (linea[2] == '') {ttl = linea[3];}
-            if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,40) + '...';}
+            if (linea[2] == '') {ttl = extractText(linea[3]);}
+            if (linea[2] == '' && extractText(linea[3]).length >= 40) {ttl = linea[3]?.slice(0,40) + '...';}
           var nuevaLinea = '* [' + ttl + '](https://jucardus.github.io/' + fecha + ')<br/>';
-          //if (nuevaLinea.indexOf('[undefined]') == -1) {
-            resultado.push(nuevaLinea);
-            contador = contador + 1;
-              if (contador == 50) {break;}
-          //}
+          resultado.push(nuevaLinea);
+          contador = contador + 1;
+            if (contador == 50) {break;}
       }
       var enviar = resultado.join('');
         var enviar = enviar.replace(/ŧ /g,', ');
@@ -67,6 +65,12 @@
       document.getElementById('mostrar').innerHTML = enviar;
       window.scrollTo(0, 0);
     }
+
+    const extractText = (htmlString) => {
+      const doc = new DOMParser().parseFromString(htmlString, 'text/html');
+      return doc.body.textContent || "";
+    };
+
   </script>
   </body>
 </html>
