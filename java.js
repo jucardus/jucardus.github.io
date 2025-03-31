@@ -1,3 +1,5 @@
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 let texto = '';
 let direccion = '';
 
@@ -635,3 +637,29 @@ function mostrarMas (tema) {
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + temaConteo + '</i>.</span><p>' + enviar + '</div>';
   window.scrollTo(0, 0);
 }
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function mas () {
+  var recibido = texto;
+  var resultado = [];
+  var arrayContenido = recibido.split('¶¶¶¶¶');
+  for (var i = 0; i < arrayContenido.length; i++) {
+    var tm = linea[1];
+    var nuevaLinea = tm;
+    resultado.push(nuevaLinea);
+  }
+  resultado = resultado.sort((a, b) => a.localeCompare(b));
+  var enviar = resultado.join('');
+  var enviar = enviar.replace(/ŧ /g,', ');
+  var enviar = enviar.replace(/ŧ/g,', ');
+  var enviar = enviar.replace(/\.\.\.\./g,'...');
+  var enviar = enviar.replace(/ \.\.\./g,'...');
+  document.getElementById('mostrar').innerHTML = enviar;
+  document.getElementById('buscador').style.display = 'none';
+  subrayar('mas');
+  window.history.replaceState({}, document.title, '/' + 'mas');
+  window.scrollTo(0, 0);
+}
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
