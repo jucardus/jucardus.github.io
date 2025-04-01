@@ -1,7 +1,7 @@
-# [Jucardus.com](https://jucardus.com)
+# [Jucardus.com](https://jucardus.com) 
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
@@ -9,6 +9,8 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [by hand [loc.]](https://jucardus.github.io/2503312226)
+* [at the request of [loc.]](https://jucardus.github.io/2503312216)
 * [Agregué la opción Más al menú principal,...](https://jucardus.github.io/2503311334)
 * [This above all: to thine own self be tru...](https://jucardus.github.io/2503302223)
 * [The fool doth think he is wise, but the...](https://jucardus.github.io/2503302218)
@@ -57,5 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [La verdad es un ácido corrosivo que salp...](https://jucardus.github.io/2503240937)
 * [La realidad tiene tanto sentido que se h...](https://jucardus.github.io/2503240933)
 * [Luego que has soltado la palabra, ésta t...](https://jucardus.github.io/2503240932)
-* [El relativismo es el dogma de los hipócr...](https://jucardus.github.io/2503240926)
-* [El corazón es un niño: espera lo que des...](https://jucardus.github.io/2503240921)
