@@ -664,6 +664,7 @@ function mas () {
   var enviar = enviar.replace(/ŧ/g,', ');
   var enviar = enviar.replace(/\.\.\.\./g,'...');
   var enviar = enviar.replace(/ \.\.\./g,'...');
+  var enviar = enviar.replace(/\<\!--.*--\>/g,'');
   document.getElementById('mostrar').innerHTML = '<h3>Todos los temas</h3><ul>' + enviar + '</ul>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('mas');
