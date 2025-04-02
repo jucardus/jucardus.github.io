@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let allData = [];
     let isSearching = false;
     
+    // Turn off autocomplete for search box
+    searchInput.autocomplete = 'off';
+    
     // Improved CSV parser that handles quoted fields
     function parseCSV(text) {
         const rows = [];
@@ -77,12 +80,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (searchTerm.length > 0) {
                     isSearching = true;
-                    // Search across ALL data
+                    // Search across ALL data with NO LIMIT
                     const searchResults = allData.filter(item => 
                         (item.term && item.term.toLowerCase().includes(searchTerm)) || 
                         (item.definition && item.definition.toLowerCase().includes(searchTerm)) ||
                         (item.category && item.category.toLowerCase().includes(searchTerm))
-                    ).slice(0, 200); // Limit to 200 results for performance
+                    );
                     
                     displayData(searchResults);
                     highlightSearchTerms(searchTerm);
