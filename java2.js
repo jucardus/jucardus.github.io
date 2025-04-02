@@ -5,27 +5,71 @@ document.addEventListener('DOMContentLoaded', function() {
     let allData = [];
     let isSearching = false;
     
+    // Improved CSV parser that handles quoted fields
+    function parseCSV(text) {
+        const rows = [];
+        let currentRow = [];
+        let inQuotes = false;
+        let currentField = '';
+        
+        for (let i = 0; i < text.length; i++) {
+            const char = text[i];
+            
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                currentRow.push(currentField.trim());
+                currentField = '';
+            } else if (char === '\n' && !inQuotes) {
+                currentRow.push(currentField.trim());
+                currentField = '';
+                if (currentRow.length > 1 || currentRow[0] !== '') {
+                    rows.push(currentRow);
+                }
+                currentRow = [];
+            } else {
+                currentField += char;
+            }
+        }
+        
+        // Add the last row if it exists
+        if (currentField.trim() !== '' || currentRow.length > 0) {
+            currentRow.push(currentField.trim());
+            rows.push(currentRow);
+        }
+        
+        return rows;
+    }
+    
     // Fetch CSV data
     fetch(csvUrl)
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.text();
+        })
         .then(data => {
-            // Parse CSV data
-            const rows = data.split('\n');
+            // Parse CSV data with our custom parser
+            const rows = parseCSV(data);
+            
+            if (rows.length < 2) {
+                throw new Error('Not enough data rows');
+            }
             
             // Process all rows (skip header)
-            allData = rows.slice(1).map(row => {
-                const values = row.split(',');
+            allData = rows.slice(1).map((row, index) => {
+                // Ensure we have at least 4 columns, fill empty ones with ''
+                const values = [...row, '', '', '', ''].slice(0, 4);
                 return {
-                    id: values[0],
-                    term: values[1],
-                    definition: values[2],
-                    category: values[3]
+                    id: values[0] || '',
+                    term: values[1] || '',
+                    definition: values[2] || '',
+                    category: values[3] || ''
                 };
             });
             
-            // Display last 30 entries by default (most recent)
-            const last30Entries = allData.slice(-30).reverse(); // Newest first
-            displayData(last30Entries);
+            // Display first 30 entries by default (no reversing)
+            const latest30Entries = allData.slice(0, 30);
+            displayData(latest30Entries);
             
             // Set up search functionality
             searchInput.addEventListener('input', function() {
@@ -44,40 +88,38 @@ document.addEventListener('DOMContentLoaded', function() {
                     highlightSearchTerms(searchTerm);
                 } else {
                     isSearching = false;
-                    // Show last 30 entries again
-                    const last30Entries = allData.slice(-30).reverse();
-                    displayData(last30Entries);
+                    // Show first 30 entries again
+                    const latest30Entries = allData.slice(0, 30);
+                    displayData(latest30Entries);
                 }
             });
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
-            tableBody.innerHTML = '<tr><td colspan="4">Error loading data. Please try again later.</td></tr>';
+            console.error('Error loading data:', error);
+            tableBody.innerHTML = `<tr><td colspan="4">Error loading data: ${error.message}</td></tr>`;
         });
     
     function displayData(data) {
         tableBody.innerHTML = '';
         
-        if (data.length === 0) {
+        if (!data || data.length === 0) {
             tableBody.innerHTML = '<tr><td colspan="4">No results found.</td></tr>';
             return;
         }
         
         // Update subtitle based on whether we're searching or not
         const subtitle = document.querySelector('.subtitle');
-        if (isSearching) {
-            subtitle.textContent = `Search Results (${data.length} matches)`;
-        } else {
-            subtitle.textContent = 'Latest Thirty Entries';
-        }
+        subtitle.textContent = isSearching 
+            ? `Search Results (${data.length} matches)` 
+            : 'Latest Thirty Entries';
         
         data.forEach(item => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${item.id}</td>
-                <td>${item.term}</td>
-                <td>${item.definition}</td>
-                <td>${item.category}</td>
+                <td>${escapeHTML(item.id)}</td>
+                <td>${escapeHTML(item.term)}</td>
+                <td>${escapeHTML(item.definition)}</td>
+                <td>${escapeHTML(item.category)}</td>
             `;
             tableBody.appendChild(row);
         });
@@ -85,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function highlightSearchTerms(term) {
         const cells = document.querySelectorAll('#table-body td');
-        const regex = new RegExp(term, 'gi');
+        const regex = new RegExp(escapeRegExp(term), 'gi');
         
         cells.forEach(cell => {
             const originalText = cell.textContent;
@@ -94,5 +136,22 @@ document.addEventListener('DOMContentLoaded', function() {
             );
             cell.innerHTML = highlightedText;
         });
+    }
+    
+    // Helper function to escape HTML special characters
+    function escapeHTML(str) {
+        return str.replace(/[&<>'"]/g, 
+            tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag]));
+    }
+    
+    // Helper function to escape regex special characters
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 });
