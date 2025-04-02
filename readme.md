@@ -9,6 +9,8 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [這個陶器是手工製作的。](https://jucardus.github.io/2504011832)
+* [a mano [loc.] (manualmente)](https://jucardus.github.io/2504011112)
 * [by hand [loc.]](https://jucardus.github.io/2503312226)
 * [at the request of [loc.]](https://jucardus.github.io/2503312216)
 * [Agregué la opción Más al menú principal,...](https://jucardus.github.io/2503311334)
@@ -57,5 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [Hay algunos hombres que no dicen lo que...](https://jucardus.github.io/2503240957)
 * [Si tienes una mejor amiga y con el tiemp...](https://jucardus.github.io/2503240956)
 * [La verdad es un ácido corrosivo que salp...](https://jucardus.github.io/2503240937)
-* [La realidad tiene tanto sentido que se h...](https://jucardus.github.io/2503240933)
-* [Luego que has soltado la palabra, ésta t...](https://jucardus.github.io/2503240932)
