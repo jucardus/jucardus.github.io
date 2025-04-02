@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const tableBody = document.getElementById('table-body');
     const searchInput = document.getElementById('search');
     let allData = [];
+    let displayedData = [];
     
     // Fetch CSV data
     fetch(csvUrl)
@@ -13,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const rows = data.split('\n');
             const headers = rows[0].split(',');
             
-            // Process each row (skip header)
-            allData = rows.slice(1, 31).map(row => {  // Only take first 30 entries
+            // Process all rows (skip header)
+            allData = rows.slice(1).map(row => {
                 const values = row.split(',');
                 return {
                     id: values[0],
@@ -24,22 +25,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 };
             });
             
-            // Display data in table
-            displayData(allData);
+            // Display first 30 entries by default
+            displayedData = allData.slice(0, 30);
+            displayData(displayedData);
             
             // Set up search functionality
             searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
+                const searchTerm = this.value.toLowerCase().trim();
+                
                 if (searchTerm.length > 0) {
-                    const filteredData = allData.filter(item => 
+                    // Search across ALL data, not just displayed data
+                    displayedData = allData.filter(item => 
                         item.term.toLowerCase().includes(searchTerm) || 
                         item.definition.toLowerCase().includes(searchTerm) ||
-                        item.category.toLowerCase().includes(searchTerm)
-                    );
-                    displayData(filteredData);
-                    highlightSearchTerms(searchTerm);
+                        (item.category && item.category.toLowerCase().includes(searchTerm))
+                        .slice(0, 100); // Limit to 100 results for performance
                 } else {
-                    displayData(allData);
+                    // If search is empty, show first 30 entries again
+                    displayedData = allData.slice(0, 30);
+                }
+                
+                displayData(displayedData);
+                
+                if (searchTerm.length > 0) {
+                    highlightSearchTerms(searchTerm);
                 }
             });
         })
