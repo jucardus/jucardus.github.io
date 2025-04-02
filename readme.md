@@ -1,7 +1,7 @@
-# [Jucardus.com](https://jucardus.com) 
+# [Jucardus.com](https://jucardus.com)
 
-* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io 
-* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com 
+* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
+* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
@@ -9,6 +9,11 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [Incluí el tema Frases en el menú princip...](https://jucardus.github.io/2504021159)
+* [我的妹妹也是學生。](https://jucardus.github.io/2504021158)
+* [我不是學生。](https://jucardus.github.io/2504021155)
+* [你們是學生嗎？](https://jucardus.github.io/2504021152)
+* [他是好學生。](https://jucardus.github.io/2504021149)
 * [這個陶器是手工製作的。](https://jucardus.github.io/2504011832)
 * [a mano [loc.] (manualmente)](https://jucardus.github.io/2504011112)
 * [by hand [loc.]](https://jucardus.github.io/2503312226)
@@ -54,8 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [El hombre está condenado a ser libre. –...](https://jucardus.github.io/2503241014)
 * [Si tu mal tiene remedio, ¿por qué te afl...](https://jucardus.github.io/2503241008)
 * [El ruido de un beso no es tan retumbante...](https://jucardus.github.io/2503241006)
-* [En el mundo común de los hechos, los mal...](https://jucardus.github.io/2503241004)
-* [Si la vida te da limones, véndelos.](https://jucardus.github.io/2503241000)
-* [Hay algunos hombres que no dicen lo que...](https://jucardus.github.io/2503240957)
-* [Si tienes una mejor amiga y con el tiemp...](https://jucardus.github.io/2503240956)
-* [La verdad es un ácido corrosivo que salp...](https://jucardus.github.io/2503240937)
