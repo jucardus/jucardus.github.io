@@ -32,6 +32,7 @@
     <div id='mostrar'></div>
 
   <script>
+    
     let texto = '';
     function inicio () {
       fetch('base.csv')
@@ -40,6 +41,7 @@
         formateo(textString);
       });
     }
+
     function formateo (recibido) {
       var recibido = recibido.replace(/,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
