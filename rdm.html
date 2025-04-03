@@ -27,9 +27,11 @@
     <br>* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
     <p>Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).</p>
     <p>### Lo más reciente</p>
-    <p>**[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**</p>
+    <div id='temas'></div>
     <div id='mostrar'></div>
+
   <script>
+    let texto = '';
     function inicio () {
       fetch('base.csv')
       .then(response => response.text())
@@ -40,6 +42,7 @@
     function formateo (recibido) {
       var recibido = recibido.replace(/,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
       var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      texto = recibido;
       var contador = 0;
       var resultado = [];
       var arrayContenido = recibido.split('¶¶¶¶¶');
@@ -64,12 +67,39 @@
         var enviar = enviar.replace(/ \.\.\./g,'...');
       document.getElementById('mostrar').innerHTML = enviar;
       window.scrollTo(0, 0);
+      mas ();
     }
 
     const extractText = (htmlString) => {
       const doc = new DOMParser().parseFromString(htmlString, 'text/html');
       return doc.body.textContent || "";
     };
+
+    function mas () {
+      var recibido = texto;
+      var resultado = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        var linea = arrayContenido[i].split(',');
+          var tm = linea[1];
+            var orden = linea[1]?.toUpperCase().replace(/-/g,'').replace(/ /g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
+            var tm = '<!--' + orden + '--><span class="etiquetas" onclick="segunMas(\'' + linea[1] + '\')">' + tm + '</span>';
+          var nuevaLinea = tm;
+          if (tm.indexOf('undefined') == -1) {
+            resultado.push(nuevaLinea);
+          }
+      }
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+      resultado = [...new Set(resultado)];
+      resultado = resultado.filter(Boolean);
+      var enviar = resultado.join(' · ');
+      var enviar = enviar.replace(/ŧ /g,', ');
+      var enviar = enviar.replace(/ŧ/g,', ');
+      var enviar = enviar.replace(/\.\.\.\./g,'...');
+      var enviar = enviar.replace(/ \.\.\./g,'...');
+      document.getElementById('mas').innerHTML = enviar;
+      window.scrollTo(0, 0);
+    }
 
   </script>
   </body>
