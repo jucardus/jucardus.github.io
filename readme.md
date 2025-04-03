@@ -9,6 +9,10 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 **[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**
 
+* [Hay una nueva sección o tema en el sitio...](https://jucardus.github.io/2504031228)
+* [The river curled through the valley like...](https://jucardus.github.io/2504031227)
+* [The old house stood at the edge of the v...](https://jucardus.github.io/2504031226)
+* [The autumn woods were a tapestry of fire...](https://jucardus.github.io/2504031225)
 * [Incluí el tema Frases en el menú princip...](https://jucardus.github.io/2504021159)
 * [我的妹妹也是學生。](https://jucardus.github.io/2504021158)
 * [我不是學生。](https://jucardus.github.io/2504021155)
@@ -55,7 +59,3 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 * [La historia se escribe con letras muy re...](https://jucardus.github.io/2503241025)
 * [La lucha por el saber produce tanto plac...](https://jucardus.github.io/2503241022)
 * [Amo la traición, pero odio al traidor. –...](https://jucardus.github.io/2503241020)
-* [El pensamiento es la semilla de la acció...](https://jucardus.github.io/2503241016)
-* [El hombre está condenado a ser libre. –...](https://jucardus.github.io/2503241014)
-* [Si tu mal tiene remedio, ¿por qué te afl...](https://jucardus.github.io/2503241008)
-* [El ruido de un beso no es tan retumbante...](https://jucardus.github.io/2503241006)
