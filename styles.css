@@ -30,8 +30,8 @@ a.enlacista:hover, a.enlacista:focus {
 }
 body {
   background-color: White;
-  font-family: 'Inter', sans-serif;
   font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 105%;
   line-height: 1.3;
   padding: 10px 22% 160px 22%;
