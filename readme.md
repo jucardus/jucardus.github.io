@@ -7,7 +7,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ### Lo más reciente
 
-**Apotegmas · Citas · Cuentos · Diario · Enlaces · Frases chinas · Poesía · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe**
+Apotegmas · Citas · Cuentos · Diario · Enlaces · Frases chinas · Poesía · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
 
 * [Hay una nueva sección o tema en el sitio...](https://jucardus.github.io/2504031228)
 * [The river curled through the valley like...](https://jucardus.github.io/2504031227)
