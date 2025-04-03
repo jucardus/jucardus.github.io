@@ -1,0 +1,76 @@
+<html>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-44Y9CNCHR8');
+</script>
+
+  <meta charset = "utf-8" />
+  <meta name = "keywords" content = "apotegmas, citas, cuentos, diario, enlaces, vínculos, hipervínculos, reflexiones, sinónimos, vocabularios, apotegma, cita, cuento, diario, enlace, vínculo, hipervínculo, reflexión, sinónimo, vocabulario, vocabulario inglés-español, vocabulario inglés, sinónimos ingleses, sinónimos españoles" />
+  <meta name = "description" content = "Apotegmas · Citas · Cuentos · Diario · Enlaces · Poesía · Reflexiones · Vocabulario" />
+  <meta name = "author" content = "Julio Cárdenas Pelizzari" />
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <title>README | JUCARDUS.COM</title>
+
+  </head>
+  <body onload='inicio()'>
+    <a href='https://jucardus.github.io'># [Jucardus.com](https://jucardus.com)</a>
+    <p/>
+    <p>* [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
+    <br>* [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
+    <p>Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).</p>
+    <p>### Lo más reciente</p>
+    <p>**[Apotegmas](https://jucardus.github.io/apotegmas) · [Citas](https://jucardus.github.io/citas) · [Cuentos](https://jucardus.github.io/cuentos) · [Diario](https://jucardus.github.io/diario) · [Frases](https://jucardus.github.io/frases) · [Poesía](https://jucardus.github.io/poesia) · [Reflexiones](https://jucardus.github.io/reflexiones) · [Vocabulario](https://jucardus.github.io/vocabulario)**</p>
+    <div id='mostrar'></div>
+  <script>
+    function inicio () {
+      fetch('base.csv')
+      .then(response => response.text())
+      .then(textString => {
+        formateo(textString);
+      });
+    }
+    function formateo (recibido) {
+      var recibido = recibido.replace(/,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
+      var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
+      var contador = 0;
+      var resultado = [];
+      var arrayContenido = recibido.split('¶¶¶¶¶');
+      for (var i = 0; i < arrayContenido.length; i++) {
+        var linea = arrayContenido[i].split(',');
+          var nmr = linea[0];
+          var tm = linea[1];
+          var fch = linea[6];
+            var fecha = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
+          var ttl = linea[2];
+            if (linea[2] == '') {ttl = extractText(linea[3]);}
+            if (linea[2] == '' && extractText(linea[3]).length >= 40) {ttl = extractText(linea[3]).slice(0,40) + '...';}
+          var nuevaLinea = '* [' + ttl + '](https://jucardus.github.io/' + fecha + ')<br/>';
+          resultado.push(nuevaLinea);
+          contador = contador + 1;
+            if (contador == 50) {break;}
+      }
+      var enviar = resultado.join('');
+        var enviar = enviar.replace(/ŧ /g,', ');
+        var enviar = enviar.replace(/ŧ/g,', ');
+        var enviar = enviar.replace(/\.\.\.\./g,'...');
+        var enviar = enviar.replace(/ \.\.\./g,'...');
+      document.getElementById('mostrar').innerHTML = enviar;
+      window.scrollTo(0, 0);
+    }
+
+    const extractText = (htmlString) => {
+      const doc = new DOMParser().parseFromString(htmlString, 'text/html');
+      return doc.body.textContent || "";
+    };
+
+  </script>
+  </body>
+</html>
