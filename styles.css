@@ -216,6 +216,7 @@ li {
 #temas {
   background-color: White;
   border-bottom: 4px solid Green;
+  font-size: 108%;
   line-height: 1.5;
   margin-bottom: 30px;
   padding: 8px 0px 3px 0px;
