@@ -86,7 +86,7 @@ code {
   scroll-margin-top: 100px;
 }
 h2.anwo {
-  background-color: PapayaWhip;
+  /*background-color: PapayaWhip;*/
   border-radius: 10px;
   text-align: center;
 }
@@ -106,7 +106,7 @@ h3.titulos:hover {
   cursor: pointer;
 }
 h3.anwoMes {
-  background-color: #efd;
+  /*background-color: #efd;*/
   border-radius: 10px;
 }
 h3.anwoMes:hover {
