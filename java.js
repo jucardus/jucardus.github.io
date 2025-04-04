@@ -733,8 +733,11 @@ const extractText = (htmlString) => {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function autor () {
-  document.getElementById('mostrar').innerHTML = '';
   window.scrollTo(0, 0);
+  const authorElement = document.getElementById('footer');
+  if (authorElement) {
+      authorElement.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
