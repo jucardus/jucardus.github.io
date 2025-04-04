@@ -734,7 +734,7 @@ const extractText = (htmlString) => {
 
 function autor () {
   window.scrollTo(0, 0);
-  const authorElement = document.getElementById('footer');
+  const authorElement = document.getElementById('autor');
   if (authorElement) {
       authorElement.scrollIntoView({ behavior: 'smooth' });
   }
