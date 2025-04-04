@@ -731,3 +731,10 @@ const extractText = (htmlString) => {
 };
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function autor () {
+  document.getElementById('mostrar').innerHTML = '';
+  window.scrollTo(0, 0);
+}
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
