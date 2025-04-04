@@ -214,6 +214,7 @@ li {
   cursor: pointer;
 }
 #temas {
+  background-color: White;
   border-bottom: 4px solid Green;
   line-height: 1.5;
   margin-bottom: 30px;
