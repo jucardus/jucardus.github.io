@@ -734,6 +734,7 @@ const extractText = (htmlString) => {
 
 function autor () {
   window.scrollTo(0, 0);
+  subrayar ('autor');
   const authorElement = document.getElementById('autor');
   if (authorElement) {
       authorElement.scrollIntoView({ behavior: 'smooth' });
