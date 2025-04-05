@@ -9,6 +9,10 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 Apotegmas · Citas · Cuentos · Diario · Enlaces · Frases chinas · Poesía · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
 
+* [你是學生，是不是？](https://jucardus.github.io/2504041321)
+* [你是學生，對吧？](https://jucardus.github.io/2504041319)
+* [a lo largo de todo el año [loc.] ¦Tmp¦](https://jucardus.github.io/2504041318)
+* [Tenías la costumbre de negociar con el D...](https://jucardus.github.io/2504041004)
 * [Hay una nueva sección o tema en el sitio...](https://jucardus.github.io/2504031228)
 * [The river curled through the valley like...](https://jucardus.github.io/2504031227)
 * [The old house stood at the edge of the v...](https://jucardus.github.io/2504031226)
@@ -52,10 +56,6 @@ Apotegmas · Citas · Cuentos · Diario · Enlaces · Frases chinas · Poesía �
 * [No dejes que nadie te diga cómo pensar;...](https://jucardus.github.io/2503250705)
 * [Recuerda que Dios es pequeño, que nace e...](https://jucardus.github.io/2503241201)
 * [Dios es tan pequeñito que está en todas...](https://jucardus.github.io/2503241145)
-* [aplicaciones Android | French Dictionary - Offline](https://jucardus.github.io/2503241137)
-* [aplicaciones Android | Pleco Chinese-English Dictionary](https://jucardus.github.io/2503241042)
+* [La realidad es de naturaleza mítica: tóm...](https://jucardus.github.io/2503241137)
+* [Hay mucha gente que, antes que afrontar...](https://jucardus.github.io/2503241042)
 * [La palabra es libre; la acción, muda; la...](https://jucardus.github.io/2503241028)
-* [La sabiduría me persigue, pero yo soy má...](https://jucardus.github.io/2503241026)
-* [La historia se escribe con letras muy re...](https://jucardus.github.io/2503241025)
-* [La lucha por el saber produce tanto plac...](https://jucardus.github.io/2503241022)
-* [Amo la traición, pero odio al traidor. –...](https://jucardus.github.io/2503241020)
