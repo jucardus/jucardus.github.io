@@ -503,7 +503,7 @@ function archivo () {
           .replace('-10',' - Octubre')
           .replace('-11',' - Noviembre')
           .replace('-12',' - Diciembre');
-        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">&nbsp; ' + anwoMesNombres + '</h3>';
+        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMesNombres + '</h3>';
       var anwoMesDia = linea[6]?.slice(0,10);
         var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><span class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia?.slice(-2) + '</span>&#12288;';
       if (linea[6]?.indexOf('undefined') == -1) {
