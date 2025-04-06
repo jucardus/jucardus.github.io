@@ -162,7 +162,8 @@ function subrayar (temaSubrayar) {
     }
     if (temaSubrayar == 'música') {temaSubrayar = 'musica';}
     if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
-  window.history.replaceState({}, document.title, '/' + temaSubrayar);
+  //window.history.replaceState({}, document.title, '/' + temaSubrayar);
+  window.history.replaceState({}, document.title, '/' + '');
   document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
   document.getElementById('buscador').style.display = 'none';
 }
@@ -171,7 +172,8 @@ function subrayar (temaSubrayar) {
 
 function mostrarBuscador () {
   limpiarSubrayados ();
-  window.history.replaceState({}, document.title, '/' + 'busca');
+  //window.history.replaceState({}, document.title, '/' + 'busca');
+  window.history.replaceState({}, document.title, '/' + '');
   document.getElementById('mostrar').innerHTML = '';
   document.getElementById('buscador').style.display = 'block';
   document.getElementById('buscar').focus();
@@ -267,9 +269,11 @@ function buscar (recibidoDireccion) {
     }
   if (recibidoDireccion != '') {
     var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-    window.history.replaceState({}, document.title, '/' + numero);
+    //window.history.replaceState({}, document.title, '/' + numero);
+    window.history.replaceState({}, document.title, '/' + '');
   } else {
-    window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
+    //window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
+    window.history.replaceState({}, document.title, '/' + '');
   }
   if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'musica' || lemaOriginal == 'poesia'  || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
     segunTema (lemaOriginal);
@@ -341,7 +345,8 @@ function mostrarUnico (lema) {
     temasTodos[i].style.borderBottom = fondoNoClicados;
   }
   var lema = lema.slice(2).replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-  window.history.replaceState({}, document.title, '/' + lema);
+  //window.history.replaceState({}, document.title, '/' + lema);
+  window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
 }
 
@@ -386,7 +391,8 @@ function az () {
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('az');
-  window.history.replaceState({}, document.title, '/' + 'az');
+  //window.history.replaceState({}, document.title, '/' + 'az');
+  window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
 }
 
@@ -427,7 +433,8 @@ function azar () {
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('azar');
-  window.history.replaceState({}, document.title, '/' + 'azar');
+  //window.history.replaceState({}, document.title, '/' + 'azar');
+  window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
 }
 
@@ -524,7 +531,8 @@ function archivo () {
   document.getElementById('mostrar').innerHTML = '<span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar;
   document.getElementById('buscador').style.display = 'none';
   subrayar('archivo');
-  window.history.replaceState({}, document.title, '/' + 'archivo');
+  //window.history.replaceState({}, document.title, '/' + 'archivo');
+  window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
 }
 
@@ -667,7 +675,8 @@ function mas () {
   document.getElementById('mostrar').innerHTML = '<h3>Todos los temas</h3><ul>' + enviar + '</ul><p>La lista muestra todos los temas incluidos en este sitio, con la estructura <code>Tema - ASCE. - DESC.</code>. Al clicar en cualquiera de los temas, verás una lista alfabética de las entradas correspondientes. Al clicar en <code>ASCE.</code>, verás una lista ascendente de las entradas; es decir, las entradas más antiguas al inicio. Por el contrario, al clicar en <code>DESC.</code>, verás una lista descendente; es decir, las entradas más recientes se mostrarán al inicio.</p>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('mas');
-  window.history.replaceState({}, document.title, '/' + 'mas');
+  //window.history.replaceState({}, document.title, '/' + 'mas');
+  window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
 }
 
@@ -719,7 +728,8 @@ function segunMas (masRecibido) { // alfabewtico
   for (let i = 0; i < temasTodos.length; i++) {
     temasTodos[i].style.borderBottom = fondoNoClicados;
   }
-  window.history.replaceState({}, document.title, '/' + 'mas');
+  //window.history.replaceState({}, document.title, '/' + 'mas');
+  window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
 }
 
