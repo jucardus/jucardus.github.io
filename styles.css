@@ -26,10 +26,13 @@ a.enlacista:hover, a.enlacista:focus {
   color: OrangeRed;
   cursor: pointer;
 }
+.asceDesc {
+  color: Green;
+  font-size: small;
+}
 .asceDesc:hover {
   color: OrangeRed;
   cursor: pointer;
-  font-size: small;
 }
 #azarAZ {
 }
