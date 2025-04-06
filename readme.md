@@ -9,6 +9,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 Apotegmas · Citas · Cuentos · Diario · Enlaces · Frases chinas · Poesía · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
 
+* [turn a blind eye [loc.]](https://jucardus.github.io/2504051316)
 * [你是學生，是不是？](https://jucardus.github.io/2504041321)
 * [你是學生，對吧？](https://jucardus.github.io/2504041319)
 * [a lo largo de todo el año [loc.] ¦Tmp¦](https://jucardus.github.io/2504041318)
@@ -58,4 +59,3 @@ Apotegmas · Citas · Cuentos · Diario · Enlaces · Frases chinas · Poesía �
 * [Dios es tan pequeñito que está en todas...](https://jucardus.github.io/2503241145)
 * [La realidad es de naturaleza mítica: tóm...](https://jucardus.github.io/2503241137)
 * [Hay mucha gente que, antes que afrontar...](https://jucardus.github.io/2503241042)
-* [La palabra es libre; la acción, muda; la...](https://jucardus.github.io/2503241028)
