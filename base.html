@@ -43,6 +43,11 @@
       max-width: 100%; /* Limits cell width to container */
     }
   
+    /* Hide columns 5 and beyond on desktop */
+    td:nth-child(n+5), th:nth-child(n+5) {
+      display: none; /* Hides all columns from 5 onward */
+    }
+  
     body {
       font-family: 'Inter', sans-serif;
     }
