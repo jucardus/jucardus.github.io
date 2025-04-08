@@ -33,6 +33,12 @@
         padding: 8px;
         border-bottom: 1px solid #ddd; /* Adds a line and visual separation */
       }
+      td:nth-child(4), th:nth-child(4) {
+        word-wrap: break-word; /* Breaks long words to fit */
+        overflow-wrap: break-word; /* Modern equivalent of word-wrap */
+        white-space: normal; /* Allows text to wrap naturally */
+        max-width: 100%; /* Limits cell width to container */
+      }
       table {
         width: 100%;
         max-width: 100%; /* Prevents table from overflowing */
