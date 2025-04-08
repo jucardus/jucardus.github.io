@@ -58,16 +58,14 @@
       display: none; /* Hide all columns */
     }
     th:nth-child(4), td:nth-child(4) {
-      display: block; /* Stack cells vertically */
-      width: 100%; /* Full width of container */
+      display: table-cell; /* Keep table layout */
+      width: 100%; /* Full width of table */
       max-width: 100%; /* Prevent overflow */
-      padding: 8px; /* Ensure consistent padding */
-      box-sizing: border-box; /* Include padding in width */
+      box-sizing: border-box;
     }
     table {
-      display: block; /* Table as block */
-      width: 100%; /* Fit viewport */
-      max-width: 100%; /* Reinforce no overflow */
+      width: 100%;
+      max-width: 100%;
     }
   }
 </style>
