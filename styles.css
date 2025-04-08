@@ -10,6 +10,12 @@
   .imagenes {
     width: 99%!important;
   }
+  th, td {
+      display: none; /* Hide all columns by default */
+    }
+    th:nth-child(4), td:nth-child(4) {
+      display: table-cell; /* Show only the 4th column */
+    }
 }
 a.enlacista:link, a.enlacista:visited, a.enlacista:active {
   color: Green;
