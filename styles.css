@@ -184,6 +184,17 @@ li {
   color: DarkTurquoise;
   text-align: right;
 }
+pre {
+  white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-all;
+}
+pre {
+  white-space: pre-wrap; word-wrap: break-all;
+}
+pre {
+  background-color: #efd;
+  border-radius: 8px;
+  padding: 10px;
+}
 .qr {
   width: 90px;
 }
