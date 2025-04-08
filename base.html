@@ -21,70 +21,42 @@
     <link rel="canonical" href="https://jucardus.github.io" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="icon" type="image/png" href="favicon.ico" />
-  <!--style>
-    @media only screen and (max-device-width: 480px) {
-      th, td {
-          display: none; /* Hide all columns by default */
-        }
-        th:nth-child(4), td:nth-child(4) {
-          display: table-cell; /* Show only the 4th column */
-        }
-      td, th {
-        padding: 8px;
-        border-bottom: 1px solid #ddd; /* Adds a line and visual separation */
-      }
-      td:nth-child(4), th:nth-child(4) {
-        word-wrap: break-word; /* Breaks long words to fit */
-        overflow-wrap: break-word; /* Modern equivalent of word-wrap */
-        white-space: normal; /* Allows text to wrap naturally */
-        max-width: 100%; /* Limits cell width to container */
-      }
-      table {
-        width: 100%;
-        max-width: 100%; /* Prevents table from overflowing */
-        border-collapse: separate; /* Allows spacing between cells */
-        border-spacing: 0 10px; /* Adds vertical spacing between rows */
-      }
+
+  <style>
+    /* Global styles (apply to all screen sizes) */
+    table {
+      width: 100%;
+      max-width: 100%; /* Prevents table from overflowing */
+      border-collapse: separate; /* Allows spacing between cells */
+      border-spacing: 0 10px; /* Adds vertical spacing between rows */
     }
+  
+    td, th {
+      padding: 8px; /* Padding inside cells */
+      border-bottom: 1px solid #ddd; /* Visual separation */
+    }
+  
+    td:nth-child(4), th:nth-child(4) {
+      word-wrap: break-word; /* Breaks long words to fit */
+      overflow-wrap: break-word; /* Modern equivalent */
+      white-space: normal; /* Allows text to wrap */
+      max-width: 100%; /* Limits cell width to container */
+    }
+  
     body {
       font-family: 'Inter', sans-serif;
     }
-</style-->
-<style>
-  /* Global styles (apply to all screen sizes) */
-  table {
-    width: 100%;
-    max-width: 100%; /* Prevents table from overflowing */
-    border-collapse: separate; /* Allows spacing between cells */
-    border-spacing: 0 10px; /* Adds vertical spacing between rows */
-  }
-
-  td, th {
-    padding: 8px; /* Padding inside cells */
-    border-bottom: 1px solid #ddd; /* Visual separation */
-  }
-
-  td:nth-child(4), th:nth-child(4) {
-    word-wrap: break-word; /* Breaks long words to fit */
-    overflow-wrap: break-word; /* Modern equivalent */
-    white-space: normal; /* Allows text to wrap */
-    max-width: 100%; /* Limits cell width to container */
-  }
-
-  body {
-    font-family: 'Inter', sans-serif;
-  }
-
-  /* Mobile-specific styles */
-  @media only screen and (max-width: 480px) {
-    th, td {
-      display: none; /* Hide all columns */
+  
+    /* Mobile-specific styles */
+    @media only screen and (max-width: 480px) {
+      th, td {
+        display: none; /* Hide all columns */
+      }
+      th:nth-child(4), td:nth-child(4) {
+        display: table-cell; /* Show only the 4th column */
+      }
     }
-    th:nth-child(4), td:nth-child(4) {
-      display: table-cell; /* Show only the 4th column */
-    }
-  }
-</style>
+  </style>
   
 </head>
 <body>
