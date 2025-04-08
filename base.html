@@ -53,7 +53,7 @@
 </head>
 <body>
     <h1><a href='https://jucardus.github.io'>Base de datos de Jucardus</a></h1>
-    <div id="csv-content"></div>
+    <div id="csv-content" style="overflow-x: auto;"></div>
     <script>
         fetch('base.csv')
             .then(response => response.text())
