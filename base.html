@@ -48,6 +48,7 @@
   }
 
   /* Mobile-specific styles */
+  /*
   @media only screen and (max-width: 480px) {
     th, td {
       display: none; /* Hide all columns */
@@ -56,6 +57,24 @@
       display: table-cell; /* Show only the 4th column */
     }
   }
+  */
+
+@media only screen and (max-width: 480px) {
+  th, td {
+    display: none; /* Hide all columns */
+  }
+  th:nth-child(4), td:nth-child(4) {
+    display: block; /* Stack cells vertically */
+    width: 100%; /* Full width of container */
+    max-width: 100%;
+  }
+  table {
+    display: block; /* Table as block */
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+  
 </style>
 
 </head>
