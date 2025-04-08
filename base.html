@@ -43,11 +43,6 @@
     max-width: 100%; /* Limits cell width to container */
   }
 
-  /* Hide columns 5 and beyond on desktop */
-  td:nth-child(n+5), th:nth-child(n+5) {
-    display: none; /* Hides all columns from 5 onward */
-  }
-
   body {
     font-family: 'Inter', sans-serif;
   }
@@ -59,17 +54,10 @@
     }
     th:nth-child(4), td:nth-child(4) {
       display: table-cell; /* Show only the 4th column */
-      width: 100%; /* Forces the 4th column to take full available width */
-      max-width: 0; /* Allows content to shrink and wrap */
-    }
-    table {
-      display: block; /* Treat table as block to fit container */
-      width: 100%; /* Reinforce table width */
-      overflow-x: hidden; /* Prevent table-level overflow */
     }
   }
 </style>
-  
+
 </head>
 <body>
     <h1><a href='https://jucardus.github.io'>Base de datos de Jucardus</a></h1>
