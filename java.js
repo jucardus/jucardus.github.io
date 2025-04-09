@@ -496,7 +496,7 @@ function archivo () {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var anwo = linea[6]?.slice(0,4);
-        var anwoEnlace = '<!--' + anwo + '--><h2 class="anwo" onclick="buscarArchivo (\'~ ' + anwo + ' ~\')">' + anwo + '</h2>';
+        var anwoEnlace = '<!--' + anwo + '--><h2 class="anwo" onclick="buscarArchivo (\'' + anwo + '\')">~ ' + anwo + ' ~</h2>';
       var anwoMes = linea[6]?.slice(0,7);
         var anwoMesNombres = linea[6]?.slice(0,7).replace('-01',' - Enero')
           .replace('-02',' - Febrero')
