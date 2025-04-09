@@ -650,7 +650,7 @@ function mostrarMas (tema) {
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
-function mas () {
+function etiquetas () {
   var recibido = texto;
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
@@ -674,7 +674,7 @@ function mas () {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<h3>Todos los temas</h3><ul>' + enviar + '</ul><p>La lista muestra todos los temas incluidos en este sitio, con la estructura <code>Tema - ASCE. - DESC.</code>. Al clicar en cualquiera de los temas, verás una lista alfabética de las entradas correspondientes. Al clicar en <code>ASCE.</code>, verás una lista ascendente de las entradas; es decir, las entradas más antiguas al inicio. Por el contrario, al clicar en <code>DESC.</code>, verás una lista descendente; es decir, las entradas más recientes se mostrarán al inicio.</p>';
   document.getElementById('buscador').style.display = 'none';
-  subrayar('mas');
+  subrayar('etiquetas');
   //window.history.replaceState({}, document.title, '/' + 'mas');
   window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
