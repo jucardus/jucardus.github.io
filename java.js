@@ -682,7 +682,7 @@ function etiquetas () {
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
-function segunMas (masRecibido) { // alfabewtico
+function segunMas (masRecibido) { // cronolowgico
   var contador = 0;
   var recibido = texto;
   var resultado = [];
@@ -714,7 +714,7 @@ function segunMas (masRecibido) { // alfabewtico
 
   }
   if (masRecibido != 'Diario') {
-    resultado = resultado.sort((a, b) => a.localeCompare(b));
+    //resultado = resultado.sort((a, b) => a.localeCompare(b));
   }
   var enviar = resultado.join('');
   var enviar = enviar.replace(/ŧ /g,', ');
