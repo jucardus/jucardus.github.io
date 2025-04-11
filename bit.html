@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwarden Export - Names</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #175ddc;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        li:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bitwarden Export - Names</h1>
+    <ul id="namesList"></ul>
+
+    <script>
+        // Fetch the JSON data from your URL
+        fetch('https://jucardus.github.io/bitwarden_export_20250410215816.json')
+            .then(response => response.json())
+            .then(data => {
+                const namesList = document.getElementById('namesList');
+                
+                // Check if 'items' exists in the data
+                if (data.items && Array.isArray(data.items)) {
+                    data.items.forEach(item => {
+                        if (item.name) {
+                            const li = document.createElement('li');
+                            li.textContent = item.name;
+                            namesList.appendChild(li);
+                        }
+                    });
+                } else {
+                    namesList.innerHTML = '<li>No items found in the JSON file.</li>';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                document.getElementById('namesList').innerHTML = 
+                    '<li>Failed to load data. Check console for details.</li>';
+            });
+    </script>
+</body>
+</html>
