@@ -75,7 +75,7 @@ function formateo (recibido) {
   document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscador').style.display = 'none';
   subrayar ('inicio');
-  etiquetasCr ();
+  etiquetasTodas ();
   window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
   if (direccion != '' && direccion.indexOf('jucardus') == -1) {
@@ -905,7 +905,7 @@ function etiquetasAZ (masRecibido) { // alfabewtico
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
-function etiquetasCr () { // etiquetas cronolowgicas
+function etiquetasTodas () { // etiquetas cronolowgicas
   var recibido = texto;
   var resultado = [];
   var arrayContenido = recibido.split('¶¶¶¶¶');
@@ -923,7 +923,7 @@ function etiquetasCr () { // etiquetas cronolowgicas
   resultado = [...new Set(resultado)];
   resultado = resultado.filter(Boolean);
   var enviar = resultado.join(' · ');
-  document.getElementById('etiquetas').innerHTML = enviar;
+  document.getElementById('etiquetasTodas').innerHTML = enviar;
   window.history.replaceState({}, document.title, '/' + '');
 }
 
