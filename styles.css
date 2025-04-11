@@ -80,6 +80,10 @@ code {
   color: OrangeRed;
   cursor: pointer;
 }
+.etiquetasTodas {
+  line-height: 1.5;
+  text-align: center;
+}
 .fecha {
   color: SlateGray;
 }
