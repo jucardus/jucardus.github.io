@@ -913,7 +913,7 @@ function etiquetasTodas () { // etiquetas cronolowgicas
     var linea = arrayContenido[i].split(',');
       var tm = linea[1];
         var orden = linea[1]?.toUpperCase().replace(/-/g,'').replace(/ /g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var tm = '<li><!--' + orden + '--><span class="etiquetas" onclick="segunMas(\'' + linea[1] + '\')">' + tm + '</span></li>';
+        var tm = '<!--' + orden + '--><span class="etiquetas" onclick="segunMas(\'' + linea[1] + '\')">' + tm + '</span>';
       var nuevaLinea = tm;
       if (tm.indexOf('undefined') == -1) {
         resultado.push(nuevaLinea);
