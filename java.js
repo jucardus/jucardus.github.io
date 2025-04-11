@@ -74,7 +74,8 @@ function formateo (recibido) {
     var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = enviar;
   document.getElementById('buscador').style.display = 'none';
-  subrayar('inicio');
+  subrayar ('inicio');
+  etiquetasCr ();
   window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
   if (direccion != '' && direccion.indexOf('jucardus') == -1) {
@@ -900,6 +901,30 @@ function etiquetasAZ (masRecibido) { // alfabewtico
   //window.history.replaceState({}, document.title, '/' + 'mas');
   window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
+}
+
+// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function etiquetasCr () { // etiquetas cronolowgicas
+  var recibido = texto;
+  var resultado = [];
+  var arrayContenido = recibido.split('¶¶¶¶¶');
+  for (var i = 0; i < arrayContenido.length; i++) {
+    var linea = arrayContenido[i].split(',');
+      var tm = linea[1];
+        var orden = linea[1]?.toUpperCase().replace(/-/g,'').replace(/ /g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
+        var tm = '<li><!--' + orden + '--><span class="etiquetas" onclick="segunMas(\'' + linea[1] + '\')">' + tm + '</span></li>';
+      var nuevaLinea = tm;
+      if (tm.indexOf('undefined') == -1) {
+        resultado.push(nuevaLinea);
+      }
+  }
+  resultado = resultado.sort((a, b) => a.localeCompare(b));
+  resultado = [...new Set(resultado)];
+  resultado = resultado.filter(Boolean);
+  var enviar = resultado.join(' · ');
+  document.getElementById('etiquetas').innerHTML = enviar;
+  window.history.replaceState({}, document.title, '/' + '');
 }
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
