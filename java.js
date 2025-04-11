@@ -76,7 +76,6 @@ function formateo (recibido) {
   document.getElementById('buscador').style.display = 'none';
   subrayar ('inicio');
   etiquetasTodas ();
-  document.getElementById('etiquetasTodas').style.display = 'block';
   window.history.replaceState({}, document.title, '/' + '');
   window.scrollTo(0, 0);
   if (direccion != '' && direccion.indexOf('jucardus') == -1) {
@@ -150,7 +149,6 @@ function segunTema (temaRecibido) {
   var mostrarMas = '<div id="mostrarMas" onclick="mostrarMas (\'' + temaRecibido + '\')">[ ver todas las entradas ]</div>';
   document.getElementById('mostrar').innerHTML = enviar + mostrarMas;
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   subrayar(temaRecibido);
   window.scrollTo(0, 0);
 }
@@ -169,7 +167,6 @@ function subrayar (temaSubrayar) {
   window.history.replaceState({}, document.title, '/' + '');
   document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
 }
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
@@ -180,7 +177,6 @@ function mostrarBuscador () {
   window.history.replaceState({}, document.title, '/' + '');
   document.getElementById('mostrar').innerHTML = '';
   document.getElementById('buscador').style.display = 'block';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   document.getElementById('buscar').focus();
 }
 
@@ -287,7 +283,6 @@ function buscar (recibidoDireccion) {
   if (lemaOriginal == 'azar') {azar ();}
   if (lemaOriginal == 'archivo') {archivo ();}
   if (lemaOriginal == 'busca') {mostrarBuscador ();}
-  document.getElementById('etiquetasTodas').style.display = 'block';
   window.scrollTo(0, 0);
 }
 
@@ -353,7 +348,6 @@ function mostrarUnico (lema) {
   var lema = lema.slice(2).replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
   //window.history.replaceState({}, document.title, '/' + lema);
   window.history.replaceState({}, document.title, '/' + '');
-  document.getElementById('etiquetasTodas').style.display = 'block';
   window.scrollTo(0, 0);
 }
 
@@ -397,7 +391,6 @@ function az () {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   subrayar('az');
   //window.history.replaceState({}, document.title, '/' + 'az');
   window.history.replaceState({}, document.title, '/' + '');
@@ -440,7 +433,6 @@ function azar () {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   subrayar('azar');
   //window.history.replaceState({}, document.title, '/' + 'azar');
   window.history.replaceState({}, document.title, '/' + '');
@@ -539,7 +531,6 @@ function archivo () {
     var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar;
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   subrayar('archivo');
   //window.history.replaceState({}, document.title, '/' + 'archivo');
   window.history.replaceState({}, document.title, '/' + '');
@@ -608,7 +599,6 @@ function buscarArchivo (fechaRecibida) {
     for (let i = 0; i < temasTodos.length; i++) {
       temasTodos[i].style.borderBottom = fondoNoClicados;
     }
-  document.getElementById('etiquetasTodas').style.display = 'block';
   window.scrollTo(0, 0);
 }
 
@@ -656,7 +646,6 @@ function mostrarMas (tema) {
   var enviar = enviar.replace(/\.\.\.\./g,'...');
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + temaConteo + '</i>.</span><p>' + enviar + '</div>';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   window.scrollTo(0, 0);
 }
 
@@ -686,7 +675,6 @@ function etiquetas () {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<h3>Todos los temas</h3><ul>' + enviar + '</ul><p>La lista muestra todas las etiquetas o temas incluidos en este sitio, con la estructura <code>Tema - ASCE. - DESC.</code>. Al clicar en cualquiera de los temas, verás una lista alfabética de las entradas correspondientes. Al clicar en <code>ASCE.</code>, verás una lista ascendente de las entradas; es decir, las entradas más antiguas al inicio. Por el contrario, al clicar en <code>DESC.</code>, verás una lista descendente; es decir, las entradas más recientes se mostrarán al inicio.</p>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'none';
   subrayar('etiquetas');
   //window.history.replaceState({}, document.title, '/' + 'mas');
   window.history.replaceState({}, document.title, '/' + '');
@@ -736,7 +724,6 @@ function segunMas (masRecibido) { // cronolowgico
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   const temasTodos = document.getElementsByClassName('temas');
   var fondoNoClicados = '4px solid White';
   for (let i = 0; i < temasTodos.length; i++) {
@@ -806,7 +793,6 @@ function ascendente (masRecibido) {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   const temasTodos = document.getElementsByClassName('temas');
   var fondoNoClicados = '4px solid White';
   for (let i = 0; i < temasTodos.length; i++) {
@@ -857,7 +843,6 @@ function descendente (masRecibido) {
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   const temasTodos = document.getElementsByClassName('temas');
   var fondoNoClicados = '4px solid White';
   for (let i = 0; i < temasTodos.length; i++) {
@@ -908,7 +893,6 @@ function etiquetasAZ (masRecibido) { // alfabewtico
   var enviar = enviar.replace(/ \.\.\./g,'...');
   document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById('etiquetasTodas').style.display = 'block';
   const temasTodos = document.getElementsByClassName('temas');
   var fondoNoClicados = '4px solid White';
   for (let i = 0; i < temasTodos.length; i++) {
