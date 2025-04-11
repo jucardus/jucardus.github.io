@@ -9,6 +9,9 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frases chinas · Frases latinas · Poesía · Proverbios chinos · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
 
+* [這家餐廳很好吃，對吧？](https://jucardus.github.io/2504101154)
+* [明天會下雨，對吧？](https://jucardus.github.io/2504101153)
+* [你是老師，對吧？](https://jucardus.github.io/2504101152)
 * [Illa puerum amat.](https://jucardus.github.io/2504091714)
 * [Puer aquam videt.](https://jucardus.github.io/2504091713)
 * [Ego puellam amo.](https://jucardus.github.io/2504091711)
@@ -56,6 +59,3 @@ Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frase
 * [Incluí el tema Frases en el menú princip...](https://jucardus.github.io/2504021159)
 * [我的妹妹也是學生。](https://jucardus.github.io/2504021158)
 * [我不是學生。](https://jucardus.github.io/2504021155)
-* [你們是學生嗎？](https://jucardus.github.io/2504021152)
-* [他是好學生。](https://jucardus.github.io/2504021149)
-* [這個陶器是手工製作的。](https://jucardus.github.io/2504011832)
