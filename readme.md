@@ -1,4 +1,4 @@
-# [Jucardus.com](https://jucardus.com)
+# Jucardus
 
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
