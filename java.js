@@ -289,8 +289,9 @@ function buscar (recibidoDireccion) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function copiarEnlace (fechaSimpleRecibida) {
-  var urlFecha = 'jucardus.github.io/' + fechaSimpleRecibida;
+  var urlFecha = 'https://jucardus.github.io/' + fechaSimpleRecibida;
   navigator.clipboard.writeText(urlFecha);
+  window.open(urlFecha, '_blank');
 }
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
