@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Simple Chronograph</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        .time-unit {
+            font-size: 20vw;  /* Increased from 15vw */
+            font-weight: bold; /* Added bold */
+            line-height: 1;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Enhanced shadow */
+            margin: 1vh 0;    /* Added spacing between lines */
+            letter-spacing: 3vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="time-unit" id="hours">00</div>
+    <div class="time-unit" id="minutes">00</div>
+    <div class="time-unit" id="seconds">00</div>
+    <div class="time-unit" id="centiseconds">00</div>
+
+    <script>
+        // Initialize time display
+        const hoursElement = document.getElementById('hours');
+        const minutesElement = document.getElementById('minutes');
+        const secondsElement = document.getElementById('seconds');
+        const centisecondsElement = document.getElementById('centiseconds');
+
+        // Start time
+        const startTime = Date.now();
+
+        // Update the display every 10ms (for centiseconds)
+        function updateTime() {
+            const elapsed = Date.now() - startTime;
+
+            // Calculate time units
+            const totalSeconds = elapsed / 1000;
+            const hours = Math.floor(totalSeconds / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = Math.floor(totalSeconds % 60);
+            const centiseconds = Math.floor((elapsed % 1000) / 10);
+
+            // Update display
+            hoursElement.textContent = hours.toString().padStart(2, '0');
+            minutesElement.textContent = minutes.toString().padStart(2, '0');
+            secondsElement.textContent = seconds.toString().padStart(2, '0');
+            centisecondsElement.textContent = centiseconds.toString().padStart(2, '0');
+
+            // Change background color gradually (lighter palette)
+            const hue = (elapsed / 50) % 360;
+            const saturation = 60;
+            const lightness = 30 + (Math.sin(elapsed / 3000) * 15);
+            document.body.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+
+            // Request next frame
+            requestAnimationFrame(updateTime);
+        }
+
+        // Start the chronograph
+        updateTime();
+    </script>
+</body>
+</html>
