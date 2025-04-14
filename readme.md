@@ -1,4 +1,4 @@
-# [Jucardus.com](https://jucardus.com)
+ # [Jucardus.com](https://jucardus.com)
 
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
@@ -6,9 +6,16 @@
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
 ### Lo más reciente
+Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frases chinas · Frases latinas · Gramática latina · Poesía · Proverbios chinos · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
 
-Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frases chinas · Frases latinas · Poesía · Proverbios chinos · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
-
+* [Agregué una línea divisoria entre las en...](https://jucardus.github.io/2504131942)
+* [Presente indicativo del verbo «amāre» - Primera conjugación](https://jucardus.github.io/2504131320)
+* [Pronombres personales latinos](https://jucardus.github.io/2504131318)
+* [Cuando creas que has logrado algo, recue...](https://jucardus.github.io/2504110623)
+* [No es propio de quien busca a Dios hacer...](https://jucardus.github.io/2504110621)
+* [Al paso que vamos, los menonitas van a s...](https://jucardus.github.io/2504110619)
+* [Si sólo es realidad lo que puedes ver, ¿...](https://jucardus.github.io/2504110617)
+* [Ya es algo difícil amar al prójimo sin a...](https://jucardus.github.io/2504110611)
 * [這家餐廳很好吃，對吧？](https://jucardus.github.io/2504101154)
 * [明天會下雨，對吧？](https://jucardus.github.io/2504101153)
 * [你是老師，對吧？](https://jucardus.github.io/2504101152)
@@ -27,7 +34,7 @@ Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frase
 * [Puer cantat.](https://jucardus.github.io/2504091647)
 * [Ille amat.](https://jucardus.github.io/2504091642)
 * [Tū amās.](https://jucardus.github.io/2504091637)
-* [Ego amo.](https://jucardus.github.io/2504091633)
+* [Ego amō.](https://jucardus.github.io/2504091633)
 * [這本書是不是你的？](https://jucardus.github.io/2504091202)
 * [書 (书) [shū]](https://jucardus.github.io/2504091159)
 * [你是不是學生？](https://jucardus.github.io/2504091158)
@@ -38,7 +45,7 @@ Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frase
 * [小貓在睡覺。](https://jucardus.github.io/2504090953)
 * [我在工作。](https://jucardus.github.io/2504081919)
 * [我工作。](https://jucardus.github.io/2504081910)
-* [Ego laboro.](https://jucardus.github.io/2504081905)
+* [Ego labōrō.](https://jucardus.github.io/2504081905)
 * [Tū es.](https://jucardus.github.io/2504081901)
 * [Ego sum.](https://jucardus.github.io/2504081759)
 * [Si la verdad se explica sola y no necesi...](https://jucardus.github.io/2504081120)
@@ -51,11 +58,3 @@ Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frase
 * [你是學生，是不是？](https://jucardus.github.io/2504041321)
 * [你是學生，對吧？](https://jucardus.github.io/2504041319)
 * [a lo largo de todo el año [loc.] ¦Tmp¦](https://jucardus.github.io/2504041318)
-* [Tenías la costumbre de negociar con el D...](https://jucardus.github.io/2504041004)
-* [La visión traumática que tienes de Dios...](https://jucardus.github.io/2504031228)
-* [The river curled through the valley like...](https://jucardus.github.io/2504031227)
-* [The old house stood at the edge of the v...](https://jucardus.github.io/2504031226)
-* [The autumn woods were a tapestry of fire...](https://jucardus.github.io/2504031225)
-* [Incluí el tema Frases en el menú princip...](https://jucardus.github.io/2504021159)
-* [我的妹妹也是學生。](https://jucardus.github.io/2504021158)
-* [我不是學生。](https://jucardus.github.io/2504021155)
