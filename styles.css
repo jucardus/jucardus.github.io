@@ -35,6 +35,9 @@ a.enlacista:hover, a.enlacista:focus {
   cursor: pointer;
 }
 #azarAZ {
+  border-bottom: 2px Solid #aaa;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
 }
 body {
   background-color: White;
