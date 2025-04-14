@@ -65,6 +65,7 @@ code {
   padding: 0px 5px 0px 5px;
 }
 #entrada {
+  border-bottom: 1px Solid #aaa;
   margin-bottom: 35px;
 }
 #entradaBusca {
