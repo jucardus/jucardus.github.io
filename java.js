@@ -530,7 +530,7 @@ function archivo () {
     var enviar = enviar.replace(/ŧ/g,', ');
     var enviar = enviar.replace(/\.\.\.\./g,'...');
     var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="archivo"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
+  document.getElementById('mostrar').innerHTML = '<div id="archivoTodo"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('archivo');
   //window.history.replaceState({}, document.title, '/' + 'archivo');
@@ -674,7 +674,7 @@ function etiquetas () {
   var enviar = enviar.replace(/ŧ/g,', ');
   var enviar = enviar.replace(/\.\.\.\./g,'...');
   var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="etiquetas"><h3>Todos los temas</h3><ul>' + enviar + '</ul><p>La lista muestra todas las etiquetas o temas incluidos en este sitio, con la estructura <code>Tema - ASCE. - DESC.</code>. Al clicar en cualquiera de los temas, verás una lista alfabética de las entradas correspondientes. Al clicar en <code>ASCE.</code>, verás una lista ascendente de las entradas; es decir, las entradas más antiguas al inicio. Por el contrario, al clicar en <code>DESC.</code>, verás una lista descendente; es decir, las entradas más recientes se mostrarán al inicio.</p></div>';
+  document.getElementById('mostrar').innerHTML = '<div id="etiquetasTodas"><h3>Todos los temas</h3><ul>' + enviar + '</ul><p>La lista muestra todas las etiquetas o temas incluidos en este sitio, con la estructura <code>Tema - ASCE. - DESC.</code>. Al clicar en cualquiera de los temas, verás una lista alfabética de las entradas correspondientes. Al clicar en <code>ASCE.</code>, verás una lista ascendente de las entradas; es decir, las entradas más antiguas al inicio. Por el contrario, al clicar en <code>DESC.</code>, verás una lista descendente; es decir, las entradas más recientes se mostrarán al inicio.</p></div>';
   document.getElementById('buscador').style.display = 'none';
   subrayar('etiquetas');
   //window.history.replaceState({}, document.title, '/' + 'mas');
