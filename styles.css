@@ -29,7 +29,7 @@ a.enlacista:hover, a.enlacista:focus {
 #archivo {
   border-bottom: 4px Solid #ddd;
   margin-bottom: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .asceDesc {
   color: Green;
@@ -86,7 +86,7 @@ code {
 #etiquetas {
   border-bottom: 4px Solid #ddd;
   margin-bottom: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .etiquetas {
   color: #105080;
