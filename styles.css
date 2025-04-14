@@ -26,6 +26,11 @@ a.enlacista:hover, a.enlacista:focus {
   color: OrangeRed;
   cursor: pointer;
 }
+#archivo {
+  border-bottom: 2px Solid #aaa;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
 .asceDesc {
   color: Green;
   font-size: small;
@@ -77,6 +82,11 @@ code {
 }
 #entradaAzarAZ {
   margin-bottom: 10px;
+}
+#etiquetas {
+  border-bottom: 2px Solid #aaa;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
 }
 .etiquetas {
   color: #105080;
