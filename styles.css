@@ -40,7 +40,7 @@ a.enlacista:hover, a.enlacista:focus {
   cursor: pointer;
 }
 #azarAZ {
-  border-bottom: 4px Solid #ccc;
+  border-bottom: 4px Solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
@@ -73,7 +73,7 @@ code {
   padding: 0px 5px 0px 5px;
 }
 #entrada {
-  border-bottom: 4px Solid #ccc;
+  border-bottom: 4px Solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
@@ -84,9 +84,9 @@ code {
   margin-bottom: 10px;
 }
 #etiquetas {
-  border-bottom: 4px Solid #ccc;
+  border-bottom: 4px Solid #ddd;
   margin-bottom: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 .etiquetas {
   color: #105080;
