@@ -120,6 +120,14 @@ h2.anwo:hover {
   color: OrangeRed;
   cursor: pointer;
 }
+h3.anwoMes {
+  /*background-color: #efd;*/
+  border-radius: 10px;
+}
+h3.anwoMes:hover {
+  color: OrangeRed;
+  cursor: pointer;
+}
 h3.autor {
   margin-top: 0px;
 }
@@ -128,14 +136,6 @@ h3.titulos {
   margin-top: 3px;
 }
 h3.titulos:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
-h3.anwoMes {
-  /*background-color: #efd;*/
-  border-radius: 10px;
-}
-h3.anwoMes:hover {
   color: OrangeRed;
   cursor: pointer;
 }
@@ -222,7 +222,9 @@ pre {
   text-align: center;
 }
 #resultadosBusca {
-  /*margin-bottom: 40px;*/
+  border-bottom: 4px Solid #dec;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
 }
 .rombo {
   width: 15px;
