@@ -27,7 +27,7 @@ a.enlacista:hover, a.enlacista:focus {
   cursor: pointer;
 }
 #archivo {
-  border-bottom: 2px Solid #aaa;
+  border-bottom: 4px Solid #ddd;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
@@ -40,7 +40,7 @@ a.enlacista:hover, a.enlacista:focus {
   cursor: pointer;
 }
 #azarAZ {
-  border-bottom: 2px Solid #aaa;
+  border-bottom: 4px Solid #ccc;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
@@ -73,7 +73,7 @@ code {
   padding: 0px 5px 0px 5px;
 }
 #entrada {
-  border-bottom: 2px Solid #aaa;
+  border-bottom: 4px Solid #ccc;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
@@ -84,7 +84,7 @@ code {
   margin-bottom: 10px;
 }
 #etiquetas {
-  border-bottom: 2px Solid #aaa;
+  border-bottom: 4px Solid #ccc;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
