@@ -164,7 +164,7 @@
         #search-container {
             display: none;
             margin: 20px auto;
-            max-width: 400px;
+            max-width: 200px;
         }
         #search-box {
             width: 100%;
@@ -172,10 +172,12 @@
             font-family: 'Courier New', Courier, monospace, sans-serif;
             border: 1px solid #ddd;
             border-radius: 4px;
-            text-align: right;
+            text-align: left;
+            autocomplete: "off";
         }
         #search-box::placeholder {
             font-family: 'Courier New', Courier, monospace, sans-serif;
+            text-align: left;
         }
         .scroll-smooth {
             scroll-behavior: smooth;
@@ -198,7 +200,7 @@
     <div id="menu-separator"></div>
     
     <div id="search-container">
-        <input type="text" id="search-box" placeholder="..." onkeypress="handleSearch(event)">
+        <input type="text" id="search-box" placeholder="..." onkeypress="handleSearch(event)" autocomplete="off">
     </div>
     
     <button id="back-button" onclick="showHome(); return false;">← Back to all entries</button>
@@ -357,13 +359,15 @@
             document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
-            // Group entries by year, month, and day
+            // Group entries by year, month, and day (without time)
             const groupedEntries = {};
             
             allEntries.forEach(entry => {
                 if (!entry['FECHA']) return;
                 
-                const dateParts = entry['FECHA'].split('-');
+                // Extract just the date part (YYYY-MM-DD) ignoring time
+                const dateOnly = entry['FECHA'].split(' ')[0];
+                const dateParts = dateOnly.split('-');
                 if (dateParts.length < 3) return;
                 
                 const year = dateParts[0];
@@ -383,35 +387,36 @@
                 groupedEntries[year][month][day].push(entry);
             });
             
-            // Sort years in descending order
-            const sortedYears = Object.keys(groupedEntries).sort((a, b) => b - a);
+            // Sort years in ascending order (oldest first)
+            const sortedYears = Object.keys(groupedEntries).sort((a, b) => a - b);
             
-            let archiveHTML = '<div class="list-view"><h2>Entries by Date</h2>';
+            let archiveHTML = '<div class="list-view"><h2>Entries by Date (Oldest First)</h2>';
             
             sortedYears.forEach(year => {
                 archiveHTML += `<div class="archive-year"><h3>${year}</h3>`;
                 
-                // Sort months in descending order
-                const sortedMonths = Object.keys(groupedEntries[year]).sort((a, b) => b - a);
+                // Sort months in ascending order
+                const sortedMonths = Object.keys(groupedEntries[year]).sort((a, b) => a - b);
                 
                 sortedMonths.forEach(month => {
                     archiveHTML += `<div class="archive-month"><h4>${getMonthName(month)}</h4>`;
                     
-                    // Sort days in descending order
-                    const sortedDays = Object.keys(groupedEntries[year][month]).sort((a, b) => b - a);
+                    // Sort days in ascending order
+                    const sortedDays = Object.keys(groupedEntries[year][month]).sort((a, b) => a - b);
                     
                     sortedDays.forEach(day => {
                         archiveHTML += `<div class="archive-day"><h5>${day}</h5>`;
+                        archiveHTML += `<ul style="list-style-type: none; padding-left: 20px;">`;
                         
                         groupedEntries[year][month][day].forEach(entry => {
                             archiveHTML += `
-                                <div class="archive-entry" onclick="showSingleEntry('${entry['']}')">
+                                <li class="archive-entry" onclick="showSingleEntry('${entry['']}')">
                                     ${entry['TÍTULO'] || 'Untitled'}
-                                </div>
+                                </li>
                             `;
                         });
                         
-                        archiveHTML += '</div>';
+                        archiveHTML += `</ul></div>`;
                     });
                     
                     archiveHTML += '</div>';
@@ -482,6 +487,7 @@
                 document.getElementById('back-button').style.display = 'block';
                 document.getElementById('entries-container').innerHTML = '';
                 document.querySelector('.nav-buttons').style.display = 'none';
+                document.getElementById('search-box').value = '';
                 document.getElementById('search-box').focus();
                 scrollToTop();
             }
@@ -489,8 +495,18 @@
 
         function handleSearch(event) {
             if (event.key === 'Enter') {
-                const searchTerm = document.getElementById('search-box').value.toLowerCase();
-                if (searchTerm.trim() === '') return;
+                const searchBox = document.getElementById('search-box');
+                const searchTerm = searchBox.value.toLowerCase();
+                
+                // Hide search box after search
+                document.getElementById('search-container').style.display = 'none';
+                // Clear search box
+                searchBox.value = '';
+                
+                if (searchTerm.trim() === '') {
+                    showHome();
+                    return;
+                }
                 
                 const results = allEntries.filter(entry => {
                     return (
