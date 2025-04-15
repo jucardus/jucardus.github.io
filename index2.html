@@ -54,7 +54,7 @@
             }
         }
 
-        // Function to parse CSV data
+        // Improved CSV parser that handles quoted fields with commas
         function parseCSV(csv) {
             const lines = csv.split('\n');
             const result = [];
@@ -64,14 +64,30 @@
                 if (!lines[i].trim()) continue;
                 
                 const obj = {};
-                const currentline = lines[i].split(',');
+                let currentline = lines[i];
+                
+                // Handle quoted fields that may contain commas
+                const regex = /(?:,|^)("(?:(?:"")*[^"]*)*"|[^,]*)/g;
+                let matches;
+                const fields = [];
+                
+                while ((matches = regex.exec(currentline)) !== null) {
+                    let field = matches[1];
+                    if (field.startsWith('"') && field.endsWith('"')) {
+                        field = field.slice(1, -1).replace(/""/g, '"');
+                    }
+                    fields.push(field.trim());
+                }
                 
                 for (let j = 0; j < headers.length; j++) {
-                    let value = currentline[j] ? currentline[j].trim() : '---';
-                    // Handle cases where the value might be wrapped in quotes
-                    if (value.startsWith('"') && value.endsWith('"')) {
-                        value = value.slice(1, -1);
+                    let value = fields[j] || '';
+                    
+                    // Use first 40 chars of CONTENIDO if TÍTULO is empty
+                    if (headers[j] === 'TÍTULO' && !value && fields[3]) {
+                        value = fields[3].substring(0, 40);
+                        if (fields[3].length > 40) value += '...';
                     }
+                    
                     obj[headers[j]] = value || '---';
                 }
                 
@@ -79,6 +95,22 @@
             }
             
             return result;
+        }
+
+        // Function to process content with special characters and HTML
+        function processContent(content) {
+            if (!content || content === '---') return '---';
+            
+            // Replace special characters with HTML tags
+            let processed = content
+                .replace(/¶/g, '</p><p>')
+                .replace(/¦/g, '<br>');
+            
+            // Ensure we have proper paragraph tags
+            if (!processed.startsWith('<p>')) processed = '<p>' + processed;
+            if (!processed.endsWith('</p>')) processed = processed + '</p>';
+            
+            return processed;
         }
 
         // Function to display entries in the HTML
@@ -101,8 +133,8 @@
                     ${entry['FECHA'] || '---'}
                 `;
                 
-                const content = document.createElement('p');
-                content.textContent = entry['CONTENIDO'] || '---';
+                const content = document.createElement('div');
+                content.innerHTML = processContent(entry['CONTENIDO']);
                 
                 const link = document.createElement('p');
                 if (entry['ENLACE'] && entry['ENLACE'] !== '---') {
