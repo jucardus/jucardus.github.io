@@ -22,13 +22,20 @@ function formateo (recibido) {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var nmr = linea[0];
+        numero = numeros (nmr);
       var tm = linea[1];
+        tema = temas (tm);
       var ttl = linea[2];
         if (ttl == '') {var ttl = linea[3]?.slice(0,40);}
+        titulo = titulos (ttl);
       var enlc = linea[4];
+        enlace = enlaces (enlc);
       var cntnd = linea[3];
+        contenido = contenidos (cntnd);
       var imgn = linea[5];
+        imagen = imagenes (imgn);
       var fch = linea[6];
+        fecha = fechas (fch);
       var nuevaLinea = nmr + ' --- ' + tm + ' --- ' + ttl + ' --- ' + enlc + ' --- ' + cntnd + ' --- ' + imgn + ' --- ' + fch;
       if (tm != 'undefined') {
         resultado.push(nuevaLinea);
@@ -46,54 +53,48 @@ function formateo (recibido) {
 
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
+function numeros (nmr) {
+  var devolver = '[' + nmr + ']';
+  return devolver;
+}
+
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function temas (tm) {
+  var devolver = '<span id = "etiquetas" onclick = "">' + tm + '</span>';
+  return devolver;
+}
+
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function titulos (ttl) {
+  var devolver = '<h2 class = "tituloEntradas">' + ttl + '</h2>';
+  return devolver;
+}
+
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function enlaces (enlc) {
+  var dominio = enlc.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+  var devolver = '<a class = "enlaces" href="' + enlc + '" target = "_blank">' + dominio + '</span>';
+  return devolver;
+}
+
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function contenidos (cntnd) {
+  var texto = cntnd.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
+  var devolver = '<span class = "contenido">' + texto + '</span>';
+  return devolver;
+}
+
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function imagenes (imgn) {
+  var devolver = '' + imgn + '';
+  return devolver;
+}
+
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
