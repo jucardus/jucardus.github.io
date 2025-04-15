@@ -1,269 +1,189 @@
-@media only screen and (max-device-width: 480px) {
-  body {
-    font-size: 110%;
-    overflow-x: hidden;
-    padding: 0px 2px 140px 2px !important;
-  }
-  #entrada {
-    margin-bottom: 30px;
-  }
-  .imagenes {
-    width: 99%!important;
-  }
-}
-a.enlacista:link, a.enlacista:visited, a.enlacista:active {
-  color: Green;
-  text-decoration: none;
-}
-a.enlacista:hover, a.enlacista:focus {
-  color: OrangeRed;
-  text-decoration: none;
-}
-.anwoMesDia {
-  line-height: 1.5;
-}
-.anwoMesDia:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
-#archivoTodo {
-  border-bottom: 4px Solid #dec;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-}
-.asceDesc {
-  color: Green;
-  font-size: small;
-}
-.asceDesc:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
-#azarAZ {
-  border-bottom: 4px Solid #dec;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-}
 body {
-  background-color: White;
-  font-family: 'Inter', sans-serif;
-  font-size: 105%;
-  line-height: 1.3;
-  padding: 10px 22% 160px 22%;
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 56%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
 }
-#buscador {
-  margin-top: 20px;
-  text-align: center;
-  display: none;
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+    #main-menu {
+        font-size: 19px;
+        line-height: 1.8;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 }
-button#boton {
-  font-size: 104%;
-  padding: 5px;
-  display: none;
+.entry {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
 }
-#clasificacion {
-  font-size: 90%!important;
-  margin-left: 10px;
+.single-entry {
+    border-bottom: none;
 }
-code {
-  background-color: #e0e7e0;
+.meta {
+    color: #666;
+    font-size: 0.9em;
+    margin: 2px 0 10px 0;
 }
-#comentario {
-  font-size: small;
-  padding: 0px 5px 0px 5px;
+.meta .clickable {
+    cursor: pointer;
+    color: #0066cc;
 }
-#entrada {
-  border-bottom: 4px Solid #dec;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
+.meta .clickable:hover {
+    text-decoration: underline;
 }
-#entradaBusca {
-  margin-bottom: 10px;
+.meta .non-clickable {
+    color: #666;
+    cursor: default;
 }
-#entradaAzarAZ {
-  margin-bottom: 10px;
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
 }
-#etiquetasListar {
-  border-bottom: 4px Solid #dec;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
 }
-.etiquetas {
-  color: #105080;
+a:hover {
+    text-decoration: underline;
 }
-.etiquetas:hover {
-  color: OrangeRed;
-  cursor: pointer;
+.enlacista {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
 }
-#etiquetasTodas {
-  line-height: 1.5;
-  text-align: center;
+.enlacista:hover {
+    text-decoration: underline;
 }
-.fecha {
-  color: SlateGray;
+.no-results {
+    color: OrangeRed;
+    font-weight: bold;
 }
-.fecha:hover {
-  cursor: pointer;
-  color: OrangeRed;
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
 }
-#footer {
-  border-radius: 10px;
-  padding: 5px 5px 0px 5px;
-  scroll-margin-top: 100px;
+h2 {
+    cursor: pointer;
+    margin-bottom: 0;
 }
-h2.anwo {
-  /*background-color: PapayaWhip;*/
-  border-radius: 10px;
-  text-align: center;
-}
-h2.anwo:hover {
-  color: OrangeRed;
-  cursor: pointer;
-}
-h3.anwoMes {
-  /*background-color: #efd;*/
-  border-radius: 10px;
-}
-h3.anwoMes:hover {
-  color: OrangeRed;
-  cursor: pointer;
+h2:hover {
+    color: #0066cc;
 }
 h3.autor {
-  margin-top: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-h3.titulos {
-  margin-bottom: 3px;
-  margin-top: 3px;
+#main-menu {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 12px 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
-h3.titulos:hover {
-  color: OrangeRed;
-  cursor: pointer;
+#menu-separator {
+    height: 4px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
 }
-hr {
-  width: 30%
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
 }
-.imagenes {
-  border-radius: 8px;
-  width: 90%;
+.nav-buttons button {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Inter';
 }
-#imagenes {
-  text-align: center;
+.nav-buttons button:hover {
+    background: #e0e0e0;
 }
-input {
-  border: 2px dotted Silver;
-  border-radius: 4px;
-  color: Black;
-  font-family: monospace, sans-serif;
-  font-size: 95%;
-  letter-spacing: 0.1px;
-  padding: 2px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-top: 4px;
+.nav-buttons button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
-li {
-  padding-bottom: 8px;
+.list-view {
+    margin-bottom: 30px;
 }
-#linea {
-  margin: 0px 0px 30px 0px;
-  text-align: center;
+.list-view h2 {
+    margin-bottom: 15px;
 }
-#mas {
-  font-weight: bold;
-  line-height: 1.5;
-  text-align: center;
+.list-view ul {
+    list-style-type: none;
+    padding: 0;
 }
-#mostrar {
-  margin-top: 35px;
+.list-view li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #0066cc;
 }
-#mostrarMas {
-  color: OrangeRed;
-  text-align: center;
+.list-view li:hover {
+    text-decoration: underline;
 }
-#mostrarMas:hover {
-  cursor: pointer;
+.archive-year {
+    margin-top: 20px;
 }
-#ninguna {
-  color: OrangeRed;
-  margin-bottom: 35px;
-  margin-top: -10px;
-  text-align: center;
+.archive-month {
+    margin-left: 15px;
+    margin-top: 15px;
 }
-.numeros {
-  color: Green;
-  text-decoration: none;
+.archive-day {
+    margin-left: 30px;
+    margin-top: 10px;
 }
-.numeros:hover {
-  color: OrangeRed;
-  cursor: pointer;
+.archive-entry {
+    margin-left: 45px;
+    margin-bottom: 5px;
+    color: #0066cc;
+    cursor: pointer;
 }
-#pie {
+.archive-entry:hover {
+    text-decoration: underline;
 }
-::placeholder {
-  color: DarkTurquoise;
-  text-align: right;
+#author-section {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
 }
-pre {
-  white-space: -moz-pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;
+#search-container {
+    display: none;
+    margin: 20px auto;
+    max-width: 200px;
 }
-pre {
-  white-space: pre-wrap; word-wrap: break-word;
+#search-box {
+    width: 100%;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+    autocomplete: "off";
 }
-pre {
-  background-color: #efd;
-  border-radius: 8px;
-  padding: 10px;
+#search-box::placeholder {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-align: left;
 }
-.qr {
-  width: 90px;
-}
-#qr {
-  margin-top: 35px;
-  text-align: center;
-}
-#resultadosBusca {
-  border-bottom: 4px Solid #dec;
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-}
-.rombo {
-  width: 15px;
-  animation: rotate 4s infinite linear;
-}
-    @keyframes rotate {
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-#rombo {
-  margin-bottom: 30px;
-  margin-top: 30px;
-  text-align: center;
-  display: none;
-}
-.separador {
-}
-#separador {
-  text-align: center;
-}
-.temas {
-  color: #105080;
-  font-weight: bold;
-}
-.temas:hover {
-  color: DarkOrange;
-  cursor: pointer;
-}
-#temas {
-  background-color: White;
-  border-bottom: 4px solid Green;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  padding: 5px 0px 5px 0px;
-  position: sticky!important;
-  top: 0;
-  z-index: 1;
-}
-ul, ol {
-  margin-left: -15px;
+.scroll-smooth {
+    scroll-behavior: smooth;
 }
