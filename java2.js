@@ -75,8 +75,10 @@ function titulos (ttl) {
 // ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function enlaces (enlc) {
-  var dominio = enlc.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
-  var devolver = '<a class = "enlaces" href="' + enlc + '" target = "_blank">' + dominio + '</span>';
+  if (enlc != '') {
+    var dominio = enlc.slice(enlc.indexOf('://') + 3).replace(/\/.*/g,'');
+    var devolver = '<a class = "enlaces" href="' + enlc + '" target = "_blank">' + dominio + '</span>';
+  }
   return devolver;
 }
 
