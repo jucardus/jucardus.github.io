@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,20 @@
             line-height: 1.6;
             max-width: 56%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 2px;
+        }
+        @media (max-width: 768px) {
+            body {
+                max-width: 100%;
+                padding: 2px;
+            }
         }
         .entry {
             margin-bottom: 40px;
-            border-bottom: 1px solid #ddd;
             padding-bottom: 20px;
+        }
+        .single-entry {
+            border-bottom: 1px solid #ddd;
         }
         .meta {
             color: #666;
@@ -80,9 +88,15 @@
             z-index: 100;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
             border-bottom: 1px solid #ddd;
             margin-bottom: 4px;
+        }
+        @media (max-width: 768px) {
+            #main-menu {
+                gap: 8px;
+                font-size: 0.9em;
+            }
         }
         #main-menu a {
             color: #333;
@@ -159,7 +173,6 @@
         #author-section {
             margin-top: 60px;
             padding-top: 20px;
-            border-top: 1px solid #ddd;
         }
         #search-container {
             display: none;
@@ -203,11 +216,11 @@
         <input type="text" id="search-box" placeholder="..." onkeypress="handleSearch(event)" autocomplete="off">
     </div>
     
-    <button id="back-button" onclick="showHome(); return false;">← Back to all entries</button>
+    <button id="back-button" onclick="showHome(); return false;">← Volver al inicio</button>
     <div id="entries-container"></div>
     <div class="nav-buttons">
-        <button id="prev-button" onclick="loadPrevEntries(); return false;" disabled>← Previous</button>
-        <button id="next-button" onclick="loadNextEntries(); return false;">Next →</button>
+        <button id="prev-button" onclick="loadPrevEntries(); return false;" disabled>← Anterior</button>
+        <button id="next-button" onclick="loadNextEntries(); return false;">Siguiente →</button>
     </div>
 
     <div id="author-section">
@@ -295,15 +308,15 @@
             document.getElementById('search-container').style.display = 'none';
             
             const sortedEntries = [...allEntries].sort((a, b) => {
-                const cleanTitleA = (a['TÍTULO'] || '').replace(/^[^a-zA-Z0-9]+/, '');
-                const cleanTitleB = (b['TÍTULO'] || '').replace(/^[^a-zA-Z0-9]+/, '');
-                return cleanTitleA.localeCompare(cleanTitleB);
+                const titleA = a['TÍTULO'] || '';
+                const titleB = b['TÍTULO'] || '';
+                return titleA.localeCompare(titleB, 'es', { sensitivity: 'base' });
             });
             
             const container = document.getElementById('entries-container');
             container.innerHTML = `
                 <div class="list-view">
-                    <h2>All Entries (A-Z)</h2>
+                    <h2>De la A a la Z</h2>
                     <ul>
                         ${sortedEntries.map(entry => `
                             <li onclick="showSingleEntry('${entry['']}')">
@@ -320,7 +333,7 @@
 
         function showRandom() {
             currentView = 'random';
-            document.getElementById('main-title').textContent = 'Random Entries';
+            document.getElementById('main-title').textContent = 'Entradas al azar';
             document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
@@ -338,7 +351,7 @@
             const container = document.getElementById('entries-container');
             container.innerHTML = `
                 <div class="list-view">
-                    <h2>Random Selection</h2>
+                    <h2>Selección al azar</h2>
                     <ul>
                         ${randomEntries.map(entry => `
                             <li onclick="showSingleEntry('${entry['']}')">
@@ -355,7 +368,7 @@
 
         function showArchive() {
             currentView = 'archive';
-            document.getElementById('main-title').textContent = 'Archive by Date';
+            document.getElementById('main-title').textContent = 'Archivo por fecha';
             document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
@@ -390,7 +403,7 @@
             // Sort years in ascending order (oldest first)
             const sortedYears = Object.keys(groupedEntries).sort((a, b) => a - b);
             
-            let archiveHTML = '<div class="list-view"><h2>Entries by Date (Oldest First)</h2>';
+            let archiveHTML = '<div class="list-view"><h2>Entradas por fecha (antiguas al inicio)</h2>';
             
             sortedYears.forEach(year => {
                 archiveHTML += `<div class="archive-year"><h3>${year}</h3>`;
@@ -436,15 +449,15 @@
 
         function getMonthName(monthNumber) {
             const months = [
-                'January', 'February', 'March', 'April', 'May', 'June',
-                'July', 'August', 'September', 'October', 'November', 'December'
+                'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+                'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
             ];
             return months[parseInt(monthNumber) - 1] || monthNumber;
         }
 
         function showTags() {
             currentView = 'tags';
-            document.getElementById('main-title').textContent = 'All Tags';
+            document.getElementById('main-title').textContent = 'Todas las etiquetas';
             document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
@@ -461,7 +474,7 @@
             const container = document.getElementById('entries-container');
             container.innerHTML = `
                 <div class="list-view">
-                    <h2>All Tags (A-Z)</h2>
+                    <h2>Todas las etiquetas</h2>
                     <ul>
                         ${sortedTags.map(tag => `
                             <li onclick="showEntriesByTag('${tag}')">
@@ -483,7 +496,7 @@
                 showHome();
             } else {
                 searchContainer.style.display = 'block';
-                document.getElementById('main-title').textContent = 'Search';
+                document.getElementById('main-title').textContent = 'Búsqueda';
                 document.getElementById('back-button').style.display = 'block';
                 document.getElementById('entries-container').innerHTML = '';
                 document.querySelector('.nav-buttons').style.display = 'none';
@@ -516,15 +529,15 @@
                     );
                 });
                 
-                document.getElementById('main-title').textContent = `Search Results for "${searchTerm}"`;
+                document.getElementById('main-title').textContent = `Búsqueda: "${searchTerm}"`;
                 
                 const container = document.getElementById('entries-container');
                 if (results.length === 0) {
-                    container.innerHTML = '<p>No results found.</p>';
+                    container.innerHTML = '<p>Ninguna coincidencia.</p>';
                 } else {
                     container.innerHTML = `
                         <div class="list-view">
-                            <h2>Found ${results.length} results</h2>
+                            <h2>Se encontraron ${results.length} entradas</h2>
                             <ul>
                                 ${results.map(entry => `
                                     <li onclick="showSingleEntry('${entry['']}')">
@@ -636,14 +649,14 @@
         function showEntriesByTag(tag) {
             currentView = 'tag';
             const filtered = allEntries.filter(entry => entry['TEMA'] === tag);
-            document.getElementById('main-title').textContent = `Entries with tag: ${tag}`;
+            document.getElementById('main-title').textContent = `Entradas con la etiqueta "${tag}"`;
             document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
             const container = document.getElementById('entries-container');
             container.innerHTML = `
                 <div class="list-view">
-                    <h2>Entries tagged with: ${tag}</h2>
+                    <h2>Entradas etiquetadas con "${tag}"</h2>
                     <ul>
                         ${filtered.map(entry => `
                             <li onclick="showSingleEntry('${entry['']}')">
@@ -695,8 +708,7 @@
                 container.innerHTML = '';
                 
                 const entryDiv = document.createElement('div');
-                entryDiv.className = 'entry';
-                entryDiv.id = `entry-${entry['']}`;
+                entryDiv.className = 'entry single-entry';
                 
                 const meta = document.createElement('div');
                 meta.className = 'meta';
