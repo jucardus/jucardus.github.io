@@ -30,7 +30,9 @@ function formateo (recibido) {
       var imgn = linea[5];
       var fch = linea[6];
       var nuevaLinea = nmr + ' --- ' + tm + ' --- ' + ttl + ' --- ' + enlc + ' --- ' + cntnd + ' --- ' + imgn + ' --- ' + fch;
-      resultado.push(nuevaLinea);
+      if (tm != 'undefined') {
+        resultado.push(nuevaLinea);
+      }
   }
   var enviar = resultado.join('<p>');
     var enviar = enviar.replace(/ŧ /g,', ');
