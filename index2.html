@@ -21,8 +21,8 @@
                 font-size: 16px;
             }
             #main-menu {
-                font-size: 18px;
-                line-height: 2.2;
+                font-size: 19px;
+                line-height: 1.8;
                 flex-wrap: wrap;
                 gap: 15px;
             }
@@ -73,6 +73,10 @@
         .enlacista:hover {
             text-decoration: underline;
         }
+        .no-results {
+            color: OrangeRed;
+            font-weight: bold;
+        }
         h1 {
             font-size: 2.2rem;
             margin-bottom: 10px;
@@ -88,30 +92,18 @@
             margin-top: 20px;
             margin-bottom: 10px;
         }
-        #back-button {
-            display: none;
-            margin-bottom: 20px;
-            padding: 8px 16px;
-            background: #f0f0f0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: 'Inter';
-        }
-        #back-button:hover {
-            background: #e0e0e0;
-        }
         #main-menu {
             position: sticky;
             top: 0;
             background: white;
-            padding: 10px 0;
+            padding: 12px 0;
             z-index: 100;
             display: flex;
             justify-content: center;
             gap: 20px;
             border-bottom: 1px solid #ddd;
-            margin-bottom: 4px;
+            margin-bottom: 15px;
+            font-size: 18px;
         }
         #menu-separator {
             height: 4px;
@@ -224,7 +216,6 @@
         <input type="text" id="search-box" placeholder="..." onkeypress="handleSearch(event)" autocomplete="off">
     </div>
     
-    <button id="back-button" onclick="showHome(); return false;">← Volver al inicio</button>
     <div id="entries-container"></div>
     <div class="nav-buttons">
         <button id="prev-button" onclick="loadPrevEntries(); return false;" disabled>← Anterior</button>
@@ -313,7 +304,6 @@
             currentView = 'home';
             currentStartIndex = 0;
             document.getElementById('main-title').textContent = 'Jucardus.com';
-            document.getElementById('back-button').style.display = 'none';
             document.getElementById('search-container').style.display = 'none';
             displayCurrentEntries();
             scrollToTop();
@@ -321,8 +311,7 @@
 
         function showAZ() {
             currentView = 'az';
-            document.getElementById('main-title').textContent = 'Alphabetical Index';
-            document.getElementById('back-button').style.display = 'block';
+            document.getElementById('main-title').textContent = 'Índice alfabético';
             document.getElementById('search-container').style.display = 'none';
             
             const sortedEntries = [...allEntries].sort((a, b) => {
@@ -352,7 +341,6 @@
         function showRandom() {
             currentView = 'random';
             document.getElementById('main-title').textContent = 'Entradas al azar';
-            document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
             const randomEntries = [];
@@ -386,7 +374,6 @@
         function showArchive() {
             currentView = 'archive';
             document.getElementById('main-title').textContent = 'Archivo por fecha';
-            document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
             const groupedEntries = {};
@@ -470,7 +457,6 @@
         function showTags() {
             currentView = 'tags';
             document.getElementById('main-title').textContent = 'Todas las etiquetas';
-            document.getElementById('back-button').style.display = 'block';
             document.getElementById('search-container').style.display = 'none';
             
             const tags = new Set();
@@ -508,7 +494,6 @@
             } else {
                 searchContainer.style.display = 'block';
                 document.getElementById('main-title').textContent = 'Búsqueda';
-                document.getElementById('back-button').style.display = 'block';
                 document.getElementById('entries-container').innerHTML = '';
                 document.querySelector('.nav-buttons').style.display = 'none';
                 document.getElementById('search-box').value = '';
@@ -538,15 +523,19 @@
                     );
                 });
                 
-                document.getElementById('main-title').textContent = `Búsqueda: "${searchTerm}"`;
+                document.getElementById('main-title').textContent = `Búsqueda: «${searchTerm}»`;
                 
                 const container = document.getElementById('entries-container');
                 if (results.length === 0) {
-                    container.innerHTML = '<p>Ninguna coincidencia.</p>';
+                    container.innerHTML = '<p class="no-results">Ninguna coincidencia.</p>';
                 } else {
+                    const resultsText = results.length === 1 ? 
+                        'Se encontró 1 entrada' : 
+                        `Se encontraron ${results.length} entradas`;
+                    
                     container.innerHTML = `
                         <div class="list-view">
-                            <h2>Se encontraron ${results.length} entradas</h2>
+                            <h2>${resultsText}</h2>
                             <ul>
                                 ${results.map(entry => `
                                     <li onclick="showSingleEntry('${entry['']}')">
@@ -655,14 +644,13 @@
         function showEntriesByTag(tag) {
             currentView = 'tag';
             const filtered = allEntries.filter(entry => entry['TEMA'] === tag);
-            document.getElementById('main-title').textContent = `Entradas con la etiqueta "${tag}"`;
-            document.getElementById('back-button').style.display = 'block';
+            document.getElementById('main-title').textContent = `Entradas con la etiqueta «${tag}»`;
             document.getElementById('search-container').style.display = 'none';
             
             const container = document.getElementById('entries-container');
             container.innerHTML = `
                 <div class="list-view">
-                    <h2>Entradas etiquetadas con "${tag}"</h2>
+                    <h2>Entradas etiquetadas con «${tag}»</h2>
                     <ul>
                         ${filtered.map(entry => `
                             <li onclick="showSingleEntry('${entry['']}')">
@@ -704,7 +692,6 @@
             const entry = allEntries.find(e => e[''] === rowNumber);
             if (entry) {
                 document.getElementById('main-title').textContent = entry['TÍTULO'] || 'Entry';
-                document.getElementById('back-button').style.display = 'block';
                 document.getElementById('search-container').style.display = 'none';
                 
                 const container = document.getElementById('entries-container');
