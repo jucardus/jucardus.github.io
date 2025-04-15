@@ -1,931 +1,523 @@
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+let allEntries = [];
+let currentStartIndex = 0;
+const entriesPerPage = 10;
+let currentView = 'home';
 
-let texto = '';
-let direccion = '';
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function inicio () {
-  direccion = window.location.href.replace(/.*io\/\?q=/g,'');
-    if (direccion.match(/^[0-9]+$/) != null && direccion.length == 10) {
-      let str1 = '-'; let str2 = ' '; let str3 = ':';
-      let idx1 = 2; direccion = direccion.substring(0, idx1) + str1 + direccion.substring(idx1);
-      let idx2 = 5; direccion = direccion.substring(0, idx2) + str1 + direccion.substring(idx2);
-      let idx3 = 8; direccion = direccion.substring(0, idx3) + str2 + direccion.substring(idx3);
-      let idx4 = 11; direccion = direccion.substring(0, idx4) + str3 + direccion.substring(idx4);
-    } else {}
-  fetch('base.csv')
-  .then(response => response.text())
-  .then(textString => {
-    formateo(textString);
-  });
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function formateo (recibido) {
-  var recibido = recibido.replace(/,TEMA,TÍTULO,CONTENIDO,ENLACE,IMAGEN,FECHA\n/g,'').replace(/, /g,'ŧ ').replace(/\"/g,'');
-  var recibido = recibido.replace(/\n/g,'¶¶¶¶¶');
-  texto = recibido;
-  var contador = 0;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var enlc = linea[4];
-        if (linea[4] != '') {
-          var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-          var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
-        } else {enlc = '';}
-      var cntnd = linea[3];
-        var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-        var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-      var imgn = linea[5];
-        if (imgn != '') {
-          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
-        }
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
-      if (ttl != '<h3 class="titulos">undefined</h3>') {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-          if (contador == 10) {break;}
-      }
-  }
-  var enviar = resultado.join('<p>');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = enviar;
-  document.getElementById('buscador').style.display = 'none';
-  subrayar ('inicio');
-  etiquetasTodas ();
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
-  if (direccion != '' && direccion.indexOf('jucardus') == -1) {
-    buscar(direccion);
-  }
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function imagenes (imgn) {
-  if (imgn != '' && imgn?.slice(0,4) == 'http') {
-    var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';
-  }
-  if (imgn != '' && imgn?.slice(0,4) != 'http') {
-    var imgn = '<div id="comentario">' + imgn + '</div>';
-  }
-  return imgn;
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function segunTema (temaRecibido) {
-  if (temaRecibido == 'musica') {temaRecibido = 'música';}
-  if (temaRecibido == 'poesia') {temaRecibido = 'poesía';}
-  var recibido = texto;
-  var contador = 0;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var enlc = linea[4];
-        if (linea[4] != '') {
-          var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-          var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
-        } else {enlc = '';}
-      var cntnd = linea[3];
-        var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-        var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-      var imgn = linea[5];
-        if (imgn != '') {
-          var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
-        }
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
-      if (tm.toUpperCase().indexOf(temaRecibido.toUpperCase()) >= 0) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-          if (contador == 10) {break;}
-      }
-  }
-  var enviar = resultado.join('<p>');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  var mostrarMas = '<div id="mostrarMas" onclick="mostrarMas (\'' + temaRecibido + '\')">[ ver todas las entradas ]</div>';
-  document.getElementById('mostrar').innerHTML = enviar + mostrarMas;
-  document.getElementById('buscador').style.display = 'none';
-  subrayar(temaRecibido);
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function subrayar (temaSubrayar) {
-  var fondoNoClicados = '4px solid White';
-  const temasTodos = document.getElementsByClassName('temas');
-    for (let i = 0; i < temasTodos.length; i++) {
-      temasTodos[i].style.borderBottom = fondoNoClicados;
+async function loadEntries() {
+    try {
+        const response = await fetch('https://jucardus.github.io/base.csv');
+        const csvData = await response.text();
+        allEntries = parseCSV(csvData);
+        showHome();
+    } catch (error) {
+        console.error('Error loading the CSV file:', error);
+        document.getElementById('entries-container').innerHTML = 
+            '<p>Error loading entries. Please try again later.</p>';
     }
-    if (temaSubrayar == 'música') {temaSubrayar = 'musica';}
-    if (temaSubrayar == 'poesía') {temaSubrayar = 'poesia';}
-  //window.history.replaceState({}, document.title, '/' + temaSubrayar);
-  window.history.replaceState({}, document.title, '/' + '');
-  document.getElementById(temaSubrayar).style.borderBottom = '4px solid Orange';
-  document.getElementById('buscador').style.display = 'none';
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function mostrarBuscador () {
-  limpiarSubrayados ();
-  //window.history.replaceState({}, document.title, '/' + 'busca');
-  window.history.replaceState({}, document.title, '/' + '');
-  document.getElementById('mostrar').innerHTML = '';
-  document.getElementById('buscador').style.display = 'block';
-  document.getElementById('buscar').focus();
+function parseCSV(csv) {
+    const lines = csv.split('\n');
+    const result = [];
+    const headers = lines[0].split(',').map(h => h.trim());
+    
+    for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        
+        const obj = {};
+        let currentline = lines[i];
+        
+        const regex = /(?:,|^)("(?:(?:"")*[^"]*)*"|[^,]*)/g;
+        let matches;
+        const fields = [];
+        
+        while ((matches = regex.exec(currentline)) !== null) {
+            let field = matches[1];
+            if (field.startsWith('"') && field.endsWith('"')) {
+                field = field.slice(1, -1).replace(/""/g, '"');
+            }
+            fields.push(field.trim());
+        }
+        
+        for (let j = 0; j < headers.length; j++) {
+            let value = fields[j] || '';
+            
+            if (headers[j] === 'TÍTULO' && !value && fields[3]) {
+                value = fields[3].substring(0, 40);
+                if (fields[3].length > 40) value += '...';
+            }
+            
+            obj[headers[j]] = value;
+        }
+        
+        result.push(obj);
+    }
+    
+    return result;
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function teclaBuscar (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    buscar('');
-  }
+function showHome() {
+    currentView = 'home';
+    currentStartIndex = 0;
+    document.getElementById('main-title').textContent = 'Jucardus.com';
+    document.getElementById('search-container').style.display = 'none';
+    displayCurrentEntries();
+    scrollToTop();
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+function showAZ() {
+    currentView = 'az';
+    document.getElementById('main-title').textContent = 'Índice alfabético';
+    document.getElementById('search-container').style.display = 'none';
+    
+    const sortedEntries = [...allEntries].sort((a, b) => {
+        const cleanTitleA = (a['TÍTULO'] || '').replace(/^[^a-zA-ZáéíóúÁÉÍÓÚñÑ]+/, '');
+        const cleanTitleB = (b['TÍTULO'] || '').replace(/^[^a-zA-ZáéíóúÁÉÍÓÚñÑ]+/, '');
+        return cleanTitleA.localeCompare(cleanTitleB, 'es', { sensitivity: 'base' });
+    });
+    
+    const container = document.getElementById('entries-container');
+    container.innerHTML = `
+        <div class="list-view">
+            <h2>De la A a la Z</h2>
+            <ul>
+                ${sortedEntries.map(entry => `
+                    <li onclick="showSingleEntry('${entry['']}')">
+                        ${entry['TÍTULO'] || 'Untitled'}
+                    </li>
+                `).join('')}
+            </ul>
+        </div>
+    `;
+    
+    document.querySelector('.nav-buttons').style.display = 'none';
+    scrollToTop();
+}
 
-function buscar (recibidoDireccion) {
-  var lemaOriginal = recibidoDireccion;
-  var lema = document.getElementById("buscar").value.toUpperCase();
-  if (recibidoDireccion != '') {
-    lema = direccion
-      .replace(/%C3%A1/g,'Á')
-      .replace(/%C3%A9/g,'É')
-      .replace(/%C3%AD/g,'Í')
-      .replace(/%C3%B3/g,'Ó')
-      .replace(/%C3%BA/g,'Ú')
-      .replace(/%C3%BC/g,'Ü')
-      .replace(/%C3%B1/g,'Ñ')
-      .replace(/%20/g,' ')
-      .toUpperCase();
-  }
-  var contador = 0;
-  var recibido = texto;
-  var resultadoBusca = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 1 && lema != ' ') {
-      var linea = arrayContenido[i].split(',');
-        var nmr = linea[0];
-          var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-          var hashtag = formateoHashtag (linea[1]);
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-          if (linea[4] != '') {
-            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-          }
-        var tm = linea[1];
-          var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-        var ttl = linea[2];
-          if (linea[2] == '') {ttl = linea[3];}
-          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-        var enlc = linea[4];
-          if (linea[4] != '') {
-            var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-            var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
-          } else {enlc = '';}
-        var cntnd = linea[3];
-          var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-          var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-        var imgn = linea[5];
-          if (imgn != '') {
-            var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
-          }
-        var fch = linea[6];
-          var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-          var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-        var buscado = lema.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-        if (buscado.match(/^[0-9]+$/) != null && buscado.length == 10) {
-          var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
+function showRandom() {
+    currentView = 'random';
+    document.getElementById('main-title').textContent = 'Entradas al azar';
+    document.getElementById('search-container').style.display = 'none';
+    
+    const randomEntries = [];
+    const indices = new Set();
+    while (randomEntries.length < 3 && randomEntries.length < allEntries.length) {
+        const randomIndex = Math.floor(Math.random() * allEntries.length);
+        if (!indices.has(randomIndex)) {
+            indices.add(randomIndex);
+            randomEntries.push(allEntries[randomIndex]);
+        }
+    }
+    
+    const container = document.getElementById('entries-container');
+    container.innerHTML = `
+        <div class="list-view">
+            <h2>Selección al azar</h2>
+            <ul>
+                ${randomEntries.map(entry => `
+                    <li onclick="showSingleEntry('${entry['']}')">
+                        ${entry['TÍTULO'] || 'Untitled'}
+                    </li>
+                `).join('')}
+            </ul>
+        </div>
+    `;
+    
+    document.querySelector('.nav-buttons').style.display = 'none';
+    scrollToTop();
+}
+
+function showArchive() {
+    currentView = 'archive';
+    document.getElementById('main-title').textContent = 'Archivo por fecha';
+    document.getElementById('search-container').style.display = 'none';
+    
+    const groupedEntries = {};
+    
+    allEntries.forEach(entry => {
+        if (!entry['FECHA']) return;
+        
+        const dateOnly = entry['FECHA'].split(' ')[0];
+        const dateParts = dateOnly.split('-');
+        if (dateParts.length < 3) return;
+        
+        const year = dateParts[0];
+        const month = dateParts[1];
+        const day = dateParts[2];
+        
+        if (!groupedEntries[year]) {
+            groupedEntries[year] = {};
+        }
+        if (!groupedEntries[year][month]) {
+            groupedEntries[year][month] = {};
+        }
+        if (!groupedEntries[year][month][day]) {
+            groupedEntries[year][month][day] = [];
+        }
+        
+        groupedEntries[year][month][day].push(entry);
+    });
+    
+    const sortedYears = Object.keys(groupedEntries).sort((a, b) => a - b);
+    
+    let archiveHTML = '<div class="list-view"><h2>Entradas por fecha (antiguas al inicio)</h2>';
+    
+    sortedYears.forEach(year => {
+        archiveHTML += `<div class="archive-year"><h3>${year}</h3>`;
+        
+        const sortedMonths = Object.keys(groupedEntries[year]).sort((a, b) => a - b);
+        
+        sortedMonths.forEach(month => {
+            archiveHTML += `<div class="archive-month"><h4>${getMonthName(month)}</h4>`;
+            
+            const sortedDays = Object.keys(groupedEntries[year][month]).sort((a, b) => a - b);
+            
+            sortedDays.forEach(day => {
+                archiveHTML += `<div class="archive-day"><h5>${day}</h5>`;
+                archiveHTML += `<ul style="list-style-type: none; padding-left: 20px;">`;
+                
+                groupedEntries[year][month][day].forEach(entry => {
+                    archiveHTML += `
+                        <li class="archive-entry" onclick="showSingleEntry('${entry['']}')">
+                            ${entry['TÍTULO'] || 'Untitled'}
+                        </li>
+                    `;
+                });
+                
+                archiveHTML += `</ul></div>`;
+            });
+            
+            archiveHTML += '</div>';
+        });
+        
+        archiveHTML += '</div>';
+    });
+    
+    archiveHTML += '</div>';
+    
+    const container = document.getElementById('entries-container');
+    container.innerHTML = archiveHTML;
+    
+    document.querySelector('.nav-buttons').style.display = 'none';
+    scrollToTop();
+}
+
+function getMonthName(monthNumber) {
+    const months = [
+        'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+        'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
+    ];
+    return months[parseInt(monthNumber) - 1] || monthNumber;
+}
+
+function showTags() {
+    currentView = 'tags';
+    document.getElementById('main-title').textContent = 'Todas las etiquetas';
+    document.getElementById('search-container').style.display = 'none';
+    
+    const tags = new Set();
+    allEntries.forEach(entry => {
+        if (entry['TEMA']) {
+            tags.add(entry['TEMA']);
+        }
+    });
+    
+    const sortedTags = Array.from(tags).sort();
+    
+    const container = document.getElementById('entries-container');
+    container.innerHTML = `
+        <div class="list-view">
+            <h2>Todas las etiquetas</h2>
+            <ul>
+                ${sortedTags.map(tag => `
+                    <li onclick="showEntriesByTag('${tag}')">
+                        ${tag}
+                    </li>
+                `).join('')}
+            </ul>
+        </div>
+    `;
+    
+    document.querySelector('.nav-buttons').style.display = 'none';
+    scrollToTop();
+}
+
+function toggleSearch() {
+    const searchContainer = document.getElementById('search-container');
+    if (searchContainer.style.display === 'block') {
+        searchContainer.style.display = 'none';
+        showHome();
+    } else {
+        searchContainer.style.display = 'block';
+        document.getElementById('main-title').textContent = 'Búsqueda';
+        document.getElementById('entries-container').innerHTML = '';
+        document.querySelector('.nav-buttons').style.display = 'none';
+        document.getElementById('search-box').value = '';
+        document.getElementById('search-box').focus();
+        scrollToTop();
+    }
+}
+
+function handleSearch(event) {
+    if (event.key === 'Enter') {
+        const searchBox = document.getElementById('search-box');
+        const searchTerm = searchBox.value.toLowerCase();
+        
+        document.getElementById('search-container').style.display = 'none';
+        searchBox.value = '';
+        
+        if (searchTerm.trim() === '') {
+            showHome();
+            return;
+        }
+        
+        const results = allEntries.filter(entry => {
+            return (
+                (entry['TÍTULO'] && entry['TÍTULO'].toLowerCase().includes(searchTerm)) ||
+                (entry['CONTENIDO'] && entry['CONTENIDO'].toLowerCase().includes(searchTerm)) ||
+                (entry['TEMA'] && entry['TEMA'].toLowerCase().includes(searchTerm))
+            );
+        });
+        
+        document.getElementById('main-title').textContent = `Búsqueda: «${searchTerm}»`;
+        
+        const container = document.getElementById('entries-container');
+        if (results.length === 0) {
+            container.innerHTML = '<p class="no-results">Ninguna coincidencia.</p>';
         } else {
-          var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-          contador = contador + 1;
+            const resultsText = results.length === 1 ? 
+                'Se encontró 1 entrada' : 
+                `Se encontraron ${results.length} entradas`;
+            
+            container.innerHTML = `
+                <div class="list-view">
+                    <h2>${resultsText}</h2>
+                    <ul>
+                        ${results.map(entry => `
+                            <li onclick="showSingleEntry('${entry['']}')">
+                                ${entry['TÍTULO'] || 'Untitled'}
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
         }
-        resultadoBusca.push(nuevaLineaBusca);
-    }
-  }
-  var enviar = resultadoBusca.join('<p>');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('buscador').style.display = 'none';
-  if (enviar.indexOf('<') == -1) {
-    enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
-    document.getElementById('buscador').style.display = 'block';
-  }
-  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca">' + enviar + '</div>';
-  document.getElementById('buscar').value = '';
-  var fondoNoClicados = '4px solid White';
-  const temasTodos = document.getElementsByClassName('temas');
-    for (let i = 0; i < temasTodos.length; i++) {
-      temasTodos[i].style.borderBottom = fondoNoClicados;
-    }
-  if (recibidoDireccion != '') {
-    var numero = recibidoDireccion.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-    //window.history.replaceState({}, document.title, '/' + numero);
-    window.history.replaceState({}, document.title, '/' + '');
-  } else {
-    //window.history.replaceState({}, document.title, '/' + lema.toLowerCase());
-    window.history.replaceState({}, document.title, '/' + '');
-  }
-  if (lemaOriginal == 'apotegmas' || lemaOriginal == 'citas' || lemaOriginal == 'cuentos' || lemaOriginal == 'diario' || lemaOriginal == 'enlaces' || lemaOriginal == 'musica' || lemaOriginal == 'poesia'  || lemaOriginal == 'reflexiones' || lemaOriginal == 'vocabulario') {
-    segunTema (lemaOriginal);
-  }
-  if (lemaOriginal == 'az') {az ();}
-  if (lemaOriginal == 'azar') {azar ();}
-  if (lemaOriginal == 'archivo') {archivo ();}
-  if (lemaOriginal == 'busca') {mostrarBuscador ();}
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function copiarEnlace (fechaSimpleRecibida) {
-  var urlFecha = 'https://jucardus.github.io/' + fechaSimpleRecibida;
-  navigator.clipboard.writeText(urlFecha);
-  window.open(urlFecha, '_blank');
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function mostrarUnico (lema) {
-  var resultadoBusca = [];
-  var arrayContenido = texto.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    if (arrayContenido[i].toUpperCase().indexOf(lema) >= 0 && lema.length >= 2) {
-      var linea = arrayContenido[i].split(',');
-        var nmr = linea[0];
-          var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-          var hashtag = formateoHashtag (linea[1]);
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-          if (linea[4] != '') {
-            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-          }
-        var tm = linea[1];
-          var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-        var ttl = linea[2];
-          if (linea[2] == '') {ttl = linea[3];}
-          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos">' + ttl + '</h3>';
-        var enlc = linea[4];
-          if (linea[4] != '') {
-            var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-            var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
-          } else {enlc = '';}
-        var cntnd = linea[3];
-          var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-          var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-        var imgn = linea[5];
-          if (imgn != '') {
-            var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
-          }
-        var fch = linea[6];
-          var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-          var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-        var nuevaLineaBusca = '<div id="entrada">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div>' + cntnd + imgn + '</div>';
-        resultadoBusca.push(nuevaLineaBusca);
-        }
-  }
-  var enviar = resultadoBusca.join('<p>');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = enviar;
-  document.getElementById('buscador').style.display = 'none';
-  var fondoNoClicados = '4px solid White';
-  const temasTodos = document.getElementsByClassName('temas');
-  for (let i = 0; i < temasTodos.length; i++) {
-    temasTodos[i].style.borderBottom = fondoNoClicados;
-  }
-  var lema = lema.slice(2).replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').replace(/%20/g,'').toLowerCase();
-  //window.history.replaceState({}, document.title, '/' + lema);
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function az () {
-  var contador = 0;
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (nuevaLinea.indexOf("'undefined'") == -1) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-      }
-  }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  subrayar('az');
-  //window.history.replaceState({}, document.title, '/' + 'az');
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function azar () {
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (nuevaLinea.indexOf("'undefined'") == -1) {
-        resultado.push(nuevaLinea);
-      }
-  }
-  var enviar = desordenar(resultado).slice(9,12).join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ">' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  subrayar('azar');
-  //window.history.replaceState({}, document.title, '/' + 'azar');
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function desordenar (array) {
-  let currentIndex = array.length, randomIndex;
-  while (currentIndex > 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-  }
-  return array;
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function limpiarSubrayados () {
-  var lineaBlanca = '4px solid White';
-  const temasTodos = document.getElementsByClassName('temas');
-    for (let i = 0; i < temasTodos.length; i++) {
-      temasTodos[i].style.borderBottom = lineaBlanca;
+        
+        scrollToTop();
     }
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function formateoHashtag (recibido) {
-  var enviar = recibido?.toLowerCase()
-    .replace(/ .*/g,'')
-    .replace(/-.*/g,'')
-    .replace(/á/g,'a')
-    .replace(/é/g,'e')
-    .replace(/í/g,'i')
-    .replace(/ó/g,'o')
-    .replace(/ú/g,'u')
-    .replace(/ü/g,'u')
-    .replace(/ñ/g,'n');
-  var inicial = enviar?.slice(0,1);
-  var enviar = enviar?.slice(1)
-    .replace(/a/g,'')
-    .replace(/e/g,'')
-    .replace(/i/g,'')
-    .replace(/o/g,'')
-    .replace(/u/g,'')
-    .replace(/u/g,'')
-    .replace(/n/g,'');
-  var enviar = inicial + enviar;
-  return enviar;
+function loadNextEntries() {
+    currentStartIndex += entriesPerPage;
+    displayCurrentEntries();
+    scrollToTop();
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function archivo () {
-  var recibido = texto;
-  var resultado = [];
-  var contador = -1;
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var anwo = linea[6]?.slice(0,4);
-        var anwoEnlace = '<!--' + anwo + '--><h2 class="anwo" onclick="buscarArchivo (\'' + anwo + '\')">~ ' + anwo + ' ~</h2>';
-      var anwoMes = linea[6]?.slice(0,7);
-        var anwoMesNombres = linea[6]?.slice(0,7).replace('-01',' - Enero')
-          .replace('-02',' - Febrero')
-          .replace('-03',' - Marzo')
-          .replace('-04',' - Abril')
-          .replace('-05',' - Mayo')
-          .replace('-06',' - Junio')
-          .replace('-07',' - Julio')
-          .replace('-08',' - Agosto')
-          .replace('-09',' - Setiembre')
-          .replace('-10',' - Octubre')
-          .replace('-11',' - Noviembre')
-          .replace('-12',' - Diciembre');
-        var anwoMesEnlace = '<!--' + anwoMes + '--><h3 class="anwoMes" onclick="buscarArchivo (\'' + anwoMes + '\')">' + anwoMesNombres + '</h3>';
-      var anwoMesDia = linea[6]?.slice(0,10);
-        var anwoMesDiaEnlace = '<!--' + anwoMesDia + '--><span class="anwoMesDia" onclick="buscarArchivo (\'' + anwoMesDia + '\')">' + anwoMesDia?.slice(-2) + '</span>&#12288;';
-      if (linea[6]?.indexOf('undefined') == -1) {
-        resultado.push(anwoEnlace);
-        resultado.push(anwoMesEnlace);
-        resultado.push(anwoMesDiaEnlace);
-      }
-    contador = contador + 1;
-  }
-  resultado = resultado.sort((a, b) => a.localeCompare(b)); // ordenamiento alfabewtico
-  resultado = [...new Set(resultado)]; // eliminar elementos repetidos
-  resultado = resultado.filter(Boolean); // eliminar elementos vaciwos
-  var enviar = resultado.join('');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="archivoTodo"><span style="color: OrangeRed;">' + contador + ' entradas en total.</span><p>' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  subrayar('archivo');
-  //window.history.replaceState({}, document.title, '/' + 'archivo');
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
+function loadPrevEntries() {
+    currentStartIndex -= entriesPerPage;
+    displayCurrentEntries();
+    scrollToTop();
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+function displayCurrentEntries() {
+    const currentEntries = allEntries.slice(currentStartIndex, currentStartIndex + entriesPerPage);
+    displayEntries(currentEntries);
+    
+    document.getElementById('prev-button').disabled = currentStartIndex === 0;
+    document.getElementById('next-button').disabled = currentStartIndex + entriesPerPage >= allEntries.length;
+    document.querySelector('.nav-buttons').style.display = 'flex';
+}
 
-function buscarArchivo (fechaRecibida) {
-  var recibido = texto;
-  var resultadoBusca = [];
-  var contador = 0;
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    if (arrayContenido[i].toUpperCase().indexOf(fechaRecibida) >= 0) {
-      var linea = arrayContenido[i].split(',');
-        var nmr = linea[0];
-          var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-          var hashtag = formateoHashtag (linea[1]);
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-          if (linea[4] != '') {
-            var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-          }
-        var tm = linea[1];
-          var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-        var ttl = linea[2];
-          if (linea[2] == '') {ttl = linea[3];}
-          if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-          var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-        var enlc = linea[4];
-          if (linea[4] != '') {
-            var dominio = linea[4]?.slice(linea[4]?.indexOf('://') + 3).replace(/\/.*/g,'');
-            var enlc = ' → <a class="enlacista" href="' + linea[4] + '" target="_blank">' + dominio + '</a>';
-          } else {enlc = '';}
-        var cntnd = linea[3];
-          var cntnd = cntnd?.replace(/¦/g,'<br/>').replace(/¶/g,'<p>');
-          var cntnd = '<p class="contenido">' + cntnd + enlc + '</p>';
-        var imgn = linea[5];
-          if (imgn != '') {
-            var imgn = '<div id="imagenes"><img class="imagenes" src="' + imgn + '" /></div>';      
-          }
-        var fch = linea[6];
-          var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-          var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-        var nuevaLineaBusca = '<div id="entradaBusca">' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-        resultadoBusca.push(nuevaLineaBusca);
-        contador = contador + 1;
+function displayEntries(entries, filterType = null, filterValue = null) {
+    if (currentView !== 'home') return;
+    
+    const container = document.getElementById('entries-container');
+    container.innerHTML = '';
+    
+    entries.forEach(entry => {
+        const entryDiv = document.createElement('div');
+        entryDiv.className = 'entry';
+        
+        const title = document.createElement('h2');
+        title.textContent = entry['TÍTULO'] || '';
+        title.onclick = () => showSingleEntry(entry['']);
+        
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        
+        const rowNumber = entry[''] ? `<span class="non-clickable">${entry['']}</span>` : '';
+        const tema = entry['TEMA'] ? `<span class="clickable" onclick="showEntriesByTag('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
+        const fecha = entry['FECHA'] ? `<span class="non-clickable">${entry['FECHA']}</span>` : '';
+        
+        meta.innerHTML = [
+            rowNumber,
+            tema,
+            fecha
+        ].filter(Boolean).join(' | ');
+        
+        const content = document.createElement('div');
+        const processedContent = processContent(entry['CONTENIDO']);
+        if (processedContent) {
+            content.innerHTML = processedContent;
+        }
+        
+        const link = document.createElement('p');
+        if (entry['ENLACE']) {
+            const linkAnchor = document.createElement('a');
+            linkAnchor.href = entry['ENLACE'];
+            linkAnchor.textContent = extractDomain(entry['ENLACE']);
+            linkAnchor.target = '_blank';
+            linkAnchor.rel = 'noopener noreferrer';
+            link.appendChild(linkAnchor);
+        }
+        
+        const imageContainer = document.createElement('div');
+        if (entry['IMAGEN']) {
+            const img = document.createElement('img');
+            img.src = entry['IMAGEN'];
+            img.alt = entry['TÍTULO'] || 'Entry image';
+            imageContainer.appendChild(img);
+        }
+        
+        entryDiv.appendChild(title);
+        if (rowNumber || tema || fecha) {
+            entryDiv.appendChild(meta);
+        }
+        if (processedContent) {
+            entryDiv.appendChild(content);
+        }
+        if (entry['ENLACE']) {
+            entryDiv.appendChild(link);
+        }
+        if (entry['IMAGEN']) {
+            entryDiv.appendChild(imageContainer);
+        }
+        
+        container.appendChild(entryDiv);
+    });
+}
+
+function showEntriesByTag(tag) {
+    currentView = 'tag';
+    const filtered = allEntries.filter(entry => entry['TEMA'] === tag);
+    document.getElementById('main-title').textContent = `Entradas con la etiqueta «${tag}»`;
+    document.getElementById('search-container').style.display = 'none';
+    
+    const container = document.getElementById('entries-container');
+    container.innerHTML = `
+        <div class="list-view">
+            <h2>Entradas etiquetadas con «${tag}»</h2>
+            <ul>
+                ${filtered.map(entry => `
+                    <li onclick="showSingleEntry('${entry['']}')">
+                        ${entry['TÍTULO'] || 'Untitled'}
+                    </li>
+                `).join('')}
+            </ul>
+        </div>
+    `;
+    
+    document.querySelector('.nav-buttons').style.display = 'none';
+    scrollToTop();
+}
+
+function extractDomain(url) {
+    try {
+        const domain = new URL(url.startsWith('http') ? url : `https://${url}`).hostname;
+        return domain.startsWith('www.') ? domain : domain;
+    } catch {
+        return url;
     }
-  }
-  var enviar = resultadoBusca.join('<p>');
-    var enviar = enviar.replace(/ŧ /g,', ');
-    var enviar = enviar.replace(/ŧ/g,', ');
-    var enviar = enviar.replace(/\.\.\.\./g,'...');
-    var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('buscador').style.display = 'none';
-  if (enviar.indexOf('<') == -1) {
-    enviar = '<div id="ninguna">[ ninguna coincidencia ]</div>';
-    document.getElementById('buscador').style.display = 'block';
-  }
-  if (contador == 1) {var entradasEn = 'Una entrada en ';}
-  if (contador >= 2) {var entradasEn = contador + ' entradas en ';}
-  document.getElementById('mostrar').innerHTML = '<div id="resultadosBusca"><span style="color: OrangeRed;">' + entradasEn + fechaRecibida + '</span></p>' + enviar + '</div>';
-  document.getElementById('buscar').value = '';
-  var fondoNoClicados = '4px solid White';
-  const temasTodos = document.getElementsByClassName('temas');
-    for (let i = 0; i < temasTodos.length; i++) {
-      temasTodos[i].style.borderBottom = fondoNoClicados;
+}
+
+function processContent(content) {
+    if (!content) return '';
+    
+    let processed = content
+        .replace(/¶/g, '</p><p>')
+        .replace(/¦/g, '<br>');
+    
+    if (!processed.startsWith('<p>')) processed = '<p>' + processed;
+    if (!processed.endsWith('</p>')) processed = processed + '</p>';
+    
+    return processed;
+}
+
+function showSingleEntry(rowNumber) {
+    currentView = 'single';
+    const entry = allEntries.find(e => e[''] === rowNumber);
+    if (entry) {
+        document.getElementById('main-title').textContent = entry['TÍTULO'] || 'Entry';
+        document.getElementById('search-container').style.display = 'none';
+        
+        const container = document.getElementById('entries-container');
+        container.innerHTML = '';
+        
+        const entryDiv = document.createElement('div');
+        entryDiv.className = 'entry single-entry';
+        
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        
+        const rowNumberSpan = entry[''] ? `<span class="non-clickable">${entry['']}</span>` : '';
+        const tema = entry['TEMA'] ? `<span class="clickable" onclick="showEntriesByTag('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
+        const fecha = entry['FECHA'] ? `<span class="non-clickable">${entry['FECHA']}</span>` : '';
+        
+        meta.innerHTML = [
+            rowNumberSpan,
+            tema,
+            fecha
+        ].filter(Boolean).join(' | ');
+        
+        const content = document.createElement('div');
+        const processedContent = processContent(entry['CONTENIDO']);
+        if (processedContent) {
+            content.innerHTML = processedContent;
+        }
+        
+        const link = document.createElement('p');
+        if (entry['ENLACE']) {
+            const linkAnchor = document.createElement('a');
+            linkAnchor.href = entry['ENLACE'];
+            linkAnchor.textContent = extractDomain(entry['ENLACE']);
+            linkAnchor.target = '_blank';
+            linkAnchor.rel = 'noopener noreferrer';
+            link.appendChild(linkAnchor);
+        }
+        
+        const imageContainer = document.createElement('div');
+        if (entry['IMAGEN']) {
+            const img = document.createElement('img');
+            img.src = entry['IMAGEN'];
+            img.alt = entry['TÍTULO'] || 'Entry image';
+            imageContainer.appendChild(img);
+        }
+        
+        entryDiv.appendChild(meta);
+        if (processedContent) {
+            entryDiv.appendChild(content);
+        }
+        if (entry['ENLACE']) {
+            entryDiv.appendChild(link);
+        }
+        if (entry['IMAGEN']) {
+            entryDiv.appendChild(imageContainer);
+        }
+        
+        container.appendChild(entryDiv);
     }
-  window.scrollTo(0, 0);
+    
+    document.querySelector('.nav-buttons').style.display = 'none';
+    scrollToTop();
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function mostrarMas (tema) {
-  var temaConteo = tema.charAt(0).toUpperCase() + tema.slice(1);
-  var contador = 0;
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (nuevaLinea.indexOf("'undefined'") == -1 && tm.toUpperCase().indexOf(tema.toUpperCase()) >= 0) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-      }
-  }
-  /*
-  if (tema != 'diario') {
-    resultado = resultado.sort((a, b) => a.localeCompare(b));
-  }
-  */
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + temaConteo + '</i>.</span><p>' + enviar + '</div>';
-  window.scrollTo(0, 0);
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function etiquetas () {
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var tm = linea[1];
-        var orden = linea[1]?.toUpperCase().replace(/-/g,'').replace(/ /g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var tm = '<li><!--' + orden + '--><span class="etiquetas" onclick="etiquetasAZ(\'' + linea[1] + '\')">' + tm + '</span> - <span class="asceDesc" onclick="ascendente (\'' + tm + '\')">ASCE.</span> - <span class="asceDesc" onclick="descendente (\'' + tm + '\')">DESC.</span></li>';
-      var nuevaLinea = tm;
-      if (tm.indexOf('undefined') == -1) {
-        resultado.push(nuevaLinea);
-      }
-  }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
-  resultado = [...new Set(resultado)];
-  resultado = resultado.filter(Boolean);
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="etiquetasListar"><h3>Todos los temas</h3><ul>' + enviar + '</ul><p>La lista muestra todas las etiquetas o temas incluidos en este sitio, con la estructura <code>Tema - ASCE. - DESC.</code>. Al clicar en cualquiera de los temas, verás una lista alfabética de las entradas correspondientes. Al clicar en <code>ASCE.</code>, verás una lista ascendente de las entradas; es decir, las entradas más antiguas al inicio. Por el contrario, al clicar en <code>DESC.</code>, verás una lista descendente; es decir, las entradas más recientes se mostrarán al inicio.</p></div>';
-  document.getElementById('buscador').style.display = 'none';
-  subrayar('etiquetas');
-  //window.history.replaceState({}, document.title, '/' + 'mas');
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
+function scrollToAuthor() {
+    const authorSection = document.getElementById('author-section');
+    authorSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function segunMas (masRecibido) { // cronolowgico
-  var contador = 0;
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (tm.toUpperCase().indexOf(masRecibido.toUpperCase()) >= 0) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-      }
-
-  }
-  if (masRecibido != 'Diario') {
-    //resultado = resultado.sort((a, b) => a.localeCompare(b));
-  }
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  const temasTodos = document.getElementsByClassName('temas');
-  var fondoNoClicados = '4px solid White';
-  for (let i = 0; i < temasTodos.length; i++) {
-    temasTodos[i].style.borderBottom = fondoNoClicados;
-  }
-  //window.history.replaceState({}, document.title, '/' + 'mas');
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-const extractText = (htmlString) => {
-  const doc = new DOMParser().parseFromString(htmlString, 'text/html');
-  return doc.body.textContent || "";
-};
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function autor () {
-  window.scrollTo(0, 0);
-  subrayar ('autor');
-  const authorElement = document.getElementById('footer');
-  if (authorElement) {
-      authorElement.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function ascendente (masRecibido) {
-  var contador = 0;
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (tm.toUpperCase().indexOf(masRecibido.toUpperCase()) >= 0) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-      }
-
-  }
-  resultado = resultado.reverse();
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  const temasTodos = document.getElementsByClassName('temas');
-  var fondoNoClicados = '4px solid White';
-  for (let i = 0; i < temasTodos.length; i++) {
-    temasTodos[i].style.borderBottom = fondoNoClicados;
-  }
-  //window.history.replaceState({}, document.title, '/' + 'mas');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function descendente (masRecibido) {
-  var contador = 0;
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (tm.toUpperCase().indexOf(masRecibido.toUpperCase()) >= 0) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-      }
-
-  }
-  //resultado = resultado.reverse();
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  const temasTodos = document.getElementsByClassName('temas');
-  var fondoNoClicados = '4px solid White';
-  for (let i = 0; i < temasTodos.length; i++) {
-    temasTodos[i].style.borderBottom = fondoNoClicados;
-  }
-  //window.history.replaceState({}, document.title, '/' + 'mas');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function etiquetasAZ (masRecibido) { // alfabewtico
-  var contador = 0;
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var nmr = linea[0];
-        var fechaSimple = 'jucardus.github.io/' + linea[6]?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var hashtag = formateoHashtag (linea[1]);
-        var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + extractText(linea[3]).slice(0,108).replace(/\|/g,'%7C').replace(/\{/g,'%7B').replace(/\}/g,'%7D') + '... → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        if (linea[4] != '') {
-          var nmr = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + linea[0] + '. ' + linea[1] + ' — ' + linea[2] + ' → ' + fechaSimple + '%0A%0A%23' + hashtag + '_jucardus">' + nmr + '</a>';
-        }
-      var tm = linea[1];
-        var tm = '<span class="etiquetas" onclick="segunMas(\'' + tm + '\')">' + tm + '</span>';
-      var ttl = linea[2];
-        if (linea[2] == '') {ttl = linea[3];}
-        if (linea[2] == '' && linea[3]?.length >= 40) {ttl = linea[3]?.slice(0,39) + '...';}
-        var orden = ttl?.toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/-/g,'').replace(/\?/g,'').replace(/\¿/g,'').replace(/\¡/g,'').replace(/\!/g,'').replace(/\//g,'').replace(/ŧ/g,'').replace(/«/g,'').replace(/»/g,'').replace('...','').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var ttl = '<h3 class="titulos" onclick="mostrarUnico(\'' + linea[6] + '\')">' + ttl + '</h3>';
-      var fch = linea[6];
-        var fechaSimple = fch?.slice(2).replace(/ /g,'').replace(/-/g,'').replace(/:/g,'');
-        var fch = '<span onclick="copiarEnlace(\'' + fechaSimple + '\')" class="fecha">' + fch?.slice(2) + '</span>';
-      var nuevaLinea = '<div id="entradaAzarAZ"><!--' + orden + '-->' + ttl + '<div id="clasificacion">' + nmr + ' · ' + tm + ' · ' + fch + '</div></div>';
-      if (tm.toUpperCase().indexOf(masRecibido.toUpperCase()) >= 0) {
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-      }
-
-  }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
-  var enviar = resultado.join('');
-  var enviar = enviar.replace(/ŧ /g,', ');
-  var enviar = enviar.replace(/ŧ/g,', ');
-  var enviar = enviar.replace(/\.\.\.\./g,'...');
-  var enviar = enviar.replace(/ \.\.\./g,'...');
-  document.getElementById('mostrar').innerHTML = '<div id="azarAZ"><span style="color: OrangeRed;">' + contador + ' entradas en total para <i>' + masRecibido + '</i>.</span><p>' + enviar + '</div>';
-  document.getElementById('buscador').style.display = 'none';
-  const temasTodos = document.getElementsByClassName('temas');
-  var fondoNoClicados = '4px solid White';
-  for (let i = 0; i < temasTodos.length; i++) {
-    temasTodos[i].style.borderBottom = fondoNoClicados;
-  }
-  //window.history.replaceState({}, document.title, '/' + 'mas');
-  window.history.replaceState({}, document.title, '/' + '');
-  window.scrollTo(0, 0);
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
-
-function etiquetasTodas () { // etiquetas cronolowgicas
-  var recibido = texto;
-  var resultado = [];
-  var arrayContenido = recibido.split('¶¶¶¶¶');
-  for (var i = 0; i < arrayContenido.length; i++) {
-    var linea = arrayContenido[i].split(',');
-      var tm = linea[1];
-        var orden = linea[1]?.toUpperCase().replace(/-/g,'').replace(/ /g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N');
-        var tm = '<!--' + orden + '--><span class="etiquetas" onclick="segunMas(\'' + linea[1] + '\')">' + tm + '</span>';
-      var nuevaLinea = tm;
-      if (tm.indexOf('undefined') == -1) {
-        resultado.push(nuevaLinea);
-      }
-  }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
-  resultado = [...new Set(resultado)];
-  resultado = resultado.filter(Boolean);
-  var enviar = resultado.join(' · ');
-  document.getElementById('etiquetasTodas').innerHTML = enviar;
-  window.history.replaceState({}, document.title, '/' + '');
-}
-
-// ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+window.onload = loadEntries;
