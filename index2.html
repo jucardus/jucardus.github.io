@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database Display</title>
+    <title>Jucardus.com</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -15,19 +15,24 @@
         }
         .entry {
             margin-bottom: 40px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ddd; /* Darker border */
             padding-bottom: 20px;
         }
         .meta {
             color: #666;
             font-size: 0.9em;
-            margin: 2px 0 10px 0; /* Very tight to the title */
+            margin: 2px 0 10px 0;
         }
-        .meta span {
+        .meta .clickable {
             cursor: pointer;
+            color: #0066cc;
         }
-        .meta span:hover {
+        .meta .clickable:hover {
             text-decoration: underline;
+        }
+        .meta .non-clickable {
+            color: #666;
+            cursor: default;
         }
         img {
             max-width: 100%;
@@ -63,11 +68,51 @@
         #back-button:hover {
             background: #e0e0e0;
         }
+        #main-title {
+            margin-bottom: 10px;
+        }
+        #main-menu {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 10px 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 1px solid #ddd; /* Separator line */
+            margin-bottom: 4px; /* Space under menu */
+        }
+        #main-menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        #main-menu a:hover {
+            color: #0066cc;
+        }
+        #menu-separator {
+            height: 4px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+    <h1 id="main-title">Jucardus.com</h1>
+    
+    <div id="main-menu">
+        <a href="#">AZ</a>
+        <a href="#">Azar</a>
+        <a href="#">Archivo</a>
+        <a href="#">Etiquetas</a>
+        <a href="#">Autor</a>
+        <a href="#">🔍</a>
+    </div>
+    
+    <div id="menu-separator"></div>
+    
     <button id="back-button" onclick="showAllEntries()">← Back to all entries</button>
-    <h1>Database Entries</h1>
     <div id="entries-container"></div>
 
     <script>
@@ -176,13 +221,13 @@
                 title.textContent = entry['TÍTULO'] || '';
                 title.onclick = () => showSingleEntry(entry['']);
                 
-                // Create meta line with clickable label
+                // Create meta line with only TEMA clickable
                 const meta = document.createElement('div');
                 meta.className = 'meta';
                 
-                const rowNumber = entry[''] ? `<span>${entry['']}</span>` : '';
-                const tema = entry['TEMA'] ? `<span onclick="filterByLabel('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
-                const fecha = entry['FECHA'] ? `<span>${entry['FECHA']}</span>` : '';
+                const rowNumber = entry[''] ? `<span class="non-clickable">${entry['']}</span>` : '';
+                const tema = entry['TEMA'] ? `<span class="clickable" onclick="filterByLabel('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
+                const fecha = entry['FECHA'] ? `<span class="non-clickable">${entry['FECHA']}</span>` : '';
                 
                 meta.innerHTML = [
                     rowNumber,
@@ -254,7 +299,7 @@
 
         // Show all entries
         function showAllEntries() {
-            document.querySelector('h1').textContent = 'Database Entries';
+            document.querySelector('h1').textContent = 'Jucardus.com';
             displayEntries(allEntries);
         }
 
