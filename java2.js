@@ -22,21 +22,21 @@ function formateo (recibido) {
   for (var i = 0; i < arrayContenido.length; i++) {
     var linea = arrayContenido[i].split(',');
       var nmr = linea[0];
-        numero = numeros (nmr);
+        var numero = numeros (nmr);
       var tm = linea[1];
-        tema = temas (tm);
+        var tema = temas (tm);
       var ttl = linea[2];
         if (ttl == '') {var ttl = linea[3]?.slice(0,40);}
-        titulo = titulos (ttl);
+        var titulo = titulos (ttl);
       var enlc = linea[4];
-        enlace = enlaces (enlc);
+        var enlace = enlaces (enlc);
       var cntnd = linea[3];
-        contenido = contenidos (cntnd);
+        var contenido = contenidos (cntnd);
       var imgn = linea[5];
-        imagen = imagenes (imgn);
+        var imagen = imagenes (imgn);
       var fch = linea[6];
-        fecha = fechas (fch);
-      var nuevaLinea = nmr + ' --- ' + tm + ' --- ' + ttl + ' --- ' + enlc + ' --- ' + cntnd + ' --- ' + imgn + ' --- ' + fch;
+        var fecha = fechas (fch);
+      var nuevaLinea = numero + ' --- ' + tema + ' --- ' + titulo + ' --- ' + enlace + ' --- ' + contenido + ' --- ' + imagen + ' --- ' + fecha;
       if (tm != 'undefined') {
         resultado.push(nuevaLinea);
       }
