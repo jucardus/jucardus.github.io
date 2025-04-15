@@ -137,24 +137,45 @@
             text-decoration: underline;
         }
         .archive-year {
-            margin-top: 30px;
-        }
-        .archive-month {
-            margin-left: 20px;
             margin-top: 20px;
         }
-        .archive-day {
-            margin-left: 40px;
+        .archive-month {
+            margin-left: 15px;
             margin-top: 15px;
         }
+        .archive-day {
+            margin-left: 30px;
+            margin-top: 10px;
+        }
         .archive-entry {
-            margin-left: 60px;
+            margin-left: 45px;
             margin-bottom: 5px;
+            color: #0066cc;
+            cursor: pointer;
+        }
+        .archive-entry:hover {
+            text-decoration: underline;
         }
         #author-section {
             margin-top: 60px;
             padding-top: 20px;
             border-top: 1px solid #ddd;
+        }
+        #search-container {
+            display: none;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        #search-box {
+            width: 100%;
+            padding: 8px;
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: right;
+        }
+        #search-box::placeholder {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
         }
         .scroll-smooth {
             scroll-behavior: smooth;
@@ -165,22 +186,26 @@
     <h1 id="main-title">Jucardus.com</h1>
     
     <div id="main-menu">
-        <a href="#" onclick="showHome()">Inicio</a>
-        <a href="#" onclick="showAZ()">AZ</a>
-        <a href="#" onclick="showRandom()">Azar</a>
-        <a href="#" onclick="showArchive()">Archivo</a>
-        <a href="#" onclick="showTags()">Etiquetas</a>
-        <a href="#author-section">Autor</a>
-        <a href="#">🔍</a>
+        <a href="#" onclick="showHome(); return false;">Inicio</a>
+        <a href="#" onclick="showAZ(); return false;">AZ</a>
+        <a href="#" onclick="showRandom(); return false;">Azar</a>
+        <a href="#" onclick="showArchive(); return false;">Archivo</a>
+        <a href="#" onclick="showTags(); return false;">Etiquetas</a>
+        <a href="#author-section" onclick="scrollToAuthor(); return false;">Autor</a>
+        <a href="#" onclick="toggleSearch(); return false;">🔍</a>
     </div>
     
     <div id="menu-separator"></div>
     
-    <button id="back-button" onclick="showHome()">← Back to all entries</button>
+    <div id="search-container">
+        <input type="text" id="search-box" placeholder="..." onkeypress="handleSearch(event)">
+    </div>
+    
+    <button id="back-button" onclick="showHome(); return false;">← Back to all entries</button>
     <div id="entries-container"></div>
     <div class="nav-buttons">
-        <button id="prev-button" onclick="loadPrevEntries()" disabled>← Previous</button>
-        <button id="next-button" onclick="loadNextEntries()">Next →</button>
+        <button id="prev-button" onclick="loadPrevEntries(); return false;" disabled>← Previous</button>
+        <button id="next-button" onclick="loadNextEntries(); return false;">Next →</button>
     </div>
 
     <div id="author-section">
@@ -256,17 +281,18 @@
             currentStartIndex = 0;
             document.getElementById('main-title').textContent = 'Jucardus.com';
             document.getElementById('back-button').style.display = 'none';
+            document.getElementById('search-container').style.display = 'none';
             displayCurrentEntries();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         function showAZ() {
             currentView = 'az';
             document.getElementById('main-title').textContent = 'Alphabetical Index';
             document.getElementById('back-button').style.display = 'block';
+            document.getElementById('search-container').style.display = 'none';
             
             const sortedEntries = [...allEntries].sort((a, b) => {
-                // Remove symbols for sorting
                 const cleanTitleA = (a['TÍTULO'] || '').replace(/^[^a-zA-Z0-9]+/, '');
                 const cleanTitleB = (b['TÍTULO'] || '').replace(/^[^a-zA-Z0-9]+/, '');
                 return cleanTitleA.localeCompare(cleanTitleB);
@@ -287,13 +313,14 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         function showRandom() {
             currentView = 'random';
             document.getElementById('main-title').textContent = 'Random Entries';
             document.getElementById('back-button').style.display = 'block';
+            document.getElementById('search-container').style.display = 'none';
             
             // Get 3 random unique entries
             const randomEntries = [];
@@ -321,13 +348,14 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         function showArchive() {
             currentView = 'archive';
             document.getElementById('main-title').textContent = 'Archive by Date';
             document.getElementById('back-button').style.display = 'block';
+            document.getElementById('search-container').style.display = 'none';
             
             // Group entries by year, month, and day
             const groupedEntries = {};
@@ -398,7 +426,7 @@
             container.innerHTML = archiveHTML;
             
             document.querySelector('.nav-buttons').style.display = 'none';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         function getMonthName(monthNumber) {
@@ -413,6 +441,7 @@
             currentView = 'tags';
             document.getElementById('main-title').textContent = 'All Tags';
             document.getElementById('back-button').style.display = 'block';
+            document.getElementById('search-container').style.display = 'none';
             
             // Get all unique tags
             const tags = new Set();
@@ -439,19 +468,72 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
+        }
+
+        function toggleSearch() {
+            const searchContainer = document.getElementById('search-container');
+            if (searchContainer.style.display === 'block') {
+                searchContainer.style.display = 'none';
+                showHome();
+            } else {
+                searchContainer.style.display = 'block';
+                document.getElementById('main-title').textContent = 'Search';
+                document.getElementById('back-button').style.display = 'block';
+                document.getElementById('entries-container').innerHTML = '';
+                document.querySelector('.nav-buttons').style.display = 'none';
+                document.getElementById('search-box').focus();
+                scrollToTop();
+            }
+        }
+
+        function handleSearch(event) {
+            if (event.key === 'Enter') {
+                const searchTerm = document.getElementById('search-box').value.toLowerCase();
+                if (searchTerm.trim() === '') return;
+                
+                const results = allEntries.filter(entry => {
+                    return (
+                        (entry['TÍTULO'] && entry['TÍTULO'].toLowerCase().includes(searchTerm)) ||
+                        (entry['CONTENIDO'] && entry['CONTENIDO'].toLowerCase().includes(searchTerm)) ||
+                        (entry['TEMA'] && entry['TEMA'].toLowerCase().includes(searchTerm))
+                    );
+                });
+                
+                document.getElementById('main-title').textContent = `Search Results for "${searchTerm}"`;
+                
+                const container = document.getElementById('entries-container');
+                if (results.length === 0) {
+                    container.innerHTML = '<p>No results found.</p>';
+                } else {
+                    container.innerHTML = `
+                        <div class="list-view">
+                            <h2>Found ${results.length} results</h2>
+                            <ul>
+                                ${results.map(entry => `
+                                    <li onclick="showSingleEntry('${entry['']}')">
+                                        ${entry['TÍTULO'] || 'Untitled'}
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+                
+                scrollToTop();
+            }
         }
 
         function loadNextEntries() {
             currentStartIndex += entriesPerPage;
             displayCurrentEntries();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         function loadPrevEntries() {
             currentStartIndex -= entriesPerPage;
             displayCurrentEntries();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         function displayCurrentEntries() {
@@ -540,6 +622,7 @@
             const filtered = allEntries.filter(entry => entry['TEMA'] === tag);
             document.getElementById('main-title').textContent = `Entries with tag: ${tag}`;
             document.getElementById('back-button').style.display = 'block';
+            document.getElementById('search-container').style.display = 'none';
             
             const container = document.getElementById('entries-container');
             container.innerHTML = `
@@ -556,7 +639,7 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            scrollToTop();
         }
 
         // Function to extract domain from URL
@@ -590,6 +673,7 @@
             if (entry) {
                 document.getElementById('main-title').textContent = entry['TÍTULO'] || 'Entry';
                 document.getElementById('back-button').style.display = 'block';
+                document.getElementById('search-container').style.display = 'none';
                 
                 const container = document.getElementById('entries-container');
                 container.innerHTML = '';
@@ -650,7 +734,16 @@
             }
             
             document.querySelector('.nav-buttons').style.display = 'none';
+            scrollToTop();
+        }
+
+        function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function scrollToAuthor() {
+            const authorSection = document.getElementById('author-section');
+            authorSection.scrollIntoView({ behavior: 'smooth' });
         }
 
         // Load entries when the page loads
