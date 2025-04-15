@@ -136,9 +136,32 @@
         .list-view li:hover {
             text-decoration: underline;
         }
+        .archive-year {
+            margin-top: 30px;
+        }
+        .archive-month {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .archive-day {
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+        .archive-entry {
+            margin-left: 60px;
+            margin-bottom: 5px;
+        }
+        #author-section {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
-<body>
+<body class="scroll-smooth">
     <h1 id="main-title">Jucardus.com</h1>
     
     <div id="main-menu">
@@ -147,7 +170,7 @@
         <a href="#" onclick="showRandom()">Azar</a>
         <a href="#" onclick="showArchive()">Archivo</a>
         <a href="#" onclick="showTags()">Etiquetas</a>
-        <a href="#">Autor</a>
+        <a href="#author-section">Autor</a>
         <a href="#">🔍</a>
     </div>
     
@@ -158,6 +181,12 @@
     <div class="nav-buttons">
         <button id="prev-button" onclick="loadPrevEntries()" disabled>← Previous</button>
         <button id="next-button" onclick="loadNextEntries()">Next →</button>
+    </div>
+
+    <div id="author-section">
+        <h2>Author and Contact</h2>
+        <p>This is a placeholder for author information and contact details.</p>
+        <p>More content will be added here later.</p>
     </div>
 
     <script>
@@ -228,6 +257,7 @@
             document.getElementById('main-title').textContent = 'Jucardus.com';
             document.getElementById('back-button').style.display = 'none';
             displayCurrentEntries();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function showAZ() {
@@ -236,9 +266,10 @@
             document.getElementById('back-button').style.display = 'block';
             
             const sortedEntries = [...allEntries].sort((a, b) => {
-                const titleA = a['TÍTULO'] || '';
-                const titleB = b['TÍTULO'] || '';
-                return titleA.localeCompare(titleB);
+                // Remove symbols for sorting
+                const cleanTitleA = (a['TÍTULO'] || '').replace(/^[^a-zA-Z0-9]+/, '');
+                const cleanTitleB = (b['TÍTULO'] || '').replace(/^[^a-zA-Z0-9]+/, '');
+                return cleanTitleA.localeCompare(cleanTitleB);
             });
             
             const container = document.getElementById('entries-container');
@@ -256,6 +287,7 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function showRandom() {
@@ -289,6 +321,7 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function showArchive() {
@@ -296,27 +329,84 @@
             document.getElementById('main-title').textContent = 'Archive by Date';
             document.getElementById('back-button').style.display = 'block';
             
-            const sortedEntries = [...allEntries].sort((a, b) => {
-                const dateA = a['FECHA'] || '';
-                const dateB = b['FECHA'] || '';
-                return dateB.localeCompare(dateA); // Newest first
+            // Group entries by year, month, and day
+            const groupedEntries = {};
+            
+            allEntries.forEach(entry => {
+                if (!entry['FECHA']) return;
+                
+                const dateParts = entry['FECHA'].split('-');
+                if (dateParts.length < 3) return;
+                
+                const year = dateParts[0];
+                const month = dateParts[1];
+                const day = dateParts[2];
+                
+                if (!groupedEntries[year]) {
+                    groupedEntries[year] = {};
+                }
+                if (!groupedEntries[year][month]) {
+                    groupedEntries[year][month] = {};
+                }
+                if (!groupedEntries[year][month][day]) {
+                    groupedEntries[year][month][day] = [];
+                }
+                
+                groupedEntries[year][month][day].push(entry);
             });
             
+            // Sort years in descending order
+            const sortedYears = Object.keys(groupedEntries).sort((a, b) => b - a);
+            
+            let archiveHTML = '<div class="list-view"><h2>Entries by Date</h2>';
+            
+            sortedYears.forEach(year => {
+                archiveHTML += `<div class="archive-year"><h3>${year}</h3>`;
+                
+                // Sort months in descending order
+                const sortedMonths = Object.keys(groupedEntries[year]).sort((a, b) => b - a);
+                
+                sortedMonths.forEach(month => {
+                    archiveHTML += `<div class="archive-month"><h4>${getMonthName(month)}</h4>`;
+                    
+                    // Sort days in descending order
+                    const sortedDays = Object.keys(groupedEntries[year][month]).sort((a, b) => b - a);
+                    
+                    sortedDays.forEach(day => {
+                        archiveHTML += `<div class="archive-day"><h5>${day}</h5>`;
+                        
+                        groupedEntries[year][month][day].forEach(entry => {
+                            archiveHTML += `
+                                <div class="archive-entry" onclick="showSingleEntry('${entry['']}')">
+                                    ${entry['TÍTULO'] || 'Untitled'}
+                                </div>
+                            `;
+                        });
+                        
+                        archiveHTML += '</div>';
+                    });
+                    
+                    archiveHTML += '</div>';
+                });
+                
+                archiveHTML += '</div>';
+            });
+            
+            archiveHTML += '</div>';
+            
             const container = document.getElementById('entries-container');
-            container.innerHTML = `
-                <div class="list-view">
-                    <h2>Entries by Date</h2>
-                    <ul>
-                        ${sortedEntries.map(entry => `
-                            <li onclick="showSingleEntry('${entry['']}')">
-                                [${entry['FECHA'] || 'No date'}] ${entry['TÍTULO'] || 'Untitled'}
-                            </li>
-                        `).join('')}
-                    </ul>
-                </div>
-            `;
+            container.innerHTML = archiveHTML;
             
             document.querySelector('.nav-buttons').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function getMonthName(monthNumber) {
+            const months = [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+            return months[parseInt(monthNumber) - 1] || monthNumber;
         }
 
         function showTags() {
@@ -340,7 +430,7 @@
                     <h2>All Tags (A-Z)</h2>
                     <ul>
                         ${sortedTags.map(tag => `
-                            <li onclick="filterByLabel('${tag}')">
+                            <li onclick="showEntriesByTag('${tag}')">
                                 ${tag}
                             </li>
                         `).join('')}
@@ -349,16 +439,19 @@
             `;
             
             document.querySelector('.nav-buttons').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function loadNextEntries() {
             currentStartIndex += entriesPerPage;
             displayCurrentEntries();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function loadPrevEntries() {
             currentStartIndex -= entriesPerPage;
             displayCurrentEntries();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function displayCurrentEntries() {
@@ -390,7 +483,7 @@
                 meta.className = 'meta';
                 
                 const rowNumber = entry[''] ? `<span class="non-clickable">${entry['']}</span>` : '';
-                const tema = entry['TEMA'] ? `<span class="clickable" onclick="filterByLabel('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
+                const tema = entry['TEMA'] ? `<span class="clickable" onclick="showEntriesByTag('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
                 const fecha = entry['FECHA'] ? `<span class="non-clickable">${entry['FECHA']}</span>` : '';
                 
                 meta.innerHTML = [
@@ -439,6 +532,31 @@
                 
                 container.appendChild(entryDiv);
             });
+        }
+
+        // Show entries by tag (only titles)
+        function showEntriesByTag(tag) {
+            currentView = 'tag';
+            const filtered = allEntries.filter(entry => entry['TEMA'] === tag);
+            document.getElementById('main-title').textContent = `Entries with tag: ${tag}`;
+            document.getElementById('back-button').style.display = 'block';
+            
+            const container = document.getElementById('entries-container');
+            container.innerHTML = `
+                <div class="list-view">
+                    <h2>Entries tagged with: ${tag}</h2>
+                    <ul>
+                        ${filtered.map(entry => `
+                            <li onclick="showSingleEntry('${entry['']}')">
+                                ${entry['TÍTULO'] || 'Untitled'}
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            document.querySelector('.nav-buttons').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Function to extract domain from URL
@@ -465,82 +583,6 @@
             return processed;
         }
 
-        // Filter entries by label
-        function filterByLabel(label) {
-            currentView = 'filtered';
-            const filtered = allEntries.filter(entry => entry['TEMA'] === label);
-            document.getElementById('main-title').textContent = `Entries with label: ${label}`;
-            document.getElementById('back-button').style.display = 'block';
-            
-            const container = document.getElementById('entries-container');
-            container.innerHTML = '';
-            
-            filtered.forEach(entry => {
-                const entryDiv = document.createElement('div');
-                entryDiv.className = 'entry';
-                
-                const title = document.createElement('h2');
-                title.textContent = entry['TÍTULO'] || '';
-                title.onclick = () => showSingleEntry(entry['']);
-                
-                const meta = document.createElement('div');
-                meta.className = 'meta';
-                
-                const rowNumber = entry[''] ? `<span class="non-clickable">${entry['']}</span>` : '';
-                const tema = entry['TEMA'] ? `<span class="clickable" onclick="filterByLabel('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
-                const fecha = entry['FECHA'] ? `<span class="non-clickable">${entry['FECHA']}</span>` : '';
-                
-                meta.innerHTML = [
-                    rowNumber,
-                    tema,
-                    fecha
-                ].filter(Boolean).join(' | ');
-                
-                const content = document.createElement('div');
-                const processedContent = processContent(entry['CONTENIDO']);
-                if (processedContent) {
-                    content.innerHTML = processedContent;
-                }
-                
-                const link = document.createElement('p');
-                if (entry['ENLACE']) {
-                    const linkAnchor = document.createElement('a');
-                    linkAnchor.href = entry['ENLACE'];
-                    linkAnchor.textContent = extractDomain(entry['ENLACE']);
-                    linkAnchor.target = '_blank';
-                    linkAnchor.rel = 'noopener noreferrer';
-                    link.appendChild(linkAnchor);
-                }
-                
-                const imageContainer = document.createElement('div');
-                if (entry['IMAGEN']) {
-                    const img = document.createElement('img');
-                    img.src = entry['IMAGEN'];
-                    img.alt = entry['TÍTULO'] || 'Entry image';
-                    imageContainer.appendChild(img);
-                }
-                
-                entryDiv.appendChild(title);
-                if (rowNumber || tema || fecha) {
-                    entryDiv.appendChild(meta);
-                }
-                if (processedContent) {
-                    entryDiv.appendChild(content);
-                }
-                if (entry['ENLACE']) {
-                    entryDiv.appendChild(link);
-                }
-                if (entry['IMAGEN']) {
-                    entryDiv.appendChild(imageContainer);
-                }
-                
-                container.appendChild(entryDiv);
-            });
-            
-            document.querySelector('.nav-buttons').style.display = 'none';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
         // Show single entry
         function showSingleEntry(rowNumber) {
             currentView = 'single';
@@ -560,7 +602,7 @@
                 meta.className = 'meta';
                 
                 const rowNumberSpan = entry[''] ? `<span class="non-clickable">${entry['']}</span>` : '';
-                const tema = entry['TEMA'] ? `<span class="clickable" onclick="filterByLabel('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
+                const tema = entry['TEMA'] ? `<span class="clickable" onclick="showEntriesByTag('${entry['TEMA']}')">${entry['TEMA']}</span>` : '';
                 const fecha = entry['FECHA'] ? `<span class="non-clickable">${entry['FECHA']}</span>` : '';
                 
                 meta.innerHTML = [
@@ -608,6 +650,7 @@
             }
             
             document.querySelector('.nav-buttons').style.display = 'none';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Load entries when the page loads
