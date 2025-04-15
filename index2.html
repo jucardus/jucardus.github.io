@@ -1,79 +1,143 @@
 <!DOCTYPE html>
-<html lang = "es">
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .entry {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Database Entries</h1>
+    <div id="entries-container"></div>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+        // Function to fetch and process the CSV data
+        async function loadEntries() {
+            try {
+                const response = await fetch('https://jucardus.github.io/base.csv');
+                const csvData = await response.text();
+                displayEntries(parseCSV(csvData));
+            } catch (error) {
+                console.error('Error loading the CSV file:', error);
+                document.getElementById('entries-container').innerHTML = 
+                    '<p>Error loading entries. Please try again later.</p>';
+            }
+        }
 
-  gtag('config', 'G-44Y9CNCHR8');
-</script>
+        // Function to parse CSV data
+        function parseCSV(csv) {
+            const lines = csv.split('\n');
+            const result = [];
+            const headers = lines[0].split(',').map(h => h.trim());
+            
+            for (let i = 1; i < lines.length; i++) {
+                if (!lines[i].trim()) continue;
+                
+                const obj = {};
+                const currentline = lines[i].split(',');
+                
+                for (let j = 0; j < headers.length; j++) {
+                    let value = currentline[j] ? currentline[j].trim() : '---';
+                    // Handle cases where the value might be wrapped in quotes
+                    if (value.startsWith('"') && value.endsWith('"')) {
+                        value = value.slice(1, -1);
+                    }
+                    obj[headers[j]] = value || '---';
+                }
+                
+                result.push(obj);
+            }
+            
+            return result;
+        }
 
-    <meta charset = "utf-8" />
-    <meta name = "keywords" content = "apotegmas, citas, cuentos, diario, enlaces, vínculos, hipervínculos, reflexiones, sinónimos, vocabularios, apotegma, cita, cuento, diario, enlace, vínculo, hipervínculo, reflexión, sinónimo, vocabulario, vocabulario inglés-español, vocabulario inglés, sinónimos ingleses, sinónimos españoles" />
-    <meta name = "description" content = "Apotegmas · Citas · Cuentos · Diario · Enlaces · Poesía · Reflexiones · Vocabulario" />
-    <meta name = "author" content = "Julio Cárdenas Pelizzari" />
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
-    <link rel="canonical" href="https://jucardus.github.io" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <link rel="stylesheet" href="styles.css">
-    <title>JUCARDUS.COM</title>
-  </head>
-<body onload='inicio ()'>
-  <h1>Jucardus.com</h1>
-  <div id='temas'>
-    <span class='temas' id='inicio' onclick='inicio ()'>Inicio</span> •
-    <!--span class='temas' id='apotegmas' onclick='segunTema ("apotegmas")'>Apotegmas</span-->
-    <span class='temas' id='az' onclick='az ("az")'>AZ</span> •
-    <span class='temas' id='azar' onclick='azar ("azar")'>Azar</span> •
-    <span class='temas' id='archivo' onclick='archivo ("archivo")'>Archivo</span> •
-    <span class='temas' id='etiquetas' onclick='etiquetas ("etiquetas")'>Etiquetas</span> •
-    <span class='temas' id='autor' onclick='autor ("autor")'>Autor</span> •
-    <span class='temas' id='lupa' onclick='mostrarBuscador ()'>🔍</span>
-  </div>
-  <div id="buscador">
-    <form method="post">
-      <input type="text" autofocus="on" autocomplete="off" placeholder="..." size="21" id="buscar" class="buscar" name="buscar" onkeydown="teclaBuscar (event)" />
-      <button id="boton" type="button" onclick="buscar()">🔍</button>
-    </form>
-  </div>
-  <div id='mostrar'></div>
-  <div id='rombo'><img class='rombo' src='rombo.png' /></div>
-  <div id='etiquetasTodas'></div>
-  <div id='aclaraciones'>
-    <h3 class='aclaraciones'>Aclaraciones</h3>
-      <ul>
-        <li>La página de inicio muestra el contenido de las diez entradas más recientes. Clica en la lupa para buscar entre todas las entradas del sitio, sin límite de coincidencias. Los resultados mostrarán lo más reciente al inicio.</li>
-        <li>Siempre que cliques en las etiquetas debajo de los títulos (los enlaces en azul entre el número de entrada y la fecha de publicación), verás una lista cronológica de todas las entradas abarcadas por dicha etiqueta, con las más recientes a la cabeza.</li>
-        <li>Para ver la lista de todos los temas, clica en <b>Etiquetas</b>, en el menú principal, donde cuentas con algunas opciones para ver todas las entradas: lista alfabética, lista descendente, lista ascendente.</li>
-        <li>Si quieres ver una entrada en particular, con exclusión de todas las demás, sólo hace falta clicar en su título.</li>
-        <li>Para copiar el enlace a una entrada, clica en la fecha en color gris debajo del título correspondiente. El enlace será guardado en el portapapeles y la entrada será abierta en una nueva pestaña del navegador.</li>
-        <li>Clica en los números verdes debajo de los títulos para compartir la entrada en X Twitter.</li>
-      </ul>
-  </div>
-  <div id='footer'>
-    <h3 class='autor'>Autor y contacto</h3>
-      <ul>
-        <li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li>
-        <li><b>Contacto:</b> Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante <a class='enlacista' href='https://jucardus.github.io/correo.png' target='_blank'><b>c.jucardus.com</b></a>. También puedes usar el correo para hacer críticas, sugerencias y correcciones al contenido del sitio.</li>
-      </ul>
-    <h3 class='autor'>Enlaces pertinentes</h3>
-      <ul>
-        <li><b>Base de datos:</b> <a class='enlacista' href='https://jucardus.github.io/base.html' target='_blank'>b.jucardus.com</a></li>
-        <li><b>Enlacista:</b> <a class='enlacista' href='https://enlcs.github.io' target='_blank'>e.jucardus.com</a></li>
-        <li><b>Facebook:</b> <a class='enlacista' href='https://www.facebook.com/jucardus.page' target='_blank'>f.jucardus.com</a></li>
-        <li><b>Invitación a pCloud:</b> <a class='enlacista' href='https://is.gd/ipcloud' target='_blank'>i.jucardus.com</a></li>
-        <li><b>Música clásica:</b> <a class='enlacista' href='https://www.youtube.com/@jucardus/playlists' target='_blank'>m.jucardus.com</a></li>
-        <li><b>Pagos y donaciones:</b> <a class='enlacista' href='https://www.paypal.com/paypalme/jucardus' target='_blank'>p.jucardus.com</a></li>
-        <li><b>Repositorio:</b> <a class='enlacista' href='https://github.com/jucardus/jucardus.github.io' target='_blank'>r.jucardus.com</a></li>
-        <li><b>X Twitter:</b> <a class='enlacista' href='https://x.com/jucardus' target='_blank'>x.jucardus.com</a></li>
-      </ul>
-  </div>
-  <div id='qr'><img class='qr' src='qr.png'></img></div>
-  <script src="java2.js"></script>
+        // Function to display entries in the HTML
+        function displayEntries(entries) {
+            const container = document.getElementById('entries-container');
+            
+            entries.forEach(entry => {
+                const entryDiv = document.createElement('div');
+                entryDiv.className = 'entry';
+                
+                // Create HTML for each field
+                const title = document.createElement('h2');
+                title.textContent = entry['TÍTULO'] || '---';
+                
+                const meta = document.createElement('div');
+                meta.className = 'meta';
+                meta.innerHTML = `
+                    ${entry[''] || '---'} | 
+                    ${entry['TEMA'] || '---'} | 
+                    ${entry['FECHA'] || '---'}
+                `;
+                
+                const content = document.createElement('p');
+                content.textContent = entry['CONTENIDO'] || '---';
+                
+                const link = document.createElement('p');
+                if (entry['ENLACE'] && entry['ENLACE'] !== '---') {
+                    const linkAnchor = document.createElement('a');
+                    linkAnchor.href = entry['ENLACE'];
+                    linkAnchor.textContent = 'View more';
+                    link.appendChild(linkAnchor);
+                } else {
+                    link.textContent = '---';
+                }
+                
+                const imageContainer = document.createElement('div');
+                if (entry['IMAGEN'] && entry['IMAGEN'] !== '---') {
+                    const img = document.createElement('img');
+                    img.src = entry['IMAGEN'];
+                    img.alt = entry['TÍTULO'] || 'Entry image';
+                    imageContainer.appendChild(img);
+                } else {
+                    imageContainer.textContent = '---';
+                }
+                
+                // Append all elements to the entry div
+                entryDiv.appendChild(title);
+                entryDiv.appendChild(meta);
+                entryDiv.appendChild(content);
+                entryDiv.appendChild(link);
+                entryDiv.appendChild(imageContainer);
+                
+                // Add the entry to the container
+                container.appendChild(entryDiv);
+            });
+        }
+
+        // Load entries when the page loads
+        window.onload = loadEntries;
+    </script>
 </body>
 </html>
