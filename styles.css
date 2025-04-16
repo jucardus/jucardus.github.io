@@ -207,3 +207,6 @@ footer {
     margin-top: 45px;
     text-align: center;
 }
+ol, ul {
+    margin-left: -15px;
+}
