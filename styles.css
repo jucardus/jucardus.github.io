@@ -5,7 +5,7 @@ body {
     max-width: 56%;
     margin: 0 auto;
     padding: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 160px;
     overflow-x: hidden;
 }
 @media (max-width: 768px) {
@@ -186,7 +186,7 @@ h3.autor {
     padding: 8px;
     /*font-family: 'Courier New', Courier, monospace, sans-serif;*/
     font-family: monospace, sans-serif;
-    font-size: 110%;
+    font-size: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
     text-align: left;
@@ -201,6 +201,6 @@ h3.autor {
     scroll-behavior: smooth;
 }
 footer {
-    margin-top: 25px;
+    margin-top: 45px;
     text-align: center;
 }
