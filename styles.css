@@ -23,7 +23,7 @@ body {
 }
 .entry {
     margin-bottom: 40px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #dec;
     padding-bottom: 20px;
 }
 .single-entry {
@@ -145,7 +145,8 @@ h3.autor {
     color: #0066cc;
 }
 .list-view li:hover {
-    text-decoration: underline;
+    color: OrangeRed;
+    /*text-decoration: underline;*/
 }
 .archive-year {
     margin-top: 20px;
@@ -162,7 +163,7 @@ h3.autor {
 }
 .archive-entry {
     /*margin-left: 45px;*/
-    margin-left: 30px;
+    margin-left: 25px;
     margin-bottom: 5px;
     color: #0066cc;
     cursor: pointer;
