@@ -1,9 +1,11 @@
 body {
-    font-family: 'Inter', Arial, sans-serif;
+    /*font-family: 'Inter', Arial, sans-serif;*/
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     max-width: 56%;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom: 120px;
     overflow-x: hidden;
 }
 @media (max-width: 768px) {
@@ -14,14 +16,14 @@ body {
     }
     #main-menu {
         font-size: 19px;
-        line-height: 1.8;
+        /*line-height: 1.8;*/
         flex-wrap: wrap;
         gap: 15px;
     }
 }
 .entry {
     margin-bottom: 40px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 20px;
 }
 .single-entry {
@@ -55,7 +57,8 @@ a {
     font-weight: 500;
 }
 a:hover {
-    text-decoration: underline;
+    color: OrangeRed;
+    /*text-decoration: underline;*/
 }
 .enlacista {
     color: #0066cc;
@@ -63,7 +66,8 @@ a:hover {
     font-weight: 500;
 }
 .enlacista:hover {
-    text-decoration: underline;
+    color: OrangeRed;
+    /*text-decoration: underline;*/
 }
 .no-results {
     color: OrangeRed;
@@ -93,13 +97,15 @@ h3.autor {
     display: flex;
     justify-content: center;
     gap: 20px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
+    /*border-bottom: 1px solid #ddd;*/
+    border-bottom: 4px solid Green;
+    /*margin-bottom: 15px;*/
+    margin-bottom: 20px;
     font-size: 18px;
 }
 #menu-separator {
     height: 4px;
-    border-bottom: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
     margin-bottom: 20px;
 }
 .nav-buttons {
@@ -145,21 +151,25 @@ h3.autor {
     margin-top: 20px;
 }
 .archive-month {
-    margin-left: 15px;
+    /*margin-left: 15px;*/
+    margin-left: 10px;
     margin-top: 15px;
 }
 .archive-day {
-    margin-left: 30px;
+    /*margin-left: 30px;*/
+    margin-left: 20px;
     margin-top: 10px;
 }
 .archive-entry {
-    margin-left: 45px;
+    /*margin-left: 45px;*/
+    margin-left: 30px;
     margin-bottom: 5px;
     color: #0066cc;
     cursor: pointer;
 }
 .archive-entry:hover {
-    text-decoration: underline;
+    color: OrangeRed;
+    /*text-decoration: underline;*/
 }
 #author-section {
     margin-top: 60px;
@@ -174,16 +184,23 @@ h3.autor {
 #search-box {
     width: 100%;
     padding: 8px;
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    /*font-family: 'Courier New', Courier, monospace, sans-serif;*/
+    font-family: monospace, sans-serif;
+    font-size: 110%;
     border: 1px solid #ddd;
     border-radius: 4px;
     text-align: left;
     autocomplete: "off";
 }
 #search-box::placeholder {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    /*font-family: 'Courier New', Courier, monospace, sans-serif;*/
+    font-family: monospace, sans-serif;
     text-align: left;
 }
 .scroll-smooth {
     scroll-behavior: smooth;
+}
+footer {
+    margin-top: 25px;
+    text-align: center;
 }
