@@ -59,7 +59,7 @@
           var ttl = linea[2];
             if (linea[2] == '') {ttl = extractText(linea[3]);}
             if (linea[2] == '' && extractText(linea[3]).length >= 40) {ttl = extractText(linea[3]).slice(0,40) + '...';}
-          var nuevaLinea = '* [' + ttl + '](https://jucardus.github.io/' + fecha + ')<br/>';
+          var nuevaLinea = '* ' + ttl + ' - ' + fch + '<br/>';
           resultado.push(nuevaLinea);
           contador = contador + 1;
             if (contador == 50) {break;}
