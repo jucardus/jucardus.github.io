@@ -75,9 +75,15 @@ function showAZ() {
         
         const normalizeText = (str) => {
             return (str || '')
-                .normalize('NFKD')               // Decompose accents (é → e + ´)
-                .replace(/[\u0300-\u036f]/g, '') // Remove combining diacritical marks
-                .replace(symbolsToRemove, '');   // Remove symbols
+                // Convert special ligatures to base letters
+                .replace(/œ/g, 'oe')
+                .replace(/Æ/g, 'AE')
+                .replace(/æ/g, 'ae')
+                .replace(/ß/g, 'ss')
+                // Normalize all other diacritics (including Pinyin)
+                .normalize('NFKD')
+                .replace(/[\u0300-\u036f\u1AB0-\u1AFF\u1DC0-\u1DFF]/g, '')
+                .replace(symbolsToRemove, '');
         };
     
         const cleanTitleA = normalizeText(a['TÍTULO']);
