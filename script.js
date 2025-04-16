@@ -71,22 +71,9 @@ function showAZ() {
     document.getElementById('search-container').style.display = 'none';
     
     const sortedEntries = [...allEntries].sort((a, b) => {
-        const cleanTitleA = (a['TÍTULO'] || '').replace(/^[^a-zA-ZáéíóúÁÉÍÓÚñÑ]+/, '');
-        const cleanTitleB = (b['TÍTULO'] || '').replace(/^[^a-zA-ZáéíóúÁÉÍÓÚñÑ]+/, '');
-        
-        // Check if either title starts with non-Spanish characters
-        const isNonSpanishA = /^[^\u0000-\u024Fa-zA-ZáéíóúÁÉÍÓÚñÑ]/.test(cleanTitleA);
-        const isNonSpanishB = /^[^\u0000-\u024Fa-zA-ZáéíóúÁÉÍÓÚñÑ]/.test(cleanTitleB);
-        
-        if (isNonSpanishA && !isNonSpanishB) return 1;  // A goes after B
-        if (!isNonSpanishA && isNonSpanishB) return -1; // A goes before B
-        if (isNonSpanishA && isNonSpanishB) {
-            // Both are non-Spanish - compare as-is
-            return cleanTitleA.localeCompare(cleanTitleB);
-        }
-        
-        // Both are Spanish - use Spanish comparison
-        return cleanTitleA.localeCompare(cleanTitleB, 'es', { sensitivity: 'base' });
+        const titleA = a['TÍTULO'] || '';
+        const titleB = b['TÍTULO'] || '';
+        return titleA.localeCompare(titleB);
     });
     
     const container = document.getElementById('entries-container');
