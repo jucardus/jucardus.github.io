@@ -177,6 +177,7 @@ h3.autor {
     margin-top: 60px;
     padding-top: 20px;
     border-top: 3px solid #ded;
+    scroll-margin-top: 100px;
 }
 #search-container {
     display: none;
