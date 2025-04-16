@@ -203,6 +203,7 @@ h3.autor {
     scroll-behavior: smooth;
 }
 footer {
+    font-size: 90%;
     margin-top: 45px;
     text-align: center;
 }
