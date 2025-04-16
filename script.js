@@ -69,13 +69,19 @@ function showAZ() {
     currentView = 'az';
     document.getElementById('main-title').textContent = 'Índice alfabético';
     document.getElementById('search-container').style.display = 'none';
-    
+
     const sortedEntries = [...allEntries].sort((a, b) => {
-        // Define the characters to remove (regex-escaped)
         const symbolsToRemove = /[¿–?¡—!«\-([)\]{}#\'@"<¦>|:;.*¨_+]/g;
         
-        const cleanTitleA = (a['TÍTULO'] || '').replace(symbolsToRemove, '');
-        const cleanTitleB = (b['TÍTULO'] || '').replace(symbolsToRemove, '');
+        const normalizeText = (str) => {
+            return (str || '')
+                .normalize('NFKD')               // Decompose accents (é → e + ´)
+                .replace(/[\u0300-\u036f]/g, '') // Remove combining diacritical marks
+                .replace(symbolsToRemove, '');   // Remove symbols
+        };
+    
+        const cleanTitleA = normalizeText(a['TÍTULO']);
+        const cleanTitleB = normalizeText(b['TÍTULO']);
         
         return cleanTitleA.localeCompare(cleanTitleB);
     });
