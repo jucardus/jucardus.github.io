@@ -39,7 +39,8 @@ body {
     color: #0066cc;
 }
 .meta .clickable:hover {
-    text-decoration: underline;
+    color: OrangeRed;
+    /*text-decoration: underline;*/
 }
 .meta .non-clickable {
     color: #666;
