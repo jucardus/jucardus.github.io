@@ -71,9 +71,13 @@ function showAZ() {
     document.getElementById('search-container').style.display = 'none';
     
     const sortedEntries = [...allEntries].sort((a, b) => {
-        const titleA = a['TÍTULO'] || '';
-        const titleB = b['TÍTULO'] || '';
-        return titleA.localeCompare(titleB);
+        // Define the characters to remove (regex-escaped)
+        const symbolsToRemove = /[¿–?¡—!«\-([)\]{}#\'@"<¦>|:;.*¨_+]/g;
+        
+        const cleanTitleA = (a['TÍTULO'] || '').replace(symbolsToRemove, '');
+        const cleanTitleB = (b['TÍTULO'] || '').replace(symbolsToRemove, '');
+        
+        return cleanTitleA.localeCompare(cleanTitleB);
     });
     
     const container = document.getElementById('entries-container');
