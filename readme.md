@@ -1,60 +1,10 @@
- # [Jucardus.com](https://jucardus.com)
+# [Jucardus.com](https://jucardus.com)
 
 * [**Sitio web**](https://jucardus.github.io) - jucardus.github.io
 * [**Invitación a pCloud**](https://i.jucardus.com) - i.jucardus.com
 
 Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [c.jucardus.com](https://c.jucardus.com).
 
-### Lo más reciente
-Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Enlaces · Frases chinas · Frases latinas · Gramática latina · Poesía · Proverbios chinos · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
+### Todos los temas
 
-* [Agregué una línea divisoria entre las en...](https://jucardus.github.io/2504131942)
-* [Presente indicativo del verbo «amāre» - Primera conjugación](https://jucardus.github.io/2504131320)
-* [Pronombres personales latinos](https://jucardus.github.io/2504131318)
-* [Cuando creas que has logrado algo, recue...](https://jucardus.github.io/2504110623)
-* [No es propio de quien busca a Dios hacer...](https://jucardus.github.io/2504110621)
-* [Al paso que vamos, los menonitas van a s...](https://jucardus.github.io/2504110619)
-* [Si sólo es realidad lo que puedes ver, ¿...](https://jucardus.github.io/2504110617)
-* [Ya es algo difícil amar al prójimo sin a...](https://jucardus.github.io/2504110611)
-* [這家餐廳很好吃，對吧？](https://jucardus.github.io/2504101154)
-* [明天會下雨，對吧？](https://jucardus.github.io/2504101153)
-* [你是老師，對吧？](https://jucardus.github.io/2504101152)
-* [Illa puerum amat.](https://jucardus.github.io/2504091714)
-* [Puer aquam videt.](https://jucardus.github.io/2504091713)
-* [Ego puellam amo.](https://jucardus.github.io/2504091711)
-* [Ego aquam video.](https://jucardus.github.io/2504091710)
-* [Ille feminam amat.](https://jucardus.github.io/2504091707)
-* [Tū puerum vidēs.](https://jucardus.github.io/2504091704)
-* [Ego ambulo.](https://jucardus.github.io/2504091702)
-* [Fēmina puellam amat.](https://jucardus.github.io/2504091657)
-* [Así, ¡oh conciencia!, de nosotros todos...](https://jucardus.github.io/2504091655)
-* [Tū feminam amās.](https://jucardus.github.io/2504091653)
-* [Ego puerum video.](https://jucardus.github.io/2504091651)
-* [Fēmina ambulat.](https://jucardus.github.io/2504091649)
-* [Puer cantat.](https://jucardus.github.io/2504091647)
-* [Ille amat.](https://jucardus.github.io/2504091642)
-* [Tū amās.](https://jucardus.github.io/2504091637)
-* [Ego amō.](https://jucardus.github.io/2504091633)
-* [這本書是不是你的？](https://jucardus.github.io/2504091202)
-* [書 (书) [shū]](https://jucardus.github.io/2504091159)
-* [你是不是學生？](https://jucardus.github.io/2504091158)
-* [他是不是老師？](https://jucardus.github.io/2504091157)
-* [Ninguna cultura es buena sólo por ser cu...](https://jucardus.github.io/2504091013)
-* [Buscamos sentirnos seguros pensando que...](https://jucardus.github.io/2504091009)
-* [Es larga la espera cuando el tiempo es c...](https://jucardus.github.io/2504091007)
-* [小貓在睡覺。](https://jucardus.github.io/2504090953)
-* [我在工作。](https://jucardus.github.io/2504081919)
-* [我工作。](https://jucardus.github.io/2504081910)
-* [Ego labōrō.](https://jucardus.github.io/2504081905)
-* [Tū es.](https://jucardus.github.io/2504081901)
-* [Ego sum.](https://jucardus.github.io/2504081759)
-* [Si la verdad se explica sola y no necesi...](https://jucardus.github.io/2504081120)
-* [千里之行，始於足下。](https://jucardus.github.io/2504081116)
-* [塞翁失馬，焉知非福](https://jucardus.github.io/2504081111)
-* [樹很大。](https://jucardus.github.io/2504070926)
-* [我喜歡樹。](https://jucardus.github.io/2504070924)
-* [很 (很) [hěn]](https://jucardus.github.io/2504070922)
-* [turn a blind eye [loc.]](https://jucardus.github.io/2504051316)
-* [你是學生，是不是？](https://jucardus.github.io/2504041321)
-* [你是學生，對吧？](https://jucardus.github.io/2504041319)
-* [a lo largo de todo el año [loc.] ¦Tmp¦](https://jucardus.github.io/2504041318)
+Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Frases chinas · Frases latinas · Gramática china · Gramática latina · Poesía · Proverbios chinos · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
