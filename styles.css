@@ -163,9 +163,9 @@ h3.autor {
     color: OrangeRed;
 }
 #author-section {
-    margin-top: 60px;
+    margin-top: 40px;
     padding-top: 20px;
-    border-top: 3px solid #dec;
+    border-top: 4px solid Green;
     scroll-margin-top: 100px;
 }
 #search-container {
