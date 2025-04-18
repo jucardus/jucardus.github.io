@@ -243,7 +243,7 @@ function showTags() {
     const container = document.getElementById('entries-container');
     container.innerHTML = `
         <div class="list-view">
-            <h2>Todas las etiquetas</h2>
+            <!--h2>Todas las etiquetas</h2-->
             <ul>
                 ${sortedTags.map(tag => `
                     <li onclick="showEntriesByTag('${tag}')">
