@@ -54,16 +54,24 @@ img {
 }
 a {
     color: #0066cc;
+    color: DarkCyan;
     text-decoration: none;
 }
 a:hover {
     color: OrangeRed;
 }
+a:focus {
+    color: OrangeRed;
+}
 .enlacista {
     color: #0066cc;
+    color: DarkCyan;
     text-decoration: none;
 }
 .enlacista:hover {
+    color: OrangeRed;
+}
+.enlacista:focus {
     color: OrangeRed;
 }
 .no-results {
@@ -80,6 +88,7 @@ h2 {
 }
 h2:hover {
     color: #0066cc;
+    color: DarkCyan;
 }
 h3.autor {
     margin-top: 20px;
@@ -138,6 +147,7 @@ h3.autor {
     margin-bottom: 8px;
     cursor: pointer;
     color: #0066cc;
+    color: DarkCyan;
 }
 .list-view li:hover {
     color: OrangeRed;
@@ -157,6 +167,7 @@ h3.autor {
     margin-left: 25px;
     margin-bottom: 5px;
     color: #0066cc;
+    color: DarkCyan;
     cursor: pointer;
 }
 .archive-entry:hover {
