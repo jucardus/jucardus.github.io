@@ -95,7 +95,7 @@ function showAZ() {
     const container = document.getElementById('entries-container');
     container.innerHTML = `
         <div class="list-view">
-            <h2>De la A a la Z</h2>
+            <!--h2>De la A a la Z</h2-->
             <ul>
                 ${sortedEntries.map(entry => `
                     <li onclick="showSingleEntry('${entry['']}')">
@@ -128,7 +128,7 @@ function showRandom() {
     const container = document.getElementById('entries-container');
     container.innerHTML = `
         <div class="list-view">
-            <h2>Selección al azar</h2>
+            <!--h2>Selección al azar</h2-->
             <ul>
                 ${randomEntries.map(entry => `
                     <li onclick="showSingleEntry('${entry['']}')">
@@ -176,7 +176,7 @@ function showArchive() {
     
     const sortedYears = Object.keys(groupedEntries).sort((a, b) => a - b);
     
-    let archiveHTML = '<div class="list-view"><h2>Entradas por fecha (antiguas al inicio)</h2>';
+    let archiveHTML = '<div class="list-view"><!--h2>Entradas por fecha (antiguas al inicio)</h2-->';
     
     sortedYears.forEach(year => {
         archiveHTML += `<div class="archive-year"><h3>${year}</h3>`;
@@ -422,7 +422,7 @@ function showEntriesByTag(tag) {
     const container = document.getElementById('entries-container');
     container.innerHTML = `
         <div class="list-view">
-            <h2>Entradas etiquetadas con «${tag}»</h2>
+            <!--h2>Entradas etiquetadas con «${tag}»</h2-->
             <ul>
                 ${filtered.map(entry => `
                     <li onclick="showSingleEntry('${entry['']}')">
