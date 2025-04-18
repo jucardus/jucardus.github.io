@@ -38,6 +38,7 @@ body {
 .meta .clickable {
     cursor: pointer;
     color: #0066cc;
+    color: DarkCyan;
 }
 .meta .clickable:hover {
     color: OrangeRed;
