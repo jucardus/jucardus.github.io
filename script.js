@@ -307,7 +307,7 @@ function handleSearch(event) {
             
             container.innerHTML = `
                 <div class="list-view">
-                    <h2>${resultsText}</h2>
+                    <h3>${resultsText}</h3>
                     <ul>
                         ${results.map(entry => `
                             <li onclick="showSingleEntry('${entry['']}')">
