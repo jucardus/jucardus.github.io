@@ -9,6 +9,26 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Frases chinas · Frases latinas · Gramática china · Gramática latina · Poesía · Proverbios chinos · Reflexiones · Traducciones · Vocabulario español · Vocabulario inglés-español · Vocabulario multilingüe
 
+* Ego puerum audivi. - 25-04-19
+* Illa puerum vidit. - 25-04-19
+* Vir feminam amavit. - 25-04-19
+* Puella aquam vidit. - 25-04-19
+* Tu feminam amavisti. - 25-04-19
+* Ego puerum vidi. - 25-04-19
+* Ille aquam amavit. - 25-04-19
+* Ego puellam vidi. - 25-04-19
+* Puella ambulavit. - 25-04-19
+* Illa virum videt. - 25-04-19
+* 會 (会) [huì] - 25-04-18
+* 明天會下雨。 - 25-04-18
+* Hay quienes desean tanto que venga el ap... - 25-04-17
+* Si te encuentras con alguien que no busc... - 25-04-17
+* Un sacrificio a la vez - 25-04-16
+* Un pequeño recuento - 25-04-16
+* Puedes ser feliz con sólo proponértelo,... - 25-04-15
+* El ignorante ve misterio en el engaño. E... - 25-04-15
+* La existencia es un ejercicio del ser. - 25-04-14
+* Es increíble la cantidad de personas que... - 25-04-14
 * Ille aquam videt. - 25-04-14
 * Mientras nuestra seguridad no sea hija d... - 25-04-14
 * Ego feminam video. - 25-04-14
@@ -39,23 +59,3 @@ Apotegmas · Caracteres chinos · Citas · Cuentos · Diario · Frases chinas ·
 * 你是老師，對吧？ - 25-04-10
 * Illa puerum amat. - 25-04-09
 * Puer aquam videt. - 25-04-09
-* Ego puellam amo. - 25-04-09
-* Ego aquam video. - 25-04-09
-* Ille feminam amat. - 25-04-09
-* Tū puerum vidēs. - 25-04-09
-* Ego ambulo. - 25-04-09
-* Fēmina puellam amat. - 25-04-09
-* Así, ¡oh conciencia!, de nosotros todos... - 25-04-09
-* Tū feminam amās. - 25-04-09
-* Ego puerum video. - 25-04-09
-* Fēmina ambulat. - 25-04-09
-* Puer cantat. - 25-04-09
-* Ille amat. - 25-04-09
-* Tū amās. - 25-04-09
-* Ego amō. - 25-04-09
-* 這本書是不是你的？ - 25-04-09
-* 書 (书) [shū] - 25-04-09
-* 你是不是學生？ - 25-04-09
-* 他是不是老師？ - 25-04-09
-* Ninguna cultura es buena sólo por ser cu... - 25-04-09
-* Buscamos sentirnos seguros pensando que... - 25-04-09
