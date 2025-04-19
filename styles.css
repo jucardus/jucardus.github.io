@@ -18,6 +18,7 @@ body {
         line-height: 1.1!important;
     }
     #main-menu {
+        gap: 7px;
         font-size: 19px;
         flex-wrap: wrap;
     }
@@ -103,7 +104,7 @@ h3.autor {
     z-index: 100;
     display: flex;
     justify-content: center;
-    gap: 4px;
+    gap: 10px;
     border-bottom: 4px solid Green;
     margin-bottom: 20px;
     font-size: 18px;
