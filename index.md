@@ -10,7 +10,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Contenido
 
-* **Actividad reciente** - Con las entradas más recientes al inicio de la lista.
+* **Actividad reciente** - Con las entradas nuevas al inicio de la lista.
 * **Diccionarios varios** - Diccionario chino-español, latín-español, multilingüe, nombres bíblicos.
 * **Escritos varios** - Apotegmas, citas, reflexiones, poesía, cuentos.
 * **Fotografías** - Nada todavía.
