@@ -3,12 +3,12 @@
 
 Los apotegmas más recientes se muestran al inicio de la lista.
 
-* [Siempre que busques a Dios hacia...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/28/siempre-que-busques-a-dios.md)
-* [El recuerdo más puro...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/28/el-recuerdo-mas-puro-es.md)
-* [La Verdad existe desde siempre, de modo que...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/28/la-verdad-existe-desde-siempre.md)
-* [Mira hacia arriba para idolatrar, mira...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/mira-hacia-arriba-para-idolatrar.md)
-* [La gente vive de eso, de mitos e historias...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/la-gente-vive-de-eso.md)
-* [Es sólo geopolítica bañada en chocolate...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/es-solo-geopolitica-banada-en.md)
-* [No hay forma de creer en Dios si no es...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/no-hay-forma-de-creer-en.md)
-* [El relativismo dogmático te pone en la posición...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/el-relativismo-dogmatico-te-pone.md)
-* [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/el-universo-todo-confabula-para.md)
+* [Siempre que busques a Dios hacia...](../contenido/s/i/e/siempre-que-busques-a-dios.md)
+* [El recuerdo más puro...](../contenido/e/l/r/el-recuerdo-mas-puro-es.md)
+* [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md)
+* [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md)
+* [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md)
+* [Es sólo geopolítica bañada en chocolate...](../contenido/e/s/s/es-solo-geopolitica-banada-en.md)
+* [No hay forma de creer en Dios si no es...](../contenido/n/o/h/no-hay-forma-de-creer-en.md)
+* [El relativismo dogmático te pone en la posición...](../contenido/e/l/r/el-relativismo-dogmatico-te-pone.md)
+* [El universo todo confabula para que...](../contenido/e/l/u/el-universo-todo-confabula-para.md)
