@@ -1,0 +1,4 @@
+# El universo todo confabula para que...
+<sup>[Inicio](https://github.com/jucardus.github.io/repo/blob/main/readme.md) · [Índice](https://github.com/jucardus.github.io/repo/blob/main/indices/apotegmas.md) · [A-Z](https://github.com/jucardus.github.io/repo/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus.github.io/repo/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Apotegmas%20-%20El%20universo%20todo%20confabula%20para%20que%20busques...%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Fcontenido%2F25%2F04%2F23%2Fel-universo-todo-confabula-para.md%0A%0A%23atgms_jucardus%0A%40jucardus)</sup>
+
+El universo todo confabula para que busques a Dios. Puedes intentar resistirte, mas también puedes rendirte, dejarte guiar y despertar.

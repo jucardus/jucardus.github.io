@@ -1,0 +1,4 @@
+# Es sólo geopolítica bañada en chocolate...
+<sup>[Inicio](https://github.com/jucardus.github.io/repo/blob/main/readme.md) · [Índice](https://github.com/jucardus.github.io/repo/blob/main/indices/apotegmas.md) · [A-Z](https://github.com/jucardus.github.io/repo/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus.github.io/repo/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Apotegmas%20-%20Es%20s%C3%B3lo%20geopol%C3%ADtica%20ba%C3%B1ada%20en%20chocolate...%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Fcontenido%2F25%2F04%2F23%2Fes-solo-geopolitica-banada-en.md%0A%0A%23aptgms_jucardus%0A%40jucardus)</sup>
+
+Es sólo geopolítica bañada en chocolate espiritual, para que el devoto se coma el bombón sin chistar.
