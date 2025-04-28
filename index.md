@@ -6,7 +6,7 @@
 
 ---
 
-> Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://jucardus.com), con [tr.ee/jucardus](https://tr.ee/jucardus) o también con [jucardus.github.io](https://jucardus.github.io). - Comparte este sitio en X Twitter clicando AQUÍ.
+Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://jucardus.com), con [tr.ee/jucardus](https://tr.ee/jucardus) o también con [jucardus.github.io](https://jucardus.github.io). - Comparte este sitio en X Twitter clicando **AQUÍ**.
 
 ### Contenido
 
