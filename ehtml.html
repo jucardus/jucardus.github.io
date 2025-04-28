@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .editor-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 100%;
+        }
+        #preview {
+            border: 1px solid #ccc;
+            min-height: 200px;
+            padding: 10px;
+            overflow: auto;
+            resize: vertical;
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #html-input {
+            width: 100%;
+            min-height: 200px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #ccc;
+            resize: vertical;
+            overflow: auto;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            width: 100%;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .status {
+            margin-top: 10px;
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            width: 100%;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple HTML Editor</h1>
+    <div class="editor-container">
+        <div>Preview:</div>
+        <div id="preview"></div>
+
+        <div>HTML Code:</div>
+        <textarea id="html-input"></textarea>
+
+        <div class="button-container">
+            <button id="copy-button">Copy HTML</button>
+        </div>
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        const preview = document.getElementById('preview');
+        const htmlInput = document.getElementById('html-input');
+        const copyButton = document.getElementById('copy-button');
+        const status = document.getElementById('status');
+
+        // Character substitutions
+        const replaceSpecialChars = (text) => {
+            const replacements = {
+                'a\\^': 'á',
+                'e\\^': 'é',
+                'i\\^': 'í',
+                'o\\^': 'ó',
+                'u\\^': 'ú',
+                'v\\^': 'ü',
+                'n\\^': 'ñ',
+                'A\\^': 'Á',
+                'E\\^': 'É',
+                'I\\^': 'Í',
+                'O\\^': 'Ó',
+                'U\\^': 'Ú',
+                'V\\^': 'Ü',
+                'N\\^': 'Ñ',
+                '\\?\\^': '¿',
+                '\\!\\^': '¡',
+                '--\\^': '—',
+                '-\\^': '–',
+                '\\.\\^': '...',
+                'bb\\^': '¦',
+                'b\\^': '|'
+            };
+
+            let result = text;
+            for (const [key, value] of Object.entries(replacements)) {
+                const regex = new RegExp(key, 'g');
+                result = result.replace(regex, value);
+            }
+            return result;
+        };
+
+        // Update preview in real-time with character substitutions
+        htmlInput.addEventListener('input', function() {
+            const processedText = replaceSpecialChars(this.value);
+            preview.innerHTML = processedText;
+        });
+
+        // Copy HTML to clipboard WITH substitutions and without line breaks
+        copyButton.addEventListener('click', function() {
+            // Get the text, apply substitutions, and remove all line breaks
+            let htmlToCopy = replaceSpecialChars(htmlInput.value)
+                .replace(/(\r\n|\n|\r)/gm, '');
+
+            navigator.clipboard.writeText(htmlToCopy).then(function() {
+                status.textContent = 'HTML copied to clipboard with substitutions!';
+                setTimeout(() => {
+                    status.textContent = '';
+                }, 2000);
+            }).catch(function(err) {
+                status.textContent = 'Failed to copy: ' + err;
+            });
+        });
+
+        // Initialize with empty content
+        htmlInput.value = '';
+        preview.innerHTML = '';
+    </script>
+</body>
+</html>

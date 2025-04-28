@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./favicon.ico">
+  <title>X Share Link Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    label.exceeded {
+      color: OrangeRed;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      display: inline-block;
+      padding: 10px;
+      background-color: #1DA1F2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #0d95e8;
+    }
+    #generateButton, #resetButton {
+      width: 48%;
+      margin-right: 2%;
+    }
+    #resetButton {
+      background-color: #6c757d;
+    }
+    #resetButton:hover {
+      background-color: #5a6268;
+    }
+    #copyButton {
+      margin-left: 10px;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #e0f7fa;
+      border-radius: 4px;
+      word-break: break-all;
+    }
+    #output a {
+      color: #1DA1F2;
+      text-decoration: none;
+    }
+    #output a:hover {
+      text-decoration: underline;
+    }
+    #charCounter, #copyMessage, #errorMessage, #charWarning {
+      margin-top: 10px;
+    }
+    #charCounter {
+      color: #333;
+    }
+    #charCounter.exceeded {
+      color: #dc3545;
+    }
+    #copyMessage {
+      color: #28a745;
+      display: none;
+    }
+    #errorMessage, #charWarning {
+      color: #dc3545;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>X Share Link Generator</h1>
+  <div class="form-group">
+    <label for="tweetText" id="tweetTextLabel">Tweet Text (use Enter for line breaks, supports special characters like |, ¦, :):</label>
+    <textarea id="tweetText" rows="4" placeholder="e.g., The text I want to tweet goes here." oninput="updateCharCounter()"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="url">URL (optional):</label>
+    <input type="text" id="url" placeholder="e.g., https://github.com/jucardus/repo" oninput="updateCharCounter()">
+  </div>
+  <div class="form-group">
+    <label for="hashtags">Hashtags (comma-separated, optional):</label>
+    <input type="text" id="hashtags" placeholder="e.g., grmmr_jucardus,chns_chrctrs" oninput="updateCharCounter()">
+  </div>
+  <div class="form-group">
+    <label for="via">Handles (comma-separated, without @, optional):</label>
+    <input type="text" id="via" placeholder="e.g., jucardus,user2,user3" oninput="updateCharCounter()">
+  </div>
+  <div style="display: flex;">
+    <button id="generateButton" onclick="generateLink()">Generate Share Link</button>
+    <button id="resetButton" onclick="resetForm()">Reset</button>
+  </div>
+  <p id="charCounter">0/280 characters</p>
+  <div id="output"></div>
+
+  <script>
+    let currentShareLink = ''; // Store the generated link globally
+
+    function estimateTweetLength(textComponents) {
+      let length = 0;
+      if (textComponents[0]) length += textComponents[0].length; // Tweet text
+      if (textComponents[1]) length += 23 + 2; // Shortened URL (~23) + "→ "
+      if (textComponents[2]) length += textComponents[2].length; // Hashtags
+      if (textComponents[3]) length += textComponents[3].length; // Handles
+      // Add line breaks: \n, \n\n, \n
+      if (textComponents[1]) length += 1; // \n after text
+      if (textComponents[2]) length += 2; // \n\n after URL
+      if (textComponents[3]) length += 1; // \n after hashtags
+      return length;
+    }
+
+    function updateCharCounter() {
+      try {
+        // Get input values
+        const tweetText = document.getElementById('tweetText').value.trim();
+        const url = document.getElementById('url').value.trim();
+        const hashtags = document.getElementById('hashtags').value.trim();
+        const via = document.getElementById('via').value.trim();
+
+        // Build text components
+        let textComponents = [];
+        if (tweetText) textComponents.push(tweetText);
+        if (url) textComponents.push(`→ ${url}`);
+        if (hashtags) {
+          const hashtagList = hashtags.split(',').map(tag => `#${tag.trim()}`).join(' ');
+          textComponents.push(hashtagList);
+        }
+        if (via) {
+          const viaList = via.split(',').map(tag => `@${tag.trim()}`).join(' ');
+          textComponents.push(viaList);
+        }
+
+        // Estimate length
+        const length = estimateTweetLength(textComponents);
+        const charCounter = document.getElementById('charCounter');
+        const tweetTextLabel = document.getElementById('tweetTextLabel');
+        charCounter.textContent = `${length}/280 characters`;
+        if (length > 280) {
+          charCounter.classList.add('exceeded');
+          tweetTextLabel.classList.add('exceeded');
+        } else {
+          charCounter.classList.remove('exceeded');
+          tweetTextLabel.classList.remove('exceeded');
+        }
+      } catch (err) {
+        console.error('Error updating character counter:', err);
+      }
+    }
+
+    function generateLink() {
+      try {
+        console.log('Generating link...');
+        // Get input values
+        const tweetText = document.getElementById('tweetText').value.trim();
+        const url = document.getElementById('url').value.trim();
+        const hashtags = document.getElementById('hashtags').value.trim();
+        const via = document.getElementById('via').value.trim();
+
+        // Initialize the text components
+        let textComponents = [];
+        if (tweetText) textComponents.push(tweetText);
+        if (url) textComponents.push(`→ ${url}`);
+        if (hashtags) {
+          const hashtagList = hashtags.split(',').map(tag => `#${tag.trim()}`).join(' ');
+          textComponents.push(hashtagList);
+        }
+        if (via) {
+          const viaList = via.split(',').map(tag => `@${tag.trim()}`).join(' ');
+          textComponents.push(viaList);
+        }
+
+        // Estimate tweet length for warning
+        const tweetLength = estimateTweetLength(textComponents);
+        const outputDiv = document.getElementById('output');
+        const charWarning = document.createElement('p');
+        charWarning.id = 'charWarning';
+        charWarning.textContent = 'Warning: Tweet exceeds 280 characters and may be truncated!';
+        if (tweetLength > 280) {
+          charWarning.style.display = 'block';
+          outputDiv.appendChild(charWarning);
+        } else {
+          charWarning.style.display = 'none';
+        }
+
+        // Combine components with specific line breaks: \n, \n\n, \n
+        let combinedText = '';
+        if (textComponents.length > 0) {
+          combinedText = textComponents[0]; // Tweet text
+          if (textComponents.length > 1) {
+            combinedText += '\n' + textComponents[1]; // URL with \n
+            if (textComponents.length > 2) {
+              combinedText += '\n\n' + textComponents[2]; // Hashtags with \n\n
+              if (textComponents.length > 3) {
+                combinedText += '\n' + textComponents[3]; // Handles with \n
+              }
+            }
+          }
+        }
+
+        // Encode the combined text
+        const encodedText = encodeURIComponent(combinedText);
+
+        // Build the share link
+        currentShareLink = `https://x.com/intent/tweet?text=${encodedText}`;
+        console.log('Generated link:', currentShareLink);
+
+        // Display the generated link and copy button
+        outputDiv.innerHTML = `
+          <p><strong>Generated Link:</strong></p>
+          <p><a href="${currentShareLink}" target="_blank">${currentShareLink}</a></p>
+          <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
+          <p id="copyMessage">Link copied to clipboard!</p>
+          <p id="errorMessage">Failed to copy link. Please copy it manually.</p>
+          <p>Click the link to publish the tweet!</p>
+        `;
+
+        // Ensure messages are hidden initially
+        document.getElementById('copyMessage').style.display = 'none';
+        document.getElementById('errorMessage').style.display = 'none';
+      } catch (err) {
+        console.error('Error generating link:', err);
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = `<p style="color: #dc3545;">Error generating link: ${err.message}. Please check inputs and try again.</p>`;
+      }
+    }
+
+    function copyToClipboard() {
+      try {
+        console.log('Attempting to copy link:', currentShareLink);
+        if (!currentShareLink) {
+          throw new Error('No link generated. Please generate a link first.');
+        }
+        navigator.clipboard.writeText(currentShareLink).then(() => {
+          console.log('Link copied successfully');
+          const copyMessage = document.getElementById('copyMessage');
+          const errorMessage = document.getElementById('errorMessage');
+          copyMessage.style.display = 'block';
+          errorMessage.style.display = 'none';
+          setTimeout(() => {
+            copyMessage.style.display = 'none';
+          }, 3000);
+        }).catch(err => {
+          throw err;
+        });
+      } catch (err) {
+        console.error('Error copying to clipboard:', err);
+        const copyMessage = document.getElementById('copyMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        copyMessage.style.display = 'none';
+        errorMessage.style.display = 'block';
+        errorMessage.textContent = `Failed to copy link: ${err.message}. Please copy it manually.`;
+      }
+    }
+
+    function resetForm() {
+      try {
+        // Clear input fields
+        document.getElementById('tweetText').value = '';
+        document.getElementById('url').value = '';
+        document.getElementById('hashtags').value = '';
+        document.getElementById('via').value = '';
+
+        // Clear output
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = '';
+
+        // Reset character counter and label color
+        const charCounter = document.getElementById('charCounter');
+        const tweetTextLabel = document.getElementById('tweetTextLabel');
+        charCounter.textContent = '0/280 characters';
+        charCounter.classList.remove('exceeded');
+        tweetTextLabel.classList.remove('exceeded');
+
+        // Clear current share link
+        currentShareLink = '';
+        console.log('Form reset');
+      } catch (err) {
+        console.error('Error resetting form:', err);
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = `<p style="color: #dc3545;">Error resetting form: ${err.message}.</p>`;
+      }
+    }
+
+    // Initialize character counter
+    updateCharCounter();
+  </script>
+</body>
+</html>
