@@ -3,6 +3,7 @@
 
 67 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [El universo todo confabula para que...](https://jucardus.github.io/contenido/e/l/u/el-universo-todo-confabula-para.html) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](https://jucardus.github.io/contenido/m/i/r/mira-hacia-arriba-para-idolatrar.html) - 25-04-28
 * [這是一棵樹。](https://jucardus.github.io/contenido/z/h/e/zhe4-shi2-yi1-ke1-shu4.html) - 25-04-28
 * [他 (他) [tā]](https://jucardus.github.io/contenido/t/a/1/ta1-20182.html) - 25-04-28
@@ -40,9 +41,8 @@
 * [Ego sum.](https://jucardus.github.io/contenido/e/g/o/ego-sum.html) - 25-04-28
 * [El recuerdo más puro es...](https://jucardus.github.io/contenido/e/l/r/el-recuerdo-mas-puro-es.html) - 25-04-28
 * [El relativismo dogmático te pone en la posición...](https://jucardus.github.io/contenido/e/l/r/el-relativismo-dogmatico-te-pone.html) - 25-04-28
-* [El universo todo confabula para que...](https://jucardus.github.io/contenido/e/u/n/el-universo-todo-confabula-para.html) - 25-04-28
 * [es](https://jucardus.github.io/contenido/e/s/m/es.html) - 25-04-28
-* [404 - Página inexistente](https://jucardus.github.io/404.html) - 25-04-28
+* [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Jucardus.com](https://jucardus.github.io/index.html) - 25-04-28
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
