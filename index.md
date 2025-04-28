@@ -10,14 +10,14 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Contenido
 
-* Actividad reciente
-* Diccionarios varios
-* Escritos varios
-* Fotografías
-* Frases desglosadas
-* Gramáticas
-* Índice alfabético
-* Programación básica
+* **Actividad reciente** - Con las entradas más recientes al inicio de la lista.
+* **Diccionarios varios** - Diccionario chino-español, latín-español, multilingüe, nombres bíblicos.
+* **Escritos varios** - Apotegmas, citas, reflexiones, poesía, cuentos.
+* **Fotografías** - Nada todavía.
+* **Frases desglosadas** - Análisis morfosintáctico y desglosamiento de frases chinas y latinas.
+* **Gramáticas** - Graḿatica latina, gramática china.
+* **Índice alfabético** - Todas las entradas del sitio en orden alfabético.
+* **Programación básica** - Bash, Google Script, JavaScript, HTML, CSS.
 
 ### Autor y contacto
 
