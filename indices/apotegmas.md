@@ -1,5 +1,5 @@
 # Apotegmas
-<sup>[Inicio](../index.md) · [Índice](../indices/escritos/md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Apotegmas%20en%20la%20seccion%20de%20Escritos%20de%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fapotegmas.html%0A%0A%23escrts_jucardus%20%23indcs_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../indices/escritos.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Apotegmas%20en%20la%20seccion%20de%20Escritos%20de%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fapotegmas.html%0A%0A%23escrts_jucardus%20%23indcs_jucardus%0A%40jucardus)</sup>
 
 Los apotegmas más recientes se muestran al inicio de la lista.
 
