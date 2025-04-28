@@ -26,7 +26,7 @@
 * [Ego sum.](https://jucardus.github.io/contenido/e/g/o/ego-sum.html) - 25-04-28
 * [El recuerdo más puro es...](https://jucardus.github.io/contenido/e/l/r/el-recuerdo-mas-puro-es.html) - 25-04-28
 * [El relativismo dogmático te pone en la posición...](https://jucardus.github.io/contenido/e/l/r/el-relativismo-dogmatico-te-pone.html) - 25-04-28
-* [El universo todo confabula para que...](https://jucardus.github.io/contenido/e/u/n/el-universo-todo-confabula-para.html) - 25-04-28
+* [El universo todo confabula para que...](https://jucardus.github.io/contenido/e/l/u/el-universo-todo-confabula-para.html) - 25-04-28
 * [es](https://jucardus.github.io/contenido/e/s/m/es.html) - 25-04-28
 * [Es sólo geopolítica bañada en chocolate...](https://jucardus.github.io/contenido/e/s/s/es-solo-geopolitica-banada-en.html) - 25-04-28
 * [Escritos varios](https://jucardus.github.io/indices/escritos.html) - 25-04-28
@@ -47,6 +47,7 @@
 * [La Verdad existe desde siempre, de modo que...](https://jucardus.github.io/contenido/l/a/v/la-verdad-existe-desde-siempre.html) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](https://jucardus.github.io/contenido/m/i/r/mira-hacia-arriba-para-idolatrar.html) - 25-04-28
 * [No hay forma de creer en Dios si no es...](https://jucardus.github.io/contenido/n/o/h/no-hay-forma-de-creer-en.html) - 25-04-28
+* [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Pronombres personales latinos](https://jucardus.github.io/contenido/p/r/o/pronombres-personales-latinos.html) - 25-04-28
 * [Puer cantat.](https://jucardus.github.io/contenido/p/u/e/puer-cantat.html) - 25-04-28
 * [Radicales chinos en inglés](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-ingles.html) - 25-04-28
