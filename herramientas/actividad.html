@@ -225,7 +225,7 @@
 
                 return {
                     heading: heading,
-                    url: `https://jucardus.github.io/${file.path}`,
+                    url: `https://jucardus.github.io/${file.path.replace('.md','.html')}`,
                     date: creationDate
                 };
             } catch (e) {
