@@ -1,0 +1,5 @@
+# Índice cronológico
+<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md#contenido) · [A-Z](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20cronol%C3%B3gico%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Fcontenido%2Findices%2Fcronologico.md%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
+
+* [2025](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/25.md)
+  * [25-04](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/25-04.md) - abril
