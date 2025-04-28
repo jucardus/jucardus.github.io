@@ -22,7 +22,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Contacto:** Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante _**jucardus en gmail punto com**_. También puedes usar el correo para hacer críticas, sugerencias y correcciones al contenido del sitio.
+* **Contacto:** Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [_**jucardus en gmail punto com**_](https://jucardus.github.io/#autor-y-contacto). También puedes usar el correo para hacer críticas, sugerencias y correcciones al contenido del sitio.
 
 ### Enlaces pertinentes
 
