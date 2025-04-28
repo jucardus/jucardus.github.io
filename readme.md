@@ -4,14 +4,14 @@
 
 ### Contenido
 
-* [Actividad reciente](https://github.com/jucardus.github.io/repo/blob/main/indices/actividad.md)
-* [Diccionarios todos](https://github.com/jucardus.github.io/repo/blob/main/indices/diccionarios.md)
-* [Escritos varios](https://github.com/jucardus.github.io/repo/blob/main/indices/escritos.md)
+* [Actividad reciente](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/actividad.md)
+* [Diccionarios todos](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/diccionarios.md)
+* [Escritos varios](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/escritos.md)
 * Fotografías
-* [Frases desglosadas](https://github.com/jucardus.github.io/repo/blob/main/indices/frases.md)
-* [Gramáticas](https://github.com/jucardus.github.io/repo/blob/main/indices/gramaticas.md)
-* [Índice alfabético](https://github.com/jucardus.github.io/repo/blob/main/indices/alfabetico.md)
-* [Índice cronológico](https://github.com/jucardus.github.io/repo/blob/main/indices/cronologico.md)
+* [Frases desglosadas](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/frases.md)
+* [Gramáticas](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/gramaticas.md)
+* [Índice alfabético](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/alfabetico.md)
+* [Índice cronológico](https://github.com/jucardus/jucardus.github.io/repo/blob/main/indices/cronologico.md)
 * Programación básica
 
 ### Autor y contacto
@@ -26,7 +26,7 @@
 * Invitación a pCloud: [u.pcloud.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
 * Música clásica: [@jucardus/playlists](https://www.youtube.com/@jucardus/playlists)
 * Pagos y donaciones: [paypal.me/jucardus](https://paypal.me/jucardus)
-* Repositorio: [github.com/jucardus.github.io/repo](https://github.com/jucardus.github.io/repo)
+* Repositorio: [github.com/jucardus/jucardus.github.io/repo](https://github.com/jucardus/jucardus.github.io/repo)
 * X Twitter: [x.com/jucardus](https://x.com/jucardus)
 
 &nbsp;
