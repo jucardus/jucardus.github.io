@@ -3,7 +3,7 @@
 
 Segunda persona singular del presente de indicativo del verbo [_esse_](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/23/esse.md): eres.
 
-### Frases desglosadas
+### Frases de ejemplo
 
 Las frases más recientes se muestran al inicio de la lista.
 
