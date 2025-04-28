@@ -1,4 +1,0 @@
-# La gente vive de eso, de mitos e historias...
-<sup>[Inicio](https://github.com/jucardus.github.io/repo/blob/main/readme.md) · [Índice](https://github.com/jucardus.github.io/repo/blob/main/indices/apotegmas.md) · [A-Z](https://github.com/jucardus.github.io/repo/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus.github.io/repo/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Apotegmas%20-%20La%20gente%20vive%20de%20eso%2C%20de%20mitos%20e%20historias...%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Fcontenido%2F25%2F04%2F23%2Fla-gente-vive-de-eso.md%0A%0A%23aptgms_jucardus%0A%40jucardus)</sup>
-
-La gente vive de eso, de mitos e historias, de los peces. Pero tú, junto con eso y para santificarlo, no pierdas la oportunidad de darles el Pan de Vida.
