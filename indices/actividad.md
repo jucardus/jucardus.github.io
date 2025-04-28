@@ -1,5 +1,5 @@
 # Actividad reciente
-<sup>[Inicio](https://jucardus.github.io) · Índice · [A-Z](https://jucardus.github.io/indices/alfabetico.html) · [Actividad](https://jucardus.github.io/indices/actividad.md) · Compartir</sup>
+<sup>[Inicio](https://jucardus.github.io) · Índice · [A-Z](https://jucardus.github.io/indices/alfabetico.html) · [Actividad](https://jucardus.github.io/indices/actividad.html) · Compartir</sup>
 
 67 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
