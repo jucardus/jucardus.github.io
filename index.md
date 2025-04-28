@@ -6,18 +6,17 @@
 
 ---
 
-> Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://jucardus.com), con [tr.ee/jucardus](https://tr.ee/jucardus) o también con [jucardus.github.io](https://jucardus.github.io). - Comparte este sitio en X Twitter clicando [AQUÍ](https://x.com/intent/tweet?text=Apotegmas%20%C2%B7%20Caracteres%20chinos%20%C2%B7%20Citas%20%C2%B7%20Cuentos%20%C2%B7%20Diario%20%C2%B7%20Enlaces%20%C2%B7%20Frases%20chinas%20%C2%B7%20Frases%20latinas%20%C2%B7%20Poes%C3%ADa%20%C2%B7%20Proverbios%20chinos%20%C2%B7%20Reflexiones%20%C2%B7%20Traducciones%20%C2%B7%20Vocabulario%20espa%C3%B1ol%20%C2%B7%20Vocabulario%20ingl%C3%A9s-espa%C3%B1ol%20%C2%B7%20Vocabulario%20multiling%C3%BCe%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fedit%2Fmain%2Freadme.md%0A%0A%40jucardus).
+> Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://jucardus.com), con [tr.ee/jucardus](https://tr.ee/jucardus) o también con [jucardus.github.io](https://jucardus.github.io). - Comparte este sitio en X Twitter clicando AQUÍ.
 
 ### Contenido
 
-* [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md)
-* [Diccionarios todos](https://github.com/jucardus/jucardus.github.io/blob/main/indices/diccionarios.md)
-* [Escritos varios](https://github.com/jucardus/jucardus.github.io/blob/main/indices/escritos.md)
+* Actividad reciente
+* Diccionarios varios
+* Escritos varios
 * Fotografías
-* [Frases desglosadas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/frases.md)
-* [Gramáticas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/gramaticas.md)
-* [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md)
-* [Índice cronológico](https://github.com/jucardus/jucardus.github.io/blob/main/indices/cronologico.md)
+* Frases desglosadas
+* Gramáticas
+* Índice alfabético
 * Programación básica
 
 ### Autor y contacto
