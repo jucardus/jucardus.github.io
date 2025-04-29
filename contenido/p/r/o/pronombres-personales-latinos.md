@@ -1,5 +1,5 @@
 # Pronombres personales latinos
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/gramatica-china.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Pronombres%20personales%20chinos%2C%20parte%20de%20la%20Gram%C3%A1tica%20china%2C%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fp%2Fr%2Fo%2Fpronombres-personales-latinos.html%0A%0A%23grmtc_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/gramatica-china.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Pronombres%20personales%20latinos%2C%20parte%20de%20la%20Gram%C3%A1tica%20latina%2C%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fp%2Fr%2Fo%2Fpronombres-personales-latinos.html%0A%0A%23grmtc_jucardus%0A%40jucardus)</sup>
 
 ### Primera persona, singular / plural
 
