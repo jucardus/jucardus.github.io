@@ -24,5 +24,5 @@
 
 * 这包是研磨好的咖啡。 [Zhè bāo shì yánmó hǎo de kāfēi.] → Esta bolsa es de café molido (listo para infusionar)."
 * 我想喝一杯咖啡。 [Wǒ xiǎng hē yī bēi kāfēi.] → Quiero beber una taza de café.
-* [你喜歡咖啡，是不是？](../../../../contenido/n/i/e/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
+* [你喜歡咖啡，是不是？](../../../../contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
 * 一杯咖啡。 [Yī bēi kāfēi.] → Una taza de café.
