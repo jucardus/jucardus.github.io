@@ -2,7 +2,7 @@
 
 * Sitio web: [jucardus.github.io](https://jucardus.github.io)
 * Autor y contaco: [Julio Cárdenas P.](https://jucardus.github.io/#autor-y-contacto)
-* Repositorio: [tr.ee/repo](https://tr.ee/repo)
+* Repositorio: [jucardus/jucardus.github.io](https://github.com/jucardus/jucardus.github.io)
 
 ### Temas del sitio
 
