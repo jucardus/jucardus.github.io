@@ -1,5 +1,5 @@
 # 喜歡 (喜欢) [xǐhuān]
-<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/chino-espanol-xi3.md) · [A-Z](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%E5%96%9C%E6%AD%A1%20(%E5%96%9C%E6%AC%A2)%20%5Bx%C7%90hu%C4%81n%5D%20en%20el%20Diccionario%20chino-espa%C3%B1ol%2C%20con%20notas%20gramaticales%2C%20frases%20de%20ejemplo%20y%20traducciones.%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Fcontenido%2F25%2F04%2F27%2Fxi3-huan1.md%0A%0A%23chn_espnl_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/chino-espanol-xi3.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%E5%96%9C%E6%AD%A1%20(%E5%96%9C%E6%AC%A2)%20%5Bx%C7%90hu%C4%81n%5D%20en%20el%20Diccionario%20chino-espa%C3%B1ol%2C%20con%20traducciones%2C%20frases%20de%20ejemplo%20y%20notas%20gramaticales.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fx%2Fi%2F3%2Fxi3-huan1.html%0A%0A%23chn_espnl_jucardus%0A%40jucardus)</sup>
 
 * 喜歡 se compone de 喜 (喜) [xǐ] 'feliz', 'dicha' y  歡 (欢) [huān] 'dichoso', 'complacido'.
 * Se usa antes del sustantivo o aquello que es disfrutado, gustado o preferido.
@@ -22,4 +22,4 @@
 * 我喜歡這本書。 [Wǒ xǐhuān zhè běn shū.] → Me gusta este libro.
 * 她喜歡唱歌。 [Tā xǐhuān chànggē.] → A ella le gusta cantar.
 * 你喜歡嗎？ [Nǐ xǐhuān ma?] → ¿Te gusta?
-* [你喜歡咖啡，是不是？](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/20/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
+* [你喜歡咖啡，是不是？](../../../../contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
