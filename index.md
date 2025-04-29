@@ -27,13 +27,13 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Enlaces pertinentes
 
-* Enlacista: [enlcs.github.io](https://enlcs.github.io)
-* Facebook: [jucardus.page](https://www.facebook.com/jucardus.page)
-* Invitación a pCloud: [u.pcloud.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
-* Música clásica: [@jucardus/playlists](https://www.youtube.com/@jucardus/playlists)
-* Pagos y donaciones: [paypal.me/jucardus](https://paypal.me/jucardus)
-* Repositorio: [jucardus/jucardus.github.io](https://github.com/jucardus/jucardus.github.io)
-* X Twitter: [x.com/jucardus](https://x.com/jucardus)
+* Enlacista: [e.jucardus.com](https://enlcs.github.io)
+* Facebook: [fb.jucardus.com](https://www.facebook.com/jucardus.page)
+* Invitación a pCloud: [i.jucardus.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
+* Música clásica: [m.jucardus.com](https://www.youtube.com/@jucardus/playlists)
+* Pagos y donaciones: [pp.jucardus.com](https://paypal.me/jucardus)
+* Repositorio: [r.jucardus.com](https://r.jucardus.com)
+* X Twitter: [x.jucardus.com](https://x.com/jucardus)
 
 &nbsp;
 
