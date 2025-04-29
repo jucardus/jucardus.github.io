@@ -1,7 +1,7 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-67 documentos en total. La actividad más reciente se muestra al inicio de la lista.
+66 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
 * [El universo todo confabula para que...](https://jucardus.github.io/contenido/e/l/u/el-universo-todo-confabula-para.html) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](https://jucardus.github.io/contenido/m/i/r/mira-hacia-arriba-para-idolatrar.html) - 25-04-28
@@ -55,7 +55,6 @@
 * [Diccionario chino-español - tā](https://jucardus.github.io/indices/chino-espanol-ta1.html) - 25-04-28
 * [Diccionario chino-español - xǐ](https://jucardus.github.io/indices/chino-espanol-xi3.html) - 25-04-28
 * [Diccionario chino-español](https://jucardus.github.io/indices/chino-espanol.html) - 25-04-28
-* [Índice cronológico](https://jucardus.github.io/indices/cronologico.html) - 25-04-28
 * [Diccionarios todos](https://jucardus.github.io/indices/diccionarios.html) - 25-04-28
 * [Escritos varios](https://jucardus.github.io/indices/escritos.html) - 25-04-28
 * [Frases chinas](https://jucardus.github.io/indices/frases-chinas.html) - 25-04-28
