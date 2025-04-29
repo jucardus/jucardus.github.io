@@ -1,5 +1,5 @@
 # Índice alfabético
-<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md#contenido) · [A-Z](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20las%20entradas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Findices%2Falfabetico.md%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
 67 documentos en total, ordenados alfabéticamente.
 
