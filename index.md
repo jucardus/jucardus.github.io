@@ -17,7 +17,7 @@
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Contacto:** Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [_jucardus en gmail punto com_](https://jucardus.github.io/#autor-y-contacto). También puedes usar el correo para hacer críticas, sugerencias y correcciones al contenido del sitio.
+* **Contacto:** Para el servicio de traducciones del inglés al español, pagas y gratuitas, contacta conmigo mediante [_jucardus en gmail punto com_](./index.md#autor-y-contacto). También puedes usar el correo para hacer críticas, sugerencias y correcciones al contenido del sitio.
 
 ### Enlaces pertinentes
 
