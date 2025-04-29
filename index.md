@@ -32,7 +32,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * Invitación a pCloud: [u.pcloud.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
 * Música clásica: [@jucardus/playlists](https://www.youtube.com/@jucardus/playlists)
 * Pagos y donaciones: [paypal.me/jucardus](https://paypal.me/jucardus)
-* Repositorio: [github.com/jucardus/repo](https://github.com/jucardus/repo)
+* Repositorio: [ucardus/jucardus.github.io](https://github.com/jucardus/jucardus.github.io)
 * X Twitter: [x.com/jucardus](https://x.com/jucardus)
 
 &nbsp;
