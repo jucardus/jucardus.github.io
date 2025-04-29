@@ -10,13 +10,13 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Contenido
 
-* **Actividad reciente** - Con las entradas nuevas al inicio de la lista.
-* **Diccionarios varios** - Diccionario chino-español, latín-español, multilingüe, nombres bíblicos.
-* **Escritos varios** - Apotegmas, citas, reflexiones, poesía, cuentos.
+* [**Actividad reciente**](./indices/actividad.md) - Con las entradas nuevas al inicio de la lista.
+* [**Diccionarios varios**](./indices/diccionarios.md) - Diccionario chino-español, latín-español, multilingüe, nombres bíblicos.
+* [**Escritos varios**](./indices/escritos.md) - Apotegmas, citas, reflexiones, poesía, cuentos.
 * **Fotografías** - Nada todavía.
-* **Frases desglosadas** - Análisis morfosintáctico y desglosamiento de frases chinas y latinas.
-* **Gramáticas** - Graḿatica latina, gramática china.
-* **Índice alfabético** - Todas las entradas del sitio en orden alfabético.
+* [**Frases desglosadas**](./indices/frases.md) - Análisis morfosintáctico y desglosamiento de frases chinas y latinas.
+* [**Gramáticas**](./indices/gramaticas.md) - Graḿatica latina, gramática china.
+* [**Índice alfabético**](./indices/alfabetico.md) - Todas las entradas del sitio en orden alfabético.
 * **Programación básica** - Bash, Google Script, JavaScript, HTML, CSS.
 
 ### Autor y contacto
