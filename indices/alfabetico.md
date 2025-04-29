@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-67 documentos en total, ordenados alfabéticamente.
+66 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
@@ -41,7 +41,6 @@
 * [Gramáticas](https://jucardus.github.io/indices/gramaticas.html) - 25-04-28
 * [Ille amat.](https://jucardus.github.io/contenido/i/l/l/ille-amat.html) - 25-04-28
 * [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html) - 25-04-28
-* [Índice cronológico](https://jucardus.github.io/indices/cronologico.html) - 25-04-28
 * [Jucardus.com](https://jucardus.github.io/index.html) - 25-04-28
 * [La gente vive de eso, de mitos e historias...](https://jucardus.github.io/contenido/l/a/g/la-gente-vive-de-eso.html) - 25-04-28
 * [La Verdad existe desde siempre, de modo que...](https://jucardus.github.io/contenido/l/a/v/la-verdad-existe-desde-siempre.html) - 25-04-28
