@@ -1,5 +1,5 @@
 # esse
-<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/latin-espanol-e.md) · [A-Z](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=El%20verbo%20latino%20%C2%ABesse%C2%BB%2C%20parte%20del%20Diccionario%20lat%C3%ADn-espa%C3%B1ol%20y%20de%20la%20Gram%C3%A1tica%20latina%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Fcontenido%2F25%2F04%2F23%2Fesse.md%0A%0A%23ltn_espnl_jucardus%20%23grmtc_ltn_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/latin-espanol-e.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=El%20verbo%20%C2%ABesse%C2%BB%20en%20el%20Diccionario%20lat%C3%ADn-espa%C3%B1ol%2C%20con%20traducciones%2C%20conjugaci%C3%B3n%20y%20frases%20de%20ejemplo.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fe%2Fs%2Fs%2Fesse.html%0A%0A%23ltn_espnl_jucardus%20%23grmtc_ltn_jucardus%0A%40jucardus)</sup>
 
 ## Verbo _esse_
 
@@ -11,7 +11,7 @@
   * Sunt dracones. → Los dragones existen. / Hay dragones.
   * Est mihi liber. → Hay un libro para mí.
 * ser
-  * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/24/ego-sum.md) → Yo soy.
+  * [Ego sum.](../../../../contenido/e/g/o/ego-sum.md) → Yo soy.
   * Ego sum discipulus. → Soy (un) estudiante.
   * Ego sum stultus. → Soy estulto. / Soy necio. / Soy tonto.
   * Ego sum qui sum. → Yo soy el que soy. / Yo soy aquel que es.
@@ -45,5 +45,5 @@
 
 Las frases más recientes se muestran al inicio de la lista.
 
-* [Tū es.](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/24/tu-es.md)
-* [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/contenido/25/04/24/ego-sum.md)
+* [Tū es.](../../../../contenido/t/u/e/tu-es.md)
+* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md)
