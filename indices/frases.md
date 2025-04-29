@@ -1,8 +1,8 @@
 # Frases desglozadas
-<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md#contenido) · [A-Z](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=An%C3%A1lisis%20morfosint%C3%A1ctico%20de%20frases%20latinas%20y%20desglosamiento%20de%20frases%20chinas%2C%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Frepo%2Fblob%2Fmain%2Findices%2Ffrases.md%0A%0A%23frss_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../main/index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Frases%20chinas%20y%20latinas%20desglosadas%2C%20con%20enlaces%20cruzados%20al%20vocabulario%2C%20notas%20gramaticales%20y%20m%C3%A1s.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Ffrases.html%0A%0A%23indcs_jucardus%20%23frss_jucardus%0A%40jucardus)</sup>
 
 Análisis morfosintáctico de frases latinas y desglosamiento de frases chinas.
 
-* [Frases chinas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/frases-chinas.md)
-* [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/frases-latinas.md)
-* [Frases multilingües](https://github.com/jucardus/jucardus.github.io/blob/main/indices/frases-multilingues.md)
+* [Frases chinas](../indices/frases-chinas.md)
+* [Frases latinas](../indices/frases-latinas.md)
+* [Frases multilingües](../indices/frases-multilingues.md)
