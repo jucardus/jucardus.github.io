@@ -18,6 +18,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * [**Gramáticas**](./indices/gramaticas.md) - Graḿatica latina, gramática china.
 * [**Índice alfabético**](./indices/alfabetico.md) - Todas las entradas del sitio en orden alfabético.
 * **Programación básica** - Bash, Google Script, JavaScript, HTML, CSS.
+* **Software** - Algunas herramientas que suelo usar.
 
 ### Autor y contacto
 
