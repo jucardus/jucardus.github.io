@@ -1,5 +1,5 @@
 # es
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/latin-espanol-e.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C2%ABes%C2%BB%2C%20segunda%20persona%20singular%20del%20presente%20de%20indicativo%20del%20verbo%20esse%2C%20en%20el%20Diccionario%20lat%C3%ADn-espa%C3%B1ol.%0A%E2%86%92%20%2Fcontenido%2Fe%2Fs%2Fm%2Fes.md%0A%0A%23ltn_espnl_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/latin-espanol-e.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C2%ABes%C2%BB%2C%20segunda%20persona%20singular%20del%20presente%20de%20indicativo%20del%20verbo%20esse%2C%20en%20el%20Diccionario%20lat%C3%ADn-espa%C3%B1ol.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fe%2Fs%2Fm%2Fes.html%0A%0A%23ltn_espnl_jucardus%0A%40jucardus)</sup>
 
 Segunda persona singular del presente de indicativo del verbo [_esse_](../../../../contenido/e/s/s/esse.md): eres.
 
