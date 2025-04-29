@@ -1,5 +1,5 @@
 # Frases multilingües
-<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/frases.md) · [A-Z](https://github.com/jucardus/jucardus.github.io/blob/main/indices/alfabetico.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · Compartir</sup>
+<sup>[Inicio](../index.md) · Índice · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · Compartir</sup>
 
 > **¡ATENCIÓN!** Subpágina en preparación.
 
