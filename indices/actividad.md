@@ -1,8 +1,9 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-66 documentos en total. La actividad más reciente se muestra al inicio de la lista.
+68 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [Radicales chinos en español](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-espanol.html) - 25-04-29
 * [El universo todo confabula para que...](https://jucardus.github.io/contenido/e/l/u/el-universo-todo-confabula-para.html) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](https://jucardus.github.io/contenido/m/i/r/mira-hacia-arriba-para-idolatrar.html) - 25-04-28
 * [這是一棵樹。](https://jucardus.github.io/contenido/z/h/e/zhe4-shi2-yi1-ke1-shu4.html) - 25-04-28
@@ -44,6 +45,7 @@
 * [es](https://jucardus.github.io/contenido/e/s/m/es.html) - 25-04-28
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Jucardus.com](https://jucardus.github.io/index.html) - 25-04-28
+* [Jucardus.com](https://jucardus.github.io/readme.html) - 25-04-28
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html) - 25-04-28
