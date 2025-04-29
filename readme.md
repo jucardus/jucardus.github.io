@@ -1,8 +1,8 @@
-# Jucardus.com
+# [Jucardus.com](https://jucardus.com)
 
 * Sitio web: [jucardus.github.io](https://jucardus.github.io)
 * Autor y contaco: [Julio Cárdenas P.](https://jucardus.github.io/#autor-y-contacto)
-* Repositorio: [jucardus/jucardus.github.io](https://github.com/jucardus/jucardus.github.io)
+* Repositorio: [r.jucardus.com](https://r.jucardus.com)
 
 ### Temas del sitio
 
