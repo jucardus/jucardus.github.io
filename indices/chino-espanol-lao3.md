@@ -8,4 +8,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _lǎo_
 
-> 佬咾姥恅栳狫痨硓老耂耢耮荖蛯銠铑
+> 佬 咾 姥 恅 栳 狫 痨 硓 老 耂 耢 耮 荖 蛯 銠 铑
