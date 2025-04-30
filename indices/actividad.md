@@ -47,7 +47,6 @@
 * [es](https://jucardus.github.io/contenido/e/s/m/es.html) - 25-04-28
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Jucardus.com](https://jucardus.github.io/index.html) - 25-04-28
-* [[Jucardus.com](https://jucardus.com)](https://jucardus.github.io/readme.html) - 25-04-28
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html) - 25-04-28
