@@ -8,12 +8,12 @@
 
 ### Formas alternativas
 
-* 可以嗎？ (可以吗？) [kěyǐ ma]
-* 好不好？ (好不好？) [hǎo bù hǎo]
-* 對吧？ (对吧？) [duì ba]
-* 對嗎？ (对吗？) [duì ma]
-* 是吧？ (是吧？) [shì ba]
-* 行不行？ (行不行？) [xíng bù xíng]
+* 可以嗎？ (可以吗？) [kěyǐ ma?]
+* 好不好？ (好不好？) [hǎo bù hǎo?]
+* 對吧？ (对吧？) [duì ba?]
+* 對嗎？ (对吗？) [duì ma?]
+* 是吧？ (是吧？) [shì ba?]
+* 行不行？ (行不行？) [xíng bù xíng?]
 
 ### Frases de ejemplo
 
