@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-70 documentos en total, ordenados alfabéticamente.
+72 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
@@ -14,6 +14,7 @@
 * [Diccionario chino-español - nǐ](https://jucardus.github.io/indices/chino-espanol-ni3.html) - 25-04-28
 * [Diccionario chino-español - shì](https://jucardus.github.io/indices/chino-espanol-shi4.html) - 25-04-28
 * [Diccionario chino-español - tā](https://jucardus.github.io/indices/chino-espanol-ta1.html) - 25-04-28
+* [Diccionario chino-español - tiān](https://jucardus.github.io/indices/chino-espanol-tian1.html) - 25-04-30
 * [Diccionario chino-español - xǐ](https://jucardus.github.io/indices/chino-espanol-xi3.html) - 25-04-28
 * [Diccionario latín-español](https://jucardus.github.io/indices/latin-espanol.html) - 25-04-28
 * [Diccionario latín-español - E](https://jucardus.github.io/indices/latin-espanol-e.html) - 25-04-28
@@ -52,6 +53,7 @@
 * [Puer cantat.](https://jucardus.github.io/contenido/p/u/e/puer-cantat.html) - 25-04-28
 * [Radicales chinos en español](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-espanol.html) - 25-04-29
 * [Radicales chinos en inglés](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-ingles.html) - 25-04-28
+* [Read Me](https://jucardus.github.io/readme.html) - 25-04-28
 * [Reflexiones](https://jucardus.github.io/indices/reflexiones.html) - 25-04-28
 * [Siempre que busques a Dios hacia...](https://jucardus.github.io/contenido/s/i/e/siempre-que-busques-a-dios.html) - 25-04-28
 * [Sin importar si tu tradición es de los hombres...](https://jucardus.github.io/contenido/s/i/n/sin-importar-si-tu-tradicion.html) - 25-04-28
@@ -66,9 +68,10 @@
 * [冷 (冷) [lěng]](https://jucardus.github.io/contenido/l/e/n/leng3-20919.html) - 25-04-29
 * [咖啡 (咖啡) [kāfēi]](https://jucardus.github.io/contenido/k/a/1/ka1-fei1.html) - 25-04-28
 * [喜歡 (喜欢) [xǐhuān]](https://jucardus.github.io/contenido/x/i/3/xi3-huan1.html) - 25-04-28
+* [天氣 (天气) [tiānqì]](https://jucardus.github.io/contenido/t/i/a/tian1-qi4.html) - 25-04-30
 * [天氣是冷。](https://jucardus.github.io/contenido/t/i/a/tian1-qi4-shi4-leng3.html) - 25-04-28
 * [我會說中文。](https://jucardus.github.io/contenido/w/o/3/wo3-hui4-shuo1-zhong1-wen2.html) - 25-04-28
 * [是 (是) [shì]](https://jucardus.github.io/contenido/s/h/i/shi4-26159.html) - 25-04-28
-* [是不是？ [shì bú shì]](https://jucardus.github.io/contenido/s/h/i/shi4-bu2-shi4.html) - 25-04-28
+* [是不是？ (是不是？) [shì bú shì?]](https://jucardus.github.io/contenido/s/h/i/shi4-bu2-shi4.html) - 25-04-28
 * [老師 (老师) [lǎoshī]](https://jucardus.github.io/contenido/l/a/o/lao3-shi1.html) - 25-04-28
 * [這是一棵樹。](https://jucardus.github.io/contenido/z/h/e/zhe4-shi2-yi1-ke1-shu4.html) - 25-04-28
