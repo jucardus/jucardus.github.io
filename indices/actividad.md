@@ -1,8 +1,10 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-70 documentos en total. La actividad más reciente se muestra al inicio de la lista.
+72 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [天氣 (天气) [tiānqì]](https://jucardus.github.io/contenido/t/i/a/tian1-qi4.html) - 25-04-30
+* [Diccionario chino-español - tiān](https://jucardus.github.io/indices/chino-espanol-tian1.html) - 25-04-30
 * [Diccionario chino-español - lěng](https://jucardus.github.io/indices/chino-espanol-leng3.html) - 25-04-29
 * [冷 (冷) [lěng]](https://jucardus.github.io/contenido/l/e/n/leng3-20919.html) - 25-04-29
 * [Radicales chinos en español](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-espanol.html) - 25-04-29
@@ -18,7 +20,7 @@
 * [天氣是冷。](https://jucardus.github.io/contenido/t/i/a/tian1-qi4-shi4-leng3.html) - 25-04-28
 * [我會說中文。](https://jucardus.github.io/contenido/w/o/3/wo3-hui4-shuo1-zhong1-wen2.html) - 25-04-28
 * [是 (是) [shì]](https://jucardus.github.io/contenido/s/h/i/shi4-26159.html) - 25-04-28
-* [是不是？ [shì bú shì]](https://jucardus.github.io/contenido/s/h/i/shi4-bu2-shi4.html) - 25-04-28
+* [是不是？ (是不是？) [shì bú shì?]](https://jucardus.github.io/contenido/s/h/i/shi4-bu2-shi4.html) - 25-04-28
 * [老師 (老师) [lǎoshī]](https://jucardus.github.io/contenido/l/a/o/lao3-shi1.html) - 25-04-28
 * [sum](https://jucardus.github.io/contenido/s/u/m/sum.html) - 25-04-28
 * [tū](https://jucardus.github.io/contenido/t/u/m/tu.html) - 25-04-28
@@ -47,6 +49,7 @@
 * [es](https://jucardus.github.io/contenido/e/s/m/es.html) - 25-04-28
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Jucardus.com](https://jucardus.github.io/index.html) - 25-04-28
+* [Read Me](https://jucardus.github.io/readme.html) - 25-04-28
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html) - 25-04-28
