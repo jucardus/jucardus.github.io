@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinyin Writer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .editor-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 100%;
+        }
+        #preview {
+            border: 1px solid #ccc;
+            min-height: 200px;
+            padding: 10px;
+            overflow: auto;
+            resize: vertical;
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        #html-input {
+            width: 100%;
+            min-height: 200px;
+            font-family: monospace;
+            padding: 10px;
+            border: 1px solid #ccc;
+            resize: vertical;
+            overflow: auto;
+            height: 200px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            width: 100%;
+            gap: 10px;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .status {
+            margin-top: 10px;
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            width: 100%;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .instructions {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4CAF50;
+        }
+        .instructions h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .instructions ul {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pinyin Writer</h1>
+
+    <!--div class="instructions">
+        <h2>How to use:</h2>
+        <ul>
+            <li>Type pinyin syllables followed by tone numbers (1-5)</li>
+            <li>Example: "ni3hao3" will become "nǐhǎo"</li>
+            <li>For ü with tones, use "v" (e.g., "nv3" becomes "nǚ")</li>
+            <li>Tone 5 (neutral tone) doesn't need a mark (or use 5)</li>
+            <li>For syllables without tone numbers, they'll remain unchanged</li>
+            <li>Supports multi-syllable words: "tian1qi1" → "tiānqī", "lao3shi1" → "lǎoshī"</li>
+        </ul>
+    </div-->
+
+    <div class="editor-container">
+        <div>Preview:</div>
+        <div id="preview"></div>
+
+        <div>Input Text:</div>
+        <textarea id="html-input" placeholder=""></textarea> <!--Type pinyin with tone numbers here (e.g. ni3hao3, tian1qi1, lao3shi1)...-->
+
+        <div class="button-container">
+            <button id="copy-button">Copy Text</button>
+            <button id="clear-button">Clear</button>
+        </div>
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        const preview = document.getElementById('preview');
+        const htmlInput = document.getElementById('html-input');
+        const copyButton = document.getElementById('copy-button');
+        const clearButton = document.getElementById('clear-button');
+        const status = document.getElementById('status');
+
+        // Pinyin tone mark rules
+        const pinyinTones = {
+            'a': ['ā', 'á', 'ǎ', 'à', 'a'],
+            'e': ['ē', 'é', 'ě', 'è', 'e'],
+            'i': ['ī', 'í', 'ǐ', 'ì', 'i'],
+            'o': ['ō', 'ó', 'ǒ', 'ò', 'o'],
+            'u': ['ū', 'ú', 'ǔ', 'ù', 'u'],
+            'v': ['ǖ', 'ǘ', 'ǚ', 'ǜ', 'ü'],
+            'A': ['Ā', 'Á', 'Ǎ', 'À', 'A'],
+            'E': ['Ē', 'É', 'Ě', 'È', 'E'],
+            'I': ['Ī', 'Í', 'Ǐ', 'Ì', 'I'],
+            'O': ['Ō', 'Ó', 'Ǒ', 'Ò', 'O'],
+            'U': ['Ū', 'Ú', 'Ǔ', 'Ù', 'U'],
+            'V': ['Ǖ', 'Ǘ', 'Ǚ', 'Ǜ', 'Ü']
+        };
+
+        // Function to add tone marks to pinyin
+        function addToneMarks(text) {
+            // First, split the text into segments of letters followed by optional tone numbers
+            const segments = text.split(/([a-zA-ZüÜ]+[1-5]?)/g);
+
+            // Process each segment
+            return segments.map(segment => {
+                // Check if this segment is a pinyin syllable with tone number
+                const match = segment.match(/^([a-zA-ZüÜ]+)([1-5])$/);
+                if (!match) return segment;
+
+                const syllable = match[1];
+                const toneNum = match[2];
+                const tone = parseInt(toneNum);
+
+                if (tone === 5) {
+                    return syllable; // Neutral tone (no mark)
+                }
+
+                // Replace 'ü' with 'v' for processing (if not already)
+                let processedSyllable = syllable.replace(/ü/g, 'v').replace(/Ü/g, 'V');
+
+                // Determine which vowel gets the tone mark
+                const vowelOrder = ['a', 'e', 'o', 'i', 'u', 'v', 'A', 'E', 'O', 'I', 'U', 'V'];
+                let vowelToMark = '';
+
+                // Check for each vowel in order of priority
+                for (const vowel of vowelOrder) {
+                    if (processedSyllable.includes(vowel)) {
+                        vowelToMark = vowel;
+                        break;
+                    }
+                }
+
+                // If no standard vowel found but has 'v' (for ü)
+                if (!vowelToMark && processedSyllable.includes('v')) {
+                    vowelToMark = 'v';
+                }
+
+                if (vowelToMark && pinyinTones[vowelToMark]) {
+                    const markedVowel = pinyinTones[vowelToMark][tone - 1];
+                    processedSyllable = processedSyllable.replace(vowelToMark, markedVowel);
+                }
+
+                // Convert 'v' back to 'ü' if needed
+                processedSyllable = processedSyllable.replace(/v/g, 'ü').replace(/V/g, 'Ü');
+
+                return processedSyllable;
+            }).join('');
+        }
+
+        // Update preview in real-time with tone marks
+        htmlInput.addEventListener('input', function() {
+            const processedText = addToneMarks(this.value);
+            preview.textContent = processedText;
+        });
+
+        // Copy text to clipboard with tone marks
+        copyButton.addEventListener('click', function() {
+            const textToCopy = addToneMarks(htmlInput.value);
+
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                status.textContent = 'Text with pinyin tones copied to clipboard!';
+                setTimeout(() => {
+                    status.textContent = '';
+                }, 2000);
+            }).catch(function(err) {
+                status.textContent = 'Failed to copy: ' + err;
+            });
+        });
+
+        // Clear button
+        clearButton.addEventListener('click', function() {
+            htmlInput.value = '';
+            preview.textContent = '';
+            status.textContent = 'Cleared!';
+            setTimeout(() => {
+                status.textContent = '';
+            }, 1000);
+        });
+
+        // Initialize with empty content
+        htmlInput.value = '';
+        preview.textContent = '';
+    </script>
+</body>
+</html>
