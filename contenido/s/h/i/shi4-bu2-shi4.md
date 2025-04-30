@@ -4,7 +4,7 @@
 * 是不是？ es una pregunta corta confirmativa, es decir, una pregunta retórica usada únicamente para confirmar algo en lugar de pedir detalles adicionales.
 * Se usa siempre al final de la frase y se traduce como '¿verdad?', '¿no es así?', '¿cierto?', '¿sí?'.
 * En cuanto a su pronunciación, el carácter intermedio 不 [bù] cambia a [bú] por preceder a un carácter en cuarto tono, en este caso 是 [shì].
-* 是不是？ figura como entrada en el [Diccionario chino-español - shì](../../../../indices/chino-espanol-shi4.md) y en la Gramática china.
+* 是不是？ figura como entrada en el [Diccionario chino-español - shì](../../../../indices/chino-espanol-shi4.md) y en la [Gramática china - Preguntas confirmativas](../../../../indices/gramatica-china.md#preguntas-confirmativas).
 
 ### Formas alternativas
 
