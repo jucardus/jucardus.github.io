@@ -11,7 +11,7 @@
 * [他 (他) [tā]](../../../../contenido/t/a/1/ta1-20182.md) él
 * [是 (是) [shì]](../../../../contenido/s/h/i/shi4-26159.md) ser
 * [老師 (老师) [lǎoshī]](../../../../contenido/l/a/o/lao3-shi1.md) profesor
-* [是不是 (是不是) [shì bú shì]](../../../../contenido/s/h/i/shi4-bu2-shi4.md) ¿no es así?
+* [是不是？ (是不是？) [shì bú shì?]](../../../../contenido/s/h/i/shi4-bu2-shi4.md) ¿no es así?
 
 ### Traducción multilingüe
 
