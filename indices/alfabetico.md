@@ -3,7 +3,6 @@
 
 70 documentos en total, ordenados alfabéticamente.
 
-* [[Jucardus.com](https://jucardus.com)](https://jucardus.github.io/readme.html) - 25-04-28
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
