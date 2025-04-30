@@ -1,8 +1,9 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-68 documentos en total, ordenados alfabéticamente.
+70 documentos en total, ordenados alfabéticamente.
 
+* [[Jucardus.com](https://jucardus.com)](https://jucardus.github.io/readme.html) - 25-04-28
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
@@ -10,6 +11,7 @@
 * [Diccionario chino-español](https://jucardus.github.io/indices/chino-espanol.html) - 25-04-28
 * [Diccionario chino-español - kā](https://jucardus.github.io/indices/chino-espanol-ka1.html) - 25-04-28
 * [Diccionario chino-español - lǎo](https://jucardus.github.io/indices/chino-espanol-lao3.html) - 25-04-28
+* [Diccionario chino-español - lěng](https://jucardus.github.io/indices/chino-espanol-leng3.html) - 25-04-29
 * [Diccionario chino-español - nǐ](https://jucardus.github.io/indices/chino-espanol-ni3.html) - 25-04-28
 * [Diccionario chino-español - shì](https://jucardus.github.io/indices/chino-espanol-shi4.html) - 25-04-28
 * [Diccionario chino-español - tā](https://jucardus.github.io/indices/chino-espanol-ta1.html) - 25-04-28
@@ -42,7 +44,6 @@
 * [Ille amat.](https://jucardus.github.io/contenido/i/l/l/ille-amat.html) - 25-04-28
 * [Índice alfabético](https://jucardus.github.io/indices/alfabetico.html) - 25-04-28
 * [Jucardus.com](https://jucardus.github.io/index.html) - 25-04-28
-* [Jucardus.com](https://jucardus.github.io/readme.html) - 25-04-28
 * [La gente vive de eso, de mitos e historias...](https://jucardus.github.io/contenido/l/a/g/la-gente-vive-de-eso.html) - 25-04-28
 * [La Verdad existe desde siempre, de modo que...](https://jucardus.github.io/contenido/l/a/v/la-verdad-existe-desde-siempre.html) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](https://jucardus.github.io/contenido/m/i/r/mira-hacia-arriba-para-idolatrar.html) - 25-04-28
@@ -63,6 +64,7 @@
 * [他是老師，是不是？](https://jucardus.github.io/contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.html) - 25-04-28
 * [你 (你) [nǐ]](https://jucardus.github.io/contenido/n/i/3/ni3-20320.html) - 25-04-28
 * [你喜歡咖啡，是不是？](https://jucardus.github.io/contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.html) - 25-04-28
+* [冷 (冷) [lěng]](https://jucardus.github.io/contenido/l/e/n/leng3-20919.html) - 25-04-29
 * [咖啡 (咖啡) [kāfēi]](https://jucardus.github.io/contenido/k/a/1/ka1-fei1.html) - 25-04-28
 * [喜歡 (喜欢) [xǐhuān]](https://jucardus.github.io/contenido/x/i/3/xi3-huan1.html) - 25-04-28
 * [天氣是冷。](https://jucardus.github.io/contenido/t/i/a/tian1-qi4-shi4-leng3.html) - 25-04-28
