@@ -13,7 +13,7 @@ La palabra 天氣 (天气) [tiānqì] se compone de 天 (天) [tiān] 'cielo' y 
 * 天氣預報 (天气预报) [tiānqì yùbào] pronóstico del clima
 * 晴天 (晴天) [qíngtiān] clima soleado
 * 雨天 (雨天) [yǔtiān] tiempo lluvioso
-* 雪天 (雪天) [xuětiān]  – tiempo nevado
+* 雪天 (雪天) [xuětiān] tiempo nevado
 
 ### Frases de ejemplo
 
