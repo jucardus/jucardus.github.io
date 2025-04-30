@@ -7,6 +7,7 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 | :----- | :------: | :------: | :------: | :------: | :------: |
 | **ka** | [kā](../indices/chino-espanol-ka1.md) | ká | kǎ | kà | ka |
 | **lao** | lāo | láo | [lǎo](../indices/chino-espanol-lao3.md) | lào | lao |
+| **le** | lē | lé | lě | lè | le |
 | **ni** | nī | ní | [nǐ](../indices/chino-espanol-ni3.md) | nì | ni |
 | **shi** | shī | shí | shǐ | [shì](../indices/chino-espanol-shi4.md) | shi |
 | **ta** | [tā](../indices/chino-espanol-ta1.md) | tá | tǎ | tà | ta |
