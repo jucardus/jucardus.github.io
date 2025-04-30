@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _kā_
 
-> 佧卡咔咖喀胩
+> 佧 卡 咔 咖 喀 胩
