@@ -4,7 +4,7 @@
 Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas con la sílaba _tiān_.
 
 * 天 (天) [tiān]
-* 天氣 (天气) [tiānqì]
+* [天氣 (天气) [tiānqì]](../contenido/t/i/a/tian1-qi4.md)
 
 ### Todos los caracteres _tiān_
 
