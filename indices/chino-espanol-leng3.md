@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _lěng_
 
-> 倰冷
+> 倰 冷
