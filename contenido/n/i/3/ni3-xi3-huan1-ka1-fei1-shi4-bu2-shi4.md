@@ -11,7 +11,7 @@
 * [你 (你) [nǐ]](../../../../contenido/n/i/3/ni3-20320.md) tú
 * [喜歡 (喜欢) [xǐhuān]](../../../../contenido/x/i/3/xi3-huan1.md) gustar
 * [咖啡 (咖啡) [kāfēi]](../../../../contenido/k/a/1/ka1-fei1.md) café
-* [是不是 [shì bú shì]](../../../../contenido/s/h/i/shi4-bu2-shi4.md) ¿verdad?
+* [是不是？ (是不是？) [shì bú shì?]](../../../../contenido/s/h/i/shi4-bu2-shi4.md) ¿verdad?
 
 ### Traducción multilingüe
 
