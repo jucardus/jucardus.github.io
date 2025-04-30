@@ -8,7 +8,7 @@
 
 ### Desglosamiento
 
-* 天氣 (天气) [tiānqì] clima, tiempo (clima)
+* [天氣 (天气) [tiānqì]](../../../../contenido/t/i/a/tian1-qi4.md) clima, tiempo (clima)
 * [是 (是) [shì]](../../../../contenido/s/h/i/shi4-26159.md) (adverbio aseverativo enfático: de veras, realmente, verdaderamente, sí que..., de veras que...)
 * [冷 (冷) [lěng]](../../../../contenido/l/e/n/leng3-20919.md) frío
 
