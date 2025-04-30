@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _xǐ_
 
-> 喜屣徙洗玺禧铣
+> 喜 屣 徙 洗 玺 禧 铣
