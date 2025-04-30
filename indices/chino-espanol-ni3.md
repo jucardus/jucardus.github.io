@@ -8,4 +8,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _nǐ_
 
-> 伱你儗拟旎柅薿
+> 伱 你 儗 拟 旎 柅 薿
