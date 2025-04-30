@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _tā_
 
-> 他塌塔她它榙溻牠祂褟趿蹹遢鉈铊铪阘靸鰨鳎
+> 他 塌 塔 她 它 榙 溻 牠 祂 褟 趿 蹹 遢 鉈 铊 铪 阘 靸 鰨 鳎
