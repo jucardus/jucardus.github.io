@@ -14,10 +14,10 @@
 
 ### Traducción multilingüe
 
-* AL. Das Wetter ist kalt.
-* FR. Il fait froid.
-* IN. It's cold.
-* IT. Fa freddo.
+* AL. Das Wetter ist wirklich kalt.
+* FR. Il fait vraiment froid. [il fɛ vʁɛmɑ̃ fʁwa]
+* IN. It's really cold.
+* IT. Fa davvero freddo. [fa davˈvɛːro ˈfreddo]
 * LA. Tempestas ipsa frigida est. [ˈt̪ɛm.pɛs.t̪aːs ˈɪp.sa ˈfrɪ.ɡɪ.d̪a ɛst̪]
 * LA. Frigida est tempestas! [ˈfrɪ.ɡɪ.d̪a ɛst̪ t̪ɛmˈpɛs.t̪aːs]
 * LA. Tempestas vere frigida est. [t̪ɛmˈpɛs.t̪aːs ˈwɛ.rɛ ˈfrɪ.ɡɪ.d̪a ɛst̪]
