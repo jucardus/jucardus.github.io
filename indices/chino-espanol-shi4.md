@@ -4,7 +4,7 @@
 Entradas del _Diccionario chino-español_ iniciadas con la sílaba _shì_.
 
 * [是 (是) [shì]](../contenido/s/h/i/shi4-26159.md)
-* [是不是？ (是不是？) [shì bú shì]](../contenido/s/h/i/shi4-bu2-shi4.md)
+* [是不是？ (是不是？) [shì bú shì?]](../contenido/s/h/i/shi4-bu2-shi4.md)
 
 ### Todos los caracteres _shì_
 
