@@ -3,7 +3,7 @@
 
 Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas con la sílaba _lěng_.
 
-* 冷 (冷) [lěng]
+* [冷 (冷) [lěng]](../contenido/l/e/n/leng3-20919.md)
 
 ### Todos los caracteres _lěng_
 
