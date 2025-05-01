@@ -8,6 +8,7 @@
 ### Clasificadores chinos
 
 * 杯 [bēi]
+* [棵 (棵) [kē]](../contenido/k/e/1/ke1-26869.md)
 
 ### Preguntas confirmativas
 
