@@ -6,6 +6,7 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 | Sílaba | 1er tono | 2do tono | 3er tono | 4to tono | 5to tono |
 | :----- | :------: | :------: | :------: | :------: | :------: |
 | **ka** | [kā](../indices/chino-espanol-ka1.md) | ká | kǎ | kà | ka |
+| **ke** | [kē](../indices/chino-espanol-ke1.md) | ké | kě | kè | ke |
 | **lao** | lāo | láo | [lǎo](../indices/chino-espanol-lao3.md) | lào | lao |
 | **leng** | lēng | léng | [lěng](../indices/chino-espanol-leng3.md) | lèng | leng |
 | **ni** | nī | ní | [nǐ](../indices/chino-espanol-ni3.md) | nì | ni |
