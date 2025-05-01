@@ -3,7 +3,7 @@
 
 Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas con la sílaba _shù_.
 
-* 樹 (树) [shù]
+* [樹 (树) [shù]](../contenido/s/h/u/shu4-27193.md)
 
 ### Todos los caracteres _shù_
 
