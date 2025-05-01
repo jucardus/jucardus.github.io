@@ -10,6 +10,7 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 | **leng** | lēng | léng | [lěng](../indices/chino-espanol-leng3.md) | lèng | leng |
 | **ni** | nī | ní | [nǐ](../indices/chino-espanol-ni3.md) | nì | ni |
 | **shi** | shī | shí | shǐ | [shì](../indices/chino-espanol-shi4.md) | shi |
+| **shu** | shu1 | shu2 | shu3 | shu4 | shu5 |
 | **ta** | [tā](../indices/chino-espanol-ta1.md) | tá | tǎ | tà | ta |
 | **tian** | [tiān](../indices/chino-espanol-tian1.md) | tián | tiǎn | tiàn | tian |
 | **xi** | xī | xí | [xǐ](../indices/chino-espanol-xi3.md) | xì | xi |
