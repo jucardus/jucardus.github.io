@@ -3,7 +3,7 @@
 
 Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas con la sílaba _kē_.
 
-* 棵 (棵) [kē]
+* [棵 (棵) [kē]](../contenido/k/e/1/ke1-26869.md)
 
 ### Todos los caracteres _kē_
 
