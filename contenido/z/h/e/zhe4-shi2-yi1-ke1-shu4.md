@@ -12,7 +12,7 @@
 * [是 (是) [shì]](../../../../contenido/s/h/i/shi4-26159.md) ser
 * 一 (一) [yī] uno; un, una
 * 棵 (棵) [kē] (clasificador para árboles y plantas)
-* 樹 (树) [shù] árbol
+* [樹 (树) [shù]](../../../../contenido/s/h/u/shu4-27193.md) árbol
 
 ### Traducción multilingüe
 
