@@ -3,7 +3,7 @@
 
 > **¡ATENCIÓN!** Los radicales están en proceso de corrección y traducción.
 
-Los significados en algunos casos son traducciones de los caracteres chinos, en otros los sentidos en los cuales son usados en la composición, y también una suma de ambos. Esto para dar una idea mejor de su función como radicales.
+Los significados en algunos casos son traducciones de los caracteres chinos, en otros los sentidos en los cuales son usados en la composición, y también una suma de ambos, con el fin de dar una idea mejor de su función como radicales.
 
 | Número | Radical | Variantes | Pinyin | Significado |
 |:-------|:--------|:----------|:-------|:------------|
