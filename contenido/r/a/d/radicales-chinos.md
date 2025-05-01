@@ -1,5 +1,5 @@
 # Radicales chinos en español
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/gramatica-china.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Todos%20los%20radicales%20chinos%20traducidos%20al%20espa%C3%B1ol%2C%20con%20formas%20alternativas%20y%20simplificadas.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fr%2Fa%2Fd%2Fradicales-chinos-espanol.html%0A%0A%23grmtc_chn_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/gramatica-china.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Todos%20los%20radicales%20chinos%20traducidos%20al%20espa%C3%B1ol%2C%20con%20formas%20alternativas%20y%20simplificadas.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fr%2Fa%2Fd%2Fradicales-chinos.html%0A%0A%23grmtc_chn_jucardus%0A%40jucardus)</sup>
 
 > **¡ATENCIÓN!** Los radicales están en proceso de corrección y traducción.
 
