@@ -1,4 +1,4 @@
-# Radicales chinos en español
+# Radicales chinos
 <sup>[Inicio](../index.md) · [Índice](../indices/gramatica-china.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · Compartir</sup>
 
 > **¡ATENCIÓN!** Los radicales están en proceso de corrección y traducción.
