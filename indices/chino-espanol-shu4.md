@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _shù_
 
-> caracteres
+> 墅 尌 庶 怷 恕 戍 數 束 树 樹 沭 漱 澍 竖 竪 腧 裋 豎 述 鉥 鏣
