@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-72 documentos en total, ordenados alfabéticamente.
+76 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
@@ -9,10 +9,12 @@
 * [Cuando aliño mis alimentos con un pesto...](https://jucardus.github.io/contenido/c/u/a/cuando-alino-mis-alimentos-con.html) - 25-04-28
 * [Diccionario chino-español](https://jucardus.github.io/indices/chino-espanol.html) - 25-04-28
 * [Diccionario chino-español - kā](https://jucardus.github.io/indices/chino-espanol-ka1.html) - 25-04-28
+* [Diccionario chino-español - kē](https://jucardus.github.io/indices/chino-espanol-ke1.html) - 25-05-01
 * [Diccionario chino-español - lǎo](https://jucardus.github.io/indices/chino-espanol-lao3.html) - 25-04-28
 * [Diccionario chino-español - lěng](https://jucardus.github.io/indices/chino-espanol-leng3.html) - 25-04-29
 * [Diccionario chino-español - nǐ](https://jucardus.github.io/indices/chino-espanol-ni3.html) - 25-04-28
 * [Diccionario chino-español - shì](https://jucardus.github.io/indices/chino-espanol-shi4.html) - 25-04-28
+* [Diccionario chino-español - shù](https://jucardus.github.io/indices/chino-espanol-shu4.html) - 25-05-01
 * [Diccionario chino-español - tā](https://jucardus.github.io/indices/chino-espanol-ta1.html) - 25-04-28
 * [Diccionario chino-español - tiān](https://jucardus.github.io/indices/chino-espanol-tian1.html) - 25-04-30
 * [Diccionario chino-español - xǐ](https://jucardus.github.io/indices/chino-espanol-xi3.html) - 25-04-28
@@ -51,7 +53,7 @@
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Pronombres personales latinos](https://jucardus.github.io/contenido/p/r/o/pronombres-personales-latinos.html) - 25-04-28
 * [Puer cantat.](https://jucardus.github.io/contenido/p/u/e/puer-cantat.html) - 25-04-28
-* [Radicales chinos en español](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-espanol.html) - 25-04-29
+* [Radicales chinos](https://jucardus.github.io/indices/radicales-chinos.html) - 25-05-01
 * [Radicales chinos en inglés](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-ingles.html) - 25-04-28
 * [Read Me](https://jucardus.github.io/readme.html) - 25-04-28
 * [Reflexiones](https://jucardus.github.io/indices/reflexiones.html) - 25-04-28
@@ -73,5 +75,7 @@
 * [我會說中文。](https://jucardus.github.io/contenido/w/o/3/wo3-hui4-shuo1-zhong1-wen2.html) - 25-04-28
 * [是 (是) [shì]](https://jucardus.github.io/contenido/s/h/i/shi4-26159.html) - 25-04-28
 * [是不是？ (是不是？) [shì bú shì?]](https://jucardus.github.io/contenido/s/h/i/shi4-bu2-shi4.html) - 25-04-28
+* [棵 (棵) [kē]](https://jucardus.github.io/contenido/k/e/1/ke1-26869.html) - 25-05-01
+* [樹 (树) [shù]](https://jucardus.github.io/contenido/s/h/u/shu4-27193.html) - 25-05-01
 * [老師 (老师) [lǎoshī]](https://jucardus.github.io/contenido/l/a/o/lao3-shi1.html) - 25-04-28
 * [這是一棵樹。](https://jucardus.github.io/contenido/z/h/e/zhe4-shi2-yi1-ke1-shu4.html) - 25-04-28
