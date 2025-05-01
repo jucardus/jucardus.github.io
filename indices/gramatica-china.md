@@ -21,5 +21,5 @@
 
 ### Radicales chinos
 
-* [Radicales chinos](../contenido/r/a/d/radicales-chinos.md)
+* [Radicales chinos](../indices/radicales-chinos.md)
 * [Radicales chinos en inglés](../contenido/r/a/d/radicales-chinos-ingles.md)
