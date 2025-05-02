@@ -15,10 +15,6 @@
 
 ### Frases de ejemplo
 
-* 喜歡吃 [xǐhuān chī] → gustar comer
-* 喜歡玩 [xǐhuān wán] → gustar jugar
-* 非常喜歡 [fēicháng xǐhuān] → realmente gustar (de)
-* 喜歡一個人 [xǐhuān yīgè rén] → gustar de alguien (románticamente
 * 我喜歡這本書。 [Wǒ xǐhuān zhè běn shū.] → Me gusta este libro.
 * 她喜歡唱歌。 [Tā xǐhuān chànggē.] → A ella le gusta cantar.
 * 你喜歡嗎？ [Nǐ xǐhuān ma?] → ¿Te gusta?
