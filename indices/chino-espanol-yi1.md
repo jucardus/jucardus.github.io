@@ -1,10 +1,10 @@
 # Diccionario chino-español - yī
-<sup>[Inicio](../index.md) · [Índice](../indices/chino-espanol.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · Compartir</sup>
+<sup>[Inicio](../index.md) · [Índice](../indices/chino-espanol.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Entradas%20del%20Diccionario%20chino-espa%C3%B1ol%20iniciadas%20en%20%C2%ABy%C4%AB%C2%BB.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fchino-espanol-yi1.html%0A%0A%23indcs_jucardus%20%23chn_espnl_jucardus%0A%40jucardus)</sup>
 
 Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas con la sílaba _yī_.
 
-* a
+* 一 (一) [yī]
 
 ### Todos los caracteres _yī_
 
-> caracteres
+> 一 乊 伊 依 医 吚 咿 噫 壱 壹 夁 嫛 嬄 弌 悘 悥 揖 攲 椅 欹 毉 洢 渏 漪 瑿 祎 禕 稦 繄 蛜 衣 袆 譩 銥 铱 鷖 鹥 黟 
