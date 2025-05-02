@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas
 
 ### Todos los caracteres _kē_
 
-> 匼 苛 珂 科 轲 疴 蚵 棵 颏 嗑 嵙 稞 窠 锞 榼 薖 颗 髁 瞌 磕 蝌 醘 顆
+> 匼 嗑 嵙 棵 榼 珂 疴 瞌 磕 科 稞 窠 苛 薖 蚵 蝌 轲 醘 锞 顆 颏 颗 髁
