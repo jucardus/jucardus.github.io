@@ -3,7 +3,7 @@
 
 Entradas del [Diccionario chino-español](../indices/chino-espanol.md) iniciadas con la sílaba _yī_.
 
-* 一 (一) [yī]
+* [一 (一) [yī]](../contenido/y/i/1/yi1-19968.md)
 
 ### Todos los caracteres _yī_
 
