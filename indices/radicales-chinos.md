@@ -7,7 +7,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 
 | Número | Radical | Variantes | Pinyin | Significado |
 |:-------|:--------|:----------|:-------|:------------|
-| 001 | 一 | | yī | uno |
+| [001](../indices/radical-001.md) | 一 | | yī | uno |
 | 002 | 丨 | | gǔn | línea |
 | 003 | 丶 | | zhǔ | punto |
 | 004 | 丿 | | piě | (línea oblicua) |
