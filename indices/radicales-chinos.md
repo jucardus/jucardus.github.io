@@ -81,7 +81,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 | 072 | 日 | | rì | sun |
 | 073 | 曰 | | yuē | say |
 | 074 | 月 | | yuè | moon |
-| 075 | 木 | | mù | tree |
+| [075](../indices/radical-075.md) | 木 | | mù | árbol |
 | 076 | 欠 | | qiàn | lack |
 | 077 | 止 | | zhǐ | stop |
 | 078 | 歹 | | dǎi | death |
