@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-77 documentos en total, ordenados alfabéticamente.
+80 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
@@ -18,6 +18,7 @@
 * [Diccionario chino-español - tā](https://jucardus.github.io/indices/chino-espanol-ta1.html) - 25-04-28
 * [Diccionario chino-español - tiān](https://jucardus.github.io/indices/chino-espanol-tian1.html) - 25-04-30
 * [Diccionario chino-español - xǐ](https://jucardus.github.io/indices/chino-espanol-xi3.html) - 25-04-28
+* [Diccionario chino-español - yī](https://jucardus.github.io/indices/chino-espanol-yi1.html) - 25-05-02
 * [Diccionario latín-español](https://jucardus.github.io/indices/latin-espanol.html) - 25-04-28
 * [Diccionario latín-español - E](https://jucardus.github.io/indices/latin-espanol-e.html) - 25-04-28
 * [Diccionario latín-español - S](https://jucardus.github.io/indices/latin-espanol-s.html) - 25-04-28
@@ -53,6 +54,7 @@
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Pronombres personales latinos](https://jucardus.github.io/contenido/p/r/o/pronombres-personales-latinos.html) - 25-04-28
 * [Puer cantat.](https://jucardus.github.io/contenido/p/u/e/puer-cantat.html) - 25-04-28
+* [Radical 1 一 [yī]](https://jucardus.github.io/indices/radical-001.html) - 25-05-02
 * [Radical 75 木 [mù]](https://jucardus.github.io/indices/radical-075.html) - 25-05-01
 * [Radicales chinos](https://jucardus.github.io/indices/radicales-chinos.html) - 25-05-01
 * [Radicales chinos en inglés](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-ingles.html) - 25-04-28
@@ -64,6 +66,7 @@
 * [tū](https://jucardus.github.io/contenido/t/u/m/tu.html) - 25-04-28
 * [Tū amās.](https://jucardus.github.io/contenido/t/u/a/tu-amas.html) - 25-04-28
 * [Tū es.](https://jucardus.github.io/contenido/t/u/e/tu-es.html) - 25-04-28
+* [一 (一) [yī]](https://jucardus.github.io/contenido/y/i/1/yi1-19968.html) - 25-05-02
 * [他 (他) [tā]](https://jucardus.github.io/contenido/t/a/1/ta1-20182.html) - 25-04-28
 * [他是老師，是不是？](https://jucardus.github.io/contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.html) - 25-04-28
 * [你 (你) [nǐ]](https://jucardus.github.io/contenido/n/i/3/ni3-20320.html) - 25-04-28
