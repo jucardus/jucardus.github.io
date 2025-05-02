@@ -4,7 +4,7 @@
 Las frases chinas más recientes se muestran al inicio de la lista. Todas cuentan con las formas tradicionales y simplificadas, transliteración pinyin, traducción al español, desglosamiento, gramática y traducciones multilingües.
 
 * [我會說中文。](../contenido/w/o/3/wo3-hui4-shuo1-zhong1-wen2.md) → Puedo hablar chino.
-* [這是一棵樹。](../contenido/z/h/e/zhe4-shi2-yi1-ke1-shu4.md) → Esto es un árbol.
+* [這是一棵樹。](../contenido/z/h/e/zhe4-shi4-yi1-ke1-shu4.md) → Esto es un árbol.
 * [天氣是冷。](../contenido/t/i/a/tian1-qi4-shi4-leng3.md) → Sí que hace frío.
 * [他是老師，是不是？](../contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.md) → Él es profesor, ¿no es así?
 * [你喜歡咖啡，是不是？](../contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
