@@ -6,9 +6,7 @@
 
 * [**Actividad reciente**](./indices/actividad.md) - Con las entradas nuevas al inicio de la lista.
 * [**Diccionarios todos**](./indices/diccionarios.md) - Diccionario chino-español, latín-español, multilingüe, nombres bíblicos.
-* **Enlaces muchos** - Hipervínculos de interés.
 * [**Escritos varios**](./indices/escritos.md) - Apotegmas, citas, reflexiones, poesía, cuentos.
-* **Fotografías** - Nada todavía.
 * [**Frases desglosadas**](./indices/frases.md) - Análisis morfosintáctico y desglosamiento de frases chinas y latinas.
 * [**Gramáticas**](./indices/gramaticas.md) - Graḿatica latina, gramática china.
 * **Herramientas web** - Algunas herramientas que suelo usar.
