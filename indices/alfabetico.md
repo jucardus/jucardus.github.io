@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-76 documentos en total, ordenados alfabéticamente.
+77 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
@@ -53,6 +53,7 @@
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
 * [Pronombres personales latinos](https://jucardus.github.io/contenido/p/r/o/pronombres-personales-latinos.html) - 25-04-28
 * [Puer cantat.](https://jucardus.github.io/contenido/p/u/e/puer-cantat.html) - 25-04-28
+* [Radical 75 木 [mù]](https://jucardus.github.io/indices/radical-075.html) - 25-05-01
 * [Radicales chinos](https://jucardus.github.io/indices/radicales-chinos.html) - 25-05-01
 * [Radicales chinos en inglés](https://jucardus.github.io/contenido/r/a/d/radicales-chinos-ingles.html) - 25-04-28
 * [Read Me](https://jucardus.github.io/readme.html) - 25-04-28
@@ -78,4 +79,4 @@
 * [棵 (棵) [kē]](https://jucardus.github.io/contenido/k/e/1/ke1-26869.html) - 25-05-01
 * [樹 (树) [shù]](https://jucardus.github.io/contenido/s/h/u/shu4-27193.html) - 25-05-01
 * [老師 (老师) [lǎoshī]](https://jucardus.github.io/contenido/l/a/o/lao3-shi1.html) - 25-04-28
-* [這是一棵樹。](https://jucardus.github.io/contenido/z/h/e/zhe4-shi2-yi1-ke1-shu4.html) - 25-04-28
+* [這是一棵樹。](https://jucardus.github.io/contenido/z/h/e/zhe4-shi4-yi1-ke1-shu4.html) - 25-05-02
