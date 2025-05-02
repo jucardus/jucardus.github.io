@@ -3,6 +3,7 @@
 
 ### Caracteres incluidos
 
+* 木 (木) [mù]
 * [棵 (棵) [kē]](../contenido/k/e/1/ke1-26869.md)
 
 ### Todos los caracteres del radical 木
