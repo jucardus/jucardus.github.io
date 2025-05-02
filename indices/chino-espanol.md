@@ -15,3 +15,4 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 | **ta** | [tā](../indices/chino-espanol-ta1.md) | tá | tǎ | tà | ta |
 | **tian** | [tiān](../indices/chino-espanol-tian1.md) | tián | tiǎn | tiàn | tian |
 | **xi** | xī | xí | [xǐ](../indices/chino-espanol-xi3.md) | xì | xi |
+| **yi** | [yī](../indices/chino-espanol-yi1.md) | yí | yǐ | yì | yi |
