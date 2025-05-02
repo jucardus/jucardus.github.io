@@ -1,7 +1,7 @@
 # Radical 75 木 [mù]
 <sup>[Inicio](../index.md) · [Índice](../indices/radicales-chinos.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Todos%20los%20caracteres%20derivados%20del%20Radical%2075%20%E6%9C%A8%20%5Bm%C3%B9%5D.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fradical-075.html%0A%0A%23indcs_jucardus%20%23grmtc_chn_jucardus%0A%40jucardus)</sup>
 
-El radical 木 [mù] 'árbol', 'madera', es también el primero de los Cinco Elementos (五行 [wǔ xíng], representando crecimiento, flexibilidad y naturaleza. Entre los caracteres derivados se incluyen muchos con significados relacionados a la naturaleza, a herramientas y a la construcción.
+El radical 木 [mù] 'árbol', 'madera', es también el primero de los Cinco Elementos (五行 [wǔ xíng]), representando crecimiento, flexibilidad y naturaleza. Entre los caracteres derivados se incluyen muchos con significados relacionados a la naturaleza, a herramientas y a la construcción.
 
 ### Caracteres incluidos
 
