@@ -7,6 +7,7 @@ El radical 木 [mù] 'árbol', 'madera', es también el primero de los Cinco Ele
 
 * 木 (木) [mù]
 * [棵 (棵) [kē]](../contenido/k/e/1/ke1-26869.md)
+* [樹 (树) [shù]](../contenido/s/h/u/shu4-27193.md)
 
 ### Todos los caracteres del radical 木
 
