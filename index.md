@@ -11,7 +11,7 @@
 * [**Gramáticas**](./indices/gramaticas.md) - Graḿatica latina, gramática china.
 * **Herramientas web** - Algunas herramientas que suelo usar.
 * [**Índice alfabético**](./indices/alfabetico.md) - Todas las entradas del sitio en orden alfabético.
-* [**Programación básica**](../indices/programacion.md) - Bash, Google Script, JavaScript, HTML, CSS.
+* [**Programación básica**](./indices/programacion.md) - Bash, Google Script, JavaScript, HTML, CSS.
 * **Traducciones al español** - Textos ingleses y franceces traducidos al español.
 
 ### Autor y contacto
