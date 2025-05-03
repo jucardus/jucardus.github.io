@@ -28,13 +28,3 @@
 * Pagos y donaciones: [pp.jucardus.com](https://paypal.me/jucardus)
 * Repositorio: [r.jucardus.com](https://r.jucardus.com)
 * X Twitter: [x.jucardus.com](https://x.com/jucardus)
-
-&nbsp;
-
-<p align="center">
-  <img
-    alt="QR Code Jucardus"
-    src="https://i.postimg.cc/25xL80sg/qr-https-jucardus-com.png"
-    width="85px"
-    />
-</p>
