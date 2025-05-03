@@ -1,10 +1,14 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-80 documentos en total, ordenados alfabéticamente.
+85 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](https://jucardus.github.io/indices/actividad.html) - 25-04-28
+* [Actualización de Google Chrome con Bash](https://jucardus.github.io/contenido/a/c/t/actualizacion-de-google-chrome-con-bash.html) - 25-05-03
+* [Actualización de Linux Mint con Bash](https://jucardus.github.io/contenido/a/c/t/actualizacion-de-linux-mint-con-bash.html) - 25-05-03
+* [Actualización del navegador Brave con Bash](https://jucardus.github.io/contenido/a/c/t/actualizacion-del-navegador-brave-con-bash.html) - 25-05-03
 * [Apotegmas](https://jucardus.github.io/indices/apotegmas.html) - 25-04-28
+* [Bash - Bourne-Again Shell](https://jucardus.github.io/indices/bash.html) - 25-05-03
 * [Contenido del sitio](https://jucardus.github.io/contenido/contenido.html) - 25-04-28
 * [Cuando aliño mis alimentos con un pesto...](https://jucardus.github.io/contenido/c/u/a/cuando-alino-mis-alimentos-con.html) - 25-04-28
 * [Diccionario chino-español](https://jucardus.github.io/indices/chino-espanol.html) - 25-04-28
@@ -52,6 +56,7 @@
 * [Mira hacia arriba para idolatrar, mira...](https://jucardus.github.io/contenido/m/i/r/mira-hacia-arriba-para-idolatrar.html) - 25-04-28
 * [No hay forma de creer en Dios si no es...](https://jucardus.github.io/contenido/n/o/h/no-hay-forma-de-creer-en.html) - 25-04-28
 * [Página inexistente - 404](https://jucardus.github.io/404.html) - 25-04-28
+* [Programación básica](https://jucardus.github.io/indices/programacion.html) - 25-05-03
 * [Pronombres personales latinos](https://jucardus.github.io/contenido/p/r/o/pronombres-personales-latinos.html) - 25-04-28
 * [Puer cantat.](https://jucardus.github.io/contenido/p/u/e/puer-cantat.html) - 25-04-28
 * [Radical 1 一 [yī]](https://jucardus.github.io/indices/radical-001.html) - 25-05-02
