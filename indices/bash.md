@@ -4,7 +4,7 @@
 Líneas básicas de programación para Bash.
 
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md)
-* Actualización de Linux Mint con Bash
+* [Actualización de Linux Mint con Bash](../contenido/a/c/t/actualizacion-de-linux-mint-con-bash.md)
 * Actualización del navegador Brave en Linux Mint con Bash
 * Agregar texto al final de cada línea de un documento con Bash
 * Agregar texto al final de numerosos documentos con echo en Bash
