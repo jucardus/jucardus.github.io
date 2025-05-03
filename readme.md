@@ -14,6 +14,12 @@
 JUCARDUS
 ├── 404.md
 ├── contenido
+│   ├── a
+│   │   └── c
+│   │       └── t
+│   │           ├── actualizacion-de-google-chrome-con-bash.md
+│   │           ├── actualizacion-de-linux-mint-con-bash.md
+│   │           └── actualizacion-del-navegador-brave-con-bash.md
 │   ├── c
 │   │   └── u
 │   │       └── a
@@ -127,10 +133,14 @@ JUCARDUS
 │   │   └── i
 │   │       └── 3
 │   │           └── xi3-huan1.md
+│   ├── y
+│   │   └── i
+│   │       └── 1
+│   │           └── yi1-19968.md
 │   └── z
 │       └── h
 │           └── e
-│               └── zhe4-shi2-yi1-ke1-shu4.md
+│               └── zhe4-shi4-yi1-ke1-shu4.md
 ├── favicon.ico
 ├── google2119b2e3affca446.html
 ├── herramientas
@@ -148,6 +158,7 @@ JUCARDUS
 │   ├── actividad.md
 │   ├── alfabetico.md
 │   ├── apotegmas.md
+│   ├── bash.md
 │   ├── chino-espanol-ka1.md
 │   ├── chino-espanol-ke1.md
 │   ├── chino-espanol-lao3.md
@@ -159,6 +170,7 @@ JUCARDUS
 │   ├── chino-espanol-ta1.md
 │   ├── chino-espanol-tian1.md
 │   ├── chino-espanol-xi3.md
+│   ├── chino-espanol-yi1.md
 │   ├── diccionarios.md
 │   ├── escritos.md
 │   ├── frases-chinas.md
@@ -172,12 +184,13 @@ JUCARDUS
 │   ├── latin-espanol.md
 │   ├── latin-espanol-s.md
 │   ├── latin-espanol-t.md
+│   ├── programacion.md
+│   ├── radical-001.md
 │   ├── radical-075.md
 │   ├── radicales-chinos.md
 │   └── reflexiones.md
 ├── readme.md
 └── tareas
-    ├── agregar aclaraciones en la pawgina de inicio
     ├── agregar una descripción a los ítems del Contenido en readme
     ├── clasificador 杯 [bēi] en Gramawtica china
     ├── composición de 我
@@ -214,6 +227,7 @@ JUCARDUS
     ├── multilingve para 老師 (老师) [lǎoshī]
     ├── radicales chinos en espanwol
     ├── simplified Chinese 简体中文
+    ├── vocabulario relacionado para 喜歡 (喜欢) [xǐhuān]
     ├── 他是聪明。
     ├── 你不是学生吗？为什么不上学？
     ├── 再見 (再见) Zàijiàn = Hablamos luego
