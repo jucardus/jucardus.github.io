@@ -16,3 +16,4 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 | **tian** | [tiān](../indices/chino-espanol-tian1.md) | tián | tiǎn | tiàn | tian |
 | **xi** | xī | xí | [xǐ](../indices/chino-espanol-xi3.md) | xì | xi |
 | **yi** | [yī](../indices/chino-espanol-yi1.md) | yí | yǐ | yì | yi |
+| **zhe** | zhe1 | zhe2 | zhe3 | [zhe4](../indices/chino-espanol-zhe4.md) | zhe5 |
