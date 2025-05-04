@@ -8,7 +8,7 @@
 
 ### Desglosamiento
 
-* 這 (这) [zhè] esto, esta, este
+* [這 (这) [zhè]](../../../../contenido/z/h/e/zhe4-36889.md) esto, esta, este
 * [是 (是) [shì]](../../../../contenido/s/h/i/shi4-26159.md) ser
 * [一 (一) [yī]](../../../../contenido/y/i/1/yi1-19968.md) uno; un, una
 * [棵 (棵) [kē]](../../../../contenido/k/e/1/ke1-26869.md) (clasificador para árboles y plantas)
