@@ -25,10 +25,27 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Radical: 丿 [piě]
 * Significados: (línea oblicua)
 
-| 005 | 乙 | 乚, 乛 | yǐ | segundo |
-| 006 | 亅 | | jué | anzuelo |
-| 007 | 二 | | èr | dos |
-| 008 | 亠 | | tóu | tapa |
+#### Radical 5
+
+* Radical: 乙 [yǐ]
+* Variantes: 乚, 乛
+* Significados: segundo
+
+#### Radical 6
+
+* Radical: 亅 [jué]
+* Significados: anzuelo
+
+#### Radical 7
+
+* Radical: 二 [èr]
+* Significados: dos
+
+#### Radical 8
+
+* Radical: 亠 [tóu]
+* Significados: tapa
+
 | 009 | 人 | 亻 | rén | hombre |
 | 010 | 儿 | | ér | pìernas, persona |
 | 011 | 入 | | rù | ingresar, entrar |
