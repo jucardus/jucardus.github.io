@@ -8,12 +8,23 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 #### [Radical 1](../indices/radical-001.md)
 
 * Radical: 一 [yī] 
-* Variantes: (ninguna) 
-* Significado: uno 
+* Significados: uno 
 
-| 002 | 丨 | | gǔn | línea |
-| 003 | 丶 | | zhǔ | punto |
-| 004 | 丿 | | piě | (línea oblicua) |
+#### Radical 2
+
+* Radical: | [gǔn]
+* Significados: línea
+
+#### Radical 3
+
+* Radical: 丶 [zhǔ]
+* Significados: punto
+
+#### Radical 4
+
+* Radical: 丿 [piě]
+* Significados: (línea oblicua)
+
 | 005 | 乙 | 乚, 乛 | yǐ | segundo |
 | 006 | 亅 | | jué | anzuelo |
 | 007 | 二 | | èr | dos |
