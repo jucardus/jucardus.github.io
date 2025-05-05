@@ -1,8 +1,9 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-87 documentos en total. La actividad más reciente se muestra al inicio de la lista.
+88 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [Radical 9 人 [rén]](../indices/radical-009.md) - 25-05-05
 * [這 (这) [zhè]](../contenido/z/h/e/zhe4-36889.md) - 25-05-04
 * [Diccionario chino-español - zhè](../indices/chino-espanol-zhe4.md) - 25-05-04
 * [Etiquetas del sitio](../indices/etiquetas.md) - 25-05-04
@@ -25,7 +26,7 @@
 * [Diccionario chino-español - tiān](../indices/chino-espanol-tian1.md) - 25-04-30
 * [Diccionario chino-español - lěng](../indices/chino-espanol-leng3.md) - 25-04-29
 * [冷 (冷) [lěng]](../contenido/l/e/n/leng3-20919.md) - 25-04-29
-* [Jucardus.com](../index.md) - 25-04-28
+* [Jucardus.com](../index.md) - 25-04-29
 * [El universo todo confabula para que...](../contenido/e/l/u/el-universo-todo-confabula-para.md) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md) - 25-04-28
 * [他 (他) [tā]](../contenido/t/a/1/ta1-20182.md) - 25-04-28
