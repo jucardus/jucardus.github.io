@@ -12,7 +12,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 
 #### Radical 2
 
-* Radical: | [gǔn]
+* Radical: 丨 [gǔn]
 * Significados: línea
 
 #### Radical 3
