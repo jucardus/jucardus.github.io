@@ -46,7 +46,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Radical: 亠 [tóu]
 * Significados: tapa
 
-#### Radical 9
+#### [Radical 9](../indices/radical-009.md)
 
 * Radical: 人 [rén]
 * Variantes: 亻
