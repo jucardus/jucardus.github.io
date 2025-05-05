@@ -5,9 +5,11 @@
 
 Los significados en algunos casos son traducciones de los caracteres chinos, en otros los sentidos en los cuales son usados en la composición, y también una suma de ambos, con el fin de dar una idea mejor de su función como radicales.
 
-| Número | Radical | Variantes | Pinyin | Significado |
-|:-------|:--------|:----------|:-------|:------------|
-| [001](../indices/radical-001.md) | 一 | | yī | uno |
+#### [Radical 1](../indices/radical-001.md)
+Radical: 一 [yī]
+Variantes: (ninguna)
+Significado: uno
+
 | 002 | 丨 | | gǔn | línea |
 | 003 | 丶 | | zhǔ | punto |
 | 004 | 丿 | | piě | (línea oblicua) |
