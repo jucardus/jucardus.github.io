@@ -98,15 +98,52 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Variantes: 刂
 * Significados: cuchillo
 
-| 019 | 力 | | lì | fuerza, poder |
-| 020 | 勹 | | bāo | envolver |
-| 021 | 匕 | | bǐ | cuchara |
-| 022 | 匚 | | fāng | caja |
-| 023 | 匸 | | xǐ | ocultar |
-| 024 | 十 | | shí | diez |
-| 025 | 卜 | | bǔ | adivinación |
-| 026 | 卩 | 㔾 | jié | sello, símbolo de autoridad |
-| 027 | 厂 | | hǎn | escarpa, precipicio, acantilado |
+#### Radical 19
+
+* Radical: 力 [lì]
+* Significados: fuerza, poder
+
+#### Radical 20
+
+* Radical: 勹 [bāo]
+* Significados: envolver
+
+#### Radical 21
+
+* Radical: 匕 [bǐ]
+* Significados: cuchara
+
+#### Radical 22
+
+* Radical: 匚 [fāng]
+* Significados: caja
+
+#### Radical 23
+
+* Radical: 匸 [xǐ]
+* Significados: ocultar
+
+#### Radical 24
+
+* Radical: 十 [shí]
+* Significados: diez
+
+#### Radical 25
+
+* Radical: 卜 [bǔ]
+* Significados: adivinación
+
+#### Radical 26
+
+* Radical: 卩 [jié]
+* Variantes: 㔾
+* Significados: sello, símbolo de autoridad
+
+#### Radical 27
+
+* Radical: 厂 [hǎn]
+* Significados: escarpa, precipicio, acantilado
+
 | 028 | 厶 | | sī | oculto, privado |
 | 029 | 又 | | yòu | nuevamente, además, más |
 | 030 | 口 | | kǒu | boca |
@@ -154,7 +191,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 | 072 | 日 | | rì | sun |
 | 073 | 曰 | | yuē | say |
 | 074 | 月 | | yuè | moon |
-| [075](../indices/radical-075.md) | 木 | | mù | árbol |
+| 075 | 木 | | mù | árbol |
 | 076 | 欠 | | qiàn | lack |
 | 077 | 止 | | zhǐ | stop |
 | 078 | 歹 | | dǎi | death |
