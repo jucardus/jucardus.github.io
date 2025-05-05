@@ -38,3 +38,5 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * Pagos y donaciones: [pp.jucardus.com](https://paypal.me/jucardus)
 * Repositorio: [r.jucardus.com](https://r.jucardus.com)
 * X Twitter: [x.jucardus.com](https://x.com/jucardus)
+ 
+<a href="https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/index.md" download="index.txt">Download as text</a>
