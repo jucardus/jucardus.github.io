@@ -46,16 +46,58 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Radical: 亠 [tóu]
 * Significados: tapa
 
-| 009 | 人 | 亻 | rén | hombre |
-| 010 | 儿 | | ér | pìernas, persona |
-| 011 | 入 | | rù | ingresar, entrar |
-| 012 | 八 | | bā | ocho |
-| 013 | 冂 | | jiōng | caja hacia abajo |
-| 014 | 冖 | | mì | cubierta, velo |
-| 015 | 冫 | | bīng | hielo |
-| 016 | 几 | | jī | mesa pequeña |
-| 017 | 凵 | | kǎn | receptáculo |
-| 018 | 刀 | 刂 | dāo | cuchillo |
+#### Radical 9
+
+* Radical: 人 [rén]
+* Variantes: 亻
+* Significados: hombre
+
+#### Radical 10
+
+* Radical: 儿 [ér]
+* Significados pìernas, persona
+
+#### Radical 11
+
+* Radical: 入 [rù]
+* Significados: ingresar, entrar
+
+#### Radical 12
+
+* Radical: 八 [bā]
+* Significados: ocho
+
+#### Radical 13
+
+* Radical: 冂 [jiōng]
+* Significados: caja hacia abajo
+
+#### Radical 14
+
+* Radical: 冖 [mì]
+* Significados: cubierta, velo
+
+#### Radical 15
+
+* Radical: 冫 [bīng]
+* Significados: hielo
+
+#### Radical 16
+
+* Radical: 几 [jī]
+* Significados: mesa pequeña
+
+#### Radical 17
+
+* Radical: 凵 [kǎn]
+* Significados: receptáculo
+
+#### Radical 18
+
+* Radical: 刀 [dāo]
+* Variantes: 刂
+* Significados: cuchillo
+
 | 019 | 力 | | lì | fuerza, poder |
 | 020 | 勹 | | bāo | envolver |
 | 021 | 匕 | | bǐ | cuchara |
