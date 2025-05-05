@@ -12,6 +12,7 @@
 
 ```
 JUCARDUS
+│
 ├── 404.md
 ├── contenido
 │   ├── a
@@ -90,10 +91,6 @@ JUCARDUS
 │   │   └── u
 │   │       └── e
 │   │           └── puer-cantat.md
-│   ├── r
-│   │   └── a
-│   │       └── d
-│   │           └── radicales-chinos-ingles.md
 │   ├── s
 │   │   ├── h
 │   │   │   ├── i
@@ -140,6 +137,7 @@ JUCARDUS
 │   └── z
 │       └── h
 │           └── e
+│               ├── zhe4-36889.md
 │               └── zhe4-shi4-yi1-ke1-shu4.md
 ├── favicon.ico
 ├── google2119b2e3affca446.html
@@ -171,8 +169,10 @@ JUCARDUS
 │   ├── chino-espanol-tian1.md
 │   ├── chino-espanol-xi3.md
 │   ├── chino-espanol-yi1.md
+│   ├── chino-espanol-zhe4.md
 │   ├── diccionarios.md
 │   ├── escritos.md
+│   ├── etiquetas.md
 │   ├── frases-chinas.md
 │   ├── frases-latinas.md
 │   ├── frases.md
