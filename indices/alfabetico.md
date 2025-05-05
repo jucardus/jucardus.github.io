@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-87 documentos en total, ordenados alfabéticamente.
+88 documentos en total, ordenados alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
@@ -52,7 +52,7 @@
 * [Gramáticas](../indices/gramaticas.md) - 25-04-28
 * [Ille amat.](../contenido/i/l/l/ille-amat.md) - 25-04-28
 * [Índice alfabético](../indices/alfabetico.md) - 25-04-28
-* [Jucardus.com](../index.md) - 25-04-28
+* [Jucardus.com](../index.md) - 25-04-29
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
 * [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md) - 25-04-28
@@ -63,6 +63,7 @@
 * [Puer cantat.](../contenido/p/u/e/puer-cantat.md) - 25-04-28
 * [Radical 1 一 [yī]](../indices/radical-001.md) - 25-05-02
 * [Radical 75 木 [mù]](../indices/radical-075.md) - 25-05-01
+* [Radical 9 人 [rén]](../indices/radical-009.md) - 25-05-05
 * [Radicales chinos](../indices/radicales-chinos.md) - 25-05-01
 * [Read Me](../readme.md) - 25-04-28
 * [Reflexiones](../indices/reflexiones.md) - 25-04-28
