@@ -7,9 +7,9 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 
 #### [Radical 1](../indices/radical-001.md)
 
-Radical: 一 [yī] 
-Variantes: (ninguna) 
-Significado: uno 
+* Radical: 一 [yī] 
+* Variantes: (ninguna) 
+* Significado: uno 
 
 | 002 | 丨 | | gǔn | línea |
 | 003 | 丶 | | zhǔ | punto |
