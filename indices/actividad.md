@@ -1,5 +1,5 @@
 # Actividad reciente
-<sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/actividad.html" download="jucardus-actividad.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
 88 documentos en total. La actividad más reciente se muestra al inicio de la lista.
 
