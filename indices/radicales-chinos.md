@@ -389,7 +389,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Radical: 月 [yuè]
 * Significados: moon
 
-#### Radical 75
+#### [Radical 75](../indices/radical-075.md)
 
 * Radical: 木 [mù]
 * Significados: árbol
