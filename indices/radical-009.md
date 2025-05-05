@@ -5,6 +5,7 @@ El radical 人 'persona', 'hombre', tiene también una forma más simple 亻, us
 
 ### Caracteres incluidos
 
+* [他 (他) [tā]](../contenido/t/a/1/ta1-20182.md)
 * [你 (你) [nǐ]](../contenido/n/i/3/ni3-20320.md)
 
 ### Todos los caracteres del radical 人
