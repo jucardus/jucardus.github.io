@@ -8,4 +8,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-ni
 
 ### Todos los caracteres _nǐ_
 
-> 伱 你 儗 拟 旎 柅 薿
+伱 你 儗 拟 旎 柅 薿
