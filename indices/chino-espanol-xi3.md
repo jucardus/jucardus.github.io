@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-xi
 
 ### Todos los caracteres _xǐ_
 
-> 喜 屣 徙 洗 玺 禧 铣
+喜 屣 徙 洗 玺 禧 铣
