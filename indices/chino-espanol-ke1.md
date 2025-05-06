@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-ke
 
 ### Todos los caracteres _kē_
 
-> 匼 嗑 嵙 棵 榼 珂 疴 瞌 磕 科 稞 窠 苛 薖 蚵 蝌 轲 醘 锞 顆 颏 颗 髁
+匼 嗑 嵙 棵 榼 珂 疴 瞌 磕 科 稞 窠 苛 薖 蚵 蝌 轲 醘 锞 顆 颏 颗 髁
