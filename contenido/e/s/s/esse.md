@@ -1,5 +1,5 @@
 # esse
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/latin-espanol-e.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=El%20verbo%20%C2%ABesse%C2%BB%20en%20el%20Diccionario%20lat%C3%ADn-espa%C3%B1ol%2C%20con%20traducciones%2C%20conjugaci%C3%B3n%20y%20frases%20de%20ejemplo.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fe%2Fs%2Fs%2Fesse.html%0A%0A%23ltn_espnl_jucardus%20%23grmtc_ltn_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/latin-espanol-e.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · <a href="../../../../contenido/e/s/s/esse.html" download="jucardus-esse.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=El%20verbo%20%C2%ABesse%C2%BB%20en%20el%20Diccionario%20lat%C3%ADn-espa%C3%B1ol%2C%20con%20traducciones%2C%20conjugaci%C3%B3n%20y%20frases%20de%20ejemplo.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fe%2Fs%2Fs%2Fesse.html%0A%0A%23ltn_espnl_jucardus%20%23grmtc_ltn_jucardus%0A%40jucardus)</sup>
 
 ## Verbo _esse_
 
