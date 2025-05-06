@@ -4,4 +4,4 @@
 * [Inicio](../index.md)
 * [Actividad reciente](../indices/actividad.md)
 * [Índice alfabético](../indices/alfabetico.md)
-* [Repositorio](https://github.com/jucardus/jucardus.github.io)e395d0d586c273db634e9603e84da372bb675ebc
+* [Repositorio](https://github.com/jucardus/jucardus.github.io)
