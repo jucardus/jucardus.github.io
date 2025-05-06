@@ -8,4 +8,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-la
 
 ### Todos los caracteres _lǎo_
 
-> 佬 咾 姥 恅 栳 狫 痨 硓 老 耂 耢 耮 荖 蛯 銠 铑
+佬 咾 姥 恅 栳 狫 痨 硓 老 耂 耢 耮 荖 蛯 銠 铑
