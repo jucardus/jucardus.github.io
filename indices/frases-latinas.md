@@ -3,12 +3,12 @@
 
 Las frases latinas se muestran en orden creciente de dificultad, con las más básicas al inicio. Todas cuentan con análisis morfosintáctico y enlaces cruzados al [Diccionario latín-español](../indices/latin-espanol.md) y a la [Gramática latina](../indices/gramatica-latina.md).
 
-* [Ego sum.](../contenido/e/g/o/ego-sum.md)
-* [Tū es.](../contenido/t/u/e/tu-es.md)
-* [Ego amō.](../contenido/e/g/o/ego-amo.md)
-* [Ego labōrō.](../contenido/e/g/o/ego-laboro.md)
-* [Tū amās.](../contenido/t/u/a/tu-amas.md)
-* [Ille amat.](../contenido/i/l/l/ille-amat.md)
-* [Puer cantat.](../contenido/p/u/e/puer-cantat.md)
-* [Fēmina ambulat.](../contenido/f/e/m/femina-ambulat.md)
-* [Ego puerum video.](../contenido/e/g/o/ego-puerum-video.md)
+* [Ego sum.](../contenido/e/g/o/ego-sum.md) →  Yo soy.
+* [Tū es.](../contenido/t/u/e/tu-es.md) → Tú eres.
+* [Ego amō.](../contenido/e/g/o/ego-amo.md) → Yo amo.
+* [Ego labōrō.](../contenido/e/g/o/ego-laboro.md) → Yo trabajo.
+* [Tū amās.](../contenido/t/u/a/tu-amas.md) → Tú amas.
+* [Ille amat.](../contenido/i/l/l/ille-amat.md) → Él ama.
+* [Puer cantat.](../contenido/p/u/e/puer-cantat.md) → El muchacho canta.
+* [Fēmina ambulat.](../contenido/f/e/m/femina-ambulat.md) → La mujer anda.
+* [Ego puerum video.](../contenido/e/g/o/ego-puerum-video.md) → Yo veo al muchacho.
