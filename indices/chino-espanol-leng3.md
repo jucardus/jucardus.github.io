@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-le
 
 ### Todos los caracteres _lěng_
 
-> 倰 冷
+倰 冷
