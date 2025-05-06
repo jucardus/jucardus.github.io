@@ -1,5 +1,5 @@
 # Etiquetas del sitio
-<sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · Compartir</sup>
+<sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/etiquetas.html" download="jucardus-etiquetas.html">Descargar</a> · Compartir</sup>
 
 Las etiquetas están siempre al pie de cada entrada o subpágina. Te dirigen a índices en los que se reúnen los temas relacionados, para mejor referencia.
 
