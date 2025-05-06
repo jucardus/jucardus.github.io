@@ -8,5 +8,3 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-zh
 ### Todos los caracteres _zhè_
 
 柘 浙 淛 著 蔗 蟅 这 鹧
-
-<sup></sup> Índices · Caracteres chinos</sup>
