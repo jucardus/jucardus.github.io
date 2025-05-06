@@ -3,7 +3,7 @@
 
 Los apotegmas más recientes se muestran al inicio de la lista.
 
-* [Siempre que busques a Dios hacia...](../contenido/25/05/siempre-que-busques-a-dios.md)
+* [Siempre que busques a Dios hacia...](../contenido/s/i/e/siempre-que-busques-a-dios.md)
 * [El recuerdo más puro...](../contenido/e/l/r/el-recuerdo-mas-puro-es.md)
 * [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md)
 * [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md)
