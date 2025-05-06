@@ -1,5 +1,5 @@
 # 他是老師，是不是？
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/frases-chinas.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%E4%BB%96%E6%98%AF%E8%80%81%E5%B8%AB%EF%BC%8C%E6%98%AF%E4%B8%8D%E6%98%AF%EF%BC%9F%20entre%20las%20Frases%20chinas%2C%20con%20traducciones%20y%20desglosamiento%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Ft%2Fa%2F1%2Fta1-shi4-lao3-shi1-shi4-bu2-shi4.html%0A%0A%23frss_chns_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/frases-chinas.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · <a href="../../../../contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.html" download="jucardus-ta1-shi4-lao3-shi1-shi4-bu2-shi4.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%E4%BB%96%E6%98%AF%E8%80%81%E5%B8%AB%EF%BC%8C%E6%98%AF%E4%B8%8D%E6%98%AF%EF%BC%9F%20entre%20las%20Frases%20chinas%2C%20con%20traducciones%20y%20desglosamiento%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Ft%2Fa%2F1%2Fta1-shi4-lao3-shi1-shi4-bu2-shi4.html%0A%0A%23frss_chns_jucardus%0A%40jucardus)</sup>
 
 * CT. 他是老師，是不是？
 * CS. 他是老师，是不是？
