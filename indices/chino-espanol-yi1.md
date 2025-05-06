@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-yi
 
 ### Todos los caracteres _yī_
 
-> 一 乊 伊 依 医 吚 咿 噫 壱 壹 夁 嫛 嬄 弌 悘 悥 揖 攲 椅 欹 毉 洢 渏 漪 瑿 祎 禕 稦 繄 蛜 衣 袆 譩 銥 铱 鷖 鹥 黟 
+一 乊 伊 依 医 吚 咿 噫 壱 壹 夁 嫛 嬄 弌 悘 悥 揖 攲 椅 欹 毉 洢 渏 漪 瑿 祎 禕 稦 繄 蛜 衣 袆 譩 銥 铱 鷖 鹥 黟
