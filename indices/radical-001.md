@@ -1,5 +1,5 @@
 # Radical 1 一 [yī]
-<sup>[Inicio](../index.md) · [Índice](../indices/radicales-chinos.md#radical-1) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=El%20radical%20chino%20%E4%B8%80%20%5By%C4%AB%5D%2C%20con%20vocabulario%20relacionado%2C%20notas%20gramaticales%20y%20todos%20los%20caracteres%20derivados.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fradical-001.html%0A%0A%23indcs_jucardus%20%23rdcls_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../indices/radicales-chinos.md#radical-1) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/radical-001.html" download="jucardus-radical-001.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=El%20radical%20chino%20%E4%B8%80%20%5By%C4%AB%5D%2C%20con%20vocabulario%20relacionado%2C%20notas%20gramaticales%20y%20todos%20los%20caracteres%20derivados.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fradical-001.html%0A%0A%23indcs_jucardus%20%23rdcls_jucardus%0A%40jucardus)</sup>
 
 Para las traducciones, las notas gramaticales y las frases de ejemplo, véase [一 (一) [yī]](../contenido/y/i/1/yi1-19968.md).
 
