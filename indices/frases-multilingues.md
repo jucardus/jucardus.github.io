@@ -1,5 +1,5 @@
 # Frases multilingües
-<sup>[Inicio](../index.md) · [Índice](../indices/frases.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Frases%20multiling%C3%BCes%2C%20traducidas%20al%20alem%C3%A1n%2C%20chino%2C%20franc%C3%A9s%2C%20ingl%C3%A9s%2C%20italiano%20y%20lat%C3%ADn.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Ffrases-multilingues.html%0A%0A%23frss_jucardus%20%23indcs_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../indices/frases.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/frases-multilingues.html" download="jucardus-frases-multilingues.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Frases%20multiling%C3%BCes%2C%20traducidas%20al%20alem%C3%A1n%2C%20chino%2C%20franc%C3%A9s%2C%20ingl%C3%A9s%2C%20italiano%20y%20lat%C3%ADn.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Ffrases-multilingues.html%0A%0A%23frss_jucardus%20%23indcs_jucardus%0A%40jucardus)</sup>
 
 > **¡ATENCIÓN!** Subpágina en preparación.
 
