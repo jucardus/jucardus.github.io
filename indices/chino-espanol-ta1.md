@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-ta
 
 ### Todos los caracteres _tā_
 
-> 他 塌 塔 她 它 榙 溻 牠 祂 褟 趿 蹹 遢 鉈 铊 铪 阘 靸 鰨 鳎
+他 塌 塔 她 它 榙 溻 牠 祂 褟 趿 蹹 遢 鉈 铊 铪 阘 靸 鰨 鳎
