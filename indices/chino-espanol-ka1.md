@@ -7,4 +7,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-ka
 
 ### Todos los caracteres _kā_
 
-> 佧 卡 咔 咖 喀 胩
+佧 卡 咔 咖 喀 胩
