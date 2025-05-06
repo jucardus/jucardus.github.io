@@ -8,4 +8,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-sh
 
 ### Todos los caracteres _shì_
 
-> 世 事 仕 侍 势 勢 嗜 噬 室 市 式 恃 是 柿 氏 示 舐 視 视 試 誓 謚 试 谥 軾 轼 适 逝 適 释 釋 飾 饰
+世 事 仕 侍 势 勢 嗜 噬 室 市 式 恃 是 柿 氏 示 舐 視 视 試 誓 謚 试 谥 軾 轼 适 逝 適 释 釋 飾 饰
