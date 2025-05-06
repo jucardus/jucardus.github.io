@@ -1,5 +1,5 @@
 # 天氣 (天气) [tiānqì]
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/chino-espanol-tian1.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=%E5%A4%A9%E6%B0%A3%20(%E5%A4%A9%E6%B0%94)%20%5Bti%C4%81nq%C3%AC%5D%20en%20el%20Diccionario%20chino-espa%C3%B1ol%2C%20con%20traducciones%2C%20frases%20de%20ejemplo%20y%20vocabulario%20relacionado.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Ft%2Fi%2Fa%2Ftian1-qi4.html%0A%0A%23chn_espnl_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/chino-espanol-tian1.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · <a href="../../../../contenido/t/i/a/tian1-qi4.html" download="jucardus-tian1-qi4.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%E5%A4%A9%E6%B0%A3%20(%E5%A4%A9%E6%B0%94)%20%5Bti%C4%81nq%C3%AC%5D%20en%20el%20Diccionario%20chino-espa%C3%B1ol%2C%20con%20traducciones%2C%20frases%20de%20ejemplo%20y%20vocabulario%20relacionado.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Ft%2Fi%2Fa%2Ftian1-qi4.html%0A%0A%23chn_espnl_jucardus%0A%40jucardus)</sup>
 
 La palabra 天氣 (天气) [tiānqì] se compone de 天 (天) [tiān] 'cielo' y 氣 (气) [qì] 'aire', 'energía'.
 
