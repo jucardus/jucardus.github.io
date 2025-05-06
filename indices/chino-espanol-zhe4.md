@@ -9,4 +9,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-zh
 
 柘 浙 淛 著 蔗 蟅 这 鹧
 
-> Índices · Caracteres chinos
+<sup></sup> Índices · Caracteres chinos</sup>
