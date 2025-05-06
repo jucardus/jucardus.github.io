@@ -8,4 +8,4 @@ Entradas del [Diccionario chino-español](../indices/chino-espanol.md#sílaba-ti
 
 ### Todos los caracteres _tiān_
 
-> 兲 天 婖 添 酟 靔 黇
+兲 天 婖 添 酟 靔 黇
