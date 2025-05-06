@@ -1,5 +1,5 @@
 # Frases chinas
-<sup>[Inicio](../index.md) · [Índice](../indices/frases.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Frases%20chinas%20desglosadas%2C%20con%20enlaces%20cruzados%20para%20cada%20palabra%2C%20traducci%C3%B3n%2C%20transliteraci%C3%B3n%20pinyin%20y%20gram%C3%A1tica.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Ffrases-chinas.html%0A%0A%23indcs_jucardus%20%23frss_jucardus%0A%40jucardus)</sup>
+<sup>[Inicio](../index.md) · [Índice](../indices/frases.md) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/frases-chinas.html" download="jucardus-frases-chinas.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Frases%20chinas%20desglosadas%2C%20con%20enlaces%20cruzados%20para%20cada%20palabra%2C%20traducci%C3%B3n%2C%20transliteraci%C3%B3n%20pinyin%20y%20gram%C3%A1tica.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Ffrases-chinas.html%0A%0A%23indcs_jucardus%20%23frss_jucardus%0A%40jucardus)</sup>
 
 Las frases chinas se muestran en orden creciente de dificultad, con las más básicas al inicio. Todas cuentan con las formas tradicionales y simplificadas, transliteración pinyin, traducción al español, desglosamiento, gramática y traducciones multilingües.
 
