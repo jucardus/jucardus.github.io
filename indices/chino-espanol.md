@@ -5,49 +5,49 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 
 #### Sílaba KA
 
-[kā](../indices/chino-espanol-ka1.md) | ká | kǎ | kà | ka
+[kā](../indices/chino-espanol-ka1.md) &nbsp; ká &nbsp; kǎ &nbsp; kà &nbsp; ka
 
 #### Sílaba KE
 
-[kē](../indices/chino-espanol-ke1.md) | ké | kě | kè | ke
+[kē](../indices/chino-espanol-ke1.md) &nbsp; ké &nbsp; kě &nbsp; kè &nbsp; ke
 
 #### Sílaba LAO
 
-lāo | láo | [lǎo](../indices/chino-espanol-lao3.md) | lào | lao
+lāo &nbsp; láo &nbsp; [lǎo](../indices/chino-espanol-lao3.md) &nbsp; lào &nbsp; lao
 
 
 #### Sílaba LENG
 
-lēng | léng | [lěng](../indices/chino-espanol-leng3.md) | lèng | leng
+lēng &nbsp; léng &nbsp; [lěng](../indices/chino-espanol-leng3.md) &nbsp; lèng &nbsp; leng
 
 #### Sílaba NIE
 
-nī | ní | [nǐ](../indices/chino-espanol-ni3.md) | nì | ni
+nī &nbsp; ní &nbsp; [nǐ](../indices/chino-espanol-ni3.md) &nbsp; nì &nbsp; ni
 
 #### Sílaba SHI
 
-shī | shí | shǐ | [shì](../indices/chino-espanol-shi4.md) | shi
+shī &nbsp; shí &nbsp; shǐ &nbsp; [shì](../indices/chino-espanol-shi4.md) &nbsp; shi
 
 #### Sílaba SHU
 
-shū | shú | shǔ | [shù](../indices/chino-espanol-shu4.md) | shu
+shū &nbsp; shú &nbsp; shǔ &nbsp; [shù](../indices/chino-espanol-shu4.md) &nbsp; shu
 
 #### Sílata TA
 
-[tā](../indices/chino-espanol-ta1.md) | tá | tǎ | tà | ta
+[tā](../indices/chino-espanol-ta1.md) &nbsp; tá &nbsp; tǎ &nbsp; tà &nbsp; ta
 
 #### Sílata TIAN
 
-[tiān](../indices/chino-espanol-tian1.md) | tián | tiǎn | tiàn | tian
+[tiān](../indices/chino-espanol-tian1.md) &nbsp; tián &nbsp; tiǎn &nbsp; tiàn &nbsp; tian
 
 #### Sílaba XI
 
-xī | xí | [xǐ](../indices/chino-espanol-xi3.md) | xì | xi
+xī &nbsp; xí &nbsp; [xǐ](../indices/chino-espanol-xi3.md) &nbsp; xì &nbsp; xi
 
 #### Sílaba YI
 
-[yī](../indices/chino-espanol-yi1.md) | yí | yǐ | yì | yi
+[yī](../indices/chino-espanol-yi1.md) &nbsp; yí &nbsp; yǐ &nbsp; yì &nbsp; yi
 
 #### Sílaba ZHE
 
-zhē | zhé | zhě | [zhè](../indices/chino-espanol-zhe4.md) | zhe
+zhē &nbsp; zhé &nbsp; zhě &nbsp; [zhè](../indices/chino-espanol-zhe4.md) &nbsp; zhe
