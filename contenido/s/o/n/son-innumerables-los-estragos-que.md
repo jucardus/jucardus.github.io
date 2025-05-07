@@ -1,4 +1,4 @@
 # Son innumerables los estragos que puede hacer...
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/reflexiones.md) · [A-Z](../../../../indices/alfabetico.md) · <a href="../../../../contenido/s/o/n/son-innumerables-los-estragos-que.md" download="jucardus-son-innumerables-los-estragos-que.md">Descargar</a> · [Actividad](../../../../indices/actividad.md) · Compartir</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/reflexiones.md) · [A-Z](../../../../indices/alfabetico.md) · <a href="../../../../contenido/s/o/n/son-innumerables-los-estragos-que.md" download="jucardus-son-innumerables-los-estragos-que.md">Descargar</a> · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Reflexiones%3A%20Son%20innumerables%20los%20estragos%20que%20puede%20hacer...%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fs%2Fo%2Fn%2Fson-innumerables-los-estragos-que.html%0A%0A%23rflxns_jucardus%0A%40jucardus)</sup>
 
 Son innumerables los estragos que puede hacer la filosofía en el campo de la fe. Busca aclarar, pero puede entorpecer y desviar; y para el desprevenido, reduce a Dios a conceptos.
