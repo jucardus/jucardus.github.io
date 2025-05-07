@@ -20,7 +20,6 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 * El sitio está en sus inicios. Intento reunir en él cierto material de mis sitios anteriores y relacionarlo entre sí con numerosos enlaces cruzados para que sea navegable y de mayor utilidad.
 * Cada subpágina de este sitio cuenta con un subtítulo en letras pequeñas (Inicio · Índice · A-Z · Actividad · Compartir) para facilitar la navegación. Clicando en _Índice_ se puede acceder al origen de la subpágina abierta; clicando en _A-Z_ se abre el índice alfabético de todas las subpáginas; al clicar en _Actividad_ se muestra una lista con las adiciones más recientes; con _Descargar_ se descarga la subpágina abierta, y con _Compartir_ se envía las referencias de la subpágina para ser compartida en X Twitter.
-* Como opción de subscripción o para estar al tanto de la actividad en este sitio, cuentas con dos alternativas: [X Twitter](https://x.com/jucardus) y [Facebook](https://www.facebook.com/jucardus.page), también accesibles respectivamente con los enlaces _x.jucardus.com_ y _fb.jucardus.com_.
 * Si deseas hacer críticas, sugerencias o correcciones al sitio, sírvete contactar conmigo mediante el correo _jucardus en gmail punto com_.
 
 ### Autor y contacto
