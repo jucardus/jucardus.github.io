@@ -1,4 +1,4 @@
 # Si no amas al mundo como lo ama Dios, ni...
-<sup>[Inicio](../../../../index.md) · [Índice](../../../,./indices/reflexiones.md) · [A-Z](../../../../indices/alfabetico.md) · <a href="../../../../contenido/s/i/n/si-no-amas-al-mundo-como.html" download="jucardus-si-no-amas-al-mundo-como.html">Descargar</a> · [Actividad](../../../../indices/actividad.md) · Compartir</sup>
+<sup>[Inicio](../../../../index.md) · [Índice](../../../,./indices/reflexiones.md) · [A-Z](../../../../indices/alfabetico.md) · <a href="../../../../contenido/s/i/n/si-no-amas-al-mundo-como.html" download="jucardus-si-no-amas-al-mundo-como.html">Descargar</a> · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Reflexiones%3A%20Si%20no%20amas%20al%20mundo%20como%20lo%20ama%20Dios%2C%20ni...%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fs%2Fi%2Fn%2Fsi-no-amas-al-mundo-como.html%0A%0A%23rflxns_jucardus%0A%40jucardus)</sup>
 
 Si no amas al mundo como lo ama Dios, ni te atrevas a siquiera soñar con ir a alguno de los cielos; serías rechazado de inmediato. De todas formas, el ser humano es para estar aquí, con Dios.
