@@ -3,6 +3,7 @@
 
 Las reflexiones más recientes se muestran al inicio de la lista.
 
+* Si te pones una ristra de ajos al cuello...
 * [Es inevitable usar el raciocinio al buscar...](../contenido/e/s/i/es-inevitable-usar-el-raciocinio.md)
 * [Que los humanos somos bichos raros en este...](../contenido/q/u/e/que-los-humanos-somos-bichos.md)
 * [Cuando aliño mis alimentos con un pesto...](../contenido/c/u/a/cuando-alino-mis-alimentos-con.md)
