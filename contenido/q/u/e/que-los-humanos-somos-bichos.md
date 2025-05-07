@@ -1,0 +1,4 @@
+# Que los humanos somos bichos raros en este...
+<sup>[Inicio](../../../../index.md) · Índice · [A-Z](../../../../indices/alfabetico.md) · <a href="../../../../¶¶¶" download="jucardus-¶¶¶">Descargar</a> · [Actividad](../../../../indices/actividad.md) · Compartir</sup>
+
+Que los humanos somos bichos raros en este mundo o, mejor, de naturaleza compuesta: tenemos lo terrenal o animal, lo humano, y lo divino. Lo humano es la semilla que crece en lo terrenal y se dirige a la Luz de lo divino: sin sacrificarlo, no puede dar buenos frutos de divinidad. Mas, sacrificio no implica ir en contra de lo humano o anularlo, sino depurarlo según la divinidad, para que (re)cobre su verdadero y original resplandor a imagen de lo celestial. Este proceso paulatino y paciente nunca denigra ni detesta al mundo, sino que lo ama para redimirlo. Ama, pues, al mundo; pero como lo ama Dios.
