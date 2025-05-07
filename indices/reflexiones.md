@@ -3,7 +3,7 @@
 
 Las reflexiones más recientes se muestran al inicio de la lista.
 
-* Si no amas al mundo como lo ama Dios, ni...
+* [Si no amas al mundo como lo ama Dios, ni...](../contenido/s/i/n/si-no-amas-al-mundo-como.md)
 * [Son innumerables los estragos que puede hacer...](../contenido/s/o/n/son-innumerables-los-estragos-que.md)
 * [Si te pones una ristra de ajos al cuello...](../contenido/s/i/t/si-te-pones-una-ristra.md)
 * [Es inevitable usar el raciocinio al buscar...](../contenido/e/s/i/es-inevitable-usar-el-raciocinio.md)
