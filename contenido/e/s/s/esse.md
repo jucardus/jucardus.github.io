@@ -43,7 +43,5 @@
 
 ## Frases desglosadas
 
-Las frases más recientes se muestran al inicio de la lista.
-
-* [Tū es.](../../../../contenido/t/u/e/tu-es.md)
 * [Ego sum.](../../../../contenido/e/g/o/ego-sum.md)
+* [Tū es.](../../../../contenido/t/u/e/tu-es.md)
