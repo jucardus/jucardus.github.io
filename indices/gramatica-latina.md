@@ -5,6 +5,10 @@
 
 * [ego, tū, illa, ...](../contenido/p/r/o/pronombres-personales-latinos.md)
 
+### Verbos regulares
+
+* [amāre](../contenido/a/m/a/amare.md)
+
 ### Verbos irregulares
 
 * [esse](../contenido/e/s/s/esse.md)
