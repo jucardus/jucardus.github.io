@@ -13,12 +13,12 @@ Verbo latino de la primera conjugación.
 
 #### Presente indicativo
 
-* Ego amo
-* Tu amas
-* Is/ea/id amat
-* Nos amamus
-* Vos amatis
-* Ei/eae/ea amant
+* ego amo
+* tu amas
+* is/ea/id amat
+* nos amamus
+* vos amatis
+* ei/eae/ea amant
 
 ### Frases de ejemplo
 
