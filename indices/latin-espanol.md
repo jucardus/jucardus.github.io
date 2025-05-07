@@ -3,4 +3,4 @@
 
 El diccionario latín-español contiene verbos conjugados, sustantivos declinados y lemas en su forma básica.
 
-### [E](../indices/latin-espanol-e.md) · [S](../indices/latin-espanol-s.md) · [T](../indices/latin-espanol-t.md)
+### A · [E](../indices/latin-espanol-e.md) · [S](../indices/latin-espanol-s.md) · [T](../indices/latin-espanol-t.md)
