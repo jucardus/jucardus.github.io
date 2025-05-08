@@ -15,14 +15,14 @@
         }
         #word {
         	font-size: 170%;
+            margin-bottom: 250px;
             margin-top: 170px;
         }
         #contents {
             border-top: 4px Dotted Silver;
             font-size: 135%;
-            margin-top: 700px;
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 250px;
+            padding-bottom: 100px;
         }
         #controls {
             position: fixed;
@@ -34,6 +34,8 @@
             z-index: 100;
         }
         input {
+        	color: #fff;
+            background-color: #555;
             font-size: 16px;
             padding: 5px;
             width: 60px;
@@ -54,6 +56,7 @@
             margin: 0 5px;
         }
     </style>
+    <script src="tarjetas.js"></script>
 </head>
 <body onload="initialize()">
     <div id="controls">
@@ -143,7 +146,7 @@
             var contents = card.toString().replace(/.* \/\/ /g,"").trim();
 
             document.getElementById('word').innerHTML = word;
-            document.getElementById('contents').innerHTML = contents;
+            document.getElementById('contents').innerHTML = contents.replace(/ ¶ /g,'<p/>');
         }
 
         function shuffleArray(array) {
@@ -158,18 +161,6 @@
 
         document.body.addEventListener('click', run);
 
-        let data = [
-            "autógrafo [adj.] // autógrafo [adj.] Que está escrito de mano de su mismo autor.",
-            "antónimo de «autógrafo» // antónimos de «autógrafo»: ológrafo, hológrafo",
-            "apógrafo [m.] // apógrafo [m.] Copia de un manuscrito original.",
-            "咖啡 (咖啡) // 咖啡 (咖啡) [kāfēi] café",
-            "ubérrimo [adj.] // ubérrimo [adj.] Muy fértil y abundante.",
-            "sinónimos de «ubérrimo» // sinónimos de «ubérrimo»: ubérrimo, fértil, fecundo, prolífico, productivo, feraz, abundante",
-            "Feminae cum viris aquam spectaverunt. // Feminae cum viris aquam spectaverunt. → The women looked at the water with the Men.",
-            "tartufo [m.] // tartufo [m.] Hombre hipócrita y falso.",
-            "較 (较) // 較 (较) jiào: comparar, contrastar; disputar",
-            "epistemología [f.] // epistemología [f.] Teoría de los fundamentos y métodos del conocimiento científico."
-        ];
     </script>
 </body>
 </html>
