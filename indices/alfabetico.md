@@ -1,13 +1,14 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-97 subpáginas en total, ordenadas alfabéticamente.
+101 subpáginas en total, ordenadas alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
 * [Actualización de Linux Mint con Bash](../contenido/a/c/t/actualizacion-de-linux-mint-con-bash.md) - 25-05-03
 * [Actualización del navegador Brave con Bash](../contenido/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - 25-05-03
 * [amāre](../contenido/a/m/a/amare.md) - 25-05-07
+* [amās](../contenido/a/m/a/amas.md) - 25-05-09
 * [amō](../contenido/a/m/o/amo.md) - 25-05-07
 * [Apotegmas](../indices/apotegmas.md) - 25-04-28
 * [Bash - Bourne-Again Shell](../indices/bash.md) - 25-05-03
@@ -29,6 +30,7 @@
 * [Diccionario latín-español](../indices/latin-espanol.md) - 25-04-28
 * [Diccionario latín-español - A](../indices/latin-espanol-a.md) - 25-05-07
 * [Diccionario latín-español - E](../indices/latin-espanol-e.md) - 25-04-28
+* [Diccionario latín-español - L](../indices/latin-espanol-l.md) - 25-05-09
 * [Diccionario latín-español - S](../indices/latin-espanol-s.md) - 25-04-28
 * [Diccionario latín-español - T](../indices/latin-espanol-t.md) - 25-04-28
 * [Diccionarios todos](../indices/diccionarios.md) - 25-04-28
@@ -56,9 +58,11 @@
 * [Gramáticas](../indices/gramaticas.md) - 25-04-28
 * [Ille amat.](../contenido/i/l/l/ille-amat.md) - 25-04-28
 * [Índice alfabético](../indices/alfabetico.md) - 25-04-28
-* [Jucardus.com](../index.md) - 25-04-29
+* [Jucardus.com](../index.md) - 25-04-30
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
 * [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md) - 25-04-28
+* [labōrāre](../contenido/l/a/b/laborare.md) - 25-05-09
+* [labōrō](../contenido/l/a/b/laboro.md) - 25-05-09
 * [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md) - 25-04-28
 * [No hay forma de creer en Dios si no es...](../contenido/n/o/h/no-hay-forma-de-creer-en.md) - 25-04-28
 * [Página inexistente - 404](../404.md) - 25-04-28
