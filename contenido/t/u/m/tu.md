@@ -5,7 +5,5 @@
 
 ### Frases desglosadas
 
-Las frases más recientes se muestran al inicio de la lista.
-
-* [Tū amās.](../../../../contenido/t/u/a/tu-amas.md)
-* [Tū es.](../../../../contenido/t/u/e/tu-es.md)
+* [Tū amās.](../../../../contenido/t/u/a/tu-amas.md) → Tú amas.
+* [Tū es.](../../../../contenido/t/u/e/tu-es.md) → Tú eres.
