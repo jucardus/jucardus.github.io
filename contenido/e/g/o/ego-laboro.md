@@ -6,4 +6,4 @@ Ego labōrō. [ˈɛ.ɡo laˈboː.roː] Yo trabajo.
 ### Desglosamiento
 
 * [**ego:**](../../../../contenido/e/g/o/ego.md) pronombre personal en primera persona singular en caso nominativo: yo
-* **labōrō:** primera persona singular del presente de indicativo del verbo _labōrāre_: trabajo
+* [**labōrō:**](../../../../contenido/l/a/b/laboro.md) primera persona singular del presente de indicativo del verbo _labōrāre_: trabajo
