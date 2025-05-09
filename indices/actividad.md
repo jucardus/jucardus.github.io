@@ -1,8 +1,17 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/actividad.html" download="jucardus-actividad.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-88 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
+97 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [Diccionario latín-español - A](../indices/latin-espanol-a.md) - 25-05-07
+* [amāre](../contenido/a/m/a/amare.md) - 25-05-07
+* [amō](../contenido/a/m/o/amo.md) - 25-05-07
+* [Puedes hablar en términos teológicos acerca de las...](../contenido/p/u/e/puedes-hablar-en-terminos-teologicos.md) - 25-05-07
+* [Si no amas al mundo como lo ama Dios, ni...](../contenido/s/i/n/si-no-amas-al-mundo-como.md) - 25-05-07
+* [Son innumerables los estragos que puede hacer...](../contenido/s/o/n/son-innumerables-los-estragos-que.md) - 25-05-07
+* [Si te pones una ristra de ajos al cuello...](../contenido/s/i/t/si-te-pones-una-ristra.md) - 25-05-07
+* [Es inevitable usar el raciocinio al buscar...](../contenido/e/s/i/es-inevitable-usar-el-raciocinio.md) - 25-05-07
+* [Que los humanos somos bichos raros en este...](../contenido/q/u/e/que-los-humanos-somos-bichos.md) - 25-05-07
 * [Radical 9 人 [rén]](../indices/radical-009.md) - 25-05-05
 * [這 (这) [zhè]](../contenido/z/h/e/zhe4-36889.md) - 25-05-04
 * [Diccionario chino-español - zhè](../indices/chino-espanol-zhe4.md) - 25-05-04
