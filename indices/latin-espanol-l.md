@@ -3,5 +3,5 @@
 
 Entradas del [Diccionario latín-español](../indices/latin-espanol.md) iniciadas en L.
 
-* labōrāre
+* [labōrāre](../contenido/l/a/b/laborare.md)
 * [labōrō](../contenido/l/a/b/laboro.md)
