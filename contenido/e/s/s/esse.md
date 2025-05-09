@@ -43,5 +43,5 @@
 
 ### Frases desglosadas
 
-* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md)
-* [Tū es.](../../../../contenido/t/u/e/tu-es.md)
+* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md) → Yo soy.
+* [Tū es.](../../../../contenido/t/u/e/tu-es.md) → Tú eres.
