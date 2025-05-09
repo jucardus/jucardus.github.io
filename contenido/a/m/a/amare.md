@@ -14,7 +14,7 @@ Verbo latino de la primera conjugación.
 #### Presente indicativo
 
 * ego [amo](../../../../contenido/a/m/o/amo.md)
-* tu amas
+* tu [amas](../../../../contenido/a/m/a/amas.md)
 * is/ea/id amat
 * nos amamus
 * vos amatis
