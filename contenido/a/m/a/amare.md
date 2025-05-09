@@ -20,6 +20,7 @@ Verbo latino de la primera conjugación.
 * vos amatis
 * ei/eae/ea amant
 
-### Frases de ejemplo
+### Frases desglosadas
 
 * [Ego amo.](../../../../contenido/e/g/o/ego-amo.md) → Yo amo.
+* [Tū amās.](../../../../contenido/t/u/a/tu-amas.md) → Tú amas.
