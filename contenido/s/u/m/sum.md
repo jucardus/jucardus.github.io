@@ -5,6 +5,4 @@ Primera persona singular del tiempo presente del indicativo del verbo [_esse_](.
 
 ### Frases desglosadas
 
-Las frases de ejemplo más recientes se muestran al inicio de la lista.
-
-* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md)
+* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md) → Yo soy.
