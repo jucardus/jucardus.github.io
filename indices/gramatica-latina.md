@@ -8,6 +8,7 @@
 ### Verbos regulares
 
 * [amāre](../contenido/a/m/a/amare.md)
+* [labōrāre](../contenido/l/a/b/laborare.md)
 
 ### Verbos irregulares
 
