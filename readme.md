@@ -16,11 +16,16 @@ JUCARDUS
 ├── 404.md
 ├── contenido
 │   ├── a
-│   │   └── c
-│   │       └── t
-│   │           ├── actualizacion-de-google-chrome-con-bash.md
-│   │           ├── actualizacion-de-linux-mint-con-bash.md
-│   │           └── actualizacion-del-navegador-brave-con-bash.md
+│   │   ├── c
+│   │   │   └── t
+│   │   │       ├── actualizacion-de-google-chrome-con-bash.md
+│   │   │       ├── actualizacion-de-linux-mint-con-bash.md
+│   │   │       └── actualizacion-del-navegador-brave-con-bash.md
+│   │   └── m
+│   │       ├── a
+│   │       │   └── amare.md
+│   │       └── o
+│   │           └── amo.md
 │   ├── c
 │   │   └── u
 │   │       └── a
@@ -41,6 +46,8 @@ JUCARDUS
 │   │   │   └── u
 │   │   │       └── el-universo-todo-confabula-para.md
 │   │   └── s
+│   │       ├── i
+│   │       │   └── es-inevitable-usar-el-raciocinio.md
 │   │       ├── m
 │   │       │   └── es.md
 │   │       └── s
@@ -90,7 +97,12 @@ JUCARDUS
 │   │   │       └── pronombres-personales-latinos.md
 │   │   └── u
 │   │       └── e
+│   │           ├── puedes-hablar-en-terminos-teologicos.md
 │   │           └── puer-cantat.md
+│   ├── q
+│   │   └── u
+│   │       └── e
+│   │           └── que-los-humanos-somos-bichos.md
 │   ├── s
 │   │   ├── h
 │   │   │   ├── i
@@ -101,8 +113,14 @@ JUCARDUS
 │   │   ├── i
 │   │   │   ├── e
 │   │   │   │   └── siempre-que-busques-a-dios.md
+│   │   │   ├── n
+│   │   │   │   ├── sin-importar-si-tu-tradicion.md
+│   │   │   │   └── si-no-amas-al-mundo-como.md
+│   │   │   └── t
+│   │   │       └── si-te-pones-una-ristra.md
+│   │   ├── o
 │   │   │   └── n
-│   │   │       └── sin-importar-si-tu-tradicion.md
+│   │   │       └── son-innumerables-los-estragos-que.md
 │   │   └── u
 │   │       └── m
 │   │           └── sum.md
@@ -148,7 +166,8 @@ JUCARDUS
 │   ├── exear.html
 │   ├── exear-original.html
 │   ├── pinyin.html
-│   └── tarjetas.html
+│   ├── tarjetas.html
+│   └── tarjetas.js
 ├── _includes
 │   └── head-custom.html
 ├── index.md
@@ -180,24 +199,29 @@ JUCARDUS
 │   ├── gramatica-china.md
 │   ├── gramatica-latina.md
 │   ├── gramaticas.md
+│   ├── latin-espanol-a.md
 │   ├── latin-espanol-e.md
 │   ├── latin-espanol.md
 │   ├── latin-espanol-s.md
 │   ├── latin-espanol-t.md
 │   ├── programacion.md
 │   ├── radical-001.md
+│   ├── radical-009.md
 │   ├── radical-075.md
 │   ├── radicales-chinos.md
 │   └── reflexiones.md
 ├── readme.md
 └── tareas
+    ├── agregar Frases desglosadas a Pronombres personales latinos
     ├── agregar una descripción a los ítems del Contenido en readme
+    ├── carawcter 木 (木) [mù]
     ├── clasificador 杯 [bēi] en Gramawtica china
     ├── composición de 我
     ├── composiciown 茶
     ├── crear entrada para Hànyǔ Pīnyīn
     ├── crear iwndice de abreviaturas y categoriwas
     ├── crear pronombres personales chinos
+    ├── Cuando te canses de ser tan
     ├── desarrollar las formas alternativas de 是不是
     ├── desglosar Ego amo
     ├── desglosar Ego laboro
@@ -223,9 +247,16 @@ JUCARDUS
     ├── desglosar 我有一二個問題。
     ├── desglosar 這是一棵樹。
     ├── editar y subdividir Frases multilingves
+    ├── Ego te amo
+    ├── El mundo es tan pequeñito que
     ├── gramawtica de 是不是
+    ├── La religión siempre cae en la circularidad
     ├── multilingve para 老師 (老师) [lǎoshī]
+    ├── radical 15 冫 [bīng]
+    ├── radical de 你 (你) [nǐ]
+    ├── radical de 這 (这) [zhè]
     ├── radicales chinos en espanwol
+    ├── reflexiones Populismo, como cuando se le inculca
     ├── simplified Chinese 简体中文
     ├── vocabulario relacionado para 喜歡 (喜欢) [xǐhuān]
     ├── 他是聪明。
