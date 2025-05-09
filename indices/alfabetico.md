@@ -1,12 +1,14 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-88 subpáginas en total, ordenadas alfabéticamente.
+97 subpáginas en total, ordenadas alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
 * [Actualización de Linux Mint con Bash](../contenido/a/c/t/actualizacion-de-linux-mint-con-bash.md) - 25-05-03
 * [Actualización del navegador Brave con Bash](../contenido/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - 25-05-03
+* [amāre](../contenido/a/m/a/amare.md) - 25-05-07
+* [amō](../contenido/a/m/o/amo.md) - 25-05-07
 * [Apotegmas](../indices/apotegmas.md) - 25-04-28
 * [Bash - Bourne-Again Shell](../indices/bash.md) - 25-05-03
 * [Contenido del sitio](../contenido/contenido.md) - 25-04-28
@@ -25,6 +27,7 @@
 * [Diccionario chino-español - yī](../indices/chino-espanol-yi1.md) - 25-05-02
 * [Diccionario chino-español - zhè](../indices/chino-espanol-zhe4.md) - 25-05-04
 * [Diccionario latín-español](../indices/latin-espanol.md) - 25-04-28
+* [Diccionario latín-español - A](../indices/latin-espanol-a.md) - 25-05-07
 * [Diccionario latín-español - E](../indices/latin-espanol-e.md) - 25-04-28
 * [Diccionario latín-español - S](../indices/latin-espanol-s.md) - 25-04-28
 * [Diccionario latín-español - T](../indices/latin-espanol-t.md) - 25-04-28
@@ -38,6 +41,7 @@
 * [El relativismo dogmático te pone en la posición...](../contenido/e/l/r/el-relativismo-dogmatico-te-pone.md) - 25-04-28
 * [El universo todo confabula para que...](../contenido/e/l/u/el-universo-todo-confabula-para.md) - 25-04-28
 * [es](../contenido/e/s/m/es.md) - 25-04-28
+* [Es inevitable usar el raciocinio al buscar...](../contenido/e/s/i/es-inevitable-usar-el-raciocinio.md) - 25-05-07
 * [Es sólo geopolítica bañada en chocolate...](../contenido/e/s/s/es-solo-geopolitica-banada-en.md) - 25-04-28
 * [Escritos varios](../indices/escritos.md) - 25-04-28
 * [esse](../contenido/e/s/s/esse.md) - 25-04-28
@@ -60,15 +64,20 @@
 * [Página inexistente - 404](../404.md) - 25-04-28
 * [Programación básica](../indices/programacion.md) - 25-05-03
 * [Pronombres personales latinos](../contenido/p/r/o/pronombres-personales-latinos.md) - 25-04-28
+* [Puedes hablar en términos teológicos acerca de las...](../contenido/p/u/e/puedes-hablar-en-terminos-teologicos.md) - 25-05-07
 * [Puer cantat.](../contenido/p/u/e/puer-cantat.md) - 25-04-28
+* [Que los humanos somos bichos raros en este...](../contenido/q/u/e/que-los-humanos-somos-bichos.md) - 25-05-07
 * [Radical 1 一 [yī]](../indices/radical-001.md) - 25-05-02
 * [Radical 75 木 [mù]](../indices/radical-075.md) - 25-05-01
 * [Radical 9 人 [rén]](../indices/radical-009.md) - 25-05-05
 * [Radicales chinos](../indices/radicales-chinos.md) - 25-05-01
 * [Read Me](../readme.md) - 25-04-28
 * [Reflexiones](../indices/reflexiones.md) - 25-04-28
+* [Si no amas al mundo como lo ama Dios, ni...](../contenido/s/i/n/si-no-amas-al-mundo-como.md) - 25-05-07
+* [Si te pones una ristra de ajos al cuello...](../contenido/s/i/t/si-te-pones-una-ristra.md) - 25-05-07
 * [Siempre que busques a Dios hacia...](../contenido/s/i/e/siempre-que-busques-a-dios.md) - 25-04-28
 * [Sin importar si tu tradición es de los hombres...](../contenido/s/i/n/sin-importar-si-tu-tradicion.md) - 25-04-28
+* [Son innumerables los estragos que puede hacer...](../contenido/s/o/n/son-innumerables-los-estragos-que.md) - 25-05-07
 * [sum](../contenido/s/u/m/sum.md) - 25-04-28
 * [tū](../contenido/t/u/m/tu.md) - 25-04-28
 * [Tū amās.](../contenido/t/u/a/tu-amas.md) - 25-04-28
