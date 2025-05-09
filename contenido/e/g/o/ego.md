@@ -5,7 +5,5 @@
 
 ### Frases desglosadas
 
-Las frases de ejemplo más recientes se muestran al inicio de la lista.
-
-* [Ego amō.](../../../../contenido/e/g/o/ego-amo.md)
-* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md)
+* [Ego amō.](../../../../contenido/e/g/o/ego-amo.md) → Yo amo.
+* [Ego sum.](../../../../contenido/e/g/o/ego-sum.md) → Yo soy.
