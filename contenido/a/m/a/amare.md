@@ -7,7 +7,7 @@ Verbo latino de la primera conjugación.
 
 * amar
 * gustar (gustar mucho de algo)
-* tener aficion por
+* tener afición por
 
 ### Congujación
 
