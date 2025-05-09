@@ -25,3 +25,7 @@
 * nōs labōrāmus
 * vōs labōrātis
 * eī/eae/ea labōrant
+
+### Frases desglosadas
+
+* [Ego labōrō.](../../../../contenido/e/g/o/ego-laboro.md) → Yo trabajo.
