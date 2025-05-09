@@ -22,4 +22,4 @@ Verbo latino de la primera conjugación.
 
 ### Frases de ejemplo
 
-* [Ego amo.](../../../../contenido/e/g/o/ego-amo.md)
+* [Ego amo.](../../../../contenido/e/g/o/ego-amo.md) → Yo amo.
