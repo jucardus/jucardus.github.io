@@ -3,8 +3,6 @@
 
 Segunda persona singular del presente de indicativo del verbo [_esse_](../../../../contenido/e/s/s/esse.md): eres.
 
-### Frases de ejemplo
+### Frases desglosadas
 
-Las frases más recientes se muestran al inicio de la lista.
-
-* [Tū es.](../../../../contenido/t/u/e/tu-es.md)
+* [Tū es.](../../../../contenido/t/u/e/tu-es.md) → Tú eres.
