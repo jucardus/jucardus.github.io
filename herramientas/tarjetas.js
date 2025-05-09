@@ -36,5 +36,11 @@ let data = [
 "Puer aleam in villa desiderat. // [ˈpu.er ˈa.le.am in ˈwil.la de.siˈde.rat] The boy desires a die in the villa. ¶ aleam: Accusative singular, direct object of desiderat. ¶ puer: Nominative singular ('boy'), subject. ¶ in villa: Ablative phrase indicating location ('in the villa'). ¶ desiderat: Third-person singular present indicative active of desiderare ('he desires').",
 "Aleās desiderata voco. // [ˈa.le.aːs de.si.deˈraː.ta ˈwo.ko] I call the dice 'things desired.' ¶ Here, desiderata (neuter plural accusative) describes aleās as objects of desire.",
 "Ego aleās multum amo, sed aleam nolo. // [ˈe.ɡo ˈa.le.aːs ˈmul.tum ˈa.mo | sed ˈa.le.am ˈnoː.lo] I like dice a lot, but I don't like gambling. ¶ aleās ([ˈa.le.aːs]): Accusative plural of alea ('dice'), direct object of amo. ¶ amo ([ˈa.mo]): First-person singular present indicative of amare. ¶ sed ([sed]): Conjunction meaning 'but'. ¶ aleam ([ˈa.le.am]): Accusative singular of alea, here used to mean 'gambling' or 'game of chance.' ¶ nolo ([ˈnoː.lo]): First-person singular present indicative of nolle ('to not want' or 'to not like'). Nolo is a stronger expression of disliking or refusing something in Latin, suitable here to contrast with amo.",
-"dado (multilingüe) // AL. Würfel -s; - [m.] ¶ CH. 骰子 [tóuzi] ¶ FR. Dé [m.] ¶ IT. Dado [m.] ¶ LA. alea, tessera"
+"dado (multilingüe) // AL. Würfel -s; - [m.] ¶ CH. 骰子 [tóuzi] ¶ FR. Dé [m.] ¶ IT. Dado [m.] ¶ LA. alea, tessera",
+"amāre (presente indicativo v. latino) // ego amo; tu amas; is/ea/id amat; nos amamus; vos amatis; ei/eae/ea amant",
+"amāre (La. Es.) // amar, gustar (gustar mucho de algo), tener afición por",
+"這 (这) // [zhè] este, esta, esto; así (en este sentido)",
+"這是一棵樹。 (这是一棵树。) // [Zhè shì yī kē shù.] Esto es un árbol.",
+"Deus est. // Dios existe.",
+"Ego labōrō. // [ˈɛ.ɡo laˈboː.roː] Yo trabajo. ¶ ego: pronombre personal en primera persona singular en caso nominativo: yo ¶ labōrō: primera persona singular del presente de indicativo del verbo _labōrāre_: trabajo"
 ];
