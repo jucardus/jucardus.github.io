@@ -3,6 +3,6 @@
 
 Primera persona singular del tiempo presente del indicativo del verbo [amāre](../../../../contenido/a/m/a/amare.md#presente-indicativo): amo.
 
-### Frases de ejemplo
+### Frases desglosadas
 
-* [Ego amō.](../../../../contenido/e/g/o/ego-amo.md)
+* [Ego amō.](../../../../contenido/e/g/o/ego-amo.md) → Yo amo.
