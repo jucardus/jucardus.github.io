@@ -4,4 +4,5 @@
 Entradas del [Diccionario latín-español](../indices/latin-espanol.md) iniciadas en A.
 
 * [amāre](../contenido/a/m/a/amare.md)
+* [amās](../contenido/a/m/a/amas.md)
 * [amō](../contenido/a/m/o/amo.md)
