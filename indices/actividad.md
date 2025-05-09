@@ -1,8 +1,12 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/actividad.html" download="jucardus-actividad.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-97 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
+101 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [amās](../contenido/a/m/a/amas.md) - 25-05-09
+* [labōrāre](../contenido/l/a/b/laborare.md) - 25-05-09
+* [labōrō](../contenido/l/a/b/laboro.md) - 25-05-09
+* [Diccionario latín-español - L](../indices/latin-espanol-l.md) - 25-05-09
 * [Diccionario latín-español - A](../indices/latin-espanol-a.md) - 25-05-07
 * [amāre](../contenido/a/m/a/amare.md) - 25-05-07
 * [amō](../contenido/a/m/o/amo.md) - 25-05-07
@@ -33,9 +37,9 @@
 * [樹 (树) [shù]](../contenido/s/h/u/shu4-27193.md) - 25-05-01
 * [天氣 (天气) [tiānqì]](../contenido/t/i/a/tian1-qi4.md) - 25-04-30
 * [Diccionario chino-español - tiān](../indices/chino-espanol-tian1.md) - 25-04-30
+* [Jucardus.com](../index.md) - 25-04-30
 * [Diccionario chino-español - lěng](../indices/chino-espanol-leng3.md) - 25-04-29
 * [冷 (冷) [lěng]](../contenido/l/e/n/leng3-20919.md) - 25-04-29
-* [Jucardus.com](../index.md) - 25-04-29
 * [El universo todo confabula para que...](../contenido/e/l/u/el-universo-todo-confabula-para.md) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md) - 25-04-28
 * [他 (他) [tā]](../contenido/t/a/1/ta1-20182.md) - 25-04-28
