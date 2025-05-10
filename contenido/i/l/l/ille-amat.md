@@ -5,5 +5,5 @@ Ille amat. [ˈɪl.lɛ ˈa.mat] Él ama. / Ese hombre ama.
 
 ### Desglosamiento
 
-* **ille:** pronombre personal masculino en tercera persona singular: él
+* [**ille:**](../../../../contenido/i/l/l/ille-amat.md) pronombre personal masculino en tercera persona singular: él
 * **amat:** tercera persona singular del presente del indicativo del verbo _amāre_: ama
