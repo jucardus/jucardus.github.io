@@ -6,4 +6,4 @@ Tū amās. [tuː ˈa.maːs] Tú amas.
 ### Desglosamiento
 
 * [**tū:**](../../../../contenido/t/u/m/tu.md) pronombre personal en segunda persona singular y caso nominativo: tú
-* **amās:** segunda persona singular del presente de indicativo del verbo _amāre_: amas
+* [**amās:**](../../../../contenido/a/m/a/amas.md) segunda persona singular del presente de indicativo del verbo _amāre_: amas
