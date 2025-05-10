@@ -7,6 +7,8 @@
 * Diccionario inglés-español
 * Diccionario multilingüe
 * Nombres bíblicos
+* Sinónimos españoles
+* Sinónimos ingleses
 * Vocabulario español
 * Vocabulario inglés
 * Vocabulario inglés-español
