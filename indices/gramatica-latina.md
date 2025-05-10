@@ -5,6 +5,12 @@
 
 * [ego, tū, illa, ...](../contenido/p/r/o/pronombres-personales-latinos.md)
 
+### Nombres sustantivos
+
+#### Segunda declinación
+
+* [puer](../contenido/p/u/e/puer.md)
+
 ### Verbos regulares
 
 * [amāre](../contenido/a/m/a/amare.md)
