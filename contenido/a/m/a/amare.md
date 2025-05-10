@@ -23,4 +23,5 @@ Verbo latino de la primera conjugación.
 ### Frases desglosadas
 
 * [Ego amo.](../../../../contenido/e/g/o/ego-amo.md) → Yo amo.
+* [Ille amat.](../../../../contenido/i/l/l/ille-amat.md) → Él ama.
 * [Tū amās.](../../../../contenido/t/u/a/tu-amas.md) → Tú amas.
