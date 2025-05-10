@@ -15,7 +15,7 @@ Verbo latino de la primera conjugación.
 
 * ego [amo](../../../../contenido/a/m/o/amo.md)
 * tu [amas](../../../../contenido/a/m/a/amas.md)
-* is/ea/id amat
+* is/ea/id [amat](../../../../contenido/a/m/a/amat.md)
 * nos amamus
 * vos amatis
 * ei/eae/ea amant
