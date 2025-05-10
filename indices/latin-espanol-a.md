@@ -5,4 +5,5 @@ Entradas del [Diccionario latín-español](../indices/latin-espanol.md) iniciada
 
 * [amāre](../contenido/a/m/a/amare.md)
 * [amās](../contenido/a/m/a/amas.md)
+* [amat](../contenido/a/m/a/amat.md)
 * [amō](../contenido/a/m/o/amo.md)
