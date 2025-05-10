@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FLASH CARDS</title>
+    <style>
+        body {
+            background-color: #444;
+            color: #eee;
+            font-family: "Arial", sans-serif;
+            letter-spacing: 1px;
+            text-align: center;
+            touch-action: manipulation;
+        }
+        #word {
+        	font-size: 170%;
+            margin-bottom: 250px;
+            margin-top: 170px;
+        }
+        #contents {
+            border-top: 4px Dotted Silver;
+            font-size: 135%;
+            padding-top: 250px;
+            padding-bottom: 100px;
+        }
+        #controls {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            right: 0;
+            background-color: #444;
+            padding: 10px;
+            z-index: 100;
+        }
+        input {
+        	color: #fff;
+            background-color: #555;
+            font-size: 16px;
+            padding: 5px;
+            width: 60px;
+            text-align: center;
+        }
+        button {
+            font-size: 16px;
+            padding: 5px 10px;
+            margin: 0 5px;
+            background-color: #666;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        label {
+            font-size: 16px;
+            margin: 0 5px;
+        }
+    </style>
+    <script src="caracteres.js"></script>
+</head>
+<body onload="initialize()">
+    <div id="controls">
+        <label for="startRange">From:</label>
+        <input type="number" id="startRange" min="1">
+        <label for="endRange">To:</label>
+        <input type="number" id="endRange" min="1">
+        <button onclick="updateRange()">Set Range</button>
+        <button onclick="toggleShuffle()">Shuffle: ON</button>
+    </div>
+    <div class="display" id="word"></div>
+    <div class="display" id="contents"></div>
+    <script>
+        let currentDeck = [];
+        let shuffleMode = true;
+        let currentRange = { start: 0, end: 0 };
+        let deckPosition = 0;
+
+        function initialize() {
+            // Set initial range values
+            document.getElementById('startRange').value = 1;
+            document.getElementById('endRange').value = data.length;
+            document.getElementById('startRange').max = data.length;
+            document.getElementById('endRange').max = data.length;
+
+            updateRange();
+            run();
+        }
+
+        function updateRange() {
+            const start = parseInt(document.getElementById('startRange').value) || 1;
+            const end = parseInt(document.getElementById('endRange').value) || data.length;
+
+            // Validate inputs
+            const validatedStart = Math.max(1, Math.min(start, data.length));
+            const validatedEnd = Math.max(validatedStart, Math.min(end, data.length));
+
+            document.getElementById('startRange').value = validatedStart;
+            document.getElementById('endRange').value = validatedEnd;
+
+            currentRange = {
+                start: validatedStart - 1, // Convert to 0-based index
+                end: validatedEnd - 1
+            };
+
+            // Create a new deck with the selected range
+            currentDeck = data.slice(currentRange.start, currentRange.end + 1);
+
+            if (shuffleMode) {
+                currentDeck = shuffleArray([...currentDeck]);
+            }
+
+            // Reset deck position
+            deckPosition = 0;
+        }
+
+        function toggleShuffle() {
+            shuffleMode = !shuffleMode;
+            document.querySelector('button:nth-of-type(2)').textContent =
+                `Shuffle: ${shuffleMode ? 'ON' : 'OFF'}`;
+
+            if (shuffleMode) {
+                currentDeck = shuffleArray([...currentDeck]);
+            } else {
+                // Return to original order within the range
+                currentDeck = data.slice(currentRange.start, currentRange.end + 1);
+            }
+
+            deckPosition = 0;
+        }
+
+        function run() {
+            if (currentDeck.length === 0) {
+                document.getElementById('word').innerHTML = "No cards in selected range";
+                document.getElementById('contents').innerHTML = "";
+                return;
+            }
+
+            // Get next card (cycles through deck)
+            const card = currentDeck[deckPosition % currentDeck.length];
+            deckPosition++;
+
+            var word = card.toString().replace(/ \/\/ .*/g,"").trim();
+            if (word.length <= 5) {
+                word = '<span style="font-size: 200%;">' + word + '</span>';
+            }
+            var contents = card.toString().replace(/.* \/\/ /g,"").trim();
+
+            document.getElementById('word').innerHTML = word;
+            document.getElementById('contents').innerHTML = contents.replace(/ ¶ /g,'<p/>');
+        }
+
+        function shuffleArray(array) {
+            let currentIndex = array.length, randomIndex;
+            while (currentIndex > 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+            }
+            return array;
+        }
+
+        document.body.addEventListener('click', run);
+
+    </script>
+</body>
+</html>
