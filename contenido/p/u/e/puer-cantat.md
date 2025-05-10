@@ -5,5 +5,5 @@ Puer cantat. [ˈpu.ɛr ˈkan.tat] El muchacho canta. / El muchacho está cantand
 
 ### Desglosamiento
 
-* **puer:** sustantivo masculino nominativo singular: muchacho
+* [**puer:**](../../../../contenido/p/u/e/puer.md) sustantivo masculino nominativo singular: muchacho
 * **cantat:** tercera persona singular del presente indicativo activo del verbo _cantāre_: canta
