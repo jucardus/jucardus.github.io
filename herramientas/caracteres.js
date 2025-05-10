@@ -1,3 +1,22 @@
 let data = [
-
+"的 / 的 // [de] of; ~'s (possessive particle); indeed",  
+"一 / 一 // [yī] one; a; single",  
+"是 / 是 // [shì] to be; yes; this",  
+"不 / 不 // [bù] not; no; un-",  
+"了 / 了 // [le] (completed action marker); to finish; to understand",  
+"在 / 在 // [zài] at; in; to exist",  
+"人 / 人 // [rén] person; people; human",  
+"有 / 有 // [yǒu] to have; there is; to exist",  
+"我 / 我 // [wǒ] I; me; my",  
+"他 / 他 // [tā] he; him; other",
+"這 / 这 // [zhè] this; these; such",  
+"個 / 个 // [gè] individual; measure word; piece",  
+"們 / 们 // [men] (plural marker for pronouns); people; group",  
+"中 / 中 // [zhōng] middle; center; China",  
+"來 / 来 // [lái] to come; to arrive; future",  
+"上 / 上 // [shàng] above; up; previous",  
+"大 / 大 // [dà] big; large; great",  
+"為 / 为 // [wèi] for; to; because of",  
+"和 / 和 // [hé] and; harmony; peace",  
+"國 / 国 // [guó] country; nation; state",
 ];
