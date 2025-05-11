@@ -35,5 +35,5 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * Invitación a pCloud: [i.jucardus.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
 * Música clásica: [m.jucardus.com](https://www.youtube.com/@jucardus/playlists)
 * Pagos y donaciones: [p.jucardus.com](https://paypal.me/jucardus)
-* Repositorio: [r.jucardus.com](https://r.jucardus.com)
+* Repositorio: [r.jucardus.com](https://github.com/jucardus/jucardus.github.io/blob/main/index.md)
 * X Twitter: [x.jucardus.com](https://x.com/jucardus)
