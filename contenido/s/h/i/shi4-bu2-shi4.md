@@ -15,7 +15,7 @@
 * 是吧？ (是吧？) [shì ba?]
 * 行不行？ (行不行？) [xíng bù xíng?]
 
-### Frases de ejemplo
+### Frases desglosadas
 
 * [你喜歡咖啡，是不是？](../../../../contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
 * [他是老師，是不是？](../../../../contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.md) → Él es profesor, ¿no es así?
