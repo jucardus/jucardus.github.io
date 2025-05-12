@@ -21,7 +21,7 @@
 * [Si te pones una ristra de ajos al cuello...](../contenido/s/i/t/si-te-pones-una-ristra.md) - 25-05-07
 * [Es inevitable usar el raciocinio al buscar...](../contenido/e/s/i/es-inevitable-usar-el-raciocinio.md) - 25-05-07
 * [Que los humanos somos bichos raros en este...](../contenido/q/u/e/que-los-humanos-somos-bichos.md) - 25-05-07
-* [Radical 9 人 [rén]](../indices/radical-009.md) - 25-05-05
+* [Radical 009 人 [rén]](../indices/radical-009.md) - 25-05-05
 * [這 (这) [zhè]](../contenido/z/h/e/zhe4-36889.md) - 25-05-04
 * [Diccionario chino-español - zhè](../indices/chino-espanol-zhe4.md) - 25-05-04
 * [Etiquetas del sitio](../indices/etiquetas.md) - 25-05-04
@@ -30,19 +30,19 @@
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
 * [Bash - Bourne-Again Shell](../indices/bash.md) - 25-05-03
 * [Programación básica](../indices/programacion.md) - 25-05-03
-* [Radical 1 一 [yī]](../indices/radical-001.md) - 25-05-02
+* [Radical 001 一 [yī]](../indices/radical-001.md) - 25-05-02
 * [一 (一) [yī]](../contenido/y/i/1/yi1-19968.md) - 25-05-02
 * [Diccionario chino-español - yī](../indices/chino-espanol-yi1.md) - 25-05-02
 * [這是一棵樹。](../contenido/z/h/e/zhe4-shi4-yi1-ke1-shu4.md) - 25-05-02
-* [Radical 75 木 [mù]](../indices/radical-075.md) - 25-05-01
+* [Radical 075 木 [mù]](../indices/radical-075.md) - 25-05-01
 * [Radicales chinos](../indices/radicales-chinos.md) - 25-05-01
 * [棵 (棵) [kē]](../contenido/k/e/1/ke1-26869.md) - 25-05-01
 * [Diccionario chino-español - kē](../indices/chino-espanol-ke1.md) - 25-05-01
 * [Diccionario chino-español - shù](../indices/chino-espanol-shu4.md) - 25-05-01
 * [樹 (树) [shù]](../contenido/s/h/u/shu4-27193.md) - 25-05-01
+* [Jucardus.com](../index.md) - 25-05-01
 * [天氣 (天气) [tiānqì]](../contenido/t/i/a/tian1-qi4.md) - 25-04-30
 * [Diccionario chino-español - tiān](../indices/chino-espanol-tian1.md) - 25-04-30
-* [Jucardus.com](../index.md) - 25-04-30
 * [Diccionario chino-español - lěng](../indices/chino-espanol-leng3.md) - 25-04-29
 * [冷 (冷) [lěng]](../contenido/l/e/n/leng3-20919.md) - 25-04-29
 * [El universo todo confabula para que...](../contenido/e/l/u/el-universo-todo-confabula-para.md) - 25-04-28
