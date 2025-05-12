@@ -20,4 +20,7 @@ La palabra 天氣 (天气) [tiānqì] se compone de 天 (天) [tiān] 'cielo' y 
 * 明天的天氣怎麼樣？ → ¿Qué tiempo hará mañana?
 * 天氣太冷了！ → ¡El clima está muy frío!
 * 今天天氣很好。 → Hace buen tiempo
+
+### Frases desglosadas
+
 * [天氣是冷。](../../../../contenido/t/i/a/tian1-qi4-shi4-leng3.md) → Sí que hace frío.
