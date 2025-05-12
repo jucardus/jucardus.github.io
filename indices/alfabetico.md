@@ -62,7 +62,7 @@
 * [ille](../contenido/i/l/l/ille.md) - 25-05-10
 * [Ille amat.](../contenido/i/l/l/ille-amat.md) - 25-04-28
 * [Índice alfabético](../indices/alfabetico.md) - 25-04-28
-* [Jucardus.com](../index.md) - 25-04-30
+* [Jucardus.com](../index.md) - 25-05-01
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
 * [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md) - 25-04-28
 * [labōrāre](../contenido/l/a/b/laborare.md) - 25-05-09
@@ -76,9 +76,9 @@
 * [puer [m.]](../contenido/p/u/e/puer.md) - 25-05-10
 * [Puer cantat.](../contenido/p/u/e/puer-cantat.md) - 25-04-28
 * [Que los humanos somos bichos raros en este...](../contenido/q/u/e/que-los-humanos-somos-bichos.md) - 25-05-07
-* [Radical 1 一 [yī]](../indices/radical-001.md) - 25-05-02
-* [Radical 75 木 [mù]](../indices/radical-075.md) - 25-05-01
-* [Radical 9 人 [rén]](../indices/radical-009.md) - 25-05-05
+* [Radical 001 一 [yī]](../indices/radical-001.md) - 25-05-02
+* [Radical 009 人 [rén]](../indices/radical-009.md) - 25-05-05
+* [Radical 075 木 [mù]](../indices/radical-075.md) - 25-05-01
 * [Radicales chinos](../indices/radicales-chinos.md) - 25-05-01
 * [Read Me](../readme.md) - 25-04-28
 * [Reflexiones](../indices/reflexiones.md) - 25-04-28
