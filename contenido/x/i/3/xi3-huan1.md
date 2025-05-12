@@ -18,4 +18,7 @@
 * 我喜歡這本書。 [Wǒ xǐhuān zhè běn shū.] → Me gusta este libro.
 * 她喜歡唱歌。 [Tā xǐhuān chànggē.] → A ella le gusta cantar.
 * 你喜歡嗎？ [Nǐ xǐhuān ma?] → ¿Te gusta?
+
+### Frases desglosadas
+
 * [你喜歡咖啡，是不是？](../../../../contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
