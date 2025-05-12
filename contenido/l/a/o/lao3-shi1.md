@@ -9,6 +9,6 @@ El término 老師 (老师) se compone de 老 [lǎo] 'viejo', 'experimentado', u
 * profesor, maestro
 * maestro, gurú (para elogiar coloquialmente a alguien - Sinónimos: 大師 (大师) [dàshī], 大神 [dàshén])
 
-### Frases de ejemplo
+### Frases desglosadas
 
 * [他是老師，是不是？](../../../../contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.md) → Él es profesor, ¿verdad?
