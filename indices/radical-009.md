@@ -1,4 +1,4 @@
-# Radical 9 人 [rén]
+# Radical 009 人 [rén]
 <sup>[Inicio](../index.md) · [Índice](../indices/radicales-chinos.md#radical-9) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/radical-009.html" download="jucardus-radical-009.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=El%20Radical%209%20%E4%BA%BA%20%5Br%C3%A9n%5D%2C%20con%20notas%2C%20vocabulario%20incluido%20en%20el%20sitio%20y%20todos%20los%20caracteres%20derivados.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Fradical-009.html%0A%0A%23indcs_jucardus%20%23rdcls_jucardus%0A%40jucardus)</sup>
 
 El radical 人 'persona', 'hombre', tiene también una forma más simple 亻, usada al lado izquierdo de la gran mayoría de caracteres derivados, como 什 [shén], 他 [tā], 代 [dài], 们 [men], 休 [xiū], 位 [wèi], 住 [zhù], 体 [tǐ], 作 [zuò], 你 [nǐ], etcétera.
