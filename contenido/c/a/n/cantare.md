@@ -20,3 +20,7 @@ Verbo regular de la primera conjugación.
 
 ### Frases de ejemplo
 
+* Puer laetus cantat. → El muchacho canta alegremente.
+* Tū carmen cantās. → Tú cantas una canción.
+* Feminae in agrīs cantant. → Las mujeres cantan en el campo.
+* * Nōs cum amīcīs cantāmus. → Cantamos con los amigos.
