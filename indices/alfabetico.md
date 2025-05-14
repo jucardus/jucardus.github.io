@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-106 subpáginas en total, ordenadas alfabéticamente.
+110 subpáginas en total, ordenadas alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
@@ -13,6 +13,8 @@
 * [amō](../contenido/a/m/o/amo.md) - 25-05-07
 * [Apotegmas](../indices/apotegmas.md) - 25-04-28
 * [Bash - Bourne-Again Shell](../indices/bash.md) - 25-05-03
+* [cantāre](../contenido/c/a/n/cantare.md) - 25-05-13
+* [cantat](../contenido/c/a/n/cantat.md) - 25-05-13
 * [Contenido del sitio](../contenido/contenido.md) - 25-04-28
 * [Cuando aliño mis alimentos con un pesto...](../contenido/c/u/a/cuando-alino-mis-alimentos-con.md) - 25-04-28
 * [Diccionario chino-español](../indices/chino-espanol.md) - 25-04-28
@@ -30,6 +32,7 @@
 * [Diccionario chino-español - zhè](../indices/chino-espanol-zhe4.md) - 25-05-04
 * [Diccionario latín-español](../indices/latin-espanol.md) - 25-04-28
 * [Diccionario latín-español - A](../indices/latin-espanol-a.md) - 25-05-07
+* [Diccionario latín-español - C](../indices/latin-espanol-c.md) - 25-05-13
 * [Diccionario latín-español - E](../indices/latin-espanol-e.md) - 25-04-28
 * [Diccionario latín-español - I](../indices/latin-espanol-i.md) - 25-05-10
 * [Diccionario latín-español - L](../indices/latin-espanol-l.md) - 25-05-09
@@ -64,6 +67,7 @@
 * [Índice alfabético](../indices/alfabetico.md) - 25-04-28
 * [Jucardus.com](../index.md) - 25-05-01
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
+* [La religión siempre cae en la circularidad...](../contenido/l/a/r/la-religion-siempre-cae-en.md) - 25-05-13
 * [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md) - 25-04-28
 * [labōrāre](../contenido/l/a/b/laborare.md) - 25-05-09
 * [labōrō](../contenido/l/a/b/laboro.md) - 25-05-09
