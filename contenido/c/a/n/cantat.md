@@ -3,6 +3,13 @@
 
 Tercera persona singular del presente indicativo activo del verbo [cantāre](../../../../contenido/c/a/n/cantare.md): canta.
 
+### Frases de ejemplo
+
+* Poēta carmen cantat. → El muchacho canta una cación.
+* Servus cum amīcō cantat. → El esclavo canta con un amigo.
+* Rēx glōriōsē cantat. → El rey canta gloriosamente.
+* Nauta in nāve cantat. → El navegante/marinero canta en la nave.
+
 ### Frases desglosadas
 
 * [Puer cantat.](../../../../contenido/p/u/e/puer-cantat.md) → El muchacho canta.
