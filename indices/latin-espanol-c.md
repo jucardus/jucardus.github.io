@@ -3,4 +3,5 @@
 
 Entradas del [Diccionario latín-español](../indices/latin-espanol.md) iniciadas en C.
 
+* [cantāre](../contenido/c/a/n/cantare.md)
 * [cantat](../contenido/c/a/n/cantat.md)
