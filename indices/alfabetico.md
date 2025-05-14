@@ -1,12 +1,13 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-110 subpáginas en total, ordenadas alfabéticamente.
+117 subpáginas en total, ordenadas alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
 * [Actualización de Linux Mint con Bash](../contenido/a/c/t/actualizacion-de-linux-mint-con-bash.md) - 25-05-03
 * [Actualización del navegador Brave con Bash](../contenido/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - 25-05-03
+* [Ahórrate el engorroso trámite de ir a alguno...](../contenido/a/h/o/ahorrate-el-engorroso-tramite-de.md) - 25-05-14
 * [amāre](../contenido/a/m/a/amare.md) - 25-05-07
 * [amās](../contenido/a/m/a/amas.md) - 25-05-09
 * [amat](../contenido/a/m/a/amat.md) - 25-05-10
@@ -15,7 +16,6 @@
 * [Bash - Bourne-Again Shell](../indices/bash.md) - 25-05-03
 * [cantāre](../contenido/c/a/n/cantare.md) - 25-05-13
 * [cantat](../contenido/c/a/n/cantat.md) - 25-05-13
-* [Contenido del sitio](../contenido/contenido.md) - 25-04-28
 * [Cuando aliño mis alimentos con un pesto...](../contenido/c/u/a/cuando-alino-mis-alimentos-con.md) - 25-04-28
 * [Diccionario chino-español](../indices/chino-espanol.md) - 25-04-28
 * [Diccionario chino-español - kā](../indices/chino-espanol-ka1.md) - 25-04-28
@@ -64,9 +64,14 @@
 * [Gramáticas](../indices/gramaticas.md) - 25-04-28
 * [ille](../contenido/i/l/l/ille.md) - 25-05-10
 * [Ille amat.](../contenido/i/l/l/ille-amat.md) - 25-04-28
+* [Índice A](../contenido/a/index-a.md) - 25-05-14
+* [Índice AC](../contenido/a/c/index-ac.md) - 25-05-14
+* [Índice ACT](../contenido/a/c/t/index-act.md) - 25-05-14
 * [Índice alfabético](../indices/alfabetico.md) - 25-04-28
+* [Índice alfabético 2](../contenido/index.md) - 25-05-14
 * [Jucardus.com](../index.md) - 25-05-01
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
+* [La realidad siempre supera a la ficción, de...](../contenido/l/a/r/la-realidad-siempre-supera-a.md) - 25-05-14
 * [La religión siempre cae en la circularidad...](../contenido/l/a/r/la-religion-siempre-cae-en.md) - 25-05-13
 * [La Verdad existe desde siempre, de modo que...](../contenido/l/a/v/la-verdad-existe-desde-siempre.md) - 25-04-28
 * [labōrāre](../contenido/l/a/b/laborare.md) - 25-05-09
@@ -80,8 +85,10 @@
 * [puer [m.]](../contenido/p/u/e/puer.md) - 25-05-10
 * [Puer cantat.](../contenido/p/u/e/puer-cantat.md) - 25-04-28
 * [Que los humanos somos bichos raros en este...](../contenido/q/u/e/que-los-humanos-somos-bichos.md) - 25-05-07
+* [Que tu única identidad, si acaso...](../contenido/q/u/e/que-tu-unica-identidad-si.md) - 25-05-14
 * [Radical 001 一 [yī]](../indices/radical-001.md) - 25-05-02
 * [Radical 009 人 [rén]](../indices/radical-009.md) - 25-05-05
+* [Radical 015 冫 [bīng]](../indices/radical-015.md) - 25-05-14
 * [Radical 075 木 [mù]](../indices/radical-075.md) - 25-05-01
 * [Radicales chinos](../indices/radicales-chinos.md) - 25-05-01
 * [Read Me](../readme.md) - 25-04-28
