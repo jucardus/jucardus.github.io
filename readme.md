@@ -10,7 +10,7 @@
 
 ### Árbol del contenido
 
-```
+```bash
 JUCARDUS
 │
 ├── 404.md
