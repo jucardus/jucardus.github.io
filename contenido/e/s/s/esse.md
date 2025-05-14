@@ -23,7 +23,7 @@
   * Ei sunt villae. → Él tiene casas.
   * Nobis est pecunia. → Tenemos dinero.
   * Mihi erat canis. → Yo tenía un perro.
-  * Vobis erant servi → Vosotros teníais esclavos.
+  * Vobis erant servi. → Vosotros teníais esclavos.
   * Illi erat regnum. → Él tenía un reino.
   * Nobis erit gloria. → Tendremos gloria.
   * Mihi fuit donum. → Yo tenía un regalo.
