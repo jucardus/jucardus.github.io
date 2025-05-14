@@ -13,7 +13,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * [**Gramáticas**](./indices/gramaticas.md) - Graḿatica latina, gramática china.
 * **Herramientas web** - Algunas herramientas que suelo usar.
 * [**Índice alfabético 1**](./indices/alfabetico.md) - Todas las subpáginas del sitio, en orden alfabético.
-* [**Índice alfabético 2**](./contenido/index.md) - Todas las subpáginas del sitio, organizadas según las letras iniciales de sus títulos.
+* [**Índice alfabético 2**](./contenido/index.md) - Organizado según las letras iniciales de los títulos de las subpáginas.
 * [**Programación básica**](./indices/programacion.md) - Bash, Google Script, JavaScript, HTML, CSS.
 * **Traducciones al español** - Textos ingleses y franceces traducidos al español.
 
