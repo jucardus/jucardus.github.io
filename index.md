@@ -12,7 +12,8 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * [**Frases desglosadas**](./indices/frases.md) - Análisis morfosintáctico y desglosamiento de frases chinas y latinas.
 * [**Gramáticas**](./indices/gramaticas.md) - Graḿatica latina, gramática china.
 * **Herramientas web** - Algunas herramientas que suelo usar.
-* [**Índice alfabético**](./indices/alfabetico.md) - Todas las entradas del sitio en orden alfabético.
+* [**Índice alfabético 1**](./indices/alfabetico.md) - Todas las entradas del sitio en orden alfabético.
+* [**Índice alfabético 2**](./contenido/index.md) - Todas las entradas del sitio, organizadas según las letras iniciales.
 * **Música clásica** - Clasificada por autor.
 * [**Programación básica**](./indices/programacion.md) - Bash, Google Script, JavaScript, HTML, CSS.
 * **Traducciones al español** - Textos ingleses y franceces traducidos al español.
