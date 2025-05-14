@@ -17,20 +17,31 @@ JUCARDUS
 ├── contenido
 │   ├── a
 │   │   ├── c
+│   │   │   ├── index-ac.md
 │   │   │   └── t
 │   │   │       ├── actualizacion-de-google-chrome-con-bash.md
 │   │   │       ├── actualizacion-de-linux-mint-con-bash.md
-│   │   │       └── actualizacion-del-navegador-brave-con-bash.md
+│   │   │       ├── actualizacion-del-navegador-brave-con-bash.md
+│   │   │       └── index-act.md
+│   │   ├── h
+│   │   │   └── o
+│   │   │       └── ahorrate-el-engorroso-tramite-de.md
+│   │   ├── index-a.md
 │   │   └── m
 │   │       ├── a
-│   │       │   └── amare.md
+│   │       │   ├── amare.md
+│   │       │   ├── amas.md
+│   │       │   └── amat.md
 │   │       └── o
 │   │           └── amo.md
 │   ├── c
+│   │   ├── a
+│   │   │   └── n
+│   │   │       ├── cantare.md
+│   │   │       └── cantat.md
 │   │   └── u
 │   │       └── a
 │   │           └── cuando-alino-mis-alimentos-con.md
-│   ├── contenido.md
 │   ├── e
 │   │   ├── g
 │   │   │   └── o
@@ -60,7 +71,9 @@ JUCARDUS
 │   ├── i
 │   │   └── l
 │   │       └── l
-│   │           └── ille-amat.md
+│   │           ├── ille-amat.md
+│   │           └── ille.md
+│   ├── index.md
 │   ├── k
 │   │   ├── a
 │   │   │   └── 1
@@ -70,10 +83,16 @@ JUCARDUS
 │   │           └── ke1-26869.md
 │   ├── l
 │   │   ├── a
+│   │   │   ├── b
+│   │   │   │   ├── laborare.md
+│   │   │   │   └── laboro.md
 │   │   │   ├── g
 │   │   │   │   └── la-gente-vive-de-eso.md
 │   │   │   ├── o
 │   │   │   │   └── lao3-shi1.md
+│   │   │   ├── r
+│   │   │   │   ├── la-realidad-siempre-supera-a.md
+│   │   │   │   └── la-religion-siempre-cae-en.md
 │   │   │   └── v
 │   │   │       └── la-verdad-existe-desde-siempre.md
 │   │   └── e
@@ -98,11 +117,13 @@ JUCARDUS
 │   │   └── u
 │   │       └── e
 │   │           ├── puedes-hablar-en-terminos-teologicos.md
-│   │           └── puer-cantat.md
+│   │           ├── puer-cantat.md
+│   │           └── puer.md
 │   ├── q
 │   │   └── u
 │   │       └── e
-│   │           └── que-los-humanos-somos-bichos.md
+│   │           ├── que-los-humanos-somos-bichos.md
+│   │           └── que-tu-unica-identidad-si.md
 │   ├── s
 │   │   ├── h
 │   │   │   ├── i
@@ -157,19 +178,6 @@ JUCARDUS
 │           └── e
 │               ├── zhe4-36889.md
 │               └── zhe4-shi4-yi1-ke1-shu4.md
-├── favicon.ico
-├── google2119b2e3affca446.html
-├── herramientas
-│   ├── actividad.html
-│   ├── actividad-original.html
-│   ├── ehtml.html
-│   ├── exear.html
-│   ├── exear-original.html
-│   ├── pinyin.html
-│   ├── tarjetas.html
-│   └── tarjetas.js
-├── _includes
-│   └── head-custom.html
 ├── index.md
 ├── indices
 │   ├── actividad.md
@@ -200,69 +208,20 @@ JUCARDUS
 │   ├── gramatica-latina.md
 │   ├── gramaticas.md
 │   ├── latin-espanol-a.md
+│   ├── latin-espanol-c.md
 │   ├── latin-espanol-e.md
+│   ├── latin-espanol-i.md
+│   ├── latin-espanol-l.md
 │   ├── latin-espanol.md
+│   ├── latin-espanol-p.md
 │   ├── latin-espanol-s.md
 │   ├── latin-espanol-t.md
 │   ├── programacion.md
 │   ├── radical-001.md
 │   ├── radical-009.md
+│   ├── radical-015.md
 │   ├── radical-075.md
 │   ├── radicales-chinos.md
 │   └── reflexiones.md
-├── readme.md
-└── tareas
-    ├── agregar Frases desglosadas a Pronombres personales latinos
-    ├── agregar una descripción a los ítems del Contenido en readme
-    ├── carawcter 木 (木) [mù]
-    ├── clasificador 杯 [bēi] en Gramawtica china
-    ├── composición de 我
-    ├── composiciown 茶
-    ├── crear entrada para Hànyǔ Pīnyīn
-    ├── crear iwndice de abreviaturas y categoriwas
-    ├── crear pronombres personales chinos
-    ├── Cuando te canses de ser tan
-    ├── desarrollar las formas alternativas de 是不是
-    ├── desglosar Ego amo
-    ├── desglosar Ego laboro
-    ├── desglosar Ego puerum video
-    ├── desglosar Ego sum discipulus
-    ├── desglosar ejemplos en esse
-    ├── desglosar Fēmina ambulat
-    ├── desglosar frases en 喜歡 (喜欢) [xǐhuān]
-    ├── desglosar frases en 天氣 (天气) [tiānqì]
-    ├── desglosar Ille amat
-    ├── desglosar las frases en 咖啡 (咖啡) [kāfēi]
-    ├── desglosar Puer cantat
-    ├── desglosar Tu amas
-    ├── desglosar 他是老師，是不是？
-    ├── desglosar 他是聪明。
-    ├── desglosar 你叫什么名字？
-    ├── desglosar 你喜歡咖啡，是不是？
-    ├── desglosar 你是学生吗？
-    ├── desglosar 天氣是冷。
-    ├── desglosar 我們需要等一二分鐘。
-    ├── desglosar 我在吃饭。
-    ├── desglosar 我是喜欢这本书。
-    ├── desglosar 我有一二個問題。
-    ├── desglosar 這是一棵樹。
-    ├── editar y subdividir Frases multilingves
-    ├── Ego te amo
-    ├── El mundo es tan pequeñito que
-    ├── gramawtica de 是不是
-    ├── La religión siempre cae en la circularidad
-    ├── multilingve para 老師 (老师) [lǎoshī]
-    ├── radical 15 冫 [bīng]
-    ├── radical de 你 (你) [nǐ]
-    ├── radical de 這 (这) [zhè]
-    ├── radicales chinos en espanwol
-    ├── reflexiones Populismo, como cuando se le inculca
-    ├── simplified Chinese 简体中文
-    ├── vocabulario relacionado para 喜歡 (喜欢) [xǐhuān]
-    ├── 他是聪明。
-    ├── 你不是学生吗？为什么不上学？
-    ├── 再見 (再见) Zàijiàn = Hablamos luego
-    ├── 在 para gerundios
-    ├── 她是一名會計師。
-    └── 她會彈鋼琴。
+└── readme.md
 ```
