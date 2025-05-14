@@ -77,7 +77,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Radical: 冖 [mì]
 * Significados: cubierta, velo
 
-#### [Radical 15](../../../../indices/radical-015.md)
+#### [Radical 15](../indices/radical-015.md)
 
 * Radical: 冫 [bīng]
 * Significados: hielo, frío
