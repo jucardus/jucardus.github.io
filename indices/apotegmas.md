@@ -3,7 +3,7 @@
 
 Los apotegmas más recientes se muestran al inicio de la lista.
 
-* La realidad siempre supera a la ficción, de...
+* [La realidad siempre supera a la ficción, de...](../contenido/l/a/r/la-realidad-siempre-supera-a.md)
 * [Que tu única identidad, si acaso...](../contenido/q/u/e/que-tu-unica-identidad-si.md)
 * [Ahórrate el engorroso trámite de ir a alguno...](../contenido/a/h/o/ahorrate-el-engorroso-tramite-de.md)
 * [Puedes hablar en términos teológicos acerca de las...](../contenido/p/u/e/puedes-hablar-en-terminos-teologicos.md)
