@@ -9,6 +9,10 @@ Tercera persona singular del presente indicativo activo del verbo [cantāre](../
 * Servus cum amīcō cantat. → El esclavo canta con un amigo.
 * Rēx glōriōsē cantat. → El rey canta gloriosamente.
 * Nauta in nāve cantat. → El navegante/marinero canta en la nave.
+* Puella carmen pulchrum cantat. → La muchacha canta una hermosa canción.
+* Poēta in silvā cantat, ubi avēs audiunt. → El poeta canta en el bosque, donde las aves escuchan.
+* Ancilla carmina deōrum cantat, ut eōs laudet. → La esclava/sierva canta a los dioses para alabarlos.
+* Nauta, quī per undās nāvigat, in lūce lūnae cantat. → El marinero, que navega las olas, canta a la luz de la luna.
 
 ### Frases desglosadas
 
