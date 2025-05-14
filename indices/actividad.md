@@ -1,8 +1,12 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/actividad.html" download="jucardus-actividad.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-106 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
+110 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [cantāre](../contenido/c/a/n/cantare.md) - 25-05-13
+* [Diccionario latín-español - C](../indices/latin-espanol-c.md) - 25-05-13
+* [cantat](../contenido/c/a/n/cantat.md) - 25-05-13
+* [La religión siempre cae en la circularidad...](../contenido/l/a/r/la-religion-siempre-cae-en.md) - 25-05-13
 * [puer [m.]](../contenido/p/u/e/puer.md) - 25-05-10
 * [Diccionario latín-español - P](../indices/latin-espanol-p.md) - 25-05-10
 * [amat](../contenido/a/m/a/amat.md) - 25-05-10
@@ -83,9 +87,9 @@
 * [El relativismo dogmático te pone en la posición...](../contenido/e/l/r/el-relativismo-dogmatico-te-pone.md) - 25-04-28
 * [es](../contenido/e/s/m/es.md) - 25-04-28
 * [Página inexistente - 404](../404.md) - 25-04-28
+* [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Read Me](../readme.md) - 25-04-28
 * [Contenido del sitio](../contenido/contenido.md) - 25-04-28
-* [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Índice alfabético](../indices/alfabetico.md) - 25-04-28
 * [Apotegmas](../indices/apotegmas.md) - 25-04-28
 * [Diccionario chino-español - kā](../indices/chino-espanol-ka1.md) - 25-04-28
