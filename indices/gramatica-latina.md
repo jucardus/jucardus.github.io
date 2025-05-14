@@ -13,6 +13,8 @@
 
 ### Verbos regulares
 
+#### Primera conjugación
+
 * [cantāre](../contenido/c/a/n/cantare.md)
 * [amāre](../contenido/a/m/a/amare.md)
 * [labōrāre](../contenido/l/a/b/laborare.md)
