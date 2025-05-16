@@ -1,12 +1,10 @@
 # Read Me
 
-* Sitio web: [jucardus.github.io](https://jucardus.github.io)
-* Autor y contaco: [Julio Cárdenas P.](https://jucardus.github.io/#autor-y-contacto)
+> El sitio está siendo cambiado a Blogspot.
+
+* Sitio web: [jucardus.com](https://jucardus.com)
+* Autor y contaco: [Julio Cárdenas P.](https://c.jucardus.com)
 * Repositorio: [r.jucardus.com](https://r.jucardus.com)
-
-### Temas del sitio
-
-[Actividad](https://jucardus.github.io/indices/actividad.html) · [Diccionarios](https://jucardus.github.io/indices/diccionarios.html) · [Escritos](https://jucardus.github.io/indices/escritos.html) · [Frases desglosasdas](https://jucardus.github.io/indices/frases.html) · [Gramáticas](https://jucardus.github.io/indices/gramaticas.html) · [Índice](https://jucardus.github.io/indices/alfabetico.html)
 
 ### Árbol del contenido
 
