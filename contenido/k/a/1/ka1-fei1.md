@@ -22,7 +22,7 @@
 
 ### Frases de ejemplo
 
-* 这包是研磨好的咖啡。 [Zhè bāo shì yánmó hǎo de kāfēi.] → Esta bolsa es de café molido (listo para infusionar)."
+* 这包是研磨好的咖啡。 [Zhè bāo shì yánmó hǎo de kāfēi.] → Esta bolsa es de café molido (listo para infusionar).
 * 我想喝一杯咖啡。 [Wǒ xiǎng hē yī bēi kāfēi.] → Quiero beber una taza de café.
 * 一杯咖啡。 [Yī bēi kāfēi.] → Una taza de café.
 
