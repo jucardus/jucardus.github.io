@@ -1,4 +1,0 @@
-# La religión siempre cae en la circularidad...
-<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/reflexiones.md) · [A-Z](../../../../indices/alfabetico.md) · <a href="../../../../contenido/l/a/r/la-religion-siempre-cae-en.html" download="jucardus-la-religion-siempre-cae-en.html">Descargar</a> · [Actividad](../../../../indices/actividad.md) · [Compartir](https://x.com/intent/tweet?text=Reflexiones%3A%20La%20religi%C3%B3n%20siempre%20cae%20en%20la%20circularidad...%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fl%2Fa%2Fr%2Fla-religion-siempre-cae-en.html%0A%0A%23rflxns_jucardus%0A%40jucardus)</sup>
-
-La religión siempre cae en la circularidad, inevitablemente. Ya allí se tiene un serio problema, sin todavía sumarle el ejercicio del poder para forzar la sumisión a esa circularidad. A favor y enrevesadamente se podría decir que la gente casi no quiere buscar a Dios en libertad.
