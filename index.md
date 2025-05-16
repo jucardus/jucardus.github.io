@@ -17,6 +17,10 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * [**Programación básica**](./indices/programacion.md) - Bash, Google Script, JavaScript, HTML, CSS.
 * **Traducciones al español** - Textos ingleses y franceces traducidos al español.
 
+### Actividad reciente
+
+a
+
 ### Aclaraciones
 
 * El sitio está en sus inicios. Intento reunir en él cierto material de mis sitios anteriores y relacionarlo entre sí con numerosos enlaces cruzados para que sea navegable y de mayor utilidad.
