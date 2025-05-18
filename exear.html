@@ -103,19 +103,19 @@
   <h1>X Share Link Generator</h1>
   <div class="form-group">
     <label for="tweetText" id="tweetTextLabel">Tweet Text (use Enter for line breaks, supports special characters like |, ¦, :):</label>
-    <textarea id="tweetText" rows="4" placeholder="" oninput="updateCharCounter()"></textarea>
+    <textarea id="tweetText" rows="4" placeholder="e.g., The text I want to tweet goes here." oninput="updateCharCounter()"></textarea>
   </div>
   <div class="form-group">
     <label for="url">URL (optional):</label>
-    <input type="text" id="url" placeholder="" oninput="updateCharCounter()">
+    <input type="text" id="url" placeholder="e.g., https://github.com/jucardus/repo" oninput="updateCharCounter()">
   </div>
   <div class="form-group">
     <label for="hashtags">Hashtags (comma-separated, optional):</label>
-    <input type="text" id="hashtags" placeholder="" oninput="updateCharCounter()">
+    <input type="text" id="hashtags" placeholder="e.g., grmmr_jucardus,chns_chrctrs" oninput="updateCharCounter()">
   </div>
   <div class="form-group">
     <label for="via">Handles (comma-separated, without @, optional):</label>
-    <input type="text" id="via" placeholder="" oninput="updateCharCounter()">
+    <input type="text" id="via" placeholder="e.g., jucardus,user2,user3" oninput="updateCharCounter()">
   </div>
   <div style="display: flex;">
     <button id="generateButton" onclick="generateLink()">Generate Share Link</button>
@@ -183,7 +183,7 @@
         console.log('Generating link...');
         // Get input values
         const tweetText = document.getElementById('tweetText').value.trim();
-        const url = 'https://jucardus.github.io/' + document.getElementById('url').value.trim().replace('.md','.html');
+        const url = document.getElementById('url').value.trim();
         const hashtags = document.getElementById('hashtags').value.trim();
         const via = document.getElementById('via').value.trim();
 
