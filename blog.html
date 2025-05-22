@@ -78,7 +78,7 @@ function processPostList12(root)
                         var url = entry.link[j].href;
                         if (url && url.length > 0 && title && title.length > 0)
                         {
-                            var titleX = title
+                            var titleX = title.replace(/ /g,'%20');
                           	var entrada = '<a href="https://x.com/intent/tweet?text=' + titleX + ' ' + url + '%0A%0A' + etiquetas + '" target="_blank">' + date + ' - ' + title + '</a>';
                             allResults.push(entrada);
                             counter = counter + 1;
