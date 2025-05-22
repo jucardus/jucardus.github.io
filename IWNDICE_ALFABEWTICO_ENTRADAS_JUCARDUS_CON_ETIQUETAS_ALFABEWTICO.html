@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+<style>
+    @media only screen and (max-device-width: 480px) {
+        body {
+            padding: 10px 3px 140px 3px !important;
+            }
+    }
+    a {
+        color: Black;
+        text-decoration: none;
+    }
+    body {
+        font-family: Arial;
+        font-size: 110%;
+    }
+</style>
+</head>
+<body>
+
+<div id="counting" style="padding-bottom: 20px;"></div>
+
+<div id="postList12"></div>
+
+<script type="text/javascript">
+
+var startIndex = 1;
+var maxResults = 150;
+var allResults = [];
+var counter = 0;
+
+function sendQuery12()
+{
+    var scpt = document.createElement("script");
+    scpt.src = "https://jucardus.blogspot.com/feeds/posts/summary?alt=json&callback=processPostList12&start-index=" + startIndex + "&max-results=" + maxResults;
+    document.body.appendChild(scpt);
+}
+
+function printArrayResults(root)
+{
+    //allResults = allResults.sort((a, b) => a.localeCompare(b));
+    allResults = [...new Set(allResults)]; // eliminar elementos repetidos
+    allResults = allResults.filter(Boolean); // eliminar elementos vaciwos
+    var mostrar = allResults.join("<p>");
+    document.getElementById('postList12').innerHTML = mostrar;
+}
+
+function processPostList12(root)
+{
+    document.getElementById("counting").innerHTML = "&#12288;Collecting...";
+    var elmt = document.getElementById("postList12");
+    if (!elmt)
+    return;
+    var feed = root.feed;
+    if (feed.entry.length > 0)
+    {
+        for (var i = 0; i < feed.entry.length; i++)
+            {
+                var entry = feed.entry[i];
+                var title = entry.title.$t;
+                var date = entry.published.$t
+                    var date = date.replace('20','').replace(/T.*/g,'');
+
+                var labels = [];
+                  for (var k = 0; k < entry.category.length; k++) {
+                    var etqt = entry.category[k].term;
+                        var etqt = '%23' + etqt.toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'u').replace(/ñ/g,'_').replace(/ /g,'_') + '_jucardus';
+                    labels.push(etqt);
+                  }
+                  var etiquetas = '' + labels.join(' '); // 🏷
+
+                for (var j = 0; j < entry.link.length; j++)
+                {
+                    if (entry.link[j].rel == "alternate")
+                    {
+                        var url = entry.link[j].href;
+                        if (url && url.length > 0 && title && title.length > 0)
+                        {
+                            var titleX = title
+                          	var entrada = '<a href="https://x.com/intent/tweet?text=' + titleX + ' ' + url + '%0A%0A' + etiquetas + '" target="_blank">' + date + ' - ' + title + '</a>';
+                            allResults.push(entrada);
+                            counter = counter + 1;
+                        }
+                        break;
+                    }
+                }
+            }
+        if (feed.entry.length >= maxResults)
+        {
+            startIndex += maxResults;
+            sendQuery12();
+        } else {
+            printArrayResults();
+            document.getElementById("counting").innerHTML = counter + " entradas";
+        }
+    }
+}
+sendQuery12();
+</script>
+
+</body>
