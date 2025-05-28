@@ -1,6 +1,4 @@
-# Read Me
+# Herramientas
+<sup>[h.jucardus.com](https://h.jucardus.com)</sup>
 
-> El sitio está siendo cambiado a Blogspot.
-
-* Sitio central: [linktr.ee/jucardus](https://linktr.ee/jucardus)
-* Autor y contaco: [c.jucardus.com](https://c.jucardus.com)
+* [**Caracteres chinos:**](https://tr.ee/caracteres) Herramienta para memorizar caracteres chinos, con pronunciación y significados en inglés. - tr.ee/caracteres
