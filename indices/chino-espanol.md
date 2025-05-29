@@ -40,6 +40,10 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 
 &nbsp; &nbsp; [tiān](../indices/chino-espanol-tian1.md) &nbsp; tián &nbsp; tiǎn &nbsp; tiàn &nbsp; tian
 
+### WO
+
+&nbsp; &nbsp; wō &nbsp; wó &nbsp; wǒ &nbsp; wò &nbsp; wo
+
 ### XI
 
 &nbsp; &nbsp; xī &nbsp; xí &nbsp; [xǐ](../indices/chino-espanol-xi3.md) &nbsp; xì &nbsp; xi
