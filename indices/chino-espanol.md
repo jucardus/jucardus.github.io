@@ -42,7 +42,7 @@ Las entradas del diccionario están organizadas según la transliteración pinyi
 
 ### WO
 
-&nbsp; &nbsp; wō &nbsp; wó &nbsp; wǒ &nbsp; wò &nbsp; wo
+&nbsp; &nbsp; wō &nbsp; wó &nbsp; [wǒ](../indices/chino-espanol-wo3.md) &nbsp; wò &nbsp; wo
 
 ### XI
 
