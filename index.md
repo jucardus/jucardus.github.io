@@ -34,6 +34,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 * Enlaces: [e.jucardus.com](https://enlcs.github.io)
 * Facebook: [f.jucardus.com](https://www.facebook.com/jucardus.page)
 * Invitación a pCloud: [i.jucardus.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
+* Linktree: [t.jucardus.com](https://linktr.ee/jucardus)
 * Música clásica: [m.jucardus.com](https://www.youtube.com/@jucardus/playlists)
 * Pagos y donaciones: [p.jucardus.com](https://paypal.me/jucardus)
 * Repositorio: [r.jucardus.com](https://github.com/jucardus/jucardus.github.io/blob/main/index.md)
