@@ -8,7 +8,7 @@
 
 ### Desglosamiento
 
-* 我 (我) [Wǒ] yo
+* 我 (我) [wǒ] yo
 * 會 (会) [huì] poder
 * 說 (说) [shuō] hablar
 * 中文 (中文) [Zhōngwén] chino (el idioma)
