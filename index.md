@@ -19,16 +19,16 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Actividad reciente
 
-* [Índice ACT](../contenido/a/c/t/index-act.md) - 25-05-14
-* [Índice AC](../contenido/a/c/index-ac.md) - 25-05-14
-* [Índice alfabético 2](../contenido/index.md) - 25-05-14
-* [Índice A](../contenido/a/index-a.md) - 25-05-14
+* [Índice ACT](./contenido/a/c/t/index-act.md) - 25-05-14
+* [Índice AC](./contenido/a/c/index-ac.md) - 25-05-14
+* [Índice alfabético 2](./contenido/index.md) - 25-05-14
+* [Índice A](./contenido/a/index-a.md) - 25-05-14
 * [Radical 015 冫 [bīng]](../indices/radical-015.md) - 25-05-14
-* [La realidad siempre supera a la ficción, de...](../contenido/l/a/r/la-realidad-siempre-supera-a.md) - 25-05-14
-* [Que tu única identidad, si acaso...](../contenido/q/u/e/que-tu-unica-identidad-si.md) - 25-05-14
-* [Ahórrate el engorroso trámite de ir a alguno...](../contenido/a/h/o/ahorrate-el-engorroso-tramite-de.md) - 25-05-14
-* [cantāre](../contenido/c/a/n/cantare.md) - 25-05-13
-* [Diccionario latín-español - C](../indices/latin-espanol-c.md) - 25-05-13
+* [La realidad siempre supera a la ficción, de...](./contenido/l/a/r/la-realidad-siempre-supera-a.md) - 25-05-14
+* [Que tu única identidad, si acaso...](./contenido/q/u/e/que-tu-unica-identidad-si.md) - 25-05-14
+* [Ahórrate el engorroso trámite de ir a alguno...](./contenido/a/h/o/ahorrate-el-engorroso-tramite-de.md) - 25-05-14
+* [cantāre](./contenido/c/a/n/cantare.md) - 25-05-13
+* [Diccionario latín-español - C](./indices/latin-espanol-c.md) - 25-05-13
 
 ### Aclaraciones
 
