@@ -62,14 +62,15 @@
 * [Gramática china](../indices/gramatica-china.md) - 25-04-28
 * [Gramática latina](../indices/gramatica-latina.md) - 25-04-28
 * [Gramáticas](../indices/gramaticas.md) - 25-04-28
+* [Herramientas](../herramientas.md) - 25-05-28
 * [ille](../contenido/i/l/l/ille.md) - 25-05-10
 * [Ille amat.](../contenido/i/l/l/ille-amat.md) - 25-04-28
 * [Índice A](../contenido/a/index-a.md) - 25-05-14
 * [Índice AC](../contenido/a/c/index-ac.md) - 25-05-14
 * [Índice ACT](../contenido/a/c/t/index-act.md) - 25-05-14
-* [Índice alfabético](../indices/alfabetico.md) - 25-04-28
+* [Índice alfabético 1](../indices/alfabetico.md) - 25-04-28
 * [Índice alfabético 2](../contenido/index.md) - 25-05-14
-* [Jucardus.com](../index.md) - 25-05-01
+* [Jucardus.com](../index.md) - 25-05-04
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
 * [La realidad siempre supera a la ficción, de...](../contenido/l/a/r/la-realidad-siempre-supera-a.md) - 25-05-14
 * [La religión siempre cae en la circularidad...](../contenido/l/a/r/la-religion-siempre-cae-en.md) - 25-05-13
