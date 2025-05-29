@@ -1,0 +1,31 @@
+# 咖啡 (咖啡) [kāfēi]
+<sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/chino-espanol-ka1.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · <a href="../../../../contenido/k/a/1/ka1-fei1.html" download="jucardus-ka1-fei1.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%E5%92%96%E5%95%A1%20(%E5%92%96%E5%95%A1)%20%5Bk%C4%81f%C4%93i%5D%20en%20el%20Diccionario%20chino-espa%C3%B1ol%2C%20con%20frases%20de%20ejemplo%2C%20notas%20gramaticales%20y%20traducciones.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fk%2Fa%2F1%2Fka1-fei1.html%0A%0A%23chn_espnl_jucardus%0A%40jucardus)</sup>
+
+* 咖啡 es un préstamo fonético del inglés. El término probablemente empezó a usarse en el siglo XIX, cuando las rutas comerciales lo llevaron a China.
+* Está compuesto por el carácter 咖 [kā], con valor fonético, y el carácter 啡 [fēi], de uso casi exclusivo en el término tratado.
+* El clasificador de 咖啡 es 杯 [bēi] 'taza', 'vaso': 一杯咖啡 [yī bēi kāfēi] 'una taza de café'.
+
+### Traducciones
+
+* café (los granos, los granos molidos y la bebida)
+* café (la planta)
+
+### Vocabulario relacionado
+
+* 咖啡因 (咖啡因) [kāfēiyīn] cafeína
+* 咖啡粉 (咖啡粉) [kāfēi fěn] café molido
+* 咖啡豆 (咖啡豆) [kāfēi dòu] granos de café
+* 咖啡館 (咖啡馆) [kāfēiguǎn] cafetería
+* 拿鐵 (拿铁) [nátiě] café con leche (_latte_)
+* 美式咖啡 (美式咖啡) [Měishì kāfēi] americano (café diluido con agua caliente)
+* 黑咖啡 (黑咖啡) [hēi kāfēi] café negro (sin azúcar y sin leche)
+
+### Frases de ejemplo
+
+* 这包是研磨好的咖啡。 [Zhè bāo shì yánmó hǎo de kāfēi.] → Esta bolsa es de café molido (listo para infusionar).
+* 我想喝一杯咖啡。 [Wǒ xiǎng hē yī bēi kāfēi.] → Quiero beber una taza de café.
+* 一杯咖啡。 [Yī bēi kāfēi.] → Una taza de café.
+
+### Frases desglosadas
+
+* [你喜歡咖啡，是不是？](../../../../contenido/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) → Te gusta el café, ¿verdad?
