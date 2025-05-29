@@ -1,7 +1,7 @@
 # Índice alfabético 1
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-117 subpáginas en total, ordenadas alfabéticamente. También se cuenta con el [Índice alfabético 2](../contenido/index.md), actualmente en construcción.
+118 subpáginas en total, ordenadas alfabéticamente. También se cuenta con el [Índice alfabético 2](../contenido/index.md), actualmente en construcción.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
