@@ -30,7 +30,8 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Enlaces pertinentes
 
-* Enlacista: [e.jucardus.com](https://enlcs.github.io)
+* Diccionarios: [d.jucardus.com](https://app.box.com/s/w6srug9bmgcs4bzzhj8ep2yk198052kw)
+* Enlaces: [e.jucardus.com](https://enlcs.github.io)
 * Facebook: [f.jucardus.com](https://www.facebook.com/jucardus.page)
 * Invitación a pCloud: [i.jucardus.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
 * Música clásica: [m.jucardus.com](https://www.youtube.com/@jucardus/playlists)
