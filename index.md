@@ -30,12 +30,7 @@ Puedes llegar fácilmente a esta página con el enlace [jucardus.com](https://ju
 
 ### Enlaces pertinentes
 
-* Diccionarios: [d.jucardus.com](https://app.box.com/s/w6srug9bmgcs4bzzhj8ep2yk198052kw)
-* Enlaces: [e.jucardus.com](https://enlcs.github.io)
-* Facebook: [f.jucardus.com](https://www.facebook.com/jucardus.page)
-* Invitación a pCloud: [i.jucardus.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
-* Linktree: [t.jucardus.com](https://linktr.ee/jucardus)
-* Música clásica: [m.jucardus.com](https://www.youtube.com/@jucardus/playlists)
+* Sitio central: [t.jucardus.com](https://linktr.ee/jucardus)
 * Pagos y donaciones: [p.jucardus.com](https://paypal.me/jucardus)
 * Repositorio: [r.jucardus.com](https://github.com/jucardus/jucardus.github.io/blob/main/index.md)
-* X Twitter: [x.jucardus.com](https://x.com/jucardus)
+* Invitación a pCloud: [i.jucardus.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
