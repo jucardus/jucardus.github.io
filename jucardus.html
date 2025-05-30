@@ -128,11 +128,13 @@
     window.addEventListener("message",
       function (e) {
         if(e.origin == "https://script.google.com"){ return; }
-          //document.getElementById("mostrar").innerHTML = e.data;
-          baseTxt = e.data;
+          proceso (e.data);
       },
     false);
-    document.getElementById("mostrar").innerHTML = baseTxt;
+    function proceso (recibido) {
+        baseTxt = recibido.replace(/aaa/g,'');
+        document.getElementById("mostrar").innerHTML = baseTxt;
+    }
   </script>
 
     <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
