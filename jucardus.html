@@ -122,14 +122,40 @@
 
 <div id='mostrar'></div>
 
-<script>
-    window.addEventListener("message",
-      function (e) {
-        if(e.origin == 'https://script.google.com/macros/s/AKfycbwobs93d5c3z1r2WNRYybspbCOu3axVSjf4zXq-NCRNu25QBuJ0Gws7jtddfyEsN7kuzg/exec'){ return; }
-          document.getElementById("mostrar").innerHTML = e.data;
-      },
-    false);
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display GAS Results</title>
+</head>
+<body>
+  <h1>Google Apps Script Results</h1>
+  <!-- Div to display the results -->
+  <div id="mostrar"></div>
+
+  <!-- Iframe to load the GAS web app -->
+  <iframe src="https://script.google.com/macros/s/AKfycbwobs93d5c3z1r2WNRYybspbCOu3axVSjf4zXq-NCRNu25QBuJ0Gws7jtddfyEsN7kuzg/exec" 
+          style="display:none;"></iframe>
+
+  <script>
+    window.addEventListener("message", function (e) {
+      // Only accept messages from the trusted GAS URL
+      if (e.origin !== 'https://script.google.com') {
+        console.warn('Invalid origin:', e.origin);
+        return;
+      }
+
+      // Safely display the data (assuming e.data is plain text or sanitized HTML)
+      const mostrarDiv = document.getElementById("mostrar");
+      if (typeof e.data === 'string') {
+        mostrarDiv.textContent = e.data; // Use textContent to avoid XSS
+      } else {
+        mostrarDiv.textContent = JSON.stringify(e.data); // Fallback for non-string data
+      }
+    }, false);
+      
+  </script>
+</body>
+</html>
 
     <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
 
