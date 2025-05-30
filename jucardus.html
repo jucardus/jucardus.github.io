@@ -7,26 +7,18 @@
   <h1>Google Apps Script Results</h1>
   <div id="mostrar"></div>
 
-  <!-- Iframe to load the GAS web app -->
   <iframe src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec" 
           style="display:none;"></iframe>
 
   <script>
-    window.addEventListener("message", function (e) {
-      // Only accept messages from the GAS domain
-      if (e.origin !== 'https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec') {
-        console.warn('Invalid origin:', e.origin);
-        return;
-      }
-
-      // Safely display the data
-      const mostrarDiv = document.getElementById("mostrar");
-      if (typeof e.data === 'string') {
-        mostrarDiv.textContent = e.data; // Use textContent for safety
-      } else {
-        mostrarDiv.textContent = JSON.stringify(e.data); // Handle non-string data
-      }
-    }, false);
+    window.addEventListener("message",
+      function (e) {
+        if(e.origin == "https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec"){ return; }
+          document.getElementById("mostrar").innerHTML = e.data;
+      },
+    false);
   </script>
+  
+
 </body>
 </html>
