@@ -63,6 +63,9 @@
         background-color: #f3f3f3;
         padding: 4% 23% 150px 23%;
         }
+      button#boton {
+        display: none;
+        }
       #buscadores {
         line-height: 2;
         margin-bottom: 25px;
@@ -90,9 +93,28 @@
         width: 22px;
         margin: 0px 8px 10px 0px;
         }
+      input {
+        border: 2px dotted Silver;
+        border-radius: 4px;
+        color: DarkSlateGray;
+        font-family: monospace, sans-serif;
+        font-size: 108%;
+        font-weight: bold;
+        padding: 2px;
+        padding-left: 5px;
+        padding-top: 4px;
+        }
+      ::placeholder {
+        color: DarkTurquoise;
+        text-align: right;
+        }
       li {
         padding-bottom: 9px;
         }
+      #menu {
+        margin: 15px 0px 15px 0px;
+        line-height: 1.8;
+      }
       #mostrar {
         margin-bottom: 70px;
         margin-top: 40px;
@@ -123,7 +145,7 @@
     <button id="boton" type="button" onclick="inicio()">🔍</button>
   </form>
 
-  <a href='https://jucardus.github.io/jucardus'>Inicio</a> · A-Z · Temas
+  <div id='menu'><a href='https://jucardus.github.io/jucardus'>Inicio</a> · A-Z · Temas</div>div>
 
   <div id="mostrar"></div>
 
