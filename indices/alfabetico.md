@@ -1,7 +1,7 @@
 # Índice alfabético 1
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-118 subpáginas en total, ordenadas alfabéticamente. También se cuenta con el [Índice alfabético 2](../contenido/index.md), actualmente en construcción.
+120 subpáginas en total, ordenadas alfabéticamente. También se cuenta con el [Índice alfabético 2](../contenido/index.md), actualmente en construcción.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
@@ -27,6 +27,7 @@
 * [Diccionario chino-español - shù](../indices/chino-espanol-shu4.md) - 25-05-01
 * [Diccionario chino-español - tā](../indices/chino-espanol-ta1.md) - 25-04-28
 * [Diccionario chino-español - tiān](../indices/chino-espanol-tian1.md) - 25-04-30
+* [Diccionario chino-español - wǒ](../indices/chino-espanol-wo3.md) - 25-05-29
 * [Diccionario chino-español - xǐ](../indices/chino-espanol-xi3.md) - 25-04-28
 * [Diccionario chino-español - yī](../indices/chino-espanol-yi1.md) - 25-05-02
 * [Diccionario chino-español - zhè](../indices/chino-espanol-zhe4.md) - 25-05-04
@@ -113,6 +114,7 @@
 * [喜歡 (喜欢) [xǐhuān]](../contenido/x/i/3/xi3-huan1.md) - 25-04-28
 * [天氣 (天气) [tiānqì]](../contenido/t/i/a/tian1-qi4.md) - 25-04-30
 * [天氣是冷。](../contenido/t/i/a/tian1-qi4-shi4-leng3.md) - 25-04-28
+* [我 (我) [wǒ]](../contenido/w/o/3/wo3.md) - 25-05-29
 * [我會說中文。](../contenido/w/o/3/wo3-hui4-shuo1-zhong1-wen2.md) - 25-04-28
 * [是 (是) [shì]](../contenido/s/h/i/shi4-26159.md) - 25-04-28
 * [是不是？ (是不是？) [shì bú shì?]](../contenido/s/h/i/shi4-bu2-shi4.md) - 25-04-28
