@@ -8,13 +8,13 @@
   <div id="mostrar"></div>
 
   <!-- Iframe to load the GAS web app -->
-  <iframe src="https://script.google.com/macros/s/AKfycbyU4G2P4nAw8Kubn2GLE3tlm4hdBJd5h0FtgwHMULTMHAuJ52URuCaIO-ZXzEh-70ZgPg/exec" 
+  <iframe src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec" 
           style="display:none;"></iframe>
 
   <script>
     window.addEventListener("message", function (e) {
       // Only accept messages from the GAS domain
-      if (e.origin !== 'https://script.google.com') {
+      if (e.origin !== 'https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec') {
         console.warn('Invalid origin:', e.origin);
         return;
       }
