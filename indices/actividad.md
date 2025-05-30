@@ -1,8 +1,10 @@
 # Actividad reciente
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/actividad.html" download="jucardus-actividad.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20en%20Jucardus.%20Las%20entradas%20m%C3%A1s%20recientes%20se%20muestran%20al%20inicio%20de%20la%20lista.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Factividad.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-118 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
+120 subpáginas en total. La actividad más reciente se muestra al inicio de la lista.
 
+* [Diccionario chino-español - wǒ](../indices/chino-espanol-wo3.md) - 25-05-29
+* [我 (我) [wǒ]](../contenido/w/o/3/wo3.md) - 25-05-29
 * [Herramientas](../herramientas.md) - 25-05-28
 * [Índice ACT](../contenido/a/c/t/index-act.md) - 25-05-14
 * [Índice AC](../contenido/a/c/index-ac.md) - 25-05-14
@@ -60,6 +62,7 @@
 * [冷 (冷) [lěng]](../contenido/l/e/n/leng3-20919.md) - 25-04-29
 * [El universo todo confabula para que...](../contenido/e/l/u/el-universo-todo-confabula-para.md) - 25-04-28
 * [Mira hacia arriba para idolatrar, mira...](../contenido/m/i/r/mira-hacia-arriba-para-idolatrar.md) - 25-04-28
+* [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [他 (他) [tā]](../contenido/t/a/1/ta1-20182.md) - 25-04-28
 * [他是老師，是不是？](../contenido/t/a/1/ta1-shi4-lao3-shi1-shi4-bu2-shi4.md) - 25-04-28
 * [你 (你) [nǐ]](../contenido/n/i/3/ni3-20320.md) - 25-04-28
@@ -96,9 +99,8 @@
 * [El relativismo dogmático te pone en la posición...](../contenido/e/l/r/el-relativismo-dogmatico-te-pone.md) - 25-04-28
 * [es](../contenido/e/s/m/es.md) - 25-04-28
 * [Página inexistente - 404](../404.md) - 25-04-28
-* [Actividad reciente](../indices/actividad.md) - 25-04-28
-* [Read Me](../readme.md) - 25-04-28
 * [Índice alfabético 1](../indices/alfabetico.md) - 25-04-28
+* [Read Me](../readme.md) - 25-04-28
 * [Apotegmas](../indices/apotegmas.md) - 25-04-28
 * [Diccionario chino-español - kā](../indices/chino-espanol-ka1.md) - 25-04-28
 * [Diccionario chino-español - lǎo](../indices/chino-espanol-lao3.md) - 25-04-28
