@@ -178,9 +178,10 @@
       var resultado = [];
       let array = baseArray;
       for (var i = 1; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(recibido.toUpperCase()) >= 0) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
           resultado.push(array[i]);
         }
+      }
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
