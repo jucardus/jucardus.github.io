@@ -60,8 +60,7 @@
         cursor: pointer;
         }
       body {
-        /*background-color: #f0f0f0;*/
-        /*font-size: 105%;*/
+        background-color: #f3f3f3;
         padding: 4% 23% 150px 23%;
         }
       #buscadores {
@@ -125,6 +124,7 @@
 
   <script>
     let baseTxt = '';
+    let baseArray = [];
     window.addEventListener("message",
       function (e) {
         if(e.origin == "https://script.google.com"){ return; }
@@ -133,7 +133,9 @@
     false);
     function proceso (recibido) {
         baseTxt = recibido.replace(/Ł /g,', ');
-        document.getElementById("mostrar").innerHTML = baseTxt;
+        baseArray = vaseTxt.split('▓');
+        var recientes = baseArray.slice(0,6).join('');
+        document.getElementById("mostrar").innerHTML = recientes;
     }
   </script>
 
