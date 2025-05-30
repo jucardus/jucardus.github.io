@@ -2,34 +2,23 @@
 <html>
 <head>
   <title>Display GAS Results</title>
-  <meta http-equiv="Permissions-Policy" content="clipboard-read=(), clipboard-write=()">
-  <!-- Include DOMPurify for safe HTML rendering -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 </head>
 <body>
   <h1>Google Apps Script Results</h1>
   <div id="mostrar"></div>
 
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec" 
-    style="display:none;"
-    sandbox="allow-scripts allow-same-origin"
-  ></iframe>
+  <iframe src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec" 
+          style="display:none;"></iframe>
 
   <script>
-    window.addEventListener("message", function (e) {
-      if (e.origin !== 'https://script.google.com') {
-        console.warn('Invalid origin:', e.origin);
-        return;
-      }
-
-      const mostrarDiv = document.getElementById("mostrar");
-      if (typeof e.data === 'string' && typeof DOMPurify !== 'undefined') {
-        mostrarDiv.innerHTML = DOMPurify.sanitize(e.data); // Render sanitized HTML
-      } else {
-        mostrarDiv.textContent = e.data; // Fallback to plain text
-      }
-    }, false);
+    window.addEventListener("message",
+      function (e) {
+        if(e.origin == "https://script.google.com"){ return; }
+          document.getElementById("mostrar").innerHTML = e.data;
+      },
+    false);
   </script>
+  
+
 </body>
 </html>
