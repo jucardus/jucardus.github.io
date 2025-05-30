@@ -2,23 +2,46 @@
 <html>
 <head>
   <title>Display GAS Results</title>
+  <!-- Disable clipboard permissions to suppress violation -->
+  <meta http-equiv="Permissions-Policy" content="clipboard-read=(), clipboard-write=()">
 </head>
 <body>
   <h1>Google Apps Script Results</h1>
   <div id="mostrar"></div>
 
-  <iframe src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec" 
-          style="display:none;"></iframe>
+  <!-- Iframe to load the GAS web app, no clipboard permissions -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec" 
+    style="display:none;"
+    allow=""
+  ></iframe>
 
   <script>
-    window.addEventListener("message",
-      function (e) {
-        if(e.origin == "https://script.google.com"){ return; }
-          document.getElementById("mostrar").innerHTML = e.data;
-      },
-    false);
-  </script>
-  
+    window.addEventListener("message", function (e) {
+      // Only accept messages from the GAS domain
+      if (e.origin !== 'https://script.google.com') {
+        console.warn('Invalid origin:', e.origin);
+        return;
+      }
 
+      // Safely display the HTML string
+      const mostrarDiv = document.getElementById("mostrar");
+      if (typeof e.data === 'string') {
+        // If the data is HTML but should be rendered as HTML, sanitize it first
+        // For now, display as text to avoid XSS
+        mostrarDiv.textContent = e.data;
+        // If you need to render HTML, uncomment and use a sanitizer like DOMPurify (see below)
+        /*
+        if (typeof DOMPurify !== 'undefined') {
+          mostrarDiv.innerHTML = DOMPurify.sanitize(e.data);
+        } else {
+          mostrarDiv.textContent = e.data; // Fallback
+        }
+        */
+      } else {
+        mostrarDiv.textContent = JSON.stringify(e.data); // Fallback for non-string data
+      }
+    }, false);
+  </script>
 </body>
 </html>
