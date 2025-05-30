@@ -124,12 +124,15 @@
   <iframe src="https://script.google.com/macros/s/AKfycbxn2GbD5qr0Kw6bbymwKoxXbRu5Bf4aU4s_VNWSno7smE8hfxgt6WR6VDyJwEnntmbHbw/exec"></iframe>
 
   <script>
+    let baseTxt;
     window.addEventListener("message",
       function (e) {
         if(e.origin == "https://script.google.com"){ return; }
-          document.getElementById("mostrar").innerHTML = e.data;
+          //document.getElementById("mostrar").innerHTML = e.data;
+          baseTxt = e.data;
       },
     false);
+    document.getElementById("mostrar").innerHTML = baseTxt;
   </script>
 
     <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
