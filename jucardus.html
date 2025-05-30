@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enlaces varios de cosas muchas.">
+    <meta name="keywords" content="enlaces, links, vínculos, hipervínculos">
+    <meta name="author" content="Julio Cárdenas Pelizzari">
+    
+    <!-- Open Graph / Social Media Meta Tags (optional) -->
+    <meta property="og:title" content="ENLACES">
+    <meta property="og:description" content="Enlaces varios de cosas muchas.">
+    <meta property="og:image" content="favicon.ico">
+    <meta property="og:url" content="https://enlcs.github.io">
+    
+    <title>JUCARDUS.COM</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    
+    <style>
+      @media only screen and (max-device-width: 480px) {
+        .arriba {
+          display: none;
+          }
+        body {
+          font-size: 120%!important;
+          padding: 10px 3px 150px 4px !important;
+          }
+        input#textInput {
+          font-size: 100%!important;
+          width: 90%!important;
+          }
+      }
+      a:link, a:visited, a:active {
+        color: DarkGreen;
+        opacity: 1;
+        text-decoration: none;
+        word-break: break-all;
+        }
+      a:hover, a:focus {
+        color: Red;
+        opacity: 1;
+        text-decoration: underline;
+        word-break: break-all;
+        }
+      a.buscadores {
+        word-break: revert!important;
+        }
+      .arriba {
+        color: Green;
+        font-size: 180%;
+        font-weight: bold;
+        position: fixed;
+        right: 20px;
+        z-index: 1;
+        }
+      .arriba:hover {
+        color: OrangeRed;
+        cursor: pointer;
+        }
+      body {
+        background-color: #f0f0f0;
+        font-size: 105%;
+        padding: 4% 23% 150px 23%;
+        }
+      #buscadores {
+        line-height: 2;
+        margin-bottom: 25px;
+        }
+      .barrita {
+        color: OrangeRed;
+        opacity: 0.7;
+        }
+      .broken {
+        word-break: break-all;
+        }
+      html, body {
+        width: auto !important;
+        overflow-x: hidden !important
+        }
+      h1 {
+        margin-bottom: 30px;
+        }
+      iframe {
+        display: none;
+        }
+      img#favicones {
+        border-radius: 2px;
+        float: left;
+        width: 22px;
+        margin: 0px 8px 10px 0px;
+        }
+      li {
+        padding-bottom: 9px;
+        }
+      #mostrar {
+        margin-bottom: 70px;
+        margin-top: 40px;
+        }
+      .numero {
+        color: #999;
+        font-size: small;
+        }
+      p.temas {
+        font-size: 90%!important;
+        }
+      .previo {
+        color: OrangeRed;
+        margin-left: 20px;
+        }
+      ul {
+        margin-left: -18px;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1><a href='https://jucardus.github.io/jucardus'>Jucardus</a></h1>
+
+<iframe frameborder='0' height='40px' scrolling='no' src='https://script.google.com/macros/s/AKfycbzne5LuSEOUafe42WhZFEiXtYEvjaOzSYss8N3lxECuVJ0452KGFeGh1ZqXYSrxSLaF/exec' width='100%'></iframe>
+
+<div id='mostrar'></div>
+
+<script>
+    window.addEventListener("message",
+      function (e) {
+        if(e.origin == 'https://script.google.com/macros/s/AKfycbzne5LuSEOUafe42WhZFEiXtYEvjaOzSYss8N3lxECuVJ0452KGFeGh1ZqXYSrxSLaF/exec'){ return; }
+          document.getElementById("mostrar").innerHTML = e.data;
+      },
+    false);
+</script>
+
+    <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
+
+    <script>
+      function arriba() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+
+</body>
+</html>
