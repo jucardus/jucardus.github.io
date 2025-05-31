@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-120 subpáginas en total, ordenadas alfabéticamente.
+117 subpáginas en total, ordenadas alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
@@ -66,12 +66,9 @@
 * [Herramientas](../herramientas.md) - 25-05-28
 * [ille](../contenido/i/l/l/ille.md) - 25-05-10
 * [Ille amat.](../contenido/i/l/l/ille-amat.md) - 25-04-28
-* [Índice A](../contenido/a/index-a.md) - 25-05-14
-* [Índice AC](../contenido/a/c/index-ac.md) - 25-05-14
-* [Índice ACT](../contenido/a/c/t/index-act.md) - 25-05-14
-* [Índice alfabético 1](../indices/alfabetico.md) - 25-04-28
+* [Índice alfabético](../indices/alfabetico.md) - 25-04-28
 * [Índice alfabético 2](../contenido/index.md) - 25-05-14
-* [Jucardus.com](../index.md) - 25-05-04
+* [Jucardus.com](../index.md) - 25-05-05
 * [La gente vive de eso, de mitos e historias...](../contenido/l/a/g/la-gente-vive-de-eso.md) - 25-04-28
 * [La realidad siempre supera a la ficción, de...](../contenido/l/a/r/la-realidad-siempre-supera-a.md) - 25-05-14
 * [La religión siempre cae en la circularidad...](../contenido/l/a/r/la-religion-siempre-cae-en.md) - 25-05-13
