@@ -101,7 +101,7 @@
       border-radius: 4px;
       color: DarkSlateGray;
       font-family: monospace, sans-serif;
-      font-size: 100%;
+      font-size: 90%;
       font-weight: bold;
       padding: 2px;
       padding-left: 5px;
@@ -147,6 +147,13 @@
     #submenu {
       margin-top: -10px!important;
       font-size: small;
+    }
+    .subtituloBuscar {
+    }
+    .subtituloBuscar:hover {
+      color: DarkGreen;
+      cursor: pointer;
+      text-decoration: underline;
     }
     ul {
       margin-left: -18px;
@@ -213,7 +220,7 @@
           var etiquetas = linea[3];
           var fecha = linea[4];
           var contenido = linea[5];
-        var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
+        var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h2 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
         resultado.push(nuevaLinea);
         contador = contador + 1;
         if (contador == 10) {break;}
@@ -243,15 +250,40 @@
             var etiquetas = linea[3];
             var fecha = linea[4];
             var contenido = linea[5];
-          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
           resultado.push(nuevaLinea);
         }
       }
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
     }
+      function buscarFecha (recibido) {
+      var buscar = recibido;
+      var resultado = [];
+      let array = baseArray;
+      for (var i = 1; i < array.length; i++) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+          var linea = array[i].split('▒');
+            var orden = linea[0];
+            var titulo = linea[1];
+            var numero = linea[2];
+            var etiquetas = linea[3];
+            var fecha = linea[4];
+            var contenido = linea[5];
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+          resultado.push(nuevaLinea);
+        }
+      }
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = enviar;
+      document.getElementById('textInput').value = '';
+      window.scrollTo(0, 0);
+    }
+  </script>
   </script>
 
   <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
