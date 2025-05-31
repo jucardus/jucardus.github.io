@@ -160,7 +160,7 @@
     <button id="boton" type="button" onclick="inicio()">🔍</button>
   </form>
 
-  <div id='menu'><span class='menu'>Inicio</span> · A-Z · Temas</div>
+  <div id='menu'><span class='menu' onclick='recientes()'>Inicio</span> · A-Z · Temas</div>
 
   <div id="mostrar"><span class='previos'>[ RECIENTES ]</span></div>
 
@@ -208,7 +208,7 @@
           var etiquetas = linea[3];
           var fecha = linea[4];
           var contenido = linea[5];
-        var nuevaLinea = '<div id=\'entradas\'><!--' + orden + '--><h2 class=\'titulos\'>' + titulo + '</h2><div id=\'submenu\'><span class=\'numeros\'>' + numero + '</span> · <span class=\'etiquetas\'>' + etiquetas + '</span> · <span class=\'fechas\'>' + fecha + '</span></div><div id=\'contenidos\'>' + contenido + '</div></div>';
+        var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class=·etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
         resultado.push(nuevaLinea);
         contador = contador + 1;
         if (contador == 10) {break;}
@@ -238,7 +238,7 @@
             var etiquetas = linea[3];
             var fecha = linea[4];
             var contenido = linea[5];
-          var nuevaLinea = '<div id=\'entradas\'><!--' + orden + '--><h2 class=\'titulos\'>' + titulo + '</h2><div id=\'submenu\'><span class=\'numeros\'>' + numero + '</span> · <span class=\'etiquetas\'>' + etiquetas + '</span> · <span class=\'fechas\'>' + fecha + '</span></div><div id=\'contenidos\'>' + contenido + '</div></div>';
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class"'titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
           resultado.push(nuevaLinea);
         }
       }
