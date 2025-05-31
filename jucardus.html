@@ -39,7 +39,7 @@
       word-break: break-all;
       }
     a:hover, a:focus {
-      color: Red;
+      color: OrangeRed;
       opacity: 1;
       text-decoration: underline;
       word-break: break-all;
@@ -118,6 +118,13 @@
       margin: 15px 0px 0px 0px;
       line-height: 1.8;
     }
+    .menu {
+      color: DarkGreen;
+    }
+    .menu:hover {
+      color: OrangeRed;
+      text-decoration: underline;
+    }
     #mostrar {
       margin-bottom: 70px;
       margin-top: 40px;
@@ -152,7 +159,7 @@
     <button id="boton" type="button" onclick="inicio()">🔍</button>
   </form>
 
-  <div id='menu'><a href='https://jucardus.github.io/jucardus'>Inicio</a> · A-Z · Temas</div>
+  <div id='menu'><span class='menu'>Inicio</span> · A-Z · Temas</div>
 
   <div id="mostrar"><span class='previos'>[ RECIENTES ]</span></div>
 
@@ -186,8 +193,31 @@
     function proceso (recibido) {
       baseTxt = recibido.replace(/Ł /g,', ');
       baseArray = baseTxt.split('▓');
-      var recientes = baseArray.slice(0,6).join('');
-      document.getElementById("mostrar").innerHTML = recientes;
+      recientes ();
+    }
+    function recientes () {
+      var resultado = [];
+      var contador = 0;
+      let array = baseArray;
+      for (var i = 1; i < array.length; i++) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+          var linea = array[i].split('▒');
+            var orden = linea[0];
+            var titulo = linea[1];
+            var numero = linea[2];
+            var etiquetas = linea[3];
+            var fecha = linea[4];
+            var contenido = linea[5];
+          var nuevaLinea = '<div id=\'entradas\'><!--' + orden + '--><h2 class=\'titulos\'>' + titulo + '</h2><div id=\'submenu\'><span class=\'numeros\'>' + numero + '</span> · <span class=\'etiquetas\'>' + etiquetas + '</span> · <span class=\'fechas\'>' + fecha + '</span></div><div id=\'contenidos\'>' + contenido + '</div></div>';
+          resultado.push(nuevaLinea);
+          contador = contador + 1;
+          if (contador == 10) {break;}
+        }
+      }
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = enviar;
+      document.getElementById('textInput').value = '';
+      window.scrollTo(0, 0);
     }
     function teclaBuscar (event) {
       if (event.key === "Enter") {
