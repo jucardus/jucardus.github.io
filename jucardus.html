@@ -117,8 +117,9 @@
       padding-bottom: 9px;
       }
     #menu {
-      margin: 15px 0px 0px 0px;
+      font-weight: bold;
       line-height: 1.8;
+      margin: 15px 0px 0px 0px;
     }
     .menu {
       color: DarkGreen;
@@ -129,7 +130,7 @@
       text-decoration: underline;
     }
     #mostrar {
-      margin-bottom: 70px;
+      margin-bottom: 0px;
       margin-top: 40px;
       }
     .numero {
@@ -172,7 +173,7 @@
     <button id="boton" type="button" onclick="inicio()">🔍</button>
   </form>
 
-  <div id='menu'><span class='menu' onclick='recientes()'>Inicio</span> · A-Z · Temas</div>
+  <div id='menu'><span class='menu' onclick='recientes()'>Inicio</span> · <span class='menu' onclick='az()'>A-Z</span> · Temas</div>
 
   <div id="mostrar"><span class='previos'>[ RECIENTES ]</span></div>
 
@@ -262,7 +263,7 @@
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
     }
-      function buscarFecha (recibido) {
+    function buscarFecha (recibido) {
       var buscar = recibido;
       var resultado = [];
       let array = baseArray;
@@ -285,7 +286,30 @@
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
     }
-  </script>
+    function az () {
+      var buscar = '-';
+      document.getElementById("mostrar").innerHTML = buscar;
+      var resultado = [];
+      let array = baseArray;
+      for (var i = 1; i < array.length; i++) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+          var linea = array[i].split('▒');
+            var orden = linea[0];
+            var titulo = linea[1];
+            var numero = linea[2];
+            var etiquetas = linea[3];
+            var fecha = linea[4];
+            var contenido = linea[5];
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+          resultado.push(nuevaLinea);
+        }
+      }
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = enviar;
+      document.getElementById('textInput').value = '';
+      window.scrollTo(0, 0);
+    }
   </script>
 
   <span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span>
