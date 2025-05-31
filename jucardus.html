@@ -123,6 +123,7 @@
     }
     .menu:hover {
       color: OrangeRed;
+      cursor: pointer;
       text-decoration: underline;
     }
     #mostrar {
@@ -200,19 +201,17 @@
       var contador = 0;
       let array = baseArray;
       for (var i = 1; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[0];
-            var titulo = linea[1];
-            var numero = linea[2];
-            var etiquetas = linea[3];
-            var fecha = linea[4];
-            var contenido = linea[5];
-          var nuevaLinea = '<div id=\'entradas\'><!--' + orden + '--><h2 class=\'titulos\'>' + titulo + '</h2><div id=\'submenu\'><span class=\'numeros\'>' + numero + '</span> · <span class=\'etiquetas\'>' + etiquetas + '</span> · <span class=\'fechas\'>' + fecha + '</span></div><div id=\'contenidos\'>' + contenido + '</div></div>';
-          resultado.push(nuevaLinea);
-          contador = contador + 1;
-          if (contador == 10) {break;}
-        }
+        var linea = array[i].split('▒');
+          var orden = linea[0];
+          var titulo = linea[1];
+          var numero = linea[2];
+          var etiquetas = linea[3];
+          var fecha = linea[4];
+          var contenido = linea[5];
+        var nuevaLinea = '<div id=\'entradas\'><!--' + orden + '--><h2 class=\'titulos\'>' + titulo + '</h2><div id=\'submenu\'><span class=\'numeros\'>' + numero + '</span> · <span class=\'etiquetas\'>' + etiquetas + '</span> · <span class=\'fechas\'>' + fecha + '</span></div><div id=\'contenidos\'>' + contenido + '</div></div>';
+        resultado.push(nuevaLinea);
+        contador = contador + 1;
+        if (contador == 10) {break;}
       }
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
