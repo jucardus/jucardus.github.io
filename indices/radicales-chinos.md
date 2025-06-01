@@ -7,7 +7,7 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 
 #### [Radical 1](../indices/radical-001.md)
 
-* Radical: 一 [yī] 
+* Radical: 一 [yī]
 * Significados: uno 
 
 #### Radical 2
