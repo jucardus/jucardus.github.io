@@ -1,7 +1,7 @@
 # 我 (我) [wǒ]
 <sup>[Inicio](../../../../index.md) · [Índice](../../../../indices/chino-espanol-wo3.md) · [A-Z](../../../../indices/alfabetico.md) · [Actividad](../../../../indices/actividad.md) · <a href="../../../../contenido/w/o/3/wo3.html" download="jucardus-wo3.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=El%20car%C3%A1cter%20chino%20%E6%88%91%2C%20con%20traducciones%2C%20composici%C3%B3n%2C%20frases%20de%20ejemplo%20y%20vocabulario%20relacionado.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fcontenido%2Fw%2Fo%2F3%2Fwo3.html%0A%0A%23chn_espnl_jucardus%0A%40jucardus)</sup>
 
-El carácter 我 proviene del radical 62 戈 [gē] 'alabarda', 'lanza', 'arma', y el carácter 手 [shǒu] 'mano'.
+El carácter 我 proviene del [radical 62](../../../../indices/radical-062.md) 戈 [gē] 'alabarda', 'lanza', 'arma', y el carácter 手 [shǒu] 'mano'.
 
 ### Traducciones
 
