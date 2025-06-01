@@ -1,7 +1,7 @@
 # Índice alfabético
 <sup>[Inicio](../index.md) · [Índice](../index.md#contenido) · [A-Z](../indices/alfabetico.md) · [Actividad](../indices/actividad.md) · <a href="../indices/alfabetico.html" download="jucardus-alfabetico.html">Descargar</a> · [Compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20de%20todas%20las%20entradas%20y%20subp%C3%A1ginas%20en%20Jucardus.%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Findices%2Falfabetico.html%0A%0A%23indcs_jucardus%0A%40jucardus)</sup>
 
-117 subpáginas en total, ordenadas alfabéticamente.
+118 subpáginas en total, ordenadas alfabéticamente.
 
 * [Actividad reciente](../indices/actividad.md) - 25-04-28
 * [Actualización de Google Chrome con Bash](../contenido/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-05-03
@@ -88,6 +88,7 @@
 * [Radical 001 一 [yī]](../indices/radical-001.md) - 25-05-02
 * [Radical 009 人 [rén]](../indices/radical-009.md) - 25-05-05
 * [Radical 015 冫 [bīng]](../indices/radical-015.md) - 25-05-14
+* [Radical 062 戈 [gē]](../indices/radical-062.md) - 25-05-31
 * [Radical 075 木 [mù]](../indices/radical-075.md) - 25-05-01
 * [Radicales chinos](../indices/radicales-chinos.md) - 25-05-01
 * [Read Me](../readme.md) - 25-04-28
