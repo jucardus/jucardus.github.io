@@ -320,10 +320,10 @@ Los significados en algunos casos son traducciones de los caracteres chinos, en 
 * Variantes: 忄, ⺗ 
 * Significados: heart
 
-#### Radical 62
+#### [Radical 62](../indices/radical-062.md)
 
 * Radical: 戈 [gē]
-* Significados: halberd
+* Significados: alabarda, lanza
 
 #### Radical 63
 
