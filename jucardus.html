@@ -212,9 +212,7 @@
       },
     false);
     function proceso (recibido) {
-      baseTxt = recibido
-        .replace(/Ł /g,', ')
-        .replace(/Ł</g,',<');
+      baseTxt = recibido;
       baseArray = baseTxt.split('▓');
       recientes ();
     }
@@ -235,7 +233,7 @@
         contador = contador + 1;
         if (contador == 10) {break;}
       }
-      var enviar = resultado.join('');
+      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł</g,',<');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -265,7 +263,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
+      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł</g,',<');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -288,7 +286,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
+      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł</g,',<');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -312,7 +310,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
+      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł</g,',<');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
