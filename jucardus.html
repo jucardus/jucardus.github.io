@@ -78,6 +78,9 @@
     .broken {
       word-break: break-all;
       }
+    #buscador {
+      display: none;
+    }
     #buscadores {
       line-height: 2;
       margin-bottom: 25px;
@@ -189,13 +192,13 @@
 
   <iframe src="https://script.google.com/macros/s/AKfycbzrJDblBv6fXR_u8Swyu39b1iJkKxbuFM2eL7dKqU0lmRpvxIvj3sRJXT-BPZoA_FV27g/exec"></iframe>
 
-  <form> 
+  <div class='menu' id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · Temas · <span class='menuEnlace' onclick='mostrarBuscador()'>Busca</span></div>
+
+  <form id='buscador'> 
     <input type="text" autocomplete="off" placeholder="...🔍" size="21" id="textInput" onkeydown="teclaBuscar(event)" />
     <button id="boton" type="button" onclick="inicio()">🔍</button>
   </form>
-
-  <div class='menu' id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · Temas · Busca</div>
-
+  
   <div id="mostrar"></div>
   <!--span class='previos'>[ RECIENTES ]</span-->
 
@@ -333,6 +336,9 @@
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
+    }
+    function mostrarBuscador () {
+      document.getElementById('buscador').style.display = block;
     }
   </script>
 
