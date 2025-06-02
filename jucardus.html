@@ -201,7 +201,7 @@
     <li>Datos 3</li>
   </ul>
 
-  <iframe src="https://script.google.com/macros/s/AKfycbwjKOXy5Bxrtj0NXnVNkhZnfcEa4CSBHQTA_2ABYy12ggk7r_iDcib0kw2DkJ9ydy8Flg/exec"></iframe>
+  <iframe src="https://script.google.com/macros/s/AKfycbzrJDblBv6fXR_u8Swyu39b1iJkKxbuFM2eL7dKqU0lmRpvxIvj3sRJXT-BPZoA_FV27g/exec"></iframe>
 
   <script>
     let baseTxt = '';
@@ -234,7 +234,7 @@
         contador = contador + 1;
         if (contador == 10) {break;}
       }
-      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -264,7 +264,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -287,7 +287,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -311,7 +311,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('').replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
