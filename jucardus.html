@@ -84,6 +84,8 @@
     #buscadores {
       line-height: 2;
       margin-bottom: 25px;
+      margin-top: 25px;
+      text-align: center;
       }
     button#boton {
       display: none;
@@ -241,6 +243,7 @@
       recientes ();
     }
     function recientes () {
+      document.getElementById('buscador').style.display = 'none';
       var resultado = [];
       var contador = 0;
       let array = baseArray;
@@ -269,6 +272,7 @@
       }
     }
     function buscar () {
+      document.getElementById('buscador').style.display = 'none';
       var buscar = document.getElementById('textInput').value;
       document.getElementById("mostrar").innerHTML = buscar;
       var resultado = [];
@@ -293,6 +297,7 @@
       window.scrollTo(0, 0);
     }
     function buscarFecha (recibido) {
+      document.getElementById('buscador').style.display = 'none';
       var buscar = recibido;
       var resultado = [];
       let array = baseArray;
@@ -316,6 +321,7 @@
       window.scrollTo(0, 0);
     }
     function az () {
+      document.getElementById('buscador').style.display = 'none';
       var buscar = '-';
       document.getElementById("mostrar").innerHTML = buscar;
       var resultado = [];
