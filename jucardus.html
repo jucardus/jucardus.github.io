@@ -184,7 +184,7 @@
   <div id="mostrar"></div>
   <!--span class='previos'>[ RECIENTES ]</span-->
 
-  <div id='separador'>· -- ·</div>
+  <!--div id='separador'>· -- ·</div-->
 
   <h3>Aclaraciones</h3>
 
@@ -235,7 +235,7 @@
         contador = contador + 1;
         if (contador == 10) {break;}
       }
-      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -265,7 +265,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -288,7 +288,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
@@ -312,7 +312,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join(''); //.replace(/Ł /g,', ').replace(/Ł<br/g,',<br').replace(/Ł<p>/g,',<p>');
+      var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
