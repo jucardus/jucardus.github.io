@@ -200,7 +200,7 @@
     <li>Datos 3</li>
   </ul>
 
-  <iframe src="https://script.google.com/macros/s/AKfycbxuT1RCU9mcaVMZud2kwY1XmXNg7F2U9WZQ1t6D8piQhL6ifovEWj2Cj0iAmc3s9jftzA/exec"></iframe>
+  <iframe src="https://script.google.com/macros/s/AKfycbwO3qh5nZCaI4uo7V4XacCyLf7OK6b7F4jnJ9insXpIwO3MCkn1jYz73ukmzmB7kAPudg/exec"></iframe>
 
   <script>
     let baseTxt = '';
@@ -212,7 +212,9 @@
       },
     false);
     function proceso (recibido) {
-      baseTxt = recibido.replace(/Ł /g,', ');
+      baseTxt = recibido
+        .replace(/Ł /g,', ')
+        .replace(/Ł</g,',<');
       baseArray = baseTxt.split('▓');
       recientes ();
     }
