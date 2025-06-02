@@ -123,7 +123,7 @@
     li {
       padding-bottom: 9px;
       }
-    #menu {
+    .menu {
       border-bottom: 4px Solid Green;
       font-weight: bold;
       line-height: 1.8;
@@ -132,10 +132,10 @@
       position: sticky;
       top: 0;
     }
-    .menu {
+    .menuEnlace {
       color: #014784;
     }
-    .menu:hover, .menu:focus, .menu:active {
+    .menuEnlace:hover, .menuEnlace:focus, .menuEnlace:active {
       color: OrangeRed;
       cursor: pointer;
       text-decoration: underline;
@@ -194,7 +194,7 @@
     <button id="boton" type="button" onclick="inicio()">🔍</button>
   </form>
 
-  <div id='menu'><span class='menu' onclick='recientes()'>Inicio</span> · <span class='menu' onclick='az()'>A-Z</span> · Temas</div>
+  <div class='menu' id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · Temas · Busca</div>
 
   <div id="mostrar"></div>
   <!--span class='previos'>[ RECIENTES ]</span-->
