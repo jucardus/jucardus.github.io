@@ -89,6 +89,9 @@
     button#boton {
       display: none;
       }
+    .contenedor {
+      overflow-x: hidden;
+      }
     #entradas {
     }
     #entradasBusca {
@@ -102,7 +105,6 @@
       }
     html, body {
       width: auto !important;
-      overflow-x: hidden !important
       }
     iframe {
       display: none;
@@ -189,6 +191,7 @@
 
 </head>
 <body>
+<div class='contenedor'>
 
   <h1>Jucardus.com</h1>
 
@@ -231,6 +234,8 @@
   </div>
 
   <div id='separador'>&mdash;&mdash;</div>
+
+</div>
   
   <script>
     let baseTxt = '';
