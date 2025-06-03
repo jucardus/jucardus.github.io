@@ -329,10 +329,11 @@
         buscar('');
       }
     }
-    function buscar () {
+    function buscar (recibido) {
       document.getElementById('buscador').style.display = 'none';
       var buscar = document.getElementById('textInput').value;
       document.getElementById("mostrar").innerHTML = buscar;
+      if (recibido != '') {buscar = recinodo;}
       var resultado = [];
       let array = baseArray;
       for (var i = 0; i < array.length; i++) {
@@ -430,13 +431,13 @@
             var orden = linea[3];
             var etiquetas = linea[3];
           //var nuevaLinea = '<div id="temasBuscar"><!--' + orden + '--><h2 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-          resultado.push(etiquetas + ' ');
+          resultado.push('<li><span class="menuEnlace" onclick="buscar(\'' + etiquetas + '\')">' + etiquetas + '</span></li>');
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
       resultado = [...new Set(resultado)]; // eliminar elementos repetidos
-      var enviar = resultado.join(' ¶ ');
-      document.getElementById("mostrar").innerHTML = enviar;
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
       document.getElementById('textInput').value = '';
       limpiarHash ();
       window.scrollTo(0, 0);
