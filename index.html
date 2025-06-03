@@ -434,7 +434,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
+      var enviar = resultado.join(' ¶ ');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       limpiarHash ();
