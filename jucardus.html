@@ -209,8 +209,7 @@
     </form>
   </div>
   
-  <div id="mostrar"></div>
-  <!--span class='previos'>[ RECIENTES ]</span-->
+  <div id="mostrar"><div id='previos'>[ recientes ]</div></div>
 
   <div id='separador'>&mdash;&mdash;</div>
 
@@ -304,7 +303,7 @@
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
       var enviar = resultado.join('');
-      if (enviar.indexOf('<') >=0) {enviar = '<span class="previos">[ ninguna coincidencia ]</span>'}
+      if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
