@@ -285,7 +285,7 @@
       var resultado = [];
       var contador = 0;
       let array = baseArray;
-      for (var i = 1; i < array.length; i++) {
+      for (var i = 0; i < array.length; i++) {
         var linea = array[i].split('▒');
           var orden = linea[0];
           var titulo = linea[1];
@@ -316,7 +316,7 @@
       document.getElementById("mostrar").innerHTML = buscar;
       var resultado = [];
       let array = baseArray;
-      for (var i = 1; i < array.length; i++) {
+      for (var i = 0; i < array.length; i++) {
         if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
           var linea = array[i].split('▒');
             var orden = linea[0];
@@ -342,7 +342,7 @@
       var buscar = recibido;
       var resultado = [];
       let array = baseArray;
-      for (var i = 1; i < array.length; i++) {
+      for (var i = 0; i < array.length; i++) {
         if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
           var linea = array[i].split('▒');
             var orden = linea[0];
@@ -368,7 +368,7 @@
       document.getElementById("mostrar").innerHTML = buscar;
       var resultado = [];
       let array = baseArray;
-      for (var i = 1; i < array.length; i++) {
+      for (var i = 0; i < array.length; i++) {
         if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
           var linea = array[i].split('▒');
             var orden = linea[0];
