@@ -288,6 +288,7 @@
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
+      window.location.hash = '';
       window.scrollTo(0, 0);
     }
     function teclaBuscar (event) {
@@ -320,6 +321,7 @@
       if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
+      window.location.hash = '';
       window.scrollTo(0, 0);
     }
     function buscarFecha (recibido) {
@@ -344,6 +346,7 @@
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
+      window.location.hash = '';
       window.scrollTo(0, 0);
     }
     function az () {
@@ -369,10 +372,12 @@
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
+      window.location.hash = '';
       window.scrollTo(0, 0);
     }
     function mostrarBuscador () {
       window.scrollTo(0, 0);
+      window.location.hash = '';
       document.getElementById('buscador').style.display = 'block';
       document.getElementById('textInput').focus();
       document.getElementById("mostrar").innerHTML = '';
