@@ -434,6 +434,7 @@
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
+      resultado = [...new Set(resultado)]; // eliminar elementos repetidos
       var enviar = resultado.join(' ¶ ');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
