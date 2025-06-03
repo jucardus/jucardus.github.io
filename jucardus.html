@@ -355,7 +355,7 @@
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
       var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
+      document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
     }
@@ -363,6 +363,7 @@
       window.scrollTo(0, 0);
       document.getElementById('buscador').style.display = 'block';
       document.getElementById('textInput').focus();
+      document.getElementById("mostrar").innerHTML = '';
     }
   </script>
 
