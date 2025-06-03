@@ -166,8 +166,9 @@
       }
     .previos {
       color: OrangeRed;
-      margin-bottom: 55px;
-      margin-left: 20px;
+      font-weight: bold;
+      margin-bottom: 0px;
+      margin-left: 0px;
       }
     #separador {
       margin-bottom: 35px;
@@ -303,6 +304,7 @@
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
       var enviar = resultado.join('');
+      if (enviar.indexOf('<') >=0) {enviar = '<span class="previos">[ ninguna coincidencia ]</span>'}
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       window.scrollTo(0, 0);
