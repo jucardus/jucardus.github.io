@@ -297,12 +297,21 @@
   <script>
     let baseTxt = '';
     let baseArray = [];
+    /*
     window.addEventListener("message",
       function (e) {
         if(e.origin == "https://script.google.com"){ return; }
           proceso (e.data);
       },
     false);
+    */
+    window.addEventListener("message", function (e) {
+      if (e.origin !== "https://script.google.com") {
+        console.warn("Ignored message from untrusted origin:", e.origin);
+        return;
+      }
+      proceso(e.data);
+    }, false);
     function proceso (recibido) {
       baseTxt = recibido;
       baseArray = baseTxt.split('▓');
