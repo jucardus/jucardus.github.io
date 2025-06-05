@@ -1,3 +1,3 @@
 # Read Me
 
-* Sitio web: [jucardus.blogspot.com](https://jucardus.blogspot.com)
+* Sitio central: [linktr.ee/jucardus](https://linktr.ee/jucardus)
