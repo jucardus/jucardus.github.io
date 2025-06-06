@@ -48,15 +48,15 @@ Mis listas de reproducción en YouTube, con música clásica clasificada por aut
 
 ---
 
-### [Pagos y donaciones](https://p.jucardus.com)
+### [Pagos y donaciones](https://pp.jucardus.com)
 
-Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **p.jucardus.com**.
+Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **pp.jucardus.com**.
 
 ---
 
-### [Programación básica](https://pr.jucardus.com)
+### [Programación básica](https://p.jucardus.com)
 
-Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente en edición. Enlace corto: **pr.jucardus.com**.
+Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente en edición. Enlace corto: **p.jucardus.com**.
 
 ---
 
@@ -71,5 +71,3 @@ Traducción de textos diversos al español, con versiones párrafo por párrafo 
 Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta para hacer ciertos comentarios cáusticos o no, para retuitar el contenido de otros o para compartir mi actividad reciente. Enlace alternativo: **x.jucardus.com**.
 
 ---
-
-<!--img src="./qr.png" style="display: block; margin: auto;"-->
