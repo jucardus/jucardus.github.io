@@ -24,15 +24,15 @@ Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más,
 
 ---
 
-### [Herramientas web](https://github.com/jucardus/jucardus.github.io/blob/main/herramientas.md)
-
-Herramientas que suelo usar: Caracteres chinos, Editor HTML, Editor pinyin, Exeador Twitter, Tarjetas mnemotécnicas. Enlace corto: **h.jucardus.com**.
-
----
-
 ### [Facebook](https://www.facebook.com/profile.php?id=61561035651414)
 
 Actualmente sin contenido. Ya se usará para algo, o quizá tampoco. Estoy esperando a que me permitan cambiar el nombre de usuario. Enlace corto: **f.jucardus.com**.
+
+---
+
+### [Herramientas web](https://github.com/jucardus/jucardus.github.io/blob/main/herramientas.md)
+
+Herramientas que suelo usar: Caracteres chinos, Editor HTML, Editor pinyin, Exeador Twitter, Tarjetas mnemotécnicas. Enlace corto: **h.jucardus.com**.
 
 ---
 
