@@ -1,4 +1,4 @@
-# [Jucardus.com](https://jucardus.github.io)
+# [Jucardus.com](https://jucardus.com)
 
 ---
 
@@ -14,13 +14,13 @@ Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-
 
 ### [Enlaces muchos](https://e.jucardus.com)
 
-Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. El sitio cuenta con opciones de busca. Enlace corto: **e.jucardus.com**.
+Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. El sitio cuenta con opción de busca. Enlace corto: **e.jucardus.com**.
 
 ---
 
 ### [Escritos varios](https://s.jucardus.com)
 
-Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gustan. De momento sin sitio de publicación. Enlace corto: **s.jucardus.com**.
+Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gusta. Enlace corto: **s.jucardus.com**.
 
 ---
 
@@ -56,13 +56,13 @@ Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis si
 
 ### Programación básica
 
-Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **...**.
+Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **...**
 
 ---
 
 ### Traducciones al español
 
-Traducción de textos diversos al español, con versiones párrafo por párrafo y equivalencias en contexto. Sigo buscando un buen lugar para publicarlas, y cuando lo encuentre, el enlace corto será **...**.
+Traducción de textos diversos al español, con versiones párrafo por párrafo y equivalencias en contexto. Sigo buscando un buen lugar para publicarlas y cuando lo encuentre, el enlace corto será **...**
 
 ---
 
