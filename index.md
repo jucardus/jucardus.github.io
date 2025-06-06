@@ -6,13 +6,7 @@ Para el servicio de traducciones del inglés al español, pagas y gratuitas, con
 
 ---
 
-### Autógrafos varios
-
-Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gustan. De momento sin sitio de publicación.
-
----
-
-### [Diccionarios todos](https://mega.nz/folder/WV4DACyZ#yQyYfhcMJudX5tWOcalPKw)
+### [Diccionarios todos](https://app.box.com/s/w6srug9bmgcs4bzzhj8ep2yk198052kw)
 
 Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe, frases chinas. Enlace corto: **d.jucardus.com**.
 
@@ -21,6 +15,18 @@ Mis diccionarios en desarrollo: diccionario inglés-español, diccionario chino-
 ### [Enlaces muchos](https://enlcs.github.io)
 
 Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos diversos. Son miles los enlaces, reunidos a lo largo de años. El sitio cuenta con opciones de busca. Enlace corto: **e.jucardus.com**.
+
+---
+
+### [Escritos varios](https://jucardus.blogspot.com)
+
+Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gustan. De momento sin sitio de publicación. Enlace corto: **s.jucardus.com**.
+
+---
+
+### [Herramientas web](https://github.com/jucardus/jucardus.github.io/blob/main/herramientas.md)
+
+Herramientas que suelo usar: Caracteres chinos, Editor HTML, Editor pinyin, Exeador Twitter, Tarjetas mnemotécnicas. Enlace corto: **h.jucardus.com**.
 
 ---
 
@@ -44,7 +50,7 @@ Mis listas de reproducción en YouTube, con música clásica clasificada por aut
 
 ### [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
 
-Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **pp.jucardus.com**.
+Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis sitios y para los pagos por las traducciones al inglés. Accesible directamente con el enlace **p.jucardus.com**.
 
 ---
 
@@ -66,4 +72,4 @@ Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta
 
 ---
 
-<img src="./qr.png" style="display: block; margin: auto;">
+<!--img src="./qr.png" style="display: block; margin: auto;"-->
