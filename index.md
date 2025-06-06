@@ -56,13 +56,13 @@ Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis si
 
 ### Programación básica
 
-Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **p.jucardus.com**.
+Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. El enlace corto probablamente será **...**.
 
 ---
 
 ### Traducciones al español
 
-Traducción de textos diversos al español, con versiones párrafo por párrafo y equivalencias en contexto. Sigo buscando un buen lugar para publicarlas, y cuando lo encuentre, el enlace corto será **t.jucardus.com**.
+Traducción de textos diversos al español, con versiones párrafo por párrafo y equivalencias en contexto. Sigo buscando un buen lugar para publicarlas, y cuando lo encuentre, el enlace corto será **...**.
 
 ---
 
