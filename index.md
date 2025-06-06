@@ -56,7 +56,7 @@ Cuenta en PayPal en caso de que desees hacer donaciones por cualquiera de mis si
 
 ### [Programación básica](https://pr.jucardus.com)
 
-En edicion. Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente sin un sitio de exposición. Enlace corto: **pr.jucardus.com**.
+Líneas básicas de programación para Bash, JavaScript, Google Apps Script, Blogger, CSS, Firebase. Actualmente en edición. Enlace corto: **pr.jucardus.com**.
 
 ---
 
