@@ -467,9 +467,9 @@
             var etiquetas = linea[3];
             var fecha = linea[4];
             var contenido = linea[5];
-          var nuevaLinea = '<span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + ' - ' + etiquetas + '</span>';
-          resultado.push('<h2>' + fecha.slice(0, 4) + '</h2>');
-          resultado.push('<h3>' + fecha.slice(0, 7) + '</h3>');
+          var nuevaLinea = '<p><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + ' - ' + etiquetas + '</span></p>';
+          resultado.push('<div style="text-align: center;"><h2>' + fecha.slice(0, 4) + '</h2></div>');
+          resultado.push('<div style="text-decoration: underline;"><h3>' + fecha.slice(0, 7) + '</h3></div>');
           resultado.push('<h4>' + fecha.slice(0, 10) + '</h4>');
           resultado.push(nuevaLinea);
         }
