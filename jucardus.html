@@ -123,7 +123,7 @@
       margin-bottom: 20px;
     }
     h1, h2, h3, h4 {
-      text-align: left!important;
+      text-align: left;
     }
     html, body {
       width: auto !important;
@@ -259,7 +259,7 @@
   <ul>
     <li>Al inicio se muestra una lista de las entradas más recientes del sitio, con títulos clicables para ver el contenido.</li>
     <li>Las acotaciones debajo de los títulos muestran el número de entrada, el tema y la fecha de creación. Clicando en el tema de las entradas abiertas se muestran todas las entradas de dicho tema.</li>
-    <li>En el menú principal, la opción <b>A-Z</b> muestra una lista alfabética de todas las entradas; la opción <b>Temas</b> despliega una lista de todos las etiqueras o temas, en orden alfabético; la opción <b>Archivo</b> mostrará un compendio de todas las entradas ordenadas por fecha.</li>
+    <li>En el menú principal, la opción <b>A-Z</b> muestra una lista alfabética de todas las entradas; la opción <b>Temas</b> despliega una lista de todos las etiqueras o temas, en orden alfabético; la opción <b>Archivo</b> muestra un compendio de todas las entradas ordenadas por fecha.</li>
     <li><a name='autor'></a>Si deseas hacer críticas, correcciones o sugerencias respecto del contenido, contacta conmigo mediante el correo electrónico <i>jucardus en gmail punto com</i>.</li>
   </ul>
     
@@ -468,7 +468,7 @@
             var fecha = linea[4];
             var contenido = linea[5];
           var nuevaLinea = '<p><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + ' - ' + etiquetas + '</span></p>';
-          resultado.push('<div style="text-align: center;"><h2>' + fecha.slice(0, 4) + '</h2></div>');
+          resultado.push('<div style="text-align: center!important;"><h2>' + fecha.slice(0, 4) + '</h2></div>');
           resultado.push('<div style="text-decoration: underline;"><h3>' + fecha.slice(0, 7) + '</h3></div>');
           resultado.push('<h4>' + fecha.slice(0, 10) + '</h4>');
           resultado.push(nuevaLinea);
