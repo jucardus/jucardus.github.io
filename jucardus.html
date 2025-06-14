@@ -466,12 +466,13 @@
             var etiquetas = linea[3];
             var fecha = linea[4];
             var contenido = linea[5];
-          var nuevaLinea = '<h4 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + '</h4><span class="etiquetas">' + etiquetas + '</span></div></div>';
+          var nuevaLinea = '<h4 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + '</span> - ' + etiquetas + '</h4>';
           resultado.push('<h2>' + fecha.slice(0, 10) + '</h2>');
           resultado.push(nuevaLinea);
         }
       }
       //resultado = resultado.sort((a, b) => a.localeCompare(b));
+      resultado.sort().reverse();
       resultado = [...new Set(resultado)];
       resultado = resultado.filter(Boolean);
       var enviar = resultado.join('');
