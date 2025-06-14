@@ -454,10 +454,10 @@
     function archivo() {
       document.getElementById('buscador').style.display = 'none';
       var buscar = '-';
-      document.getElementById("mostrar").innerHTML = buscar;
+      document.getElementById('mostrar').innerHTML = buscar;
       var resultado = [];
       let array = baseArray;
-        array.sort().reverse();
+        //array.sort().reverse();
       for (var i = 0; i < array.length; i++) {
         if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
           var linea = array[i].split('▒');
