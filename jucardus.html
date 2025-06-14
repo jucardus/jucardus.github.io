@@ -466,14 +466,14 @@
             var etiquetas = linea[3];
             var fecha = linea[4];
             var contenido = linea[5];
-          var nuevaLinea = '<div id="entradasAZ"><!--' + orden + '--></span><h4 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + '</h4><span class="etiquetas">' + etiquetas + '</span></div></div>';
+          var nuevaLinea = '<h4 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + '</h4><span class="etiquetas">' + etiquetas + '</span></div></div>';
           resultado.push('<h2>' + fecha.slice(0, 10) + '</h2>');
           resultado.push(nuevaLinea);
         }
       }
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-        resultado = [...new Set(resultado)];
-        resultado = resultado.filter(Boolean);
+      //resultado = resultado.sort((a, b) => a.localeCompare(b));
+      resultado = [...new Set(resultado)];
+      resultado = resultado.filter(Boolean);
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
