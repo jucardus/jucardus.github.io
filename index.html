@@ -195,6 +195,17 @@
       box-sizing: border-box;
       border-radius: 8px;
     }
+    .previoCarga {
+      animation: blinker 1s linear infinite;
+      color: OrangeRed;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
     #previos {
       color: OrangeRed;
       font-weight: bold;
@@ -248,7 +259,7 @@
     </form>
   </div>
   
-  <div id="mostrar"><div id='previos'>[ cargando ]</div></div>
+  <div id="mostrar"><div id='previoCarga'>[ cargando ]</div></div>
 
   <div id='separador'>&mdash;&mdash;&mdash;</div>
 
