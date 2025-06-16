@@ -380,12 +380,12 @@ async function loadBaseTxt() {
 
     // Store in global variable
     baseTxt = resultado.join('▓');
-    console.log('baseTxt loaded:', baseTxt);
+    recientes ();
+    //console.log('baseTxt loaded:', baseTxt);
   } catch (error) {
-    console.error('Error in loadBaseTxt:', error.message);
+    //console.error('Error in loadBaseTxt:', error.message);
     baseTxt = '';
   }
-  recientes ();
 }
 
 // Call on page load
