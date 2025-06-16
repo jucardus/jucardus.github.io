@@ -330,7 +330,7 @@ async function loadBaseTxt() {
   try {
     console.log('Attempting to fetch base.txt...');
     // Fetch base.txt from GitHub (no token needed)
-    const response = await fetch('https://raw.githubusercontent.com/JuCardus/jucardus.github.io/main/base.txt');
+    const response = await fetch('https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/base.txt');
     if (!response.ok) {
       throw new Error(`Fetch failed: ${response.status} ${response.statusText}`);
     }
