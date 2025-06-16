@@ -344,7 +344,7 @@ async function loadBaseTxt() {
       throw new Error('base.txt is empty');
     }
 
-    // Parse CSV using PapaParse (include via CDN: <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>)
+    // Parse CSV using PapaParse
     const array = Papa.parse(contenido, {
       header: false, // No header row processing
       skipEmptyLines: true
@@ -385,6 +385,7 @@ async function loadBaseTxt() {
     console.error('Error in loadBaseTxt:', error.message);
     baseTxt = '';
   }
+  recientes ();
 }
 
 // Call on page load
