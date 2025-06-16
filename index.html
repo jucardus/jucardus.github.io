@@ -248,7 +248,7 @@
 
   <h1>Jucardus.com</h1>
 
-  <iframe src="https://script.google.com/macros/s/AKfycbyW2pASazLDEoTzXFkD7K6Bk-rK9LhE6LWkAmdI1qsCGeXgmZSw2uDNGqgaxF85Migz1w/exec"></iframe>
+  <!--iframe src="https://script.google.com/macros/s/AKfycbyW2pASazLDEoTzXFkD7K6Bk-rK9LhE6LWkAmdI1qsCGeXgmZSw2uDNGqgaxF85Migz1w/exec"></iframe-->
 
   <div id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <a class='menuEnlace' href='#autor'>Autor</a> · <span class='menuEnlace' onclick='archivo()'>Archivo</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · <span class='menuEnlace' onclick='temas()'>Temas</span> · <a class='menuEnlace' href='https://jucardus.github.io'>Recargar</a> · <span class='menuEnlace' onclick='mostrarBuscador()'>Busca 🔍</span></div>
   
@@ -309,6 +309,7 @@
   <script>
     let baseTxt = '';
     let baseArray = [];
+    /*
     window.addEventListener("message",
       function (e) {
         if(e.origin == "https://script.google.com"){ return; }
@@ -320,6 +321,54 @@
       baseArray = baseTxt.split('▓');
       recientes ();
     }
+    */
+// Global variable to store the processed data
+//let baseTxt = '';
+
+async function loadBaseTxt() {
+  try {
+    // Fetch base.txt from GitHub (no token needed)
+    const response = await fetch('https://raw.githubusercontent.com/JuCardus/jucardus.github.io/main/base.txt');
+    if (!response.ok) {
+      throw new Error(`Failed to fetch base.txt: ${response.status} ${response.statusText}`);
+    }
+
+    // Get the text content
+    const contenido = await response.text();
+
+    // Parse CSV (assuming comma-separated values)
+    const array = contenido.split('\n').map(row => row.split(','));
+
+    // Process the CSV data
+    const resultado = [];
+    for (let i = 1; i < array.length; i++) {
+      const linea = array[i];
+      if (linea.length < 5) continue; // Skip malformed rows
+      const numero = linea[0];
+      const titulo = linea[1];
+      const contenido = linea[2];
+      const etiquetas = linea[3];
+      const fecha = linea[4];
+      const orden = titulo
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-zA-Z]/g, '')
+        .toUpperCase();
+      const nuevaLinea = `${orden}▒${titulo}▒${numero}▒${etiquetas}▒${fecha}▒${contenido}`;
+      resultado.push(nuevaLinea);
+    }
+
+    // Store in global variable
+    baseTxt = resultado.join('▓');
+    //console.log('baseTxt loaded successfully');
+  } catch (error) {
+    //console.error('Error loading base.txt:', error);
+    baseTxt = '';
+  }
+}
+
+// Call on page load
+document.addEventListener('DOMContentLoaded', loadBaseTxt);
     function recientes () {
       document.getElementById('buscador').style.display = 'none';
       var resultado = [];
