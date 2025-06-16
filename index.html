@@ -322,33 +322,48 @@
       recientes ();
     }
     */
+
 // Global variable to store the processed data
 //let baseTxt = '';
 
 async function loadBaseTxt() {
   try {
+    console.log('Attempting to fetch base.txt...');
     // Fetch base.txt from GitHub (no token needed)
-    const response = await fetch('https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/base.txt');
+    const response = await fetch('https://raw.githubusercontent.com/JuCardus/jucardus.github.io/main/base.txt');
     if (!response.ok) {
-      throw new Error(`Failed to fetch base.txt: ${response.status} ${response.statusText}`);
+      throw new Error(`Fetch failed: ${response.status} ${response.statusText}`);
     }
 
     // Get the text content
     const contenido = await response.text();
+    console.log('Raw content:', contenido);
 
-    // Parse CSV (assuming comma-separated values)
-    const array = contenido.split('\n').map(row => row.split(','));
+    // Check if content is empty
+    if (!contenido.trim()) {
+      throw new Error('base.txt is empty');
+    }
+
+    // Parse CSV using PapaParse (include via CDN: <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>)
+    const array = Papa.parse(contenido, {
+      header: false, // No header row processing
+      skipEmptyLines: true
+    }).data;
+    console.log('Parsed CSV:', array);
 
     // Process the CSV data
     const resultado = [];
     for (let i = 1; i < array.length; i++) {
       const linea = array[i];
-      if (linea.length < 5) continue; // Skip malformed rows
-      const numero = linea[0];
-      const titulo = linea[1];
-      const contenido = linea[2];
-      const etiquetas = linea[3];
-      const fecha = linea[4];
+      if (linea.length < 5) {
+        console.warn(`Skipping malformed row ${i}:`, linea);
+        continue; // Skip rows with insufficient columns
+      }
+      const numero = linea[0]?.trim() || '';
+      const titulo = linea[1]?.trim() || '';
+      const contenido = linea[2]?.trim() || '';
+      const etiquetas = linea[3]?.trim() || '';
+      const fecha = linea[4]?.trim() || '';
       const orden = titulo
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
@@ -358,17 +373,26 @@ async function loadBaseTxt() {
       resultado.push(nuevaLinea);
     }
 
+    // Check if any valid rows were processed
+    if (resultado.length === 0) {
+      throw new Error('No valid rows processed from CSV');
+    }
+
     // Store in global variable
     baseTxt = resultado.join('▓');
-    //console.log('baseTxt loaded successfully');
+    console.log('baseTxt loaded:', baseTxt);
   } catch (error) {
-    //console.error('Error loading base.txt:', error);
+    console.error('Error in loadBaseTxt:', error.message);
     baseTxt = '';
   }
 }
 
 // Call on page load
-document.addEventListener('DOMContentLoaded', loadBaseTxt);
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Page loaded, calling loadBaseTxt...');
+  loadBaseTxt();
+});
+    
     function recientes () {
       document.getElementById('buscador').style.display = 'none';
       var resultado = [];
