@@ -1,3 +1,3 @@
 # Read Me
 
-* Sitio central: [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* Mi sitio central: [linktr.ee/jucardus](https://linktr.ee/jucardus)
