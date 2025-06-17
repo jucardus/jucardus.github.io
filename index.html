@@ -452,7 +452,7 @@
           var linea = array[i].split('▒');
             var orden = linea[3];
             var etiquetas = linea[3];
-          resultado.push('<li><span class="menuEnlace" onclick="buscar(\'' + etiquetas + '\')"><b>' + etiquetas + '</b></span></li>');
+          resultado.push('<li><span class="menuEnlace" onclick="buscarTema(\'' + etiquetas + '\')"><b>' + etiquetas + '</b></span></li>');
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
@@ -490,6 +490,36 @@
       resultado = resultado.filter(Boolean);
       var enviar = resultado.join('');
       document.getElementById("mostrar").innerHTML = enviar;
+      document.getElementById('textInput').value = '';
+      limpiarHash ();
+      window.scrollTo(0, 0);
+    }
+    function buscarTema (recibido) {
+      document.getElementById('buscador').style.display = 'none';
+      var buscar = document.getElementById('textInput').value;
+      document.getElementById("mostrar").innerHTML = buscar;
+      if (recibido != '') {buscar = recibido;}
+      var resultado = [];
+      let array = baseArray;
+      for (var i = 0; i < array.length; i++) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+          var linea = array[i].split('▒');
+            var orden = linea[0];
+            var titulo = linea[1];
+            var numero = linea[2];
+            var etiquetas = linea[3];
+            var fecha = linea[4];
+            var contenido = linea[5];
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+          if (etiquetas.indexOf(recibido) >= 0) {
+            resultado.push(nuevaLinea);
+          }
+        }
+      }
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+      var enviar = resultado.join('');
+      if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
+      document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
       document.getElementById('textInput').value = '';
       limpiarHash ();
       window.scrollTo(0, 0);
