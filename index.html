@@ -311,7 +311,7 @@
     let baseArray = [];
     window.addEventListener("message",
       function (e) {
-        if(e.origin == "https://script.google.com"){ return; }
+        if(e.origin !== "https://script.google.com"){ return; }
           proceso (e.data);
       },
     false);
