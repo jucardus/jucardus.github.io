@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display base.txt Content</title>
+</head>
+<body>
+    <h1>Content of base.txt</h1>
+    <div id="content">
+        <p>Loading content...</p>
+    </div>
+
+    <script>
+        // GitHub API endpoint for the raw file content
+        const repoOwner = 'jucardus';
+        const repoName = 'jucardus.github.io';
+        const filePath = 'base.txt';
+        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
+        
+        // GitHub personal access token
+        const token = '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';
+
+        // Fetch the file content
+        fetch(apiUrl, {
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Accept': 'application/vnd.github.v3.raw' // Ensures raw content
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text(); // Get the raw text content
+        })
+        .then(data => {
+            // Display the content in the div
+            document.getElementById('content').innerText = data;
+        })
+        .catch(error => {
+            // Handle errors
+            document.getElementById('content').innerText = `Error loading content: ${error.message}`;
+        });
+    </script>
+</body>
+</html>
