@@ -12,34 +12,21 @@
     </div>
 
     <script>
-        // GitHub API endpoint for the raw file content
-        const repoOwner = 'jucardus';
-        const repoName = 'jucardus.github.io';
-        const filePath = 'base.txt';
-        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`;
-        
-        // GitHub personal access token
-        const token = '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';
+        // Direct URL to the raw file on GitHub Pages
+        const url = 'https://jucardus.github.io/base.txt';
 
         // Fetch the file content
-        fetch(apiUrl, {
-            headers: {
-                'Authorization': `Bearer ${token}`,
-                'Accept': 'application/vnd.github.v3.raw' // Ensures raw content
-            }
-        })
+        fetch(url)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
-            return response.text(); // Get the raw text content
+            return response.text();
         })
         .then(data => {
-            // Display the content in the div
             document.getElementById('content').innerText = data;
         })
         .catch(error => {
-            // Handle errors
             document.getElementById('content').innerText = `Error loading content: ${error.message}`;
         });
     </script>
