@@ -243,12 +243,11 @@
   </style>
 
 </head>
-<body>
+<body onload='inicio()'>
+
 <div class='contenedor'>
 
   <h1>Jucardus.com</h1>
-
-  <iframe src="https://script.google.com/macros/s/AKfycbwPAMggCzmrVQjb1XvLGzgkHu__AmuUCtZuLpfemcOoJtE_jZXWWqeZ-txVWOo-Z2v8TA/exec"></iframe>
 
   <div id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <a class='menuEnlace' href='#autor'>Autor</a> · <span class='menuEnlace' onclick='archivo()'>Archivo</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · <span class='menuEnlace' onclick='temas()'>Temas</span> · <a class='menuEnlace' href='https://jucardus.github.io'>Recargar</a> · <span class='menuEnlace' onclick='mostrarBuscador()'>Busca 🔍</span></div>
   
@@ -298,8 +297,6 @@
 
   </div>
 
-  <!--div id='separador'>&mdash;&mdash;</div-->
-
   <div id='qr'>
     <img class='qr' src='https://quickchart.io/qr?text=https://jucardus.github.io&size=200x200&margin=0&ecLevel=L&dark=222&light=f7e5c2&format=png'></img>
   </div>
@@ -309,16 +306,82 @@
   <script>
     let baseTxt = '';
     let baseArray = [];
-    window.addEventListener("message",
-      function (e) {
-        if(e.origin == "https://script.google.com"){ return; }
-          proceso (e.data);
-      },
-    false);
-    function proceso (recibido) {
-      baseTxt = recibido;
-      baseArray = baseTxt.split('▓');
+
+    function inicio () {
+      // Direct URL to the raw file on GitHub Pages
+      const url = 'https://jucardus.github.io/base.txt';
+
+      // Fetch the file content
+      fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+      return response.text();
+      })
+      .then(data => {
+        proceso (data);
+      })
+      .catch(error => {
+          document.getElementById('content').innerText = `Error loading content: ${error.message}`;
+      });
+    }
+    
+    function proceso (data) {
+      let recibido = '';
+      let array;
+      array = parseCsv(data);
+      var resultado = [];
+      for (var i = 1; i < array.length; i++) {
+        var linea = array[i];
+          var numero = linea[0];
+          var titulo = linea[1];
+          var contenido = linea[2];
+          var etiquetas = linea[3];
+          var fecha = linea[4];
+          var orden = titulo
+            //.replace(/[ñÑ]/g, 'n')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-zA-Z]/g, '')
+            .toUpperCase();
+        var nuevaLinea = orden + '▒' + titulo + '▒' + numero + '▒' + etiquetas + '▒' + fecha + '▒' + contenido;
+        resultado.push(nuevaLinea);
+      }
+      var enviar = resultado.join('▓');
+      baseArray = enviar.split('▓');
       recientes ();
+    }
+
+    function parseCsv(contenido) {
+      // Split the string into lines, handling different line endings (\n, \r, \r\n)
+      const lines = contenido.split(/\r\n|\r|\n/).filter(line => line.trim() !== '');
+      
+      // Parse each line into an array, handling quoted fields and commas
+      const result = lines.map(line => {
+        const values = [];
+        let current = '';
+        let inQuotes = false;
+        
+        for (let i = 0; i < line.length; i++) {
+          const char = line[i];
+          
+          if (char === '"') {
+            inQuotes = !inQuotes; // Toggle quoted state
+          } else if (char === ',' && !inQuotes) {
+            values.push(current.trim()); // Add completed field to array
+            current = ''; // Reset current field
+          } else {
+            current += char; // Add character to current field
+          }
+        }
+        
+        // Push the last field
+        values.push(current.trim());
+        return values;
+      });
+      
+      return result;
     }
     
     function recientes () {
