@@ -1,5 +1,6 @@
 ,T,C,E,F
-154,Los únicos interesados en cambiar el...,"<p>Los únicos interesados en cambiar el mundo son los pesimistas, porque los optimistas están encantados con lo que hay.</p>",Citas,2025-06-21 07:15
+155,Es increíble lo que puedes lograr con...,"<p>Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.</p>",Apotegmas,2025-06-21 21:57
+154,Los únicos interesados en cambiar el...,"<p>Los únicos interesados en cambiar el mundo son los pesimistas, porque los optimistas están encantados con lo que hay. – José Saramago</p>",Citas,2025-06-21 07:15
 153,La realidad es de naturaleza mítica...,"<p>La realidad es de naturaleza mítica: tómala muy en serio, porque puede atraparte.</p>",Apotegmas,2025-06-20 19:17
 152,No dejes que nadie te diga cómo pensar,"<p>No dejes que nadie te diga cómo pensar; como ahora, que te estoy diciendo cómo pensar.</p>",Reflexiones,2025-06-20 07:33
 151,Desamorada,"<p>Casi calcinada por el sol de mediodía, la vampiresa tuvo unas fracciones de segundo en las que recordar todos los sacrificios de fetos que había inculcado con el fin de satisfacer de sangre a su dios; pero no supo cómo arrepentirse, porque nunca nadie la había amado.</p>",Cuentos,2025-06-19 13:14
