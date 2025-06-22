@@ -30,7 +30,7 @@
         .catch(error => {
             document.getElementById('content').innerText = `Error loading content: ${error.message}`;
         });
-        function proceso (recibido) {
+        function proceso (contenido) {
             let recibido = '';
             let array;
             array = parseCsv(contenido);
