@@ -24,11 +24,15 @@
             return response.text();
         })
         .then(data => {
-            document.getElementById('content').innerText = data;
+            //document.getElementById('content').innerText = data;
+            proceso (data);
         })
         .catch(error => {
             document.getElementById('content').innerText = `Error loading content: ${error.message}`;
         });
+        function proceso (recibido) {
+            document.getElementById('content').innerText = recibido;
+        }
     </script>
 </body>
 </html>
