@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display base.txt Content</title>
 </head>
-<body>
+<body onload='inicio()'>
     <h1>Content of base.txt</h1>
     <div id="content">
         <p>Loading content...</p>
     </div>
 
     <script>
-        // Direct URL to the raw file on GitHub Pages
-        const url = 'https://jucardus.github.io/base.txt';
-
-        // Fetch the file content
-        fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            //document.getElementById('content').innerText = data;
-            proceso (data);
-        })
-        .catch(error => {
-            document.getElementById('content').innerText = `Error loading content: ${error.message}`;
-        });
+        function inicio () {
+            // Direct URL to the raw file on GitHub Pages
+            const url = 'https://jucardus.github.io/base.txt';
+    
+            // Fetch the file content
+            fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                //document.getElementById('content').innerText = data;
+                proceso (data);
+            })
+            .catch(error => {
+                document.getElementById('content').innerText = `Error loading content: ${error.message}`;
+            });
+        }
         function proceso (data) {
             let recibido = '';
             let array;
