@@ -31,7 +31,58 @@
             document.getElementById('content').innerText = `Error loading content: ${error.message}`;
         });
         function proceso (recibido) {
-            document.getElementById('content').innerText = recibido;
+            let recibido = '';
+            let array;
+            array = parseCsv(contenido);
+            var resultado = [];
+            for (var i = 1; i < array.length; i++) {
+              var linea = array[i];
+                var numero = linea[0];
+                var titulo = linea[1];
+                var contenido = linea[2];
+                var etiquetas = linea[3];
+                var fecha = linea[4];
+                var orden = titulo
+                  //.replace(/[ñÑ]/g, 'n')
+                  .normalize('NFD')
+                  .replace(/[\u0300-\u036f]/g, '')
+                  .replace(/[^a-zA-Z]/g, '')
+                  .toUpperCase();
+              var nuevaLinea = orden + '▒' + titulo + '▒' + numero + '▒' + etiquetas + '▒' + fecha + '▒' + contenido;
+              resultado.push(nuevaLinea);
+            }
+            var enviar = resultado.join('▓');
+            document.getElementById('content').innerText = enviar;
+        }
+        function parseCsv(contenido) {
+          // Split the string into lines, handling different line endings (\n, \r, \r\n)
+          const lines = contenido.split(/\r\n|\r|\n/).filter(line => line.trim() !== '');
+          
+          // Parse each line into an array, handling quoted fields and commas
+          const result = lines.map(line => {
+            const values = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+              const char = line[i];
+              
+              if (char === '"') {
+                inQuotes = !inQuotes; // Toggle quoted state
+              } else if (char === ',' && !inQuotes) {
+                values.push(current.trim()); // Add completed field to array
+                current = ''; // Reset current field
+              } else {
+                current += char; // Add character to current field
+              }
+            }
+            
+            // Push the last field
+            values.push(current.trim());
+            return values;
+          });
+          
+          return result;
         }
     </script>
 </body>
