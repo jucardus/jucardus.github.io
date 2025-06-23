@@ -1,4 +1,7 @@
 ,T,C,E,F
+158,"Hay mucha gente que, antes que afrontar...","<p>Hay mucha gente que, antes que afrontar el vacío de su corazón, prefieren al menos sentir odio por lo que sea.</p>",Reflexiones,2025-06-22 21:40
+157,El más pequeñito,"<p>Dios es tan pequeñito que está en todas partes a la vez, manifestándolo todo, entendiéndolo todo, alumbrándolo todo, pasando desapercibido y sirviendo a los demás. Los delirios de grandeza son propios del ser humano.</p>",Apotegmas,2025-06-22 17:36
+156,The task is not to see what has never...,"<p>The task is not to see what has never been seen before, but to think what has never been thought before about what you see everyday. – Erwin Schrödinger</p>",Citas,2025-06-22 17:32
 155,Es increíble lo que puedes lograr con...,"<p>Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.</p>",Apotegmas,2025-06-21 21:57
 154,Los únicos interesados en cambiar el...,"<p>Los únicos interesados en cambiar el mundo son los pesimistas, porque los optimistas están encantados con lo que hay. – José Saramago</p>",Citas,2025-06-21 07:15
 153,La realidad es de naturaleza mítica...,"<p>La realidad es de naturaleza mítica: tómala muy en serio, porque puede atraparte.</p>",Apotegmas,2025-06-20 19:17
@@ -47,7 +50,7 @@
 110,Si sólo es realidad lo que puedes...,"<p>Si sólo es realidad lo que puedes ver, ¿cómo es que no puedes ver la realidad?</p>",Apotegmas,2025-06-10 17:15
 109,Cuando creas que has logrado algo...,"<p>Cuando creas que has logrado algo, recuerda que apenas si existes. – Con amor, tu Maestra de escuela.</p>",Reflexiones,2025-06-10 17:14
 108,Hay una guerra en los cielos,"<p>Hay una guerra en los cielos, y es una guerra para apoderarse de todo tu ser. Refúgiate en Dios.</p>",Apotegmas,2025-06-10 17:11
-107,Corral de estrellas,<p>Si se pudiera vivir de estrellas<br>Tendrías un corral de ellas.</p>,Poesía,2025-06-10 17:10
+107,Corral de estrellas,<p>Si pudieras vivir de estrellas<br>Tendrías un corral de ellas.</p>,Poesía,2025-06-10 17:10
 106,"La fantasía, aislada de la razón...","<p>La fantasía, aislada de la razón, sólo produce monstruos imposibles. Unida a ella, en cambio, es la madre del arte y fuente de sus deseos. – Francisco de Goya</p>",Citas,2025-06-08 08:04
 105,Los años enseñan muchas cosas...,<p>Los años enseñan muchas cosas que los días jamás llegan a conocer. – Ralph W. Emerson<p>,Citas,2025-06-07 22:22
 104,Un soldado que comienza a pensar...,"<p>Un soldado que comienza a pensar, casi ha dejado de serlo. – Heinrich Böll</p>",Citas,2025-06-07 22:21
