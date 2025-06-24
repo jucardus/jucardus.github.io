@@ -515,10 +515,11 @@
       window.scrollTo(0, 0);
     }
     function azar () {
-      var array = desordenar(baseArray).slice(10,13);
+      var arrayDesordenar = baseArray;
+      arrayDesordenar = desordenar(arrayDesordenar).slice(10,13);
       var resultado = [];
-      for (var i = 0; i < array.length; i++) {
-        var linea = array[i].split('▒');
+      for (var i = 0; i < arrayDesordenar.length; i++) {
+        var linea = arrayDesordenar[i].split('▒');
           var orden = linea[0];
           var titulo = linea[1];
           var numero = linea[2];
@@ -532,16 +533,17 @@
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       limpiarHash ();
+      baseArray = base.split('▓');
       window.scrollTo(0, 0);
     }
-    function desordenar(array) {
-      let currentIndex = array.length, randomIndex;
+    function desordenar(arrayD) {
+      let currentIndex = arrayD.length, randomIndex;
       while (currentIndex > 0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        [arrayD[currentIndex], arrayD[randomIndex]] = [arrayD[randomIndex], arrayD[currentIndex]];
       }
-      return array;
+      return arrayD;
     }
   </script>
 
