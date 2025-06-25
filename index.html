@@ -546,7 +546,7 @@
       return arrayD;
     }
     function convertirUrls(inputText) {
-      const urlRegex = /(https?:\/\/[^\s<]+?(?=(?:[.,:;!?]?(?:\s|$|>)))/gi;
+      const urlRegex = /(https?:\/\/[^\s<]+?(?=(?:[.,:;!?]?(?:\s|$|>))))/gi;
       return inputText.replace(urlRegex, url => {
         try {
           const domain = new URL(url).hostname;
