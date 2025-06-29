@@ -457,12 +457,8 @@
                 var etiquetasUnidas = [];
                 for (var j = 0; j < arrayEtiquetas.length; j++) {
                   var nuevaEtiqueta = '<li><span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span></li>';
-                  etiquetasUnidas.push(nuevaEtiqueta);
+                  resultado.push(nuevaEtiqueta);
                 }
-                etiquetasUnidas = etiquetasUnidas.sort((a, b) => a.localeCompare(b));
-                etiquetasUnidas = [...new Set(etiquetasUnidas)];
-                var etiquetasTodas = etiquetasUnidas.join('');
-          resultado.push(etiquetasTodas);
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
