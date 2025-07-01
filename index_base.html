@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,16 +8,16 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  
+
     gtag('config', 'G-44Y9CNCHR8');
   </script>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Escritos varios">
   <meta name="keywords" content="escritos, apotegmas, citas, cuentos, poesía, reflexiones">
   <meta name="author" content="Julio Cárdenas Pelizzari">
-  
+
   <!-- Open Graph / Social Media Meta Tags (optional) -->
   <meta property="og:title" content="Jucardus">
   <meta property="og:description" content="Escritos varios">
@@ -24,9 +25,9 @@
   <meta property="og:url" content="https://jucardus.github.io">
 
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  
+
   <title>Jucardus.com</title>
-  
+
   <style>
     @media only screen and (max-device-width: 480px) {
       .arriba {
@@ -34,6 +35,7 @@
       }
       body {
         font-size: 120%!important;
+        /*overflow-x: hidden!important;*/
         padding: 0px 2px 100px 2px !important;
         text-align: left!important;
       }
@@ -43,6 +45,9 @@
       h1 {
         font-size: revert!important;
         margin-bottom: 16px!important;
+        /*max-width: 100%!important;*/
+        /*overflow-wrap: break-word!important;*/
+        /*white-space: normal!important;*/
       }
       input#textInput {
         font-size: 100%!important;
@@ -247,32 +252,32 @@
 
 <div class='contenedor'>
 
-  <h1>Jucardus.com</h1>
+  <h1>Jucardus<wbr>.com</h1>
 
-  <div id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <a class='menuEnlace' href='#autor'>Autor</a> · <span class='menuEnlace' onclick='archivo()'>Archivo</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · <span class='menuEnlace' onclick='temas()'>Temas</span> · <a class='menuEnlace' href='https://jucardus.github.io'>Recargar</a> · <span class='menuEnlace' onclick='mostrarBuscador()'>Busca 🔍</span></div>
-  
+  <div id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <span class='menuEnlace' onclick='autor()'>Autor</span> · <span class='menuEnlace' onclick='archivo()'>Archivo</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · <span class='menuEnlace' onclick='temas()'>Temas</span> · <span class='menuEnlace' onclick='azar()'>Azar</span> · <a class='menuEnlace' href='https://jucardus.github.io'>Recargar</a> · <span class='menuEnlace' onclick='mostrarBuscador()'>Busca 🔍</span></div>
+
   <div id='buscador'>
-    <form> 
+    <form>
       <input type="text" autocomplete="off" placeholder="" size="21" id="textInput" onkeydown="teclaBuscar(event)" />
       <button id="boton" type="button" onclick="inicio()">·</button>
     </form>
   </div>
-  
+
   <div id="mostrar"><div id='previoCarga'>[ cargando ]</div></div>
 
   <div id='separador'>&mdash;&mdash;&mdash;</div>
 
   <div id='footer'>
-    
+
   <h3>Aclaraciones</h3>
 
   <ul>
     <li>Al inicio se muestra una lista de las entradas más recientes del sitio, con títulos clicables para ver el contenido.</li>
-    <li>Las acotaciones debajo de los títulos muestran el número de entrada, el tema y la fecha de creación. Clicando en el tema de las entradas abiertas se muestran todas las entradas de dicho tema.</li>
-    <li>En el menú principal, la opción <b>A-Z</b> muestra una lista alfabética de todas las entradas; la opción <b>Temas</b> despliega una lista de todos las etiqueras o temas, en orden alfabético; la opción <b>Archivo</b> muestra un compendio de todas las entradas ordenadas por fecha. Con <b>Recargar</b> puedes reiniciar la página para actualizar el contenido.</li>
+    <li>Las acotaciones debajo de los títulos muestran el número de entrada, el tema y la fecha de creación. Clicando en el tema de la entrada abierta se muestran todas las entradas de dicho tema.</li>
+    <li>En el menú principal, la opción <b>A-Z</b> muestra una lista alfabética de todas las entradas; la opción <b>Temas</b> despliega una lista de todos las etiqueras o temas, en orden alfabético; la opción <b>Archivo</b> muestra un compendio de todas las entradas ordenadas por fecha. Con <b>Azar</b> puedes mostrar reiteradas veces tres entradas al azar de entre todo el contenido del sitio. Con <b>Recargar</b> puedes reiniciar la página para actualizar el contenido.</li>
     <li><a name='autor'></a>Si deseas hacer críticas, correcciones o sugerencias respecto del contenido, contacta conmigo mediante el correo electrónico <i><b>jucardus</b></i> en gmail punto com.</li>
   </ul>
-    
+
   <h3>Autor y contacto</h3>
 
   <ul>
@@ -281,12 +286,12 @@
     <li><b>Sitio central:</b> <a href='https://linktr.ee/jucardus' target='_blank'>linktr.ee/jucardus</a></li>
   </ul>
 
-  <h4>Mis sitios</h4>
+  <h3>Mis sitios</h3>
 
   <ul>
     <li><b>Diccionarios:</b> <a href='https://d.jucardus.com' target='_blank'>d.jucardus.com</a></li>
     <li><b>Enlaces:</b> <a href='https://e.jucardus.com' target='_blank'>e.jucardus.com</a></li>
-    <li><b>Facebook:</b> <a href='https://f.jucardus.com' target='_blank'>f.jucardus.com</a></li>
+    <li><b>Facebook:</b> <a href='https://fb.jucardus.com' target='_blank'>fb.jucardus.com</a></li>
     <li><b>Herramientas:</b> <a href='https://h.jucardus.com' target='_blank'>h.jucardus.com</a></li>
     <li><b>Invitación:</b> <a href='https://i.jucardus.com' target='_blank'>i.jucardus.com</a></li>
     <li><b>Música:</b> <a href='https://m.jucardus.com' target='_blank'>m.jucardus.com</a></li>
@@ -302,7 +307,7 @@
   </div>
 
 </div>
-  
+
   <script>
     let baseTxt = '';
     let baseArray = [];
@@ -383,7 +388,7 @@
       
       return result;
     }
-    
+
     function recientes () {
       document.getElementById('buscador').style.display = 'none';
       var resultado = [];
@@ -397,7 +402,7 @@
           var etiquetas = linea[3];
           var fecha = linea[4];
           var contenido = linea[5];
-        var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h2 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>'; // <div id="contenidos">' + contenido + '</div></div>';
+        var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>'; // <div id="contenidos">' + contenido + '</div></div>';
         resultado.push(nuevaLinea);
         contador = contador + 1;
         if (contador == 12) {break;}
@@ -454,9 +459,17 @@
             var titulo = linea[1];
             var numero = linea[2];
             var etiquetas = linea[3];
+              var etiquetas = etiquetas.replace(/, /g, ',');
+              var arrayEtiquetas = etiquetas.split(',');
+                var etiquetasUnidas = [];
+                for (var j = 0; j < arrayEtiquetas.length; j++) {
+                  var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                  etiquetasUnidas.push(nuevaEtiqueta);
+                }
+                var etiquetasTodas = etiquetasUnidas.join(', ');
             var fecha = linea[4];
-            var contenido = linea[5];
-          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="menuEnlace" onclick="buscarTema(\'' + etiquetas + '\')"><b>' + etiquetas + '</b></span> · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
+            var contenido = convertirUrls(linea[5]);
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · ' + etiquetasTodas + ' · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
           resultado.push(nuevaLinea);
         }
       }
@@ -504,7 +517,7 @@
       const url = window.location.href.split('#')[0];
       history.pushState({}, document.title, url);
     }
-    function temas () {
+    function temasAnterior () {
       document.getElementById('buscador').style.display = 'none';
       var buscar = '-';
       document.getElementById("mostrar").innerHTML = buscar;
@@ -515,7 +528,13 @@
           var linea = array[i].split('▒');
             var orden = linea[3];
             var etiquetas = linea[3];
-          resultado.push('<li><span class="menuEnlace" onclick="buscarTema(\'' + etiquetas + '\')"><b>' + etiquetas + '</b></span></li>');
+              var etiquetas = etiquetas.replace(/, /g, ',');
+                var arrayEtiquetas = etiquetas.split(',');
+                var etiquetasUnidas = [];
+                for (var j = 0; j < arrayEtiquetas.length; j++) {
+                  var nuevaEtiqueta = '<li><span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span></li>';
+                  resultado.push(nuevaEtiqueta);
+                }
         }
       }
       resultado = resultado.sort((a, b) => a.localeCompare(b));
@@ -526,13 +545,52 @@
       limpiarHash ();
       window.scrollTo(0, 0);
     }
+    function temas() {
+      document.getElementById('buscador').style.display = 'none';
+      var buscar = '-';
+      document.getElementById("mostrar").innerHTML = buscar;
+
+      // Create a map to store label counts
+      let labelCounts = new Map();
+      let array = baseArray;
+
+      // Count occurrences of each label
+      for (var i = 0; i < array.length; i++) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+          var linea = array[i].split('▒');
+          var etiquetas = linea[3];
+          var arrayEtiquetas = etiquetas.replace(/, /g, ',').split(',');
+
+          // Count each label
+          arrayEtiquetas.forEach(label => {
+            labelCounts.set(label, (labelCounts.get(label) || 0) + 1);
+          });
+        }
+      }
+
+      // Create the display array
+      var resultado = [];
+      for (let [label, count] of labelCounts) {
+        var nuevaEtiqueta = `<li><span class="menuEnlace" onclick="buscarTema('${label}')"><b>${label}</b> - ${count} entradas</span></li>`;
+        resultado.push(nuevaEtiqueta);
+      }
+
+      // Sort and remove duplicates (though Map ensures uniqueness)
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+
+      // Display the results
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
+      document.getElementById('textInput').value = '';
+      limpiarHash();
+      window.scrollTo(0, 0);
+    }
     function archivo() {
       document.getElementById('buscador').style.display = 'none';
       var buscar = '-';
       document.getElementById('mostrar').innerHTML = buscar;
       var resultado = [];
       let array = baseArray;
-        //array.sort().reverse();
       for (var i = 0; i < array.length; i++) {
         if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
           var linea = array[i].split('▒');
@@ -582,6 +640,57 @@
       var enviar = resultado.join('');
       if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
       document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
+      document.getElementById('textInput').value = '';
+      limpiarHash ();
+      window.scrollTo(0, 0);
+    }
+    function azar () {
+      var arrayDesordenar = baseArray;
+      arrayDesordenar = desordenar(arrayDesordenar).slice(10,13);
+      var resultado = [];
+      for (var i = 0; i < arrayDesordenar.length; i++) {
+        var linea = arrayDesordenar[i].split('▒');
+          var orden = linea[0];
+          var titulo = linea[1];
+          var numero = linea[2];
+          var etiquetas = linea[3];
+          var fecha = linea[4];
+          var contenido = linea[5];
+        var nuevaLinea = '<div id="entradasAZ"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+        resultado.push(nuevaLinea);
+      }
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = enviar;
+      document.getElementById('textInput').value = '';
+      limpiarHash ();
+      baseArray = base.split('▓');
+      window.scrollTo(0, 0);
+    }
+    function desordenar(arrayD) {
+      let currentIndex = arrayD.length, randomIndex;
+      while (currentIndex > 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [arrayD[currentIndex], arrayD[randomIndex]] = [arrayD[randomIndex], arrayD[currentIndex]];
+      }
+      return arrayD;
+    }
+    function convertirUrls(inputText) {
+      const urlRegex = /\b(https?:\/\/[^\s<>"'()]+)/gi;
+      return inputText.replace(urlRegex, (fullUrl) => {
+        try {
+          const cleanUrl = fullUrl.replace(/[,?:;.!]+$/, '');
+          const domain = new URL(cleanUrl).hostname.replace('www.', '');
+          return `<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer">${domain}</a>` +
+                 fullUrl.slice(cleanUrl.length);
+        } catch {
+          return fullUrl;
+        }
+      });
+    }
+    function autor () {
+      var autor =  "<h3>Autor y contacto</h3><ul><li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li><li><b>Contacto:</b> jucardus en gmail punto com</li><li><b>Sitio central:</b> <a href='https://linktr.ee/jucardus' target='_blank'>linktr.ee/jucardus</a></li></ul><h3>Mis sitios</h3><ul><li><b>Diccionarios:</b> <a href='https://d.jucardus.com' target='_blank'>d.jucardus.com</a></li><li><b>Enlaces:</b> <a href='https://e.jucardus.com' target='_blank'>e.jucardus.com</a></li><li><b>Facebook:</b> <a href='https://fb.jucardus.com' target='_blank'>fb.jucardus.com</a></li><li><b>Herramientas:</b> <a href='https://h.jucardus.com' target='_blank'>h.jucardus.com</a></li><li><b>Invitación:</b> <a href='https://i.jucardus.com' target='_blank'>i.jucardus.com</a></li><li><b>Música:</b> <a href='https://m.jucardus.com' target='_blank'>m.jucardus.com</a></li><li><b>Pagos y donaciones:</b> <a href='https://pp.jucardus.com' target='_blank'>pp.jucardus.com</a></li><li><b>Programación:</b> <a href='https://p.jucardus.com' target='_blank'>p.jucardus.com</a></li><li><b>X Twitter:</b> <a href='https://x.jucardus.com' target='_blank'>x.jucardus.com</a></li></ul>";
+      document.getElementById('mostrar').innerHTML = autor;
       document.getElementById('textInput').value = '';
       limpiarHash ();
       window.scrollTo(0, 0);
