@@ -645,7 +645,7 @@
       window.scrollTo(0, 0);
     }
     function azar () {
-      var arrayDesordenar = baseArray;
+      var arrayDesordenar = baseArray.slice();
       arrayDesordenar = desordenar(arrayDesordenar).slice(10,13);
       var resultado = [];
       for (var i = 0; i < arrayDesordenar.length; i++) {
@@ -663,7 +663,7 @@
       document.getElementById("mostrar").innerHTML = enviar;
       document.getElementById('textInput').value = '';
       limpiarHash ();
-      baseArray = base.split('▓');
+      //baseArray = base.split('▓');
       window.scrollTo(0, 0);
     }
     function desordenar(arrayD) {
