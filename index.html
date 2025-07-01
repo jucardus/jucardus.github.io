@@ -446,7 +446,7 @@
       const url = window.location.href.split('#')[0];
       history.pushState({}, document.title, url);
     }
-    function temas () {
+    function temasAnterior () {
       document.getElementById('buscador').style.display = 'none';
       var buscar = '-';
       document.getElementById("mostrar").innerHTML = buscar;
@@ -472,6 +472,46 @@
       document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
       document.getElementById('textInput').value = '';
       limpiarHash ();
+      window.scrollTo(0, 0);
+    }
+    function temas() {
+      document.getElementById('buscador').style.display = 'none';
+      var buscar = '-';
+      document.getElementById("mostrar").innerHTML = buscar;
+
+      // Create a map to store label counts
+      let labelCounts = new Map();
+      let array = baseArray;
+
+      // Count occurrences of each label
+      for (var i = 0; i < array.length; i++) {
+        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+          var linea = array[i].split('▒');
+          var etiquetas = linea[3];
+          var arrayEtiquetas = etiquetas.replace(/, /g, ',').split(',');
+
+          // Count each label
+          arrayEtiquetas.forEach(label => {
+            labelCounts.set(label, (labelCounts.get(label) || 0) + 1);
+          });
+        }
+      }
+
+      // Create the display array
+      var resultado = [];
+      for (let [label, count] of labelCounts) {
+        var nuevaEtiqueta = `<li><span class="menuEnlace" onclick="buscarTema('${label}')"><b>${label}</b> - ${count} entradas</span></li>`;
+        resultado.push(nuevaEtiqueta);
+      }
+
+      // Sort and remove duplicates (though Map ensures uniqueness)
+      resultado = resultado.sort((a, b) => a.localeCompare(b));
+
+      // Display the results
+      var enviar = resultado.join('');
+      document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
+      document.getElementById('textInput').value = '';
+      limpiarHash();
       window.scrollTo(0, 0);
     }
     function archivo() {
