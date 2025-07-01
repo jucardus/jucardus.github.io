@@ -1,638 +1,219 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-44Y9CNCHR8');
-  </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Escritos varios">
-  <meta name="keywords" content="escritos, apotegmas, citas, cuentos, poesía, reflexiones">
-  <meta name="author" content="Julio Cárdenas Pelizzari">
-
-  <!-- Open Graph / Social Media Meta Tags (optional) -->
-  <meta property="og:title" content="Jucardus">
-  <meta property="og:description" content="Escritos varios">
-  <meta property="og:image" content="favicon.ico">
-  <meta property="og:url" content="https://jucardus.github.io">
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-
-  <title>Jucardus.com</title>
-
-  <style>
-    @media only screen and (max-device-width: 480px) {
-      .arriba {
-        display: none!important;
-      }
-      body {
-        font-size: 120%!important;
-        /*overflow-x: hidden!important;*/
-        padding: 0px 2px 100px 2px !important;
-        text-align: left!important;
-      }
-      #buscador {
-        margin-top: 30px!important;
-      }
-      h1 {
-        font-size: revert!important;
-        margin-bottom: 16px!important;
-        /*max-width: 100%!important;*/
-        /*overflow-wrap: break-word!important;*/
-        /*white-space: normal!important;*/
-      }
-      input#textInput {
-        font-size: 100%!important;
-        width: 90%!important;
-      }
-      #menu {
-        line-height: 1.4!important;
-        padding-bottom: 7px!important;
-        padding-top: 7px!important;
-      }
-    }
-    a:link, a:visited, a:active {
-      color: #014784;
-      opacity: 1;
-      text-decoration: none;
-      word-break: break-all;
-    }
-    a:hover, a:focus {
-      color: OrangeRed;
-      opacity: 1;
-      text-decoration: underline;
-      word-break: break-all;
-    }
-    a.buscadores {
-      word-break: revert!important;
-    }
-    .arriba {
-      color: #014784;
-      font-size: 180%;
-      font-weight: bold;
-      position: fixed;
-      right: 20px;
-      z-index: 1;
-    }
-    .arriba:hover {
-      color: OrangeRed;
-      cursor: pointer;
-    }
-    .barrita {
-      color: OrangeRed;
-      opacity: 0.7;
-    }
-    body {
-      font-family: "Arial";
-      background-color: #f7e5c2;
-      letter-spacing: 0.5px;
-      overflow-x: hidden;
-      padding: 15px 23% 150px 23%;
-      text-align: justify;
-    }
-    .broken {
-      word-break: break-all;
-    }
-    #buscador {
-      display: none;
-      margin-top: 25px;
-      text-align: center;
-    }
-    #buscadores {
-      line-height: 2;
-      margin-bottom: 25px;
-    }
-    button#boton {
-      display: none;
-    }
-    .contenedor {
-    }
-    #entradas {
-    }
-    #entradasBusca {
-      /*margin-bottom: 35px;*/
-    }
-    #entradasAZ {
-    }
-    h1 {
-      font-size: 220%;
-      margin-bottom: 20px;
-    }
-    h1, h2, h3, h4 {
-      text-align: left;
-    }
-    html, body {
-      width: auto !important;
-    }
-    iframe {
-      display: none;
-    }
-    img#favicones {
-      border-radius: 2px;
-      float: left;
-      width: 22px;
-      margin: 0px 8px 10px 0px;
-    }
-    input {
-      background-color: #efd;
-      border: 2px dotted Green;
-      border-radius: 4px;
-      color: DarkSlateGray;
-      font-family: monospace, sans-serif;
-      font-size: 90%;
-      font-weight: bold;
-      padding: 2px;
-      padding-left: 5px;
-      padding-top: 4px;
-    }
-    li {
-      padding-bottom: 9px;
-    }
-    #menu {
-      background-color: #f7e5c2;
-      border-bottom: 4px Solid Green;
-      font-weight: bold;
-      line-height: 1.8;
-      margin: 0px 0px 0px 0px;
-      padding-bottom: 12px;
-      padding-top: 12px;
-      position: sticky;
-      top: 0px;
-      z-index: 1000;
-    }
-    .menuEnlace {
-      color: #014784;
-    }
-    .menuEnlace:hover, .menuEnlace:focus, .menuEnlace:active {
-      color: OrangeRed;
-      cursor: pointer;
-      text-decoration: underline;
-    }
-    #mostrar {
-      margin-bottom: 35px;
-      margin-top: 40px;
-    }
-    .numero {
-      color: #999;
-      font-size: small;
-    }
-    ::placeholder {
-      color: DarkTurquoise;
-      text-align: right;
-    }
-    p.temas {
-      font-size: 90%!important;
-    }
-    pre {
-      overflow-x: auto;
-      white-space: pre;
-      max-width: 100%;
-      background-color: #f4f4f4;
-      padding: 10px;
-      box-sizing: border-box;
-      border-radius: 8px;
-    }
-    #previoCarga {
-      animation: blinker 1s linear infinite;
-      color: OrangeRed;
-      font-weight: bold;
-      text-align: center;
-    }
-    @keyframes blinker {
-      50% {
-        opacity: 0;
-      }
-    }
-    #previos {
-      color: OrangeRed;
-      font-weight: bold;
-      text-align: center;
-    }
-    #qr {
-      margin: 35px 0px 20px 0px;
-      text-align: center;
-    }
-    .qr {
-      width: 90px;
-    }
-    #separador {
-      color: Green;
-      font-weight: bold;
-      margin-bottom: 35px;
-      text-align: center;
-    }
-    #submenu {
-      margin-left: 10px;
-      margin-top: -12px!important;
-      font-size: small;
-    }
-    .subtituloBuscar {
-      color: #014784;
-    }
-    .subtituloBuscar:hover {
-      color: OrangeRed;
-      cursor: pointer;
-      text-decoration: underline;
-    }
-    ul {
-      margin-left: -15px;
-    }
-  </style>
-
-</head>
-<body onload='inicio()'>
-
-<div class='contenedor'>
-
-  <h1>Jucardus<wbr>.com</h1>
-
-  <div id='menu'><span class='menuEnlace' onclick='recientes()'>Inicio</span> · <span class='menuEnlace' onclick='autor()'>Autor</span> · <span class='menuEnlace' onclick='archivo()'>Archivo</span> · <span class='menuEnlace' onclick='az()'>A-Z</span> · <span class='menuEnlace' onclick='temas()'>Temas</span> · <span class='menuEnlace' onclick='azar()'>Azar</span> · <a class='menuEnlace' href='https://jucardus.github.io'>Recargar</a> · <span class='menuEnlace' onclick='mostrarBuscador()'>Busca 🔍</span></div>
-
-  <div id='buscador'>
-    <form>
-      <input type="text" autocomplete="off" placeholder="" size="21" id="textInput" onkeydown="teclaBuscar(event)" />
-      <button id="boton" type="button" onclick="inicio()">·</button>
-    </form>
-  </div>
-
-  <div id="mostrar"><div id='previoCarga'>[ cargando ]</div></div>
-
-  <div id='separador'>&mdash;&mdash;&mdash;</div>
-
-  <div id='footer'>
-
-  <h3>Aclaraciones</h3>
-
-  <ul>
-    <li>Al inicio se muestra una lista de las entradas más recientes del sitio, con títulos clicables para ver el contenido.</li>
-    <li>Las acotaciones debajo de los títulos muestran el número de entrada, el tema y la fecha de creación. Clicando en el tema de la entrada abierta se muestran todas las entradas de dicho tema.</li>
-    <li>En el menú principal, la opción <b>A-Z</b> muestra una lista alfabética de todas las entradas; la opción <b>Temas</b> despliega una lista de todos las etiqueras o temas, en orden alfabético; la opción <b>Archivo</b> muestra un compendio de todas las entradas ordenadas por fecha. Con <b>Azar</b> puedes mostrar reiteradas veces tres entradas al azar de entre todo el contenido del sitio. Con <b>Recargar</b> puedes reiniciar la página para actualizar el contenido.</li>
-    <li><a name='autor'></a>Si deseas hacer críticas, correcciones o sugerencias respecto del contenido, contacta conmigo mediante el correo electrónico <i><b>jucardus</b></i> en gmail punto com.</li>
-  </ul>
-
-  <h3>Autor y contacto</h3>
-
-  <ul>
-    <li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li>
-    <li><b>Contacto:</b> jucardus en gmail punto com</li>
-    <li><b>Sitio central:</b> <a href='https://linktr.ee/jucardus' target='_blank'>linktr.ee/jucardus</a></li>
-  </ul>
-
-  <h3>Mis sitios</h3>
-
-  <ul>
-    <li><b>Diccionarios:</b> <a href='https://d.jucardus.com' target='_blank'>d.jucardus.com</a></li>
-    <li><b>Enlaces:</b> <a href='https://e.jucardus.com' target='_blank'>e.jucardus.com</a></li>
-    <li><b>Facebook:</b> <a href='https://fb.jucardus.com' target='_blank'>fb.jucardus.com</a></li>
-    <li><b>Herramientas:</b> <a href='https://h.jucardus.com' target='_blank'>h.jucardus.com</a></li>
-    <li><b>Invitación:</b> <a href='https://i.jucardus.com' target='_blank'>i.jucardus.com</a></li>
-    <li><b>Música:</b> <a href='https://m.jucardus.com' target='_blank'>m.jucardus.com</a></li>
-    <li><b>Pagos y donaciones:</b> <a href='https://pp.jucardus.com' target='_blank'>pp.jucardus.com</a></li>
-    <li><b>Programación:</b> <a href='https://p.jucardus.com' target='_blank'>p.jucardus.com</a></li>
-    <li><b>X Twitter:</b> <a href='https://x.jucardus.com' target='_blank'>x.jucardus.com</a></li>
-  </ul>
-
-  </div>
-
-  <div id='qr'>
-    <img class='qr' src='https://quickchart.io/qr?text=https://jucardus.github.io&size=200x200&margin=0&ecLevel=L&dark=222&light=f7e5c2&format=png'></img>
-  </div>
-
-</div>
-
-  <script>
-    let baseArray = [];
-
-    var base = "NUNCAHEENTENDIDOPORQUEESCODICIA▒Nunca he entendido por qué es codicia...▒215▒Citas▒2025-06-30 21:21▒<p>Nunca he entendido por qué es codicia querer conservar el dinero que has ganado, pero no es codicia querer sustraer el dinero de otra persona.  – Thomas Sowell</p>▓NOHAYFORMAALGUNADEPROBAR▒No hay forma alguna de probar...▒214▒Reflexiones▒2025-06-30 21:19▒<p>No hay forma alguna de probar la existencia de Dios científicamente si no es presuponiendo su existencia. Con la fe tienes cierta posibilidad, pero puedes caer en el mismo problema, al asignar a Dios preconceptos y prejuicios, con el plus de llamar hereje a quien no los comparte.</p>▓LAFEESPARAELRACIOCINIOLOQUE▒La fe es para el raciocinio lo que...▒213▒Apotegmas▒2025-06-30 20:43▒<p>La fe es para el raciocinio lo que el fuego para el papel.</p>▓AMASMENTIRAMASVERDAD▒A más mentira, más verdad▒212▒Apotegmas▒2025-06-30 20:21▒<p>A más mentira, más verdad, razón por la cual el mal siempre actúa en oculto.</p>▓ESCONDIDOSENELBOSQUEIDEOLOGICO▒Escondidos en el bosque ideológico▒211▒Reflexiones▒2025-06-30 18:52▒<p>Nos escondemos en el bosque ideológico para apreciar mejor entre las sombras la belleza de los rayos de Luz de la Verdad, pero eventualmente tendremos que salir, poco a poco, para no quedar insolados por el Sol de mediodía.</p>▓CUANDOTODOESPARATODOS▒Cuando todo es para todos▒210▒Apotegmas▒2025-06-30 18:40▒<p>Cuando todo es para todos, no queda nada para nadie.</p>▓LAFORTUNALLEGAENALGUNOSBARCOS▒La fortuna llega en algunos barcos...▒209▒Citas▒2025-06-30 11:51▒<p>La fortuna llega en algunos barcos que no son guiados. – William Shakespeare</p>▓BIBLIASELLIBRODELPUEBLODEDIOS▒Biblias ¦ El libro del pueblo de Dios▒208▒Biblias, Enlaces▒2025-06-30 11:25▒<p>Traducción de la Biblia al español en el sitio del Vaticano → https://www.vatican.va/archive/ESL0506/_INDEX.HTM.</p>▓ENELCAMPODELAOBSERVACION▒En el campo de la observación...▒207▒Citas▒2025-06-29 19:40▒<p>En el campo de la observación, la oportunidad sólo favorece a la mente preparada. – Louis Pasteur</p>▓PELICULASELQUINTOELEMENTO▒películas ¦ El quinto elemento▒206▒Enlaces, Películas▒2025-06-29 19:37▒<p><i>El quinto elemento</i>, con Bruce Willis → https://www.youtube.com/watch?v=iqeatp1VXVA.</p>▓CADAUNOESCOMODIOSLEHIZO▒Cada uno es como Dios le hizo...▒205▒Citas▒2025-06-29 15:15▒<p>Cada uno es como Dios le hizo, y aun peor muchas veces. – Miguel de Cervantes Saavedra</p>▓PELICULASLAULTIMAPUERTA▒películas ¦ La última puerta▒204▒Enlaces, Películas▒2025-06-29 15:05▒<p><i>La última puerta</i>, con Johnny Depp → https://youtu.be/h7nDh4ow4CM.</p>▓QUIZALAEXISTENCIADEUNARESPUESTA▒Quizá la existencia de una respuesta...▒203▒Citas▒2025-06-29 14:21▒<p>Quizá la existencia de una respuesta dependa solamente de que se haga la preguna adecuada. – Robert Duncan</p>▓LOSFANATISMOSQUEMASDEBEMOSTEMER▒Los fanatismos que más debemos temer...▒202▒Citas▒2025-06-29 14:18▒<p>Los fanatismos que más debemos temer son aquellos que pueden confundirse con la tolerancia. – Fernando Arrabal</p>▓EXISTENVERDADESQUEPUEDEN▒Existen verdades que pueden...▒201▒Citas▒2025-06-29 11:47▒<p>Existen verdades que pueden matar a un pueblo. – Jean Giraudox</p>▓BIBLIASTRADUCCIONDELNUEVOMUNDOEDICIONDEESTUDIO▒Biblias ¦ Traducción del Nuevo Mundo (edición de estudio)▒200▒Biblias, Enlaces▒2025-06-29 10:13▒<p>Versión de estudio de la traducción de la Watch Tower de la Biblia → https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/.</p>▓MUCHOSHOMBRESCOMETENELERROR▒Muchos hombres cometen el error...▒199▒Citas▒2025-06-29 08:39▒<p>Muchos hombres cometen el error de sustituir el conocimiento por la afirmación de que es verdad lo que ellos desean. – Bertrand Russell</p>▓PARACAMBIARLAREALIDAD▒Para cambiar la realidad▒198▒Apotegmas▒2025-06-29 07:46▒<p>Para cambiar la realidad primero tienes que aceptarla.</p>▓NUNCANADIEHAGANADOUNABATALLA▒Nunca nadie ha ganado una batalla...▒197▒Apotegmas▒2025-06-28 21:19▒<p>Nunca nadie ha ganado una batalla sin antes desayunar.</p>▓LAAUSENCIADISMINUYELASPEQUENAS▒La ausencia disminuye las pequeñas...▒196▒Citas▒2025-06-28 21:18▒<p>La ausencia disminuye las pequeñas pasiones y aumenta las grandes, lo mismo que el viento apaga las velas y aviva las hogueras. – Duque de la Rochefoucauld</p>▓LAENFERMEDADDELIGNORANTE▒La enfermedad del ignorante...▒195▒Citas▒2025-06-28 21:17▒<p>La enfermedad del ignorante es ignorar su propia ignorancia. – Amos Bronson Alcott</p>▓BIBLIASNEWWORLDTRANSLATIONOFTHEHOLYSCRIPTURESSTUDYEDITION▒Biblias ¦ New World Translation of the Holy Scriptures (Study Edition)▒194▒Biblias, Enlaces▒2025-06-28 21:16▒<p>Biblia de estudio en inglés de la Watch Tower → https://www.jw.org/en/library/bible/study-bible/books/.</p>▓BIBLIASKINGJAMESBIBLE▒Biblias ¦ King James Bible▒193▒Biblias, Enlaces▒2025-06-28 21:11▒<p>La Biblia King James, con opción de busca, números Strong, ayudas para el estudio, comentarios y más → https://www.kingjamesbibleonline.org/.</p>▓NUNCADEJESQUELLEGUEALPODER▒Nunca dejes que llegue al poder...▒192▒Apotegmas▒2025-06-28 21:10▒<p>Nunca dejes que llegue al poder alguien que se desprecia a sí mismo.</p>▓PELICULASARMAGEDON▒películas ¦ Armagedón (1998)▒191▒Enlaces, Películas▒2025-06-28 21:08▒<p>Con Bruce Willis → https://youtu.be/OhAXtd-h13I.</p>▓QUEIMPORTASIELGATOESBLANCOO▒¿Qué importa si el gato es blanco o...▒190▒Citas▒2025-06-28 13:01▒<p>¿Qué importa si el gato es blanco o negro, con tal de que case ratones? – Den Xiaoping</p>▓ELHOMBREQUETIENEMIEDOSINPELIGRO▒El hombre que tiene miedo sin peligro...▒189▒Citas▒2025-06-28 13:00▒<p>El hombre que tiene miedo sin peligro, inventa el peligro para justificar su miedo. – Alain Emile Chartier</p>▓LOSDESEOSYSUVERDADEROOBJETO▒Los deseos y su verdadero objeto▒188▒Reflexiones▒2025-06-27 22:00▒<p>Los deseos quedan satisfechos únicamente cuando encuentran su verdadero objeto. En otras palabras, los humanos desconocemos adrede el verdadero objeto de nuestro deseo para poder continuar buscando placeres ilusorios, temporales y pasajeros.</p>▓SICREESQUEERESBUENOYQUETIENES▒Si crees que eres bueno y que tienes...▒187▒Apotegmas▒2025-06-27 17:12▒<p>Si crees que eres bueno y que tienes razón sólo porque te persiguen, pronto empezarás a perseguir a los demás.</p>▓INDEFERENCETOLOCENCONSIDERACIONAENATENCIONA▒in deference to [loc.] en consideración a; en atención a▒186▒Vocabulario inglés-español▒2025-06-27 17:07▒<p>In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents &quot;Charlie Codman's Cruise,&quot; as the third volume of the Campaign Series. – <cite>Charlie Codman's Cruise: A Story for Boys; by Jr. Horatio Alger</cite></p>▓SIBUSCASADIOSHACIAFUERACORRES▒Si buscas a Dios hacia fuera corres...▒185▒Reflexiones▒2025-06-27 15:40▒<p>Si buscas a Dios hacia fuera corres el riesgo de crear un falso dios, y si lo buscas hacia dentro el de pensar que eres Dios. ¿Qué queda entonces?</p>▓ELBUENHABITODEAMARAUNOS▒¿El buen hábito de amar a unos...▒184▒Reflexiones▒2025-06-27 15:35▒<p>¿El buen hábito de amar a unos pocos y despreciar al resto?</p>▓LOSALTAVOCESREFUERZANLAVOZ▒Los altavoces refuerzan la voz...▒183▒Citas▒2025-06-27 15:33▒<p>Los altavoces refuerzan la voz, pero no los argumentos. – Hans Kaspar</p>▓LAMAYORIADELASPERSONASPREFIEREN▒La mayoría de las personas prefieren...▒182▒Citas▒2025-06-27 15:32▒<p>La mayoría de las personas prefieren confesar los pecados de los demás. – Graham Greene</p>▓ENMUCHASEMPRESASPARAALCANZAR▒En muchas empresas para alcanzar...▒181▒Citas▒2025-06-27 15:30▒<p>En muchas empresas para alcanzar la gloria no importa vencer, basta combatir. – Carlo Dossi</p>▓LAMASALTAASPIRACIONDELRACIOCINIO▒La más alta aspiración del raciocinio▒180▒Apotegmas▒2025-06-27 15:28▒<p>La más alta aspiración del raciocinio es despertar a la fe, y la de la fe es recibir revelación.</p>▓ELMUNDOHASIDOSIEMPREUNREINO▒El mundo ha sido siempre un Reino▒179▒Apotegmas▒2025-06-27 13:38▒<p>El mundo ha sido siempre un Reino y lo seguirá siendo. Lo que queda por hacer es decidir a quién y a qué vas a servir.</p>▓NADAQUEPEDIR▒Nada que pedir▒178▒Apotegmas▒2025-06-26 21:39▒<p>No pidas nada y lo tendrás todo.</p>▓ELCORAZONESUNNINO▒El corazón es un niño...▒177▒Citas▒2025-06-26 21:37▒<p>El corazón es un niño: espera lo que desea. – Proverbio turco</p>▓ELRELATIVISMOESELDOGMA▒El relativismo es el dogma...▒176▒Apotegmas▒2025-06-26 21:30▒<p>El relativismo es el dogma de los hipócritas.</p>▓LUEGOQUEHASSOLTADOLAPALABRA▒Luego que has soltado la palabra...▒175▒Citas▒2025-06-26 12:22▒<p>Luego que has soltado la palabra, ésta te domina. Pero mientras no la has soltado eres su dominador. – Proverbio árabe</p>▓MIENTRASMASTEACERCASADIOSENORACION▒Mientras más te acercas a Dios en oración...▒174▒Apotegmas▒2025-06-26 10:47▒<p>Mientras más te acercas a Dios en oración, más necesidad tendrás de permanecer en silencio y más quietud habrá en todo tu ser. Permanece allí todo lo que puedas, en espera de su gracia.</p>▓SIMEDASAELEGIRENTREUNAVERDAD▒Si me das a elegir entre una verdad...▒173▒Apotegmas▒2025-06-26 09:36▒<p>Si me das a elegir entre una verdad incómoda y una mentira piadosa, sin dudar eligiré la verdad incómoda.</p>▓LAREALIDADTIENETANTOSENTIDO▒La realidad tiene tanto sentido...▒172▒Apotegmas▒2025-06-25 22:11▒<p>La realidad tiene tanto sentido que se hace inaceptable.</p>▓LAVERDADESUNACIDOCORROSIVO▒La verdad es un ácido corrosivo...▒171▒Citas▒2025-06-25 13:20▒<p>La verdad es un ácido corrosivo que salpica casi siempre al que la maneja. – Santiago Ramón y Cajal</p>▓PARATUMEJORAMIGA▒Para tu mejor amiga▒170▒Apotegmas▒2025-06-25 11:09▒<p>Si tienes una mejor amiga y con el tiempo no le has dado al menos un hijo, en realidad no es tu mejor amiga.</p>▓HAYALGUNOSHOMBRESQUENODICEN▒Hay algunos hombres que no dicen...▒169▒Citas▒2025-06-25 11:08▒<p>Hay algunos hombres que no dicen lo que piensan y otros que piensan demasiado lo que dicen. – Mariano José de Larra</p>▓ENELMUNDOCOMUNDELOSHECHOS▒En el mundo común de los hechos...▒168▒Citas▒2025-06-25 11:07▒<p>En el mundo común de los hechos, los malos no son castigados y los buenos recompensados. El éxito se lo llevan los fuertes y el fracaso los débiles. Eso es todo. – Oscar Wilde</p>▓ELRUIDODEUNBESONOESTANRETUMBANTE▒El ruido de un beso no es tan retumbante...▒167▒Citas▒2025-06-25 08:04▒<p>El ruido de un beso no es tan retumbante como el de un cañón, pero su eco dura mucho más. – Oliver Wendell Holmes</p>▓SITUMALTIENEREMEDIOPORQUE▒Si tu mal tiene remedio, ¿por qué...▒166▒Citas▒2025-06-24 18:03▒<p>Si tu mal tiene remedio, ¿por qué te afliges? Si no lo tiene, ¿por qué te afliges? – Proverbio inglés</p>▓ELHOMBREESTACONDENADO▒El hombre está condenado...▒165▒Citas▒2025-06-24 17:23▒<p>El hombre está condenado a ser libre. – Jean-Paul Sartre</p>▓ELPENSAMIENTOESLASEMILLA▒El pensamiento es la semilla...▒164▒Citas▒2025-06-24 17:22▒<p>El pensamiento es la semilla de la acción. – Ralph Waldo Emerson</p>▓LAIDENTIDADSIEMPREESOBICE▒La identidad siempre es óbice▒163▒Apotegmas▒2025-06-24 10:11▒<p>La identidad siempre es óbice en la busca de la verdad.</p>▓AMOLATRAICIONPEROODIO▒Amo la traición, pero odio...▒162▒Citas▒2025-06-23 21:21▒<p>Amo la traición, pero odio al traidor. – Cayo Julio César</p>▓LAHISTORIASEESCRIBECON▒La historia se escribe con...▒161▒Citas▒2025-06-23 21:14▒<p>La historia se escribe con letras muy retorcidas. – Antonio de Senillosa</p>▓LASABIDURIAMEPERSIGUE▒La sabiduría me persigue...▒160▒Citas▒2025-06-23 20:41▒<p>La sabiduría me persigue, pero yo soy más rápido. – Anónimo</p>▓LAPALABRAESLIBRELAACCION▒La palabra es libre; la acción...▒159▒Citas▒2025-06-23 20:29▒<p>La palabra es libre; la acción, muda; la obediencia, ciega. – Johann Christoph Friedrich von Schiller</p>▓HAYMUCHAGENTEQUEANTESQUEAFRONTAR▒Hay mucha gente que, antes que afrontar...▒158▒Reflexiones▒2025-06-22 21:40▒<p>Hay mucha gente que, antes que afrontar el vacío de su corazón, prefieren al menos sentir odio por lo que sea.</p>▓ELMASPEQUENITO▒El más pequeñito▒157▒Apotegmas▒2025-06-22 17:36▒<p>Dios es tan pequeñito que está en todas partes a la vez, manifestándolo todo, entendiéndolo todo, alumbrándolo todo, pasando desapercibido y sirviendo a los demás. Los delirios de grandeza son propios del ser humano.</p>▓THETASKISNOTTOSEEWHATHASNEVER▒The task is not to see what has never...▒156▒Citas▒2025-06-22 17:32▒<p>The task is not to see what has never been seen before, but to think what has never been thought before about what you see everyday. – Erwin Schrödinger</p>▓ESINCREIBLELOQUEPUEDESLOGRARCON▒Es increíble lo que puedes lograr con...▒155▒Apotegmas▒2025-06-21 21:57▒<p>Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.</p>▓LOSUNICOSINTERESADOSENCAMBIAREL▒Los únicos interesados en cambiar el...▒154▒Citas▒2025-06-21 07:15▒<p>Los únicos interesados en cambiar el mundo son los pesimistas, porque los optimistas están encantados con lo que hay. – José Saramago</p>▓LAREALIDADESDENATURALEZAMITICA▒La realidad es de naturaleza mítica...▒153▒Apotegmas▒2025-06-20 19:17▒<p>La realidad es de naturaleza mítica: tómala muy en serio, porque puede atraparte.</p>▓NODEJESQUENADIETEDIGACOMOPENSAR▒No dejes que nadie te diga cómo pensar▒152▒Reflexiones▒2025-06-20 07:33▒<p>No dejes que nadie te diga cómo pensar; como ahora, que te estoy diciendo cómo pensar.</p>▓DESAMORADA▒Desamorada▒151▒Cuentos▒2025-06-19 13:14▒<p>Casi calcinada por el sol de mediodía, la vampiresa tuvo unas fracciones de segundo en las que recordar todos los sacrificios de fetos que había inculcado con el fin de satisfacer de sangre a su dios; pero no supo cómo arrepentirse, porque nunca nadie la había amado.</p>▓ELMAYORCASTIGOPARAQUIENESNO▒El mayor castigo para quienes no...▒150▒Citas▒2025-06-19 10:01▒<p>El mayor castigo para quienes no se interesan por la política es que serán gobernados por personas que sí se interesan. – Alnold Toynbee</p>▓PREPARARUNDISCURSODEDIEZMINUTOSME▒Preparar un discurso de diez minutos me...▒149▒Citas▒2025-06-19 09:57▒<p>Preparar un discurso de diez minutos me cuesta un par de semanas; un discurso de una hora, una semana, y un discurso de dos horas siempre puedo improvisarlo. – Harold Wilson</p>▓NINGUNHOMBREESTANTONTOPARADESEAR▒Ningún hombre es tan tonto para desear...▒148▒Citas▒2025-06-19 09:53▒<p>Ningún hombre es tan tonto para desear la guerra y no la paz; pues en la paz, los hijos llevan a sus padres a la tumba, y en la guerra son los padres quienes llevan a sus hijos a la tumba. – Herodoto</p>▓CUANDOUNPERROLADRAAUNASOMBRA▒Cuando un perro ladra a una sombra...▒147▒Citas▒2025-06-19 09:50▒<p>Cuando un perro ladra a una sombra, diez mil perros hacen de ella una realidad. – Proverbio chino</p>▓UNPEDANTEESUNESTUPIDOADULTERADO▒Un pedante es un estúpido adulterado...▒146▒Citas▒2025-06-19 09:48▒<p>Un pedante es un estúpido adulterado por el estudio. – Miguel de Unamuno</p>▓NOHECONOCIDOCASINUNCAAUNMATEMATICO▒No he conocido casi nunca a un matemático...▒145▒Citas▒2025-06-19 09:45▒<p>No he conocido casi nunca a un matemático que estuviera en condiciones de sacar conclusiones razonables. – Platón</p>▓PORMASCORRECTAQUESEATUTEOLOGIA▒Por más correcta que sea tu teología▒144▒Apotegmas▒2025-06-18 18:14▒<p>Por más correcta que sea tu teología, nunca será Dios.</p>▓QUIENGOBIERNAAUNPUEBLODANDOBUEN▒Quien gobierna a un pueblo dando buen...▒143▒Citas▒2025-06-18 09:29▒<p>Quien gobierna a un pueblo dando buen ejemplo se parece a la estrella polar, que permanece inmutable mientras los otros astros dan vueltas a su alredor. – Confucio</p>▓POCASONINGUNAVEZSECUMPLECON▒Pocas o ninguna vez se cumple con...▒142▒Citas▒2025-06-18 09:25▒<p>Pocas o ninguna vez se cumple con la ambición que no sea con daño de tercero. – Miguel de Cervantes Saavedra</p>▓ALPERROQUETIENEDINERO▒Al perro que tiene dinero...▒141▒Citas▒2025-06-18 09:22▒<p>Al perro que tiene dinero se le llama Señor Perro. – Proverbio árabe</p>▓TODOSSOMOSAFICIONADOSENNUESTRA▒Todos somos aficionados: en nuestra...▒140▒Citas▒2025-06-18 09:20▒<p>Todos somos aficionados: en nuestra corta vida no tenemos tiempo para otra cosa. – Charles Chaplin</p>▓ELMUNDOSIEMPREHASIDOUNREINO▒El mundo siempre ha sido un reino▒139▒Reflexiones▒2025-06-17 20:59▒<p>Si solamente recordaras que el mundo siempre ha sido un reino y que hay quienes quieren someterlo para ofrecerlo en sacrificio a su dios, difícilmente olvidarías que la libertad es algo que se debe buscar.</p>▓SOLOLOSTONTOSSON▒Sólo los tontos son...▒138▒Apotegmas▒2025-06-17 20:57▒<p>Sólo los tontos son convencidos por los inteligentes.</p>▓LASAPTITUDESMORALESYLASAPTITUDES▒Las aptitudes morales y las aptitudes...▒137▒Citas▒2025-06-17 15:45▒<p>Las aptitudes morales y las aptitudes intelectuales van juntas. Un hombre bueno es inteligente, y uno malo es, además, imbécil. – Jorge Luis Borges</p>▓ELCAMINOALAVERDAD▒El camino a la Verdad▒136▒Apotegmas▒2025-06-17 15:44▒<p>El camino a la Verdad siempre es individual, no porque la verdad sea subjetiva o relativa, tampoco porque otros puedan o no acompañarnos en el andar, sino porque debe ser experimentada personalmente, cara a cara.</p>▓ELSOLNOTIENEREMEDIO▒El Sol no tiene remedio▒135▒Apotegmas▒2025-06-17 11:18▒<p>Así como el Sol no tiene más remedio que salir hoy y mañana, la luz del Altísimo brillará si sólo quitas la persiana.</p>▓SINOENCUENTRASADIOSENELMUNDO▒Si no encuentras a Dios en el mundo▒134▒Apotegmas▒2025-06-17 10:23▒<p>Si no encuentras a Dios en el mundo, en el prójimo y en tu corazón, seguirás igual de insatisfecho aunque vayas al último de los cielos.</p>▓SIEMPREHAYUNBUENJUSTIFICATIVO▒Siempre hay un buen justificativo▒133▒Apotegmas▒2025-06-16 19:07▒<p>Siempre hay un buen justificativo para iniciar una nueva inquisición, una persecución en cadena, una depuración ideológica de la sociedad.</p>▓QUIERESPAZ▒¿Quieres paz?▒132▒Apotegmas▒2025-06-16 19:05▒<p>¿Quieres paz? Prepárate para la guerra.</p>▓DEMONIOSJAPONESES▒Demonios japoneses▒131▒Cuentos▒2025-06-16 18:02▒<p>Demonios japoneses entran en mujeres occidentales de veintitrés años a través de vídeos cortos en la internet y estas empiezan a hablar como adolescentes de trece. En consecuencia, el gobierno emprende un plan de exorcización para desinfantilizarlas, de modo que finalmente tengan hijos. No dio resultado y el crecimiento poblacional sigue en declive.</p>▓SIDENINOTECONVIRTIERONENUNDEMONIO▒Si de niño te convirtieron en un demonio...▒130▒Reflexiones▒2025-06-16 14:20▒<p>Si de niño te convirtieron en un demonio que se alimenta y subsiste del emocionalismo propio y ajeno, ahora que has pasado los treinta tienes la capacidad de recuperarte y convertirte nuevamente en un ser humano.</p>▓DESDEQUEELHOMBREEXISTE▒Desde que el hombre existe▒129▒Reflexiones▒2025-06-15 19:21▒<p>Desde que el hombre existe, ha imaginado formas y conceptos de Dios lo peor o mejor que ha podido. O mejor dicho, el hombre ha empezado a existir por imaginar y concebir un dios, y nunca volverá a la Verdad hasta que su concepción sea la correcta o hasta que deje de imaginar uno.</p>▓LOMALODELACARIDADES▒Lo malo de la caridad es...▒128▒Citas▒2025-06-15 19:18▒<p>Lo malo de la caridad es que no tiene fondo. – Manuel Viola</p>▓NOESCURIOSOQUELASRELIGIONESCONSIDEREN▒¿No es curioso que las religiones consideren...▒127▒Reflexiones▒2025-06-15 15:52▒<p>¿No es curioso que las religiones consideren seres humanos únicamente a quienes las integran? El resto son animales o ciudadanos de segunda y tercera categoría.</p>▓REZAPERONODEJESDE▒Reza, pero no dejes de...▒126▒Citas▒2025-06-14 17:26▒<p>Reza, pero no dejes de remar hacia la orilla. – Proverbio ruso</p>▓ELHOMBREMUEREENTODOSAQUELLOS▒El hombre muere en todos aquellos...▒125▒Citas▒2025-06-14 17:25▒<p>El hombre muere en todos aquellos que mantienen silencio ante la tiranía. – Wole Soyinka</p>▓ELASESINATOENELCADALSOESLAFORMA▒El asesinato en el cadalso es la forma...▒124▒Citas▒2025-06-14 17:24▒<p>El asesinato en el cadalso es la forma más execrable de asesinato, por estar sancionado por la aprobación de la sociedad. – George Bernard Shaw</p>▓THISABOVEALLTOTHINEOWNSELF▒This above all: to thine own self...▒123▒Citas▒2025-06-14 17:20▒<p>This above all: to thine own self be true,<br>And it must follow, as the night the day,<br>Thou canst not then be false to any man.<br>– William Shakespeare</p>▓SINJUSTICIAQUEOTRACOSAESELESTADO▒Sin justicia, ¿qué otra cosa es el Estado...▒122▒Citas▒2025-06-13 20:09▒<p>Sin justicia, ¿qué otra cosa es el Estado sino una banda de ladrones? – Agustín de Hipona</p>▓LAVISIONTRAUMATICADEDIOS▒La visión traumática de Dios▒121▒Apotegmas▒2025-06-13 18:11▒<p>La visión traumática que tienes de Dios desaparece cuando te reconcilias con él.</p>▓ELHABITODENEGOCIAR▒El hábito de negociar ▒120▒Apotegmas▒2025-06-13 18:09▒<p>Tenías el hábito de negociar con el Diablo, por eso crees que se puede negociar con Dios.</p>▓LAVERDADSEEXPLICASOLA▒La verdad se explica sola▒119▒Reflexiones▒2025-06-13 18:06▒<p>Si la verdad se explica sola y no necesita ser defendida, ¿entonces mejor por qué no te callas?</p>▓ESLARGALAESPERA▒Es larga la espera▒118▒Apotegmas▒2025-06-13 18:01▒<p>Es larga la espera cuando el tiempo es corto.</p>▓BUSCAMOSSENTIRNOSSEGUROSPENSANDO▒Buscamos sentirnos seguros pensando...▒117▒Reflexiones▒2025-06-13 16:14▒<p>Buscamos sentirnos seguros pensando que recibiremos lo que damos, pero (des)afortunadamente la realidad no es tan simplista.</p>▓NINGUNACULTURAESBUENASOLO▒Ninguna cultura es buena sólo...▒116▒Apotegmas▒2025-06-13 09:50▒<p>Ninguna cultura es buena sólo por ser cultura. Ninguna tradición es buena sólo por ser tradición.</p>▓SIDIOSNOHABITAENTEMPLOS▒Si Dios no habita en templos...▒115▒Reflexiones▒2025-06-11 22:39▒<p>Si Dios no habita en templos hechos por manos humanas, ¿qué o quién era la entidad que habitaba en el tabernáculo? ¿Un ángel de Dios?</p>▓TAMBIENPUEDESCONVERTIRTEENUNFANATICO▒También puedes convertirte en un fanático...▒114▒Reflexiones▒2025-06-11 22:37▒<p>También puedes convertirte en un fanático de la verdad. No es tan recomendable como parece.</p>▓ASIOHCONCIENCIADENOSOTROSTODOS▒Así, ¡oh conciencia!, de nosotros todos...▒113▒Citas▒2025-06-10 21:36▒<p>Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. – William Shakespeare</p>▓ESDIFICILAMARALPROJIMO▒Es difícil amar al prójimo▒112▒Apotegmas▒2025-06-10 18:57▒<p>Ya es algo difícil amar al prójimo sin amar a Dios, pero es casi imposible amar a Dios sin amar al prójimo.</p>▓LASIMPLICIDADDEDIOSESTALQUE▒La simplicidad de Dios es tal, que...▒111▒Apotegmas▒2025-06-10 18:55▒<p>La simplicidad de Dios es tal, que los seres humanos queremos diversificarla y complicarla, y a veces quedamos atrapados en nuestra propia creación. ¿Cómo restaurar esa primera simplicidad? Con la luz de Dios.</p>▓SISOLOESREALIDADLOQUEPUEDES▒Si sólo es realidad lo que puedes...▒110▒Apotegmas▒2025-06-10 17:15▒<p>Si sólo es realidad lo que puedes ver, ¿cómo es que no puedes ver la realidad?</p>▓CUANDOCREASQUEHASLOGRADOALGO▒Cuando creas que has logrado algo...▒109▒Reflexiones▒2025-06-10 17:14▒<p>Cuando creas que has logrado algo, recuerda que apenas si existes. – Con amor, tu Maestra de escuela.</p>▓HAYUNAGUERRAENLOSCIELOS▒Hay una guerra en los cielos▒108▒Apotegmas▒2025-06-10 17:11▒<p>Hay una guerra en los cielos, y es una guerra para apoderarse de todo tu ser. Refúgiate en Dios.</p>▓CORRALDEESTRELLAS▒Corral de estrellas▒107▒Poesía▒2025-06-10 17:10▒<p>Si pudieras vivir de estrellas<br>Tendrías un corral de ellas.</p>▓LAFANTASIAAISLADADELARAZON▒La fantasía, aislada de la razón...▒106▒Citas▒2025-06-08 08:04▒<p>La fantasía, aislada de la razón, sólo produce monstruos imposibles. Unida a ella, en cambio, es la madre del arte y fuente de sus deseos. – Francisco de Goya</p>▓LOSANOSENSENANMUCHASCOSAS▒Los años enseñan muchas cosas...▒105▒Citas▒2025-06-07 22:22▒<p>Los años enseñan muchas cosas que los días jamás llegan a conocer. – Ralph W. Emerson<p>▓UNSOLDADOQUECOMIENZAAPENSAR▒Un soldado que comienza a pensar...▒104▒Citas▒2025-06-07 22:21▒<p>Un soldado que comienza a pensar, casi ha dejado de serlo. – Heinrich Böll</p>▓SIUNASOCIEDADLIBRENOPUEDE▒Si una sociedad libre no puede...▒103▒Citas▒2025-06-07 22:19▒<p>Si una sociedad libre no puede ayudar a sus muchos pobres, tampoco podrá salvar a sus pocos ricos. – John F. Kennedy</p>▓POBREDELESTUDIANTEQUENOAVENTAJE▒Pobre del estudiante que no aventaje...▒102▒Citas▒2025-06-07 22:18▒<p>Pobre del estudiante que no aventaje a su maestro. – Leonardo da Vinci</p>▓CUANDOVEASUNALMAQUEANUNCIAEL▒Cuando veas un alma que anuncia el...▒101▒Citas▒2025-06-07 22:17▒<p>Cuando veas un alma que anuncia el aborto como un acto benigno, sabrás que en ella reina el príncipe de las tinieblas y que está en peligro de muerte eterna. – Pío de Pietrelcina</p>▓MIPASATIEMPOFAVORITOESDEJARPASAR▒Mi pasatiempo favorito es dejar pasar...▒100▒Citas▒2025-06-06 22:33▒<p>Mi pasatiempo favorito es dejar pasar el tiempo, tener tiempo, tomarme mi tiempo, perder el tiempo, vivir a contratiempo. – Françoise Sagan</p>▓UNMILAGROOCURRECUANDOCAMBIAS▒Un milagro ocurre cuando cambias...▒99▒Citas▒2025-06-06 22:30▒<p>Un milagro ocurre cuando cambias lágrimas por oración y miedo por fe. – San Francisco de Asís</p>▓ELARBOLITODELAFE▒El arbolito de la fe▒98▒Apotegmas▒2025-06-06 22:27▒<p>Ora en lo secreto, ora en silencio, entra en comunión. Necesitarás de la oración diaria para regar y sostener el arbolito de tu fe. Los frutos vienen después.</p>▓ELVERDADEROMILAGRO▒El verdadero milagro▒97▒Apotegmas▒2025-06-05 21:37▒<p>El único y verdadero milagro: Que cambie tu corazón a la volundad de Dios.</p>▓ESGRANDELACANTIDADDEDOCTRINAS▒Es grande la cantidad de doctrinas...▒96▒Reflexiones▒2025-06-05 21:35▒<p>Es grande la cantidad de doctrinas que han sido puestas juntas en las abundantísimas páginas de lo que hoy llamamos Biblia. Sin embargo, hay un hilo conductor, por lo general subyacente y en ocasiones manifiesto. Para tomarlo con mucha calma al hilvanar la madeja.</p>▓SINOSIRVESCONLOPOCOQUETIENES▒Si no sirves con lo poco que tienes▒95▒Apotegmas▒2025-06-03 11:39▒<p>Si no sirves a Dios con lo poco que tienes, servirás al Enemigo con lo que te sobra.</p>▓LAVERDADSIEMPRECAMBIA▒La verdad siempre cambia▒94▒Apotegmas▒2025-06-03 11:38▒<p>La verdad siempre cambia, pero sigue siendo una; como el árbol que brotó de una semilla, creció y finalmente dio fruto. Pero, a medida que el árbol llega a su desarrollo comapleto, los cambios en él no son tan notorios.</p>▓YASONUNASCUANTASLASDECADAS▒Ya son unas cuantas las décadas...▒93▒Reflexiones▒2025-06-03 11:29▒<p>Ya son unas cuantas las décadas cinematográficas en las que se ha intentado infantilizar la brujería para hacerla pasar como trivial o como un simple juego, con películas diseñadas para difundir las prácticas y hacerlas parte de la cultura.</p>▓CELEBREMOSLAVIDA▒Celebremos la vida▒92▒Apotegmas▒2025-06-03 11:27▒<p>Celebremos la vida, pero no hasta la embriaguez. Celebrémosla como el don de Dios que es.</p>▓RINDETEANTEDIOSDEJADEBREGAR▒Ríndete ante Dios, deja de bregar▒91▒Apotegmas▒2025-06-03 11:26▒<p>Ríndete ante Dios, deja de bregar, entra en el reposo, y todo lo que realmente necesite tu alma, él te lo dará.</p>▓CUANDOELREINODELOSCIELOSTEPERSIGA▒Cuando el reino de los cielos te persiga▒90▒Apotegmas▒2025-06-03 11:24▒<p>Cuando el reino de los cielos te persiga, te juzgue y busque tu vida, refúgiate en Dios únicamente.</p>▓ALOSSERESHUMANOSSENOSHACE▒A los seres humanos se nos hace...▒89▒Apotegmas▒2025-06-03 11:12▒<p>A los seres humanos se nos hace demasiado fácil vivir en un pasado que nunca tuvimos.</p>▓CUANDOUNAPREGUNTANOTIENESOLUCION▒Cuando una pregunta no tiene solución▒88▒Reflexiones▒2025-06-03 11:11▒<p>Cuando una pregunta no tiene solución, es probable que no tenga sentido en absoluto. Por ejemplo: ¿En qué momento empezó a existir el universo?</p>▓LASANTIDADESTAMASALLADELOSVAIVENES▒La santidad está más allá de los vaivenes...▒87▒Apotegmas▒2025-06-03 11:08▒<p>La santidad está más allá de los vaivenes entre el bien y el mal; pero cuando dices que el bien y el mal no existen, pierdes la posibilidad de acceder a ella.</p>▓MIENTRASNUESTRASEGURIDADNOSEAHIJA▒Mientras nuestra seguridad no sea hija...▒86▒Citas▒2025-06-03 10:34▒<p>Mientras nuestra seguridad no sea hija de la razón, tendrá que ser hija del terror. – Winston Churchill</p>▓ESINCREIBLELACANTIDADDEPERSONASQUE▒Es increíble la cantidad de personas que...▒85▒Reflexiones▒2025-06-03 10:33▒<p>Es increíble la cantidad de personas que están dispuestas a morir por las doctrinas e ideologías que alguien más les ha inoculado.</p>▓UNEJERCICIO▒Un ejercicio▒84▒Apotegmas▒2025-06-03 10:32▒<p>La existencia es un ejercicio del ser.</p>▓TODOTIENESENTIDO▒Todo tiene sentido▒83▒Apotegmas▒2025-06-02 22:32▒<p>Todo tiene sentido hasta que lo pierde.</p>▓ELIGNORANTEVEMISTERIOENELENGANO▒El ignorante ve misterio en el engaño...▒82▒Apotegmas▒2025-06-02 21:58▒<p>El ignorante ve misterio en el engaño. El racionalista ve engaño en el misterio. El sabio ve el misterio.</p>▓PUEDESSERFELIZCONSOLOPROPONERTELO▒Puedes ser feliz con sólo proponértelo▒81▒Reflexiones▒2025-06-02 10:06▒<p>Puedes ser feliz con sólo proponértelo, pero puedes ser infeliz sin proponértelo.</p>▓ALLADONDESOLINMENSO▒Allá donde Sol inmenso▒80▒Poesía▒2025-06-02 10:04▒<p>Allá donde Sol inmenso<br>Moja en Mar calma los pies,<br>Donde las aguas de tiempos y tiempos<br>Se evaporan por llover,<br>Verás que no hay dudas ni cuentos<br>Y que ya nadie tiene sed,<br>Que fue todo un plan maestro<br>Para que puedas volver.</p>▓QUEHERMOSOESELPAISENELQUENACI▒Qué hermoso es el país en el que nací...▒79▒Reflexiones▒2025-06-02 10:01▒<p>Qué hermoso es el país en el que nací, con todos sus defectos y virtudes, sufrimientos y dichas, miserias y opulencias.</p>▓UNSACRIFICIOALAVEZ▒Un sacrificio a la vez▒78▒Apotegmas▒2025-06-02 09:58▒<p>Siempre que llegues a una verdad, sacrifícala en pro de otra mayor, de modo que permanezcas libre.</p>▓SITEENCUENTRASCONALGUIENQUENOBUSCA▒Si te encuentras con alguien que no busca...▒77▒Apotegmas▒2025-06-01 22:52▒<p>Si te encuentras con alguien que no busca la verdad o que ha dejado de hacerlo, sé paciente; es probable que intuya que puede ser dolorosa.</p>▓HAYQUIENESDESEANTANTOQUEVENGA▒Hay quienes desean tanto que venga...▒76▒Reflexiones▒2025-06-01 22:51▒<p>Hay quienes desean tanto que venga el apocalipsis que lo crean ellos mismos, para sentir que su dios es real y para dar sustento a su falsa fe.</p>▓ESTEMUNDOAVECESSEASEMEJAA▒Este mundo a veces se asemeja a...▒75▒Reflexiones▒2025-06-01 22:49▒<p>Este mundo a veces se asemeja a la externalización de las aberraciones mentales de un diosecillo psicópata. A veces.</p>▓NOSEATACAALHABLAR▒No se ataca al hablar▒74▒Apotegmas▒2025-06-01 22:48▒<p>No se ataca al hablar; no se habla al atacar.</p>▓LARELIGIONSIEMPRETIENE▒La religión siempre tiene...▒73▒Apotegmas▒2025-05-31 09:51▒<p>La religión siempre tiene la razón, pero Dios siempre tiene la Verdad.</p>▓NOSABESLOQUEESTASBUSCANDO▒No sabes lo que estás buscando...▒72▒Apotegmas▒2025-05-30 22:29▒<p>No sabes lo que estás buscando, pero cuando lo encuentres lo vas a reconocer. Es una promesa.</p>▓ELODIOTEPUEDECONVERTIRENUNMARGINAL▒El odio te puede convertir en un marginal...▒71▒Apotegmas▒2025-05-30 22:27▒<p>El odio te puede convertir en un marginal, pero sólo unos pocos entre los marginales están llenos de odio.</p>▓QUIENESUSADO▒Quién es usado▒70▒Apotegmas▒2025-05-30 22:15▒<p>Sólo es usado quien no sabe o no quiere servir al prójimo.</p>▓UNODELOSPASATIEMPOSFAVORITOS▒Uno de los pasatiempos favoritos...▒69▒Apotegmas▒2025-05-30 22:13▒<p>Uno de los pasatiempos favoritos del Demonio es someter a los hombres en nombre de Dios. Lo viene haciendo desde el principio de la humanidad, si acaso hubo alguno.</p>▓LOQUEELCIELOTEDASIEMPREES▒Lo que el Cielo te da siempre es...▒68▒Apotegmas▒2025-05-30 22:10▒<p>Lo que el Cielo te da siempre es mejor y más que lo que mereces, de modo que estar agradecido a Dios, más que una virtud loable, es un reconocimiento debido.</p>▓LASLUCESDELAMETRALLAPARECENFUEGOS▒Las luces de la metralla parecen fuegos...▒67▒Reflexiones▒2025-05-30 22:09▒<p>Las luces de la metralla parecen fuegos de artificio sólo porque las observas de lejos. Espera a que las líneas del enemigo se acerquen y la celebración cambiará para siempre.</p>▓LONUESTROPUEDESERUNAEXCUSA▒«Lo nuestro» puede ser una excusa...▒66▒Apotegmas▒2025-05-30 22:07▒<p>«Lo nuestro» puede ser una excusa para no aceptar el propio error. Un subterfugio para nunca ser juzgado.</p>▓IGNORALAAPRENSION▒Ignora la aprensión▒65▒Apotegmas▒2025-05-29 09:59▒<p>Ignora la aprensión, permanece en comunión y toma una decisión. En ese orden.</p>▓QUENADIETEHAGACREER▒Que nadie te haga creer...▒64▒Apotegmas▒2025-05-29 09:57▒<p>Que nadie te haga creer que eres alguien más.<p>▓LATOLERANCIAESELHABITOPREFERIDO▒La tolerancia es el hábito preferido...▒63▒Apotegmas▒2025-05-29 09:56▒<p>La tolerancia es el hábito preferido de los condescendientes.<p>▓CERRARLEABSOLUTAMENTEELPASOALERROR▒Cerrarle absolutamente el paso al error...▒62▒Apotegmas▒2025-05-27 16:11▒<p>Cerrarle absolutamente el paso al error es anular la posibilidad de mejorar.</p>▓NOTEATREVASAPENSARQUEERESJUSTO▒No te atrevas a pensar que eres justo...▒61▒Apotegmas▒2025-05-27 16:05▒<p>No te atrevas a pensar que eres justo o que tienes la razón sólo porque te persiguen.</p>▓NOSELLEGAADIOS▒No se llega a Dios▒60▒Apotegmas▒2025-05-26 19:41▒<p>No se llega a Dios con abstracciones.</p>▓DENINOCREIASQUEHABIAUNMONSTRUO▒De niño creías que había un monstruo...▒59▒Reflexiones▒2025-05-26 16:25▒<p>De niño creías que había un monstruo debajo de la cama y temblabas. Ahora que eres adulto, sabes que hay un monstruo debajo de la cama, pero te da igual.</p>▓TUHARASLOPOSIBLE▒Tú harás lo posible▒58▒Apotegmas▒2025-05-26 11:36▒<p>Tú harás lo posible y Dios hará lo imposible.</p>▓ELMALQUEHASHECHONUNCASALIODETI▒El mal que has hecho nunca salió de ti...▒57▒Apotegmas▒2025-05-25 17:23▒<p>El mal que has hecho nunca salió de ti. Sigue allí agazapado, esperando el momento justo para devorarte desde dentro.</p>▓EVENTUALMENTETENDRASQUEELEGIRENTREDIOS▒Eventualmente tendrás que elegir entre Dios...▒56▒Apotegmas▒2025-05-25 17:17▒<p>Eventualmente tendrás que elegir entre Dios y la religión, a no ser que tu religión sea Dios.</p>▓CREEMOSUNCONFLICTODIGAMOSQUE▒Creemos un conflicto, digamos que...▒55▒Reflexiones▒2025-05-25 17:15▒<p>Creemos un conflicto, digamos que el contrincante es el culpable y lleguemos al poder convenciendo al pueblo de que somos la única solución.</p>▓TUOPINIONNOESHUMILDE▒Tu opinión no es humilde...▒54▒Apotegmas▒2025-05-25 17:14▒<p>Tu opinión no es humilde ni altiva; es sólo una opinión.</p>▓EXTRANOQUEPAREZCAALGUNOSPROBLEMAS▒Extraño que parezca, algunos problemas...▒53▒Reflexiones▒2025-05-24 11:08▒<p>Extraño que parezca, algunos problemas, estados mentales, conflictos, coyunturas sociales y otras situaciones, sólo pueden ser resueltos ignorándolos o poniendo la atención en sus opuestos. Si te centras en ellos, les darás entidad, crecerán y te engullirán.</p>▓ANOSERQUETENGASALGUNANOVEDADTEOLOGICA▒A no ser que tengas alguna novedad teológica...▒52▒Apotegmas▒2025-05-24 11:05▒<p>A no ser que tengas alguna novedad teológica con que sorprender a Dios, ¿por qué no entras en comunión y oras por al menos media hora en silencio?</p>▓QUENADIEDESVIETUFEDEDIOS▒Que nadie desvíe tu fe de Dios...▒51▒Apotegmas▒2025-05-24 11:01▒<p>Que nadie desvíe tu fe de Dios. La fe es una relación recíproca, incitada por Dios, que cuando cambia de objeto pierde su virtud.</p>▓OLVIDATEDEDIOS▒Olvídate de Dios▒50▒Apotegmas▒2025-05-23 20:36▒<p>Olvídate de Dios y encontrarás a Dios.</p>▓CADAVEZESMASCOMUNESCUCHARAALGUNOS▒Cada vez es más común escuchar a algunos...▒49▒Reflexiones▒2025-05-23 15:43▒<p>Cada vez es más común escuchar a algunos decir que el mal y el bien no existen porque son relativos. Es al revés: el mal y el bien existen porque son relativos, y lo que buscamos es el bien menos relativo.</p>▓UNCORAZONVACIONOTENDRAPROBLEMAS▒Un corazón vacío no tendrá problemas...▒48▒Apotegmas▒2025-05-22 21:16▒<p>Un corazón vacío no tendrá problemas en llamar amor al emocionalismo.</p>▓YSUCEDIOQUELOSHOMBRESCREARONUNARELIGION▒Y sucedió que los hombres crearon una religión...▒47▒Reflexiones▒2025-05-22 21:14▒<p>Y sucedió que los hombres crearon una religión en nombre de un dios vengativo, celoso, sediento de sangre, castigador y que habita en las sombras, para esclavizarse a su ley y arrogarse el derecho de perseguir a quienes realmente buscan a Dios.</p>▓LOSATEOSNOCREENENDIOSPERO▒Los ateos no creen en Dios, pero...▒46▒Apotegmas▒2025-05-22 19:38▒<p>Los ateos no creen en Dios, pero de todas formas quieren que se arrepienta.</p>▓BUSCARLAVERDADESCREERPEROCREER▒Buscar la verdad es creer, pero creer...▒45▒Apotegmas▒2025-05-22 16:44▒<p>Buscar la verdad es creer, pero creer no necesariamente es buscar la verdad.</p>▓LAFEESEXCLUSIVADEDIOS▒La fe es exclusiva de Dios...▒44▒Apotegmas▒2025-05-22 16:06▒<p>La fe es exclusiva de Dios. No la desperdicies en las cosas del cielo ni en las de la tierra.</p>▓ELPOPULISMOTIENELACAPACIDADDECONVERTIR▒El populismo tiene la capacidad de convertir...▒43▒Apotegmas▒2025-05-22 15:51▒<p>El populismo tiene la capacidad de convertir la ignorancia en identidad, la identidad en partidismo y el partidismo en totalitarismo.</p>▓SINOAMASALMUNDOCOMOLOAMADIOS▒Si no amas al mundo como lo ama Dios▒42▒Reflexiones▒2025-05-22 15:49▒<p>Si no amas al mundo como lo ama Dios, ni te atrevas a siquiera soñar con ir a alguno de los cielos; serías rechazado de inmediato. De todas formas, el ser humano es para estar aquí, con Dios.</p>▓SABIAQUEERAOCTUBRE▒Sabía que era octubre▒41▒Poesía▒2025-05-21 21:16▒<p>Se revuelca en la tumba Colón<br>Por oír a las gentes decir<br>Que fue él quien las Américas descubre<br>Cuando sabía muy bien que era octubre.</p>▓ELPUNTOINTERMEDIOENTREUNAVERDADYUNA▒El punto intermedio entre una verdad y una...▒40▒Apotegmas▒2025-05-21 21:14▒<p>El punto intermedio entre una verdad y una mentira, es siempre una mentira. El punto intermedio entre el bien y el mal, no siempre es el mal.</p>▓ALGUNASPERSONASNOQUIERENACEPTAR▒Algunas personas no quieren aceptar...▒39▒Reflexiones▒2025-05-21 21:13▒<p>Algunas personas no quieren aceptar la libertad que hay en Dios, porque intuyen que las consecuencias de usarla mal son peores que las de seguir siendo esclavos.</p>▓UNGRUPOHUMANOSETRANSFORMAENMULTITUD▒Un grupo humano se transforma en multitud...▒38▒Citas▒2025-05-21 21:11▒<p>Un grupo humano se transforma en multitud manipulable cuando se vuelve sensible al carisma y no a la competencia, a la imágen y no a la idea, a la afirmación y no a la prueba, a la repetición y no a la argumentación, a la sugestión y no al razonamiento. – Jean François Revel</p>▓LAMENTIRADEPURAYREFINALAVERDAD▒La mentira depura y refina la verdad...▒37▒Apotegmas▒2025-05-21 20:08▒<p>La mentira depura y refina la verdad, y existirá hasta que la verdad se manifieste de manera absoluta.</p>▓LASOLEDADESUNPRIVILEGIOQUE▒La soledad es un privilegio que...▒36▒Apotegmas▒2025-05-21 09:35▒<p>La soledad es un privilegio que pocos pueden costear y mucho menos disfrutar.</p>▓ENDISSANTLAVERITE▒En dissant la verité▒35▒Apotegmas▒2025-05-20 19:26▒<p>En dissant la verité, nous oublions la realité.</p>▓HEREJE▒¡Hereje!▒34▒Poesía▒2025-05-20 19:07▒<p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más<br>De allende las montañas vendrán y verán<br>Que sabemos hacer justicia sin perdonar</p><p>Un mandato tenemos y de seguro se cumplirá<br>Porque somos los elegidos y no hay nadie más<br>El dios de nuestros padres nos urge a odiar<br>A quienes no se someten a su ley y voluntad</p><p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más</p><p>Y cuando su cuerpo sea fuego, humo y hedor<br>Fervor devoto sentiremos viéndolo reventar<br>Contra sumisión y obediencia se ha levantado<br>Ha de pagar su ofensa según hemos jurado</p><p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más</p><p>Que no se hable de olvido y misericordia<br>Que nadie se atreva a salir en su defensa<br>Ahora que tenemos sangre para derramar<br>Finalmente podremos a nuestro dios adorar</p><p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más<br>De allende las montañas vendrán y verán<br>Que sabemos hacer justicia sin perdonar.</p>▓QUENOUSENTUESPERANZAYTU▒Que no usen tu esperanza y tu...▒33▒Apotegmas▒2025-05-20 19:00▒<p>Que no usen tu esperanza y tu fe para darle entidad a algún dios.</p>▓ESPERAENDIOSPARACONTEMPLARSU▒Espera en Dios para contemplar su...▒32▒Apotegmas▒2025-05-20 18:59▒<p>Espera en Dios para contemplar su luz y recibir su gracia.</p>▓LAOSCURIDADYELMALSONMUCHOMASQUE▒La oscuridad y el mal son mucho más que...▒31▒Apotegmas▒2025-05-20 18:58▒<p>La oscuridad y el mal son mucho más que simple ausencia de Luz y Verdad. Ve con tiento.</p>▓SITUFEYTURAZONNORINEN▒Si tu fe y tu razón no riñen...▒30▒Apotegmas▒2025-05-20 12:05▒<p>Si tu fe y tu razón no riñen, es porque no estás usando bien la razón o tu fe es débil.</p>▓ESTODOTANSIMPLEQUE▒Es todo tan simple que...▒29▒Apotegmas▒2025-05-20 12:03▒<p>Es todo tan simple que bregamos por complicarlo.</p>▓TODOLOQUENECESITASSABERCABEENUN▒Todo lo que necesitas saber cabe en un...▒28▒Apotegmas▒2025-05-20 12:01▒<p>Todo lo que necesitas saber cabe en un pequeño trozo de papel o ni siquiera necesita estar escrito.</p>▓SIUSASLAFEPARANEGARLAREALIDADELMUNDO▒Si usas la fe para negar la realidad, el mundo...▒27▒Apotegmas▒2025-05-19 18:39▒<p>Si usas la fe para negar la realidad, el mundo te vencerá. Si la usas para entenderla, te dará sabiduría.</p>▓SOMOSMUYAFORTUNADOSPORQUENOPODEMOS▒Somos muy afortunados, porque no podemos...▒26▒Apotegmas▒2025-05-19 18:35▒<p>Somos muy afortunados, porque no podemos tener ni hacer todo lo que queremos.</p>▓LASVAMPIRESASYELALINODEAJOS▒Las vampiresas y el aliño de ajos▒25▒Reflexiones▒2025-05-19 11:46▒<p>Si te pones una ristra de ajos al cuello para repeler a las vampiresas, ellas te la arrancarán en una fracción de nada y procederán a hacer un aliño con ellos, mezclándolos con la sangre que te chuparán del cuello. El único repelente verdadero es tu entereza moral.</p>▓LALABORETERNADELSERHUMANOSIEMPREHA▒La labor eterna del ser humano siempre ha...▒24▒Apotegmas▒2025-05-19 11:45▒<p>La labor eterna del ser humano siempre ha sido someter el reino de los cielos a Dios, mediante el sacrificio de la propia carne.</p>▓QUETUUNICAIDENTIDADSIACASO▒Que tu única identidad, si acaso...▒23▒Apotegmas▒2025-05-19 10:42▒<p>Que tu única identidad, si acaso necesitas alguna, sea la busca de la Verdad.</p>▓AHORRATEELENGORROSOTRAMITEDEIRAALGUNO▒Ahórrate el engorroso trámite de ir a alguno...▒22▒Apotegmas▒2025-05-19 10:41▒<p>Ahórrate el engorroso trámite de ir a alguno de los cielos y quédate aquí, con Dios; hay trabajo por hacer.</p>▓ADONDENOPUEDENLLEGARNITUVISTA▒Adonde no pueden llegar ni tu vista...▒21▒Citas▒2025-05-17 20:02▒<p>Adonde no pueden llegar ni tu vista ni tu entendimiento, llega tu fe. – Agustín de Hipona</p>▓ADANENELBARDEPICHUCO▒Adán en el bar de Pichuco▒20▒Cuentos▒2025-05-17 17:51▒<p>Al cabo de una larga y agotadora mañana de trabajo para sustentar la carne, me dirigí al bar de Pichuco, en la esquina de Campichuelo y Rivadavia. A esas horas del día no sobran las mesas y como no quería sentarme en la barra, usé algo de paciencia para encontrar una para mí solo, aunque sea en un rincón sin vista a la calle. Al recorrer el lugar con la mirada me di una sorpresa agradable: un amigo de la infancia comía pizza en una mesa, sin compañía. Su nombre era Adán, desde un principio. Nosotros lo llamábamos así porque siempre salía de casa a jugar con una manzana en la mano, pero tengo entendido que su verdadero nombre era otro, que de todas formas no viene al caso. Adán masticaba cansino un buen bocado de pizza de alcaparras, con la mirada fija en la silla libre frente a él. Tragó lo que tenía en la boca y la dirección de su mirada no varió en nada. Me acerqué y cuando lo llamé por su nombre me dirigió esa misma mirada abstraída, sin reconocerme al inicio, pero cuando me recordó se puso de pie, me estrechó la mano y me invitó a ocupar el asiento. Me vendrá bien algo de conversación, pensé.</p><p>Después de algún intercambio de palabras formales no me fue fácil pasar por alto lo compungido de su rostro, por lo que le pregunté qué le sucedía, qué lo afligía, incomodándolo notoriamente en su silla, con lo que intentó explicarme su situación. Todo comenzó hace apenas un mes, me contó, cuando todavía trabajaba con mi mujer, Eva, en unos campos para un patrono estricto pero generoso. Nuestra ocupación era cosechar frutos muy diversos, en un huerto inmenso de numerosas hectáreas, junto a otros tantos recolectores que, al igual que nosotros, tenían allí mismo un lugar para pasar la noche y así ahorrar en viáticos de lunes a sábado. Ningún día faltaban los alimentos, me decía, y comíamos todos juntos antes de trabajar, a la una de la tarde, y una merienda ligera a las diecisiete y media. Conocí a Eva en esos huertos y nos llevamos tan bien desde el inicio, nos compenetramos tanto desde los primeros intercambios, que a veces sentíamos que eramos una misma persona. Pensábamos casi igual, queríamos casi siempre lo mismo, nos cansábamos al mismo tiempo, nos despertábamos juntos justo antes de que saliera el sol, y otras cosas difíciles de explicar para nuestros compañeros de trabajo. Un día determinado, el patrono reunió a todos los cocechadores y nos dio una nueva orden: Nadie puede comer de los frutos de los árboles que están en medio del huerto. Están reservados para mí y para con quien yo quiera compartirlos. Todos lo entendimos perfectamente y aceptamos la nueva condición, porque siendo que la fruta y la comida abundaban en el huerto, ¿quién tendría la extraña ocurrencia de tomar lo que estaba prohibido?</p><p>Unos días después llegaron nuevos cosechadores al huerto. Eran gente de muy lejos, con otro espíritu en el habla y costumbres peregrinas, contratados por la sobreabundancia de fruta, para que el exceso no se pudriera en el suelo. Eva cosechaba cerca del centro del huerto, cuando uno de esos nuevos trabajadores se acercó a los árboles prohibidos, tomó un fruto y se dispuso a comerlo. Ella le dijo que no se podía hacer tal cosa, a lo que el alienígena respondió preguntándole por qué. Se lo explicó palabra por palabra, amablemente, tal como lo había oído; pero el recién llegado, en lugar de acatar la disposición del patrono, le dio un buen mordisco a la fruta para demostrarle que no pasaba nada al hacerlo. Eva, convencida, tomó ella misma otra de esas frutas y la probó, comprobando que, en efecto, la nueva regla no tenía sentido y que, por tanto, no era cierto que esos frutos fueran prohibidos. Y no sólo eso, le gustó tanto el sabor y el color que vino rauda a mi lado para que también yo sintiera lo excelente que era, con esa textura tan agradable. Sin saber que la fruta que me daba Eva provenía de los árboles prohibidos, comí y me deleité con tan buen producto de la tierra.</p><p>Tres días después, con el calor del verano, descansábamos Eva y yo a la sombra de unos árboles, en un lugar del huerto que únicamente nosotros conocíamos. Escuchamos de pronto la voz del patrono que nos llamaba por nuestro nombre y presentimos algo malo. Nos levantamos, salimos al encuentro y le preguntamos en qué podíamos ayudarle. El patrono, algo airado, inquirió si habíamos comido de los frutos prohibidos del medio del huerto. Miré a Eva extrañado e intuí de inmediato que el fruto que me había dado era de esa lugar. Rápidamente, sin pensarlo, le dije al patrono que era Eva quien me había dado de comer y que yo era inocente. Como es lógico, el patrono decidió expulsarnos a los dos. Tuvimos que irnos de inmediato y Eva se fue de mi lado apenas salimos de aquellos campos.</p><p>Ahora entendía yo la tristeza de Adán: no sólo había perdido tan buen empleo, sino que Eva ya no estaba a su lado. Pasados unos dos minutos sin intercambiar palabras y sin que lo buscara, me vino a la cabeza una solución para la situación de Adán. Tengo la respuesta, le dije; sé cómo puedes recuperar tu empleo y quizá también a Eva. Adán abrió los ojos todo lo que pudo y mostró en su expresión una vislumbre de esperanza. La solución es más fácil de lo que crees, le expliqué. Debes volver a los campos de tu patrono, pedir permiso para hablar con él cara a cara y decirle las siguientes palabras: Perdóneme por no haber cuidado a Eva para que no comiera del fruto prohibido; no volverá a suceder. Estoy seguro de que si le dices eso te perdonará, te devolverá el empleo y después Eva podrá volver al huerto contigo. Adán se levantó de la silla impetuoso, ruidoso, se puso el sombrero de regreso, dejó algunos billetes en la mesa para pagar la pizza y el jugo de pomelo, me dio un buen abrazo y salió presuroso del bar. ¡Gracias!, me gritó desde la puerta.</p><p>Me quedé allí, sentado, hasta terminar mis alimentos. Cuando me disponía a pagar lo que había consumido, mi corazón fue invadido por una incomodidad, y era que me estaba percatando de que el orgullo de haber ayudado a mi amigo tan eficazmente, no había dejado lugar ni tiempo a que preguntase, antes de que se fuera, quién era su patrono y dónde estaban esos campos para poder yo trabajar en ellos.</p><p>Nunca volví a saber de Adán.</p>▓PUEDESHABLARENTERMINOSTEOLOGICOS▒Puedes hablar en términos teológicos...▒19▒Apotegmas▒2025-05-17 17:39▒<p>Puedes hablar en términos teológicos acerca de las cosas del Espíritu, pero no puedes crear o inventar espiritualidad usando constructos teológicos; a no ser que lo que en realidad quieras es levantar una nueva Torre de Babel.</p>▓ITISHARDTOIMAGINEAMORESTUPIDORMORE▒It is hard to imagine a more stupid or more...▒18▒Citas▒2025-05-17 17:38▒<p>It is hard to imagine a more stupid or more dangerous way of making decisions than by putting those decisions in the hands of people who pay no price for being wrong. – Thomas Sowell</p>▓SIEMPREQUEBUSQUESADIOSHACIAFUERA▒Siempre que busques a Dios hacia fuera...▒17▒Apotegmas▒2025-05-17 17:37▒<p>Siempre que busques a Dios hacia fuera, te toparás con alguien que dice representarlo.</p>▓ELRECUERDOMASPURO▒El recuerdo más puro...▒16▒Apotegmas▒2025-05-17 17:36▒<p>El recuerdo más puro es el olvido.</p>▓NOESQUEHAYAQUEUSARELRACIOCINIO▒No es que haya que usar el raciocinio▒15▒Reflexiones▒2025-05-17 17:34▒<p>No es que haya que usar el raciocinio, sino que es inevitable hacerlo al buscar a Dios y al hablar de él; pero no por eso se caerá en el absurdo de poner la fe y la razón al mismo nivel.</p>▓ELPOPULISMOSELASHAARREGLADOPARAHACERLE▒El populismo se las ha arreglado para hacerle...▒14▒Reflexiones▒2025-05-17 07:51▒<p>El populismo se las ha arreglado para hacerle creer al pueblo que se puede llegar al poder sin dejar de ser pueblo.</p>▓LAGENTEVIVEDEESODEMITOSEHISTORIAS▒La gente vive de eso, de mitos e historias...▒13▒Apotegmas▒2025-05-16 16:38▒<p>La gente vive de eso, de mitos e historias, de los peces. Pero tú, junto con eso y para santificarlo, no pierdas la oportunidad de darles el Pan de Vida.</p>▓SINIMPORTARSITUTRADICIONESDELOSHOMBRES▒Sin importar si tu tradición es de los hombres...▒12▒Reflexiones▒2025-05-16 14:39▒<p>Sin importar si tu tradición es de los hombres o no, cuando Dios así lo disponga, tendrás que hallarte solo en el desierto para tomar la decisión correcta. Te parecerá el fin, pero es sólo el inicio. Creerás que mueres de hambre, pero Dios te dará el sustento, pan de vida.</p>▓CUANDOALINOMISALIMENTOSCONUNPESTO▒Cuando aliño mis alimentos con un pesto...▒11▒Reflexiones▒2025-05-16 10:38▒<p>Cuando aliño mis alimentos con un pesto de perejil con ajo, aceite de oliva y sal, llego a entender que Dios existe y que no solamente es.</p>▓LAVERDADEXISTEDESDESIEMPREDEMODO▒La Verdad existe desde siempre, de modo...▒10▒Apotegmas▒2025-05-16 07:37▒<p>La Verdad existe desde siempre, de modo que no gastes fuerzas en inventar una propia. Sólo hace falta abrir los ojos. ¿Sabes abrir los ojos?</p>▓NOHAYFORMADECREERENDIOSSI▒No hay forma de creer en Dios si...▒9▒Apotegmas▒2025-04-02 22:15▒<p>No hay forma de creer en Dios si no es por fe. Paradójicamente, si no tienes fe, puedes pedírsela a Dios.</p>▓ELRELATIVISMODOGMATICOTEPONEENLAPOSICION▒El relativismo dogmático te pone en la posición...▒8▒Apotegmas▒2025-04-02 16:41▒<p>El relativismo dogmático te pone en la posición más manipulable y débil, a la vez que te hace creer que has sido liberado. Un prodigio.</p>▓ELUNIVERSOTODOCONFABULAPARAQUEBUSQUES▒El universo todo confabula para que busques...▒7▒Apotegmas▒2025-04-02 01:42▒<p>El universo todo confabula para que busques a Dios. Puedes intentar resistirte, mas también puedes rendirte, dejarte guiar y despertar.</p>▓NOSENADAQUE▒No sé nada que...▒6▒Apotegmas▒2025-02-08 09:42▒<p>No sé nada que Dios no me diga.</p>▓LOSARBOLESYELHOMBRE▒Los árboles y el hombre▒5▒Reflexiones▒2025-02-07 16:43▒<p>Siempre se ha comparado al hombre con los árboles. Agitados sus follajes por el Espíritu (viento), regadas sus raíces por el Agua de Vida y nutridas sus hojas por la Luz, los árboles bregan incansables por llegar al cielo. Pero su afán queda en eso, porque Dios está más allá. Por eso, en las Escrituras cristianas Jesucristo corrige la visión del ciego que acababa de ser curado y veía a los hombres como árboles, para que los vea como verdaderamente son, como hombres, como hijos de Dios y no meros aspirantes a los cielos, sino al sacrificio.</p>▓MIRAHACIAARRIBAPARAIDOLATRAR▒Mira hacia arriba para idolatrar▒4▒Apotegmas▒2025-02-07 12:44▒<p>Mira hacia arriba para idolatrar, mira hacia abajo para despreciar, mira hacia adentro para conocer el Ser y amar.</p>▓ENLAEVENTUALIDADDEQUETENGASQUEELEGIRENTRE▒En la eventualidad de que tengas que elegir entre...▒3▒Apotegmas▒2025-02-06 14:21▒<p>En la eventualidad de que tengas que elegir entre Dios y el reino de los cielos, deberás optar por Dios sin dudarlo un sólo segundo. Es la única forma de quedar bien librado. (Bien librado significa que morirás primero para levantarte después.)</p>▓NOSOTROSSOMOSAQUELLOSQUEENNUESTRARELACION▒Nosotros somos aquellos que, en nuestra relación...▒2▒Reflexiones▒2025-02-05 17:45▒<p>Nosotros somos aquellos que, en nuestra relación con Dios, concebimos la salvación. Esto es así no por asuntos meramente culturales o inculcados, como les gusta creer a los materialistas, sino porque es parte profundísima de nuestro ser, tan profunda que no hay manera de negarla.</p>▓LAREALIDADSIEMPRESUPERAALAFICCION▒La realidad siempre supera a la ficción...▒1▒Apotegmas▒2025-02-05 09:44▒<p>La realidad siempre supera a la ficción, de modo que si estás aburrido es probable que alguien te haya cerrado los ojos o que los hayas cerrado tú mismo.</p>";
-
-    function inicio () {
-      baseArray = base.split('▓');
-      recientes ();
-    }
-
-    function recientes () {
-      document.getElementById('buscador').style.display = 'none';
-      var resultado = [];
-      var contador = 0;
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        var linea = array[i].split('▒');
-          var orden = linea[0];
-          var titulo = linea[1];
-          var numero = linea[2];
-          var etiquetas = linea[3];
-          var fecha = linea[4];
-          var contenido = linea[5];
-        var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>'; // <div id="contenidos">' + contenido + '</div></div>';
-        resultado.push(nuevaLinea);
-        contador = contador + 1;
-        if (contador == 12) {break;}
-      }
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = enviar;
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function teclaBuscar (event) {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        buscar('');
-      }
-    }
-    function buscar (recibido) {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = document.getElementById('textInput').value;
-      document.getElementById("mostrar").innerHTML = buscar;
-      if (recibido != '') {buscar = recibido;}
-      var resultado = [];
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[0];
-            var titulo = linea[1];
-            var numero = linea[2];
-            var etiquetas = linea[3];
-            var fecha = linea[4];
-            var contenido = linea[5];
-          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-          resultado.push(nuevaLinea);
-        }
-      }
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
-      if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
-      document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function buscarFecha (recibido) {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = recibido;
-      var resultado = [];
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[0];
-            var titulo = linea[1];
-            var numero = linea[2];
-            var etiquetas = linea[3];
-              var etiquetas = etiquetas.replace(/, /g, ',');
-              var arrayEtiquetas = etiquetas.split(',');
-                var etiquetasUnidas = [];
-                for (var j = 0; j < arrayEtiquetas.length; j++) {
-                  var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
-                  etiquetasUnidas.push(nuevaEtiqueta);
-                }
-                var etiquetasTodas = etiquetasUnidas.join(', ');
-            var fecha = linea[4];
-            var contenido = convertirUrls(linea[5]);
-          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · ' + etiquetasTodas + ' · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
-          resultado.push(nuevaLinea);
-        }
-      }
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function az () {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = '-';
-      document.getElementById("mostrar").innerHTML = buscar;
-      var resultado = [];
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[0];
-            var titulo = linea[1];
-            var numero = linea[2];
-            var etiquetas = linea[3];
-            var fecha = linea[4];
-            var contenido = linea[5];
-          var nuevaLinea = '<div id="entradasAZ"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-          resultado.push(nuevaLinea);
-        }
-      }
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = enviar;
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function mostrarBuscador () {
-      window.scrollTo(0, 0);
-      document.getElementById('buscador').style.display = 'block';
-      document.getElementById('textInput').focus();
-      document.getElementById("mostrar").innerHTML = '';
-      limpiarHash ();
-    }
-    function limpiarHash () {
-      const url = window.location.href.split('#')[0];
-      history.pushState({}, document.title, url);
-    }
-    function temasAnterior () {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = '-';
-      document.getElementById("mostrar").innerHTML = buscar;
-      var resultado = [];
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[3];
-            var etiquetas = linea[3];
-              var etiquetas = etiquetas.replace(/, /g, ',');
-                var arrayEtiquetas = etiquetas.split(',');
-                var etiquetasUnidas = [];
-                for (var j = 0; j < arrayEtiquetas.length; j++) {
-                  var nuevaEtiqueta = '<li><span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span></li>';
-                  resultado.push(nuevaEtiqueta);
-                }
-        }
-      }
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-      resultado = [...new Set(resultado)]; // eliminar elementos repetidos
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function temas() {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = '-';
-      document.getElementById("mostrar").innerHTML = buscar;
-
-      // Create a map to store label counts
-      let labelCounts = new Map();
-      let array = baseArray;
-
-      // Count occurrences of each label
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-          var etiquetas = linea[3];
-          var arrayEtiquetas = etiquetas.replace(/, /g, ',').split(',');
-
-          // Count each label
-          arrayEtiquetas.forEach(label => {
-            labelCounts.set(label, (labelCounts.get(label) || 0) + 1);
-          });
-        }
-      }
-
-      // Create the display array
-      var resultado = [];
-      for (let [label, count] of labelCounts) {
-        var nuevaEtiqueta = `<li><span class="menuEnlace" onclick="buscarTema('${label}')"><b>${label}</b> - ${count} entradas</span></li>`;
-        resultado.push(nuevaEtiqueta);
-      }
-
-      // Sort and remove duplicates (though Map ensures uniqueness)
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-
-      // Display the results
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
-      document.getElementById('textInput').value = '';
-      limpiarHash();
-      window.scrollTo(0, 0);
-    }
-    function archivo() {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = '-';
-      document.getElementById('mostrar').innerHTML = buscar;
-      var resultado = [];
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[4];
-            var titulo = linea[1];
-            var numero = linea[2];
-            var etiquetas = linea[3];
-            var fecha = linea[4];
-            var contenido = linea[5];
-          var nuevaLinea = '<p><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + ' - ' + etiquetas + '</span></p>';
-          resultado.push('<h2 style="text-align: center; padding-top: 15px;">' + fecha.slice(0, 7) + '</h2></div>');
-          resultado.push('<h4>' + fecha.slice(0, 10) + '</h4>');
-          resultado.push(nuevaLinea);
-        }
-      }
-      resultado = [...new Set(resultado)];
-      resultado = resultado.filter(Boolean);
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = enviar;
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function buscarTema (recibido) {
-      document.getElementById('buscador').style.display = 'none';
-      var buscar = document.getElementById('textInput').value;
-      document.getElementById("mostrar").innerHTML = buscar;
-      if (recibido != '') {buscar = recibido;}
-      var resultado = [];
-      let array = baseArray;
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
-          var linea = array[i].split('▒');
-            var orden = linea[0];
-            var titulo = linea[1];
-            var numero = linea[2];
-            var etiquetas = linea[3];
-            var fecha = linea[4];
-            var contenido = linea[5];
-          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-          if (etiquetas.indexOf(recibido) >= 0) {
-            resultado.push(nuevaLinea);
-          }
-        }
-      }
-      resultado = resultado.sort((a, b) => a.localeCompare(b));
-      var enviar = resultado.join('');
-      if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
-      document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-    function azar () {
-      var arrayDesordenar = baseArray;
-      arrayDesordenar = desordenar(arrayDesordenar).slice(10,13);
-      var resultado = [];
-      for (var i = 0; i < arrayDesordenar.length; i++) {
-        var linea = arrayDesordenar[i].split('▒');
-          var orden = linea[0];
-          var titulo = linea[1];
-          var numero = linea[2];
-          var etiquetas = linea[3];
-          var fecha = linea[4];
-          var contenido = linea[5];
-        var nuevaLinea = '<div id="entradasAZ"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-        resultado.push(nuevaLinea);
-      }
-      var enviar = resultado.join('');
-      document.getElementById("mostrar").innerHTML = enviar;
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      baseArray = base.split('▓');
-      window.scrollTo(0, 0);
-    }
-    function desordenar(arrayD) {
-      let currentIndex = arrayD.length, randomIndex;
-      while (currentIndex > 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-        [arrayD[currentIndex], arrayD[randomIndex]] = [arrayD[randomIndex], arrayD[currentIndex]];
-      }
-      return arrayD;
-    }
-    function convertirUrls(inputText) {
-      const urlRegex = /\b(https?:\/\/[^\s<>"'()]+)/gi;
-      return inputText.replace(urlRegex, (fullUrl) => {
-        try {
-          const cleanUrl = fullUrl.replace(/[,?:;.!]+$/, '');
-          const domain = new URL(cleanUrl).hostname.replace('www.', '');
-          return `<a href="${cleanUrl}" target="_blank" rel="noopener noreferrer">${domain}</a>` +
-                 fullUrl.slice(cleanUrl.length);
-        } catch {
-          return fullUrl;
-        }
-      });
-    }
-    function autor () {
-      var autor =  "<h3>Autor y contacto</h3><ul><li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li><li><b>Contacto:</b> jucardus en gmail punto com</li><li><b>Sitio central:</b> <a href='https://linktr.ee/jucardus' target='_blank'>linktr.ee/jucardus</a></li></ul><h3>Mis sitios</h3><ul><li><b>Diccionarios:</b> <a href='https://d.jucardus.com' target='_blank'>d.jucardus.com</a></li><li><b>Enlaces:</b> <a href='https://e.jucardus.com' target='_blank'>e.jucardus.com</a></li><li><b>Facebook:</b> <a href='https://fb.jucardus.com' target='_blank'>fb.jucardus.com</a></li><li><b>Herramientas:</b> <a href='https://h.jucardus.com' target='_blank'>h.jucardus.com</a></li><li><b>Invitación:</b> <a href='https://i.jucardus.com' target='_blank'>i.jucardus.com</a></li><li><b>Música:</b> <a href='https://m.jucardus.com' target='_blank'>m.jucardus.com</a></li><li><b>Pagos y donaciones:</b> <a href='https://pp.jucardus.com' target='_blank'>pp.jucardus.com</a></li><li><b>Programación:</b> <a href='https://p.jucardus.com' target='_blank'>p.jucardus.com</a></li><li><b>X Twitter:</b> <a href='https://x.jucardus.com' target='_blank'>x.jucardus.com</a></li></ul>";
-      document.getElementById('mostrar').innerHTML = autor;
-      document.getElementById('textInput').value = '';
-      limpiarHash ();
-      window.scrollTo(0, 0);
-    }
-  </script>
-
-  <!--span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span-->
-
-  <script>
-    function arriba() {
-      window.scrollTo(0, 0);
-    }
-  </script>
-
-</body>
-</html>
+,T,C,E,F
+218,películas ¦ Infierno rojo,"<p><i>Infierno rojo</i>, con Arnold Schwarzenegger → https://www.youtube.com/watch?v=v5P8-9-ieUI.</p>","Enlaces, Películas",2025-07-01 09:45
+217,Si alguien te pide que creas en Dios...,"<p>Si alguien te pide que creas en Dios, explícale que Dios no es una creencia.</p>",Apotegmas,2025-07-01 09:38
+216,No batalles contra los pensamientos...,"<p>No batalles contra los pensamientos impropios, simplemente exponlos a la luz de la contemplación y se desvanecerán.</p>",Apotegmas,2025-07-01 09:35
+215,Nunca he entendido por qué es codicia...,"<p>Nunca he entendido por qué es codicia querer conservar el dinero que has ganado, pero no es codicia querer sustraer el dinero de otra persona.  – Thomas Sowell</p>",Citas,2025-06-30 21:21
+214,No hay forma alguna de probar...,"<p>No hay forma alguna de probar la existencia de Dios científicamente si no es presuponiendo su existencia. Con la fe tienes cierta posibilidad, pero puedes caer en el mismo problema al asignar a Dios preconceptos y prejuicios, con el plus de llamar hereje a quien no los comparte.</p>",Reflexiones,2025-06-30 21:19
+213,La fe es para el raciocinio lo que...,<p>La fe es para el raciocinio lo que el fuego para el papel.</p>,Apotegmas,2025-06-30 20:43
+212,"A más mentira, más verdad","<p>A más mentira, más verdad, razón por la cual el mal siempre actúa en oculto.</p>",Apotegmas,2025-06-30 20:21
+211,Escondidos en el bosque ideológico,"<p>Nos escondemos en el bosque ideológico para apreciar mejor entre las sombras la belleza de los rayos de Luz de la Verdad, pero eventualmente tendremos que salir, poco a poco, para no quedar insolados por el Sol de mediodía.</p>",Reflexiones,2025-06-30 18:52
+210,Cuando todo es para todos,"<p>Cuando todo es para todos, no queda nada para nadie.</p>",Apotegmas,2025-06-30 18:40
+209,La fortuna llega en algunos barcos...,<p>La fortuna llega en algunos barcos que no son guiados. – William Shakespeare</p>,Citas,2025-06-30 11:51
+208,Biblias ¦ El libro del pueblo de Dios,<p>Traducción de la Biblia al español en el sitio del Vaticano → https://www.vatican.va/archive/ESL0506/_INDEX.HTM.</p>,"Biblias, Enlaces",2025-06-30 11:25
+207,En el campo de la observación...,"<p>En el campo de la observación, la oportunidad sólo favorece a la mente preparada. – Louis Pasteur</p>",Citas,2025-06-29 19:40
+206,películas ¦ El quinto elemento,"<p><i>El quinto elemento</i>, con Bruce Willis → https://www.youtube.com/watch?v=iqeatp1VXVA.</p>","Enlaces, Películas",2025-06-29 19:37
+205,Cada uno es como Dios le hizo...,"<p>Cada uno es como Dios le hizo, y aun peor muchas veces. – Miguel de Cervantes Saavedra</p>",Citas,2025-06-29 15:15
+204,películas ¦ La última puerta,"<p><i>La última puerta</i>, con Johnny Depp → https://youtu.be/h7nDh4ow4CM.</p>","Enlaces, Películas",2025-06-29 15:05
+203,Quizá la existencia de una respuesta...,<p>Quizá la existencia de una respuesta dependa solamente de que se haga la preguna adecuada. – Robert Duncan</p>,Citas,2025-06-29 14:21
+202,Los fanatismos que más debemos temer...,<p>Los fanatismos que más debemos temer son aquellos que pueden confundirse con la tolerancia. – Fernando Arrabal</p>,Citas,2025-06-29 14:18
+201,Existen verdades que pueden...,<p>Existen verdades que pueden matar a un pueblo. – Jean Giraudox</p>,Citas,2025-06-29 11:47
+200,Biblias ¦ Traducción del Nuevo Mundo (edición de estudio),<p>Versión de estudio de la traducción de la Watch Tower de la Biblia → https://www.jw.org/es/biblioteca/biblia/biblia-estudio/libros/.</p>,"Biblias, Enlaces",2025-06-29 10:13
+199,Muchos hombres cometen el error...,<p>Muchos hombres cometen el error de sustituir el conocimiento por la afirmación de que es verdad lo que ellos desean. – Bertrand Russell</p>,Citas,2025-06-29 08:39
+198,Para cambiar la realidad,<p>Para cambiar la realidad primero tienes que aceptarla.</p>,Apotegmas,2025-06-29 07:46
+197,Nunca nadie ha ganado una batalla...,<p>Nunca nadie ha ganado una batalla sin antes desayunar.</p>,Apotegmas,2025-06-28 21:19
+196,La ausencia disminuye las pequeñas...,"<p>La ausencia disminuye las pequeñas pasiones y aumenta las grandes, lo mismo que el viento apaga las velas y aviva las hogueras. – Duque de la Rochefoucauld</p>",Citas,2025-06-28 21:18
+195,La enfermedad del ignorante...,<p>La enfermedad del ignorante es ignorar su propia ignorancia. – Amos Bronson Alcott</p>,Citas,2025-06-28 21:17
+194,Biblias ¦ New World Translation of the Holy Scriptures (Study Edition),<p>Biblia de estudio en inglés de la Watch Tower → https://www.jw.org/en/library/bible/study-bible/books/.</p>,"Biblias, Enlaces",2025-06-28 21:16
+193,Biblias ¦ King James Bible,"<p>La Biblia King James, con opción de busca, números Strong, ayudas para el estudio, comentarios y más → https://www.kingjamesbibleonline.org/.</p>","Biblias, Enlaces",2025-06-28 21:11
+192,Nunca dejes que llegue al poder...,<p>Nunca dejes que llegue al poder alguien que se desprecia a sí mismo.</p>,Apotegmas,2025-06-28 21:10
+191,películas ¦ Armagedón (1998),<p>Con Bruce Willis → https://youtu.be/OhAXtd-h13I.</p>,"Enlaces, Películas",2025-06-28 21:08
+190,¿Qué importa si el gato es blanco o...,"<p>¿Qué importa si el gato es blanco o negro, con tal de que case ratones? – Den Xiaoping</p>",Citas,2025-06-28 13:01
+189,El hombre que tiene miedo sin peligro...,"<p>El hombre que tiene miedo sin peligro, inventa el peligro para justificar su miedo. – Alain Emile Chartier</p>",Citas,2025-06-28 13:00
+188,Los deseos y su verdadero objeto,"<p>Los deseos quedan satisfechos únicamente cuando encuentran su verdadero objeto. En otras palabras, los humanos desconocemos adrede el verdadero objeto de nuestro deseo para poder continuar buscando placeres ilusorios, temporales y pasajeros.</p>",Reflexiones,2025-06-27 22:00
+187,Si crees que eres bueno y que tienes...,"<p>Si crees que eres bueno y que tienes razón sólo porque te persiguen, pronto empezarás a perseguir a los demás.</p>",Apotegmas,2025-06-27 17:12
+186,in deference to [loc.] en consideración a; en atención a,"<p>In deference to the expressed wishes of some of his young friends, the author has essayed a story of the sea, and now presents &quot;Charlie Codman's Cruise,&quot; as the third volume of the Campaign Series. – <cite>Charlie Codman's Cruise: A Story for Boys; by Jr. Horatio Alger</cite></p>",Vocabulario inglés-español,2025-06-27 17:07
+185,Si buscas a Dios hacia fuera corres...,"<p>Si buscas a Dios hacia fuera corres el riesgo de crear un falso dios, y si lo buscas hacia dentro el de pensar que eres Dios. ¿Qué queda entonces?</p>",Reflexiones,2025-06-27 15:40
+184,¿El buen hábito de amar a unos...,<p>¿El buen hábito de amar a unos pocos y despreciar al resto?</p>,Reflexiones,2025-06-27 15:35
+183,Los altavoces refuerzan la voz...,"<p>Los altavoces refuerzan la voz, pero no los argumentos. – Hans Kaspar</p>",Citas,2025-06-27 15:33
+182,La mayoría de las personas prefieren...,<p>La mayoría de las personas prefieren confesar los pecados de los demás. – Graham Greene</p>,Citas,2025-06-27 15:32
+181,En muchas empresas para alcanzar...,"<p>En muchas empresas para alcanzar la gloria no importa vencer, basta combatir. – Carlo Dossi</p>",Citas,2025-06-27 15:30
+180,La más alta aspiración del raciocinio,"<p>La más alta aspiración del raciocinio es despertar a la fe, y la de la fe es recibir revelación.</p>",Apotegmas,2025-06-27 15:28
+179,El mundo ha sido siempre un Reino,<p>El mundo ha sido siempre un Reino y lo seguirá siendo. Lo que queda por hacer es decidir a quién y a qué vas a servir.</p>,Apotegmas,2025-06-27 13:38
+178,Nada que pedir,<p>No pidas nada y lo tendrás todo.</p>,Apotegmas,2025-06-26 21:39
+177,El corazón es un niño...,<p>El corazón es un niño: espera lo que desea. – Proverbio turco</p>,Citas,2025-06-26 21:37
+176,El relativismo es el dogma...,<p>El relativismo es el dogma de los hipócritas.</p>,Apotegmas,2025-06-26 21:30
+175,Luego que has soltado la palabra...,"<p>Luego que has soltado la palabra, ésta te domina. Pero mientras no la has soltado eres su dominador. – Proverbio árabe</p>",Citas,2025-06-26 12:22
+174,Mientras más te acercas a Dios en oración...,"<p>Mientras más te acercas a Dios en oración, más necesidad tendrás de permanecer en silencio y más quietud habrá en todo tu ser. Permanece allí todo lo que puedas, en espera de su gracia.</p>",Apotegmas,2025-06-26 10:47
+173,Si me das a elegir entre una verdad...,"<p>Si me das a elegir entre una verdad incómoda y una mentira piadosa, sin dudar eligiré la verdad incómoda.</p>",Apotegmas,2025-06-26 09:36
+172,La realidad tiene tanto sentido...,<p>La realidad tiene tanto sentido que se hace inaceptable.</p>,Apotegmas,2025-06-25 22:11
+171,La verdad es un ácido corrosivo...,<p>La verdad es un ácido corrosivo que salpica casi siempre al que la maneja. – Santiago Ramón y Cajal</p>,Citas,2025-06-25 13:20
+170,Para tu mejor amiga,"<p>Si tienes una mejor amiga y con el tiempo no le has dado al menos un hijo, en realidad no es tu mejor amiga.</p>",Apotegmas,2025-06-25 11:09
+169,Hay algunos hombres que no dicen...,<p>Hay algunos hombres que no dicen lo que piensan y otros que piensan demasiado lo que dicen. – Mariano José de Larra</p>,Citas,2025-06-25 11:08
+168,En el mundo común de los hechos...,"<p>En el mundo común de los hechos, los malos no son castigados y los buenos recompensados. El éxito se lo llevan los fuertes y el fracaso los débiles. Eso es todo. – Oscar Wilde</p>",Citas,2025-06-25 11:07
+167,El ruido de un beso no es tan retumbante...,"<p>El ruido de un beso no es tan retumbante como el de un cañón, pero su eco dura mucho más. – Oliver Wendell Holmes</p>",Citas,2025-06-25 08:04
+166,"Si tu mal tiene remedio, ¿por qué...","<p>Si tu mal tiene remedio, ¿por qué te afliges? Si no lo tiene, ¿por qué te afliges? – Proverbio inglés</p>",Citas,2025-06-24 18:03
+165,El hombre está condenado...,<p>El hombre está condenado a ser libre. – Jean-Paul Sartre</p>,Citas,2025-06-24 17:23
+164,El pensamiento es la semilla...,<p>El pensamiento es la semilla de la acción. – Ralph Waldo Emerson</p>,Citas,2025-06-24 17:22
+163,La identidad siempre es óbice,<p>La identidad siempre es óbice en la busca de la verdad.</p>,Apotegmas,2025-06-24 10:11
+162,"Amo la traición, pero odio...","<p>Amo la traición, pero odio al traidor. – Cayo Julio César</p>",Citas,2025-06-23 21:21
+161,La historia se escribe con...,<p>La historia se escribe con letras muy retorcidas. – Antonio de Senillosa</p>,Citas,2025-06-23 21:14
+160,La sabiduría me persigue...,"<p>La sabiduría me persigue, pero yo soy más rápido. – Anónimo</p>",Citas,2025-06-23 20:41
+159,La palabra es libre; la acción...,"<p>La palabra es libre; la acción, muda; la obediencia, ciega. – Johann Christoph Friedrich von Schiller</p>",Citas,2025-06-23 20:29
+158,"Hay mucha gente que, antes que afrontar...","<p>Hay mucha gente que, antes que afrontar el vacío de su corazón, prefieren al menos sentir odio por lo que sea.</p>",Reflexiones,2025-06-22 21:40
+157,El más pequeñito,"<p>Dios es tan pequeñito que está en todas partes a la vez, manifestándolo todo, entendiéndolo todo, alumbrándolo todo, pasando desapercibido y sirviendo a los demás. Los delirios de grandeza son propios del ser humano.</p>",Apotegmas,2025-06-22 17:36
+156,The task is not to see what has never...,"<p>The task is not to see what has never been seen before, but to think what has never been thought before about what you see everyday. – Erwin Schrödinger</p>",Citas,2025-06-22 17:32
+155,Es increíble lo que puedes lograr con...,"<p>Es increíble lo que puedes lograr con un poco de mala voluntad e inconstancia. No cejes, hasta que finalmente puedas hacer las cosas por amor y para servir al prójimo.</p>",Apotegmas,2025-06-21 21:57
+154,Los únicos interesados en cambiar el...,"<p>Los únicos interesados en cambiar el mundo son los pesimistas, porque los optimistas están encantados con lo que hay. – José Saramago</p>",Citas,2025-06-21 07:15
+153,La realidad es de naturaleza mítica...,"<p>La realidad es de naturaleza mítica: tómala muy en serio, porque puede atraparte.</p>",Apotegmas,2025-06-20 19:17
+152,No dejes que nadie te diga cómo pensar,"<p>No dejes que nadie te diga cómo pensar; como ahora, que te estoy diciendo cómo pensar.</p>",Reflexiones,2025-06-20 07:33
+151,Desamorada,"<p>Casi calcinada por el sol de mediodía, la vampiresa tuvo unas fracciones de segundo en las que recordar todos los sacrificios de fetos que había inculcado con el fin de satisfacer de sangre a su dios; pero no supo cómo arrepentirse, porque nunca nadie la había amado.</p>",Cuentos,2025-06-19 13:14
+150,El mayor castigo para quienes no...,<p>El mayor castigo para quienes no se interesan por la política es que serán gobernados por personas que sí se interesan. – Alnold Toynbee</p>,Citas,2025-06-19 10:01
+149,Preparar un discurso de diez minutos me...,"<p>Preparar un discurso de diez minutos me cuesta un par de semanas; un discurso de una hora, una semana, y un discurso de dos horas siempre puedo improvisarlo. – Harold Wilson</p>",Citas,2025-06-19 09:57
+148,Ningún hombre es tan tonto para desear...,"<p>Ningún hombre es tan tonto para desear la guerra y no la paz; pues en la paz, los hijos llevan a sus padres a la tumba, y en la guerra son los padres quienes llevan a sus hijos a la tumba. – Herodoto</p>",Citas,2025-06-19 09:53
+147,Cuando un perro ladra a una sombra...,"<p>Cuando un perro ladra a una sombra, diez mil perros hacen de ella una realidad. – Proverbio chino</p>",Citas,2025-06-19 09:50
+146,Un pedante es un estúpido adulterado...,<p>Un pedante es un estúpido adulterado por el estudio. – Miguel de Unamuno</p>,Citas,2025-06-19 09:48
+145,No he conocido casi nunca a un matemático...,<p>No he conocido casi nunca a un matemático que estuviera en condiciones de sacar conclusiones razonables. – Platón</p>,Citas,2025-06-19 09:45
+144,Por más correcta que sea tu teología,"<p>Por más correcta que sea tu teología, nunca será Dios.</p>",Apotegmas,2025-06-18 18:14
+143,Quien gobierna a un pueblo dando buen...,"<p>Quien gobierna a un pueblo dando buen ejemplo se parece a la estrella polar, que permanece inmutable mientras los otros astros dan vueltas a su alredor. – Confucio</p>",Citas,2025-06-18 09:29
+142,Pocas o ninguna vez se cumple con...,<p>Pocas o ninguna vez se cumple con la ambición que no sea con daño de tercero. – Miguel de Cervantes Saavedra</p>,Citas,2025-06-18 09:25
+141,Al perro que tiene dinero...,<p>Al perro que tiene dinero se le llama Señor Perro. – Proverbio árabe</p>,Citas,2025-06-18 09:22
+140,Todos somos aficionados: en nuestra...,<p>Todos somos aficionados: en nuestra corta vida no tenemos tiempo para otra cosa. – Charles Chaplin</p>,Citas,2025-06-18 09:20
+139,El mundo siempre ha sido un reino,"<p>Si solamente recordaras que el mundo siempre ha sido un reino y que hay quienes quieren someterlo para ofrecerlo en sacrificio a su dios, difícilmente olvidarías que la libertad es algo que se debe buscar.</p>",Reflexiones,2025-06-17 20:59
+138,Sólo los tontos son...,<p>Sólo los tontos son convencidos por los inteligentes.</p>,Apotegmas,2025-06-17 20:57
+137,Las aptitudes morales y las aptitudes...,"<p>Las aptitudes morales y las aptitudes intelectuales van juntas. Un hombre bueno es inteligente, y uno malo es, además, imbécil. – Jorge Luis Borges</p>",Citas,2025-06-17 15:45
+136,El camino a la Verdad,"<p>El camino a la Verdad siempre es individual, no porque la verdad sea subjetiva o relativa, tampoco porque otros puedan o no acompañarnos en el andar, sino porque debe ser experimentada personalmente, cara a cara.</p>",Apotegmas,2025-06-17 15:44
+135,El Sol no tiene remedio,"<p>Así como el Sol no tiene más remedio que salir hoy y mañana, la luz del Altísimo brillará si sólo quitas la persiana.</p>",Apotegmas,2025-06-17 11:18
+134,Si no encuentras a Dios en el mundo,"<p>Si no encuentras a Dios en el mundo, en el prójimo y en tu corazón, seguirás igual de insatisfecho aunque vayas al último de los cielos.</p>",Apotegmas,2025-06-17 10:23
+133,Siempre hay un buen justificativo,"<p>Siempre hay un buen justificativo para iniciar una nueva inquisición, una persecución en cadena, una depuración ideológica de la sociedad.</p>",Apotegmas,2025-06-16 19:07
+132,¿Quieres paz?,<p>¿Quieres paz? Prepárate para la guerra.</p>,Apotegmas,2025-06-16 19:05
+131,Demonios japoneses,"<p>Demonios japoneses entran en mujeres occidentales de veintitrés años a través de vídeos cortos en la internet y estas empiezan a hablar como adolescentes de trece. En consecuencia, el gobierno emprende un plan de exorcización para desinfantilizarlas, de modo que finalmente tengan hijos. No dio resultado y el crecimiento poblacional sigue en declive.</p>",Cuentos,2025-06-16 18:02
+130,Si de niño te convirtieron en un demonio...,"<p>Si de niño te convirtieron en un demonio que se alimenta y subsiste del emocionalismo propio y ajeno, ahora que has pasado los treinta tienes la capacidad de recuperarte y convertirte nuevamente en un ser humano.</p>",Reflexiones,2025-06-16 14:20
+129,Desde que el hombre existe,"<p>Desde que el hombre existe, ha imaginado formas y conceptos de Dios lo peor o mejor que ha podido. O mejor dicho, el hombre ha empezado a existir por imaginar y concebir un dios, y nunca volverá a la Verdad hasta que su concepción sea la correcta o hasta que deje de imaginar uno.</p>",Reflexiones,2025-06-15 19:21
+128,Lo malo de la caridad es...,<p>Lo malo de la caridad es que no tiene fondo. – Manuel Viola</p>,Citas,2025-06-15 19:18
+127,¿No es curioso que las religiones consideren...,<p>¿No es curioso que las religiones consideren seres humanos únicamente a quienes las integran? El resto son animales o ciudadanos de segunda y tercera categoría.</p>,Reflexiones,2025-06-15 15:52
+126,"Reza, pero no dejes de...","<p>Reza, pero no dejes de remar hacia la orilla. – Proverbio ruso</p>",Citas,2025-06-14 17:26
+125,El hombre muere en todos aquellos...,<p>El hombre muere en todos aquellos que mantienen silencio ante la tiranía. – Wole Soyinka</p>,Citas,2025-06-14 17:25
+124,El asesinato en el cadalso es la forma...,"<p>El asesinato en el cadalso es la forma más execrable de asesinato, por estar sancionado por la aprobación de la sociedad. – George Bernard Shaw</p>",Citas,2025-06-14 17:24
+123,This above all: to thine own self...,"<p>This above all: to thine own self be true,<br>And it must follow, as the night the day,<br>Thou canst not then be false to any man.<br>– William Shakespeare</p>",Citas,2025-06-14 17:20
+122,"Sin justicia, ¿qué otra cosa es el Estado...","<p>Sin justicia, ¿qué otra cosa es el Estado sino una banda de ladrones? – Agustín de Hipona</p>",Citas,2025-06-13 20:09
+121,La visión traumática de Dios,<p>La visión traumática que tienes de Dios desaparece cuando te reconcilias con él.</p>,Apotegmas,2025-06-13 18:11
+120,El hábito de negociar ,"<p>Tenías el hábito de negociar con el Diablo, por eso crees que se puede negociar con Dios.</p>",Apotegmas,2025-06-13 18:09
+119,La verdad se explica sola,"<p>Si la verdad se explica sola y no necesita ser defendida, ¿entonces mejor por qué no te callas?</p>",Reflexiones,2025-06-13 18:06
+118,Es larga la espera,<p>Es larga la espera cuando el tiempo es corto.</p>,Apotegmas,2025-06-13 18:01
+117,Buscamos sentirnos seguros pensando...,"<p>Buscamos sentirnos seguros pensando que recibiremos lo que damos, pero (des)afortunadamente la realidad no es tan simplista.</p>",Reflexiones,2025-06-13 16:14
+116,Ninguna cultura es buena sólo...,<p>Ninguna cultura es buena sólo por ser cultura. Ninguna tradición es buena sólo por ser tradición.</p>,Apotegmas,2025-06-13 09:50
+115,Si Dios no habita en templos...,"<p>Si Dios no habita en templos hechos por manos humanas, ¿qué o quién era la entidad que habitaba en el tabernáculo? ¿Un ángel de Dios?</p>",Reflexiones,2025-06-11 22:39
+114,También puedes convertirte en un fanático...,<p>También puedes convertirte en un fanático de la verdad. No es tan recomendable como parece.</p>,Reflexiones,2025-06-11 22:37
+113,"Así, ¡oh conciencia!, de nosotros todos...","<p>Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. – William Shakespeare</p>",Citas,2025-06-10 21:36
+112,Es difícil amar al prójimo,"<p>Ya es algo difícil amar al prójimo sin amar a Dios, pero es casi imposible amar a Dios sin amar al prójimo.</p>",Apotegmas,2025-06-10 18:57
+111,"La simplicidad de Dios es tal, que...","<p>La simplicidad de Dios es tal, que los seres humanos queremos diversificarla y complicarla, y a veces quedamos atrapados en nuestra propia creación. ¿Cómo restaurar esa primera simplicidad? Con la luz de Dios.</p>",Apotegmas,2025-06-10 18:55
+110,Si sólo es realidad lo que puedes...,"<p>Si sólo es realidad lo que puedes ver, ¿cómo es que no puedes ver la realidad?</p>",Apotegmas,2025-06-10 17:15
+109,Cuando creas que has logrado algo...,"<p>Cuando creas que has logrado algo, recuerda que apenas si existes. – Con amor, tu Maestra de escuela.</p>",Reflexiones,2025-06-10 17:14
+108,Hay una guerra en los cielos,"<p>Hay una guerra en los cielos, y es una guerra para apoderarse de todo tu ser. Refúgiate en Dios.</p>",Apotegmas,2025-06-10 17:11
+107,Corral de estrellas,<p>Si pudieras vivir de estrellas<br>Tendrías un corral de ellas.</p>,Poesía,2025-06-10 17:10
+106,"La fantasía, aislada de la razón...","<p>La fantasía, aislada de la razón, sólo produce monstruos imposibles. Unida a ella, en cambio, es la madre del arte y fuente de sus deseos. – Francisco de Goya</p>",Citas,2025-06-08 08:04
+105,Los años enseñan muchas cosas...,<p>Los años enseñan muchas cosas que los días jamás llegan a conocer. – Ralph W. Emerson<p>,Citas,2025-06-07 22:22
+104,Un soldado que comienza a pensar...,"<p>Un soldado que comienza a pensar, casi ha dejado de serlo. – Heinrich Böll</p>",Citas,2025-06-07 22:21
+103,Si una sociedad libre no puede...,"<p>Si una sociedad libre no puede ayudar a sus muchos pobres, tampoco podrá salvar a sus pocos ricos. – John F. Kennedy</p>",Citas,2025-06-07 22:19
+102,Pobre del estudiante que no aventaje...,<p>Pobre del estudiante que no aventaje a su maestro. – Leonardo da Vinci</p>,Citas,2025-06-07 22:18
+101,Cuando veas un alma que anuncia el...,"<p>Cuando veas un alma que anuncia el aborto como un acto benigno, sabrás que en ella reina el príncipe de las tinieblas y que está en peligro de muerte eterna. – Pío de Pietrelcina</p>",Citas,2025-06-07 22:17
+100,Mi pasatiempo favorito es dejar pasar...,"<p>Mi pasatiempo favorito es dejar pasar el tiempo, tener tiempo, tomarme mi tiempo, perder el tiempo, vivir a contratiempo. – Françoise Sagan</p>",Citas,2025-06-06 22:33
+99,Un milagro ocurre cuando cambias...,<p>Un milagro ocurre cuando cambias lágrimas por oración y miedo por fe. – San Francisco de Asís</p>,Citas,2025-06-06 22:30
+98,El arbolito de la fe,"<p>Ora en lo secreto, ora en silencio, entra en comunión. Necesitarás de la oración diaria para regar y sostener el arbolito de tu fe. Los frutos vienen después.</p>",Apotegmas,2025-06-06 22:27
+97,El verdadero milagro,<p>El único y verdadero milagro: Que cambie tu corazón a la volundad de Dios.</p>,Apotegmas,2025-06-05 21:37
+96,Es grande la cantidad de doctrinas...,"<p>Es grande la cantidad de doctrinas que han sido puestas juntas en las abundantísimas páginas de lo que hoy llamamos Biblia. Sin embargo, hay un hilo conductor, por lo general subyacente y en ocasiones manifiesto. Para tomarlo con mucha calma al hilvanar la madeja.</p>",Reflexiones,2025-06-05 21:35
+95,Si no sirves con lo poco que tienes,"<p>Si no sirves a Dios con lo poco que tienes, servirás al Enemigo con lo que te sobra.</p>",Apotegmas,2025-06-03 11:39
+94,La verdad siempre cambia,"<p>La verdad siempre cambia, pero sigue siendo una; como el árbol que brotó de una semilla, creció y finalmente dio fruto. Pero, a medida que el árbol llega a su desarrollo comapleto, los cambios en él no son tan notorios.</p>",Apotegmas,2025-06-03 11:38
+93,Ya son unas cuantas las décadas...,"<p>Ya son unas cuantas las décadas cinematográficas en las que se ha intentado infantilizar la brujería para hacerla pasar como trivial o como un simple juego, con películas diseñadas para difundir las prácticas y hacerlas parte de la cultura.</p>",Reflexiones,2025-06-03 11:29
+92,Celebremos la vida,"<p>Celebremos la vida, pero no hasta la embriaguez. Celebrémosla como el don de Dios que es.</p>",Apotegmas,2025-06-03 11:27
+91,"Ríndete ante Dios, deja de bregar","<p>Ríndete ante Dios, deja de bregar, entra en el reposo, y todo lo que realmente necesite tu alma, él te lo dará.</p>",Apotegmas,2025-06-03 11:26
+90,Cuando el reino de los cielos te persiga,"<p>Cuando el reino de los cielos te persiga, te juzgue y busque tu vida, refúgiate en Dios únicamente.</p>",Apotegmas,2025-06-03 11:24
+89,A los seres humanos se nos hace...,<p>A los seres humanos se nos hace demasiado fácil vivir en un pasado que nunca tuvimos.</p>,Apotegmas,2025-06-03 11:12
+88,Cuando una pregunta no tiene solución,"<p>Cuando una pregunta no tiene solución, es probable que no tenga sentido en absoluto. Por ejemplo: ¿En qué momento empezó a existir el universo?</p>",Reflexiones,2025-06-03 11:11
+87,La santidad está más allá de los vaivenes...,"<p>La santidad está más allá de los vaivenes entre el bien y el mal; pero cuando dices que el bien y el mal no existen, pierdes la posibilidad de acceder a ella.</p>",Apotegmas,2025-06-03 11:08
+86,Mientras nuestra seguridad no sea hija...,"<p>Mientras nuestra seguridad no sea hija de la razón, tendrá que ser hija del terror. – Winston Churchill</p>",Citas,2025-06-03 10:34
+85,Es increíble la cantidad de personas que...,<p>Es increíble la cantidad de personas que están dispuestas a morir por las doctrinas e ideologías que alguien más les ha inoculado.</p>,Reflexiones,2025-06-03 10:33
+84,Un ejercicio,<p>La existencia es un ejercicio del ser.</p>,Apotegmas,2025-06-03 10:32
+83,Todo tiene sentido,<p>Todo tiene sentido hasta que lo pierde.</p>,Apotegmas,2025-06-02 22:32
+82,El ignorante ve misterio en el engaño...,<p>El ignorante ve misterio en el engaño. El racionalista ve engaño en el misterio. El sabio ve el misterio.</p>,Apotegmas,2025-06-02 21:58
+81,Puedes ser feliz con sólo proponértelo,"<p>Puedes ser feliz con sólo proponértelo, pero puedes ser infeliz sin proponértelo.</p>",Reflexiones,2025-06-02 10:06
+80,Allá donde Sol inmenso,"<p>Allá donde Sol inmenso<br>Moja en Mar calma los pies,<br>Donde las aguas de tiempos y tiempos<br>Se evaporan por llover,<br>Verás que no hay dudas ni cuentos<br>Y que ya nadie tiene sed,<br>Que fue todo un plan maestro<br>Para que puedas volver.</p>",Poesía,2025-06-02 10:04
+79,Qué hermoso es el país en el que nací...,"<p>Qué hermoso es el país en el que nací, con todos sus defectos y virtudes, sufrimientos y dichas, miserias y opulencias.</p>",Reflexiones,2025-06-02 10:01
+78,Un sacrificio a la vez,"<p>Siempre que llegues a una verdad, sacrifícala en pro de otra mayor, de modo que permanezcas libre.</p>",Apotegmas,2025-06-02 09:58
+77,Si te encuentras con alguien que no busca...,"<p>Si te encuentras con alguien que no busca la verdad o que ha dejado de hacerlo, sé paciente; es probable que intuya que puede ser dolorosa.</p>",Apotegmas,2025-06-01 22:52
+76,Hay quienes desean tanto que venga...,"<p>Hay quienes desean tanto que venga el apocalipsis que lo crean ellos mismos, para sentir que su dios es real y para dar sustento a su falsa fe.</p>",Reflexiones,2025-06-01 22:51
+75,Este mundo a veces se asemeja a...,<p>Este mundo a veces se asemeja a la externalización de las aberraciones mentales de un diosecillo psicópata. A veces.</p>,Reflexiones,2025-06-01 22:49
+74,No se ataca al hablar,<p>No se ataca al hablar; no se habla al atacar.</p>,Apotegmas,2025-06-01 22:48
+73,La religión siempre tiene...,"<p>La religión siempre tiene la razón, pero Dios siempre tiene la Verdad.</p>",Apotegmas,2025-05-31 09:51
+72,No sabes lo que estás buscando...,"<p>No sabes lo que estás buscando, pero cuando lo encuentres lo vas a reconocer. Es una promesa.</p>",Apotegmas,2025-05-30 22:29
+71,El odio te puede convertir en un marginal...,"<p>El odio te puede convertir en un marginal, pero sólo unos pocos entre los marginales están llenos de odio.</p>",Apotegmas,2025-05-30 22:27
+70,Quién es usado,<p>Sólo es usado quien no sabe o no quiere servir al prójimo.</p>,Apotegmas,2025-05-30 22:15
+69,Uno de los pasatiempos favoritos...,"<p>Uno de los pasatiempos favoritos del Demonio es someter a los hombres en nombre de Dios. Lo viene haciendo desde el principio de la humanidad, si acaso hubo alguno.</p>",Apotegmas,2025-05-30 22:13
+68,Lo que el Cielo te da siempre es...,"<p>Lo que el Cielo te da siempre es mejor y más que lo que mereces, de modo que estar agradecido a Dios, más que una virtud loable, es un reconocimiento debido.</p>",Apotegmas,2025-05-30 22:10
+67,Las luces de la metralla parecen fuegos...,<p>Las luces de la metralla parecen fuegos de artificio sólo porque las observas de lejos. Espera a que las líneas del enemigo se acerquen y la celebración cambiará para siempre.</p>,Reflexiones,2025-05-30 22:09
+66,«Lo nuestro» puede ser una excusa...,<p>«Lo nuestro» puede ser una excusa para no aceptar el propio error. Un subterfugio para nunca ser juzgado.</p>,Apotegmas,2025-05-30 22:07
+65,Ignora la aprensión,"<p>Ignora la aprensión, permanece en comunión y toma una decisión. En ese orden.</p>",Apotegmas,2025-05-29 09:59
+64,Que nadie te haga creer...,<p>Que nadie te haga creer que eres alguien más.<p>,Apotegmas,2025-05-29 09:57
+63,La tolerancia es el hábito preferido...,<p>La tolerancia es el hábito preferido de los condescendientes.<p>,Apotegmas,2025-05-29 09:56
+62,Cerrarle absolutamente el paso al error...,<p>Cerrarle absolutamente el paso al error es anular la posibilidad de mejorar.</p>,Apotegmas,2025-05-27 16:11
+61,No te atrevas a pensar que eres justo...,<p>No te atrevas a pensar que eres justo o que tienes la razón sólo porque te persiguen.</p>,Apotegmas,2025-05-27 16:05
+60,No se llega a Dios,<p>No se llega a Dios con abstracciones.</p>,Apotegmas,2025-05-26 19:41
+59,De niño creías que había un monstruo...,"<p>De niño creías que había un monstruo debajo de la cama y temblabas. Ahora que eres adulto, sabes que hay un monstruo debajo de la cama, pero te da igual.</p>",Reflexiones,2025-05-26 16:25
+58,Tú harás lo posible,<p>Tú harás lo posible y Dios hará lo imposible.</p>,Apotegmas,2025-05-26 11:36
+57,El mal que has hecho nunca salió de ti...,"<p>El mal que has hecho nunca salió de ti. Sigue allí agazapado, esperando el momento justo para devorarte desde dentro.</p>",Apotegmas,2025-05-25 17:23
+56,Eventualmente tendrás que elegir entre Dios...,"<p>Eventualmente tendrás que elegir entre Dios y la religión, a no ser que tu religión sea Dios.</p>",Apotegmas,2025-05-25 17:17
+55,"Creemos un conflicto, digamos que...","<p>Creemos un conflicto, digamos que el contrincante es el culpable y lleguemos al poder convenciendo al pueblo de que somos la única solución.</p>",Reflexiones,2025-05-25 17:15
+54,Tu opinión no es humilde...,<p>Tu opinión no es humilde ni altiva; es sólo una opinión.</p>,Apotegmas,2025-05-25 17:14
+53,"Extraño que parezca, algunos problemas...","<p>Extraño que parezca, algunos problemas, estados mentales, conflictos, coyunturas sociales y otras situaciones, sólo pueden ser resueltos ignorándolos o poniendo la atención en sus opuestos. Si te centras en ellos, les darás entidad, crecerán y te engullirán.</p>",Reflexiones,2025-05-24 11:08
+52,A no ser que tengas alguna novedad teológica...,"<p>A no ser que tengas alguna novedad teológica con que sorprender a Dios, ¿por qué no entras en comunión y oras por al menos media hora en silencio?</p>",Apotegmas,2025-05-24 11:05
+51,Que nadie desvíe tu fe de Dios...,"<p>Que nadie desvíe tu fe de Dios. La fe es una relación recíproca, incitada por Dios, que cuando cambia de objeto pierde su virtud.</p>",Apotegmas,2025-05-24 11:01
+50,Olvídate de Dios,<p>Olvídate de Dios y encontrarás a Dios.</p>,Apotegmas,2025-05-23 20:36
+49,Cada vez es más común escuchar a algunos...,"<p>Cada vez es más común escuchar a algunos decir que el mal y el bien no existen porque son relativos. Es al revés: el mal y el bien existen porque son relativos, y lo que buscamos es el bien menos relativo.</p>",Reflexiones,2025-05-23 15:43
+48,Un corazón vacío no tendrá problemas...,<p>Un corazón vacío no tendrá problemas en llamar amor al emocionalismo.</p>,Apotegmas,2025-05-22 21:16
+47,Y sucedió que los hombres crearon una religión...,"<p>Y sucedió que los hombres crearon una religión en nombre de un dios vengativo, celoso, sediento de sangre, castigador y que habita en las sombras, para esclavizarse a su ley y arrogarse el derecho de perseguir a quienes realmente buscan a Dios.</p>",Reflexiones,2025-05-22 21:14
+46,"Los ateos no creen en Dios, pero...","<p>Los ateos no creen en Dios, pero de todas formas quieren que se arrepienta.</p>",Apotegmas,2025-05-22 19:38
+45,"Buscar la verdad es creer, pero creer...","<p>Buscar la verdad es creer, pero creer no necesariamente es buscar la verdad.</p>",Apotegmas,2025-05-22 16:44
+44,La fe es exclusiva de Dios...,<p>La fe es exclusiva de Dios. No la desperdicies en las cosas del cielo ni en las de la tierra.</p>,Apotegmas,2025-05-22 16:06
+43,El populismo tiene la capacidad de convertir...,"<p>El populismo tiene la capacidad de convertir la ignorancia en identidad, la identidad en partidismo y el partidismo en totalitarismo.</p>",Apotegmas,2025-05-22 15:51
+42,Si no amas al mundo como lo ama Dios,"<p>Si no amas al mundo como lo ama Dios, ni te atrevas a siquiera soñar con ir a alguno de los cielos; serías rechazado de inmediato. De todas formas, el ser humano es para estar aquí, con Dios.</p>",Reflexiones,2025-05-22 15:49
+41,Sabía que era octubre,<p>Se revuelca en la tumba Colón<br>Por oír a las gentes decir<br>Que fue él quien las Américas descubre<br>Cuando sabía muy bien que era octubre.</p>,Poesía,2025-05-21 21:16
+40,El punto intermedio entre una verdad y una...,"<p>El punto intermedio entre una verdad y una mentira, es siempre una mentira. El punto intermedio entre el bien y el mal, no siempre es el mal.</p>",Apotegmas,2025-05-21 21:14
+39,Algunas personas no quieren aceptar...,"<p>Algunas personas no quieren aceptar la libertad que hay en Dios, porque intuyen que las consecuencias de usarla mal son peores que las de seguir siendo esclavos.</p>",Reflexiones,2025-05-21 21:13
+38,Un grupo humano se transforma en multitud...,"<p>Un grupo humano se transforma en multitud manipulable cuando se vuelve sensible al carisma y no a la competencia, a la imágen y no a la idea, a la afirmación y no a la prueba, a la repetición y no a la argumentación, a la sugestión y no al razonamiento. – Jean François Revel</p>",Citas,2025-05-21 21:11
+37,La mentira depura y refina la verdad...,"<p>La mentira depura y refina la verdad, y existirá hasta que la verdad se manifieste de manera absoluta.</p>",Apotegmas,2025-05-21 20:08
+36,La soledad es un privilegio que...,<p>La soledad es un privilegio que pocos pueden costear y mucho menos disfrutar.</p>,Apotegmas,2025-05-21 09:35
+35,En dissant la verité,"<p>En dissant la verité, nous oublions la realité.</p>",Apotegmas,2025-05-20 19:26
+34,¡Hereje!,"<p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más<br>De allende las montañas vendrán y verán<br>Que sabemos hacer justicia sin perdonar</p><p>Un mandato tenemos y de seguro se cumplirá<br>Porque somos los elegidos y no hay nadie más<br>El dios de nuestros padres nos urge a odiar<br>A quienes no se someten a su ley y voluntad</p><p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más</p><p>Y cuando su cuerpo sea fuego, humo y hedor<br>Fervor devoto sentiremos viéndolo reventar<br>Contra sumisión y obediencia se ha levantado<br>Ha de pagar su ofensa según hemos jurado</p><p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más</p><p>Que no se hable de olvido y misericordia<br>Que nadie se atreva a salir en su defensa<br>Ahora que tenemos sangre para derramar<br>Finalmente podremos a nuestro dios adorar</p><p>Haced una pira, que sabemos a quién quemar<br>Rociadle mucho aceite para que sufra más<br>De allende las montañas vendrán y verán<br>Que sabemos hacer justicia sin perdonar.</p>",Poesía,2025-05-20 19:07
+33,Que no usen tu esperanza y tu...,<p>Que no usen tu esperanza y tu fe para darle entidad a algún dios.</p>,Apotegmas,2025-05-20 19:00
+32,Espera en Dios para contemplar su...,<p>Espera en Dios para contemplar su luz y recibir su gracia.</p>,Apotegmas,2025-05-20 18:59
+31,La oscuridad y el mal son mucho más que...,<p>La oscuridad y el mal son mucho más que simple ausencia de Luz y Verdad. Ve con tiento.</p>,Apotegmas,2025-05-20 18:58
+30,Si tu fe y tu razón no riñen...,"<p>Si tu fe y tu razón no riñen, es porque no estás usando bien la razón o tu fe es débil.</p>",Apotegmas,2025-05-20 12:05
+29,Es todo tan simple que...,<p>Es todo tan simple que bregamos por complicarlo.</p>,Apotegmas,2025-05-20 12:03
+28,Todo lo que necesitas saber cabe en un...,<p>Todo lo que necesitas saber cabe en un pequeño trozo de papel o ni siquiera necesita estar escrito.</p>,Apotegmas,2025-05-20 12:01
+27,"Si usas la fe para negar la realidad, el mundo...","<p>Si usas la fe para negar la realidad, el mundo te vencerá. Si la usas para entenderla, te dará sabiduría.</p>",Apotegmas,2025-05-19 18:39
+26,"Somos muy afortunados, porque no podemos...","<p>Somos muy afortunados, porque no podemos tener ni hacer todo lo que queremos.</p>",Apotegmas,2025-05-19 18:35
+25,Las vampiresas y el aliño de ajos,"<p>Si te pones una ristra de ajos al cuello para repeler a las vampiresas, ellas te la arrancarán en una fracción de nada y procederán a hacer un aliño con ellos, mezclándolos con la sangre que te chuparán del cuello. El único repelente verdadero es tu entereza moral.</p>",Reflexiones,2025-05-19 11:46
+24,La labor eterna del ser humano siempre ha...,"<p>La labor eterna del ser humano siempre ha sido someter el reino de los cielos a Dios, mediante el sacrificio de la propia carne.</p>",Apotegmas,2025-05-19 11:45
+23,"Que tu única identidad, si acaso...","<p>Que tu única identidad, si acaso necesitas alguna, sea la busca de la Verdad.</p>",Apotegmas,2025-05-19 10:42
+22,Ahórrate el engorroso trámite de ir a alguno...,"<p>Ahórrate el engorroso trámite de ir a alguno de los cielos y quédate aquí, con Dios; hay trabajo por hacer.</p>",Apotegmas,2025-05-19 10:41
+21,Adonde no pueden llegar ni tu vista...,"<p>Adonde no pueden llegar ni tu vista ni tu entendimiento, llega tu fe. – Agustín de Hipona</p>",Citas,2025-05-17 20:02
+20,Adán en el bar de Pichuco,"<p>Al cabo de una larga y agotadora mañana de trabajo para sustentar la carne, me dirigí al bar de Pichuco, en la esquina de Campichuelo y Rivadavia. A esas horas del día no sobran las mesas y como no quería sentarme en la barra, usé algo de paciencia para encontrar una para mí solo, aunque sea en un rincón sin vista a la calle. Al recorrer el lugar con la mirada me di una sorpresa agradable: un amigo de la infancia comía pizza en una mesa, sin compañía. Su nombre era Adán, desde un principio. Nosotros lo llamábamos así porque siempre salía de casa a jugar con una manzana en la mano, pero tengo entendido que su verdadero nombre era otro, que de todas formas no viene al caso. Adán masticaba cansino un buen bocado de pizza de alcaparras, con la mirada fija en la silla libre frente a él. Tragó lo que tenía en la boca y la dirección de su mirada no varió en nada. Me acerqué y cuando lo llamé por su nombre me dirigió esa misma mirada abstraída, sin reconocerme al inicio, pero cuando me recordó se puso de pie, me estrechó la mano y me invitó a ocupar el asiento. Me vendrá bien algo de conversación, pensé.</p><p>Después de algún intercambio de palabras formales no me fue fácil pasar por alto lo compungido de su rostro, por lo que le pregunté qué le sucedía, qué lo afligía, incomodándolo notoriamente en su silla, con lo que intentó explicarme su situación. Todo comenzó hace apenas un mes, me contó, cuando todavía trabajaba con mi mujer, Eva, en unos campos para un patrono estricto pero generoso. Nuestra ocupación era cosechar frutos muy diversos, en un huerto inmenso de numerosas hectáreas, junto a otros tantos recolectores que, al igual que nosotros, tenían allí mismo un lugar para pasar la noche y así ahorrar en viáticos de lunes a sábado. Ningún día faltaban los alimentos, me decía, y comíamos todos juntos antes de trabajar, a la una de la tarde, y una merienda ligera a las diecisiete y media. Conocí a Eva en esos huertos y nos llevamos tan bien desde el inicio, nos compenetramos tanto desde los primeros intercambios, que a veces sentíamos que eramos una misma persona. Pensábamos casi igual, queríamos casi siempre lo mismo, nos cansábamos al mismo tiempo, nos despertábamos juntos justo antes de que saliera el sol, y otras cosas difíciles de explicar para nuestros compañeros de trabajo. Un día determinado, el patrono reunió a todos los cocechadores y nos dio una nueva orden: Nadie puede comer de los frutos de los árboles que están en medio del huerto. Están reservados para mí y para con quien yo quiera compartirlos. Todos lo entendimos perfectamente y aceptamos la nueva condición, porque siendo que la fruta y la comida abundaban en el huerto, ¿quién tendría la extraña ocurrencia de tomar lo que estaba prohibido?</p><p>Unos días después llegaron nuevos cosechadores al huerto. Eran gente de muy lejos, con otro espíritu en el habla y costumbres peregrinas, contratados por la sobreabundancia de fruta, para que el exceso no se pudriera en el suelo. Eva cosechaba cerca del centro del huerto, cuando uno de esos nuevos trabajadores se acercó a los árboles prohibidos, tomó un fruto y se dispuso a comerlo. Ella le dijo que no se podía hacer tal cosa, a lo que el alienígena respondió preguntándole por qué. Se lo explicó palabra por palabra, amablemente, tal como lo había oído; pero el recién llegado, en lugar de acatar la disposición del patrono, le dio un buen mordisco a la fruta para demostrarle que no pasaba nada al hacerlo. Eva, convencida, tomó ella misma otra de esas frutas y la probó, comprobando que, en efecto, la nueva regla no tenía sentido y que, por tanto, no era cierto que esos frutos fueran prohibidos. Y no sólo eso, le gustó tanto el sabor y el color que vino rauda a mi lado para que también yo sintiera lo excelente que era, con esa textura tan agradable. Sin saber que la fruta que me daba Eva provenía de los árboles prohibidos, comí y me deleité con tan buen producto de la tierra.</p><p>Tres días después, con el calor del verano, descansábamos Eva y yo a la sombra de unos árboles, en un lugar del huerto que únicamente nosotros conocíamos. Escuchamos de pronto la voz del patrono que nos llamaba por nuestro nombre y presentimos algo malo. Nos levantamos, salimos al encuentro y le preguntamos en qué podíamos ayudarle. El patrono, algo airado, inquirió si habíamos comido de los frutos prohibidos del medio del huerto. Miré a Eva extrañado e intuí de inmediato que el fruto que me había dado era de esa lugar. Rápidamente, sin pensarlo, le dije al patrono que era Eva quien me había dado de comer y que yo era inocente. Como es lógico, el patrono decidió expulsarnos a los dos. Tuvimos que irnos de inmediato y Eva se fue de mi lado apenas salimos de aquellos campos.</p><p>Ahora entendía yo la tristeza de Adán: no sólo había perdido tan buen empleo, sino que Eva ya no estaba a su lado. Pasados unos dos minutos sin intercambiar palabras y sin que lo buscara, me vino a la cabeza una solución para la situación de Adán. Tengo la respuesta, le dije; sé cómo puedes recuperar tu empleo y quizá también a Eva. Adán abrió los ojos todo lo que pudo y mostró en su expresión una vislumbre de esperanza. La solución es más fácil de lo que crees, le expliqué. Debes volver a los campos de tu patrono, pedir permiso para hablar con él cara a cara y decirle las siguientes palabras: Perdóneme por no haber cuidado a Eva para que no comiera del fruto prohibido; no volverá a suceder. Estoy seguro de que si le dices eso te perdonará, te devolverá el empleo y después Eva podrá volver al huerto contigo. Adán se levantó de la silla impetuoso, ruidoso, se puso el sombrero de regreso, dejó algunos billetes en la mesa para pagar la pizza y el jugo de pomelo, me dio un buen abrazo y salió presuroso del bar. ¡Gracias!, me gritó desde la puerta.</p><p>Me quedé allí, sentado, hasta terminar mis alimentos. Cuando me disponía a pagar lo que había consumido, mi corazón fue invadido por una incomodidad, y era que me estaba percatando de que el orgullo de haber ayudado a mi amigo tan eficazmente, no había dejado lugar ni tiempo a que preguntase, antes de que se fuera, quién era su patrono y dónde estaban esos campos para poder yo trabajar en ellos.</p><p>Nunca volví a saber de Adán.</p>",Cuentos,2025-05-17 17:51
+19,Puedes hablar en términos teológicos...,"<p>Puedes hablar en términos teológicos acerca de las cosas del Espíritu, pero no puedes crear o inventar espiritualidad usando constructos teológicos; a no ser que lo que en realidad quieras es levantar una nueva Torre de Babel.</p>",Apotegmas,2025-05-17 17:39
+18,It is hard to imagine a more stupid or more...,<p>It is hard to imagine a more stupid or more dangerous way of making decisions than by putting those decisions in the hands of people who pay no price for being wrong. – Thomas Sowell</p>,Citas,2025-05-17 17:38
+17,Siempre que busques a Dios hacia fuera...,"<p>Siempre que busques a Dios hacia fuera, te toparás con alguien que dice representarlo.</p>",Apotegmas,2025-05-17 17:37
+16,El recuerdo más puro...,<p>El recuerdo más puro es el olvido.</p>,Apotegmas,2025-05-17 17:36
+15,No es que haya que usar el raciocinio,"<p>No es que haya que usar el raciocinio, sino que es inevitable hacerlo al buscar a Dios y al hablar de él; pero no por eso se caerá en el absurdo de poner la fe y la razón al mismo nivel.</p>",Reflexiones,2025-05-17 17:34
+14,El populismo se las ha arreglado para hacerle...,<p>El populismo se las ha arreglado para hacerle creer al pueblo que se puede llegar al poder sin dejar de ser pueblo.</p>,Reflexiones,2025-05-17 07:51
+13,"La gente vive de eso, de mitos e historias...","<p>La gente vive de eso, de mitos e historias, de los peces. Pero tú, junto con eso y para santificarlo, no pierdas la oportunidad de darles el Pan de Vida.</p>",Apotegmas,2025-05-16 16:38
+12,Sin importar si tu tradición es de los hombres...,"<p>Sin importar si tu tradición es de los hombres o no, cuando Dios así lo disponga, tendrás que hallarte solo en el desierto para tomar la decisión correcta. Te parecerá el fin, pero es sólo el inicio. Creerás que mueres de hambre, pero Dios te dará el sustento, pan de vida.</p>",Reflexiones,2025-05-16 14:39
+11,Cuando aliño mis alimentos con un pesto...,"<p>Cuando aliño mis alimentos con un pesto de perejil con ajo, aceite de oliva y sal, llego a entender que Dios existe y que no solamente es.</p>",Reflexiones,2025-05-16 10:38
+10,"La Verdad existe desde siempre, de modo...","<p>La Verdad existe desde siempre, de modo que no gastes fuerzas en inventar una propia. Sólo hace falta abrir los ojos. ¿Sabes abrir los ojos?</p>",Apotegmas,2025-05-16 07:37
+9,No hay forma de creer en Dios si...,"<p>No hay forma de creer en Dios si no es por fe. Paradójicamente, si no tienes fe, puedes pedírsela a Dios.</p>",Apotegmas,2025-04-02 22:15
+8,El relativismo dogmático te pone en la posición...,"<p>El relativismo dogmático te pone en la posición más manipulable y débil, a la vez que te hace creer que has sido liberado. Un prodigio.</p>",Apotegmas,2025-04-02 16:41
+7,El universo todo confabula para que busques...,"<p>El universo todo confabula para que busques a Dios. Puedes intentar resistirte, mas también puedes rendirte, dejarte guiar y despertar.</p>",Apotegmas,2025-04-02 01:42
+6,No sé nada que...,<p>No sé nada que Dios no me diga.</p>,Apotegmas,2025-02-08 09:42
+5,Los árboles y el hombre,"<p>Siempre se ha comparado al hombre con los árboles. Agitados sus follajes por el Espíritu (viento), regadas sus raíces por el Agua de Vida y nutridas sus hojas por la Luz, los árboles bregan incansables por llegar al cielo. Pero su afán queda en eso, porque Dios está más allá. Por eso, en las Escrituras cristianas Jesucristo corrige la visión del ciego que acababa de ser curado y veía a los hombres como árboles, para que los vea como verdaderamente son, como hombres, como hijos de Dios y no meros aspirantes a los cielos, sino al sacrificio.</p>",Reflexiones,2025-02-07 16:43
+4,Mira hacia arriba para idolatrar,"<p>Mira hacia arriba para idolatrar, mira hacia abajo para despreciar, mira hacia adentro para conocer el Ser y amar.</p>",Apotegmas,2025-02-07 12:44
+3,En la eventualidad de que tengas que elegir entre...,"<p>En la eventualidad de que tengas que elegir entre Dios y el reino de los cielos, deberás optar por Dios sin dudarlo un sólo segundo. Es la única forma de quedar bien librado. (Bien librado significa que morirás primero para levantarte después.)</p>",Apotegmas,2025-02-06 14:21
+2,"Nosotros somos aquellos que, en nuestra relación...","<p>Nosotros somos aquellos que, en nuestra relación con Dios, concebimos la salvación. Esto es así no por asuntos meramente culturales o inculcados, como les gusta creer a los materialistas, sino porque es parte profundísima de nuestro ser, tan profunda que no hay manera de negarla.</p>",Reflexiones,2025-02-05 17:45
+1,La realidad siempre supera a la ficción...,"<p>La realidad siempre supera a la ficción, de modo que si estás aburrido es probable que alguien te haya cerrado los ojos o que los hayas cerrado tú mismo.</p>",Apotegmas,2025-02-05 09:44
