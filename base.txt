@@ -1,4 +1,10 @@
 ,T,C,E,F
+224,Tenemos arte para no...,<p>Tenemos arte para no morir de la verdad. – Friedrich Nietzsche</p>,Citas,2025-07-02 12:08
+223,Algo que idolatrar y algo de verdad,<p>Dale a la gente algo que idolatrar y te seguirán. Dales algo de verdad y te perseguirán.</p>,Apotegmas,2025-07-02 12:07
+222,Entre una persona que te trata bien...,"<p>Entre una persona que te trata bien para que la sigas y otra que te trata mal para que busques la verdad, quédate con la segunda.</p>",Apotegmas,2025-07-01 18:28
+221,Generamos el tiempo y la distancia,"<p>Generamos el tiempo y la distancia cuando nos apartamos del Ser, para poder percibir la realidad separada de nosotros.</p>",Reflexiones,2025-07-01 18:27
+220,El populismo es una enfermedad...,<p>El populismo es una enfermedad social que sólo se cura con el sufrimiento del pueblo.</p>,Apotegmas,2025-07-01 17:09
+219,"No existe la nada, y si existiera...","<p>No existe la nada, y si existiera no produciría nada y llevaría a la nada, que es lo opuesto a toda verdad.</p>",Apotegmas,2025-07-01 13:15
 218,películas ¦ Infierno rojo,"<p><i>Infierno rojo</i>, con Arnold Schwarzenegger → https://www.youtube.com/watch?v=v5P8-9-ieUI.</p>","Enlaces, Películas",2025-07-01 09:45
 217,Si alguien te pide que creas en Dios...,"<p>Si alguien te pide que creas en Dios, explícale que Dios no es una creencia.</p>",Apotegmas,2025-07-01 09:38
 216,No batalles contra los pensamientos...,"<p>No batalles contra los pensamientos impropios, simplemente exponlos a la luz de la contemplación y se desvanecerán.</p>",Apotegmas,2025-07-01 09:35
