@@ -1,4 +1,4 @@
-const base = [
+let base = [
 "MUSEALADJ▒museal [adj.]▒232▒Vocabulario español▒2025-07-03 20:59▒<p><b>museal [adj.]</b> Museístico. (Del italiano <i>museale</i>.)</p>",
 "ELUNIVERSOESTANGRANDE▒El universo es tan grande...▒231▒Apotegmas▒2025-07-03 20:04▒<p>El universo es tan grande que cabe en tu corazón.</p>",
 "SINOCHOCAMOSCONTRALARAZON▒Si no chocamos contra la razón...▒230▒Citas▒2025-07-03 20:02▒<p>Si no chocamos contra la razón nunca llegaremos a nada. – Albert Einstein</p>",
