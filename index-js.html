@@ -308,31 +308,13 @@
 
 </div>
 
+  <script src="./base.js"></script>
+  
   <script>
     let baseTxt = '';
     let baseArray = [];
-
-    function inicio () {
-      // Direct URL to the raw file on GitHub Pages
-      const url = 'https://jucardus.github.io/base.txt';
-
-      // Fetch the file content
-      fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-      return response.text();
-      })
-      .then(data => {
-        proceso (data);
-      })
-      .catch(error => {
-          document.getElementById('content').innerText = `Error loading content: ${error.message}`;
-      });
-    }
     
-    function proceso (data) {
+    function inicio (data) {
       let recibido = '';
       let array;
       array = parseCsv(data);
@@ -353,40 +335,9 @@
         var nuevaLinea = orden + '▒' + titulo + '▒' + numero + '▒' + etiquetas + '▒' + fecha + '▒' + contenido;
         resultado.push(nuevaLinea);
       }
-      var enviar = resultado.join('▓');
-      baseArray = enviar.split('▓');
+      var baseArray = resultado.join('▓');
+      //baseArray = enviar.split('▓');
       recientes ();
-    }
-
-    function parseCsv(contenido) {
-      // Split the string into lines, handling different line endings (\n, \r, \r\n)
-      const lines = contenido.split(/\r\n|\r|\n/).filter(line => line.trim() !== '');
-      
-      // Parse each line into an array, handling quoted fields and commas
-      const result = lines.map(line => {
-        const values = [];
-        let current = '';
-        let inQuotes = false;
-        
-        for (let i = 0; i < line.length; i++) {
-          const char = line[i];
-          
-          if (char === '"') {
-            inQuotes = !inQuotes; // Toggle quoted state
-          } else if (char === ',' && !inQuotes) {
-            values.push(current.trim()); // Add completed field to array
-            current = ''; // Reset current field
-          } else {
-            current += char; // Add character to current field
-          }
-        }
-        
-        // Push the last field
-        values.push(current.trim());
-        return values;
-      });
-      
-      return result;
     }
 
     function recientes () {
