@@ -247,7 +247,7 @@
   </style>
 
 </head>
-<body onload='inicio()'>
+<body onload='recientes()'>
 
 <div class='contenedor'>
 
@@ -313,31 +313,12 @@
     let baseTxt = '';
     let baseArray = [];
 
-    function inicio () {
-      let recibido = '';
-      let array;
-      array = base;
-      var resultado = [];
-      for (var i = 0; i < base.length; i++) {
-        var linea = base[i].split('▒');
-          var orden = linea[0];
-          var titulo = linea[1];
-          var numero = linea[2];
-          var etiquetas = linea[3];
-          var fecha = linea[4];
-          var contenido = linea[5];
-        var nuevaLinea = orden + '▒' + titulo + '▒' + numero + '▒' + etiquetas + '▒' + fecha + '▒' + contenido;
-        resultado.push(nuevaLinea);
-      }
-      baseArray = resultado;
-      recientes ();
-    }
-
     function recientes () {
+      baseArray = base;
       document.getElementById('buscador').style.display = 'none';
       var resultado = [];
       var contador = 0;
-      let array = baseArray;
+      let array = baseArray.slice();
       for (var i = 0; i < array.length; i++) {
         var linea = array[i].split('▒');
           var orden = linea[0];
@@ -461,7 +442,7 @@
       const url = window.location.href.split('#')[0];
       history.pushState({}, document.title, url);
     }
-    function temasAnterior () {
+    function temasAnterior () { // EN DESUSO
       document.getElementById('buscador').style.display = 'none';
       var buscar = '-';
       document.getElementById("mostrar").innerHTML = buscar;
