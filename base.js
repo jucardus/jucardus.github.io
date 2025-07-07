@@ -1,4 +1,11 @@
 let base = [
+"CUANDOELNINODESTROZASUJUGUETE▒Cuando el niño destroza su juguete...▒263▒Citas▒2025-07-06 22:18▒<p>Cuando el niño destroza su juguete, parece que anda buscándole el alma. – Victor Hugo</p>",
+"BIOGRAFIASJUANBAUTISTAALBERDI▒biografías ¦ Juan Bautista Alberdi▒262▒Biografías, Enlaces▒2025-07-06 22:15▒<p>Biografia de Juan Bautista Alberdi → https://es.wikipedia.org/wiki/Juan_Bautista_Alberdi.</p>",
+"QUENOSEADEOTROQUIENPUEDE▒Que no sea de otro quien puede...▒261▒Citas▒2025-07-06 22:14▒<p>Que no sea de otro quien puede ser nueño de sí mismo. – Paraselso (Theophrastus Bombart von Hohenheim)</p>",
+"JOHANNSEBASTIANBACHLISTACOMPLETADECOMPOSICIONES▒Johann Sebastian Bach ¦ lista completa de composiciones▒260▒Enlaces, Johann Sebastian Bach▒2025-07-06 22:10▒<p>Lista completa de las composiciones de Johann Sebastian Bach → https://musopen.org/music/composer/johann-sebastian-bach/pieces/.</p>",
+"NOLLAMEMOSIDENTIDAD▒No llamemos identidad...▒259▒Apotegmas▒2025-07-06 21:56▒<p>No llamemos identidad a la ignorancia.</p>",
+"BIBLIASINTERLINEALESSTEPBIBLE▒Biblias interlineales ¦ Stepbible▒258▒Biblias, Enlaces▒2025-07-06 21:53▒<p>Biblia interlineal Stepbible, en los idiomas chino-hebreo/griego → https://www.stepbible.org/?q=version=CUns%7Creference=Gen.1%7Cversion=OHB&options=HVGUN&display=INTERLINEAR.</p>",
+"NOESCURIOSOPEROENTODOSLOSPAISES▒No es curioso, pero en todos los países...▒257▒Reflexiones▒2025-07-06 21:51▒<p>No es curioso, pero en todos los países que lo tienen, el populismo convierte la delicuencia en una causa social.</p>",
 "THEURGETOSAVEHUMANITYISALMOST▒The urge to save humanity is almost...▒256▒Citas▒2025-07-06 20:57▒<p>The urge to save humanity is almost always a false front for the urge to control it. – H. L. Mencken</p>",
 "TALVEZLOC▒tal vez [loc.]▒255▒Vocabulario español▒2025-07-06 20:53▒<p><b>tal vez [loc.]</b> De vez en cuando; en rara ocasión; tal cual vez.</p>",
 "PELICULASBRAMSTOKERSDRACULA▒películas ¦ Bram Stoker's Dracula (1992)▒254▒Enlaces, Películas▒2025-07-06 07:53▒<p><i>Bram Stoker's Dracula</i>, con Gary Oldman, en inglés → https://youtu.be/KDkSUXOlHbo.</p>",
