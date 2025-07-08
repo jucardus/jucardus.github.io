@@ -1,4 +1,10 @@
 let base = [
+"PELICULASDOSPORELPRECIODEUNA▒películas ¦ Dos por el precio de una▒270▒Enlaces, Películas▒2025-07-07 22:26▒<p><i>Dos por el precio de una (It Takes Two)</i> → https://www.youtube.com/watch?v=XdILemYZXQE.</p>",
+"LOSEJEMPLOSSONDIEZVECES▒Los ejemplos son diez veces...▒269▒Citas▒2025-07-07 20:56▒<p>Los ejemplos son diez veces más útiles que los preceptos. – Charles James Fox</p>",
+"MASVALEUNGRANODECORDURA▒Más vale un grano de cordura...▒268▒Citas▒2025-07-07 20:55▒<p>Más vale un grano de cordura que arrobas de sutileza. – Baltasar Gracián</p>",
+"LASLEYESDEMASIADOBENIGNAS▒Las leyes demasiado benignas...▒267▒Citas▒2025-07-07 20:49▒<p>Las leyes demasiado benignas rara vez son obedecidas; las demasiado severas, rara vez ejecutadas. – Benjamín Franklin</p>",
+"SOPORTARIAGUSTOSAUNADOCENAMAS▒Soportaría gustosa una docena más...▒266▒Citas▒2025-07-07 20:03▒<p>Soportaría gustosa una docena más de desencantos amorosos, si ello me ayudara a perder un par de kilos. – Colette (novelista francesa)</p>",
+"SINMENTIRASLAHUMANIDADMORIRIA▒Sin mentiras la humanidad moriría...▒265▒Citas▒2025-07-07 19:58▒<p>Sin mentiras la humanidad moriría de desesperación y aburrimiento. – Anatole France</p>",
 "PELICULASDIRTYMEN▒películas ¦ Dirty Men▒264▒Enlaces, Películas▒2025-07-07 07:59▒<p><i>Dirty Men</i>, con Clint Eastwood → https://www.youtube.com/watch?v=g-aC1ZabNq8.</p>",
 "CUANDOELNINODESTROZASUJUGUETE▒Cuando el niño destroza su juguete...▒263▒Citas▒2025-07-06 22:18▒<p>Cuando el niño destroza su juguete, parece que anda buscándole el alma. – Victor Hugo</p>",
 "NOMANCHESTUFECONRACIONALISMOS▒No manches tu fe con racionalismos...▒262▒Apotegmas▒2025-07-06 22:15▒<p>No manches tu fe con racionalismos, con milagrería, con sectarismos, con ritualismos. Déjala intacta, que permanezca pura.</p>",
