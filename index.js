@@ -213,7 +213,7 @@ function archivo() {
         var etiquetas = linea[3];
         var fecha = linea[4];
         var contenido = linea[5];
-      var nuevaLinea = '<p><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + '</span> – <span class="etiquetasArchivo">' + etiquetas + '</span></p>';
+      var nuevaLinea = '<p><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')"><b>' + numero + '.</b> ' + titulo + '</span> – <span class="etiquetasArchivo">' + etiquetas + '</span></p>';
       resultado.push('<h2 style="text-align: center; padding-top: 15px;">' + fecha.slice(0, 7) + '</h2></div>');
       resultado.push('<h4>' + fecha.slice(0, 10) + '</h4>');
       resultado.push(nuevaLinea);
