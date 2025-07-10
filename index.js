@@ -184,7 +184,7 @@ function temas() {
   // Create the display array
   var resultado = [];
   for (let [label, count] of labelCounts) {
-    var nuevaEtiqueta = `<li><span class="menuEnlace" onclick="buscarTema('${label}')"><b>${label}</b> – ${count} entradas</span></li>`;
+    var nuevaEtiqueta = `<li><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> – ${count} entradas</li>`;
     resultado.push(nuevaEtiqueta);
   }
 
