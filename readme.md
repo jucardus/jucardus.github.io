@@ -1,4 +1,4 @@
 # Jucardus.com
 
-* Mi sitio central: [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* Mi sitio central: [jucardus.blogspot.com](https://jucardus.blogspot.com)
 * Invitación a pCloud: [i.jucardus.com](https://i.jucardus.com)
