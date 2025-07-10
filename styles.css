@@ -143,6 +143,8 @@ li {
 }
 .menuEnlace {
   color: #014784;
+  font-size: 110%!important;
+  font-variant: small-caps!important;
 }
 .menuEnlace:hover, .menuEnlace:focus, .menuEnlace:active {
   color: OrangeRed;
