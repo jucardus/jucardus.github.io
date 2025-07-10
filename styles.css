@@ -95,6 +95,16 @@ button#boton {
   font-size: 110%!important;
   font-variant: small-caps!important;
 }
+.etiquetasTemas {
+  color: #014784;
+  font-size: 110%!important;
+  font-variant: small-caps!important;
+}
+.etiquetasTemas:hover, .etiquetasTemas:focus, .etiquetasTemas:active {
+  color: OrangeRed;
+  cursor: pointer;
+  text-decoration: underline;
+}
 h1 {
   font-size: 220%;
   margin-bottom: 20px;
@@ -143,8 +153,6 @@ li {
 }
 .menuEnlace {
   color: #014784;
-  font-size: 110%!important;
-  font-variant: small-caps!important;
 }
 .menuEnlace:hover, .menuEnlace:focus, .menuEnlace:active {
   color: OrangeRed;
