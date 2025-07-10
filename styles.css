@@ -92,8 +92,8 @@ button#boton {
 #entradasAZ {
 }
 .etiquetas {
-  font-variant: small-caps;
-  font-size: big;
+  font-variant: small-caps!important;
+  font-size: big!important;
 }
 h1 {
   font-size: 220%;
