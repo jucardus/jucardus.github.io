@@ -397,7 +397,7 @@
                 var etiquetasTodas = etiquetasUnidas.join(', ');
             var fecha = linea[4];
             var contenido = convertirUrls(linea[5]);
-          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · ' + etiquetasTodas + ' · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
+          var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetasTodas + '</span> · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div></div>';
           resultado.push(nuevaLinea);
         }
       }
@@ -528,7 +528,7 @@
             var etiquetas = linea[3];
             var fecha = linea[4];
             var contenido = linea[5];
-          var nuevaLinea = '<p><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + ' – ' + etiquetas + '</span></p>';
+          var nuevaLinea = '<p><div class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + numero + '. ' + titulo + ' – <span class="etiquetas">' + etiquetas + '</span></div></p>';
           resultado.push('<h2 style="text-align: center; padding-top: 15px;">' + fecha.slice(0, 7) + '</h2></div>');
           resultado.push('<h4>' + fecha.slice(0, 10) + '</h4>');
           resultado.push(nuevaLinea);
