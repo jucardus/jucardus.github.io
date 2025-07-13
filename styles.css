@@ -18,6 +18,10 @@
     /*overflow-wrap: break-word!important;*/
     /*white-space: normal!important;*/
   }
+  .imagenes {
+    border-radius: 7px;
+    width: 90%!important;
+  }
   input#textInput {
     font-size: 100%!important;
     width: 90%!important;
