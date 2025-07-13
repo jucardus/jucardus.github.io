@@ -123,6 +123,13 @@ html, body {
 iframe {
   display: none;
 }
+#imagenes {
+  text-align: center;
+}
+.imagenes {
+  border-radius: 10px;
+  width: 500px;
+}
 img#favicones {
   border-radius: 2px;
   float: left;
