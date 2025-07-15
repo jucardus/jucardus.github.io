@@ -187,7 +187,12 @@ function temas() {
   // Create the display array
   var resultado = [];
   for (let [label, count] of labelCounts) {
-    var nuevaEtiqueta = `<li><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> – ${count} entradas</li>`;
+    var ordenamiento = label
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-zA-Z]/g, '')
+      .toUpperCase();
+    var nuevaEtiqueta = `<li><!--${ordenamiento}--><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> – ${count} entradas</li>`;
     resultado.push(nuevaEtiqueta);
   }
 
