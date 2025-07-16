@@ -331,19 +331,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Check if the parameter exists and call the function
   if (recibido) {
-    let originalString = recibido;
+    var originalString = recibido;
     var characterToInsert = "-";
     var insertionPosition = 2;
     var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
     var insertionPosition = 5;
-    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     var characterToInsert = " ";
     var insertionPosition = 8;
-    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     var characterToInsert = ":";
     var insertionPosition = 11;
-    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
-    recibido = '20' + newString;
+    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     buscarFecha(recibido);
   } else {
     //console.log('No "e" parameter found in the URL');
