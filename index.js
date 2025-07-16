@@ -310,7 +310,7 @@ function convertirUrls(inputText) {
   });
 }
 function autor () {
-  const authorDiv = document.getElementById("author");
+  const authorDiv = document.getElementById("autor");
   const mostrarDiv = document.getElementById("mostrar");
   mostrarDiv.innerHTML = authorDiv.innerHTML;
   document.getElementById('textInput').value = '';
