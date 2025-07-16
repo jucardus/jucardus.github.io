@@ -331,6 +331,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Check if the parameter exists and call the function
   if (recibido) {
+    let originalString = recibido;
+    let characterToInsert = "-";
+    let insertionPosition = 2;
+    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    let insertionPosition = 5;
+    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    let characterToInsert = " ";
+    let insertionPosition = 8;
+    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    let characterToInsert = ":";
+    let insertionPosition = 11;
+    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var recibido = '20' + newString;
     buscarFecha(recibido);
   } else {
     //console.log('No "e" parameter found in the URL');
