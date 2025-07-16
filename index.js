@@ -1,5 +1,5 @@
-//let baseTxt = '';
 let baseArray = [];
+baseArray = base;
 
 // Function to get URL parameter and call buscarFecha
 document.addEventListener('DOMContentLoaded', () => {
@@ -97,8 +97,8 @@ function buscarFecha (recibido) {
   var resultado = [];
   let array = baseArray;
   for (var i = 0; i < array.length; i++) {
-    var fields = array[i].split('▒'); // Split into fields
-    var fecha = fields[4]; // Date is the 5th field (0-indexed 4)
+    var fields = array[i].split('▒');
+    var fecha = fields[4];
     //if (array[i].indexOf(buscar) >= 0) {
     if (fecha === buscar) {
       var linea = array[i].split('▒');
