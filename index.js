@@ -106,7 +106,8 @@ function buscarFecha (recibido) {
         var orden = linea[0];
         var titulo = linea[1];
         var numero = linea[2];
-          var tuit = numero + '. ' + titulo + ' – ' + linea[5]?.slice(0,180) + '%0A→ ' + enlace + '%0A%0A' + '@jucardus';
+          var enlaceTuit = 'jucardus.github.io/?e=' + recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+          var tuit = numero + '. ' + titulo + ' – ' + linea[5]?.slice(0,180) + '...%0A→ ' + enlaceTuit + '%0A%0A' + '@jucardus';
           var numero = '<a class="numeros" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var etiquetas = linea[3];
           var etiquetas = etiquetas.replace(/, /g, ',');
