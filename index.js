@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(fecha);
     buscarFecha(fecha);
   } else {
-    //console.log('No "e" parameter found in the URL');
-    // Optionally handle the case where no parameter is provided
+    recientes();
   }
 });
 
