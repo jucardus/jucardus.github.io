@@ -310,8 +310,9 @@ function convertirUrls(inputText) {
   });
 }
 function autor () {
-  var autor =  "<h3>Autor y contacto</h3><ul><li><b>Autor:</b> Julio Cárdenas Pelizzari ©</li><li><b>Contacto:</b> jucardus en gmail punto com</li><li><b>Sitio central:</b> jucardus.com</li></ul><h3>Mis sitios</h3><ul><li><b>Diccionarios:</b> <a href='https://d.jucardus.com' target='_blank'>d.jucardus.com</a></li><li><b>Enlaces:</b> <a href='https://e.jucardus.com' target='_blank'>e.jucardus.com</a></li><li><b>Facebook:</b> <a href='https://fb.jucardus.com' target='_blank'>fb.jucardus.com</a></li><li><b>Fotografías:</b> <a href='https://f.jucardus.com' target='_blank'>f.jucardus.com</a></li><li><b>Herramientas:</b> <a href='https://h.jucardus.com' target='_blank'>h.jucardus.com</a></li><li><b>Invitación:</b> <a href='https://i.jucardus.com' target='_blank'>i.jucardus.com</a></li><li><b>Linktree:</b> <a href='https://lt.jucardus.com' target='_blank'>lt.jucardus.com</a></li><li><b>Música:</b> <a href='https://m.jucardus.com' target='_blank'>m.jucardus.com</a></li><li><b>PayPal:</b> <a href='https://pp.jucardus.com' target='_blank'>pp.jucardus.com</a></li><li><b>Programación:</b> <a href='https://p.jucardus.com' target='_blank'>p.jucardus.com</a></li><li><b>Repositorio:</b> <a href='https://r.jucardus.com' target='_blank'>r.jucardus.com</a></li><li><b>X Twitter:</b> <a href='https://x.jucardus.com' target='_blank'>x.jucardus.com</a></li></ul>";
-  document.getElementById('mostrar').innerHTML = autor;
+  const authorDiv = document.getElementById("author");
+  const mostrarDiv = document.getElementById("mostrar");
+  mostrarDiv.innerHTML = authorDiv.innerHTML;
   document.getElementById('textInput').value = '';
   limpiarHash ();
   window.scrollTo(0, 0);
