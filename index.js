@@ -1,5 +1,4 @@
-let baseArray = [];
-baseArray = base;
+let baseArray = base;
 
 // Function to get URL parameter and call buscarFecha
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function recientes () {
-  baseArray = base;
+  //baseArray = base;
   document.getElementById('buscador').style.display = 'none';
   var resultado = [];
   var contador = 0;
@@ -52,6 +51,7 @@ function recientes () {
   document.getElementById("mostrar").innerHTML = enviar;
   document.getElementById('textInput').value = '';
   limpiarHash ();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
 
@@ -88,6 +88,7 @@ function buscar (recibido) {
   document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
   document.getElementById('textInput').value = '';
   limpiarHash ();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
 
@@ -128,7 +129,6 @@ function buscarFecha (recibido) {
   document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
   document.getElementById('textInput').value = '';
   limpiarHash ();
-  //limpiarQuery();
   const url = new URL(window.location);
   var param = recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
   url.searchParams.set('e', param);
@@ -160,19 +160,24 @@ function az () {
   document.getElementById("mostrar").innerHTML = enviar;
   document.getElementById('textInput').value = '';
   limpiarHash ();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
+
 function mostrarBuscador () {
   window.scrollTo(0, 0);
   document.getElementById('buscador').style.display = 'block';
   document.getElementById('textInput').focus();
   document.getElementById("mostrar").innerHTML = '';
   limpiarHash ();
+  limpiarQuery();
 }
+
 function limpiarHash () {
   const url = window.location.href.split('#')[0];
   history.pushState({}, document.title, url);
 }
+
 function temasAnterior () { // EN DESUSO
   document.getElementById('buscador').style.display = 'none';
   var buscar = '-';
@@ -201,6 +206,7 @@ function temasAnterior () { // EN DESUSO
   limpiarHash ();
   window.scrollTo(0, 0);
 }
+
 function temas() {
   document.getElementById('buscador').style.display = 'none';
   var buscar = '-';
@@ -244,8 +250,10 @@ function temas() {
   document.getElementById("mostrar").innerHTML = '<ul>' + enviar + '</ul>';
   document.getElementById('textInput').value = '';
   limpiarHash();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
+
 function archivo() {
   document.getElementById('buscador').style.display = 'none';
   var buscar = '-';
@@ -273,8 +281,10 @@ function archivo() {
   document.getElementById("mostrar").innerHTML = enviar;
   document.getElementById('textInput').value = '';
   limpiarHash ();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
+
 function buscarTema (recibido) {
   document.getElementById('buscador').style.display = 'none';
   var buscar = document.getElementById('textInput').value;
@@ -303,8 +313,10 @@ function buscarTema (recibido) {
   document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
   document.getElementById('textInput').value = '';
   limpiarHash ();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
+
 function azar () {
   var arrayDesordenar = baseArray.slice();
   arrayDesordenar = desordenar(arrayDesordenar).slice(10,13);
@@ -324,9 +336,10 @@ function azar () {
   document.getElementById("mostrar").innerHTML = enviar;
   document.getElementById('textInput').value = '';
   limpiarHash ();
-  //baseArray = base.split('▓');
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
+
 function desordenar(arrayD) {
   let currentIndex = arrayD.length, randomIndex;
   while (currentIndex > 0) {
@@ -336,6 +349,7 @@ function desordenar(arrayD) {
   }
   return arrayD;
 }
+
 function convertirUrls(inputText) {
   const urlRegex = /\b(https?:\/\/[^\s<>"'()]+)/gi;
   return inputText.replace(urlRegex, (fullUrl) => {
@@ -349,12 +363,14 @@ function convertirUrls(inputText) {
     }
   });
 }
+
 function autor () {
   const authorDiv = document.getElementById("autor");
   const mostrarDiv = document.getElementById("mostrar");
   mostrarDiv.innerHTML = authorDiv.innerHTML;
   document.getElementById('textInput').value = '';
   limpiarHash ();
+  limpiarQuery();
   window.scrollTo(0, 0);
 }
 
