@@ -321,3 +321,19 @@ function autor () {
 function arriba() {
   window.scrollTo(0, 0);
 }
+
+// Function to get URL parameter and call buscarFecha
+document.addEventListener('DOMContentLoaded', () => {
+  // Get the URL parameters
+  const params = new URLSearchParams(window.location.search);
+  // Get the value of the 'e' parameter
+  const recibido = params.get('e');
+  
+  // Check if the parameter exists and call the function
+  if (recibido) {
+    buscarFecha(recibido);
+  } else {
+    //console.log('No "e" parameter found in the URL');
+    // Optionally handle the case where no parameter is provided
+  }
+});
