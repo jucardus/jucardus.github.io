@@ -47,6 +47,10 @@ a:hover, a:focus {
 a.buscadores {
   word-break: revert!important;
 }
+a.numeros:link, a.numeros:visited, a.numeros:active {
+  color: Green;
+  text-decoration: none;
+}
 .arriba {
   color: #014784;
   font-size: 180%;
