@@ -54,12 +54,14 @@ function recientes () {
   limpiarHash ();
   window.scrollTo(0, 0);
 }
+
 function teclaBuscar (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     buscar('');
   }
 }
+
 function buscar (recibido) {
   document.getElementById('buscador').style.display = 'none';
   var buscar = document.getElementById('textInput').value;
@@ -89,7 +91,7 @@ function buscar (recibido) {
   window.scrollTo(0, 0);
 }
 
-async function buscarFecha (recibido) {
+function buscarFecha (recibido) {
   document.getElementById('buscador').style.display = 'none';
   var buscar = recibido;
   var resultado = [];
