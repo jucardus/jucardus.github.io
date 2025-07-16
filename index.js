@@ -97,7 +97,11 @@ function buscarFecha (recibido) {
   var resultado = [];
   let array = baseArray;
   for (var i = 0; i < array.length; i++) {
-    if (array[i].includes(buscar)) {
+    var fields = array[i].split('▒'); // Split into fields
+    var fecha = fields[4]; // Date is the 5th field (0-indexed 4)
+    
+    if (fecha.indexOf(buscar) >= 0) { // Check only the date field
+    //if (array[i].indexOf(buscar) >= 0) {
       var linea = array[i].split('▒');
         var orden = linea[0];
         var titulo = linea[1];
