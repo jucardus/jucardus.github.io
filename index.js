@@ -1,6 +1,37 @@
 let baseTxt = '';
 let baseArray = [];
 
+// Function to get URL parameter and call buscarFecha
+document.addEventListener('DOMContentLoaded', () => {
+  // Get the URL parameters
+  const params = new URLSearchParams(window.location.search);
+  // Get the value of the 'e' parameter
+  const recibido = params.get('e');
+  
+  // Check if the parameter exists and call the function
+  if (recibido) {
+    var originalString = recibido;
+    var characterToInsert = "-";
+    var insertionPosition = 2;
+    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var insertionPosition = 5;
+    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
+    var characterToInsert = " ";
+    var insertionPosition = 8;
+    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
+    var characterToInsert = ":";
+    var insertionPosition = 11;
+    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
+    console.log(newString);
+    fecha = '20' + newString;
+    console.log(fecha);
+    buscarFecha(fecha);
+  } else {
+    //console.log('No "e" parameter found in the URL');
+    // Optionally handle the case where no parameter is provided
+  }
+});
+
 function recientes () {
   baseArray = base;
   document.getElementById('buscador').style.display = 'none';
@@ -322,37 +353,6 @@ function autor () {
 function arriba() {
   window.scrollTo(0, 0);
 }
-
-// Function to get URL parameter and call buscarFecha
-document.addEventListener('DOMContentLoaded', () => {
-  // Get the URL parameters
-  const params = new URLSearchParams(window.location.search);
-  // Get the value of the 'e' parameter
-  const recibido = params.get('e');
-  
-  // Check if the parameter exists and call the function
-  if (recibido) {
-    var originalString = recibido;
-    var characterToInsert = "-";
-    var insertionPosition = 2;
-    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
-    var insertionPosition = 5;
-    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
-    var characterToInsert = " ";
-    var insertionPosition = 8;
-    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
-    var characterToInsert = ":";
-    var insertionPosition = 11;
-    var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
-    console.log(newString);
-    fecha = '20' + newString;
-    console.log(fecha);
-    buscarFecha(fecha);
-  } else {
-    //console.log('No "e" parameter found in the URL');
-    // Optionally handle the case where no parameter is provided
-  }
-});
 
 function limpiarQuery() {
   const cleanUrl = window.location.origin + window.location.pathname;
