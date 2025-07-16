@@ -343,6 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var characterToInsert = ":";
     var insertionPosition = 11;
     var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
+    console.log(newString);
     recibido = '20' + newString;
     buscarFecha(recibido);
   } else {
