@@ -105,7 +105,7 @@ button#boton {
 .etiquetasArchivo {
   font-size: 100%!important;
   font-variant: small-caps!important;
-  opacity: 0.6!important;
+  /*opacity: 0.6!important;*/
 }
 .etiquetasTemas {
   color: #014784;
