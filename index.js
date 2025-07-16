@@ -344,8 +344,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var insertionPosition = 11;
     var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     console.log(newString);
-    recibido = '20' + newString;
-    buscarFecha(recibido);
+    fecha = '20' + newString;
+    buscarFecha(fecha);
   } else {
     //console.log('No "e" parameter found in the URL');
     // Optionally handle the case where no parameter is provided
