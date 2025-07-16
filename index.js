@@ -88,7 +88,8 @@ function buscar (recibido) {
   limpiarHash ();
   window.scrollTo(0, 0);
 }
-function buscarFecha (recibido) {
+
+async function buscarFecha (recibido) {
   document.getElementById('buscador').style.display = 'none';
   var buscar = recibido;
   var resultado = [];
@@ -125,6 +126,7 @@ function buscarFecha (recibido) {
   //limpiarQuery()
   window.scrollTo(0, 0);
 }
+
 function az () {
   document.getElementById('buscador').style.display = 'none';
   var buscar = '-';
