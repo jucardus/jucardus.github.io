@@ -100,7 +100,8 @@ function buscarFecha (recibido) {
     var fields = array[i].split('▒'); // Split into fields
     var fecha = fields[4]; // Date is the 5th field (0-indexed 4)
     
-    if (fecha.indexOf(buscar) >= 0) { // Check only the date field
+    //if (fecha.indexOf(buscar) >= 0) { // Check only the date field
+    if (fecha === buscar)
     //if (array[i].indexOf(buscar) >= 0) {
       var linea = array[i].split('▒');
         var orden = linea[0];
