@@ -94,7 +94,7 @@ function buscarFecha (recibido) {
   document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
   document.getElementById('textInput').value = '';
   limpiarHash ();
-  limpiarQuery()
+  //limpiarQuery()
   window.scrollTo(0, 0);
 }
 function az () {
