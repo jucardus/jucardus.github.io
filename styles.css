@@ -192,6 +192,9 @@ li {
   color: DarkTurquoise;
   text-align: right;
 }
+.pArchivo {
+  text-align: left!important;
+}
 p.temas {
   font-size: 90%!important;
 }
