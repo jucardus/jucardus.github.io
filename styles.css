@@ -65,9 +65,10 @@ a.buscadores {
 }
 body {
   font-family: "Arial";
+  font-family: 'Inter', sans-serif;
   background-color: #f7e5c2;
   background-color: #f0f0f0;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   overflow-x: hidden;
   padding: 15px 23% 150px 23%;
   text-align: justify;
