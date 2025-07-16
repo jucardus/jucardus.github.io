@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var insertionPosition = 11;
     var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     var fecha = '20' + newString;
-    buscarFecha(fecha);
+    buscar(fecha);
   } else {
     recientes();
   }
