@@ -346,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     console.log(newString);
     fecha = '20' + newString;
+    console.log(fecha);
     buscarFecha(fecha);
   } else {
     //console.log('No "e" parameter found in the URL');
