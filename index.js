@@ -129,6 +129,10 @@ function buscarFecha (recibido) {
   document.getElementById('textInput').value = '';
   limpiarHash ();
   //limpiarQuery();
+  const url = new URL(window.location);
+  var param = recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+  url.searchParams.set('e', param);
+  history.replaceState(null, '', url.toString());
   window.scrollTo(0, 0);
 }
 
