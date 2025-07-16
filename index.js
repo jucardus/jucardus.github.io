@@ -332,17 +332,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Check if the parameter exists and call the function
   if (recibido) {
     let originalString = recibido;
-    let characterToInsert = "-";
+    var characterToInsert = "-";
     var insertionPosition = 2;
-    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
     var insertionPosition = 5;
-    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
-    let characterToInsert = " ";
+    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var characterToInsert = " ";
     var insertionPosition = 8;
-    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
-    let characterToInsert = ":";
+    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var characterToInsert = ":";
     var insertionPosition = 11;
-    let newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
+    var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
     var recibido = '20' + newString;
     buscarFecha(recibido);
   } else {
