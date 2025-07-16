@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var insertionPosition = 11;
     var newString = newString.slice(0, insertionPosition) + characterToInsert + newString.slice(insertionPosition);
     var fecha = '20' + newString;
-    buscar(fecha);
+    buscarFecha(fecha);
   } else {
     recientes();
   }
@@ -93,12 +93,13 @@ function buscar (recibido) {
 }
 
 function buscarFecha (recibido) {
+  alert(recibido);
   document.getElementById('buscador').style.display = 'none';
   var buscar = recibido;
   var resultado = [];
   let array = baseArray;
   for (var i = 0; i < array.length; i++) {
-    if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+    if (array[i].indexOf(buscar) >= 0) {
       var linea = array[i].split('▒');
         var orden = linea[0];
         var titulo = linea[1];
