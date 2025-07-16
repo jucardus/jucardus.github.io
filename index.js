@@ -63,7 +63,6 @@ function teclaBuscar (event) {
 }
 
 function buscar (recibido) {
-  alert(recibido);
   document.getElementById('buscador').style.display = 'none';
   var buscar = document.getElementById('textInput').value;
   document.getElementById("mostrar").innerHTML = buscar;
@@ -93,7 +92,6 @@ function buscar (recibido) {
 }
 
 function buscarFecha (recibido) {
-  alert(recibido);
   document.getElementById('buscador').style.display = 'none';
   var buscar = recibido;
   var resultado = [];
@@ -127,7 +125,7 @@ function buscarFecha (recibido) {
   document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
   document.getElementById('textInput').value = '';
   limpiarHash ();
-  //limpiarQuery()
+  //limpiarQuery();
   window.scrollTo(0, 0);
 }
 
