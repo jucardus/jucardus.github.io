@@ -97,7 +97,7 @@ function buscarFecha (recibido) {
   var resultado = [];
   let array = baseArray;
   for (var i = 0; i < array.length; i++) {
-    if (array[i].indexOf(buscar) >= 0) {
+    if (array[i].includes(buscar) >= 0) {
       var linea = array[i].split('▒');
         var orden = linea[0];
         var titulo = linea[1];
