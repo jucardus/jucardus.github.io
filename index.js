@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var characterToInsert = ":";
     var insertionPosition = 11;
     var newString = originalString.slice(0, insertionPosition) + characterToInsert + originalString.slice(insertionPosition);
-    var recibido = '20' + newString;
+    recibido = '20' + newString;
     buscarFecha(recibido);
   } else {
     //console.log('No "e" parameter found in the URL');
