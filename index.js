@@ -1,4 +1,4 @@
-let baseTxt = '';
+//let baseTxt = '';
 let baseArray = [];
 
 // Function to get URL parameter and call buscarFecha
