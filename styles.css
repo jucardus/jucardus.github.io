@@ -127,6 +127,11 @@ button#boton {
   cursor: pointer;
   text-decoration: underline;
 }
+.fechasCopiar:hover {
+  color: OrangeRed;
+  cursor: pointer;
+  opacity: 1;
+}
 h1 {
   font-size: 220%;
   margin-bottom: 20px;
