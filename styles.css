@@ -131,6 +131,7 @@ button#boton {
   color: OrangeRed;
   cursor: pointer;
   opacity: 1;
+  text-decoration: underline;
 }
 h1 {
   font-size: 220%;
