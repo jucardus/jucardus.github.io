@@ -107,7 +107,7 @@ function buscarFecha (recibido) {
         var titulo = linea[1];
         var numero = linea[2];
           var enlaceTuit = 'jucardus.github.io/?e=' + recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
-          var tuit = numero + '. ' + titulo + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + '@jucardus';
+          var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + '@jucardus';
           var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var etiquetas = linea[3];
           var etiquetas = etiquetas.replace(/, /g, ',');
