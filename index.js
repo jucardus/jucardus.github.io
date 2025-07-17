@@ -107,7 +107,7 @@ function buscarFecha (recibido) {
         var titulo = linea[1];
         var numero = linea[2];
           var enlaceTuit = 'jucardus.github.io/?e=' + recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
-          var tuit = numero + '. ' + titulo + '%0A%0A' + linea[5]?.slice(0,180).replace(/<[^>]*>?/gm, '') + '...%0A%0A→ ' + enlaceTuit + '%0A%0A' + '@jucardus';
+          var tuit = numero + '. ' + titulo + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + '@jucardus';
           var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var etiquetas = linea[3];
           var etiquetas = etiquetas.replace(/, /g, ',');
@@ -119,11 +119,12 @@ function buscarFecha (recibido) {
             }
             var etiquetasTodas = etiquetasUnidas.join(', ');
         var fecha = linea[4];
+          var fecha = '<span class="fechas" onclick="copiarEnlace(' + fecha + ')">' + fecha + '</span>;
         var contenido = convertirUrls(linea[5]);
         var imagen = linea[6];
           //if (imagen != '') {imagen = '<div id="imagenes"><a href="' + imagen + '" target="_blank"><img class="imagenes" src="' + imagen + '" /></a></div>';} else {imagen = '';}
           if (imagen != '') {imagen = '<div id="imagenes"><img class="imagenes" src="' + imagen + '" /></div>';} else {imagen = '';}
-      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · <span class="fechas">' + fecha + '</span></div><div id="contenidos">' + contenido + '</div>' + imagen + '</div>';
+      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fecha + '</div><div id="contenidos">' + contenido + '</div>' + imagen + '</div>';
       resultado.push(nuevaLinea);
     }
   }
