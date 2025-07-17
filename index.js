@@ -119,7 +119,7 @@ function buscarFecha (recibido) {
             }
             var etiquetasTodas = etiquetasUnidas.join(', ');
         var fecha = linea[4];
-          var fecha = '<span class="fechas" onclick="copiarEnlace(' + fecha + ')">' + fecha + '</span>;
+          var fecha = '<span class="fechasCopiar" onclick="copiarEnlace(' + fecha + ')">' + fecha + '</span>;
         var contenido = convertirUrls(linea[5]);
         var imagen = linea[6];
           //if (imagen != '') {imagen = '<div id="imagenes"><a href="' + imagen + '" target="_blank"><img class="imagenes" src="' + imagen + '" /></a></div>';} else {imagen = '';}
@@ -385,4 +385,9 @@ function arriba() {
 function limpiarQuery() {
   const cleanUrl = window.location.origin + window.location.pathname;
   history.pushState({}, document.title, cleanUrl);
+}
+
+function copiarEnlace (fecha) {
+  var enlace = 'https://jucardus.github.io/?e=' + fecha.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+  navigator.clipboard.writeText(enlace);
 }
