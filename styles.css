@@ -265,6 +265,9 @@ pre {
   cursor: pointer;
   text-decoration: underline;
 }
+#temasIncluidos {
+  text-align: center;
+}
 ul {
   margin-left: -15px;
 }
