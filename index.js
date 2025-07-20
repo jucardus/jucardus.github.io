@@ -117,7 +117,7 @@ function buscarFecha (recibido) {
           var etiquetas = etiquetas.replace(/, /g, ',');
           var arrayEtiquetas = etiquetas.split(',');
             var etiquetasUnidas = [];
-            var etiquetasAlmohadillas = [];
+            var etiquetasAlmo = [];
             for (var j = 0; j < arrayEtiquetas.length; j++) {
               var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
                 etiquetasUnidas.push(nuevaEtiqueta);
