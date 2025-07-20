@@ -69,6 +69,7 @@ function teclaBuscar (event) {
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscar (recibido) {
+  var recibidoOriginal = recibido;
   document.getElementById('buscador').style.display = 'none';
   var buscar = document.getElementById('textInput').value;
   document.getElementById("mostrar").innerHTML = buscar;
@@ -96,7 +97,8 @@ function buscar (recibido) {
   limpiarHash ();
   limpiarQuery();
   window.scrollTo(0, 0);
-  if (recibido == '{{{TEMAS}}}') {temasTodos();}
+alert(recibidoOriginal);
+  if (recibidoOriginal == 'listar temas') {temasTodos();}
 }
 
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
@@ -502,7 +504,7 @@ function dsc (recibido) {
 function temasTodos () {
   document.getElementById('buscador').style.display = 'none';
   document.getElementById("mostrar").innerHTML = buscar;
-  var resultado = [];
+  var resultadoT = [];
   let array = baseArray;
   for (var i = 0; i < array.length; i++) {
     var linea = array[i].split('▒');
@@ -512,11 +514,11 @@ function temasTodos () {
           var arrayEtiquetas = etiquetas.split(',');
           var etiquetasUnidas = [];
           for (var j = 0; j < arrayEtiquetas.length; j++) {
-            resultado.push(arrayEtiquetas[j]);
+            resultadoT.push(arrayEtiquetas[j]);
           }
   }
-  resultado = resultado.sort((a, b) => a.localeCompare(b));
-  resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+  resultadoT = resultadoT.sort((a, b) => a.localeCompare(b));
+  resultadoT = [...new Set(resultadoT)]; // eliminar elementos repetidos
   var enviar = resultado.join(', ');
   document.getElementById("mostrar").innerHTML = '<p>' + enviar + '.</p>';
   limpiarHash ();
