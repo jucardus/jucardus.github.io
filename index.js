@@ -96,7 +96,7 @@ function buscar (recibido) {
   limpiarHash ();
   limpiarQuery();
   window.scrollTo(0, 0);
-  if (recibido == '{{{temas}}}') {temasTodos();}
+  if (recibido == '{{{TEMAS}}}') {temasTodos();}
 }
 
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
