@@ -121,7 +121,7 @@ function buscarFecha (recibido) {
             for (var j = 0; j < arrayEtiquetas.length; j++) {
               var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
                 etiquetasUnidas.push(nuevaEtiqueta);
-              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n') + '_jucardus';
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
                 etiquetasAlmo.push(nuevaAlmo);
             }
             var etiquetasTodas = etiquetasUnidas.join(', ');
