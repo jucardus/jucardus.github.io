@@ -34,14 +34,12 @@
 }
 a:link, a:visited, a:active {
   color: #014784;
-  opacity: 1;
   text-decoration: none;
   word-break: break-all;
 }
 a:hover, a:focus {
   color: OrangeRed;
   text-decoration: underline;
-  opacity: 1;
   word-break: break-all;
 }
 a.buscadores {
@@ -54,7 +52,6 @@ a.numeros:link, a.numeros:visited, a.numeros:active {
 }
 a.numeros:hover, a.numeros:focus {
   color: OrangeRed;
-  opacity: 1;
   text-decoration: underline;
 }
 .arriba {
@@ -69,9 +66,16 @@ a.numeros:hover, a.numeros:focus {
   color: OrangeRed;
   cursor: pointer;
 }
+.ascdsc {
+  color: #014784;
+}
+.ascdsc:hover {
+  color: OrangeRed;
+  cursor: pointer;
+  text-decoration: underline;
+}
 .barrita {
   color: OrangeRed;
-  opacity: 0.7;
 }
 body {
   font-family: "Arial";
@@ -115,7 +119,6 @@ button#boton {
 .etiquetasArchivo {
   font-size: 100%!important;
   font-variant: small-caps!important;
-  /*opacity: 0.6!important;*/
 }
 .etiquetasTemas {
   color: #014784;
@@ -130,7 +133,6 @@ button#boton {
 .fechasCopiar:hover {
   color: OrangeRed;
   cursor: pointer;
-  opacity: 1;
   text-decoration: underline;
 }
 h1 {
