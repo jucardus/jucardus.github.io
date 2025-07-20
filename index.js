@@ -69,7 +69,7 @@ function teclaBuscar (event) {
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscar (recibido) {
-  var recibidoOriginal = recibido;
+  var recibidoOriginal = document.getElementById('textInput').value;
   document.getElementById('buscador').style.display = 'none';
   var buscar = document.getElementById('textInput').value;
   document.getElementById("mostrar").innerHTML = buscar;
