@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function recientes () {
   //baseArray = base;
   document.getElementById('buscador').style.display = 'none';
@@ -55,12 +57,16 @@ function recientes () {
   window.scrollTo(0, 0);
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function teclaBuscar (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     buscar('');
   }
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscar (recibido) {
   document.getElementById('buscador').style.display = 'none';
@@ -91,6 +97,8 @@ function buscar (recibido) {
   limpiarQuery();
   window.scrollTo(0, 0);
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscarFecha (recibido) {
   document.getElementById('buscador').style.display = 'none';
@@ -140,6 +148,8 @@ function buscarFecha (recibido) {
   window.scrollTo(0, 0);
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function az () {
   document.getElementById('buscador').style.display = 'none';
   var buscar = '-';
@@ -168,6 +178,8 @@ function az () {
   window.scrollTo(0, 0);
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function mostrarBuscador () {
   window.scrollTo(0, 0);
   document.getElementById('buscador').style.display = 'block';
@@ -177,10 +189,14 @@ function mostrarBuscador () {
   limpiarQuery();
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function limpiarHash () {
   const url = window.location.href.split('#')[0];
   history.pushState({}, document.title, url);
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function temasAnterior () { // EN DESUSO
   document.getElementById('buscador').style.display = 'none';
@@ -210,6 +226,8 @@ function temasAnterior () { // EN DESUSO
   limpiarHash ();
   window.scrollTo(0, 0);
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function temas() {
   document.getElementById('buscador').style.display = 'none';
@@ -242,7 +260,7 @@ function temas() {
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-zA-Z]/g, '')
       .toUpperCase();
-    var nuevaEtiqueta = `<li><!--${ordenamiento}--><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> – ${count} entradas</li>`;
+    var nuevaEtiqueta = `<li><!--${ordenamiento}--><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> – ${count} – <span class="ascdsc" onclick="asc('${label}')">Asc.</span> · <span class="ascdsc" onclick="dsc('${label}')">Dsc.</span></li>`;
     resultado.push(nuevaEtiqueta);
   }
 
@@ -257,6 +275,8 @@ function temas() {
   limpiarQuery();
   window.scrollTo(0, 0);
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function archivo() {
   document.getElementById('buscador').style.display = 'none';
@@ -288,6 +308,8 @@ function archivo() {
   limpiarQuery();
   window.scrollTo(0, 0);
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscarTema (recibido) {
   document.getElementById('buscador').style.display = 'none';
@@ -321,6 +343,8 @@ function buscarTema (recibido) {
   window.scrollTo(0, 0);
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function azar () {
   var arrayDesordenar = baseArray.slice();
   arrayDesordenar = desordenar(arrayDesordenar).slice(10,13);
@@ -344,6 +368,8 @@ function azar () {
   window.scrollTo(0, 0);
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function desordenar(arrayD) {
   let currentIndex = arrayD.length, randomIndex;
   while (currentIndex > 0) {
@@ -353,6 +379,8 @@ function desordenar(arrayD) {
   }
   return arrayD;
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function convertirUrls(inputText) {
   const urlRegex = /\b(https?:\/\/[^\s<>"'()]+)/gi;
@@ -368,6 +396,8 @@ function convertirUrls(inputText) {
   });
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function autor () {
   const authorDiv = document.getElementById("autor");
   const mostrarDiv = document.getElementById("mostrar");
@@ -378,16 +408,87 @@ function autor () {
   window.scrollTo(0, 0);
 }
 
-function arriba() {
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function arriba () {
   window.scrollTo(0, 0);
 }
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function limpiarQuery() {
   const cleanUrl = window.location.origin + window.location.pathname;
   history.pushState({}, document.title, cleanUrl);
 }
 
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
 function copiarEnlace (fecha) {
   var enlace = 'https://jucardus.github.io/?e=' + fecha.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
   navigator.clipboard.writeText(enlace);
+}
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function asc (recibido) {
+  document.getElementById('buscador').style.display = 'none';
+  document.getElementById("mostrar").innerHTML = buscar;
+  var buscar = recibido;
+  var resultado = [];
+  let array = baseArray;
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+      var linea = array[i].split('▒');
+        var orden = linea[0];
+        var titulo = linea[1];
+        var numero = linea[2];
+        var etiquetas = linea[3];
+        var fecha = linea[4];
+        var contenido = linea[5];
+      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+      if (etiquetas.indexOf(recibido) >= 0) {
+        resultado.push(nuevaLinea);
+      }
+    }
+  }
+  resultado = resultado.reverse();
+  var enviar = resultado.join('');
+  if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
+  document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
+  document.getElementById('textInput').value = '';
+  limpiarHash ();
+  limpiarQuery();
+  window.scrollTo(0, 0);
+}
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function dsc (recibido) {
+  document.getElementById('buscador').style.display = 'none';
+  document.getElementById("mostrar").innerHTML = buscar;
+  var buscar = recibido;
+  var resultado = [];
+  let array = baseArray;
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
+      var linea = array[i].split('▒');
+        var orden = linea[0];
+        var titulo = linea[1];
+        var numero = linea[2];
+        var etiquetas = linea[3];
+        var fecha = linea[4];
+        var contenido = linea[5];
+      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+      if (etiquetas.indexOf(recibido) >= 0) {
+        resultado.push(nuevaLinea);
+      }
+    }
+  }
+  var enviar = resultado.join('');
+  if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
+  document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
+  document.getElementById('textInput').value = '';
+  limpiarHash ();
+  limpiarQuery();
+  window.scrollTo(0, 0);
 }
