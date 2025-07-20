@@ -69,8 +69,8 @@ function teclaBuscar (event) {
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
 function buscar (recibido) {
-  var recibidoOriginal = document.getElementById('textInput').value;
   document.getElementById('buscador').style.display = 'none';
+  var recibidoOriginal = document.getElementById('textInput').value;
   var buscar = document.getElementById('textInput').value;
   document.getElementById("mostrar").innerHTML = buscar;
   if (recibido != '') {buscar = recibido;}
@@ -97,8 +97,7 @@ function buscar (recibido) {
   limpiarHash ();
   limpiarQuery();
   window.scrollTo(0, 0);
-alert(recibidoOriginal);
-  if (recibidoOriginal == 'listar temas') {temasTodos();}
+  if (recibidoOriginal == 'listar temas') {temasTodos ();}
 }
 
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
@@ -503,7 +502,6 @@ function dsc (recibido) {
 
 function temasTodos () {
   document.getElementById('buscador').style.display = 'none';
-  document.getElementById("mostrar").innerHTML = buscar;
   var resultadoT = [];
   let array = baseArray;
   for (var i = 0; i < array.length; i++) {
