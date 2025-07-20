@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
   // Get the value of the 'e' parameter
   const recibido = params.get('e');
-  
+
   // Check if the parameter exists and call the function
   if (recibido) {
     var originalString = recibido;
@@ -96,6 +96,7 @@ function buscar (recibido) {
   limpiarHash ();
   limpiarQuery();
   window.scrollTo(0, 0);
+  if (recibido == '{{{temas}}}') {temasTodos();}
 }
 
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
@@ -108,24 +109,27 @@ function buscarFecha (recibido) {
   for (var i = 0; i < array.length; i++) {
     var fields = array[i].split('▒');
     var fecha = fields[4];
-    //if (array[i].indexOf(buscar) >= 0) {
     if (fecha === buscar) {
       var linea = array[i].split('▒');
         var orden = linea[0];
         var titulo = linea[1];
-        var numero = linea[2];
-          var enlaceTuit = 'jucardus.github.io/?e=' + recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
-          var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + '@jucardus';
-          var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var etiquetas = linea[3];
           var etiquetas = etiquetas.replace(/, /g, ',');
           var arrayEtiquetas = etiquetas.split(',');
             var etiquetasUnidas = [];
+            var etiquetasAlmohadillas = [];
             for (var j = 0; j < arrayEtiquetas.length; j++) {
               var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
-              etiquetasUnidas.push(nuevaEtiqueta);
+                etiquetasUnidas.push(nuevaEtiqueta);
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n') + '_jucardus';
+                etiquetasAlmo.push(nuevaAlmo);
             }
             var etiquetasTodas = etiquetasUnidas.join(', ');
+            var almohadillas = etiquetasAlmo.join(' ');
+        var numero = linea[2];
+          var enlaceTuit = 'jucardus.github.io/?e=' + recibido.replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+          var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+          var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var fecha = linea[4];
           var fecha = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
         var contenido = convertirUrls(linea[5]);
@@ -488,6 +492,33 @@ function dsc (recibido) {
   if (enviar.indexOf('<') == -1) {enviar = '<div id="previos">[ ninguna coincidencia ]</div>'}
   document.getElementById("mostrar").innerHTML = enviar + '<p/><p/>';
   document.getElementById('textInput').value = '';
+  limpiarHash ();
+  limpiarQuery();
+  window.scrollTo(0, 0);
+}
+
+//¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+
+function temasTodos () {
+  document.getElementById('buscador').style.display = 'none';
+  document.getElementById("mostrar").innerHTML = buscar;
+  var resultado = [];
+  let array = baseArray;
+  for (var i = 0; i < array.length; i++) {
+    var linea = array[i].split('▒');
+      var orden = linea[3];
+      var etiquetas = linea[3];
+        var etiquetas = etiquetas.replace(/, /g, ',');
+          var arrayEtiquetas = etiquetas.split(',');
+          var etiquetasUnidas = [];
+          for (var j = 0; j < arrayEtiquetas.length; j++) {
+            resultado.push(arrayEtiquetas[j]);
+          }
+  }
+  resultado = resultado.sort((a, b) => a.localeCompare(b));
+  resultado = [...new Set(resultado)]; // eliminar elementos repetidos
+  var enviar = resultado.join(', ');
+  document.getElementById("mostrar").innerHTML = '<p>' + enviar + '.</p>';
   limpiarHash ();
   limpiarQuery();
   window.scrollTo(0, 0);
