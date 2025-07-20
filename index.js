@@ -70,8 +70,8 @@ function teclaBuscar (event) {
 
 function buscar (recibido) {
   document.getElementById('buscador').style.display = 'none';
-  var recibidoOriginal = document.getElementById('textInput').value;
   var buscar = document.getElementById('textInput').value;
+  var recibidoOriginal = buscar;
   document.getElementById("mostrar").innerHTML = buscar;
   if (recibido != '') {buscar = recibido;}
   var resultado = [];
@@ -504,20 +504,18 @@ function temasTodos () {
   document.getElementById('buscador').style.display = 'none';
   var resultadoT = [];
   let array = baseArray;
-  for (var i = 0; i < array.length; i++) {
-    var linea = array[i].split('▒');
-      var orden = linea[3];
+  for (var k = 0; k < array.length; k++) {
+    var linea = array[k].split('▒');
       var etiquetas = linea[3];
         var etiquetas = etiquetas.replace(/, /g, ',');
           var arrayEtiquetas = etiquetas.split(',');
-          var etiquetasUnidas = [];
-          for (var j = 0; j < arrayEtiquetas.length; j++) {
-            resultadoT.push(arrayEtiquetas[j]);
-          }
+            for (var l = 0; l < arrayEtiquetas.length; l++) {
+              resultadoT.push(arrayEtiquetas[l]);
+            }
   }
   resultadoT = resultadoT.sort((a, b) => a.localeCompare(b));
   resultadoT = [...new Set(resultadoT)]; // eliminar elementos repetidos
-  var enviar = resultado.join(', ');
+  var enviar = resultadoT.join(', ');
   document.getElementById("mostrar").innerHTML = '<p>' + enviar + '.</p>';
   limpiarHash ();
   limpiarQuery();
