@@ -105,10 +105,13 @@ button#boton {
 }
 .contenedor {
 }
+#encabezado {
+  margin-bottom: 25px;
+}
 #entradas {
 }
 #entradasBusca {
-  /*margin-bottom: 35px;*/
+  /*margin-bottom: 25px;*/
 }
 #entradasAZ {
 }

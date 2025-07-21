@@ -135,9 +135,8 @@ function buscarFecha (recibido) {
           var fecha = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
         var contenido = convertirUrls(linea[5]);
         var imagen = linea[6];
-          //if (imagen != '') {imagen = '<div id="imagenes"><a href="' + imagen + '" target="_blank"><img class="imagenes" src="' + imagen + '" /></a></div>';} else {imagen = '';}
           if (imagen != '') {imagen = '<div id="imagenes"><img class="imagenes" src="' + imagen + '" /></div>';} else {imagen = '';}
-      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h2 class="titulos">' + titulo + '</h2><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fecha + '</div><div id="contenidos">' + contenido + '</div>' + imagen + '</div>';
+      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><div id="encabezado"><h2 class="titulos">' + titulo + '</h2><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fecha + '</div></div><div id="contenidos">' + contenido + '</div>' + imagen + '</div>';
       resultado.push(nuevaLinea);
     }
   }
