@@ -265,7 +265,7 @@ function temas() {
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/[^a-zA-Z]/g, '')
       .toUpperCase();
-    var nuevaEtiqueta = `<li><!--${ordenamiento}--><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> –${count}– <span class="ascdsc" onclick="asc('${label}')">Asc.</span> · <span class="ascdsc" onclick="dsc('${label}')">Dsc.</span></li>`;
+    var nuevaEtiqueta = `<li><!--${ordenamiento}--><span class="etiquetasTemas" onclick="buscarTema('${label}')"><b>${label}</b></span> — <span class="ascdsc" onclick="asc('${label}')">Asc.</span> · <span class="ascdsc" onclick="dsc('${label}')">Dsc.</span> — ${count}</li>`;
     resultado.push(nuevaEtiqueta);
   }
 
@@ -500,7 +500,7 @@ function dsc (recibido) {
 
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
-function temasTodos () {
+function temasTodos () { // listar temas
   document.getElementById('buscador').style.display = 'none';
   var resultadoT = [];
   let array = baseArray;
