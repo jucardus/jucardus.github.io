@@ -11,6 +11,10 @@
   #buscador {
     margin-top: 30px!important;
   }
+  .etiquetasArchivo {
+    font-size: 90%!important;
+    font-variant: small-caps!important;
+  }
   h1 {
     font-size: revert!important;
     margin-bottom: 16px!important;
@@ -120,8 +124,8 @@ button#boton {
   font-variant: small-caps!important;
 }
 .etiquetasArchivo {
-  font-size: 95%!important;
-  font-variant: small-caps!important;
+  font-size: 98%;
+  font-variant: small-caps;
 }
 .etiquetasTemas {
   color: #014784;
