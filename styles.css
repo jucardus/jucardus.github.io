@@ -114,6 +114,7 @@ button#boton {
 }
 #entradasArchivo {
   margin-bottom: 15px;
+  text-align: left!important;
 }
 #entradasBusca {
   /*margin-bottom: 25px;*/
