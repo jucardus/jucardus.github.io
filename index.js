@@ -40,11 +40,27 @@ function recientes () {
     var linea = array[i].split('▒');
       var orden = linea[0];
       var titulo = linea[1];
-      var numero = linea[2];
       var etiquetas = linea[3];
+        var etiquetas = etiquetas.replace(/, /g, ',');
+        var arrayEtiquetas = etiquetas.split(',');
+          var etiquetasUnidas = [];
+          var etiquetasAlmo = [];
+            for (var j = 0; j < arrayEtiquetas.length; j++) {
+              var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                etiquetasUnidas.push(nuevaEtiqueta);
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                etiquetasAlmo.push(nuevaAlmo);
+            }
+          var etiquetasTodas = etiquetasUnidas.join(', ');
+          var almohadillas = etiquetasAlmo.join(' ');
+      var numero = linea[2];
+        var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+        var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+        var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
       var fecha = linea[4];
-      var contenido = linea[5];
-    var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>'; // <div id="contenidos">' + contenido + '</div></div>';
+        var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+      var contenido = convertirUrls(linea[5]);
+    var nuevaLinea = '<div id="entradas"><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
     resultado.push(nuevaLinea);
     contador = contador + 1;
     if (contador == 12) {break;}
@@ -79,13 +95,29 @@ function buscar (recibido) {
   for (var i = 0; i < array.length; i++) {
     if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
       var linea = array[i].split('▒');
-        var orden = linea[0];
-        var titulo = linea[1];
-        var numero = linea[2];
-        var etiquetas = linea[3];
-        var fecha = linea[4];
-        var contenido = linea[5];
-      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+      var orden = linea[0];
+      var titulo = linea[1];
+      var etiquetas = linea[3];
+        var etiquetas = etiquetas.replace(/, /g, ',');
+        var arrayEtiquetas = etiquetas.split(',');
+          var etiquetasUnidas = [];
+          var etiquetasAlmo = [];
+            for (var j = 0; j < arrayEtiquetas.length; j++) {
+              var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                etiquetasUnidas.push(nuevaEtiqueta);
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                etiquetasAlmo.push(nuevaAlmo);
+            }
+          var etiquetasTodas = etiquetasUnidas.join(', ');
+          var almohadillas = etiquetasAlmo.join(' ');
+      var numero = linea[2];
+        var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+        var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+        var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
+      var fecha = linea[4];
+        var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+      var contenido = convertirUrls(linea[5]);
+    var nuevaLinea = '<div id="entradas"><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
       resultado.push(nuevaLinea);
     }
   }
@@ -163,13 +195,29 @@ function az () {
   for (var i = 0; i < array.length; i++) {
     if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
       var linea = array[i].split('▒');
-        var orden = linea[0];
-        var titulo = linea[1];
-        var numero = linea[2];
-        var etiquetas = linea[3];
-        var fecha = linea[4];
-        var contenido = linea[5];
-      var nuevaLinea = '<div id="entradasAZ"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+      var orden = linea[0];
+      var titulo = linea[1];
+      var etiquetas = linea[3];
+        var etiquetas = etiquetas.replace(/, /g, ',');
+        var arrayEtiquetas = etiquetas.split(',');
+          var etiquetasUnidas = [];
+          var etiquetasAlmo = [];
+            for (var j = 0; j < arrayEtiquetas.length; j++) {
+              var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                etiquetasUnidas.push(nuevaEtiqueta);
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                etiquetasAlmo.push(nuevaAlmo);
+            }
+          var etiquetasTodas = etiquetasUnidas.join(', ');
+          var almohadillas = etiquetasAlmo.join(' ');
+      var numero = linea[2];
+        var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+        var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+        var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
+      var fecha = linea[4];
+        var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+      var contenido = convertirUrls(linea[5]);
+    var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
       resultado.push(nuevaLinea);
     }
   }
@@ -291,13 +339,29 @@ function archivo() {
   for (var i = 0; i < array.length; i++) {
     if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
       var linea = array[i].split('▒');
-        var orden = linea[4];
+        var orden = linea[0];
         var titulo = linea[1];
-        var numero = linea[2];
         var etiquetas = linea[3];
+          var etiquetas = etiquetas.replace(/, /g, ',');
+          var arrayEtiquetas = etiquetas.split(',');
+            var etiquetasUnidas = [];
+            var etiquetasAlmo = [];
+              for (var j = 0; j < arrayEtiquetas.length; j++) {
+                var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')">' + arrayEtiquetas[j] + '</span>';
+                  etiquetasUnidas.push(nuevaEtiqueta);
+                var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                  etiquetasAlmo.push(nuevaAlmo);
+              }
+            var etiquetasTodas = etiquetasUnidas.join(', ');
+            var almohadillas = etiquetasAlmo.join(' ');
+        var numero = linea[2];
+          var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+          var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+          var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '.</a>';
         var fecha = linea[4];
-        var contenido = linea[5];
-      var nuevaLinea = '<p class="pArchivo"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')"><b>' + numero + '.</b> ' + titulo + '</span><span class="etiquetasArchivo"> – ' + etiquetas + '</span></p>';
+          var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+        var contenido = convertirUrls(linea[5]);
+      var nuevaLinea = '<div id="entradasArchivo"><b>' + numero + ' <span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></b> – <span class="etiquetasArchivo">' + etiquetasTodas + '</span></div>';
       resultado.push('<h2 style="text-align: center; padding-top: 15px;">' + fecha.slice(0, 7) + '</h2></div>');
       resultado.push('<h3 style="padding-top: 12px;">' + fecha.slice(0, 10) + '</h3>');
       resultado.push(nuevaLinea);
@@ -325,13 +389,29 @@ function buscarTema (recibido) {
   for (var i = 0; i < array.length; i++) {
     if (array[i].toUpperCase().indexOf(buscar.toUpperCase()) >= 0) {
       var linea = array[i].split('▒');
-        var orden = linea[0];
-        var titulo = linea[1];
-        var numero = linea[2];
-        var etiquetas = linea[3];
-        var fecha = linea[4];
-        var contenido = linea[5];
-      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+      var orden = linea[0];
+      var titulo = linea[1];
+      var etiquetas = linea[3];
+        var etiquetas = etiquetas.replace(/, /g, ',');
+        var arrayEtiquetas = etiquetas.split(',');
+          var etiquetasUnidas = [];
+          var etiquetasAlmo = [];
+            for (var j = 0; j < arrayEtiquetas.length; j++) {
+              var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                etiquetasUnidas.push(nuevaEtiqueta);
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                etiquetasAlmo.push(nuevaAlmo);
+            }
+          var etiquetasTodas = etiquetasUnidas.join(', ');
+          var almohadillas = etiquetasAlmo.join(' ');
+      var numero = linea[2];
+        var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+        var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+        var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
+      var fecha = linea[4];
+        var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+      var contenido = convertirUrls(linea[5]);
+    var nuevaLinea = '<div id="entradas"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
       if (etiquetas.indexOf(recibido) >= 0) {
         resultado.push(nuevaLinea);
       }
@@ -357,11 +437,27 @@ function azar () {
     var linea = arrayDesordenar[i].split('▒');
       var orden = linea[0];
       var titulo = linea[1];
-      var numero = linea[2];
       var etiquetas = linea[3];
+        var etiquetas = etiquetas.replace(/, /g, ',');
+        var arrayEtiquetas = etiquetas.split(',');
+          var etiquetasUnidas = [];
+          var etiquetasAlmo = [];
+            for (var j = 0; j < arrayEtiquetas.length; j++) {
+              var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                etiquetasUnidas.push(nuevaEtiqueta);
+              var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                etiquetasAlmo.push(nuevaAlmo);
+            }
+          var etiquetasTodas = etiquetasUnidas.join(', ');
+          var almohadillas = etiquetasAlmo.join(' ');
+      var numero = linea[2];
+        var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+        var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+        var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
       var fecha = linea[4];
-      var contenido = linea[5];
-    var nuevaLinea = '<div id="entradasAZ"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
+        var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+      var contenido = convertirUrls(linea[5]);
+    var nuevaLinea = '<div id="entradas"><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
     resultado.push(nuevaLinea);
   }
   var enviar = resultado.join('');
@@ -445,12 +541,29 @@ function asc (recibido) {
       var linea = array[i].split('▒');
         var orden = linea[0];
         var titulo = linea[1];
-        var numero = linea[2];
+        var etiquetasO = linea[3];
         var etiquetas = linea[3];
+          var etiquetas = etiquetas.replace(/, /g, ',');
+          var arrayEtiquetas = etiquetas.split(',');
+            var etiquetasUnidas = [];
+            var etiquetasAlmo = [];
+              for (var j = 0; j < arrayEtiquetas.length; j++) {
+                var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                  etiquetasUnidas.push(nuevaEtiqueta);
+                var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                  etiquetasAlmo.push(nuevaAlmo);
+              }
+            var etiquetasTodas = etiquetasUnidas.join(', ');
+            var almohadillas = etiquetasAlmo.join(' ');
+        var numero = linea[2];
+          var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+          var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+          var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var fecha = linea[4];
-        var contenido = linea[5];
-      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-      if (etiquetas.indexOf(recibido) >= 0) {
+          var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+        var contenido = convertirUrls(linea[5]);
+      var nuevaLinea = '<div id="entradas"><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
+      if (etiquetasO.indexOf(recibido) >= 0) {
         resultado.push(nuevaLinea);
       }
     }
@@ -478,12 +591,29 @@ function dsc (recibido) {
       var linea = array[i].split('▒');
         var orden = linea[0];
         var titulo = linea[1];
-        var numero = linea[2];
+        var etiquetasO = linea[3];
         var etiquetas = linea[3];
+          var etiquetas = etiquetas.replace(/, /g, ',');
+          var arrayEtiquetas = etiquetas.split(',');
+            var etiquetasUnidas = [];
+            var etiquetasAlmo = [];
+              for (var j = 0; j < arrayEtiquetas.length; j++) {
+                var nuevaEtiqueta = '<span class="menuEnlace" onclick="buscarTema(\'' + arrayEtiquetas[j] + '\')"><b>' + arrayEtiquetas[j] + '</b></span>';
+                  etiquetasUnidas.push(nuevaEtiqueta);
+                var nuevaAlmo = '%23' + arrayEtiquetas[j].toLowerCase().replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i').replace(/ó/g,'o').replace(/ú/g,'u').replace(/ü/g,'v').replace(/ñ/g,'n').replace(/ /g,'_').replace(/-/g,'_') + '_jucardus';
+                  etiquetasAlmo.push(nuevaAlmo);
+              }
+            var etiquetasTodas = etiquetasUnidas.join(', ');
+            var almohadillas = etiquetasAlmo.join(' ');
+        var numero = linea[2];
+          var enlaceTuit = 'jucardus.github.io/?e=' + linea[4].replace(/-/g,'').replace(/:/g,'').replace(/ /g,'').slice(2);
+          var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
+          var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '</a>';
         var fecha = linea[4];
-        var contenido = linea[5];
-      var nuevaLinea = '<div id="entradasBusca"><!--' + orden + '--><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu"><span class="numeros">' + numero + '</span> · <span class="etiquetas">' + etiquetas + '</span> · <span class="fechas">' + fecha + '</span></div></div>';
-      if (etiquetas.indexOf(recibido) >= 0) {
+          var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+        var contenido = convertirUrls(linea[5]);
+      var nuevaLinea = '<div id="entradas"><h3 class="titulos"><span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></h3><div id="submenu">' + numero + ' · <span class="etiquetas">' + etiquetasTodas + '</span> · ' + fechaCopiar + '</div></div>';
+      if (etiquetasO.indexOf(recibido) >= 0) {
         resultado.push(nuevaLinea);
       }
     }
