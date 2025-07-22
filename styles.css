@@ -112,7 +112,8 @@ button#boton {
 #encabezado {
   margin-bottom: 25px;
 }
-#entradas {
+#entradasArchivo {
+  margin-bottom: 15px;
 }
 #entradasBusca {
   /*margin-bottom: 25px;*/
