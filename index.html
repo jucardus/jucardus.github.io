@@ -30,7 +30,7 @@
   <title>JUCARDUS.COM</title>
 
 </head>
-<body>
+<body onload="visitas()">
 
 <div class='contenedor'>
 
@@ -108,15 +108,17 @@
   <script src="index.js"></script>
 
   <script>
-    fetch('https://script.google.com/macros/s/AKfycbzjZafeLhITKMo6jhuNBiYfmxg_-pxKgsgDt_2LuL6jN_pom6ciGh0-u_sHwBt3a2LV/exec')
-      .then(response => response.text())
-      .then(data => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(data, 'text/html');
-        const visits = doc.getElementById('mostrar').textContent;
-        document.getElementById('visitas').textContent = visits;
-      })
-      .catch(error => console.error('Error fetching visits:', error));
+    function visitas () {
+      fetch('https://script.google.com/macros/s/AKfycbzjZafeLhITKMo6jhuNBiYfmxg_-pxKgsgDt_2LuL6jN_pom6ciGh0-u_sHwBt3a2LV/exec')
+        .then(response => response.text())
+        .then(data => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(data, 'text/html');
+          const visits = doc.getElementById('mostrar').textContent;
+          document.getElementById('visitas').textContent = visits;
+        })
+        .catch(error => console.error('Error fetching visits:', error));
+    }
   </script>
 
 </body>
