@@ -359,7 +359,7 @@ function archivo() {
           var tuit = numero + '. ' + titulo + ' — ' + linea[3] + '%0A%0A→ ' + enlaceTuit + '%0A%0A' + almohadillas;
           var numero = '<a class="numeros" target="_blank" href="https://x.com/intent/tweet?text=' + tuit + '">' + numero + '.</a>';
         var fecha = linea[4];
-          var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
+          var fechaCopiar = '<span class="fechasCopiarArchivo" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
         var contenido = convertirUrls(linea[5]);
       var nuevaLinea = '<div id="entradasArchivo"><b>' + numero + ' <span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></b> – <span class="etiquetasArchivo">' + etiquetasTodas + '</span> – ' + fechaCopiar + '</div>';
       resultado.push('<h2 style="text-align: center; padding-top: 15px;">' + fecha.slice(0, 7) + '</h2></div>');
