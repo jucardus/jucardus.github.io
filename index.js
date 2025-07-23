@@ -186,7 +186,7 @@ function buscarFecha (recibido) {
 
 //¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
 
-function az () {
+function indice () {
   document.getElementById('buscador').style.display = 'none';
   var buscar = '-';
   document.getElementById("mostrar").innerHTML = buscar;
@@ -361,7 +361,7 @@ function archivo() {
         var fecha = linea[4];
           var fechaCopiar = '<span class="fechasCopiar" onclick="copiarEnlace(\'' + fecha + '\')">' + fecha + '</span>';
         var contenido = convertirUrls(linea[5]);
-      var nuevaLinea = '<div id="entradasArchivo"><b>' + numero + ' <span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></b> – <span class="etiquetasArchivo">' + etiquetasTodas + '</span></div>';
+      var nuevaLinea = '<div id="entradasArchivo"><b>' + numero + ' <span class="subtituloBuscar" onclick="buscarFecha(\'' + fecha + '\')">' + titulo + '</span></b> – <span class="etiquetasArchivo">' + etiquetasTodas + '</span> – ' + fechaCopiar + '</div>';
       resultado.push('<h2 style="text-align: center; padding-top: 15px;">' + fecha.slice(0, 7) + '</h2></div>');
       resultado.push('<h3 style="padding-top: 12px;">' + fecha.slice(0, 10) + '</h3>');
       resultado.push(nuevaLinea);
