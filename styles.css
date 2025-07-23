@@ -144,6 +144,14 @@ button#boton {
   cursor: pointer;
   text-decoration: underline;
 }
+.fechasCopiarArchivo {
+  font-size: 90%!important;
+}
+.fechasCopiarArchivo:hover {
+  color: OrangeRed;
+  cursor: pointer;
+  text-decoration: underline;
+}
 h1 {
   font-size: 220%;
   margin-bottom: 20px;
