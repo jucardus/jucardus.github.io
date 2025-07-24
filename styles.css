@@ -295,3 +295,8 @@ ul {
 #visitas {
   text-align: center;
 }
+#visitas:after {
+  content: "\A visitas";
+  white-space: pre;
+  font-size: 87%;
+}
