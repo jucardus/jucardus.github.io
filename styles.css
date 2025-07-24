@@ -293,10 +293,12 @@ ul {
   margin-left: -15px;
 }
 #visitas {
+  font-weight: bold;
   text-align: center;
 }
 #visitas:after {
-  content: "\A visitas";
+  content: "\Avisitas";
   white-space: pre;
   font-size: 87%;
+  font-weight: normal;
 }
