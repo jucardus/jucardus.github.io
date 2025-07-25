@@ -1,4 +1,8 @@
 let base = [
+"SITIENESUNAMEJORAMIGAYCONEL▒Si tienes una mejor amiga y con el...▒426▒Reflexiones▒2025-07-24 22:13▒<p>Si tienes una mejor amiga y con el tiempo no le has dado al menos un hijo, en realidad no es tu mejor amiga.</p>▒",
+"ESMEJORUNDESATINOENLIBERTAD▒¿Es mejor un desatino en libertad...▒425▒Reflexiones▒2025-07-24 22:12▒<p>¿Es mejor un desatino en libertad que un acierto en esclavitud? No lo sabrás hasta que seas libre.</p>▒",
+"QUEPASACUANDOUNELEFANTESEAPOYA▒¿Qué pasa cuando un elefante se apoya...▒424▒Humor▒2025-07-24 22:10▒<p>¿Qué pasa cuando un elefante se apoya en una pata? Los patitos se quedan huérfanos.</p>▒",
+"DIOSSIEMPREHADICHOLOMISMO▒Dios siempre ha dicho lo mismo▒423▒Apotegmas▒2025-07-24 22:09▒<p>Dios siempre ha dicho lo mismo. El hombre siempre ha entendido lo que ha querido.</p>▒",
 "LIBROSDELINGUISTICACOURSDELINGUISTIQUEGENERALE▒libros de lingüística ¦ Cours de linguistique générale▒422▒Enlaces, Documentos PDF, Libros▒2025-07-22 22:00▒<ul><li>PDF → https://www.arbredor.com/ebooks/CoursLinguistique.pdf</li><li>https://archive.org/details/f.-de-saussure-cours-de-linguistique-generale-texte-entier</li></ul>▒",
 "TESAUROSMOBYTHESAURUSLISTBYGRADYWARD▒tesauros ¦ Moby Thesaurus List by Grady Ward▒421▒Enlaces, Tesauros▒2025-07-22 21:53▒<ul><li>https://www.gutenberg.org/ebooks/3202</li><li>https://www.moby-thesaurus.org/</li></ul>▒",
 "LIBROSMOBYDICKORTHEWHALE▒libros ¦ Moby Dick; Or, The Whale▒420▒Enlaces, Imágenes, Libros, Literatura en inglés▒2025-07-22 21:06▒<p><i>Moby Dick; Or, The Whale</i> by Herman Melville → https://www.gutenberg.org/ebooks/2701.</p>▒https://i.postimg.cc/GtmnGQzX/2507222106.jpg",
