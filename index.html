@@ -116,7 +116,7 @@
       // 2. Increment (once per session)
       if (!sessionStorage.getItem("counted")) {
         sessionStorage.setItem("counted", "true");
-        await fetch("https://script.google.com/macros/s/AKfycbwETyBc69yCOLqEqYqc1SsDnTI0Ph4pLbos11QCCGaPwkASDlsugEZOwWu5rke0H11yOw/exec", { method: "POST" });
+        await fetch("https://script.google.com/macros/s/AKfycbzQrKhZ_gvrETDA_1wlOG6jbxseinhl-yfVVNKrJYgQo0SsOWMlxMhbpl3198cfXpxkIw/exec", { method: "POST" });
       }
     } catch (error) {
       console.error("Counter error (ignored):", error);
