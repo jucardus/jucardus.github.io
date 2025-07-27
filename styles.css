@@ -298,8 +298,8 @@ ul {
   text-align: center;
 }
 .visitas {
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: 250px;
 }
 /*#visitas:after {
   content: "\Avisitas";
