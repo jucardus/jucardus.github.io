@@ -294,6 +294,7 @@ ul {
 }
 #visitas {
   font-weight: bold;
+  letter-spacing: 2px;
   text-align: center;
 }
 #visitas:after {
