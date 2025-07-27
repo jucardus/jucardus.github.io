@@ -293,17 +293,12 @@ ul {
   margin-left: -15px;
 }
 #visitas {
-  /*font-weight: bold;
-  text-align: center;*/
+  font-weight: bold;
   text-align: center;
 }
-.visitas {
-  height: 250px;
-  width: 250px;
-}
-/*#visitas:after {
+#visitas:after {
   content: "\Avisitas";
   white-space: pre;
   font-size: 87%;
   font-weight: normal;
-}*/
+}
