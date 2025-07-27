@@ -99,31 +99,51 @@
   </div>
 
   <div id="visitas">
-    <p><span id="counter">Cargando</span></p>
-  </div>
+    <p>Visitors: <span id="visitor-counter">Loading...</span></p>
+  </div
+
+<script>
+async function updateCounter() {
+  const counterEl = document.getElementById('visitor-counter');
   
-  <script>
-  async function updateCounter() {
-    try {
-      // 1. Show current count
-      const ghResponse = await fetch(
-        "https://api.github.com/repos/jucardus/jucardus.github.io/counter.json"
-      );
-      const ghData = await ghResponse.json();
-      const count = JSON.parse(atob(ghData.content)).count;
-      document.getElementById("counter").textContent = count;
-  
-      // 2. Increment (once per session)
-      if (!sessionStorage.getItem("counted")) {
-        sessionStorage.setItem("counted", "true");
-        await fetch("https://script.google.com/macros/s/AKfycbzQrKhZ_gvrETDA_1wlOG6jbxseinhl-yfVVNKrJYgQo0SsOWMlxMhbpl3198cfXpxkIw/exec", { method: "POST" });
+  try {
+    // 1. Fetch current count from GitHub
+    const ghResponse = await fetch(
+      'https://api.github.com/repos/jucardus/jucardus.github.io/counter.json',
+      {
+        headers: {
+          'Accept': 'application/vnd.github.v3+json'
+        }
       }
-    } catch (error) {
-      console.error("Counter error (ignored):", error);
+    );
+    
+    if (!ghResponse.ok) throw new Error(`GitHub API error: ${ghResponse.status}`);
+    
+    const ghData = await ghResponse.json();
+    const decodedContent = atob(ghData.content.replace(/\s/g, ''));
+    const currentCount = JSON.parse(decodedContent).count;
+    
+    counterEl.textContent = currentCount;
+
+    // 2. Increment via GAS (once per session)
+    if (!sessionStorage.getItem('counted')) {
+      sessionStorage.setItem('counted', 'true');
+      
+      // Replace with your GAS web app URL
+      await fetch('https://script.google.com/macros/s/AKfycbzKg30txgD_GLR93Ddu8yKUdh7RawYZK6V2IzmoiXMoh_Tme4Hrnq7BIElr4EDMbB_Kqg/exec', {
+        method: 'POST',
+        mode: 'no-cors'
+      });
     }
+    
+  } catch (error) {
+    console.error('Counter error:', error);
+    counterEl.textContent = 'Visitor count unavailable';
   }
-  updateCounter();
-  </script>
+}
+
+updateCounter();
+</script>
   
   <!--span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span-->
 
