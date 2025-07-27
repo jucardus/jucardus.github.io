@@ -109,7 +109,7 @@
     try {
       // 1. Fetch current count from GitHub
       const ghResponse = await fetch(
-        'https://api.github.com/repos/jucardus/jucardus.github.io/counter.json',
+        'https://api.github.com/repos/jucardus/jucardus.github.io/contents/counter.json',
         {
           headers: {
             'Accept': 'application/vnd.github.v3+json'
@@ -130,7 +130,7 @@
         sessionStorage.setItem('counted', 'true');
         
         // Replace with your GAS web app URL
-        await fetch('https://script.google.com/macros/s/AKfycbzKg30txgD_GLR93Ddu8yKUdh7RawYZK6V2IzmoiXMoh_Tme4Hrnq7BIElr4EDMbB_Kqg/exec', {
+        await fetch('https://script.google.com/macros/s/AKfycbxFI_qKoK-TLDMdZU0SowhSXdzcxzUwhAWttkHyJC-uN4rZOd72pji6QdTdHFNusohwCg/exec', {
           method: 'POST',
           mode: 'no-cors'
         });
