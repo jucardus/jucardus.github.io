@@ -99,7 +99,7 @@
   </div>
 
   <div id="visitas">
-    <p><span id="visitor-counter">Loading...</span><br>visitas</p>
+    <p><span id="visitor-counter">Cargando...</span><br><small>visitas</small></p>
   </div>
 
   <script>
@@ -108,8 +108,7 @@
     
     try {
       // 1. Fetch current count from GitHub
-      const ghResponse = await fetch(
-        'https://api.github.com/repos/jucardus/jucardus.github.io/contents/counter.json',
+      const ghResponse = await fetch('https://api.github.com/repos/jucardus/jucardus.github.io/contents/counter.json',
         {
           headers: {
             'Accept': 'application/vnd.github.v3+json'
@@ -144,7 +143,6 @@
   
   updateCounter();
   </script>
-
 
   <!--span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span-->
 
