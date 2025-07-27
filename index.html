@@ -98,10 +98,31 @@
     <img class='qr' src='qr.png'></img>
   </div>
 
-  <iframe style="display: none;" src="https://script.google.com/macros/s/AKfycbyZx4PLMS2OvzbeNyNR3rEst0nLtPOBkQtKquyCblZyKtddOMxs5aV8mHr-PnnoNuNp0Q/exec"></iframe>
-
-  <div id="visitas">1185</div>
-
+  <p>Visits: <span id="counter">Loading...</span></p>
+  
+  <script>
+  async function updateCounter() {
+    try {
+      // 1. Show current count
+      const ghResponse = await fetch(
+        "https://api.github.com/repos/jucardus/jucardus.github.io/counter.json"
+      );
+      const ghData = await ghResponse.json();
+      const count = JSON.parse(atob(ghData.content)).count;
+      document.getElementById("counter").textContent = count;
+  
+      // 2. Increment (once per session)
+      if (!sessionStorage.getItem("counted")) {
+        sessionStorage.setItem("counted", "true");
+        await fetch("https://script.google.com/macros/s/AKfycbwqs_HcgpR03S5eXcXBSqW6RiFmLW9T1Mdvd5EbetBAb9twa0BSZAW-iWB5g-QXmW_eJA/exec", { method: "POST" });
+      }
+    } catch (error) {
+      console.error("Counter error (ignored):", error);
+    }
+  }
+  updateCounter();
+  </script>
+  
   <!--span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span-->
 
 </div>
