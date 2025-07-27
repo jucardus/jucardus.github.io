@@ -302,5 +302,5 @@ ul {
   white-space: pre;
   font-size: 87%;
   font-weight: normal;
-  letter-spacing: revert!important;
+  letter-spacing: normal!important;
 }
