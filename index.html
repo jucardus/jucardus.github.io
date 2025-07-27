@@ -11,6 +11,50 @@
     gtag('config', 'G-44Y9CNCHR8');
   </script>
 
+  <script>
+  async function updateCounter() {
+    const counterEl = document.getElementById('visitor-counter');
+    
+    try {
+      // 1. Fetch current count from GitHub
+      const ghResponse = await fetch(
+        'https://api.github.com/repos/jucardus/jucardus.github.io/counter.json',
+        {
+          headers: {
+            'Accept': 'application/vnd.github.v3+json'
+          }
+        }
+      );
+      
+      if (!ghResponse.ok) throw new Error(`GitHub API error: ${ghResponse.status}`);
+      
+      const ghData = await ghResponse.json();
+      const decodedContent = atob(ghData.content.replace(/\s/g, ''));
+      const currentCount = JSON.parse(decodedContent).count;
+      
+      counterEl.textContent = currentCount;
+  
+      // 2. Increment via GAS (once per session)
+      if (!sessionStorage.getItem('counted')) {
+        sessionStorage.setItem('counted', 'true');
+        
+        // Replace with your GAS web app URL
+        await fetch('https://script.google.com/macros/s/AKfycbzKg30txgD_GLR93Ddu8yKUdh7RawYZK6V2IzmoiXMoh_Tme4Hrnq7BIElr4EDMbB_Kqg/exec', {
+          method: 'POST',
+          mode: 'no-cors'
+        });
+      }
+      
+    } catch (error) {
+      console.error('Counter error:', error);
+      counterEl.textContent = 'Visitor count unavailable';
+    }
+  }
+  
+  updateCounter();
+  </script>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Escritos varios y herramientas diversas.">
@@ -102,49 +146,6 @@
     <p><span id="visitor-counter">Loading...</span><br>visitas</p>
   </div
 
-<script>
-async function updateCounter() {
-  const counterEl = document.getElementById('visitor-counter');
-  
-  try {
-    // 1. Fetch current count from GitHub
-    const ghResponse = await fetch(
-      'https://api.github.com/repos/jucardus/jucardus.github.io/counter.json',
-      {
-        headers: {
-          'Accept': 'application/vnd.github.v3+json'
-        }
-      }
-    );
-    
-    if (!ghResponse.ok) throw new Error(`GitHub API error: ${ghResponse.status}`);
-    
-    const ghData = await ghResponse.json();
-    const decodedContent = atob(ghData.content.replace(/\s/g, ''));
-    const currentCount = JSON.parse(decodedContent).count;
-    
-    counterEl.textContent = currentCount;
-
-    // 2. Increment via GAS (once per session)
-    if (!sessionStorage.getItem('counted')) {
-      sessionStorage.setItem('counted', 'true');
-      
-      // Replace with your GAS web app URL
-      await fetch('https://script.google.com/macros/s/AKfycbzKg30txgD_GLR93Ddu8yKUdh7RawYZK6V2IzmoiXMoh_Tme4Hrnq7BIElr4EDMbB_Kqg/exec', {
-        method: 'POST',
-        mode: 'no-cors'
-      });
-    }
-    
-  } catch (error) {
-    console.error('Counter error:', error);
-    counterEl.textContent = 'Visitor count unavailable';
-  }
-}
-
-updateCounter();
-</script>
-  
   <!--span class='arriba' onclick='arriba()' style='bottom:20px;'>&#12276;</span-->
 
 </div>
