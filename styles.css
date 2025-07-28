@@ -293,11 +293,12 @@ ul {
   margin-left: -15px;
 }
 #visitas {
+  font-size: 110%;
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
 }
-#visitasss:after {
+#visitas:after {
   content: "\Avisitas";
   white-space: pre;
   font-size: 87%;
