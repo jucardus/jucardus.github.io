@@ -74,6 +74,12 @@ function processPostList12(root)
                     labels.push(etqt);
                   }
                   var etiquetas = '' + labels.join(' '); // 🏷
+                var etiquetasOrigen = []
+                  for (var l = 0; l < entry.category.length; l++) {
+                      var etqtO = entry.category[l].term;
+                      etiquetasOrigen.push(etqtO);
+                  }
+                  var etiquetasSimples = etiquetasOrigen.join(', ');
 
                 for (var j = 0; j < entry.link.length; j++)
                 {
@@ -83,7 +89,7 @@ function processPostList12(root)
                         if (url && url.length > 0 && title && title.length > 0)
                         {
                             var titleX = title.replace(/ /g,'%20');
-                          	var entrada = '<a href="https://x.com/intent/tweet?text=' + titleX + ' ' + url + '%0A%0A' + etiquetas + '" target="_blank">' + date + ' - ' + title + '</a> -- ' + '<a href="https://www.facebook.com/sharer/sharer.php?u=' + url + '" target="_blank">FB</a>';
+                          	var entrada = '<a href="https://x.com/intent/tweet?text=' + titleX + ' — ' + etiquetasOrigen + '%0A%0A→ ' + url + '%0A%0A' + etiquetas + '" target="_blank">' + date + ' - ' + title + '</a> -- ' + '<a href="https://www.facebook.com/sharer/sharer.php?u=' + url + '" target="_blank">FB</a>';
                             allResults.push(entrada);
                             counter = counter + 1;
                         }
