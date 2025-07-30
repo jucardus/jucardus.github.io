@@ -10,4 +10,4 @@
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Sitios y contacto:** [https://jucardus.blogspot.com](https://jucardus.blogspot.com)
+* **Sitios y contacto:** [https://jucardus.github.io](https://jucardus.github.io)
