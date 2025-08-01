@@ -20,13 +20,19 @@ Enlaces varios de cosas muchas, organizados por temas y subtemas, de asuntos div
 
 ### [Escritos varios](https://s.jucardus.com)
 
-Cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gusta. Enlace corto: **s.jucardus.com**.
+Blog con cosas que escribo, entre apotegmas, citas, cuentos, poesía, reflexiones y más, a mi parecer todo muy deleznable, pero hay a quienes les gusta. Enlace corto: **b.jucardus.com**.
 
 ---
 
-### [Facebook](https://f.jucardus.com)
+### [Facebook](https://fb.jucardus.com)
 
-Actualmente sin contenido. Ya se usará para algo, o quizá tampoco. Estoy esperando a que me permitan cambiar el nombre de usuario. Enlace corto: **f.jucardus.com**.
+Actualmente sin contenido. Ya se usará para algo, o quizá tampoco. Estoy esperando a que me permitan cambiar el nombre de usuario. Enlace corto: **fb.jucardus.com**.
+
+---
+
+### [Fotografías](https://f.jucardus.com)
+
+Mi álbum de fotografías, clasificadas por mes y con la página de inicio conteniendo todas las fotos. En cada subpágina puedes desplazarte entre las fotos usando la barra de desplazamiento o deslizando el sitio si la visitas con celular. Las fotografías más recientes siempre se muestran al inicio. Enlace corto: **f.jucardus.com**.
 
 ---
 
