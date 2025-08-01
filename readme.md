@@ -79,5 +79,5 @@ Mi cuenta en X Twitter, con poco y nada de momento. Por lo general uso la cuenta
 ---
 
 <p align="center">
-  <img src="https://quickchart.io/qr?text=https://jucardus.github.io&size=250x250&margin=0&ecLevel=M&dark=333&light=efd&&format=png" width="200">
+  <img src="https://quickchart.io/qr?text=https://jucardus.github.io&size=250x250&margin=0&ecLevel=M&dark=333&light=efd&&format=png" width="140">
 </p>
