@@ -4,11 +4,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-44Y9CNCHR8');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-44Y9CNCHR8');
     </script>
 
     <meta charset="UTF-8">
@@ -27,19 +26,24 @@
         if (path === "/" || path === "") {
             window.location.replace(baseBoxUrl);
         } else {
-            // Extract folder ID, removing leading and trailing slashes
-            const folderId = path.replace(/^\/+|\/+$/g, "");
-            // Validate folderId (basic check for numeric ID)
-            if (folderId && /^\d+$/.test(folderId)) {
-                window.location.replace(`${baseBoxUrl}/folder/${folderId}`);
+            // Extract ID, removing leading and trailing slashes
+            const id = path.replace(/^\/+|\/+$/g, "");
+            // Check if the ID starts with 'f' for files
+            if (id.startsWith("f") && id.length > 1 && /^\d+$/.test(id.slice(1))) {
+                // File redirect: remove 'f' prefix and use /file/
+                const fileId = id.slice(1);
+                window.location.replace(`${baseBoxUrl}/file/${fileId}`);
+            } else if (/^\d+$/.test(id)) {
+                // Folder redirect: use /folder/
+                window.location.replace(`${baseBoxUrl}/folder/${id}`);
             } else {
-                // Fallback to base URL if folderId is invalid
+                // Fallback to base URL for invalid IDs
                 window.location.replace(baseBoxUrl);
             }
         }
     </script>
 </head>
 <body>
-    <p>Redirecting to Box shared folder...</p>
+    <p>Redirecting to Box shared folder or file...</p>
 </body>
 </html>
