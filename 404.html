@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=https://app.box.com/s/7km3ep8ne775bk43siu5wm89h8rcya8f">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+        const baseBoxUrl = "https://app.box.com/s/7km3ep8ne775bk43siu5wm89h8rcya8f";
+
+        // If the path is root ("/"), redirect to the base Box URL
+        if (path === "/" || path === "") {
+            window.location.replace(baseBoxUrl);
+        } else {
+            // Extract the folder ID from the path (e.g., "/319593177204" -> "319593177204")
+            const folderId = path.replace(/^\/+/, "");
+            // Redirect to the specific folder URL
+            window.location.replace(`${baseBoxUrl}/folder/${folderId}`);
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to Box shared folder...</p>
+</body>
+</html>
