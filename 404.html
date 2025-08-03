@@ -7,7 +7,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-44Y9CNCHR8');
     </script>
 
@@ -29,16 +28,20 @@
         } else {
             // Extract ID, removing leading and trailing slashes
             const id = path.replace(/^\/+|\/+$/g, "");
-            // Check if the ID starts with 'f' for files
-            if (id.startsWith("f") && id.length > 1 && /^\d+$/.test(id.slice(1))) {
-                // File redirect: remove 'f' prefix and use /file/
-                const fileId = id.slice(1);
-                window.location.replace(`${baseBoxUrl}/file/${fileId}`);
-            } else if (/^\d+$/.test(id)) {
-                // Folder redirect: use /folder/
-                window.location.replace(`${baseBoxUrl}/folder/${id}`);
+            // Check if the ID is numeric and has the correct length
+            if (/^\d+$/.test(id)) {
+                if (id.length === 12) {
+                    // Folder redirect: 12 digits
+                    window.location.replace(`${baseBoxUrl}/folder/${id}`);
+                } else if (id.length === 13) {
+                    // File redirect: 13 digits
+                    window.location.replace(`${baseBoxUrl}/file/${id}`);
+                } else {
+                    // Invalid length, redirect to base URL
+                    window.location.replace(baseBoxUrl);
+                }
             } else {
-                // Fallback to base URL for invalid IDs
+                // Non-numeric ID, redirect to base URL
                 window.location.replace(baseBoxUrl);
             }
         }
