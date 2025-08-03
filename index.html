@@ -38,11 +38,11 @@
                     // File redirect: 13 digits
                     window.location.replace(`${baseBoxUrl}/file/${id}`);
                 } else {
-                    // Invalid length, redirect to base URL
+                    // Invalid length (not 12 or 13 digits), redirect to root folder
                     window.location.replace(baseBoxUrl);
                 }
             } else {
-                // Non-numeric ID, redirect to base URL
+                // Non-numeric ID, redirect to root folder
                 window.location.replace(baseBoxUrl);
             }
         }
@@ -50,5 +50,8 @@
 </head>
 <body>
     <p>Redirecting to Box shared folder or file...</p>
+    <noscript>
+        <p>JavaScript is required for specific folder or file redirects. You are being redirected to the root folder.</p>
+    </noscript>
 </body>
 </html>
