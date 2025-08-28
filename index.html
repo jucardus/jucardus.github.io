@@ -10,8 +10,48 @@
         
         gtag('config', 'G-44Y9CNCHR8');
     </script>
-    <meta http-equiv="refresh" content="0; url=https://jucardus.blogspot.com" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=https://app.box.com/s/kf42nfw7a55a1ezk099t0rk7z30ofypb">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+        const baseBoxUrl = "https://app.box.com/s/kf42nfw7a55a1ezk099t0rk7z30ofypb";
+
+        // Log the path for debugging (remove in production)
+        console.log("Current path:", path);
+
+        // If the path is root ("/") or empty, redirect to the base Box URL
+        if (path === "/" || path === "") {
+            window.location.replace(baseBoxUrl);
+        } else {
+            // Extract ID, removing leading and trailing slashes
+            const id = path.replace(/^\/+|\/+$/g, "");
+            // Check if the ID is numeric and has the correct length
+            if (/^\d+$/.test(id)) {
+                if (id.length === 12) {
+                    // Folder redirect: 12 digits
+                    window.location.replace(`${baseBoxUrl}/folder/${id}`);
+                } else if (id.length === 13) {
+                    // File redirect: 13 digits
+                    window.location.replace(`${baseBoxUrl}/file/${id}`);
+                } else {
+                    // Invalid length (not 12 or 13 digits), redirect to root folder
+                    window.location.replace(baseBoxUrl);
+                }
+            } else {
+                // Non-numeric ID, redirect to root folder
+                window.location.replace(baseBoxUrl);
+            }
+        }
+    </script>
 </head>
 <body>
+    <p>Redirecting to Box shared folder or file...</p>
+    <noscript>
+        <p>JavaScript is required for specific folder or file redirects. You are being redirected to the root folder.</p>
+    </noscript>
 </body>
 </html>
