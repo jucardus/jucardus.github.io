@@ -1,4 +1,4 @@
 # [Jucardus.com](https://jucardus.com)
 
-* Sitio central → [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* Sitio central → [jucardus.com](https://jucardus.com)
 * Invitación a pCloud → [i.jucardus.com](https://i.jucardus.com)
