@@ -10,5 +10,5 @@
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Sitio central:** [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* **Sitio central:** [jucardus.com](https://jucardus.com)
 * **Invitación:** [i.jucardus.com](https://i.jucardus.com)
