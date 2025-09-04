@@ -7,39 +7,31 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
         gtag('config', 'G-44Y9CNCHR8');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=https://mega.nz/folder/PZBTBayJ#vmwQWSCFJOnsflboPBkFcw">
+    <meta http-equiv="refresh" content="2;url=https://mega.nz/folder/PZBTBayJ#vmwQWSCFJOnsflboPBkFcw">
     <title>Redirecting...</title>
     <script>
-        // Get the current URL path
         const path = window.location.pathname;
         const baseMegaUrl = "https://mega.nz/folder/PZBTBayJ#vmwQWSCFJOnsflboPBkFcw";
 
-        // Log the path for debugging (remove in production)
-        console.log("Current path:", path);
-
-        // If the path is root ("/") or empty, redirect to the base Mega URL
         if (path === "/" || path === "") {
             window.location.replace(baseMegaUrl);
         } else {
-            // Extract ID, removing leading and trailing slashes
             const id = path.replace(/^\/+|\/+$/g, "");
-            if (id.length === 8) {
+            if (/^[a-zA-Z0-9]{8}$/.test(id)) {
                 window.location.replace(`${baseMegaUrl}/folder/${id}`);
             } else {
-                // Non-good ID, redirect to root folder
                 window.location.replace(baseMegaUrl);
             }
         }
     </script>
 </head>
 <body>
-    <p>Redirecting to Mega shared folder or file...</p>
+    <p>Redirecting to Mega shared folder or file... Please wait.</p>
     <noscript>
         <p>JavaScript is required for specific folder or file redirects. You are being redirected to the root folder.</p>
     </noscript>
