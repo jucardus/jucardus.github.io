@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0.3;url=https://jucardus.blogspot.com/">
-    <title>Redirecting...</title>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-44Y9CNCHR8');
-      setTimeout(() => window.location.href="https://jucardus.blogspot.com/", 300);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-44Y9CNCHR8');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2;url=https://mega.nz/folder/PZBTBayJ#vmwQWSCFJOnsflboPBkFcw">
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname;
+        const baseMegaUrl = "https://mega.nz/folder/PZBTBayJ#vmwQWSCFJOnsflboPBkFcw";
+
+        if (path === "/" || path === "") {
+            window.location.replace(baseMegaUrl);
+        } else {
+            const id = path.replace(/^\/+|\/+$/g, "");
+            if (/^[a-zA-Z0-9]{8}$/.test(id)) {
+                window.location.replace(`${baseMegaUrl}/folder/${id}`);
+            } else {
+                window.location.replace(baseMegaUrl);
+            }
+        }
     </script>
 </head>
 <body>
-    <p>Redirecting... <a href="https://jucardus.blogspot.com/">(Click here if not redirected)</a></p>
+    <p>Redirecting to Mega shared folder or file... Please wait.</p>
+    <noscript>
+        <p>JavaScript is required for specific folder or file redirects. You are being redirected to the root folder.</p>
+    </noscript>
 </body>
 </html>
