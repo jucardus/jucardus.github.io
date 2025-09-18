@@ -10,5 +10,5 @@
 
 * **Autor:** Julio Cárdenas Pelizzari ©
 * **Enlace corto:** h.jucardus.com
-* **Sitio central:** [jucardus.com](https://jucardus.com)
+* **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
 * **Invitación:** [i.jucardus.com](https://i.jucardus.com)
