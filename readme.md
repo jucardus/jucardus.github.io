@@ -1,4 +1,4 @@
-# [Jucardus.com](https://jucardus.com)
+# [Jucardus.com](https://jucardus.github.io)
 
-* Sitio central → [jucardus.com](https://jucardus.com)
-* Invitación a pCloud → [i.jucardus.com](https://i.jucardus.com)
+* Sitio central → [jucardus.github.io](https://jucardus.github.io)
+* Invitación a pCloud → [u.pcloud.com](https://u.pcloud.com/#page=register&invite=sBID7ZQ96upV)
