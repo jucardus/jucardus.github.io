@@ -1,5 +1,5 @@
 # 我有一隻貓。
-^inicio ¦ origen ¦ actividad ¦ índice^
+^^inicio ¦ origen ¦ actividad ¦ índice^^
 
 * {CT} 我有一隻貓。
 * {CS} 我有一只猫。
