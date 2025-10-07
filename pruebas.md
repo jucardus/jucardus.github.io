@@ -1,5 +1,5 @@
 ## Documento md para pruebas de edición
 
-* Texto con un * → *texto con uno solo*
-* Texto en cursiva con ** → **texto en cursiva**
-* Texto en cursiva y negrita usando *** → ***texto en cursiva y negrita***
+* Texto en cursiva con un * → *texto con uno solo*
+* Texto en negrita con dos ** → **texto en cursiva**
+* Texto en cursiva y negrita usando tres *** → ***texto en cursiva y negrita***
