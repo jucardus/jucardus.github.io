@@ -8,7 +8,7 @@
 
 ### Descarga
 
-Para descargar estas herramientas (y otras), acude al sitio [mega.nz/folder/RFF0B...](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g/folder/BQExwLyY), parte del repositorio **mega.jucardus.com**.
+Para descargar estas herramientas (y otras), acude al sitio [mega.nz/folder/RFF0B...](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g/folder/BQExwLyY), parte del repositorio *mega.jucardus.com*.
 
 ### Autor y contacto
 
