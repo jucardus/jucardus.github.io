@@ -6,6 +6,10 @@
 * [**Editor pinyin:**](https://jucardus.github.io/pinyin.html) Escribe las sílabas chinas con números y el editor las transformará en las sílabas pinyin con los tonos correctos. - tr.ee/pinyin
 * [**Tarjetas mnemotécnicas:**](https://jucardus.github.io/memo.html) Tarjetas mnemotécnicas varias. - tr.ee/memo
 
+### Descarga
+
+Para descargar estas herramientas (y otras), acude al sitio [mega.nz/folder/RFF0B...](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g/folder/BQExwLyY), parte del repositorio **mega.jucardus.com**.
+
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
