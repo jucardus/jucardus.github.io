@@ -170,6 +170,7 @@
 </div>
 
 <script>
+    let numeroEntradas = 0;
     async function loadMarkdown() {
         try {
             // Get raw markdown
@@ -182,6 +183,9 @@
 
             const markdownText = await markdownResponse.text();
 
+            // Extract the "Actividad reciente" section with configurable limit
+            const activityContent = extractAndLimitActivity(markdownText);
+
             // First try: Render to HTML using GitHub API
             try {
                 const htmlResponse = await fetch('https://api.github.com/markdown', {
@@ -191,7 +195,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        text: markdownText,
+                        text: activityContent,
                         mode: 'markdown'
                     })
                 });
@@ -199,7 +203,7 @@
                 if (htmlResponse.ok) {
                     const html = await htmlResponse.text();
                     document.getElementById('markdown-content').innerHTML = html;
-                    console.log('✓ Content loaded via GitHub API');
+                    console.log('✓ Activity content loaded via GitHub API');
                     return; // Success - exit function
                 } else {
                     throw new Error(`GitHub API error: ${htmlResponse.status}`);
@@ -208,7 +212,7 @@
                 console.warn('GitHub API failed, falling back to client-side parsing:', apiError);
 
                 // Fallback: Use client-side markdown parser
-                fallbackToClientSideParsing(markdownText);
+                fallbackToClientSideParsing(activityContent);
             }
 
         } catch (error) {
@@ -216,6 +220,53 @@
             document.getElementById('markdown-content').innerHTML =
                 '<div class="fallback-warning">⚠️ Unable to load the activity content. Please check the console for errors.</div>';
         }
+    }
+
+    function extractAndLimitActivity(fullText) {
+        const activityHeader = '### Actividad reciente en Jucardus';
+        const startIndex = fullText.indexOf(activityHeader);
+
+        if (startIndex === -1) {
+            return '### Actividad reciente en Jucardus\n\n*No activity entries found*';
+        }
+
+        // Find the end of the activity section (next header or end of file)
+        const nextSectionRegex = /\n##? [^\n]/g;
+        nextSectionRegex.lastIndex = startIndex + activityHeader.length;
+        const nextSectionMatch = nextSectionRegex.exec(fullText);
+
+        const endIndex = nextSectionMatch ? nextSectionMatch.index : fullText.length;
+
+        // Extract the entire activity section
+        let activitySection = fullText.substring(startIndex, endIndex).trim();
+
+        // Split into paragraphs (separated by double line breaks)
+        const paragraphs = activitySection.split('\n\n');
+
+        // Keep the header (first paragraph) and handle activity entries
+        const header = paragraphs[0]; // This is "### Actividad reciente"
+        const activityEntries = paragraphs.slice(1); // These are the actual entries
+
+        const entryLimit = numeroEntradas; // ← CHANGE THIS NUMBER: 0 = all entries, any other number = limit
+
+        let finalContent;
+
+        if (entryLimit === 0) {
+            // Show ALL entries - no limit, no truncation message
+            finalContent = header + '\n\n' + activityEntries.join('\n\n');
+        } else {
+            // Apply limit and show truncation message if needed
+            const limitedEntries = activityEntries.slice(0, entryLimit);
+            finalContent = header + '\n\n' + limitedEntries.join('\n\n');
+
+            // Add truncation note if we limited the entries
+            if (activityEntries.length > entryLimit) {
+                //finalContent += '\n\n*--- Showing most recent ' + entryLimit + ' activities ---*';
+                finalContent += '\n\n~ Para ver toda la actividad, clica <a href="https://github.com/jucardus/jucardus.github.io/blob/main/readme.md" rel="noopener noreferrer nofollow external" target="_blank"><b>AQUÍ</b></a>. ~';
+            }
+        }
+
+        return finalContent;
     }
 
     function fallbackToClientSideParsing(markdownText) {
@@ -235,7 +286,7 @@
             const warning = '<div class="fallback-warning">ℹ️ Showing content with client-side rendering (GitHub API unavailable)</div>';
             document.getElementById('markdown-content').innerHTML = warning + html;
 
-            console.log('✓ Content loaded via client-side parser');
+            console.log('✓ Activity content loaded via client-side parser');
         } catch (parseError) {
             console.error('Client-side parsing also failed:', parseError);
             document.getElementById('markdown-content').innerHTML =
