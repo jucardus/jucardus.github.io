@@ -223,11 +223,11 @@
     }
 
     function extractAndLimitActivity(fullText) {
-        const activityHeader = '### Actividad reciente en Jucardus';
+        const activityHeader = '### Actividad reciente en [Jucardus](https://jucardus.github.io/)';
         const startIndex = fullText.indexOf(activityHeader);
 
         if (startIndex === -1) {
-            return '### Actividad reciente en Jucardus\n\n*No activity entries found*';
+            return '### Actividad reciente en [Jucardus](https://jucardus.github.io/)\n\n*No activity entries found*';
         }
 
         // Find the end of the activity section (next header or end of file)
