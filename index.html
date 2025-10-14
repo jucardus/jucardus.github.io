@@ -14,7 +14,7 @@
     <meta content='Mi sitio central, con todas mis páginas.' name='description'/>
     <meta content='Julio Cárdenas Pelizzari' name='author'/>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!--meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUCARDUS.COM</title>
     <style>
@@ -79,6 +79,11 @@
       }
       img {
         width: 100px;
+      }
+      #markdown-content {
+        font-size: 93%;
+        margin-top: 50px!important;
+        text-align: left!important;
       }
       #prrfs {
         background-color: #006060;
@@ -160,7 +165,87 @@
 
 <div id='estrella'>&#10038;</div>
 
+<div id="markdown-content"></div>
+
 </div>
+
+<script>
+    async function loadMarkdown() {
+        try {
+            // Get raw markdown
+            const rawUrl = 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/readme.md';
+            const markdownResponse = await fetch(rawUrl);
+
+            if (!markdownResponse.ok) {
+                throw new Error(`Failed to fetch markdown: ${markdownResponse.status}`);
+            }
+
+            const markdownText = await markdownResponse.text();
+
+            // First try: Render to HTML using GitHub API
+            try {
+                const htmlResponse = await fetch('https://api.github.com/markdown', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: markdownText,
+                        mode: 'markdown'
+                    })
+                });
+
+                if (htmlResponse.ok) {
+                    const html = await htmlResponse.text();
+                    document.getElementById('markdown-content').innerHTML = html;
+                    console.log('✓ Content loaded via GitHub API');
+                    return; // Success - exit function
+                } else {
+                    throw new Error(`GitHub API error: ${htmlResponse.status}`);
+                }
+            } catch (apiError) {
+                console.warn('GitHub API failed, falling back to client-side parsing:', apiError);
+
+                // Fallback: Use client-side markdown parser
+                fallbackToClientSideParsing(markdownText);
+            }
+
+        } catch (error) {
+            console.error('Failed to load markdown:', error);
+            document.getElementById('markdown-content').innerHTML =
+                '<div class="fallback-warning">⚠️ Unable to load the activity content. Please check the console for errors.</div>';
+        }
+    }
+
+    function fallbackToClientSideParsing(markdownText) {
+        try {
+            // Configure marked.js options to match GitHub flavor
+            marked.setOptions({
+                breaks: true,
+                gfm: true,
+                tables: true,
+                sanitize: false
+            });
+
+            // Parse markdown to HTML
+            const html = marked.parse(markdownText);
+
+            // Show warning about using fallback
+            const warning = '<div class="fallback-warning">ℹ️ Showing content with client-side rendering (GitHub API unavailable)</div>';
+            document.getElementById('markdown-content').innerHTML = warning + html;
+
+            console.log('✓ Content loaded via client-side parser');
+        } catch (parseError) {
+            console.error('Client-side parsing also failed:', parseError);
+            document.getElementById('markdown-content').innerHTML =
+                '<div class="fallback-warning">❌ Unable to render markdown content. Both GitHub API and client-side parsing failed.</div>';
+        }
+    }
+
+    // Load content when page is ready
+    document.addEventListener('DOMContentLoaded', loadMarkdown);
+</script>
 
 </body>
 </html>
