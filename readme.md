@@ -1,6 +1,6 @@
 ### Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
-**25-10-14** - Además de la *Actividad reciente* al pie de página, agregué un enlace en la lista principal, para acceder a la lista completa de adiciones y modificaciones en el documento [_readme.md_](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md).
+**25-10-14** - Además de la *Actividad reciente* al pie de página, agregué un enlace en la lista principal, para acceder a la lista completa de adiciones y modificaciones en el documento *readme.md*.
 
 **25-10-14** - Con la ayuda de DeepSeek, acabo de crear un formulario para agregar entradas a la *Actividad reciente* de mi sitio principal. El ejecutable, hecho en Google Apps Script, agrega la nueva entrada al inicio del documento *readme.me*, incluyendo la fecha de creación al inicio de la entrada.
 
