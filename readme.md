@@ -1,5 +1,7 @@
 ### Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
+**25-10-15** - Reactivé jucardus.blogspot.com, mi blog en Blogger, con más de cuatrocientas entradas. También agregué el enlace correspondiente [BLOG JUCARDUS](https://jucardus.blogspot.com). Muy probablemente continúe trabajando en él.
+
 **25-10-15** - Estoy evaluando las ventajas y desventajas de dejar de publicar contenido en Facebook y de volver a hacerlo en Blogger (jucardus.blogspot.com). Entre las razones principales está la de que Facebook no enumera, al clicar en ella, todas las entradas que contienen una etiqueta creada por uno mismo, y también que no admite ciertos enlaces, como por ejemplo a carpetas de Mega.nz. Dichos inconvenientes no existen en Blogger.
 
 **25-10-14** - Además de la *Actividad reciente* al pie de página, agregué un enlace en la lista principal, para acceder a la lista completa de adiciones y modificaciones en el documento *readme.md*.
