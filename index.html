@@ -18,26 +18,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUCARDUS.COM</title>
     <style>
-      @media only screen and (max-width: 768px) {
-        #barrita {
-          display: none!important;
-        }
+      @media (max-width: 768px) {
         body {
-          padding: 50px 4px 130px 4px !important;
+          /*max-width: 100%;*/
+          padding: 30px 4px 130px 4px !important;
+          width: auto !important;
+          overflow-x: hidden !important;
+          /*box-shadow: 0 0 0 1px red inset;*/
+        }
+        #contenido {
+          max-width: 100% !important;
+          /*overflow-x: hidden !important;*/
         }
         #estrella {
           padding: 25px 0px 30px 0px !important;
         }
-        html, body {
-          width: auto !important;
-          overflow-x: hidden !important;
-        }
-        #titulo {
+        #tituloo {
           position: sticky !important;
           top: 17px !important;
-          z-index: 999 !important;
-          margin-top: 17px !important; /* Key addition */
-          background-color: #006060; /* Ensure background for visibility */
+          z-index: 1000 !important;
+          margin-top: 17px !important;
+          background-color: #006060 !important;
+          margin-bottom: 37px !important;
         }
       }
       a:link, a:visited {
@@ -134,11 +136,11 @@
           transition-delay: 0s;
       }
       #titulo {
-        background-color: #006060;
-        margin-bottom: 37px!important;
-        position: sticky!important;
-        top: 17px!important;
-        z-index: 999!important;
+        background-color: #006060 !important;
+        margin-bottom: 37px !important;
+        position: sticky !important;
+        top: 17px !important;
+        z-index: 1000 !important;
       }
     </style>
 
