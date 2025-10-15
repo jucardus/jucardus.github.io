@@ -31,10 +31,13 @@
         }
         #titulo {
           position: sticky !important;
-          top: 17px !important;
+          top: 17px !important; /* Sticks below barrita */
           z-index: 999 !important;
-          margin-top: 17px !important; /* Key addition */
-          background-color: #006060; /* Ensure background for visibility */
+          margin-top: 0 !important; /* Remove this - let sticky handle positioning */
+          background-color: #006060;
+          /* Add these to force sticky context */
+          align-self: flex-start; /* If using flexbox */
+          width: 100%; /* Ensure full width */
         }
       }
       a:link, a:visited {
