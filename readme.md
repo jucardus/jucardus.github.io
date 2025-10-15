@@ -1,6 +1,6 @@
 ### Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
-**25-10-15** - Ahora la entrada «[Colores CSS con nombre](https://jucardus.blogspot.com/2025/08/colores-css-con-nombre.html)» en mi blog Jucardus, cuenta con la opción de copia de los valores hexadecimales con sólo clicar en los colores.
+**25-10-15** - Ahora la entrada *[Colores CSS con nombre](https://jucardus.blogspot.com/2025/08/colores-css-con-nombre.html)* en mi blog Jucardus, cuenta con la opción de copia de los valores hexadecimales con sólo clicar en los colores.
 
 **25-10-15** - Mi cuenta en Facebook (www.facebook.com/jucardus.page) está vacía. Ya se verá qué utilidad pueda tener.
 
