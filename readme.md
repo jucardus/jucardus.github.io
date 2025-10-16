@@ -1,5 +1,7 @@
 ### Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
+**25-10-15** - Algunas mejoras en [ENLACES VARIOS](https://jucardus.github.io/enlaces): cambio de fuente, cambio del color de fondo, cambio del color de fuente, acondicionamientos para pantallas de celular, recuadro de busca optimizado.
+
 **25-10-15** - Se han hecho ciertos cambios en el estilo CSS de este sitio, para mejorar la presentación en pantallas de celular o tabletas. Ahora el título permanece fijo al deslizar la pantalla en celulares, cosa que antes sólo se daba en pantallas de escritorio.
 
 **25-10-15** - Ahora la entrada *[Colores CSS con nombre](https://jucardus.blogspot.com/2025/08/colores-css-con-nombre.html)* en mi blog Jucardus, cuenta con la opción de copia de los valores hexadecimales con sólo clicar en los colores.
