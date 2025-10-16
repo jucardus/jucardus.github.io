@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 70%;
+            max-width: 800px;
+        }
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .lazy-image {
+            width: 100%;
+            height: auto; /* Maintains original aspect ratio */
+            border-radius: 8px;
+            background-color: #eee;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            display: block;
+            transform: translateZ(0);
+        }
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .gallery {
+                width: 95%;
+                gap: 15px;
+            }
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery" id="imageGallery">
+        <!-- Images will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Load the photos first -->
+    <script src="photos.js"></script>
+
+    <!-- Then load the gallery logic -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentIndex = 0;
+            const imagesPerLoad = 30;
+            const gallery = document.getElementById('imageGallery');
+            let lazyLoadObserver = null;
+            let autoLoadObserver = null;
+
+            function loadMoreImages() {
+                const endIndex = Math.min(currentIndex + imagesPerLoad, photos.length);
+                const fragment = document.createDocumentFragment();
+
+                for (let i = currentIndex; i < endIndex; i++) {
+                    const container = document.createElement('div');
+                    container.className = 'image-container';
+
+                    const img = document.createElement('img');
+                    img.className = 'lazy-image';
+                    img.dataset.src = photos[i];
+                    img.alt = '';
+
+                    container.appendChild(img);
+                    fragment.appendChild(container);
+                }
+
+                gallery.appendChild(fragment);
+                currentIndex = endIndex;
+                initLazyLoad();
+                initAutoLoad();
+            }
+
+            function initLazyLoad() {
+                if (lazyLoadObserver) {
+                    lazyLoadObserver.disconnect();
+                }
+
+                const lazyImages = document.querySelectorAll('.lazy-image:not([src])');
+
+                if ('IntersectionObserver' in window) {
+                    lazyLoadObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                img.src = img.dataset.src;
+                                img.classList.add('loaded');
+                                lazyLoadObserver.unobserve(img);
+                            }
+                        });
+                    }, { rootMargin: '100px' });
+
+                    lazyImages.forEach(img => lazyLoadObserver.observe(img));
+                } else {
+                    // Fallback for old browsers
+                    lazyImages.forEach(img => {
+                        img.src = img.dataset.src;
+                    });
+                }
+            }
+
+            function initAutoLoad() {
+                // Remove existing sentinel
+                const existingSentinel = document.getElementById('loadSentinel');
+                if (existingSentinel) {
+                    existingSentinel.remove();
+                }
+
+                // Only create new sentinel if we have more images to load
+                if (currentIndex >= photos.length) return;
+
+                const sentinel = document.createElement('div');
+                sentinel.id = 'loadSentinel';
+                sentinel.style.height = '1px';
+                gallery.appendChild(sentinel);
+
+                if (autoLoadObserver) {
+                    autoLoadObserver.disconnect();
+                }
+
+                autoLoadObserver = new IntersectionObserver(([entry]) => {
+                    if (entry.isIntersecting && currentIndex < photos.length) {
+                        loadMoreImages();
+                    }
+                }, { rootMargin: '200px' }); // Start loading 200px before reaching bottom
+
+                autoLoadObserver.observe(sentinel);
+            }
+
+            // Load first batch and initialize
+            loadMoreImages();
+        });
+    </script>
+</body>
+</html>
