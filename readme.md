@@ -1,6 +1,6 @@
 ### Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
-**25-10-16** - Trabajando en la actualización del [BLOG JUCARDUS](https://jucardus.blogspot.com/], que lo tenía abandonado. Se han hecho cambios en la plantilla y algunas entradas están siendo modificadas. Su diseño actual requiere mejoras.
+**25-10-16** - Trabajando en la actualización del [BLOG JUCARDUS](https://jucardus.blogspot.com/), que lo tenía abandonado. Se han hecho cambios en la plantilla y algunas entradas están siendo modificadas. Su diseño actual requiere mejoras.
 
 **25-10-16** - Numerosas mejoras en mi página de [FOTOGRAFÍAS MUCHAS](https://jucardus.github.io/fotos): Tiempo de carga inicial significativamente reducido; recarga forzada del sitio solucionada en la vista en celulares; las imágenes ahora no se abren en una nueva pestaña al clicar en ellas; y otras cosas. El sitio tiene un *Google Apps Script exec* insertado mediante un *iframe*, y lo que hace el *script* es extraer de mi Google Drive la lista de imágenes para ir mostrándolas en modo «lazy» o paulatinamente a medida que el usuario se desplaza en el sitio. Las imágenes están sincronizadas entre mi celular y Google Drive, de modo que la actualización es de lo más expedita.
 
