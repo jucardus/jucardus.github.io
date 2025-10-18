@@ -1,6 +1,6 @@
 ### Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
-**25-10-17** - Incluida la entrada ***topple [v.]*** en BLOG JUCARDUS, accesible mediante el enlace *[jucardus.blogspot.com/2025/10/topple...](https://jucardus.blogspot.com/2025/10/topple-v.html)*. Parte de las entradas con la etiqueta *[Imágenes](https://jucardus.blogspot.com/search/label/Im%C3%A1genes)*.
+**25-10-17** - Incluida la entrada *topple [v.]* en BLOG JUCARDUS, accesible mediante el enlace *[jucardus.blogspot.com...](https://jucardus.blogspot.com/2025/10/topple-v.html)* Parte de las entradas con la etiqueta *[Imágenes](https://jucardus.blogspot.com/search/label/Im%C3%A1genes)*.
 
 **25-10-16** - Trabajando en la actualización del [BLOG JUCARDUS](https://jucardus.blogspot.com/), que lo tenía abandonado. Se han hecho cambios en la plantilla y algunas entradas están siendo modificadas. Su diseño actual requiere mejoras.
 
