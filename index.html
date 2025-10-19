@@ -212,7 +212,7 @@
 
             const markdownText = await markdownResponse.text();
 
-            // Extract the "Actividad reciente" section with configurable limit
+            // Extract activity section starting from line 3
             const activityContent = extractAndLimitActivity(markdownText);
 
             // First try: Render to HTML using GitHub API
@@ -252,45 +252,41 @@
     }
 
     function extractAndLimitActivity(fullText) {
-        const activityHeader = '### Actividad reciente en [Jucardus](https://jucardus.github.io/)';
-        const startIndex = fullText.indexOf(activityHeader);
-
-        if (startIndex === -1) {
-            return '### Actividad reciente en [Jucardus](https://jucardus.github.io/)\n\n*No activity entries found*';
+        // Split the entire file into lines
+        const allLines = fullText.split('\n');
+        
+        // Start from line 3 (index 2) and go to the end
+        // Change this number if you want to start from a different line
+        const startLine = 2; // ← CHANGE THIS: 0 = first line, 1 = second line, 2 = third line, etc.
+        
+        if (startLine >= allLines.length) {
+            return '### Actividad reciente\n\n*No activity content found*';
         }
-
-        // Find the end of the activity section (next header or end of file)
-        const nextSectionRegex = /\n##? [^\n]/g;
-        nextSectionRegex.lastIndex = startIndex + activityHeader.length;
-        const nextSectionMatch = nextSectionRegex.exec(fullText);
-
-        const endIndex = nextSectionMatch ? nextSectionMatch.index : fullText.length;
-
-        // Extract the entire activity section
-        let activitySection = fullText.substring(startIndex, endIndex).trim();
-
+        
+        // Get everything from the starting line to the end
+        const activityLines = allLines.slice(startLine);
+        const activitySection = activityLines.join('\n');
+        
         // Split into paragraphs (separated by double line breaks)
         const paragraphs = activitySection.split('\n\n');
 
-        // Keep the header (first paragraph) and handle activity entries
-        const header = paragraphs[0]; // This is "### Actividad reciente"
-        const activityEntries = paragraphs.slice(1); // These are the actual entries
-
-        const entryLimit = numeroEntradas; // ← CHANGE THIS NUMBER: 0 = all entries, any other number = limit
+        // Handle activity entries
+        const activityEntries = paragraphs; // Now all paragraphs are activity entries
+        
+        const entryLimit = numeroEntradas; // ← 0 = all entries, any other number = limit
 
         let finalContent;
 
         if (entryLimit === 0) {
             // Show ALL entries - no limit, no truncation message
-            finalContent = header + '\n\n' + activityEntries.join('\n\n');
+            finalContent = activityEntries.join('\n\n');
         } else {
             // Apply limit and show truncation message if needed
             const limitedEntries = activityEntries.slice(0, entryLimit);
-            finalContent = header + '\n\n' + limitedEntries.join('\n\n');
+            finalContent = limitedEntries.join('\n\n');
 
             // Add truncation note if we limited the entries
             if (activityEntries.length > entryLimit) {
-                //finalContent += '\n\n*--- Showing most recent ' + entryLimit + ' activities ---*';
                 finalContent += '\n\n~ Para ver toda la actividad, clica <a href="https://github.com/jucardus/jucardus.github.io/blob/main/readme.md" rel="noopener noreferrer nofollow external" target="_blank"><b>AQUÍ</b></a>. ~';
             }
         }
