@@ -44,3 +44,4 @@ let data = [
 "Deus est. // Dios existe.",
 "Ego labōrō. // [ˈɛ.ɡo laˈboː.roː] Yo trabajo. ¶ ego: pronombre personal en primera persona singular en caso nominativo: yo ¶ labōrō: primera persona singular del presente de indicativo del verbo _labōrāre_: trabajo"
 ];
+
