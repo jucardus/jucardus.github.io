@@ -1,5 +1,7 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
+**25-10-19** - Se agregó la entrada [睡覺 (睡觉) [shui4 jiao4]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shui4-jiao4.md), como parte del diccionario chino-español.
+
 **25-10-18** - Algunos cambios en el diseño de este sitio, además de mejoras en el *script* para mostrar la actividad reciente al pie de página. Pueden verse clicando [AQUÍ](https://github.com/jucardus/jucardus.github.io/blob/main/index.html).
 
 **25-10-18** - En mi blog, ciertas entradas con la etiqueta *Frases latinas* han sido mejoradas con imágenes, como *[Puer liber legit](https://jucardus.blogspot.com/2025/09/puer-liber-legit.html)* y *[Ego librum meo amico do](https://jucardus.blogspot.com/2025/09/ego-librum-meo-amico-do.html)*.
