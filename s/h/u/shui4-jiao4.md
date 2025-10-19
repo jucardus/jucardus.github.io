@@ -9,4 +9,4 @@
 * {NG} 睡 (睡) [shuì] dormir + 覺 (觉) [jiào] dormida (s.)
 * {PY} shuìjiào
 
-#chino-espanol
+#chino-español
