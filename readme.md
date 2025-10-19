@@ -1,5 +1,7 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
+**25-10-19** - Documento *[SSD Swappiness Guide](https://jucardus.github.io/s/w/a/swappiness.html)* (Understanding and optimizing swappiness values for SSD users), con indicaciones para cambiar el valor de intercambio del documento *swap*.
+
 **25-10-19** - Ciertas mejoras en los colores de este sitio.
 
 **25-10-19** - Se agregó la entrada [睡覺 (睡觉) [shui4 jiao4]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shui4-jiao4.md), como parte del diccionario chino-español.
