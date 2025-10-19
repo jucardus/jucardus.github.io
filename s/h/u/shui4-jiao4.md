@@ -1,5 +1,5 @@
 # 睡覺 (睡觉) [shui4 jiao4]
-<sup>[Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [Autor](https://jucardus.github.io)</sup>
+[ [Inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [Índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [Actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [Autor](https://jucardus.github.io) ]
 
 * acostarse (ir a dormir)
 * dormida (acción de dormir)
