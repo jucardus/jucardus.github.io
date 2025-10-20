@@ -1,10 +1,10 @@
-# Una prueba
+# Prueba de creaci?n
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) ? [?ndice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) ? [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) ? [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ]
 
-Esta es la prueba que deseo hacer:
+Este es el contenido:
 
-* punto primero
-* punto segundo
-* punto tercero
+* prueba primera
+* prueba segunda
+* prueba tercera
 
-[#prueba-primera](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-primera.md), [#prueba-segunda](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-segunda.md)
+[#prueba-etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-etiqueta.md), [#prueba-otra-etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-otra-etiqueta.md)
