@@ -1,10 +1,11 @@
-# Prueba de creaci?n
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) ? [?ndice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) ? [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) ? [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ]
+# Prueba sobreescrita
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ]
 
-Este es el contenido:
+Este es el bendito contenido de la bendición
 
-* prueba primera
-* prueba segunda
-* prueba tercera
+* primera línea
+* segunda línea
+* tercera línea
+* décima línea
 
-[#prueba-etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-etiqueta.md), [#prueba-otra-etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-otra-etiqueta.md)
+[#prueba-eti-uno](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-eti-uno.md), [#prueba-eti-dos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-eti-dos.md)
