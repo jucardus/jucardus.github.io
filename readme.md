@@ -1,5 +1,7 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
+**25-10-20** - Ciertos cambios insignificantes en [ENLACES VARIOS](https://jucardus.github.io/enlaces) y algunos enlaces agregados.
+
 **25-10-19** - Se han reubicado la gran mayoría de documentos HTML y MD en el [REPOSITORIO](https://github.com/jucardus/jucardus.github.io), clasificándolos bajo las letras iniciales, para abreviar el tiempo de carga inicial del repositorio.
 
 **25-10-19** - Documento *[Complete Linux Mint Swap File Guide](https://jucardus.github.io/s/w/a/swap.html)* (Including troubleshooting for "Text file busy" error and verification steps), con instrucciones para la creación de un documento *swap* o *documento de intercambio* con Bash.
