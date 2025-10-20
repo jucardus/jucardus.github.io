@@ -6,4 +6,6 @@
 
 
 * [Prueba etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-etiqueta.md)
+* [Prueba etiquetamiento dos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-etiquetamiento-dos.md)
 * [Prueba otra etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-otra-etiqueta.md)
+* [Prueba tres etiqueta](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-tres-etiqueta.md)
