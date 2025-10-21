@@ -1,5 +1,5 @@
 # Herramientas web
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Herramientas%20web%20%E2%80%94%20Herramientas%2C%20%C3%8Dndices%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fh%2Fe%2Fr%2Fherramientas.md%0A%0A%23herramientas_jucardus%20-%20%23indices_jucardus) ]
 
 * [**Caracteres chinos:**](https://jucardus.github.io/c/a/r/caracteres.html) Herramienta para memorizar caracteres chinos, con pronunciación y significados en inglés. - tr.ee/caracteres
 * [**Editor HTML:**](https://jucardus.github.io/e/h/t/ehtml.html) Editor para ver en tiempo real el efecto de los tags al componer en HTML. - tr.ee/ehtml
