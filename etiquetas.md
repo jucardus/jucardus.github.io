@@ -7,3 +7,4 @@
 * [Diccionario chino-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
 * [Herramientas](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/herramientas.md)
 * [Índices](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/indices.md)
+* [Prueba](p/r/prueba.md)
