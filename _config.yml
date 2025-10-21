@@ -1,0 +1,9 @@
+# _config.yml (simpler version)
+title: "jucardus"
+description: "Your knowledge base"
+
+# GitHub Pages automatically includes jekyll-relative-links
+# Just enable it:
+relative_links:
+  enabled: true
+  collections: true
