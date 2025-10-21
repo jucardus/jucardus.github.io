@@ -1,5 +1,5 @@
-# Herramientas
-<sup>[h.jucardus.com](https://h.jucardus.com)</sup>
+# Herramientas web
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ]
 
 * [**Caracteres chinos:**](https://jucardus.github.io/c/a/r/caracteres.html) Herramienta para memorizar caracteres chinos, con pronunciación y significados en inglés. - tr.ee/caracteres
 * [**Editor HTML:**](https://jucardus.github.io/e/h/t/ehtml.html) Editor para ver en tiempo real el efecto de los tags al componer en HTML. - tr.ee/ehtml
@@ -15,3 +15,5 @@ Para descargar estas herramientas (y otras), acude al sitio [mega.nz/folder/RFF0
 * **Enlace corto:** h.jucardus.com
 * **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
 * **Invitación:** [i.jucardus.com](https://i.jucardus.com)
+
+[#herramientas](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/herramientas.md) - [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/indices.md)
