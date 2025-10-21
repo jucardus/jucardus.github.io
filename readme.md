@@ -1,5 +1,7 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
+**25-10-20** - Agregué unas cuantas entradas para probar el nuevo *[script](https://script.google.com/macros/s/AKfycbw49eqoFVAeEj5D6VHBdJZkoaTzk90s_P77QQMNkCxxmjiC2z2T8eKb-HL_F8_cnIMg/exec)*, como por ejemplo *[Aquellos que entregan su libertad a cambio...](https://github.com/jucardus/jucardus.github.io/blob/main/a/q/u/aquellos-que-entregan-su-libertad-a-cambio.md)*, o *[Admiro a los hombres que buscan el orden...](https://github.com/jucardus/jucardus.github.io/blob/main/a/d/m/admiro-a-los-hombres-que-buscan-el-orden.md)*, y funciona perfectamente. El proceso de creación de entradas es relativamente complejo y los detalles a tomar en cuenta son unos cuanto: títulos, URL, subtítulos, contenido, etiquetas, enlace de compartición en X Twitter, enlaces agregados a los índices y más.
+
 **25-10-20** - Acabo de crear un *[Google Apps Script exec](https://script.google.com/macros/s/AKfycbw49eqoFVAeEj5D6VHBdJZkoaTzk90s_P77QQMNkCxxmjiC2z2T8eKb-HL_F8_cnIMg/exec)* para crear entradas en GitHub. El *script* agrega la nueva entrada a un índice alfabético, a un documento de actividad reciente (incluyendo la fecha de creación), y a un índice para la o las etiquetas correspondientes.
 
 **25-10-20** - Ciertos cambios insignificantes en [ENLACES VARIOS](https://jucardus.github.io/enlaces) y algunos enlaces agregados.
