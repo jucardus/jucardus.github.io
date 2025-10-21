@@ -7,3 +7,4 @@
 * [En parte, la existencia es una sucesión...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md)
 * [Herramientas web](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/r/herramientas.md)
 * [睡覺 (睡觉) [shui4 jiao4]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shui4-jiao4.md)
+* [The priestly confession in Catholicism](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-catholicism.md)
