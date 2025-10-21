@@ -1,6 +1,6 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
-**25-10-20** - Acabo de crear un *[Google Apps Script exec](https://script.google.com/macros/s/AKfycbwLUWN7DLpl7afwpnkx6kCxvuBjigYv_3LncFxwnYXDhtYcMJlWP_QGTjsiS5ezOgoE/exec)* para crear entradas en GitHub. El *script* agrega la nueva entrada a un índice alfabético, a un documento de actividad reciente (incluyendo la fecha de creación), y a un índice para la o las etiquetas correspondientes.
+**25-10-20** - Acabo de crear un *[Google Apps Script exec](https://script.google.com/macros/s/AKfycbyA--EnZyR8vxSkGbTzsdarLhi3OCMMf3_TjMs0Og3dG_nGErqQf5tI5EIOj5JJgTgK/exec)* para crear entradas en GitHub. El *script* agrega la nueva entrada a un índice alfabético, a un documento de actividad reciente (incluyendo la fecha de creación), y a un índice para la o las etiquetas correspondientes.
 
 **25-10-20** - Ciertos cambios insignificantes en [ENLACES VARIOS](https://jucardus.github.io/enlaces) y algunos enlaces agregados.
 
