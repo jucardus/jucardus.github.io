@@ -1,8 +1,8 @@
 # Repositorio [Jucardus](https://jucardus.github.io)
 
-* **[Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md)** - Índice de todas las entradas, con las más recientes a la cabeza y acompañadas con la fecha de modificación.
-* **[Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md)** - Todas las etiquetas usadas para clasificar las entradas, en orden alfabético. Equivale a los temas abarcados.
-* **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md)** - Todas las entradas del repositorio, en orden alfabético.
+* **[Actividad reciente](/actividad.md)** - Índice de todas las entradas, con las más recientes a la cabeza y acompañadas con la fecha de modificación.
+* **[Etiquetas todas](/etiquetas.md)** - Todas las etiquetas usadas para clasificar las entradas, en orden alfabético. Equivale a los temas abarcados.
+* **[Índice alfabético](/indice.md)** - Todas las entradas del repositorio, en orden alfabético.
 
 ### Autor y contacto
 
