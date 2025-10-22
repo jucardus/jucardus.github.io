@@ -1,6 +1,8 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 [ Algunos de los enlaces pueden estar rotos, por enviar a proyectos o páginas descontinuadas. ]
 
+**25-10-22** - aaa
+
 **25-10-22** - No pude completar el *Google Apps Script* para agregar entradas a GitHub mediante un formulario. El código es demasiado complejo y de más de mil líneas. Podría ser retomado más adelante.
 
 **25-10-22** - Todavía en el proceso de mejorar y corregir el *Google Apps Script* para agregar entradas a mi repositorio en GitHub. Ahora se trata de agregar un botón para eliminar entradas y el enlace correspondiente en los diversos índices.
