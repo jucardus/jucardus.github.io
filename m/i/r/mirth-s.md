@@ -10,9 +10,9 @@
 
 ### Palabras derivadas
 
-mirthful /ˈmərth-fəl/ [adj.]
-mirthfully /ˈmərth-fə-lē/ [adv.]
-mirthfulness /ˈmɝθfəlnəs/ [s.]
+* mirthful /ˈmərth-fəl/ [adj.]
+* mirthfully /ˈmərth-fə-lē/ [adv.]
+* mirthfulness /ˈmɝθfəlnəs/ [s.]
 
 ### Enlaces pertinentes
 
