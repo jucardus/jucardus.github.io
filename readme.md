@@ -1,6 +1,6 @@
 # Actividad reciente en [Jucardus](https://jucardus.github.io/)
 
-**25-10-22** - Todavía en el proceso de mejorar y corregir el *Google Apps Script* para agregar entradas a mi repositorio en GitHub. Ahora se trata de agregar un botón para eliminar entradas y en enlace correspondiente en los diversos índices.
+**25-10-22** - Todavía en el proceso de mejorar y corregir el *Google Apps Script* para agregar entradas a mi repositorio en GitHub. Ahora se trata de agregar un botón para eliminar entradas y el enlace correspondiente en los diversos índices.
 
 **25-10-21** - Algunas entradas más agregadas a mi repositorio en GitHub, a modo de prueba para el *Google Apps Script* de adición automatizada de entradas. Pueden verse en el índice de *[Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md)*.
 
