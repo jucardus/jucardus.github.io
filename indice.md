@@ -6,4 +6,5 @@
 * [Aquellos que entregan su libertad a cambio...](https://github.com/jucardus/jucardus.github.io/blob/main/a/q/u/aquellos-que-entregan-su-libertad-a-cambio.md)
 * [mirth [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mirth-s.md)
 * [睡覺 (睡觉) [shui4 jiao4]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shui4-jiao4.md)
+* [睡覺 (睡觉) [shui4 jiao4]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shui4-jiao4.md)
 * [The priestly confession in Catholicism](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-catholicism.md)
