@@ -3,4 +3,5 @@
 
 * [Catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
 * [Citas](https://github.com/jucardus/jucardus.github.io/blob/main/c/i/citas.md)
+* [Diccionario chino-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)
