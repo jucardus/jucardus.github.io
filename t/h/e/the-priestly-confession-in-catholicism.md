@@ -1,8 +1,6 @@
 # The priestly confession in Catholicism
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=The%20priestly%20confession%20in%20Catholicism%20%E2%80%94%20Catolicismo%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Ft%2Fh%2Fe%2Fthe-priestly-confession-in-catholicism.md%0A%0A%23catolicismo_jucardus) ]
 
-~ According to Grok ~
-
 The practice of priestly confession in the Catholic Church, formally known as the Sacrament of Penance or Reconciliation, has a rich history that evolved over centuries. Below is a concise overview of its development:
 
 ### Early Christianity (1st–3rd Centuries)
@@ -35,5 +33,7 @@ The practice of priestly confession in the Catholic Church, formally known as th
 - **Theological Basis**: The sacrament is rooted in biblical passages like John 20:22–23, where Jesus grants the apostles authority to forgive sins, and James 5:16, encouraging confession of sins.
 
 This history reflects the Church’s evolving understanding of sin, forgiveness, and the role of priests as mediators of God’s grace, adapting to cultural and theological shifts while maintaining the sacrament’s core purpose: reconciliation with God and the Church.
+
+~ Grok ~
 
 [#catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
