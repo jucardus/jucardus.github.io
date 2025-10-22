@@ -3,3 +3,4 @@
 
 * [The priestly confession in Catholicism](/t/h/e/the-priestly-confession-in-catholicism.md)
 * [The priestly confession in Catholicism](t/h/e/the-priestly-confession-in-catholicism.md)
+* [The priestly confession in Catholicism](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-catholicism.md)
