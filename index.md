@@ -11,7 +11,7 @@
 * Autor: Julio Cárdenas Pelizzari ©
 * Contacto: [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
 * Sitio central: [jucardus.github.io](https://jucardus.github.io)
-* Toda la actividad: [jucardus.github.io/actividad](https://jucardus.github.io/actividad)
+* Actividad general: [readme.md](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md)
 * Invitación a pCloud: [is.gd/jucardus](https://is.gd/ipcloud)
 
 [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
