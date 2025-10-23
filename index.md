@@ -9,7 +9,7 @@
 ### Autor y contacto
 
 * Autor: Julio Cárdenas Pelizzari ©
-* Contacto: jucardus en gmail punto com
+* Contacto: [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
 * Sitio central: [jucardus.github.io](https://jucardus.github.io)
 * Invitación a pCloud: [is.gd/jucardus](https://is.gd/ipcloud)
 
