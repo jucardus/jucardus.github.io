@@ -8,3 +8,5 @@
 * [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) - Índices
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - Etiquetas
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/abacus-s.md) - Diccionario inglés-español
+
+#indices
