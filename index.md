@@ -23,6 +23,7 @@
 * [Invitación a pCloud](https://is.gd/ipcloud)
 * [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g)
 * [Música en YouTube](https://www.youtube.com/@jucardus/playlists)
+* [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
 * [Tumblr de difusión](https://jucardus.tumblr.com/)
 * [X Twitter](https://x.com/jucardus)
 
