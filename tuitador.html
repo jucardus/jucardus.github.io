@@ -75,6 +75,7 @@
             color: var(--text-color);
             font-size: 16px;
             transition: all 0.3s ease;
+            font-family: monospace;
         }
         
         input:focus, textarea:focus {
@@ -154,6 +155,13 @@
             transition: opacity 0.3s;
         }
         
+        .error-message {
+            color: var(--warning-color);
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
         .show {
             opacity: 1;
         }
@@ -178,11 +186,13 @@
             <div class="form-group">
                 <label for="title">Entry Title *</label>
                 <input type="text" id="title" placeholder="Enter the entry title" required>
+                <div class="error-message" id="title-error">Entry title is required</div>
             </div>
             
             <div class="form-group">
-                <label for="labels">Labels (separated by ", ")</label>
-                <input type="text" id="labels" placeholder="e.g., Label 1, Label 2">
+                <label for="labels">Labels (separated by ", ") *</label>
+                <input type="text" id="labels" placeholder="e.g., Label 1, Label 2" required>
+                <div class="error-message" id="labels-error">At least one label is required</div>
             </div>
             
             <div class="form-group">
@@ -193,6 +203,7 @@
             <div class="form-group">
                 <label for="link">GitHub *.md File Link *</label>
                 <input type="url" id="link" placeholder="https://github.com/..." required>
+                <div class="error-message" id="link-error">A valid GitHub link is required</div>
             </div>
             
             <div class="character-count">
@@ -227,6 +238,42 @@
             const tweetBtn = document.getElementById('tweet-btn');
             const successMessage = document.getElementById('success-message');
             
+            // Error message elements
+            const titleError = document.getElementById('title-error');
+            const labelsError = document.getElementById('labels-error');
+            const linkError = document.getElementById('link-error');
+            
+            // Function to validate form
+            function validateForm() {
+                let isValid = true;
+                
+                // Validate title
+                if (!titleInput.value.trim()) {
+                    titleError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    titleError.style.display = 'none';
+                }
+                
+                // Validate labels
+                if (!labelsInput.value.trim()) {
+                    labelsError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    labelsError.style.display = 'none';
+                }
+                
+                // Validate link
+                if (!linkInput.value.trim()) {
+                    linkError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    linkError.style.display = 'none';
+                }
+                
+                return isValid;
+            }
+            
             // Function to sanitize labels for hashtags
             function sanitizeLabel(label) {
                 return label
@@ -257,7 +304,7 @@
                 const description = descriptionInput.value;
                 const link = linkInput.value;
                 
-                if (!title || !link) return '';
+                if (!title || !labels || !link) return '';
                 
                 let tweetText = `${title}`;
                 
@@ -314,6 +361,10 @@
             
             // Function to copy to clipboard
             function copyToClipboard() {
+                if (!validateForm()) {
+                    return;
+                }
+                
                 const twitterURL = generateTwitterURL();
                 
                 navigator.clipboard.writeText(twitterURL)
@@ -331,6 +382,10 @@
             
             // Function to open Twitter
             function openTwitter() {
+                if (!validateForm()) {
+                    return;
+                }
+                
                 const twitterURL = generateTwitterURL();
                 window.open(twitterURL, '_blank');
             }
