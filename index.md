@@ -6,4 +6,11 @@
 * **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md)** - Entradas del repositorio en orden alfabético, en el futuro clasificadas por letra inicial.
 * **[Índices todos](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)** Eso mismo, una colección de todos los índices en orden alfabético.
 
+### Autor y contacto
+
+* Autor: Julio Cárdenas Pelizzari ©
+* Contacto: jucardus en gmail punto com
+* Sitio central: [jucardus.github.io](https://jucardus.github.io)
+* Invitación a pCloud: [is.gd/jucardus](https://is.gd/ipcloud)
+
 [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
