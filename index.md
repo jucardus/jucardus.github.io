@@ -4,5 +4,6 @@
 * **[Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md)** - Todas las entradas del repositorio según son creadas, con las más recientes a la cabeza.
 * **[Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md)** - Etiquetas o temas para clasificar y agrupar el contenido.
 * **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md)** - Entradas del repositorio en orden alfabético, en el futuro clasificadas por letra inicial.
+* **[Índices todos](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)** Eso mismo, una colección de todos los índices en orden alfabético.
 
 [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
