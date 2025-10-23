@@ -9,4 +9,4 @@
 * {PR} ˈæb.ə.kəs
 * {SL} AB.a.cus
 
-[#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - #sustantivos-ingleses
+[#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - [#sustantivos-ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/sustantivos-ingleses.md)
