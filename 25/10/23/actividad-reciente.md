@@ -3,10 +3,11 @@
 
 ### [25-10-23](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/23)
 
-* [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md) - Índices
+* [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/sustantivos-ingleses.md) - Etiquetas, Índices
+*  [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md) - Índices
 * [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - Índices
 * [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) - Índices
-* [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - Etiquetas
+* [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - Etiquetas, Índices
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/abacus-s.md) - Diccionario inglés-español
 
 [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
