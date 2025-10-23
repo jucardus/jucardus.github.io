@@ -3,8 +3,8 @@
 
 ### [25-10-23](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/23)
 
-* [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md)
-* [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md)
-* [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md)
-* [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md)
-* [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/abacus-s.md)
+* [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md) - Índices
+* [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - Índices
+* [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) - Índices
+* [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - Etiquetas
+* [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/abacus-s.md) - Diccionario inglés-español
