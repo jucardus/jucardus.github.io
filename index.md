@@ -13,6 +13,17 @@
 * Contacto: [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
 * Sitio central: [jucardus.github.io](https://jucardus.github.io)
 * Actividad general: [readme.md](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md)
-* Invitación a pCloud: [is.gd/jucardus](https://is.gd/ipcloud)
+* Pagos y donaciones: [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
+
+### Mis sitios web
+
+* [Enlaces varios](https://jucardus.github.io/enlaces)
+* [Facebook de difusión](https://www.facebook.com/jucardus.page)
+* [Fotografías muchas](https://jucardus.github.io/fotos)
+* [Invitación a pCloud](https://is.gd/ipcloud)
+* [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g)
+* [Música en YouTube](https://www.youtube.com/@jucardus/playlists)
+* [Tumblr de difusión](https://jucardus.tumblr.com/)
+* [X Twitter](https://x.com/jucardus)
 
 [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
