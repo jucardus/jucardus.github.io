@@ -3,6 +3,6 @@
 
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-de-google-chrome-con-bash.md)
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-de-linux-mint-con-bash.md)
-* [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-del-navegador-brave-con-bash.md) - Bash
+* [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-del-navegador-brave-con-bash.md)
 
 [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md) - [#etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - [#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/programacion.md)
