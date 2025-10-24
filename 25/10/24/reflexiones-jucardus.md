@@ -3,4 +3,4 @@
 
 * [La fe te salva de la circularidad de toda...](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/la-fe-te-salva-de-la-circularidad-de-toda.md)
 
-#escritos - [#etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
+[#escritos](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/escritos-jucardus.md) - [#etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - [#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
