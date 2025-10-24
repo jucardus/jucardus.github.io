@@ -5,4 +5,4 @@
 sudo apt install google-chrome-stable
 ```
 
-#bash
+[#bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md)
