@@ -3,4 +3,4 @@
 
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-de-google-chrome-con-bash.md)
 
-#programacion
+[#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md) - [#etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - [#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/programacion.md)
