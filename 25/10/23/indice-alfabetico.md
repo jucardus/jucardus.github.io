@@ -3,6 +3,7 @@
 
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/abacus-s.md) - Diccionario inglés-español
 * [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md) - Índices
+* [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-de-google-chrome-con-bash.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - Etiquetas
 * [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - Índices
 * [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) - Índices
