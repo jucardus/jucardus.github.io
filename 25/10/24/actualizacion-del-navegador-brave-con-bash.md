@@ -1,0 +1,16 @@
+# Actualización del navegador Brave con Bash
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md) · compartir ]
+
+```
+sudo apt install curl
+
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser
+```
+
+[#bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md)
