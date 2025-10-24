@@ -5,6 +5,7 @@
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md)
 * [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md)
 * [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md)
+* [Índices todos](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
 * [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/index.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/sustantivos-ingleses.md)
 
