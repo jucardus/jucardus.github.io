@@ -4,6 +4,7 @@
 ### [25-10-24](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/24)
 
 * [Escritos jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/escritos-jucardus.md) - Etiquetas, Índices
+* [Reflexiones jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/reflexiones-jucardus.md) - Escritos, Etiquetas, Índices
 * [La fe te salva de la circularidad de toda...](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/la-fe-te-salva-de-la-circularidad-de-toda.md) - Reflexiones
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-del-navegador-brave-con-bash.md) - Bash
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-de-linux-mint-con-bash.md) - Bash
