@@ -3,6 +3,7 @@
 
 ### [25-10-24](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/24)
 
+* [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-del-navegador-brave-con-bash.md) - Bash
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-de-linux-mint-con-bash.md) - Bash
 * [Programación básica](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/programacion.md) - Etiquetas, Índices
 * [Bash - Bourne-Again Shell](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md) - Etiquetas, Índices, Programación
