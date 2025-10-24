@@ -93,6 +93,22 @@
             box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.2);
         }
 
+        .preview {
+            background-color: var(--input-bg);
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid var(--input-border);
+            white-space: pre-line;
+            font-family: monospace;
+            min-height: 150px;
+            /* Add these properties to handle long text */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: auto;
+        }
+
         textarea {
             min-height: 120px;
             resize: vertical;
