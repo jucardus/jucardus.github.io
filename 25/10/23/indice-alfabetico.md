@@ -8,6 +8,7 @@
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/actualizacion-del-navegador-brave-con-bash.md) - Bash
 * [Bash - Bourne-Again Shell](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md) - Etiquetas, Índices, Programación
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/diccionario-ingles-espanol.md) - Etiquetas
+* [Escritos jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/escritos-jucardus.md) - Etiquetas, Índices
 * [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - Índices
 * [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) - Índices
 * [Índices todos](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md) - Índices
