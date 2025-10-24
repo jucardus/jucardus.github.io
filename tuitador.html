@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-44Y9CNCHR8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Share Link Generator</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --input-bg: #2d2d2d;
+            --input-border: #404040;
+            --accent-color: #1da1f2;
+            --warning-color: #ff6b6b;
+            --button-bg: #1a73e8;
+            --button-hover: #0d62d9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 6px;
+            color: var(--text-color);
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: monospace;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.2);
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .character-count {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .warning {
+            color: var(--warning-color);
+        }
+
+        .preview {
+            background-color: var(--input-bg);
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid var(--input-border);
+            white-space: pre-line;
+            font-family: monospace;
+            min-height: 150px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn {
+            background-color: var(--button-bg);
+            color: white;
+        }
+
+        .copy-btn:hover {
+            background-color: var(--button-hover);
+        }
+
+        .tweet-btn {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .tweet-btn:hover {
+            background-color: #0d8bd9;
+        }
+
+        .success-message {
+            text-align: center;
+            margin-top: 15px;
+            color: #4CAF50;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Twitter Share Link Generator</h1>
+        <p class="subtitle">Create share links for X (Twitter) with proper formatting</p>
+
+        <form id="tweet-form">
+            <div class="form-group">
+                <label for="title">Entry Title</label>
+                <input type="text" id="title" placeholder="Enter the entry title (optional)">
+            </div>
+
+            <div class="form-group">
+                <label for="labels">Labels (separated by ", ")</label>
+                <input type="text" id="labels" placeholder="e.g., Label 1, Label 2 (optional)">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter a brief description (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="link">GitHub *.md File Link</label>
+                <input type="url" id="link" placeholder="https://github.com/... (optional)">
+            </div>
+
+            <div class="character-count">
+                <span>Character Count:</span>
+                <span id="count">0</span>
+            </div>
+
+            <div class="preview" id="preview">
+                Preview will appear here...
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="copy-btn" id="copy-btn">Copy Link to Clipboard</button>
+                <button type="button" class="tweet-btn" id="tweet-btn">Open Twitter</button>
+            </div>
+
+            <div class="success-message" id="success-message">
+                Link copied to clipboard!
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const titleInput = document.getElementById('title');
+            const labelsInput = document.getElementById('labels');
+            const descriptionInput = document.getElementById('description');
+            const linkInput = document.getElementById('link');
+            const countElement = document.getElementById('count');
+            const previewElement = document.getElementById('preview');
+            const copyBtn = document.getElementById('copy-btn');
+            const tweetBtn = document.getElementById('tweet-btn');
+            const successMessage = document.getElementById('success-message');
+
+            // Function to sanitize labels for hashtags
+            function sanitizeLabel(label) {
+                return label
+                    .trim()
+                    .toLowerCase()
+                    .normalize("NFD") // Normalize to separate diacritics
+                    .replace(/[\u0300-\u036f]/g, "") // Remove diacritics
+                    .replace(/[^a-z0-9]/g, "_") // Replace non-alphanumeric with underscore
+                    .replace(/_+/g, "_") // Replace multiple underscores with single
+                    .replace(/^_|_$/g, "") // Remove leading/trailing underscores
+                    + "_jucardus"; // Add suffix
+            }
+
+            // Function to generate hashtags from labels
+            function generateHashtags(labels) {
+                if (!labels) return '';
+
+                const labelArray = labels.split(',').map(label => label.trim()).filter(label => label);
+
+                // Sort labels alphabetically
+                const sortedLabels = labelArray.sort((a, b) => a.localeCompare(b));
+
+                // Join with line breaks instead of spaces
+                const hashtags = sortedLabels.map(label => `#${sanitizeLabel(label)}`).join('\n');
+
+                return hashtags;
+            }
+
+            // Function to generate the tweet text
+            function generateTweetText() {
+                const title = titleInput.value;
+                const labels = labelsInput.value;
+                const description = descriptionInput.value;
+                const link = linkInput.value;
+
+                let tweetText = '';
+
+                // Add title if provided
+                if (title) {
+                    tweetText += `${title}`;
+                }
+
+                // Add description if provided
+                if (description) {
+                    // Add line break if there's already content
+                    if (tweetText) tweetText += '\n\n';
+                    tweetText += `${description}`;
+                }
+
+                // Add link if provided
+                if (link) {
+                    // Add line break if there's already content
+                    if (tweetText) tweetText += '\n\n';
+                    tweetText += `→ ${link}`;
+                }
+
+                // Add hashtags if labels provided
+                const hashtags = generateHashtags(labels);
+                if (hashtags) {
+                    // Add line break if there's already content
+                    if (tweetText) tweetText += '\n\n';
+                    tweetText += `${hashtags}`;
+                }
+
+                return tweetText;
+            }
+
+            // Function to update character count and preview
+            function updatePreview() {
+                const tweetText = generateTweetText();
+                const count = tweetText.length;
+
+                countElement.textContent = count;
+
+                // Apply warning color if approaching limit
+                if (count >= 281) {
+                    countElement.classList.add('warning');
+                    titleInput.classList.add('warning');
+                    labelsInput.classList.add('warning');
+                    descriptionInput.classList.add('warning');
+                    linkInput.classList.add('warning');
+                } else {
+                    countElement.classList.remove('warning');
+                    titleInput.classList.remove('warning');
+                    labelsInput.classList.remove('warning');
+                    descriptionInput.classList.remove('warning');
+                    linkInput.classList.remove('warning');
+                }
+
+                // Update preview
+                previewElement.textContent = tweetText || 'Preview will appear here...';
+            }
+
+            // Function to generate the Twitter share URL
+            function generateTwitterURL() {
+                const tweetText = generateTweetText();
+                const encodedText = encodeURIComponent(tweetText);
+                return `https://x.com/intent/tweet?text=${encodedText}`;
+            }
+
+            // Function to copy to clipboard
+            function copyToClipboard() {
+                const twitterURL = generateTwitterURL();
+
+                navigator.clipboard.writeText(twitterURL)
+                    .then(() => {
+                        successMessage.classList.add('show');
+                        setTimeout(() => {
+                            successMessage.classList.remove('show');
+                        }, 3000);
+                    })
+                    .catch(err => {
+                        console.error('Failed to copy: ', err);
+                        alert('Failed to copy to clipboard. Please try again.');
+                    });
+            }
+
+            // Function to open Twitter
+            function openTwitter() {
+                const twitterURL = generateTwitterURL();
+                window.open(twitterURL, '_blank');
+            }
+
+            // Event listeners
+            titleInput.addEventListener('input', updatePreview);
+            labelsInput.addEventListener('input', updatePreview);
+            descriptionInput.addEventListener('input', updatePreview);
+            linkInput.addEventListener('input', updatePreview);
+            copyBtn.addEventListener('click', copyToClipboard);
+            tweetBtn.addEventListener('click', openTwitter);
+
+            // Initial preview update
+            updatePreview();
+        });
+    </script>
+</body>
+</html>
