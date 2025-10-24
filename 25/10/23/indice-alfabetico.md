@@ -11,6 +11,7 @@
 * [Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/etiquetas-todas.md) - Índices
 * [Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indice-alfabetico.md) - Índices
 * [Índices todos](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md) - Índices
+* [La fe te salva de la circularidad de toda...](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/la-fe-te-salva-de-la-circularidad-de-toda.md) - Reflexiones
 * [Programación básica](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/programacion.md) - Etiquetas, Índices
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/sustantivos-ingleses.md) - Etiquetas, Índices
 
