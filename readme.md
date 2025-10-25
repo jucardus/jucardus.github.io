@@ -1,4 +1,5 @@
 # [Actividad reciente](https://jucardus.github.io/actividad) en [Jucardus](https://jucardus.github.io/)
+<sup>[ Algunos de los enlaces pueden estar rotos, por enviar a proyectos o páginas descontinuados. ]</sup>
 
 **25-10-24** - Algunas entradas creadas hoy *[25-10-24](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/24)*: Actualización de Google Chrome con Bash; Actualización de Linux Mint con Bash; Actualización del navegador Brave con Bash; Programación básica; *[Bash - Bourne-Again Shell](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md)*.
 
