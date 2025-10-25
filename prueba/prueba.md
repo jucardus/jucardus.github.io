@@ -1,9 +1,9 @@
 # Prueba
-[ inicio · índice · etiquetas · actividad · compartir ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · compartir ]
 
-Texto con tildes y títulos complicados.
+El nuevo contenido es ***ESTE***.
 
-* está muy bien
-* esto también
+* Me parece perfecto
+* Estoy entendiendo
 
-#avion - #diccionarios - #lingvistica
+#contrasenas - #diccionario-espanol - #papafritas
