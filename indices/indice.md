@@ -1,7 +1,4 @@
 # Índice alfabético
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · compartir ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%0A%0ALista%20de%20todas%20las%20entradas%20en%20orden%20alfab%C3%A9tico%2C%20con%20etiquetas%20y%20fecha%20de%20creaci%C3%B3n.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Findices%2Findice.md%0A%0A%23indices_jucardus) ]
 
-* [Entrada nueva](https://github.com/jucardus/jucardus.github.io/blob/main/prueba/entrada-nueva.md) - Prueba, Lingüística, Español - 2025-10-25 10:30:10
-* [Entrada](https://github.com/jucardus/jucardus.github.io/blob/main/prueba/entrada.md) - Entrada - 2025-10-25 11:15:46
-* [Nueva entrada](https://github.com/jucardus/jucardus.github.io/blob/main/prueba/nueva-entrada.md) - Entradas nuevas, Entrada - 2025-10-25 12:05:44
-* [Prueba](https://github.com/jucardus/jucardus.github.io/blob/main/prueba/prueba.md) - Prueba, Lingüística - 2025-10-25 11:55:11
+* [auxiliar](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - Prueba, Lingüística, Español - 2025-10-25 10:30:10
