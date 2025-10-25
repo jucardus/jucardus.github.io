@@ -1,11 +1,4 @@
 # Etiquetas todas
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · compartir ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indices/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/indices/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/indices/actividad.md) · [compartir](https://x.com/intent/tweet?text=Etiquetas%20todas%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Findices%2Fetiquetas.md%0A%0A%23etiquetas_jucardus%0A%23indices_jucardus) ]
 
-* [Entrada](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/entrada.md)
-* [Entradas nuevas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/entradas-nuevas.md)
-* [Español](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/espanol.md)
-* [Lingüística](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/lingvistica.md)
-* [Primera](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/primera.md)
-* [Prueba](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/prueba.md)
-* [Segunda contraseña](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/segunda-contrasena.md)
-* [Tercera española](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas/tercera-espanola.md)
+* [auxiliar](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md)
