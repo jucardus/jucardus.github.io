@@ -1,6 +1,9 @@
 # Prueba
-[ inicio ? ?ndice ? etiquetas ? actividad ? compartir ]
+[ inicio · índice · etiquetas · actividad · compartir ]
 
-asd?lkfjas?dflkj
+Texto con tildes y títulos complicados.
 
-#diccionario - #espanol - #lingvistica - #prueba
+* está muy bien
+* esto también
+
+#avion - #diccionarios - #lingvistica
