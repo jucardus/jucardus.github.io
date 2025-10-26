@@ -179,19 +179,19 @@
         // Convert path to markdown path
         function pathToMdPath(path) {
             if (!path) return 'index.md';
-            
+
             // If path doesn't have .md extension, add it
             if (!path.endsWith('.md')) {
                 path += '.md';
             }
-            
+
             return path;
         }
 
         // Convert GitHub URL to clean site URL
         function githubUrlToSiteUrl(githubUrl) {
             if (!githubUrl.includes('github.com')) return githubUrl;
-            
+
             // Extract path from GitHub blob URL
             const match = githubUrl.match(/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/);
             if (match) {
@@ -200,26 +200,26 @@
                 const cleanPath = mdPath.replace(/\.md$/, '');
                 return `${SITE_URL}/${cleanPath}`;
             }
-            
+
             return githubUrl;
         }
 
         // Extract relative path from GitHub URL
         function extractRelativePath(url) {
             if (!url.includes('github.com')) return url;
-            
+
             // Extract path from GitHub blob URL
             const match = url.match(/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/);
             if (match) {
                 return match[1];
             }
-            
+
             // Extract path from raw GitHub URL
             const rawMatch = url.match(/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+\.md)/);
             if (rawMatch) {
                 return rawMatch[1];
             }
-            
+
             return url;
         }
 
@@ -244,18 +244,18 @@
 
         // Check if URL is a Twitter/X share link and modify it
         function isShareLink(url) {
-            return url.includes('https://x.com/intent/tweet?text=') || 
+            return url.includes('https://x.com/intent/tweet?text=') ||
                    url.includes('https://twitter.com/intent/tweet?text=');
         }
 
         // Modify share URL to use clean site URLs
         function modifyShareUrl(url, currentPagePath) {
             if (!isShareLink(url)) return url;
-            
+
             // Extract the text parameter from the current share URL
             const urlParams = new URLSearchParams(url.split('?')[1]);
             let text = urlParams.get('text') || '';
-            
+
             // Replace GitHub URLs with clean site URLs in the text
             text = text.replace(
                 /https:\/\/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/g,
@@ -264,10 +264,10 @@
                     return `${SITE_URL}/${cleanPath}`;
                 }
             );
-            
+
             // Update the text parameter
             urlParams.set('text', text);
-            
+
             // Reconstruct the URL
             const baseUrl = url.split('?')[0];
             return `${baseUrl}?${urlParams.toString()}`;
@@ -292,7 +292,7 @@
 
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i];
-                
+
                 if (line.startsWith('> ')) {
                     if (!inBlockquote) {
                         inBlockquote = true;
@@ -322,7 +322,7 @@
         function processImages(text, basePath) {
             return text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(match, altText, imageUrl) {
                 let fullImageUrl = imageUrl;
-                
+
                 // Handle relative image paths
                 if (imageUrl.startsWith('./') || imageUrl.startsWith('../') || !imageUrl.includes('://')) {
                     const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
@@ -340,7 +340,7 @@
                         fullImageUrl = BASE_URL + basePath + imageUrl;
                     }
                 }
-                
+
                 return `<div id="imagenes"><img src="${fullImageUrl}" alt="${altText}" class="imagenes"></div>`;
             });
         }
@@ -453,7 +453,7 @@
                             let fullUrl = url;
 
                             // Handle relative URLs
-                            if (url.startsWith('./') || url.startsWith('../') || (!url.includes('://') && !url.startsWith('/'))) {
+                            if (url.startsWith('./') || url.startsWith('../') || !url.includes('://')) {
                                 const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
                                 if (url.startsWith('./')) {
                                     fullUrl = BASE_URL + basePath + url.substring(2);
@@ -466,16 +466,8 @@
                                     }
                                     fullUrl = BASE_URL + path + relPath;
                                 } else if (!url.includes('://')) {
-                                    // Handle root-level files (like readme.md)
-                                    if (basePath && basePath !== '/') {
-                                        fullUrl = BASE_URL + basePath + url;
-                                    } else {
-                                        fullUrl = BASE_URL + url;
-                                    }
+                                    fullUrl = BASE_URL + basePath + url;
                                 }
-                            } else if (url.startsWith('/')) {
-                                // Handle absolute paths from root
-                                fullUrl = BASE_URL + url.substring(1);
                             }
 
                             if (isInternalLink(fullUrl)) {
@@ -544,7 +536,7 @@
                 const trimmedLine = line.trim();
 
                 // Skip processing for lines inside pre tags (code blocks) or blockquotes
-                if (line.includes('<pre>') || line.includes('<blockquote>') || 
+                if (line.includes('<pre>') || line.includes('<blockquote>') ||
                     (inParagraph && (line.includes('</pre>') || line.includes('</blockquote>')))) {
                     if (inParagraph) {
                         newHtml += '</p>';
@@ -652,10 +644,10 @@
                 const markdown = await response.text();
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
-                
+
                 // Update URL hash
                 window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
-                
+
                 // Scroll to top after loading new page
                 window.scrollTo(0, 0);
 
