@@ -25,5 +25,3 @@
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
 * [Tumblr de difusión](https://jucardus.tumblr.com/)
 * [X Twitter](https://x.com/jucardus)
-
-<div align="center">~ • ~</div>
