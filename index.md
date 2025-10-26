@@ -26,6 +26,4 @@
 * [Tumblr de difusión](https://jucardus.tumblr.com/)
 * [X Twitter](https://x.com/jucardus)
 
-<div align="center">
-  <img src="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=4&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Ubuntu&captionFontSize=19&format=png" width="180px" alt="correo jucardus.com">
-</div>
+<div align="center">~ • ~</div>
