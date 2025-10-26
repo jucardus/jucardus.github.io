@@ -3,3 +3,4 @@
 
 * [Bash](https://github.com/jucardus/jucardus.github.io/blob/main/b/a/bash.md)
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
+* [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
