@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
+    <title>Redirecting...</title>
     <script>
-        // Preserve the current URL and redirect back to it
-        // This allows the main app to handle the client-side routing
-        const currentUrl = window.location.href;
-        const baseUrl = window.location.origin;
+        // Capture the current path and redirect to main app with hash
+        const path = window.location.pathname;
         
-        // If we're not already on the base URL, redirect to the main app
-        // but preserve the path for client-side routing
-        if (currentUrl !== baseUrl + '/') {
-            // Redirect to the main app with the full path preserved
-            window.location.href = baseUrl + '/';
+        if (path && path !== '/') {
+            // Remove leading/trailing slashes and convert to hash
+            const cleanPath = path.replace(/^\//, '').replace(/\/$/, '');
+            // Redirect to main app with path as hash
+            window.location.href = `/#${cleanPath}`;
+        } else {
+            // Redirect to homepage
+            window.location.href = '/';
         }
     </script>
 </head>
 <body>
-    <p>Loading application...</p>
+    <p>Redirecting to application...</p>
 </body>
 </html>
