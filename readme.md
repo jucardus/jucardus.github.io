@@ -1,6 +1,8 @@
 # [Actividad reciente](https://jucardus.github.io/actividad) en [Jucardus](https://jucardus.github.io/)
 <sup>[ Algunos de los enlaces pueden estar rotos, por enviar a proyectos o páginas descontinuados. ]</sup>
 
+**25-10-26** - Implementé la versión HTML de mi repositorio (https://jucardus.github.io/repo), disponible en [jucardus.github.io/github](https://jucardus.github.io/github). Eventualmente, cuando el contenido llegue a algo, probablemente será la página principal.
+
 **25-10-25** - Finalmente completé la versión más eficiente de *Google Apps Script* para crear entradas en GitHub con indexamiento y etiquetado automáticos. Facilita muchísimo la adición de contenido.
 
 **25-10-24** - Algunas entradas creadas hoy *[25-10-24](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/24)*: Actualización de Google Chrome con Bash; Actualización de Linux Mint con Bash; Actualización del navegador Brave con Bash; Programación básica; *[Bash - Bourne-Again Shell](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md)*.
