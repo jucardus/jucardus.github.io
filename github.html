@@ -7,7 +7,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-44Y9CNCHR8');
     </script>
     <meta charset="UTF-8">
@@ -49,8 +49,7 @@
         h1, h2, h3, h4 {
             color: #eee;
             border-bottom: 1px solid #666;
-            padding-bottom: 0px;
-            margin: 20px 0 25px 0;
+            margin: 0px 0px 0px 0px;
         }
         p {
             margin: 10px 0;
@@ -107,7 +106,8 @@
             background-color: #034;
             background-color: #0e3948;
             padding: 10px 15px;
-            margin: 0 0 20px 0;
+            margin: 0 0 0 0;
+            margin-bottom: -5px!important;
             z-index: 100;
             border-bottom: 1px solid #555;
         }
@@ -132,7 +132,7 @@
                 max-width: 95%;
             }
             h1 {
-                font-size: 1.5em;
+                /*font-size: 1.5em;*/
             }
             h2 {
                 font-size: 1.3em;
@@ -543,6 +543,7 @@
             html = processLinks(html, basePath, currentPath);
 
             // Convert headers
+            html = html.replace(/^#### (.*$)/gm, '<h4>$1</h4>');
             html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
             html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
             html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
