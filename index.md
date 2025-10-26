@@ -27,3 +27,5 @@
 * [X Twitter](https://x.com/jucardus)
 
 <div align="center">~ • ~</div>
+
+![kitty](https://i.postimg.cc/Hx5X5cpN/2025-07-01-20-19-00.png)
