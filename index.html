@@ -178,7 +178,7 @@
 
         // Convert path to markdown path
         function pathToMdPath(path) {
-            if (!path) return 'readme.md';
+            if (!path) return 'index.md';
 
             // If path doesn't have .md extension, add it
             if (!path.endsWith('.md')) {
@@ -226,10 +226,7 @@
         // Get current page from URL hash
         function getCurrentPage() {
             const hash = window.location.hash.substring(1);
-            if (!hash || hash === 'readme' || hash === 'README') {
-                return 'readme.md';
-            }
-            return pathToMdPath(hash) || 'readme.md';
+            return pathToMdPath(hash) || 'index.md';
         }
 
         // Convert any GitHub URL to raw URL
@@ -641,8 +638,6 @@
                     fetchUrl = BASE_URL + url;
                 }
 
-                console.log('Fetching from:', fetchUrl); // Debug log
-
                 const response = await fetch(fetchUrl);
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
@@ -650,9 +645,8 @@
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
 
-                // Update URL hash - remove .md extension for clean URLs
-                const cleanUrl = url.replace(/\.md$/, '');
-                window.location.hash = url.startsWith('http') ? extractRelativePath(url).replace(/\.md$/, '') : cleanUrl;
+                // Update URL hash
+                window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
 
                 // Scroll to top after loading new page
                 window.scrollTo(0, 0);
@@ -661,7 +655,7 @@
                 console.error('Error:', error);
                 contentDiv.innerHTML = `
                     Error loading: ${url}<br><br>
-                    <a href="#" data-url="readme.md">Go to homepage</a>
+                    <a href="#" onclick="loadPage('index.md')">Go to homepage</a>
                 `;
                 // Scroll to top on error too
                 window.scrollTo(0, 0);
@@ -671,19 +665,10 @@
         // Handle link clicks
         document.addEventListener('click', (e) => {
             if (e.target.tagName === 'A') {
-                const url = e.target.getAttribute('href');
-                const dataUrl = e.target.getAttribute('data-url');
-                
-                if (dataUrl) {
+                const url = e.target.getAttribute('data-url');
+                if (url) {
                     e.preventDefault();
-                    loadPage(dataUrl);
-                } else if (url === '#') {
-                    e.preventDefault();
-                    // Handle onclick links
-                    const onclick = e.target.getAttribute('onclick');
-                    if (onclick && onclick.includes("loadPage('index.md')")) {
-                        loadPage('readme.md');
-                    }
+                    loadPage(url);
                 }
             }
         });
