@@ -1,29 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>My GitHub Pages</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <style>
-    body { background: #444; color: #eee; }
-    a { color: #eee; text-decoration: underline; }
-    a:hover { color: lime; }
-  </style>
+    <meta charset="utf-8">
+    <title>GitHub Pages Browser</title>
+    <style>
+        body { background: #444; color: #eee; margin: 40px; line-height: 1.6; font-family: Arial, sans-serif; }
+        a { color: #eee; text-decoration: underline; }
+        a:hover { color: lime; }
+        h1, h2, h3 { border-bottom: 1px solid #666; padding-bottom: 5px; }
+        code { background: #333; padding: 2px 4px; border-radius: 3px; }
+        pre { background: #333; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        ul { padding-left: 20px; }
+        .loading { color: #eee; }
+        .breadcrumb { margin-bottom: 20px; font-size: 14px; color: #999; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-  <div id="app">Loading...</div>
-  <script>
-    window.$docsify = {
-      name: 'My Site',
-      repo: 'jucardus/jucardus.github.io',
-      basePath: 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/',
-      loadSidebar: true,
-      subMaxLevel: 2,
-      routerMode: 'history'
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <div class="breadcrumb" id="breadcrumb"></div>
+    <div id="content" class="loading">Loading...</div>
+
+    <script>
+        const repo = 'jucardus/jucardus.github.io';
+        const branch = 'main';
+        const baseUrl = `https://raw.githubusercontent.com/${repo}/${branch}/`;
+
+        // Convert GitHub pages URL to raw URL
+        function toRawUrl(url) {
+            if (url.includes('github.com') && url.includes('/blob/')) {
+                return url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+            }
+            return url;
+        }
+
+        // Get current path from URL
+        function getCurrentPath() {
+            return window.location.hash.substring(1) || 'index.md';
+        }
+
+        // Update browser URL
+        function updateUrl(path) {
+            window.location.hash = path;
+        }
+
+        // Render markdown with proper link handling
+        function renderMarkdown(markdown, currentPath) {
+            const basePath = currentPath.substring(0, currentPath.lastIndexOf('/') + 1);
+            
+            return marked.parse(markdown, {
+                renderer: {
+                    link(href, title, text) {
+                        // Handle relative links
+                        let fullUrl = href;
+                        if (href.startsWith('./') || href.startsWith('../') || (!href.includes('://') && !href.startsWith('#'))) {
+                            fullUrl = new URL(href, basePath + 'dummy.md').href.replace('/dummy.md', '');
+                        }
+                        
+                        if (href.includes('.md') || (!href.includes('://') && !href.startsWith('#'))) {
+                            return `<a href="#" onclick="loadPage('${fullUrl}')">${text}</a>`;
+                        } else {
+                            return `<a href="${href}" target="_blank">${text}</a>`;
+                        }
+                    }
+                }
+            });
+        }
+
+        // Load and display page
+        async function loadPage(path) {
+            const contentDiv = document.getElementById('content');
+            const breadcrumbDiv = document.getElementById('breadcrumb');
+            
+            contentDiv.innerHTML = '<div class="loading">Loading...</div>';
+            
+            try {
+                const rawUrl = toRawUrl(path.includes('://') ? path : baseUrl + path);
+                const response = await fetch(rawUrl);
+                
+                if (!response.ok) throw new Error('Not found');
+                
+                const markdown = await response.text();
+                contentDiv.innerHTML = renderMarkdown(markdown, path);
+                updateUrl(path);
+                
+                // Update breadcrumb
+                const parts = path.split('/').filter(p => p);
+                let breadcrumb = '<a href="#" onclick="loadPage(\'index.md\')">Home</a>';
+                let currentPath = '';
+                
+                for (let i = 0; i < parts.length; i++) {
+                    currentPath += parts[i] + (i < parts.length - 1 ? '/' : '');
+                    if (i < parts.length - 1) {
+                        breadcrumb += ` / <a href="#" onclick="loadPage('${currentPath}')">${parts[i]}</a>`;
+                    } else {
+                        breadcrumb += ` / ${parts[i]}`;
+                    }
+                }
+                
+                breadcrumbDiv.innerHTML = breadcrumb;
+                
+            } catch (error) {
+                contentDiv.innerHTML = `Error loading: ${path}<br><br>
+                    <a href="#" onclick="loadPage('index.md')">Return to home page</a>`;
+            }
+        }
+
+        // Handle browser navigation
+        window.addEventListener('hashchange', () => {
+            loadPage(getCurrentPath());
+        });
+
+        // Handle link clicks
+        document.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A' && e.target.getAttribute('href') === '#') {
+                e.preventDefault();
+            }
+        });
+
+        // Start
+        loadPage(getCurrentPath());
+    </script>
 </body>
 </html>
