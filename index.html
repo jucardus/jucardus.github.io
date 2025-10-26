@@ -75,7 +75,7 @@ permalink: /index.html
             top: 0;
             background: #444; /* Normal background when not sticky */
             padding: 10px 15px;
-            margin: 0 -15px 20px -15px;
+            margin: 0 0 20px 0; /* Fixed margin - no negative values */
             z-index: 100;
             border-bottom: 1px solid #555;
             transition: background-color 0.3s ease;
@@ -117,7 +117,7 @@ permalink: /index.html
                 font-size: 0.9em;
             }
             .sticky-nav {
-                margin: 0 -10px 15px -10px;
+                margin: 0 0 15px 0;
                 padding: 8px 10px;
             }
             .page-separator {
@@ -140,7 +140,7 @@ permalink: /index.html
                 font-size: 0.85em;
             }
             .sticky-nav {
-                margin: 0 -5px 10px -5px;
+                margin: 0 0 10px 0;
                 padding: 6px 8px;
                 font-size: 0.9em;
             }
@@ -161,8 +161,31 @@ permalink: /index.html
 
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
 
-        // Get current page from URL hash
+        // Convert GitHub Pages URL to raw markdown URL
+        function githubPagesToMdUrl(path) {
+            // Remove leading/trailing slashes and .html extension
+            let cleanPath = path.replace(/^\//, '').replace(/\/$/, '').replace(/\.html$/, '');
+            
+            // If path is empty, use index.md
+            if (!cleanPath) return 'index.md';
+            
+            // If path doesn't have .md extension, add it
+            if (!cleanPath.endsWith('.md')) {
+                cleanPath += '.md';
+            }
+            
+            return cleanPath;
+        }
+
+        // Get current page from URL path or hash
         function getCurrentPage() {
+            // First try to get from URL path (for GitHub Pages style URLs)
+            const path = window.location.pathname;
+            if (path && path !== '/' && !path.includes('.html')) {
+                return githubPagesToMdUrl(path);
+            }
+            
+            // Fall back to hash-based routing
             return window.location.hash.substring(1) || 'index.md';
         }
 
@@ -181,7 +204,7 @@ permalink: /index.html
 
         // Check if URL is a Twitter/X share link
         function isShareLink(url) {
-            return url.includes('https://x.com/intent/tweet?text=') ||
+            return url.includes('https://x.com/intent/tweet?text=') || 
                    url.includes('https://twitter.com/intent/tweet?text=');
         }
 
@@ -199,7 +222,7 @@ permalink: /index.html
         function processImages(text, basePath) {
             return text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(match, altText, imageUrl) {
                 let fullImageUrl = imageUrl;
-
+                
                 // Handle relative image paths
                 if (imageUrl.startsWith('./') || imageUrl.startsWith('../') || !imageUrl.includes('://')) {
                     const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
@@ -217,7 +240,7 @@ permalink: /index.html
                         fullImageUrl = BASE_URL + basePath + imageUrl;
                     }
                 }
-
+                
                 return `<div id="imagenes"><img src="${fullImageUrl}" alt="${altText}" class="imagenes"></div>`;
             });
         }
@@ -495,7 +518,7 @@ permalink: /index.html
         // Handle sticky navigation background
         function handleStickyNav() {
             const stickyNavs = document.querySelectorAll('.sticky-nav');
-
+            
             const observer = new IntersectionObserver(
                 (entries) => {
                     entries.forEach(entry => {
@@ -533,11 +556,13 @@ permalink: /index.html
                 const displayUrl = url.startsWith('http') ? url : BASE_URL + url;
 
                 contentDiv.innerHTML = renderMarkdown(markdown, displayUrl);
+                
+                // Update URL - use hash for internal navigation
                 window.location.hash = url;
-
+                
                 // Handle sticky navigation after content is loaded
                 setTimeout(handleStickyNav, 0);
-
+                
                 // Scroll to top after loading new page
                 window.scrollTo(0, 0);
 
@@ -568,8 +593,19 @@ permalink: /index.html
             loadPage(getCurrentPage());
         });
 
+        // Handle direct URL access (GitHub Pages style)
+        window.addEventListener('load', () => {
+            const currentPage = getCurrentPage();
+            if (currentPage && !window.location.hash) {
+                loadPage(currentPage);
+            }
+        });
+
         // Start the app
-        loadPage(getCurrentPage());
+        const initialPage = getCurrentPage();
+        if (initialPage) {
+            loadPage(initialPage);
+        }
     </script>
 </body>
 </html>
