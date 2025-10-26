@@ -470,7 +470,7 @@
                             if (isShareLink(url)) {
                                 // Modify share URL to use clean site URLs
                                 const modifiedUrl = modifyShareUrl(url, currentPagePath);
-                                result += `<a href="${modifiedUrl}" target="_blank">${linkText}</a>`;
+                                result += `<a href="${modifiedUrl}" target="_blank" rel="noopener noreferrer nofollow external">${linkText}</a>`;
                                 i = k;
                                 continue;
                             }
@@ -500,7 +500,7 @@
                                 const relativePath = extractRelativePath(fullUrl);
                                 result += `<a href="#" data-url="${relativePath}">${linkText}</a>`;
                             } else {
-                                result += `<a href="${url}" target="_blank">${linkText}</a>`;
+                                result += `<a href="${url}" target="_blank" rel="noopener noreferrer nofollow external">${linkText}</a>`;
                             }
 
                             i = k;
