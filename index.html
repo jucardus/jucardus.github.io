@@ -60,14 +60,12 @@
             background: #333;
             padding: 15px 20px;
             border-radius: 5px;
-            margin: 15px 0;
+            margin: 15px auto;
             font-family: "Times New Roman", Times, serif;
             font-size: 1.1em;
             line-height: 1.5;
             border-left: 4px solid #666;
-            /* Add width control here */
-            max-width: 80%; /* Adjust percentage as needed */
-            width: fit-content; /* Or use specific width like 600px */
+            max-width: 90%;
         }
         #imagenes {
             text-align: center;
@@ -83,15 +81,11 @@
         .sticky-nav {
             position: sticky;
             top: 0;
-            background: #444; /* Normal background when not sticky */
+            background: #333; /* Always #333 background */
             padding: 10px 15px;
-            margin: 0 0 20px 0; /* Fixed margin - no negative values */
+            margin: 0 0 20px 0;
             z-index: 100;
             border-bottom: 1px solid #555;
-            transition: background-color 0.3s ease;
-        }
-        .sticky-nav.sticky {
-            background: #333; /* Dark background only when sticky */
         }
         .sticky-nav a {
             margin: 0 5px;
@@ -129,6 +123,7 @@
             blockquote {
                 padding: 12px 15px;
                 font-size: 1.05em;
+                max-width: 95%;
             }
             .sticky-nav {
                 margin: 0 0 15px 0;
@@ -156,6 +151,7 @@
             blockquote {
                 padding: 10px 12px;
                 font-size: 1em;
+                max-width: 95%;
             }
             .sticky-nav {
                 margin: 0 0 10px 0;
@@ -629,28 +625,6 @@
             return newHtml;
         }
 
-        // Handle sticky navigation background
-        function handleStickyNav() {
-            const stickyNavs = document.querySelectorAll('.sticky-nav');
-            
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach(entry => {
-                        if (entry.boundingClientRect.top < 0) {
-                            entry.target.classList.add('sticky');
-                        } else {
-                            entry.target.classList.remove('sticky');
-                        }
-                    });
-                },
-                { threshold: [0] }
-            );
-
-            stickyNavs.forEach(nav => {
-                observer.observe(nav);
-            });
-        }
-
         // Load a page
         async function loadPage(url) {
             const contentDiv = document.getElementById('content');
@@ -673,9 +647,6 @@
                 
                 // Update URL hash
                 window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
-                
-                // Handle sticky navigation after content is loaded
-                setTimeout(handleStickyNav, 0);
                 
                 // Scroll to top after loading new page
                 window.scrollTo(0, 0);
