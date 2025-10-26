@@ -158,20 +158,21 @@
 
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
 
-        // Convert GitHub Pages URL to markdown path
-        function pathToMdPath(path) {
-            // Remove leading/trailing slashes
-            let cleanPath = path.replace(/^\//, '').replace(/\/$/, '');
-            
-            // If path is empty, use index.md
-            if (!cleanPath) return 'index.md';
-            
-            // If path doesn't have .md extension, add it
-            if (!cleanPath.endsWith('.md')) {
-                cleanPath += '.md';
+        // Convert path to clean URL (without .md extension)
+        function pathToCleanUrl(path) {
+            if (!path || path === 'index.md') return '/';
+            return '/' + path.replace(/\.md$/, '');
+        }
+
+        // Convert clean URL to markdown path
+        function cleanUrlToPath(cleanUrl) {
+            if (!cleanUrl || cleanUrl === '/') return 'index.md';
+            // Remove leading slash and add .md extension
+            let path = cleanUrl.replace(/^\//, '');
+            if (!path.endsWith('.md')) {
+                path += '.md';
             }
-            
-            return cleanPath;
+            return path;
         }
 
         // Extract relative path from GitHub URL
@@ -193,22 +194,10 @@
             return url;
         }
 
-        // Get current page from URL path or hash
+        // Get current page from URL path
         function getCurrentPage() {
-            // First try to get from URL path (for direct access like /actividad.md)
             const path = window.location.pathname;
-            if (path && path !== '/') {
-                return pathToMdPath(path);
-            }
-            
-            // Then try hash-based routing (for internal navigation)
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                return extractRelativePath(hash);
-            }
-            
-            // Default to index.md
-            return 'index.md';
+            return cleanUrlToPath(path);
         }
 
         // Convert any GitHub URL to raw URL
@@ -581,16 +570,12 @@
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
                 const markdown = await response.text();
-                const displayUrl = url.startsWith('http') ? url : BASE_URL + url;
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
                 
-                // Update URL - use only relative path in hash
-                if (url.startsWith('http')) {
-                    window.location.hash = extractRelativePath(url);
-                } else {
-                    window.location.hash = url;
-                }
+                // Update URL using History API (clean URLs without #)
+                const cleanUrl = pathToCleanUrl(url.startsWith('http') ? extractRelativePath(url) : url);
+                window.history.pushState({ url: url }, '', cleanUrl);
                 
                 // Handle sticky navigation after content is loaded
                 setTimeout(handleStickyNav, 0);
@@ -621,8 +606,12 @@
         });
 
         // Handle browser back/forward
-        window.addEventListener('hashchange', () => {
-            loadPage(getCurrentPage());
+        window.addEventListener('popstate', (e) => {
+            if (e.state && e.state.url) {
+                loadPage(e.state.url);
+            } else {
+                loadPage(getCurrentPage());
+            }
         });
 
         // Start the app
