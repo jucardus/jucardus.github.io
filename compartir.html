@@ -56,10 +56,14 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
         
-        h1 {
+        .title-span {
+            display: block;
             text-align: center;
             margin-bottom: 10px;
             color: var(--accent-color);
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
         }
         
         .subtitle {
@@ -216,7 +220,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Twitter Share Link Generator</h1>
+        <span class="title-span" id="reset-title">Twitter Share Link Generator</span>
         <p class="subtitle">Create share links for X (Twitter) with proper formatting</p>
         
         <form id="tweet-form">
@@ -279,11 +283,28 @@
             const tweetBtn = document.getElementById('tweet-btn');
             const successMessage = document.getElementById('success-message');
             const buttonWarning = document.getElementById('button-warning');
+            const resetTitle = document.getElementById('reset-title');
             
             // Error message elements
             const titleError = document.getElementById('title-error');
             const labelsError = document.getElementById('labels-error');
             const linkError = document.getElementById('link-error');
+            
+            // Function to clear all input fields
+            function clearAllInputs() {
+                titleInput.value = '';
+                labelsInput.value = '';
+                descriptionInput.value = '';
+                linkInput.value = '';
+                
+                // Hide any visible error messages
+                titleError.style.display = 'none';
+                labelsError.style.display = 'none';
+                linkError.style.display = 'none';
+                
+                // Reset preview and character count
+                updatePreview();
+            }
             
             // Function to validate form
             function validateForm() {
@@ -454,6 +475,7 @@
             linkInput.addEventListener('input', updatePreview);
             copyBtn.addEventListener('click', copyToClipboard);
             tweetBtn.addEventListener('click', openTwitter);
+            resetTitle.addEventListener('click', clearAllInputs);
             
             // Initial preview update
             updatePreview();
