@@ -56,6 +56,16 @@
             white-space: pre;
             margin: 15px 0;
         }
+        blockquote {
+            background: #333;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.1em;
+            line-height: 1.5;
+            border-left: 4px solid #666;
+        }
         #imagenes {
             text-align: center;
             margin: 20px 0;
@@ -113,6 +123,10 @@
                 padding: 10px;
                 font-size: 0.9em;
             }
+            blockquote {
+                padding: 12px 15px;
+                font-size: 1.05em;
+            }
             .sticky-nav {
                 margin: 0 0 15px 0;
                 padding: 8px 10px;
@@ -136,6 +150,10 @@
                 padding: 8px;
                 font-size: 0.85em;
             }
+            blockquote {
+                padding: 10px 12px;
+                font-size: 1em;
+            }
             .sticky-nav {
                 margin: 0 0 10px 0;
                 padding: 6px 8px;
@@ -157,6 +175,7 @@
         const BRANCH = 'main';
 
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
+        const SITE_URL = `https://${USER}.github.io`;
 
         // Convert path to markdown path
         function pathToMdPath(path) {
@@ -168,6 +187,22 @@
             }
             
             return path;
+        }
+
+        // Convert GitHub URL to clean site URL
+        function githubUrlToSiteUrl(githubUrl) {
+            if (!githubUrl.includes('github.com')) return githubUrl;
+            
+            // Extract path from GitHub blob URL
+            const match = githubUrl.match(/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/);
+            if (match) {
+                const mdPath = match[1];
+                // Remove .md extension for clean URL
+                const cleanPath = mdPath.replace(/\.md$/, '');
+                return `${SITE_URL}/${cleanPath}`;
+            }
+            
+            return githubUrl;
         }
 
         // Extract relative path from GitHub URL
@@ -208,10 +243,35 @@
             return url.includes(USER) && url.includes(REPO) && url.includes('.md');
         }
 
-        // Check if URL is a Twitter/X share link
+        // Check if URL is a Twitter/X share link and modify it
         function isShareLink(url) {
             return url.includes('https://x.com/intent/tweet?text=') || 
                    url.includes('https://twitter.com/intent/tweet?text=');
+        }
+
+        // Modify share URL to use clean site URLs
+        function modifyShareUrl(url, currentPagePath) {
+            if (!isShareLink(url)) return url;
+            
+            // Extract the text parameter from the current share URL
+            const urlParams = new URLSearchParams(url.split('?')[1]);
+            let text = urlParams.get('text') || '';
+            
+            // Replace GitHub URLs with clean site URLs in the text
+            text = text.replace(
+                /https:\/\/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/g,
+                (match, mdPath) => {
+                    const cleanPath = mdPath.replace(/\.md$/, '');
+                    return `${SITE_URL}/${cleanPath}`;
+                }
+            );
+            
+            // Update the text parameter
+            urlParams.set('text', text);
+            
+            // Reconstruct the URL
+            const baseUrl = url.split('?')[0];
+            return `${baseUrl}?${urlParams.toString()}`;
         }
 
         // Check if text looks like a navigation menu
@@ -222,6 +282,41 @@
                 /\[.*inicio.*\].*\[.*índice.*\].*\[.*etiquetas.*\].*\[.*actividad.*\].*\[.*compartir.*\]/i
             ];
             return navPatterns.some(pattern => pattern.test(text));
+        }
+
+        // Process blockquotes
+        function processBlockquotes(text) {
+            const lines = text.split('\n');
+            let inBlockquote = false;
+            let blockquoteContent = '';
+            let result = '';
+
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i];
+                
+                if (line.startsWith('> ')) {
+                    if (!inBlockquote) {
+                        inBlockquote = true;
+                        blockquoteContent = line.substring(2);
+                    } else {
+                        blockquoteContent += '<br>' + line.substring(2);
+                    }
+                } else {
+                    if (inBlockquote) {
+                        result += `<blockquote>${blockquoteContent}</blockquote>`;
+                        inBlockquote = false;
+                        blockquoteContent = '';
+                    }
+                    result += line + '\n';
+                }
+            }
+
+            // Close any open blockquote at the end
+            if (inBlockquote) {
+                result += `<blockquote>${blockquoteContent}</blockquote>`;
+            }
+
+            return result;
         }
 
         // Process images with custom styling
@@ -313,7 +408,7 @@
         }
 
         // Process links in text - handles nested brackets
-        function processLinks(text, basePath) {
+        function processLinks(text, basePath, currentPagePath) {
             let result = '';
             let i = 0;
 
@@ -349,8 +444,9 @@
 
                             // Check for share links FIRST (before any URL processing)
                             if (isShareLink(url)) {
-                                // Share links always open in new tab
-                                result += `<a href="${url}" target="_blank">${linkText}</a>`;
+                                // Modify share URL to use clean site URLs
+                                const modifiedUrl = modifyShareUrl(url, currentPagePath);
+                                result += `<a href="${modifiedUrl}" target="_blank">${linkText}</a>`;
                                 i = k;
                                 continue;
                             }
@@ -410,14 +506,17 @@
 
             let html = text;
 
-            // Process code blocks FIRST (before anything else)
+            // Process blockquotes FIRST
+            html = processBlockquotes(html);
+
+            // Process code blocks SECOND
             html = processCodeBlocks(html);
 
-            // Process images SECOND (after code blocks, before links)
+            // Process images THIRD
             html = processImages(html, currentPath);
 
-            // Process ALL links (after code blocks and images)
-            html = processLinks(html, basePath);
+            // Process ALL links (pass currentPath for share URL modification)
+            html = processLinks(html, basePath, currentPath);
 
             // Convert headers
             html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
@@ -437,8 +536,9 @@
                 const line = lines[i];
                 const trimmedLine = line.trim();
 
-                // Skip processing for lines inside pre tags (code blocks)
-                if (line.includes('<pre>') || (inParagraph && line.includes('</pre>'))) {
+                // Skip processing for lines inside pre tags (code blocks) or blockquotes
+                if (line.includes('<pre>') || line.includes('<blockquote>') || 
+                    (inParagraph && (line.includes('</pre>') || line.includes('</blockquote>')))) {
                     if (inParagraph) {
                         newHtml += '</p>';
                         inParagraph = false;
