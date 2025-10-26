@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -158,10 +160,10 @@
 
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
 
-        // Convert GitHub Pages URL to raw markdown URL
-        function githubPagesToMdUrl(path) {
-            // Remove leading/trailing slashes and .html extension
-            let cleanPath = path.replace(/^\//, '').replace(/\/$/, '').replace(/\.html$/, '');
+        // Convert GitHub Pages URL to markdown path
+        function pathToMdPath(path) {
+            // Remove leading/trailing slashes
+            let cleanPath = path.replace(/^\//, '').replace(/\/$/, '');
             
             // If path is empty, use index.md
             if (!cleanPath) return 'index.md';
@@ -174,16 +176,41 @@
             return cleanPath;
         }
 
-        // Get current page from URL path or hash
-        function getCurrentPage() {
-            // First try to get from URL path (for GitHub Pages style URLs)
-            const path = window.location.pathname;
-            if (path && path !== '/' && !path.includes('.html')) {
-                return githubPagesToMdUrl(path);
+        // Extract relative path from GitHub URL
+        function extractRelativePath(url) {
+            if (!url.includes('github.com')) return url;
+            
+            // Extract path from GitHub blob URL
+            const match = url.match(/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/);
+            if (match) {
+                return match[1];
             }
             
-            // Fall back to hash-based routing
-            return window.location.hash.substring(1) || 'index.md';
+            // Extract path from raw GitHub URL
+            const rawMatch = url.match(/raw\.githubusercontent\.com\/[^\/]+\/[^\/]+\/[^\/]+\/(.+\.md)/);
+            if (rawMatch) {
+                return rawMatch[1];
+            }
+            
+            return url;
+        }
+
+        // Get current page from URL path or hash
+        function getCurrentPage() {
+            // First try to get from URL path (for direct access like /actividad.md)
+            const path = window.location.pathname;
+            if (path && path !== '/') {
+                return pathToMdPath(path);
+            }
+            
+            // Then try hash-based routing (for internal navigation)
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                return extractRelativePath(hash);
+            }
+            
+            // Default to index.md
+            return 'index.md';
         }
 
         // Convert any GitHub URL to raw URL
@@ -336,7 +363,7 @@
                         if (parenCount === 0) {
                             // Extract link text and URL
                             const linkText = text.substring(i + 1, j - 1);
-                            const url = text.substring(j + 1, k - 1);
+                            let url = text.substring(j + 1, k - 1);
 
                             // Check for share links FIRST (before any URL processing)
                             if (isShareLink(url)) {
@@ -349,22 +376,27 @@
                             let fullUrl = url;
 
                             // Handle relative URLs
-                            if (url.startsWith('./')) {
-                                fullUrl = BASE_URL + basePath + url.substring(2);
-                            } else if (url.startsWith('../')) {
-                                let path = basePath;
-                                let relPath = url;
-                                while (relPath.startsWith('../')) {
-                                    path = path.substring(0, path.lastIndexOf('/', path.length - 2) + 1);
-                                    relPath = relPath.substring(3);
+                            if (url.startsWith('./') || url.startsWith('../') || !url.includes('://')) {
+                                const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
+                                if (url.startsWith('./')) {
+                                    fullUrl = BASE_URL + basePath + url.substring(2);
+                                } else if (url.startsWith('../')) {
+                                    let path = basePath;
+                                    let relPath = url;
+                                    while (relPath.startsWith('../')) {
+                                        path = path.substring(0, path.lastIndexOf('/', path.length - 2) + 1);
+                                        relPath = relPath.substring(3);
+                                    }
+                                    fullUrl = BASE_URL + path + relPath;
+                                } else if (!url.includes('://')) {
+                                    fullUrl = BASE_URL + basePath + url;
                                 }
-                                fullUrl = BASE_URL + path + relPath;
-                            } else if (!url.includes('://')) {
-                                fullUrl = BASE_URL + basePath + url;
                             }
 
                             if (isInternalLink(fullUrl)) {
-                                result += `<a href="#" data-url="${fullUrl}">${linkText}</a>`;
+                                // Store only the relative path in data-url
+                                const relativePath = extractRelativePath(fullUrl);
+                                result += `<a href="#" data-url="${relativePath}">${linkText}</a>`;
                             } else {
                                 result += `<a href="${url}" target="_blank">${linkText}</a>`;
                             }
@@ -543,6 +575,7 @@
                 if (url.startsWith('http')) {
                     fetchUrl = toRawUrl(url);
                 } else {
+                    // For relative paths, construct the full URL
                     fetchUrl = BASE_URL + url;
                 }
 
@@ -552,10 +585,14 @@
                 const markdown = await response.text();
                 const displayUrl = url.startsWith('http') ? url : BASE_URL + url;
 
-                contentDiv.innerHTML = renderMarkdown(markdown, displayUrl);
+                contentDiv.innerHTML = renderMarkdown(markdown, url);
                 
-                // Update URL - use hash for internal navigation
-                window.location.hash = url;
+                // Update URL - use only relative path in hash
+                if (url.startsWith('http')) {
+                    window.location.hash = extractRelativePath(url);
+                } else {
+                    window.location.hash = url;
+                }
                 
                 // Handle sticky navigation after content is loaded
                 setTimeout(handleStickyNav, 0);
@@ -588,14 +625,6 @@
         // Handle browser back/forward
         window.addEventListener('hashchange', () => {
             loadPage(getCurrentPage());
-        });
-
-        // Handle direct URL access (GitHub Pages style)
-        window.addEventListener('load', () => {
-            const currentPage = getCurrentPage();
-            if (currentPage && !window.location.hash) {
-                loadPage(currentPage);
-            }
         });
 
         // Start the app
