@@ -53,10 +53,14 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
-        h1 {
+        .title-span {
+            display: block;
             text-align: center;
             margin-bottom: 10px;
             color: var(--accent-color);
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
         }
 
         .subtitle {
@@ -197,7 +201,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Twitter Share Link Generator</h1>
+        <span class="title-span" id="reset-title">Twitter Share Link Generator</span>
         <p class="subtitle">Create share links for X (Twitter) with proper formatting</p>
 
         <form id="tweet-form">
@@ -252,6 +256,18 @@
             const copyBtn = document.getElementById('copy-btn');
             const tweetBtn = document.getElementById('tweet-btn');
             const successMessage = document.getElementById('success-message');
+            const resetTitle = document.getElementById('reset-title');
+
+            // Function to clear all input fields
+            function clearAllInputs() {
+                titleInput.value = '';
+                labelsInput.value = '';
+                descriptionInput.value = '';
+                linkInput.value = '';
+                
+                // Reset preview and character count
+                updatePreview();
+            }
 
             // Function to sanitize labels for hashtags
             function sanitizeLabel(label) {
@@ -383,6 +399,7 @@
             linkInput.addEventListener('input', updatePreview);
             copyBtn.addEventListener('click', copyToClipboard);
             tweetBtn.addEventListener('click', openTwitter);
+            resetTitle.addEventListener('click', clearAllInputs);
 
             // Initial preview update
             updatePreview();
