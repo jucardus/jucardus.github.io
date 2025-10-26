@@ -635,8 +635,15 @@
                     fetchUrl = toRawUrl(url);
                 } else {
                     // For relative paths, construct the full URL
-                    fetchUrl = BASE_URL + url;
+                    // Handle files in root directory properly
+                    if (url === 'readme.md' || url === 'README.md') {
+                        fetchUrl = BASE_URL + url;
+                    } else {
+                        fetchUrl = BASE_URL + url;
+                    }
                 }
+
+                console.log('Fetching from:', fetchUrl); // Debug log
 
                 const response = await fetch(fetchUrl);
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -645,8 +652,9 @@
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
 
-                // Update URL hash
-                window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
+                // Update URL hash - remove .md extension for clean URLs
+                const cleanUrl = url.replace(/\.md$/, '');
+                window.location.hash = url.startsWith('http') ? extractRelativePath(url).replace(/\.md$/, '') : cleanUrl;
 
                 // Scroll to top after loading new page
                 window.scrollTo(0, 0);
@@ -655,13 +663,12 @@
                 console.error('Error:', error);
                 contentDiv.innerHTML = `
                     Error loading: ${url}<br><br>
-                    <a href="#" onclick="loadPage('index.md')">Go to homepage</a>
+                    <a href="#" data-url="index">Go to homepage</a>
                 `;
                 // Scroll to top on error too
                 window.scrollTo(0, 0);
             }
         }
-
         // Handle link clicks
         document.addEventListener('click', (e) => {
             if (e.target.tagName === 'A') {
