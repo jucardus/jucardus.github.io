@@ -8,11 +8,11 @@
 
 ### Autor y contacto
 
-* Autor: Julio Cárdenas Pelizzari ©
-* Contacto: [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
-* Pagos y donaciones: [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
-* Sitio central: [jucardus.github.io](https://jucardus.github.io)
-* Linktree: [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* **Autor:** Julio Cárdenas Pelizzari ©
+* **Contacto:** [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
+* **Pagos y donaciones:** [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
+* **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
+* **Linktree:** [linktr.ee/jucardus](https://linktr.ee/jucardus)
 
 ### Mis sitios web
 
