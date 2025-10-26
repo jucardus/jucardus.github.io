@@ -3,7 +3,7 @@
 
 * **[Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md)** - Todas las entradas del repositorio según son creadas, con las más recientes a la cabeza.
 * **[Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md)** - Etiquetas o temas para clasificar y agrupar el contenido.
-* **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md)** - Entradas del repositorio en orden alfabético, en el futuro clasificadas por letra inicial.
+* **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md)** - Entradas del repositorio en orden alfabético, en el futuro clasificadas según la letra inicial.
 * **Traducciones al español** - [ en preparación ]
 
 ### Autor y contacto
