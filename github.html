@@ -19,7 +19,7 @@
         a {
             color: #eee;
             text-decoration: none;
-            border-bottom: 0.5px Solid #aaa;
+            border-bottom: 0.5px Solid #909090;
         }
         a:hover {
             color: Gold;
@@ -202,6 +202,7 @@
                 const mdPath = match[1];
                 // Remove .md extension for clean URL
                 const cleanPath = mdPath.replace(/\.md$/, '');
+                // return `${SITE_URL}/${cleanPath}`;
                 return `${SITE_URL}/github.html#${cleanPath}`;
             }
 
