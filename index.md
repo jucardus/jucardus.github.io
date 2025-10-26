@@ -10,9 +10,8 @@
 
 * Autor: Julio Cárdenas Pelizzari ©
 * Contacto: [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
-* Sitio central: [jucardus.github.io](https://jucardus.github.io)
-* Actividad general: [readme.md](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md)
 * Pagos y donaciones: [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
+* Linktree: [linktr.ee/jucardus](https://linktr.ee/jucardus)
 
 ### Mis sitios web
 
@@ -20,6 +19,7 @@
 * [Facebook de difusión](https://www.facebook.com/jucardus.page)
 * [Fotografías muchas](https://jucardus.github.io/fotos)
 * [Invitación a pCloud](https://is.gd/ipcloud)
+* [Linktr.ee](https://linktr.ee/jucardus)
 * [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g)
 * [Música en YouTube](https://www.youtube.com/@jucardus/playlists)
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus)
