@@ -26,4 +26,6 @@
 * [Tumblr de difusión](https://jucardus.tumblr.com/)
 * [X Twitter](https://x.com/jucardus)
 
-[#indices](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/indices-todos.md)
+<div align="center">
+  <img src="https://i.postimg.cc/fyqDDN17/correo-jucardus.png" width="50%" alt="correo jucardus">
+</div>
