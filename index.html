@@ -453,7 +453,7 @@
                             let fullUrl = url;
 
                             // Handle relative URLs
-                            if (url.startsWith('./') || url.startsWith('../') || !url.includes('://')) {
+                            if (url.startsWith('./') || url.startsWith('../') || (!url.includes('://') && !url.startsWith('/'))) {
                                 const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
                                 if (url.startsWith('./')) {
                                     fullUrl = BASE_URL + basePath + url.substring(2);
@@ -466,8 +466,16 @@
                                     }
                                     fullUrl = BASE_URL + path + relPath;
                                 } else if (!url.includes('://')) {
-                                    fullUrl = BASE_URL + basePath + url;
+                                    // Handle root-level files (like readme.md)
+                                    if (basePath && basePath !== '/') {
+                                        fullUrl = BASE_URL + basePath + url;
+                                    } else {
+                                        fullUrl = BASE_URL + url;
+                                    }
                                 }
+                            } else if (url.startsWith('/')) {
+                                // Handle absolute paths from root
+                                fullUrl = BASE_URL + url.substring(1);
                             }
 
                             if (isInternalLink(fullUrl)) {
