@@ -5,6 +5,7 @@
 * [Bash](https://github.com/jucardus/jucardus.github.io/blob/main/b/a/bash.md)
 * [Brave](https://github.com/jucardus/jucardus.github.io/blob/main/b/r/brave.md)
 * [Catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
+* [Conjugaciones latinas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/conjugaciones-latinas.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)
 * [Google Chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
@@ -12,4 +13,5 @@
 * [Según Grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
+* [Verbos latinos de la primera conjugación](https://github.com/jucardus/jucardus.github.io/blob/main/v/e/verbos-latinos-de-la-primera-conjugacion.md)
 * [Vocabulario español](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol.md)
