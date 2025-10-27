@@ -689,8 +689,8 @@
             } catch (error) {
                 console.error('Error:', error);
                 contentDiv.innerHTML = `
-                    Error loading: ${url}<br><br>
-                    <a href="#" onclick="loadPage('index.md')">Go to homepage</a>
+                    <center><big>La página <b>${url}</b> ha sido eliminada o nunca existió.<br><br>
+                    <big><a href="#" onclick="loadPage('index.md')"><b>Volver al inicio</b></a></big></big></center>
                 `;
                 // Scroll to top on error too
                 window.scrollTo(0, 0);
