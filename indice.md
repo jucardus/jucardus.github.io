@@ -7,7 +7,7 @@
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave - 25-10-27 11:55:51
 * [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27 12:04:33
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27 12:28:52
-* [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación - 25-10-27 12:14:54
+* [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27 12:30:31
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27 12:21:50
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26 17:45:23
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26 18:24:59
