@@ -3,9 +3,6 @@
 
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación - 25-10-27 12:08:32
 * [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27 12:04:34
-* [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27 12:04:27
-* [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27 12:02:49
-* [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Bash, Programación, Brave - 25-10-27 12:00:33
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave - 25-10-27 11:55:52
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Programación, Linux Mint - 25-10-27 11:53:16
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - Bash, Programación, Google Chrome - 25-10-27 11:49:58
