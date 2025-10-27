@@ -4,5 +4,4 @@
 prueba
 
 [#prueba-1](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-1.md)
-
 [#prueba-2](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-2.md)
