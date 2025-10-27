@@ -3,4 +3,6 @@
 
 Ahórrate el engorroso trámite de ir a alguno de los cielos y quédate aquí, con Dios; hay trabajo por hacer.
 
+~ jucardus ~
+
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
