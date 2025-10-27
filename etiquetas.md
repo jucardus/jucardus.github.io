@@ -12,6 +12,8 @@
 * [Google Chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
 * [Programación](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)
+* [Prueba 1](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-1.md)
+* [Prueba 2](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/prueba-2.md)
 * [Según Grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
