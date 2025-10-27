@@ -9,21 +9,21 @@
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Contacto:** [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
-* **Pagos y donaciones:** [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
-* **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
-* **Linktree:** [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* **Contacto:** jucardus en gmail punto com
+* **Pagos y donaciones:** [...me/jucardus ↗](https://www.paypal.com/paypalme/jucardus)
+* **Sitio central:** [jucardus.github.io ↗](https://jucardus.github.io)
+* **Linktree:** [linktr.ee/jucardus ↗](https://linktr.ee/jucardus)
 
 ### Mis sitios web
 
-* [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
-* [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
-* [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
-* [Invitación a pCloud](https://is.gd/ipcloud) - i.jucardus.com
-* [Linktr.ee](https://linktr.ee/jucardus) - lt.jucardus.com
-* [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g) - mega.jucardus.com
-* [Música en YouTube](https://www.youtube.com/@jucardus/playlists) - m.jucardus.com
-* [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
+* [Enlaces varios ↗](https://jucardus.github.io/enlaces) - e.jucardus.com
+* [Facebook de difusión ↗](https://www.facebook.com/jucardus.page) - fb.jucardus.com
+* [Fotografías muchas ↗](https://jucardus.github.io/fotos) - f.jucardus.com
+* [Invitación a pCloud ↗](https://is.gd/ipcloud) - i.jucardus.com
+* [Linktree ↗](https://linktr.ee/jucardus) - lt.jucardus.com
+* [Mega Jucardus ↗](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g) - mega.jucardus.com
+* [Música en YouTube ↗](https://www.youtube.com/@jucardus/playlists) - m.jucardus.com
+* [Pagos y donaciones ↗](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
 * [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) - r.jucardus.com
-* [Tumblr de difusión](https://jucardus.tumblr.com/) - t.jucardus.com
-* [X Twitter](https://x.com/jucardus) - x.jucardus.com
+* [Tumblr de difusión ↗](https://jucardus.tumblr.com/) - t.jucardus.com
+* [X Twitter ↗](https://x.com/jucardus) - x.jucardus.com
