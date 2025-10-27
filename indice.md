@@ -6,5 +6,6 @@
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Programación, Linux Mint - 25-10-27 11:53:15
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave - 25-10-27 11:55:51
 * [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27 12:04:33
+* [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación - 25-10-27 12:08:31
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26 17:45:23
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26 18:24:59
