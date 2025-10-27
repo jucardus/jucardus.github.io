@@ -7,6 +7,7 @@
 * [Catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
 * [Conjugaciones latinas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/conjugaciones-latinas.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)
+* [Diccionario latín-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-latin-espanol.md)
 * [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
 * [Google Chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
