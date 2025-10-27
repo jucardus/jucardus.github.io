@@ -10,5 +10,5 @@
 * [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27 12:30:31
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27 12:21:50
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26 17:45:23
-* [Prueba](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/u/prueba.md) - Prueba 1, Prueba 2 - 25-10-27 13:26:16
+* [Prueba](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/u/prueba.md) - Prueba 1, Prueba 2 - 25-10-27 13:30:57
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26 18:24:59
