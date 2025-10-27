@@ -3,3 +3,4 @@
 
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-10-27 11:49:55
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - 25-10-27 11:53:12
+* [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - 25-10-27 11:55:47
