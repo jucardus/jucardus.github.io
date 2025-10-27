@@ -3,6 +3,6 @@
 
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-10-26 18:44:44
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - Bash, Programación, Google Chrome - 25-10-27 11:49:58
-* [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Linux Mint - 25-10-25 18:41:38
+* [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Programación, Linux Mint - 25-10-27 11:53:15
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26 17:45:23
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26 18:24:59
