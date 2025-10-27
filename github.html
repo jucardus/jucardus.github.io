@@ -422,7 +422,8 @@
         function processTextFormatting(text) {
             let result = text;
 
-            // Process in correct order: 1. ***bold-italic***, 2. **bold**, 3. *italic*
+            // Process in correct order:
+            // 1. ***bold-italic***, 2. **bold**, 3. *italic*, 4. _italic_
 
             // 1. Bold-italic (***text***)
             result = result.replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>');
@@ -432,6 +433,16 @@
 
             // 3. Italic (*text*)
             result = result.replace(/\*(.*?)\*/g, '<em>$1</em>');
+
+            // 4. NEW: Robust italic with underscores (_text_)
+            // This handles all punctuation and special characters
+            result = result.replace(/(^|\s|\(|\[|\{|\<|«|"|'|—|–|:)(_[^_]+_)(?=$|\s|\)|\]|\}|\>|»|"|'|,|;|\.|\?|!|:|—|–)/g,
+                function(match, before, italicText) {
+                    // Extract the actual text between underscores
+                    const textContent = italicText.substring(1, italicText.length - 1);
+                    return before + '<em>' + textContent + '</em>';
+                }
+            );
 
             return result;
         }
