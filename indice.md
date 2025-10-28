@@ -9,6 +9,7 @@
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27 12:28:52
 * [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27 12:30:31
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - Frases latinas - 25-10-27 19:53:19
+* [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - Frases latinas - 25-10-27 19:57:37
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27 12:21:50
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26 17:45:23
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26 18:24:59
