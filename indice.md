@@ -12,6 +12,6 @@
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - Frases latinas - 25-10-27 19:57:37
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-10-27 20:00:31
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27 12:21:50
-* [El recuerdo más puro...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Frases latinas - 25-10-27 20:01:51
+* [El recuerdo más puro...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27 20:03:03
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26 17:45:23
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26 18:24:59
