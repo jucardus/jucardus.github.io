@@ -7,9 +7,12 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-44Y9CNCHR8');
     </script>
+
+    <!-- Include search.js directly -->
+    <script src="https://jucardus.github.io/search.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -313,29 +316,7 @@
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
         const SITE_URL = `https://${USER}.github.io`;
 
-        // Search functionality
-        let searchData = [];
-
-        // Load search data from search.js
-        async function loadSearchData() {
-            try {
-                const response = await fetch(`${BASE_URL}search.js`);
-                const jsContent = await response.text();
-
-                // Extract the base array from the JavaScript file
-                const match = jsContent.match(/base\s*=\s*\[([\s\S]*?)\]\s*;/);
-                if (match) {
-                    // This is a simplified extraction - you might need to adjust based on your exact format
-                    const arrayContent = match[1];
-                    // For now, we'll use eval to parse the array (be careful with this in production)
-                    searchData = eval(`[${arrayContent}]`);
-                }
-            } catch (error) {
-                console.error('Error loading search data:', error);
-            }
-        }
-
-        // Show search box
+        // Search functionality - using global 'base' array from search.js
         function mostrar() {
             document.getElementById('search-overlay').style.display = 'block';
             document.getElementById('search-box').style.display = 'block';
@@ -344,18 +325,17 @@
             document.getElementById('search-results').innerHTML = '';
         }
 
-        // Hide search box
         function ocultar() {
             document.getElementById('search-overlay').style.display = 'none';
             document.getElementById('search-box').style.display = 'none';
         }
 
-        // Perform search
         function buscar() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
             if (!query) return;
 
-            const results = searchData.filter(item =>
+            // Use the global base array directly from search.js
+            const results = base.filter(item =>
                 item.toLowerCase().includes(query)
             );
 
@@ -368,8 +348,6 @@
 
         // Initialize search functionality
         document.addEventListener('DOMContentLoaded', function() {
-            loadSearchData();
-
             const searchInput = document.getElementById('search-input');
             searchInput.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
@@ -383,9 +361,14 @@
                     ocultar();
                 }
             });
+
+            // Debug: Check if base is loaded
+            console.log("Base array loaded:", typeof base !== 'undefined');
+            if (typeof base !== 'undefined') {
+                console.log("Number of search items:", base.length);
+            }
         });
 
-        // [REST OF YOUR ORIGINAL JAVASCRIPT CODE REMAINS UNCHANGED]
         // Convert path to markdown path
         function pathToMdPath(path) {
             if (!path) return 'index.md';
