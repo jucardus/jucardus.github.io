@@ -161,8 +161,10 @@
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.3);
             z-index: 1001;
-            width: 80%;
-            max-width: 500px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            box-sizing: border-box;
         }
         #search-input {
             width: 100%;
@@ -172,11 +174,27 @@
             border-radius: 4px;
             background: #405060;
             color: #eaeaea;
+            box-sizing: border-box;
         }
         #search-results {
-            max-height: 400px;
+            max-height: calc(80vh - 100px);
             overflow-y: auto;
             margin-top: 15px;
+            padding-right: 5px;
+        }
+        #search-results::-webkit-scrollbar {
+            width: 8px;
+        }
+        #search-results::-webkit-scrollbar-track {
+            background: #405060;
+            border-radius: 4px;
+        }
+        #search-results::-webkit-scrollbar-thumb {
+            background: #666;
+            border-radius: 4px;
+        }
+        #search-results::-webkit-scrollbar-thumb:hover {
+            background: #777;
         }
         #search-results ul {
             list-style: none;
@@ -186,6 +204,8 @@
         #search-results li {
             padding: 10px;
             border-bottom: 1px solid #405060;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         #search-results li:last-child {
             border-bottom: none;
@@ -194,6 +214,8 @@
             color: #eaeaea;
             text-decoration: none;
             border-bottom: none;
+            display: block;
+            width: 100%;
         }
         #search-results a:hover {
             color: Gold;
@@ -243,8 +265,9 @@
                 margin: 0px 0 0px 0;
             }
             #search-box {
-                width: 90%;
+                width: 95%;
                 padding: 15px;
+                max-width: 95vw;
             }
             #floating-search {
                 bottom: 20px;
@@ -252,6 +275,9 @@
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
+            }
+            #search-results {
+                max-height: calc(80vh - 80px);
             }
         }
 
@@ -288,6 +314,13 @@
                 width: 45px;
                 height: 45px;
                 font-size: 18px;
+            }
+            #search-box {
+                width: 98%;
+                padding: 12px;
+            }
+            #search-results {
+                max-height: calc(80vh - 70px);
             }
         }
     </style>
