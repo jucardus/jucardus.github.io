@@ -366,18 +366,55 @@
             document.getElementById('search-box').style.display = 'none';
         }
 
+        // Function to extract text for sorting from the HTML link
+        function getSortableText(item) {
+            // Extract the text between <b> tags for sorting
+            const match = item.match(/<b>([^<]+)<\/b>/);
+            if (match) {
+                return match[1].toLowerCase().trim();
+            }
+            // Fallback: return the entire item for sorting
+            return item.toLowerCase().trim();
+        }
+
+        // Function to extract URL for sorting (alternative method)
+        function getSortableUrl(item) {
+            // Extract the URL from the href attribute
+            const urlMatch = item.match(/href='([^']+)'/);
+            if (urlMatch) {
+                return urlMatch[1].toLowerCase().trim();
+            }
+            return item.toLowerCase().trim();
+        }
+
         function buscar() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
             if (!query) return;
 
             // Use the global base array directly from search.js
-            const results = base.filter(item =>
+            let results = base.filter(item =>
                 item.toLowerCase().includes(query)
             );
 
+            // Remove duplicates using Set
+            const uniqueResults = [...new Set(results)];
+
+            // Sort results alphabetically by the link text (between <b> tags)
+            const sortedResults = uniqueResults.sort((a, b) => {
+                const textA = getSortableText(a);
+                const textB = getSortableText(b);
+
+                // Use localeCompare for proper Unicode sorting
+                return textA.localeCompare(textB, 'es', {
+                    sensitivity: 'base',
+                    ignorePunctuation: true,
+                    numeric: true
+                });
+            });
+
             // Render the HTML links directly - they're already properly formatted
-            const resultsHtml = results.length > 0
-                ? `<ul>${results.map(item => `<li>${item}</li>`).join('')}</ul>`
+            const resultsHtml = sortedResults.length > 0
+                ? `<ul>${sortedResults.map(item => `<li>${item}</li>`).join('')}</ul>`
                 : '<p>No se encontraron resultados.</p>';
 
             document.getElementById('search-results').innerHTML = resultsHtml;
