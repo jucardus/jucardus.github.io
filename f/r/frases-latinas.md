@@ -3,4 +3,5 @@
 
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - 25-10-27 19:53:16
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - 25-10-27 19:57:36
+* [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - 25-10-27 20:00:29
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - 25-10-27 12:21:48
