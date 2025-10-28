@@ -7,8 +7,8 @@
 
 ### Traducciones
 
-* café (los granos, los granos molidos y la bebida)
-* café (la planta)
+* café (los granos, los granos molidos y la bebida) ¦Bbds¦
+* café (la planta) ¦Plnts¦
 
 ### Vocabulario relacionado
 
