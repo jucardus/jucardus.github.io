@@ -339,6 +339,7 @@
                 item.toLowerCase().includes(query)
             );
 
+            // Render the HTML links directly - they're already properly formatted
             const resultsHtml = results.length > 0
                 ? `<ul>${results.map(item => `<li>${item}</li>`).join('')}</ul>`
                 : '<p>No se encontraron resultados.</p>';
@@ -366,6 +367,7 @@
             console.log("Base array loaded:", typeof base !== 'undefined');
             if (typeof base !== 'undefined') {
                 console.log("Number of search items:", base.length);
+                console.log("First item:", base[0]);
             }
         });
 
