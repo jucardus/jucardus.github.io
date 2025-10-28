@@ -347,12 +347,27 @@
             document.getElementById('search-results').innerHTML = resultsHtml;
         }
 
+        // Close search when clicking on any link in search results
+        function setupSearchResultsClickHandler() {
+            const searchResults = document.getElementById('search-results');
+            if (searchResults) {
+                searchResults.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        // Close the search overlay when any link is clicked
+                        ocultar();
+                    }
+                });
+            }
+        }
+
         // Initialize search functionality
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('search-input');
             searchInput.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     buscar();
+                    // Set up click handler for search results after they are loaded
+                    setTimeout(setupSearchResultsClickHandler, 100);
                 }
             });
 
