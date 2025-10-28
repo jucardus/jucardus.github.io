@@ -356,6 +356,9 @@
             document.getElementById('search-input').focus();
             document.getElementById('search-input').value = '';
             document.getElementById('search-results').innerHTML = '';
+
+            // Set up click handler immediately when search is shown
+            setTimeout(setupSearchResultsClickHandler, 100);
         }
 
         function ocultar() {
@@ -378,14 +381,24 @@
                 : '<p>No se encontraron resultados.</p>';
 
             document.getElementById('search-results').innerHTML = resultsHtml;
+
+            // Set up click handler after search results are loaded
+            setTimeout(setupSearchResultsClickHandler, 100);
         }
 
         // Close search when clicking on any link in search results
         function setupSearchResultsClickHandler() {
             const searchResults = document.getElementById('search-results');
             if (searchResults) {
-                searchResults.addEventListener('click', function(e) {
+                // Remove any existing click handlers to avoid duplicates
+                searchResults.replaceWith(searchResults.cloneNode(true));
+
+                // Get the fresh reference after cloning
+                const freshSearchResults = document.getElementById('search-results');
+
+                freshSearchResults.addEventListener('click', function(e) {
                     if (e.target.tagName === 'A') {
+                        console.log('Search result link clicked, closing overlay');
                         // Close the search overlay when any link is clicked
                         ocultar();
                     }
@@ -399,9 +412,14 @@
             searchInput.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter') {
                     buscar();
-                    // Set up click handler for search results after they are loaded
-                    setTimeout(setupSearchResultsClickHandler, 100);
                 }
+            });
+
+            // Also search on input change for better UX
+            searchInput.addEventListener('input', function(e) {
+                // Add a small delay to avoid searching on every keystroke
+                clearTimeout(window.searchTimeout);
+                window.searchTimeout = setTimeout(buscar, 300);
             });
 
             // Close search on Escape key
