@@ -11,7 +11,7 @@
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27 21:16:56
 * [咖啡 (咖啡) [kāfēi]](https://github.com/jucardus/jucardus.github.io/blob/main/k/a/1/ka1-fei1.md) - Diccionario chino-español - 25-10-27 21:12:44
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - Apotegmas - 25-10-27 20:48:25
-* [El recuerdo más puro...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27 20:03:04
+* [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27 20:03:04
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-10-27 20:00:32
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - Frases latinas - 25-10-27 19:57:38
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - Frases latinas - 25-10-27 19:53:20
