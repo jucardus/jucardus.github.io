@@ -11,6 +11,7 @@
 * [Diccionario chino-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)
 * [Diccionario latín-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-latin-espanol.md)
+* [Enlaces](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces.md)
 * [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces-varios.md)
 * [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
 * [GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)
@@ -24,3 +25,4 @@
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
 * [Verbos latinos de la primera conjugación](https://github.com/jucardus/jucardus.github.io/blob/main/v/e/verbos-latinos-de-la-primera-conjugacion.md)
 * [Vocabulario español](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol.md)
+* [Vocabulario inglés](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-ingles.md)
