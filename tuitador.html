@@ -24,6 +24,8 @@
             --warning-color: #ff6b6b;
             --button-bg: #1a73e8;
             --button-hover: #0d62d9;
+            --clear-btn-bg: #555555;
+            --clear-btn-hover: #666666;
         }
 
         * {
@@ -53,14 +55,12 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
-        .title-span {
-            display: block;
+        h1 {
             text-align: center;
             margin-bottom: 10px;
             color: var(--accent-color);
             font-size: 2rem;
             font-weight: bold;
-            cursor: pointer;
         }
 
         .subtitle {
@@ -120,24 +120,15 @@
 
         .character-count {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            align-items: center;
             margin-top: 8px;
             font-size: 14px;
+            gap: 5px;
         }
 
         .warning {
             color: var(--warning-color);
-        }
-
-        .preview {
-            background-color: var(--input-bg);
-            border-radius: 6px;
-            padding: 15px;
-            margin-top: 20px;
-            border: 1px solid var(--input-border);
-            white-space: pre-line;
-            font-family: monospace;
-            min-height: 150px;
         }
 
         .buttons {
@@ -155,6 +146,15 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+        }
+
+        .clear-btn {
+            background-color: var(--clear-btn-bg);
+            color: white;
+        }
+
+        .clear-btn:hover {
+            background-color: var(--clear-btn-hover);
         }
 
         .copy-btn {
@@ -201,7 +201,7 @@
 </head>
 <body>
     <div class="container">
-        <span class="title-span" id="reset-title">X Twitter Share Link Generator</span>
+        <h1>X Twitter Share Link Generator</h1>
         <!--p class="subtitle">Create share links for X (Twitter) with proper formatting</p-->
 
         <form id="tweet-form">
@@ -224,7 +224,7 @@
                 <label for="labels">Labels (separated by ", ")</label>
                 <input type="text" id="labels" placeholder="e.g., Label 1, Label 2 (optional)">
             </div>
-            
+
             <div class="character-count">
                 <span>Character Count:</span>
                 <span id="count">0</span>
@@ -235,6 +235,7 @@
             </div>
 
             <div class="buttons">
+                <button type="button" class="clear-btn" id="clear-btn">Clear All</button>
                 <button type="button" class="copy-btn" id="copy-btn">Copy Link to Clipboard</button>
                 <button type="button" class="tweet-btn" id="tweet-btn">Publish in Twitter</button>
             </div>
@@ -255,8 +256,8 @@
             const previewElement = document.getElementById('preview');
             const copyBtn = document.getElementById('copy-btn');
             const tweetBtn = document.getElementById('tweet-btn');
+            const clearBtn = document.getElementById('clear-btn');
             const successMessage = document.getElementById('success-message');
-            const resetTitle = document.getElementById('reset-title');
 
             // Function to clear all input fields
             function clearAllInputs() {
@@ -264,7 +265,7 @@
                 labelsInput.value = '';
                 descriptionInput.value = '';
                 linkInput.value = '';
-                
+
                 // Reset preview and character count
                 updatePreview();
             }
@@ -339,7 +340,7 @@
             // Function to update character count and preview
             function updatePreview() {
                 const tweetText = generateTweetText();
-                const count = tweetText.length;
+                const count = tweetText.length + 1;
 
                 countElement.textContent = count;
 
@@ -399,7 +400,7 @@
             linkInput.addEventListener('input', updatePreview);
             copyBtn.addEventListener('click', copyToClipboard);
             tweetBtn.addEventListener('click', openTwitter);
-            resetTitle.addEventListener('click', clearAllInputs);
+            clearBtn.addEventListener('click', clearAllInputs);
 
             // Initial preview update
             updatePreview();
