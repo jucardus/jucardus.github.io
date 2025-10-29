@@ -3,7 +3,7 @@
 
 Ego amō. [ˈe.go ˈa.moː] Yo amo.
 
-### Desglosamiento
+### Desglose
 
 * **ego:** yo (pronombre personal en primera persona singular)
 * **amō:** amo (primera persona singular del tiempo presente del indicativo del verbo _amāre_)
