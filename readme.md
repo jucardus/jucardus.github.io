@@ -5,27 +5,27 @@
 
 **25-10-28** - Estamos intentando añadir un recuadro de busca a la página (https://jucardus.github.io/github-1). La página genera su contenido con JavaScript, a partir del repositorio (https://github.io/jucardus/jucardus.github.io), de modo que el trámite no es tan simple.
 
-**25-10-27** - Algunas entradas agregadas al repositorio en GitHub: [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español — [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español — [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas — [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación — [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación — [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas — [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave.
+**25-10-27** - Algunas entradas agregadas al repositorio en GitHub: [cantāre [v.]](/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español — [amāre [v.]](/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español — [Ego sum.](/e/g/o/ego-sum.md) - Frases latinas — [cantāre [v.]](/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación — [amāre [v.]](/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación — [Ahórrate el engorroso trámite de ir a alguno...](/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas — [Actualización del navegador Brave con Bash](/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave.
 
 **25-10-26** - Implementé la versión HTML de mi repositorio (https://jucardus.github.io/repo), disponible en [jucardus.github.io/github](https://jucardus.github.io/github). Eventualmente, cuando el contenido llegue a algo, probablemente será la página principal.
 
 **25-10-25** - Finalmente completé la versión más eficiente de *Google Apps Script* para crear entradas en GitHub con indexamiento y etiquetado automáticos. Facilita muchísimo la adición de contenido.
 
-**25-10-24** - Algunas entradas creadas hoy *[25-10-24](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/24)*: Actualización de Google Chrome con Bash; Actualización de Linux Mint con Bash; Actualización del navegador Brave con Bash; Programación básica; *[Bash - Bourne-Again Shell](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/24/bash.md)*.
+**25-10-24** - Algunas entradas creadas hoy *[25-10-24](https://github.com/jucardus/jucardus.github.io/tree/main/25/10/24)*: Actualización de Google Chrome con Bash; Actualización de Linux Mint con Bash; Actualización del navegador Brave con Bash; Programación básica; *[Bash - Bourne-Again Shell](/25/10/24/bash.md)*.
 
-**25-10-23** - Algunas entradas de prueba agregadas al repositorio, bajo la fecha *[25-10-23](https://github.com/jucardus/jucardus.github.io/blob/main/25/10/23/actividad-reciente.md#25-10-23)*.
+**25-10-23** - Algunas entradas de prueba agregadas al repositorio, bajo la fecha *[25-10-23](/25/10/23/actividad-reciente.md#25-10-23)*.
 
 **25-10-23** - Con la ayuda de DeepSeek ha quedado muy bien implementado el tuitador y creador de enlaces de compartición en X Twitter, en el documento HTML *[Twitter Share Link Generator](https://jucardus.github.io/tuitador)*. Cuenta con los campos o recuadros necesarios para ingresar un título principal, etiquetas, una breve descripción, un enlace, y un *textarea* o 'caja de texto' para mostrar la vista previa del tuit.
 
-**25-10-22** - Acabo de crear el documento *[actividad.html](https://jucardus.github.io/actividad)*, para ver mejor la actividad en mis sitios. Tiene el mismo contenido que *[readme.md](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md)*.
+**25-10-22** - Acabo de crear el documento *[actividad.html](https://jucardus.github.io/actividad)*, para ver mejor la actividad en mis sitios. Tiene el mismo contenido que *[readme.md](/readme.md)*.
 
 **25-10-22** - No pude completar el *Google Apps Script* para agregar entradas a GitHub mediante un formulario. El código es demasiado complejo y de más de mil líneas. Podría ser retomado más adelante.
 
 **25-10-22** - Todavía en el proceso de mejorar y corregir el *Google Apps Script* para agregar entradas a mi repositorio en GitHub. Ahora se trata de agregar un botón para eliminar entradas y el enlace correspondiente en los diversos índices.
 
-**25-10-21** - Algunas entradas más agregadas a mi repositorio en GitHub, a modo de prueba para el *Google Apps Script* de adición automatizada de entradas. Pueden verse en el índice de *[Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md)*.
+**25-10-21** - Algunas entradas más agregadas a mi repositorio en GitHub, a modo de prueba para el *Google Apps Script* de adición automatizada de entradas. Pueden verse en el índice de *[Actividad reciente](/actividad.md)*.
 
-**25-10-20** - Agregué unas cuantas entradas para probar el nuevo *[script](https://script.google.com/macros/s/AKfycbzv4qClI5Ah8Z6LfX20ajvVqj2MHNTQSTjvpdbZkfRKpOx-WL5INPvWJC7kdYCZTtb-/exec)*, como por ejemplo *[Aquellos que entregan su libertad a cambio...](https://github.com/jucardus/jucardus.github.io/blob/main/a/q/u/aquellos-que-entregan-su-libertad-a-cambio.md)*, o *[Admiro a los hombres que buscan el orden...](https://github.com/jucardus/jucardus.github.io/blob/main/a/d/m/admiro-a-los-hombres-que-buscan-el-orden.md)*, y funciona perfectamente. El proceso de creación de entradas es relativamente complejo y los detalles a tomar en cuenta son unos cuanto: títulos, URL, subtítulos, contenido, etiquetas, enlace de compartición en X Twitter, enlaces agregados a los índices y más.
+**25-10-20** - Agregué unas cuantas entradas para probar el nuevo *[script](https://script.google.com/macros/s/AKfycbzv4qClI5Ah8Z6LfX20ajvVqj2MHNTQSTjvpdbZkfRKpOx-WL5INPvWJC7kdYCZTtb-/exec)*, como por ejemplo *[Aquellos que entregan su libertad a cambio...](/a/q/u/aquellos-que-entregan-su-libertad-a-cambio.md)*, o *[Admiro a los hombres que buscan el orden...](/a/d/m/admiro-a-los-hombres-que-buscan-el-orden.md)*, y funciona perfectamente. El proceso de creación de entradas es relativamente complejo y los detalles a tomar en cuenta son unos cuanto: títulos, URL, subtítulos, contenido, etiquetas, enlace de compartición en X Twitter, enlaces agregados a los índices y más.
 
 **25-10-20** - Acabo de crear un *[Google Apps Script exec](https://script.google.com/macros/s/AKfycbzv4qClI5Ah8Z6LfX20ajvVqj2MHNTQSTjvpdbZkfRKpOx-WL5INPvWJC7kdYCZTtb-/exec)* para crear entradas en GitHub. El *script* agrega la nueva entrada a un índice alfabético, a un documento de actividad reciente (incluyendo la fecha de creación), y a un índice para la o las etiquetas correspondientes.
 
@@ -39,9 +39,9 @@
 
 **25-10-19** - Ciertas mejoras en los colores de este sitio.
 
-**25-10-19** - Se agregó la entrada *[睡覺 (睡觉) [shui4 jiao4]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shui4-jiao4.md)*, como parte del diccionario chino-español.
+**25-10-19** - Se agregó la entrada *[睡覺 (睡觉) [shui4 jiao4]](/s/h/u/shui4-jiao4.md)*, como parte del diccionario chino-español.
 
-**25-10-18** - Algunos cambios en el diseño de este sitio, además de mejoras en el *script* para mostrar la actividad reciente al pie de página. Pueden verse clicando *[AQUÍ](https://github.com/jucardus/jucardus.github.io/blob/main/index.html)*.
+**25-10-18** - Algunos cambios en el diseño de este sitio, además de mejoras en el *script* para mostrar la actividad reciente al pie de página. Pueden verse clicando *[AQUÍ](/index.html)*.
 
 **25-10-18** - En mi blog, ciertas entradas con la etiqueta *Frases latinas* han sido mejoradas con imágenes, como *[Puer liber legit](https://jucardus.blogspot.com/2025/09/puer-liber-legit.html)* y *[Ego librum meo amico do](https://jucardus.blogspot.com/2025/09/ego-librum-meo-amico-do.html)*.
 
