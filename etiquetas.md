@@ -6,6 +6,7 @@
 * [Brave](https://github.com/jucardus/jucardus.github.io/blob/main/b/r/brave.md)
 * [Caracteres chinos](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/caracteres-chinos.md)
 * [Catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
+* [Citas](https://github.com/jucardus/jucardus.github.io/blob/main/c/i/citas.md)
 * [Clasificadores chinos](https://github.com/jucardus/jucardus.github.io/blob/main/c/l/clasificadores-chinos.md)
 * [Conjugaciones latinas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/conjugaciones-latinas.md)
 * [Diccionario chino-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
