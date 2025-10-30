@@ -1,4 +1,5 @@
 # _config.yml
+
 permalink: pretty
 
 plugins:
@@ -7,3 +8,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+  include:
+    - "*.md"
+    - "**/*.md"  # This ensures it processes nested files
