@@ -1,5 +1,5 @@
 # GitHub Repository Traffic Tracking Overview
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23segun_grok_jucardus) ]
+[ [inicio](/index.md) · [índice](/indice.md) · [etiquetas](/etiquetas.md) · [actividad](/actividad.md) · [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23segun_grok_jucardus) ]
 
 ### GitHub Repository Traffic Tracking Overview
 
@@ -52,5 +52,5 @@ For the most up-to-date details, check GitHub Docs directly. If this doesn't mat
 
 ~ Grok ~
 
-[#github](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)  
-[#segun-grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
+[#github](/g/i/github.md)  
+[#segun-grok](/s/e/segun-grok.md)
