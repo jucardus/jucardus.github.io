@@ -22,7 +22,7 @@
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-ralative-links-plugin.md) - Según Grok, GitHub, Plugins, Plugins para GitHub - 25-10-28
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-29
-* [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - Enlaces varios, Vocabulario inglés - 25-10-29
+* [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
 * [咖啡 (咖啡) [kāfēi]](https://github.com/jucardus/jucardus.github.io/blob/main/k/a/1/ka1-fei1.md) - Diccionario chino-español - 25-10-27
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27
