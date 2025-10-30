@@ -1,6 +1,8 @@
 # _config.yml
-theme: null
+
 plugins:
   - jekyll-relative-links
 
-title: "Your Custom Title"
+relative_links:
+  enabled: true
+  collections: true
