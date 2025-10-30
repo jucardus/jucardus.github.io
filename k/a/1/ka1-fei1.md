@@ -1,5 +1,5 @@
 # 咖啡 (咖啡) [kāfēi]
-[ [inicio](/index.md) · [índice](/indice.md) · [etiquetas](/etiquetas.md) · [actividad](/actividad.md) · [compartir](https://x.com/intent/tweet?text=%E5%92%96%E5%95%A1+(%E5%92%96%E5%95%A1)+%5Bk%C4%81f%C4%93i%5D+%E2%80%94+Diccionario+chino-espa%C3%B1ol%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fk%2Fa%2F1%2Fka1-fei1.md%0A%0A%23diccionario_chino_espanol_jucardus) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=%E5%92%96%E5%95%A1+(%E5%92%96%E5%95%A1)+%5Bk%C4%81f%C4%93i%5D+%E2%80%94+Diccionario+chino-espa%C3%B1ol%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fk%2Fa%2F1%2Fka1-fei1.md%0A%0A%23diccionario_chino_espanol_jucardus) ]
 
 * 咖啡 es un préstamo fonético del inglés. El término probablemente empezó a usarse en el siglo XIX, cuando las rutas comerciales lo llevaron a China.
 * Está compuesto por el carácter 咖 [kā], con valor fonético, y el carácter 啡 [fēi], de uso casi exclusivo en el término tratado.
@@ -26,4 +26,4 @@
 * 我想喝一杯咖啡。 [Wǒ xiǎng hē yī bēi kāfēi.] → Quiero beber una taza de café.
 * 一杯咖啡。 [Yī bēi kāfēi.] → Una taza de café.
 
-[#diccionario-chino-espanol](/d/i/diccionario-chino-espanol.md)
+[#diccionario-chino-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
