@@ -1,32 +1,6 @@
 # _config.yml
-
-title: Your Site Name
-description: Your site description
-
-# Jekyll configuration
-markdown: kramdown
-permalink: pretty
-
-# Enable plugins
+theme: null
 plugins:
   - jekyll-relative-links
 
-# Configure relative links
-relative_links:
-  enabled: true
-  collections: true
-
-# Include all folders (since you have nested content)
-include:
-  - .nojekyll  # if you have this file
-  - "**/*"     # include all files and folders
-
-# Exclude any files/folders you don't want processed
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+title: "Your Custom Title"
