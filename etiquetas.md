@@ -24,5 +24,6 @@
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
 * [Verbos latinos de la primera conjugación](https://github.com/jucardus/jucardus.github.io/blob/main/v/e/verbos-latinos-de-la-primera-conjugacion.md)
+* [Vocabulario español (enlaces)](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol-enlaces.md)
 * [Vocabulario español](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol.md)
 * [Vocabulario inglés](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-ingles.md)
