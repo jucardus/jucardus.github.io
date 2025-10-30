@@ -1,5 +1,7 @@
 # _config.yml
 
+permalink: pretty
+
 plugins:
   - jekyll-relative-links
 
