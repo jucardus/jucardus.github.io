@@ -6,3 +6,5 @@ Que tu única identidad, si acaso necesitas alguna, sea la busca de la Verdad.
 ~ jucardus ~
 
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
+
+<sup>25-10-29 09:57:39</sup>
