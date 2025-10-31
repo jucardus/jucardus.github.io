@@ -19,7 +19,7 @@
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - Enlaces varios, Vocabulario inglés - 25-10-29 09:43:39
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - Enlaces varios, Vocabulario inglés - 25-10-29 09:05:58
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - Enlaces varios, GitHub - 25-10-29 09:00:54
-* [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-ralative-links-plugin.md) - Según Grok, GitHub, Plugins, Plugins para GitHub - 25-10-28 19:17:43
+* [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - Según Grok, GitHub, Plugins, Plugins para GitHub - 25-10-28 19:17:43
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - Según Grok, GitHub - 25-10-28 19:01:47
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27 21:16:56
 * [咖啡 (咖啡) [kāfēi]](https://github.com/jucardus/jucardus.github.io/blob/main/k/a/1/ka1-fei1.md) - Diccionario chino-español - 25-10-27 21:12:44
