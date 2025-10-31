@@ -6,3 +6,5 @@ Es inevitable usar el raciocinio al buscar a Dios y al hablar de él, pero no po
 ~ jucardus ~
 
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
+
+25-10-31 09:52:53
