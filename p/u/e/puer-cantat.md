@@ -9,3 +9,5 @@ Puer cantat. [ˈpu.ɛr ˈkan.tat] El muchacho canta. / El muchacho está cantand
 * **cantat:** canta (tercera persona singular del presente indicativo activo del verbo _cantāre_)
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+
+<sup>25-10-29 09:54:27</sup>
