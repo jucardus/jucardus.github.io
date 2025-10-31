@@ -5,3 +5,5 @@
 
 [#enlaces-varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces-varios.md)  
 [#github](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)
+
+<sup>25-10-29 09:00:54</sup>
