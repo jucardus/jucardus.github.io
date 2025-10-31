@@ -23,3 +23,5 @@ Verbo latino de la primera conjugación.
 [#conjugaciones-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/conjugaciones-latinas.md)  
 [#diccionario-latin-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-latin-espanol.md)  
 [#verbos-latinos-de-la-primera-conjugacion](https://github.com/jucardus/jucardus.github.io/blob/main/v/e/verbos-latinos-de-la-primera-conjugacion.md)
+
+<sup>25-10-27 12:28:53</sup>
