@@ -27,3 +27,5 @@
 * 一杯咖啡。 [Yī bēi kāfēi.] → Una taza de café.
 
 [#diccionario-chino-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
+
+<sup>25-10-27 21:12:44</sup>
