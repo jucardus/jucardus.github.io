@@ -8,3 +8,5 @@ sudo apt install google-chrome-stable
 [#bash](https://github.com/jucardus/jucardus.github.io/blob/main/b/a/bash.md)  
 [#google-chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)  
 [#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)
+
+<sup>25-10-27 11:49:58</sup>
