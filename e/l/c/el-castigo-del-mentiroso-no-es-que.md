@@ -6,3 +6,5 @@ El castigo del mentiroso no es que no se le crea, sino que él no puede creerle 
 ~ George Bernard Shaw ~
 
 [#citas](https://github.com/jucardus/jucardus.github.io/blob/main/c/i/citas.md)
+
+<sup>25-10-30 07:35:02</sup>
