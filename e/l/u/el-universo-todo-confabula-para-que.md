@@ -6,3 +6,5 @@ El universo todo confabula para que busques a Dios. Puedes intentar resistirte, 
 ~ jucardus ~
 
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
+
+<sup>25-10-27 20:48:25</sup>
