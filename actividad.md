@@ -1,6 +1,7 @@
 # Actividad reciente
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20%E2%80%94%20%C3%8Dndices%2C%20Actividad%0A%0ALista%20de%20las%20entradas%20del%20repositorio%20a%20medida%20que%20son%20creadas%2C%20con%20las%20m%C3%A1s%20recientes%20a%20la%20cabeza.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Factividad.md%0A%0A%23actividad_jucardus%0A%23indices_jucardus) ]
 
+* [La realidad siempre supera a la ficción...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/r/la-realidad-siempre-supera-a-la-ficcion.md) - Apotegmas - 25-10-31 12:31:45
 * [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - Frases latinas - 25-10-31 12:28:38
 * [老師 (老师) [lǎoshī]](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/o/lao3-shi1.md) - Diccionario chino-español - 25-10-31 11:22:12
 * [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - Frases latinas - 25-10-31 09:55:47
