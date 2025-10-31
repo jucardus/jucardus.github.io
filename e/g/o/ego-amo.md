@@ -9,3 +9,5 @@ Ego amō. [ˈe.go ˈa.moː] Yo amo.
 * **amō:** amo (primera persona singular del tiempo presente del indicativo del verbo _amāre_)
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+
+<sup>25-10-27 19:53:20</sup>
