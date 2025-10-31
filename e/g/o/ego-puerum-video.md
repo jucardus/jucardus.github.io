@@ -10,3 +10,5 @@ Ego puerum video. [ˈɛ.ɡo ˈpu.ɛ.rum ˈwi.de.o] Yo veo al muchacho.
 * **video:** veo (primera persona singular del presente activo indicativo de _video_)
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+
+<sup>25-10-27 20:00:32</sup>
