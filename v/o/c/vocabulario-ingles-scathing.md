@@ -7,3 +7,5 @@
 
 [#enlaces-varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces-varios.md)  
 [#vocabulario-ingles-enlaces](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-ingles-enlaces.md)
+
+25-10-31 08:14:35
