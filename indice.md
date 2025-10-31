@@ -32,3 +32,4 @@
 * [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [咖啡 (咖啡) [kāfēi]](https://github.com/jucardus/jucardus.github.io/blob/main/k/a/1/ka1-fei1.md) - Diccionario chino-español - 25-10-27
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27
+* [老師 (老师) [lǎoshī]](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/o/lao3-shi1.md) - Diccionario chino-español - 25-10-31
