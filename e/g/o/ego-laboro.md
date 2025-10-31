@@ -9,3 +9,5 @@ Ego labōrō. [ˈɛ.ɡo laˈboː.roː] Yo trabajo.
 * **labōrō:** trabajo (primera persona singular del presente de indicativo del verbo _labōrāre_)
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+
+<sup>25-10-27 19:57:38</sup>
