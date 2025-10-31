@@ -6,3 +6,5 @@
 
 [#enlaces-varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces-varios.md)  
 [#vocabulario-espanol-enlaces](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol-enlaces.md)
+
+<sup>25-10-29 20:46:38</sup>
