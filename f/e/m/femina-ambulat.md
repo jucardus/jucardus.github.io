@@ -10,4 +10,4 @@ Fēmina ambulat. [ˈfeː.mɪ.na ˈam.bʊ.lat] La mujer anda.
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
 
-25-10-31 09:55:47
+<sup>25-10-31 09:55:47</sup>
