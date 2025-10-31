@@ -16,6 +16,7 @@
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - Apotegmas - 25-10-27
 * [Es inevitable usar el raciocinio al...](https://github.com/jucardus/jucardus.github.io/blob/main/e/s/i/es-inevitable-usar-el-raciocinio-al.md) - Apotegmas - 25-10-31
+* [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - Frases latinas - 25-10-31
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - Enlaces varios, GitHub - 25-10-29
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - Según Grok, GitHub - 25-10-28
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26
