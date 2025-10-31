@@ -16,3 +16,5 @@ sudo apt install brave-browser
 [#bash](https://github.com/jucardus/jucardus.github.io/blob/main/b/a/bash.md)  
 [#brave](https://github.com/jucardus/jucardus.github.io/blob/main/b/r/brave.md)  
 [#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)
+
+<sup>25-10-27 11:55:52</sup>
