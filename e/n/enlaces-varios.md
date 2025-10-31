@@ -5,3 +5,4 @@
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - 25-10-29
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - 25-10-29
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - 25-10-29
+* [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - 25-10-31
