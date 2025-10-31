@@ -15,4 +15,4 @@ El término 老師 (老师) se compone de 老 [lǎo] 'viejo', 'experimentado', u
 
 [#diccionario-chino-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
 
-<sup>25-10-31 11:14:14</sup>
+<sup>25-10-31 11:22:12</sup>
