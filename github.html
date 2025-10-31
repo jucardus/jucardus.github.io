@@ -38,6 +38,10 @@
             color: Gold;
             border-bottom: 0.7px Solid Orange;
         }
+        a.nav-active {
+            color: Gold;
+            border-bottom: 0.7px Solid Orange;
+        }
         ul {
             padding-left: 20px;
             margin: 10px 0;
@@ -199,6 +203,14 @@
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
         const SITE_URL = `https://${USER}.github.io`;
 
+        // Navigation mapping - maps page names to navigation link texts
+        const NAV_MAPPING = {
+            'index.md': ['inicio'],
+            'indice.md': ['índice', 'indice'],
+            'etiquetas.md': ['etiquetas', 'tags'],
+            'actividad.md': ['actividad', 'activity']
+        };
+
         // Convert path to markdown path
         function pathToMdPath(path) {
             if (!path) return 'index.md';
@@ -221,7 +233,6 @@
                 const mdPath = match[1];
                 // Remove .md extension for clean URL
                 const cleanPath = mdPath.replace(/\.md$/, '');
-                // return `${SITE_URL}/${cleanPath}`;
                 return `${SITE_URL}/github.html#${cleanPath}`;
             }
 
@@ -251,6 +262,13 @@
         function getCurrentPage() {
             const hash = window.location.hash.substring(1);
             return pathToMdPath(hash) || 'index.md';
+        }
+
+        // Get current page name without path for navigation highlighting
+        function getCurrentPageName() {
+            const path = getCurrentPage();
+            // Extract just the filename from the path
+            return path.includes('/') ? path.split('/').pop() : path;
         }
 
         // Convert any GitHub URL to raw URL
@@ -307,6 +325,34 @@
             return navPatterns.some(pattern => pattern.test(text));
         }
 
+        // Highlight active navigation link
+        function highlightActiveNav() {
+            const currentPage = getCurrentPageName();
+            const navLinks = document.querySelectorAll('.sticky-nav a');
+
+            console.log('Current page:', currentPage);
+
+            // First, remove all active classes
+            navLinks.forEach(link => {
+                link.classList.remove('nav-active');
+            });
+
+            // Then, add active class to the appropriate link
+            navLinks.forEach(link => {
+                const linkText = link.textContent.toLowerCase().trim();
+                console.log('Checking link:', linkText, 'for page:', currentPage);
+
+                // Check each navigation mapping
+                for (const [page, keywords] of Object.entries(NAV_MAPPING)) {
+                    if (page === currentPage && keywords.includes(linkText)) {
+                        console.log('Highlighting:', linkText, 'for page:', currentPage);
+                        link.classList.add('nav-active');
+                        break;
+                    }
+                }
+            });
+        }
+
         // Process blockquotes
         function processBlockquotes(text) {
             const lines = text.split('\n');
@@ -342,18 +388,21 @@
             return result;
         }
 
-        // Process images with custom styling
-        function processImages(text, basePath) {
+        // Process images with custom styling - FIXED VERSION
+        function processImages(text, currentPath) {
             return text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(match, altText, imageUrl) {
                 let fullImageUrl = imageUrl;
 
                 // Handle relative image paths
                 if (imageUrl.startsWith('./') || imageUrl.startsWith('../') || !imageUrl.includes('://')) {
-                    const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
+                    const baseDir = currentPath.includes('/')
+                        ? currentPath.substring(0, currentPath.lastIndexOf('/') + 1)
+                        : '';
+
                     if (imageUrl.startsWith('./')) {
-                        fullImageUrl = BASE_URL + basePath + imageUrl.substring(2);
+                        fullImageUrl = BASE_URL + baseDir + imageUrl.substring(2);
                     } else if (imageUrl.startsWith('../')) {
-                        let path = basePath;
+                        let path = baseDir;
                         let relPath = imageUrl;
                         while (relPath.startsWith('../')) {
                             path = path.substring(0, path.lastIndexOf('/', path.length - 2) + 1);
@@ -361,7 +410,7 @@
                         }
                         fullImageUrl = BASE_URL + path + relPath;
                     } else if (!imageUrl.includes('://')) {
-                        fullImageUrl = BASE_URL + basePath + imageUrl;
+                        fullImageUrl = BASE_URL + baseDir + imageUrl;
                     }
                 }
 
@@ -489,11 +538,11 @@
 
                             // Handle relative URLs
                             if (url.startsWith('./') || url.startsWith('../') || !url.includes('://')) {
-                                const basePath = basePath.substring(0, basePath.lastIndexOf('/') + 1);
+                                const baseDir = basePath.substring(0, basePath.lastIndexOf('/') + 1);
                                 if (url.startsWith('./')) {
-                                    fullUrl = BASE_URL + basePath + url.substring(2);
+                                    fullUrl = BASE_URL + baseDir + url.substring(2);
                                 } else if (url.startsWith('../')) {
-                                    let path = basePath;
+                                    let path = baseDir;
                                     let relPath = url;
                                     while (relPath.startsWith('../')) {
                                         path = path.substring(0, path.lastIndexOf('/', path.length - 2) + 1);
@@ -501,7 +550,7 @@
                                     }
                                     fullUrl = BASE_URL + path + relPath;
                                 } else if (!url.includes('://')) {
-                                    fullUrl = BASE_URL + basePath + url;
+                                    fullUrl = BASE_URL + baseDir + url;
                                 }
                             }
 
@@ -683,6 +732,9 @@
 
                 // Update URL hash
                 window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
+
+                // Highlight active navigation after content is rendered
+                setTimeout(highlightActiveNav, 0);
 
                 // Scroll to top after loading new page
                 window.scrollTo(0, 0);
