@@ -9,3 +9,5 @@ Fēmina ambulat. [ˈfeː.mɪ.na ˈam.bʊ.lat] La mujer anda.
 * **ambulat:** camina, anda (tercera persona singular del presente de indicativo activo de _ambulāre_)
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+
+25-10-31 09:55:47
