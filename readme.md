@@ -1,7 +1,7 @@
 # [Actividad reciente](https://jucardus.github.io/actividad) en [Jucardus](https://jucardus.github.io/)
 <sup>[ Algunos de los enlaces pueden estar rotos, por enviar a proyectos o páginas descontinuados. ]</sup>
 
-**25-10-31** - Se ha cambiado el formato de las entradas del *[repositorio](https://jucardus.github.io/repo)* para que incluyan la fecha de creación/actualización al pie de página, además de un renglón en blanco para cumplir con la plantilla típica de los documentos _markdown_ en GitHub. Cuando un documento *.md es mostrado como página web normal, si el renglón en blanco al pie de todo el contenido está ausente, la página no tendrá el formato apropiado, sobre todo en documentos con cierta complejidad.
+**25-10-31** - Se ha cambiado el formato de las *[entradas de este repositorio](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md)* para que incluyan la fecha de creación/actualización al pie de página, además de un renglón en blanco para cumplir con la plantilla típica de los documentos _markdown_ en GitHub. Cuando un documento *.md es mostrado como página web normal, si el renglón en blanco al pie de todo el contenido está ausente, la página no tendrá el formato apropiado, sobre todo en documentos con cierta complejidad.
 
 **25-10-29** - Hice ciertos cambios en el enlace que se muestra en la *[página de fotografías](https://jucardus.github.io/fotos)*. Ahora el enlace de autoría es un texto vertical que no interfiere con la presentación de las fotos en la vista en celulares. Sólo se muestra cuando el usuario asciende o desciende en la página.
 
