@@ -6,4 +6,5 @@
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - 25-10-27
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - 25-10-27
 * [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - 25-10-31
+* [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - 25-10-31
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - 25-10-29
