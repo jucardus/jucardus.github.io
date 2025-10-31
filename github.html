@@ -7,12 +7,9 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-44Y9CNCHR8');
     </script>
-
-    <!-- Include search.js directly -->
-    <script src="https://jucardus.github.io/search.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -124,113 +121,6 @@
             font-size: 1.2em;
         }
 
-        /* Floating search button */
-        #floating-search {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #2a3a4a;
-            border: 1px solid #555;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            cursor: pointer;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            transition: all 0.3s ease;
-        }
-        #floating-search:hover {
-            background: #3a4a5a;
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-        }
-
-        /* Search styles */
-        #search-box {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #2a3a4a;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            z-index: 1001;
-            width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
-            box-sizing: border-box;
-        }
-        #search-input {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #555;
-            border-radius: 4px;
-            background: #405060;
-            color: #eaeaea;
-            box-sizing: border-box;
-        }
-        #search-results {
-            max-height: calc(80vh - 100px);
-            overflow-y: auto;
-            margin-top: 15px;
-            padding-right: 5px;
-        }
-        #search-results::-webkit-scrollbar {
-            width: 8px;
-        }
-        #search-results::-webkit-scrollbar-track {
-            background: #405060;
-            border-radius: 4px;
-        }
-        #search-results::-webkit-scrollbar-thumb {
-            background: #666;
-            border-radius: 4px;
-        }
-        #search-results::-webkit-scrollbar-thumb:hover {
-            background: #777;
-        }
-        #search-results ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        #search-results li {
-            padding: 10px;
-            border-bottom: 1px solid #405060;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-        #search-results li:last-child {
-            border-bottom: none;
-        }
-        #search-results a {
-            color: #eaeaea;
-            text-decoration: none;
-            border-bottom: none;
-            display: block;
-            width: 100%;
-        }
-        #search-results a:hover {
-            color: Gold;
-        }
-        #search-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.7);
-            z-index: 999;
-        }
-
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             body {
@@ -265,21 +155,6 @@
             .page-separator {
                 margin: 0px 0 0px 0;
             }
-            #search-box {
-                width: 95%;
-                padding: 15px;
-                max-width: 95vw;
-            }
-            #floating-search {
-                bottom: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-                font-size: 20px;
-            }
-            #search-results {
-                max-height: calc(80vh - 80px);
-            }
         }
 
         @media (max-width: 480px) {
@@ -309,37 +184,11 @@
             .page-separator {
                 margin: 0px 0 0px 0;
             }
-            #floating-search {
-                bottom: 15px;
-                right: 15px;
-                width: 45px;
-                height: 45px;
-                font-size: 18px;
-            }
-            #search-box {
-                width: 98%;
-                padding: 12px;
-            }
-            #search-results {
-                max-height: calc(80vh - 70px);
-            }
         }
     </style>
 </head>
 <body>
     <div id="content"></div>
-
-    <!-- Floating search button -->
-    <div id="floating-search" onclick="mostrar()" title="Buscar">
-        🔍
-    </div>
-
-    <!-- Search overlay and box -->
-    <div id="search-overlay" onclick="ocultar()"></div>
-    <div id="search-box">
-        <input type="text" id="search-input" placeholder="Escribe tu búsqueda y presiona ENTER..." autocomplete="off">
-        <div id="search-results"></div>
-    </div>
 
     <script>
         // Configuration - CHANGE THIS to your repo
@@ -349,131 +198,6 @@
 
         const BASE_URL = `https://raw.githubusercontent.com/${USER}/${REPO}/${BRANCH}/`;
         const SITE_URL = `https://${USER}.github.io`;
-
-        // Search functionality - using global 'base' array from search.js
-        function mostrar() {
-            document.getElementById('search-overlay').style.display = 'block';
-            document.getElementById('search-box').style.display = 'block';
-            document.getElementById('search-input').focus();
-            document.getElementById('search-input').value = '';
-            document.getElementById('search-results').innerHTML = '';
-
-            // Set up click handler immediately when search is shown
-            setTimeout(setupSearchResultsClickHandler, 100);
-        }
-
-        function ocultar() {
-            document.getElementById('search-overlay').style.display = 'none';
-            document.getElementById('search-box').style.display = 'none';
-        }
-
-        // Function to extract text for sorting from the HTML link
-        function getSortableText(item) {
-            // Extract the text between <b> tags for sorting
-            const match = item.match(/<b>([^<]+)<\/b>/);
-            if (match) {
-                return match[1].toLowerCase().trim();
-            }
-            // Fallback: return the entire item for sorting
-            return item.toLowerCase().trim();
-        }
-
-        // Function to extract URL for sorting (alternative method)
-        function getSortableUrl(item) {
-            // Extract the URL from the href attribute
-            const urlMatch = item.match(/href='([^']+)'/);
-            if (urlMatch) {
-                return urlMatch[1].toLowerCase().trim();
-            }
-            return item.toLowerCase().trim();
-        }
-
-        function buscar() {
-            const query = document.getElementById('search-input').value.toLowerCase().trim();
-            if (!query) return;
-
-            // Use the global base array directly from search.js
-            let results = base.filter(item =>
-                item.toLowerCase().includes(query)
-            );
-
-            // Remove duplicates using Set
-            const uniqueResults = [...new Set(results)];
-
-            // Sort results alphabetically by the link text (between <b> tags)
-            const sortedResults = uniqueResults.sort((a, b) => {
-                const textA = getSortableText(a);
-                const textB = getSortableText(b);
-
-                // Use localeCompare for proper Unicode sorting
-                return textA.localeCompare(textB, 'es', {
-                    sensitivity: 'base',
-                    ignorePunctuation: true,
-                    numeric: true
-                });
-            });
-
-            // Render the HTML links directly - they're already properly formatted
-            const resultsHtml = sortedResults.length > 0
-                ? `<ul>${sortedResults.map(item => `<li>${item}</li>`).join('')}</ul>`
-                : '<p>No se encontraron resultados.</p>';
-
-            document.getElementById('search-results').innerHTML = resultsHtml;
-
-            // Set up click handler after search results are loaded
-            setTimeout(setupSearchResultsClickHandler, 100);
-        }
-
-        // Close search when clicking on any link in search results
-        function setupSearchResultsClickHandler() {
-            const searchResults = document.getElementById('search-results');
-            if (searchResults) {
-                // Remove any existing click handlers to avoid duplicates
-                searchResults.replaceWith(searchResults.cloneNode(true));
-
-                // Get the fresh reference after cloning
-                const freshSearchResults = document.getElementById('search-results');
-
-                freshSearchResults.addEventListener('click', function(e) {
-                    if (e.target.tagName === 'A') {
-                        console.log('Search result link clicked, closing overlay');
-                        // Close the search overlay when any link is clicked
-                        ocultar();
-                    }
-                });
-            }
-        }
-
-        // Initialize search functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('search-input');
-            searchInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    buscar();
-                }
-            });
-
-            // Also search on input change for better UX
-            searchInput.addEventListener('input', function(e) {
-                // Add a small delay to avoid searching on every keystroke
-                clearTimeout(window.searchTimeout);
-                window.searchTimeout = setTimeout(buscar, 300);
-            });
-
-            // Close search on Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape') {
-                    ocultar();
-                }
-            });
-
-            // Debug: Check if base is loaded
-            console.log("Base array loaded:", typeof base !== 'undefined');
-            if (typeof base !== 'undefined') {
-                console.log("Number of search items:", base.length);
-                console.log("First item:", base[0]);
-            }
-        });
 
         // Convert path to markdown path
         function pathToMdPath(path) {
