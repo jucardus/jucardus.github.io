@@ -6,4 +6,5 @@
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - 25-10-27
 * [Es inevitable usar el raciocinio al...](https://github.com/jucardus/jucardus.github.io/blob/main/e/s/i/es-inevitable-usar-el-raciocinio-al.md) - 25-10-31
 * [La realidad siempre supera a la ficción...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/r/la-realidad-siempre-supera-a-la-ficcion.md) - 25-10-31
+* [La Verdad existe desde siempre](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/v/la-verdad-existe-desde-siempre.md) - 25-10-31
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - 25-10-29
