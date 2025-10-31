@@ -9,3 +9,5 @@ Ego sum. [ˈe.ɡo sʊm] Yo soy.
 * **sum:** soy (primera persona singular del tiempo presente de indicativo del verbo _esse_, 'ser')
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+
+<sup>25-10-27 12:21:51</sup>
