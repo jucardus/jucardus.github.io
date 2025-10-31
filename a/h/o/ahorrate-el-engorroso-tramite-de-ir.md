@@ -6,3 +6,5 @@ Ahórrate el engorroso trámite de ir a alguno de los cielos y quédate aquí, c
 ~ jucardus ~
 
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
+
+<sup>25-10-27 12:04:34</sup>
