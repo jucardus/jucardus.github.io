@@ -5,4 +5,5 @@
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - 25-10-27
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - 25-10-27
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - 25-10-27
+* [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - 25-10-31
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - 25-10-29
