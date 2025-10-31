@@ -5,3 +5,5 @@
 
 [#sinonimos-espanoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)  
 [#vocabulario-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol.md)
+
+<sup>25-10-26 17:45:23</sup>
