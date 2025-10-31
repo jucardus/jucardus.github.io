@@ -11,3 +11,5 @@ sudo apt-get install unattended-upgrades
 [#bash](https://github.com/jucardus/jucardus.github.io/blob/main/b/a/bash.md)  
 [#linux-mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)  
 [#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)
+
+<sup>25-10-27 11:53:16</sup>
