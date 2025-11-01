@@ -6,7 +6,7 @@ Ego puerum video. [ˈɛ.ɡo ˈpu.ɛ.rum ˈwi.de.o] Yo veo al muchacho.
 ### Desglose
 
 * **ego:** yo (pronombre personal en primera persona)
-* **puerum:** al muchacho (acusativo singular del sustantivo masculino _puer_)
+* **[puerum:](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-m.md)** al muchacho (acusativo singular del sustantivo masculino _puer_)
 * **video:** veo (primera persona singular del presente activo indicativo de _video_)
 
 [#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
