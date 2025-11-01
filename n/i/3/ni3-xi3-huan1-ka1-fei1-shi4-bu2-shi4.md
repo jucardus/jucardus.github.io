@@ -4,7 +4,7 @@
 * {CT} 你喜歡咖啡，是不是？
 * {CS} 你喜欢咖啡，是不是？
 * {PY} Nǐ xǐhuān kāfēi, shì bú shì?
-* {TR} Te gusta el café, ¿verdad?
+* {TR} [Te gusta el café, ¿verdad?](https://github.com/jucardus/jucardus.github.io/blob/main/t/e/g/te-gusta-el-cafe-verdad.md)
 
 ### Desglose
 
