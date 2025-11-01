@@ -43,6 +43,7 @@
 * [你喜歡咖啡，是不是？](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) - Frases chinas - 25-11-01
 * [冷 (冷) [lěng]](https://github.com/jucardus/jucardus.github.io/blob/main/l/e/n/leng3-20919.md) - Diccionario chino-español, Caracteres chinos - 25-11-01
 * [咖啡 (咖啡) [kāfēi]](https://github.com/jucardus/jucardus.github.io/blob/main/k/a/1/ka1-fei1.md) - Diccionario chino-español - 25-10-27
+* [天氣 (天气) [tiānqì]](https://github.com/jucardus/jucardus.github.io/blob/main/t/i/a/tian1-qi4.md) - Diccionario chino-español, - 25-11-01
 * [天氣是冷。](https://github.com/jucardus/jucardus.github.io/blob/main/t/i/a/tian1-qi4-shi4-leng3.md) - Frases chinas - 25-11-01
 * [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) - Caracteres chinos, Diccionario chino-español - 25-11-01
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27
