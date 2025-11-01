@@ -21,6 +21,7 @@
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - Enlaces varios, GitHub - 25-10-29
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - Según Grok, GitHub - 25-10-28
 * [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - Frases latinas - 25-10-31
+* [La fe te salva de la circularidad...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/f/la-fe-te-salva-de-la-circularidad.md) - Apotegmas - 25-11-01
 * [La realidad siempre supera a la ficción...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/r/la-realidad-siempre-supera-a-la-ficcion.md) - Apotegmas - 25-10-31
 * [La Verdad existe desde siempre](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/v/la-verdad-existe-desde-siempre.md) - Apotegmas - 25-10-31
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26
