@@ -3,3 +3,4 @@
 
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - 25-10-27
 * [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - 25-10-27
+* [puer [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-m.md) - 25-11-01
