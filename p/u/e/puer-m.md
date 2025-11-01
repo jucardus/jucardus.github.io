@@ -5,12 +5,12 @@ Sustantivo masculino regular de la segunda declinación.
 
 ### Declinación
 
-* Nominativo: puer / puerī
-* Genitivo: puerī / puerōrum
-* Dativo: puerō / puerīs
-* Acusativo: puerum / puerōs
-* Ablativo: puerō / puerīs
-* Vocativo: puer / puerī
+* **Nominativo:** puer / puerī
+* **Genitivo:** puerī / puerōrum
+* **Dativo:** puerō / puerīs
+* **Acusativo:** puerum / puerōs
+* **Ablativo:** puerō / puerīs
+* **Vocativo:** puer / puerī
 
 ### Traducciones
 
@@ -29,8 +29,8 @@ Sustantivo masculino regular de la segunda declinación.
 
 ### Frases de ejemplo
 
-* Ego puerum video. → Veo al muchacho.
-* Puer cantat. → El muchacho canta.
+* [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) → Veo al muchacho.
+* [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) → El muchacho canta.
 
 [#diccionario-latin-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-latin-espanol.md)  
 [#sustantivos-latinos](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-latinos.md)
