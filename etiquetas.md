@@ -8,6 +8,7 @@
 * [Catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
 * [Citas](https://github.com/jucardus/jucardus.github.io/blob/main/c/i/citas.md)
 * [Clasificadores chinos](https://github.com/jucardus/jucardus.github.io/blob/main/c/l/clasificadores-chinos.md)
+* [Códigos QR (enlaces)](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/codigos-qr-enlaces.md)
 * [Conjugaciones latinas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/conjugaciones-latinas.md)
 * [Diccionario chino-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)
