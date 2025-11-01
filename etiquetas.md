@@ -15,6 +15,7 @@
 * [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces-varios.md)
 * [Frases chinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-chinas.md)
 * [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
+* [Frases multilingües](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-multilingves.md)
 * [GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)
 * [Google Chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
