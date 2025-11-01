@@ -46,5 +46,6 @@
 * [天氣 (天气) [tiānqì]](https://github.com/jucardus/jucardus.github.io/blob/main/t/i/a/tian1-qi4.md) - Diccionario chino-español, - 25-11-01
 * [天氣是冷。](https://github.com/jucardus/jucardus.github.io/blob/main/t/i/a/tian1-qi4-shi4-leng3.md) - Frases chinas - 25-11-01
 * [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) - Caracteres chinos, Diccionario chino-español - 25-11-01
+* [是不是？ (是不是？) [shì bú shì?]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-bu2-shi4.md) - Diccionario chino-español, Gramática china, - 25-11-01
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27
 * [老師 (老师) [lǎoshī]](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/o/lao3-shi1.md) - Diccionario chino-español - 25-10-31
