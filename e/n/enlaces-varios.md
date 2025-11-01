@@ -4,6 +4,7 @@
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - 25-10-29
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - 25-10-29
 * [vocabulario español ¦ patullar](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patullar.md) - 25-10-31
+* [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - 25-10-31
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - 25-10-29
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - 25-10-29
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - 25-10-31
