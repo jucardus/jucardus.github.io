@@ -16,7 +16,7 @@
 
 ### Frases de ejemplo
 
-* 你喜歡咖啡，是不是？ (你喜欢咖啡，是不是？) [Nǐ xǐhuān kāfēi, shì bù shì?] → Te gusta el café, ¿verdad?
+* [你喜歡咖啡，是不是？](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) (你喜欢咖啡，是不是？) [Nǐ xǐhuān kāfēi, shì bù shì?] → Te gusta el café, ¿verdad?
 * 他是老師，是不是？ (他是老师，是不是？) [Tā shì lǎoshī, shì bù shì?] → Él es profesor, ¿no es así?
 
 [#diccionario-chino-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)  
