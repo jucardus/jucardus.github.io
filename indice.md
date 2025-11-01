@@ -23,6 +23,7 @@
 * [La realidad siempre supera a la ficción...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/r/la-realidad-siempre-supera-a-la-ficcion.md) - Apotegmas - 25-10-31
 * [La Verdad existe desde siempre](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/v/la-verdad-existe-desde-siempre.md) - Apotegmas - 25-10-31
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26
+* [Mira hacia arriba para idolatrar](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mira-hacia-arriba-para-idolatrar.md) - Apotegmas - 25-11-01
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - Frases latinas - 25-10-29
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - Apotegmas - 25-10-29
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - Según Grok, GitHub, Plugins, Plugins para GitHub - 25-10-28
