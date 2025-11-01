@@ -26,6 +26,7 @@
 * [Mira hacia arriba para idolatrar](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mira-hacia-arriba-para-idolatrar.md) - Apotegmas - 25-11-01
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - Frases latinas - 25-10-29
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - Apotegmas - 25-10-29
+* [Te gusta el café, ¿verdad?](https://github.com/jucardus/jucardus.github.io/blob/main/t/e/g/te-gusta-el-cafe-verdad.md) - Frases multilingües - 25-11-01
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - Según Grok, GitHub, Plugins, Plugins para GitHub - 25-10-28
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-29
