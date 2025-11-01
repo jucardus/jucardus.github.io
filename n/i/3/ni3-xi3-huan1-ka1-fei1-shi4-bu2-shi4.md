@@ -11,7 +11,7 @@
 * 你 (你) [nǐ] tú, vos
 * 喜歡 (喜欢) [xǐhuān] gustar
 * 咖啡 (咖啡) [kāfēi]] café
-* 是不是？ (是不是？) [shì bú shì?]] ¿verdad?, ¿cierto?
+* [是不是？ (是不是？) [shì bú shì?]]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-bu2-shi4.md) ¿verdad?, ¿cierto?
 
 [#frases-chinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-chinas.md)
 
