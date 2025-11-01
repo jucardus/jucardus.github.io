@@ -1,6 +1,7 @@
 # Actividad reciente
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20%E2%80%94%20%C3%8Dndices%2C%20Actividad%0A%0ALista%20de%20las%20entradas%20del%20repositorio%20a%20medida%20que%20son%20creadas%2C%20con%20las%20m%C3%A1s%20recientes%20a%20la%20cabeza.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Factividad.md%0A%0A%23actividad_jucardus%0A%23indices_jucardus) ]
 
+* [códigos QR ┋ en QuickChart con leyenda](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/d/codigos-qr-en-quickchart-con-leyenda.md) - Enlaces varios, Códigos QR (enlaces) - 25-11-01 13:05:19
 * [是不是？ (是不是？) [shì bú shì?]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-bu2-shi4.md) - Diccionario chino-español, Gramática china, - 25-11-01 12:13:45
 * [天氣 (天气) [tiānqì]](https://github.com/jucardus/jucardus.github.io/blob/main/t/i/a/tian1-qi4.md) - Diccionario chino-español, - 25-11-01 12:00:31
 * [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) - Caracteres chinos, Diccionario chino-español - 25-11-01 11:48:05
