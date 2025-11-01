@@ -15,7 +15,7 @@
 
 ### Tercera persona, forma femenina, singular / plural
 
-* Nominativo: illa  illae
+* Nominativo: illa / illae
 * Acusativo: illam / illās
 * Genitivo: illīus / illārum
 * Dativo: illī / illīs
@@ -40,4 +40,4 @@
 [#gramatica-latina](https://github.com/jucardus/jucardus.github.io/blob/main/g/r/gramatica-latina.md)  
 [#pronombres-latinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/pronombres-latinos.md)
 
-<sup>25-11-01 10:54:32</sup>
+<sup>25-11-01 10:58:45</sup>
