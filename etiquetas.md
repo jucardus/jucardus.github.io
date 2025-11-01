@@ -20,6 +20,7 @@
 * [Plugins](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins.md)
 * [Plugins para GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins-para-github.md)
 * [Programación](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)
+* [Pronombres chinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/pronombres-chinos.md)
 * [Según Grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
