@@ -9,7 +9,7 @@
 ### Desglose
 
 * 天氣 (天气) [tiānqì] clima, tiempo (clima)
-* 是 (是) [shì] (adverbio aseverativo enfático)
+* [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) (adverbio aseverativo enfático)
 * [冷 (冷) [lěng]](https://github.com/jucardus/jucardus.github.io/blob/main/l/e/n/leng3-20919.md) frío
 
 [#frases-chinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-chinas.md)
