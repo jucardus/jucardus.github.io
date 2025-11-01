@@ -3,3 +3,4 @@
 
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - 25-10-29
 * [vocabulario español ¦ patullar](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patullar.md) - 25-10-31
+* [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - 25-10-31
