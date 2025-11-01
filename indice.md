@@ -29,6 +29,7 @@
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-29
 * [vocabulario español ¦ patullar](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patullar.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31
+* [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
