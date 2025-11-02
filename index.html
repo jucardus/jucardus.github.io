@@ -315,14 +315,6 @@
             return url.includes(USER) && url.includes(REPO) && url.includes('.md');
         }
 
-        // Check if URL is a busca link (should open in same tab)
-        function isBuscaLink(url) {
-            return url.includes('jucardus.github.io/busca') || 
-                   url.includes('jucardus.github.io/busca.html') ||
-                   url === 'busca' || 
-                   url === 'busca.html';
-        }
-
         // Check if URL is a Twitter/X share link and modify it
         function isShareLink(url) {
             return url.includes('https://x.com/intent/tweet?text=') ||
@@ -634,10 +626,7 @@
                                 }
                             }
 
-                            // Check for busca links - should open in same tab without target="_blank"
-                            if (isBuscaLink(url)) {
-                                result += `<a href="${url}">${linkText}</a>`;
-                            } else if (isInternalLink(fullUrl)) {
+                            if (isInternalLink(fullUrl)) {
                                 // Store only the relative path in data-url
                                 const relativePath = extractRelativePath(fullUrl);
                                 result += `<a href="#" data-url="${relativePath}">${linkText}</a>`;
