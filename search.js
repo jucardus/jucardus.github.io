@@ -23,7 +23,7 @@ let entriesBase = [
   "▓Citas▒c/i/citas.md▓",
   "▓Clasificadores chinos▒c/l/clasificadores-chinos.md▓",
   "▓Códigos QR (enlaces)▒c/o/codigos-qr-enlaces.md▓",
-  "▓códigos QR ┋ en QuickChart con leyenda▒c/o/d/codigos-qr-en-quickchart-con-leyenda.md▓",
+  "▓códigos QR ¦ en QuickChart con leyenda▒c/o/d/codigos-qr-en-quickchart-con-leyenda.md▓",
   "▓Conjugaciones latinas▒c/o/conjugaciones-latinas.md▓",
   "▓Diccionario chino-español▒d/i/diccionario-chino-espanol.md▓",
   "▓Diccionario inglés-español▒d/i/diccionario-ingles-espanol.md▓",
