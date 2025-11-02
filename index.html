@@ -166,8 +166,10 @@
             font-size: 0.9em;
         }
 
-        /* Heading anchor styles */
-        .heading-anchor {
+        /* Heading anchor styles - ONLY for h2, h3, h4 */
+        h2 .heading-anchor,
+        h3 .heading-anchor,
+        h4 .heading-anchor {
             color: #999;
             text-decoration: none;
             border-bottom: none;
@@ -176,7 +178,6 @@
             opacity: 0;
             transition: opacity 0.2s;
         }
-        h1:hover .heading-anchor,
         h2:hover .heading-anchor,
         h3:hover .heading-anchor,
         h4:hover .heading-anchor {
@@ -409,6 +410,10 @@
         // Get current page from URL hash
         function getCurrentPage() {
             const hash = window.location.hash.substring(1);
+            // Handle anchor links within pages (page#anchor format)
+            if (hash.includes('#')) {
+                return pathToMdPath(hash.split('#')[0]);
+            }
             return pathToMdPath(hash) || 'index.md';
         }
 
@@ -729,12 +734,12 @@
             return html + '<div class="page-separator">~ • ~</div>';
         }
 
-        // Convert headers with anchor links (including # headings)
+        // Convert headers with anchor links (ONLY for ##, ###, ####)
         function convertHeadersWithAnchors(text, headings, currentPath) {
             let result = text;
             const allHeadings = [];
             
-            // Process all heading levels including # headings
+            // Process all heading levels
             const lines = text.split('\n');
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i].trim();
@@ -766,16 +771,23 @@
                 }
             }
             
-            // Process each heading and add anchor links
+            // Process each heading and add anchor links ONLY for h2, h3, h4
             allHeadings.forEach(heading => {
                 const originalPattern = '#'.repeat(heading.level) + ' ' + heading.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                // Create proper anchor link with current page path
-                const currentPagePath = currentPath.replace(/\.md$/, '');
-                const fullAnchor = `${currentPagePath}#${heading.anchor}`;
-                const anchorLink = `<a href="#${fullAnchor}" class="heading-anchor" title="Enlace directo a esta sección">🔗</a>`;
-                const replacement = `<h${heading.level}>${heading.title}${anchorLink}</h${heading.level}>`;
                 
-                result = result.replace(new RegExp('^' + originalPattern + '$', 'gm'), replacement);
+                if (heading.level === 1) {
+                    // # headings - no anchor link
+                    const replacement = `<h${heading.level}>${heading.title}</h${heading.level}>`;
+                    result = result.replace(new RegExp('^' + originalPattern + '$', 'gm'), replacement);
+                } else {
+                    // ##, ###, #### headings - with anchor link
+                    const currentPagePath = currentPath.replace(/\.md$/, '');
+                    const fullAnchor = `${currentPagePath}#${heading.anchor}`;
+                    const anchorLink = `<a href="#${fullAnchor}" class="heading-anchor" title="Enlace directo a esta sección">🔗</a>`;
+                    const replacement = `<h${heading.level}>${heading.title}${anchorLink}</h${heading.level}>`;
+                    
+                    result = result.replace(new RegExp('^' + originalPattern + '$', 'gm'), replacement);
+                }
             });
             
             return result;
@@ -804,7 +816,7 @@
             // Process ALL links (pass currentPath for share URL modification)
             html = processLinks(html, basePath, currentPath);
 
-            // Convert headers with anchor links (including # headings)
+            // Convert headers with anchor links (ONLY for ##, ###, ####)
             html = convertHeadersWithAnchors(html, headings, currentPath);
 
             // Process text formatting AFTER links and code blocks
@@ -818,6 +830,7 @@
 
             // Track if we've processed the navigation menu
             let navigationProcessed = false;
+            let firstHeadingProcessed = false;
 
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i];
@@ -850,9 +863,9 @@
                     }
                     
                     // Insert TOC after the navigation menu and first heading
-                    if (!navigationProcessed && headings.length >= 2 && trimmedLine.startsWith('<h1>')) {
-                        newHtml += line + tocHtml;
-                        navigationProcessed = true;
+                    if (!firstHeadingProcessed && headings.length >= 2 && trimmedLine.startsWith('<h1>')) {
+                        newHtml += line;
+                        firstHeadingProcessed = true;
                     } else {
                         newHtml += line;
                     }
@@ -895,6 +908,11 @@
                 if (isNavigationMenu(line)) {
                     processedLine = `<div class="sticky-nav">${line}</div>`;
                     navigationProcessed = true;
+                    
+                    // Insert TOC right after navigation if we have headings
+                    if (headings.length >= 2) {
+                        processedLine += tocHtml;
+                    }
                 }
 
                 // Handle regular text (start or continue paragraph)
@@ -915,7 +933,7 @@
                 newHtml += '</ul>';
             }
 
-            // If TOC wasn't inserted (no h1 heading), insert it after navigation
+            // If TOC wasn't inserted and we have headings, insert it at the top after navigation
             if (!navigationProcessed && headings.length >= 2) {
                 newHtml = tocHtml + newHtml;
             }
@@ -946,14 +964,21 @@
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
 
-                // Update URL hash
-                window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
+                // Update URL hash (handle anchor navigation)
+                const hash = window.location.hash;
+                if (hash.includes('#')) {
+                    const [pageHash, anchorHash] = hash.substring(1).split('#');
+                    if (anchorHash) {
+                        // Scroll to the anchor
+                        const anchorElement = document.getElementById(anchorHash);
+                        if (anchorElement) {
+                            anchorElement.scrollIntoView();
+                        }
+                    }
+                }
 
                 // Highlight active navigation after content is rendered
                 setTimeout(highlightActiveNav, 0);
-
-                // Scroll to top after loading new page
-                window.scrollTo(0, 0);
 
             } catch (error) {
                 console.error('Error:', error);
@@ -973,6 +998,15 @@
                 if (url) {
                     e.preventDefault();
                     loadPage(url);
+                } else if (e.target.getAttribute('href')?.startsWith('#') && e.target.getAttribute('href').includes('#')) {
+                    // Handle anchor links within the same page
+                    e.preventDefault();
+                    const href = e.target.getAttribute('href');
+                    const anchor = href.split('#').pop();
+                    const anchorElement = document.getElementById(anchor);
+                    if (anchorElement) {
+                        anchorElement.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             }
         });
