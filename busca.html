@@ -275,6 +275,7 @@
     // Highlight active navigation link
     document.addEventListener('DOMContentLoaded', function() {
       const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      const fullPath = window.location.pathname;
       const navLinks = document.querySelectorAll('.sticky-nav a');
 
       // Remove nav-active class from all links first
@@ -286,12 +287,20 @@
       navLinks.forEach(link => {
         // Check if link has data-url attribute (for pages with data-url)
         if (link.hasAttribute('data-url')) {
-          if (link.getAttribute('data-url') === currentPage) {
+          const dataUrl = link.getAttribute('data-url');
+          // Match both busca.html and /busca (without .html)
+          if (dataUrl === currentPage || 
+              (dataUrl === 'busca.html' && (currentPage === 'busca' || fullPath.endsWith('/busca')))) {
             link.classList.add('nav-active');
           }
         }
         // Check if it's the inicio link and we're on index.html
         else if (currentPage === 'index.html' && link.getAttribute('href').includes('#index.md')) {
+          link.classList.add('nav-active');
+        }
+        // Special case for busca link without data-url (direct href match)
+        else if (link.getAttribute('href') === 'https://jucardus.github.io/busca' && 
+                (currentPage === 'busca' || fullPath.endsWith('/busca') || currentPage === 'busca.html')) {
           link.classList.add('nav-active');
         }
       });
