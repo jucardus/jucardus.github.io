@@ -120,7 +120,7 @@
         /* Page separator */
         .page-separator {
             text-align: center;
-            margin: 30px 0 0px 0;
+            margin: 40px 0 0px 0;
             color: #999;
             font-size: 1.2em;
         }
@@ -158,8 +158,8 @@
             padding-left: 20px;
         }
         .search-results li {
-            margin: 10px 0;
-            padding: 8px 0;
+            margin: 5px 0;
+            padding: 5px 0;
             border-bottom: 1px solid #444;
         }
         .no-results {
@@ -276,12 +276,12 @@
     document.addEventListener('DOMContentLoaded', function() {
       const currentPage = window.location.pathname.split('/').pop() || 'index.html';
       const navLinks = document.querySelectorAll('.sticky-nav a');
-      
+
       // Remove nav-active class from all links first
       navLinks.forEach(link => {
         link.classList.remove('nav-active');
       });
-      
+
       // Add nav-active class to the correct link
       navLinks.forEach(link => {
         // Check if link has data-url attribute (for pages with data-url)
@@ -289,7 +289,7 @@
           if (link.getAttribute('data-url') === currentPage) {
             link.classList.add('nav-active');
           }
-        } 
+        }
         // Check if it's the inicio link and we're on index.html
         else if (currentPage === 'index.html' && link.getAttribute('href').includes('#index.md')) {
           link.classList.add('nav-active');
