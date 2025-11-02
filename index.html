@@ -14,17 +14,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     
-    <!-- {4} Dynamic Meta Description -->
-    <meta id="dynamic-meta-description" content='Mi sitio central, con todas mis páginas.' name='description'/>
-    
-    <meta content='jucardus punto com, programación, traducciones, vocabularios, diccionario inglés-español, diccionario, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist' name='keywords'/>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta content='Julio Cárdenas Pelizzari' name='author'/>
-    
     <!-- {3} Highlight.js for Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    
+    <meta content='jucardus punto com, programación, traducciones, vocabularios, diccionario inglés-español, diccionario, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist' name='keywords'/>
+    <meta content='Mi sitio central, con todas mis páginas.' name='description'/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
     
     <!-- {1} Dynamic Title - Will be updated by JavaScript -->
     <title id="dynamic-title">JUCARDUS.COM</title>
@@ -236,30 +233,6 @@
                 const titleText = h1Element.textContent.trim();
                 document.getElementById('dynamic-title').textContent = `${titleText} | JUCARDUS.COM`;
             }
-        }
-
-        // {4} Update meta description based on first paragraph - FIXED VERSION
-        function updateMetaDescription() {
-            // Get all paragraphs and find the first non-empty one that's not in navigation
-            const paragraphs = document.querySelectorAll('p');
-            for (let p of paragraphs) {
-                // Skip paragraphs that are inside navigation or other special containers
-                if (p.closest('.sticky-nav')) continue;
-                
-                const text = p.textContent.trim();
-                if (text && text.length > 10) { // Ensure we have meaningful content
-                    let description = text;
-                    // Limit description length for SEO
-                    if (description.length > 155) {
-                        description = description.substring(0, 152) + '...';
-                    }
-                    document.getElementById('dynamic-meta-description').setAttribute('content', description);
-                    return; // Stop after first valid paragraph
-                }
-            }
-            
-            // Fallback if no suitable paragraph found
-            document.getElementById('dynamic-meta-description').setAttribute('content', 'Mi sitio central, con todas mis páginas.');
         }
 
         // {2} HTML escaping function for better handling of special characters
@@ -656,10 +629,8 @@
                             if (isInternalLink(fullUrl)) {
                                 // Store only the relative path in data-url
                                 const relativePath = extractRelativePath(fullUrl);
-                                // {5} REMOVED title attribute - links will now show proper URLs in status bar
                                 result += `<a href="#" data-url="${relativePath}">${linkText}</a>`;
                             } else {
-                                // {5} REMOVED title attribute - links will now show proper URLs in status bar
                                 result += `<a href="${url}" target="_blank" rel="noopener noreferrer nofollow external">${linkText}</a>`;
                             }
 
@@ -833,9 +804,6 @@
 
                 // {1} Update page title based on h1 content
                 updatePageTitle();
-                
-                // {4} Update meta description based on first paragraph
-                updateMetaDescription();
 
                 // Update URL hash
                 window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
