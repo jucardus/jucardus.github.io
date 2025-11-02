@@ -259,7 +259,7 @@
 
   <h1>Busca en el sitio</h1>
 
-  <div class="sticky-nav">[ <a href="https://jucardus.github.io/#index.md" class="nav-active">inicio</a> · <a href="https://jucardus.github.io/#indice.md" data-url="indice.md">índice</a> · <a href="https://jucardus.github.io/#etiquetas.md" data-url="etiquetas.md">etiquetas</a> · <a href="https://jucardus.github.io/#actividad.md" data-url="actividad.md">actividad</a> · <a href="https://jucardus.github.io/busca" data-url="busca.html">busca 🔍</a> · compartir ]</div>
+  <div class="sticky-nav">[ <a href="https://jucardus.github.io/#index.md">inicio</a> · <a href="https://jucardus.github.io/#indice.md" data-url="indice.md">índice</a> · <a href="https://jucardus.github.io/#etiquetas.md" data-url="etiquetas.md">etiquetas</a> · <a href="https://jucardus.github.io/#actividad.md" data-url="actividad.md">actividad</a> · <a href="https://jucardus.github.io/busca" data-url="busca.html">busca 🔍</a> · compartir ]</div>
 
   <div class="search-container">
     <input type="text" id="searchInput" class="search-box" placeholder="Escribe para buscar en el sitio..." autofocus>
@@ -275,13 +275,24 @@
     // Highlight active navigation link
     document.addEventListener('DOMContentLoaded', function() {
       const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-      const navLinks = document.querySelectorAll('.sticky-nav a[data-url]');
-
+      const navLinks = document.querySelectorAll('.sticky-nav a');
+      
+      // Remove nav-active class from all links first
       navLinks.forEach(link => {
-        if (link.getAttribute('data-url') === currentPage) {
+        link.classList.remove('nav-active');
+      });
+      
+      // Add nav-active class to the correct link
+      navLinks.forEach(link => {
+        // Check if link has data-url attribute (for pages with data-url)
+        if (link.hasAttribute('data-url')) {
+          if (link.getAttribute('data-url') === currentPage) {
+            link.classList.add('nav-active');
+          }
+        } 
+        // Check if it's the inicio link and we're on index.html
+        else if (currentPage === 'index.html' && link.getAttribute('href').includes('#index.md')) {
           link.classList.add('nav-active');
-        } else {
-          link.classList.remove('nav-active');
         }
       });
     });
