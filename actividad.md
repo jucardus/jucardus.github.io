@@ -3,7 +3,7 @@
 
 * [vocabulario español ¦ horro](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-horro.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02 08:18:29
 * [La fe te salva de la circularidad...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/f/la-fe-te-salva-de-la-circularidad.md) - Apotegmas - 25-11-01 18:00:19
-* [códigos QR ┋ en QuickChart con leyenda](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/d/codigos-qr-en-quickchart-con-leyenda.md) - Enlaces varios, Códigos QR (enlaces) - 25-11-01 13:05:19
+* [códigos QR ¦ en QuickChart con leyenda](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/d/codigos-qr-en-quickchart-con-leyenda.md) - Enlaces varios, Códigos QR (enlaces) - 25-11-01 13:05:19
 * [是不是？ (是不是？) [shì bú shì?]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-bu2-shi4.md) - Diccionario chino-español, Gramática china, - 25-11-01 12:13:45
 * [天氣 (天气) [tiānqì]](https://github.com/jucardus/jucardus.github.io/blob/main/t/i/a/tian1-qi4.md) - Diccionario chino-español, - 25-11-01 12:00:31
 * [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) - Caracteres chinos, Diccionario chino-español - 25-11-01 11:48:05
