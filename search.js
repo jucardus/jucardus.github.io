@@ -1,5 +1,5 @@
 let entriesBase = [
-  "▓[Actividad reciente](https://jucardus.github.io/actividad) en [Jucardus](https://jucardus.github.io/)▒readme.md▓",
+  "▓Actividad reciente en Jucardus▒readme.md▓",
   "▓abacus [s.]▒a/b/a/abacus-s.md▓",
   "▓Actividad reciente▒actividad.md▓",
   "▓Actualización de Google Chrome con Bash▒a/c/t/actualizacion-de-google-chrome-con-bash.md▓",
