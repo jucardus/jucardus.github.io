@@ -334,7 +334,7 @@
           const parts = decodedEntry.split('▒');
           if (parts.length === 2) {
             const title = parts[0].substring(1); // Remove starting ▓
-            const link = parts[1].substring(0, parts[1].length - 1).replace('#.*'g,''); // Remove ending ▓
+            const link = parts[1].substring(0, parts[1].length - 1).replace(/#.*/g,''); // Remove ending ▓
 
             // Keep the full link including anchor
             results.push({
