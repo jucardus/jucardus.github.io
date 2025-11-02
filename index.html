@@ -125,68 +125,6 @@
             font-size: 1.2em;
         }
 
-        /* Table of Contents styles */
-        .toc-container {
-            background-color: #405060;
-            border-radius: 8px;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-left: 4px solid Gold;
-        }
-        .toc-title {
-            color: Gold;
-            font-weight: bold;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        .toc-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        .toc-list li {
-            margin: 5px 0;
-            padding: 2px 0;
-        }
-        .toc-list a {
-            border-bottom: none;
-        }
-        .toc-list a:hover {
-            color: Gold;
-        }
-        .toc-h2 {
-            padding-left: 15px;
-        }
-        .toc-h3 {
-            padding-left: 30px;
-            font-size: 0.95em;
-        }
-        .toc-h4 {
-            padding-left: 45px;
-            font-size: 0.9em;
-        }
-
-        /* Heading anchor styles - ONLY for h2, h3, h4 */
-        h2 .heading-anchor,
-        h3 .heading-anchor,
-        h4 .heading-anchor {
-            color: #999;
-            text-decoration: none;
-            border-bottom: none;
-            margin-left: 5px;
-            font-size: 0.8em;
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-        h2:hover .heading-anchor,
-        h3:hover .heading-anchor,
-        h4:hover .heading-anchor {
-            opacity: 1;
-        }
-        .heading-anchor:hover {
-            color: Gold;
-        }
-
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             body {
@@ -221,15 +159,6 @@
             .page-separator {
                 margin: 0px 0 0px 0;
             }
-            .toc-container {
-                padding: 12px 15px;
-            }
-            .toc-h3 {
-                padding-left: 25px;
-            }
-            .toc-h4 {
-                padding-left: 35px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -259,15 +188,6 @@
             .page-separator {
                 margin: 0px 0 0px 0;
             }
-            .toc-container {
-                padding: 10px 12px;
-            }
-            .toc-h3 {
-                padding-left: 20px;
-            }
-            .toc-h4 {
-                padding-left: 30px;
-            }
         }
     </style>
 </head>
@@ -290,75 +210,6 @@
             'etiquetas.md': ['etiquetas', 'tags'],
             'actividad.md': ['actividad', 'activity']
         };
-
-        // Generate GitHub-style anchor from heading text
-        function generateAnchor(text) {
-            return text.toLowerCase()
-                .trim()
-                .replace(/\s+/g, '-')
-                .replace(/-+/g, '-')
-                .replace(/[^\w\-]/g, '')
-                .replace(/^-+|-+$/g, '');
-        }
-
-        // Extract headings from markdown text and generate TOC (excluding # headings)
-        function extractHeadingsAndGenerateTOC(markdown, currentPath) {
-            const lines = markdown.split('\n');
-            const headings = [];
-            let tocHtml = '';
-
-            // Extract all headings (##, ###, ####) excluding # headings
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i].trim();
-                let level = 0;
-                let title = '';
-
-                if (line.startsWith('## ')) {
-                    level = 2;
-                    title = line.substring(3).trim();
-                } else if (line.startsWith('### ')) {
-                    level = 3;
-                    title = line.substring(4).trim();
-                } else if (line.startsWith('#### ')) {
-                    level = 4;
-                    title = line.substring(5).trim();
-                }
-
-                if (level > 0 && title) {
-                    const anchor = generateAnchor(title);
-                    headings.push({
-                        level: level,
-                        title: title,
-                        anchor: anchor,
-                        lineIndex: i
-                    });
-                }
-            }
-
-            // Generate TOC only if there are 2 or more subheadings
-            if (headings.length >= 2) {
-                tocHtml = '<div class="toc-container">';
-                tocHtml += '<div class="toc-title">Tabla de contenidos</div>';
-                tocHtml += '<ul class="toc-list">';
-
-                headings.forEach(heading => {
-                    const indentClass = `toc-h${heading.level}`;
-                    // Create proper URL with current page path + anchor
-                    const currentPagePath = currentPath.replace(/\.md$/, '');
-                    const fullUrl = `#${currentPagePath}#${heading.anchor}`;
-                    tocHtml += `<li class="${indentClass}">`;
-                    tocHtml += `<a href="${fullUrl}">${heading.title}</a>`;
-                    tocHtml += '</li>';
-                });
-
-                tocHtml += '</ul></div>';
-            }
-
-            return {
-                headings: headings,
-                tocHtml: tocHtml
-            };
-        }
 
         // Convert path to markdown path
         function pathToMdPath(path) {
@@ -410,10 +261,6 @@
         // Get current page from URL hash
         function getCurrentPage() {
             const hash = window.location.hash.substring(1);
-            // Handle anchor links within pages (page#anchor format)
-            if (hash.includes('#')) {
-                return pathToMdPath(hash.split('#')[0]);
-            }
             return pathToMdPath(hash) || 'index.md';
         }
 
@@ -734,73 +581,11 @@
             return html + '<div class="page-separator">~ • ~</div>';
         }
 
-        // Convert headers with anchor links (ONLY for ##, ###, ####)
-        function convertHeadersWithAnchors(text, headings, currentPath) {
-            let result = text;
-            const allHeadings = [];
-            
-            // Process all heading levels
-            const lines = text.split('\n');
-            for (let i = 0; i < lines.length; i++) {
-                const line = lines[i].trim();
-                let level = 0;
-                let title = '';
-
-                if (line.startsWith('# ')) {
-                    level = 1;
-                    title = line.substring(2).trim();
-                } else if (line.startsWith('## ')) {
-                    level = 2;
-                    title = line.substring(3).trim();
-                } else if (line.startsWith('### ')) {
-                    level = 3;
-                    title = line.substring(4).trim();
-                } else if (line.startsWith('#### ')) {
-                    level = 4;
-                    title = line.substring(5).trim();
-                }
-
-                if (level > 0 && title) {
-                    const anchor = generateAnchor(title);
-                    allHeadings.push({
-                        level: level,
-                        title: title,
-                        anchor: anchor,
-                        lineIndex: i
-                    });
-                }
-            }
-            
-            // Process each heading and add anchor links ONLY for h2, h3, h4
-            allHeadings.forEach(heading => {
-                const originalPattern = '#'.repeat(heading.level) + ' ' + heading.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                
-                if (heading.level === 1) {
-                    // # headings - no anchor link
-                    const replacement = `<h${heading.level}>${heading.title}</h${heading.level}>`;
-                    result = result.replace(new RegExp('^' + originalPattern + '$', 'gm'), replacement);
-                } else {
-                    // ##, ###, #### headings - with anchor link
-                    const currentPagePath = currentPath.replace(/\.md$/, '');
-                    const fullAnchor = `${currentPagePath}#${heading.anchor}`;
-                    const anchorLink = `<a href="#${fullAnchor}" class="heading-anchor" title="Enlace directo a esta sección">🔗</a>`;
-                    const replacement = `<h${heading.level}>${heading.title}${anchorLink}</h${heading.level}>`;
-                    
-                    result = result.replace(new RegExp('^' + originalPattern + '$', 'gm'), replacement);
-                }
-            });
-            
-            return result;
-        }
-
         // Simple markdown to HTML converter
         function renderMarkdown(text, currentPath) {
             const basePath = currentPath.includes('/')
                 ? currentPath.substring(0, currentPath.lastIndexOf('/') + 1)
                 : '';
-
-            // Extract headings and generate TOC (excluding # headings)
-            const { headings, tocHtml } = extractHeadingsAndGenerateTOC(text, currentPath);
 
             let html = text;
 
@@ -816,8 +601,11 @@
             // Process ALL links (pass currentPath for share URL modification)
             html = processLinks(html, basePath, currentPath);
 
-            // Convert headers with anchor links (ONLY for ##, ###, ####)
-            html = convertHeadersWithAnchors(html, headings, currentPath);
+            // Convert headers
+            html = html.replace(/^#### (.*$)/gm, '<h4>$1</h4>');
+            html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
 
             // Process text formatting AFTER links and code blocks
             html = processTextFormatting(html);
@@ -827,10 +615,6 @@
             let inList = false;
             let inParagraph = false;
             let newHtml = '';
-
-            // Track if we've processed the navigation menu
-            let navigationProcessed = false;
-            let firstHeadingProcessed = false;
 
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i];
@@ -861,14 +645,7 @@
                         newHtml += '</ul>';
                         inList = false;
                     }
-                    
-                    // Insert TOC after the navigation menu and first heading
-                    if (!firstHeadingProcessed && headings.length >= 2 && trimmedLine.startsWith('<h1>')) {
-                        newHtml += line;
-                        firstHeadingProcessed = true;
-                    } else {
-                        newHtml += line;
-                    }
+                    newHtml += line;
                     continue;
                 }
 
@@ -907,12 +684,6 @@
                 let processedLine = line;
                 if (isNavigationMenu(line)) {
                     processedLine = `<div class="sticky-nav">${line}</div>`;
-                    navigationProcessed = true;
-                    
-                    // Insert TOC right after navigation if we have headings
-                    if (headings.length >= 2) {
-                        processedLine += tocHtml;
-                    }
                 }
 
                 // Handle regular text (start or continue paragraph)
@@ -931,11 +702,6 @@
             }
             if (inList) {
                 newHtml += '</ul>';
-            }
-
-            // If TOC wasn't inserted and we have headings, insert it at the top after navigation
-            if (!navigationProcessed && headings.length >= 2) {
-                newHtml = tocHtml + newHtml;
             }
 
             // Add page separator at the end
@@ -964,21 +730,14 @@
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
 
-                // Update URL hash (handle anchor navigation)
-                const hash = window.location.hash;
-                if (hash.includes('#')) {
-                    const [pageHash, anchorHash] = hash.substring(1).split('#');
-                    if (anchorHash) {
-                        // Scroll to the anchor
-                        const anchorElement = document.getElementById(anchorHash);
-                        if (anchorElement) {
-                            anchorElement.scrollIntoView();
-                        }
-                    }
-                }
+                // Update URL hash
+                window.location.hash = url.startsWith('http') ? extractRelativePath(url) : url;
 
                 // Highlight active navigation after content is rendered
                 setTimeout(highlightActiveNav, 0);
+
+                // Scroll to top after loading new page
+                window.scrollTo(0, 0);
 
             } catch (error) {
                 console.error('Error:', error);
@@ -998,15 +757,6 @@
                 if (url) {
                     e.preventDefault();
                     loadPage(url);
-                } else if (e.target.getAttribute('href')?.startsWith('#') && e.target.getAttribute('href').includes('#')) {
-                    // Handle anchor links within the same page
-                    e.preventDefault();
-                    const href = e.target.getAttribute('href');
-                    const anchor = href.split('#').pop();
-                    const anchorElement = document.getElementById(anchor);
-                    if (anchorElement) {
-                        anchorElement.scrollIntoView({ behavior: 'smooth' });
-                    }
                 }
             }
         });
