@@ -300,22 +300,19 @@
                 .replace(/^-+|-+$/g, '');
         }
 
-        // Extract headings from markdown text and generate TOC
+        // Extract headings from markdown text and generate TOC (excluding # headings)
         function extractHeadingsAndGenerateTOC(markdown, currentPath) {
             const lines = markdown.split('\n');
             const headings = [];
             let tocHtml = '';
 
-            // Extract all headings
+            // Extract all headings (##, ###, ####) excluding # headings
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i].trim();
                 let level = 0;
                 let title = '';
 
-                if (line.startsWith('# ')) {
-                    level = 1;
-                    title = line.substring(2).trim();
-                } else if (line.startsWith('## ')) {
+                if (line.startsWith('## ')) {
                     level = 2;
                     title = line.substring(3).trim();
                 } else if (line.startsWith('### ')) {
@@ -337,7 +334,7 @@
                 }
             }
 
-            // Generate TOC only if there are 2 or more headings
+            // Generate TOC only if there are 2 or more subheadings
             if (headings.length >= 2) {
                 tocHtml = '<div class="toc-container">';
                 tocHtml += '<div class="toc-title">Tabla de contenidos</div>';
@@ -345,8 +342,11 @@
 
                 headings.forEach(heading => {
                     const indentClass = `toc-h${heading.level}`;
+                    // Create proper URL with current page path + anchor
+                    const currentPagePath = currentPath.replace(/\.md$/, '');
+                    const fullUrl = `#${currentPagePath}#${heading.anchor}`;
                     tocHtml += `<li class="${indentClass}">`;
-                    tocHtml += `<a href="#${heading.anchor}">${heading.title}</a>`;
+                    tocHtml += `<a href="${fullUrl}">${heading.title}</a>`;
                     tocHtml += '</li>';
                 });
 
@@ -729,14 +729,50 @@
             return html + '<div class="page-separator">~ • ~</div>';
         }
 
-        // Convert headers with anchor links
-        function convertHeadersWithAnchors(text, headings) {
+        // Convert headers with anchor links (including # headings)
+        function convertHeadersWithAnchors(text, headings, currentPath) {
             let result = text;
+            const allHeadings = [];
+            
+            // Process all heading levels including # headings
+            const lines = text.split('\n');
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                let level = 0;
+                let title = '';
+
+                if (line.startsWith('# ')) {
+                    level = 1;
+                    title = line.substring(2).trim();
+                } else if (line.startsWith('## ')) {
+                    level = 2;
+                    title = line.substring(3).trim();
+                } else if (line.startsWith('### ')) {
+                    level = 3;
+                    title = line.substring(4).trim();
+                } else if (line.startsWith('#### ')) {
+                    level = 4;
+                    title = line.substring(5).trim();
+                }
+
+                if (level > 0 && title) {
+                    const anchor = generateAnchor(title);
+                    allHeadings.push({
+                        level: level,
+                        title: title,
+                        anchor: anchor,
+                        lineIndex: i
+                    });
+                }
+            }
             
             // Process each heading and add anchor links
-            headings.forEach(heading => {
+            allHeadings.forEach(heading => {
                 const originalPattern = '#'.repeat(heading.level) + ' ' + heading.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                const anchorLink = `<a href="#${heading.anchor}" class="heading-anchor" title="Enlace directo a esta sección">🔗</a>`;
+                // Create proper anchor link with current page path
+                const currentPagePath = currentPath.replace(/\.md$/, '');
+                const fullAnchor = `${currentPagePath}#${heading.anchor}`;
+                const anchorLink = `<a href="#${fullAnchor}" class="heading-anchor" title="Enlace directo a esta sección">🔗</a>`;
                 const replacement = `<h${heading.level}>${heading.title}${anchorLink}</h${heading.level}>`;
                 
                 result = result.replace(new RegExp('^' + originalPattern + '$', 'gm'), replacement);
@@ -751,7 +787,7 @@
                 ? currentPath.substring(0, currentPath.lastIndexOf('/') + 1)
                 : '';
 
-            // Extract headings and generate TOC
+            // Extract headings and generate TOC (excluding # headings)
             const { headings, tocHtml } = extractHeadingsAndGenerateTOC(text, currentPath);
 
             let html = text;
@@ -768,8 +804,8 @@
             // Process ALL links (pass currentPath for share URL modification)
             html = processLinks(html, basePath, currentPath);
 
-            // Convert headers with anchor links
-            html = convertHeadersWithAnchors(html, headings);
+            // Convert headers with anchor links (including # headings)
+            html = convertHeadersWithAnchors(html, headings, currentPath);
 
             // Process text formatting AFTER links and code blocks
             html = processTextFormatting(html);
@@ -780,8 +816,8 @@
             let inParagraph = false;
             let newHtml = '';
 
-            // Insert TOC after the first heading if there are 2+ headings
-            let tocInserted = false;
+            // Track if we've processed the navigation menu
+            let navigationProcessed = false;
 
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i];
@@ -813,10 +849,10 @@
                         inList = false;
                     }
                     
-                    // Insert TOC after the first heading
-                    if (!tocInserted && headings.length >= 2 && trimmedLine.startsWith('<h1>')) {
+                    // Insert TOC after the navigation menu and first heading
+                    if (!navigationProcessed && headings.length >= 2 && trimmedLine.startsWith('<h1>')) {
                         newHtml += line + tocHtml;
-                        tocInserted = true;
+                        navigationProcessed = true;
                     } else {
                         newHtml += line;
                     }
@@ -858,6 +894,7 @@
                 let processedLine = line;
                 if (isNavigationMenu(line)) {
                     processedLine = `<div class="sticky-nav">${line}</div>`;
+                    navigationProcessed = true;
                 }
 
                 // Handle regular text (start or continue paragraph)
@@ -878,8 +915,8 @@
                 newHtml += '</ul>';
             }
 
-            // If TOC wasn't inserted (no h1 heading), insert it at the top
-            if (!tocInserted && headings.length >= 2) {
+            // If TOC wasn't inserted (no h1 heading), insert it after navigation
+            if (!navigationProcessed && headings.length >= 2) {
                 newHtml = tocHtml + newHtml;
             }
 
