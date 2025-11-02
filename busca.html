@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-44Y9CNCHR8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta content='jucardus punto com, programación, traducciones, vocabularios, diccionario inglés-español, diccionario, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist' name='keywords'/>
+    <meta content='Mi sitio central, con todas mis páginas.' name='description'/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta content='Julio Cárdenas Pelizzari' name='author'/>
+    <title>JUCARDUS.COM</title>
+    <style>
+        body {
+            background-color: #345;
+            color: #eaeaea;
+            margin: 0;
+            padding: 50px 22% 100px 22%;
+            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.2px;
+            min-height: 100vh;
+        }
+        a {
+            color: #eee;
+            text-decoration: none;
+            border-bottom: 0.5px Solid #ffffff77;
+        }
+        a:hover {
+            color: Gold;
+            border-bottom: 0.7px Solid Orange;
+        }
+        a.nav-active {
+            color: Gold;
+            border-bottom: 0.7px Solid Orange;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        h1 {
+            color: #eee;
+            border-bottom: 1px solid #666;
+            margin: 0px 0px 20px 0px;
+        }
+        h2, h3, h4 {
+            color: #eee;
+            border-bottom: 1px solid #666;
+            margin: 0px 0px 0px 0px;
+        }
+        p {
+            margin: 8px 0;
+        }
+        strong {
+            font-weight: bold;
+        }
+        em {
+            font-style: italic;
+        }
+        strong em, em strong {
+            font-weight: bold;
+            font-style: italic;
+        }
+        pre {
+            background-color: #405060;
+            padding: 0px 5px 0px 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            white-space: pre;
+            margin: 15px 0;
+        }
+        blockquote {
+            background-color: #405060;
+            padding: 0px 5px 0px 15px;
+            border-radius: 5px;
+            margin: 15px auto;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 1.1em;
+            line-height: 1.5;
+            border-left: 4px solid #666;
+            max-width: 90%;
+        }
+        #imagenes {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .imagenes {
+            max-width: 75%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Sticky navigation menu */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            background-color: #2a3a4a;
+            padding: 10px 15px;
+            margin: 0 0 0 0;
+            margin-bottom: -5px!important;
+            z-index: 100;
+            border-bottom: 1px solid #555;
+        }
+        .sticky-nav a {
+            margin: 0 5px;
+        }
+
+        /* Page separator */
+        .page-separator {
+            text-align: center;
+            margin: 30px 0 0px 0;
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        /* Search box styles */
+        .search-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .search-box {
+            width: 40%; /* Reduced from 80% to 40% for desktop */
+            max-width: 400px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #666;
+            border-radius: 25px;
+            background-color: #405060;
+            color: #eaeaea;
+            outline: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .search-box:focus {
+            border-color: Gold;
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+        .search-box::placeholder {
+            color: #999;
+        }
+        .search-results {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .search-results ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .search-results li {
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #444;
+        }
+        .no-results {
+            text-align: center;
+            color: #999;
+            font-style: italic;
+            margin: 30px 0;
+        }
+        .search-hint {
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 5% 80px 5%;
+            }
+            .imagenes {
+                max-width: 95%;
+            }
+            h1 {
+                line-height: 1.2;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            h3 {
+                font-size: 1.1em;
+            }
+            pre {
+                padding: 0px 5px 0px 8px;
+                font-size: 0.9em;
+            }
+            blockquote {
+                padding: 12px 15px;
+                font-size: 1.05em;
+                max-width: 95%;
+            }
+            .sticky-nav {
+                margin: 0 0 15px 0;
+                padding: 8px 10px;
+            }
+            .page-separator {
+                margin: 30px 0 0px 0;
+            }
+            .search-box {
+                width: 90%; /* 90% width for mobile/small screens */
+                padding: 10px 15px;
+            }
+            .search-results ul {
+                padding-left: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px 3% 60px 3%;
+            }
+            .imagenes {
+                max-width: 95%;
+            }
+            ul {
+                padding-left: 15px;
+            }
+            pre {
+                padding: 0px 5px 0px 15px;
+                font-size: 0.85em;
+            }
+            blockquote {
+                padding: 10px 12px;
+                font-size: 1em;
+                max-width: 95%;
+            }
+            .sticky-nav {
+                margin: 0 0 10px 0;
+                padding: 6px 8px;
+                font-size: 0.9em;
+            }
+            .page-separator {
+                margin: 30px 0 0px 0;
+            }
+            .search-box {
+                width: 90%; /* 90% width for mobile/small screens */
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+            .search-results ul {
+                padding-left: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <h1>Busca en el sitio</h1>
+
+  <div class="sticky-nav">[ <a href="https://jucardus.github.io/#index.md" class="nav-active">inicio</a> · <a href="https://jucardus.github.io/#indice.md" data-url="indice.md">índice</a> · <a href="https://jucardus.github.io/#etiquetas.md" data-url="etiquetas.md">etiquetas</a> · <a href="https://jucardus.github.io/#actividad.md" data-url="actividad.md">actividad</a> · <a href="https://jucardus.github.io/busca" data-url="busca.html">busca 🔍</a> · compartir ]</div>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" class="search-box" placeholder="Escribe para buscar en el sitio..." autofocus>
+    <div class="search-hint">Presiona ENTER para buscar</div>
+  </div>
+
+  <div id="searchResults" class="search-results">
+    <!-- Results will appear here -->
+  </div>
+
+  <script src="search.js"></script>
+  <script>
+    // Highlight active navigation link
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      const navLinks = document.querySelectorAll('.sticky-nav a[data-url]');
+
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-url') === currentPage) {
+          link.classList.add('nav-active');
+        } else {
+          link.classList.remove('nav-active');
+        }
+      });
+    });
+
+    // Search functionality - ENTER key only
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        performSearch(e.target.value);
+      }
+    });
+
+    function performSearch(query) {
+      const resultsContainer = document.getElementById('searchResults');
+
+      if (!query.trim()) {
+        resultsContainer.innerHTML = '<div class="no-results">Escribe algo para buscar</div>';
+        return;
+      }
+
+      const searchTerm = query.toLowerCase();
+      const results = [];
+
+      // Search through entriesBase array
+      entriesBase.forEach(entry => {
+        const decodedEntry = decodeHTMLEntities(entry);
+        const matchIndex = decodedEntry.toLowerCase().indexOf(searchTerm);
+
+        if (matchIndex !== -1) {
+          // Parse the entry to extract title and link
+          const parts = decodedEntry.split('▒');
+          if (parts.length === 2) {
+            const title = parts[0].substring(1); // Remove starting ▓
+            const link = parts[1].substring(0, parts[1].length - 1); // Remove ending ▓
+
+            // Keep the full link including anchor
+            results.push({
+              title: title,
+              link: `https://jucardus.github.io/#${link}`,
+              originalLink: link
+            });
+          }
+        }
+      });
+
+      displayResults(results);
+    }
+
+    function displayResults(results) {
+      const resultsContainer = document.getElementById('searchResults');
+
+      if (results.length === 0) {
+        resultsContainer.innerHTML = '<div class="no-results">No se encontraron resultados</div>';
+        return;
+      }
+
+      let html = '<ul>';
+      results.forEach(result => {
+        html += `<li><a href="${result.link}">${result.title}</a></li>`;
+      });
+      html += '</ul>';
+
+      resultsContainer.innerHTML = html;
+    }
+
+    function decodeHTMLEntities(text) {
+      const textArea = document.createElement('textarea');
+      textArea.innerHTML = text;
+      return textArea.value;
+    }
+  </script>
+
+  <div class="page-separator">~ • ~</div>
+
+</body>
+</html>
