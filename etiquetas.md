@@ -27,6 +27,7 @@
 * [Programación](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)
 * [Pronombres chinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/pronombres-chinos.md)
 * [Pronombres latinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/pronombres-latinos.md)
+* [Reflexiones](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/reflexiones.md)
 * [Según Grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
