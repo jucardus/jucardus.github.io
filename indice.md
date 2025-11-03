@@ -44,6 +44,7 @@
 * [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
+* [vocabulario inglés ¦ overkill](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-overkill.md) - Vocabulario inglés (enlaces), Enlaces varios - 25-11-03
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [你 (你) [nǐ]](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-20320.md) - Diccionario chino-español, Caracteres chinos, Pronombres chinos - 25-11-01
