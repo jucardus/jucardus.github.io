@@ -38,6 +38,7 @@
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - Según Grok, GitHub, Plugins, Plugins para GitHub - 25-10-28
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [vocabulario español ¦ horro](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-horro.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02
+* [vocabulario español ¦ monición](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-monicion.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-29
 * [vocabulario español ¦ patullar](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patullar.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31
 * [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31
