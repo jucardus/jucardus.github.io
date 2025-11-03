@@ -11,6 +11,9 @@
 * facción [f.] (rasgo) ¦Rsgs¦
 * función [f.] ¦Dspstvs¦ ¦Infrmtc¦
 * rasgo [m.] (facción en el rostro) — _lineament_ — ¦Rsgs¦
+
+### Pronunciación
+
 * {PR} ˈfiːtʃər
 * {SL} FEA.ture
 
@@ -21,4 +24,4 @@ Proton Mail’s mobile apps just got their biggest upgrade in nearly a decade. W
 [#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)  
 [#sustantivos-ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
 
-<sup>25-11-02 19:15:26</sup>
+<sup>25-11-02 19:22:39</sup>
