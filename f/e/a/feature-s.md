@@ -19,7 +19,7 @@
 
 ### Traducciones en contexto
 
-Proton Mail’s mobile apps just got their biggest upgrade in nearly a decade. We rebuilt them from the ground up to be faster, smoother, and more reliable — even offline. And, for the first time, iOS and Android are fully in sync, with the same features <sup>[funciones]</sup> and updates arriving side by side. It’s a major step forward for the world’s most widely used encrypted email service. ~ Proton Mail ~
+> Proton Mail’s mobile apps just got their biggest upgrade in nearly a decade. We rebuilt them from the ground up to be faster, smoother, and more reliable — even offline. And, for the first time, iOS and Android are fully in sync, with the same features <sup>[funciones]</sup> and updates arriving side by side. It’s a major step forward for the world’s most widely used encrypted email service. ~ Proton Mail ~
 
 [#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)  
 [#sustantivos-ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
