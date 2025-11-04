@@ -27,6 +27,7 @@
 * [La fe te salva de la circularidad...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/f/la-fe-te-salva-de-la-circularidad.md) - Apotegmas - 25-11-01
 * [La realidad siempre supera a la ficción...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/r/la-realidad-siempre-supera-a-la-ficcion.md) - Apotegmas - 25-10-31
 * [La Verdad existe desde siempre](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/v/la-verdad-existe-desde-siempre.md) - Apotegmas - 25-10-31
+* [Locuciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/l/o/c/locuciones-adversativas.md) - Gramática española - 25-11-04
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26
 * [Mira hacia arriba para idolatrar](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mira-hacia-arriba-para-idolatrar.md) - Apotegmas - 25-11-01
 * [No hay forma de creer en Dios si no es...](https://github.com/jucardus/jucardus.github.io/blob/main/n/o/h/no-hay-forma-de-creer-en-dios.md) - Apotegmas - 25-11-01
