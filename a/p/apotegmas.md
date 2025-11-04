@@ -12,3 +12,4 @@
 * [No hay forma de creer en Dios si no es...](https://github.com/jucardus/jucardus.github.io/blob/main/n/o/h/no-hay-forma-de-creer-en-dios.md) - 25-11-01
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - 25-10-29
 * [Siempre que busques a Dios hacia...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/siempre-que-busques-a-dios-hacia.md) - 25-11-04
+* [Si no amas al mundo como lo ama Dios](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/si-no-amas-al-mundo-como-lo-ama-dios.md) - 25-11-04
