@@ -5,3 +5,4 @@
 * [冷 (冷) [lěng]](https://github.com/jucardus/jucardus.github.io/blob/main/l/e/n/leng3-20919.md) - 25-11-01
 * [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) - 25-11-01
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - 25-10-27
+* [樹 (树) [shù]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shu4-27193.md) - 25-11-04
