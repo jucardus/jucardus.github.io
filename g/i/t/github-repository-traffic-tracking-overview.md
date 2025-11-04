@@ -3,11 +3,13 @@
 
 When a GitHub user publishes their repository (or more specifically, enables GitHub Pages to serve it as an HTML website), the visit count you're referring to is likely the **traffic data** available in the repository's Insights tab. This tracks engagement with the *repository itself* on GitHub.com, not direct visits to the hosted HTML Pages site. I'll break down how this works below, based on GitHub's official documentation and user reports.
 
-#### Key Distinction: Repository Traffic vs. Pages Site Traffic
+### Key Distinction: Repository Traffic vs. Pages Site Traffic
+
 - **Repository traffic** (what GitHub tracks natively): This measures views of the repository's main page, files, commits, etc., on GitHub.com. It's useful for gauging interest in your code/project but **does not include visits to the GitHub Pages site** (e.g., `username.github.io/repo`). For Pages-specific analytics, GitHub recommends integrating third-party tools like Google Analytics.
 - If your question is specifically about HTML Pages visits, GitHub's built-in count won't capture them—use external tracking instead.
 
-#### How Visit Counts Work in Repository Traffic
+### How Visit Counts Work in Repository Traffic
+
 GitHub provides this data under **Insights > Traffic** for public repositories (private repos require push access). Here's the mechanics:
 
 - **What Counts as a "Visit"?**
@@ -35,12 +37,14 @@ GitHub provides this data under **Insights > Traffic** for public repositories (
     - **Referring sites**: Top external sources driving traffic (excludes GitHub itself and search engines by default).
     - **Popular content**: Most-viewed paths/files, ranked by views and unique visitors.
 
-#### Example from User Reports
+### Example from User Reports
+
 In discussions, users note scenarios like:
 - A repo with 33 total views but only 1 unique visitor: This could mean one person (e.g., the owner in a private/incognito session or a rare edge case) loaded the page 33 times.
 - Clones without visits: Possible if someone clones directly via URL/CLI without browsing the repo page.
 
-#### Limitations and Tips
+### Limitations and Tips
+
 - **No Pages Integration**: As noted in GitHub community threads, repo traffic won't reflect HTML site visits. For that, add analytics code to your Pages site's HTML (e.g., `script` tag for Google Analytics).
 - **Accuracy**: Counts are approximate and GitHub-specific; they don't capture forks, stars, or external mirrors.
 - **Public Repos Only**: Traffic is visible to anyone with read access, but detailed insights require push access.
