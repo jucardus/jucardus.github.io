@@ -1,8 +1,8 @@
 # GitHub Repository Traffic Tracking Overview
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23segun_grok_jucardus) ]
 
-> [Key Distinction: Repository Traffic vs. Pages Site Traffic](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md#key-distinction-repository-traffic-vs-pages-site-traffic)
-> [How Visit Counts Work in Repository Traffic]  (https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md#how-visit-counts-work-in-repository-traffic)  
+> [Key Distinction: Repository Traffic vs. Pages Site Traffic](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md#key-distinction-repository-traffic-vs-pages-site-traffic)  
+> [How Visit Counts Work in Repository Traffic](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md#how-visit-counts-work-in-repository-traffic)  
 > [Example from User Reports](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md#example-from-user-reports)  
 > [Limitations and Tips](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md#limitations-and-tips)
 
