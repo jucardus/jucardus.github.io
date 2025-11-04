@@ -58,4 +58,5 @@
 * [是 (是) [shì]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-26159.md) - Caracteres chinos, Diccionario chino-español - 25-11-01
 * [是不是？ (是不是？) [shì bú shì?]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/shi4-bu2-shi4.md) - Diccionario chino-español, Gramática china, - 25-11-01
 * [棵 (棵) [kē]](https://github.com/jucardus/jucardus.github.io/blob/main/k/e/1/ke1-26869.md) - Diccionario chino-español, Caracteres chinos, Clasificadores chinos - 25-10-27
+* [樹 (树) [shù]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shu4-27193.md) - Caracteres chinos, Diccionario chino-español - 25-11-04
 * [老師 (老师) [lǎoshī]](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/o/lao3-shi1.md) - Diccionario chino-español - 25-10-31
