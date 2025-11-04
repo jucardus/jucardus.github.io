@@ -21,6 +21,7 @@
 * [GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)
 * [Google Chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)
 * [Gramática china](https://github.com/jucardus/jucardus.github.io/blob/main/g/r/gramatica-china.md)
+* [Gramática española](https://github.com/jucardus/jucardus.github.io/blob/main/g/r/gramatica-espanola.md)
 * [Gramática latina](https://github.com/jucardus/jucardus.github.io/blob/main/g/r/gramatica-latina.md)
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
 * [Plugins](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins.md)
