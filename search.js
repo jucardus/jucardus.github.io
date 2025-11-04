@@ -1,5 +1,4 @@
 let entriesBase = [
-  "▓[Actividad reciente](https://jucardus.github.io/actividad) en [Jucardus](https://jucardus.github.io/)▒readme.md▓",
   "▓abacus [s.]▒a/b/a/abacus-s.md▓",
   "▓abacus [s.] · Pronunciación▒a/b/a/abacus-s.md#pronunciaci%C3%B3n▓",
   "▓abacus [s.] · Traducciones▒a/b/a/abacus-s.md#traducciones▓",
