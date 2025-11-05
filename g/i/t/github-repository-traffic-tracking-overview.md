@@ -1,5 +1,5 @@
 # GitHub Repository Traffic Tracking Overview
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23segun_grok_jucardus) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+Programaci%C3%B3n%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23programacion_jucardus%0A%23segun_grok_jucardus) ]
 
 When a GitHub user publishes their repository (or more specifically, enables GitHub Pages to serve it as an HTML website), the visit count you're referring to is likely the **traffic data** available in the repository's Insights tab. This tracks engagement with the *repository itself* on GitHub.com, not direct visits to the hosted HTML Pages site. I'll break down how this works below, based on GitHub's official documentation and user reports.
 
@@ -55,6 +55,7 @@ For the most up-to-date details, check GitHub Docs directly. If this doesn't mat
 ~ Grok ~
 
 [#github](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)  
+[#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)  
 [#segun-grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 
-<sup>25-10-28 19:01:47</sup>
+<sup>25-11-04 20:57:30</sup>
