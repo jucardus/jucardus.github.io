@@ -4,4 +4,5 @@
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - 25-10-27
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - 25-10-27
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - 25-10-27
+* [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - 25-11-04
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - 25-11-04
