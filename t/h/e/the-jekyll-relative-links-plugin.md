@@ -1,5 +1,5 @@
 # The jekyll-relative-links plugin
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=The+jekyll-relative-links+plugin+%E2%80%94+Seg%C3%BAn+Grok%2C+GitHub%2C+Plugins%2C+Plugins+para+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Ft%2Fh%2Fe%2Fthe-jekyll-ralative-links-plugin.md%0A%0A%23github_jucardus%0A%23plugins_jucardus%0A%23plugins_para_github_jucardus%0A%23segun_grok_jucardus) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=The+jekyll-relative-links+plugin+%E2%80%94+GitHub%2C+Plugins%2C+Plugins+para+GitHub%2C+Seg%C3%BAn+Grok%2C+Programaci%C3%B3n%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Ft%2Fh%2Fe%2Fthe-jekyll-relative-links-plugin.md%0A%0A%23github_jucardus%0A%23plugins_jucardus%0A%23plugins_para_github_jucardus%0A%23programacion_jucardus%0A%23segun_grok_jucardus) ]
 
 ### Overview
 
@@ -93,6 +93,7 @@ For full details, check the official GitHub repository: [benbalter/jekyll-relati
 [#github](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)  
 [#plugins-para-github](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins-para-github.md)  
 [#plugins](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins.md)  
+[#programacion](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/programacion.md)  
 [#segun-grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 
-<sup>25-10-28 19:17:43</sup>
+<sup>25-11-04 20:49:18</sup>
