@@ -3,3 +3,4 @@
 
 * [Si eres creyente sabes que debes orar...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/si-eres-creyente-sabes-que-debes-orar.md) - 25-11-02
 * [Sin importar si tu tradición es de los hombres...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/sin-importar-si-tu-tradicion-es-de-los-hombres.md) - 25-11-04
+* [Si te pones una ristra de ajos al cuello...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/t/si-te-pones-una-ristra-de-ajos-al-cuello.md) - 25-11-06
