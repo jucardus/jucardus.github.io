@@ -26,5 +26,6 @@
 * [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g) - mega.jucardus.com
 * [Música en YouTube](https://www.youtube.com/@jucardus/playlists) - m.jucardus.com
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
+* [Postimages](https://postimg.cc/user/jucardus) - img.jucardus.com
 * [Tumblr de difusión](https://jucardus.tumblr.com/) - t.jucardus.com
 * [X Twitter](https://x.com/jucardus) - x.jucardus.com
