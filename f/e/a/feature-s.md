@@ -21,6 +21,10 @@
 
 > Proton Mail’s mobile apps just got their biggest upgrade in nearly a decade. We rebuilt them from the ground up to be faster, smoother, and more reliable — even offline. And, for the first time, iOS and Android are fully in sync, with the same features <sup>[funciones]</sup> and updates arriving side by side. It’s a major step forward for the world’s most widely used encrypted email service. ~ Proton Mail ~
 
+### Moby Thesaurus
+
+features, air, appearance, bearing, brow, carriage, cast, cast of countenance, color, complexion, configuration, contour, countenance, delineation, demeanor, dial, face, facial appearance, facies, favor, feature, figuration, figure, framework, garb, gestalt, guise, kisser, lineaments, lines, looks, main features, map, mien, mug, mush, outline, pan, phiz, physiognomy, port, posture, presence, profile, puss, relief, shapes, silhouette, skeleton, stance, tournure, traits, turn, visage
+
 [#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)  
 [#sustantivos-ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)  
 [#traducciones-inglesas-en-contexto](https://github.com/jucardus/jucardus.github.io/blob/main/t/r/traducciones-inglesas-en-contexto.md)
