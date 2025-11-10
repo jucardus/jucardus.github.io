@@ -3,4 +3,5 @@
 
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - 25-11-04
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - 25-11-04
+* [The Origin of Gauchos](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-origin-of-gauchos.md) - 25-11-10
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - 25-10-26
