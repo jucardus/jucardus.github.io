@@ -43,6 +43,7 @@
 * [Si te pones una ristra de ajos al cuello...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/t/si-te-pones-una-ristra-de-ajos-al-cuello.md) - Reflexiones - 25-11-06
 * [Te gusta el café, ¿verdad?](https://github.com/jucardus/jucardus.github.io/blob/main/t/e/g/te-gusta-el-cafe-verdad.md) - Frases multilingües - 25-11-01
 * [The jekyll-relative-links plugin](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-jekyll-relative-links-plugin.md) - GitHub, Plugins, Plugins para GitHub, Según Grok, Programación - 25-11-04
+* [The Origin of Gauchos](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-origin-of-gauchos.md) - Según Grok, Historia argentina, Gauchos - 25-11-10
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [vocabulario español ¦ horro](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-horro.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02
 * [vocabulario español ¦ monición](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-monicion.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02
