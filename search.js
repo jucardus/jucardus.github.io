@@ -48,6 +48,7 @@ let entriesBase = [
   "▓Es inevitable usar el raciocinio al...▒e/s/i/es-inevitable-usar-el-raciocinio-al.md▓",
   "▓Etiquetas todas▒etiquetas.md▓",
   "▓feature [s.]▒f/e/a/feature-s.md▓",
+  "▓feature [s.] · Moby Thesaurus▒f/e/a/feature-s.md#moby-thesaurus▓",
   "▓feature [s.] · Pronunciación▒f/e/a/feature-s.md#pronunciaci%C3%B3n▓",
   "▓feature [s.] · Traducciones▒f/e/a/feature-s.md#traducciones▓",
   "▓feature [s.] · Traducciones en contexto▒f/e/a/feature-s.md#traducciones-en-contexto▓",
