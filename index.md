@@ -13,8 +13,7 @@
 * **Autor:** Julio Cárdenas Pelizzari ©
 * **Contacto:** jucardus en gmail punto com
 * **Pagos y donaciones:** [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
-* **Este sitio:** jucardus.github.io ; jucardus.com
-* **Linktree:** [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
 
 ### Mis sitios web
 
