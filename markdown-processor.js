@@ -4,6 +4,12 @@ function escapeScriptTags(text) {
                .replace(/<\/script\s*>/gi, '&lt;/script&gt;');
 }
 
+// Escape HTML tags in regular text (not in code blocks)
+function escapeHtmlTagsInText(text) {
+    return text.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, '&lt;script&gt;$1&lt;/script&gt;')
+               .replace(/<(\/?)(script|style|iframe|frame|object|embed|applet|link|meta|title|base|head|body|html)(\s[^>]*)?>/gi, '&lt;$1$2$3&gt;');
+}
+
 // Process blockquotes
 function processBlockquotes(text) {
     const lines = text.split('\n');
@@ -282,6 +288,9 @@ function renderMarkdown(text, currentPath) {
         : '';
 
     let html = text;
+
+    // ESCAPE HTML TAGS IN REGULAR TEXT FIRST - THIS IS THE KEY FIX
+    html = escapeHtmlTagsInText(html);
 
     // Process blockquotes FIRST
     html = processBlockquotes(html);
