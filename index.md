@@ -11,12 +11,12 @@
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Contacto:** jucardus en gmail punto com
+* **Contacto:** [jucardus en gmail punto com](https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=4&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Ubuntu&captionFontSize=19&format=png)
 * **Pagos y donaciones:** [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
-* **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
 
 ### Mis sitios web
 
+* [Contacto y suscripción](https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=4&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Ubuntu&captionFontSize=19&format=png)
 * [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
 * [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
 * [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
