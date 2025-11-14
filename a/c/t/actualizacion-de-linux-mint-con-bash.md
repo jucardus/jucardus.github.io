@@ -16,7 +16,7 @@ sudo apt-get install unattended-upgrades
 sudo apt update && sudo apt full-upgrade -y && sudo apt install unattended-upgrades -y
 ```
 
-### Opción 3, con _autoclean_
+### Opción 3, con *autoclean*
 
 ```bash
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean && sudo apt install unattended-upgrades -y
