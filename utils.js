@@ -5,6 +5,12 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+// Escape HTML tags in regular text (not in code blocks)
+function escapeHtmlTagsInText(text) {
+    return text.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, '&lt;script&gt;$1&lt;/script&gt;')
+               .replace(/<(\/?)(script|style|iframe|frame|object|embed|applet|link|meta|title|base|head|body|html)(\s[^>]*)?>/gi, '&lt;$1$2$3&gt;');
+}
+
 // Convert path to markdown path
 function pathToMdPath(path) {
     if (!path) return 'index.md';
