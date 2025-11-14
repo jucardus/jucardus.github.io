@@ -12,29 +12,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    
+
     <!-- Highlight.js for Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    
+
     <meta content='jucardus punto com, programación, traducciones, vocabularios, diccionario inglés-español, diccionario, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist' name='keywords'/>
     <meta content='Mi sitio central, con todas mis páginas.' name='description'/>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta content='Julio Cárdenas Pelizzari' name='author'/>
-    
+
     <!-- Dynamic Title - Will be updated by JavaScript -->
     <title id="dynamic-title">JUCARDUS.COM</title>
-    
-    <!-- Load CSS -->
-    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="loading" style="text-align: center; padding: 50px; font-size: 1.2em;">
+        Cargando JUCARDUS.COM...
+    </div>
     <div id="content"></div>
 
-    <!-- Load JavaScript files in order -->
     <script src="config.js"></script>
+    <script src="utils.js"></script>
     <script src="markdown-processor.js"></script>
     <script src="navigation.js"></script>
     <script src="app.js"></script>
+
+    <script>
+        // Wait for all scripts to load before starting the app
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            const content = document.getElementById('content');
+            
+            // Check if all required functions are available
+            if (typeof getCurrentPage === 'function' && typeof loadPage === 'function') {
+                if (loading) loading.style.display = 'none';
+                loadPage(getCurrentPage());
+            } else {
+                console.error('Required functions not loaded');
+                if (loading) loading.style.display = 'none';
+                content.innerHTML = 
+                    '<center><h1>Error Loading Page</h1><p>Some JavaScript files failed to load. Please refresh the page.</p></center>';
+            }
+        });
+
+        // Fallback: if load event doesn't fire, try after 3 seconds
+        setTimeout(function() {
+            const loading = document.getElementById('loading');
+            const content = document.getElementById('content');
+            
+            if (loading && content.innerHTML === '') {
+                if (typeof getCurrentPage === 'function' && typeof loadPage === 'function') {
+                    loading.style.display = 'none';
+                    loadPage(getCurrentPage());
+                } else {
+                    loading.innerHTML = 'Still loading... If this persists, check the browser console for errors.';
+                }
+            }
+        }, 3000);
+    </script>
 </body>
 </html>
