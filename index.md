@@ -7,6 +7,7 @@
 * **[Busca rápida](https://jucardus.github.io/busca.html)** - Funcional únicamente en la vista HTML de este sitio (jucardus.github.io), para buscar entre los títulos y subtítulos de todas las subpáginas.
 * **[Repositorio Jucardus](https://jucardus.github.io/repo)** - En caso que desees navegar y hacer buscas en el contenido de este sitio en su formato original.
 * **Traducciones al español** - [ en preparación ]
+* Prueba de `<script>` en renderización.
 
 ### Autor y contacto
 
