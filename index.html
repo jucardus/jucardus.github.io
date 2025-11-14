@@ -13,19 +13,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    
+
     <!-- {3} Highlight.js for Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    
+
     <meta content='jucardus punto com, programación, traducciones, vocabularios, diccionario inglés-español, diccionario, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist' name='keywords'/>
     <meta content='Mi sitio central, con todas mis páginas.' name='description'/>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta content='Julio Cárdenas Pelizzari' name='author'/>
-    
+
     <!-- {1} Dynamic Title - Will be updated by JavaScript -->
     <title id="dynamic-title">JUCARDUS.COM</title>
-    
+
     <style>
         body {
             background-color: #345;
@@ -90,16 +90,20 @@
             white-space: pre;
             margin: 15px 0;
         }
+        code {
+            background-color: #405060;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
         blockquote {
             background-color: #405060;
             padding: 5px 10px;
             border-radius: 5px;
             margin: 10px 0px 30px 20px;
-            /*font-family: "Times New Roman", Times, serif;*/
             font-family: "Ubuntu";
             line-height: 1.4;
             border-left: 4px solid #666;
-            /*max-width: 90%;*/
         }
         #imagenes {
             text-align: center;
@@ -150,7 +154,6 @@
                 max-width: 95%;
             }
             h1 {
-                /*font-size: 1.5em;*/
                 line-height: 1.2;
             }
             h2 {
@@ -318,13 +321,13 @@
 
         // Check if URL is a busca link (should open in same tab)
         function isBuscaLink(url) {
-            return url.includes('https://jucardus.github.io/busca') || 
+            return url.includes('https://jucardus.github.io/busca') ||
                    url.includes('https://jucardus.github.io/busca.html') ||
                    url.includes('http://jucardus.github.io/busca.html') ||
                    url.includes('http://jucardus.github.io/busca') ||
                    url.includes('jucardus.github.io/busca.html') ||
                    url.includes('jucardus.github.io/busca') ||
-                   url === 'busca' || 
+                   url === 'busca' ||
                    url === 'busca.html' ||
                    url === './busca' ||
                    url === './busca.html';
@@ -349,7 +352,7 @@
                 /https:\/\/github\.com\/[^\/]+\/[^\/]+\/blob\/[^\/]+\/(.+\.md)/g,
                 (match, mdPath) => {
                     const cleanPath = mdPath.replace(/\.md$/, '');
-                    return `${SITE_URL}/#${cleanPath}`;  // ← Add the filename and hash
+                    return `${SITE_URL}/#${cleanPath}`;
                 }
             );
 
@@ -376,8 +379,6 @@
             const currentPage = getCurrentPageName();
             const navLinks = document.querySelectorAll('.sticky-nav a');
 
-            console.log('Current page:', currentPage);
-
             // First, remove all active classes
             navLinks.forEach(link => {
                 link.classList.remove('nav-active');
@@ -386,12 +387,10 @@
             // Then, add active class to the appropriate link
             navLinks.forEach(link => {
                 const linkText = link.textContent.toLowerCase().trim();
-                console.log('Checking link:', linkText, 'for page:', currentPage);
 
                 // Check each navigation mapping
                 for (const [page, keywords] of Object.entries(NAV_MAPPING)) {
                     if (page === currentPage && keywords.includes(linkText)) {
-                        console.log('Highlighting:', linkText, 'for page:', currentPage);
                         link.classList.add('nav-active');
                         break;
                     }
@@ -434,7 +433,7 @@
             return result;
         }
 
-        // Process images with custom styling - FIXED VERSION
+        // Process images with custom styling
         function processImages(text, currentPath) {
             return text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, function(match, altText, imageUrl) {
                 let fullImageUrl = imageUrl;
@@ -464,7 +463,7 @@
             });
         }
 
-        // {2} Process code blocks with ``` delimiters - with HTML escaping
+        // Process code blocks with ``` delimiters - WITHOUT HTML escaping
         function processCodeBlocks(text) {
             let result = '';
             let i = 0;
@@ -479,37 +478,34 @@
                         // Start of code block - check for language specification
                         inCodeBlock = true;
                         i += 3;
-                        
+
                         // Check if there's a language specified after ```
                         let langStart = i;
                         while (i < text.length && text[i] !== '\n') {
                             i++;
                         }
                         language = text.substring(langStart, i).trim();
-                        
+
                         // Skip the newline character
                         if (i < text.length && text[i] === '\n') {
                             i++;
                         }
-                        
+
                         codeContent = '';
                     } else {
                         // End of code block
                         inCodeBlock = false;
-                        
-                        // {2} HTML escape the code content
-                        const escapedContent = escapeHtml(codeContent);
-                        
-                        // {3} Apply syntax highlighting with Highlight.js
+
+                        // Apply syntax highlighting with Highlight.js
                         const codeElement = document.createElement('code');
                         if (language) {
                             codeElement.className = `language-${language}`;
                         }
-                        codeElement.textContent = escapedContent;
-                        
+                        codeElement.textContent = codeContent;
+
                         // Apply syntax highlighting
                         hljs.highlightElement(codeElement);
-                        
+
                         result += `<pre>${codeElement.outerHTML}</pre>`;
                         i += 3;
                     }
@@ -529,19 +525,16 @@
 
             // If we're still in a code block at the end, close it
             if (inCodeBlock) {
-                // {2} HTML escape the code content
-                const escapedContent = escapeHtml(codeContent);
-                
-                // {3} Apply syntax highlighting with Highlight.js
+                // Apply syntax highlighting with Highlight.js
                 const codeElement = document.createElement('code');
                 if (language) {
                     codeElement.className = `language-${language}`;
                 }
-                codeElement.textContent = escapedContent;
-                
+                codeElement.textContent = codeContent;
+
                 // Apply syntax highlighting
                 hljs.highlightElement(codeElement);
-                
+
                 result += `<pre>${codeElement.outerHTML}</pre>`;
             }
 
@@ -564,8 +557,7 @@
             // 3. Italic (*text*)
             result = result.replace(/\*(.*?)\*/g, '<em>$1</em>');
 
-            // 4. NEW: Robust italic with underscores (_text_)
-            // This handles all punctuation and special characters
+            // 4. Robust italic with underscores (_text_)
             result = result.replace(/(^|\s|\(|\[|\{|\<|«|"|'|—|–|:)(_[^_]+_)(?=$|\s|\)|\]|\}|\>|»|"|'|,|;|\.|\?|!|:|—|–)/g,
                 function(match, before, italicText) {
                     // Extract the actual text between underscores
@@ -575,6 +567,11 @@
             );
 
             return result;
+        }
+
+        // Process inline code with backticks - should run AFTER HTML escaping
+        function processInlineCode(text) {
+            return text.replace(/`([^`]+)`/g, '<code>$1</code>');
         }
 
         // Process links in text - handles nested brackets
@@ -682,8 +679,14 @@
             // Process blockquotes FIRST
             html = processBlockquotes(html);
 
-            // Process code blocks SECOND
+            // Process code blocks SECOND (before escaping)
             html = processCodeBlocks(html);
+
+            // HTML escape the entire text to prevent script execution
+            html = escapeHtml(html);
+
+            // Process inline code AFTER escaping
+            html = processInlineCode(html);
 
             // Process images THIRD
             html = processImages(html, currentPath);
@@ -766,7 +769,7 @@
                         newHtml += '</ul>';
                         inList = false;
                     }
-                    newHtml += '<br>'; // Blank line
+                    newHtml += '<br>';
                     continue;
                 }
 
@@ -781,7 +784,7 @@
                     newHtml += '<p>';
                     inParagraph = true;
                 } else {
-                    newHtml += '<br>'; // Line break within paragraph
+                    newHtml += '<br>';
                 }
                 newHtml += processedLine;
             }
@@ -820,7 +823,7 @@
 
                 contentDiv.innerHTML = renderMarkdown(markdown, url);
 
-                // {1} Update page title based on h1 content
+                // Update page title based on h1 content
                 updatePageTitle();
 
                 // Update URL hash
