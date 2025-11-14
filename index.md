@@ -5,7 +5,7 @@
 * **[Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md)** - Etiquetas o temas para clasificar y agrupar el contenido.
 * **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md)** - Entradas del repositorio en orden alfabético, en el futuro clasificadas según la letra inicial.
 * **[Busca rápida](https://jucardus.github.io/busca.html)** - Funcional únicamente en la vista HTML de este sitio (jucardus.github.io), para buscar entre los títulos y subtítulos de todas las subpáginas.
-* **[Repositorio Jucardus](https://jucardus.github.io/repo)** - En caso que desees navegar y hacer buscas en el contenido de este sitio en su formato original.
+* **[Repositorio Jucardus](https://jucardus.github.io/repo)** - En caso que desees navegar y hacer buscas en el contenido de este sitio en su formato original. Enlace corto: **r.jucardus.com**.
 * **Traducciones al español** - [ en preparación ]
 
 ### Autor y contacto
@@ -27,5 +27,6 @@
 * [Música en YouTube](https://www.youtube.com/@jucardus/playlists) - m.jucardus.com
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
 * [Postimages](https://postimg.cc/user/jucardus) - img.jucardus.com
+* [Repositorio GitHub](https://r.jucardus.com) - r.jucardus.com
 * [Tumblr de difusión](https://jucardus.tumblr.com/) - t.jucardus.com
 * [X Twitter](https://x.com/jucardus) - x.jucardus.com
