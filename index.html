@@ -679,9 +679,6 @@
             // Process code blocks SECOND (before escaping)
             html = processCodeBlocks(html);
 
-            // {4} HTML escape the entire text AFTER code blocks are processed
-            html = escapeHtml(html);
-
             // Process images THIRD
             html = processImages(html, currentPath);
 
@@ -696,6 +693,9 @@
 
             // Process text formatting AFTER links and code blocks
             html = processTextFormatting(html);
+
+            // {4} HTML escape the entire text AFTER all markdown processing
+            html = escapeHtml(html);
 
             // Convert lists and handle paragraphs
             const lines = html.split('\n');
