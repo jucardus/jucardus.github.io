@@ -10,6 +10,11 @@ function escapeHtmlTagsInText(text) {
                .replace(/<(\/?)(script|style|iframe|frame|object|embed|applet|link|meta|title|base|head|body|html)(\s[^>]*)?>/gi, '&lt;$1$2$3&gt;');
 }
 
+// Process inline code with backticks
+function processInlineCode(text) {
+    return text.replace(/`([^`]+)`/g, '<code>$1</code>');
+}
+
 // Process blockquotes
 function processBlockquotes(text) {
     const lines = text.split('\n');
@@ -289,8 +294,11 @@ function renderMarkdown(text, currentPath) {
 
     let html = text;
 
-    // ESCAPE HTML TAGS IN REGULAR TEXT FIRST - THIS IS THE KEY FIX
+    // ESCAPE HTML TAGS IN REGULAR TEXT FIRST
     html = escapeHtmlTagsInText(html);
+
+    // PROCESS INLINE CODE WITH BACKTICKS
+    html = processInlineCode(html);
 
     // Process blockquotes FIRST
     html = processBlockquotes(html);
