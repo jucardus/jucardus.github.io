@@ -61,6 +61,13 @@ pre {
     white-space: pre;
     margin: 15px 0;
 }
+code {
+    background-color: #4a5a6a;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
 blockquote {
     background-color: #405060;
     padding: 5px 10px;
@@ -131,6 +138,10 @@ blockquote {
         padding: 0px 5px 0px 8px;
         font-size: 0.9em;
     }
+    code {
+        font-size: 0.85em;
+        padding: 1px 4px;
+    }
     blockquote {
         padding: 12px 15px;
         font-size: 1.05em;
@@ -158,6 +169,10 @@ blockquote {
     pre {
         padding: 0px 5px 0px 15px;
         font-size: 0.85em;
+    }
+    code {
+        font-size: 0.8em;
+        padding: 1px 3px;
     }
     blockquote {
         padding: 10px 12px;
