@@ -45,7 +45,7 @@ In discussions, users note scenarios like:
 
 ### Limitations and Tips
 
-- **No Pages Integration**: As noted in GitHub community threads, repo traffic won't reflect HTML site visits. For that, add analytics code to your Pages site's HTML (e.g., `script` tag for Google Analytics).
+- **No Pages Integration**: As noted in GitHub community threads, repo traffic won't reflect HTML site visits. For that, add analytics code to your Pages site's HTML (e.g., `<script>` tag for Google Analytics).
 - **Accuracy**: Counts are approximate and GitHub-specific; they don't capture forks, stars, or external mirrors.
 - **Public Repos Only**: Traffic is visible to anyone with read access, but detailed insights require push access.
 - If you need API access for automation, use GitHub's Traffic API (requires a personal access token with `repo` scope).
