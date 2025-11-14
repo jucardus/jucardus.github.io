@@ -464,7 +464,7 @@
             });
         }
 
-        // {2} Process code blocks with ``` delimiters - with HTML escaping
+        // {2} Process code blocks with ``` delimiters - WITHOUT HTML escaping (handled globally now)
         function processCodeBlocks(text) {
             let result = '';
             let i = 0;
@@ -497,15 +497,12 @@
                         // End of code block
                         inCodeBlock = false;
                         
-                        // {2} HTML escape the code content
-                        const escapedContent = escapeHtml(codeContent);
-                        
                         // {3} Apply syntax highlighting with Highlight.js
                         const codeElement = document.createElement('code');
                         if (language) {
                             codeElement.className = `language-${language}`;
                         }
-                        codeElement.textContent = escapedContent;
+                        codeElement.textContent = codeContent; // No escaping here
                         
                         // Apply syntax highlighting
                         hljs.highlightElement(codeElement);
@@ -529,15 +526,12 @@
 
             // If we're still in a code block at the end, close it
             if (inCodeBlock) {
-                // {2} HTML escape the code content
-                const escapedContent = escapeHtml(codeContent);
-                
                 // {3} Apply syntax highlighting with Highlight.js
                 const codeElement = document.createElement('code');
                 if (language) {
                     codeElement.className = `language-${language}`;
                 }
-                codeElement.textContent = escapedContent;
+                codeElement.textContent = codeContent; // No escaping here
                 
                 // Apply syntax highlighting
                 hljs.highlightElement(codeElement);
@@ -677,14 +671,16 @@
                 ? currentPath.substring(0, currentPath.lastIndexOf('/') + 1)
                 : '';
 
-            // {4} HTML escape the entire text FIRST to prevent script execution
-            let html = escapeHtml(text);
+            let html = text;
 
             // Process blockquotes FIRST
             html = processBlockquotes(html);
 
-            // Process code blocks SECOND
+            // Process code blocks SECOND (before escaping)
             html = processCodeBlocks(html);
+
+            // {4} HTML escape the entire text AFTER code blocks are processed
+            html = escapeHtml(html);
 
             // Process images THIRD
             html = processImages(html, currentPath);
