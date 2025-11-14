@@ -677,7 +677,8 @@
                 ? currentPath.substring(0, currentPath.lastIndexOf('/') + 1)
                 : '';
 
-            let html = text;
+            // {4} HTML escape the entire text FIRST to prevent script execution
+            let html = escapeHtml(text);
 
             // Process blockquotes FIRST
             html = processBlockquotes(html);
