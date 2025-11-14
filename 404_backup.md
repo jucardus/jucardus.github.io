@@ -2,8 +2,8 @@
 permalink: /404.html
 ---
 
-# Page Not Found
+# 404 - ¡PÁGINA INEXISTENTE!
 
-The page you're looking for doesn't exist.
+La página que acabas de visitar nunca existió o ha sido eliminada.
 
-[RETURN TO HOMEPAGE](https://jucardus.github.io)
+[VOLVER AL INICIO](https://github.com/jucardus/jucardus.github.io/blob/main/index.md)
