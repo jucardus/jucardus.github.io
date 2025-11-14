@@ -297,13 +297,10 @@ function renderMarkdown(text, currentPath) {
     // ESCAPE HTML TAGS IN REGULAR TEXT FIRST
     html = escapeHtmlTagsInText(html);
 
-    // PROCESS INLINE CODE WITH BACKTICKS
-    html = processInlineCode(html);
-
     // Process blockquotes FIRST
     html = processBlockquotes(html);
 
-    // Process code blocks SECOND
+    // Process code blocks SECOND (BEFORE inline code)
     html = processCodeBlocks(html);
 
     // Process images THIRD
@@ -320,6 +317,9 @@ function renderMarkdown(text, currentPath) {
 
     // Process text formatting AFTER links and code blocks
     html = processTextFormatting(html);
+
+    // PROCESS INLINE CODE WITH BACKTICKS LAST (AFTER code blocks)
+    html = processInlineCode(html);
 
     // Convert lists and handle paragraphs
     const lines = html.split('\n');
