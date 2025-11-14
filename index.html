@@ -464,7 +464,7 @@
             });
         }
 
-        // {2} Process code blocks with ``` delimiters - WITHOUT HTML escaping (handled globally now)
+        // {2} Process code blocks with ``` delimiters - with HTML escaping
         function processCodeBlocks(text) {
             let result = '';
             let i = 0;
@@ -497,12 +497,15 @@
                         // End of code block
                         inCodeBlock = false;
                         
+                        // {2} HTML escape the code content
+                        const escapedContent = escapeHtml(codeContent);
+                        
                         // {3} Apply syntax highlighting with Highlight.js
                         const codeElement = document.createElement('code');
                         if (language) {
                             codeElement.className = `language-${language}`;
                         }
-                        codeElement.textContent = codeContent; // No escaping here
+                        codeElement.textContent = escapedContent;
                         
                         // Apply syntax highlighting
                         hljs.highlightElement(codeElement);
@@ -526,12 +529,15 @@
 
             // If we're still in a code block at the end, close it
             if (inCodeBlock) {
+                // {2} HTML escape the code content
+                const escapedContent = escapeHtml(codeContent);
+                
                 // {3} Apply syntax highlighting with Highlight.js
                 const codeElement = document.createElement('code');
                 if (language) {
                     codeElement.className = `language-${language}`;
                 }
-                codeElement.textContent = codeContent; // No escaping here
+                codeElement.textContent = escapedContent;
                 
                 // Apply syntax highlighting
                 hljs.highlightElement(codeElement);
@@ -676,7 +682,7 @@
             // Process blockquotes FIRST
             html = processBlockquotes(html);
 
-            // Process code blocks SECOND (before escaping)
+            // Process code blocks SECOND
             html = processCodeBlocks(html);
 
             // Process images THIRD
@@ -693,9 +699,6 @@
 
             // Process text formatting AFTER links and code blocks
             html = processTextFormatting(html);
-
-            // {4} HTML escape the entire text AFTER all markdown processing
-            html = escapeHtml(html);
 
             // Convert lists and handle paragraphs
             const lines = html.split('\n');
