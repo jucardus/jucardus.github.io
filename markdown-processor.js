@@ -1,3 +1,9 @@
+// Escape script tags in code content to prevent them from being executed
+function escapeScriptTags(text) {
+    return text.replace(/<script\b[^>]*>/gi, '&lt;script&gt;')
+               .replace(/<\/script\s*>/gi, '&lt;/script&gt;');
+}
+
 // Process blockquotes
 function processBlockquotes(text) {
     const lines = text.split('\n');
@@ -96,8 +102,8 @@ function processCodeBlocks(text) {
                 // End of code block
                 inCodeBlock = false;
 
-                // HTML escape the code content
-                const escapedContent = escapeHtml(codeContent);
+                // HTML escape the code content and escape script tags
+                const escapedContent = escapeScriptTags(escapeHtml(codeContent));
 
                 // Apply syntax highlighting with Highlight.js
                 const codeElement = document.createElement('code');
@@ -128,8 +134,8 @@ function processCodeBlocks(text) {
 
     // If we're still in a code block at the end, close it
     if (inCodeBlock) {
-        // HTML escape the code content
-        const escapedContent = escapeHtml(codeContent);
+        // HTML escape the code content and escape script tags
+        const escapedContent = escapeScriptTags(escapeHtml(codeContent));
 
         // Apply syntax highlighting with Highlight.js
         const codeElement = document.createElement('code');
