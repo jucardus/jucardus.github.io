@@ -39,38 +39,56 @@
     <script src="navigation.js"></script>
     <script src="app.js"></script>
 
-    <script>
-        // Wait for all scripts to load before starting the app
-        window.addEventListener('load', function() {
-            const loading = document.getElementById('loading');
-            const content = document.getElementById('content');
+<script>
+    // Enhanced script loader with better error handling
+    function initializeApp() {
+        const loading = document.getElementById('loading');
+        const content = document.getElementById('content');
+        
+        // Check if all required functions are available
+        const requiredFunctions = ['getCurrentPage', 'loadPage', 'renderMarkdown', 'highlightActiveNav'];
+        const missingFunctions = requiredFunctions.filter(func => typeof window[func] !== 'function');
+        
+        if (missingFunctions.length === 0) {
+            // All functions available - start the app
+            if (loading) loading.style.display = 'none';
+            console.log('All modules loaded successfully');
+            loadPage(getCurrentPage());
+        } else {
+            // Some functions missing - show error but try to recover
+            console.error('Missing functions:', missingFunctions);
+            if (loading) loading.style.display = 'none';
             
-            // Check if all required functions are available
+            // Try to load index.md directly as fallback
+            if (typeof loadPage === 'function') {
+                loadPage('index.md');
+            } else {
+                content.innerHTML = 
+                    '<center><h1>Error Loading Page</h1><p>Some features may not work. Please refresh the page.</p></center>';
+            }
+        }
+    }
+
+    // Wait for DOM and all scripts to be ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    } else {
+        initializeApp();
+    }
+
+    // Fallback: if still not loaded after 5 seconds, show status
+    setTimeout(function() {
+        const loading = document.getElementById('loading');
+        if (loading && document.getElementById('content').innerHTML === '') {
             if (typeof getCurrentPage === 'function' && typeof loadPage === 'function') {
-                if (loading) loading.style.display = 'none';
+                loading.style.display = 'none';
                 loadPage(getCurrentPage());
             } else {
-                console.error('Required functions not loaded');
-                if (loading) loading.style.display = 'none';
-                content.innerHTML = 
-                    '<center><h1>Error Loading Page</h1><p>Some JavaScript files failed to load. Please refresh the page.</p></center>';
+                loading.innerHTML = 'Loading taking longer than expected...<br>Basic content should appear shortly.';
             }
-        });
-
-        // Fallback: if load event doesn't fire, try after 3 seconds
-        setTimeout(function() {
-            const loading = document.getElementById('loading');
-            const content = document.getElementById('content');
-            
-            if (loading && content.innerHTML === '') {
-                if (typeof getCurrentPage === 'function' && typeof loadPage === 'function') {
-                    loading.style.display = 'none';
-                    loadPage(getCurrentPage());
-                } else {
-                    loading.innerHTML = 'Still loading... If this persists, check the browser console for errors.';
-                }
-            }
-        }, 3000);
-    </script>
+        }
+    }, 5000);
+</script>
+    
 </body>
 </html>
