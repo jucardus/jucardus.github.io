@@ -1,4 +1,5 @@
 let entriesBase = [
+  "▓404 - ¡PÁGINA INEXISTENTE!▒404_backup.md▓",
   "▓abacus [s.]▒a/b/a/abacus-s.md▓",
   "▓abacus [s.] · Pronunciación▒a/b/a/abacus-s.md#pronunciaci%C3%B3n▓",
   "▓abacus [s.] · Traducciones▒a/b/a/abacus-s.md#traducciones▓",
@@ -10,6 +11,7 @@ let entriesBase = [
   "▓Actualización de Linux Mint con Bash · Opción 1▒a/c/t/actualizacion-de-linux-mint-con-bash.md#opci%C3%B3n-1▓",
   "▓Actualización de Linux Mint con Bash · Opción 2▒a/c/t/actualizacion-de-linux-mint-con-bash.md#opci%C3%B3n-2▓",
   "▓Actualización de Linux Mint con Bash · Opción 3, con _autoclean_▒a/c/t/actualizacion-de-linux-mint-con-bash.md#opci%C3%B3n-3%2C-con-_autoclean_▓",
+  "▓Actualización de Linux Mint con Bash · Opción 3, con *autoclean*▒a/c/t/actualizacion-de-linux-mint-con-bash.md#opci%C3%B3n-3%2C-con-*autoclean*▓",
   "▓Actualización de Linux Mint con Bash · Opción 4▒a/c/t/actualizacion-de-linux-mint-con-bash.md#opci%C3%B3n-4▓",
   "▓Actualización del navegador Brave con Bash▒a/c/t/actualizacion-del-navegador-brave-con-bash.md▓",
   "▓Agustín de Hipona▒a/g/agustin-de-hipona.md▓",
