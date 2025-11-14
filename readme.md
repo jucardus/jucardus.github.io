@@ -3,7 +3,7 @@
 
 **25-11-14** - Está rehabilitada la página principal **[index.html](https://jucardus.github.io)**, que muestra el contenido de este repositorio en formato HTML. Se han corregido algunas fallas en la renderización, como es el caso de los textos y párrafos que muestran código, la [subpágina de busca](https://jucardus.github.io/busca) y otros detalles más. Además, se ha dividido en módulos el `index.html` original, de modo que sea más fácil mantener y modificar el sitio: app.js, utils.js, config.js, navigation.js y markdown-processor.js.
 
-**25-11-11** - Reactivación de jucardus.github.io como *link-in-bio*. Es muy probable que permanezca así.
+**25-11-11** - Reactivación de jucardus.github.io como *link-in-bio*. Es poco probable que permanezca así.
 
 **25-11-04** - Algunas entradas más: [Si no amas al mundo como lo ama Dios](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/si-no-amas-al-mundo-como-lo-ama-dios.md) – [Sin importar si tu tradición es de los hombres...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/sin-importar-si-tu-tradicion-es-de-los-hombres.md) – [Siempre que busques a Dios hacia...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/siempre-que-busques-a-dios-hacia.md) – [樹 (树) [shù]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/u/shu4-27193.md) – [Locuciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/l/o/c/locuciones-adversativas.md) – [Conjunciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/n/conjunciones-adversativas.md).
 
