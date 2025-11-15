@@ -83,6 +83,13 @@
         letter-spacing: 1.1px;
         padding: 80px 21% 190px 20%;
       }
+      code {
+        font-size: 110%;
+        background-color: #367;
+        color: White;
+        padding: 0 3px 2px 4px;
+        border-radius: 4px;
+      }
       #contenido {
         text-align: center;
       }
@@ -214,25 +221,25 @@
     function extractAndLimitActivity(fullText) {
         // Split the entire file into lines
         const allLines = fullText.split('\n');
-        
+
         // Start from line 3 (index 2) and go to the end
         // Change this number if you want to start from a different line
         const startLine = 2; // ← CHANGE THIS: 0 = first line, 1 = second line, 2 = third line, etc.
-        
+
         if (startLine >= allLines.length) {
             return '### Actividad reciente\n\n*No activity content found*';
         }
-        
+
         // Get everything from the starting line to the end
         const activityLines = allLines.slice(startLine);
         const activitySection = activityLines.join('\n');
-        
+
         // Split into paragraphs (separated by double line breaks)
         const paragraphs = activitySection.split('\n\n');
 
         // Handle activity entries
         const activityEntries = paragraphs; // Now all paragraphs are activity entries
-        
+
         const entryLimit = numeroEntradas; // ← 0 = all entries, any other number = limit
 
         let finalContent;
