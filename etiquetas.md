@@ -16,6 +16,7 @@
 * [Diccionario chino-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-chino-espanol.md)
 * [Diccionario inglés-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)
 * [Diccionario latín-español](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-latin-espanol.md)
+* [Diccionario multilingüe](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-multilingve.md)
 * [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/enlaces-varios.md)
 * [Frases chinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-chinas.md)
 * [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
