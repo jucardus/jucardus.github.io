@@ -41,6 +41,7 @@ let entriesBase = [
   "▓Diccionario inglés-español▒d/i/diccionario-ingles-espanol.md▓",
   "▓Diccionario latín-español▒d/i/diccionario-latin-espanol.md▓",
   "▓Diccionario multilingüe▒d/i/diccionario-multilingve.md▓",
+  "▓Domus magna est. [fr.]▒d/o/m/domus-magna-est-fr.md▓",
   "▓Ego amō.▒e/g/o/ego-amo.md▓",
   "▓Ego amō. · Desglose▒e/g/o/ego-amo.md#desglose▓",
   "▓Ego labōrō.▒e/g/o/ego-laboro.md▓",
