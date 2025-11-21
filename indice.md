@@ -49,6 +49,7 @@
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [Un dios de polvo](https://github.com/jucardus/jucardus.github.io/blob/main/u/n/d/un-dios-de-polvo.md) - Cuentos - 25-11-11
 * [vocabulario español ¦ apógrafo](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-apografo.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-12
+* [vocabulario español ¦ felón](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-felon.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-21
 * [vocabulario español ¦ horro](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-horro.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02
 * [vocabulario español ¦ monición](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-monicion.md) - Vocabulario español (enlaces), Enlaces varios - 25-11-02
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-29
