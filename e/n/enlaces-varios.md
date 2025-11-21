@@ -4,6 +4,7 @@
 * [códigos QR ¦ en QuickChart con leyenda](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/d/codigos-qr-en-quickchart-con-leyenda.md) - 25-11-01
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - 25-10-29
 * [vocabulario español ¦ apógrafo](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-apografo.md) - 25-11-12
+* [vocabulario español ¦ felón](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-felon.md) - 25-11-21
 * [vocabulario español ¦ horro](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-horro.md) - 25-11-02
 * [vocabulario español ¦ monición](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-monicion.md) - 25-11-02
 * [vocabulario español ¦ patulea](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-patulea.md) - 25-10-29
