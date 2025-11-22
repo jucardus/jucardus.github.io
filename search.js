@@ -155,6 +155,8 @@ let entriesBase = [
   "▓Vocabulario español▒v/o/vocabulario-espanol.md▓",
   "▓Vocabulario español (enlaces)▒v/o/vocabulario-espanol-enlaces.md▓",
   "▓vocabulario español ¦ apógrafo▒v/o/c/vocabulario-espanol-apografo.md▓",
+  "▓vocabulario español ¦ facto▒v/o/c/vocabulario-espanol-facto.md▓",
+  "▓vocabulario español ¦ felón▒v/o/c/vocabulario-espanol-felon.md▓",
   "▓vocabulario español ¦ horro▒v/o/c/vocabulario-espanol-horro.md▓",
   "▓vocabulario español ¦ monición▒v/o/c/vocabulario-espanol-monicion.md▓",
   "▓vocabulario español ¦ patulea▒v/o/c/vocabulario-espanol-patulea.md▓",
