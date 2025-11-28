@@ -6,35 +6,21 @@
   <title>Classical Music Playlist</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #000, #333);
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    gap: 2em;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 100vh; gap: 2em;
     }
     h1 { font-size: 3em; margin: 0; text-align: center; }
 
-    .controls {
-      display: flex;
-      gap: 1.2em;
-      align-items: center;
-    }
+    .controls { display: flex; gap: 1.2em; align-items: center; }
     .controls button {
-      background: transparent;
-      color: white;
-      border: none;
-      font-size: 4em;
-      cursor: pointer;
-      padding: 0.3em;
-      border-radius: 0;
-      outline: none;
-      box-shadow: none;
+      background: transparent; color: white; border: none;
+      font-size: 4.5em; cursor: pointer; padding: 0.3em;
+      outline: none; box-shadow: none;
     }
     .controls button:hover { color: #ff6666; }
     .playing { color: #66ff66 !important; }
@@ -47,15 +33,15 @@
   <h1>Classical Music Playlist</h1>
 
   <div class="controls">
-    <button id="play">Play</button>
-    <button id="pause">Pause</button>
-    <button id="start">To Start</button>
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
-    <button id="end">To End</button>
+    <button id="play">▶️</button>
+    <button id="pause">⏸</button>
+    <button id="start">⏮</button>
+    <button id="prev">⏪</button>
+    <button id="next">⏩</button>
+    <button id="end">⏭</button>
   </div>
 
-  <div id="player"></div>
+  <div id="player"></div></div>
 
   <script>
     const tag = document.createElement('script');
@@ -66,23 +52,16 @@
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        height: '1',
-        width: '1',
+        height: '1', width: '1',
         playerVars: {
           listType: 'playlist',
           list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
           loop: 1,
           playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-          controls: 0,
-          modestbranding: 1,
-          rel: 0,
-          iv_load_policy: 3,
-          disablekb: 1,
-          autoplay: 0
+          controls: 0, modestbranding: 1, rel: 0,
+          iv_load_policy: 3, disablekb:1, autoplay:0
         },
-        events: {
-          'onStateChange': onPlayerStateChange
-        }
+        events: { 'onStateChange': onPlayerStateChange }
       });
     }
 
@@ -90,20 +69,19 @@
       if (event.data === YT.PlayerState.PLAYING) {
         document.getElementById('play').classList.add('playing');
         document.getElementById('pause').classList.remove('playing');
-      } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+      } else {
         document.getElementById('play').classList.remove('playing');
-        document.getElementById('pause').classList.remove('playing');
       }
     }
 
     document.getElementById('play').onclick   = () => player.playVideo();
     document.getElementById('pause').onclick  = () => player.pauseVideo();
-    document.getElementById('start').onclick  = () => player.seekTo(0) || player.playVideo();
+    document.getElementById('start').onclick  = () => { player.seekTo(0); player.playVideo(); };
     document.getElementById('prev').onclick   = () => player.previousVideo();
-    document.getElementById('next').onclick   = () => player.nextVideo();
+    document.getElementById('next').onclick    = () => player.nextVideo();
     document.getElementById('end').onclick    = () => {
-      player.seekTo(player.getDuration() - 1);
-      player.playVideo();
+      const duration = player.getDuration();
+      player.seekTo(duration ? duration - 0.5 : 0);
     };
   </script>
 </body>
