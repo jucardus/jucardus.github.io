@@ -19,17 +19,20 @@
     }
     h1 { font-size: 3em; margin-bottom: 2em; text-align: center; }
     button { 
-      font-size: 4em; 
-      padding: 1em 2em; 
-      background: #333;               /* neutral dark gray instead of red/green */
+      font-size: 5em; 
+      width: 2em;
+      height: 2em;
+      background: transparent;           /* no egg */
       color: white; 
-      border: none; 
+      border: 4px solid white; 
       border-radius: 50%; 
-      cursor: pointer; 
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      transition: background 0.3s;
+      cursor: pointer;
+      transition: all 0.3s;
     }
-    button:hover { background: #555; }
+    button:hover { 
+      background: rgba(255,255,255,0.15);
+      transform: scale(1.1);
+    }
     iframe { display: none; }
   </style>
 </head>
