@@ -21,18 +21,15 @@
     button {
       font-size: 4em;
       padding: 1em 2em;
-      background: transparent;           /* no background */
+      background: transparent;
       color: white;
-      border: none;                       /* no border */
-      border-radius: 0;                   /* no rounded corners */
+      border: none;
+      border-radius: 0;
       cursor: pointer;
-      box-shadow: none;                   /* no glow */
+      box-shadow: none;
       outline: none;
     }
-    button:hover {
-      background: transparent;
-      color: #ff6666;                     /* just a light color change on hover */
-    }
+    button:hover { color: #ff6666; }
     button.playing { color: #66ff66; }
     button.playing:hover { color: #99ff99; }
     iframe { display: none; }
@@ -40,31 +37,54 @@
 </head>
 <body>
   <h1>Classical Music Playlist</h1>
-  <button id="playBtn">▶️ Play</button>
+  <button id="playBtn">Play</button>
+
   <iframe
     id="player"
     width="1"
     height="1"
-    src="https://www.youtube.com/embed/videoseries?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&autoplay=0&loop=1&playlist=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&iv_load_policy=3&disablekb=1"
+    src="https://www.youtube.com/embed/videoseries?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&autoplay=0&loop=1&playlist=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&controls=0&modestbranding=1&rel=0&iv_load_policy=3&enablejsapi=1"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
+
   <script>
-    const btn = document.getElementById('playBtn');
-    const player = document.getElementById('player');
+    // Load the YouTube IFrame API
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    let player;
     let isPlaying = false;
+    const btn = document.getElementById('playBtn');
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      // everything is ready now
+    }
+
     btn.addEventListener('click', () => {
-      if (!isPlaying) {
-        player.src = player.src.replace('autoplay=0', 'autoplay=1');
-        btn.textContent = '⏸ Pause';
-        btn.classList.add('playing');
-        isPlaying = true;
-      } else {
-        player.src = player.src.replace('autoplay=1', 'autoplay=0');
-        btn.textContent = '▶️ Play';
-        btn.classList.remove('playing');
-        isPlaying = false;
+      if (!player) {
+        if (isPlaying) {
+          player.pauseVideo();
+          btn.textContent = 'Play';
+          btn.classList.remove('playing');
+          isPlaying = false;
+        } else {
+          player.playVideo();
+          btn.textContent = 'Pause';
+          btn.classList.add('playing');
+          isPlaying = true;
+        }
       }
     });
   </script>
