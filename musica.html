@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-44Y9CNCHR8');
+  </script>
   <meta charset="UTF-8">
+  <meta content='música, música clásica' name='keywords'/>
+  <meta content='Música clásica Jucardus' name='description'/>
+  <meta content='Julio Cárdenas Pelizzari' name='author'/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classical Music Playlist</title>
+  <title>MÚSICA JUCARDUS</title>
   <style>
+    a {color: White;}
+    a:hover {color: Orange;}
     body {
       margin: 0; padding: 0;
       font-family: Arial, sans-serif;
@@ -23,9 +37,9 @@
       background: transparent;
       border: none;
       color: white;
-      font-size: 5em;
+      font-size: 180%;
       cursor: pointer;
-      padding: 0.2em;
+      padding: 0em;
       outline: none;
     }
     button:hover { color: #ff6666; }
@@ -36,7 +50,7 @@
 </head>
 <body>
 
-  <h1>Classical Music Playlist</h1>
+  <h1>Música <a href="https://jucardus.github.io" rel="noopener noreferrer nofollow external">Jucardus</a></h1>
 
   <div class="controls">
     <button id="play">▶️</button>
@@ -83,12 +97,12 @@
 
     document.getElementById('play').onclick  = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('first').onclick = () => player.playVideoAt(0);                    // first song in list
-    document.getElementById('prev').onclick  = () => player.previousVideo();                  // previous song
-    document.getElementById('next').onclick  = () => player.nextVideo();                      // next song
+    document.getElementById('first').onclick = () => player.playVideoAt(0);
+    document.getElementById('prev').onclick  = () => player.previousVideo();
+    document.getElementById('next').onclick  = () => player.nextVideo();
     document.getElementById('last').onclick  = () => {
       const list = player.getPlaylist();
-      if (list && list.length > 0) player.playVideoAt(list.length - 1);                       // last song in list
+      if (list && list.length > 0) player.playVideoAt(list.length - 1);
     };
   </script>
 </body>
