@@ -18,7 +18,7 @@
       gap: 3em;
     }
     h1 { font-size: 3em; margin: 0; text-align: center; }
-    .controls { display: flex; gap: 1.8em; align-items: center; }
+    .controls { display: flex; gap: 2em; align-items: center; }
     button {
       background: transparent;
       border: none;
@@ -39,18 +39,17 @@
   <h1>Classical Music Playlist</h1>
 
   <div class="controls">
-    <button id="play">Play</button>
-    <button id="pause">Pause</button>
-    <button id="first">To Start</button>
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
-    <button id="last">To End</button>
+    <button id="play">▶️</button>
+    <button id="pause">⏸</button>
+    <button id="prev">⏪</button>
+    <button id="next">⏩</button>
+    <button id="first">⏮</button>
+    <button id="last">⏭</button>
   </div>
 
   <div id="player"></div>
 
   <script>
-    // Load YouTube IFrame API
     const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
@@ -75,35 +74,21 @@
         },
         events: {
           'onStateChange': e => {
-            const isPlaying = e.data === YT.PlayerState.PLAYING;
-            document.getElementById('play').classList.toggle('playing', isPlaying);
+            const playing = e.data === YT.PlayerState.PLAYING;
+            document.getElementById('play').classList.toggle('playing', playing);
           }
         }
       });
-    });
     }
 
-    // Play
-    document.getElementById('play').onclick = () => player.playVideo();
-
-    // Pause
+    document.getElementById('play').onclick  = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
-
-    // To First song in the playlist
-    document.getElementById('first').onclick = () => player.playVideoAt(0);
-
-    // Previous song
-    document.getElementById('prev').onclick = () => player.previousVideo();
-
-    // Next song
-    document.getElementById('next').onclick = () => player.nextVideo();
-
-    // To Last song in the playlist
-    document.getElementById('last').onclick = () => {
+    document.getElementById('first').onclick = () => player.playVideoAt(0);                    // first song in list
+    document.getElementById('prev').onclick  = () => player.previousVideo();                  // previous song
+    document.getElementById('next').onclick  = () => player.nextVideo();                      // next song
+    document.getElementById('last').onclick  = () => {
       const list = player.getPlaylist();
-      if (list && list.length > 0) {
-        player.playVideoAt(list.length - 1);
-      }
+      if (list && list.length > 0) player.playVideoAt(list.length - 1);                       // last song in list
     };
   </script>
 </body>
