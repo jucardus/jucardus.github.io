@@ -37,17 +37,9 @@
 </head>
 <body>
   <h1>Classical Music Playlist</h1>
-  <button id="playBtn">Play</button>
+  <button id="playBtn">▶️ Play</button>
 
-  <iframe
-    id="player"
-    width="1"
-    height="1"
-    src="https://www.youtube.com/embed/videoseries?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&autoplay=0&loop=1&playlist=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&controls=0&modestbranding=1&rel=0&iv_load_policy=3&enablejsapi=1"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+  <div id="player"></div>
 
   <script>
     // Load the YouTube IFrame API
@@ -62,29 +54,52 @@
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
+        height: '1',
+        width: '1',
+        playerVars: {
+          'listType': 'playlist',
+          'list': 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          'loop': 1,
+          'playlist': 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          'controls': 0,
+          'modestbranding': 1,
+          'rel': 0,
+          'showinfo': 0,
+          'fs': 0,
+          'iv_load_policy': 3,
+          'disablekb': 1,
+          'autoplay': 0
+        },
         events: {
-          'onReady': onPlayerReady
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
         }
       });
     }
 
     function onPlayerReady(event) {
-      // everything is ready now
+      // Player is ready
+      console.log('Player ready');
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        isPlaying = true;
+        btn.textContent = '⏸️ Pause';
+        btn.classList.add('playing');
+      } else if (event.data == YT.PlayerState.PAUSED) {
+        isPlaying = false;
+        btn.textContent = '▶️ Play';
+        btn.classList.remove('playing');
+      }
     }
 
     btn.addEventListener('click', () => {
-      if (!player) {
-        if (isPlaying) {
-          player.pauseVideo();
-          btn.textContent = 'Play';
-          btn.classList.remove('playing');
-          isPlaying = false;
-        } else {
-          player.playVideo();
-          btn.textContent = 'Pause';
-          btn.classList.add('playing');
-          isPlaying = true;
-        }
+      if (!player) return;
+      if (isPlaying) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
       }
     });
   </script>
