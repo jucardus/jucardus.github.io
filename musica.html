@@ -10,40 +10,47 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #000, #333);
       color: white;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      height: 100vh; gap: 2em;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3em;
     }
     h1 { font-size: 3em; margin: 0; text-align: center; }
-
-    .controls { display: flex; gap: 1.2em; align-items: center; }
-    .controls button {
-      background: transparent; color: white; border: none;
-      font-size: 4.5em; cursor: pointer; padding: 0.3em;
-      outline: none; box-shadow: none;
+    .controls { display: flex; gap: 1.8em; align-items: center; }
+    button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 5em;
+      cursor: pointer;
+      padding: 0.2em;
+      outline: none;
     }
-    .controls button:hover { color: #ff6666; }
-    .playing { color: #66ff66 !important; }
-    .playing:hover { color: #99ff99 !important; }
-
+    button:hover { color: #ff6666; }
+    button.playing { color: #66ff66; }
+    button.playing:hover { color: #99ff99; }
     #player { display: none; }
   </style>
 </head>
 <body>
+
   <h1>Classical Music Playlist</h1>
 
   <div class="controls">
-    <button id="play">▶️</button>
-    <button id="pause">⏸</button>
-    <button id="start">⏮</button>
-    <button id="prev">⏪</button>
-    <button id="next">⏩</button>
-    <button id="end">⏭</button>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="first">To Start</button>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <button id="last">To End</button>
   </div>
 
-  <div id="player"></div></div>
+  <div id="player"></div>
 
   <script>
+    // Load YouTube IFrame API
     const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
@@ -52,36 +59,51 @@
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        height: '1', width: '1',
+        height: '1',
+        width: '1',
         playerVars: {
           listType: 'playlist',
           list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
           loop: 1,
           playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-          controls: 0, modestbranding: 1, rel: 0,
-          iv_load_policy: 3, disablekb:1, autoplay:0
+          controls: 0,
+          modestbranding: 1,
+          rel: 0,
+          iv_load_policy: 3,
+          disablekb: 1,
+          autoplay: 0
         },
-        events: { 'onStateChange': onPlayerStateChange }
+        events: {
+          'onStateChange': e => {
+            const isPlaying = e.data === YT.PlayerState.PLAYING;
+            document.getElementById('play').classList.toggle('playing', isPlaying);
+          }
+        }
       });
+    });
     }
 
-    function onPlayerStateChange(event) {
-      if (event.data === YT.PlayerState.PLAYING) {
-        document.getElementById('play').classList.add('playing');
-        document.getElementById('pause').classList.remove('playing');
-      } else {
-        document.getElementById('play').classList.remove('playing');
+    // Play
+    document.getElementById('play').onclick = () => player.playVideo();
+
+    // Pause
+    document.getElementById('pause').onclick = () => player.pauseVideo();
+
+    // To First song in the playlist
+    document.getElementById('first').onclick = () => player.playVideoAt(0);
+
+    // Previous song
+    document.getElementById('prev').onclick = () => player.previousVideo();
+
+    // Next song
+    document.getElementById('next').onclick = () => player.nextVideo();
+
+    // To Last song in the playlist
+    document.getElementById('last').onclick = () => {
+      const list = player.getPlaylist();
+      if (list && list.length > 0) {
+        player.playVideoAt(list.length - 1);
       }
-    }
-
-    document.getElementById('play').onclick   = () => player.playVideo();
-    document.getElementById('pause').onclick  = () => player.pauseVideo();
-    document.getElementById('start').onclick  = () => { player.seekTo(0); player.playVideo(); };
-    document.getElementById('prev').onclick   = () => player.previousVideo();
-    document.getElementById('next').onclick    = () => player.nextVideo();
-    document.getElementById('end').onclick    = () => {
-      const duration = player.getDuration();
-      player.seekTo(duration ? duration - 0.5 : 0);
     };
   </script>
 </body>
