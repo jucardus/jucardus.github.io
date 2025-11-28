@@ -40,7 +40,13 @@
       gap: 3em;
     }
     h1 { font-size: 3em; margin: 0; text-align: center; }
-    .controls { display: flex; gap: 2em; align-items: center; }
+    .controls {
+      display: flex;
+      flex-wrap: wrap; /* Add this */
+      gap: 2em;
+      align-items: center;
+      justify-content: center; /* Optional: center the buttons */
+    }
     button {
       background: transparent;
       border: none;
