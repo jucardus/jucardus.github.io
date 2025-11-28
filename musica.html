@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical Music Playlist</title>
+  <style>
+    body { 
+      margin: 0; 
+      padding: 0; 
+      font-family: Arial, sans-serif; 
+      background: linear-gradient(to bottom, #000, #333); 
+      color: white; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      height: 100vh; 
+    }
+    h1 { font-size: 3em; margin-bottom: 2em; text-align: center; }
+    button { 
+      font-size: 4em; 
+      padding: 1em 2em; 
+      background: #ff0000; 
+      color: white; 
+      border: none; 
+      border-radius: 50%; 
+      cursor: pointer; 
+      box-shadow: 0 0 20px rgba(255,0,0,0.5); 
+    }
+    button:hover { background: #cc0000; }
+    button.playing { background: #00aa00; }
+    button.playing:hover { background: #009900; }
+    iframe { display: none; } /* Hidden player */
+  </style>
+</head>
+<body>
+  <h1>Classical Music Playlist</h1>
+  <button id="playBtn">▶️ Play</button>
+  <iframe 
+    id="player" 
+    width="1" 
+    height="1" 
+    src="https://www.youtube.com/embed/videoseries?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&autoplay=0&loop=1&playlist=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&iv_load_policy=3&disablekb=1"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    const btn = document.getElementById('playBtn');
+    const player = document.getElementById('player');
+    let isPlaying = false;
+
+    btn.addEventListener('click', () => {
+      if (!isPlaying) {
+        player.src = player.src.replace('autoplay=0', 'autoplay=1'); // Start playback
+        btn.textContent = '⏸️ Pause';
+        btn.classList.add('playing');
+        isPlaying = true;
+      } else {
+        player.src = player.src.replace('autoplay=1', 'autoplay=0'); // Pause (reloads src to stop)
+        btn.textContent = '▶️ Play';
+        btn.classList.remove('playing');
+        isPlaying = false;
+      }
+    });
+  </script>
+</body>
+</html>
