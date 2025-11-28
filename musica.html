@@ -8,45 +8,39 @@
     body { 
       margin: 0; 
       padding: 0; 
-      font-family: "Georgia", serif; 
-      background: #000; 
-      color: #eee; 
+      font-family: Arial, sans-serif; 
+      background: linear-gradient(to bottom, #000, #333); 
+      color: white; 
       display: flex; 
       flex-direction: column; 
       align-items: center; 
       justify-content: center; 
       height: 100vh; 
-      text-align: center;
     }
-    h1 { 
-      font-size: 3.2em; 
-      margin-bottom: 1.5em; 
-      letter-spacing: 2px;
-    }
+    h1 { font-size: 3em; margin-bottom: 2em; text-align: center; }
     button { 
-      font-size: 5em; 
-      width: 1.8em; 
-      height: 1.8em; 
-      background: rgba(255,255,255,0.15); 
+      font-size: 4em; 
+      padding: 1em 2em; 
+      background: #333;               /* neutral dark gray instead of red/green */
       color: white; 
-      border: 3px solid #fff; 
+      border: none; 
       border-radius: 50%; 
       cursor: pointer; 
-      transition: all 0.3s;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      transition: background 0.3s;
     }
-    button:hover { 
-      background: rgba(255,255,255,0.3); 
-      transform: scale(1.1);
-    }
+    button:hover { background: #555; }
     iframe { display: none; }
   </style>
 </head>
 <body>
-  <h1>Classical Music</h1>
+  <h1>Classical Music Playlist</h1>
   <button id="playBtn">Play</button>
 
   <iframe 
     id="player" 
+    width="1" 
+    height="1" 
     src="https://www.youtube.com/embed/videoseries?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&autoplay=0&loop=1&playlist=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&iv_load_policy=3&disablekb=1"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -56,17 +50,17 @@
   <script>
     const btn = document.getElementById('playBtn');
     const player = document.getElementById('player');
-    let playing = false;
+    let isPlaying = false;
 
     btn.addEventListener('click', () => {
-      if (!playing) {
+      if (!isPlaying) {
         player.src = player.src.replace('autoplay=0', 'autoplay=1');
         btn.textContent = 'Pause';
-        playing = true;
+        isPlaying = true;
       } else {
         player.src = player.src.replace('autoplay=1', 'autoplay=0');
         btn.textContent = 'Play';
-        playing = false;
+        isPlaying = false;
       }
     });
   </script>
