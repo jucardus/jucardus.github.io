@@ -25,7 +25,7 @@
 * [Invitación a pCloud](https://is.gd/ipcloud) - i.jucardus.com
 * [Linktree Jucardus](https://linktr.ee/jucardus) - lt.jucardus.com
 * [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g) - mega.jucardus.com
-* [Música en YouTube](https://www.youtube.com/@jucardus/playlists) - m.jucardus.com
+* [Música clásica](https://jucardus.github.io/musica.html) - m.jucardus.com
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
 * [Postimages](https://postimg.cc/user/jucardus) - img.jucardus.com
 * [Repositorio GitHub](https://g.jucardus.com) - g.jucardus.com
