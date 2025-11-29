@@ -107,7 +107,7 @@
       player.setShuffle(true);
       
       // ← SOLO ESTE ES EL CAMBIO: primera canción aleatoria entre las primeras 70
-      const randomIndex = Math.floor(Math.random() * 70); // 0–69
+      const randomIndex = Math.floor(Math.random() * 50);
       player.playVideoAt(randomIndex);
     }
     document.getElementById('play').onclick = () => player.playVideo();
