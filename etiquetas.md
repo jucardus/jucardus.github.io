@@ -47,3 +47,4 @@
 * [Vocabulario español (enlaces)](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol-enlaces.md)
 * [Vocabulario español](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol.md)
 * [Vocabulario inglés (enlaces)](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-ingles-enlaces.md)
+* [YouTube (enlaces)](https://github.com/jucardus/jucardus.github.io/blob/main/y/o/youtube-enlaces.md)
