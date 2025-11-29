@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-44Y9CNCHR8');
+  </script>
+  <meta charset="UTF-8">
+  <meta content='música, música clásica' name='keywords'/>
+  <meta content='Música clásica Jucardus' name='description'/>
+  <meta content='Julio Cárdenas Pelizzari' name='author'/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MÚSICA JUCARDUS</title>
+  <style>
+    @media (max-width: 768px) {
+      body {
+        padding: 30px 10px 50px 10px !important;
+        width: auto !important;
+        overflow-x: hidden !important;
+      }
+    }
+    a {color: White;}
+    a:hover {color: Orange;}
+    body {
+      margin: 0; padding: 0;
+      padding: 0px 28% 0px 27%;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #000, #333);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+    }
+    h1 { font-size: 3em; margin: 0; text-align: center; }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 180%;
+      cursor: pointer;
+      padding: 0em;
+      outline: none;
+    }
+    button:hover { color: #ff6666; }
+    button.playing { color: #66ff66; }
+    button.playing:hover { color: #99ff99; }
+    #player { display: none; }
+
+    /* Nuevo estilo para el título del vídeo */
+    #now-playing {
+      text-align: center;
+      font-size: 1.4em;
+      color: #ffcc00;
+      min-height: 1.5em;
+      padding: 0 20px;
+      max-width: 90%;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>Música <a href="https://jucardus.github.io" rel="noopener noreferrer nofollow external" target="_blank">Jucardus</a></h1>
+  
+  <div class="controls">
+    <button id="play">▶️</button>
+    <button id="pause">⏸</button>
+    <button id="prev">⏪</button>
+    <button id="next">⏩</button>
+    <button id="first">⏮</button>
+    <button id="last">⏭</button>
+  </div>
+
+  <!-- Div que mostrará el título del vídeo actual -->
+  <div id="now-playing">Cargando reproducción...</div>
+
+  <p>Los botones pueden tomar unos segundos en tener efecto. — Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
+  
+  <div id="player"></div>
+
+  <script>
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
+
+    let player;
+    const titleDiv = document.getElementById('now-playing');
+
+    function updateTitle() {
+      if (!player || !player.getVideoData) {
+        titleDiv.textContent = 'Cargando...';
+        return;
+      }
+      const data = player.getVideoData();
+      if (data && data.title) {
+        titleDiv.textContent = data.title;
+      } else {
+        titleDiv.textContent = 'Reproduciendo...';
+      }
+    }
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '1',
+        width: '1',
+        playerVars: {
+          listType: 'playlist',
+          list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          loop: 1,
+          playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          controls: 0,
+          modestbranding: 1,
+          rel: 0,
+          iv_load_policy: 3,
+          disablekb: 1,
+          autoplay: 0
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': e => {
+            const playing = e.data === YT.PlayerState.PLAYING;
+            document.getElementById('play').classList.toggle('playing', playing);
+            
+            // Actualizar título cada vez que cambie el estado (especialmente al cambiar canción)
+            if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
+              setTimeout(updateTitle, 500); // pequeño retraso para que YouTube actualice los datos
+            }
+          }
+        }
+      });
+    }
+
+    function onPlayerReady() {
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile) {
+        const randomIndex = Math.floor(Math.random() * 550);
+        player.playVideoAt(randomIndex);
+        player.pauseVideo();
+      } else {
+        player.setShuffle(true);
+        const playlist = player.getPlaylist();
+        const totalVideos = playlist ? playlist.length : 1;
+        const randomIndex = Math.floor(Math.random() * totalVideos);
+        player.playVideoAt(randomIndex);
+      }
+      setTimeout(updateTitle, 1000); // título inicial
+    }
+
+    // Botones
+    document.getElementById('play').onclick = () => player.playVideo();
+    document.getElementById('pause').onclick = () => player.pauseVideo();
+    document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
+    document.getElementById('prev').onclick = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('next').onclick = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('last').onclick = () => {
+      const list = player.getPlaylist();
+      if (list && list.length > 0) {
+        player.playVideoAt(list.length - 1);
+        setTimeout(updateTitle, 800);
+      }
+    };
+
+    // También actualizamos el título periódicamente por si cambia por autoplay/shuffle
+    setInterval(updateTitle, 5000);
+  </script>
+</body>
+</html>
