@@ -17,3 +17,4 @@
 * [vocabulario inglés ¦ overkill](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-overkill.md) - 25-11-03
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - 25-10-31
 * [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - 25-10-31
+* [YouTube ¦ mi lista de reproducción de música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/y/o/u/youtube-mi-lista-de-reproduccion-de-musica-clasica.md) - 25-11-29
