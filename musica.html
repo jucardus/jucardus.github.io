@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-44Y9CNCHR8');
   </script>
   <meta charset="UTF-8">
@@ -63,9 +62,7 @@
   </style>
 </head>
 <body>
-
   <h1>Música <a href="https://jucardus.github.io" rel="noopener noreferrer nofollow external" target="_blank">Jucardus</a></h1>
-
   <div class="controls">
     <button id="play">▶️</button>
     <button id="pause">⏸</button>
@@ -74,20 +71,14 @@
     <button id="first">⏮</button>
     <button id="last">⏭</button>
   </div>
-
   <p>Los botones pueden tomar unos segundos en tener efecto. &mdash; Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
-
   <div id="player"></div>
-
   <script>
     const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
     let player;
-    let shuffledPlayer;  // For the shuffled version
-
     function onYouTubeIframeAPIReady() {
-      // Initial player to fetch the playlist
       player = new YT.Player('player', {
         height: '1',
         width: '1',
@@ -104,61 +95,26 @@
           autoplay: 0
         },
         events: {
-          'onReady': onInitialReady,
-        }
-      });
-    }
-
-    function onInitialReady() {
-      // Fetch the full list of video IDs
-      player.getPlaylist().then(playlist => {
-        if (playlist && playlist.length > 1) {
-          // Shuffle the array (Fisher-Yates for true randomness)
-          for (let i = playlist.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [playlist[i], playlist[j]] = [playlist[j], playlist[i]];
+          'onReady': onPlayerReady,
+          'onStateChange': e => {
+            const playing = e.data === YT.PlayerState.PLAYING;
+            document.getElementById('play').classList.toggle('playing', playing);
           }
-          // Join into comma-separated string for custom playlist
-          const shuffledIds = playlist.join(',');
-          // Destroy initial player
-          player.destroy();
-          // Create shuffled player
-          shuffledPlayer = new YT.Player('player', {
-            height: '1',
-            width: '1',
-            playerVars: {
-              playlist: shuffledIds,  // Use shuffled IDs
-              loop: 1,
-              controls: 0,
-              modestbranding: 1,
-              rel: 0,
-              iv_load_policy: 3,
-              disablekb: 1,
-              autoplay: 0
-            },
-            events: {
-              'onStateChange': e => {
-                const playing = e.data === YT.PlayerState.PLAYING;
-                document.getElementById('play').classList.toggle('playing', playing);
-              }
-            }
-          });
-          player = shuffledPlayer;  // Reassign for button handlers
         }
       });
     }
-
-    // Button handlers (use 'player' which is now shuffled)
+    function onPlayerReady() {
+      player.setShuffle(true);
+    }
     document.getElementById('play').onclick = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('first').onclick = () => player.playVideoAt(0); // First in shuffled list
-    document.getElementById('prev').onclick = () => player.previousVideo(); // Previous in shuffled
-    document.getElementById('next').onclick = () => player.nextVideo(); // Next in shuffled
+    document.getElementById('first').onclick = () => player.playVideoAt(0); // first song in list
+    document.getElementById('prev').onclick = () => player.previousVideo(); // previous song
+    document.getElementById('next').onclick = () => player.nextVideo(); // next song
     document.getElementById('last').onclick = () => {
       const list = player.getPlaylist();
-      if (list && list.length > 0) player.playVideoAt(list.length - 1); // Last in shuffled
+      if (list && list.length > 0) player.playVideoAt(list.length - 1); // last song in list
     };
   </script>
-  
 </body>
 </html>
