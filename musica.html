@@ -73,11 +73,14 @@
   </div>
   <p>Los botones pueden tomar unos segundos en tener efecto. — Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
   <div id="player"></div>
+
   <script>
     const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
+
     let player;
+
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '1',
@@ -103,16 +106,25 @@
         }
       });
     }
+
     function onPlayerReady() {
       player.setShuffle(true);
-      
-      // ← SOLO ESTE ES EL CAMBIO: primera canción aleatoria entre las primeras 70
-      const randomIndex = Math.floor(Math.random() * 50);
+
+      // ← AQUÍ ESTÁ LA MAGIA: lee automáticamente cuántos vídeos hay
+      const playlist = player.getPlaylist();        // devuelve el array completo
+      const totalVideos = playlist ? playlist.length : 1;
+
+      // Elige un índice aleatorio entre 0 y (total-1)
+      const randomIndex = Math.floor(Math.random() * totalVideos);
+
+      // Reproduce ese vídeo como punto de partida
       player.playVideoAt(randomIndex);
     }
+
+    // Botones (sin cambios)
     document.getElementById('play').onclick = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('first').onclick = () => player.playVideoAt(0); // sigue yendo al primer vídeo
+    document.getElementById('first').onclick = () => player.playVideoAt(0);
     document.getElementById('prev').onclick = () => player.previousVideo();
     document.getElementById('next').onclick = () => player.nextVideo();
     document.getElementById('last').onclick = () => {
