@@ -71,7 +71,7 @@
     <button id="first">⏮</button>
     <button id="last">⏭</button>
   </div>
-  <p>Los botones pueden tomar unos segundos en tener efecto. &mdash; Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
+  <p>Los botones pueden tomar unos segundos en tener efecto. — Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
   <div id="player"></div>
   <script>
     const tag = document.createElement('script');
@@ -104,19 +104,20 @@
       });
     }
     function onPlayerReady() {
-      // Random start for large playlist (avoids full shuffle issues)
-      const randomIndex = Math.floor(Math.random() * 500);  // Tune to your exact count if needed
+      player.setShuffle(true);
+      
+      // ← SOLO ESTE ES EL CAMBIO: primera canción aleatoria entre las primeras 70
+      const randomIndex = Math.floor(Math.random() * 70); // 0–69
       player.playVideoAt(randomIndex);
-      player.pauseVideo();  // Pause so user starts with ▶️
     }
     document.getElementById('play').onclick = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('first').onclick = () => player.playVideoAt(0); // first song in list
-    document.getElementById('prev').onclick = () => player.previousVideo(); // previous song
-    document.getElementById('next').onclick = () => player.nextVideo(); // next song
+    document.getElementById('first').onclick = () => player.playVideoAt(0); // sigue yendo al primer vídeo
+    document.getElementById('prev').onclick = () => player.previousVideo();
+    document.getElementById('next').onclick = () => player.nextVideo();
     document.getElementById('last').onclick = () => {
       const list = player.getPlaylist();
-      if (list && list.length > 0) player.playVideoAt(list.length - 1); // last song in list
+      if (list && list.length > 0) player.playVideoAt(list.length - 1);
     };
   </script>
 </body>
