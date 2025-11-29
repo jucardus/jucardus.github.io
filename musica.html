@@ -9,6 +9,15 @@
     gtag('js', new Date());
     gtag('config', 'G-44Y9CNCHR8');
   </script>
+
+  <!-- REDIRECCIÓN AUTOMÁTICA EN MÓVIL -->
+  <script>
+    // Redirige a la playlist de YouTube si el ancho de pantalla es ≤ 768px (móviles y tablets pequeñas)
+    if (window.innerWidth <= 768 || screen.width <= 768) {
+      window.location.replace("https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p");
+    }
+  </script>
+
   <meta charset="UTF-8">
   <meta content='música, música clásica' name='keywords'/>
   <meta content='Música clásica Jucardus' name='description'/>
@@ -59,8 +68,6 @@
     button.playing { color: #66ff66; }
     button.playing:hover { color: #99ff99; }
     #player { display: none; }
-
-    /* Nuevo estilo para el título del vídeo */
     #now-playing {
       text-align: center;
       font-size: 1.4em;
@@ -74,7 +81,7 @@
 </head>
 <body>
   <h1>Música <a href="https://jucardus.github.io" rel="noopener noreferrer nofollow external" target="_blank">Jucardus</a></h1>
-  
+ 
   <div class="controls">
     <button id="play">▶️</button>
     <button id="pause">⏸</button>
@@ -83,12 +90,9 @@
     <button id="first">⏮</button>
     <button id="last">⏭</button>
   </div>
-
-  <!-- Div que mostrará el título del vídeo actual -->
   <div id="now-playing">Cargando reproducción...</div>
-
   <p>Los botones pueden tomar unos segundos en tener efecto. — Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
-  
+ 
   <div id="player"></div>
 
   <script>
@@ -133,10 +137,8 @@
           'onStateChange': e => {
             const playing = e.data === YT.PlayerState.PLAYING;
             document.getElementById('play').classList.toggle('playing', playing);
-            
-            // Actualizar título cada vez que cambie el estado (especialmente al cambiar canción)
             if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
-              setTimeout(updateTitle, 500); // pequeño retraso para que YouTube actualice los datos
+              setTimeout(updateTitle, 500);
             }
           }
         }
@@ -144,22 +146,14 @@
     }
 
     function onPlayerReady() {
-      const isMobile = window.innerWidth <= 768;
-      if (isMobile) {
-        const randomIndex = Math.floor(Math.random() * 550);
-        player.playVideoAt(randomIndex);
-        player.pauseVideo();
-      } else {
-        player.setShuffle(true);
-        const playlist = player.getPlaylist();
-        const totalVideos = playlist ? playlist.length : 1;
-        const randomIndex = Math.floor(Math.random() * totalVideos);
-        player.playVideoAt(randomIndex);
-      }
-      setTimeout(updateTitle, 1000); // título inicial
+      player.setShuffle(true);
+      const playlist = player.getPlaylist();
+      const totalVideos = playlist ? playlist.length : 1;
+      const randomIndex = Math.floor(Math.random() * totalVideos);
+      player.playVideoAt(randomIndex);
+      setTimeout(updateTitle, 1000);
     }
 
-    // Botones
     document.getElementById('play').onclick = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
     document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
@@ -173,7 +167,6 @@
       }
     };
 
-    // También actualizamos el título periódicamente por si cambia por autoplay/shuffle
     setInterval(updateTitle, 5000);
   </script>
 </body>
