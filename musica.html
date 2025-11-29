@@ -102,37 +102,28 @@
 
     let player;
     const titleDiv = document.getElementById('now-playing');
-    let titleHasBeenShown = false;
+    let hasStarted = false;
 
     function updateTitle() {
       if (!player || !player.getVideoData) return;
       const data = player.getVideoData();
-      const title = data && data.title ? data.title : 'Reproduciendo...';
+      const title = data?.title || 'Reproduciendo...';
       titleDiv.textContent = title;
-      if (!titleHasBeenShown) {
-        titleDiv.classList.add('show');
-        titleHasBeenShown = true;
-      }
+      titleDiv.classList.add('show');
     }
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        height: '1',
-        width: '1',
+        height: '1', width: '1',
         playerVars: {
           listType: 'playlist',
           list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
           loop: 1,
           playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-          controls: 0,
-          modestbranding: 1,
-          rel: 0,
-          iv_load_policy: 3,
-          disablekb: 1,
-          autoplay: 0
+          controls: 0, modestbranding: 1, rel: 0, iv_load_policy: 3, disablekb: 1, autoplay: 0
         },
         events: {
-          'onReady': onPlayerReady,
+          'onReady': () => {},
           'onStateChange': e => {
             const playing = e.data === YT.PlayerState.PLAYING;
             document.getElementById('play').classList.toggle('playing', playing);
@@ -144,35 +135,34 @@
       });
     }
 
-    function onPlayerReady() {
-      player.setShuffle(true);
-
-      const playlist = player.getPlaylist();
-      const totalVideos = playlist ? playlist.length : 1;
-      const randomIndex = Math.floor(Math.random() * totalVideos);
-      player.playVideoAt(randomIndex);
-    }
-
     document.getElementById('play').onclick = () => {
+      if (hasStarted) {
+        player.playVideo();
+        return;
+      }
+
+      hasStarted = true;
+
+      player.setShuffle(true);
+      const playlist = player.getPlaylist();
+      const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
+      player.playVideoAt(randomIndex);
       player.playVideo();
-      setTimeout(updateTitle, 600);
+      setTimeout(updateTitle, 700);
     };
 
     document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
     document.getElementById('prev').onclick   = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
     document.getElementById('next').onclick   = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('first').onclick  = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
     document.getElementById('last').onclick   = () => {
       const list = player.getPlaylist();
-      if (list && list.length > 0) {
-        player.playVideoAt(list.length - 1);
-        setTimeout(updateTitle, 800);
-      }
+      if (list?.length) player.playVideoAt(list.length - 1);
+      setTimeout(updateTitle, 800);
     };
-
-    setInterval(() => {
-      if (titleHasBeenShown) updateTitle();
-    }, 5000);
+    
+    setInterval(() => { if (hasStarted) updateTitle(); }, 5000);
   </script>
+
 </body>
 </html>
