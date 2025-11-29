@@ -37,6 +37,7 @@
 * [puer [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-m.md) - Diccionario latín-español, Sustantivos latinos, Sustantivos latinos de la segunda declinación - 25-11-01
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - Frases latinas - 25-10-29
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - Apotegmas - 25-10-29
+* [salvedad [f.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/a/l/salvedad-f.md) - Vocabulario español, Sustantivos españoles, Sustantivos femeninos españoles - 25-11-29
 * [Siempre que busques a Dios hacia...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/siempre-que-busques-a-dios-hacia.md) - Apotegmas - 25-11-04
 * [Si eres creyente sabes que debes orar...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/si-eres-creyente-sabes-que-debes-orar.md) - Reflexiones - 25-11-02
 * [Sin importar si tu tradición es de los hombres...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/sin-importar-si-tu-tradicion-es-de-los-hombres.md) - Reflexiones - 25-11-04
