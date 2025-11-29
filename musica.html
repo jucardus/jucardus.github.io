@@ -64,12 +64,12 @@
 <body>
   <h1>Música <a href="https://jucardus.github.io" rel="noopener noreferrer nofollow external" target="_blank">Jucardus</a></h1>
   <div class="controls">
-    <button id="play">Play</button>
-    <button id="pause">Pause</button>
-    <button id="prev">Previous</button>
-    <button id="next">Next</button>
-    <button id="first">To First</button>
-    <button id="last">To Last</button>
+    <button id="play">▶️</button>
+    <button id="pause">⏸</button>
+    <button id="prev">⏪</button>
+    <button id="next">⏩</button>
+    <button id="first">⏮</button>
+    <button id="last">⏭</button>
   </div>
   <p>Los botones pueden tomar unos segundos en tener efecto. — Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
   <div id="player"></div>
@@ -108,25 +108,30 @@
     }
 
     function onPlayerReady() {
-      // Detect mobile (≤768px) — same breakpoint you already use
       const isMobile = window.innerWidth <= 768;
 
       if (isMobile) {
-        // Safe random start on mobile — no getPlaylist(), no memory spike
-        const randomIndex = Math.floor(Math.random() * 550); // 550 > your current count
+        // MOBILE: ultra-light random start only (no memory overload)
+        const randomIndex = Math.floor(Math.random() * 550);
         player.playVideoAt(randomIndex);
-        player.pauseVideo(); // So user still presses Play to start
+        player.pauseVideo();  // user still presses Play to start
+      } else {
+        // DESKTOP: keep your full working random shuffle
+        player.setShuffle(true);
+        const playlist = player.getPlaylist();
+        const totalVideos = playlist ? playlist.length : 1;
+        const randomIndex = Math.floor(Math.random() * totalVideos);
+        player.playVideoAt(randomIndex);
       }
-      // On desktop: normal start (first video) — no random jump
     }
 
-    // Buttons — exactly as you have them
-    document.getElementById('play').onclick   = () => player.playVideo();
-    document.getElementById('pause').onclick  = () => player.pauseVideo();
-    document.getElementById('first').onclick  = () => player.playVideoAt(0);
-    document.getElementById('prev').onclick   = () => player.previousVideo();
-    document.getElementById('next').onclick   = () => player.nextVideo();
-    document.getElementById('last').onclick   = () => {
+    // Botones (sin cambios)
+    document.getElementById('play').onclick = () => player.playVideo();
+    document.getElementById('pause').onclick = () => player.pauseVideo();
+    document.getElementById('first').onclick = () => player.playVideoAt(0);
+    document.getElementById('prev').onclick = () => player.previousVideo();
+    document.getElementById('next').onclick = () => player.nextVideo();
+    document.getElementById('last').onclick = () => {
       const list = player.getPlaylist();
       if (list && list.length > 0) player.playVideoAt(list.length - 1);
     };
