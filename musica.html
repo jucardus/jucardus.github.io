@@ -25,11 +25,7 @@
   <title>MÚSICA JUCARDUS</title>
   <style>
     @media (max-width: 768px) {
-      body {
-        padding: 30px 10px 50px 10px !important;
-        width: auto !important;
-        overflow-x: hidden !important;
-      }
+      body { padding: 30px 10px 50px 10px !important; width: auto !important; overflow-x: hidden !important; }
     }
     a {color: White;}
     a:hover {color: Orange;}
@@ -75,12 +71,15 @@
       padding: 0 20px;
       max-width: 90%;
       word-wrap: break-word;
+      opacity: 0;
+      transition: opacity 0.4s ease;
     }
+    #now-playing.show { opacity: 1; }
   </style>
 </head>
 <body>
   <h1>Música <a href="https://jucardus.github.io" rel="noopener noreferrer nofollow external" target="_blank">Jucardus</a></h1>
- 
+
   <div class="controls">
     <button id="play">▶️</button>
     <button id="pause">⏸</button>
@@ -89,9 +88,11 @@
     <button id="first">⏮</button>
     <button id="last">⏭</button>
   </div>
-  <div id="now-playing">Cargando reproducción...</div>
+
+  <div id="now-playing"></div>
+
   <p>Los botones pueden tomar unos segundos en tener efecto. — Para escuchar toda la música sin anuncios, abre la <b><a href="https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p" rel="noopener noreferrer nofollow external" target="_blank">lista de reproducción</a></b> con el navegador Brave.</p>
- 
+
   <div id="player"></div>
 
   <script>
@@ -101,17 +102,16 @@
 
     let player;
     const titleDiv = document.getElementById('now-playing');
+    let titleHasBeenShown = false;
 
     function updateTitle() {
-      if (!player || !player.getVideoData) {
-        titleDiv.textContent = 'Cargando...';
-        return;
-      }
+      if (!player || !player.getVideoData) return;
       const data = player.getVideoData();
-      if (data && data.title) {
-        titleDiv.textContent = data.title;
-      } else {
-        titleDiv.textContent = 'Reproduciendo...';
+      const title = data && data.title ? data.title : 'Reproduciendo...';
+      titleDiv.textContent = title;
+      if (!titleHasBeenShown) {
+        titleDiv.classList.add('show');
+        titleHasBeenShown = true;
       }
     }
 
@@ -137,7 +137,7 @@
             const playing = e.data === YT.PlayerState.PLAYING;
             document.getElementById('play').classList.toggle('playing', playing);
             if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
-              setTimeout(updateTitle, 500);
+              setTimeout(updateTitle, 400);
             }
           }
         }
@@ -146,19 +146,23 @@
 
     function onPlayerReady() {
       player.setShuffle(true);
+
       const playlist = player.getPlaylist();
       const totalVideos = playlist ? playlist.length : 1;
       const randomIndex = Math.floor(Math.random() * totalVideos);
       player.playVideoAt(randomIndex);
-      setTimeout(updateTitle, 1000);
     }
 
-    document.getElementById('play').onclick = () => player.playVideo();
+    document.getElementById('play').onclick = () => {
+      player.playVideo();
+      setTimeout(updateTitle, 600);
+    };
+
     document.getElementById('pause').onclick = () => player.pauseVideo();
     document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
-    document.getElementById('prev').onclick = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
-    document.getElementById('next').onclick = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
-    document.getElementById('last').onclick = () => {
+    document.getElementById('prev').onclick   = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('next').onclick   = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('last').onclick   = () => {
       const list = player.getPlaylist();
       if (list && list.length > 0) {
         player.playVideoAt(list.length - 1);
@@ -166,7 +170,9 @@
       }
     };
 
-    setInterval(updateTitle, 5000);
+    setInterval(() => {
+      if (titleHasBeenShown) updateTitle();
+    }, 5000);
   </script>
 </body>
 </html>
