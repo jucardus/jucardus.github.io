@@ -41,10 +41,10 @@
     h1 { font-size: 3em; margin: 0; text-align: center; }
     .controls {
       display: flex;
-      flex-wrap: wrap; /* Add this */
+      flex-wrap: wrap;
       gap: 2em;
       align-items: center;
-      justify-content: center; /* Optional: center the buttons */
+      justify-content: center;
     }
     button {
       background: transparent;
@@ -104,7 +104,10 @@
       });
     }
     function onPlayerReady() {
-      player.setShuffle(true);
+      // Random start for large playlist (avoids full shuffle issues)
+      const randomIndex = Math.floor(Math.random() * 500);  // Tune to your exact count if needed
+      player.playVideoAt(randomIndex);
+      player.pauseVideo();  // Pause so user starts with ▶️
     }
     document.getElementById('play').onclick = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
