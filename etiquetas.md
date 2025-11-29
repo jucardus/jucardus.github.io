@@ -38,6 +38,7 @@
 * [Según Grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
 * [Sustantivos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-espanoles.md)
+* [Sustantivos femeninos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-femeninos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
 * [Sustantivos latinos](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-latinos.md)
 * [Sustantivos latinos de la segunda declinación](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-latinos-de-la-segunda-declinacion.md)
