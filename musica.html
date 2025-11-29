@@ -84,7 +84,10 @@
     tag.src = "https://www.youtube.com/iframe_api";
     document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
     let player;
+    let shuffledPlayer;  // For the shuffled version
+
     function onYouTubeIframeAPIReady() {
+      // Initial player to fetch the playlist
       player = new YT.Player('player', {
         height: '1',
         width: '1',
@@ -101,26 +104,59 @@
           autoplay: 0
         },
         events: {
-          'onReady': onPlayerReady,
-          'onStateChange': e => {
-            const playing = e.data === YT.PlayerState.PLAYING;
-            document.getElementById('play').classList.toggle('playing', playing);
-          }
+          'onReady': onInitialReady,
         }
       });
     }
-    function onPlayerReady() {
-      player.setShuffle(1);
-      player.setShuffle(1);  // Call twice to ensure it shuffles the order
+
+    function onInitialReady() {
+      // Fetch the full list of video IDs
+      player.getPlaylist().then(playlist => {
+        if (playlist && playlist.length > 1) {
+          // Shuffle the array (Fisher-Yates for true randomness)
+          for (let i = playlist.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [playlist[i], playlist[j]] = [playlist[j], playlist[i]];
+          }
+          // Join into comma-separated string for custom playlist
+          const shuffledIds = playlist.join(',');
+          // Destroy initial player
+          player.destroy();
+          // Create shuffled player
+          shuffledPlayer = new YT.Player('player', {
+            height: '1',
+            width: '1',
+            playerVars: {
+              playlist: shuffledIds,  // Use shuffled IDs
+              loop: 1,
+              controls: 0,
+              modestbranding: 1,
+              rel: 0,
+              iv_load_policy: 3,
+              disablekb: 1,
+              autoplay: 0
+            },
+            events: {
+              'onStateChange': e => {
+                const playing = e.data === YT.PlayerState.PLAYING;
+                document.getElementById('play').classList.toggle('playing', playing);
+              }
+            }
+          });
+          player = shuffledPlayer;  // Reassign for button handlers
+        }
+      });
     }
+
+    // Button handlers (use 'player' which is now shuffled)
     document.getElementById('play').onclick = () => player.playVideo();
     document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('first').onclick = () => player.playVideoAt(0); // first song in list
-    document.getElementById('prev').onclick = () => player.previousVideo(); // previous song
-    document.getElementById('next').onclick = () => player.nextVideo(); // next song
+    document.getElementById('first').onclick = () => player.playVideoAt(0); // First in shuffled list
+    document.getElementById('prev').onclick = () => player.previousVideo(); // Previous in shuffled
+    document.getElementById('next').onclick = () => player.nextVideo(); // Next in shuffled
     document.getElementById('last').onclick = () => {
       const list = player.getPlaylist();
-      if (list && list.length > 0) player.playVideoAt(list.length - 1); // last song in list
+      if (list && list.length > 0) player.playVideoAt(list.length - 1); // Last in shuffled
     };
   </script>
   
