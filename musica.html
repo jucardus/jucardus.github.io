@@ -79,84 +79,50 @@
 
   <div id="player"></div>
 
-<script>
-  const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
-
-  let player;
-  let originalPlayerVars;
-
-  function onYouTubeIframeAPIReady() {
-    originalPlayerVars = {
-      listType: 'playlist',
-      list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-      loop: 1,
-      playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-      controls: 0,
-      modestbranding: 1,
-      rel: 0,
-      iv_load_policy: 3,
-      disablekb: 1,
-      autoplay: 0
-    };
-
-    player = new YT.Player('player', {
-      height: '1',
-      width: '1',
-      playerVars: originalPlayerVars,
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': e => {
-          const playing = e.data === YT.PlayerState.PLAYING;
-          document.getElementById('play').classList.toggle('playing', playing);
-        }
-      }
-    });
-  }
-
-  function onPlayerReady(event) {
-    // Load the full playlist once ready
-    player.getPlaylist().then(playlist => {
-      if (playlist && playlist.length > 1) {
-        // Shuffle the video IDs (Fisher-Yates shuffle for true randomness)
-        for (let i = playlist.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [playlist[i], playlist[j]] = [playlist[j], playlist[i]];
-        }
-        // Reload player with shuffled playlist (as comma-separated video IDs)
-        const shuffledPlaylist = playlist.join(',');
-        const shuffledVars = { ...originalPlayerVars, playlist: shuffledPlaylist, shuffle: 1 };
-        delete shuffledVars.list; // Remove original list to use custom playlist
-        delete shuffledVars.listType;
-
-        // Destroy and recreate player with shuffle
-        player.destroy();
-        player = new YT.Player('player', {
-          height: '1',
-          width: '1',
-          playerVars: shuffledVars,
-          events: {
-            'onStateChange': e => {
-              const playing = e.data === YT.PlayerState.PLAYING;
-              document.getElementById('play').classList.toggle('playing', playing);
-            }
+  <script>
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
+    let player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '1',
+        width: '1',
+        playerVars: {
+          listType: 'playlist',
+          list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          loop: 1,
+          playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          controls: 0,
+          modestbranding: 1,
+          rel: 0,
+          iv_load_policy: 3,
+          disablekb: 1,
+          autoplay: 0
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': e => {
+            const playing = e.data === YT.PlayerState.PLAYING;
+            document.getElementById('play').classList.toggle('playing', playing);
           }
-        });
-      }
-    });
-  }
-
-  document.getElementById('play').onclick = () => player.playVideo();
-  document.getElementById('pause').onclick = () => player.pauseVideo();
-  document.getElementById('first').onclick = () => player.playVideoAt(0); // first song in list
-  document.getElementById('prev').onclick = () => player.previousVideo(); // previous song
-  document.getElementById('next').onclick = () => player.nextVideo(); // next song
-  document.getElementById('last').onclick = () => {
-    const list = player.getPlaylist();
-    if (list && list.length > 0) player.playVideoAt(list.length - 1); // last song in list
-  };
-</script>
+        }
+      });
+    }
+    function onPlayerReady() {
+      player.setShuffle(1);
+      player.setShuffle(1);  // Call twice to ensure it shuffles the order
+    }
+    document.getElementById('play').onclick = () => player.playVideo();
+    document.getElementById('pause').onclick = () => player.pauseVideo();
+    document.getElementById('first').onclick = () => player.playVideoAt(0); // first song in list
+    document.getElementById('prev').onclick = () => player.previousVideo(); // previous song
+    document.getElementById('next').onclick = () => player.nextVideo(); // next song
+    document.getElementById('last').onclick = () => {
+      const list = player.getPlaylist();
+      if (list && list.length > 0) player.playVideoAt(list.length - 1); // last song in list
+    };
+  </script>
   
 </body>
 </html>
