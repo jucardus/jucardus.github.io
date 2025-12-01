@@ -3,3 +3,4 @@
 
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - 25-10-26
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - 25-11-04
+* [sill [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/l/sill-s.md) - 25-12-01
