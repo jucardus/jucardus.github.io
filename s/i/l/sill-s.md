@@ -3,6 +3,10 @@
 
 **sill [s.]** umbral (de una puerta), alféizar (de una ventana)
 
+### Moby Thesaurus
+
+sill, base, basement, basis, bearing wall, bed, bedding, bedrock, doorsill, doorstone, floor, flooring, fond, footing, foundation, fundament, fundamental, ground, grounds, groundsel, groundwork, hardpan, mudsill, pavement, principle, radical, riprap, rock bottom, rudiment, seat, solid ground, solid rock, stereobate, stylobate, substratum, substruction, substructure, terra firma, threshold, underbuilding, undercarriage, undergirding, underpinning, understruction, understructure, window sill
+
 [#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)  
 [#sustantivos-ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
 
