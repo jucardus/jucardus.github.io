@@ -40,7 +40,7 @@
 * [salvedad [f.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/a/l/salvedad-f.md) - Vocabulario español, Sustantivos españoles, Sustantivos femeninos españoles - 25-11-29
 * [Siempre que busques a Dios hacia...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/siempre-que-busques-a-dios-hacia.md) - Apotegmas - 25-11-04
 * [Si eres creyente sabes que debes orar...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/si-eres-creyente-sabes-que-debes-orar.md) - Reflexiones - 25-11-02
-* [sill [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/l/sill-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-01
+* [sill [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/l/sill-s.md) - Vocabulario inglés-español, Sustantivos ingleses - 25-12-01
 * [Sin importar si tu tradición es de los hombres...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/sin-importar-si-tu-tradicion-es-de-los-hombres.md) - Reflexiones - 25-11-04
 * [Si no amas al mundo como lo ama Dios](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/n/si-no-amas-al-mundo-como-lo-ama-dios.md) - Apotegmas - 25-11-04
 * [Si te pones una ristra de ajos al cuello...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/t/si-te-pones-una-ristra-de-ajos-al-cuello.md) - Reflexiones - 25-11-06
