@@ -95,74 +95,116 @@
 
   <div id="player"></div>
 
-  <script>
-    const tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
+<script>
+  // Load YouTube IFrame API
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  const firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    let player;
-    const titleDiv = document.getElementById('now-playing');
-    let hasStarted = false;
+  let player;
+  const titleDiv = document.getElementById('now-playing');
+  let hasStarted = false;
 
-    function updateTitle() {
-      if (!player || !player.getVideoData) return;
-      const data = player.getVideoData();
-      const title = data?.title || 'Reproduciendo...';
+  function updateTitle() {
+    if (!player || !player.getVideoData) return;
+
+    const data = player.getVideoData();
+    const title = data?.title || 'Reproduciendo...';
+    const videoId = data?.video_id || '';
+
+    // Clear previous content
+    titleDiv.innerHTML = '';
+    titleDiv.classList.add('show');
+
+    if (!videoId) {
       titleDiv.textContent = title;
-      titleDiv.classList.add('show');
+      return;
     }
 
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        height: '1', width: '1',
-        playerVars: {
-          listType: 'playlist',
-          list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-          loop: 1,
-          playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-          controls: 0, modestbranding: 1, rel: 0, iv_load_policy: 3, disablekb: 1, autoplay: 0
-        },
-        events: {
-          'onReady': () => {},
-          'onStateChange': e => {
-            const playing = e.data === YT.PlayerState.PLAYING;
-            document.getElementById('play').classList.toggle('playing', playing);
-            if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
-              setTimeout(updateTitle, 400);
-            }
+    const shortUrl = `https://youtu.be/${videoId}`;
+    const displayText = `${title} → ${shortUrl}`;
+
+    // Encode the full text safely for URL
+    const encodedText = encodeURIComponent(displayText);
+
+    // Create share link for X (formerly Twitter)
+    const xShareUrl = `https://x.com/intent/tweet?text=${encodedText}%0A%0A%23musica_jucardus`;
+
+    const a = document.createElement('a');
+    a.href = xShareUrl;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = displayText;
+    a.title = 'Share this video on X';
+    a.style.color = 'inherit';
+    a.style.textDecoration = 'underline';
+    a.style.cursor = 'pointer';
+
+    titleDiv.appendChild(a);
+  }
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '1',
+      width: '1',
+      playerVars: {
+        listType: 'playlist',
+        list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+        loop: 1,
+        playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+        controls: 0,
+        modestbranding: 1,
+        rel: 0,
+        iv_load_policy: 3,
+        disablekb: 1,
+        autoplay: 0
+      },
+      events: {
+        'onReady': () => {},
+        'onStateChange': e => {
+          const playing = e.data === YT.PlayerState.PLAYING;
+          document.getElementById('play').classList.toggle('playing', playing);
+
+          if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
+            setTimeout(updateTitle, 400);
           }
         }
-      });
-    }
-
-    document.getElementById('play').onclick = () => {
-      if (hasStarted) {
-        player.playVideo();
-        return;
       }
+    });
+  }
 
-      hasStarted = true;
-
-      player.setShuffle(true);
-      const playlist = player.getPlaylist();
-      const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
-      player.playVideoAt(randomIndex);
+  // Play / Start with shuffle
+  document.getElementById('play').onclick = () => {
+    if (hasStarted) {
       player.playVideo();
-      setTimeout(updateTitle, 700);
-    };
+      return;
+    }
+    hasStarted = true;
+    player.setShuffle({ shufflePlaylist: 1 });
+    const playlist = player.getPlaylist();
+    const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
+    player.playVideoAt(randomIndex);
+    setTimeout(updateTitle, 700);
+  };
 
-    document.getElementById('pause').onclick = () => player.pauseVideo();
-    document.getElementById('prev').onclick   = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
-    document.getElementById('next').onclick   = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
-    document.getElementById('first').onclick  = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
-    document.getElementById('last').onclick   = () => {
-      const list = player.getPlaylist();
-      if (list?.length) player.playVideoAt(list.length - 1);
-      setTimeout(updateTitle, 800);
-    };
-    
-    setInterval(() => { if (hasStarted) updateTitle(); }, 5000);
-  </script>
+  document.getElementById('pause').onclick = () => player.pauseVideo();
+  document.getElementById('prev').onclick = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
+  document.getElementById('next').onclick = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
+  document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
+  document.getElementById('last').onclick = () => {
+    const list = player.getPlaylist();
+    if (list && list.length > 0) {
+      player.playVideoAt(list.length - 1);
+    }
+    setTimeout(updateTitle, 800);
+  };
+
+  // Keep title in sync in case video changes externally
+  setInterval(() => {
+    if (hasStarted) updateTitle();
+  }, 5000);
+</script>
 
 </body>
 </html>
