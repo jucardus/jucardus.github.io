@@ -95,101 +95,74 @@
 
   <div id="player"></div>
 
-<script>
-  const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
-  let player;
-  const titleDiv = document.getElementById('now-playing');
-  let hasStarted = false;
+  <script>
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
 
-  function updateTitle() {
-    if (!player || !player.getVideoData) {
-      titleDiv.textContent = 'Cargando...';
-      return;
-    }
+    let player;
+    const titleDiv = document.getElementById('now-playing');
+    let hasStarted = false;
 
-    const data = player.getVideoData();
-    const rawTitle = data.title || 'Reproduciendo...';
-    const videoId = data.video_id || '';
-
-    // If YouTube still hasn't given us proper data (happens a lot with hidden players), show title anyway
-    if (rawTitle === '' || rawTitle === 'Reproduciendo...') {
-      titleDiv.textContent = 'Reproduciendo...';
+    function updateTitle() {
+      if (!player || !player.getVideoData) return;
+      const data = player.getVideoData();
+      const title = data?.title || 'Reproduciendo...';
+      titleDiv.textContent = title;
       titleDiv.classList.add('show');
-      return;
     }
 
-    const shortUrl = videoId ? `https://youtu.be/${videoId}` : '';
-    const tweetText = shortUrl ? `${rawTitle} → ${shortUrl}` : rawTitle;
-
-    const shareUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
-
-    titleDiv.innerHTML = '';
-
-    const link = document.createElement('a');
-    link.href = shareUrl;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.textContent = rawTitle;
-    link.style.color = 'inherit';
-    link.style.textDecoration = 'none';
-
-    titleDiv.appendChild(link);
-    titleDiv.classList.add('show');
-  }
-
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '1', width: '1',
-      playerVars: {
-        listType: 'playlist',
-        list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-        loop: 1,
-        playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-        controls: 0, modestbranding: 1, rel: 0, iv_load_policy: 3, disablekb: 1, autoplay: 0
-      },
-      events: {
-        'onReady': () => {},
-        'onStateChange': e => {
-          const playing = e.data === YT.PlayerState.PLAYING;
-          document.getElementById('play').classList.toggle('playing', playing);
-          if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
-            setTimeout(updateTitle, 400);
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '1', width: '1',
+        playerVars: {
+          listType: 'playlist',
+          list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          loop: 1,
+          playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+          controls: 0, modestbranding: 1, rel: 0, iv_load_policy: 3, disablekb: 1, autoplay: 0
+        },
+        events: {
+          'onReady': () => {},
+          'onStateChange': e => {
+            const playing = e.data === YT.PlayerState.PLAYING;
+            document.getElementById('play').classList.toggle('playing', playing);
+            if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
+              setTimeout(updateTitle, 400);
+            }
           }
         }
-      }
-    });
-  }
-
-  document.getElementById('play').onclick = () => {
-    if (hasStarted) {
-      player.playVideo();
-      return;
+      });
     }
-    hasStarted = true;
-    player.setShuffle(true);
-    const playlist = player.getPlaylist();
-    const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
-    player.playVideoAt(randomIndex);
-    player.playVideo();
-    setTimeout(updateTitle, 700);
-  };
 
-  document.getElementById('pause').onclick = () => player.pauseVideo();
-  document.getElementById('prev').onclick = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
-  document.getElementById('next').onclick = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
-  document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
-  document.getElementById('last').onclick = () => {
-    const list = player.getPlaylist();
-    if (list?.length) player.playVideoAt(list.length - 1);
-    setTimeout(updateTitle, 800);
-  };
+    document.getElementById('play').onclick = () => {
+      if (hasStarted) {
+        player.playVideo();
+        return;
+      }
 
-  // This line was the main reason it got stuck — 5 seconds is sometimes not enough
-  // We now update more often right after playback starts and then fall back to 5 s
-  setInterval(() => { if (hasStarted) updateTitle(); }, 3000);
-</script>
-  
-  </body>
+      hasStarted = true;
+
+      player.setShuffle(true);
+      const playlist = player.getPlaylist();
+      const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
+      player.playVideoAt(randomIndex);
+      player.playVideo();
+      setTimeout(updateTitle, 700);
+    };
+
+    document.getElementById('pause').onclick = () => player.pauseVideo();
+    document.getElementById('prev').onclick   = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('next').onclick   = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
+    document.getElementById('first').onclick  = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
+    document.getElementById('last').onclick   = () => {
+      const list = player.getPlaylist();
+      if (list?.length) player.playVideoAt(list.length - 1);
+      setTimeout(updateTitle, 800);
+    };
+    
+    setInterval(() => { if (hasStarted) updateTitle(); }, 5000);
+  </script>
+
+</body>
 </html>
