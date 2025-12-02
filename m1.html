@@ -111,73 +111,37 @@
     let player;
     const titleDiv = document.getElementById('now-playing');
     let hasStarted = false;
-    let currentVideoId = '';
-    let currentVideoTitle = '';
-
-    function getCleanVideoUrl() {
-      // Use the stored video ID if we have it
-      if (currentVideoId) {
-        return `https://www.youtube.com/watch?v=${currentVideoId}`;
-      }
-      
-      // Fallback to player.getVideoUrl() if available
-      if (!player || !player.getVideoUrl) return '';
-      const fullUrl = player.getVideoUrl();
-      try {
-        const url = new URL(fullUrl);
-        const videoId = url.searchParams.get('v');
-        return videoId ? `https://www.youtube.com/watch?v=${videoId}` : fullUrl;
-      } catch {
-        return fullUrl;
-      }
-    }
-
-    function createShareLink(title) {
-      // Only create link if we have a real title
-      if (!title || title === 'Reproduciendo...' || title === '') {
-        return title || 'Reproduciendo...';
-      }
-      
-      const videoUrl = getCleanVideoUrl();
-      const shareText = `${title} → ${videoUrl}`;
-      const encodedText = encodeURIComponent(shareText);
-      const twitterUrl = `https://x.com/intent/tweet?text=${encodedText}`;
-      
-      return `<a href="${twitterUrl}" target="_blank" rel="noopener noreferrer">${title}</a>`;
-    }
+    let currentVideoUrl = '';
 
     function updateTitle() {
       if (!player || !player.getVideoData) return;
+      const data = player.getVideoData();
+      const title = data?.title || 'Reproduciendo...';
       
-      try {
-        const data = player.getVideoData();
-        const title = data?.title || '';
-        const videoId = data?.video_id || '';
-        
-        // Store the video ID for later use
-        if (videoId) {
-          currentVideoId = videoId;
+      // Store the current video URL for Twitter sharing
+      if (player.getVideoUrl) {
+        try {
+          const fullUrl = player.getVideoUrl();
+          const url = new URL(fullUrl);
+          const videoId = url.searchParams.get('v');
+          currentVideoUrl = videoId ? `https://www.youtube.com/watch?v=${videoId}` : fullUrl;
+        } catch (e) {
+          currentVideoUrl = '';
         }
-        
-        // Only update if we have a valid title
-        if (title && title !== '') {
-          currentVideoTitle = title;
-          titleDiv.innerHTML = createShareLink(title);
-          titleDiv.classList.add('show');
-        } else if (currentVideoTitle) {
-          // Show the last known title if available
-          titleDiv.innerHTML = createShareLink(currentVideoTitle);
-          titleDiv.classList.add('show');
-        } else {
-          // Fallback to plain text
-          titleDiv.textContent = 'Haz clic en ▶️ para comenzar';
-          titleDiv.classList.add('show');
-        }
-      } catch (error) {
-        // If anything fails, show fallback text
-        titleDiv.textContent = 'Reproduciendo...';
-        titleDiv.classList.add('show');
       }
+      
+      // Create Twitter share link only if we have a valid title and URL
+      if (title !== 'Reproduciendo...' && currentVideoUrl) {
+        const shareText = `${title} → ${currentVideoUrl}`;
+        const encodedText = encodeURIComponent(shareText);
+        const twitterUrl = `https://x.com/intent/tweet?text=${encodedText}`;
+        titleDiv.innerHTML = `<a href="${twitterUrl}" target="_blank" rel="noopener noreferrer">${title}</a>`;
+      } else {
+        // Fallback to plain text
+        titleDiv.textContent = title;
+      }
+      
+      titleDiv.classList.add('show');
     }
 
     function onYouTubeIframeAPIReady() {
@@ -191,11 +155,7 @@
           controls: 0, modestbranding: 1, rel: 0, iv_load_policy: 3, disablekb: 1, autoplay: 0
         },
         events: {
-          'onReady': () => {
-            // Show initial message when player is ready
-            titleDiv.textContent = 'Haz clic en ▶️ para comenzar';
-            titleDiv.classList.add('show');
-          },
+          'onReady': () => {},
           'onStateChange': e => {
             const playing = e.data === YT.PlayerState.PLAYING;
             document.getElementById('play').classList.toggle('playing', playing);
