@@ -99,43 +99,34 @@
   const tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
   document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
-
   let player;
   const titleDiv = document.getElementById('now-playing');
   let hasStarted = false;
-
+  
   function updateTitle() {
     if (!player || !player.getVideoData) return;
-
     const data = player.getVideoData();
     const title = data?.title || 'Reproduciendo...';
     const videoId = data?.video_id || '';
-
+    
+    // Clear previous content
     titleDiv.innerHTML = '';
+    
+    // Create link for sharing on X (Twitter)
+    const shareUrl = `https://x.com/intent/tweet?text=${encodeURIComponent('Mira este vídeo: "' + title + '"')}${videoId ? encodeURIComponent(' https://youtu.be/' + videoId) : ''}`;
+    
+    const link = document.createElement('a');
+    link.href = shareUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = title;
+    link.style.color = 'inherit';
+    link.style.textDecoration = 'none';
+    
+    titleDiv.appendChild(link);
     titleDiv.classList.add('show');
-
-    if (!videoId) {
-      titleDiv.textContent = title;
-      return;
-    }
-
-    const shortUrl = `https://youtu.be/${videoId}`;
-    const displayText = `${title} → ${shortUrl}`;
-    const encodedText = encodeURIComponent(displayText);
-    const xUrl = `https://x.com/intent/tweet?text=${encodedText}`;
-
-    const a = document.createElement('a');
-    a.href = xUrl;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.textContent = displayText;
-    a.style.color = 'inherit';
-    a.style.textDecoration = 'underline';
-    a.title = 'Share on X';
-
-    titleDiv.appendChild(a);
   }
-
+  
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
       height: '1', width: '1',
@@ -149,7 +140,8 @@
       events: {
         'onReady': () => {},
         'onStateChange': e => {
-          document.getElementById('play').classList.toggle('playing', e.data === YT.PlayerState.PLAYING);
+          const playing = e.data === YT.PlayerState.PLAYING;
+          document.getElementById('play').classList.toggle('playing', playing);
           if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
             setTimeout(updateTitle, 400);
           }
@@ -157,24 +149,20 @@
       }
     });
   }
-
+  
   document.getElementById('play').onclick = () => {
     if (hasStarted) {
       player.playVideo();
       return;
     }
     hasStarted = true;
-
-    // ← THIS IS THE EXACT LINE THAT ALWAYS WORKED FOR YOU BEFORE
-    player.setShuffle(true);                                     // ← keep this!
-    
+    player.setShuffle(true);
     const playlist = player.getPlaylist();
     const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
     player.playVideoAt(randomIndex);
     player.playVideo();
     setTimeout(updateTitle, 700);
   };
-
   document.getElementById('pause').onclick = () => player.pauseVideo();
   document.getElementById('prev').onclick = () => { player.previousVideo(); setTimeout(updateTitle, 800); };
   document.getElementById('next').onclick = () => { player.nextVideo(); setTimeout(updateTitle, 800); };
@@ -184,7 +172,7 @@
     if (list?.length) player.playVideoAt(list.length - 1);
     setTimeout(updateTitle, 800);
   };
-
+ 
   setInterval(() => { if (hasStarted) updateTitle(); }, 5000);
 </script>
   
