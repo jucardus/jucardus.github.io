@@ -106,20 +106,28 @@
   function updateTitle() {
     if (!player || !player.getVideoData) return;
     const data = player.getVideoData();
-    const title = data?.title || 'Reproduciendo...';
+    const rawTitle = data?.title || 'Reproduciendo...';
     const videoId = data?.video_id || '';
     
-    // Clear previous content
-    titleDiv.innerHTML = '';
+    // Sanitize title for URL (X intent is very forgiving, but we encode properly)
+    const encodedTitle = encodeURIComponent(rawTitle.trim());
+    const shortUrl = videoId ? `https://youtu.be/${videoId}` : '';
     
-    // Create link for sharing on X (Twitter)
-    const shareUrl = `https://x.com/intent/tweet?text=${encodeURIComponent('Mira este vídeo: "' + title + '"')}${videoId ? encodeURIComponent(' https://youtu.be/' + videoId) : ''}`;
+    // Build the exact text X will pre-fill
+    const tweetText = shortUrl 
+      ? `${rawTitle} → ${shortUrl}`
+      : rawTitle;
+    
+    const shareUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+    
+    // Clear and rebuild the link
+    titleDiv.innerHTML = '';
     
     const link = document.createElement('a');
     link.href = shareUrl;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-    link.textContent = title;
+    link.textContent = rawTitle;
     link.style.color = 'inherit';
     link.style.textDecoration = 'none';
     
@@ -174,7 +182,6 @@
   };
  
   setInterval(() => { if (hasStarted) updateTitle(); }, 5000);
-</script>
-  
+</script>  
 </body>
 </html>
