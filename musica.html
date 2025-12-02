@@ -96,11 +96,9 @@
   <div id="player"></div>
 
 <script>
-  // Load YouTube IFrame API
   const tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
-  const firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  document.getElementsByTagName('script')[0].parentNode.insertBefore(tag, document.getElementsByTagName('script')[0]);
 
   let player;
   const titleDiv = document.getElementById('now-playing');
@@ -113,66 +111,45 @@
     const title = data?.title || 'Reproduciendo...';
     const videoId = data?.video_id || '';
 
-    // Clear previous content
     titleDiv.innerHTML = '';
     titleDiv.classList.add('show');
 
     if (!videoId) {
-      const fallbackSpan = document.createElement('span');
-      fallbackSpan.textContent = title;
-      titleDiv.appendChild(fallbackSpan);
+      titleDiv.textContent = title;
       return;
     }
 
     const shortUrl = `https://youtu.be/${videoId}`;
     const displayText = `${title} → ${shortUrl}`;
-
-    // Encode the full text safely for URL
     const encodedText = encodeURIComponent(displayText);
-
-    // Create share link for X (formerly Twitter)
-    const xShareUrl = `https://x.com/intent/tweet?text=${encodedText}`;
+    const xUrl = `https://x.com/intent/tweet?text=${encodedText}`;
 
     const a = document.createElement('a');
-    a.href = xShareUrl;
+    a.href = xUrl;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
     a.textContent = displayText;
-    a.title = 'Share this video on X';
     a.style.color = 'inherit';
     a.style.textDecoration = 'underline';
-    a.style.cursor = 'pointer';
+    a.title = 'Share on X';
 
     titleDiv.appendChild(a);
   }
 
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '1',
-      width: '1',
+      height: '1', width: '1',
       playerVars: {
         listType: 'playlist',
         list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
         loop: 1,
         playlist: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-        controls: 0,
-        modestbranding: 1,
-        rel: 0,
-        iv_load_policy: 3,
-        disablekb: 1,
-        autoplay: 0
+        controls: 0, modestbranding: 1, rel: 0, iv_load_policy: 3, disablekb: 1, autoplay: 0
       },
       events: {
-        'onReady': () => {
-          console.log('YouTube player ready'); // Optional: For debugging
-        },
+        'onReady': () => {},
         'onStateChange': e => {
-          const playing = e.data === YT.PlayerState.PLAYING;
-          const playButton = document.getElementById('play');
-          if (playButton) {
-            playButton.classList.toggle('playing', playing);
-          }
-
+          document.getElementById('play').classList.toggle('playing', e.data === YT.PlayerState.PLAYING);
           if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
             setTimeout(updateTitle, 400);
           }
@@ -181,35 +158,21 @@
     });
   }
 
-  // Play / Start with shuffle
   document.getElementById('play').onclick = () => {
     if (hasStarted) {
       player.playVideo();
       return;
     }
     hasStarted = true;
+
+    // ← THIS IS THE EXACT LINE THAT ALWAYS WORKED FOR YOU BEFORE
+    player.setShuffle(true);                                     // ← keep this!
     
-    // Fixed: Correct setShuffle syntax for modern YouTube API
-    player.setShuffle({ shufflePlaylist: true });
-    
-    // Load the playlist first if needed
-    player.loadPlaylist({
-      list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
-      index: 0
-    });
-    
-    // Get playlist and pick random index
-    setTimeout(() => {
-      const playlist = player.getPlaylist();
-      if (playlist && playlist.length > 0) {
-        const randomIndex = Math.floor(Math.random() * playlist.length);
-        player.playVideoAt(randomIndex);
-      } else {
-        // Fallback: Play the first video if playlist load fails
-        player.playVideo();
-      }
-      setTimeout(updateTitle, 700);
-    }, 500);
+    const playlist = player.getPlaylist();
+    const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
+    player.playVideoAt(randomIndex);
+    player.playVideo();
+    setTimeout(updateTitle, 700);
   };
 
   document.getElementById('pause').onclick = () => player.pauseVideo();
@@ -218,17 +181,12 @@
   document.getElementById('first').onclick = () => { player.playVideoAt(0); setTimeout(updateTitle, 800); };
   document.getElementById('last').onclick = () => {
     const list = player.getPlaylist();
-    if (list && list.length > 0) {
-      player.playVideoAt(list.length - 1);
-    }
+    if (list?.length) player.playVideoAt(list.length - 1);
     setTimeout(updateTitle, 800);
   };
 
-  // Keep title in sync in case video changes externally
-  setInterval(() => {
-    if (hasStarted) updateTitle();
-  }, 5000);
+  setInterval(() => { if (hasStarted) updateTitle(); }, 5000);
 </script>
-
+  
 </body>
 </html>
