@@ -28,6 +28,6 @@
 * [Música clásica](https://jucardus.github.io/musica.html) - m.jucardus.com
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
 * [Postimages](https://postimg.cc/user/jucardus) - img.jucardus.com
-* [Repositorio GitHub](https://g.jucardus.com) - g.jucardus.com
+* [Repositorio GitHub](https://jucardus.github.io/repo) - g.jucardus.com
 * [Tumblr de difusión](https://jucardus.tumblr.com/) - t.jucardus.com
 * [X Twitter](https://x.com/jucardus) - x.jucardus.com
