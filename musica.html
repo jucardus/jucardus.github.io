@@ -118,7 +118,9 @@
     titleDiv.classList.add('show');
 
     if (!videoId) {
-      titleDiv.textContent = title;
+      const fallbackSpan = document.createElement('span');
+      fallbackSpan.textContent = title;
+      titleDiv.appendChild(fallbackSpan);
       return;
     }
 
@@ -129,7 +131,7 @@
     const encodedText = encodeURIComponent(displayText);
 
     // Create share link for X (formerly Twitter)
-    const xShareUrl = `https://x.com/intent/tweet?text=${encodedText}%0A%0A%23musica_jucardus`;
+    const xShareUrl = `https://x.com/intent/tweet?text=${encodedText}`;
 
     const a = document.createElement('a');
     a.href = xShareUrl;
@@ -161,10 +163,15 @@
         autoplay: 0
       },
       events: {
-        'onReady': () => {},
+        'onReady': () => {
+          console.log('YouTube player ready'); // Optional: For debugging
+        },
         'onStateChange': e => {
           const playing = e.data === YT.PlayerState.PLAYING;
-          document.getElementById('play').classList.toggle('playing', playing);
+          const playButton = document.getElementById('play');
+          if (playButton) {
+            playButton.classList.toggle('playing', playing);
+          }
 
           if (e.data === YT.PlayerState.PLAYING || e.data === YT.PlayerState.PAUSED) {
             setTimeout(updateTitle, 400);
@@ -181,11 +188,28 @@
       return;
     }
     hasStarted = true;
-    player.setShuffle({ shufflePlaylist: 1 });
-    const playlist = player.getPlaylist();
-    const randomIndex = Math.floor(Math.random() * (playlist ? playlist.length : 1));
-    player.playVideoAt(randomIndex);
-    setTimeout(updateTitle, 700);
+    
+    // Fixed: Correct setShuffle syntax for modern YouTube API
+    player.setShuffle({ shufflePlaylist: true });
+    
+    // Load the playlist first if needed
+    player.loadPlaylist({
+      list: 'PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p',
+      index: 0
+    });
+    
+    // Get playlist and pick random index
+    setTimeout(() => {
+      const playlist = player.getPlaylist();
+      if (playlist && playlist.length > 0) {
+        const randomIndex = Math.floor(Math.random() * playlist.length);
+        player.playVideoAt(randomIndex);
+      } else {
+        // Fallback: Play the first video if playlist load fails
+        player.playVideo();
+      }
+      setTimeout(updateTitle, 700);
+    }, 500);
   };
 
   document.getElementById('pause').onclick = () => player.pauseVideo();
