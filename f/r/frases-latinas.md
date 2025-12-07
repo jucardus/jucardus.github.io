@@ -3,6 +3,7 @@
 
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - 25-12-07
 * [Amicus meus in villa magna habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amicus-meus-in-villa-magna-habitat.md) - 25-12-07
+* [Canis parvus in via currit.](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/canis-parvus-in-via-currit.md) - 25-12-07
 * [Domus magna est.](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est.md) - 25-12-07
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - 25-10-27
 * [Ego et familia mea in villa parva habitamus.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-et-familia-mea-in-villa-parva-habitamus.md) - 25-12-07
