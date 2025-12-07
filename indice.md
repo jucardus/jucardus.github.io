@@ -14,6 +14,7 @@
 * [Conjunciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/n/conjunciones-adversativas.md) - Gramática española - 25-11-04
 * [Domus magna est. [fr.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est-fr.md) - Frases latinas - 25-11-16
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - Frases latinas - 25-10-27
+* [Ego et familia mea in villa parva habitamus.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-et-familia-mea-in-villa-parva-habitamus.md) - Frases chinas - 25-12-07
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - Frases latinas - 25-10-27
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-12-07
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27
