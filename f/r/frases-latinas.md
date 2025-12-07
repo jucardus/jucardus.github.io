@@ -5,7 +5,7 @@
 * [Domus magna est. [fr.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est-fr.md) - 25-11-16
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - 25-10-27
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - 25-10-27
-* [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - 25-10-27
+* [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - 25-12-07
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - 25-10-27
 * [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - 25-10-31
 * [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - 25-10-31
