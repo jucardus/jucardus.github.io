@@ -12,7 +12,6 @@
 * [YouTube ¦ mi lista de reproducción de música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/y/o/u/youtube-mi-lista-de-reproduccion-de-musica-clasica.md) - Enlaces varios, YouTube (enlaces) - 25-11-29 08:44:13
 * [vocabulario español ¦ facto](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-facto.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-21 10:54:22
 * [vocabulario español ¦ felón](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-felon.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-21 10:50:45
-* [Domus magna est. [fr.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est-fr.md) - Frases latinas - 25-11-16 10:13:04
 * [tartufo [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/t/a/r/tartufo-m.md) - Vocabulario español, Diccionario multilingüe, Sustantivos españoles, Sustantivos masculinos españoles - 25-11-14 20:55:26
 * [tartufo [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/t/a/r/tartufo-m.md) - Vocabulario español, Sustantivos españoles, Sustantivos masculinos españoles - 25-11-14 20:39:05
 * [tartufo [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/t/a/r/tartufo-m.md) - Vocabulario español - 25-11-14 20:38:46
