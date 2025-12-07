@@ -8,6 +8,7 @@
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave - 25-10-27
 * [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
+* [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - Frases latinas - 25-12-07
 * [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
 * [códigos QR ¦ en QuickChart con leyenda](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/d/codigos-qr-en-quickchart-con-leyenda.md) - Enlaces varios, Códigos QR (enlaces) - 25-11-01
 * [Conjunciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/n/conjunciones-adversativas.md) - Gramática española - 25-11-04
