@@ -5,3 +5,4 @@
 * [El aburrimiento se cura con curiosidad...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/a/el-aburrimiento-se-cura-con-curiosidad.md) - 25-12-07
 * [El castigo del mentiroso no es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/c/el-castigo-del-mentiroso-no-es-que.md) - 25-10-30
 * [La enfermedad contraída por...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/e/la-enfermedad-contraida-por.md) - 25-11-02
+* [The world will never lack wonders...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-world-will-never-lack-wonders.md) - 25-12-07
