@@ -7,6 +7,7 @@
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Programación, Linux Mint - 25-10-27
 * [Actualización del navegador Brave con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-del-navegador-brave-con-bash.md) - Bash, Programación, Brave - 25-10-27
 * [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - Apotegmas - 25-10-27
+* [All the war-propaganda, all the screaming...](https://github.com/jucardus/jucardus.github.io/blob/main/a/l/l/all-the-war-propaganda-all-the-screaming.md) - Citas - 25-12-07
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - Frases latinas - 25-12-07
 * [Amicus meus in villa magna habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amicus-meus-in-villa-magna-habitat.md) - Frases latinas - 25-12-07
