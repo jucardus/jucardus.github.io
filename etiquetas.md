@@ -22,6 +22,7 @@
 * [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
 * [Frases multilingües](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-multilingves.md)
 * [Gauchos](https://github.com/jucardus/jucardus.github.io/blob/main/g/a/gauchos.md)
+* [Gilbert Keith Chesterton](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/gilbert-keith-chesterton.md)
 * [GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/github.md)
 * [Google Chrome](https://github.com/jucardus/jucardus.github.io/blob/main/g/o/google-chrome.md)
 * [Gramática china](https://github.com/jucardus/jucardus.github.io/blob/main/g/r/gramatica-china.md)
