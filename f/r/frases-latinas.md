@@ -4,6 +4,7 @@
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - 25-12-07
 * [Domus magna est. [fr.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est-fr.md) - 25-11-16
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - 25-10-27
+* [Ego et familia mea in villa parva habitamus.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-et-familia-mea-in-villa-parva-habitamus.md) - 25-12-07
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - 25-10-27
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - 25-12-07
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - 25-10-27
