@@ -1,5 +1,5 @@
 # Parvus puer in villa habitat. [fr.]
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=Parvus+puer+in+villa+habitat.+%5Bfr.%5D+%E2%80%94+Frases+chinas%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fp%2Fa%2Fr%2Fparvus-puer-in-villa-habitat-fr.md%0A%0A%23frases_chinas_jucardus) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=Parvus+puer+in+villa+habitat.+%5Bfr.%5D+%E2%80%94+Frases+latinas%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fp%2Fa%2Fr%2Fparvus-puer-in-villa-habitat-fr.md%0A%0A%23frases_latinas_jucardus) ]
 
 * a. Parvus.- pequeño (masculino nominativo singular del adjetivo _parvus_)
 * b. puer.- muchacho (nominativo singular del sustantivo masculino _puer_)
@@ -10,6 +10,6 @@
 * {TR} El muchachito vive en la casa de campo. [fr.]
 * {TR} El pequeño muchacho vive en la casa de campo. [fr.]
 
-[#frases-chinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-chinas.md)
+[#frases-latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
 
-<sup>25-12-07 16:33:02</sup>
+<sup>25-12-07 16:33:42</sup>
