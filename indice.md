@@ -15,7 +15,7 @@
 * [Domus magna est. [fr.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est-fr.md) - Frases latinas - 25-11-16
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - Frases latinas - 25-10-27
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - Frases latinas - 25-10-27
-* [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-10-27
+* [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-12-07
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27
 * [El castigo del mentiroso no es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/c/el-castigo-del-mentiroso-no-es-que.md) - Citas - 25-10-30
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27
