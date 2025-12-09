@@ -4,16 +4,14 @@
 * **[Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md)** - Todas las entradas del repositorio según son creadas, con las más recientes a la cabeza.
 * **[Etiquetas todas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md)** - Etiquetas o temas para clasificar y agrupar el contenido.
 * **[Índice alfabético](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md)** - Entradas del repositorio en orden alfabético, en el futuro clasificadas según la letra inicial.
-* **[Busca rápida](https://jucardus.github.io/busca.html)** - Funcional únicamente en la vista HTML de este sitio (jucardus.github.io), para buscar entre los títulos y subtítulos de todas las subpáginas.
-* **[Repositorio Jucardus](https://jucardus.github.io/repo)** - En caso que desees navegar y hacer buscas en el contenido de este sitio en su formato original. Enlace corto: **r.jucardus.com**.
 * **Traducciones al español** - [ en preparación ]
 
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Contacto:** [jucardus en gmail punto com](https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=4&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Ubuntu&captionFontSize=19&format=png)
+* **Contacto:** [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
 * **Pagos y donaciones:** [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
-* **Sitio central:** [linktr.ee/jucardus](https://linktr.ee/jucardus)
+* **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
 
 ### Mis sitios web
 
