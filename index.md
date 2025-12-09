@@ -21,7 +21,7 @@
 * [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
 * [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
 * [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
-* [GitHub Jucardus](https://jucardus.github.io/repo) - g.jucardus.com
+* [GitHub Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) - g.jucardus.com
 * [Invitación a pCloud](https://is.gd/ipcloud) - i.jucardus.com
 * [Linktree Jucardus](https://linktr.ee/jucardus) - lt.jucardus.com
 * [Música clásica](https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p) - m.jucardus.com
