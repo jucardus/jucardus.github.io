@@ -21,12 +21,12 @@
 * [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
 * [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
 * [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
+* [GitHub Jucardus](https://jucardus.github.io/repo) - g.jucardus.com
 * [Invitación a pCloud](https://is.gd/ipcloud) - i.jucardus.com
 * [Linktree Jucardus](https://linktr.ee/jucardus) - lt.jucardus.com
-* [Mega Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g) - mega.jucardus.com
 * [Música clásica](https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p) - m.jucardus.com
 * [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
 * [Postimages](https://postimg.cc/user/jucardus) - img.jucardus.com
-* [Repositorio GitHub](https://jucardus.github.io/repo) - g.jucardus.com
+* [Repositorio Jucardus](https://mega.nz/folder/RFF0BByY#a1ur6uzA4H0XH0vopBFp5g) - r.jucardus.com
 * [Tumblr de difusión](https://jucardus.tumblr.com/) - t.jucardus.com
 * [X Twitter](https://x.com/jucardus) - x.jucardus.com
