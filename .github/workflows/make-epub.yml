@@ -1,40 +1,52 @@
 name: Build eBook from Markdown
 on:
   push:
-    branches: [main, master]
-  workflow_dispatch:  # Allows manual trigger
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      custom_title:
+        description: 'Jucardus'
+        required: false
+        default: 'My Documentation'
+      custom_author:
+        description: 'Julio Cárdenas Pelizzari ©'
+        required: false
+        default: 'GitHub User'
 
 jobs:
   create-epub:
     runs-on: ubuntu-latest
     steps:
-      # 1. Get all your files
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Gets ALL files
+          fetch-depth: 0
       
-      # 2. Use a pre-made action to convert everything
-      - name: Convert all MD files to EPUB
+      - name: Generate EPUB
         uses: michaelcurrin/convert-to-epub-action@v1.3.1
         with:
-          input-path: '**/*.md'  # Finds ALL markdown files
-          output-path: 'book.epub'
-          book-title: 'Your Book Title'
-          author: 'Your Name'
+          input-path: '**/*.md'
+          exclude-pattern: 'node_modules/**, .git/**, tests/**, vendor/**'
+          output-path: 'docs.epub'
+          book-title: '${{ github.event.inputs.custom_title }}'
+          author: '${{ github.event.inputs.custom_author }}'
+          language: 'en-US'
+          add-toc: true
+          toc-depth: 4
+          number-sections: true
       
-      # 3. Make the EPUB available for download
-      - name: Upload EPUB as artifact
+      - name: Upload EPUB
         uses: actions/upload-artifact@v4
         with:
-          name: ebook
-          path: book.epub
+          name: documentation-ebook
+          path: docs.epub
           retention-days: 30
       
-      # 4. Optional: Create a release with the EPUB
-      - name: Create Release
+      - name: Upload to Releases (Optional)
         if: github.event_name == 'workflow_dispatch'
         uses: softprops/action-gh-release@v1
         with:
-          files: book.epub
-          tag_name: epub-${{ github.run_number }}
+          files: docs.epub
+          tag_name: epub-v${{ github.run_number }}
           name: "eBook Release"
+          body: "Auto-generated EPUB from markdown files"
