@@ -1,6 +1,8 @@
 # Actividad reciente en Jucardus
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad+reciente+en+Jucardus+%E2%80%94+Actividad+reciente%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Freadme.md%0A%0A%23actividad_reciente_jucardus) ]
 
+**25-12-09** - Removí todos los enlaces a la página HTML de busca en mi repositorio, antes presentes en el menú de navegación debajo de todos los títulos de los documentos *.md.
+
 **25-12-07** - Algunas implementaciones en la página **[Enlaces](https://jucrdus.github.io/enlaces)**. Ahora las entradas que se muestran al inicio y también después de una busca, tienen la nueva función de buscar el tema en toda la base de datos clicando en el tema de la entrada, y también la de copiar el contenido de la entrada completa clicando en el subtema, en caso de que el usuario desee compartirla en las redes sociales o simplemente copiarla.
 
 **25-12-04** - Se ha implementado la paginación de resultados en la página de enlaces [jucardus.github.io/enlaces](https://jucardus.github.io/enlaces.html), también accesible mediante el enlace corto [e.jucardus.com](https://e.jucardus.com). Con ella se pretende dividir los resultados numerosos en conjuntos de diez resultados para facilitar la busca y mejorar la presentación.
