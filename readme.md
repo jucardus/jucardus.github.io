@@ -1,6 +1,8 @@
 # Actividad general en [Jucardus](https://jucardus.github.io)
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad+reciente+en+Jucardus+%E2%80%94+Actividad+reciente%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Freadme.md%0A%0A%23actividad_reciente_jucardus) ]
 
+**25-12-09** - Se hicieron los cambios necesarios en el Google Apps Script exec para que al actualizar la página de [Actividad reciente](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md), sólo queden las cien adiciones o modificaciones más recientes recientes.
+
 **25-12-09** - Removí todos los enlaces a la página HTML de busca en mi repositorio, antes presentes en el menú de navegación debajo de todos los títulos de los documentos *.md.
 
 **25-12-07** - Algunas implementaciones en la página **[Enlaces](https://jucrdus.github.io/enlaces)**. Ahora las entradas que se muestran al inicio y también después de una busca, tienen la nueva función de buscar el tema en toda la base de datos clicando en el tema de la entrada, y también la de copiar el contenido de la entrada completa clicando en el subtema, en caso de que el usuario desee compartirla en las redes sociales o simplemente copiarla.
