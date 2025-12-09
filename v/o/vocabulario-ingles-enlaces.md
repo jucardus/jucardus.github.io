@@ -3,6 +3,7 @@
 
 * [vocabulario inglés ¦ balk](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-balk.md) - 25-11-06
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - 25-10-29
+* [vocabulario ingles ¦ duress](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-duress.md) - 25-12-09
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - 25-10-29
 * [vocabulario inglés ¦ overkill](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-overkill.md) - 25-11-03
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - 25-10-31
