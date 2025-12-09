@@ -1,12 +1,12 @@
 # GitHub Repository Traffic Tracking Overview
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) ? [?ndice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) ? [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) ? [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ? [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+Programaci%C3%B3n%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23programacion_jucardus%0A%23segun_grok_jucardus) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=GitHub+Repository+Traffic+Tracking+Overview+%E2%80%94+Seg%C3%BAn+Grok%2C+Programaci%C3%B3n%2C+GitHub%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Fg%2Fi%2Ft%2Fgithub-repository-traffic-tracking-overview.md%0A%0A%23github_jucardus%0A%23programacion_jucardus%0A%23segun_grok_jucardus) ]
 
 When a GitHub user publishes their repository (or more specifically, enables GitHub Pages to serve it as an HTML website), the visit count you're referring to is likely the **traffic data** available in the repository's Insights tab. This tracks engagement with the *repository itself* on GitHub.com, not direct visits to the hosted HTML Pages site. I'll break down how this works below, based on GitHub's official documentation and user reports.
 
 ### Key Distinction: Repository Traffic vs. Pages Site Traffic
 
 - **Repository traffic** (what GitHub tracks natively): This measures views of the repository's main page, files, commits, etc., on GitHub.com. It's useful for gauging interest in your code/project but **does not include visits to the GitHub Pages site** (e.g., `username.github.io/repo`). For Pages-specific analytics, GitHub recommends integrating third-party tools like Google Analytics.
-- If your question is specifically about HTML Pages visits, GitHub's built-in count won't capture them?use external tracking instead.
+- If your question is specifically about HTML Pages visits, GitHub's built-in count won't capture them—use external tracking instead.
 
 ### How Visit Counts Work in Repository Traffic
 
