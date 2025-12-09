@@ -1,4 +1,4 @@
-# Actividad reciente en Jucardus
+# Actividad reciente en [Jucardus](https://jucardus.github.io)
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad+reciente+en+Jucardus+%E2%80%94+Actividad+reciente%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Freadme.md%0A%0A%23actividad_reciente_jucardus) ]
 
 **25-12-09** - Removí todos los enlaces a la página HTML de busca en mi repositorio, antes presentes en el menú de navegación debajo de todos los títulos de los documentos *.md.
