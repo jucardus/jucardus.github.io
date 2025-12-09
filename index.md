@@ -9,7 +9,7 @@
 ### Autor y contacto
 
 * **Autor:** Julio Cárdenas Pelizzari ©
-* **Contacto:** [jucardus en gmail punto com](https://jucardus.github.io/correo.png)
+* **Contacto:** [jucardus en gmail punto com](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md)
 * **Enlace corto:** [g.jucardus.com](https://g.jucardus.com)
 * **Pagos y donaciones:** [...me/jucardus](https://www.paypal.com/paypalme/jucardus)
 * **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
@@ -17,7 +17,7 @@
 ### Mis sitios web
 
 * [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - a.jucardus.com
-* [Contacto y suscripción](https://jucardus.github.io/correo.png) - c.jucardus.com
+* [Contacto y suscripción](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md) - c.jucardus.com
 * [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
 * [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
 * [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
