@@ -1,5 +1,5 @@
 # The jekyll-relative-links plugin
-[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) ? [?ndice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) ? [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) ? [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) ? [compartir](https://x.com/intent/tweet?text=The+jekyll-relative-links+plugin+%E2%80%94+GitHub%2C+Plugins%2C+Plugins+para+GitHub%2C+Seg%C3%BAn+Grok%2C+Programaci%C3%B3n%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Ft%2Fh%2Fe%2Fthe-jekyll-relative-links-plugin.md%0A%0A%23github_jucardus%0A%23plugins_jucardus%0A%23plugins_para_github_jucardus%0A%23programacion_jucardus%0A%23segun_grok_jucardus) ]
+[ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [busca](https://jucardus.github.io/busca.html) · [compartir](https://x.com/intent/tweet?text=The+jekyll-relative-links+plugin+%E2%80%94+GitHub%2C+Plugins%2C+Plugins+para+GitHub%2C+Seg%C3%BAn+Grok%2C+Programaci%C3%B3n%0A%0A%E2%86%92+https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Ft%2Fh%2Fe%2Fthe-jekyll-relative-links-plugin.md%0A%0A%23github_jucardus%0A%23plugins_jucardus%0A%23plugins_para_github_jucardus%0A%23programacion_jucardus%0A%23segun_grok_jucardus) ]
 
 ### Overview
 
@@ -11,7 +11,7 @@ It's maintained by Ben Balter (a GitHub engineer) and is lightweight, with no ma
 
 ### Key Features
 
-- **Automatic Link Conversion**: Scans Markdown content and rewrites relative links to `.md` files as proper rendered URLs (e.g., `./other-page.md` ? `/other-page/`).
+- **Automatic Link Conversion**: Scans Markdown content and rewrites relative links to `.md` files as proper rendered URLs (e.g., `./other-page.md` → `/other-page/`).
 - **Support for Collections and Posts**: When enabled, it handles links from posts or custom collections (e.g., `_my_collection/item.md`).
 - **Liquid Filter**: Provides a `rellinks` filter for use in Liquid templates. This can process content that's already been run through Jekyll's `markdownify` filter, converting links in HTML output.
   - Example: `{{ content | markdownify | rellinks }}`
@@ -37,7 +37,7 @@ It's maintained by Ben Balter (a GitHub engineer) and is lightweight, with no ma
      - jekyll-relative-links
    ```
 
-3. **For GitHub Pages**: Since GitHub Pages supports a limited set of plugins, this one is whitelisted and works out-of-the-box?just add it to your Gemfile.
+3. **For GitHub Pages**: Since GitHub Pages supports a limited set of plugins, this one is whitelisted and works out-of-the-box—just add it to your Gemfile.
 
 The latest version (as of recent releases) is 0.7.0, available on RubyGems.
 
@@ -78,7 +78,7 @@ The latest version (as of recent releases) is 0.7.0, available on RubyGems.
 - It only processes relative links (not absolute or external ones).
 - Works best with `permalink: pretty` or similar styles that omit `.html`.
 - For links in excerpts or already-processed content, use the `rellinks` filter explicitly.
-- There's a separate, unrelated plugin by thomedes with a similar name, which focuses on Liquid macros for relative paths?stick to Ben Balter's version for the standard use case.
+- There's a separate, unrelated plugin by thomedes with a similar name, which focuses on Liquid macros for relative paths—stick to Ben Balter's version for the standard use case.
 
 ### Recent Updates
 
