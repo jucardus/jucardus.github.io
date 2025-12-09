@@ -69,6 +69,7 @@
 * [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31
 * [vocabulario inglés ¦ balk](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-balk.md) - Vocabulario inglés (enlaces), Enlaces varios - 25-11-06
 * [vocabulario inglés ¦ chalice](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-chalice.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
+* [vocabulario ingles ¦ duress](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-duress.md) - Vocabulario inglés (enlaces), Enlaces varios - 25-12-09
 * [vocabulario inglés ¦ jaggery](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-jaggery.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-29
 * [vocabulario inglés ¦ overkill](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-overkill.md) - Vocabulario inglés (enlaces), Enlaces varios - 25-11-03
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
