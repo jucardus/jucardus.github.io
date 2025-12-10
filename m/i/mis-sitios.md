@@ -10,3 +10,4 @@
 * [Linktree Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/n/linktree-jucardus.md) - 25-12-10
 * [Música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/m/u/s/musica-clasica.md) - 25-12-10
 * [Postimages Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/p/o/s/postimages-jucardus.md) - 25-12-10
+* [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/p/repositorio-jucardus.md) - 25-12-10
