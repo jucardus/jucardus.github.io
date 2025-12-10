@@ -1,6 +1,7 @@
 # Actividad reciente
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20%E2%80%94%20%C3%8Dndices%2C%20Actividad%0A%0ALista%20de%20las%20entradas%20del%20repositorio%20a%20medida%20que%20son%20creadas%2C%20con%20las%20m%C3%A1s%20recientes%20a%20la%20cabeza.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Factividad.md%0A%0A%23actividad_jucardus%0A%23indices_jucardus) ]
 
+* [Correo electrónico](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/r/correo-electronico.md) - Mis sitios - 25-12-10 11:23:01
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-espaňol, Sustantivos ingless - 25-12-10 08:45:58
 * [The secret of the demagogue is to make...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-secret-of-the-demagogue-is-to-make.md) - Citas - 25-12-10 07:57:42
 * [¿Quieres que te odien? Habla...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/i/quieres-que-te-odien-habla.md) - Apotegmas - 25-12-09 13:28:56
@@ -100,5 +101,4 @@
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27 20:03:04
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-10-27 20:00:32
 * [Ego labōrō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-laboro.md) - Frases latinas - 25-10-27 19:57:38
-* [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - Frases latinas - 25-10-27 19:53:20
 * ...
