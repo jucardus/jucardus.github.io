@@ -4,3 +4,4 @@
 * [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actividad-general.md) - 25-12-10
 * [Correo electrónico](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/r/correo-electronico.md) - 25-12-10
 * [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/l/enlaces-varios.md) - 25-12-10
+* [Facebook de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/f/a/c/facebook-de-difusion.md) - 25-12-10
