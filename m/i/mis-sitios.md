@@ -7,3 +7,4 @@
 * [Facebook de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/f/a/c/facebook-de-difusion.md) - 25-12-10
 * [Fotografías muchas](https://github.com/jucardus/jucardus.github.io/blob/main/f/o/t/fotografias-muchas.md) - 25-12-10
 * [Invitación a pCloud](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/v/invitacion-a-pcloud.md) - 25-12-10
+* [Linktree Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/n/linktree-jucardus.md) - 25-12-10
