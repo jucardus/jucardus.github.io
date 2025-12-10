@@ -5,10 +5,10 @@
 * {NG} pl. _abaci, abacuses_
 * {PR} ˈæb.ə.kəs
 * {SL} AB.a.cus
-* ábaco [m.] (nomograma) ~nomogram, nomograph~ ¦888¦
-* ábaco [m.] (para cálculos aritméticos) ~abac~ ¦Artmtc¦ ¦Instrmnts¦
+* ábaco [m.] (nomograma) ~ nomogram, nomograph ~ ¦888¦
+* ábaco [m.] (para cálculos aritméticos) ~ abac ~ ¦Artmtc¦ ¦Instrmnts¦
 * ábaco [m.] (sobre el capitel de una columna y debajo del arquitrabe) ¦Clmns¦
-* nomograma [m.] ~nomogram, nomograph~ ¦888¦
+* nomograma [m.] ~ nomogram, nomograph ~ ¦888¦
 
 [#diccionario-ingles-espaol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espaol.md)  
 [#sustantivos-ingless](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingless.md)
