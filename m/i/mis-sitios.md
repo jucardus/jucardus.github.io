@@ -12,3 +12,4 @@
 * [Postimages Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/p/o/s/postimages-jucardus.md) - 25-12-10
 * [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/p/repositorio-jucardus.md) - 25-12-10
 * [Tumblr de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/t/u/m/tumblr-de-difusion.md) - 25-12-10
+* [X Twitter Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/x/t/w/x-twitter-jucardus.md) - 25-12-10
