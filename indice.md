@@ -87,6 +87,7 @@
 * [vocabulario inglés ¦ overkill](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-overkill.md) - Vocabulario inglés (enlaces), Enlaces varios - 25-11-03
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
+* [X Twitter Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/x/t/w/x-twitter-jucardus.md) - Mis sitios - 25-12-10
 * [YouTube ¦ mi lista de reproducción de música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/y/o/u/youtube-mi-lista-de-reproduccion-de-musica-clasica.md) - Enlaces varios, YouTube (enlaces) - 25-11-29
 * [你 (你) [nǐ]](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-20320.md) - Diccionario chino-español, Caracteres chinos, Pronombres chinos - 25-11-01
 * [你喜歡咖啡，是不是？](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) - Frases chinas - 25-11-01
