@@ -29,6 +29,7 @@
 * [El castigo del mentiroso no es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/c/el-castigo-del-mentiroso-no-es-que.md) - George Bernard Shaw, Citas - 25-12-07
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - Apotegmas - 25-10-27
+* [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/l/enlaces-varios.md) - Mis sitios - 25-12-10
 * [Es inevitable usar el raciocinio al...](https://github.com/jucardus/jucardus.github.io/blob/main/e/s/i/es-inevitable-usar-el-raciocinio-al.md) - Apotegmas - 25-10-31
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - Diccionario inglés-español, Sustantivos ingleses, Traducciones inglesas en contexto, Moby Thesaurus - 25-12-01
 * [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - Frases latinas - 25-10-31
