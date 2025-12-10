@@ -31,6 +31,7 @@
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - Apotegmas - 25-10-27
 * [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/l/enlaces-varios.md) - Mis sitios - 25-12-10
 * [Es inevitable usar el raciocinio al...](https://github.com/jucardus/jucardus.github.io/blob/main/e/s/i/es-inevitable-usar-el-raciocinio-al.md) - Apotegmas - 25-10-31
+* [Facebook de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/f/a/c/facebook-de-difusion.md) - Mis sitios - 25-12-10
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - Diccionario inglés-español, Sustantivos ingleses, Traducciones inglesas en contexto, Moby Thesaurus - 25-12-01
 * [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - Frases latinas - 25-10-31
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - Enlaces varios, GitHub - 25-10-29
