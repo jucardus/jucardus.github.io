@@ -47,6 +47,7 @@
 * [Locuciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/l/o/c/locuciones-adversativas.md) - Gramática española - 25-11-04
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26
 * [Mira hacia arriba para idolatrar](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mira-hacia-arriba-para-idolatrar.md) - Apotegmas - 25-11-01
+* [Música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/m/u/s/musica-clasica.md) - Mis sitios - 25-12-10
 * [No hay forma de creer en Dios si no es...](https://github.com/jucardus/jucardus.github.io/blob/main/n/o/h/no-hay-forma-de-creer-en-dios.md) - Apotegmas - 25-11-01
 * [Parvus puer in villa habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/a/r/parvus-puer-in-villa-habitat.md) - Frases latinas - 25-12-07
 * [Pronombres personales latinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/o/pronombres-personales-latinos.md) - Gramática latina, Pronombres latinos - 25-11-01
