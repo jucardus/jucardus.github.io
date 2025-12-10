@@ -2,7 +2,7 @@
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=%C3%8Dndice%20alfab%C3%A9tico%20%E2%80%94%20%C3%8Dndices%0A%0ALista%20de%20todas%20las%20entradas%20del%20sitio%20en%20orden%20alfab%C3%A9tico%2C%20con%20etiquetas%20y%20fecha%20de%20creaci%C3%B3n.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Findice.md%0A%0A%23indices_jucardus) ]
 
 * [¿Quieres que te odien? Habla...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/i/quieres-que-te-odien-habla.md) - Apotegmas - 25-12-09
-* [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-10-26
+* [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-espaňol, Sustantivos ingless - 25-12-10
 * [Actividad reciente en Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - Actividad reciente - 25-11-04
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - Bash, Programación, Google Chrome - 25-10-27
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Programación, Linux Mint - 25-10-27
