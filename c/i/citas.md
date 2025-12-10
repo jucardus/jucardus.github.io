@@ -4,7 +4,7 @@
 * [All the war-propaganda, all the screaming...](https://github.com/jucardus/jucardus.github.io/blob/main/a/l/l/all-the-war-propaganda-all-the-screaming.md) - 25-12-07
 * [El aburrimiento se cura con curiosidad...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/a/el-aburrimiento-se-cura-con-curiosidad.md) - 25-12-07
 * [El castigo del mentiroso no es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/c/el-castigo-del-mentiroso-no-es-que.md) - 25-12-07
-* [how-easy-it-is-to-make-people-believe-a](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - 25-12-10
+* [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - 25-12-10
 * [La enfermedad contraída por...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/e/la-enfermedad-contraida-por.md) - 25-12-07
 * [The secret of the demagogue is to make...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-secret-of-the-demagogue-is-to-make.md) - 25-12-10
 * [The world will never lack wonders...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-world-will-never-lack-wonders.md) - 25-12-07
