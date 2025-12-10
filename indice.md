@@ -70,6 +70,7 @@
 * [The priestly confession in the Catholic Church](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-priestly-confession-in-the-catholic-church.md) - Catolicismo, Según Grok - 25-10-26
 * [The secret of the demagogue is to make...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-secret-of-the-demagogue-is-to-make.md) - Citas - 25-12-10
 * [The world will never lack wonders...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-world-will-never-lack-wonders.md) - Gilbert Keith Chesterton, Citas - 25-12-07
+* [Tumblr de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/t/u/m/tumblr-de-difusion.md) - Mis sitios - 25-12-10
 * [Un dios de polvo](https://github.com/jucardus/jucardus.github.io/blob/main/u/n/d/un-dios-de-polvo.md) - Cuentos - 25-11-11
 * [vocabulario español ¦ apógrafo](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-apografo.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-12
 * [vocabulario español ¦ facto](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-facto.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-21
