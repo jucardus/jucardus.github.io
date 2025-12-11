@@ -4,10 +4,6 @@
 * [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10 21:34:58
 * [A veces la religión](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10 21:34:58
 * [En parte, la existencia es una sucesión...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - Apotegmas - 25-12-10 21:34:58
-* [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10 21:23:46
-* [A veces la religin](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10 21:23:46
-* [En parte, la existencia es una sucesin...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - Apotegmas - 25-12-10 21:23:46
-* [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10 14:05:42
 * [Blogger Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/b/l/o/blogger-jucardus.md) - Mis sitios - 25-12-10 12:00:02
 * [X Twitter Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/x/t/w/x-twitter-jucardus.md) - Mis sitios - 25-12-10 11:33:26
 * [Tumblr de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/t/u/m/tumblr-de-difusion.md) - Mis sitios - 25-12-10 11:32:27
