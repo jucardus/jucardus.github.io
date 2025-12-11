@@ -8,4 +8,4 @@ How easy it is to make people believe a lie, and how hard it is to undo that wor
 [#citas](https://github.com/jucardus/jucardus.github.io/blob/main/c/i/citas.md)  
 [#mark-twain](https://github.com/jucardus/jucardus.github.io/blob/main/m/a/mark-twain.md)
 
-<sup>25-12-10 21:14:58</sup>
+<sup>25-12-10 21:23:46</sup>
