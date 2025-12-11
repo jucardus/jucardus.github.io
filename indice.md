@@ -24,6 +24,7 @@
 * [Conjunciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/n/conjunciones-adversativas.md) - Gramática española - 25-11-04
 * [Correo electrónico](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/r/correo-electronico.md) - Mis sitios - 25-12-10
 * [Correo Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md) - Correo electrónico - 25-12-09
+* [deference [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/f/deference-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
 * [Domus magna est.](https://github.com/jucardus/jucardus.github.io/blob/main/d/o/m/domus-magna-est.md) - Frases latinas - 25-12-07
 * [Ego amō.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-amo.md) - Frases latinas - 25-10-27
 * [Ego et familia mea in villa parva habitamus.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-et-familia-mea-in-villa-parva-habitamus.md) - Frases latinas - 25-12-07
