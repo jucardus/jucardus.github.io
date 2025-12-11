@@ -61,6 +61,7 @@
 * [Pronombres personales latinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/o/pronombres-personales-latinos.md) - Gramática latina, Pronombres latinos - 25-11-01
 * [puer [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-m.md) - Diccionario latín-español, Sustantivos latinos, Sustantivos latinos de la segunda declinación - 25-11-01
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - Frases latinas - 25-10-29
+* [purpose [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/r/purpose-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - Apotegmas - 25-10-29
 * [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/p/repositorio-jucardus.md) - Mis sitios - 25-12-10
 * [salvedad [f.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/a/l/salvedad-f.md) - Vocabulario español, Sustantivos españoles, Sustantivos femeninos españoles - 25-11-29
