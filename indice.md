@@ -13,7 +13,7 @@
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - Frases latinas - 25-12-07
 * [Amicus meus in villa magna habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amicus-meus-in-villa-magna-habitat.md) - Frases latinas - 25-12-07
-* [A veces la religi�n](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10
+* [A veces la religin](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10
 * [Blogger Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/b/l/o/blogger-jucardus.md) - Mis sitios - 25-12-10
 * [Canis parvus in via currit.](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/canis-parvus-in-via-currit.md) - Frases latinas - 25-12-07
 * [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
@@ -32,7 +32,7 @@
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - Apotegmas - 25-10-27
 * [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/l/enlaces-varios.md) - Mis sitios - 25-12-10
-* [En parte, la existencia es una sucesi�n...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - Apotegmas - 25-12-10
+* [En parte, la existencia es una sucesión...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - Apotegmas - 25-12-10
 * [Es inevitable usar el raciocinio al...](https://github.com/jucardus/jucardus.github.io/blob/main/e/s/i/es-inevitable-usar-el-raciocinio-al.md) - Apotegmas - 25-10-31
 * [Facebook de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/f/a/c/facebook-de-difusion.md) - Mis sitios - 25-12-10
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - Diccionario inglés-español, Sustantivos ingleses, Traducciones inglesas en contexto, Moby Thesaurus - 25-12-01
