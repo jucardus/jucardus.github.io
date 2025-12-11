@@ -13,3 +13,4 @@
 * [ship [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s.md) - 25-12-11
 * [ship [s.coloq.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s-coloq.md) - 25-12-11
 * [sill [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/l/sill-s.md) - 25-12-01
+* [trial [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/t/r/i/trial-s.md) - 25-12-11
