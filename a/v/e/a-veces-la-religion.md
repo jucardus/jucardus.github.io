@@ -7,4 +7,4 @@ A veces la religi�n es una forma devota de no aceptar a Dios.
 
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
 
-<sup>25-12-10 21:14:58</sup>
+<sup>25-12-10 21:23:46</sup>
