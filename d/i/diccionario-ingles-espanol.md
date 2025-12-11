@@ -5,6 +5,7 @@
 * [aberration [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/e/aberration-s.md) - 25-12-11
 * [aware [adj.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/a/aware-adj.md) - 25-12-11
 * [a wee bit [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/e/a-wee-bit-loc.md) - 25-12-11
+* [deference [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/f/deference-s.md) - 25-12-11
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - 25-12-01
 * [in deference to [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/d/in-deference-to-loc.md) - 25-12-11
 * [purpose [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/r/purpose-s.md) - 25-12-11
