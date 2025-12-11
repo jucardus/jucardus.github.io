@@ -7,4 +7,4 @@ En parte, la existencia es una sucesi�n infinita de peros, una discriminaci�
 
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
 
-<sup>25-12-10 20:42:37</sup>
+<sup>25-12-10 21:14:58</sup>
