@@ -33,6 +33,7 @@
 * [Ego puerum video.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-puerum-video.md) - Frases latinas - 25-12-07
 * [Ego sum.](https://github.com/jucardus/jucardus.github.io/blob/main/e/g/o/ego-sum.md) - Frases latinas - 25-10-27
 * [El aburrimiento se cura con curiosidad...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/a/el-aburrimiento-se-cura-con-curiosidad.md) - Citas - 25-12-07
+* [El alma libre se reconoce porque no...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/a/el-alma-libre-se-reconoce-porque-no.md) - Citas, Friedrich Nietzsche - 25-12-11
 * [El castigo del mentiroso no es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/c/el-castigo-del-mentiroso-no-es-que.md) - George Bernard Shaw, Citas - 25-12-07
 * [El problema de la humanidad es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/p/el-problema-de-la-humanidad-es-que.md) - Citas, Bertrand Russell - 25-12-11
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27
