@@ -58,6 +58,7 @@
 * [Sustantivos latinos de la segunda declinación](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-latinos-de-la-segunda-declinacion.md)
 * [Sustantivos masculinos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-masculinos-espanoles.md)
 * [Traducciones inglesas en contexto](https://github.com/jucardus/jucardus.github.io/blob/main/t/r/traducciones-inglesas-en-contexto.md)
+* [Verbos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/v/e/verbos-ingleses.md)
 * [Verbos latinos de la primera conjugación](https://github.com/jucardus/jucardus.github.io/blob/main/v/e/verbos-latinos-de-la-primera-conjugacion.md)
 * [Vocabulario español (enlaces)](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol-enlaces.md)
 * [Vocabulario español](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/vocabulario-espanol.md)
