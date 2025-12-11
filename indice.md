@@ -99,6 +99,7 @@
 * [vocabulario inglés ¦ overkill](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-overkill.md) - Vocabulario inglés (enlaces), Enlaces varios - 25-11-03
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
+* [We have now sunk to a depth at...](https://github.com/jucardus/jucardus.github.io/blob/main/w/e/h/we-have-now-sunk-to-a-depth-at.md) - Citas, George Orwell - 25-12-11
 * [X Twitter Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/x/t/w/x-twitter-jucardus.md) - Mis sitios - 25-12-10
 * [YouTube ¦ mi lista de reproducción de música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/y/o/u/youtube-mi-lista-de-reproduccion-de-musica-clasica.md) - Enlaces varios, YouTube (enlaces) - 25-11-29
 * [你 (你) [nǐ]](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-20320.md) - Diccionario chino-español, Caracteres chinos, Pronombres chinos - 25-11-01
