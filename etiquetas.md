@@ -48,6 +48,7 @@
 * [Según Gemini](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-gemini.md)
 * [Según Grok](https://github.com/jucardus/jucardus.github.io/blob/main/s/e/segun-grok.md)
 * [Sinónimos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/sinonimos-espanoles.md)
+* [Sustantivos coloquiales ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-coloquiales-ingleses.md)
 * [Sustantivos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-espanoles.md)
 * [Sustantivos femeninos españoles](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-femeninos-espanoles.md)
 * [Sustantivos ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
