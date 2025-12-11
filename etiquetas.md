@@ -6,6 +6,7 @@
 * [Agustín de Hipona](https://github.com/jucardus/jucardus.github.io/blob/main/a/g/agustin-de-hipona.md)
 * [Apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
 * [Bash](https://github.com/jucardus/jucardus.github.io/blob/main/b/a/bash.md)
+* [Bertrand Russell](https://github.com/jucardus/jucardus.github.io/blob/main/b/e/bertrand-russell.md)
 * [Brave](https://github.com/jucardus/jucardus.github.io/blob/main/b/r/brave.md)
 * [Caracteres chinos](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/caracteres-chinos.md)
 * [Catolicismo](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/catolicismo.md)
