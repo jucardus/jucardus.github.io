@@ -3,6 +3,7 @@
 
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - 25-10-26
 * [aberration [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/e/aberration-s.md) - 25-12-11
+* [deference [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/f/deference-s.md) - 25-12-11
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - 25-12-01
 * [purpose [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/r/purpose-s.md) - 25-12-11
 * [ship [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s.md) - 25-12-11
