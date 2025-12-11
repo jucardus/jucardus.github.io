@@ -3,6 +3,7 @@
 
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - 25-10-26
 * [aberration [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/e/aberration-s.md) - 25-12-11
+* [aware [adj.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/a/aware-adj.md) - 25-12-11
 * [a wee bit [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/e/a-wee-bit-loc.md) - 25-12-11
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - 25-12-01
 * [sill [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/l/sill-s.md) - 25-12-01
