@@ -45,6 +45,7 @@
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - Según Grok, Programación, GitHub - 25-11-04
 * [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10
 * [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - Frases latinas - 25-10-31
+* [in deference to [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/d/in-deference-to-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11
 * [Invitación a pCloud](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/v/invitacion-a-pcloud.md) - Mis sitios - 25-12-10
 * [La enfermedad contraída por...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/e/la-enfermedad-contraida-por.md) - Agustín de Hipona, Citas - 25-12-07
 * [La fe te salva de la circularidad...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/f/la-fe-te-salva-de-la-circularidad.md) - Apotegmas - 25-11-01
