@@ -15,6 +15,7 @@
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - Frases latinas - 25-12-07
 * [Amicus meus in villa magna habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amicus-meus-in-villa-magna-habitat.md) - Frases latinas - 25-12-07
 * [A veces la religión](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10
+* [aware [adj.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/a/aware-adj.md) - Diccionario inglés-español, Adjetivos ingleses - 25-12-11
 * [a wee bit [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/e/a-wee-bit-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11
 * [Blogger Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/b/l/o/blogger-jucardus.md) - Mis sitios - 25-12-10
 * [Canis parvus in via currit.](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/canis-parvus-in-via-currit.md) - Frases latinas - 25-12-07
