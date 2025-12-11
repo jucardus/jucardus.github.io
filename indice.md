@@ -3,6 +3,7 @@
 
 * [¿Quieres que te odien? Habla...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/i/quieres-que-te-odien-habla.md) - Apotegmas - 25-12-09
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-espaňol, Sustantivos ingless - 25-12-10
+* [aberration [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/e/aberration-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
 * [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actividad-general.md) - Mis sitios - 25-12-10
 * [Actividad reciente en Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - Actividad reciente - 25-11-04
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - Bash, Programación, Google Chrome - 25-10-27
