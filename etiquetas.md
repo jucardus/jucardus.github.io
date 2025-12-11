@@ -25,6 +25,7 @@
 * [Frases chinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-chinas.md)
 * [Frases latinas](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-latinas.md)
 * [Frases multilingües](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/frases-multilingves.md)
+* [Friedrich Nietzsche](https://github.com/jucardus/jucardus.github.io/blob/main/f/r/friedrich-nietzsche.md)
 * [Gauchos](https://github.com/jucardus/jucardus.github.io/blob/main/g/a/gauchos.md)
 * [George Bernard Shaw](https://github.com/jucardus/jucardus.github.io/blob/main/g/e/george-bernard-shaw.md)
 * [George Orwell](https://github.com/jucardus/jucardus.github.io/blob/main/g/e/george-orwell.md)
