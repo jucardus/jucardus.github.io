@@ -3,7 +3,7 @@
 
 * [¿Quieres que te odien? Habla...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/i/quieres-que-te-odien-habla.md) - 25-12-09
 * [Ahórrate el engorroso trámite de ir a alguno...](https://github.com/jucardus/jucardus.github.io/blob/main/a/h/o/ahorrate-el-engorroso-tramite-de-ir.md) - 25-10-27
-* [A veces la religin](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - 25-12-10
+* [A veces la religión](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - 25-12-10
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - 25-10-27
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - 25-10-27
 * [En parte, la existencia es una sucesión...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - 25-12-10
