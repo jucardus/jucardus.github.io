@@ -1,6 +1,7 @@
 # Actividad reciente
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20%E2%80%94%20%C3%8Dndices%2C%20Actividad%0A%0ALista%20de%20las%20entradas%20del%20repositorio%20a%20medida%20que%20son%20creadas%2C%20con%20las%20m%C3%A1s%20recientes%20a%20la%20cabeza.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Factividad.md%0A%0A%23actividad_jucardus%0A%23indices_jucardus) ]
 
+* [El problema de la humanidad es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/p/el-problema-de-la-humanidad-es-que.md) - Citas, Bertrand Russell - 25-12-11 11:07:23
 * [We have now sunk to a depth at...](https://github.com/jucardus/jucardus.github.io/blob/main/w/e/h/we-have-now-sunk-to-a-depth-at.md) - Citas, George Orwell - 25-12-11 11:05:26
 * [deference [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/f/deference-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11 11:00:59
 * [in deference to [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/d/in-deference-to-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11 10:58:50
@@ -100,5 +101,4 @@
 * [冷 (冷) [lěng]](https://github.com/jucardus/jucardus.github.io/blob/main/l/e/n/leng3-20919.md) - Diccionario chino-español, Caracteres chinos - 25-11-01 09:51:27
 * [Mira hacia arriba para idolatrar](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mira-hacia-arriba-para-idolatrar.md) - Apotegmas - 25-11-01 09:46:57
 * [vocabulario español ¦ truculento](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-truculento.md) - Enlaces varios, Vocabulario español (enlaces) - 25-10-31 20:36:44
-* [La Verdad existe desde siempre](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/v/la-verdad-existe-desde-siempre.md) - Apotegmas - 25-10-31 12:33:51
 * ...
