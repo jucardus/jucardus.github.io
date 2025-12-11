@@ -66,6 +66,7 @@
 * [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/p/repositorio-jucardus.md) - Mis sitios - 25-12-10
 * [salvedad [f.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/a/l/salvedad-f.md) - Vocabulario español, Sustantivos españoles, Sustantivos femeninos españoles - 25-11-29
 * [ship [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s.md) - Sustantivos ingleses, Diccionario inglés-español - 25-12-11
+* [ship [s.coloq.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s-coloq.md) - Diccionario inglés-español, Sustantivos coloquiales ingleses - 25-12-11
 * [Siempre que busques a Dios hacia...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/siempre-que-busques-a-dios-hacia.md) - Apotegmas - 25-11-04
 * [Si eres creyente sabes que debes orar...](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/e/si-eres-creyente-sabes-que-debes-orar.md) - Reflexiones - 25-11-02
 * [sill [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/i/l/sill-s.md) - Diccionario inglés-español, Sustantivos ingleses, Moby Thesaurus - 25-12-01
