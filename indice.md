@@ -14,6 +14,7 @@
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - Frases latinas - 25-12-07
 * [Amicus meus in villa magna habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amicus-meus-in-villa-magna-habitat.md) - Frases latinas - 25-12-07
+* [Avatar en GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/a/avatar-en-github.md) - Mis sitios - 25-12-11
 * [A veces la religión](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10
 * [aware [adj.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/a/aware-adj.md) - Diccionario inglés-español, Adjetivos ingleses - 25-12-11
 * [a wee bit [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/e/a-wee-bit-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11
