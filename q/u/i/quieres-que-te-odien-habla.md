@@ -3,6 +3,8 @@
 
 ¿Quieres que te odien? Habla con la verdad; pero nunca seas tan iluso de creer que estás diciendo la verdad porque te odian.
 
+~ jucardus ~
+
 [#apotegmas](https://github.com/jucardus/jucardus.github.io/blob/main/a/p/apotegmas.md)
 
 <sup>25-12-09 13:28:56</sup>
