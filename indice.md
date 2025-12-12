@@ -48,6 +48,7 @@
 * [Fotografías muchas](https://github.com/jucardus/jucardus.github.io/blob/main/f/o/t/fotografias-muchas.md) - Mis sitios - 25-12-10
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - Enlaces varios, GitHub - 25-10-29
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - Según Grok, Programación, GitHub - 25-11-04
+* [He who fights with monsters should...](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/w/he-who-fights-with-monsters-should.md) - Citas, Friedrich Nietzsche - 25-12-12
 * [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10
 * [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - Frases latinas - 25-10-31
 * [in deference to [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/d/in-deference-to-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11
