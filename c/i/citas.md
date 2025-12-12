@@ -6,6 +6,7 @@
 * [El alma libre se reconoce porque no...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/a/el-alma-libre-se-reconoce-porque-no.md) - 25-12-11
 * [El castigo del mentiroso no es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/c/el-castigo-del-mentiroso-no-es-que.md) - 25-12-07
 * [El problema de la humanidad es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/p/el-problema-de-la-humanidad-es-que.md) - 25-12-11
+* [He who fights with monsters should...](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/w/he-who-fights-with-monsters-should.md) - 25-12-12
 * [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - 25-12-10
 * [La enfermedad contraída por...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/e/la-enfermedad-contraida-por.md) - 25-12-07
 * [The secret of the demagogue is to make...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-secret-of-the-demagogue-is-to-make.md) - 25-12-10
