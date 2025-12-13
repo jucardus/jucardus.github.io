@@ -10,7 +10,7 @@
 * ábaco [m.] (sobre el capitel de una columna y debajo del arquitrabe) ¦Clmns¦
 * nomograma [m.] ~ nomogram, nomograph ~ ¦888¦
 
-[#diccionario-ingles-espaol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espaol.md)  
-[#sustantivos-ingless](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingless.md)
+[#diccionario-ingles-espanol](https://github.com/jucardus/jucardus.github.io/blob/main/d/i/diccionario-ingles-espanol.md)  
+[#sustantivos-ingleses](https://github.com/jucardus/jucardus.github.io/blob/main/s/u/sustantivos-ingleses.md)
 
 <sup>25-12-10 08:45:58</sup>
