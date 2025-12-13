@@ -109,6 +109,7 @@ let entriesBase = [
   "▓Gramática china▒g/r/gramatica-china.md▓",
   "▓Gramática española▒g/r/gramatica-espanola.md▓",
   "▓Gramática latina▒g/r/gramatica-latina.md▓",
+  "▓He who fights with monsters should...▒h/e/w/he-who-fights-with-monsters-should.md▓",
   "▓Historia argentina▒h/i/historia-argentina.md▓",
   "▓How easy it is to make people believe a...▒h/o/w/how-easy-it-is-to-make-people-believe-a.md▓",
   "▓Ille amat.▒i/l/l/ille-amat.md▓",
