@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body onload="hacer()">
+<script>
+function hacer() {
+    var texto = window.location.href.replace(/.*jucardus\.github\.io\/x\?=/g,'');
+    var exear = 'https://www.merriam-webster.com/dictionary/' + texto;
+    window.location.replace(exear);
+    }
+</script>
+</body>
+</html>
