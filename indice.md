@@ -4,7 +4,6 @@
 * [¿Quieres que te odien? Habla...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/i/quieres-que-te-odien-habla.md) - Apotegmas - 25-12-09
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-espaňol, Sustantivos ingless - 25-12-10
 * [aberration [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/e/aberration-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
-* [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actividad-general.md) - Mis sitios - 25-12-10
 * [Actividad reciente en Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - Actividad reciente - 25-11-04
 * [Actualización de Google Chrome con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-google-chrome-con-bash.md) - Bash, Programación, Google Chrome - 25-10-27
 * [Actualización de Linux Mint con Bash](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actualizacion-de-linux-mint-con-bash.md) - Bash, Programación, Linux Mint - 25-10-27
@@ -14,16 +13,13 @@
 * [amāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/a/amare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
 * [Amīcī in villam veniunt.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amici-in-villam-veniunt.md) - Frases latinas - 25-12-07
 * [Amicus meus in villa magna habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/a/m/i/amicus-meus-in-villa-magna-habitat.md) - Frases latinas - 25-12-07
-* [Avatar en GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/a/avatar-en-github.md) - Mis sitios - 25-12-11
 * [A veces la religión](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10
 * [aware [adj.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/a/aware-adj.md) - Diccionario inglés-español, Adjetivos ingleses - 25-12-11
 * [a wee bit [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/w/e/a-wee-bit-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11
-* [Blogger Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/b/l/o/blogger-jucardus.md) - Mis sitios - 25-12-10
 * [Canis parvus in via currit.](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/canis-parvus-in-via-currit.md) - Frases latinas - 25-12-07
 * [cantāre [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/c/a/n/cantare-v.md) - Conjugaciones latinas, Verbos latinos de la primera conjugación, Diccionario latín-español - 25-10-27
 * [códigos QR ¦ en QuickChart con leyenda](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/d/codigos-qr-en-quickchart-con-leyenda.md) - Enlaces varios, Códigos QR (enlaces) - 25-11-01
 * [Conjunciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/n/conjunciones-adversativas.md) - Gramática española - 25-11-04
-* [Correo electrónico](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/r/correo-electronico.md) - Mis sitios - 25-12-10
 * [Correo Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md) - Correo electrónico - 25-12-09
 * [deference [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/f/deference-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
 * [despair [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/s/despair-v.md) - Diccionario inglés-español, Verbos ingleses - 25-12-11
@@ -39,38 +35,30 @@
 * [El problema de la humanidad es que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/p/el-problema-de-la-humanidad-es-que.md) - Citas, Bertrand Russell - 25-12-11
 * [El recuerdo más puro](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/r/el-recuerdo-mas-puro.md) - Apotegmas - 25-10-27
 * [El universo todo confabula para que...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/u/el-universo-todo-confabula-para-que.md) - Apotegmas - 25-10-27
-* [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/l/enlaces-varios.md) - Mis sitios - 25-12-10
 * [En parte, la existencia es una sucesión...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - Apotegmas - 25-12-10
 * [Es inevitable usar el raciocinio al...](https://github.com/jucardus/jucardus.github.io/blob/main/e/s/i/es-inevitable-usar-el-raciocinio-al.md) - Apotegmas - 25-10-31
-* [Facebook de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/f/a/c/facebook-de-difusion.md) - Mis sitios - 25-12-10
 * [feature [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/a/feature-s.md) - Diccionario inglés-español, Sustantivos ingleses, Traducciones inglesas en contexto, Moby Thesaurus - 25-12-01
 * [Fēmina ambulat.](https://github.com/jucardus/jucardus.github.io/blob/main/f/e/m/femina-ambulat.md) - Frases latinas - 25-10-31
-* [Fotografías muchas](https://github.com/jucardus/jucardus.github.io/blob/main/f/o/t/fotografias-muchas.md) - Mis sitios - 25-12-10
 * [GitHub ¦ GitHub Browser Extensions](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-github-browser-extensions.md) - Enlaces varios, GitHub - 25-10-29
 * [GitHub Repository Traffic Tracking Overview](https://github.com/jucardus/jucardus.github.io/blob/main/g/i/t/github-repository-traffic-tracking-overview.md) - Según Grok, Programación, GitHub - 25-11-04
 * [He who fights with monsters should...](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/w/he-who-fights-with-monsters-should.md) - Citas, Friedrich Nietzsche - 25-12-12
 * [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10
 * [Ille amat.](https://github.com/jucardus/jucardus.github.io/blob/main/i/l/l/ille-amat.md) - Frases latinas - 25-10-31
 * [in deference to [loc.]](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/d/in-deference-to-loc.md) - Diccionario inglés-español, Locuciones inglesas - 25-12-11
-* [Invitación a pCloud](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/v/invitacion-a-pcloud.md) - Mis sitios - 25-12-10
 * [La enfermedad contraída por...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/e/la-enfermedad-contraida-por.md) - Agustín de Hipona, Citas - 25-12-07
 * [La fe te salva de la circularidad...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/f/la-fe-te-salva-de-la-circularidad.md) - Apotegmas - 25-11-01
 * [La realidad siempre supera a la ficción...](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/r/la-realidad-siempre-supera-a-la-ficcion.md) - Apotegmas - 25-10-31
 * [La Verdad existe desde siempre](https://github.com/jucardus/jucardus.github.io/blob/main/l/a/v/la-verdad-existe-desde-siempre.md) - Apotegmas - 25-10-31
-* [Linktree Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/n/linktree-jucardus.md) - Mis sitios - 25-12-10
 * [Locuciones adversativas](https://github.com/jucardus/jucardus.github.io/blob/main/l/o/c/locuciones-adversativas.md) - Gramática española - 25-11-04
 * [merienda [sin.]](https://github.com/jucardus/jucardus.github.io/blob/main/m/e/r/merienda-sin.md) - Sinónimos españoles, Vocabulario español - 25-10-26
 * [Mira hacia arriba para idolatrar](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/r/mira-hacia-arriba-para-idolatrar.md) - Apotegmas - 25-11-01
-* [Música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/m/u/s/musica-clasica.md) - Mis sitios - 25-12-10
 * [No hay forma de creer en Dios si no es...](https://github.com/jucardus/jucardus.github.io/blob/main/n/o/h/no-hay-forma-de-creer-en-dios.md) - Apotegmas - 25-11-01
 * [Parvus puer in villa habitat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/a/r/parvus-puer-in-villa-habitat.md) - Frases latinas - 25-12-07
-* [Postimages Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/p/o/s/postimages-jucardus.md) - Mis sitios - 25-12-10
 * [Pronombres personales latinos](https://github.com/jucardus/jucardus.github.io/blob/main/p/r/o/pronombres-personales-latinos.md) - Gramática latina, Pronombres latinos - 25-11-01
 * [puer [m.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-m.md) - Diccionario latín-español, Sustantivos latinos, Sustantivos latinos de la segunda declinación - 25-11-01
 * [Puer cantat.](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/e/puer-cantat.md) - Frases latinas - 25-10-29
 * [purpose [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/p/u/r/purpose-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
 * [Que tu única identidad, si acaso...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/e/que-tu-unica-identidad-si-acaso.md) - Apotegmas - 25-10-29
-* [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/p/repositorio-jucardus.md) - Mis sitios - 25-12-10
 * [salvedad [f.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/a/l/salvedad-f.md) - Vocabulario español, Sustantivos españoles, Sustantivos femeninos españoles - 25-11-29
 * [ship [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s.md) - Sustantivos ingleses, Diccionario inglés-español - 25-12-11
 * [ship [s.coloq.]](https://github.com/jucardus/jucardus.github.io/blob/main/s/h/i/ship-s-coloq.md) - Diccionario inglés-español, Sustantivos coloquiales ingleses - 25-12-11
@@ -88,7 +76,6 @@
 * [The secret of the demagogue is to make...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-secret-of-the-demagogue-is-to-make.md) - Citas - 25-12-10
 * [The world will never lack wonders...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-world-will-never-lack-wonders.md) - Gilbert Keith Chesterton, Citas - 25-12-07
 * [trial [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/t/r/i/trial-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11
-* [Tumblr de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/t/u/m/tumblr-de-difusion.md) - Mis sitios - 25-12-10
 * [Un dios de polvo](https://github.com/jucardus/jucardus.github.io/blob/main/u/n/d/un-dios-de-polvo.md) - Cuentos - 25-11-11
 * [vocabulario español ¦ apógrafo](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-apografo.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-12
 * [vocabulario español ¦ facto](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-espanol-facto.md) - Enlaces varios, Vocabulario español (enlaces) - 25-11-21
@@ -106,7 +93,6 @@
 * [vocabulario inglés ¦ scathing](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-scathing.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [vocabulario inglés ¦ truculent](https://github.com/jucardus/jucardus.github.io/blob/main/v/o/c/vocabulario-ingles-truculent.md) - Enlaces varios, Vocabulario inglés (enlaces) - 25-10-31
 * [We have now sunk to a depth at...](https://github.com/jucardus/jucardus.github.io/blob/main/w/e/h/we-have-now-sunk-to-a-depth-at.md) - Citas, George Orwell - 25-12-11
-* [X Twitter Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/x/t/w/x-twitter-jucardus.md) - Mis sitios - 25-12-10
 * [YouTube ¦ mi lista de reproducción de música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/y/o/u/youtube-mi-lista-de-reproduccion-de-musica-clasica.md) - Enlaces varios, YouTube (enlaces) - 25-11-29
 * [你 (你) [nǐ]](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-20320.md) - Diccionario chino-español, Caracteres chinos, Pronombres chinos - 25-11-01
 * [你喜歡咖啡，是不是？](https://github.com/jucardus/jucardus.github.io/blob/main/n/i/3/ni3-xi3-huan1-ka1-fei1-shi4-bu2-shi4.md) - Frases chinas - 25-11-01
