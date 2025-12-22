@@ -2,7 +2,6 @@
 [ [inicio](https://github.com/jucardus/jucardus.github.io/blob/main/index.md) · [índice](https://github.com/jucardus/jucardus.github.io/blob/main/indice.md) · [etiquetas](https://github.com/jucardus/jucardus.github.io/blob/main/etiquetas.md) · [actividad](https://github.com/jucardus/jucardus.github.io/blob/main/actividad.md) · [compartir](https://x.com/intent/tweet?text=Actividad%20reciente%20%E2%80%94%20%C3%8Dndices%2C%20Actividad%0A%0ALista%20de%20las%20entradas%20del%20repositorio%20a%20medida%20que%20son%20creadas%2C%20con%20las%20m%C3%A1s%20recientes%20a%20la%20cabeza.%0A%0A%E2%86%92%20https%3A%2F%2Fgithub.com%2Fjucardus%2Fjucardus.github.io%2Fblob%2Fmain%2Factividad.md%0A%0A%23actividad_jucardus%0A%23indices_jucardus) ]
 
 * [He who fights with monsters should...](https://github.com/jucardus/jucardus.github.io/blob/main/h/e/w/he-who-fights-with-monsters-should.md) - Citas, Friedrich Nietzsche - 25-12-12 08:12:04
-* [Avatar en GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/a/avatar-en-github.md) - Mis sitios - 25-12-11 12:45:21
 * [El alma libre se reconoce porque no...](https://github.com/jucardus/jucardus.github.io/blob/main/e/l/a/el-alma-libre-se-reconoce-porque-no.md) - Citas, Friedrich Nietzsche - 25-12-11 11:28:58
 * [trial [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/t/r/i/trial-s.md) - Diccionario inglés-español, Sustantivos ingleses - 25-12-11 11:24:04
 * [despair [v.]](https://github.com/jucardus/jucardus.github.io/blob/main/d/e/s/despair-v.md) - Diccionario inglés-español, Verbos ingleses - 25-12-11 11:18:05
@@ -19,20 +18,6 @@
 * [How easy it is to make people believe a...](https://github.com/jucardus/jucardus.github.io/blob/main/h/o/w/how-easy-it-is-to-make-people-believe-a.md) - Citas, Mark Twain - 25-12-10 21:34:58
 * [A veces la religión](https://github.com/jucardus/jucardus.github.io/blob/main/a/v/e/a-veces-la-religion.md) - Apotegmas - 25-12-10 21:34:58
 * [En parte, la existencia es una sucesión...](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/p/en-parte-la-existencia-es-una-sucesion.md) - Apotegmas - 25-12-10 21:34:58
-* [Blogger Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/b/l/o/blogger-jucardus.md) - Mis sitios - 25-12-10 12:00:02
-* [X Twitter Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/x/t/w/x-twitter-jucardus.md) - Mis sitios - 25-12-10 11:33:26
-* [Tumblr de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/t/u/m/tumblr-de-difusion.md) - Mis sitios - 25-12-10 11:32:27
-* [Repositorio Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/r/e/p/repositorio-jucardus.md) - Mis sitios - 25-12-10 11:31:35
-* [Postimages Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/p/o/s/postimages-jucardus.md) - Mis sitios - 25-12-10 11:30:54
-* [Música clásica](https://github.com/jucardus/jucardus.github.io/blob/main/m/u/s/musica-clasica.md) - Mis sitios - 25-12-10 11:29:54
-* [Linktree Jucardus](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/n/linktree-jucardus.md) - Mis sitios - 25-12-10 11:29:22
-* [Invitación a pCloud](https://github.com/jucardus/jucardus.github.io/blob/main/i/n/v/invitacion-a-pcloud.md) - Mis sitios - 25-12-10 11:28:34
-* [Fotografías muchas](https://github.com/jucardus/jucardus.github.io/blob/main/f/o/t/fotografias-muchas.md) - Mis sitios - 25-12-10 11:27:47
-* [Facebook de difusión](https://github.com/jucardus/jucardus.github.io/blob/main/f/a/c/facebook-de-difusion.md) - Mis sitios - 25-12-10 11:27:04
-* [Enlaces varios](https://github.com/jucardus/jucardus.github.io/blob/main/e/n/l/enlaces-varios.md) - Mis sitios - 25-12-10 11:25:32
-* [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/a/c/t/actividad-general.md) - Mis sitios - 25-12-10 11:24:34
-* [Correo electrónico](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/r/correo-electronico.md) - Mis sitios - 25-12-10 11:23:46
-* [Correo electrónico](https://github.com/jucardus/jucardus.github.io/blob/main/c/o/r/correo-electronico.md) - Mis sitios - 25-12-10 11:23:01
 * [abacus [s.]](https://github.com/jucardus/jucardus.github.io/blob/main/a/b/a/abacus-s.md) - Diccionario inglés-espaňol, Sustantivos ingless - 25-12-10 08:45:58
 * [The secret of the demagogue is to make...](https://github.com/jucardus/jucardus.github.io/blob/main/t/h/e/the-secret-of-the-demagogue-is-to-make.md) - Citas - 25-12-10 07:57:42
 * [¿Quieres que te odien? Habla...](https://github.com/jucardus/jucardus.github.io/blob/main/q/u/i/quieres-que-te-odien-habla.md) - Apotegmas - 25-12-09 13:28:56
