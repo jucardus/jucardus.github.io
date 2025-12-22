@@ -11,7 +11,6 @@
 * **Autor:** Julio Cárdenas Pelizzari ©
 * **Contacto:** [jucardus en gmail punto com](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md)
 * **Enlace corto:** [g.jucardus.com](https://g.jucardus.com)
-* **Mis sitios:** [github.com/jucardus...](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/mis-sitios.md)
 * **Sitio central:** [jucardus.github.io](https://jucardus.github.io)
 
 ### Mis sitios web
