@@ -38,7 +38,6 @@
 * [Linux Mint](https://github.com/jucardus/jucardus.github.io/blob/main/l/i/linux-mint.md)
 * [Locuciones inglesas](https://github.com/jucardus/jucardus.github.io/blob/main/l/o/locuciones-inglesas.md)
 * [Mark Twain](https://github.com/jucardus/jucardus.github.io/blob/main/m/a/mark-twain.md)
-* [Mis sitios](https://github.com/jucardus/jucardus.github.io/blob/main/m/i/mis-sitios.md)
 * [Moby Thesaurus](https://github.com/jucardus/jucardus.github.io/blob/main/m/o/moby-thesaurus.md)
 * [Plugins](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins.md)
 * [Plugins para GitHub](https://github.com/jucardus/jucardus.github.io/blob/main/p/l/plugins-para-github.md)
