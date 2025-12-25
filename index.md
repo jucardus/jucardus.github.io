@@ -16,6 +16,7 @@
 
 * [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - a.jucardus.com
 * [Contacto y suscripción](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md) - c.jucardus.com
+* [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
 * [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
 * [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
 * [Invitación a pCloud](https://is.gd/ipcloud) - i.jucardus.com
