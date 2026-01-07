@@ -141,40 +141,69 @@
             flex-grow: 1;
             height: 100%;
             width: calc(100% - 320px);
-            background: #000;
+            position: relative;
+            background-color: #ffffff;
         }
         
         .embed-container {
             height: 100%;
             width: 100%;
+            position: relative;
         }
         
         .embed-frame-container {
-            position: relative;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
+            background-color: #ffffff;
         }
         
         .embed-frame {
             width: 100%;
             height: 100%;
             border: none;
+            display: block;
         }
         
-        /* Loading indicator */
-        .loading {
+        /* Loading overlay */
+        .loading-overlay {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #6c8bff;
-            font-size: 1.2rem;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
             display: none;
         }
         
-        .loading.active {
-            display: block;
+        .loading-content {
+            text-align: center;
+            color: #1a2a6c;
+        }
+        
+        .loading-spinner {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #6c8bff;
+        }
+        
+        .loading-text {
+            font-size: 1.2rem;
+            font-weight: 500;
         }
         
         /* Responsive design */
@@ -219,6 +248,14 @@
             .main-content {
                 height: 50vh;
             }
+            
+            .loading-spinner {
+                font-size: 2.5rem;
+            }
+            
+            .loading-text {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -262,6 +299,16 @@
         <!-- Right main content -->
         <div class="main-content">
             <div class="embed-container">
+                <!-- Loading overlay - initially visible -->
+                <div class="loading-overlay" id="loading-overlay">
+                    <div class="loading-content">
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <div class="loading-text">Loading folder...</div>
+                    </div>
+                </div>
+                
                 <div class="embed-frame-container">
                     <!-- Embedded Box folder -->
                     <iframe 
@@ -272,9 +319,6 @@
                         allowfullscreen
                         title="Jucardus.com Box Folder Viewer"
                     ></iframe>
-                    <div class="loading" id="loading-indicator">
-                        <i class="fas fa-spinner fa-spin"></i> Loading folder...
-                    </div>
                 </div>
             </div>
         </div>
@@ -285,12 +329,13 @@
             const iframe = document.getElementById('box-embed');
             const folderLinks = document.querySelectorAll('.folder-link');
             const folderItems = document.querySelectorAll('.folder-list li');
-            const loadingIndicator = document.getElementById('loading-indicator');
+            const loadingOverlay = document.getElementById('loading-overlay');
+            let isFirstLoad = true;
             
             // Function to change the embedded URL
             function changeEmbeddedFolder(url, folderName) {
-                // Show loading indicator
-                loadingIndicator.classList.add('active');
+                // Show loading overlay
+                loadingOverlay.classList.remove('hidden');
                 
                 // Update iframe source
                 iframe.src = url;
@@ -331,15 +376,32 @@
             
             // Handle iframe loading states
             iframe.addEventListener('load', function() {
-                // Hide loading indicator
-                loadingIndicator.classList.remove('active');
+                // Hide loading overlay after a short delay to ensure content is visible
+                setTimeout(function() {
+                    loadingOverlay.classList.add('hidden');
+                }, 500); // 500ms delay to ensure smooth transition
+                
                 console.log('Box folder loaded successfully');
+                
+                // For first load, hide loading after iframe is ready
+                if (isFirstLoad) {
+                    isFirstLoad = false;
+                    // Slightly longer delay for first load
+                    setTimeout(function() {
+                        loadingOverlay.classList.add('hidden');
+                    }, 1000);
+                }
             });
             
             iframe.addEventListener('error', function() {
-                // Hide loading indicator
-                loadingIndicator.classList.remove('active');
+                // Keep loading overlay visible on error with message
+                loadingOverlay.querySelector('.loading-text').textContent = 'Error loading folder. Please try again.';
                 console.log('Error loading Box folder');
+                
+                // After 3 seconds, change back to loading text
+                setTimeout(function() {
+                    loadingOverlay.querySelector('.loading-text').textContent = 'Loading folder...';
+                }, 3000);
             });
             
             // Prevent horizontal scrolling
@@ -355,6 +417,16 @@
                     e.preventDefault();
                 }
             }, { passive: false });
+            
+            // Hide loading overlay on first load after iframe is ready
+            // Add an additional check in case iframe load event doesn't fire
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    if (!isFirstLoad) return;
+                    loadingOverlay.classList.add('hidden');
+                    isFirstLoad = false;
+                }, 2000);
+            });
         });
     </script>
 </body>
