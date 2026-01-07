@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jucardus.com - Shared Box Folder</title>
+    <title>Jucardus.com - Box Folders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -17,11 +17,13 @@
             background-color: #f5f7fa;
             color: #333;
             line-height: 1.6;
+            height: 100vh;
+            overflow: hidden;
         }
         
         .container {
             display: flex;
-            min-height: 100vh;
+            height: 100vh;
             width: 100%;
         }
         
@@ -34,6 +36,7 @@
             display: flex;
             flex-direction: column;
             box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
         }
         
         .logo {
@@ -75,6 +78,50 @@
             opacity: 0.9;
         }
         
+        .folder-list {
+            margin-top: 40px;
+            list-style-type: none;
+        }
+        
+        .folder-list li {
+            margin-bottom: 12px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .folder-list li:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateX(5px);
+        }
+        
+        .folder-list li.active {
+            background-color: rgba(108, 139, 255, 0.15);
+            border-left: 4px solid #6c8bff;
+        }
+        
+        .folder-link {
+            display: block;
+            padding: 16px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .folder-link:hover {
+            color: #b8c6db;
+        }
+        
+        .folder-link i {
+            margin-right: 12px;
+            color: #6c8bff;
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+        }
+        
         .features {
             margin-top: 40px;
             list-style-type: none;
@@ -105,32 +152,14 @@
         /* Right main content styling */
         .main-content {
             width: 70%;
-            padding: 40px;
+            height: 100%;
             display: flex;
             flex-direction: column;
         }
         
-        .header {
-            margin-bottom: 30px;
-        }
-        
-        .header h2 {
-            font-size: 2.2rem;
-            color: #1a2a6c;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-        
         .embed-container {
-            flex-grow: 1;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
+            height: 100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
         }
@@ -142,11 +171,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-shrink: 0;
         }
         
         .embed-header h3 {
             font-size: 1.5rem;
             font-weight: 600;
+        }
+        
+        .current-folder {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+            display: block;
         }
         
         .box-logo {
@@ -165,6 +202,7 @@
             flex-grow: 1;
             position: relative;
             width: 100%;
+            height: 100%;
         }
         
         .embed-frame {
@@ -173,74 +211,16 @@
             border: none;
         }
         
-        .placeholder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            padding: 40px;
-            text-align: center;
-            background-color: #f8f9fa;
-        }
-        
-        .placeholder i {
-            font-size: 4rem;
-            color: #1a2a6c;
-            margin-bottom: 20px;
-            opacity: 0.7;
-        }
-        
-        .placeholder h4 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        
-        .placeholder p {
-            max-width: 600px;
-            color: #666;
-            margin-bottom: 25px;
-        }
-        
-        .btn {
-            background: linear-gradient(to right, #1a2a6c, #2a3a8c);
-            color: white;
-            border: none;
-            padding: 14px 28px;
-            border-radius: 50px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            box-shadow: 0 4px 15px rgba(26, 42, 108, 0.2);
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(26, 42, 108, 0.3);
-        }
-        
-        .btn i {
-            margin-right: 8px;
-        }
-        
-        .note {
-            margin-top: 25px;
-            padding: 15px;
-            background-color: #f0f4ff;
-            border-radius: 8px;
-            border-left: 4px solid #1a2a6c;
-            font-size: 0.95rem;
-            color: #555;
-        }
-        
         /* Responsive design */
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
+                height: auto;
+                overflow-y: auto;
+            }
+            
+            body {
+                overflow-y: auto;
             }
             
             .sidebar, .main-content {
@@ -252,17 +232,13 @@
             }
             
             .main-content {
-                padding: 30px 20px;
+                height: 70vh;
             }
         }
         
         @media (max-width: 768px) {
             .logo h1 {
                 font-size: 2.2rem;
-            }
-            
-            .header h2 {
-                font-size: 1.8rem;
             }
             
             .embed-header {
@@ -272,6 +248,11 @@
             
             .box-logo {
                 margin-top: 10px;
+            }
+            
+            .folder-link {
+                font-size: 1.1rem;
+                padding: 14px 16px;
             }
         }
     </style>
@@ -286,16 +267,34 @@
             </div>
             
             <div class="content">
-                <h2>Welcome to Our Digital Space</h2>
-                <p>This platform serves as a central hub for sharing important documents, creative projects, and collaborative resources with our community and partners.</p>
-                <p>We believe in transparent sharing of knowledge and resources to foster innovation and collaboration across all disciplines.</p>
+                <h2>Folder Navigation</h2>
+                <p>Select a folder below to view its contents in the embedded Box viewer on the right.</p>
+                
+                <ul class="folder-list">
+                    <li id="default-folder" class="active">
+                        <span class="folder-link" data-url="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q?view=list&sort=date&direction=desc" data-name="Main Shared Folder">
+                            <i class="fas fa-folder-open"></i>
+                            Main Shared Folder
+                        </span>
+                    </li>
+                    <li>
+                        <span class="folder-link" data-url="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357554469030?view=list&sort=date&direction=desc" data-name="enormous [adj.]">
+                            <i class="fas fa-folder"></i>
+                            enormous [adj.]
+                        </span>
+                    </li>
+                    <li>
+                        <span class="folder-link" data-url="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/359508158389?view=list&sort=date&direction=desc" data-name="fundente [m.]">
+                            <i class="fas fa-folder"></i>
+                            fundente [m.]
+                        </span>
+                    </li>
+                </ul>
                 
                 <ul class="features">
                     <li><i class="fas fa-check-circle"></i> Secure document sharing</li>
                     <li><i class="fas fa-check-circle"></i> Real-time collaboration</li>
-                    <li><i class="fas fa-check-circle"></i> Version control and history</li>
-                    <li><i class="fas fa-check-circle"></i> Cross-platform accessibility</li>
-                    <li><i class="fas fa-check-circle"></i> Professional portfolio display</li>
+                    <li><i class="fas a-check-circle"></i> Version control and history</li>
                 </ul>
             </div>
             
@@ -306,14 +305,12 @@
         
         <!-- Right main content -->
         <div class="main-content">
-            <div class="header">
-                <h2>Shared Resources Folder</h2>
-                <p>Access and interact with our shared documents and files directly through the embedded Box folder below.</p>
-            </div>
-            
             <div class="embed-container">
                 <div class="embed-header">
-                    <h3>Box Folder: Shared Resources</h3>
+                    <div>
+                        <h3>Box Folder Viewer</h3>
+                        <span class="current-folder" id="current-folder-name">Main Shared Folder</span>
+                    </div>
                     <div class="box-logo">
                         <i class="fab fa-dropbox"></i>
                         <span>Box Cloud Storage</span>
@@ -323,6 +320,7 @@
                 <div class="embed-frame-container">
                     <!-- Embedded Box folder -->
                     <iframe 
+                        id="box-embed"
                         src="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q?view=list&sort=date&direction=desc"
                         class="embed-frame"
                         frameborder="0"
@@ -331,26 +329,66 @@
                     ></iframe>
                 </div>
             </div>
-            
-            <div class="note">
-                <p><strong>Note:</strong> The embedded Box folder above displays shared documents and files. You can preview, download, or interact with files directly if you have the appropriate permissions. For any access issues, please contact the administrator.</p>
-            </div>
         </div>
     </div>
 
     <script>
-        // Simple script to handle the "Open Directly" button
         document.addEventListener('DOMContentLoaded', function() {
-            // Add a fallback message if the iframe fails to load
-            const iframe = document.querySelector('.embed-frame');
+            const iframe = document.getElementById('box-embed');
+            const folderLinks = document.querySelectorAll('.folder-link');
+            const folderItems = document.querySelectorAll('.folder-list li');
+            const currentFolderName = document.getElementById('current-folder-name');
             
+            // Function to change the embedded URL
+            function changeEmbeddedFolder(url, folderName) {
+                // Update iframe source
+                iframe.src = url;
+                
+                // Update current folder name
+                currentFolderName.textContent = folderName;
+                
+                // Update active state
+                folderItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Find and activate the clicked item
+                folderLinks.forEach(link => {
+                    if (link.dataset.url === url) {
+                        link.parentElement.classList.add('active');
+                    }
+                });
+                
+                // Update folder icons
+                folderLinks.forEach(link => {
+                    const icon = link.querySelector('i');
+                    if (link.dataset.url === url) {
+                        icon.className = 'fas fa-folder-open';
+                    } else {
+                        icon.className = 'fas fa-folder';
+                    }
+                });
+            }
+            
+            // Add click event listeners to folder links
+            folderLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const url = this.dataset.url;
+                    const folderName = this.dataset.name;
+                    
+                    changeEmbeddedFolder(url, folderName);
+                });
+            });
+            
+            // Handle iframe loading states
             iframe.addEventListener('load', function() {
                 console.log('Box folder loaded successfully');
             });
             
             iframe.addEventListener('error', function() {
                 console.log('Error loading Box folder');
-                // In a real implementation, you might show an error message here
+                // Could add error message display here
             });
         });
     </script>
