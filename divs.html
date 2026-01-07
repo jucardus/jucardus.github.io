@@ -219,6 +219,13 @@
             outline: 0;
             display: block;
             background-color: #ffffff;
+            opacity: 1;
+            transition: opacity 0.2s ease;
+        }
+        
+        .embed-frame.hidden {
+            opacity: 0;
+            visibility: hidden;
         }
         
         /* Loading overlay with CIRCLES spinner */
@@ -271,31 +278,32 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* MOBILE STYLES */
+        /* MOBILE STYLES - SIMPLIFIED */
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
                 position: static;
+                height: auto;
+                min-height: 100vh;
             }
             
             html, body {
                 overflow-y: auto;
-                background-color: #0a0e2a; /* Match sidebar color */
+                background-color: #0a0e2a;
             }
             
-            /* Mobile header */
+            /* Mobile header - ONLY ONE HEADER */
             .mobile-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 15px 20px;
-                background: linear-gradient(135deg, #0a0e2a, #1a2a6c);
+                background: #0a0e2a;
                 color: white;
                 width: 100%;
                 position: relative;
                 z-index: 10;
-                /* Remove any extra blue bar by ensuring no border/bottom */
-                border-bottom: none;
+                height: 70px;
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
             }
             
@@ -322,7 +330,7 @@
                 margin: 0;
             }
             
-            /* Hide desktop sidebar */
+            /* Hide desktop sidebar initially on mobile */
             .sidebar {
                 position: fixed;
                 top: 0;
@@ -331,10 +339,9 @@
                 height: 100%;
                 z-index: 20;
                 transform: translateX(-100%);
-                padding-top: 80px;
+                padding-top: 0;
                 overflow-y: auto;
                 box-shadow: none;
-                /* Remove any gradient that might cause extra blue bar */
                 background: #0a0e2a;
             }
             
@@ -342,37 +349,24 @@
                 transform: translateX(0);
             }
             
-            /* Adjust logo in mobile sidebar */
+            /* Remove the duplicate logo in mobile sidebar */
             .sidebar .logo {
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                background: #0a0e2a;
-                padding: 15px 25px;
-                margin: 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                z-index: 21;
-                /* Remove gradient to prevent extra blue bar */
-                background: linear-gradient(135deg, #0a0e2a, #0a0e2a);
-            }
-            
-            .sidebar .logo .logo-content h1 {
-                font-size: 1.8rem;
+                display: none;
             }
             
             /* Adjust content in mobile sidebar */
             .sidebar .content {
-                padding-top: 60px;
+                padding-top: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
             
             .main-content {
                 width: 100%;
                 height: calc(100vh - 70px);
                 min-height: calc(100vh - 70px);
-                margin-top: 70px;
-                /* Remove any background that might show through */
-                background-color: #ffffff;
+                margin-top: 0;
+                position: relative;
             }
             
             .loading-spinner, .circle-spinner {
@@ -405,14 +399,15 @@
                 padding: 12px 14px;
             }
             
-            .sidebar {
-                padding: 70px 15px 15px 15px;
+            .sidebar .content {
+                padding-top: 80px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             
             .main-content {
                 height: calc(100vh - 65px);
                 min-height: calc(100vh - 65px);
-                margin-top: 65px;
             }
             
             .circle-spinner {
@@ -546,13 +541,18 @@
                 }
             }
             
-            // Function to change the embedded URL
+            // Function to change the embedded URL with proper loading
             function changeEmbeddedFolder(url, folderName) {
+                // Immediately hide the current iframe content
+                iframe.classList.add('hidden');
+                
                 // Show loading overlay
                 loadingOverlay.classList.remove('hidden');
                 
-                // Update iframe source
-                iframe.src = url;
+                // Update iframe source - but wait a bit before loading to ensure clean transition
+                setTimeout(() => {
+                    iframe.src = url;
+                }, 50);
                 
                 // Update active state
                 folderItems.forEach(item => {
@@ -595,16 +595,28 @@
             
             // Handle iframe loading states
             iframe.addEventListener('load', function() {
+                // Hide loading overlay
                 loadingOverlay.classList.add('hidden');
+                
+                // Show the iframe with a slight delay for smooth transition
+                setTimeout(() => {
+                    iframe.classList.remove('hidden');
+                }, 50);
+                
                 console.log('Box folder loaded successfully');
             });
             
             iframe.addEventListener('error', function() {
+                // Still show the iframe even on error
+                iframe.classList.remove('hidden');
+                
+                // Update loading text to error
                 loadingOverlay.querySelector('.loading-text').textContent = 'Error loading folder. Please try again.';
                 console.log('Error loading Box folder');
                 
-                // After 3 seconds, change back to loading text
+                // After 3 seconds, hide loading and reset text
                 setTimeout(function() {
+                    loadingOverlay.classList.add('hidden');
                     loadingOverlay.querySelector('.loading-text').textContent = 'Loading folder...';
                 }, 3000);
             });
@@ -625,6 +637,7 @@
             // Hide loading overlay after initial load timeout (fallback)
             setTimeout(function() {
                 loadingOverlay.classList.add('hidden');
+                iframe.classList.remove('hidden');
             }, 3000);
             
             // Close menu with escape key
@@ -633,6 +646,9 @@
                     toggleMobileMenu(false);
                 }
             });
+            
+            // Initial setup - ensure iframe is visible
+            iframe.classList.remove('hidden');
         });
     </script>
 </body>
