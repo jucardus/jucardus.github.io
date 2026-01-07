@@ -6,25 +6,28 @@
     <title>Jucardus.com - Box Folders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
+        /* CSS Reset to eliminate all default spacing */
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
-        body {
-            background-color: #0a0e2a;
-            color: #e6e9f0;
-            line-height: 1.6;
-            height: 100vh;
+        html, body {
+            width: 100%;
+            height: 100%;
             overflow: hidden;
+            background-color: #0a0e2a;
         }
         
         .container {
             display: flex;
+            width: 100vw;
             height: 100vh;
-            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
         }
         
         /* Left sidebar styling */
@@ -41,7 +44,7 @@
             flex-shrink: 0;
         }
         
-        /* Hide scrollbar for Chrome, Safari and Opera */
+        /* Hide scrollbar */
         .sidebar::-webkit-scrollbar {
             width: 6px;
         }
@@ -55,7 +58,6 @@
             border-radius: 3px;
         }
         
-        /* Hide scrollbar for IE, Edge and Firefox */
         .sidebar {
             scrollbar-width: thin;
             scrollbar-color: rgba(108, 139, 255, 0.5) rgba(255, 255, 255, 0.05);
@@ -136,36 +138,65 @@
             line-height: 1.5;
         }
         
-        /* Right main content styling */
+        /* Right main content - COMPLETELY BORDERLESS */
         .main-content {
-            flex-grow: 1;
-            height: 100%;
-            width: calc(100% - 320px);
+            flex: 1;
             position: relative;
             background-color: #ffffff;
+            /* Remove ALL spacing */
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            min-width: 0; /* Prevent flex item overflow */
         }
         
         .embed-container {
-            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
-            position: relative;
+            height: 100%;
+            /* Remove ALL spacing */
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
         }
         
         .embed-frame-container {
             position: absolute;
             top: 0;
             left: 0;
+            right: 0;
+            bottom: 0;
             width: 100%;
             height: 100%;
+            /* Remove ALL spacing */
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
             overflow: hidden;
             background-color: #ffffff;
         }
         
+        /* IFRAME - COMPLETELY BORDERLESS */
         .embed-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            /* Remove ALL default iframe styling */
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
             display: block;
+            background-color: #ffffff;
         }
         
         /* Loading overlay */
@@ -180,13 +211,9 @@
             justify-content: center;
             align-items: center;
             z-index: 100;
-            opacity: 1;
-            transition: opacity 0.3s ease;
         }
         
         .loading-overlay.hidden {
-            opacity: 0;
-            pointer-events: none;
             display: none;
         }
         
@@ -210,11 +237,10 @@
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
-                height: auto;
-                min-height: 100vh;
+                position: static;
             }
             
-            body {
+            html, body {
                 overflow-y: auto;
             }
             
@@ -226,8 +252,8 @@
             }
             
             .main-content {
-                width: 100%;
                 height: 60vh;
+                min-height: 60vh;
             }
             
             .logo h1 {
@@ -247,6 +273,7 @@
             
             .main-content {
                 height: 50vh;
+                min-height: 50vh;
             }
             
             .loading-spinner {
@@ -296,10 +323,10 @@
             </div>
         </div>
         
-        <!-- Right main content -->
+        <!-- Right main content - COMPLETELY BORDERLESS -->
         <div class="main-content">
             <div class="embed-container">
-                <!-- Loading overlay - initially visible -->
+                <!-- Loading overlay -->
                 <div class="loading-overlay" id="loading-overlay">
                     <div class="loading-content">
                         <div class="loading-spinner">
@@ -310,14 +337,15 @@
                 </div>
                 
                 <div class="embed-frame-container">
-                    <!-- Embedded Box folder -->
+                    <!-- Embedded Box folder - COMPLETELY BORDERLESS -->
                     <iframe 
                         id="box-embed"
                         src="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q?view=list&sort=date&direction=desc"
                         class="embed-frame"
-                        frameborder="0"
-                        allowfullscreen
                         title="Jucardus.com Box Folder Viewer"
+                        allowfullscreen
+                        webkitallowfullscreen
+                        mozallowfullscreen
                     ></iframe>
                 </div>
             </div>
@@ -330,7 +358,6 @@
             const folderLinks = document.querySelectorAll('.folder-link');
             const folderItems = document.querySelectorAll('.folder-list li');
             const loadingOverlay = document.getElementById('loading-overlay');
-            let isFirstLoad = true;
             
             // Function to change the embedded URL
             function changeEmbeddedFolder(url, folderName) {
@@ -376,25 +403,11 @@
             
             // Handle iframe loading states
             iframe.addEventListener('load', function() {
-                // Hide loading overlay after a short delay to ensure content is visible
-                setTimeout(function() {
-                    loadingOverlay.classList.add('hidden');
-                }, 500); // 500ms delay to ensure smooth transition
-                
+                loadingOverlay.classList.add('hidden');
                 console.log('Box folder loaded successfully');
-                
-                // For first load, hide loading after iframe is ready
-                if (isFirstLoad) {
-                    isFirstLoad = false;
-                    // Slightly longer delay for first load
-                    setTimeout(function() {
-                        loadingOverlay.classList.add('hidden');
-                    }, 1000);
-                }
             });
             
             iframe.addEventListener('error', function() {
-                // Keep loading overlay visible on error with message
                 loadingOverlay.querySelector('.loading-text').textContent = 'Error loading folder. Please try again.';
                 console.log('Error loading Box folder');
                 
@@ -404,29 +417,10 @@
                 }, 3000);
             });
             
-            // Prevent horizontal scrolling
-            window.addEventListener('scroll', function() {
-                if (window.scrollX !== 0) {
-                    window.scrollTo(0, window.scrollY);
-                }
-            });
-            
-            // Disable horizontal scrolling with mouse wheel
-            window.addEventListener('wheel', function(e) {
-                if (e.deltaX !== 0) {
-                    e.preventDefault();
-                }
-            }, { passive: false });
-            
-            // Hide loading overlay on first load after iframe is ready
-            // Add an additional check in case iframe load event doesn't fire
-            window.addEventListener('load', function() {
-                setTimeout(function() {
-                    if (!isFirstLoad) return;
-                    loadingOverlay.classList.add('hidden');
-                    isFirstLoad = false;
-                }, 2000);
-            });
+            // Hide loading overlay after initial load timeout (fallback)
+            setTimeout(function() {
+                loadingOverlay.classList.add('hidden');
+            }, 3000);
         });
     </script>
 </body>
