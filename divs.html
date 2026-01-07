@@ -14,8 +14,8 @@
         }
         
         body {
-            background-color: #f5f7fa;
-            color: #333;
+            background-color: #0a0e2a;
+            color: #e6e9f0;
             line-height: 1.6;
             height: 100vh;
             overflow: hidden;
@@ -29,34 +29,55 @@
         
         /* Left sidebar styling */
         .sidebar {
-            width: 30%;
-            background: linear-gradient(135deg, #1a2a6c, #2a3a8c);
+            width: 320px;
+            background: linear-gradient(135deg, #0a0e2a, #1a2a6c);
             color: white;
-            padding: 40px 30px;
+            padding: 30px 25px;
             display: flex;
             flex-direction: column;
-            box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
             overflow-y: auto;
+            overflow-x: hidden;
+            flex-shrink: 0;
+        }
+        
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .sidebar::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .sidebar::-webkit-scrollbar-thumb {
+            background: rgba(108, 139, 255, 0.5);
+            border-radius: 3px;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .sidebar {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(108, 139, 255, 0.5) rgba(255, 255, 255, 0.05);
         }
         
         .logo {
             margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .logo h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            background: linear-gradient(to right, #f9f9f9, #b8c6db);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+            color: #f9f9f9;
         }
         
         .logo p {
-            font-size: 1rem;
-            opacity: 0.8;
+            font-size: 0.9rem;
+            opacity: 0.7;
             font-weight: 300;
         }
         
@@ -64,145 +85,75 @@
             flex-grow: 1;
         }
         
-        .content h2 {
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-            font-weight: 600;
-            color: #e6e9f0;
-        }
-        
-        .content p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            opacity: 0.9;
-        }
-        
         .folder-list {
-            margin-top: 40px;
             list-style-type: none;
+            margin-bottom: 40px;
         }
         
         .folder-list li {
-            margin-bottom: 12px;
-            border-radius: 8px;
+            margin-bottom: 8px;
+            border-radius: 6px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
         
         .folder-list li:hover {
-            background-color: rgba(255, 255, 255, 0.05);
-            transform: translateX(5px);
+            background-color: rgba(108, 139, 255, 0.1);
+            transform: translateX(3px);
         }
         
         .folder-list li.active {
             background-color: rgba(108, 139, 255, 0.15);
-            border-left: 4px solid #6c8bff;
         }
         
         .folder-link {
             display: block;
-            padding: 16px 20px;
-            color: white;
+            padding: 14px 16px;
+            color: #e6e9f0;
             text-decoration: none;
-            font-size: 1.2rem;
-            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
             cursor: pointer;
         }
         
         .folder-link:hover {
-            color: #b8c6db;
+            color: #ffffff;
         }
         
         .folder-link i {
             margin-right: 12px;
             color: #6c8bff;
-            font-size: 1.2rem;
-            width: 24px;
+            font-size: 1.1rem;
+            width: 20px;
             text-align: center;
         }
         
-        .features {
-            margin-top: 40px;
-            list-style-type: none;
-        }
-        
-        .features li {
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-        }
-        
-        .features li i {
-            margin-right: 12px;
-            color: #6c8bff;
-            font-size: 1.2rem;
-        }
-        
-        .footer {
-            margin-top: 50px;
-            font-size: 0.9rem;
-            opacity: 0.7;
-            text-align: center;
+        .info {
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            opacity: 0.6;
+            line-height: 1.5;
         }
         
         /* Right main content styling */
         .main-content {
-            width: 70%;
+            flex-grow: 1;
             height: 100%;
-            display: flex;
-            flex-direction: column;
+            width: calc(100% - 320px);
+            background: #000;
         }
         
         .embed-container {
             height: 100%;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .embed-header {
-            background: linear-gradient(to right, #1a2a6c, #2a3a8c);
-            color: white;
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-shrink: 0;
-        }
-        
-        .embed-header h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        
-        .current-folder {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-top: 5px;
-            display: block;
-        }
-        
-        .box-logo {
-            display: flex;
-            align-items: center;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        .box-logo i {
-            margin-right: 8px;
-            font-size: 1.4rem;
         }
         
         .embed-frame-container {
-            flex-grow: 1;
             position: relative;
             width: 100%;
             height: 100%;
+            overflow: hidden;
         }
         
         .embed-frame {
@@ -211,48 +162,62 @@
             border: none;
         }
         
+        /* Loading indicator */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #6c8bff;
+            font-size: 1.2rem;
+            display: none;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
         /* Responsive design */
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
                 height: auto;
-                overflow-y: auto;
+                min-height: 100vh;
             }
             
             body {
                 overflow-y: auto;
             }
             
-            .sidebar, .main-content {
-                width: 100%;
-            }
-            
             .sidebar {
-                padding: 30px 20px;
+                width: 100%;
+                height: auto;
+                max-height: 40vh;
+                padding: 20px;
             }
             
             .main-content {
-                height: 70vh;
+                width: 100%;
+                height: 60vh;
+            }
+            
+            .logo h1 {
+                font-size: 1.8rem;
             }
         }
         
         @media (max-width: 768px) {
-            .logo h1 {
-                font-size: 2.2rem;
-            }
-            
-            .embed-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .box-logo {
-                margin-top: 10px;
-            }
-            
             .folder-link {
-                font-size: 1.1rem;
-                padding: 14px 16px;
+                font-size: 1rem;
+                padding: 12px 14px;
+            }
+            
+            .sidebar {
+                padding: 15px;
+            }
+            
+            .main-content {
+                height: 50vh;
             }
         }
     </style>
@@ -263,18 +228,15 @@
         <div class="sidebar">
             <div class="logo">
                 <h1>Jucardus.com</h1>
-                <p>Digital Portfolio & Resource Hub</p>
+                <p>Box Folder Viewer</p>
             </div>
             
             <div class="content">
-                <h2>Folder Navigation</h2>
-                <p>Select a folder below to view its contents in the embedded Box viewer on the right.</p>
-                
                 <ul class="folder-list">
                     <li id="default-folder" class="active">
-                        <span class="folder-link" data-url="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q?view=list&sort=date&direction=desc" data-name="Main Shared Folder">
+                        <span class="folder-link" data-url="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q?view=list&sort=date&direction=desc" data-name="Main Folder">
                             <i class="fas fa-folder-open"></i>
-                            Main Shared Folder
+                            Main Folder
                         </span>
                     </li>
                     <li>
@@ -291,32 +253,15 @@
                     </li>
                 </ul>
                 
-                <ul class="features">
-                    <li><i class="fas fa-check-circle"></i> Secure document sharing</li>
-                    <li><i class="fas fa-check-circle"></i> Real-time collaboration</li>
-                    <li><i class="fas a-check-circle"></i> Version control and history</li>
-                </ul>
-            </div>
-            
-            <div class="footer">
-                <p>&copy; 2023 Jucardus.com. All rights reserved.</p>
+                <div class="info">
+                    <p>Select a folder to view its contents. The embedded Box viewer will load the selected folder on the right.</p>
+                </div>
             </div>
         </div>
         
         <!-- Right main content -->
         <div class="main-content">
             <div class="embed-container">
-                <div class="embed-header">
-                    <div>
-                        <h3>Box Folder Viewer</h3>
-                        <span class="current-folder" id="current-folder-name">Main Shared Folder</span>
-                    </div>
-                    <div class="box-logo">
-                        <i class="fab fa-dropbox"></i>
-                        <span>Box Cloud Storage</span>
-                    </div>
-                </div>
-                
                 <div class="embed-frame-container">
                     <!-- Embedded Box folder -->
                     <iframe 
@@ -325,8 +270,11 @@
                         class="embed-frame"
                         frameborder="0"
                         allowfullscreen
-                        title="Jucardus.com Shared Folder"
+                        title="Jucardus.com Box Folder Viewer"
                     ></iframe>
+                    <div class="loading" id="loading-indicator">
+                        <i class="fas fa-spinner fa-spin"></i> Loading folder...
+                    </div>
                 </div>
             </div>
         </div>
@@ -337,15 +285,15 @@
             const iframe = document.getElementById('box-embed');
             const folderLinks = document.querySelectorAll('.folder-link');
             const folderItems = document.querySelectorAll('.folder-list li');
-            const currentFolderName = document.getElementById('current-folder-name');
+            const loadingIndicator = document.getElementById('loading-indicator');
             
             // Function to change the embedded URL
             function changeEmbeddedFolder(url, folderName) {
+                // Show loading indicator
+                loadingIndicator.classList.add('active');
+                
                 // Update iframe source
                 iframe.src = url;
-                
-                // Update current folder name
-                currentFolderName.textContent = folderName;
                 
                 // Update active state
                 folderItems.forEach(item => {
@@ -383,13 +331,30 @@
             
             // Handle iframe loading states
             iframe.addEventListener('load', function() {
+                // Hide loading indicator
+                loadingIndicator.classList.remove('active');
                 console.log('Box folder loaded successfully');
             });
             
             iframe.addEventListener('error', function() {
+                // Hide loading indicator
+                loadingIndicator.classList.remove('active');
                 console.log('Error loading Box folder');
-                // Could add error message display here
             });
+            
+            // Prevent horizontal scrolling
+            window.addEventListener('scroll', function() {
+                if (window.scrollX !== 0) {
+                    window.scrollTo(0, window.scrollY);
+                }
+            });
+            
+            // Disable horizontal scrolling with mouse wheel
+            window.addEventListener('wheel', function(e) {
+                if (e.deltaX !== 0) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
         });
     </script>
 </body>
