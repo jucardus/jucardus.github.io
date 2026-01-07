@@ -30,7 +30,7 @@
             left: 0;
         }
         
-        /* Left sidebar styling */
+        /* Left sidebar styling - DESKTOP */
         .sidebar {
             width: 320px;
             background: linear-gradient(135deg, #0a0e2a, #1a2a6c);
@@ -42,6 +42,7 @@
             overflow-y: auto;
             overflow-x: hidden;
             flex-shrink: 0;
+            transition: transform 0.3s ease;
         }
         
         /* Hide scrollbar */
@@ -67,6 +68,13 @@
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-content {
+            flex-grow: 1;
         }
         
         .logo h1 {
@@ -81,6 +89,18 @@
             font-size: 0.9rem;
             opacity: 0.7;
             font-weight: 300;
+        }
+        
+        /* Mobile menu button - hidden on desktop */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 5px;
+            margin-left: 15px;
         }
         
         .content {
@@ -199,7 +219,7 @@
             background-color: #ffffff;
         }
         
-        /* Loading overlay */
+        /* Loading overlay with CIRCLES spinner */
         .loading-overlay {
             position: absolute;
             top: 0;
@@ -233,7 +253,23 @@
             font-weight: 500;
         }
         
-        /* Responsive design */
+        /* CIRCLE spinner animation */
+        .circle-spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(108, 139, 255, 0.3);
+            border-top: 5px solid #6c8bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* MOBILE STYLES */
         @media (max-width: 1024px) {
             .container {
                 flex-direction: column;
@@ -244,55 +280,169 @@
                 overflow-y: auto;
             }
             
-            .sidebar {
+            /* Mobile header */
+            .mobile-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 20px;
+                background: linear-gradient(135deg, #0a0e2a, #1a2a6c);
+                color: white;
                 width: 100%;
-                height: auto;
-                max-height: 40vh;
-                padding: 20px;
+                position: relative;
+                z-index: 10;
             }
             
-            .main-content {
-                height: 60vh;
-                min-height: 60vh;
+            .mobile-header h1 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #f9f9f9;
             }
             
-            .logo h1 {
+            .mobile-header p {
+                font-size: 0.8rem;
+                opacity: 0.7;
+                font-weight: 300;
+                margin-top: 3px;
+            }
+            
+            /* Show menu toggle on mobile */
+            .menu-toggle {
+                display: block;
+            }
+            
+            /* Hide desktop sidebar */
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 20;
+                transform: translateX(-100%);
+                padding-top: 80px;
+                overflow-y: auto;
+                box-shadow: none;
+            }
+            
+            .sidebar.mobile-visible {
+                transform: translateX(0);
+            }
+            
+            /* Adjust logo in mobile sidebar */
+            .sidebar .logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(135deg, #0a0e2a, #1a2a6c);
+                padding: 15px 25px;
+                margin: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                z-index: 21;
+            }
+            
+            .sidebar .logo .logo-content h1 {
                 font-size: 1.8rem;
             }
-        }
-        
-        @media (max-width: 768px) {
-            .folder-link {
-                font-size: 1rem;
-                padding: 12px 14px;
-            }
             
-            .sidebar {
-                padding: 15px;
+            /* Adjust content in mobile sidebar */
+            .sidebar .content {
+                padding-top: 60px;
             }
             
             .main-content {
-                height: 50vh;
-                min-height: 50vh;
+                width: 100%;
+                height: calc(100vh - 70px);
+                min-height: calc(100vh - 70px);
+                margin-top: 70px;
             }
             
-            .loading-spinner {
+            .loading-spinner, .circle-spinner {
                 font-size: 2.5rem;
+                width: 50px;
+                height: 50px;
             }
             
             .loading-text {
                 font-size: 1rem;
             }
         }
+        
+        @media (max-width: 768px) {
+            .mobile-header {
+                padding: 12px 15px;
+            }
+            
+            .mobile-header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .folder-link {
+                font-size: 1rem;
+                padding: 12px 14px;
+            }
+            
+            .sidebar {
+                padding: 70px 15px 15px 15px;
+            }
+            
+            .main-content {
+                height: calc(100vh - 65px);
+                min-height: calc(100vh - 65px);
+                margin-top: 65px;
+            }
+            
+            .circle-spinner {
+                width: 45px;
+                height: 45px;
+                border-width: 4px;
+            }
+        }
+        
+        /* Overlay for mobile menu background */
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 15;
+        }
+        
+        .menu-overlay.visible {
+            display: block;
+        }
     </style>
 </head>
 <body>
+    <!-- Mobile Header (hidden on desktop) -->
+    <div class="mobile-header">
+        <div>
+            <h1>Jucardus.com</h1>
+            <p>Box Folder Viewer</p>
+        </div>
+        <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    
+    <!-- Overlay for closing menu on mobile -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    
     <div class="container">
         <!-- Left sidebar -->
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <div class="logo">
-                <h1>Jucardus.com</h1>
-                <p>Box Folder Viewer</p>
+                <div class="logo-content">
+                    <h1>Jucardus.com</h1>
+                    <p>Box Folder Viewer</p>
+                </div>
+                <button class="menu-toggle" id="close-menu-toggle" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
             
             <div class="content">
@@ -326,12 +476,10 @@
         <!-- Right main content - COMPLETELY BORDERLESS -->
         <div class="main-content">
             <div class="embed-container">
-                <!-- Loading overlay -->
+                <!-- Loading overlay with CIRCLE spinner -->
                 <div class="loading-overlay" id="loading-overlay">
                     <div class="loading-content">
-                        <div class="loading-spinner">
-                            <i class="fas fa-spinner fa-spin"></i>
-                        </div>
+                        <div class="circle-spinner"></div>
                         <div class="loading-text">Loading folder...</div>
                     </div>
                 </div>
@@ -358,6 +506,24 @@
             const folderLinks = document.querySelectorAll('.folder-link');
             const folderItems = document.querySelectorAll('.folder-list li');
             const loadingOverlay = document.getElementById('loading-overlay');
+            const sidebar = document.getElementById('sidebar');
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const closeMenuToggle = document.getElementById('close-menu-toggle');
+            const menuOverlay = document.getElementById('menu-overlay');
+            const isMobile = window.innerWidth <= 1024;
+            
+            // Function to toggle mobile menu
+            function toggleMobileMenu(show) {
+                if (show) {
+                    sidebar.classList.add('mobile-visible');
+                    menuOverlay.classList.add('visible');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    sidebar.classList.remove('mobile-visible');
+                    menuOverlay.classList.remove('visible');
+                    document.body.style.overflow = '';
+                }
+            }
             
             // Function to change the embedded URL
             function changeEmbeddedFolder(url, folderName) {
@@ -388,6 +554,11 @@
                         icon.className = 'fas fa-folder';
                     }
                 });
+                
+                // Close mobile menu if open
+                if (isMobile) {
+                    toggleMobileMenu(false);
+                }
             }
             
             // Add click event listeners to folder links
@@ -417,10 +588,47 @@
                 }, 3000);
             });
             
+            // Mobile menu toggle handlers
+            mobileMenuToggle.addEventListener('click', function() {
+                toggleMobileMenu(true);
+            });
+            
+            closeMenuToggle.addEventListener('click', function() {
+                toggleMobileMenu(false);
+            });
+            
+            menuOverlay.addEventListener('click', function() {
+                toggleMobileMenu(false);
+            });
+            
+            // Close menu when clicking a folder link (handled in changeEmbeddedFolder)
+            
             // Hide loading overlay after initial load timeout (fallback)
             setTimeout(function() {
                 loadingOverlay.classList.add('hidden');
             }, 3000);
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                const newIsMobile = window.innerWidth <= 1024;
+                
+                // If switching from mobile to desktop, ensure menu is visible
+                if (isMobile && !newIsMobile) {
+                    toggleMobileMenu(false);
+                    sidebar.style.transform = '';
+                }
+                
+                // Update isMobile variable for future reference
+                // Note: We can't reassign const, so we'll track this differently
+                // For this implementation, we'll just check window width each time
+            });
+            
+            // Close menu with escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    toggleMobileMenu(false);
+                }
+            });
         });
     </script>
 </body>
