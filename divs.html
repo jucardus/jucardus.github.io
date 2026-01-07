@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jucardus.com - Shared Box Folder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        /* Left sidebar styling */
+        .sidebar {
+            width: 30%;
+            background: linear-gradient(135deg, #1a2a6c, #2a3a8c);
+            color: white;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            margin-bottom: 40px;
+        }
+        
+        .logo h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #f9f9f9, #b8c6db);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .logo p {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        
+        .content {
+            flex-grow: 1;
+        }
+        
+        .content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: #e6e9f0;
+        }
+        
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        .features {
+            margin-top: 40px;
+            list-style-type: none;
+        }
+        
+        .features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        
+        .features li i {
+            margin-right: 12px;
+            color: #6c8bff;
+            font-size: 1.2rem;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Right main content styling */
+        .main-content {
+            width: 70%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .header h2 {
+            font-size: 2.2rem;
+            color: #1a2a6c;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .embed-container {
+            flex-grow: 1;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .embed-header {
+            background: linear-gradient(to right, #1a2a6c, #2a3a8c);
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .embed-header h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .box-logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .box-logo i {
+            margin-right: 8px;
+            font-size: 1.4rem;
+        }
+        
+        .embed-frame-container {
+            flex-grow: 1;
+            position: relative;
+            width: 100%;
+        }
+        
+        .embed-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 40px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        
+        .placeholder i {
+            font-size: 4rem;
+            color: #1a2a6c;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        
+        .placeholder h4 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .placeholder p {
+            max-width: 600px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #1a2a6c, #2a3a8c);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(26, 42, 108, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(26, 42, 108, 0.3);
+        }
+        
+        .btn i {
+            margin-right: 8px;
+        }
+        
+        .note {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            border-left: 4px solid #1a2a6c;
+            font-size: 0.95rem;
+            color: #555;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar, .main-content {
+                width: 100%;
+            }
+            
+            .sidebar {
+                padding: 30px 20px;
+            }
+            
+            .main-content {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 2.2rem;
+            }
+            
+            .header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .embed-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .box-logo {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Jucardus.com</h1>
+                <p>Digital Portfolio & Resource Hub</p>
+            </div>
+            
+            <div class="content">
+                <h2>Welcome to Our Digital Space</h2>
+                <p>This platform serves as a central hub for sharing important documents, creative projects, and collaborative resources with our community and partners.</p>
+                <p>We believe in transparent sharing of knowledge and resources to foster innovation and collaboration across all disciplines.</p>
+                
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> Secure document sharing</li>
+                    <li><i class="fas fa-check-circle"></i> Real-time collaboration</li>
+                    <li><i class="fas fa-check-circle"></i> Version control and history</li>
+                    <li><i class="fas fa-check-circle"></i> Cross-platform accessibility</li>
+                    <li><i class="fas fa-check-circle"></i> Professional portfolio display</li>
+                </ul>
+            </div>
+            
+            <div class="footer">
+                <p>&copy; 2023 Jucardus.com. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- Right main content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Shared Resources Folder</h2>
+                <p>Access and interact with our shared documents and files directly through the embedded Box folder below.</p>
+            </div>
+            
+            <div class="embed-container">
+                <div class="embed-header">
+                    <h3>Box Folder: Shared Resources</h3>
+                    <div class="box-logo">
+                        <i class="fab fa-dropbox"></i>
+                        <span>Box Cloud Storage</span>
+                    </div>
+                </div>
+                
+                <div class="embed-frame-container">
+                    <!-- Embedded Box folder -->
+                    <iframe 
+                        src="https://app.box.com/embed/s/rx27240d30s2dsvaixh55gbok28jz13q?view=list&sort=date&direction=desc"
+                        class="embed-frame"
+                        frameborder="0"
+                        allowfullscreen
+                        title="Jucardus.com Shared Folder"
+                    ></iframe>
+                </div>
+            </div>
+            
+            <div class="note">
+                <p><strong>Note:</strong> The embedded Box folder above displays shared documents and files. You can preview, download, or interact with files directly if you have the appropriate permissions. For any access issues, please contact the administrator.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple script to handle the "Open Directly" button
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add a fallback message if the iframe fails to load
+            const iframe = document.querySelector('.embed-frame');
+            
+            iframe.addEventListener('load', function() {
+                console.log('Box folder loaded successfully');
+            });
+            
+            iframe.addEventListener('error', function() {
+                console.log('Error loading Box folder');
+                // In a real implementation, you might show an error message here
+            });
+        });
+    </script>
+</body>
+</html>
