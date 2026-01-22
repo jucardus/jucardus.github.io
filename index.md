@@ -10,7 +10,7 @@
 
 * **Autor:** Jucardus ©
 * **Contacto:** [jucardus en gmail punto com](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md)
-* **Enlace corto:** [jucardus.com](https://jucardus.com)
+* **Sitio central:** [jucardus.com](https://jucardus.com)
 
 ### Mis sitios web
 
