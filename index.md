@@ -11,19 +11,3 @@
 * **Autor:** Jucardus ©
 * **Contacto:** [jucardus en gmail punto com](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md)
 * **Sitio central:** [jucardus.com](https://jucardus.com)
-
-### Mis sitios web
-
-* [Actividad general](https://github.com/jucardus/jucardus.github.io/blob/main/readme.md) - a.jucardus.com
-* [Contacto y suscripción](https://github.com/jucardus/jucardus.github.io/blob/main/correo.md) - c.jucardus.com
-* [Enlaces varios](https://jucardus.github.io/enlaces) - e.jucardus.com
-* [Facebook de difusión](https://www.facebook.com/jucardus.page) - fb.jucardus.com
-* [Fotografías muchas](https://jucardus.github.io/fotos) - f.jucardus.com
-* [Invitación a pCloud](https://is.gd/ipcloud) - i.jucardus.com
-* [Linktree Jucardus](https://linktr.ee/jucardus) - lt.jucardus.com
-* [Música clásica](https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p) - m.jucardus.com
-* [Pagos y donaciones](https://www.paypal.com/paypalme/jucardus) - pp.jucardus.com
-* [Postimages](https://postimg.cc/user/jucardus) - pi.jucardus.com
-* [Repositorio](https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/) - r.jucardus.com
-* [Tumblr de difusión](https://jucardus.tumblr.com/) - t.jucardus.com
-* [X Twitter](https://x.com/jucardus) - x.jucardus.com
