@@ -4,8 +4,8 @@
 <body onload="hacer()">
 <script>
 function hacer() {
-    var texto = window.location.href.replace(/.*jucardus\.github\.io\/x\?=/g,'');
-    var exear = 'https://x.com/intent/tweet?text=' + texto.replace(/¶/g,'%0A%0A');
+    var texto = window.location.href.replace(/¶/g,'%0A%0A').replace(/.*jucardus\.github\.io\/x\?=/g,'');
+    var exear = 'https://x.com/intent/tweet?text=' + texto;
     window.location.replace(exear);
     }
 </script>
