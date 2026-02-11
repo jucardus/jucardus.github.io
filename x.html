@@ -5,7 +5,7 @@
 <script>
 function hacer() {
     var texto = window.location.href.replace(/.*jucardus\.github\.io\/x\?=/g,'');
-    var exear = 'https://x.com/intent/tweet?text=' + texto;
+    var exear = 'https://x.com/intent/tweet?text=' + texto.replace(/¶/g,'%0A%0A');
     window.location.replace(exear);
     }
 </script>
