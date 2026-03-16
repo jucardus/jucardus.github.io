@@ -25,7 +25,7 @@
 
         // If the path is root ("/") or empty, redirect to the base Box URL
         if (path === "/" || path === "") {
-            window.location.replace(baseBoxUrl);
+            window.location.replace(baseBoxUrl + "/folder/357476898679?sortColumn=name&sortDirection=ASC");
         } else {
             // Extract ID, removing leading and trailing slashes
             const id = path.replace(/^\/+|\/+$/g, "");
@@ -33,13 +33,13 @@
             if (/^\d+$/.test(id)) {
                 if (id.length === 12) {
                     // Folder redirect: 12 digits
-                    window.location.replace(`${baseBoxUrl}/folder/${id}`);
+                    window.location.replace(`${baseBoxUrl}/folder/${id}?sortColumn=name&sortDirection=ASC`);
                 } else if (id.length === 13) {
                     // File redirect: 13 digits
                     window.location.replace(`${baseBoxUrl}/file/${id}`);
                 } else {
                     // Invalid length (not 12 or 13 digits), redirect to root folder
-                    window.location.replace(baseBoxUrl);
+                    window.location.replace(baseBoxUrl + "/folder/357476898679?sortColumn=name&sortDirection=ASC");
                 }
             } else {
                 // Non-numeric ID, redirect to root folder
