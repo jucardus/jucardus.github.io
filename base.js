@@ -1,4 +1,5 @@
 let base = [
+  "▓mis sitios▒Repositorio▒https://sites.google.com/view/jucardus▓",
   "▓vocabulario español▒pichulear▒https://www.diccionarioargentino.com/term/Pichulear▓",
   "▓música - Georg Philipp Telemann▒Lazarevitch, Kore | Telemann – Suita a-moll TWV55:a2 (Ouverture) | Po prostu… Filharmonia!▒https://www.youtube.com/watch?v=fby9ISe-YYc▓",
   "▓música - Carl Philipp Emanuel Bach▒François Lazarevitch plays CPE Bach Allegro from Sonata in a minor▒https://www.youtube.com/watch?v=-qbmp2ZiILQ▓",
@@ -64,7 +65,6 @@ let base = [
   "▓herramientas▒convertidor de MP4 a MP3▒https://www.freeconvert.com/mp4-to-mp3▓",
   "▓vocabulario inglés▒finicky▒https://www.merriam-webster.com/dictionary/finicky▓",
   "▓mis sitios▒X Twitter▒https://x.com/jucardus▓",
-  "▓mis sitios▒Repositorio Jucardus▒https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q▓",
   "▓mis sitios▒Linktree Jucardus▒https://linktr.ee/jucardus▓",
   "▓mis sitios▒Fotografías muchas▒https://jucardus.github.io/fotos▓",
   "▓mis sitios▒Blogspot Jucardus▒https://jucardus.blogspot.com▓",
