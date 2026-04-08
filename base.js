@@ -1,5 +1,5 @@
 let base = [
-  "▓mis sitios▒Repositorio▒https://sites.google.com/view/jucardus▓",
+  "▓mis sitios▒Repositorio con todo▒https://jucardus.github.io/repositorio▓",
   "▓vocabulario español▒pichulear▒https://www.diccionarioargentino.com/term/Pichulear▓",
   "▓música - Georg Philipp Telemann▒Lazarevitch, Kore | Telemann – Suita a-moll TWV55:a2 (Ouverture) | Po prostu… Filharmonia!▒https://www.youtube.com/watch?v=fby9ISe-YYc▓",
   "▓música - Carl Philipp Emanuel Bach▒François Lazarevitch plays CPE Bach Allegro from Sonata in a minor▒https://www.youtube.com/watch?v=-qbmp2ZiILQ▓",
