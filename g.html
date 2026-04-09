@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head></head>
-<body onload="hacer()">
-<script>
-function hacer() {
-    var texto = window.location.href.replace(/.*jucardus\.github\.io\/g\?=/g,'');
-    var exear = 'https://x.com/i/grok?text=' + texto;
-    window.location.replace(exear);
+<head>
+  <meta charset="utf-8">
+  <title>Redirigiendo a Grok...</title>
+</head>
+<body>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    let prompt = urlParams.get('q') || urlParams.get('text') || urlParams.get('prompt') || '';
+
+    if (prompt) {
+      const encoded = encodeURIComponent(prompt);
+      window.location.href = `https://x.com/i/grok?text=${encoded}`;
+    } else {
+      window.location.href = 'https://x.com/i/grok';
     }
-</script>
+  </script>
 </body>
 </html>
