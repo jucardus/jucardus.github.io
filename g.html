@@ -8,7 +8,7 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     let prompt = urlParams.get('q') || urlParams.get('text') || urlParams.get('prompt') || '';
-
+    prompt = prompt.replace(/¶/g, '\n\n');
     if (prompt) {
       const encoded = encodeURIComponent(prompt);
       window.location.href = `https://x.com/i/grok?text=${encoded}`;
