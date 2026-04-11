@@ -1,4 +1,5 @@
 let base = [
+  "▓anillos inteligentes▒Anillo Inteligente R5 Jakcom▒https://www.mercadolibre.com.pe/anillo-inteligente-nfc-resistente-al-agua-para-moviles/up/MPEU3479660340#polycard_client=search-desktop&search_layout=grid&position=2&type=product&tracking_id=4b388825-b4cc-46fa-8d8b-27cd439b554e&wid=MPE840833008&sid=search▓",
   "▓mis sitios▒Repositorio con todo▒https://jucardus.github.io/repositorio▓",
   "▓vocabulario español▒pichulear▒https://www.diccionarioargentino.com/term/Pichulear▓",
   "▓música - Georg Philipp Telemann▒Lazarevitch, Kore | Telemann – Suita a-moll TWV55:a2 (Ouverture) | Po prostu… Filharmonia!▒https://www.youtube.com/watch?v=fby9ISe-YYc▓",
