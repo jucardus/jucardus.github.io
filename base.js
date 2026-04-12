@@ -1,4 +1,5 @@
 let base = [
+  "▓celulares▒Motorola G6 Play▒https://www.xatakamovil.com/analisis/moto-g6-play-analisis-caracteristicas-precio-especificaciones▓",
   "▓brazaletes inteligentes▒NTAG215 NFC▒https://www.temu.com/pe-en/nfc-cards-nfc-tags-nfc-business-cards-nfc-215-cards-blank-nfc-cards-with-504--programmable-nfc-tags--card-wristbands-tap-to-share-your-nfc-business-card--wristband-g-601100674688801.html?refer_page_name=goods&refer_page_id=10032_1771184830179_medoi84alc&refer_page_sn=10032&_x_sessn_id=4d1omysu1v&is_back=1&no_cache_id=gc3op▓",
   "▓anillos inteligentes▒Anillo Inteligente R5 Jakcom▒https://www.mercadolibre.com.pe/anillo-inteligente-nfc-resistente-al-agua-para-moviles/up/MPEU3479660340#polycard_client=search-desktop&search_layout=grid&position=2&type=product&tracking_id=4b388825-b4cc-46fa-8d8b-27cd439b554e&wid=MPE840833008&sid=search▓",
   "▓mis sitios▒Repositorio con todo▒https://jucardus.github.io/repositorio▓",
@@ -423,7 +424,6 @@ let base = [
   "▓Blogger▒mi perfil en Blogger▒https://www.blogger.com/profile/11502776202696943567▓",
   "▓películas▒El día después de mañana▒https://www.youtube.com/watch?v=7bJDdfyFXz0▓",
   "▓películas▒Infierno rojo▒https://www.youtube.com/watch?v=v5P8-9-ieUI▓",
-  "▓películas▒Armagedón▒https://youtu.be/OhAXtd-h13I▓",
   "▓vocabulario inglés▒niche▒https://www.merriam-webster.com/dictionary/niche▓",
   "▓vocabulario español▒emérito▒https://dle.rae.es/em%C3%A9rito▓",
   "▓vocabulario español▒paripé▒https://dle.rae.es/parip%C3%A9▓",
