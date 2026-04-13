@@ -1,4 +1,5 @@
 let base = [
+  "▓BCP▒¿Deseas anular un producto BCP?▒https://www.viabcp.com/cancelacionproductos▓",
   "▓celulares▒Motorola G6▒https://www.smart-gsm.com/moviles/motorola-moto-g6▓",
   "▓celulares▒Motorola G6 Play▒https://www.xatakamovil.com/analisis/moto-g6-play-analisis-caracteristicas-precio-especificaciones▓",
   "▓brazaletes inteligentes▒NTAG215 NFC▒https://www.temu.com/pe-en/nfc-cards-nfc-tags-nfc-business-cards-nfc-215-cards-blank-nfc-cards-with-504--programmable-nfc-tags--card-wristbands-tap-to-share-your-nfc-business-card--wristband-g-601100674688801.html?refer_page_name=goods&refer_page_id=10032_1771184830179_medoi84alc&refer_page_sn=10032&_x_sessn_id=4d1omysu1v&is_back=1&no_cache_id=gc3op▓",
