@@ -1,4 +1,5 @@
 let base = [
+  "▓celulares pequeños▒Xiaomi 15 Ultra▒https://hipertextual.com/mobile/xiaomi-15-ultra-opinion-novedades-caracteristicas/▓",
   "▓BCP▒¿Deseas anular un producto BCP?▒https://www.viabcp.com/cancelacionproductos▓",
   "▓celulares▒Motorola G6▒https://www.smart-gsm.com/moviles/motorola-moto-g6▓",
   "▓celulares▒Motorola G6 Play▒https://www.xatakamovil.com/analisis/moto-g6-play-analisis-caracteristicas-precio-especificaciones▓",
@@ -3245,7 +3246,6 @@ let base = [
   "▓cuentas en X Twitter▒Buitengebieden - @buitengebieden▒https://twitter.com/buitengebieden▓",
   "▓vocabulario inglés▒luster▒https://www.dictionary.com/browse/luster▓",
   "▓vocabulario inglés-español▒gross▒https://diccionario.reverso.net/ingles-espanol/gross▓",
-  "▓películas▒Encounter▒https://youtu.be/ws8bvXA6Xxw▓",
   "▓Fisher–Yates shuffle▒definición en inglés▒https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle▓",
   "▓vocabulario español▒cansino▒https://dle.rae.es/cansino▓",
   "▓naturalismo filosófico▒definición▒https://es.wikipedia.org/wiki/Naturalismo_(filosof%C3%ADa)▓",
