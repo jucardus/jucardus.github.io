@@ -2,23 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-   
-    <!-- Mandatory Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Repositorio con todo mi contenido.">
     <meta name="author" content="Jucardus ©">
     <meta name="keywords" content="repositorio, carpetas, citas, diccionarios, escritos, fotografías, herramientas, lingüística, programación, diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe, frases multilingües, Bash, Blogger, Blogspot, CSS, Google, HHTML, JavaScript">
-   
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Archivos - Box Folder">
-    <meta property="og:description" content="Carpeta de archivos compartida en Box">
+    
+    <meta property="og:title" content="Repositorio Jucardus">
+    <meta property="og:description" content="Repositorio con todo mi contenido.">
     <meta property="og:type" content="website">
 
-    <title>Archivos - Box Folder</title>
+    <title>Repositorio Jucardus</title>
 
     <style>
         .sites-embed iframe, iframe {
-            margin-top: -70px !important;
+            margin-top: -55px !important;
             border: none !important;
             height: 110vh !important;
             overflow: hidden !important;
@@ -31,19 +28,33 @@
             }
         }
        
-        /* Móviles - Enhanced to hide Box header */
+        /* Hide outer HTML vertical scrollbar on ALL devices */
+        html, body {
+            overflow-y: hidden !important;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Móviles */
         @media screen and (max-width: 1023px) {
             .sites-embed iframe, iframe {
                 width: 100% !important;
-                margin-top: -85px !important;   /* Increased negative margin to push header up and out of view */
-                height: 110vh !important;       /* Extra height to compensate */
+                margin-top: -55px !important;
+                height: 108vh !important;
                 overflow: hidden !important;
-                position: relative !important;
             }
-           
-            /* Additional cropping attempt for the top bar */
+            
             .sites-embed iframe, iframe {
-                clip: rect(70px, 100%, 100%, 0) !important;   /* Crops the top ~70px where the header usually sits */
+                -ms-overflow-style: none !important;
+                scrollbar-width: none !important;
+            }
+            
+            .sites-embed iframe::-webkit-scrollbar,
+            iframe::-webkit-scrollbar {
+                display: none !important;
+                width: 0 !important;
+                height: 0 !important;
             }
         }
     </style>
