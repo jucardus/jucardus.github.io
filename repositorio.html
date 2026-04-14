@@ -2,13 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    
+   
     <!-- Mandatory Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Repositorio con todo mi contenido.">
     <meta name="author" content="Jucardus ©">
     <meta name="keywords" content="repositorio, carpetas, citas, diccionarios, escritos, fotografías, herramientas, lingüística, programación, diccionario inglés-español, diccionario chino-español, diccionario de nombres bíblicos, diccionario multilingüe, frases multilingües, Bash, Blogger, Blogspot, CSS, Google, HHTML, JavaScript">
-    
+   
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Archivos - Box Folder">
     <meta property="og:description" content="Carpeta de archivos compartida en Box">
@@ -23,30 +23,27 @@
             height: 110vh !important;
             overflow: hidden !important;
         }
-        
+       
         /* Escritorio */
         @media screen and (min-width: 1024px) {
             .sites-embed iframe, iframe {
                 width: 80% !important;
             }
         }
-        
-        /* Móviles - Minimal addition only */
+       
+        /* Móviles - Enhanced to hide Box header */
         @media screen and (max-width: 1023px) {
             .sites-embed iframe, iframe {
                 width: 100% !important;
-                margin-top: 0 !important;
-                height: 100vh !important;
+                margin-top: -85px !important;   /* Increased negative margin to push header up and out of view */
+                height: 110vh !important;       /* Extra height to compensate */
+                overflow: hidden !important;
+                position: relative !important;
             }
-            
-            /* Hide Box header / banner on mobile */
+           
+            /* Additional cropping attempt for the top bar */
             .sites-embed iframe, iframe {
-                position: relative;
-            }
-            
-            /* Target the common Box header elements */
-            iframe::-webkit-scrollbar {
-                display: none;
+                clip: rect(70px, 100%, 100%, 0) !important;   /* Crops the top ~70px where the header usually sits */
             }
         }
     </style>
