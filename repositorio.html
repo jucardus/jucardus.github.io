@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0.3;url=https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357227200679?view=list&sortColumn=name&sortDirection=ASC">
-    <title>Redirecting...</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-44Y9CNCHR8');
-      setTimeout(() => window.location.href="https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357227200679?view=list&sortColumn=name&sortDirection=ASC", 300);
-    </script>
+    
+    <!-- Mandatory Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Carpeta de archivos compartida en Box">
+    <meta name="author" content="Julio">
+    <meta name="keywords" content="box, archivos, carpeta compartida, documentos, cloud storage, box folder">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Archivos - Box Folder">
+    <meta property="og:description" content="Carpeta de archivos compartida en Box">
+    <meta property="og:type" content="website">
+
+    <title>Archivos - Box Folder</title>
+
+    <style>
+        .sites-embed iframe, iframe {
+            margin-top: -70px !important;
+            border: none !important;
+            height: 110vh !important;
+            overflow: hidden !important;
+        }
+        
+        /* Escritorio */
+        @media screen and (min-width: 1024px) {
+            .sites-embed iframe, iframe {
+                width: 80% !important;
+            }
+        }
+        
+        /* Móviles - Minimal addition only */
+        @media screen and (max-width: 1023px) {
+            .sites-embed iframe, iframe {
+                width: 100% !important;
+                margin-top: 0 !important;
+                height: 100vh !important;
+            }
+            
+            /* Hide Box header / banner on mobile */
+            .sites-embed iframe, iframe {
+                position: relative;
+            }
+            
+            /* Target the common Box header elements */
+            iframe::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting... <a href="https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357227200679?view=list&sortColumn=name&sortDirection=ASC">(Click here if not redirected)</a></p>
+<div style="text-align: center;">
+  <iframe
+    src="https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357227200679?view=list&sortColumn=name&sortDirection=ASC"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    allowfullscreen
+    scrolling="no">
+  </iframe>
+</div>
 </body>
 </html>
