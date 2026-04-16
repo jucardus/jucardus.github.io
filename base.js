@@ -1,4 +1,5 @@
 let base = [
+  "▓celulares pequeños▒AGM M11 Series Rugged Power Bank Phone REMOVABLE 4000mAh BATTERY!▒https://www.youtube.com/watch?v=LTHOd9eDBYY▓",
   "▓Impractical Jokers▒Impractical Jokers Funniest Moments 😂😂| Compilation (Part 14) - 1 Hour Video Funniest▒https://www.youtube.com/watch?v=Cmwj403coJQ▓",
   "▓vocabulario español▒torpor▒https://dle.rae.es/torpor▓",
   "▓celulares pequeños▒AGM M11 Review || A Powerbank with Phone Capabilities▒https://www.youtube.com/watch?v=ep6fu_Ee80I▓",
@@ -35,9 +36,7 @@ let base = [
   "▓herramientas▒Generate Free Barcodes Online▒https://barcode.tec-it.com/en/Code128▓",
   "▓mis sitios▒Google Maps▒https://www.google.com/maps/contrib/108257229988469463200/photos▓",
   "▓lugares▒San José, Arequipa, Arequipa, Perú.▒https://maps.app.goo.gl/MTfuk6HwM9UtxjMT6▓",
-  "▓música - Jean-Baptiste de Bousset▒\'Pourquoy doux Rossignol\' (Jean Baptiste de Bousset)▒https://www.youtube.com/watch?v=_ctyI7hziL8▓",
   "▓música - Jean-Baptiste de Bousset▒Suzie LeBlanc - \'Pourquoy doux rossignol\'▒https://www.youtube.com/watch?v=BN45XgrYbeU▓",
-  "▓música - Jean-Baptiste de Bousset▒Pourquoy doux rossignol▒https://www.youtube.com/watch?v=-Hp-l6NxtG4▓",
   "▓música - Jean-Baptiste de Bousset▒Pourquoy doux Rossignol - Jean-Baptiste de Bousset▒https://www.youtube.com/watch?v=jS8d0xSWqec▓",
   "▓música - Jacques-Martin Hotteterre▒French Baroque - Hotteterre: Complete Music for Flute and B.C.▒https://www.youtube.com/watch?v=0Mh_mEoEIg4▓",
   "▓Seinfeld▒Tales From The Peterman Catalog | Seinfeld▒https://www.youtube.com/watch?v=1GEPjmaF1XQ▓",
