@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒gamberro▒https://dle.rae.es/gamberro▓",
   "▓celulares pequeños▒AGM M11 Series Rugged Power Bank Phone REMOVABLE 4000mAh BATTERY!▒https://www.youtube.com/watch?v=LTHOd9eDBYY▓",
   "▓Impractical Jokers▒Impractical Jokers Funniest Moments 😂😂| Compilation (Part 14) - 1 Hour Video Funniest▒https://www.youtube.com/watch?v=Cmwj403coJQ▓",
   "▓vocabulario español▒torpor▒https://dle.rae.es/torpor▓",
