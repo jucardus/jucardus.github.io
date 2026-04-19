@@ -1,4 +1,5 @@
 let base = [
+  "▓Cuenta gratuita universal▒descripción y requisitos▒https://www.argentina.gob.ar/justicia/derechofacil/leysimple/cuenta-gratuita-universal▓",
   "▓vocabulario inglés▒risible▒https://www.merriam-webster.com/dictionary/risible▓",
   "▓celulares pequeños▒Unonu UN55L▒https://www.gsmchoice.com/es/catalogo/unonu/un55l/▓",
   "▓vídeos de Cristianismo▒Pablo de Tarso | Santiago Guijarro▒https://www.youtube.com/watch?v=ZxqvDvhHM88▓",
