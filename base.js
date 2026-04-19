@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario inglés▒risible▒https://www.merriam-webster.com/dictionary/risible▓",
   "▓celulares pequeños▒Unonu UN55L▒https://www.gsmchoice.com/es/catalogo/unonu/un55l/▓",
   "▓vídeos de Cristianismo▒Pablo de Tarso | Santiago Guijarro▒https://www.youtube.com/watch?v=ZxqvDvhHM88▓",
   "▓vocabulario español▒vociferar▒https://dle.rae.es/vociferar▓",
