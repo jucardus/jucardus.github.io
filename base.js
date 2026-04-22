@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario inglés▒seance▒https://www.merriam-webster.com/dictionary/seance▓",
   "▓vocabulario español▒pandiculación▒https://dle.rae.es/pandiculaci%C3%B3n▓",
   "▓Cuenta gratuita universal▒descripción y requisitos▒https://www.argentina.gob.ar/justicia/derechofacil/leysimple/cuenta-gratuita-universal▓",
   "▓vocabulario inglés▒risible▒https://www.merriam-webster.com/dictionary/risible▓",
