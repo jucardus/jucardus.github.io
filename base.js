@@ -1,4 +1,5 @@
 let base = [
+  "▓BCP▒inicio de sesión▒https://www.viabcp.com/▓",
   "▓vocabulario inglés▒seance▒https://www.merriam-webster.com/dictionary/seance▓",
   "▓vocabulario español▒pandiculación▒https://dle.rae.es/pandiculaci%C3%B3n▓",
   "▓Cuenta gratuita universal▒descripción y requisitos▒https://www.argentina.gob.ar/justicia/derechofacil/leysimple/cuenta-gratuita-universal▓",
@@ -28,7 +29,6 @@ let base = [
   "▓vocabulario inglés▒welp▒https://www.merriam-webster.com/dictionary/welp▓",
   "▓Cloudflare▒página de inicio de sesión▒https://dash.cloudflare.com/login▓",
   "▓Interbank▒inicio de sesión▒https://bancaporinternet.interbank.pe/#/login▓",
-  "▓BCP▒inicio de sesión▒https://loginunico.viabcp.com/▓",
   "▓bancos▒BCP▒https://www.viabcp.com▓",
   "▓vocabulario español▒vergonzante▒https://dle.rae.es/vergonzante▓",
   "▓vocabulario inglés-español▒foreplay▒https://www.linguee.es/ingles-espanol/traduccion/foreplay.html▓",
