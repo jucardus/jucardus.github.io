@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒licántropo▒https://dle.rae.es/lic%C3%A1ntropo▓",
   "▓BCP▒inicio de sesión▒https://www.viabcp.com/▓",
   "▓vocabulario inglés▒seance▒https://www.merriam-webster.com/dictionary/seance▓",
   "▓vocabulario español▒pandiculación▒https://dle.rae.es/pandiculaci%C3%B3n▓",
