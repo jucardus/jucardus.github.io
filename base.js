@@ -1,4 +1,5 @@
 let base = [
+  "▓rutas▒Entrada a la antigua carretera a Mollendo.▒https://maps.app.goo.gl/83aHZqBiXWojECrW9▓",
   "▓vocabulario español▒licántropo▒https://dle.rae.es/lic%C3%A1ntropo▓",
   "▓BCP▒inicio de sesión▒https://www.viabcp.com/▓",
   "▓vocabulario inglés▒seance▒https://www.merriam-webster.com/dictionary/seance▓",
