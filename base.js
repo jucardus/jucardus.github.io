@@ -1,4 +1,5 @@
 let base = [
+  "▓mis sitios▒Correo de contacto▒https://jucardus.github.io/correo.png▓",
   "▓vídeos de Cristianismo▒El Gnosticismo Es MUCHO Más Extraño de lo Que Piensas | Antonio Piñero Revela▒https://www.youtube.com/watch?v=o7UyvRla5Ec▓",
   "▓terminales▒Terminal de Omnibus La Plata - PlataBus▒https://maps.app.goo.gl/CpHpUfGtkF1mfXSb9▓",
   "▓canales en YouTube▒Tecnonauta - @Tecnonauta▒https://www.youtube.com/@Tecnonauta▓",
@@ -43,7 +44,6 @@ let base = [
   "▓vocabulario español▒murcio▒https://dle.rae.es/murcio▓",
   "▓música - Silvio Rodríguez▒Río▒https://www.youtube.com/watch?v=S1nAQx4WWKY▓",
   "▓vocabulario inglés▒briefing▒https://www.merriam-webster.com/dictionary/briefing▓",
-  "▓mis sitios▒Correo de contacto▒https://jucardus.github.io/correo▓",
   "▓mis sitios▒Música clásica▒https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p▓",
   "▓herramientas▒Free Online Barcode Generator▒https://www.scandit.com/barcode-generator/▓",
   "▓herramientas▒Generate Free Barcodes Online▒https://barcode.tec-it.com/en/Code128▓",
