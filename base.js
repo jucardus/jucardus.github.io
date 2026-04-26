@@ -1,4 +1,5 @@
 let base = [
+  "▓terminales▒Terminal de Omnibus La Plata - PlataBus▒https://maps.app.goo.gl/CpHpUfGtkF1mfXSb9▓",
   "▓canales en YouTube▒Tecnonauta - @Tecnonauta▒https://www.youtube.com/@Tecnonauta▓",
   "▓rutas▒Entrada a la antigua carretera a Mollendo.▒https://maps.app.goo.gl/83aHZqBiXWojECrW9▓",
   "▓vocabulario español▒licántropo▒https://dle.rae.es/lic%C3%A1ntropo▓",
