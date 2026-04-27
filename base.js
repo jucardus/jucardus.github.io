@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒execración▒https://dle.rae.es/execraci%C3%B3n▓",
   "▓mis sitios▒Diccionarios todos▒https://jucardus.github.io/diccionarios▓",
   "▓mis sitios▒Correo de contacto▒https://jucardus.github.io/correo.png▓",
   "▓vídeos de Cristianismo▒El Gnosticismo Es MUCHO Más Extraño de lo Que Piensas | Antonio Piñero Revela▒https://www.youtube.com/watch?v=o7UyvRla5Ec▓",
