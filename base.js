@@ -1,4 +1,5 @@
 let base = [
+  "▓Diccionario inglés-español▒cellar [s.] sótano; bodega; cava (bodega de vinos, _wine cellar_)▒jucardus▓",
   "▓significado del número 3▒In Judaism, the number 3 represents harmony, stability, and the synthesis of opposing forces (like duality/conflict) into a new, balanced entity. It symbolizes structural completeness and "chazaka" (a confirmed status or strong presumption) when actions are repeated three times. It is associated with the Hebrew letter Gimel (), symbolizing growth, reward, and bridging differences. ~ Gemini ~▒jucardus▓",
   "▓vocabulario español▒execración▒https://dle.rae.es/execraci%C3%B3n▓",
   "▓mis sitios▒Diccionarios todos▒https://jucardus.github.io/diccionarios▓",
