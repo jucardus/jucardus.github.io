@@ -1,4 +1,5 @@
 let base = [
+  "▓herramientas▒generador de códigos QR▒https://genqrcode.com/▓",
   "▓herramientas▒códigos QR con imagen de fondo▒https://www.andrewt.net/dithered-qr-codes/index.html▓",
   "▓vocabulario español▒fimosis▒https://dle.rae.es/fimosis▓",
   "▓Diccionario inglés-español▒cellar [s.] /ˈsɛl.ər/ sótano; bodega; cava (bodega de vinos, _wine cellar_)▒jucardus▓",
