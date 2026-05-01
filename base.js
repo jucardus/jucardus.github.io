@@ -1,4 +1,5 @@
 let base = [
+  "▓cuentas en X Twitter▒Retard Finder - @IfindRetards▒https://x.com/IfindRetards▓",
   "▓herramientas▒códigos QR con imagen de fondo▒https://hughchen.github.io/qr_image/▓",
   "▓herramientas▒generador de códigos QR▒https://genqrcode.com/▓",
   "▓herramientas▒códigos QR con imagen de fondo▒https://www.andrewt.net/dithered-qr-codes/index.html▓",
