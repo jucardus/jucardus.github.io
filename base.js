@@ -1,4 +1,5 @@
 let base = [
+  "▓herramientas▒códigos QR con imagen de fondo▒https://hughchen.github.io/qr_image/▓",
   "▓herramientas▒generador de códigos QR▒https://genqrcode.com/▓",
   "▓herramientas▒códigos QR con imagen de fondo▒https://www.andrewt.net/dithered-qr-codes/index.html▓",
   "▓vocabulario español▒fimosis▒https://dle.rae.es/fimosis▓",
