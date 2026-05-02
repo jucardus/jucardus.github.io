@@ -17,9 +17,23 @@
     <title>Recent Pages | Jucardus.com</title>
 </head>
 <body>
+    <div class="menu">
+    <a href="index.html">Home</a> · 
+    <a href="author.html">Author</a> · 
+    <a href="a/a.html">Index</a> · 
+    <a href="recent.html">Recent</a> · 
+    <a href="a/a/arts.html">Labels</a> · 
+    <a href="#" class="share-link">Share</a>
+</div>
     <h1>Latest 100 Pages</h1>
     <div>
         <ul><li>2026-05-02 - <a href="/a/a/a/aaa.html">aaa</a> - aaa, bbb</li></ul>
     </div>
+    <script>
+        document.querySelector('.share-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('https://x.com/intent/tweet?text=Recent%20pages%20%E2%80%94%20Latest%20100%20entries%0A%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Frecent.html%0A%0A%23recent_jucardus', '_blank');
+        });
+    </script>
 </body>
 </html>
