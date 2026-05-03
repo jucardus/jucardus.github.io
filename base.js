@@ -1,4 +1,5 @@
 let base = [
+  "▓cuentas en X Twitter▒Massimo - @Rainmaker1973▒https://x.com/Rainmaker1973▓",
   "▓herramientas▒generador de códigos QR con fondo▒https://qrplanet.com/▓",
   "▓cuentas en X Twitter▒Tendencias y Tuits Borrados - @tendenciaytuits▒https://x.com/tendenciaytuits▓",
   "▓cuentas en X Twitter▒Retard Finder - @IfindRetards▒https://x.com/IfindRetards▓",
