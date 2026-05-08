@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒serendipia▒https://dle.rae.es/serendipia▓",
   "▓cuentas en X Twitter▒Massimo - @Rainmaker1973▒https://x.com/Rainmaker1973▓",
   "▓herramientas▒generador de códigos QR con fondo▒https://qrplanet.com/▓",
   "▓cuentas en X Twitter▒Tendencias y Tuits Borrados - @tendenciaytuits▒https://x.com/tendenciaytuits▓",
