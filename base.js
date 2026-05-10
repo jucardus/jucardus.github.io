@@ -1,4 +1,5 @@
 let base = [
+  "▓cuentas en X Twitter▒Science girl - @sciencegirl▒https://x.com/sciencegirl▓",
   "▓vocabulario español▒farragoso▒https://dle.rae.es/farragoso▓",
   "▓vocabulario español▒sicofanta▒https://dle.rae.es/sicofanta▓",
   "▓vocabulario español▒serendipia▒https://dle.rae.es/serendipia▓",
