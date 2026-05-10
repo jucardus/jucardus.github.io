@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒farragoso▒https://dle.rae.es/farragoso▓",
   "▓vocabulario español▒sicofanta▒https://dle.rae.es/sicofanta▓",
   "▓vocabulario español▒serendipia▒https://dle.rae.es/serendipia▓",
   "▓cuentas en X Twitter▒Massimo - @Rainmaker1973▒https://x.com/Rainmaker1973▓",
