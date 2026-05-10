@@ -1,4 +1,5 @@
 let base = [
+  "▓cuentas en X▒AlphaFo𝕏 - @Alphafox▒https://x.com/Alphafox▓",
   "▓cuentas en X Twitter▒Science girl - @sciencegirl▒https://x.com/sciencegirl▓",
   "▓vocabulario español▒farragoso▒https://dle.rae.es/farragoso▓",
   "▓vocabulario español▒sicofanta▒https://dle.rae.es/sicofanta▓",
@@ -3023,7 +3024,6 @@ let base = [
   "▓caracteres▒◆▒https://www.compart.com/en/unicode/U+25C6▓",
   "▓vídeos de Cristianismo▒Were the Ebionites Heretics? Or Our Best Witness to the Jesus Movement?▒https://youtu.be/HLQ97erL1gc▓",
   "▓diccionarios▒francés-español▒https://diccionario.reverso.net/frances-espanol▓",
-  "▓cuentas en X Twitter▒AlphaFo𝕏 - @Alphafox78▒https://twitter.com/Alphafox78▓",
   "▓vocabulario inglés▒vagrant▒https://www.merriam-webster.com/dictionary/vagrant▓",
   "▓lemarios▒español▒https://teoruiz.com/archivos/2010/10/17/lemario-actualizado-espanol▓",
   "▓vocabulario español▒babucha▒https://dle.rae.es/babucha▓",
