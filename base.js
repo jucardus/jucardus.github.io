@@ -1,4 +1,5 @@
 let base = [
+  "▓mis sitios▒Actividad reciente▒https://jucardus.github.io/actividad▓",
   "▓mis sitios▒Vocabulario francés-español▒https://jucardus.github.io/vocabulaire▓",
   "▓mis sitios▒Vocabulario inglés-español▒https://jucardus.github.io/vocabulary▓",
   "▓lugares▒La Glorieta, Plaza San Martín, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/9mJXaJugD7u1g9G58▓",
