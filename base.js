@@ -1,4 +1,5 @@
 let base = [
+  "▓lugares▒Plaza Luis Castells de Villa Elisa, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/iTRxpF42c6b2qtLP7▓",
   "▓lugares▒Villa Elisa, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/F9WVz4bQQXAszi9w9▓",
   "▓cuentas en X Twitter▒AlphaFo𝕏 - @Alphafox▒https://x.com/Alphafox▓",
   "▓mis sitios▒Diccionario multilingüe▒https://jucardus.github.io/multilingue▓",
