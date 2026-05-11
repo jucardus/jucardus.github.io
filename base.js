@@ -1,4 +1,5 @@
 let base = [
+  "▓mis sitios▒Diccionario multilingüe▒https://jucardus.github.io/multilingue▓",
   "▓mis sitios▒Actividad reciente▒https://jucardus.github.io/actividad▓",
   "▓mis sitios▒Vocabulario francés-español▒https://jucardus.github.io/vocabulaire▓",
   "▓mis sitios▒Vocabulario inglés-español▒https://jucardus.github.io/vocabulary▓",
