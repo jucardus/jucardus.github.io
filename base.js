@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒irredento▒https://dle.rae.es/irredento▓",
   "▓vídeos de celulares▒Xiaomi Did What Apple Couldn’t Do in 10 Years. I’m shocked…▒https://www.youtube.com/watch?v=hz4If5AndZM▓",
   "▓diccionario francés-español▒devanture [f.] escaparate (Revêtement qui garnit et orne la façade d’une boutique.)▒jucardus▓",
   "▓vocabulario francés▒devanture▒https://www.dictionnaire-academie.fr/article/A9D2188▓",
