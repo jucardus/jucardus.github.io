@@ -1,4 +1,5 @@
 let base = [
+  "▓vídeos de Filosofía▒¿Sabes que sólo te cuentan parte de las ideas de los grandes filósofos de la historia?▒https://www.youtube.com/watch?v=nBA2Z3p5vYU▓",
   "▓diccionario inglés-español▒spite [s.] despecho, rencor, resentimiento▒jucardus▓",
   "▓vocabulario español▒volitar▒https://dle.rae.es/volitar▓",
   "▓vídeos de Cristianismo▒¿Existió realmente Jesús? Historia vs Leyenda | Antonio Piñero▒https://www.youtube.com/watch?v=-RFjj36o_II▓",
