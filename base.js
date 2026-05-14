@@ -1,4 +1,5 @@
 let base = [
+  "▓diccionario inglés-español▒spite [s.] despecho, rencor, resentimiento▒jucardus▓",
   "▓vocabulario español▒volitar▒https://dle.rae.es/volitar▓",
   "▓vídeos de Cristianismo▒¿Existió realmente Jesús? Historia vs Leyenda | Antonio Piñero▒https://www.youtube.com/watch?v=-RFjj36o_II▓",
   "▓celulares pequeños▒BLUEFOX NX1 Mini Smartphone Unboxing - ASMR▒https://www.youtube.com/watch?v=2IsVkyAYZvo▓",
