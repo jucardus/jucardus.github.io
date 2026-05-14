@@ -1,4 +1,5 @@
 let base = [
+  "▓celulares pequeños▒Why BLUEFOX NX1 Got Everyone Talking as The Smallest Smartphone in The World!▒https://www.youtube.com/watch?v=YDfwzF3Ku9o▓",
   "▓vocabulario español▒irredento▒https://dle.rae.es/irredento▓",
   "▓vídeos de celulares▒Xiaomi Did What Apple Couldn’t Do in 10 Years. I’m shocked…▒https://www.youtube.com/watch?v=hz4If5AndZM▓",
   "▓diccionario francés-español▒devanture [f.] escaparate (Revêtement qui garnit et orne la façade d’une boutique.)▒jucardus▓",
