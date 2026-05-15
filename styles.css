@@ -32,6 +32,6 @@ h2 {
   padding-bottom: 10px;
 }
 #menu {}
-#menu a {
+.menu a {
   font-weight: bold;
 }
