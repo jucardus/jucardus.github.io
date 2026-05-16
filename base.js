@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario alemán▒Der Ausdruck „die rechte Seite betreffend“ lässt sich im Deutschen am prägnantesten mit dem Adjektiv „rechtsseitig“ oder der adverbialen Formulierung „auf der rechten Seite“ übersetzen. → The expression "concerning the right side" can be most concisely translated into German with the adjective "right-hand" or the adverbial phrase "on the right side". ~ Gemini ~▒jucardus▓",
   "▓vídeos de Filosofía▒¿Sabes que sólo te cuentan parte de las ideas de los grandes filósofos de la historia?▒https://www.youtube.com/watch?v=nBA2Z3p5vYU▓",
   "▓diccionario inglés-español▒spite [s.] despecho, rencor, resentimiento▒jucardus▓",
   "▓vocabulario español▒volitar▒https://dle.rae.es/volitar▓",
@@ -2734,7 +2735,6 @@ let base = [
   "▓cuentas en X Twitter▒Le Figaro - @Le_Figaro▒https://twitter.com/Le_Figaro▓",
   "▓vocabulario inglés▒sparrow▒https://www.merriam-webster.com/dictionary/sparrow▓",
   "▓tipografía▒partes de las letras▒https://graciasgutenberg.files.wordpress.com/2019/04/partes-de-la-letra.pdf▓",
-  "▓cuentas en X Twitter▒Alerta Mundial - @AlertaMundial2▒https://twitter.com/AlertaMundial2▓",
   "▓vocabulario inglés-español▒disown▒https://www.linguee.es/ingles-espanol/traduccion/disown.html▓",
   "▓vocabulario español▒atropar▒https://es.wiktionary.org/wiki/atropar▓",
   "▓HTML▒meta para redireccionamiento de un sitio▒https://www.rapidtables.com/web/dev/html-redirect.html▓",
@@ -2817,7 +2817,6 @@ let base = [
   "▓aplicaciones Android▒Merriam-Webster Dictionary▒https://play.google.com/store/apps/details?id=com.merriamwebster▓",
   "▓canales en YouTube▒WatchBox Reviews - @WatchBoxReviews▒https://www.youtube.com/@WatchBoxReviews▓",
   "▓preterismo▒definición▒https://forocristiano.com/threads/que-es-un-preterista.19027/▓",
-  "▓cuentas en X Twitter▒Esteban Trebucq - @trebuquero▒https://twitter.com/trebuquero▓",
   "▓vocabulario español▒capirote▒https://dle.rae.es/capirote▓",
   "▓películas▒Misión secreta▒https://youtu.be/JzEAfTioIyI▓",
   "▓diccionarios▒español inverso▒https://iedra.es/▓",
