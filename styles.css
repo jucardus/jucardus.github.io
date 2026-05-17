@@ -26,6 +26,9 @@ body {
   line-height: 1.5;
   padding: 30px 23% 100px 22%;
   }
+body.menu-sticky {
+  padding-top: 60px; /* Adjust this value to match your menu's height */
+  }
 .etiquetas {
   font-weight: bold;
   padding: 15px 0px 10px 0px;
@@ -44,8 +47,24 @@ li {
   margin-bottom: 20px;
   padding-bottom: 15px;
   }
+.menu {
+  background-color: #fff; /* Match your page background */
+  padding: 10px 0;
+  transition: all 0.2s ease; /* Smooth transition */
+  z-index: 1000;
+  }
 .menu a {
   font-weight: bold;
+  }
+.menu.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for depth */
+  padding: 10px 20px; /* Adjust padding to match your layout */
   }
 #publicacion {
   margin-top: 20px;
