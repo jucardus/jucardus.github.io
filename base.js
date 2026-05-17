@@ -1,4 +1,5 @@
 let base = [
+  "▓Diccionario inglés-español▒good riddance [interj.] por fin; al fin; qué alivio▒jucardus▓",
   "▓Diccionario inglés-español▒spite [s.] despecho, rencor, resentimiento▒jucardus▓",
   "▓vocabulario alemán▒Der Ausdruck „die rechte Seite betreffend“ lässt sich im Deutschen am prägnantesten mit dem Adjektiv „rechtsseitig“ oder der adverbialen Formulierung „auf der rechten Seite“ übersetzen. → The expression "concerning the right side" can be most concisely translated into German with the adjective "right-hand" or the adverbial phrase "on the right side". ~ Gemini ~▒jucardus▓",
   "▓vídeos de Filosofía▒¿Sabes que sólo te cuentan parte de las ideas de los grandes filósofos de la historia?▒https://www.youtube.com/watch?v=nBA2Z3p5vYU▓",
