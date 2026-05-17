@@ -21,8 +21,7 @@ a:focus, a:active {
 }
 
 body {
-  background-color: #145;
-  background-color: DarkSlateGray;
+  background-color: color-mix(in srgb, DarkSlateGray, black 10%);
   color: #b7c6cc;
   color: #d3dce0;
   color: WhiteSmoke;
@@ -61,8 +60,7 @@ li {
 }
 
 .menu {
-  background-color: #145;
-  background-color: DarkSlateGray;
+  background-color: color-mix(in srgb, DarkSlateGray, black 10%);
   padding: 10px 0 15px 0;
   position: sticky;
   top: 0;
