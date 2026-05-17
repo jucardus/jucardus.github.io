@@ -3,11 +3,16 @@
 <head></head>
 <body onload="hacer()">
 <script>
-function hacer() {
-    var texto = window.location.href.replace(/¶/g,'%0A%0A').replace(/.*jucardus\.github\.io\/x\?=/g,'');
-    var exear = 'https://x.com/intent/tweet?text=' + texto;
-    window.location.replace(exear);
+  function hacer() {
+    var url = window.location.href;
+    if (url.indexOf('x?=') >= 0) {
+      var url = url.replace(/¶/g,'%0A%0A').replace(/.*jucardus\.github\.io\/x\?=/g,'');
+      var exear = 'https://x.com/intent/tweet?text=' + url;
+      window.location.replace(exear);
+    } else {
+      window.location.replace('https://x.com/compose/post');
     }
+ }
 </script>
 </body>
 </html>
