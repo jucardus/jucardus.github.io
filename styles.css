@@ -3,19 +3,19 @@
     padding: 20px 2px 120px 2px !important;
     width: auto !important;
     overflow-x: hidden !important;
+    }
   }
-}
 a:link, a:visited {
   color: #f0f0f0;
   color: LightYellow;
   text-decoration: none;
-}
+  }
 a:hover {
   color: Gold;
-}
+  }
 a:focus, a:active {
   color: Gold;
-}
+  }
 body {
   background-color: #145;
   color: #b7c6cc;
@@ -24,14 +24,21 @@ body {
   font-size: 100%;
   letter-spacing: 1.1px;
   padding: 40px 28% 100px 27%;
-}
+  }
+.etiquetas {
+  font-weight: bold;
+  padding: 15px 0px 10px 0px;
+  }
 h2 {
   padding-top: 20px;
-}
+  }
 #intro {
   padding-bottom: 10px;
-}
-#menu {}
+  }
+#menu {
+  border-bottom: 2px Solid LightYellow;
+  padding-bottom: 10px;
+  }
 .menu a {
   font-weight: bold;
-}
+  }
