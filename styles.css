@@ -22,6 +22,7 @@ a:focus, a:active {
 
 body {
   background-color: #145;
+  background-color: DarkCyan;
   color: #b7c6cc;
   color: #d3dce0;
   font-family: 'Ubuntu';
@@ -54,6 +55,7 @@ li {
 
 .menu {
   background-color: #145;
+  background-color: DarkCyan;
   padding: 10px 0 15px 0;
   position: sticky;
   top: 0;
