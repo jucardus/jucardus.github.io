@@ -35,6 +35,9 @@ h2 {
 #intro {
   padding-bottom: 10px;
   }
+li {
+  padding-bottom: 5px;
+  }
 #menu {
   border-bottom: 2px Solid LightYellow;
   margin-bottom: 20px;
