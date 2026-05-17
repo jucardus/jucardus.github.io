@@ -48,7 +48,7 @@ li {
   padding-bottom: 15px;
   }
 .menu {
-  background-color: #fff; /* Match your page background */
+  background-color: #145; /* Match your page background */
   padding: 10px 0;
   transition: all 0.2s ease; /* Smooth transition */
   z-index: 1000;
