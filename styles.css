@@ -42,6 +42,12 @@ h2 {
   padding-top: 20px;
 }
 
+#indices {
+  font-size: x-large;
+  font-weight: bold;
+  pading: 20px;
+}
+
 #intro {
   padding-bottom: 10px;
 }
