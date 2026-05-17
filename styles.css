@@ -68,6 +68,10 @@ li {
   font-weight: bold;
 }
 
+ol, ul {
+  margin-left: -10px !important;
+}
+
 #publicacion {
   margin-top: 20px;
 }
