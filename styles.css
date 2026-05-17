@@ -10,6 +10,8 @@ a:link, a:visited {
   color: #f0f0f0;
   color: LightYellow;
   text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px Dotted AliceBlue;
 }
 
 a:hover {
