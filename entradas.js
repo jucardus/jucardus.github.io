@@ -1,4 +1,5 @@
 var entradas = [
+  "▓abacero, -ra [m.f.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/a/abacero-ra-mf.html▓",
   "▓abdicar [v.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdicar-v.html▓",
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m.html▓",
   "▓afectuoso [adj.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj.html▓",
