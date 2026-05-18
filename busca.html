@@ -1,92 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-44Y9CNCHR8');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Busca en Jucardus.com">
-    <meta name="author" content="Jucardus ©">
-    <meta name="keywords" content="busca, búsqueda, search">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>Busca | Jucardus.com</title>
-    <style>
-        #searchBox {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: monospace;
-        }
-    </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-44Y9CNCHR8');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="description" content="Busca en Jucardus.com">
+  <meta name="author" content="Jucardus ©">
+  <meta name="keywords" content="busca, búsqueda, search">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Busca | Jucardus.com</title>
+  <style>
+    #buscador {
+      text-align: center;
+    }
+    input {
+      background-color: LightCyan;
+    }
+    .ninguna {
+      font-weight: bold;
+      color: Orange;
+    }
+    #resultados {
+      margin-bottom: 20px;
+      margin-top: 35px;
+    }
+    #searchBox {
+      width: 250px;
+      padding: 10px;
+      font-size: 16px;
+      font-family: monospace;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Busca en Jucardus</h1>
+  <h1>Busca en Jucardus</h1>
 
-    <div id="menu" class="menu">
-      <a href="index">Inicio</a> · 
-      <a href="autor">Autor</a> · 
-      <a href="indice">Índice</a> · 
-      <a href="recientes">Recientes</a> · 
-      <a href="etiquetas">Etiquetas</a> · 
-      <a href="busca">Busca</a> · 
-      <a href="https://x.com/intent/tweet?text=Busca%20%E2%80%94%20Busca entre todas las entradas de Jucardus.com%0A%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fbusca%0A%0A%23busca_jucardus" target="_blank" rel="noopener noreferrer nofollow">Compartir</a>
-    </div>
-    
-    <input type="text" id="searchBox" placeholder="Buscar..." autocomplete="off">
+  <div id="menu" class="menu">
+    <a href="index">Inicio</a> · 
+    <a href="autor">Autor</a> · 
+    <a href="indice">Índice</a> · 
+    <a href="recientes">Recientes</a> · 
+    <a href="etiquetas">Etiquetas</a> · 
+    <a href="busca">Busca</a> · 
+    <a href="https://x.com/intent/tweet?text=Busca%20%E2%80%94%20Búsqueda%20entre%20todas%20las%20entradas%20de%20Jucardus.com%0A%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fbusca%0A%0A%23busca_jucardus" target="_blank" rel="noopener noreferrer nofollow">Compartir</a>
+  </div>
+  
+  <div id="buscador">
+    <input type="text" id="searchBox" placeholder="Escribe aquí..." autocomplete="off">
+  </div>
+
+  <div id="resultados">
     <ul id="results"></ul>
+  </div>
+  
+  <p>En esta subpágina puedes hacer buscas entre todas las entradas del sitio, según sus títulos y etiquetas. Escribe en el recuadro y presiona ENTER para mostrar una lista alfabética clicable de todas las coincidencias.</p>
 
-    <script src="entradas.js"></script>
-    <script>
-        const searchBox = document.getElementById('searchBox');
-        const results = document.getElementById('results');
-        
-        function search() {
-            const term = searchBox.value.toLowerCase().trim();
-            results.innerHTML = '';
-            
-            if (term === '') return;
-            
-            let found = false;
-            
-            for (let i = 0; i < entradas.length; i++) {
-                const entry = entradas[i];
-                // Extract the text between ▓ and ▒ (title + labels)
-                const match = entry.match(/▓(.*)▒/);
-                if (match) {
-                    const text = match[1].toLowerCase();
-                    if (text.includes(term)) {
-                        // Convert the entry to a clean link
-                        const urlMatch = entry.match(/▒(.*)▓/);
-                        const url = urlMatch[1];
-                        const displayText = match[1];
-                        const li = document.createElement('li');
-                        const link = document.createElement('a');
-                        link.href = url;
-                        link.textContent = displayText;
-                        li.appendChild(link);
-                        results.appendChild(li);
-                        found = true;
-                    }
-                }
-            }
-            
-            if (!found) {
-                results.innerHTML = '<li class="no-results">No matches found.</li>';
-            }
+  <script src="entradas.js"></script>
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const results = document.getElementById('results');
+    
+    function search() {
+      const term = searchBox.value.toLowerCase().trim();
+      results.innerHTML = '';
+      
+      if (term === '') return;
+      
+      let found = false;
+      
+      for (let i = 0; i < entradas.length; i++) {
+        const entry = entradas[i];
+        // Extract the text between ▓ and ▒ (title + labels)
+        const match = entry.match(/▓(.*)▒/);
+        if (match) {
+          const text = match[1].toLowerCase();
+          if (text.includes(term)) {
+            // Convert the entry to a clean link
+            const urlMatch = entry.match(/▒(.*)▓/);
+            const url = urlMatch[1];
+            const displayText = match[1];
+            const li = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = url;
+            link.textContent = displayText;
+            li.appendChild(link);
+            results.appendChild(li);
+            found = true;
+          }
         }
-        
-        searchBox.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                search();
-            }
-        });
-    </script>
+      }
+      
+      if (!found) {
+        results.innerHTML = '<li class="ninguna">[ Ninguna coincidencia. ]</li>';
+      }
+    }
+    
+    searchBox.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        search();
+      }
+    });
+  </script>
 </body>
 </html>
