@@ -67,10 +67,48 @@
     
     <ul id="results"></ul>
 
-    <script src="entradas.js"></script>
     <script>
         const searchBox = document.getElementById('searchBox');
         const results = document.getElementById('results');
+        let allEntries = [];
+        
+        // Fetch and parse entradas.js
+        fetch('/entradas.js?' + Date.now())
+            .then(response => response.text())
+            .then(data => {
+                // Find all the entries between ▓ and ▓
+                const matches = data.match(/▓[^▓]+▓/g);
+                
+                if (matches) {
+                    for (let i = 0; i < matches.length; i++) {
+                        let entry = matches[i];
+                        // Remove the ▓ characters
+                        entry = entry.substring(1, entry.length - 1);
+                        // Split into parts: title – labels▒url
+                        const parts = entry.split('▒');
+                        if (parts.length === 2) {
+                            const titleAndLabels = parts[0];
+                            const url = parts[1];
+                            const titleParts = titleAndLabels.split(' – ');
+                            const title = titleParts[0];
+                            const labels = titleParts[1];
+                            
+                            // Create HTML link
+                            const html = `<li><a href="${url}">${title} – ${labels}</a></li>`;
+                            allEntries.push({
+                                html: html,
+                                title: title.toLowerCase(),
+                                labels: labels.toLowerCase(),
+                                fullText: (title + ' ' + labels).toLowerCase()
+                            });
+                        }
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error loading entradas.js:', error);
+                results.innerHTML = '<li class="no-results">Error loading entries</li>';
+            });
         
         function search() {
             const term = searchBox.value.toLowerCase().trim();
@@ -80,12 +118,10 @@
             
             let found = false;
             
-            // Search through the entradasList array loaded from entradas.js
-            for (let i = 0; i < window.entradasList.length; i++) {
-                const entry = window.entradasList[i];
-                
-                if (entry.toLowerCase().includes(term)) {
-                    results.innerHTML += entry;
+            for (let i = 0; i < allEntries.length; i++) {
+                const entry = allEntries[i];
+                if (entry.fullText.includes(term) || entry.title.includes(term) || entry.labels.includes(term)) {
+                    results.innerHTML += entry.html;
                     found = true;
                 }
             }
