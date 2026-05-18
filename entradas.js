@@ -6,6 +6,7 @@ var entradas = [
   "▓aaa ccc ddd – aaa▒https://jucardus.github.io/a/a/a/aaa-ccc-ddd.html▓",
   "▓aaa ddd ddd – aaa▒https://jucardus.github.io/a/a/a/aaa-ddd-ddd.html▓",
   "▓aaa eee eee – aaa▒https://jucardus.github.io/a/a/a/aaa-eee-eee.html▓",
+  "▓aaa fff fff – aaa▒https://jucardus.github.io/a/a/a/aaa-fff-fff.html▓",
   "▓abacus – Vocabulario inglés, Sustantivos ingleses▒https://jucardus.github.io/a/b/a/abacus.html▓",
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m.html▓",
   "▓afectuoso [adj.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj.html▓",
