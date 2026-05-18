@@ -1,5 +1,6 @@
 var entradas = [
   "▓aaa – aaa▒https://jucardus.github.io/a/a/a/aaa.html▓",
+  "▓aaa aaa abc – aaa▒https://jucardus.github.io/a/a/a/aaa-aaa-abc.html▓",
   "▓aaa bbb – aaa▒https://jucardus.github.io/a/a/a/aaa-bbb.html▓",
   "▓aaa bbb ccc – aaa▒https://jucardus.github.io/a/a/a/aaa-bbb-ccc.html▓",
   "▓abacus – Vocabulario inglés, Sustantivos ingleses▒https://jucardus.github.io/a/b/a/abacus.html▓",
