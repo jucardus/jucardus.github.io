@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar todas las entradas</title>
+</head>
+<body>
+    <ul id="results"></ul>
+
+    <script src="entradas.js"></script>
+    <script>
+        const results = document.getElementById('results');
+        
+        for (let i = 0; i < entradas.length; i++) {
+            const li = document.createElement('li');
+            li.innerHTML = entradas[i];
+            results.appendChild(li);
+        }
+    </script>
+</body>
+</html>
