@@ -1,87 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-44Y9CNCHR8');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Buscar en todas las entradas de Jucardus.com">
+    <meta name="description" content="aaa">
     <meta name="author" content="Jucardus ©">
+    <meta name="keywords" content="aaa">
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>Búsqueda | Jucardus.com</title>
-    <style>
-        #searchBox {
-            width: 300px;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        
-        #searchBox:focus {
-            outline: none;
-            border-color: #666;
-        }
-        
-        #results {
-        }
-        
-        .no-results {
-            color: #666;
-            font-style: italic;
-            padding: 20px 0;
-        }
-    </style>
+    <title>aaa | Jucardus.com</title>
 </head>
 <body>
     <h1>Buscar</h1>
-    
     <input type="text" id="searchBox" placeholder="Buscar..." autocomplete="off">
-    
     <ul id="results"></ul>
 
+    <script src="entradas.js"></script>
     <script>
         const searchBox = document.getElementById('searchBox');
         const results = document.getElementById('results');
-        let allEntries = [];
-        
-        // Fetch and parse entradas.js
-        fetch('/entradas.js?' + Date.now())
-            .then(response => response.text())
-            .then(data => {
-                // Find all the entries between ▓ and ▓
-                const matches = data.match(/▓[^▓]+▓/g);
-                
-                if (matches) {
-                    for (let i = 0; i < matches.length; i++) {
-                        let entry = matches[i];
-                        // Remove the ▓ characters
-                        entry = entry.substring(1, entry.length - 1);
-                        // Split into parts: title – labels▒url
-                        const parts = entry.split('▒');
-                        if (parts.length === 2) {
-                            const titleAndLabels = parts[0];
-                            const url = parts[1];
-                            const titleParts = titleAndLabels.split(' – ');
-                            const title = titleParts[0];
-                            const labels = titleParts[1];
-                            
-                            // Create HTML link
-                            const html = `<li><a href="${url}">${title} – ${labels}</a></li>`;
-                            allEntries.push({
-                                html: html,
-                                title: title.toLowerCase(),
-                                labels: labels.toLowerCase(),
-                                fullText: (title + ' ' + labels).toLowerCase()
-                            });
-                        }
-                    }
-                }
-            })
-            .catch(error => {
-                console.error('Error loading entradas.js:', error);
-                results.innerHTML = '<li class="no-results">Error loading entries</li>';
-            });
         
         function search() {
             const term = searchBox.value.toLowerCase().trim();
@@ -91,11 +37,25 @@
             
             let found = false;
             
-            for (let i = 0; i < allEntries.length; i++) {
-                const entry = allEntries[i];
-                if (entry.fullText.includes(term) || entry.title.includes(term) || entry.labels.includes(term)) {
-                    results.innerHTML += entry.html;
-                    found = true;
+            for (let i = 0; i < entradas.length; i++) {
+                const entry = entradas[i];
+                // Extract the text between ▓ and ▒ (title + labels)
+                const match = entry.match(/▓(.*)▒/);
+                if (match) {
+                    const text = match[1].toLowerCase();
+                    if (text.includes(term)) {
+                        // Convert the entry to a clean link
+                        const urlMatch = entry.match(/▒(.*)▓/);
+                        const url = urlMatch[1];
+                        const displayText = match[1];
+                        const li = document.createElement('li');
+                        const link = document.createElement('a');
+                        link.href = url;
+                        link.textContent = displayText;
+                        li.appendChild(link);
+                        results.appendChild(li);
+                        found = true;
+                    }
                 }
             }
             
