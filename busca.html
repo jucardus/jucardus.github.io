@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <meta name="description" content="Buscar en todas las entradas de Jucardus.com">
     <meta name="author" content="Jucardus ©">
-    <meta name="keywords" content="búsqueda, buscar, search, entradas, índice">
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Búsqueda | Jucardus.com</title>
@@ -29,7 +28,7 @@
         }
         
         #searchBox {
-            width: 100%;
+            width: 300px;
             padding: 12px;
             font-size: 16px;
             border: 1px solid #ccc;
@@ -71,58 +70,26 @@
             color: #666;
             font-style: italic;
             padding: 20px 0;
-            text-align: center;
-        }
-        
-        .count {
-            margin-bottom: 15px;
-            font-size: 14px;
-            color: #666;
-            padding: 5px 0;
-        }
-        
-        .loading {
-            color: #666;
-            font-style: italic;
-            padding: 20px 0;
-            text-align: center;
-        }
-        
-        .error {
-            color: #cc0000;
-            padding: 20px 0;
-            text-align: center;
-            background: #ffeeee;
-            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <h1>Buscar en las entradas</h1>
+    <h1>Buscar</h1>
     
-    <input type="text" id="searchBox" placeholder="Escribe para buscar (título o etiquetas)..." autocomplete="off">
+    <input type="text" id="searchBox" placeholder="Buscar..." autocomplete="off">
     
-    <div class="count" id="count"></div>
-    
-    <ul id="results">
-        <li class="loading">Cargando entradas...</li>
-    </ul>
+    <ul id="results"></ul>
 
     <script>
         let entradasArray = [];
         
-        // Function to parse a single entry (without quotes)
         function parseEntry(entryString) {
             try {
-                // Trim whitespace
                 let clean = entryString.trim();
-                
-                // Remove trailing comma if present
                 if (clean.endsWith(',')) {
                     clean = clean.slice(0, -1);
                 }
                 
-                // Find the special characters
                 const startF = clean.indexOf('▓');
                 const dash = clean.indexOf('–');
                 const endLabel = clean.indexOf('▒');
@@ -138,33 +105,28 @@
                 
                 return { title, labels, url };
             } catch(e) {
-                console.error('Parse error:', e);
                 return null;
             }
         }
         
-        // Load and parse entradas.js
         function loadEntradas() {
             fetch('/entradas.js?' + Date.now())
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                        throw new Error('Failed to load');
                     }
                     return response.text();
                 })
                 .then(data => {
-                    // Find the array content between [ and ]
                     const arrayStart = data.indexOf('[');
                     const arrayEnd = data.lastIndexOf(']');
                     
                     if (arrayStart === -1 || arrayEnd === -1) {
-                        throw new Error('Could not find array brackets in entradas.js');
+                        throw new Error('Invalid format');
                     }
                     
                     let arrayContent = data.substring(arrayStart + 1, arrayEnd);
                     
-                    // Split by ▓ to get individual entries
-                    // Each entry starts with ▓ and ends with ▓
                     const entries = [];
                     let currentEntry = '';
                     let inEntry = false;
@@ -174,11 +136,9 @@
                         
                         if (char === '▓') {
                             if (!inEntry) {
-                                // Start of a new entry
                                 inEntry = true;
                                 currentEntry = '▓';
                             } else {
-                                // End of current entry
                                 currentEntry += '▓';
                                 entries.push(currentEntry);
                                 currentEntry = '';
@@ -189,7 +149,6 @@
                         }
                     }
                     
-                    // Parse each entry
                     entradasArray = [];
                     for (let i = 0; i < entries.length; i++) {
                         const parsed = parseEntry(entries[i]);
@@ -197,52 +156,23 @@
                             entradasArray.push(parsed);
                         }
                     }
-                    
-                    if (entradasArray.length === 0) {
-                        throw new Error('No valid entries found');
-                    }
-                    
-                    // Update UI
-                    const resultsContainer = document.getElementById('results');
-                    resultsContainer.innerHTML = '';
-                    
-                    const countDiv = document.getElementById('count');
-                    countDiv.textContent = `${entradasArray.length} entradas disponibles`;
-                    
-                    // Enable search
-                    performSearch();
                 })
                 .catch(error => {
-                    console.error('Error:', error);
-                    const resultsContainer = document.getElementById('results');
-                    resultsContainer.innerHTML = `<li class="error">❌ Error: ${error.message}</li>`;
-                    document.getElementById('count').textContent = 'Error de carga';
+                    console.error('Error loading entries:', error);
                 });
         }
         
-        // Perform search
         function performSearch() {
             const searchBox = document.getElementById('searchBox');
             const resultsContainer = document.getElementById('results');
-            const countDiv = document.getElementById('count');
-            
             const searchTerm = searchBox.value.toLowerCase().trim();
             
-            // Clear results
             resultsContainer.innerHTML = '';
             
-            if (entradasArray.length === 0) {
-                resultsContainer.innerHTML = '<li class="loading">Cargando entradas...</li>';
+            if (searchTerm === '' || entradasArray.length === 0) {
                 return;
             }
             
-            // If search is empty, show nothing
-            if (searchTerm === '') {
-                countDiv.innerHTML = `${entradasArray.length} entradas disponibles`;
-                return;
-            }
-            
-            // Search in titles and labels
             const matches = [];
             for (let i = 0; i < entradasArray.length; i++) {
                 const entry = entradasArray[i];
@@ -254,14 +184,11 @@
                 }
             }
             
-            // Update count
-            countDiv.innerHTML = matches.length === 1 
-                ? `✨ 1 resultado encontrado (de ${entradasArray.length} entradas)`
-                : `✨ ${matches.length} resultados encontrados (de ${entradasArray.length} entradas)`;
-            
-            // Display results
             if (matches.length === 0) {
-                resultsContainer.innerHTML = '<li class="no-results">🔍 No se encontraron resultados para "' + searchBox.value + '"</li>';
+                const li = document.createElement('li');
+                li.className = 'no-results';
+                li.textContent = 'No se encontraron resultados';
+                resultsContainer.appendChild(li);
             } else {
                 for (let i = 0; i < matches.length; i++) {
                     const match = matches[i];
@@ -270,7 +197,6 @@
                     const link = document.createElement('a');
                     link.href = match.url;
                     link.textContent = match.title;
-                    link.target = '_self';
                     
                     const labelsSpan = document.createElement('span');
                     labelsSpan.className = 'labels';
@@ -283,13 +209,15 @@
             }
         }
         
-        // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
             loadEntradas();
             
             const searchBox = document.getElementById('searchBox');
-            searchBox.addEventListener('input', performSearch);
-            searchBox.focus();
+            searchBox.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
         });
     </script>
 </body>
