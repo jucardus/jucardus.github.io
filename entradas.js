@@ -3,6 +3,7 @@ var entradas = [
   "▓aaa aaa abc – aaa▒https://jucardus.github.io/a/a/a/aaa-aaa-abc.html▓",
   "▓aaa bbb – aaa▒https://jucardus.github.io/a/a/a/aaa-bbb.html▓",
   "▓aaa bbb ccc – aaa▒https://jucardus.github.io/a/a/a/aaa-bbb-ccc.html▓",
+  "▓aaa ccc ddd – aaa▒https://jucardus.github.io/a/a/a/aaa-ccc-ddd.html▓",
   "▓abacus – Vocabulario inglés, Sustantivos ingleses▒https://jucardus.github.io/a/b/a/abacus.html▓",
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m.html▓",
   "▓afectuoso [adj.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj.html▓",
