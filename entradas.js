@@ -1,5 +1,6 @@
 var entradas = [
   "▓aaa – aaa▒https://jucardus.github.io/a/a/a/aaa.html▓",
+  "▓aaa bbb – aaa▒https://jucardus.github.io/a/a/a/aaa-bbb.html▓",
   "▓abacus – Vocabulario inglés, Sustantivos ingleses▒https://jucardus.github.io/a/b/a/abacus.html▓",
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m.html▓",
   "▓afectuoso [adj.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj.html▓",
