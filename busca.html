@@ -17,10 +17,28 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Busca | Jucardus.com</title>
+    <style>
+        #searchBox {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
     <h1>Busca en Jucardus</h1>
 
+    <div id="menu" class="menu">
+      <a href="index">Inicio</a> · 
+      <a href="autor">Autor</a> · 
+      <a href="indice">Índice</a> · 
+      <a href="recientes">Recientes</a> · 
+      <a href="etiquetas">Etiquetas</a> · 
+      <a href="busca">Busca</a> · 
+      <a href="https://x.com/intent/tweet?text=Busca%20%E2%80%94%20Busca entre todas las entradas de Jucardus.com%0A%0A%E2%86%92%20https%3A%2F%2Fjucardus.github.io%2Fbusca%0A%0A%23busca_jucardus" target="_blank" rel="noopener noreferrer nofollow">Compartir</a>
+    </div>
+    
     <input type="text" id="searchBox" placeholder="Buscar..." autocomplete="off">
     <ul id="results"></ul>
 
