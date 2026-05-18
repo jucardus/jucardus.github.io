@@ -53,17 +53,10 @@
         #results li a {
             text-decoration: none;
             color: #0066cc;
-            font-weight: 500;
         }
         
         #results li a:hover {
             text-decoration: underline;
-        }
-        
-        .labels {
-            color: #666;
-            font-size: 12px;
-            margin-left: 8px;
         }
         
         .no-results {
@@ -80,144 +73,39 @@
     
     <ul id="results"></ul>
 
+    <script src="entradas.js"></script>
     <script>
-        let entradasArray = [];
+        const searchBox = document.getElementById('searchBox');
+        const results = document.getElementById('results');
         
-        function parseEntry(entryString) {
-            try {
-                let clean = entryString.trim();
-                if (clean.endsWith(',')) {
-                    clean = clean.slice(0, -1);
-                }
-                
-                const startF = clean.indexOf('▓');
-                const dash = clean.indexOf('–');
-                const endLabel = clean.indexOf('▒');
-                const endF = clean.lastIndexOf('▓');
-                
-                if (startF === -1 || dash === -1 || endLabel === -1 || endF === -1) {
-                    return null;
-                }
-                
-                const title = clean.substring(startF + 1, dash).trim();
-                const labels = clean.substring(dash + 1, endLabel).trim();
-                const url = clean.substring(endLabel + 1, endF).trim();
-                
-                return { title, labels, url };
-            } catch(e) {
-                return null;
-            }
-        }
-        
-        function loadEntradas() {
-            fetch('/entradas.js?' + Date.now())
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Failed to load');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    const arrayStart = data.indexOf('[');
-                    const arrayEnd = data.lastIndexOf(']');
-                    
-                    if (arrayStart === -1 || arrayEnd === -1) {
-                        throw new Error('Invalid format');
-                    }
-                    
-                    let arrayContent = data.substring(arrayStart + 1, arrayEnd);
-                    
-                    const entries = [];
-                    let currentEntry = '';
-                    let inEntry = false;
-                    
-                    for (let i = 0; i < arrayContent.length; i++) {
-                        const char = arrayContent[i];
-                        
-                        if (char === '▓') {
-                            if (!inEntry) {
-                                inEntry = true;
-                                currentEntry = '▓';
-                            } else {
-                                currentEntry += '▓';
-                                entries.push(currentEntry);
-                                currentEntry = '';
-                                inEntry = false;
-                            }
-                        } else if (inEntry) {
-                            currentEntry += char;
-                        }
-                    }
-                    
-                    entradasArray = [];
-                    for (let i = 0; i < entries.length; i++) {
-                        const parsed = parseEntry(entries[i]);
-                        if (parsed) {
-                            entradasArray.push(parsed);
-                        }
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading entries:', error);
-                });
-        }
-        
-        function performSearch() {
-            const searchBox = document.getElementById('searchBox');
-            const resultsContainer = document.getElementById('results');
-            const searchTerm = searchBox.value.toLowerCase().trim();
+        function search() {
+            const term = searchBox.value.toLowerCase().trim();
+            results.innerHTML = '';
             
-            resultsContainer.innerHTML = '';
+            if (term === '') return;
             
-            if (searchTerm === '' || entradasArray.length === 0) {
-                return;
-            }
+            let found = false;
             
-            const matches = [];
-            for (let i = 0; i < entradasArray.length; i++) {
-                const entry = entradasArray[i];
-                const titleLower = entry.title.toLowerCase();
-                const labelsLower = entry.labels.toLowerCase();
+            for (let i = 0; i < entradas.length; i++) {
+                const entry = entradas[i];
                 
-                if (titleLower.includes(searchTerm) || labelsLower.includes(searchTerm)) {
-                    matches.push(entry);
-                }
-            }
-            
-            if (matches.length === 0) {
-                const li = document.createElement('li');
-                li.className = 'no-results';
-                li.textContent = 'No se encontraron resultados';
-                resultsContainer.appendChild(li);
-            } else {
-                for (let i = 0; i < matches.length; i++) {
-                    const match = matches[i];
+                if (entry.toLowerCase().includes(term)) {
                     const li = document.createElement('li');
-                    
-                    const link = document.createElement('a');
-                    link.href = match.url;
-                    link.textContent = match.title;
-                    
-                    const labelsSpan = document.createElement('span');
-                    labelsSpan.className = 'labels';
-                    labelsSpan.textContent = `🏷️ ${match.labels}`;
-                    
-                    li.appendChild(link);
-                    li.appendChild(labelsSpan);
-                    resultsContainer.appendChild(li);
+                    li.innerHTML = entry;
+                    results.appendChild(li);
+                    found = true;
                 }
+            }
+            
+            if (!found) {
+                results.innerHTML = '<li class="no-results">No matches found.</li>';
             }
         }
         
-        document.addEventListener('DOMContentLoaded', function() {
-            loadEntradas();
-            
-            const searchBox = document.getElementById('searchBox');
-            searchBox.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    performSearch();
-                }
-            });
+        searchBox.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                search();
+            }
         });
     </script>
 </body>
