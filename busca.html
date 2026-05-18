@@ -95,16 +95,6 @@
             background: #ffeeee;
             border-radius: 4px;
         }
-        
-        .debug {
-            font-size: 11px;
-            color: #999;
-            margin-top: 20px;
-            padding: 10px;
-            background: #f5f5f5;
-            border-radius: 4px;
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -117,20 +107,19 @@
     <ul id="results">
         <li class="loading">Cargando entradas...</li>
     </ul>
-    
-    <div class="debug" id="debug"></div>
 
     <script>
         let entradasArray = [];
         
-        // Function to parse a single entry
+        // Function to parse a single entry (without quotes)
         function parseEntry(entryString) {
             try {
-                // Remove quotes if present
+                // Trim whitespace
                 let clean = entryString.trim();
-                if ((clean.startsWith('"') && clean.endsWith('"')) || 
-                    (clean.startsWith("'") && clean.endsWith("'"))) {
-                    clean = clean.slice(1, -1);
+                
+                // Remove trailing comma if present
+                if (clean.endsWith(',')) {
+                    clean = clean.slice(0, -1);
                 }
                 
                 // Find the special characters
@@ -140,7 +129,6 @@
                 const endF = clean.lastIndexOf('▓');
                 
                 if (startF === -1 || dash === -1 || endLabel === -1 || endF === -1) {
-                    console.warn('Could not parse entry:', clean);
                     return null;
                 }
                 
@@ -157,122 +145,78 @@
         
         // Load and parse entradas.js
         function loadEntradas() {
-            const debugDiv = document.getElementById('debug');
-            
             fetch('/entradas.js?' + Date.now())
                 .then(response => {
-                    debugDiv.innerHTML += `Response status: ${response.status}<br>`;
                     if (!response.ok) {
                         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                     }
                     return response.text();
                 })
                 .then(data => {
-                    debugDiv.innerHTML += `File loaded, length: ${data.length} characters<br>`;
-                    debugDiv.innerHTML += `First 200 chars: ${data.substring(0, 200)}<br>`;
+                    // Find the array content between [ and ]
+                    const arrayStart = data.indexOf('[');
+                    const arrayEnd = data.lastIndexOf(']');
                     
-                    // Try to find the entradas array
-                    let arrayContent = null;
-                    
-                    // Method 1: Look for const entradas = [
-                    const match1 = data.match(/const\s+entradas\s*=\s*\[([\s\S]*?)\];/);
-                    if (match1) {
-                        debugDiv.innerHTML += `Found using method 1 (const entradas = [...])<br>`;
-                        arrayContent = match1[1];
+                    if (arrayStart === -1 || arrayEnd === -1) {
+                        throw new Error('Could not find array brackets in entradas.js');
                     }
                     
-                    // Method 2: Look for let entradas = [
-                    if (!arrayContent) {
-                        const match2 = data.match(/let\s+entradas\s*=\s*\[([\s\S]*?)\];/);
-                        if (match2) {
-                            debugDiv.innerHTML += `Found using method 2 (let entradas = [...])<br>`;
-                            arrayContent = match2[1];
-                        }
-                    }
+                    let arrayContent = data.substring(arrayStart + 1, arrayEnd);
                     
-                    // Method 3: Look for var entradas = [
-                    if (!arrayContent) {
-                        const match3 = data.match(/var\s+entradas\s*=\s*\[([\s\S]*?)\];/);
-                        if (match3) {
-                            debugDiv.innerHTML += `Found using method 3 (var entradas = [...])<br>`;
-                            arrayContent = match3[1];
-                        }
-                    }
+                    // Split by ▓ to get individual entries
+                    // Each entry starts with ▓ and ends with ▓
+                    const entries = [];
+                    let currentEntry = '';
+                    let inEntry = false;
                     
-                    // Method 4: Just look for any array assignment
-                    if (!arrayContent) {
-                        const match4 = data.match(/entradas\s*=\s*\[([\s\S]*?)\];/);
-                        if (match4) {
-                            debugDiv.innerHTML += `Found using method 4 (entradas = [...])<br>`;
-                            arrayContent = match4[1];
-                        }
-                    }
-                    
-                    if (!arrayContent) {
-                        debugDiv.innerHTML += `<span style="color: red;">ERROR: Could not find entradas array in file</span><br>`;
-                        throw new Error('Could not find entradas array');
-                    }
-                    
-                    debugDiv.innerHTML += `Array content length: ${arrayContent.length}<br>`;
-                    
-                    // Parse the array - find all quoted strings
-                    const quoteMatches = [];
-                    let inQuote = false;
-                    let quoteStart = -1;
-                    let i = 0;
-                    
-                    while (i < arrayContent.length) {
-                        if (arrayContent[i] === '"' && (i === 0 || arrayContent[i-1] !== '\\')) {
-                            if (!inQuote) {
-                                inQuote = true;
-                                quoteStart = i;
+                    for (let i = 0; i < arrayContent.length; i++) {
+                        const char = arrayContent[i];
+                        
+                        if (char === '▓') {
+                            if (!inEntry) {
+                                // Start of a new entry
+                                inEntry = true;
+                                currentEntry = '▓';
                             } else {
-                                inQuote = false;
-                                const quoteContent = arrayContent.substring(quoteStart, i + 1);
-                                quoteMatches.push(quoteContent);
+                                // End of current entry
+                                currentEntry += '▓';
+                                entries.push(currentEntry);
+                                currentEntry = '';
+                                inEntry = false;
                             }
+                        } else if (inEntry) {
+                            currentEntry += char;
                         }
-                        i++;
                     }
                     
-                    debugDiv.innerHTML += `Found ${quoteMatches.length} quoted strings<br>`;
-                    
-                    if (quoteMatches.length === 0) {
-                        throw new Error('No entries found in entradas array');
-                    }
-                    
+                    // Parse each entry
                     entradasArray = [];
-                    for (let j = 0; j < quoteMatches.length; j++) {
-                        const parsed = parseEntry(quoteMatches[j]);
+                    for (let i = 0; i < entries.length; i++) {
+                        const parsed = parseEntry(entries[i]);
                         if (parsed) {
                             entradasArray.push(parsed);
-                            debugDiv.innerHTML += `Parsed entry ${j+1}: "${parsed.title}"<br>`;
-                        } else {
-                            debugDiv.innerHTML += `Failed to parse entry ${j+1}: ${quoteMatches[j].substring(0, 100)}<br>`;
                         }
                     }
                     
-                    debugDiv.innerHTML += `<span style="color: green;">✅ Successfully loaded ${entradasArray.length} entries</span><br>`;
+                    if (entradasArray.length === 0) {
+                        throw new Error('No valid entries found');
+                    }
                     
                     // Update UI
                     const resultsContainer = document.getElementById('results');
                     resultsContainer.innerHTML = '';
                     
                     const countDiv = document.getElementById('count');
-                    if (entradasArray.length > 0) {
-                        countDiv.textContent = `${entradasArray.length} entradas disponibles`;
-                        // Enable search
-                        performSearch();
-                    } else {
-                        throw new Error('No valid entries found');
-                    }
+                    countDiv.textContent = `${entradasArray.length} entradas disponibles`;
+                    
+                    // Enable search
+                    performSearch();
                 })
                 .catch(error => {
                     console.error('Error:', error);
                     const resultsContainer = document.getElementById('results');
-                    resultsContainer.innerHTML = `<li class="error">❌ Error: ${error.message}<br><br>Verifica la consola para más detalles.</li>`;
+                    resultsContainer.innerHTML = `<li class="error">❌ Error: ${error.message}</li>`;
                     document.getElementById('count').textContent = 'Error de carga';
-                    debugDiv.style.display = 'block';
                 });
         }
         
