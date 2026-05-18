@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Buscar en todas las entradas de Jucardus.com">
+    <meta name="author" content="Jucardus ©">
+    <meta name="keywords" content="búsqueda, buscar, search, entradas, índice">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Búsqueda | Jucardus.com</title>
+    <style>
+        /* Minimal styles for search functionality */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        #searchBox {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        #searchBox:focus {
+            outline: none;
+            border-color: #666;
+        }
+        
+        #results {
+            list-style: none;
+        }
+        
+        #results li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        #results li a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        
+        #results li a:hover {
+            text-decoration: underline;
+        }
+        
+        .no-results {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .count {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscar en las entradas</h1>
+    
+    <input type="text" id="searchBox" placeholder="Escribe para buscar..." autocomplete="off">
+    
+    <div class="count" id="count"></div>
+    
+    <ul id="results"></ul>
+
+    <script src="entradas.js"></script>
+    <script>
+        // Wait for DOM to load
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchBox = document.getElementById('searchBox');
+            const resultsContainer = document.getElementById('results');
+            const countDiv = document.getElementById('count');
+            
+            // Function to perform search
+            function performSearch() {
+                const searchTerm = searchBox.value.toLowerCase().trim();
+                
+                // Clear previous results
+                resultsContainer.innerHTML = '';
+                
+                // If search term is empty, show nothing
+                if (searchTerm === '') {
+                    countDiv.textContent = '';
+                    return;
+                }
+                
+                // Filter entries (entradas array is loaded from entradas.js)
+                const matches = entradas.filter(entry => {
+                    // Extract title and labels from the entry format: "▓title – labels▒url▓"
+                    // Parse the entry to get title and labels
+                    const match = entry.match(/▓(.*?)\s*–\s*(.*?)▒(.*?)▓/);
+                    if (match) {
+                        const title = match[1].toLowerCase();
+                        const labels = match[2].toLowerCase();
+                        const url = match[3];
+                        
+                        // Search in title and labels
+                        return title.includes(searchTerm) || labels.includes(searchTerm);
+                    }
+                    return false;
+                });
+                
+                // Update count
+                const count = matches.length;
+                countDiv.textContent = count === 1 ? '1 resultado encontrado' : `${count} resultados encontrados`;
+                
+                // Display results
+                if (matches.length === 0) {
+                    const li = document.createElement('li');
+                    li.className = 'no-results';
+                    li.textContent = 'No se encontraron resultados.';
+                    resultsContainer.appendChild(li);
+                } else {
+                    matches.forEach(entry => {
+                        // Parse the entry
+                        const match = entry.match(/▓(.*?)\s*–\s*(.*?)▒(.*?)▓/);
+                        if (match) {
+                            const title = match[1];
+                            const labels = match[2];
+                            const url = match[3];
+                            
+                            const li = document.createElement('li');
+                            const link = document.createElement('a');
+                            link.href = url;
+                            link.textContent = title;
+                            
+                            // Add labels as small text
+                            const labelsSpan = document.createElement('span');
+                            labelsSpan.style.color = '#666';
+                            labelsSpan.style.fontSize = '12px';
+                            labelsSpan.style.marginLeft = '8px';
+                            labelsSpan.textContent = `[${labels}]`;
+                            
+                            li.appendChild(link);
+                            li.appendChild(labelsSpan);
+                            resultsContainer.appendChild(li);
+                        }
+                    });
+                }
+            }
+            
+            // Add event listeners
+            searchBox.addEventListener('input', performSearch);
+            
+            // Optional: Focus on search box on page load
+            searchBox.focus();
+        });
+    </script>
+</body>
+</html>
