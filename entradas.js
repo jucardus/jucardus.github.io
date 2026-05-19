@@ -11,5 +11,6 @@ var entradas = [
   "▓Al perro que tiene dinero se... – Citas y proverbios▒https://jucardus.github.io/a/l/-/al-perro-que-tiene-dinero-se.html▓",
   "▓bóveda [f.] – Diccionario multilingüe - B▒https://jucardus.github.io/b/o/v/boveda-f.html▓",
   "▓cabeza de familia [m.f.c.] – Diccionario multilingüe - C▒https://jucardus.github.io/c/a/b/cabeza-de-familia-mfc.html▓",
+  "▓Cuando exponer un delito es tratado como... – Citas y proverbios▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como.html▓",
   "▓Una nación de ovejas... – Citas y proverbios▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas.html▓"
 ];
