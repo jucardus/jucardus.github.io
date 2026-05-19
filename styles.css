@@ -1,18 +1,3 @@
-@media (max-width: 768px) {
-  body {
-    padding: 8px 2px 100px 2px !important;
-    width: auto !important;
-    overflow-x: hidden !important;
-  }
-  h1, h2, h3 {
-    line-height: 1;
-  }
-  .menu {
-    padding: 6px 0 10px 0 !important;
-    position: static !important;
-  }
-}
-
 a:link, a:visited {
   color: #f0f0f0;
   color: LightYellow;
@@ -87,9 +72,24 @@ li {
 }
 
 ol, ul {
-  margin-left: -10px !important;
+  margin-left: -10px
 }
 
 #publicacion {
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 8px 2px 100px 2px;
+    width: auto;
+    overflow-x: hidden;
+  }
+  h1, h2, h3 {
+    line-height: 1;
+  }
+  .menu {
+    padding: 6px 0 10px 0;
+    position: static;
+  }
 }
