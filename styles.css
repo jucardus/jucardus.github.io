@@ -1,8 +1,18 @@
 @media (max-width: 768px) {
   body {
-    padding: 20px 2px 120px 2px !important;
+    padding: 8px 2px 100px 2px !important;
     width: auto !important;
     overflow-x: hidden !important;
+  }
+  h1, h2, h3 {
+    line-height: 1;
+  }
+  .menu {
+    padding: 6px 0 10px 0;
+    position: revert;
+    top: revert;
+    z-index: revert;
+    border-bottom: 2px solid LightYellow;
   }
 }
 
