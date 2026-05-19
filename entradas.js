@@ -1,5 +1,5 @@
 var entradas = [
-  "▓A veces buscamos respuestas rápidas... – Citas▒https://jucardus.github.io/a/-/v/a-veces-buscamos-respuestas-rapidas.html▓",
+  "▓A veces buscamos respuestas rápidas... – Citas y proverbios▒https://jucardus.github.io/a/-/v/a-veces-buscamos-respuestas-rapidas.html▓",
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/a/abacero-ra-mf.html▓",
   "▓abdicar [v.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdicar-v.html▓",
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m.html▓",
