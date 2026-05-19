@@ -9,9 +9,7 @@
   }
   .menu {
     padding: 6px 0 10px 0;
-    position: unset;
-    top: unset;
-    z-index: unset;
+    position: static;
     border-bottom: 2px solid LightYellow;
   }
 }
