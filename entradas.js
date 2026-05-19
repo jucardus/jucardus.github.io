@@ -14,5 +14,6 @@ var entradas = [
   "▓Cuando exponer un delito es tratado como... – Citas y proverbios▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como.html▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f.html▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc.html▓",
+  "▓fila [f.] – Diccionario multilingüe - F, Sustantivos multilingües femeninos, Sustantivos multilingües▒https://jucardus.github.io/f/i/l/fila-f.html▓",
   "▓Una nación de ovejas... – Citas y proverbios▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas.html▓"
 ];
