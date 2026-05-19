@@ -9,9 +9,9 @@
   }
   .menu {
     padding: 6px 0 10px 0;
-    position: revert;
-    top: revert;
-    z-index: revert;
+    position: unset;
+    top: unset;
+    z-index: unset;
     border-bottom: 2px solid LightYellow;
   }
 }
