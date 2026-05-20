@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓vocabulario samovar▒samovar▒https://dle.rae.es/samovar▓",
   "▓vocabulario español▒anagogía▒https://dle.rae.es/anagog%C3%ADa▓",
   "▓vocabulario español▒estamento▒https://dle.rae.es/estamento▓",
   "▓vocabulario español▒giste▒https://dle.rae.es/giste▓",
