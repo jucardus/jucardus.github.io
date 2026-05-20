@@ -1,4 +1,5 @@
 let base = [
+  "▓vocabulario español▒estamento▒https://dle.rae.es/estamento▓",
   "▓vocabulario español▒giste▒https://dle.rae.es/giste▓",
   "▓celulares pequeños▒Unihertz Tank Mini Review - A Small Phone For Big Adventures▒https://www.youtube.com/watch?v=EDyJUwe_Kl0▓",
   "▓celulares pequeños▒REVIEW: Unihertz Atom L - Compact, Rugged Android Smartphone (4-Inch Display, Helio P60)▒https://www.youtube.com/watch?v=YtSzp72etbM▓",
