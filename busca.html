@@ -39,6 +39,49 @@
       font-family: monospace;
       border-radius: 8px;
     }
+    /* Pagination styling: numbers tightly grouped like normal text */
+    .pagination {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-family: monospace;
+    }
+    .pagination a, .pagination span.current-page {
+      display: inline-block;
+      margin: 0;
+      text-decoration: none;
+      cursor: pointer;
+      color: LightYellow;
+      background-color: transparent;
+      transition: none;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    /* Ensure color stays LightYellow on all states */
+    .pagination a:link,
+    .pagination a:visited,
+    .pagination a:hover,
+    .pagination a:active,
+    .pagination a:focus {
+      color: LightYellow;
+      background-color: transparent;
+    }
+    /* Active page: Silver background, bold, LightYellow text */
+    .pagination span.current-page {
+      background-color: Silver;
+      font-weight: bold;
+      color: LightYellow;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .pagination a {
+      text-decoration: none;
+    }
+    .pagination a:hover {
+      text-decoration: underline;
+      background-color: transparent;
+      color: LightYellow;
+    }
   </style>
 </head>
 <body>
@@ -60,54 +103,152 @@
 
   <div id="resultados">
     <ul id="results"></ul>
+    <div id="paginationLinks" class="pagination"></div>
   </div>
   
-  <p>En esta subpágina puedes hacer buscas entre todas las entradas del sitio, según sus títulos y etiquetas. Escribe en el recuadro y presiona ENTER para mostrar una lista alfabética clicable de todas las coincidencias. Para las búsquedas manuales, cuentas con los <a href="indices"><b>Índices alfabéticos</b></a>.</p>
+  <p>En esta subpágina puedes hacer buscas entre todas las entradas del sitio, según sus títulos y etiquetas. Escribe en el recuadro y presiona ENTER para mostrar una lista alfabética clicable de todas las coincidencias (paginadas cada 10 resultados). Para las búsquedas manuales, cuentas con los <a href="indices"><b>Índices alfabéticos</b></a>.</p>
 
   <script src="entradas.js"></script>
   <script>
     const searchBox = document.getElementById('searchBox');
-    const results = document.getElementById('results');
+    const resultsList = document.getElementById('results');
+    const paginationContainer = document.getElementById('paginationLinks');
     
-    function search() {
-      const term = searchBox.value.toLowerCase().trim();
-      results.innerHTML = '';
-      
-      if (term === '') return;
-      
-      let found = false;
-      
+    let currentMatches = [];
+    let currentPage = 1;
+    const RESULTS_PER_PAGE = 10;
+    
+    function parseEntries() {
+      if (typeof entradas === 'undefined') {
+        console.error("entradas.js not loaded");
+        return [];
+      }
+      const parsed = [];
       for (let i = 0; i < entradas.length; i++) {
         const entry = entradas[i];
-        // Extract the text between ▓ and ▒ (title + labels)
-        const match = entry.match(/▓(.*)▒/);
-        if (match) {
-          const text = match[1].toLowerCase();
-          if (text.includes(term)) {
-            // Convert the entry to a clean link
-            const urlMatch = entry.match(/▒(.*)▓/);
-            const url = urlMatch[1];
-            const displayText = match[1];
-            const li = document.createElement('li');
-            const link = document.createElement('a');
-            link.href = url;
-            link.textContent = displayText;
-            li.appendChild(link);
-            results.appendChild(li);
-            found = true;
-          }
+        const textMatch = entry.match(/▓(.*)▒/);
+        const urlMatch = entry.match(/▒(.*)▓/);
+        if (textMatch && urlMatch) {
+          parsed.push({
+            displayText: textMatch[1],
+            url: urlMatch[1]
+          });
+        }
+      }
+      return parsed;
+    }
+    
+    let allEntries = [];
+    try {
+      allEntries = parseEntries();
+    } catch(e) {
+      allEntries = [];
+    }
+    
+    function performSearch(term) {
+      searchBox.value = '';
+      
+      if (!term || term.trim() === '') {
+        currentMatches = [];
+        currentPage = 1;
+        renderResultsAndPagination();
+        return;
+      }
+      
+      const lowerTerm = term.toLowerCase().trim();
+      const matches = [];
+      for (let i = 0; i < allEntries.length; i++) {
+        const entry = allEntries[i];
+        if (entry.displayText.toLowerCase().includes(lowerTerm)) {
+          matches.push({
+            displayText: entry.displayText,
+            url: entry.url
+          });
         }
       }
       
-      if (!found) {
-        results.innerHTML = '<li class="ninguna">[ Ninguna coincidencia. ]</li>';
+      matches.sort((a, b) => a.displayText.localeCompare(b.displayText));
+      currentMatches = matches;
+      currentPage = 1;
+      renderResultsAndPagination();
+    }
+    
+    function renderResultsAndPagination() {
+      resultsList.innerHTML = '';
+      paginationContainer.innerHTML = '';
+      
+      if (currentMatches.length === 0) {
+        resultsList.innerHTML = '<li class="ninguna">[ Ninguna coincidencia. ]</li>';
+        return;
+      }
+      
+      const totalMatches = currentMatches.length;
+      const totalPages = Math.ceil(totalMatches / RESULTS_PER_PAGE);
+      
+      if (currentPage < 1) currentPage = 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+      
+      const startIdx = (currentPage - 1) * RESULTS_PER_PAGE;
+      const endIdx = Math.min(startIdx + RESULTS_PER_PAGE, totalMatches);
+      const pageMatches = currentMatches.slice(startIdx, endIdx);
+      
+      for (let i = 0; i < pageMatches.length; i++) {
+        const match = pageMatches[i];
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = match.url;
+        link.textContent = match.displayText;
+        li.appendChild(link);
+        resultsList.appendChild(li);
+      }
+      
+      if (totalPages <= 1) return;
+      
+      const fragment = document.createDocumentFragment();
+      
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === currentPage) {
+          const currentSpan = document.createElement('span');
+          currentSpan.textContent = i;
+          currentSpan.className = 'current-page';
+          fragment.appendChild(currentSpan);
+        } else {
+          const pageLink = document.createElement('a');
+          pageLink.textContent = i;
+          pageLink.href = 'javascript:void(0)';
+          pageLink.addEventListener('click', (function(pageNum) {
+            return function(e) {
+              e.preventDefault();
+              if (currentPage !== pageNum) {
+                currentPage = pageNum;
+                renderResultsAndPagination();
+              }
+            };
+          })(i));
+          fragment.appendChild(pageLink);
+        }
+        
+        // Use simple space as separator (no dots, no wide gaps)
+        if (i !== totalPages) {
+          const separator = document.createTextNode(' ');
+          fragment.appendChild(separator);
+        }
+      }
+      
+      paginationContainer.appendChild(fragment);
+    }
+    
+    function onEnterPress(e) {
+      if (e.key === 'Enter') {
+        performSearch(searchBox.value);
       }
     }
     
-    searchBox.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
-        search();
-      }
+    window.addEventListener('DOMContentLoaded', () => {
+      searchBox.focus();
+      searchBox.addEventListener('keypress', onEnterPress);
+      resultsList.innerHTML = '<li class="ninguna" style="list-style:none;">🔍 Escribe algo y presiona ENTER</li>';
+      paginationContainer.innerHTML = '';
     });
   </script>
 </body>
