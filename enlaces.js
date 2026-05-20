@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓vocabulario español▒anagogía▒https://dle.rae.es/anagog%C3%ADa▓",
   "▓vocabulario español▒estamento▒https://dle.rae.es/estamento▓",
   "▓vocabulario español▒giste▒https://dle.rae.es/giste▓",
   "▓celulares pequeños▒Unihertz Tank Mini Review - A Small Phone For Big Adventures▒https://www.youtube.com/watch?v=EDyJUwe_Kl0▓",
