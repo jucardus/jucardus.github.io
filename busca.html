@@ -193,15 +193,33 @@
       const endIdx = Math.min(startIdx + RESULTS_PER_PAGE, totalMatches);
       const pageMatches = currentMatches.slice(startIdx, endIdx);
       
+      // === MODIFIED SECTION: create list items with the new format ===
+      // Required structure:
+      // <li><a href="URL"><b>TERM [label]</b></a> – Diccionario multilingüe - A</li>
+      // Since the static suffix is consistent for all search results, we append it after the anchor.
       for (let i = 0; i < pageMatches.length; i++) {
         const match = pageMatches[i];
         const li = document.createElement('li');
+        
         const link = document.createElement('a');
         link.href = match.url;
-        link.textContent = match.displayText;
+        
+        // Create bold element containing the displayText (which already includes "abacería [f.]" format)
+        const boldText = document.createElement('b');
+        boldText.textContent = match.displayText;
+        link.appendChild(boldText);
+        
+        // Append the link to the list item
         li.appendChild(link);
+        
+        // Add the static text that follows: " – Diccionario multilingüe - A"
+        // Using text node to avoid extra HTML markup, consistent with the required example.
+        const suffixText = document.createTextNode(' – Diccionario multilingüe - A');
+        li.appendChild(suffixText);
+        
         resultsList.appendChild(li);
       }
+      // === END MODIFIED SECTION ===
       
       if (totalPages <= 1) return;
       
