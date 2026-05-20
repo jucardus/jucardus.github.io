@@ -131,7 +131,7 @@
         const urlMatch = entry.match(/▒(.*)▓/);
         if (textMatch && urlMatch) {
           parsed.push({
-            displayText: textMatch[1],
+            rawDisplay: textMatch[1],   // full string: e.g. "abacería [f.] – Diccionario multilingüe - A"
             url: urlMatch[1]
           });
         }
@@ -144,6 +144,29 @@
       allEntries = parseEntries();
     } catch(e) {
       allEntries = [];
+    }
+    
+    /**
+     * Splits a raw display string (like "abacería [f.] – Diccionario multilingüe - A")
+     * into:
+     *   - titlePart: everything before the first " – " (en dash surrounded by spaces)
+     *   - labelsPart: everything after the first " – "
+     * 
+     * For entries without a dash, fallback: title = full string, labelsPart = ""
+     * 
+     * Returns an object { title, labels }
+     */
+    function splitTitleAndLabels(rawDisplay) {
+      // Use the exact separator: " – " (space + en dash + space)
+      const separator = " – ";
+      const dashIndex = rawDisplay.indexOf(separator);
+      if (dashIndex === -1) {
+        // No separator found: entire string is the title, no labels suffix
+        return { title: rawDisplay, labels: "" };
+      }
+      const title = rawDisplay.substring(0, dashIndex);
+      let labels = rawDisplay.substring(dashIndex + separator.length);
+      return { title, labels };
     }
     
     function performSearch(term) {
@@ -160,15 +183,20 @@
       const matches = [];
       for (let i = 0; i < allEntries.length; i++) {
         const entry = allEntries[i];
-        if (entry.displayText.toLowerCase().includes(lowerTerm)) {
+        // search inside the raw display text (includes both title and labels)
+        if (entry.rawDisplay.toLowerCase().includes(lowerTerm)) {
+          const { title, labels } = splitTitleAndLabels(entry.rawDisplay);
           matches.push({
-            displayText: entry.displayText,
-            url: entry.url
+            rawDisplay: entry.rawDisplay,
+            url: entry.url,
+            title: title,
+            labels: labels
           });
         }
       }
       
-      matches.sort((a, b) => a.displayText.localeCompare(b.displayText));
+      // sort by the raw display text to keep consistent alphabetical order
+      matches.sort((a, b) => a.rawDisplay.localeCompare(b.rawDisplay));
       currentMatches = matches;
       currentPage = 1;
       renderResultsAndPagination();
@@ -193,10 +221,10 @@
       const endIdx = Math.min(startIdx + RESULTS_PER_PAGE, totalMatches);
       const pageMatches = currentMatches.slice(startIdx, endIdx);
       
-      // === MODIFIED SECTION: create list items with the new format ===
-      // Required structure:
-      // <li><a href="URL"><b>TERM [label]</b></a> – Diccionario multilingüe - A</li>
-      // Since the static suffix is consistent for all search results, we append it after the anchor.
+      // Build each list item following the required pattern:
+      // <li><a href="URL"><b>TITLE</b></a> – LABELS</li>
+      // Important: the dash between the bolded title and the labels is always " – " (space + en dash + space)
+      // If there are no labels, just show the bolded link without extra dash.
       for (let i = 0; i < pageMatches.length; i++) {
         const match = pageMatches[i];
         const li = document.createElement('li');
@@ -204,22 +232,19 @@
         const link = document.createElement('a');
         link.href = match.url;
         
-        // Create bold element containing the displayText (which already includes "abacería [f.]" format)
-        const boldText = document.createElement('b');
-        boldText.textContent = match.displayText;
-        link.appendChild(boldText);
-        
-        // Append the link to the list item
+        const boldTitle = document.createElement('b');
+        boldTitle.textContent = match.title;
+        link.appendChild(boldTitle);
         li.appendChild(link);
         
-        // Add the static text that follows: " – Diccionario multilingüe - A"
-        // Using text node to avoid extra HTML markup, consistent with the required example.
-        const suffixText = document.createTextNode(' – Diccionario multilingüe - A');
-        li.appendChild(suffixText);
+        // Append labels if they exist, preceded by the standard " – " separator
+        if (match.labels && match.labels.trim() !== "") {
+          const separatorNode = document.createTextNode(" – " + match.labels);
+          li.appendChild(separatorNode);
+        }
         
         resultsList.appendChild(li);
       }
-      // === END MODIFIED SECTION ===
       
       if (totalPages <= 1) return;
       
