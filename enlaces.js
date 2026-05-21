@@ -1,7 +1,6 @@
 let enlaces = [
+  "▓Diccionario inglés-español▒<b>volley [s.]</b> ráfaga (de un arma)▒https://x.com/upholdreality/status/2056700772654424323▓",
   "▓Diccionario inglés-español▒<b>dandelion [s.]</b> /ˈdæn.dɪ.laɪ.ən/ diente de león (del francés «dent de lion») ¦Btnc¦▒https://x.com/cutecorestar/status/2057081147889209380▓",
-  "▓Diccionario inglés-español▒<b>dandelion [s.]</b> /ˈdæn.dɪ.laɪ.ən/ diente de león (del francés «dent de lion») ¦Btnc¦▒jucardus▓",
-  "▓Diccionario inglés-español▒<b>volley [s.]</b> ráfaga (de un arma) &mdash; Evo Morales: &quot;Three helicopters tried to detain me. Shots were fired in volleys. We barely escaped alive. The CIA piloted a helicopter as part of the operation to detain me. The youth must identify both the internal and external demons &ndash; the internal enemies are the right-wing forces in every country; the external enemies are the agents of empire.&quot;▒https://x.com/upholdreality/status/2056700772654424323▓",
   "▓vocabulario inglés▒volley▒https://www.merriam-webster.com/dictionary/volley▓",
   "▓vídeos de Cristianismo▒El cristianismo: ¿Culto mistérico? o ¿judaísmo mesiánico? | Dr Antonio Piñero v/s Irving Gatell▒https://www.youtube.com/watch?v=ExfcpO3d3Fo▓",
   "▓vocabulario samovar▒samovar▒https://dle.rae.es/samovar▓",
