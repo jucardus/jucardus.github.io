@@ -7,7 +7,7 @@ var entradas = [
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m▓",
   "▓Admiro a los hombres que buscan el orden... – Citas y proverbios▒https://jucardus.github.io/a/d/m/admiro-a-los-hombres-que-buscan-el-orden▓",
   "▓Adonde no pueden llegar ni tu vista... – Citas y proverbios▒https://jucardus.github.io/a/d/o/adonde-no-pueden-llegar-ni-tu-vista▓",
-  "▓afectuoso [adj.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj▓",
+  "▓afectuoso [adj.] – Adjetivos multilingües, Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj▓",
   "▓Al perro que tiene dinero se... – Citas y proverbios▒https://jucardus.github.io/a/l/-/al-perro-que-tiene-dinero-se▓",
   "▓Animales puros e impuros en el cristianismo – Cristianismo, Reflexiones▒https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo▓",
   "▓bóveda [f.] – Diccionario multilingüe - B, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/b/o/v/boveda-f▓",
