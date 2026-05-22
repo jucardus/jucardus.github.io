@@ -24,6 +24,7 @@ var entradas = [
   "▓inhabité [adj.] – Adjetivos franceses, Vocabulario francés - I▒https://jucardus.github.io/i/n/h/inhabite-adj▓",
   "▓ligueur, -euse [m.f.] – Sustantivos franceses, Sustantivos franceses femeninos, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/i/g/ligueur-euse-mf▓",
   "▓logis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/o/g/logis-m▓",
+  "▓noblesse de cloche [f.c.] – Sustantivos franceses compuestos, Sustantivos franceses femeninos, Vocabulario francés - N▒https://jucardus.github.io/n/o/b/noblesse-de-cloche-fc▓",
   "▓œillet [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/i/l/l/illet-m▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
