@@ -22,6 +22,7 @@ var entradas = [
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓fila [f.] – Diccionario multilingüe - F, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/f/i/l/fila-f▓",
   "▓inhabité [adj.] – Adjetivos franceses, Vocabulario francés - I▒https://jucardus.github.io/i/n/h/inhabite-adj▓",
+  "▓ligueur, -euse [m.f.] – Sustantivos franceses, Sustantivos franceses femeninos, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/i/g/ligueur-euse-mf▓",
   "▓logis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/o/g/logis-m▓",
   "▓œillet [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/i/l/l/illet-m▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
