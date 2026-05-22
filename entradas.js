@@ -12,7 +12,7 @@ var entradas = [
   "▓Animales puros e impuros en el cristianismo – Cristianismo, Reflexiones▒https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo▓",
   "▓bóveda [f.] – Diccionario multilingüe - B, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/b/o/v/boveda-f▓",
   "▓buis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - B▒https://jucardus.github.io/b/u/i/buis-m▓",
-  "▓cabeza de familia [m.f.c.] – Diccionario multilingüe - C▒https://jucardus.github.io/c/a/b/cabeza-de-familia-mfc▓",
+  "▓cabeza de familia [m.f.c.] – Diccionario multilingüe - C, Sustantivos multilingües compuestos, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/c/a/b/cabeza-de-familia-mfc▓",
   "▓Cuando exponer un delito es tratado como... – Citas y proverbios▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
