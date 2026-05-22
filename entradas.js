@@ -3,7 +3,7 @@ var entradas = [
   "▓A veces buscamos respuestas rápidas... – Citas y proverbios▒https://jucardus.github.io/a/-/v/a-veces-buscamos-respuestas-rapidas▓",
   "▓abacería [f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/a/b/a/abaceria-f▓",
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/a/abacero-ra-mf▓",
-  "▓abdicar [v.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdicar-v▓",
+  "▓abdicar [v.] – Diccionario multilingüe - A, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
   "▓abdomen [m.] – Diccionario multilingüe - A▒https://jucardus.github.io/a/b/d/abdomen-m▓",
   "▓Admiro a los hombres que buscan el orden... – Citas y proverbios▒https://jucardus.github.io/a/d/m/admiro-a-los-hombres-que-buscan-el-orden▓",
   "▓Adonde no pueden llegar ni tu vista... – Citas y proverbios▒https://jucardus.github.io/a/d/o/adonde-no-pueden-llegar-ni-tu-vista▓",
