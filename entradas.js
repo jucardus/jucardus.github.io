@@ -20,5 +20,6 @@ var entradas = [
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓fila [f.] – Diccionario multilingüe - F, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/f/i/l/fila-f▓",
   "▓inhabité [adj.] – Adjetivos franceses, Vocabulario francés - I▒https://jucardus.github.io/i/n/h/inhabite-adj▓",
+  "▓logis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/o/g/logis-m▓",
   "▓Una nación de ovejas... – Citas y proverbios▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓"
 ];
