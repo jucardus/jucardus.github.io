@@ -15,6 +15,7 @@ var entradas = [
   "▓cabeza de familia [m.f.c.] – Diccionario multilingüe - C, Sustantivos multilingües compuestos, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/c/a/b/cabeza-de-familia-mfc▓",
   "▓caillouteux [adj.] – Adjetivos franceses, Vocabulario francés - C▒https://jucardus.github.io/c/a/i/caillouteux-adj▓",
   "▓cloître [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/cloitre-m▓",
+  "▓clou [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/clou-m▓",
   "▓croisée [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - C▒https://jucardus.github.io/c/r/o/croisee-f▓",
   "▓Cuando exponer un delito es tratado como... – Citas y proverbios▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
