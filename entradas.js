@@ -27,6 +27,7 @@ var entradas = [
   "▓Los viejos tiempos nunca vuelven, porque... – Apotegmas▒https://jucardus.github.io/l/o/s/los-viejos-tiempos-nunca-vuelven-porque▓",
   "▓noblesse de cloche [f.c.] – Sustantivos franceses compuestos, Sustantivos franceses femeninos, Vocabulario francés - N▒https://jucardus.github.io/n/o/b/noblesse-de-cloche-fc▓",
   "▓œillet [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/i/l/l/illet-m▓",
+  "▓œillet [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/e/i/oeillet-m▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
