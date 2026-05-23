@@ -86,6 +86,7 @@ ol, ul {
     padding: 2rem 1rem;
     margin-top: 3rem;
     width: 100%;
+    border-radius: 8px;
 }
 
 .footer-inner {
@@ -111,7 +112,7 @@ ol, ul {
 
 .footer-links a:hover {
     color: #ffffff;           /* Más claro al pasar el mouse */
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .copyright {
