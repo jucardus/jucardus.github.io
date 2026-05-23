@@ -82,44 +82,51 @@ ol, ul {
 
 /*¶¶¶¶¶¶¶¶¶¶*/
 .site-footer {
-    background: #2c3e50;  /* Fondo más oscuro, puedes cambiarlo a #333, #1a1a1a, etc. */
+    background: #2c3e50;
     padding: 2rem 1rem;
     margin-top: 3rem;
     width: 100%;
     border-radius: 8px;
+    box-sizing: border-box;  /* ← ESTO ES CLAVE: evita que el padding desborde */
 }
 
 .footer-inner {
-    max-width: 1200px;  /* Limita el ancho en pantallas grandes */
-    margin: 0 auto;     /* Centra el contenido horizontalmente */
-    text-align: center; /* Centra el texto y los elementos hijos */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;  /* ← OPCIONAL PERO RECOMENDADO: da aire en móviles */
 }
 
 .footer-links {
     display: flex;
-    justify-content: center;  /* Centra los enlaces horizontalmente */
-    gap: 2rem;                /* Espacio entre enlaces (ajusta a tu gusto) */
-    flex-wrap: wrap;          /* En móviles los envuelve si no hay espacio */
-    margin: 1rem 0;           /* Separación arriba/abajo */
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
 }
 
 .footer-links a {
-    color: #ecf0f1;           /* Color claro para que contraste con fondo oscuro */
+    color: #ecf0f1;
     text-decoration: none;
     font-size: 0.95rem;
     transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-    color: #ffffff;           /* Más claro al pasar el mouse */
+    color: #ffffff;
     text-decoration: none;
 }
 
 .copyright {
     display: block;
-    color: #bdc3c7;           /* Gris claro, ligeramente más tenue que los enlaces */
+    color: #bdc3c7;
     font-size: 0.85rem;
     margin-top: 0.5rem;
+}
+
+/* Asegura que todos los elementos respeten el box-sizing */
+* {
+    box-sizing: border-box;
 }
 /*¶¶¶¶¶¶¶¶¶¶*/
 
