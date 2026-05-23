@@ -150,6 +150,33 @@
     }
     
     /**
+     * Normalizes a string for sorting by removing spaces, en dashes, hyphens,
+     * and other diacritics/ignorable characters so that alphabetical order
+     * ignores those characters. This ensures "a lo largo..." comes after "abacería"
+     * because "a" vs "ab" comparison happens without spaces/dashes.
+     * 
+     * Rules: remove spaces, en dashes, hyphens, and also normalize accents
+     * for better Spanish alphabetical order, but main goal is ignoring spaces/dashes.
+     */
+    function getSortKey(str) {
+      // Normalize: remove spaces, en dash (Unicode U+2013), hyphen-minus, and also
+      // collapse any other punctuation that might affect order.
+      // Convert to lowercase first.
+      let lower = str.toLowerCase();
+      // Replace common separators and spaces with empty string
+      // This includes: space, en dash (–), em dash (—), hyphen (-), underscore (_)
+      let noSeparators = lower.replace(/[\s\u2013\u2014\-_]+/g, '');
+      // Also remove any remaining punctuation except letters and numbers for cleaner sorting
+      // Keep letters (a-z), numbers (0-9), and also accented characters (they remain for localeCompare)
+      // But we want to keep letters and numbers only, removing punctuation like brackets, commas, etc.
+      // However, to keep alphabetical order meaningful, we only strip spaces/dashes/punctuation
+      // that would cause "a lo largo" to be treated as "a" vs "ab".
+      // Additional punctuation like "[f.]" should be stripped to avoid interfering.
+      noSeparators = noSeparators.replace(/[^\p{L}\p{N}]/gu, '');
+      return noSeparators;
+    }
+    
+    /**
      * Splits a raw display string (like "abacería [f.] – Diccionario multilingüe - A")
      * into:
      *   - titlePart: everything before the first " – " (en dash surrounded by spaces)
@@ -198,11 +225,27 @@
         }
       }
       
-      // sort by the raw display text to keep consistent alphabetical order
-      matches.sort((a, b) => a.rawDisplay.localeCompare(b.rawDisplay));
+      // Sort using custom sort key that ignores spaces and dashes.
+      // This ensures "a lo largo..." (which normalizes to "alolargo") 
+      // comes after "abacería" (normalizes to "abaceria") because 'a' vs 'ab' comparison works correctly.
+      matches.sort((a, b) => {
+        const keyA = getSortKey(a.rawDisplay);
+        const keyB = getSortKey(b.rawDisplay);
+        // Use localeCompare for proper Spanish alphabetical order (handles accented characters)
+        return keyA.localeCompare(keyB, 'es');
+      });
+      
       currentMatches = matches;
       currentPage = 1;
       renderResultsAndPagination();
+    }
+    
+    // Helper function to smoothly scroll to top of results area
+    function scrollToTopOfResults() {
+      // Scroll the window to the top of the results container or just to top of page
+      // Using behavior: 'smooth' for nicer experience, but instant is fine too.
+      // We'll scroll to the body top so user sees the new page results.
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     
     function renderResultsAndPagination() {
@@ -263,12 +306,15 @@
           const pageLink = document.createElement('a');
           pageLink.textContent = i;
           pageLink.href = 'javascript:void(0)';
+          // Add click handler that updates page, re-renders, AND scrolls to top
           pageLink.addEventListener('click', (function(pageNum) {
             return function(e) {
               e.preventDefault();
               if (currentPage !== pageNum) {
                 currentPage = pageNum;
                 renderResultsAndPagination();
+                // Scroll to top of results after rendering new page
+                scrollToTopOfResults();
               }
             };
           })(i));
