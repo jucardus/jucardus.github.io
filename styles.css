@@ -80,6 +80,48 @@ ol, ul {
   margin-top: 30px;
 }
 
+/*¶¶¶¶¶¶¶¶¶¶*/
+.site-footer {
+    background: #2c3e50;  /* Fondo más oscuro, puedes cambiarlo a #333, #1a1a1a, etc. */
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.footer-inner {
+    max-width: 1200px;  /* Limita el ancho en pantallas grandes */
+    margin: 0 auto;     /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto y los elementos hijos */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;  /* Centra los enlaces horizontalmente */
+    gap: 2rem;                /* Espacio entre enlaces (ajusta a tu gusto) */
+    flex-wrap: wrap;          /* En móviles los envuelve si no hay espacio */
+    margin: 1rem 0;           /* Separación arriba/abajo */
+}
+
+.footer-links a {
+    color: #ecf0f1;           /* Color claro para que contraste con fondo oscuro */
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;           /* Más claro al pasar el mouse */
+    text-decoration: underline;
+}
+
+.copyright {
+    display: block;
+    color: #bdc3c7;           /* Gris claro, ligeramente más tenue que los enlaces */
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+/*¶¶¶¶¶¶¶¶¶¶*/
+
 @media (max-width: 768px) {
   body {
     padding: 8px 2px 100px 2px;
