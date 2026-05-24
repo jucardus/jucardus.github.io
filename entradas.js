@@ -1,4 +1,5 @@
 var entradas = [
+  "▓她自稱從未犯過錯。 – Frases chinas desglosadas▒https://jucardus.github.io/2/2/9/2290533258312812447826410293593694237679▓",
   "▓abacería [f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/a/b/a/abaceria-f▓",
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/a/abacero-ra-mf▓",
   "▓abdicar [v.] – Diccionario multilingüe - A, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
