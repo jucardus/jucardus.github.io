@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓vocabulario español▒gente de toda broza▒https://dle.rae.es/gente#BjCTO18▓",
   "▓vocabulario español▒broza▒https://dle.rae.es/broza▓",
   "▓vocabulario inglés▒telltale▒https://www.merriam-webster.com/dictionary/telltale▓",
   "▓vídeos de Cristianismo▒¿Llamó Jesús Dios a Sí Mismo? Antonio Piñero Responde▒https://www.youtube.com/watch?v=Jr_fKptwprs▓",
