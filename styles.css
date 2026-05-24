@@ -55,6 +55,7 @@ li {
 }
 
 #menu {
+  background-color: color-mix(in srgb, DarkSlateGray, black 20%);
   margin-bottom: 25px;
   text-align: center;
 }
