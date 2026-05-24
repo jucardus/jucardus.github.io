@@ -30,6 +30,7 @@ var entradas = [
   "▓noblesse de cloche [f.c.] – Sustantivos franceses compuestos, Sustantivos franceses femeninos, Vocabulario francés - N▒https://jucardus.github.io/n/o/b/noblesse-de-cloche-fc▓",
   "▓ouvrouère [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/u/v/ouvrouere-m▓",
   "▓plein-cintre [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - P▒https://jucardus.github.io/p/l/e/plein-cintre-mc▓",
+  "▓purport [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/u/r/purport-v▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
