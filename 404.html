@@ -1,206 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-44Y9CNCHR8');
+    </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Page not found | jucardus</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(145deg, #f8fafc 0%, #eef2f6 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            color: #1e293b;
-        }
-
-        .error-container {
-            max-width: 650px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(2px);
-            border-radius: 2rem;
-            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.02);
-            padding: 3rem 2rem;
-            text-align: center;
-            transition: transform 0.2s ease;
-        }
-
-        .error-container:hover {
-            transform: translateY(-5px);
-        }
-
-        .error-code {
-            font-size: 8rem;
-            font-weight: 800;
-            line-height: 1;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 2px 10px rgba(59,130,246,0.2);
-        }
-
-        h1 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-
-        .message {
-            font-size: 1.1rem;
-            color: #475569;
-            margin-bottom: 2rem;
-            line-height: 1.5;
-            border-left: 3px solid #cbd5e1;
-            border-right: 3px solid #cbd5e1;
-            display: inline-block;
-            padding: 0 1rem;
-        }
-
-        .description {
-            color: #334155;
-            margin-bottom: 2rem;
-            font-size: 1rem;
-        }
-
-        .suggestion-list {
-            text-align: left;
-            background: #f1f5f9;
-            padding: 1rem 1.5rem;
-            border-radius: 1rem;
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
-
-        .suggestion-list p {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #0f172a;
-        }
-
-        .suggestion-list ul {
-            margin-left: 1.25rem;
-            color: #334155;
-        }
-
-        .suggestion-list li {
-            margin: 0.4rem 0;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.6rem;
-            background: #0f172a;
-            color: white;
-            text-decoration: none;
-            padding: 0.85rem 2rem;
-            border-radius: 3rem;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .button:hover {
-            background: #1e293b;
-            transform: scale(1.02);
-            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.2);
-        }
-
-        .button:active {
-            transform: scale(0.98);
-        }
-
-        .link-home {
-            margin-top: 1.5rem;
-            font-size: 0.85rem;
-        }
-
-        .link-home a {
-            color: #3b82f6;
-            text-decoration: none;
-            border-bottom: 1px dashed #93c5fd;
-        }
-
-        .link-home a:hover {
-            color: #2563eb;
-            border-bottom-style: solid;
-        }
-
-        footer {
-            margin-top: 2.5rem;
-            font-size: 0.75rem;
-            color: #94a3b8;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 1.5rem;
-        }
-
-        @media (max-width: 500px) {
-            .error-container {
-                padding: 2rem 1.2rem;
-            }
-            .error-code {
-                font-size: 5.5rem;
-            }
-            h1 {
-                font-size: 1.4rem;
-            }
-            .message {
-                font-size: 1rem;
-            }
-            .button {
-                padding: 0.7rem 1.5rem;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="404 - Página inexistente.">
+    <meta name="author" content="Jucardus ©">
+    <meta name="keywords" content="página inexistente, 404, página eliminada">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>404 | Jucardus.com</title>
 </head>
 <body>
-    <div class="error-container">
-        <div class="error-code">404</div>
-        <h1>Page not found</h1>
-        <div class="message">
-            ✦ The link you followed may be broken ✦
-        </div>
-        <div class="description">
-            Sorry, but the page you were looking for doesn't exist, has been moved, or the URL was mistyped.
-        </div>
-
-        <div class="suggestion-list">
-            <p>📌 What you can try:</p>
-            <ul>
-                <li>Double‑check the web address for typos</li>
-                <li>Go to the homepage and navigate from there</li>
-                <li>If you bookmarked this page, the content might have moved</li>
-                <li>Use the search bar on my main site (if available)</li>
-            </ul>
-        </div>
-
-        <a href="/" class="button">
-            <span>🏠</span> Back to Homepage
-        </a>
-
-        <div class="link-home">
-            <a href="/">jucardus.github.io</a> — main index
-        </div>
-
-        <footer>
-            ⚡ The page you requested could not be found.<br>
-            If you believe this is an error, feel free to <a href="https://github.com/jucardus" style="color:#64748b;">report an issue</a>.
-        </footer>
+    <h1>404 - Página inexistente</h1>
+    <div id="menu" class="menu">
+      <a href="index">Inicio</a> · 
+      <a href="autor">Autor</a> · 
+      <a href="indices">Índices</a> · 
+      <a href="recientes">Recientes</a> · 
+      <a href="etiquetas">Etiquetas</a> · 
+      <a href="busca">Busca</a> · 
+      <a>Compartir</a>
     </div>
+    <p style="color: Orange;">La subpágina que acabas de visitar ha sido eliminada, las has escrito incorrectamente o nunca existió. Verifica si la URL es la correcta o acude a los <a href="https://jucardus.github.io/indices"><b>Índices alfabéticos</b></a> para buscar manualmente en los diversos índices, o a la <a href="https://jucardus.github.io/busca"><b>Página de busca</b></a> para buscar entre todos los títulos y etiquetas.</p>
+    <div id="footer-placeholder"></div>
+    <script src="/cargar-footer.js"></script>
 </body>
 </html>
