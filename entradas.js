@@ -27,6 +27,7 @@ var entradas = [
   "▓Cuando exponer un delito es tratado como... – Citas y proverbios, Citas y proverbios - C▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
+  "▓emmet [s.] – Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓fila [f.] – Diccionario multilingüe - F, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/f/i/l/fila-f▓",
   "▓œillet [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/e/i/oeillet-m▓",
