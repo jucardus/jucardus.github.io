@@ -40,6 +40,7 @@ var entradas = [
   "▓minnow [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/m/i/n/minnow-s▓",
   "▓noblesse de cloche [f.c.] – Sustantivos franceses compuestos, Sustantivos franceses femeninos, Vocabulario francés - N▒https://jucardus.github.io/n/o/b/noblesse-de-cloche-fc▓",
   "▓ouvrouère [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/u/v/ouvrouere-m▓",
+  "▓plead [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/l/e/plead-v▓",
   "▓plein-cintre [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - P▒https://jucardus.github.io/p/l/e/plein-cintre-mc▓",
   "▓pretender [v.] – Diccionario multilingüe - P, Verbos multilingües▒https://jucardus.github.io/p/r/e/pretender-v▓",
   "▓purport [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/u/r/purport-v▓",
