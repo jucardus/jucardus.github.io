@@ -37,6 +37,7 @@ var entradas = [
   "▓purport [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/u/r/purport-v▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
+  "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
   "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
   "▓voûte [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓"
