@@ -6,7 +6,7 @@ var entradas = [
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/a/abacero-ra-mf▓",
   "▓abdicar [v.] – Diccionario multilingüe - A, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
   "▓abdomen [m.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/d/abdomen-m▓",
-  "▓Admiro a los hombres que buscan el orden... – Citas y proverbios▒https://jucardus.github.io/a/d/m/admiro-a-los-hombres-que-buscan-el-orden▓",
+  "▓Admiro a los hombres que buscan el orden... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/d/m/admiro-a-los-hombres-que-buscan-el-orden▓",
   "▓Adonde no pueden llegar ni tu vista... – Citas de Agustín de Hipona, Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/d/o/adonde-no-pueden-llegar-ni-tu-vista▓",
   "▓afectuoso [adj.] – Adjetivos multilingües, Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj▓",
   "▓Algún día todo... – Apotegmas▒https://jucardus.github.io/a/l/g/algun-dia-todo▓",
