@@ -41,6 +41,7 @@ var entradas = [
   "▓plein-cintre [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - P▒https://jucardus.github.io/p/l/e/plein-cintre-mc▓",
   "▓pretender [v.] – Diccionario multilingüe - P, Verbos multilingües▒https://jucardus.github.io/p/r/e/pretender-v▓",
   "▓purport [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/u/r/purport-v▓",
+  "▓quagmire [s.] – Sustantivos ingleses, Vocabulario inglés - Q▒https://jucardus.github.io/q/u/a/quagmire-s▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
