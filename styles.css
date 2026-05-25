@@ -82,6 +82,10 @@ ol, ul {
   text-align: center;
 }
 
+#recientes {
+  margin-top: 20px;
+}
+
 /*¶¶¶¶¶¶¶¶¶¶*/
 .site-footer {
     background: #2c3e50;
