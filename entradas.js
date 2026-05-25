@@ -51,6 +51,7 @@ var entradas = [
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
   "▓Siempre hay alguien orando por ti – Reflexiones▒https://jucardus.github.io/s/i/e/siempre-hay-alguien-orando-por-ti▓",
+  "▓Sí. Una de las condiciones para que la democracia... – Reflexiones▒https://jucardus.github.io/s/i/i/si-una-de-las-condiciones-para-que-la-democracia▓",
   "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
   "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
