@@ -54,5 +54,6 @@ var entradas = [
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
   "▓voûte [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓",
   "▓wharf [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/w/h/a/wharf-s▓",
-  "▓wick [s.] – Sustantivos ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/i/c/wick-s▓"
+  "▓wick [s.] – Sustantivos ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/i/c/wick-s▓",
+  "▓withal [adv.] – Adverbios ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/i/t/withal-adv▓"
 ];
