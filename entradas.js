@@ -17,6 +17,7 @@ var entradas = [
   "▓bóveda [f.] – Diccionario multilingüe - B, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/b/o/v/boveda-f▓",
   "▓cabeza de familia [m.f.c.] – Diccionario multilingüe - C, Sustantivos multilingües compuestos, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/c/a/b/cabeza-de-familia-mfc▓",
   "▓caillouteux [adj.] – Adjetivos franceses, Vocabulario francés - C▒https://jucardus.github.io/c/a/i/caillouteux-adj▓",
+  "▓cast candle [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - C▒https://jucardus.github.io/c/a/s/cast-candle-sc▓",
   "▓cloître [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/cloitre-m▓",
   "▓clou [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/clou-m▓",
   "▓croisée [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - C▒https://jucardus.github.io/c/r/o/croisee-f▓",
