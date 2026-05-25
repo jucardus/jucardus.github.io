@@ -40,5 +40,6 @@ var entradas = [
   "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
   "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
-  "▓voûte [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓"
+  "▓voûte [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓",
+  "▓wick [s.] – Sustantivos ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/i/c/wick-s▓"
 ];
