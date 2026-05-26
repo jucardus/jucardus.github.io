@@ -52,7 +52,6 @@ var entradas = [
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
   "▓Siempre hay alguien orando por ti – Reflexiones▒https://jucardus.github.io/s/i/e/siempre-hay-alguien-orando-por-ti▓",
   "▓Son demasiados los presupuestos para poner... – Reflexiones▒https://jucardus.github.io/s/o/n/son-demasiados-los-presupuestos-para-poner▓",
-  "▓Sí. Una de las condiciones para que la democracia... – Reflexiones▒https://jucardus.github.io/s/i/i/si-una-de-las-condiciones-para-que-la-democracia▓",
   "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
   "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
