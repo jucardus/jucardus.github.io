@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓vocabulario español▒birrete▒https://dle.rae.es/birrete▓",
   "▓vocabulario español▒flagrante▒https://dle.rae.es/flagrante▓",
   "▓vocabulario español▒gente de toda broza▒https://dle.rae.es/gente#BjCTO18▓",
   "▓vocabulario español▒broza▒https://dle.rae.es/broza▓",
