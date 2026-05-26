@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓celulares pequeños▒NOKIA 6300 4G | "LA FLECHITA" CON REDES SOCIALES, BUENA ESA NOKIA 😉▒https://www.youtube.com/watch?v=MJqrKqypFdI▓",
   "▓vocabulario español▒chepa▒https://dle.rae.es/chepa▓",
   "▓vocabulario español▒birrete▒https://dle.rae.es/birrete▓",
   "▓vocabulario español▒flagrante▒https://dle.rae.es/flagrante▓",
@@ -137,7 +138,6 @@ let enlaces = [
   "▓vocabulario inglés▒abaculus▒https://www.merriam-webster.com/dictionary/abaculus▓",
   "▓RENIEC▒¡No más olvidos! RENIEC lanzará DNI electrónico para móviles: Entérate todos los pasos a seguir para adquirirlo▒https://rpp.pe/tecnologia/moviles/reniec-lanzara-dni-electronico-para-moviles-estos-son-los-pasos-a-seguir-para-adquirirlo-noticia-1229048?ref=rpp▓",
   "▓vocabulario inglés▒slop▒https://www.merriam-webster.com/dictionary/slop▓",
-  "▓música - Johann Sebastian Bach▒Bach Piano Concerto BWV 1055 A major David Fray▒https://www.youtube.com/watch?v=FRyLYtBLIOE▓",
   "▓Seinfeld▒Seinfeld Bloopers Season 7 (Part 1)▒https://www.youtube.com/watch?v=QviJz4M-mkI▓",
   "▓herramientas▒convertidor de MP4 a MP3▒https://www.freeconvert.com/mp4-to-mp3▓",
   "▓vocabulario inglés▒finicky▒https://www.merriam-webster.com/dictionary/finicky▓",
