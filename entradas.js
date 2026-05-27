@@ -4,7 +4,7 @@ var entradas = [
   "▓沒有人自稱完美。 – Frases chinas desglosadas▒https://jucardus.github.io/2/7/7/沒有人自稱完美▓",
   "▓abacería [f.] – Almnts - alimentos, Diccionario multilingüe - A, Estblcmnts - establecimientos, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/a/b/a/abaceria-f▓",
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A, Ofcs - oficios, Sustantivos multilingües, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/a/abacero-ra-mf▓",
-  "▓abdicar [v.] – Diccionario multilingüe - A, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
+  "▓abdicar [v.] – Diccionario multilingüe - A, Rlz - realeza, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
   "▓abdomen [m.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/d/abdomen-m▓",
   "▓Admiro a los hombres que buscan el orden... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/d/m/admiro-a-los-hombres-que-buscan-el-orden▓",
   "▓Adonde no pueden llegar ni tu vista... – Citas de Agustín de Hipona, Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/d/o/adonde-no-pueden-llegar-ni-tu-vista▓",
