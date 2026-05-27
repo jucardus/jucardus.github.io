@@ -2,7 +2,7 @@ var entradas = [
   "▓他自稱是這封信的作者。 – Frases chinas desglosadas▒https://jucardus.github.io/2/0/1/他自稱是這封信的作者▓",
   "▓她自稱從未犯過錯。 – Frases chinas desglosadas▒https://jucardus.github.io/2/2/9/她自稱從未犯過錯▓",
   "▓沒有人自稱完美。 – Frases chinas desglosadas▒https://jucardus.github.io/2/7/7/沒有人自稱完美▓",
-  "▓abacería [f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/a/b/a/abaceria-f▓",
+  "▓abacería [f.] – Almnts - alimentos, Diccionario multilingüe - A, Estblcmnts - establecimientos, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/a/b/a/abaceria-f▓",
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/a/abacero-ra-mf▓",
   "▓abdicar [v.] – Diccionario multilingüe - A, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
   "▓abdomen [m.] – Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/d/abdomen-m▓",
