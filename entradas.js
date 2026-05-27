@@ -52,6 +52,7 @@ var entradas = [
   "▓quagmire [s.] – Sustantivos ingleses, Vocabulario inglés - Q▒https://jucardus.github.io/q/u/a/quagmire-s▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
+  "▓sagacidad [f.] – Diccionario multilingüe - S, Sustantivos femeninos multilingües▒https://jucardus.github.io/s/a/g/sagacidad-f▓",
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
   "▓shrewdness [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/h/r/shrewdness-s▓",
   "▓Siempre hay alguien orando por ti – Reflexiones▒https://jucardus.github.io/s/i/e/siempre-hay-alguien-orando-por-ti▓",
