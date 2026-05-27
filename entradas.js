@@ -61,7 +61,7 @@ var entradas = [
   "▓Sí. Una de las condiciones para que la democracia... – Reflexiones▒https://jucardus.github.io/s/i/-/si-una-de-las-condiciones-para-que-la-democracia▓",
   "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
   "▓terse style [s.c.] – EstlsLtrrs - estilos literarios, Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/e/r/terse-style-sc▓",
-  "▓toit en colombage [m.c.] – Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
+  "▓toit en colombage [m.c.] – Arqtctr - arquitectura, Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
   "▓voûte [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓",
   "▓wharf [s.] – Plurales irregulares ingleses, Sustantivos ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/h/a/wharf-s▓",
