@@ -27,6 +27,7 @@ var entradas = [
   "▓clou [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/clou-m▓",
   "▓croisée [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - C▒https://jucardus.github.io/c/r/o/croisee-f▓",
   "▓Cuando exponer un delito es tratado como... – Citas y proverbios, Citas y proverbios - C▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como▓",
+  "▓Cuanto menos talento tienen, más orgullo... – Citas y proverbios, Citas y proverbios - C▒https://jucardus.github.io/c/u/a/cuanto-menos-talento-tienen-mas-orgullo▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
