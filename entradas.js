@@ -53,6 +53,7 @@ var entradas = [
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
   "▓rez-de-chaussée [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
+  "▓shrewdness [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/h/r/shrewdness-s▓",
   "▓Siempre hay alguien orando por ti – Reflexiones▒https://jucardus.github.io/s/i/e/siempre-hay-alguien-orando-por-ti▓",
   "▓Si quieres saber quién te controla... – Citas de Voltaire, Citas y proverbios, Citas y proverbios - S▒https://jucardus.github.io/s/i/-/si-quieres-saber-quien-te-controla▓",
   "▓Son demasiados los presupuestos para poner... – Reflexiones▒https://jucardus.github.io/s/o/n/son-demasiados-los-presupuestos-para-poner▓",
