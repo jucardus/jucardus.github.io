@@ -200,12 +200,17 @@
     }
     
     function performSearch(term) {
-      searchBox.value = '';
+      // Update the search box value with the term being searched
+      searchBox.value = term || '';
       
       if (!term || term.trim() === '') {
         currentMatches = [];
         currentPage = 1;
         renderResultsAndPagination();
+        // Optionally clear the URL query parameter to keep it clean
+        // but we'll leave it as is, so the user can refresh and keep the search.
+        // However, to avoid confusion, we'll update the URL without reloading.
+        updateURLQuery(term);
         return;
       }
       
@@ -238,6 +243,27 @@
       currentMatches = matches;
       currentPage = 1;
       renderResultsAndPagination();
+      
+      // Update the URL's query parameter to reflect the current search term
+      updateURLQuery(term);
+    }
+    
+    // Helper function to update the URL's 'q' parameter without reloading the page
+    function updateURLQuery(term) {
+      const url = new URL(window.location.href);
+      if (term && term.trim() !== '') {
+        url.searchParams.set('q', term.trim());
+      } else {
+        url.searchParams.delete('q');
+      }
+      // Replace the current state without reloading (preserves history)
+      window.history.replaceState({}, '', url.toString());
+    }
+    
+    // Helper function to get query parameter from URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
     }
     
     // Helper function to smoothly scroll to top of results area
@@ -337,11 +363,29 @@
       }
     }
     
+    // Initialize the page: set up event listeners, then handle URL query parameter if present
     window.addEventListener('DOMContentLoaded', () => {
-      searchBox.focus();
+      // Set up search box event listener
       searchBox.addEventListener('keypress', onEnterPress);
-      resultsList.innerHTML = '';
-      paginationContainer.innerHTML = '';
+      
+      // Check for 'q' parameter in URL (e.g., ?q=house)
+      const queryParam = getQueryParam('q');
+      
+      if (queryParam && queryParam.trim() !== '') {
+        // If there is a query parameter, perform the search and populate the search box
+        // We need to make sure the search box reflects the query for consistency
+        searchBox.value = queryParam;
+        // Slight delay to ensure DOM and allEntries are fully ready? 
+        // AllEntries is already populated synchronously from entradas.js (since script runs before DOMContentLoaded if loaded in head, 
+        // but entradas.js is loaded before this script block, so allEntries is ready).
+        // However, to be safe and ensure any async behavior doesn't interfere, we call performSearch directly.
+        performSearch(queryParam);
+      } else {
+        // No query parameter: just focus the empty search box and clear results
+        searchBox.focus();
+        resultsList.innerHTML = '';
+        paginationContainer.innerHTML = '';
+      }
     });
   </script>
 </body>
