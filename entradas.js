@@ -41,6 +41,7 @@ var entradas = [
   "▓ligueur, -euse [m.f.] – Sustantivos franceses, Sustantivos franceses femeninos, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/i/g/ligueur-euse-mf▓",
   "▓logis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/o/g/logis-m▓",
   "▓Los viejos tiempos nunca vuelven, porque... – Apotegmas▒https://jucardus.github.io/l/o/s/los-viejos-tiempos-nunca-vuelven-porque▓",
+  "▓many-sided [adj.c.] – Adjetivos compuestos ingleses, Vocabulario inglés - M▒https://jucardus.github.io/m/a/n/many-sided-adjc▓",
   "▓minnow [s.] – Sustantivos ingleses, Vocabulario inglés - M▒https://jucardus.github.io/m/i/n/minnow-s▓",
   "▓noblesse de cloche [f.c.] – Sustantivos franceses compuestos, Sustantivos franceses femeninos, Vocabulario francés - N▒https://jucardus.github.io/n/o/b/noblesse-de-cloche-fc▓",
   "▓ouvrouère [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/u/v/ouvrouere-m▓",
