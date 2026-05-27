@@ -11,9 +11,9 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <meta name="description" content="Busca en Jucardus.com">
+  <meta name="description" content="Busca en Jucardus.com | Búsqueda por texto completo o por comienzo de palabra">
   <meta name="author" content="Jucardus ©">
-  <meta name="keywords" content="busca, búsqueda, search">
+  <meta name="keywords" content="busca, búsqueda, search, búsqueda por prefijo">
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <title>Busca | Jucardus.com</title>
@@ -39,6 +39,14 @@
       font-family: monospace;
       letter-spacing: 1.1px;
       border-radius: 8px;
+    }
+    /* Opcional: pequeño indicador de modo de búsqueda */
+    .search-note {
+      font-size: 0.85em;
+      color: #ccc;
+      margin-top: 6px;
+      text-align: center;
+      font-family: monospace;
     }
     /* Pagination styling: numbers tightly grouped like normal text */
     .pagination {
@@ -100,6 +108,7 @@
   
   <div id="buscador">
     <input type="text" id="searchBox" placeholder="Escribe aquí..." autocomplete="off">
+    <div class="search-note" id="searchModeNote"></div>
   </div>
 
   <div id="resultados">
@@ -108,6 +117,7 @@
   </div>
   
   <p>En esta subpágina puedes hacer buscas entre todas las entradas del sitio, según sus títulos y etiquetas. Escribe en el recuadro y presiona ENTER para mostrar una lista alfabética clicable de todas las coincidencias, paginadas cada diez resultados. Para las búsquedas manuales, cuentas con los <a href="indices"><b>Índices alfabéticos</b></a>.</p>
+  <p><strong>Nota:</strong> Usa <code>?q=texto</code> para búsqueda completa en cualquier parte de la entrada. Usa <code>?qb=prefijo</code> para buscar solo entradas que <strong>comiencen</strong> con ese prefijo (ej. <code>?qb=cabeza</code> encuentra "cabeza de familia..." pero no "la cabeza").</p>
 
   <div id="footer-placeholder"></div>
   <script src="/cargar-footer.js"></script>
@@ -117,9 +127,12 @@
     const searchBox = document.getElementById('searchBox');
     const resultsList = document.getElementById('results');
     const paginationContainer = document.getElementById('paginationLinks');
+    const searchModeNote = document.getElementById('searchModeNote');
     
     let currentMatches = [];
     let currentPage = 1;
+    let currentSearchMode = 'fulltext'; // 'fulltext' o 'begins'
+    let currentSearchTermRaw = '';
     const RESULTS_PER_PAGE = 10;
     
     function parseEntries() {
@@ -134,7 +147,7 @@
         const urlMatch = entry.match(/▒(.*)▓/);
         if (textMatch && urlMatch) {
           parsed.push({
-            rawDisplay: textMatch[1],   // full string: e.g. "abacería [f.] – Diccionario multilingüe - A"
+            rawDisplay: textMatch[1],   // full string: e.g. "cabeza de familia [m.f.c.] – Diccionario multilingüe - C, Sustantivos multil..."
             url: urlMatch[1]
           });
         }
@@ -152,46 +165,25 @@
     /**
      * Normalizes a string for sorting by removing spaces, en dashes, hyphens,
      * and other diacritics/ignorable characters so that alphabetical order
-     * ignores those characters. This ensures "a lo largo..." comes after "abacería"
-     * because "a" vs "ab" comparison happens without spaces/dashes.
-     * 
-     * Rules: remove spaces, en dashes, hyphens, and also normalize accents
-     * for better Spanish alphabetical order, but main goal is ignoring spaces/dashes.
+     * ignores those characters.
      */
     function getSortKey(str) {
-      // Normalize: remove spaces, en dash (Unicode U+2013), hyphen-minus, and also
-      // collapse any other punctuation that might affect order.
-      // Convert to lowercase first.
       let lower = str.toLowerCase();
-      // Replace common separators and spaces with empty string
-      // This includes: space, en dash (–), em dash (—), hyphen (-), underscore (_)
+      // Remove spaces, dashes, en/em dashes, underscores
       let noSeparators = lower.replace(/[\s\u2013\u2014\-_]+/g, '');
-      // Also remove any remaining punctuation except letters and numbers for cleaner sorting
-      // Keep letters (a-z), numbers (0-9), and also accented characters (they remain for localeCompare)
-      // But we want to keep letters and numbers only, removing punctuation like brackets, commas, etc.
-      // However, to keep alphabetical order meaningful, we only strip spaces/dashes/punctuation
-      // that would cause "a lo largo" to be treated as "a" vs "ab".
-      // Additional punctuation like "[f.]" should be stripped to avoid interfering.
+      // Keep only letters and numbers for stable sorting
       noSeparators = noSeparators.replace(/[^\p{L}\p{N}]/gu, '');
       return noSeparators;
     }
     
     /**
-     * Splits a raw display string (like "abacería [f.] – Diccionario multilingüe - A")
-     * into:
-     *   - titlePart: everything before the first " – " (en dash surrounded by spaces)
-     *   - labelsPart: everything after the first " – "
-     * 
-     * For entries without a dash, fallback: title = full string, labelsPart = ""
-     * 
-     * Returns an object { title, labels }
+     * Splits a raw display string into { title, labels }
+     * Separator is " – " (space + en dash + space)
      */
     function splitTitleAndLabels(rawDisplay) {
-      // Use the exact separator: " – " (space + en dash + space)
       const separator = " – ";
       const dashIndex = rawDisplay.indexOf(separator);
       if (dashIndex === -1) {
-        // No separator found: entire string is the title, no labels suffix
         return { title: rawDisplay, labels: "" };
       }
       const title = rawDisplay.substring(0, dashIndex);
@@ -199,44 +191,95 @@
       return { title, labels };
     }
     
-    function performSearch(term) {
-      // Update the search box value with the term being searched
+    /**
+     * Búsqueda por comienzo exacto del TITULO (parte antes del " – ").
+     * Compara el título normalizado (minúsculas) con el prefijo dado.
+     * Retorna true si el título empieza exactamente con el prefijo (ignorando mayúsculas).
+     */
+    function matchesBeginTitle(entry, prefixRaw) {
+      const { title } = splitTitleAndLabels(entry.rawDisplay);
+      const normalizedTitle = title.toLowerCase();
+      const normalizedPrefix = prefixRaw.toLowerCase().trim();
+      // Comprueba si el título COMIENZA con el prefijo
+      return normalizedTitle.startsWith(normalizedPrefix);
+    }
+    
+    /**
+     * Búsqueda por texto completo: busca en rawDisplay (título + etiquetas)
+     */
+    function matchesFullText(entry, termRaw) {
+      const lowerTerm = termRaw.toLowerCase().trim();
+      return entry.rawDisplay.toLowerCase().includes(lowerTerm);
+    }
+    
+    /**
+     * Realiza la búsqueda según el modo ('fulltext' o 'begins').
+     * El término se toma del parámetro 'term'.
+     * Actualiza currentMatches, currentSearchMode, currentSearchTermRaw.
+     */
+    function performSearch(term, mode) {
+      // Guardar valores para referencia
+      currentSearchMode = mode;
+      currentSearchTermRaw = term || '';
+      
+      // Actualizar el campo de texto
       searchBox.value = term || '';
+      
+      // Mostrar nota sobre el modo de búsqueda
+      if (mode === 'begins' && term && term.trim() !== '') {
+        searchModeNote.textContent = `🔍 Modo "comienza con": mostrando entradas cuyo título empiece por "${term.trim()}"`;
+        searchModeNote.style.color = '#aaf0e0';
+      } else if (mode === 'fulltext' && term && term.trim() !== '') {
+        searchModeNote.textContent = `🔎 Modo "texto completo": mostrando entradas que contengan "${term.trim()}"`;
+        searchModeNote.style.color = '#ccc';
+      } else {
+        searchModeNote.textContent = '';
+      }
       
       if (!term || term.trim() === '') {
         currentMatches = [];
         currentPage = 1;
         renderResultsAndPagination();
-        // Optionally clear the URL query parameter to keep it clean
-        // but we'll leave it as is, so the user can refresh and keep the search.
-        // However, to avoid confusion, we'll update the URL without reloading.
-        updateURLQuery(term);
+        updateURLQuery('', mode);
         return;
       }
       
-      const lowerTerm = term.toLowerCase().trim();
       const matches = [];
-      for (let i = 0; i < allEntries.length; i++) {
-        const entry = allEntries[i];
-        // search inside the raw display text (includes both title and labels)
-        if (entry.rawDisplay.toLowerCase().includes(lowerTerm)) {
-          const { title, labels } = splitTitleAndLabels(entry.rawDisplay);
-          matches.push({
-            rawDisplay: entry.rawDisplay,
-            url: entry.url,
-            title: title,
-            labels: labels
-          });
+      if (mode === 'begins') {
+        // Búsqueda por prefijo al inicio del título
+        for (let i = 0; i < allEntries.length; i++) {
+          const entry = allEntries[i];
+          if (matchesBeginTitle(entry, term)) {
+            const { title, labels } = splitTitleAndLabels(entry.rawDisplay);
+            matches.push({
+              rawDisplay: entry.rawDisplay,
+              url: entry.url,
+              title: title,
+              labels: labels
+            });
+          }
+        }
+      } else {
+        // Modo fulltext (por defecto)
+        const lowerTerm = term.toLowerCase().trim();
+        for (let i = 0; i < allEntries.length; i++) {
+          const entry = allEntries[i];
+          if (entry.rawDisplay.toLowerCase().includes(lowerTerm)) {
+            const { title, labels } = splitTitleAndLabels(entry.rawDisplay);
+            matches.push({
+              rawDisplay: entry.rawDisplay,
+              url: entry.url,
+              title: title,
+              labels: labels
+            });
+          }
         }
       }
       
-      // Sort using custom sort key that ignores spaces and dashes.
-      // This ensures "a lo largo..." (which normalizes to "alolargo") 
-      // comes after "abacería" (normalizes to "abaceria") because 'a' vs 'ab' comparison works correctly.
+      // Orden alfabético usando sort key que ignora espacios y guiones
       matches.sort((a, b) => {
         const keyA = getSortKey(a.rawDisplay);
         const keyB = getSortKey(b.rawDisplay);
-        // Use localeCompare for proper Spanish alphabetical order (handles accented characters)
         return keyA.localeCompare(keyB, 'es');
       });
       
@@ -244,33 +287,50 @@
       currentPage = 1;
       renderResultsAndPagination();
       
-      // Update the URL's query parameter to reflect the current search term
-      updateURLQuery(term);
+      // Actualizar URL con el modo y término correctos
+      updateURLQuery(term, mode);
     }
     
-    // Helper function to update the URL's 'q' parameter without reloading the page
-    function updateURLQuery(term) {
+    /**
+     * Actualiza los parámetros de la URL: ?q=... para fulltext, ?qb=... para begins.
+     * Además limpia el parámetro contrario para evitar ambigüedad.
+     */
+    function updateURLQuery(term, mode) {
       const url = new URL(window.location.href);
+      // Limpiar ambos parámetros antes de establecer el nuevo según modo
+      url.searchParams.delete('q');
+      url.searchParams.delete('qb');
+      
       if (term && term.trim() !== '') {
-        url.searchParams.set('q', term.trim());
-      } else {
-        url.searchParams.delete('q');
+        if (mode === 'begins') {
+          url.searchParams.set('qb', term.trim());
+        } else {
+          url.searchParams.set('q', term.trim());
+        }
       }
-      // Replace the current state without reloading (preserves history)
+      // Reemplazar la URL sin recargar la página
       window.history.replaceState({}, '', url.toString());
     }
     
-    // Helper function to get query parameter from URL
-    function getQueryParam(param) {
+    /**
+     * Lee los parámetros de la URL y decide qué búsqueda ejecutar al cargar la página.
+     * Prioridad: si existe 'qb' -> búsqueda por comienzo; si existe 'q' -> fulltext.
+     * Si ambos existen, se usa 'qb' (por especificidad).
+     */
+    function getInitialSearchFromURL() {
       const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
+      const qbParam = urlParams.get('qb');
+      const qParam = urlParams.get('q');
+      
+      if (qbParam !== null && qbParam.trim() !== '') {
+        return { term: qbParam.trim(), mode: 'begins' };
+      } else if (qParam !== null && qParam.trim() !== '') {
+        return { term: qParam.trim(), mode: 'fulltext' };
+      }
+      return null;
     }
     
-    // Helper function to smoothly scroll to top of results area
     function scrollToTopOfResults() {
-      // Scroll the window to the top of the results container or just to top of page
-      // Using behavior: 'smooth' for nicer experience, but instant is fine too.
-      // We'll scroll to the body top so user sees the new page results.
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     
@@ -279,7 +339,11 @@
       paginationContainer.innerHTML = '';
       
       if (currentMatches.length === 0) {
-        resultsList.innerHTML = '<li class="ninguna">[ Ninguna coincidencia. ]</li>';
+        let noResultsMsg = '[ Ninguna coincidencia. ]';
+        if (currentSearchMode === 'begins' && currentSearchTermRaw) {
+          noResultsMsg = `[ No hay entradas cuyo título comience con "${currentSearchTermRaw}". ]`;
+        }
+        resultsList.innerHTML = `<li class="ninguna">${noResultsMsg}</li>`;
         return;
       }
       
@@ -293,10 +357,6 @@
       const endIdx = Math.min(startIdx + RESULTS_PER_PAGE, totalMatches);
       const pageMatches = currentMatches.slice(startIdx, endIdx);
       
-      // Build each list item following the required pattern:
-      // <li><a href="URL"><b>TITLE</b></a> – LABELS</li>
-      // Important: the dash between the bolded title and the labels is always " – " (space + en dash + space)
-      // If there are no labels, just show the bolded link without extra dash.
       for (let i = 0; i < pageMatches.length; i++) {
         const match = pageMatches[i];
         const li = document.createElement('li');
@@ -309,7 +369,6 @@
         link.appendChild(boldTitle);
         li.appendChild(link);
         
-        // Append labels if they exist, preceded by the standard " – " separator
         if (match.labels && match.labels.trim() !== "") {
           const separatorNode = document.createTextNode(" – " + match.labels);
           li.appendChild(separatorNode);
@@ -332,14 +391,12 @@
           const pageLink = document.createElement('a');
           pageLink.textContent = i;
           pageLink.href = 'javascript:void(0)';
-          // Add click handler that updates page, re-renders, AND scrolls to top
           pageLink.addEventListener('click', (function(pageNum) {
             return function(e) {
               e.preventDefault();
               if (currentPage !== pageNum) {
                 currentPage = pageNum;
                 renderResultsAndPagination();
-                // Scroll to top of results after rendering new page
                 scrollToTopOfResults();
               }
             };
@@ -347,7 +404,6 @@
           fragment.appendChild(pageLink);
         }
         
-        // Use simple space as separator (no dots, no wide gaps)
         if (i !== totalPages) {
           const separator = document.createTextNode(' ');
           fragment.appendChild(separator);
@@ -357,34 +413,63 @@
       paginationContainer.appendChild(fragment);
     }
     
+    /**
+     * Maneja el evento de presionar Enter en el campo de búsqueda.
+     * Detecta si el usuario quiere un modo específico mediante un prefijo opcional:
+     * Por conveniencia: si escribe "qb: palabra" o "qb=palabra" se fuerza modo begins.
+     * Pero por simplicidad usaremos el parámetro tal cual y el modo actual o inferido.
+     * Dado que la interfaz es simple, el modo se determina así:
+     * - Si el usuario escribe en la caja y presiona Enter, se usa el modo "fulltext" por defecto.
+     * (así se mantiene la experiencia existente).
+     * Para búsquedas por comienzo se usará el enlace con ?qb= desde fuera.
+     * No obstante, para hacer la interfaz más amigable, también permitimos que si el texto ingresado empieza con "qb:" lo interpretamos.
+     * Pero lo pedido es que la URL ?qb= funcione, y eso ya está implementado.
+     * Al escribir manualmente, asumimos fulltext (como antes).
+     */
     function onEnterPress(e) {
       if (e.key === 'Enter') {
-        performSearch(searchBox.value);
+        const rawTerm = searchBox.value;
+        // Siempre usar fulltext cuando se escribe en el recuadro (comportamiento clásico)
+        // pero respetamos si se quiere buscar por comienzo escribiendo "qb:termino"
+        let term = rawTerm;
+        let mode = 'fulltext';
+        if (rawTerm.toLowerCase().startsWith('qb:')) {
+          term = rawTerm.substring(3).trim();
+          if (term !== '') {
+            mode = 'begins';
+          } else {
+            term = '';
+          }
+        }
+        performSearch(term, mode);
       }
     }
     
-    // Initialize the page: set up event listeners, then handle URL query parameter if present
+    /**
+     * Inicialización: al cargar la página, revisar URL y ejecutar búsqueda correspondiente.
+     */
     window.addEventListener('DOMContentLoaded', () => {
-      // Set up search box event listener
       searchBox.addEventListener('keypress', onEnterPress);
       
-      // Check for 'q' parameter in URL (e.g., ?q=house)
-      const queryParam = getQueryParam('q');
+      // Inicialmente mostrar resultados vacíos
+      resultsList.innerHTML = '';
+      paginationContainer.innerHTML = '';
+      searchModeNote.textContent = '';
       
-      if (queryParam && queryParam.trim() !== '') {
-        // If there is a query parameter, perform the search and populate the search box
-        // We need to make sure the search box reflects the query for consistency
-        searchBox.value = queryParam;
-        // Slight delay to ensure DOM and allEntries are fully ready? 
-        // AllEntries is already populated synchronously from entradas.js (since script runs before DOMContentLoaded if loaded in head, 
-        // but entradas.js is loaded before this script block, so allEntries is ready).
-        // However, to be safe and ensure any async behavior doesn't interfere, we call performSearch directly.
-        performSearch(queryParam);
-      } else {
-        // No query parameter: just focus the empty search box and clear results
+      // Verificar si hay parámetros en URL
+      const initialSearch = getInitialSearchFromURL();
+      if (initialSearch) {
+        // Ejecutar la búsqueda con el modo y término indicados
+        performSearch(initialSearch.term, initialSearch.mode);
+        // Poner el foco en el searchBox pero seleccionar el texto para facilidad
         searchBox.focus();
-        resultsList.innerHTML = '';
-        paginationContainer.innerHTML = '';
+        searchBox.select();
+      } else {
+        // Sin parámetros: caja vacía y enfoque
+        searchBox.focus();
+        currentMatches = [];
+        currentPage = 1;
+        renderResultsAndPagination();
       }
     });
   </script>
