@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓abreviaturas▒Abreviaturas y signos empleados (en el DRAE)▒https://dle.rae.es/contenido/abreviaturas-y-signos-empleados▓",
   "▓celulares pequeños▒NUEVO NOKIA 3310... POR LOS AIRES!▒https://www.youtube.com/watch?v=frealGfiKgk▓",
   "▓vocabulario español▒fiambre▒https://dle.rae.es/fiambre▓",
   "▓Unified Payments Interface▒definición en inglés▒https://en.wikipedia.org/wiki/Unified_Payments_Interface▓",
