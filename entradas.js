@@ -16,7 +16,7 @@ var entradas = [
   "▓Animales puros e impuros en el cristianismo – Cristianismo, Reflexiones▒https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo▓",
   "▓A veces buscamos respuestas rápidas... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/-/v/a-veces-buscamos-respuestas-rapidas▓",
   "▓A veces buscamos respuestas rápidas... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/a/v/a-veces-buscamos-respuestas-rapidas▓",
-  "▓buis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - B▒https://jucardus.github.io/b/u/i/buis-m▓",
+  "▓buis [m.] – Arbls - árboles, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - B▒https://jucardus.github.io/b/u/i/buis-m▓",
   "▓Buscamos a Dios porque hemos dejado de creer... – Apotegmas▒https://jucardus.github.io/b/u/s/buscamos-a-dios-porque-hemos-dejado-de-creer▓",
   "▓bóveda [f.] – Arqtctr - arquitectura, Diccionario multilingüe - B, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/b/o/v/boveda-f▓",
   "▓cabeza de familia [m.f.c.] – Diccionario multilingüe - C, Sustantivos multilingües compuestos, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/c/a/b/cabeza-de-familia-mfc▓",
