@@ -8,7 +8,7 @@ var entradas = [
   "▓abdomen [m.] – Antm - anatomía, Diccionario multilingüe - A, Sustantivos multilingües, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/d/abdomen-m▓",
   "▓Admiro a los hombres que buscan el orden... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/d/m/admiro-a-los-hombres-que-buscan-el-orden▓",
   "▓Adonde no pueden llegar ni tu vista... – Citas de Agustín de Hipona, Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/d/o/adonde-no-pueden-llegar-ni-tu-vista▓",
-  "▓afectuoso [adj.] – Adjetivos multilingües, Diccionario multilingüe - A▒https://jucardus.github.io/a/f/e/afectuoso-adj▓",
+  "▓afectuoso [adj.] – Adjetivos multilingües, Diccionario multilingüe - A, Tmprmnts - temperamentos▒https://jucardus.github.io/a/f/e/afectuoso-adj▓",
   "▓Algún día el presente... – Apotegmas▒https://jucardus.github.io/a/l/g/algun-dia-el-presente▓",
   "▓Algún día todo... – Apotegmas▒https://jucardus.github.io/a/l/g/algun-dia-todo▓",
   "▓a lo largo de todo el año [loc.] – Diccionario multilingüe - A, Locuciones multilingües▒https://jucardus.github.io/a/-/l/a-lo-largo-de-todo-el-ano-loc▓",
