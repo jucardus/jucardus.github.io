@@ -119,9 +119,19 @@
     let currentPage = 1;
     let currentSearchMode = 'fulltext';
     let currentSearchTermRaw = '';
-    let hasEverSearched = false;  // NEW: tracks if a search has been performed
+    let hasEverSearched = false;
     const RESULTS_PER_PAGE = 10;
     
+    /**
+     * Parse each entry from entradas.js array.
+     * Each entry format: "▓display_text▒url▓"
+     * We now store:
+     *   - fullRaw: the ENTIRE original string between the outer ▓...▓ (including both display and URL)
+     *   - displayOnly: the text between first ▓ and first ▒ (for display)
+     *   - url: the part between first ▒ and final ▓ (for link)
+     * 
+     * This allows searching in the URL part as well (e.g., "voute" will match the URL slug).
+     */
     function parseEntries() {
       if (typeof entradas === 'undefined') {
         console.error("entradas.js not loaded");
@@ -130,14 +140,24 @@
       const parsed = [];
       for (let i = 0; i < entradas.length; i++) {
         const entry = entradas[i];
-        const textMatch = entry.match(/▓(.*)▒/);
-        const urlMatch = entry.match(/▒(.*)▓/);
-        if (textMatch && urlMatch) {
-          parsed.push({
-            rawDisplay: textMatch[1],
-            url: urlMatch[1]
-          });
-        }
+        // Match everything between the first ▓ and the last ▓ (the full entry content)
+        const fullMatch = entry.match(/▓(.*)▓/);
+        if (!fullMatch) continue;
+        
+        const fullContent = fullMatch[1]; // e.g., "voûte [f.] – Arqtctr...▒https://jucardus.github.io/v/o/u/voute-f"
+        
+        // Now split at the first ▒ to separate display text and URL
+        const separatorIndex = fullContent.indexOf('▒');
+        if (separatorIndex === -1) continue;
+        
+        const displayOnly = fullContent.substring(0, separatorIndex);   // before ▒
+        const url = fullContent.substring(separatorIndex + 1);          // after ▒
+        
+        parsed.push({
+          fullRaw: fullContent,     // THE ENTIRE STRING (display + URL) for searching
+          displayOnly: displayOnly, // for showing and splitting title/labels
+          url: url
+        });
       }
       return parsed;
     }
@@ -149,6 +169,10 @@
       allEntries = [];
     }
     
+    /**
+     * Normalizes a string for sorting by removing spaces, en dashes, hyphens,
+     * and other diacritics/ignorable characters.
+     */
     function getSortKey(str) {
       let lower = str.toLowerCase();
       let noSeparators = lower.replace(/[\s\u2013\u2014\-_]+/g, '');
@@ -156,32 +180,46 @@
       return noSeparators;
     }
     
-    function splitTitleAndLabels(rawDisplay) {
+    /**
+     * Split displayOnly (text before ▒) into title and labels.
+     * Separator is " – " (space + en dash + space)
+     */
+    function splitTitleAndLabels(displayOnly) {
       const separator = " – ";
-      const dashIndex = rawDisplay.indexOf(separator);
+      const dashIndex = displayOnly.indexOf(separator);
       if (dashIndex === -1) {
-        return { title: rawDisplay, labels: "" };
+        return { title: displayOnly, labels: "" };
       }
-      const title = rawDisplay.substring(0, dashIndex);
-      let labels = rawDisplay.substring(dashIndex + separator.length);
+      const title = displayOnly.substring(0, dashIndex);
+      let labels = displayOnly.substring(dashIndex + separator.length);
       return { title, labels };
     }
     
+    /**
+     * For "begins with" search: only checks the TITLE part (case-insensitive).
+     */
     function matchesBeginTitle(entry, prefixRaw) {
-      const { title } = splitTitleAndLabels(entry.rawDisplay);
+      const { title } = splitTitleAndLabels(entry.displayOnly);
       const normalizedTitle = title.toLowerCase();
       const normalizedPrefix = prefixRaw.toLowerCase().trim();
       return normalizedTitle.startsWith(normalizedPrefix);
     }
     
+    /**
+     * For fulltext search: searches in the FULL raw entry (display + URL).
+     * This allows finding "voûte" by typing "voute" because the URL contains "voute".
+     */
+    function matchesFullText(entry, termRaw) {
+      const lowerTerm = termRaw.toLowerCase().trim();
+      // Search inside fullRaw (which includes both the display text and the URL)
+      return entry.fullRaw.toLowerCase().includes(lowerTerm);
+    }
+    
     function performSearch(term, mode) {
-      // Mark that a search has been performed (even if term is empty)
       hasEverSearched = true;
-      
       currentSearchMode = mode;
       currentSearchTermRaw = term || '';
       
-      // Update search box value
       searchBox.value = term || '';
       
       if (!term || term.trim() === '') {
@@ -196,12 +234,13 @@
       
       const matches = [];
       if (mode === 'begins') {
+        // Begins search: only title start
         for (let i = 0; i < allEntries.length; i++) {
           const entry = allEntries[i];
           if (matchesBeginTitle(entry, term)) {
-            const { title, labels } = splitTitleAndLabels(entry.rawDisplay);
+            const { title, labels } = splitTitleAndLabels(entry.displayOnly);
             matches.push({
-              rawDisplay: entry.rawDisplay,
+              sortKey: entry.displayOnly, // for sorting
               url: entry.url,
               title: title,
               labels: labels
@@ -209,13 +248,13 @@
           }
         }
       } else {
-        const lowerTerm = term.toLowerCase().trim();
+        // Fulltext search: search in fullRaw (display + URL)
         for (let i = 0; i < allEntries.length; i++) {
           const entry = allEntries[i];
-          if (entry.rawDisplay.toLowerCase().includes(lowerTerm)) {
-            const { title, labels } = splitTitleAndLabels(entry.rawDisplay);
+          if (matchesFullText(entry, term)) {
+            const { title, labels } = splitTitleAndLabels(entry.displayOnly);
             matches.push({
-              rawDisplay: entry.rawDisplay,
+              sortKey: entry.displayOnly,
               url: entry.url,
               title: title,
               labels: labels
@@ -224,9 +263,10 @@
         }
       }
       
+      // Sort alphabetically using the displayOnly text (ignoring spaces/dashes)
       matches.sort((a, b) => {
-        const keyA = getSortKey(a.rawDisplay);
-        const keyB = getSortKey(b.rawDisplay);
+        const keyA = getSortKey(a.sortKey);
+        const keyB = getSortKey(b.sortKey);
         return keyA.localeCompare(keyB, 'es');
       });
       
@@ -275,12 +315,10 @@
       resultsList.innerHTML = '';
       paginationContainer.innerHTML = '';
       
-      // If no search has ever been performed, show NOTHING (blank)
       if (!hasEverSearched) {
         return;
       }
       
-      // If a search was performed but there are no matches
       if (currentMatches.length === 0) {
         let noResultsMsg = '[ Ninguna coincidencia. ]';
         if (currentSearchMode === 'begins' && currentSearchTermRaw && currentSearchTermRaw.trim() !== '') {
@@ -376,22 +414,18 @@
     window.addEventListener('DOMContentLoaded', () => {
       searchBox.addEventListener('keypress', onEnterPress);
       
-      // Initially, show nothing (blank results)
       hasEverSearched = false;
       resultsList.innerHTML = '';
       paginationContainer.innerHTML = '';
       
       const initialSearch = getInitialSearchFromURL();
       if (initialSearch) {
-        // A search from URL counts as a search
         performSearch(initialSearch.term, initialSearch.mode);
       } else {
-        // No search: just focus the empty box, no messages
         searchBox.focus();
-        // Ensure nothing is displayed
         currentMatches = [];
         currentPage = 1;
-        renderResultsAndPagination(); // This will show nothing because hasEverSearched is false
+        renderResultsAndPagination();
       }
     });
   </script>
