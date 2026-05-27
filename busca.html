@@ -40,14 +40,6 @@
       letter-spacing: 1.1px;
       border-radius: 8px;
     }
-    /* Opcional: pequeño indicador de modo de búsqueda */
-    .search-note {
-      font-size: 0.85em;
-      color: #ccc;
-      margin-top: 6px;
-      text-align: center;
-      font-family: monospace;
-    }
     /* Pagination styling: numbers tightly grouped like normal text */
     .pagination {
       text-align: center;
@@ -108,7 +100,6 @@
   
   <div id="buscador">
     <input type="text" id="searchBox" placeholder="Escribe aquí..." autocomplete="off">
-    <div class="search-note" id="searchModeNote"></div>
   </div>
 
   <div id="resultados">
@@ -127,7 +118,6 @@
     const searchBox = document.getElementById('searchBox');
     const resultsList = document.getElementById('results');
     const paginationContainer = document.getElementById('paginationLinks');
-    const searchModeNote = document.getElementById('searchModeNote');
     
     let currentMatches = [];
     let currentPage = 1;
@@ -147,7 +137,7 @@
         const urlMatch = entry.match(/▒(.*)▓/);
         if (textMatch && urlMatch) {
           parsed.push({
-            rawDisplay: textMatch[1],   // full string: e.g. "cabeza de familia [m.f.c.] – Diccionario multilingüe - C, Sustantivos multil..."
+            rawDisplay: textMatch[1],
             url: urlMatch[1]
           });
         }
@@ -162,24 +152,13 @@
       allEntries = [];
     }
     
-    /**
-     * Normalizes a string for sorting by removing spaces, en dashes, hyphens,
-     * and other diacritics/ignorable characters so that alphabetical order
-     * ignores those characters.
-     */
     function getSortKey(str) {
       let lower = str.toLowerCase();
-      // Remove spaces, dashes, en/em dashes, underscores
       let noSeparators = lower.replace(/[\s\u2013\u2014\-_]+/g, '');
-      // Keep only letters and numbers for stable sorting
       noSeparators = noSeparators.replace(/[^\p{L}\p{N}]/gu, '');
       return noSeparators;
     }
     
-    /**
-     * Splits a raw display string into { title, labels }
-     * Separator is " – " (space + en dash + space)
-     */
     function splitTitleAndLabels(rawDisplay) {
       const separator = " – ";
       const dashIndex = rawDisplay.indexOf(separator);
@@ -191,62 +170,33 @@
       return { title, labels };
     }
     
-    /**
-     * Búsqueda por comienzo exacto del TITULO (parte antes del " – ").
-     * Compara el título normalizado (minúsculas) con el prefijo dado.
-     * Retorna true si el título empieza exactamente con el prefijo (ignorando mayúsculas).
-     */
     function matchesBeginTitle(entry, prefixRaw) {
       const { title } = splitTitleAndLabels(entry.rawDisplay);
       const normalizedTitle = title.toLowerCase();
       const normalizedPrefix = prefixRaw.toLowerCase().trim();
-      // Comprueba si el título COMIENZA con el prefijo
       return normalizedTitle.startsWith(normalizedPrefix);
     }
     
-    /**
-     * Búsqueda por texto completo: busca en rawDisplay (título + etiquetas)
-     */
-    function matchesFullText(entry, termRaw) {
-      const lowerTerm = termRaw.toLowerCase().trim();
-      return entry.rawDisplay.toLowerCase().includes(lowerTerm);
-    }
-    
-    /**
-     * Realiza la búsqueda según el modo ('fulltext' o 'begins').
-     * El término se toma del parámetro 'term'.
-     * Actualiza currentMatches, currentSearchMode, currentSearchTermRaw.
-     */
     function performSearch(term, mode) {
-      // Guardar valores para referencia
       currentSearchMode = mode;
       currentSearchTermRaw = term || '';
       
-      // Actualizar el campo de texto
+      // Update search box value
       searchBox.value = term || '';
-      
-      // Mostrar nota sobre el modo de búsqueda
-      if (mode === 'begins' && term && term.trim() !== '') {
-        searchModeNote.textContent = `🔍 Modo "comienza con": mostrando entradas cuyo título empiece por "${term.trim()}"`;
-        searchModeNote.style.color = '#aaf0e0';
-      } else if (mode === 'fulltext' && term && term.trim() !== '') {
-        searchModeNote.textContent = `🔎 Modo "texto completo": mostrando entradas que contengan "${term.trim()}"`;
-        searchModeNote.style.color = '#ccc';
-      } else {
-        searchModeNote.textContent = '';
-      }
       
       if (!term || term.trim() === '') {
         currentMatches = [];
         currentPage = 1;
         renderResultsAndPagination();
         updateURLQuery('', mode);
+        // After clearing, focus and select (select does nothing on empty but keeps behavior)
+        searchBox.focus();
+        searchBox.select();
         return;
       }
       
       const matches = [];
       if (mode === 'begins') {
-        // Búsqueda por prefijo al inicio del título
         for (let i = 0; i < allEntries.length; i++) {
           const entry = allEntries[i];
           if (matchesBeginTitle(entry, term)) {
@@ -260,7 +210,6 @@
           }
         }
       } else {
-        // Modo fulltext (por defecto)
         const lowerTerm = term.toLowerCase().trim();
         for (let i = 0; i < allEntries.length; i++) {
           const entry = allEntries[i];
@@ -276,7 +225,6 @@
         }
       }
       
-      // Orden alfabético usando sort key que ignora espacios y guiones
       matches.sort((a, b) => {
         const keyA = getSortKey(a.rawDisplay);
         const keyB = getSortKey(b.rawDisplay);
@@ -286,18 +234,16 @@
       currentMatches = matches;
       currentPage = 1;
       renderResultsAndPagination();
-      
-      // Actualizar URL con el modo y término correctos
       updateURLQuery(term, mode);
+      
+      // After search, focus and SELECT the text in the search box
+      // This allows the user to immediately type a new search without manually deleting
+      searchBox.focus();
+      searchBox.select();
     }
     
-    /**
-     * Actualiza los parámetros de la URL: ?q=... para fulltext, ?qb=... para begins.
-     * Además limpia el parámetro contrario para evitar ambigüedad.
-     */
     function updateURLQuery(term, mode) {
       const url = new URL(window.location.href);
-      // Limpiar ambos parámetros antes de establecer el nuevo según modo
       url.searchParams.delete('q');
       url.searchParams.delete('qb');
       
@@ -308,15 +254,9 @@
           url.searchParams.set('q', term.trim());
         }
       }
-      // Reemplazar la URL sin recargar la página
       window.history.replaceState({}, '', url.toString());
     }
     
-    /**
-     * Lee los parámetros de la URL y decide qué búsqueda ejecutar al cargar la página.
-     * Prioridad: si existe 'qb' -> búsqueda por comienzo; si existe 'q' -> fulltext.
-     * Si ambos existen, se usa 'qb' (por especificidad).
-     */
     function getInitialSearchFromURL() {
       const urlParams = new URLSearchParams(window.location.search);
       const qbParam = urlParams.get('qb');
@@ -340,7 +280,7 @@
       
       if (currentMatches.length === 0) {
         let noResultsMsg = '[ Ninguna coincidencia. ]';
-        if (currentSearchMode === 'begins' && currentSearchTermRaw) {
+        if (currentSearchMode === 'begins' && currentSearchTermRaw && currentSearchTermRaw.trim() !== '') {
           noResultsMsg = `[ No hay entradas cuyo título comience con "${currentSearchTermRaw}". ]`;
         }
         resultsList.innerHTML = `<li class="ninguna">${noResultsMsg}</li>`;
@@ -413,26 +353,12 @@
       paginationContainer.appendChild(fragment);
     }
     
-    /**
-     * Maneja el evento de presionar Enter en el campo de búsqueda.
-     * Detecta si el usuario quiere un modo específico mediante un prefijo opcional:
-     * Por conveniencia: si escribe "qb: palabra" o "qb=palabra" se fuerza modo begins.
-     * Pero por simplicidad usaremos el parámetro tal cual y el modo actual o inferido.
-     * Dado que la interfaz es simple, el modo se determina así:
-     * - Si el usuario escribe en la caja y presiona Enter, se usa el modo "fulltext" por defecto.
-     * (así se mantiene la experiencia existente).
-     * Para búsquedas por comienzo se usará el enlace con ?qb= desde fuera.
-     * No obstante, para hacer la interfaz más amigable, también permitimos que si el texto ingresado empieza con "qb:" lo interpretamos.
-     * Pero lo pedido es que la URL ?qb= funcione, y eso ya está implementado.
-     * Al escribir manualmente, asumimos fulltext (como antes).
-     */
     function onEnterPress(e) {
       if (e.key === 'Enter') {
         const rawTerm = searchBox.value;
-        // Siempre usar fulltext cuando se escribe en el recuadro (comportamiento clásico)
-        // pero respetamos si se quiere buscar por comienzo escribiendo "qb:termino"
         let term = rawTerm;
         let mode = 'fulltext';
+        // Optional: allow "qb:" prefix in the search box to force "begins" mode
         if (rawTerm.toLowerCase().startsWith('qb:')) {
           term = rawTerm.substring(3).trim();
           if (term !== '') {
@@ -445,27 +371,19 @@
       }
     }
     
-    /**
-     * Inicialización: al cargar la página, revisar URL y ejecutar búsqueda correspondiente.
-     */
     window.addEventListener('DOMContentLoaded', () => {
       searchBox.addEventListener('keypress', onEnterPress);
       
-      // Inicialmente mostrar resultados vacíos
       resultsList.innerHTML = '';
       paginationContainer.innerHTML = '';
-      searchModeNote.textContent = '';
       
-      // Verificar si hay parámetros en URL
       const initialSearch = getInitialSearchFromURL();
       if (initialSearch) {
-        // Ejecutar la búsqueda con el modo y término indicados
+        // Execute the search with the mode and term from URL
         performSearch(initialSearch.term, initialSearch.mode);
-        // Poner el foco en el searchBox pero seleccionar el texto para facilidad
-        searchBox.focus();
-        searchBox.select();
+        // performSearch already does focus and select, but we need to ensure it happens after rendering
+        // The performSearch function already calls searchBox.focus() and searchBox.select()
       } else {
-        // Sin parámetros: caja vacía y enfoque
         searchBox.focus();
         currentMatches = [];
         currentPage = 1;
