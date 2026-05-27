@@ -11,7 +11,7 @@ var entradas = [
   "▓afectuoso [adj.] – Adjetivos multilingües, Diccionario multilingüe - A, Tmprmnts - temperamentos▒https://jucardus.github.io/a/f/e/afectuoso-adj▓",
   "▓Algún día el presente... – Apotegmas▒https://jucardus.github.io/a/l/g/algun-dia-el-presente▓",
   "▓Algún día todo... – Apotegmas▒https://jucardus.github.io/a/l/g/algun-dia-todo▓",
-  "▓a lo largo de todo el año [loc.] – Diccionario multilingüe - A, Locuciones multilingües▒https://jucardus.github.io/a/-/l/a-lo-largo-de-todo-el-ano-loc▓",
+  "▓a lo largo de todo el año [loc.] – Diccionario multilingüe - A, Locuciones multilingües, Tmp - tiempo▒https://jucardus.github.io/a/-/l/a-lo-largo-de-todo-el-ano-loc▓",
   "▓Al perro que tiene dinero se... – Citas y proverbios, Citas y proverbios - A, Proverbios▒https://jucardus.github.io/a/l/-/al-perro-que-tiene-dinero-se▓",
   "▓Animales puros e impuros en el cristianismo – Cristianismo, Reflexiones▒https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo▓",
   "▓A veces buscamos respuestas rápidas... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/-/v/a-veces-buscamos-respuestas-rapidas▓",
