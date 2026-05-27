@@ -33,7 +33,6 @@ var entradas = [
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓Etiquetas de los diccionarios – Abreviaturas de los diccionarios▒https://jucardus.github.io/e/t/i/etiquetas-de-los-diccionarios▓",
   "▓fila [f.] – Diccionario multilingüe - F, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/f/i/l/fila-f▓",
-  "▓iletrado [adj.] – Adjetivos multilingües, Diccionario multilingüe - I▒https://jucardus.github.io/i/l/e/iletrado-adj▓",
   "▓iletrado, -da [adj.] – Adjetivos multilingües, Diccionario multilingüe - I▒https://jucardus.github.io/i/l/e/iletrado-da-adj▓",
   "▓œillet [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/e/i/oeillet-m▓",
   "▓inhabité [adj.] – Adjetivos franceses, Vocabulario francés - I▒https://jucardus.github.io/i/n/h/inhabite-adj▓",
