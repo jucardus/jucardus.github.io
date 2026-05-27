@@ -40,7 +40,6 @@
       letter-spacing: 1.1px;
       border-radius: 8px;
     }
-    /* Pagination styling: numbers tightly grouped like normal text */
     .pagination {
       text-align: center;
       margin-top: 20px;
@@ -58,7 +57,6 @@
       padding: 4px 8px;
       border-radius: 4px;
     }
-    /* Ensure color stays LightYellow on all states */
     .pagination a:link,
     .pagination a:visited,
     .pagination a:hover,
@@ -67,7 +65,6 @@
       color: LightYellow;
       background-color: transparent;
     }
-    /* Active page: Silver background, bold, LightYellow text */
     .pagination span.current-page {
       background-color: color-mix(in srgb, DarkSlateGray, White 15%);
       font-weight: bold;
@@ -121,8 +118,9 @@
     
     let currentMatches = [];
     let currentPage = 1;
-    let currentSearchMode = 'fulltext'; // 'fulltext' o 'begins'
+    let currentSearchMode = 'fulltext';
     let currentSearchTermRaw = '';
+    let hasEverSearched = false;  // NEW: tracks if a search has been performed
     const RESULTS_PER_PAGE = 10;
     
     function parseEntries() {
@@ -178,6 +176,9 @@
     }
     
     function performSearch(term, mode) {
+      // Mark that a search has been performed (even if term is empty)
+      hasEverSearched = true;
+      
       currentSearchMode = mode;
       currentSearchTermRaw = term || '';
       
@@ -189,7 +190,6 @@
         currentPage = 1;
         renderResultsAndPagination();
         updateURLQuery('', mode);
-        // After clearing, focus and select (select does nothing on empty but keeps behavior)
         searchBox.focus();
         searchBox.select();
         return;
@@ -236,8 +236,6 @@
       renderResultsAndPagination();
       updateURLQuery(term, mode);
       
-      // After search, focus and SELECT the text in the search box
-      // This allows the user to immediately type a new search without manually deleting
       searchBox.focus();
       searchBox.select();
     }
@@ -278,6 +276,12 @@
       resultsList.innerHTML = '';
       paginationContainer.innerHTML = '';
       
+      // If no search has ever been performed, show NOTHING (blank)
+      if (!hasEverSearched) {
+        return;
+      }
+      
+      // If a search was performed but there are no matches
       if (currentMatches.length === 0) {
         let noResultsMsg = '[ Ninguna coincidencia. ]';
         if (currentSearchMode === 'begins' && currentSearchTermRaw && currentSearchTermRaw.trim() !== '') {
@@ -358,7 +362,6 @@
         const rawTerm = searchBox.value;
         let term = rawTerm;
         let mode = 'fulltext';
-        // Optional: allow "qb:" prefix in the search box to force "begins" mode
         if (rawTerm.toLowerCase().startsWith('qb:')) {
           term = rawTerm.substring(3).trim();
           if (term !== '') {
@@ -374,20 +377,22 @@
     window.addEventListener('DOMContentLoaded', () => {
       searchBox.addEventListener('keypress', onEnterPress);
       
+      // Initially, show nothing (blank results)
+      hasEverSearched = false;
       resultsList.innerHTML = '';
       paginationContainer.innerHTML = '';
       
       const initialSearch = getInitialSearchFromURL();
       if (initialSearch) {
-        // Execute the search with the mode and term from URL
+        // A search from URL counts as a search
         performSearch(initialSearch.term, initialSearch.mode);
-        // performSearch already does focus and select, but we need to ensure it happens after rendering
-        // The performSearch function already calls searchBox.focus() and searchBox.select()
       } else {
+        // No search: just focus the empty box, no messages
         searchBox.focus();
+        // Ensure nothing is displayed
         currentMatches = [];
         currentPage = 1;
-        renderResultsAndPagination();
+        renderResultsAndPagination(); // This will show nothing because hasEverSearched is false
       }
     });
   </script>
