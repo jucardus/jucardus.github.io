@@ -26,6 +26,13 @@ body {
   padding: 25px 23% 100px 22%;
 }
 
+code {
+  background-color: color-mix(in srgb, DarkSlateGray, White 15%);
+  font-family: monospace;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
 .etiquetas {
   font-weight: bold;
   padding-top: 15px;
