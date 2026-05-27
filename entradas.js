@@ -54,6 +54,7 @@ var entradas = [
   "▓rez-de-chaussée [m.c.] – Arqtctr - arquitectura, Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓sagacidad [f.] – Diccionario multilingüe - S, Sustantivos femeninos multilingües▒https://jucardus.github.io/s/a/g/sagacidad-f▓",
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
+  "▓set up [v.c.] – Verbos compuestos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/e/t/set-up-vc▓",
   "▓shrewdness [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/h/r/shrewdness-s▓",
   "▓Siempre hay alguien orando por ti – Reflexiones▒https://jucardus.github.io/s/i/e/siempre-hay-alguien-orando-por-ti▓",
   "▓Si quieres saber quién te controla... – Citas de Voltaire, Citas y proverbios, Citas y proverbios - S▒https://jucardus.github.io/s/i/-/si-quieres-saber-quien-te-controla▓",
