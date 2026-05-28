@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos. ~ Anne Louise Germaine de Stäel▒jucardus▓",
   "▓citas▒A nation of sheep will soon have a government of wolves. ~ Edward R. Murrow▒jucardus▓",
   "▓citas▒Amo la traición, pero odio al traidor. ~ Cayo Julio César▒jucardus▓",
   "▓proverbios▒Al perro que tiene dinero se le llama Señor Perro. ~ Proverbio árabe▒jucardus▓",
