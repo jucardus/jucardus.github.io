@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Amo la traición, pero odio al traidor. ~ Cayo Julio César▒jucardus▓",
   "▓proverbios▒Al perro que tiene dinero se le llama Señor Perro. ~ Proverbio árabe▒jucardus▓",
   "▓citas▒Allí donde se cruzan tus talentos y las necesidades del mundo, está tu vocación. ~ Aristóteles▒jucardus▓",
   "▓citas▒Algunas personas son tan falsas que ya no distinguen que lo que piensan es justamente lo contrario de lo que dicen. ~ Marcel Aymé▒jucardus▓",
