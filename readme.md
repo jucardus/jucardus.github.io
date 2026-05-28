@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Después de meses, vi a una persona leyendo...](https://jucardus.github.io/d/e/s/despues-de-meses-vi-a-una-persona-leyendo)
 * [De la circularidad de la religión te...](https://jucardus.github.io/d/e/-/de-la-circularidad-de-la-religion-te)
 * [azolvar [v.]](https://jucardus.github.io/a/z/o/azolvar-v)
 * [rephrase [v.]](https://jucardus.github.io/r/e/p/rephrase-v)
