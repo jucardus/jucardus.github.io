@@ -56,6 +56,7 @@ var entradas = [
   "▓purport [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/u/r/purport-v▓",
   "▓quagmire [s.] – Sustantivos ingleses, Vocabulario inglés - Q▒https://jucardus.github.io/q/u/a/quagmire-s▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
+  "▓rephrase [v.] – Diccionario inglés-español - R, Verbos ingleses▒https://jucardus.github.io/r/e/p/rephrase-v▓",
   "▓rez-de-chaussée [m.c.] – Arqtctr - arquitectura, Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - R▒https://jucardus.github.io/r/e/z/rez-de-chaussee-mc▓",
   "▓sagacidad [f.] – Diccionario multilingüe - S, Sustantivos femeninos multilingües▒https://jucardus.github.io/s/a/g/sagacidad-f▓",
   "▓scrape [s.] – Sustantivos ingleses, Vocabulario inglés - S▒https://jucardus.github.io/s/c/r/scrape-s▓",
