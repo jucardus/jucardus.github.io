@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▓",
   "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▓",
   "▓citas▒Aquella teoría que no encuentre aplicacion práctica en la vida, es una acrobacia del pensamiento. ~ Swami Vivekananda▒jucardus▓",
   "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos. ~ Anne Louise Germaine de Stäel▒jucardus▓",
