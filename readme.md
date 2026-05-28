@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [azolvar [v.]](https://jucardus.github.io/a/z/o/azolvar-v)
 * [rephrase [v.]](https://jucardus.github.io/r/e/p/rephrase-v)
 * [voûte [f.]](https://jucardus.github.io/v/o/u/voute-f)
 * [bóveda [f.]](https://jucardus.github.io/b/o/v/boveda-f)
