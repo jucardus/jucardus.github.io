@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Aunque no te ocupes de la política, ella se ocupará de ti. ~ Yves Montand▒jucardus▓",
   "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. ~ William Shakespeare▒jucardus▓",
   "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▓",
   "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▓",
