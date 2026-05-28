@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒A nation of sheep will soon have a government of wolves. ~ Edward R. Murrow▒jucardus▓",
   "▓citas▒Amo la traición, pero odio al traidor. ~ Cayo Julio César▒jucardus▓",
   "▓proverbios▒Al perro que tiene dinero se le llama Señor Perro. ~ Proverbio árabe▒jucardus▓",
   "▓citas▒Allí donde se cruzan tus talentos y las necesidades del mundo, está tu vocación. ~ Aristóteles▒jucardus▓",
