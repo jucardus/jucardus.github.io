@@ -32,6 +32,7 @@ var entradas = [
   "▓croisée [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - C▒https://jucardus.github.io/c/r/o/croisee-f▓",
   "▓Cuando exponer un delito es tratado como... – Citas y proverbios, Citas y proverbios - C▒https://jucardus.github.io/c/u/a/cuando-exponer-un-delito-es-tratado-como▓",
   "▓Cuanto menos talento tienen, más orgullo... – Citas y proverbios, Citas y proverbios - C▒https://jucardus.github.io/c/u/a/cuanto-menos-talento-tienen-mas-orgullo▓",
+  "▓De la circularidad de la religión te... – Apotegmas▒https://jucardus.github.io/d/e/-/de-la-circularidad-de-la-religion-te▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
   "▓El mayor consuelo para los fanáticos es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-consuelo-para-los-fanaticos-es▓",
