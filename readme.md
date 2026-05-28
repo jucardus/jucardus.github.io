@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [rephrase [v.]](https://jucardus.github.io/r/e/p/rephrase-v)
 * [voûte [f.]](https://jucardus.github.io/v/o/u/voute-f)
 * [bóveda [f.]](https://jucardus.github.io/b/o/v/boveda-f)
 * [26-05-27 - Implementación de etiquetas para campos o temas](https://jucardus.github.io/2/6/-/26-05-27-implementacion-de-etiquetas-para-campos-o-temas)
