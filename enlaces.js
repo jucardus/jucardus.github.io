@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▓",
   "▓citas▒Aquella teoría que no encuentre aplicacion práctica en la vida, es una acrobacia del pensamiento. ~ Swami Vivekananda▒jucardus▓",
   "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos. ~ Anne Louise Germaine de Stäel▒jucardus▓",
   "▓citas▒A nation of sheep will soon have a government of wolves. ~ Edward R. Murrow▒jucardus▓",
