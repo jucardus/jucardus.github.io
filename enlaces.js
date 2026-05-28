@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Adonde no pueden llegar ni tu vista ni tu entendimiento, llega tu fe. ~ Agustín de Hipona▒jucardus▓",
   "▓citas▒Admiro a los hombres que buscan el orden social ideal, pero temo a los que lo han encontrado. ~ Ephraim Kishon▒jucardus▓",
   "▓celulares▒HONOR 600 🟧 El teléfono que APPLE QUISO pero NO PUDO HACER!!!▒https://www.youtube.com/watch?v=4QKObLfKOnk▓",
   "▓abreviaturas▒Abreviaturas y signos empleados (en el DRAE)▒https://dle.rae.es/contenido/abreviaturas-y-signos-empleados▓",
