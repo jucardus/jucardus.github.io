@@ -1,4 +1,5 @@
 let enlaces = [
+  "▓citas▒Aquella teoría que no encuentre aplicacion práctica en la vida, es una acrobacia del pensamiento. ~ Swami Vivekananda▒jucardus▓",
   "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos. ~ Anne Louise Germaine de Stäel▒jucardus▓",
   "▓citas▒A nation of sheep will soon have a government of wolves. ~ Edward R. Murrow▒jucardus▓",
   "▓citas▒Amo la traición, pero odio al traidor. ~ Cayo Julio César▒jucardus▓",
