@@ -77,6 +77,7 @@ var entradas = [
   "▓Son demasiados los presupuestos para poner... – Reflexiones▒https://jucardus.github.io/s/o/n/son-demasiados-los-presupuestos-para-poner▓",
   "▓Sí. Una de las condiciones para que la democracia... – Reflexiones▒https://jucardus.github.io/s/i/-/si-una-de-las-condiciones-para-que-la-democracia▓",
   "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
+  "▓Tareas pendientes – Tareas pendientes▒https://jucardus.github.io/t/a/r/tareas-pendientes▓",
   "▓terse style [s.c.] – EstlsLtrrs - estilos literarios, Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/e/r/terse-style-sc▓",
   "▓toit en colombage [m.c.] – Arqtctr - arquitectura, Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
