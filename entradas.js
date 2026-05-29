@@ -35,6 +35,7 @@ var entradas = [
   "▓Después de meses, vi a una persona leyendo... – Reflexiones▒https://jucardus.github.io/d/e/s/despues-de-meses-vi-a-una-persona-leyendo▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
+  "▓Disculpen si les llamo caballeros, pero... – Citas de Groucho Marx, Citas y proverbios, Citas y proverbios - D▒https://jucardus.github.io/d/i/s/disculpen-si-les-llamo-caballeros-pero▓",
   "▓El destino del hombre está... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-destino-del-hombre-esta▓",
   "▓El destino es el que baraja las cartas... – Citas de Shakespeare, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-destino-es-el-que-baraja-las-cartas▓",
   "▓El dolor y el sufrimiento son siempre inevitables... – Citas de Dostoyevski, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-dolor-y-el-sufrimiento-son-siempre-inevitables▓",
