@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El hombre muere en todos aquellos...](https://jucardus.github.io/e/l/-/el-hombre-muere-en-todos-aquellos)
 * [El mayor castigo para quienes no se interesan...](https://jucardus.github.io/e/l/-/el-mayor-castigo-para-quienes-no-se-interesan)
 * [El hombre que tiene miedo sin peligro...](https://jucardus.github.io/e/l/-/el-hombre-que-tiene-miedo-sin-peligro)
 * [El hombre, un ejemplo de la...](https://jucardus.github.io/e/l/-/el-hombre-un-ejemplo-de-la)
