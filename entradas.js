@@ -39,7 +39,7 @@ var entradas = [
   "▓El hombre que tiene miedo sin peligro... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-hombre-que-tiene-miedo-sin-peligro▓",
   "▓El hombre, un ejemplo de la... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-hombre-un-ejemplo-de-la▓",
   "▓El igualitarismo crea la desigualdad más... – Citas de Thomas Sowell, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-igualitarismo-crea-la-desigualdad-mas▓",
-  "▓El mayor castigo para quienes no se interesan... – Citas y proverbios, Citas y proverbios E▒https://jucardus.github.io/e/l/-/el-mayor-castigo-para-quienes-no-se-interesan▓",
+  "▓El mayor castigo para quienes no se interesan... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-castigo-para-quienes-no-se-interesan▓",
   "▓El mayor consuelo para los fanáticos es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-consuelo-para-los-fanaticos-es▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
