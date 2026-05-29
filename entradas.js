@@ -36,6 +36,7 @@ var entradas = [
   "▓Después de meses, vi a una persona leyendo... – Reflexiones▒https://jucardus.github.io/d/e/s/despues-de-meses-vi-a-una-persona-leyendo▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
+  "▓El mayor castigo para quienes no se interesan... – Citas y proverbios, Citas y proverbios A▒https://jucardus.github.io/e/l/-/el-mayor-castigo-para-quienes-no-se-interesan▓",
   "▓El mayor consuelo para los fanáticos es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-consuelo-para-los-fanaticos-es▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
