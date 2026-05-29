@@ -35,6 +35,7 @@ var entradas = [
   "▓Después de meses, vi a una persona leyendo... – Reflexiones▒https://jucardus.github.io/d/e/s/despues-de-meses-vi-a-una-persona-leyendo▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
+  "▓El destino es el que baraja las cartas... – Citas de Shakespeare, Citas y provebios - E, Citas y proverbios▒https://jucardus.github.io/e/l/-/el-destino-es-el-que-baraja-las-cartas▓",
   "▓El dolor y el sufrimiento son siempre inevitables... – Citas de Dostoyevski, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-dolor-y-el-sufrimiento-son-siempre-inevitables▓",
   "▓El Estado es una banda de ladrones... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-estado-es-una-banda-de-ladrones▓",
   "▓El filósofo es un hombre que no quiere creer... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-filosofo-es-un-hombre-que-no-quiere-creer▓",
