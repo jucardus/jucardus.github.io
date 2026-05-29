@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [El filósofo es un hombre que no quiere creer...](https://jucardus.github.io/e/l/-/el-filosofo-es-un-hombre-que-no-quiere-creer)
 * [El hombre está condenado...](https://jucardus.github.io/e/l/-/el-hombre-esta-condenado)
 * [El hombre muere en todos aquellos...](https://jucardus.github.io/e/l/-/el-hombre-muere-en-todos-aquellos)
