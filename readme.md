@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El destino es el que baraja las cartas...](https://jucardus.github.io/e/l/-/el-destino-es-el-que-baraja-las-cartas)
 * [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [El dolor y el sufrimiento son siempre inevitables...](https://jucardus.github.io/e/l/-/el-dolor-y-el-sufrimiento-son-siempre-inevitables)
 * [El Estado es una banda de ladrones...](https://jucardus.github.io/e/l/-/el-estado-es-una-banda-de-ladrones)
