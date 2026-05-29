@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El destino del hombre está...](https://jucardus.github.io/e/l/-/el-destino-del-hombre-esta)
 * [El destino es el que baraja las cartas...](https://jucardus.github.io/e/l/-/el-destino-es-el-que-baraja-las-cartas)
 * [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [El dolor y el sufrimiento son siempre inevitables...](https://jucardus.github.io/e/l/-/el-dolor-y-el-sufrimiento-son-siempre-inevitables)
