@@ -36,6 +36,7 @@ var entradas = [
   "▓Después de meses, vi a una persona leyendo... – Reflexiones▒https://jucardus.github.io/d/e/s/despues-de-meses-vi-a-una-persona-leyendo▓",
   "▓destreza [f.] – Diccionario multilingüe - D, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/d/e/s/destreza-f▓",
   "▓devanture [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - D▒https://jucardus.github.io/d/e/v/devanture-f▓",
+  "▓El hombre está condenado... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-hombre-esta-condenado▓",
   "▓El hombre muere en todos aquellos... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-hombre-muere-en-todos-aquellos▓",
   "▓El hombre que tiene miedo sin peligro... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-hombre-que-tiene-miedo-sin-peligro▓",
   "▓El hombre, un ejemplo de la... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-hombre-un-ejemplo-de-la▓",
