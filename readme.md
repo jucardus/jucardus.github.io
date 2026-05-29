@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El dolor y el sufrimiento son siempre inevitables...](https://jucardus.github.io/e/l/-/el-dolor-y-el-sufrimiento-son-siempre-inevitables)
 * [El Estado es una banda de ladrones...](https://jucardus.github.io/e/l/-/el-estado-es-una-banda-de-ladrones)
 * [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [El filósofo es un hombre que no quiere creer...](https://jucardus.github.io/e/l/-/el-filosofo-es-un-hombre-que-no-quiere-creer)
