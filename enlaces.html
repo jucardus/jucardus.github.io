@@ -8,27 +8,26 @@
 <body>
     <h1>Buscador</h1>
     <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER">
-
     <div id="resultadosContainer"></div>
 
     <script>
-        let entidades = [];
-        let datosCargados = false;
+        var enlaces = [
+            "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
+            "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
+            "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza. ~ Papa León XIV▒jucardus▒3z65i5h8▓",
+            "▓citas▒Aunque no te ocupes de la política, ella se ocupará de ti. ~ Yves Montand▒jucardus▒isyf3cgd▓",
+            "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. ~ William Shakespeare▒jucardus▒7lkosc7d▓",
+            "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▒mp6rnkqh▓",
+            "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▒46ucl3tu▓",
+            "▓vocabulario español▒mascullar▒https://dle.rae.es/mascullar▒y53po4w8▓"
+        ];
 
         function parseEntrada(rawEntry) {
-            let inner = rawEntry.trim();
+            var inner = rawEntry.trim();
             if (inner.startsWith("▓") && inner.endsWith("▓")) {
                 inner = inner.slice(1, -1);
             }
-            const partes = inner.split("▒");
-            if (partes.length >= 4) {
-                return {
-                    tema: partes[0] || "",
-                    subtema: partes[1] || "",
-                    url: partes[2] || "",
-                    id: partes[3] || ""
-                };
-            }
+            var partes = inner.split("▒");
             return {
                 tema: partes[0] || "",
                 subtema: partes[1] || "",
@@ -37,49 +36,64 @@
             };
         }
 
+        var entidades = [];
+        for (var i = 0; i < enlaces.length; i++) {
+            entidades.push(parseEntrada(enlaces[i]));
+        }
+
         function buscarGlobal(query) {
-            if (!query || !entidades.length) return [];
-            const lowerQuery = query.toLowerCase();
-            return entidades.filter(ent => {
-                return ent.tema.toLowerCase().includes(lowerQuery) ||
-                       ent.subtema.toLowerCase().includes(lowerQuery) ||
-                       ent.url.toLowerCase().includes(lowerQuery) ||
-                       ent.id.toLowerCase().includes(lowerQuery);
-            });
+            if (!query) return [];
+            var lowerQuery = query.toLowerCase();
+            var resultados = [];
+            for (var i = 0; i < entidades.length; i++) {
+                var ent = entidades[i];
+                if (ent.tema.toLowerCase().indexOf(lowerQuery) !== -1 ||
+                    ent.subtema.toLowerCase().indexOf(lowerQuery) !== -1 ||
+                    ent.url.toLowerCase().indexOf(lowerQuery) !== -1 ||
+                    ent.id.toLowerCase().indexOf(lowerQuery) !== -1) {
+                    resultados.push(ent);
+                }
+            }
+            return resultados;
         }
 
         function buscarPorTemaExacto(temaBuscado) {
-            if (!temaBuscado || !entidades.length) return [];
-            return entidades.filter(ent => ent.tema === temaBuscado);
+            if (!temaBuscado) return [];
+            var resultados = [];
+            for (var i = 0; i < entidades.length; i++) {
+                if (entidades[i].tema === temaBuscado) {
+                    resultados.push(entidades[i]);
+                }
+            }
+            return resultados;
         }
 
         function construirTextoPlano(ent) {
-            return `${ent.tema} ┋ ${ent.subtema} ┋ ${ent.url} ┋ ${ent.id}`;
+            return ent.tema + " ┋ " + ent.subtema + " ┋ " + ent.url + " ┋ " + ent.id;
         }
 
         function generarTwitterShareUrl(ent, textoPlanoOriginal) {
-            const MAX_TWEET_LEN = 280;
-            const base = "https://x.com/intent/tweet?text=";
+            var MAX_TWEET_LEN = 280;
+            var base = "https://x.com/intent/tweet?text=";
+            var textoParaShare = textoPlanoOriginal;
             
-            let textoParaShare = textoPlanoOriginal;
             if (textoParaShare.length > MAX_TWEET_LEN) {
-                let tema = ent.tema;
-                let subtemaOrig = ent.subtema;
-                let url = ent.url;
-                let idEnt = ent.id;
-                
-                let templateWithoutSubtema = `${tema} ┋  ┋ ${url} ┋ ${idEnt}`;
-                let longitudFija = templateWithoutSubtema.length;
-                let availableForSubtema = MAX_TWEET_LEN - (longitudFija + 1);
+                var tema = ent.tema;
+                var subtemaOrig = ent.subtema;
+                var url = ent.url;
+                var idEnt = ent.id;
+                var templateWithoutSubtema = tema + " ┋  ┋ " + url + " ┋ " + idEnt;
+                var longitudFija = templateWithoutSubtema.length;
+                var availableForSubtema = MAX_TWEET_LEN - (longitudFija + 1);
                 
                 if (availableForSubtema < 5) {
-                    let subtemaCorto = subtemaOrig.slice(0, 3) + "...";
-                    textoParaShare = `${tema} ┋ ${subtemaCorto} ┋ ${url} ┋ ${idEnt}`;
+                    var subtemaCorto = subtemaOrig.slice(0, 3) + "...";
+                    textoParaShare = tema + " ┋ " + subtemaCorto + " ┋ " + url + " ┋ " + idEnt;
                 } else {
-                    let maxLen = Math.max(3, availableForSubtema - 3);
-                    let subtemaTrunc = subtemaOrig.slice(0, maxLen);
+                    var maxLen = Math.max(3, availableForSubtema - 3);
+                    var subtemaTrunc = subtemaOrig.slice(0, maxLen);
                     if (subtemaTrunc.length < subtemaOrig.length) subtemaTrunc += "...";
-                    textoParaShare = `${tema} ┋ ${subtemaTrunc} ┋ ${url} ┋ ${idEnt}`;
+                    textoParaShare = tema + " ┋ " + subtemaTrunc + " ┋ " + url + " ┋ " + idEnt;
                 }
                 
                 if (textoParaShare.length > MAX_TWEET_LEN) {
@@ -89,172 +103,97 @@
             return base + encodeURIComponent(textoParaShare);
         }
 
-        async function copiarTexto(texto) {
+        function copiarTexto(texto) {
             try {
-                await navigator.clipboard.writeText(texto);
+                navigator.clipboard.writeText(texto);
             } catch (err) {
                 console.error("Error al copiar: ", err);
             }
         }
 
         function renderizarResultados(resultados) {
-            const container = document.getElementById("resultadosContainer");
+            var container = document.getElementById("resultadosContainer");
             if (!container) return;
 
             if (!resultados.length) {
-                container.innerHTML = `Ninguna coincidencia`;
+                container.innerHTML = "Ninguna coincidencia";
                 return;
             }
 
-            let html = "";
-            for (let ent of resultados) {
-                const tema = ent.tema;
-                const subtema = ent.subtema;
-                const enlaceUrl = ent.url;
-                const identificador = ent.id;
-                const textoPlanoCompleto = construirTextoPlano(ent);
+            var html = "";
+            for (var i = 0; i < resultados.length; i++) {
+                var ent = resultados[i];
+                var tema = ent.tema;
+                var subtema = ent.subtema;
+                var enlaceUrl = ent.url;
+                var identificador = ent.id;
+                var textoPlanoCompleto = construirTextoPlano(ent);
                 
-                html += `<div>`;
-                html += `<p>`;
-                html += `<span class="tema-clicable" data-temaaccion="${tema.replace(/"/g, '&quot;')}">${tema}</span>`;
-                html += ` ┋ `;
-                html += `<span class="subtema-copiar" data-copiarcompleto="${textoPlanoCompleto.replace(/"/g, '&quot;')}">${subtema}</span>`;
-                html += ` ┋ `;
+                html += "<div>";
+                html += "<p>";
+                html += "<span class='tema-clicable' data-temaaccion='" + tema.replace(/"/g, '&quot;') + "'>" + tema + "</span>";
+                html += " ┋ ";
+                html += "<span class='subtema-copiar' data-copiarcompleto='" + textoPlanoCompleto.replace(/"/g, '&quot;') + "'>" + subtema + "</span>";
+                html += " ┋ ";
                 
-                if (enlaceUrl && (enlaceUrl.startsWith("http://") || enlaceUrl.startsWith("https://"))) {
-                    html += `<a href="${enlaceUrl}" target="_blank" rel="noopener noreferrer nofollow">${enlaceUrl}</a>`;
+                if (enlaceUrl && (enlaceUrl.indexOf("http://") === 0 || enlaceUrl.indexOf("https://") === 0)) {
+                    html += "<a href='" + enlaceUrl + "' target='_blank' rel='noopener noreferrer nofollow'>" + enlaceUrl + "</a>";
                 } else {
-                    html += `${enlaceUrl}`;
+                    html += enlaceUrl;
                 }
                 
-                html += ` ┋ `;
+                html += " ┋ ";
                 
-                const shareUrl = generarTwitterShareUrl(ent, construirTextoPlano(ent));
-                html += `<a href="${shareUrl}" target="_blank" rel="noopener noreferrer nofollow">${identificador}</a>`;
+                var shareUrl = generarTwitterShareUrl(ent, construirTextoPlano(ent));
+                html += "<a href='" + shareUrl + "' target='_blank' rel='noopener noreferrer nofollow'>" + identificador + "</a>";
                 
-                html += `</p>`;
-                html += `</div>`;
+                html += "</p>";
+                html += "</div>";
             }
             container.innerHTML = html;
         }
 
-        function cargarBaseDeDatos() {
-            return new Promise((resolve, reject) => {
-                const script = document.createElement('script');
-                script.src = 'enlaces.js';
-                script.onload = () => {
-                    // Buscar la variable 'enlaces' en el ámbito global (puede estar como let)
-                    // Intentamos diferentes formas de acceder a la variable
-                    let datos = null;
-                    
-                    // Método 1: window.enlaces (si se definió con var o window.)
-                    if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
-                        datos = window.enlaces;
-                    }
-                    // Método 2: Variable global 'enlaces' (funciona incluso con let/const si se ejecuta en el mismo contexto)
-                    else if (typeof enlaces !== 'undefined' && Array.isArray(enlaces)) {
-                        datos = enlaces;
-                    }
-                    // Método 3: Buscar en el script recién cargado (para casos extremos)
-                    else {
-                        // Intentar evaluar el contenido del script
-                        const scripts = document.querySelectorAll('script');
-                        for (let s of scripts) {
-                            if (s.src && s.src.includes('enlaces.js')) {
-                                // No podemos acceder directamente, pero a veces la variable está disponible
-                                break;
-                            }
-                        }
-                    }
-                    
-                    if (datos) {
-                        resolve(datos);
-                    } else {
-                        reject(new Error("No se encontró la variable 'enlaces' en el archivo. Asegúrate de usar 'var enlaces = [...]' o 'window.enlaces = [...]'"));
-                    }
-                };
-                script.onerror = () => {
-                    reject(new Error("No se encontró el archivo enlaces.js"));
-                };
-                document.head.appendChild(script);
-            });
-        }
+        var inputSearch = document.getElementById("inputBusqueda");
+        var container = document.getElementById("resultadosContainer");
 
-        async function inicializar() {
-            const container = document.getElementById("resultadosContainer");
-            const inputSearch = document.getElementById("inputBusqueda");
-            
-            try {
-                const enlacesData = await cargarBaseDeDatos();
-                entidades = enlacesData.map(parseEntrada);
-                datosCargados = true;
-                inputSearch.disabled = false;
-                container.innerHTML = "";
-                console.log(`✅ Cargadas ${entidades.length} entradas`);
-            } catch (error) {
-                console.error(error);
-                container.innerHTML = `Error: No se pudo cargar enlaces.js<br><br>
-                <strong>🔧 Solución:</strong><br>
-                Modifica tu archivo <strong>enlaces.js</strong> y cambia:<br>
-                <code style="background:#f0f0f0;padding:2px 5px;">let enlaces = [ ... ];</code><br>
-                por:<br>
-                <code style="background:#f0f0f0;padding:2px 5px;">var enlaces = [ ... ];</code><br>
-                o:<br>
-                <code style="background:#f0f0f0;padding:2px 5px;">window.enlaces = [ ... ];</code>`;
-                inputSearch.disabled = true;
+        inputSearch.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                var query = inputSearch.value.trim();
+                if (query === "") {
+                    container.innerHTML = "";
+                    return;
+                }
+                var resultados = buscarGlobal(query);
+                renderizarResultados(resultados);
             }
-        }
+        });
 
-        // Eventos
-        const inputSearch = document.getElementById("inputBusqueda");
-        const container = document.getElementById("resultadosContainer");
-
-        if (inputSearch) {
-            inputSearch.addEventListener("keypress", (event) => {
-                if (event.key === "Enter") {
-                    event.preventDefault();
-                    const query = inputSearch.value.trim();
-                    if (query === "") {
-                        container.innerHTML = ``;
-                        return;
-                    }
-                    if (!datosCargados) {
-                        container.innerHTML = `Cargando base de datos...`;
-                        return;
-                    }
-                    const resultados = buscarGlobal(query);
-                    renderizarResultados(resultados);
+        container.addEventListener("click", function(e) {
+            var temaElem = e.target.closest(".tema-clicable");
+            if (temaElem) {
+                e.preventDefault();
+                var temaValue = temaElem.getAttribute("data-temaaccion");
+                if (temaValue) {
+                    var resultadosTema = buscarPorTemaExacto(temaValue);
+                    renderizarResultados(resultadosTema);
+                    inputSearch.value = temaValue;
                 }
-            });
-        }
+                return;
+            }
 
-        if (container) {
-            container.addEventListener("click", async (e) => {
-                let temaElem = e.target.closest(".tema-clicable");
-                if (temaElem) {
-                    e.preventDefault();
-                    const temaValue = temaElem.getAttribute("data-temaaccion");
-                    if (temaValue && datosCargados) {
-                        const resultadosTema = buscarPorTemaExacto(temaValue);
-                        renderizarResultados(resultadosTema);
-                        inputSearch.value = temaValue;
-                    }
-                    return;
+            var copiarElem = e.target.closest(".subtema-copiar");
+            if (copiarElem) {
+                e.preventDefault();
+                var textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
+                if (textoCompleto) {
+                    copiarTexto(textoCompleto);
                 }
+                return;
+            }
+        });
 
-                let copiarElem = e.target.closest(".subtema-copiar");
-                if (copiarElem) {
-                    e.preventDefault();
-                    let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
-                    if (textoCompleto) {
-                        await copiarTexto(textoCompleto);
-                    }
-                    return;
-                }
-            });
-        }
-
-        inicializar();
+        container.innerHTML = "";
     </script>
 </body>
 </html>
