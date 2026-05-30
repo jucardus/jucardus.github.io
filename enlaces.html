@@ -9,7 +9,7 @@
     <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER">
     <div id="resultadosContainer"></div>
 
-    <script src="/enlaces.js"></script>
+    <script src="enlaces.js"></script>
     <script>
         let entidades = [];
 
@@ -25,6 +25,11 @@
                 url: partes[2] || "",
                 id: partes[3] || ""
             };
+        }
+
+        if (typeof enlaces !== 'undefined') {
+            entidades = enlaces.map(parseEntrada);
+            document.getElementById("resultadosContainer").innerHTML = `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
         }
 
         function buscarGlobal(query) {
@@ -131,19 +136,6 @@
         const inputSearch = document.getElementById("inputBusqueda");
         const container = document.getElementById("resultadosContainer");
 
-        function inicializarBuscador() {
-            if (typeof enlaces !== 'undefined' && Array.isArray(enlaces)) {
-                entidades = enlaces.map(parseEntrada);
-                container.innerHTML = `✅ Cargadas ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
-                inputSearch.disabled = false;
-                inputSearch.focus();
-            } else {
-                setTimeout(inicializarBuscador, 100);
-            }
-        }
-
-        inicializarBuscador();
-
         inputSearch.addEventListener("keypress", (event) => {
             if (event.key === "Enter") {
                 event.preventDefault();
@@ -152,10 +144,6 @@
                     if (entidades.length) {
                         container.innerHTML = `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
                     }
-                    return;
-                }
-                if (!entidades.length) {
-                    container.innerHTML = "La base de datos aún se está cargando...";
                     return;
                 }
                 const resultados = buscarGlobal(query);
