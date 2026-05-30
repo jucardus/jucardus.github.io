@@ -9,7 +9,7 @@
     <input type="text" id="searchBox" placeholder="Escribe y presiona ENTER">
     <div id="resultados"></div>
 
-    <script src="/enlaces.js"></script>
+    <script src="enlaces.js"></script>
     <script>
         const searchBox = document.getElementById('searchBox');
         const resultadosDiv = document.getElementById('resultados');
@@ -28,8 +28,12 @@
             };
         }
         
-        const entries = enlaces.map(parseEntry);
-        resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
+        let entries = [];
+        
+        if (typeof enlaces !== 'undefined') {
+            entries = enlaces.map(parseEntry);
+            resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
+        }
         
         function search(query) {
             if (!query) return [];
@@ -63,30 +67,32 @@
             resultadosDiv.innerHTML = html;
         }
         
-        searchBox.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                const query = searchBox.value.trim();
-                if (query === "") {
-                    resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
+        window.addEventListener('DOMContentLoaded', () => {
+            searchBox.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    const query = searchBox.value.trim();
+                    if (query === "") {
+                        resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
+                        return;
+                    }
+                    render(search(query));
+                }
+            });
+            
+            resultadosDiv.addEventListener('click', (e) => {
+                const temaSpan = e.target.closest('.tema');
+                if (temaSpan) {
+                    const tema = temaSpan.getAttribute('data-tema');
+                    render(entries.filter(e => e.tema === tema));
+                    searchBox.value = tema;
                     return;
                 }
-                render(search(query));
-            }
-        });
-        
-        resultadosDiv.addEventListener("click", (e) => {
-            const temaSpan = e.target.closest(".tema");
-            if (temaSpan) {
-                const tema = temaSpan.getAttribute("data-tema");
-                render(entries.filter(e => e.tema === tema));
-                searchBox.value = tema;
-                return;
-            }
-            const copySpan = e.target.closest(".copy");
-            if (copySpan) {
-                const text = copySpan.getAttribute("data-text");
-                if (text) navigator.clipboard.writeText(text);
-            }
+                const copySpan = e.target.closest('.copy');
+                if (copySpan) {
+                    const text = copySpan.getAttribute('data-text');
+                    if (text) navigator.clipboard.writeText(text);
+                }
+            });
         });
     </script>
 </body>
