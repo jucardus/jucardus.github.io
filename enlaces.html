@@ -140,24 +140,41 @@
 
         function cargarBaseDeDatos() {
             return new Promise((resolve, reject) => {
-                // Verificar si ya existe window.enlaces
-                if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
-                    resolve(window.enlaces);
-                    return;
-                }
-                
-                // Intentar cargar enlaces.js
                 const script = document.createElement('script');
                 script.src = 'enlaces.js';
                 script.onload = () => {
+                    // Buscar la variable 'enlaces' en el ámbito global (puede estar como let)
+                    // Intentamos diferentes formas de acceder a la variable
+                    let datos = null;
+                    
+                    // Método 1: window.enlaces (si se definió con var o window.)
                     if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
-                        resolve(window.enlaces);
+                        datos = window.enlaces;
+                    }
+                    // Método 2: Variable global 'enlaces' (funciona incluso con let/const si se ejecuta en el mismo contexto)
+                    else if (typeof enlaces !== 'undefined' && Array.isArray(enlaces)) {
+                        datos = enlaces;
+                    }
+                    // Método 3: Buscar en el script recién cargado (para casos extremos)
+                    else {
+                        // Intentar evaluar el contenido del script
+                        const scripts = document.querySelectorAll('script');
+                        for (let s of scripts) {
+                            if (s.src && s.src.includes('enlaces.js')) {
+                                // No podemos acceder directamente, pero a veces la variable está disponible
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (datos) {
+                        resolve(datos);
                     } else {
-                        reject(new Error("enlaces.js no define window.enlaces"));
+                        reject(new Error("No se encontró la variable 'enlaces' en el archivo. Asegúrate de usar 'var enlaces = [...]' o 'window.enlaces = [...]'"));
                     }
                 };
                 script.onerror = () => {
-                    reject(new Error("No se encontró enlaces.js"));
+                    reject(new Error("No se encontró el archivo enlaces.js"));
                 };
                 document.head.appendChild(script);
             });
@@ -173,10 +190,17 @@
                 datosCargados = true;
                 inputSearch.disabled = false;
                 container.innerHTML = "";
-                console.log(`Cargadas ${entidades.length} entradas`);
+                console.log(`✅ Cargadas ${entidades.length} entradas`);
             } catch (error) {
                 console.error(error);
-                container.innerHTML = `Error: No se pudo cargar enlaces.js - ${error.message}`;
+                container.innerHTML = `Error: No se pudo cargar enlaces.js<br><br>
+                <strong>🔧 Solución:</strong><br>
+                Modifica tu archivo <strong>enlaces.js</strong> y cambia:<br>
+                <code style="background:#f0f0f0;padding:2px 5px;">let enlaces = [ ... ];</code><br>
+                por:<br>
+                <code style="background:#f0f0f0;padding:2px 5px;">var enlaces = [ ... ];</code><br>
+                o:<br>
+                <code style="background:#f0f0f0;padding:2px 5px;">window.enlaces = [ ... ];</code>`;
                 inputSearch.disabled = true;
             }
         }
