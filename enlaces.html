@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Buscador · Repositorio de Enlaces</title>
+    <style>
+        /* RESET y estilos base (sin CSS complejo, solo para legibilidad) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: #faf9f8;
+            padding: 2rem 1.5rem;
+            color: #1e1e2a;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            background: linear-gradient(135deg, #0b2b3b, #1b4f6e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1.2rem;
+            border-left: 5px solid #2c7da0;
+            padding-left: 1rem;
+        }
+
+        /* input busca */
+        .search-box {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            font-size: 1.1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 60px;
+            background: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            transition: all 0.2s ease;
+            margin-bottom: 1rem;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #2c7da0;
+            box-shadow: 0 0 0 3px rgba(44,125,160,0.2);
+        }
+
+        /* contenedor resultados */
+        .resultados-area {
+            margin-top: 2rem;
+        }
+
+        .resultado-item {
+            background: white;
+            border-radius: 20px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+            border: 1px solid #e9edf2;
+            transition: background 0.1s;
+        }
+
+        /* párrafo donde se muestra toda la línea */
+        .resultado-item p {
+            font-size: 0.98rem;
+            line-height: 1.5;
+            word-break: break-word;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 6px 8px;
+            margin: 0;
+        }
+
+        /* cada 'segmento' dentro del párrafo se puede estilizar sin romper funcionalidad */
+        .tema-clicable {
+            cursor: pointer;
+            background: #ecf7fb;
+            padding: 0.2rem 0.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            color: #155e75;
+            transition: 0.1s;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .tema-clicable:hover {
+            background: #d1e9f0;
+            text-decoration: underline;
+        }
+
+        .subtema-copiar {
+            cursor: pointer;
+            background: #f1f5f9;
+            padding: 0.2rem 0.5rem;
+            border-radius: 30px;
+            color: #2c3e4e;
+            transition: 0.1s;
+            display: inline-block;
+        }
+
+        .subtema-copiar:hover {
+            background: #e2e8f0;
+            text-decoration: underline dotted;
+        }
+
+        .enlace-normal {
+            color: #1f6392;
+            text-decoration: none;
+            border-bottom: 1px dashed #7aaec4;
+            word-break: break-all;
+        }
+
+        .enlace-normal:hover {
+            text-decoration: underline;
+            color: #0f4b6e;
+        }
+
+        .identificador-twitter {
+            cursor: pointer;
+            background: #eef2ff;
+            padding: 0.2rem 0.6rem;
+            border-radius: 40px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #1d4e89;
+            text-decoration: none;
+            transition: 0.1s;
+            display: inline-block;
+            border: 1px solid #cddfe7;
+        }
+
+        .identificador-twitter:hover {
+            background: #e0e9ff;
+            text-decoration: underline;
+        }
+
+        .separador-simbolo {
+            color: #7c8b9c;
+            font-weight: 400;
+            margin: 0 2px;
+        }
+
+        .empty-mensaje {
+            background: #f1f3f4;
+            border-radius: 2rem;
+            padding: 2rem;
+            text-align: center;
+            color: #4a5b6e;
+            font-style: italic;
+            margin-top: 2rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, #e2e8f0, transparent);
+        }
+
+        footer {
+            font-size: 0.75rem;
+            text-align: center;
+            margin-top: 3rem;
+            color: #6c7a8e;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🔍 Buscador</h1>
+    <input type="text" id="inputBusqueda" class="search-box" placeholder="Escribe cualquier palabra: tema, subtema, enlace o identificador... presiona ENTER" autofocus>
+
+    <div id="resultadosContainer" class="resultados-area">
+        <!-- dinámicamente se llenarán los resultados -->
+        <div class="empty-mensaje">✨ Escribe algo y pulsa ENTER para buscar en toda la base de datos.</div>
+    </div>
+    <footer>🔹 Clic en <strong>TEMA</strong> → filtra por ese tema exacto.<br>
+        🔹 Clic en <strong>SUBTEMA</strong> → copia entrada completa al portapapeles.<br>
+        🔹 Clic en <strong>ID</strong> → comparte en X (Twitter) con acortamiento automático si supera límite.
+    </footer>
+</div>
+
+<script>
+    // ======================= BASE DE DATOS =======================
+    // tal cual se definió: matriz enlaces
+    let enlaces = [
+        "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
+        "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
+        "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza. ~ Papa León XIV▒jucardus▒3z65i5h8▓",
+        "▓citas▒Aunque no te ocupes de la política, ella se ocupará de ti. ~ Yves Montand▒jucardus▒isyf3cgd▓",
+        "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. ~ William Shakespeare▒jucardus▒7lkosc7d▓",
+        "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▒mp6rnkqh▓",
+        "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▒46ucl3tu▓",
+        "▓vocabulario español▒mascullar▒https://dle.rae.es/mascullar▒y53po4w8▓"
+    ];
+
+    // ------------------ FUNCIÓN para parsear cada entrada cruda "▓...▓" -------------
+    // Formato: ▓tema▒subtema▒url▒id▓
+    // Devuelve objeto { tema, subtema, url, id, raw: string completa }
+    function parseEntrada(rawEntry) {
+        // eliminar el primer ▓ y el último ▓
+        let inner = rawEntry.trim();
+        if (inner.startsWith("▓") && inner.endsWith("▓")) {
+            inner = inner.slice(1, -1);
+        }
+        // Separar por ▒
+        const partes = inner.split("▒");
+        if (partes.length >= 4) {
+            return {
+                tema: partes[0] || "",
+                subtema: partes[1] || "",
+                url: partes[2] || "",
+                id: partes[3] || "",
+                raw: rawEntry
+            };
+        }
+        // fallback: si hay menos de 4 partes, reconstruimos lo mejor posible (no debería suceder)
+        return {
+            tema: partes[0] || "",
+            subtema: partes[1] || "",
+            url: partes[2] || "",
+            id: partes[3] || "",
+            raw: rawEntry
+        };
+    }
+
+    // Transformar toda la base de datos a objetos más manejables
+    let entidades = enlaces.map(entry => parseEntrada(entry));
+
+    // Función de búsqueda global: recorre todo el contenido (tema, subtema, url, id) sin distinguir.
+    // query: string en minúsculas (trim)
+    function buscarGlobal(query) {
+        if (!query) return [];
+        const lowerQuery = query.toLowerCase();
+        return entidades.filter(ent => {
+            // Buscar en TODOS los campos textuales
+            return ent.tema.toLowerCase().includes(lowerQuery) ||
+                   ent.subtema.toLowerCase().includes(lowerQuery) ||
+                   ent.url.toLowerCase().includes(lowerQuery) ||
+                   ent.id.toLowerCase().includes(lowerQuery);
+        });
+    }
+
+    // Buscar por tema EXACTO (coincidencia de string tema completo, tal cual aparece)
+    // Para el clic en tema: se usa el tema original (case-sensitive? pero lo ideal es exacto)
+    // Dado que en el array tema puede tener caracteres especiales, usamos comparación exacta (preservando mayúsculas)
+    function buscarPorTemaExacto(temaBuscado) {
+        if (!temaBuscado) return [];
+        return entidades.filter(ent => ent.tema === temaBuscado);
+    }
+
+    // ---------- Construir HTML de resultados ----------
+    // Recibe un array de objetos (entidades)
+    function renderizarResultados(resultados) {
+        const container = document.getElementById("resultadosContainer");
+        if (!container) return;
+
+        if (!resultados.length) {
+            container.innerHTML = `<div class="empty-mensaje">😕 No se encontraron coincidencias. Intenta con otra palabra.</div>`;
+            return;
+        }
+
+        let html = "";
+        for (let idx = 0; idx < resultados.length; idx++) {
+            const ent = resultados[idx];
+            // Datos
+            const tema = ent.tema;
+            const subtema = ent.subtema;
+            const enlaceUrl = ent.url;
+            const identificador = ent.id;
+
+            // Construir cada línea con los elementos interactivos requeridos
+            // Estructura del párrafo:  [tema] ┋ [subtema] ┋ [enlace <a>] ┋ [identificador enlace twitter]
+            // Usamos spans y clases para eventos. Se usarán data attributes para almacenar info.
+
+            // Creamos contenedor del párrafo con id único opcional, pero usaremos clase .resultado-item
+            // Cada bloque se identificará mediante dataset para acciones (copiar, buscar por tema, compartir)
+            // Pero para simplicidad: asocio eventos con delegación global.
+
+            html += `<div class="resultado-item" data-tema-original="${escapeHtml(tema)}" data-subtema-original="${escapeHtml(subtema)}" data-url="${escapeHtml(enlaceUrl)}" data-id="${escapeHtml(identificador)}" data-entrada-completa="${escapeHtml(construirTextoPlano(ent))}">`;
+            html += `<p>`;
+
+            // 1. TEMA (clic -> buscar entradas con ese tema exacto)
+            html += `<span class="tema-clicable" data-temaaccion="${escapeHtml(tema)}">${escapeHtml(tema)}</span>`;
+            html += `<span class="separador-simbolo"> ┋ </span>`;
+
+            // 2. SUBTEMA (clic -> copiar entrada original completa en texto plano)
+            html += `<span class="subtema-copiar" data-copiarcompleto="${escapeHtml(construirTextoPlano(ent))}">${escapeHtml(subtema)}</span>`;
+            html += `<span class="separador-simbolo"> ┋ </span>`;
+
+            // 3. ENLACE (anchor class="enlaces" target blank)
+            if (enlaceUrl && enlaceUrl.startsWith("http")) {
+                html += `<a href="${escapeHtml(enlaceUrl)}" class="enlace-normal" target="_blank" rel="noopener noreferrer nofollow">${escapeHtml(enlaceUrl)}</a>`;
+            } else {
+                // si no es url válida, igual mostramos texto (por seguridad)
+                html += `<span class="enlace-normal" style="background:#eee;">${escapeHtml(enlaceUrl)}</span>`;
+            }
+            html += `<span class="separador-simbolo"> ┋ </span>`;
+
+            // 4. IDENTIFICADOR (enlace para compartir en X/Twitter, con manejo de acortamiento si excede límite)
+            // Preparamos texto completo a compartir = "tema ┋ subtema ┋ url ┋ id"
+            const textoCompleto = construirTextoPlano(ent);
+            // Generamos funcion que crea url de X con posible acortamiento del subtema si el total excede 280 caracteres (límite Twitter/X es 280 actualmente)
+            const shareUrl = generarTwitterShareUrl(ent, textoCompleto);
+            html += `<a href="${shareUrl}" class="identificador-twitter" target="_blank" rel="noopener noreferrer nofollow" data-id="${escapeHtml(identificador)}">${escapeHtml(identificador)}</a>`;
+            
+            html += `</p>`;
+            html += `</div>`;
+        }
+        container.innerHTML = html;
+    }
+
+    // Construir cadena de texto plano: "tema ┋ subtema ┋ enlace ┋ identificador"
+    function construirTextoPlano(ent) {
+        return `${ent.tema} ┋ ${ent.subtema} ┋ ${ent.url} ┋ ${ent.id}`;
+    }
+
+    // Generar URL de X (Twitter) con acortamiento inteligente si excede 280 caracteres
+    // Regla: si el texto completo sobrepasa 280, acortamos el subtema añadiendo "..."
+    // Pero manteniendo el formato legible.
+    function generarTwitterShareUrl(ent, textoPlanoOriginal) {
+        const MAX_TWEET_LEN = 280;
+        // URL base
+        const base = "https://x.com/intent/tweet?text=";
+        
+        let textoParaShare = textoPlanoOriginal;
+        if (textoParaShare.length > MAX_TWEET_LEN) {
+            // Necesitamos acortar el subtema. Técnica: reemplazar subtema original por versión truncada
+            // Formato: tema ┋ subtema_largo ┋ url ┋ id
+            // Obtenemos partes: tema, subtema, url, id
+            let tema = ent.tema;
+            let subtemaOrig = ent.subtema;
+            let url = ent.url;
+            let idEnt = ent.id;
+            
+            // Construcción base sin subtema original, pero dejando sitio para subtema acortado
+            // Calculamos longitud fija (máx posible sin subtema)
+            let templateWithoutSubtema = `${tema} ┋  ┋ ${url} ┋ ${idEnt}`;
+            let longitudFija = templateWithoutSubtema.length; // incluye espacio para ┋  ┋ dos separadores
+            // espacio disponible para subtema (incluye los 3 puntos)
+            let availableForSubtema = MAX_TWEET_LEN - (longitudFija + 1); // +1 por márgen
+            if (availableForSubtema < 5) {
+                // Si no hay casi espacio, forzamos subtema extremadamente corto
+                let subtemaCorto = subtemaOrig.slice(0, 3) + "...";
+                textoParaShare = `${tema} ┋ ${subtemaCorto} ┋ ${url} ┋ ${idEnt}`;
+            } else {
+                let maxLen = Math.max(3, availableForSubtema - 3); // restamos espacio para "..."
+                let subtemaTrunc = subtemaOrig.slice(0, maxLen);
+                if (subtemaTrunc.length < subtemaOrig.length) subtemaTrunc += "...";
+                textoParaShare = `${tema} ┋ ${subtemaTrunc} ┋ ${url} ┋ ${idEnt}`;
+            }
+            // Segundo control de seguridad: si aún sobrepasa, acortar url? pero no es necesario por diseño, pero hacemos recorte extremo
+            if (textoParaShare.length > MAX_TWEET_LEN) {
+                // forzamos recorte manteniendo partes criticas: acortamos URL? puede romper, mejor truncar el texto final
+                textoParaShare = textoParaShare.substring(0, MAX_TWEET_LEN - 3) + "...";
+            }
+        }
+        // Codificar componente URI
+        const encodedText = encodeURIComponent(textoParaShare);
+        return base + encodedText;
+    }
+
+    // Función para copiar al portapapeles texto plano
+    async function copiarTexto(texto) {
+        try {
+            await navigator.clipboard.writeText(texto);
+            // feedback sutil pero sin alert intrusiva, podemos cambiar estilo momentáneo
+            mostrarNotificacionTemporal("📋 Copiado: " + (texto.length > 40 ? texto.substring(0,40)+"…" : texto));
+        } catch (err) {
+            console.error("Error al copiar: ", err);
+            alert("No se pudo copiar al portapapeles. Permiso denegado.");
+        }
+    }
+
+    // Notificación rápida no intrusiva
+    let notifTimeout;
+    function mostrarNotificacionTemporal(mensaje) {
+        let notif = document.getElementById("toastNotif");
+        if (!notif) {
+            const div = document.createElement("div");
+            div.id = "toastNotif";
+            div.style.position = "fixed";
+            div.style.bottom = "20px";
+            div.style.left = "50%";
+            div.style.transform = "translateX(-50%)";
+            div.style.backgroundColor = "#1e293b";
+            div.style.color = "white";
+            div.style.padding = "8px 18px";
+            div.style.borderRadius = "40px";
+            div.style.fontSize = "0.85rem";
+            div.style.zIndex = "9999";
+            div.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
+            div.style.pointerEvents = "none";
+            document.body.appendChild(div);
+            notif = div;
+        }
+        notif.textContent = mensaje;
+        notif.style.opacity = "1";
+        clearTimeout(notifTimeout);
+        notifTimeout = setTimeout(() => {
+            notif.style.opacity = "0";
+        }, 1800);
+    }
+
+    // Escuchar eventos de clic en los elementos dinámicos (delegación)
+    function bindDelegacionEventos() {
+        const container = document.getElementById("resultadosContainer");
+        if (!container) return;
+
+        container.addEventListener("click", async (e) => {
+            // 1. Clic en tema (clase .tema-clicable)
+            let temaElem = e.target.closest(".tema-clicable");
+            if (temaElem) {
+                e.preventDefault();
+                const temaValue = temaElem.getAttribute("data-temaaccion") || temaElem.textContent;
+                if (temaValue) {
+                    // Realizar búsqueda de todas las entradas que tengan exactamente ese tema
+                    const resultadosTema = buscarPorTemaExacto(temaValue);
+                    renderizarResultados(resultadosTema);
+                    // Actualizar input con el tema buscado (opcional)
+                    const input = document.getElementById("inputBusqueda");
+                    if (input) input.value = `tema: ${temaValue}`;
+                    mostrarNotificacionTemporal(`🔍 Mostrando ${resultadosTema.length} entrada(s) con tema “${temaValue}”`);
+                }
+                return;
+            }
+
+            // 2. Clic en subtema (copiar entrada completa)
+            let copiarElem = e.target.closest(".subtema-copiar");
+            if (copiarElem) {
+                e.preventDefault();
+                let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
+                if (!textoCompleto) {
+                    // fallback: buscar en el contenedor padre .resultado-item y recontruir
+                    const parentItem = copiarElem.closest(".resultado-item");
+                    if (parentItem) {
+                        const tema = parentItem.getAttribute("data-tema-original") || "";
+                        const subt = parentItem.getAttribute("data-subtema-original") || "";
+                        const url = parentItem.getAttribute("data-url") || "";
+                        const id = parentItem.getAttribute("data-id") || "";
+                        textoCompleto = `${tema} ┋ ${subt} ┋ ${url} ┋ ${id}`;
+                    }
+                }
+                if (textoCompleto) {
+                    await copiarTexto(textoCompleto);
+                } else {
+                    mostrarNotificacionTemporal("No se pudo obtener la entrada");
+                }
+                return;
+            }
+
+            // 3. identificador tiene su propio enlace, ya se maneja con href generado, no es necesario capturar
+            // pero si algún enlace de identificador se quiere copiar o mostrar, ya abrirá X.
+            // No se requiere acción adicional para el identificador (ya está como <a> con target blank)
+        });
+    }
+
+    // Helper escape HTML
+    function escapeHtml(str) {
+        if (!str) return "";
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+            return c;
+        });
+    }
+
+    // Inicializar búsqueda con input + ENTER
+    function initBusqueda() {
+        const inputSearch = document.getElementById("inputBusqueda");
+        if (!inputSearch) return;
+
+        inputSearch.addEventListener("keypress", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                const query = inputSearch.value.trim();
+                if (query === "") {
+                    document.getElementById("resultadosContainer").innerHTML = `<div class="empty-mensaje">🔎 Escribe algo para buscar en la base de datos.</div>`;
+                    return;
+                }
+                const resultados = buscarGlobal(query);
+                renderizarResultados(resultados);
+            }
+        });
+    }
+
+    // Opcional: mostrar al inicio un mensaje amigable
+    function mostrarEntradasIniciales() {
+        // no mostrar todas por defecto, pero podríamos mostrar un mensaje o sugerir busqueda
+        const container = document.getElementById("resultadosContainer");
+        if (container) {
+            container.innerHTML = `<div class="empty-mensaje">💡 Escribe cualquier palabra (ej: "citas", "vocabulario", "música", "Shakespeare") y presiona ENTER.</div>`;
+        }
+    }
+
+    // Inicializar todo
+    function iniciarApp() {
+        initBusqueda();
+        bindDelegacionEventos();
+        mostrarEntradasIniciales();
+    }
+
+    iniciarApp();
+</script>
+</body>
+</html>
