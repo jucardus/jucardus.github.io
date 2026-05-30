@@ -7,13 +7,25 @@
 </head>
 <body>
     <h1>Buscador</h1>
-    <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER" disabled>
+    <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER">
 
     <div id="resultadosContainer"></div>
 
     <script>
-        let entidades = [];
-        let datosCargados = false;
+        // Base de datos directamente incorporada
+        let enlaces = [
+            "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
+            "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
+            "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza. ~ Papa León XIV▒jucardus▒3z65i5h8▓",
+            "▓citas▒Aunque no te ocupes de la política, ella se ocupará de ti. ~ Yves Montand▒jucardus▒isyf3cgd▓",
+            "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. ~ William Shakespeare▒jucardus▒7lkosc7d▓",
+            "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▒mp6rnkqh▓",
+            "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▒46ucl3tu▓",
+            "▓vocabulario español▒mascullar▒https://dle.rae.es/mascullar▒y53po4w8▓"
+        ];
+
+        // Parsear todas las entradas
+        let entidades = enlaces.map(parseEntrada);
 
         function parseEntrada(rawEntry) {
             let inner = rawEntry.trim();
@@ -40,7 +52,7 @@
         }
 
         function buscarGlobal(query) {
-            if (!query || !entidades.length) return [];
+            if (!query) return [];
             const lowerQuery = query.toLowerCase();
             return entidades.filter(ent => {
                 return ent.tema.toLowerCase().includes(lowerQuery) ||
@@ -51,7 +63,7 @@
         }
 
         function buscarPorTemaExacto(temaBuscado) {
-            if (!temaBuscado || !entidades.length) return [];
+            if (!temaBuscado) return [];
             return entidades.filter(ent => ent.tema === temaBuscado);
         }
 
@@ -116,7 +128,7 @@
                 const identificador = ent.id;
                 const textoPlanoCompleto = construirTextoPlano(ent);
                 
-                html += `<div data-tema-original="${tema.replace(/"/g, '&quot;')}" data-subtema-original="${subtema.replace(/"/g, '&quot;')}" data-url="${enlaceUrl.replace(/"/g, '&quot;')}" data-id="${identificador.replace(/"/g, '&quot;')}">`;
+                html += `<div>`;
                 html += `<p>`;
                 html += `<span class="tema-clicable" data-temaaccion="${tema.replace(/"/g, '&quot;')}">${tema}</span>`;
                 html += ` ┋ `;
@@ -140,93 +152,50 @@
             container.innerHTML = html;
         }
 
-        function cargarBaseDeDatos() {
-            return new Promise((resolve, reject) => {
-                if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
-                    resolve(window.enlaces);
+        // Configurar evento de búsqueda
+        const inputSearch = document.getElementById("inputBusqueda");
+        const container = document.getElementById("resultadosContainer");
+
+        inputSearch.addEventListener("keypress", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                const query = inputSearch.value.trim();
+                if (query === "") {
+                    container.innerHTML = ``;
                     return;
                 }
-                
-                const script = document.createElement('script');
-                script.src = 'enlaces.js';
-                script.onload = () => {
-                    if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
-                        resolve(window.enlaces);
-                    } else {
-                        reject(new Error("El archivo enlaces.js no define la variable global 'enlaces'"));
-                    }
-                };
-                script.onerror = () => {
-                    reject(new Error("No se pudo cargar el archivo enlaces.js"));
-                };
-                document.head.appendChild(script);
-            });
-        }
-
-        async function inicializarBuscador() {
-            const container = document.getElementById("resultadosContainer");
-            const inputSearch = document.getElementById("inputBusqueda");
-            
-            try {
-                const enlacesData = await cargarBaseDeDatos();
-                entidades = enlacesData.map(entry => parseEntrada(entry));
-                datosCargados = true;
-                
-                inputSearch.disabled = false;
-                container.innerHTML = ``;
-                
-                inputSearch.addEventListener("keypress", (event) => {
-                    if (event.key === "Enter") {
-                        event.preventDefault();
-                        const query = inputSearch.value.trim();
-                        if (query === "") {
-                            container.innerHTML = ``;
-                            return;
-                        }
-                        const resultados = buscarGlobal(query);
-                        renderizarResultados(resultados);
-                    }
-                });
-                
-            } catch (error) {
-                console.error(error);
-                container.innerHTML = `Error: No se pudo cargar enlaces.js`;
-                inputSearch.disabled = true;
+                const resultados = buscarGlobal(query);
+                renderizarResultados(resultados);
             }
-        }
+        });
 
-        function configurarDelegacionEventos() {
-            const container = document.getElementById("resultadosContainer");
-            if (!container) return;
-
-            container.addEventListener("click", async (e) => {
-                let temaElem = e.target.closest(".tema-clicable");
-                if (temaElem) {
-                    e.preventDefault();
-                    const temaValue = temaElem.getAttribute("data-temaaccion");
-                    if (temaValue && datosCargados) {
-                        const resultadosTema = buscarPorTemaExacto(temaValue);
-                        renderizarResultados(resultadosTema);
-                        const input = document.getElementById("inputBusqueda");
-                        if (input) input.value = temaValue;
-                    }
-                    return;
+        // Configurar clics en elementos dinámicos
+        container.addEventListener("click", async (e) => {
+            let temaElem = e.target.closest(".tema-clicable");
+            if (temaElem) {
+                e.preventDefault();
+                const temaValue = temaElem.getAttribute("data-temaaccion");
+                if (temaValue) {
+                    const resultadosTema = buscarPorTemaExacto(temaValue);
+                    renderizarResultados(resultadosTema);
+                    inputSearch.value = temaValue;
                 }
+                return;
+            }
 
-                let copiarElem = e.target.closest(".subtema-copiar");
-                if (copiarElem) {
-                    e.preventDefault();
-                    let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
-                    if (textoCompleto) {
-                        await copiarTexto(textoCompleto);
-                    }
-                    return;
+            let copiarElem = e.target.closest(".subtema-copiar");
+            if (copiarElem) {
+                e.preventDefault();
+                let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
+                if (textoCompleto) {
+                    await copiarTexto(textoCompleto);
                 }
-            });
-        }
+                return;
+            }
+        });
 
-        configurarDelegacionEventos();
-        inicializarBuscador();
+        // Mensaje inicial
+        container.innerHTML = ``;
     </script>
 </body>
 </html>
