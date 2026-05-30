@@ -6,172 +6,125 @@
 </head>
 <body>
     <h1>Buscador</h1>
-    <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER">
-    <div id="resultadosContainer"></div>
+    <input type="text" id="searchBox" placeholder="Escribe y presiona ENTER" autocomplete="off">
+    <div id="resultados"></div>
 
     <script src="enlaces.js"></script>
     <script>
-        let entidades = [];
-
-        function parseEntrada(rawEntry) {
-            let inner = rawEntry.trim();
+        const searchBox = document.getElementById('searchBox');
+        const resultadosDiv = document.getElementById('resultados');
+        
+        let allEntries = [];
+        
+        function parseEntry(raw) {
+            let inner = raw.trim();
             if (inner.startsWith("▓") && inner.endsWith("▓")) {
                 inner = inner.slice(1, -1);
             }
-            const partes = inner.split("▒");
+            const parts = inner.split("▒");
             return {
-                tema: partes[0] || "",
-                subtema: partes[1] || "",
-                url: partes[2] || "",
-                id: partes[3] || ""
+                tema: parts[0] || "",
+                subtema: parts[1] || "",
+                url: parts[2] || "",
+                id: parts[3] || ""
             };
         }
-
+        
         if (typeof enlaces !== 'undefined') {
-            entidades = enlaces.map(parseEntrada);
-            document.getElementById("resultadosContainer").innerHTML = `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
+            allEntries = enlaces.map(parseEntry);
+            resultadosDiv.innerHTML = `✅ ${allEntries.length} entradas cargadas.`;
         }
-
-        function buscarGlobal(query) {
+        
+        function searchGlobal(query) {
             if (!query) return [];
             const lowerQuery = query.toLowerCase();
-            return entidades.filter(ent => {
-                return ent.tema.toLowerCase().includes(lowerQuery) ||
-                       ent.subtema.toLowerCase().includes(lowerQuery) ||
-                       ent.url.toLowerCase().includes(lowerQuery) ||
-                       ent.id.toLowerCase().includes(lowerQuery);
+            return allEntries.filter(entry => {
+                return entry.tema.toLowerCase().includes(lowerQuery) ||
+                       entry.subtema.toLowerCase().includes(lowerQuery) ||
+                       entry.url.toLowerCase().includes(lowerQuery) ||
+                       entry.id.toLowerCase().includes(lowerQuery);
             });
         }
-
-        function buscarPorTemaExacto(temaBuscado) {
-            if (!temaBuscado) return [];
-            return entidades.filter(ent => ent.tema === temaBuscado);
+        
+        function searchByTheme(theme) {
+            if (!theme) return [];
+            return allEntries.filter(entry => entry.tema === theme);
         }
-
-        function construirTextoPlano(ent) {
-            return `${ent.tema} ┋ ${ent.subtema} ┋ ${ent.url} ┋ ${ent.id}`;
+        
+        function getPlainText(entry) {
+            return `${entry.tema} ┋ ${entry.subtema} ┋ ${entry.url} ┋ ${entry.id}`;
         }
-
-        function generarTwitterShareUrl(ent, textoPlanoOriginal) {
-            const MAX_TWEET_LEN = 280;
-            const base = "https://x.com/intent/tweet?text=";
-            
-            let textoParaShare = textoPlanoOriginal;
-            if (textoParaShare.length > MAX_TWEET_LEN) {
-                let tema = ent.tema;
-                let subtemaOrig = ent.subtema;
-                let url = ent.url;
-                let idEnt = ent.id;
-                
-                let templateWithoutSubtema = `${tema} ┋  ┋ ${url} ┋ ${idEnt}`;
-                let longitudFija = templateWithoutSubtema.length;
-                let availableForSubtema = MAX_TWEET_LEN - (longitudFija + 1);
-                
-                if (availableForSubtema < 5) {
-                    let subtemaCorto = subtemaOrig.slice(0, 3) + "...";
-                    textoParaShare = `${tema} ┋ ${subtemaCorto} ┋ ${url} ┋ ${idEnt}`;
+        
+        function getTwitterShareUrl(entry, text) {
+            const maxLen = 280;
+            let shareText = text;
+            if (shareText.length > maxLen) {
+                const withoutSubtema = `${entry.tema} ┋  ┋ ${entry.url} ┋ ${entry.id}`;
+                const available = maxLen - (withoutSubtema.length + 3);
+                if (available > 0) {
+                    let shortSubtema = entry.subtema.slice(0, available);
+                    if (shortSubtema.length < entry.subtema.length) shortSubtema += "...";
+                    shareText = `${entry.tema} ┋ ${shortSubtema} ┋ ${entry.url} ┋ ${entry.id}`;
                 } else {
-                    let maxLen = Math.max(3, availableForSubtema - 3);
-                    let subtemaTrunc = subtemaOrig.slice(0, maxLen);
-                    if (subtemaTrunc.length < subtemaOrig.length) subtemaTrunc += "...";
-                    textoParaShare = `${tema} ┋ ${subtemaTrunc} ┋ ${url} ┋ ${idEnt}`;
-                }
-                
-                if (textoParaShare.length > MAX_TWEET_LEN) {
-                    textoParaShare = textoParaShare.substring(0, MAX_TWEET_LEN - 3) + "...";
+                    shareText = withoutSubtema;
                 }
             }
-            return base + encodeURIComponent(textoParaShare);
+            return `https://x.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
         }
-
-        async function copiarTexto(texto) {
-            try {
-                await navigator.clipboard.writeText(texto);
-            } catch (err) {
-                console.error("Error al copiar: ", err);
-            }
+        
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
         }
-
-        function renderizarResultados(resultados) {
-            const container = document.getElementById("resultadosContainer");
-            if (!container) return;
-
-            if (!resultados.length) {
-                container.innerHTML = "Ninguna coincidencia";
+        
+        function showResults(results) {
+            if (!results.length) {
+                resultadosDiv.innerHTML = "Ninguna coincidencia";
                 return;
             }
-
+            
             let html = "";
-            for (let ent of resultados) {
-                const tema = ent.tema;
-                const subtema = ent.subtema;
-                const enlaceUrl = ent.url;
-                const identificador = ent.id;
-                const textoPlanoCompleto = construirTextoPlano(ent);
-                
+            for (const entry of results) {
                 html += `<div>`;
                 html += `<p>`;
-                html += `<span class="tema-clicable" data-temaaccion="${tema.replace(/"/g, '&quot;')}">${tema}</span>`;
+                html += `<span class="tema-click" data-theme="${entry.tema.replace(/"/g, '&quot;')}">${entry.tema}</span>`;
                 html += ` ┋ `;
-                html += `<span class="subtema-copiar" data-copiarcompleto="${textoPlanoCompleto.replace(/"/g, '&quot;')}">${subtema}</span>`;
+                html += `<span class="subtema-copy" data-text="${getPlainText(entry).replace(/"/g, '&quot;')}">${entry.subtema}</span>`;
                 html += ` ┋ `;
-                
-                if (enlaceUrl && (enlaceUrl.startsWith("http://") || enlaceUrl.startsWith("https://"))) {
-                    html += `<a href="${enlaceUrl}" target="_blank" rel="noopener noreferrer nofollow">${enlaceUrl}</a>`;
-                } else {
-                    html += `${enlaceUrl}`;
-                }
-                
+                html += `<a href="${entry.url}" target="_blank" rel="noopener noreferrer nofollow">${entry.url}</a>`;
                 html += ` ┋ `;
-                
-                const shareUrl = generarTwitterShareUrl(ent, construirTextoPlano(ent));
-                html += `<a href="${shareUrl}" target="_blank" rel="noopener noreferrer nofollow">${identificador}</a>`;
-                
+                html += `<a href="${getTwitterShareUrl(entry, getPlainText(entry))}" target="_blank" rel="noopener noreferrer nofollow">${entry.id}</a>`;
                 html += `</p>`;
                 html += `</div>`;
             }
-            container.innerHTML = html;
+            resultadosDiv.innerHTML = html;
         }
-
-        const inputSearch = document.getElementById("inputBusqueda");
-        const container = document.getElementById("resultadosContainer");
-
-        inputSearch.addEventListener("keypress", (event) => {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                const query = inputSearch.value.trim();
+        
+        searchBox.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                const query = searchBox.value.trim();
                 if (query === "") {
-                    if (entidades.length) {
-                        container.innerHTML = `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
-                    }
+                    resultadosDiv.innerHTML = `✅ ${allEntries.length} entradas cargadas.`;
                     return;
                 }
-                const resultados = buscarGlobal(query);
-                renderizarResultados(resultados);
+                showResults(searchGlobal(query));
             }
         });
-
-        container.addEventListener("click", async (e) => {
-            let temaElem = e.target.closest(".tema-clicable");
-            if (temaElem) {
-                e.preventDefault();
-                const temaValue = temaElem.getAttribute("data-temaaccion");
-                if (temaValue) {
-                    const resultadosTema = buscarPorTemaExacto(temaValue);
-                    renderizarResultados(resultadosTema);
-                    inputSearch.value = temaValue;
+        
+        resultadosDiv.addEventListener("click", (e) => {
+            const themeSpan = e.target.closest(".tema-click");
+            if (themeSpan) {
+                const theme = themeSpan.getAttribute("data-theme");
+                if (theme) {
+                    showResults(searchByTheme(theme));
+                    searchBox.value = theme;
                 }
                 return;
             }
-
-            let copiarElem = e.target.closest(".subtema-copiar");
-            if (copiarElem) {
-                e.preventDefault();
-                let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
-                if (textoCompleto) {
-                    await copiarTexto(textoCompleto);
-                }
-                return;
+            
+            const copySpan = e.target.closest(".subtema-copy");
+            if (copySpan) {
+                const text = copySpan.getAttribute("data-text");
+                if (text) copyToClipboard(text);
             }
         });
     </script>
