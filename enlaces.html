@@ -10,6 +10,7 @@
     <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER">
     <div id="resultadosContainer">Cargando base de datos...</div>
 
+    <script src="enlaces.js"></script>
     <script>
         let entidades = [];
 
@@ -25,6 +26,14 @@
                 url: partes[2] || "",
                 id: partes[3] || ""
             };
+        }
+
+        if (typeof enlaces !== 'undefined' && Array.isArray(enlaces)) {
+            entidades = enlaces.map(parseEntrada);
+            const container = document.getElementById("resultadosContainer");
+            container.innerHTML = `✅ Cargadas ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
+        } else {
+            document.getElementById("resultadosContainer").innerHTML = "Error: No se encontró el archivo enlaces.js";
         }
 
         function buscarGlobal(query) {
@@ -131,34 +140,18 @@
         const inputSearch = document.getElementById("inputBusqueda");
         const container = document.getElementById("resultadosContainer");
 
-        fetch('https://cdn.jsdelivr.net/gh/jucardus/jucardus.github.io@main/enlaces.js')
-            .then(response => response.text())
-            .then(data => {
-                const match = data.match(/var enlaces = (\[[\s\S]*?\]);/);
-                if (match && match[1]) {
-                    const enlacesArray = eval(match[1]);
-                    entidades = enlacesArray.map(parseEntrada);
-                    container.innerHTML = `✅ Cargadas ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
-                    inputSearch.disabled = false;
-                } else {
-                    container.innerHTML = "Error: No se pudo parsear enlaces.js";
-                }
-            })
-            .catch(error => {
-                console.error(error);
-                container.innerHTML = "Error: No se pudo cargar enlaces.js. Verifica tu conexión o que el archivo exista.";
-            });
-
         inputSearch.addEventListener("keypress", (event) => {
             if (event.key === "Enter") {
                 event.preventDefault();
                 const query = inputSearch.value.trim();
                 if (query === "") {
-                    container.innerHTML = entidades.length ? `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.` : "Cargando base de datos...";
+                    if (entidades.length) {
+                        container.innerHTML = `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
+                    }
                     return;
                 }
                 if (!entidades.length) {
-                    container.innerHTML = "La base de datos aún se está cargando. Espera un momento...";
+                    container.innerHTML = "La base de datos aún se está cargando...";
                     return;
                 }
                 const resultados = buscarGlobal(query);
