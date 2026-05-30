@@ -1,19 +1,176 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0.3;url=https://jucardus.github.io">
-    <title>Redirecting...</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-44Y9CNCHR8');
-      setTimeout(() => window.location.href="https://jucardus.github.io", 300);
-    </script>
+<style>
+  a:link, a:visited, a:active {
+    color: #f5f5f5;
+    opacity: 1;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  a:hover, a:focus {
+    color: Cyan;
+    opacity: 1;
+    word-break: break-all;
+    }
+  a.buscadores {
+    word-break: revert !important;
+  }
+  body {
+    background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+    color: #b7c6cc;
+    color: #d3dce0;
+    color: WhiteSmoke;
+    font-family: 'Ubuntu';
+    font-size: 100%;
+    letter-spacing: 1.1px;
+    line-height: 1.5;
+    padding: 25px 23% 100px 22%;
+  }
+  .textual {
+    color: #f5f5f5;
+    text-decoration: none;
+    word-break: revert;
+  }
+  .textual:hover {
+    color: Cyan;
+    cursor: pointer;
+  }
+  #favicones:hover {
+    cursor: pointer;
+  }
+  img#favicones {
+    border-radius: 2px;
+    float: left;
+    width: 22px;
+    margin: 0px 8px 10px 0px;
+    }
+  .rebusca:hover {
+    color: Cyan;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
-    <p>Redirecting... <a href="https://jucardus.github.io">(Click here if not redirected)</a></p>
+
+<h1>Enlaces</h1>
+
+<h2>[ EN RECONSTRUCCIÓN ]</h2>
+
+  <form> 
+    <input type="text" autocomplete="off" placeholder="" size="21" id="textInput" onkeydown="teclaBuscar(event)" />
+    <!--button id="boton" type="button" onclick="inicio()">🔍</button-->
+  </form>
+
+  <div id='mostrar'></div>
+  
+<script src="enlaces.js"></script>
+
+<script>
+
+  window.onload = function() {
+    document.getElementById("textInput").focus();
+  };
+
+  function teclaBuscar(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      iniciarBusca();
+    }
+  }
+
+  function iniciarBusca() {
+    let recibido = document.getElementById("textInput").value;
+    document.getElementById('mostrar').innerHTML = '[ BUSCANDO ]';
+    buscar(recibido);
+  }
+
+  function buscar(recibido) {
+    var array = enlaces;
+    var resultados = [];
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].indexOf(recibido) >= 0) {
+          var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
+                                                 .replace(/\'/g,'[[[comilla]]]')
+                                                 .replace(/\"/g,'[[[comillas]]]')
+                                                 .replace(/\&/g,'[[[et]]]')
+                                                 .replace(/</g,'[[[menor]]]')
+                                                 .replace(/>/g,'[[[mayor]]]');
+            if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
+          var plainText = array[i]
+                          .replace(/▓/g,'')
+                          .replace(/▒/g,' ┋ ')
+                          .replace(/<[^>]*>/g, '')
+                          .replace(/\s+/g, ' ')
+                          .trim();
+          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
+          var textual = plainText
+                        .replace(/&/g, '[[[et]]]')
+                        .replace(/'/g, '[[[comilla]]]')
+                        .replace(/"/g, '[[[comillas]]]')
+                        .replace(/</g, '[[[menor]]]')
+                        .replace(/>/g, '[[[mayor]]]')
+                        .replace(/ -- /g,' — ')
+                        .replace(/ --/g,' —')
+                        .replace(/-- /g,'— ')
+                        .replace(/ /g, '[[[espacio]]]') + '​‍';
+          var linea = array[i].toString().replace(/▓/g,'').split('▒');
+            var tema = linea[0];
+              var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
+                                          .replace(/\'/g,'[[[comilla]]]')
+                                          .replace(/\"/g,'[[[comillas]]]')
+                                          .replace(/\&/g,'[[[et]]]')
+                                          .replace(/</g,'[[[menor]]]')
+                                          .replace(/>/g,'[[[mayor]]]') + '▒';
+            var subtema = linea[1];
+            var url = linea[2];
+              var dominio = url?.replace(/.*\:\/\//g,'');
+                var dominio = dominio?.replace(/\/.*/g,'');
+                if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
+                if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
+                if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
+                if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
+                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
+                if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
+                  var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
+                  var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';} else {
+                    var thumbYT = "";
+                  }
+            var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
+            var id = linea[3];
+            var orden = tema + subtema;
+              var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
+          var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' ┋ ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' ┋ ' + enlace + ' ┋ ' + id + '</p>';
+          resultados.push(nuevaLinea.replace(/ -- /g,' — '));
+        }
+    }
+    resultados = resultados.sort((a, b) => a.localeCompare(b));
+    resultados = [...new Set(resultados)];
+    resultados = resultados.filter(Boolean);
+    var enviar = resultados.join('<p>');
+    document.getElementById('mostrar').innerHTML = enviar;
+  }
+  
+  function copiar(paraCopiar) {
+    const textoDecodificado = paraCopiar
+      .replace(/\[\[\[espacio\]\]\]/g, ' ')
+      .replace(/\[\[\[comilla\]\]\]/g, "'")
+      .replace(/\[\[\[comillas\]\]\]/g, '"')
+      .replace(/\[\[\[et\]\]\]/g, '&')
+      .replace(/\[\[\[menor\]\]\]/g, '<')
+      .replace(/\[\[\[mayor\]\]\]/g, '>')
+      .replace(/ ┋ jucardus.*/g,'');
+    navigator.clipboard.writeText(textoDecodificado);
+    const ta = document.createElement('textarea');
+    ta.value = textoDecodificado;
+    ta.style.position = 'fixed';
+    ta.style.opacity = 0;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+
+</script>
+
 </body>
 </html>
