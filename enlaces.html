@@ -2,19 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Buscador</title>
+    <title>Enlaces - Buscador</title>
 </head>
 <body>
     <h1>Buscador</h1>
-    <input type="text" id="searchBox" placeholder="Escribe y presiona ENTER" autocomplete="off">
+    <input type="text" id="searchBox" placeholder="Escribe y presiona ENTER">
     <div id="resultados"></div>
 
     <script src="enlaces.js"></script>
     <script>
         const searchBox = document.getElementById('searchBox');
         const resultadosDiv = document.getElementById('resultados');
-        
-        let allEntries = [];
         
         function parseEntry(raw) {
             let inner = raw.trim();
@@ -30,71 +28,41 @@
             };
         }
         
+        let entries = [];
         if (typeof enlaces !== 'undefined') {
-            allEntries = enlaces.map(parseEntry);
-            resultadosDiv.innerHTML = `✅ ${allEntries.length} entradas cargadas.`;
+            entries = enlaces.map(parseEntry);
+            resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
+        } else {
+            resultadosDiv.innerHTML = "Error: no se encontró enlaces.js";
         }
         
-        function searchGlobal(query) {
+        function search(query) {
             if (!query) return [];
-            const lowerQuery = query.toLowerCase();
-            return allEntries.filter(entry => {
-                return entry.tema.toLowerCase().includes(lowerQuery) ||
-                       entry.subtema.toLowerCase().includes(lowerQuery) ||
-                       entry.url.toLowerCase().includes(lowerQuery) ||
-                       entry.id.toLowerCase().includes(lowerQuery);
+            const q = query.toLowerCase();
+            return entries.filter(e => {
+                return e.tema.toLowerCase().includes(q) ||
+                       e.subtema.toLowerCase().includes(q) ||
+                       e.url.toLowerCase().includes(q) ||
+                       e.id.toLowerCase().includes(q);
             });
         }
         
-        function searchByTheme(theme) {
-            if (!theme) return [];
-            return allEntries.filter(entry => entry.tema === theme);
-        }
-        
-        function getPlainText(entry) {
-            return `${entry.tema} ┋ ${entry.subtema} ┋ ${entry.url} ┋ ${entry.id}`;
-        }
-        
-        function getTwitterShareUrl(entry, text) {
-            const maxLen = 280;
-            let shareText = text;
-            if (shareText.length > maxLen) {
-                const withoutSubtema = `${entry.tema} ┋  ┋ ${entry.url} ┋ ${entry.id}`;
-                const available = maxLen - (withoutSubtema.length + 3);
-                if (available > 0) {
-                    let shortSubtema = entry.subtema.slice(0, available);
-                    if (shortSubtema.length < entry.subtema.length) shortSubtema += "...";
-                    shareText = `${entry.tema} ┋ ${shortSubtema} ┋ ${entry.url} ┋ ${entry.id}`;
-                } else {
-                    shareText = withoutSubtema;
-                }
-            }
-            return `https://x.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
-        }
-        
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text);
-        }
-        
-        function showResults(results) {
-            if (!results.length) {
+        function render(results) {
+            if (results.length === 0) {
                 resultadosDiv.innerHTML = "Ninguna coincidencia";
                 return;
             }
-            
             let html = "";
-            for (const entry of results) {
-                html += `<div>`;
-                html += `<p>`;
-                html += `<span class="tema-click" data-theme="${entry.tema.replace(/"/g, '&quot;')}">${entry.tema}</span>`;
+            for (let e of results) {
+                html += `<div><p>`;
+                html += `<span class="tema" data-tema="${e.tema.replace(/"/g, '&quot;')}">${e.tema}</span>`;
                 html += ` ┋ `;
-                html += `<span class="subtema-copy" data-text="${getPlainText(entry).replace(/"/g, '&quot;')}">${entry.subtema}</span>`;
+                html += `<span class="copy" data-text="${e.tema} ┋ ${e.subtema} ┋ ${e.url} ┋ ${e.id}".replace(/"/g, '&quot;')">${e.subtema}</span>`;
                 html += ` ┋ `;
-                html += `<a href="${entry.url}" target="_blank" rel="noopener noreferrer nofollow">${entry.url}</a>`;
+                html += `<a href="${e.url}" target="_blank">${e.url}</a>`;
                 html += ` ┋ `;
-                html += `<a href="${getTwitterShareUrl(entry, getPlainText(entry))}" target="_blank" rel="noopener noreferrer nofollow">${entry.id}</a>`;
-                html += `</p>`;
-                html += `</div>`;
+                html += `<a href="https://x.com/intent/tweet?text=${encodeURIComponent(e.tema + ' ┋ ' + e.subtema + ' ┋ ' + e.url + ' ┋ ' + e.id)}" target="_blank">${e.id}</a>`;
+                html += `</p></div>`;
             }
             resultadosDiv.innerHTML = html;
         }
@@ -103,28 +71,25 @@
             if (e.key === "Enter") {
                 const query = searchBox.value.trim();
                 if (query === "") {
-                    resultadosDiv.innerHTML = `✅ ${allEntries.length} entradas cargadas.`;
+                    resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
                     return;
                 }
-                showResults(searchGlobal(query));
+                render(search(query));
             }
         });
         
         resultadosDiv.addEventListener("click", (e) => {
-            const themeSpan = e.target.closest(".tema-click");
-            if (themeSpan) {
-                const theme = themeSpan.getAttribute("data-theme");
-                if (theme) {
-                    showResults(searchByTheme(theme));
-                    searchBox.value = theme;
-                }
+            const temaSpan = e.target.closest(".tema");
+            if (temaSpan) {
+                const tema = temaSpan.getAttribute("data-tema");
+                render(entries.filter(e => e.tema === tema));
+                searchBox.value = tema;
                 return;
             }
-            
-            const copySpan = e.target.closest(".subtema-copy");
+            const copySpan = e.target.closest(".copy");
             if (copySpan) {
                 const text = copySpan.getAttribute("data-text");
-                if (text) copyToClipboard(text);
+                if (text) navigator.clipboard.writeText(text);
             }
         });
     </script>
