@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador</title>
 </head>
 <body>
@@ -26,13 +25,6 @@
                 url: partes[2] || "",
                 id: partes[3] || ""
             };
-        }
-
-        if (typeof enlaces !== 'undefined' && Array.isArray(enlaces)) {
-            entidades = enlaces.map(parseEntrada);
-            document.getElementById("resultadosContainer").innerHTML = `✅ Cargadas ${entidades.length} entradas.`;
-        } else {
-            document.getElementById("resultadosContainer").innerHTML = "Error: No se encontró el archivo enlaces.js";
         }
 
         function buscarGlobal(query) {
@@ -138,6 +130,19 @@
 
         const inputSearch = document.getElementById("inputBusqueda");
         const container = document.getElementById("resultadosContainer");
+
+        function inicializarBuscador() {
+            if (typeof enlaces !== 'undefined' && Array.isArray(enlaces)) {
+                entidades = enlaces.map(parseEntrada);
+                container.innerHTML = `✅ Cargadas ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
+                inputSearch.disabled = false;
+                inputSearch.focus();
+            } else {
+                setTimeout(inicializarBuscador, 100);
+            }
+        }
+
+        inicializarBuscador();
 
         inputSearch.addEventListener("keypress", (event) => {
             if (event.key === "Enter") {
