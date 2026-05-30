@@ -12,20 +12,8 @@
     <div id="resultadosContainer"></div>
 
     <script>
-        // Base de datos directamente incorporada
-        let enlaces = [
-            "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
-            "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
-            "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza. ~ Papa León XIV▒jucardus▒3z65i5h8▓",
-            "▓citas▒Aunque no te ocupes de la política, ella se ocupará de ti. ~ Yves Montand▒jucardus▒isyf3cgd▓",
-            "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. ~ William Shakespeare▒jucardus▒7lkosc7d▓",
-            "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▒mp6rnkqh▓",
-            "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos. ~ Benjamin Franklin▒jucardus▒46ucl3tu▓",
-            "▓vocabulario español▒mascullar▒https://dle.rae.es/mascullar▒y53po4w8▓"
-        ];
-
-        // Parsear todas las entradas
-        let entidades = enlaces.map(parseEntrada);
+        let entidades = [];
+        let datosCargados = false;
 
         function parseEntrada(rawEntry) {
             let inner = rawEntry.trim();
@@ -38,21 +26,19 @@
                     tema: partes[0] || "",
                     subtema: partes[1] || "",
                     url: partes[2] || "",
-                    id: partes[3] || "",
-                    raw: rawEntry
+                    id: partes[3] || ""
                 };
             }
             return {
                 tema: partes[0] || "",
                 subtema: partes[1] || "",
                 url: partes[2] || "",
-                id: partes[3] || "",
-                raw: rawEntry
+                id: partes[3] || ""
             };
         }
 
         function buscarGlobal(query) {
-            if (!query) return [];
+            if (!query || !entidades.length) return [];
             const lowerQuery = query.toLowerCase();
             return entidades.filter(ent => {
                 return ent.tema.toLowerCase().includes(lowerQuery) ||
@@ -63,7 +49,7 @@
         }
 
         function buscarPorTemaExacto(temaBuscado) {
-            if (!temaBuscado) return [];
+            if (!temaBuscado || !entidades.length) return [];
             return entidades.filter(ent => ent.tema === temaBuscado);
         }
 
@@ -152,50 +138,99 @@
             container.innerHTML = html;
         }
 
-        // Configurar evento de búsqueda
+        function cargarBaseDeDatos() {
+            return new Promise((resolve, reject) => {
+                // Verificar si ya existe window.enlaces
+                if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
+                    resolve(window.enlaces);
+                    return;
+                }
+                
+                // Intentar cargar enlaces.js
+                const script = document.createElement('script');
+                script.src = 'enlaces.js';
+                script.onload = () => {
+                    if (typeof window.enlaces !== 'undefined' && Array.isArray(window.enlaces)) {
+                        resolve(window.enlaces);
+                    } else {
+                        reject(new Error("enlaces.js no define window.enlaces"));
+                    }
+                };
+                script.onerror = () => {
+                    reject(new Error("No se encontró enlaces.js"));
+                };
+                document.head.appendChild(script);
+            });
+        }
+
+        async function inicializar() {
+            const container = document.getElementById("resultadosContainer");
+            const inputSearch = document.getElementById("inputBusqueda");
+            
+            try {
+                const enlacesData = await cargarBaseDeDatos();
+                entidades = enlacesData.map(parseEntrada);
+                datosCargados = true;
+                inputSearch.disabled = false;
+                container.innerHTML = "";
+                console.log(`Cargadas ${entidades.length} entradas`);
+            } catch (error) {
+                console.error(error);
+                container.innerHTML = `Error: No se pudo cargar enlaces.js - ${error.message}`;
+                inputSearch.disabled = true;
+            }
+        }
+
+        // Eventos
         const inputSearch = document.getElementById("inputBusqueda");
         const container = document.getElementById("resultadosContainer");
 
-        inputSearch.addEventListener("keypress", (event) => {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                const query = inputSearch.value.trim();
-                if (query === "") {
-                    container.innerHTML = ``;
+        if (inputSearch) {
+            inputSearch.addEventListener("keypress", (event) => {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    const query = inputSearch.value.trim();
+                    if (query === "") {
+                        container.innerHTML = ``;
+                        return;
+                    }
+                    if (!datosCargados) {
+                        container.innerHTML = `Cargando base de datos...`;
+                        return;
+                    }
+                    const resultados = buscarGlobal(query);
+                    renderizarResultados(resultados);
+                }
+            });
+        }
+
+        if (container) {
+            container.addEventListener("click", async (e) => {
+                let temaElem = e.target.closest(".tema-clicable");
+                if (temaElem) {
+                    e.preventDefault();
+                    const temaValue = temaElem.getAttribute("data-temaaccion");
+                    if (temaValue && datosCargados) {
+                        const resultadosTema = buscarPorTemaExacto(temaValue);
+                        renderizarResultados(resultadosTema);
+                        inputSearch.value = temaValue;
+                    }
                     return;
                 }
-                const resultados = buscarGlobal(query);
-                renderizarResultados(resultados);
-            }
-        });
 
-        // Configurar clics en elementos dinámicos
-        container.addEventListener("click", async (e) => {
-            let temaElem = e.target.closest(".tema-clicable");
-            if (temaElem) {
-                e.preventDefault();
-                const temaValue = temaElem.getAttribute("data-temaaccion");
-                if (temaValue) {
-                    const resultadosTema = buscarPorTemaExacto(temaValue);
-                    renderizarResultados(resultadosTema);
-                    inputSearch.value = temaValue;
+                let copiarElem = e.target.closest(".subtema-copiar");
+                if (copiarElem) {
+                    e.preventDefault();
+                    let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
+                    if (textoCompleto) {
+                        await copiarTexto(textoCompleto);
+                    }
+                    return;
                 }
-                return;
-            }
+            });
+        }
 
-            let copiarElem = e.target.closest(".subtema-copiar");
-            if (copiarElem) {
-                e.preventDefault();
-                let textoCompleto = copiarElem.getAttribute("data-copiarcompleto");
-                if (textoCompleto) {
-                    await copiarTexto(textoCompleto);
-                }
-                return;
-            }
-        });
-
-        // Mensaje inicial
-        container.innerHTML = ``;
+        inicializar();
     </script>
 </body>
 </html>
