@@ -9,7 +9,7 @@
     <input type="text" id="searchBox" placeholder="Escribe y presiona ENTER">
     <div id="resultados"></div>
 
-    <script src="https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/enlaces.js"></script>
+    <script src="enlaces.js"></script>
     <script>
         const searchBox = document.getElementById('searchBox');
         const resultadosDiv = document.getElementById('resultados');
@@ -28,14 +28,8 @@
             };
         }
         
-        let entries = [];
-        
-        if (typeof enlaces !== 'undefined') {
-            entries = enlaces.map(parseEntry);
-            resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
-        } else {
-            resultadosDiv.innerHTML = "Error: no se encontró enlaces.js";
-        }
+        const entries = enlaces.map(parseEntry);
+        resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
         
         function search(query) {
             if (!query) return [];
