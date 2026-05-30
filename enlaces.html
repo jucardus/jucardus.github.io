@@ -8,7 +8,7 @@
 <body>
     <h1>Buscador</h1>
     <input type="text" id="inputBusqueda" placeholder="Escribe y presiona ENTER">
-    <div id="resultadosContainer"></div>
+    <div id="resultadosContainer">Cargando base de datos...</div>
 
     <script>
         let entidades = [];
@@ -131,14 +131,14 @@
         const inputSearch = document.getElementById("inputBusqueda");
         const container = document.getElementById("resultadosContainer");
 
-        fetch('https://raw.githubusercontent.com/jucardus/jucardus.github.io/main/enlaces.js')
+        fetch('https://cdn.jsdelivr.net/gh/jucardus/jucardus.github.io@main/enlaces.js')
             .then(response => response.text())
             .then(data => {
                 const match = data.match(/var enlaces = (\[[\s\S]*?\]);/);
                 if (match && match[1]) {
                     const enlacesArray = eval(match[1]);
                     entidades = enlacesArray.map(parseEntrada);
-                    container.innerHTML = `Cargadas ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
+                    container.innerHTML = `✅ Cargadas ${entidades.length} entradas. Escribe algo y presiona ENTER.`;
                     inputSearch.disabled = false;
                 } else {
                     container.innerHTML = "Error: No se pudo parsear enlaces.js";
@@ -146,7 +146,7 @@
             })
             .catch(error => {
                 console.error(error);
-                container.innerHTML = "Error: No se pudo cargar enlaces.js desde GitHub";
+                container.innerHTML = "Error: No se pudo cargar enlaces.js. Verifica tu conexión o que el archivo exista.";
             });
 
         inputSearch.addEventListener("keypress", (event) => {
@@ -154,7 +154,11 @@
                 event.preventDefault();
                 const query = inputSearch.value.trim();
                 if (query === "") {
-                    container.innerHTML = "";
+                    container.innerHTML = entidades.length ? `✅ ${entidades.length} entradas. Escribe algo y presiona ENTER.` : "Cargando base de datos...";
+                    return;
+                }
+                if (!entidades.length) {
+                    container.innerHTML = "La base de datos aún se está cargando. Espera un momento...";
                     return;
                 }
                 const resultados = buscarGlobal(query);
