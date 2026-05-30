@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Enlaces - Buscador</title>
+    <title>Buscador</title>
 </head>
 <body>
     <h1>Buscador</h1>
     <input type="text" id="searchBox" placeholder="Escribe y presiona ENTER">
     <div id="resultados"></div>
 
-    <script src="enlaces.js"></script>
+    <script src="/enlaces.js"></script>
     <script>
         const searchBox = document.getElementById('searchBox');
         const resultadosDiv = document.getElementById('resultados');
@@ -29,6 +29,7 @@
         }
         
         let entries = [];
+        
         if (typeof enlaces !== 'undefined') {
             entries = enlaces.map(parseEntry);
             resultadosDiv.innerHTML = entries.length + " entradas cargadas.";
@@ -54,14 +55,15 @@
             }
             let html = "";
             for (let e of results) {
+                const plainText = `${e.tema} ┋ ${e.subtema} ┋ ${e.url} ┋ ${e.id}`;
                 html += `<div><p>`;
                 html += `<span class="tema" data-tema="${e.tema.replace(/"/g, '&quot;')}">${e.tema}</span>`;
                 html += ` ┋ `;
-                html += `<span class="copy" data-text="${e.tema} ┋ ${e.subtema} ┋ ${e.url} ┋ ${e.id}".replace(/"/g, '&quot;')">${e.subtema}</span>`;
+                html += `<span class="copy" data-text="${plainText.replace(/"/g, '&quot;')}">${e.subtema}</span>`;
                 html += ` ┋ `;
-                html += `<a href="${e.url}" target="_blank">${e.url}</a>`;
+                html += `<a href="${e.url}" target="_blank" rel="noopener noreferrer nofollow">${e.url}</a>`;
                 html += ` ┋ `;
-                html += `<a href="https://x.com/intent/tweet?text=${encodeURIComponent(e.tema + ' ┋ ' + e.subtema + ' ┋ ' + e.url + ' ┋ ' + e.id)}" target="_blank">${e.id}</a>`;
+                html += `<a href="https://x.com/intent/tweet?text=${encodeURIComponent(plainText)}" target="_blank" rel="noopener noreferrer nofollow">${e.id}</a>`;
                 html += `</p></div>`;
             }
             resultadosDiv.innerHTML = html;
