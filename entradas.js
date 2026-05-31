@@ -67,6 +67,7 @@ var entradas = [
   "▓plead [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/l/e/plead-v▓",
   "▓plein-cintre [m.c.] – Sustantivos franceses, Sustantivos franceses compuestos, Sustantivos franceses masculinos, Vocabulario francés - P▒https://jucardus.github.io/p/l/e/plein-cintre-mc▓",
   "▓pretender [v.] – Diccionario multilingüe - P, Verbos multilingües▒https://jucardus.github.io/p/r/e/pretender-v▓",
+  "▓Pronto tendremos casas completas de plásticos... – Reflexiones▒https://jucardus.github.io/p/r/o/pronto-tendremos-casas-completas-de-plasticos▓",
   "▓purport [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/u/r/purport-v▓",
   "▓quagmire [s.] – Sustantivos ingleses, Vocabulario inglés - Q▒https://jucardus.github.io/q/u/a/quagmire-s▓",
   "▓quoique [conj.] – Conjunciones francesas, Vocabulario francés - Q▒https://jucardus.github.io/q/u/o/quoique-conj▓",
