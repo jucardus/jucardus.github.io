@@ -1,5 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-44Y9CNCHR8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Enlaces varios.">
+    <meta name="author" content="Jucardus ©">
+    <meta name="keywords" content="enlaces, vínculos, hipervínculos, páginas favoritas, sitios favoritos">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Enlaces | Jucardus.com</title>
+</head>
 <style>
 
   a:link, a:visited, a:active {
@@ -116,7 +132,7 @@
   .temaBusca:hover {
     color: Cyan;
     cursor: pointer;
-  }
+    }
       
   .textual {
     text-decoration: none;
@@ -203,6 +219,29 @@
       text-decoration: none;
   }
 
+  /* Estilos mínimos para la paginación (sin CSS adicional que modifique la apariencia) */
+  .paginacion {
+    line-height: 1.4;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .paginas {
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+  }
+
+  .paginas:hover {
+    background-color: color-mix(in srgb, DarkSlateGray, White 20%);
+  }
+
+  .paginas.activa {
+    background-color: color-mix(in srgb, DarkSlateGray, White 20%);
+  }
+
 </style>
 </head>
 <body>
@@ -230,9 +269,9 @@
   <ul>
     <li><b>Autor:</b> Jucardus ©</li>
     <li><b>Contacto:</b> jucardus en gmail punto com</li>
-    <li><b>Enlace corto:</b> jucardus.com</li>
     <li><b>Base de datos:</b> <a href="https://drive.google.com/file/d/17bQhK95GvkA8WMnZSMjot_ESZ6h3wvGa/preview" target="_blank" rel="noopener noreferrer nofollow">drive.google.com/file... ↗</a></li>
     <li><b>Mis sitios web:</b> <span class="textual" onclick="rebuscar('▓mis[[[espacio]]]sitios▒')">¡Clícame!</span></li>
+    <li><b>Sitio central:</b> <a href="https://jucardus.github.io" target="_blank" rel="noopener noreferrer nofollow">Jucardus.com</a></li>
   </ul>
   <h3>Aclaraciones</h3>
   <ul>
@@ -268,6 +307,12 @@
 <script src="enlaces.js"></script>
 
 <script>
+
+  // Variables globales para la paginación
+  let currentPage = 1;
+  let currentResults = [];
+  let currentBuscadoresHTML = '';
+  let resultadosPorPagina = 10; // Número de resultados por página
 
   window.addEventListener('load', function() {
     var input = document.getElementById("textInput");
@@ -373,30 +418,73 @@
     buscar(recibido);
   }
 
+  // Función para mostrar la página actual de resultados
+  function mostrarPagina(page) {
+    if (!currentResults.length) return;
+    
+    const start = (page - 1) * resultadosPorPagina;
+    const end = start + resultadosPorPagina;
+    const resultadosPagina = currentResults.slice(start, end);
+    
+    let html = currentBuscadoresHTML;
+    html += resultadosPagina.join('');
+    
+    // Añadir paginación si hay más de una página
+    const totalPages = Math.ceil(currentResults.length / resultadosPorPagina);
+    if (totalPages > 1) {
+      html += '<div class="paginacion">';
+      for (let i = 1; i <= totalPages; i++) {
+        // Añadir clase 'activa' si es la página actual
+        const activa = (i === page) ? ' activa' : '';
+        html += `<span class="paginas${activa}" data-page="${i}">${i}</span>`;
+      }
+      html += '</div>';
+    }
+    
+    document.getElementById('mostrar').innerHTML = html;
+    
+    // Asignar eventos a los números de página
+    const paginasSpans = document.querySelectorAll('.paginas');
+    paginasSpans.forEach(span => {
+      span.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const paginaNum = parseInt(span.getAttribute('data-page'));
+        if (!isNaN(paginaNum)) {
+          currentPage = paginaNum;
+          mostrarPagina(currentPage);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          document.getElementById("textInput").focus();
+          document.getElementById("textInput").select();
+        }
+      });
+    });
+  }
+
   function buscar(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
     }
     var recibidoBuscadores = recibido.replace(/ /g,'%20');
+    var buscadoresHTML = '';
     if (recibido.length >= 1 && recibido != ' ' && recibido != '  ') {
       var buscadores = '<div id="buscadores">';
-      var buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
-      var buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
-      var buscadoresHTML = '<div id="buscadores">' + buscadores + '</div>';
+      buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
+      buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
+      buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
+      buscadoresHTML = '<div id="buscadores">' + buscadores + '</div>';
     }
     var array = enlaces;
     var resultados = [];
@@ -476,9 +564,19 @@
     resultados = resultados.sort((a, b) => a.localeCompare(b));
     resultados = [...new Set(resultados)];
     resultados = resultados.filter(Boolean);
-    var enviar = resultados.join('');
-    if (enviar.indexOf('┋') == -1) {enviar = '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';}
-    document.getElementById('mostrar').innerHTML = buscadoresHTML + enviar;
+    
+    if (resultados.length === 0) {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      return;
+    }
+    
+    // Guardar resultados y el HTML de buscadores para la paginación
+    currentResults = resultados;
+    currentBuscadoresHTML = buscadoresHTML;
+    currentPage = 1;
+    
+    // Mostrar primera página
+    mostrarPagina(1);
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
@@ -530,6 +628,8 @@
   
   function botonArriba() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").select();
   }
   
   function extraerTemas() {
