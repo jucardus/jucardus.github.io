@@ -1,8 +1,8 @@
 var enlaces = [
+  "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza.▒Papa León XIV▒s8ahw2dp▓",
   "▓citas▒Una nación de ovejas pronto tendrá un gobierno de lobos.▒Edward R. Murrow▒l3poots1▓",
   "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
   "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
-  "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza. ~ Papa León XIV▒jucardus▒3z65i5h8▓",
   "▓citas▒Aunque no te ocupes de la política, ella se ocupará de ti. ~ Yves Montand▒jucardus▒isyf3cgd▓",
   "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento. ~ William Shakespeare▒jucardus▒7lkosc7d▓",
   "▓citas▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa. ~ Marie Louise de la Ramée▒jucardus▒mp6rnkqh▓",
