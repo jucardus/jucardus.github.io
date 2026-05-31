@@ -219,7 +219,6 @@
       text-decoration: none;
   }
 
-  /* Estilos mínimos para la paginación (sin CSS adicional que modifique la apariencia) */
   .paginacion {
     line-height: 1.4;
     margin-top: 30px;
@@ -250,7 +249,6 @@
 
   <form> 
     <input type="text" autocomplete="off" placeholder="Escribe aquí..." size="21" id="textInput" onkeydown="teclaBuscar(event)" />
-    <!--button id="boton" type="button" onclick="inicio()">🔍</button-->
   </form>
 
 <div id='mostrar'></div>
@@ -308,157 +306,80 @@
 
 <script>
 
-  // Variables globales para la paginación
   let currentPage = 1;
   let currentResults = [];
   let currentBuscadoresHTML = '';
-  let resultadosPorPagina = 10; // Número de resultados por página
+  let resultadosPorPagina = 10;
+  let queryProcesado = false;
 
   window.addEventListener('load', function() {
     var input = document.getElementById("textInput");
     
-    // Procesar query parameters al cargar la página
-    procesarQueryParams();
-    
-    input.focus();
-    input.select();
-    recientes();
+    // Pequeño retraso para asegurar que enlaces.js esté cargado
+    setTimeout(function() {
+      if (!queryProcesado) {
+        procesarQueryParams();
+      }
+      input.focus();
+      input.select();
+      if (!queryProcesado) {
+        recientes();
+      }
+    }, 100);
   });
   
-  // Función para procesar los query parameters
   function procesarQueryParams() {
     const urlParams = new URLSearchParams(window.location.search);
     
-    // Verificar si hay parámetro q=
-    if (urlParams.has('q')) {
-      const query = urlParams.get('q');
+    if (urlParams.has('qf')) {
+      const query = urlParams.get('qf');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscar(query, 'normal');
+        buscarFinalExacto(query);
+        queryProcesado = true;
+        return true;
       }
     }
-    // Verificar si hay parámetro qi= (búsqueda al inicio, entre ▓ y ▒)
     else if (urlParams.has('qi')) {
       const query = urlParams.get('qi');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
         buscarInicioExacto(query);
+        queryProcesado = true;
+        return true;
       }
     }
-    // Verificar si hay parámetro qf= (búsqueda al final, entre ▒ y ▓)
-    else if (urlParams.has('qf')) {
-      const query = urlParams.get('qf');
+    else if (urlParams.has('q')) {
+      const query = urlParams.get('q');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscarFinalExacto(query);
+        buscar(query, 'normal');
+        queryProcesado = true;
+        return true;
       }
     }
+    return false;
   }
   
-  // Función para buscar exactamente al inicio (entre ▓ y ▒)
   function buscarInicioExacto(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
     }
     
-    var recibidoBuscadores = recibido.replace(/ /g,'%20');
-    var buscadoresHTML = '';
-    if (recibido.length >= 1 && recibido != ' ' && recibido != '  ') {
-      var buscadores = '<div id="buscadores">';
-      buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
-      buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
-      buscadoresHTML = '<div id="buscadores">' + buscadores + '</div>';
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      return;
     }
     
+    var buscadoresHTML = generarBuscadoresHTML(recibido);
     var array = enlaces;
     var resultados = [];
     var patronBusqueda = '▓' + recibido + '▒';
     
     for (var i = 0; i < array.length; i++) {
-      // Buscar exactamente al inicio (después de ▓ y antes de ▒)
       if (array[i].indexOf(patronBusqueda) === 0) {
-        var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
-                                               .replace(/\'/g,'[[[comilla]]]')
-                                               .replace(/\"/g,'[[[comillas]]]')
-                                               .replace(/\&/g,'[[[et]]]')
-                                               .replace(/</g,'[[[menor]]]')
-                                               .replace(/>/g,'[[[mayor]]]');
-          if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
-        var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
-          var temaT = lineaT[0];
-          var subtemaT = lineaT[1];
-            if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
-          var enlaceT = lineaT[2];
-          var idT = lineaT[3];
-          lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT;
-        var plainTextT = lineaT
-                        .replace(/▓/g,'')
-                        .replace(/▒/g,' ┋ ')
-                        .replace(/<[^>]*>/g, '')
-                        .replace(/\s+/g, ' ')
-                        .trim();
-          var enlaceTuitear = generarTweetUrl(plainTextT);
-        var plainText = array[i]
-                        .replace(/▓/g,'')
-                        .replace(/▒/g,' ┋ ')
-                        .replace(/<[^>]*>/g, '')
-                        .replace(/\s+/g, ' ')
-                        .trim();
-        var textual = plainText
-                      .replace(/&/g, '[[[et]]]')
-                      .replace(/'/g, '[[[comilla]]]')
-                      .replace(/"/g, '[[[comillas]]]')
-                      .replace(/</g, '[[[menor]]]')
-                      .replace(/>/g, '[[[mayor]]]')
-                      .replace(/ -- /g,' — ')
-                      .replace(/ --/g,' —')
-                      .replace(/-- /g,'— ')
-                      .replace(/ /g, '[[[espacio]]]') + '​‍';
-        var linea = array[i].toString().replace(/▓/g,'').split('▒');
-          var tema = linea[0];
-            var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
-                                        .replace(/\'/g,'[[[comilla]]]')
-                                        .replace(/\"/g,'[[[comillas]]]')
-                                        .replace(/\&/g,'[[[et]]]')
-                                        .replace(/</g,'[[[menor]]]')
-                                        .replace(/>/g,'[[[mayor]]]') + '▒';
-          var subtema = linea[1];
-          var url = linea[2];
-            var dominio = url?.replace(/.*\:\/\//g,'');
-              var dominio = dominio?.replace(/\/.*/g,'');
-              if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
-              if (dominio.indexOf('jucardus.github.') >= 0) {dominio = 'https://jucardus.github.io';}
-              if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-              if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-              if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
-                var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-              if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
-                var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-                var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
-              } else {
-                  var thumbYT = "";
-                }
-          var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
-          if (!url.startsWith('http')) {enlace = linea[2];}
-          var id = linea[3];
-          var orden = tema + subtema;
-            var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
-        var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
-        resultados.push(nuevaLinea.replace(/ -- /g,' — '));
+        resultados.push(generarEntradaHTML(array[i]));
       }
     }
     
@@ -479,110 +400,25 @@
     document.getElementById("textInput").select();
   }
   
-  // Función para buscar exactamente al final (entre ▒ y ▓)
   function buscarFinalExacto(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
     }
     
-    var recibidoBuscadores = recibido.replace(/ /g,'%20');
-    var buscadoresHTML = '';
-    if (recibido.length >= 1 && recibido != ' ' && recibido != '  ') {
-      var buscadores = '<div id="buscadores">';
-      buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
-      buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
-      buscadoresHTML = '<div id="buscadores">' + buscadores + '</div>';
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      return;
     }
     
+    var buscadoresHTML = generarBuscadoresHTML(recibido);
     var array = enlaces;
     var resultados = [];
     var patronBusqueda = '▒' + recibido + '▓';
     
     for (var i = 0; i < array.length; i++) {
-      // Buscar exactamente al final (antes de ▒ y después de ▓)
       if (array[i].endsWith(patronBusqueda)) {
-        var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
-                                               .replace(/\'/g,'[[[comilla]]]')
-                                               .replace(/\"/g,'[[[comillas]]]')
-                                               .replace(/\&/g,'[[[et]]]')
-                                               .replace(/</g,'[[[menor]]]')
-                                               .replace(/>/g,'[[[mayor]]]');
-          if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
-        var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
-          var temaT = lineaT[0];
-          var subtemaT = lineaT[1];
-            if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
-          var enlaceT = lineaT[2];
-          var idT = lineaT[3];
-          lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT;
-        var plainTextT = lineaT
-                        .replace(/▓/g,'')
-                        .replace(/▒/g,' ┋ ')
-                        .replace(/<[^>]*>/g, '')
-                        .replace(/\s+/g, ' ')
-                        .trim();
-          var enlaceTuitear = generarTweetUrl(plainTextT);
-        var plainText = array[i]
-                        .replace(/▓/g,'')
-                        .replace(/▒/g,' ┋ ')
-                        .replace(/<[^>]*>/g, '')
-                        .replace(/\s+/g, ' ')
-                        .trim();
-        var textual = plainText
-                      .replace(/&/g, '[[[et]]]')
-                      .replace(/'/g, '[[[comilla]]]')
-                      .replace(/"/g, '[[[comillas]]]')
-                      .replace(/</g, '[[[menor]]]')
-                      .replace(/>/g, '[[[mayor]]]')
-                      .replace(/ -- /g,' — ')
-                      .replace(/ --/g,' —')
-                      .replace(/-- /g,'— ')
-                      .replace(/ /g, '[[[espacio]]]') + '​‍';
-        var linea = array[i].toString().replace(/▓/g,'').split('▒');
-          var tema = linea[0];
-            var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
-                                        .replace(/\'/g,'[[[comilla]]]')
-                                        .replace(/\"/g,'[[[comillas]]]')
-                                        .replace(/\&/g,'[[[et]]]')
-                                        .replace(/</g,'[[[menor]]]')
-                                        .replace(/>/g,'[[[mayor]]]') + '▒';
-          var subtema = linea[1];
-          var url = linea[2];
-            var dominio = url?.replace(/.*\:\/\//g,'');
-              var dominio = dominio?.replace(/\/.*/g,'');
-              if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
-              if (dominio.indexOf('jucardus.github.') >= 0) {dominio = 'https://jucardus.github.io';}
-              if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-              if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-              if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
-                var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-              if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
-                var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-                var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
-              } else {
-                  var thumbYT = "";
-                }
-          var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
-          if (!url.startsWith('http')) {enlace = linea[2];}
-          var id = linea[3];
-          var orden = tema + subtema;
-            var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
-        var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
-        resultados.push(nuevaLinea.replace(/ -- /g,' — '));
+        resultados.push(generarEntradaHTML(array[i]));
       }
     }
     
@@ -602,89 +438,95 @@
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
+  
+  function generarBuscadoresHTML(recibido) {
+    var recibidoBuscadores = recibido.replace(/ /g,'%20');
+    var buscadores = '<div id="buscadores">';
+    buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
+    buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
+    return '<div id="buscadores">' + buscadores + '</div>';
+  }
+  
+  function generarEntradaHTML(entrada) {
+    var copiarEntrada = entrada.toString().replace(/ /g,'[[[espacio]]]')
+                                           .replace(/\'/g,'[[[comilla]]]')
+                                           .replace(/\"/g,'[[[comillas]]]')
+                                           .replace(/\&/g,'[[[et]]]')
+                                           .replace(/</g,'[[[menor]]]')
+                                           .replace(/>/g,'[[[mayor]]]');
+    if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
+    
+    var lineaT = entrada.toString().replace(/▓/g,'').split('▒');
+    var temaT = lineaT[0];
+    var subtemaT = lineaT[1];
+    if (subtemaT && subtemaT.length >= 201) {subtemaT = subtemaT.slice(0, 200) + '...'}
+    var enlaceT = lineaT[2];
+    var idT = lineaT[3];
+    var plainTextT = (temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT).replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    var enlaceTuitear = generarTweetUrl(plainTextT);
+    
+    var plainText = entrada.replace(/▓/g,'').replace(/▒/g,' ┋ ').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    var textual = plainText.replace(/&/g, '[[[et]]]').replace(/'/g, '[[[comilla]]]').replace(/"/g, '[[[comillas]]]').replace(/</g, '[[[menor]]]').replace(/>/g, '[[[mayor]]]').replace(/ -- /g,' — ').replace(/ --/g,' —').replace(/-- /g,'— ').replace(/ /g, '[[[espacio]]]') + '​‍';
+    
+    var linea = entrada.toString().replace(/▓/g,'').split('▒');
+    var tema = linea[0];
+    var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]').replace(/\'/g,'[[[comilla]]]').replace(/\"/g,'[[[comillas]]]').replace(/\&/g,'[[[et]]]').replace(/</g,'[[[menor]]]').replace(/>/g,'[[[mayor]]]') + '▒';
+    var subtema = linea[1];
+    var url = linea[2];
+    
+    var dominio = url?.replace(/.*\:\/\//g,'');
+    dominio = dominio?.replace(/\/.*/g,'');
+    if (dominio == 'jucardus') dominio = 'https://jucardus.github.io';
+    if (dominio && dominio.indexOf('jucardus.github.') >= 0) dominio = 'https://jucardus.github.io';
+    if (dominio == 'youtu.be') dominio = 'www.youtube.com';
+    if (dominio == 'goo.gl') dominio = 'maps.google.com';
+    if (dominio == 'maps.app.goo.gl') dominio = 'maps.google.com';
+    var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
+    
+    var thumbYT = "";
+    if (dominio == 'www.youtube.com' && url && url.indexOf('@') == -1) {
+      var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
+      thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
+    }
+    
+    var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
+    if (!url.startsWith('http')) enlace = linea[2];
+    var id = linea[3];
+    
+    return '<p class="entradas"><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b> <span class="barrita">┋</span> <span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span> <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> <a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a></p>' + thumbYT;
+  }
 
   function recientes() {
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ CARGANDO... ]</span>';
+      return;
+    }
+    
     var contador = 0;
     var array = enlaces;
     var resultados = [];
     for (var i = 0; i < array.length; i++) {
       if (array[i].indexOf('▒') >= 0) {
-          var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
-                                                 .replace(/\'/g,'[[[comilla]]]')
-                                                 .replace(/\"/g,'[[[comillas]]]')
-                                                 .replace(/\&/g,'[[[et]]]')
-                                                 .replace(/</g,'[[[menor]]]')
-                                                 .replace(/>/g,'[[[mayor]]]');
-            if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
-          var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
-            var temaT = lineaT[0];
-            var subtemaT = lineaT[1];
-              if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
-            var enlaceT = lineaT[2];
-            var idT = lineaT[3];
-            lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT;
-          var plainTextT = lineaT
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-            var enlaceTuitear = generarTweetUrl(plainTextT);
-          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
-          var plainText = array[i]
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-          var textual = plainText
-                        .replace(/&/g, '[[[et]]]')
-                        .replace(/'/g, '[[[comilla]]]')
-                        .replace(/"/g, '[[[comillas]]]')
-                        .replace(/</g, '[[[menor]]]')
-                        .replace(/>/g, '[[[mayor]]]')
-                        .replace(/ -- /g,' — ')
-                        .replace(/ --/g,' —')
-                        .replace(/-- /g,'— ')
-                        .replace(/ /g, '[[[espacio]]]') + '​‍';
-          var linea = array[i].toString().replace(/▓/g,'').split('▒');
-            var tema = linea[0];
-              var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
-                                          .replace(/\'/g,'[[[comilla]]]')
-                                          .replace(/\"/g,'[[[comillas]]]')
-                                          .replace(/\&/g,'[[[et]]]')
-                                          .replace(/</g,'[[[menor]]]')
-                                          .replace(/>/g,'[[[mayor]]]') + '▒';
-            var subtema = linea[1];
-            var url = linea[2];
-              var dominio = url?.replace(/.*\:\/\//g,'');
-                var dominio = dominio?.replace(/\/.*/g,'');
-                if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
-                if (dominio.indexOf('jucardus.github.') >= 0) {dominio = 'https://jucardus.github.io';}
-                if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-                if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-                if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
-                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-                if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
-                  var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-                  var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
-                } else {
-                  var thumbYT = "";
-                }
-            var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
-            if (!url.startsWith('http')) {enlace = linea[2];}
-            var id = linea[3];
-            var orden = tema + subtema;
-              var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
-          var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
-          resultados.push(nuevaLinea.replace(/ -- /g,' — '));
-          contador = contador + 1;
-          if (contador == 12) {break;}
-        }
+        resultados.push(generarEntradaHTML(array[i]));
+        contador++;
+        if (contador == 12) break;
       }
-    var enviar = resultados.join('');
-    document.getElementById('mostrar').innerHTML = enviar;
-    var temasExtraidos = extraerTemas();
+    }
+    document.getElementById('mostrar').innerHTML = resultados.join('');
+    extraerTemas();
   }
   
   function teclaBuscar(event) {
@@ -700,7 +542,6 @@
     buscar(recibido, 'normal');
   }
 
-  // Función para mostrar la página actual de resultados
   function mostrarPagina(page) {
     if (!currentResults.length) return;
     
@@ -711,12 +552,10 @@
     let html = currentBuscadoresHTML;
     html += resultadosPagina.join('');
     
-    // Añadir paginación si hay más de una página
     const totalPages = Math.ceil(currentResults.length / resultadosPorPagina);
     if (totalPages > 1) {
       html += '<div class="paginacion">';
       for (let i = 1; i <= totalPages; i++) {
-        // Añadir clase 'activa' si es la página actual
         const activa = (i === page) ? ' activa' : '';
         html += `<span class="paginas${activa}" data-page="${i}">${i}</span>`;
       }
@@ -725,7 +564,6 @@
     
     document.getElementById('mostrar').innerHTML = html;
     
-    // Asignar eventos a los números de página
     const paginasSpans = document.querySelectorAll('.paginas');
     paginasSpans.forEach(span => {
       span.addEventListener('click', (e) => {
@@ -747,102 +585,22 @@
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
     }
-    var recibidoBuscadores = recibido.replace(/ /g,'%20');
-    var buscadoresHTML = '';
-    if (recibido.length >= 1 && recibido != ' ' && recibido != '  ') {
-      var buscadores = '<div id="buscadores">';
-      buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
-      buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
-      buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
-      buscadoresHTML = '<div id="buscadores">' + buscadores + '</div>';
+    
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      return;
     }
+    
+    var buscadoresHTML = generarBuscadoresHTML(recibido);
     var array = enlaces;
     var resultados = [];
+    
     for (var i = 0; i < array.length; i++) {
-        if (array[i].indexOf(recibido) >= 0) {
-          var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
-                                                 .replace(/\'/g,'[[[comilla]]]')
-                                                 .replace(/\"/g,'[[[comillas]]]')
-                                                 .replace(/\&/g,'[[[et]]]')
-                                                 .replace(/</g,'[[[menor]]]')
-                                                 .replace(/>/g,'[[[mayor]]]');
-            if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
-          var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
-            var temaT = lineaT[0];
-            var subtemaT = lineaT[1];
-              if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
-            var enlaceT = lineaT[2];
-            var idT = lineaT[3];
-            lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT;
-          var plainTextT = lineaT
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-            var enlaceTuitear = generarTweetUrl(plainTextT);
-          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
-          var plainText = array[i]
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-          var textual = plainText
-                        .replace(/&/g, '[[[et]]]')
-                        .replace(/'/g, '[[[comilla]]]')
-                        .replace(/"/g, '[[[comillas]]]')
-                        .replace(/</g, '[[[menor]]]')
-                        .replace(/>/g, '[[[mayor]]]')
-                        .replace(/ -- /g,' — ')
-                        .replace(/ --/g,' —')
-                        .replace(/-- /g,'— ')
-                        .replace(/ /g, '[[[espacio]]]') + '​‍';
-          var linea = array[i].toString().replace(/▓/g,'').split('▒');
-            var tema = linea[0];
-              var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
-                                          .replace(/\'/g,'[[[comilla]]]')
-                                          .replace(/\"/g,'[[[comillas]]]')
-                                          .replace(/\&/g,'[[[et]]]')
-                                          .replace(/</g,'[[[menor]]]')
-                                          .replace(/>/g,'[[[mayor]]]') + '▒';
-            var subtema = linea[1];
-            var url = linea[2];
-              var dominio = url?.replace(/.*\:\/\//g,'');
-                var dominio = dominio?.replace(/\/.*/g,'');
-                if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
-                if (dominio.indexOf('jucardus.github.') >= 0) {dominio = 'https://jucardus.github.io';}
-                if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-                if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-                if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
-                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-                if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
-                  var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-                  var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
-                } else {
-                    var thumbYT = "";
-                  }
-            var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
-            if (!url.startsWith('http')) {enlace = linea[2];}
-            var id = linea[3];
-            var orden = tema + subtema;
-              var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
-          var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
-          resultados.push(nuevaLinea.replace(/ -- /g,' — '));
-        }
+      if (array[i].toLowerCase().indexOf(recibido.toLowerCase()) >= 0) {
+        resultados.push(generarEntradaHTML(array[i]));
+      }
     }
+    
     resultados = resultados.sort((a, b) => a.localeCompare(b));
     resultados = [...new Set(resultados)];
     resultados = resultados.filter(Boolean);
@@ -852,12 +610,9 @@
       return;
     }
     
-    // Guardar resultados y el HTML de buscadores para la paginación
     currentResults = resultados;
     currentBuscadoresHTML = buscadoresHTML;
     currentPage = 1;
-    
-    // Mostrar primera página
     mostrarPagina(1);
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
@@ -872,14 +627,6 @@
       .replace(/\[\[\[menor\]\]\]/g, '<')
       .replace(/\[\[\[mayor\]\]\]/g, '>');
     navigator.clipboard.writeText(textoDecodificado);
-    const ta = document.createElement('textarea');
-    ta.value = textoDecodificado;
-    ta.style.position = 'fixed';
-    ta.style.opacity = 0;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
   }
   
   function rebuscar(recibido) {
@@ -915,23 +662,25 @@
   }
   
   function extraerTemas() {
+    if (typeof enlaces === 'undefined') return;
+    
     var contador = 0;
     var array = enlaces;
     var resultado = [];
-      for (var i = 0; i < array.length; i++) {
-        if (array[i].toUpperCase().indexOf('▒') >= 0) {
-          var linea = array[i].toString().replace(/▓/g,'').split('▒');
-            var tema = linea[0];
-              var temaEscaped = '▓' + tema.replace(/'/g, "\\'") + '▒';
-              var temaBusca = '<span class="temaBusca" onclick="rebuscar(\'' + temaEscaped + '\')">' + tema + '</span>';
-          resultado.push(temaBusca);
-          contador = contador + 1;
-        }
+    for (var i = 0; i < array.length; i++) {
+      if (array[i].toUpperCase().indexOf('▒') >= 0) {
+        var linea = array[i].toString().replace(/▓/g,'').split('▒');
+        var tema = linea[0];
+        var temaEscaped = '▓' + tema.replace(/'/g, "\\'") + '▒';
+        var temaBusca = '<span class="temaBusca" onclick="rebuscar(\'' + temaEscaped + '\')">' + tema + '</span>';
+        resultado.push(temaBusca);
+        contador++;
       }
+    }
     resultado = resultado.sort((a, b) => a.localeCompare(b));
     resultado = [...new Set(resultado)];
     resultado = resultado.filter(Boolean);
-    var temasTodos = '<h3>Conteo general</h3><p style="margin-left: 20px;"><b>' + contador + '</b> entradas en total</p><h3>Temas incluidos</h3>' + '<div id="temas">' + resultado.join(' • ') + '</div>';
+    var temasTodos = '<h3>Conteo general</h3><p style="margin-left: 20px;"><b>' + contador + '</b> entradas en total</p><h3>Temas incluidos</h3><div id="temas">' + resultado.join(' • ') + '</div>';
     document.getElementById('conteoTemas').innerHTML = temasTodos;
   }
 
