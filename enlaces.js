@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓frases chinas▒我餓了。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • {CS} 我饿了。 • {PY} Wǒ è le. [fr.] • {TR} Estoy hambriento. [fr.] • {TR} Tengo hambre. [fr.]▒jucardus▒p9ah14wu▓",
   "▓frases chinas▒我餓了，想吃東西。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • d. 想 (想) [xiang3] querer • e. 吃 (吃) [chi1] comer • f. 東西 (东西) [dong1 xi5] cosa, cosas, algo • {CS} 我饿了，想吃东西。 • {PY} Wǒ è le, xiǎng chī dōngxi. [fr.] • {TR} Tengo hambre y quiero comer algo. [fr.]▒jucardus▒1grmiok9▓",
   "▓citas▒Algunas personas son tan falsas que ya no distinguen que lo que piensan es justamente lo contrario de lo que dicen.▒Marcel Aymé▒uqlui2km▓",
   "▓citas▒Adonde no pueden llegar ni tu vista ni tu entendimiento, llega tu fe.▒Agustín de Hipona▒yqfqr8bl▓",
@@ -205,7 +206,6 @@ var enlaces = [
   "▓herramientas▒convertidor de YouTube a MP3▒https://y2mate.nu/en-ynKX/▒waa8hy14▓",
   "▓Seinfeld▒That\\\'s A Shame | Seinfeld▒https://www.youtube.com/watch?v=Do1b10J1zBw▒3tnltajr▓",
   "▓Seinfeld▒Jerry Seinfeld\\\'s Never-Ending Quest For Love | Seinfeld▒https://www.youtube.com/watch?v=895L-VYh8go▒kynsyc9i▓",
-  "▓frases chinas▒我餓了。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • {CS} 我饿了。 • {PY} Wǒ è le. [fr.] • {TR} Estoy hambriento. [fr.] • {TR} Tengo hambre. [fr.]▒https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357519010894▒miujttv7▓",
   "▓frases chinas▒我餓了，想吃東西。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • d. 想 (想) [xiang3] querer • e. 吃 (吃) [chi1] comer • f. 東西 (东西) [dong1 xi5] cosa, cosas, algo • {CS} 我饿了，想吃东西。 • {PY} Wǒ è le, xiǎng chī dōngxi. [fr.] • {TR} Tengo hambre y quiero comer algo. [fr.]▒https://app.box.com/s/rx27240d30s2dsvaixh55gbok28jz13q/folder/357519249229▒njomwhx6▓",
   "▓Seinfeld▒George Wants to Fall in Love & Kramer Gets Mistaken for Being Mentally Challenged | Seinfeld▒https://www.youtube.com/watch?v=EFkTor_K9Ag▒bqomyuvi▓",
   "▓Seinfeld▒Jerry finds it odd to compliment men on their looks | Seinfeld (1989)▒https://www.youtube.com/watch?v=B_k6VR93P-I▒6xx6ei2h▓",
