@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Pronto tendremos casas completas de plásticos...](https://jucardus.github.io/p/r/o/pronto-tendremos-casas-completas-de-plasticos)
 * [pretender [v.]](https://jucardus.github.io/p/r/e/pretender-v)
 * [Disculpen si les llamo caballeros, pero...](https://jucardus.github.io/d/i/s/disculpen-si-les-llamo-caballeros-pero)
 * [El destino del hombre está...](https://jucardus.github.io/e/l/-/el-destino-del-hombre-esta)
