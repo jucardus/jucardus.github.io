@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓frases chinas▒我餓了，想吃東西。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • d. 想 (想) [xiang3] querer • e. 吃 (吃) [chi1] comer • f. 東西 (东西) [dong1 xi5] cosa, cosas, algo • {CS} 我饿了，想吃东西。 • {PY} Wǒ è le, xiǎng chī dōngxi. [fr.] • {TR} Tengo hambre y quiero comer algo. [fr.]▒jucardus▒1grmiok9▓",
   "▓citas▒Algunas personas son tan falsas que ya no distinguen que lo que piensan es justamente lo contrario de lo que dicen.▒Marcel Aymé▒uqlui2km▓",
   "▓citas▒Adonde no pueden llegar ni tu vista ni tu entendimiento, llega tu fe.▒Agustín de Hipona▒yqfqr8bl▓",
   "▓citas▒Admiro a los hombres que buscan el orden social ideal, pero temo a los que lo han encontrado.▒Ephraim Kishon▒jlhmfi00▓",
