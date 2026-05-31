@@ -656,7 +656,14 @@
     arriba();
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
     
-    // recibido ya viene limpio (sin ▓ ni ▒)
+    // Mostrar la palabra buscada en el input box
+    var inputElement = document.getElementById("textInput");
+    inputElement.value = recibido;
+    
+    // Enfocar y seleccionar el texto
+    inputElement.focus();
+    inputElement.select();
+    
     // Actualizar URL con ?qi=
     if (recibido && recibido.length > 2) {
       actualizarURL('qi', recibido);
