@@ -236,7 +236,7 @@
   </ul>
   <h3>Aclaraciones</h3>
   <ul>
-    <li>Este sitio, además de mi propio contenido, contiene enlaces de interés a sitios externos clasificados por temas y subtemas, en tandas de diez. Al iniciar la página se muestran únicamente las diez entradas más recientes.</li>
+    <li>Este sitio, además de mi propio contenido, contiene enlaces de interés a sitios externos clasificados por temas y subtemas, en tandas de diez. Al iniciar la página se muestran únicamente las doce entradas más recientes.</li>
     <li>Al hacer una busca se mostrarán, además y antes de las coincidencias en la base de datos, enlaces a ciertos sitios y buscadores que se suelen usar, de utilidad para ampliar los resultados. Las buscas no diferencian entre mayúsculas y minúsculas.</li>
     <li>Si clicas en cualquiera de los iconos, se copiará el texto original en la base de datos de la entrada correspondiente.</li>
     <li>Al clicar en cualquiera de los temas (texto en negrita), se hará una busca directa de dicho tema en toda la base de datos.</li>
@@ -269,12 +269,13 @@
 <script>
 
   window.addEventListener('load', function() {
-      document.getElementById("textInput").focus();
-      recientes();
+    var input = document.getElementById("textInput");
+    input.focus();
+    input.select();
+    recientes();
   });
 
   function recientes() {
-    var temasExtraidos = extraerTemas();
     var contador = 0;
     var array = enlaces;
     var resultados = [];
@@ -287,14 +288,27 @@
                                                  .replace(/</g,'[[[menor]]]')
                                                  .replace(/>/g,'[[[mayor]]]');
             if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
+          var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
+            var temaT = lineaT[0];
+            var subtemaT = lineaT[1];
+              if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
+            var enlaceT = lineaT[2];
+            var idT = lineaT[3];
+            lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT;
+          var plainTextT = lineaT
+                          .replace(/▓/g,'')
+                          .replace(/▒/g,' ┋ ')
+                          .replace(/<[^>]*>/g, '')
+                          .replace(/\s+/g, ' ')
+                          .trim();
+            var enlaceTuitear = generarTweetUrl(plainTextT);
+          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
           var plainText = array[i]
                           .replace(/▓/g,'')
                           .replace(/▒/g,' ┋ ')
                           .replace(/<[^>]*>/g, '')
                           .replace(/\s+/g, ' ')
                           .trim();
-          var enlaceTuitear = generarTweetUrl(plainText);
-          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
           var textual = plainText
                         .replace(/&/g, '[[[et]]]')
                         .replace(/'/g, '[[[comilla]]]')
@@ -337,11 +351,12 @@
           var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
           resultados.push(nuevaLinea.replace(/ -- /g,' — '));
           contador = contador + 1;
-          if (contador == 10) {break;}
+          if (contador == 12) {break;}
         }
       }
     var enviar = resultados.join('');
-    document.getElementById('mostrar').innerHTML = enviar + temasExtraidos;
+    document.getElementById('mostrar').innerHTML = enviar;
+    var temasExtraidos = extraerTemas();
   }
   
   function teclaBuscar(event) {
@@ -358,6 +373,10 @@
   }
 
   function buscar(recibido) {
+    if (recibido.length <= 2) {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA. ]</span>';
+      return;
+    }
     var recibidoBuscadores = recibido.replace(/ /g,'%20');
     if (recibido.length >= 1 && recibido != ' ' && recibido != '  ') {
       var buscadores = '<div id="buscadores">';
@@ -389,14 +408,27 @@
                                                  .replace(/</g,'[[[menor]]]')
                                                  .replace(/>/g,'[[[mayor]]]');
             if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
+          var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
+            var temaT = lineaT[0];
+            var subtemaT = lineaT[1];
+              if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
+            var enlaceT = lineaT[2];
+            var idT = lineaT[3];
+            lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ ' + idT;
+          var plainTextT = lineaT
+                          .replace(/▓/g,'')
+                          .replace(/▒/g,' ┋ ')
+                          .replace(/<[^>]*>/g, '')
+                          .replace(/\s+/g, ' ')
+                          .trim();
+            var enlaceTuitear = generarTweetUrl(plainTextT);
+          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
           var plainText = array[i]
                           .replace(/▓/g,'')
                           .replace(/▒/g,' ┋ ')
                           .replace(/<[^>]*>/g, '')
                           .replace(/\s+/g, ' ')
                           .trim();
-          var enlaceTuitear = generarTweetUrl(plainText);
-          var exear = encodeURIComponent(plainText) + '%E2%80%8B%E2%80%8D';
           var textual = plainText
                         .replace(/&/g, '[[[et]]]')
                         .replace(/'/g, '[[[comilla]]]')
@@ -446,6 +478,8 @@
     var enviar = resultados.join('');
     if (enviar.indexOf('┋') == -1) {enviar = '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';}
     document.getElementById('mostrar').innerHTML = buscadoresHTML + enviar;
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").select();
   }
   
   function copiar(paraCopiar) {
@@ -455,8 +489,7 @@
       .replace(/\[\[\[comillas\]\]\]/g, '"')
       .replace(/\[\[\[et\]\]\]/g, '&')
       .replace(/\[\[\[menor\]\]\]/g, '<')
-      .replace(/\[\[\[mayor\]\]\]/g, '>')
-      .replace(/ ┋ jucardus.*/g,'');
+      .replace(/\[\[\[mayor\]\]\]/g, '>');
     navigator.clipboard.writeText(textoDecodificado);
     const ta = document.createElement('textarea');
     ta.value = textoDecodificado;
