@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓citas▒Algunas personas son tan falsas que ya no distinguen que lo que piensan es justamente lo contrario de lo que dicen.▒Marcel Aymé▒uqlui2km▓",
   "▓citas▒Adonde no pueden llegar ni tu vista ni tu entendimiento, llega tu fe.▒Agustín de Hipona▒yqfqr8bl▓",
   "▓citas▒Admiro a los hombres que buscan el orden social ideal, pero temo a los que lo han encontrado.▒Ephraim Kishon▒jlhmfi00▓",
   "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza.▒Papa León XIV▒s8ahw2dp▓",
@@ -14,7 +15,6 @@ var enlaces = [
   "▓citas▒Amo la traición, pero odio al traidor. ~ Cayo Julio César▒jucardus▒2yhzp22o▓",
   "▓proverbios▒Al perro que tiene dinero se le llama Señor Perro. ~ Proverbio árabe▒jucardus▒g5kbmkpg▓",
   "▓citas▒Allí donde se cruzan tus talentos y las necesidades del mundo, está tu vocación. ~ Aristóteles▒jucardus▒nynrvyxf▓",
-  "▓citas▒Algunas personas son tan falsas que ya no distinguen que lo que piensan es justamente lo contrario de lo que dicen. ~ Marcel Aymé▒jucardus▒ucbt3k7u▓",
   "▓celulares▒HONOR 600 🟧 El teléfono que APPLE QUISO pero NO PUDO HACER!!!▒https://www.youtube.com/watch?v=4QKObLfKOnk▒4mf8qtcw▓",
   "▓abreviaturas▒Abreviaturas y signos empleados (en el DRAE)▒https://dle.rae.es/contenido/abreviaturas-y-signos-empleados▒7gsq8o2o▓",
   "▓celulares pequeños▒NUEVO NOKIA 3310... POR LOS AIRES!▒https://www.youtube.com/watch?v=frealGfiKgk▒bdbb4f1r▓",
