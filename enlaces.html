@@ -268,7 +268,7 @@
     <li><b>Autor:</b> Jucardus ©</li>
     <li><b>Contacto:</b> jucardus en gmail punto com</li>
     <li><b>Base de datos:</b> <a href="https://drive.google.com/file/d/17bQhK95GvkA8WMnZSMjot_ESZ6h3wvGa/preview" target="_blank" rel="noopener noreferrer nofollow">drive.google.com/file... ↗</a></li>
-    <li><b>Mis sitios web:</b> <span class="textual" onclick="rebuscar('▓mis[[[espacio]]]sitios▒')">¡Clícame!</span></li>
+    <li><b>Mis sitios web:</b> <span class="textual" onclick="rebuscar('mis[[[espacio]]]sitios')">¡Clícame!</span></li>
     <li><b>Sitio central:</b> <a href="https://jucardus.github.io" target="_blank" rel="noopener noreferrer nofollow">Jucardus.com</a></li>
   </ul>
   <h3>Aclaraciones</h3>
@@ -310,7 +310,6 @@
   let currentResults = [];
   let currentBuscadoresHTML = '';
   let resultadosPorPagina = 10;
-  let queryProcesado = false;
 
   window.addEventListener('load', function() {
     var input = document.getElementById("textInput");
@@ -329,16 +328,15 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
     
-    setTimeout(function() {
-      if (!queryProcesado) {
-        procesarQueryParams();
-      }
-      input.focus();
-      input.select();
-      if (!queryProcesado) {
-        recientes();
-      }
-    }, 100);
+    // Procesar query params al cargar
+    const queryProcesado = procesarQueryParams();
+    
+    input.focus();
+    input.select();
+    
+    if (!queryProcesado) {
+      recientes();
+    }
   });
   
   function procesarQueryParams() {
@@ -348,8 +346,7 @@
       const query = urlParams.get('qf');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscarFinalExacto(query, true);
-        queryProcesado = true;
+        buscarFinalExacto(query);
         return true;
       }
     }
@@ -357,8 +354,7 @@
       const query = urlParams.get('qi');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscarInicioExacto(query, true);
-        queryProcesado = true;
+        buscarInicioExacto(query);
         return true;
       }
     }
@@ -366,8 +362,7 @@
       const query = urlParams.get('q');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscar(query, 'normal', true);
-        queryProcesado = true;
+        buscar(query);
         return true;
       }
     }
@@ -379,15 +374,10 @@
     window.history.pushState({}, '', nuevaURL);
   }
   
-  function buscarInicioExacto(recibido, desdeQuery = false) {
+  function buscarInicioExacto(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
-    }
-    
-    // Si no viene de un query, actualizar URL con ?qi=
-    if (!desdeQuery) {
-      actualizarURL('qi', recibido);
     }
     
     if (typeof enlaces === 'undefined') {
@@ -423,15 +413,10 @@
     document.getElementById("textInput").select();
   }
   
-  function buscarFinalExacto(recibido, desdeQuery = false) {
+  function buscarFinalExacto(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
-    }
-    
-    // Si no viene de un query, actualizar URL con ?qf=
-    if (!desdeQuery) {
-      actualizarURL('qf', recibido);
     }
     
     if (typeof enlaces === 'undefined') {
@@ -511,7 +496,7 @@
     
     var linea = entrada.toString().replace(/▓/g,'').split('▒');
     var tema = linea[0];
-    var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]').replace(/\'/g,'[[[comilla]]]').replace(/\"/g,'[[[comillas]]]').replace(/\&/g,'[[[et]]]').replace(/</g,'[[[menor]]]').replace(/>/g,'[[[mayor]]]') + '▒';
+    var temaLimpio = tema;
     var subtema = linea[1];
     var url = linea[2];
     
@@ -534,7 +519,7 @@
     if (!url.startsWith('http')) enlace = linea[2];
     var id = linea[3];
     
-    return '<p class="entradas"><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b> <span class="barrita">┋</span> <span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span> <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> <a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a></p>' + thumbYT;
+    return '<p class="entradas"><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaLimpio + '\')">' + tema + '</span></b> <span class="barrita">┋</span> <span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span> <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> <a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a></p>' + thumbYT;
   }
 
   function recientes() {
@@ -571,9 +556,13 @@
     // Actualizar URL con ?q=
     if (recibido.length > 2) {
       actualizarURL('q', recibido);
+    } else {
+      // Si la búsqueda es vacía o muy corta, limpiar URL
+      const nuevaURL = window.location.pathname;
+      window.history.pushState({}, '', nuevaURL);
     }
     
-    buscar(recibido, 'normal', false);
+    buscar(recibido);
   }
 
   function mostrarPagina(page) {
@@ -614,7 +603,7 @@
     });
   }
 
-  function buscar(recibido, tipo = 'normal', desdeQuery = false) {
+  function buscar(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
@@ -667,18 +656,13 @@
     arriba();
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
     
-    var recibidoDecodificado = recibido
-      .replace(/\[\[\[espacio\]\]\]/g, ' ')
-      .replace(/\[\[\[comilla\]\]\]/g, "'")
-      .replace(/\[\[\[comillas\]\]\]/g, '"')
-      .replace(/\[\[\[et\]\]\]/g, '&')
-      .replace(/\[\[\[menor\]\]\]/g, '<')
-      .replace(/\[\[\[mayor\]\]\]/g, '>');
+    // recibido ya viene limpio (sin ▓ ni ▒)
+    // Actualizar URL con ?qi=
+    if (recibido && recibido.length > 2) {
+      actualizarURL('qi', recibido);
+    }
     
-    // Actualizar URL con ?qi= (búsqueda por tema)
-    actualizarURL('qi', recibidoDecodificado);
-    
-    buscarInicioExacto(recibidoDecodificado, false);
+    buscarInicioExacto(recibido);
   }
   
   function arriba() {
@@ -710,7 +694,7 @@
       if (array[i].toUpperCase().indexOf('▒') >= 0) {
         var linea = array[i].toString().replace(/▓/g,'').split('▒');
         var tema = linea[0];
-        var temaEscaped = '▓' + tema.replace(/'/g, "\\'") + '▒';
+        var temaEscaped = tema;
         var temaBusca = '<span class="temaBusca" onclick="rebuscar(\'' + temaEscaped + '\')">' + tema + '</span>';
         resultado.push(temaBusca);
         contador++;
