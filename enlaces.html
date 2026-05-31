@@ -245,7 +245,7 @@
 </head>
 <body>
 
-<h1><a href='https://jucardus.github.io/enlaces'>Jucardus.com</a></h1>
+<h1><a href='https://jucardus.github.io/enlaces' id="tituloPrincipal">Jucardus.com</a></h1>
 
   <form> 
     <input type="text" autocomplete="off" placeholder="Escribe aquí..." size="21" id="textInput" onkeydown="teclaBuscar(event)" />
@@ -314,8 +314,21 @@
 
   window.addEventListener('load', function() {
     var input = document.getElementById("textInput");
+    var titulo = document.getElementById("tituloPrincipal");
     
-    // Pequeño retraso para asegurar que enlaces.js esté cargado
+    // Al hacer clic en el título, reiniciar todo y limpiar URL
+    titulo.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Limpiar URL
+      const nuevaURL = window.location.pathname;
+      window.history.pushState({}, '', nuevaURL);
+      // Reiniciar input
+      document.getElementById("textInput").value = '';
+      // Mostrar recientes
+      recientes();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
     setTimeout(function() {
       if (!queryProcesado) {
         procesarQueryParams();
@@ -335,7 +348,7 @@
       const query = urlParams.get('qf');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscarFinalExacto(query);
+        buscarFinalExacto(query, true);
         queryProcesado = true;
         return true;
       }
@@ -344,7 +357,7 @@
       const query = urlParams.get('qi');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscarInicioExacto(query);
+        buscarInicioExacto(query, true);
         queryProcesado = true;
         return true;
       }
@@ -353,7 +366,7 @@
       const query = urlParams.get('q');
       if (query && query.length > 0) {
         document.getElementById("textInput").value = query;
-        buscar(query, 'normal');
+        buscar(query, 'normal', true);
         queryProcesado = true;
         return true;
       }
@@ -361,10 +374,20 @@
     return false;
   }
   
-  function buscarInicioExacto(recibido) {
+  function actualizarURL(tipo, valor) {
+    const nuevaURL = window.location.pathname + '?' + tipo + '=' + encodeURIComponent(valor);
+    window.history.pushState({}, '', nuevaURL);
+  }
+  
+  function buscarInicioExacto(recibido, desdeQuery = false) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
+    }
+    
+    // Si no viene de un query, actualizar URL con ?qi=
+    if (!desdeQuery) {
+      actualizarURL('qi', recibido);
     }
     
     if (typeof enlaces === 'undefined') {
@@ -400,10 +423,15 @@
     document.getElementById("textInput").select();
   }
   
-  function buscarFinalExacto(recibido) {
+  function buscarFinalExacto(recibido, desdeQuery = false) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
+    }
+    
+    // Si no viene de un query, actualizar URL con ?qf=
+    if (!desdeQuery) {
+      actualizarURL('qf', recibido);
     }
     
     if (typeof enlaces === 'undefined') {
@@ -539,7 +567,13 @@
   function iniciarBusca() {
     let recibido = document.getElementById("textInput").value;
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
-    buscar(recibido, 'normal');
+    
+    // Actualizar URL con ?q=
+    if (recibido.length > 2) {
+      actualizarURL('q', recibido);
+    }
+    
+    buscar(recibido, 'normal', false);
   }
 
   function mostrarPagina(page) {
@@ -580,7 +614,7 @@
     });
   }
 
-  function buscar(recibido, tipo = 'normal') {
+  function buscar(recibido, tipo = 'normal', desdeQuery = false) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
       return;
@@ -632,6 +666,7 @@
   function rebuscar(recibido) {
     arriba();
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
+    
     var recibidoDecodificado = recibido
       .replace(/\[\[\[espacio\]\]\]/g, ' ')
       .replace(/\[\[\[comilla\]\]\]/g, "'")
@@ -639,7 +674,11 @@
       .replace(/\[\[\[et\]\]\]/g, '&')
       .replace(/\[\[\[menor\]\]\]/g, '<')
       .replace(/\[\[\[mayor\]\]\]/g, '>');
-    buscar(recibidoDecodificado);
+    
+    // Actualizar URL con ?qi= (búsqueda por tema)
+    actualizarURL('qi', recibidoDecodificado);
+    
+    buscarInicioExacto(recibidoDecodificado, false);
   }
   
   function arriba() {
