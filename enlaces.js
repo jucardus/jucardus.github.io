@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒tranca▒https://dle.rae.es/tranca▒kr70vulp▓",
   "▓vocabulario español▒saeta▒https://dle.rae.es/saeta▒hnrh0gwy▓",
   "▓vocabulario inglés▒sleazy▒https://www.merriam-webster.com/dictionary/sleazy▒3ye1qbvk▓",
   "▓música - Jacob van Eyck▒François Lazarevitch plays «Doen Daphne D\'over Schoone Maeght» - Jacob van Eyck▒https://www.youtube.com/watch?v=8mlQdeHKfGU▒4g350vvl▓",
