@@ -71,7 +71,6 @@ var enlaces = [
   "▓lugares▒Villa Elisa, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/F9WVz4bQQXAszi9w9▒74q5hi1k▓",
   "▓cuentas en X Twitter▒AlphaFo𝕏 - @Alphafox▒https://x.com/Alphafox▒qo9zh4pi▓",
   "▓mis sitios▒Diccionario multilingüe▒https://jucardus.github.io/multilingue▒kt9hmxy8▓",
-  "▓mis sitios▒Actividad reciente▒https://jucardus.github.io/actividad▒pad01ynk▓",
   "▓mis sitios▒Vocabulario francés-español▒https://jucardus.github.io/vocabulaire▒9bc44hq0▓",
   "▓mis sitios▒Vocabulario inglés-español▒https://jucardus.github.io/vocabulary▒7o5cdvyv▓",
   "▓lugares▒La Glorieta, Plaza San Martín, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/9mJXaJugD7u1g9G58▒oipdcyte▓",
