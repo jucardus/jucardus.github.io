@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒<b>ridículo [m.]</b> Bolsa manual que...▒https://dle.rae.es/rid%C3%ADculo▒j9bophpp▓",
   "▓vocabulario inglés▒scupper▒https://www.merriam-webster.com/dictionary/scupper▒4hkeq82v▓",
   "▓vocabulario español▒tranca▒https://dle.rae.es/tranca▒kr70vulp▓",
   "▓vocabulario español▒saeta▒https://dle.rae.es/saeta▒hnrh0gwy▓",
