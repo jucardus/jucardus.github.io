@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓prueba▒prueba▒prueba▒5q94v4lz▓",
   "▓citas▒El destino es el que baraja las cartas, pero nosotros somos los que jugamos.▒William Shakespeare▒xofq72nd▓",
   "▓citas▒Disculpen si les llamo caballeros, pero es que no los conozco muy bien.▒Groucho Marx▒oj1baty5▓",
   "▓frases chinas▒我餓了。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • {CS} 我饿了。 • {PY} Wǒ è le. [fr.] • {TR} Estoy hambriento. [fr.] • {TR} Tengo hambre. [fr.]▒jucardus▒p9ah14wu▓",
