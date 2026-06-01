@@ -183,7 +183,6 @@ var enlaces = [
   "▓vocabulario inglés▒snag▒https://www.merriam-webster.com/dictionary/snag▒8obpc35t▓",
   "▓canales en YouTube▒JerryRigEverything - @JerryRigEverything▒https://www.youtube.com/@JerryRigEverything/videos▒v8xs3p1m▓",
   "▓música - Johann Sebastian Bach▒J. S: Bach: Solo in a minor BWV 1013 - Barthold Kuijken flute traversière▒https://www.youtube.com/watch?v=GP430mRuVjg▒55g9xgbm▓",
-  "▓mis sitios▒Enlaces varios▒https://jucardus.github.io/enlaces▒f8zo51pe▓",
   "▓vídeos de Cristianismo▒La VERDADERA historia de la PASIÓN de CRISTO, con Antonio Piñero▒https://www.youtube.com/watch?v=D48O7BmbSPM▒s68uq9d0▓",
   "▓vocabulario español▒factótum▒https://dle.rae.es/fact%C3%B3tum▒fd8xv0km▓",
   "▓vídeos de Cristianismo▒Conferencia Antonio Piñero: 1-La discusión moderna sobre la existencia de Jesús de Nazaret (11/3/24)▒https://www.youtube.com/watch?v=PXZJecv7KqU▒ipa2koqb▓",
