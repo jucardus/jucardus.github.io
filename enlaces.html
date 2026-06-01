@@ -402,6 +402,7 @@
     
     if (resultados.length === 0) {
       document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      extraerTemas();
       return;
     }
     
@@ -409,6 +410,7 @@
     currentBuscadoresHTML = buscadoresHTML;
     currentPage = 1;
     mostrarPagina(1);
+    extraerTemas();
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
@@ -441,6 +443,7 @@
     
     if (resultados.length === 0) {
       document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      extraerTemas();
       return;
     }
     
@@ -448,6 +451,7 @@
     currentBuscadoresHTML = buscadoresHTML;
     currentPage = 1;
     mostrarPagina(1);
+    extraerTemas();
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
@@ -630,6 +634,7 @@
     
     if (resultados.length === 0) {
       document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      extraerTemas();
       return;
     }
     
@@ -637,6 +642,7 @@
     currentBuscadoresHTML = buscadoresHTML;
     currentPage = 1;
     mostrarPagina(1);
+    extraerTemas();
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
