@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓mis sitios▒Citas y proverbios▒https://jucardus.github.io/citas▒1uquombc▓",
   "▓diccionarios de español▒Diccionario de la lengua española (DRAE)▒https://dle.rae.es/▒6cb772ra▓",
   "▓etopeya▒definición → Descripción de la personalidad, el ánimo, las costumbres, la psicologia de una persona.▒https://dle.rae.es/etopeya▒vz52t09u▓",
   "▓vocabulario español▒<b>ridículo [m.]</b> Bolsa manual que...▒https://dle.rae.es/rid%C3%ADculo▒j9bophpp▓",
