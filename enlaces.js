@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario inglés▒scupper▒https://www.merriam-webster.com/dictionary/scupper▒4hkeq82v▓",
   "▓vocabulario español▒tranca▒https://dle.rae.es/tranca▒kr70vulp▓",
   "▓vocabulario español▒saeta▒https://dle.rae.es/saeta▒hnrh0gwy▓",
   "▓vocabulario inglés▒sleazy▒https://www.merriam-webster.com/dictionary/sleazy▒3ye1qbvk▓",
