@@ -51,6 +51,7 @@ var entradas = [
   "▓El mayor consuelo para los fanáticos es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-consuelo-para-los-fanaticos-es▓",
   "▓El oro es como las mujeres, que todos... – Citas de Lope de Vega, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-oro-es-como-las-mujeres-que-todos▓",
   "▓El pensamiento es la semilla... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-pensamiento-es-la-semilla▓",
+  "▓El poeta es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-poeta-es▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓Etiquetas de los diccionarios – Abreviaturas de los diccionarios▒https://jucardus.github.io/e/t/i/etiquetas-de-los-diccionarios▓",
