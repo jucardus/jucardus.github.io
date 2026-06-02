@@ -27,7 +27,7 @@ body {
 }
 
 code {
-  background-color: color-mix(in srgb, DarkSlateGray, White 10%);
+  background-color: color-mix(in srgb, DarkSlateGray, White 12%);
   border-radius: 3px;
   font-family: monospace;
   padding-left: 3px;
