@@ -18,6 +18,7 @@ var entradas = [
   "▓a lo largo de todo el año [loc.] – Diccionario multilingüe - A, Locuciones multilingües, Tmp - tiempo▒https://jucardus.github.io/a/-/l/a-lo-largo-de-todo-el-ano-loc▓",
   "▓Al perro que tiene dinero se... – Citas y proverbios, Citas y proverbios - A, Proverbios▒https://jucardus.github.io/a/l/-/al-perro-que-tiene-dinero-se▓",
   "▓Animales puros e impuros en el cristianismo – Cristianismo, Reflexiones▒https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo▓",
+  "▓Autor y contacto – Subpáginas de este sitio▒https://jucardus.github.io/a/u/t/autor-y-contacto▓",
   "▓A veces buscamos respuestas rápidas... – Citas y proverbios, Citas y proverbios - A▒https://jucardus.github.io/a/-/v/a-veces-buscamos-respuestas-rapidas▓",
   "▓azolvar [v.] – Verbos españoles, Vocabulario español - V▒https://jucardus.github.io/a/z/o/azolvar-v▓",
   "▓buis [m.] – Arbls - árboles, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - B▒https://jucardus.github.io/b/u/i/buis-m▓",
