@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒rada▒https://dle.rae.es/rada▒pqhjx9em▓",
   "▓películas▒Película católica completa: San Damián de Molokai▒https://www.youtube.com/watch?v=vQVgb4FI6V8▒nfzkkswa▓",
   "▓mis sitios▒Citas y proverbios▒https://jucardus.github.io/citas▒1uquombc▓",
   "▓diccionarios de español▒Diccionario de la lengua española (DRAE)▒https://dle.rae.es/▒6cb772ra▓",
