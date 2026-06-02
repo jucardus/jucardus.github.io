@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓herramientas▒generador de contraseñas seguras▒https://www.passwordwrench.com/Public/OnlinePasswordGenerator▒ayhpb49b▓",
   "▓herramientas▒generador de contraseñas seguras▒https://bitwarden.com/password-generator/▒scp16ze9▓",
   "▓vocabulario español▒rada▒https://dle.rae.es/rada▒pqhjx9em▓",
   "▓películas▒Película católica completa: San Damián de Molokai▒https://www.youtube.com/watch?v=vQVgb4FI6V8▒nfzkkswa▓",
