@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Índices alfabéticos](https://jucardus.github.io/i/n/d/indices-alfabeticos)
 * [Autor y contacto](https://jucardus.github.io/a/u/t/autor-y-contacto)
 * [26-06-02 - Mejoras significativas en la página de enlaces](https://jucardus.github.io/2/6/-/26-06-02-mejoras-significativas-en-la-pagina-de-enlaces)
 * [Enlaces varios](https://jucardus.github.io/e/n/l/enlaces-varios)
