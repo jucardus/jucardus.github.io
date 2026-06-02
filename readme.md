@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Vocabulario inglés](https://jucardus.github.io/v/o/c/vocabulario-ingles)
 * [Índices alfabéticos](https://jucardus.github.io/i/n/d/indices-alfabeticos)
 * [Busca en Jucardus](https://jucardus.github.io/b/u/s/busca-en-jucardus)
 * [Todas las etiquetas](https://jucardus.github.io/t/o/d/todas-las-etiquetas)
