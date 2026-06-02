@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Frases chinas desglosadas](https://jucardus.github.io/f/r/a/frases-chinas-desglosadas)
 * [Diccionario multilingüe](https://jucardus.github.io/d/i/c/diccionario-multilingue)
 * [Citas y proverbios](https://jucardus.github.io/c/i/t/citas-y-proverbios)
 * [Vocabulario inglés](https://jucardus.github.io/v/o/c/vocabulario-ingles)
