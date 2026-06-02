@@ -95,6 +95,7 @@ var entradas = [
   "▓tallow-chandler [s.c.] – Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/a/l/tallow-chandler-sc▓",
   "▓Tareas pendientes – Tareas pendientes▒https://jucardus.github.io/t/a/r/tareas-pendientes▓",
   "▓terse style [s.c.] – EstlsLtrrs - estilos literarios, Sustantivos compuestos ingleses, Vocabulario inglés - T▒https://jucardus.github.io/t/e/r/terse-style-sc▓",
+  "▓Todas las etiquetas – Índices de este sitio, Subpáginas de este sitio▒https://jucardus.github.io/t/o/d/todas-las-etiquetas▓",
   "▓toit en colombage [m.c.] – Arqtctr - arquitectura, Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
   "▓voûte [f.] – Arqtctr - arquitectura, Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓",
