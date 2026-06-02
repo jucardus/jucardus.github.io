@@ -1114,7 +1114,6 @@ var enlaces = [
   "▓películas▒Leprechaun's Bride▒https://youtu.be/dw7S_-ldWp4▒rfk3qdzn▓",
   "▓vocabulario español▒grelo▒https://dle.rae.es/grelo▒you72rdj▓",
   "▓vocabulario español▒papamoscas▒https://dle.rae.es/papamoscas▒zndegtfd▓",
-  "▓contraseñas▒generador de contraseñas▒https://www.passwordwrench.com/Public/OnlinePasswordGenerator▒cypoiyto▓",
   "▓aplicaciones Android▒Tiny Icons, widget▒https://play.google.com/store/apps/details?id=com.tinyicons▒qh87hy9k▓",
   "▓vocabulario español▒sarasa▒https://dle.rae.es/sarasa▒3aqzi1fv▓",
   "▓vocabulario español▒garrapato▒https://dle.rae.es/garrapato▒cnqs90hk▓",
