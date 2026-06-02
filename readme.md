@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Todas las etiquetas](https://jucardus.github.io/t/o/d/todas-las-etiquetas)
 * [Entradas recientes](https://jucardus.github.io/e/n/t/entradas-recientes)
 * [Índices alfabéticos](https://jucardus.github.io/i/n/d/indices-alfabeticos)
 * [Autor y contacto](https://jucardus.github.io/a/u/t/autor-y-contacto)
