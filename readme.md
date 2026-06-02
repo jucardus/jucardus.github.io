@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El político debe ser capaz de predecir...](https://jucardus.github.io/e/l/-/el-politico-debe-ser-capaz-de-predecir)
 * [El poeta es...](https://jucardus.github.io/e/l/-/el-poeta-es)
 * [El pensamiento es la semilla...](https://jucardus.github.io/e/l/-/el-pensamiento-es-la-semilla)
 * [El oro es como las mujeres, que todos...](https://jucardus.github.io/e/l/-/el-oro-es-como-las-mujeres-que-todos)
