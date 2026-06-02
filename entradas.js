@@ -53,6 +53,7 @@ var entradas = [
   "▓El pensamiento es la semilla... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-pensamiento-es-la-semilla▓",
   "▓El poeta es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-poeta-es▓",
   "▓El político debe ser capaz de predecir... – Citas de Winston Churchill, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-politico-debe-ser-capaz-de-predecir▓",
+  "▓El primer método para evaluar la inteligencia... – Citas de Maquiavelo, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-primer-metodo-para-evaluar-la-inteligencia▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓Etiquetas de los diccionarios – Abreviaturas de los diccionarios▒https://jucardus.github.io/e/t/i/etiquetas-de-los-diccionarios▓",
