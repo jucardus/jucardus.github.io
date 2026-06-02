@@ -5,6 +5,7 @@ var entradas = [
   "▓26-05-27 - Implementación de etiquetas para campos o temas – Actividad reciente▒https://jucardus.github.io/2/6/-/26-05-27-implementacion-de-etiquetas-para-campos-o-temas▓",
   "▓26-05-27 - Limpieza en el repositorio – Actividad reciente▒https://jucardus.github.io/2/6/-/26-05-27-limpieza-en-el-repositorio▓",
   "▓26-05-27 - Mejoras en la página de busca – Actividad reciente▒https://jucardus.github.io/2/6/-/26-05-27-mejoras-en-la-pagina-de-busca▓",
+  "▓26-06-02 - Mejoras significativas en la página de enlaces – Actividad reciente▒https://jucardus.github.io/2/6/-/26-06-02-mejoras-significativas-en-la-pagina-de-enlaces▓",
   "▓abacería [f.] – Almnts - alimentos, Diccionario multilingüe - A, Estblcmnts - establecimientos, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/a/b/a/abaceria-f▓",
   "▓abacero, -ra [m.f.] – Diccionario multilingüe - A, Ofcs - oficios, Sustantivos multilingües, Sustantivos multilingües femeninos, Sustantivos multilingües masculinos▒https://jucardus.github.io/a/b/a/abacero-ra-mf▓",
   "▓abdicar [v.] – Diccionario multilingüe - A, Rlz - realeza, Verbos multilingües▒https://jucardus.github.io/a/b/d/abdicar-v▓",
