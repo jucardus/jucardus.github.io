@@ -719,9 +719,9 @@
     document.getElementById("textInput").select();
   }
 
-  function recargar () {
-    let urlLimpia = window.location.href.replace(/\/?\?.*$/, '').replace(/\/$/, '');
-   window.location.href = urlLimpia;
+  function recargar() {
+    window.history.pushState({}, '', 'https://jucardus.github.io/');
+    window.location.href = 'https://jucardus.github.io/';
   }
     
 </script>
