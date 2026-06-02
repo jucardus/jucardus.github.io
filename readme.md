@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El oro es como las mujeres, que todos...](https://jucardus.github.io/e/l/-/el-oro-es-como-las-mujeres-que-todos)
 * [Animales puros e impuros en el cristianismo](https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo)
 * [26-06-02 - Mejoras significativas en la página de enlaces](https://jucardus.github.io/2/6/-/26-06-02-mejoras-significativas-en-la-pagina-de-enlaces)
 * [Pronto tendremos casas completas de plásticos...](https://jucardus.github.io/p/r/o/pronto-tendremos-casas-completas-de-plasticos)
