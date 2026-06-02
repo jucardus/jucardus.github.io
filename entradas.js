@@ -102,6 +102,7 @@ var entradas = [
   "▓Todas las etiquetas – Índices de este sitio, Subpáginas de este sitio▒https://jucardus.github.io/t/o/d/todas-las-etiquetas▓",
   "▓toit en colombage [m.c.] – Arqtctr - arquitectura, Sustantivos compuestos franceses, Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - T▒https://jucardus.github.io/t/o/i/toit-en-colombage-mc▓",
   "▓Una nación de ovejas... – Citas y proverbios, Citas y proverbios - U▒https://jucardus.github.io/u/n/a/una-nacion-de-ovejas▓",
+  "▓Vocabulario francés – Índices de este sitio▒https://jucardus.github.io/v/o/c/vocabulario-frances▓",
   "▓Vocabulario inglés – Índices de este sitio▒https://jucardus.github.io/v/o/c/vocabulario-ingles▓",
   "▓voûte [f.] – Arqtctr - arquitectura, Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - V▒https://jucardus.github.io/v/o/u/voute-f▓",
   "▓wharf [s.] – Notas gramaticales inglesas, Plurales irregulares ingleses, Sustantivos ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/h/a/wharf-s▓",
