@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [26-06-02 - Mejoras significativas en la página de enlaces](https://jucardus.github.io/2/6/-/26-06-02-mejoras-significativas-en-la-pagina-de-enlaces)
 * [Enlaces varios](https://jucardus.github.io/e/n/l/enlaces-varios)
 * [El progreso no es un accidente...](https://jucardus.github.io/e/l/-/el-progreso-no-es-un-accidente)
 * [El primer método para evaluar la inteligencia...](https://jucardus.github.io/e/l/-/el-primer-metodo-para-evaluar-la-inteligencia)
@@ -10,7 +11,6 @@
 * [El pensamiento es la semilla...](https://jucardus.github.io/e/l/-/el-pensamiento-es-la-semilla)
 * [El oro es como las mujeres, que todos...](https://jucardus.github.io/e/l/-/el-oro-es-como-las-mujeres-que-todos)
 * [Animales puros e impuros en el cristianismo](https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo)
-* [26-06-02 - Mejoras significativas en la página de enlaces](https://jucardus.github.io/2/6/-/26-06-02-mejoras-significativas-en-la-pagina-de-enlaces)
 * [Pronto tendremos casas completas de plásticos...](https://jucardus.github.io/p/r/o/pronto-tendremos-casas-completas-de-plasticos)
 * [pretender [v.]](https://jucardus.github.io/p/r/e/pretender-v)
 * [Disculpen si les llamo caballeros, pero...](https://jucardus.github.io/d/i/s/disculpen-si-les-llamo-caballeros-pero)
