@@ -73,7 +73,7 @@ var entradas = [
   "▓Los viejos tiempos nunca vuelven, porque... – Apotegmas▒https://jucardus.github.io/l/o/s/los-viejos-tiempos-nunca-vuelven-porque▓",
   "▓many-sided [adj.c.] – Adjetivos compuestos ingleses, Vocabulario inglés - M▒https://jucardus.github.io/m/a/n/many-sided-adjc▓",
   "▓minnow [s.] – Ictlg - ictiología, Psc - pesca, Sustantivos ingleses, Vocabulario inglés - M▒https://jucardus.github.io/m/i/n/minnow-s▓",
-  "▓Índices alfabéticos – Índices de este sitio▒https://jucardus.github.io/i/n/d/indices-alfabeticos▓",
+  "▓Índices alfabéticos – Índices de este sitio, Subpáginas de este sitio▒https://jucardus.github.io/i/n/d/indices-alfabeticos▓",
   "▓noblesse de cloche [f.c.] – Nblz - nobleza, Sustantivos franceses compuestos, Sustantivos franceses femeninos, Vocabulario francés - N▒https://jucardus.github.io/n/o/b/noblesse-de-cloche-fc▓",
   "▓ouvrouère [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - O▒https://jucardus.github.io/o/u/v/ouvrouere-m▓",
   "▓plead [v.] – Verbos ingleses, Vocabulario inglés - P▒https://jucardus.github.io/p/l/e/plead-v▓",
