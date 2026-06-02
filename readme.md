@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Diccionario multilingüe](https://jucardus.github.io/d/i/c/diccionario-multilingue)
 * [Citas y proverbios](https://jucardus.github.io/c/i/t/citas-y-proverbios)
 * [Vocabulario inglés](https://jucardus.github.io/v/o/c/vocabulario-ingles)
 * [Índices alfabéticos](https://jucardus.github.io/i/n/d/indices-alfabeticos)
