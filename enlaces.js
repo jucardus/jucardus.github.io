@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓frases chinas▒他自稱是這封信的作者。<ul><li>CT. 他自稱是這封信的作者。</li><li>CS. 他自称是这封信的作者。</li><li>PY. Tā zìchēng shì zhè fēng xìn de zuòzhě.</li><li>TR. Él pretende ser el autor de la carta.</li></ul><h3>Desglose</h3><ul><li>他 (他) tā: él</li><li>自稱 (自称) zìchēng: pretender, fingir</li><li>是 (是) shì: ser, estar</li><li>這 (这) zhè: esto, esta</li><li>封 (封) fēng: (clasificador para cartas)</li><li>信 (信) xìn: carta, correspondencia</li><li>的 (的) de (partícula posesiva)</li><li>作者 (作者) zuòzhě: autor</li></ul>▒jucardus▒r8rektls▓",
   "▓herramientas▒generador de contraseñas seguras▒https://www.passwordwrench.com/Public/OnlinePasswordGenerator▒ayhpb49b▓",
   "▓herramientas▒generador de contraseñas seguras▒https://bitwarden.com/password-generator/▒scp16ze9▓",
   "▓vocabulario español▒rada▒https://dle.rae.es/rada▒pqhjx9em▓",
