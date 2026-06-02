@@ -10,8 +10,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Mi sitio central, con todas mis páginas.">
-    <meta name="keywords" content="jucardus punto com, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist, vocabulario, vocabularios, vocabulario francés, vocabulario francés-español, vocabulario inglés, vocabulario inglés-español, enlaces, vínculos, hipervínculos, páginas favoritas, sitios favoritos">
+    <meta name="description" content="Enlaces muchos.">
+    <meta name="keywords" content="sitios web, páginas favoritas, selección de sitios web, enlaces, enlaces preferidos">
     <meta name="author" content="Jucardus ©">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Enlaces muchos | Jucardus.com</title>
@@ -205,6 +205,28 @@
     width: 70%;
   }
 
+  .paginacion {
+    line-height: 1.4;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .paginas {
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 4px;
+  }
+
+  .paginas:hover {
+    background-color: color-mix(in srgb, DarkSlateGray, White 20%);
+  }
+
+  .paginas.activa {
+    background-color: color-mix(in srgb, DarkSlateGray, White 20%);
+  }
+
   @media only screen and (max-width: 600px) {
 
     .arriba {
@@ -273,7 +295,7 @@
 </head>
 <body>
 
-<h1><a href='https://jucardus.github.io/enlaces'>Enlaces muchos</a></h1>
+<h1><a href='https://jucardus.github.io/enlaces' id="tituloPrincipal">Enlaces muchos</a></h1>
 
   <form> 
     <input type="text" autocomplete="off" placeholder="Escribe aquí..." size="21" id="textInput" onkeydown="teclaBuscar(event)" />
@@ -302,7 +324,7 @@
   <ul>
     <li><b>Autor:</b> Jucardus ©</li>
     <li><b>Contacto:</b> <a href="https://jucardus.github.io/correo.png" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li>
-    <li><b>Mis sitios web:</b> <span class="textual" onclick="rebuscar('▓mis[[[espacio]]]sitios▒')">¡Clícame!</span></li>
+    <li><b>Mis sitios web:</b> <span class="textual" onclick="rebuscar('mis sitios')">¡Clícame!</span></li>
     <li><b>Enlace corto:</b> <a href="https://jucardus.com">jucardus.com</a></li>
   </ul>
   <h3>Aclaraciones</h3>
@@ -339,97 +361,247 @@
 
 <script>
 
+  let currentPage = 1;
+  let currentResults = [];
+  let currentBuscadoresHTML = '';
+  let resultadosPorPagina = 10;
+
   window.addEventListener('load', function() {
     var input = document.getElementById("textInput");
+    var titulo = document.getElementById("tituloPrincipal");
+    
+    titulo.addEventListener('click', function(e) {
+      e.preventDefault();
+      const nuevaURL = window.location.pathname;
+      window.history.pushState({}, '', nuevaURL);
+      document.getElementById("textInput").value = '';
+      recientes();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    const queryProcesado = procesarQueryParams();
+    
     input.focus();
     input.select();
-    recientes();
+    
+    if (!queryProcesado) {
+      recientes();
+    }
   });
+  
+  function procesarQueryParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    if (urlParams.has('qf')) {
+      const query = urlParams.get('qf');
+      if (query && query.length > 0) {
+        document.getElementById("textInput").value = query;
+        buscarFinalExacto(query);
+        return true;
+      }
+    }
+    else if (urlParams.has('qi')) {
+      const query = urlParams.get('qi');
+      if (query && query.length > 0) {
+        document.getElementById("textInput").value = query;
+        buscarInicioExacto(query);
+        return true;
+      }
+    }
+    else if (urlParams.has('q')) {
+      const query = urlParams.get('q');
+      if (query && query.length > 0) {
+        document.getElementById("textInput").value = query;
+        buscar(query);
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  function actualizarURL(tipo, valor) {
+    const nuevaURL = window.location.pathname + '?' + tipo + '=' + encodeURIComponent(valor);
+    window.history.pushState({}, '', nuevaURL);
+  }
+  
+  function buscarInicioExacto(recibido) {
+    if (recibido.length <= 2) {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    var buscadoresHTML = generarBuscadoresHTML(recibido);
+    var array = enlaces;
+    var resultados = [];
+    var patronBusqueda = '▓' + recibido + '▒';
+    
+    for (var i = 0; i < array.length; i++) {
+      if (array[i].indexOf(patronBusqueda) === 0) {
+        resultados.push(generarEntradaHTML(array[i]));
+      }
+    }
+    
+    resultados = resultados.sort((a, b) => a.localeCompare(b));
+    resultados = [...new Set(resultados)];
+    resultados = resultados.filter(Boolean);
+    
+    if (resultados.length === 0) {
+      document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    currentResults = resultados;
+    currentBuscadoresHTML = buscadoresHTML;
+    currentPage = 1;
+    mostrarPagina(1);
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").select();
+  }
+  
+  function buscarFinalExacto(recibido) {
+    if (recibido.length <= 2) {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    var buscadoresHTML = generarBuscadoresHTML(recibido);
+    var array = enlaces;
+    var resultados = [];
+    var patronBusqueda = '▒' + recibido + '▓';
+    
+    for (var i = 0; i < array.length; i++) {
+      if (array[i].endsWith(patronBusqueda)) {
+        resultados.push(generarEntradaHTML(array[i]));
+      }
+    }
+    
+    resultados = resultados.sort((a, b) => a.localeCompare(b));
+    resultados = [...new Set(resultados)];
+    resultados = resultados.filter(Boolean);
+    
+    if (resultados.length === 0) {
+      document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    currentResults = resultados;
+    currentBuscadoresHTML = buscadoresHTML;
+    currentPage = 1;
+    mostrarPagina(1);
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").select();
+  }
+  
+  function generarBuscadoresHTML(recibido) {
+    var recibidoBuscadores = recibido.replace(/ /g,'%20');
+    var buscadores = '<div id="buscadores">';
+    buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
+    buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
+    buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
+    return '<div id="buscadores">' + buscadores + '</div>';
+  }
+  
+  function generarEntradaHTML(entrada) {
+    var copiarEntrada = entrada.toString().replace(/ /g,'[[[espacio]]]')
+                                           .replace(/\'/g,'[[[comilla]]]')
+                                           .replace(/\"/g,'[[[comillas]]]')
+                                           .replace(/\&/g,'[[[et]]]')
+                                           .replace(/</g,'[[[menor]]]')
+                                           .replace(/>/g,'[[[mayor]]]');
+    if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
+    
+    var lineaT = entrada.toString().replace(/▓/g,'').split('▒');
+    var temaT = lineaT[0];
+    var subtemaT = lineaT[1];
+    if (subtemaT && subtemaT.length >= 201) {subtemaT = subtemaT.slice(0, 200) + '...'}
+    var enlaceT = lineaT[2];
+    var idT = lineaT[3];
+    var plainTextT = (temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ jucardus.github.io/enlaces?qf=' + idT).replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    var enlaceTuitear = generarTweetUrl(plainTextT);
+    
+    var plainText = entrada.replace(/▓/g,'').replace(/▒/g,' ┋ ').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    var textual = plainText.replace(/&/g, '[[[et]]]').replace(/'/g, '[[[comilla]]]').replace(/"/g, '[[[comillas]]]').replace(/</g, '[[[menor]]]').replace(/>/g, '[[[mayor]]]').replace(/ -- /g,' — ').replace(/ --/g,' —').replace(/-- /g,'— ').replace(/ /g, '[[[espacio]]]') + '​‍';
+    
+    var linea = entrada.toString().replace(/▓/g,'').split('▒');
+    var tema = linea[0];
+    var temaLimpio = tema;
+    var subtema = linea[1];
+    var url = linea[2];
+    
+    var dominio = url?.replace(/.*\:\/\//g,'');
+    dominio = dominio?.replace(/\/.*/g,'');
+    if (dominio == 'jucardus') dominio = 'https://jucardus.github.io';
+    if (dominio && dominio.indexOf('jucardus.github.') >= 0) dominio = 'https://jucardus.github.io';
+    if (dominio == 'youtu.be') dominio = 'www.youtube.com';
+    if (dominio == 'goo.gl') dominio = 'maps.google.com';
+    if (dominio == 'maps.app.goo.gl') dominio = 'maps.google.com';
+    if (!url.startsWith('http')) dominio = 'https://jucardus.github.io';
+    var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
+    
+    var thumbYT = "";
+    if (dominio == 'www.youtube.com' && url && url.indexOf('@') == -1) {
+      var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
+      thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
+    }
+    
+    var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
+    if (!url.startsWith('http')) enlace = linea[2];
+    var id = linea[3];
+    
+    return '<p class="entradas"><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaLimpio + '\')">' + tema + '</span></b> <span class="barrita">┋</span> <span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span> <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> <a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a></p>' + thumbYT;
+  }
 
   function recientes() {
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ CARGANDO... ]</span>';
+      return;
+    }
+    
     var contador = 0;
     var array = enlaces;
     var resultados = [];
     for (var i = 0; i < array.length; i++) {
       if (array[i].indexOf('▒') >= 0) {
-          var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
-                                                 .replace(/\'/g,'[[[comilla]]]')
-                                                 .replace(/\"/g,'[[[comillas]]]')
-                                                 .replace(/\&/g,'[[[et]]]')
-                                                 .replace(/</g,'[[[menor]]]')
-                                                 .replace(/>/g,'[[[mayor]]]');
-            if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
-          var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
-            var temaT = lineaT[0];
-            var subtemaT = lineaT[1];
-              if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
-            var enlaceT = lineaT[2];
-            var idT = lineaT[3];
-            lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ jucardus.github.io/enlaces?qf=' + idT;
-          var plainTextT = lineaT
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-            var enlaceTuitear = generarTweetUrl(plainTextT);
-          var plainText = array[i]
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-          var textual = plainText
-                        .replace(/&/g, '[[[et]]]')
-                        .replace(/'/g, '[[[comilla]]]')
-                        .replace(/"/g, '[[[comillas]]]')
-                        .replace(/</g, '[[[menor]]]')
-                        .replace(/>/g, '[[[mayor]]]')
-                        .replace(/ -- /g,' — ')
-                        .replace(/ --/g,' —')
-                        .replace(/-- /g,'— ')
-                        .replace(/ /g, '[[[espacio]]]') + '​‍';
-          var linea = array[i].toString().replace(/▓/g,'').split('▒');
-            var tema = linea[0];
-              var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
-                                          .replace(/\'/g,'[[[comilla]]]')
-                                          .replace(/\"/g,'[[[comillas]]]')
-                                          .replace(/\&/g,'[[[et]]]')
-                                          .replace(/</g,'[[[menor]]]')
-                                          .replace(/>/g,'[[[mayor]]]') + '▒';
-            var subtema = linea[1];
-            var url = linea[2];
-              var dominio = url?.replace(/.*\:\/\//g,'');
-                var dominio = dominio?.replace(/\/.*/g,'');
-                if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
-                if (dominio.indexOf('jucardus.github.') >= 0) {dominio = 'https://jucardus.github.io';}
-                if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-                if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-                if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
-                if (!url.startsWith('http')) {var dominio = 'https://jucardus.github.io';}
-                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-                if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
-                  var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-                  var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
-                } else {
-                  var thumbYT = "";
-                }
-            var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
-            if (!url.startsWith('http')) {enlace = linea[2];}
-            var id = linea[3];
-            var orden = tema + subtema;
-              var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
-          var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
-          resultados.push(nuevaLinea.replace(/ -- /g,' — '));
-          contador = contador + 1;
-          if (contador == 12) {break;}
-        }
+        resultados.push(generarEntradaHTML(array[i]));
+        contador++;
+        if (contador == 12) break;
       }
-    var enviar = resultados.join('');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.getElementById("textInput").focus();
-    document.getElementById("textInput").select();
-    document.getElementById('mostrar').innerHTML = enviar;
+    }
+    document.getElementById('mostrar').innerHTML = resultados.join('');
   }
   
   function teclaBuscar(event) {
@@ -442,115 +614,95 @@
   function iniciarBusca() {
     let recibido = document.getElementById("textInput").value;
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
+    
+    if (recibido.length > 2) {
+      actualizarURL('q', recibido);
+    } else {
+      const nuevaURL = window.location.pathname;
+      window.history.pushState({}, '', nuevaURL);
+    }
+    
     buscar(recibido);
+  }
+
+  function mostrarPagina(page) {
+    if (!currentResults.length) return;
+    
+    const start = (page - 1) * resultadosPorPagina;
+    const end = start + resultadosPorPagina;
+    const resultadosPagina = currentResults.slice(start, end);
+    
+    let html = currentBuscadoresHTML;
+    html += resultadosPagina.join('');
+    
+    const totalPages = Math.ceil(currentResults.length / resultadosPorPagina);
+    if (totalPages > 1) {
+      html += '<div class="paginacion">';
+      for (let i = 1; i <= totalPages; i++) {
+        const activa = (i === page) ? ' activa' : '';
+        html += `<span class="paginas${activa}" data-page="${i}">${i}</span>`;
+      }
+      html += '</div>';
+    }
+    
+    document.getElementById('mostrar').innerHTML = html;
+    
+    const paginasSpans = document.querySelectorAll('.paginas');
+    paginasSpans.forEach(span => {
+      span.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const paginaNum = parseInt(span.getAttribute('data-page'));
+        if (!isNaN(paginaNum)) {
+          currentPage = paginaNum;
+          mostrarPagina(currentPage);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          document.getElementById("textInput").focus();
+          document.getElementById("textInput").select();
+        }
+      });
+    });
   }
 
   function buscar(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
-    var recibidoBuscadores = recibido.replace(/ /g,'%20');
-    if (recibido.length >= 1 && recibido != ' ' && recibido != '  ') {
-      var buscadores = '<div id="buscadores">';
-      var buscadores = buscadores + '<a class="buscadores" href="https://www.bing.com/search?q=' + recibidoBuscadores + '" target="_blank">Bing</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://search.brave.com/search?q=' + recibidoBuscadores + '" target="_blank">Brave</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://dle.rae.es/' + recibidoBuscadores + '" target="_blank">DRAE</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://duckduckgo.com/?q=' + recibidoBuscadores + '" target="_blank">DuckDuckGo</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.google.com/search?q=' + recibidoBuscadores + '" target="_blank">Google</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/i/grok?text=' + recibidoBuscadores + '" target="_blank">Grok</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.linguee.es/espanol-ingles/search?source=auto&query=' + recibidoBuscadores + '" target="_blank">Linguee</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + recibidoBuscadores + '" target="_blank">MDBG</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.merriam-webster.com/dictionary/' + recibidoBuscadores + '" target="_blank">Merriam</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://rumble.com/search/all?q=' + recibidoBuscadores + '" target="_blank">Rumble</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://x.com/search?q=' + recibidoBuscadores + '&src=typed_query" target="_blank">Twitter</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://search.yahoo.com/search?p=' + recibidoBuscadores + '" target="_blank">Yahoo</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://yandex.com/search/?text=' + recibidoBuscadores + '" target="_blank">Yandex</a>';
-      var buscadores = buscadores + ' · <a class="buscadores" href="https://www.youtube.com/results?search_query=' + recibidoBuscadores + '" target="_blank">YouTube</a>';
-      var buscadores = buscadores.replace(/▓/g,'').replace(/▒/g,'') + '</div>';
-      var buscadoresHTML = '<div id="buscadores">' + buscadores + '</div>';
+    
+    if (typeof enlaces === 'undefined') {
+      document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
     }
+    
+    var buscadoresHTML = generarBuscadoresHTML(recibido);
     var array = enlaces;
     var resultados = [];
+    
     for (var i = 0; i < array.length; i++) {
-        if (array[i].indexOf(recibido) >= 0) {
-          var copiarEntrada = array[i].toString().replace(/ /g,'[[[espacio]]]')
-                                                 .replace(/\'/g,'[[[comilla]]]')
-                                                 .replace(/\"/g,'[[[comillas]]]')
-                                                 .replace(/\&/g,'[[[et]]]')
-                                                 .replace(/</g,'[[[menor]]]')
-                                                 .replace(/>/g,'[[[mayor]]]');
-            if (!copiarEntrada.startsWith("▓")) {copiarEntrada = '▓' + copiarEntrada;}
-          var lineaT = array[i].toString().replace(/▓/g,'').split('▒');
-            var temaT = lineaT[0];
-            var subtemaT = lineaT[1];
-              if (subtemaT.length >= 201) {var subtemaT = subtemaT.slice(0, 200) + '...'}
-            var enlaceT = lineaT[2];
-            var idT = lineaT[3];
-            lineaT = temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ jucardus.github.io/enlaces?qf=' + idT;
-          var plainTextT = lineaT
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-            var enlaceTuitear = generarTweetUrl(plainTextT);
-          var plainText = array[i]
-                          .replace(/▓/g,'')
-                          .replace(/▒/g,' ┋ ')
-                          .replace(/<[^>]*>/g, '')
-                          .replace(/\s+/g, ' ')
-                          .trim();
-          var textual = plainText
-                        .replace(/&/g, '[[[et]]]')
-                        .replace(/'/g, '[[[comilla]]]')
-                        .replace(/"/g, '[[[comillas]]]')
-                        .replace(/</g, '[[[menor]]]')
-                        .replace(/>/g, '[[[mayor]]]')
-                        .replace(/ -- /g,' — ')
-                        .replace(/ --/g,' —')
-                        .replace(/-- /g,'— ')
-                        .replace(/ /g, '[[[espacio]]]') + '​‍';
-          var linea = array[i].toString().replace(/▓/g,'').split('▒');
-            var tema = linea[0];
-              var temaRebusca = '▓' + tema.replace(/ /g,'[[[espacio]]]')
-                                          .replace(/\'/g,'[[[comilla]]]')
-                                          .replace(/\"/g,'[[[comillas]]]')
-                                          .replace(/\&/g,'[[[et]]]')
-                                          .replace(/</g,'[[[menor]]]')
-                                          .replace(/>/g,'[[[mayor]]]') + '▒';
-            var subtema = linea[1];
-            var url = linea[2];
-              var dominio = url?.replace(/.*\:\/\//g,'');
-                var dominio = dominio?.replace(/\/.*/g,'');
-                if (dominio == 'jucardus') {var dominio = 'https://jucardus.github.io';}
-                if (dominio.indexOf('jucardus.github.') >= 0) {dominio = 'https://jucardus.github.io';}
-                if (dominio == 'youtu.be') {var dominio = 'www.youtube.com';}
-                if (dominio == 'goo.gl') {var dominio = 'maps.google.com';}
-                if (dominio == 'maps.app.goo.gl') {var dominio = 'maps.google.com';}
-                if (!url.startsWith('http')) {var dominio = 'https://jucardus.github.io';}
-                  var favicon = 'https://www.google.com/s2/favicons?domain=' + dominio + '&sz=128';
-                if (dominio == 'www.youtube.com' && url.indexOf('@') == -1) {
-                  var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-                  var thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
-                } else {
-                    var thumbYT = "";
-                  }
-            var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
-            if (!url.startsWith('http')) {enlace = linea[2];}
-            var id = linea[3];
-            var orden = tema + subtema;
-              var orden = orden.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().toUpperCase().replace(/ /g,'').replace(/,/g,'').replace(/;/g,'').replace(/\[/g,'').replace(/\{/g,'').replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ü/g,'U').replace(/Ñ/g,'N').replace(/[^A-Z]/g, '').slice(0, 100);
-          var nuevaLinea = '<p class="entradas"><!--' + orden + '--><img id="favicones" onclick="copiar(\'' + copiarEntrada + '\')" src="' + favicon + '" /><b><span class="rebusca" onclick="rebuscar(\'' + temaRebusca + '\')">' + tema + '</span></b>' + ' <span class="barrita">┋</span> ' + '<span class="textual" onclick="copiar(\'' + textual + '\')">' + subtema + '</span>' + ' <span class="barrita">┋</span> ' + enlace + ' <span class="barrita">┋</span> ' + '<a href="' + enlaceTuitear + '" target="_blank" rel="noopener noreferrer nofollow">' + id + '</a>' + '</p>' + thumbYT;
-          resultados.push(nuevaLinea.replace(/ -- /g,' — '));
-        }
+      if (array[i].toLowerCase().indexOf(recibido.toLowerCase()) >= 0) {
+        resultados.push(generarEntradaHTML(array[i]));
+      }
     }
+    
     resultados = resultados.sort((a, b) => a.localeCompare(b));
     resultados = [...new Set(resultados)];
     resultados = resultados.filter(Boolean);
-    var enviar = resultados.join('');
-    if (enviar.indexOf('┋') == -1) {enviar = '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';}
-    document.getElementById('mostrar').innerHTML = buscadoresHTML + enviar;
+    
+    if (resultados.length === 0) {
+      document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
+      return;
+    }
+    
+    currentResults = resultados;
+    currentBuscadoresHTML = buscadoresHTML;
+    currentPage = 1;
+    mostrarPagina(1);
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
@@ -577,21 +729,23 @@
   function rebuscar(recibido) {
     arriba();
     document.getElementById('mostrar').innerHTML = '<span class="previo">[ BUSCANDO ]</span>';
-    var recibidoDecodificado = recibido
-      .replace(/\[\[\[espacio\]\]\]/g, ' ')
-      .replace(/\[\[\[comilla\]\]\]/g, "'")
-      .replace(/\[\[\[comillas\]\]\]/g, '"')
-      .replace(/\[\[\[et\]\]\]/g, '&')
-      .replace(/\[\[\[menor\]\]\]/g, '<')
-      .replace(/\[\[\[mayor\]\]\]/g, '>');
-    buscar(recibidoDecodificado);
+    
+    var inputElement = document.getElementById("textInput");
+    inputElement.value = recibido;
+    inputElement.focus();
+    inputElement.select();
+    
+    if (recibido && recibido.length > 2) {
+      actualizarURL('qi', recibido);
+    }
+    
+    buscarInicioExacto(recibido);
   }
   
   function arriba() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
-
   }
   
   function generarTweetUrl(texto) {
