@@ -49,6 +49,7 @@ var entradas = [
   "▓El igualitarismo crea la desigualdad más... – Citas de Thomas Sowell, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-igualitarismo-crea-la-desigualdad-mas▓",
   "▓El mayor castigo para quienes no se interesan... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-castigo-para-quienes-no-se-interesan▓",
   "▓El mayor consuelo para los fanáticos es... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-mayor-consuelo-para-los-fanaticos-es▓",
+  "▓El oro es como las mujeres, que todos... – Citas de Lope de Vega, Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-oro-es-como-las-mujeres-que-todos▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓Etiquetas de los diccionarios – Abreviaturas de los diccionarios▒https://jucardus.github.io/e/t/i/etiquetas-de-los-diccionarios▓",
