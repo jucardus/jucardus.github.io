@@ -29,6 +29,7 @@ var entradas = [
   "▓caillouteux [adj.] – Adjetivos franceses, Vocabulario francés - C▒https://jucardus.github.io/c/a/i/caillouteux-adj▓",
   "▓cast candle [s.c.] – Sustantivos compuestos ingleses, Vls - velas, Vocabulario inglés - C▒https://jucardus.github.io/c/a/s/cast-candle-sc▓",
   "▓Categorías gramaticales – Abreviaturas de los diccionarios▒https://jucardus.github.io/c/a/t/categorias-gramaticales▓",
+  "▓Citas y proverbios – Índices de este sitio▒https://jucardus.github.io/c/i/t/citas-y-proverbios▓",
   "▓cloître [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/cloitre-m▓",
   "▓clou [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - C▒https://jucardus.github.io/c/l/o/clou-m▓",
   "▓croisée [f.] – Sustantivos franceses, Sustantivos franceses femeninos, Vocabulario francés - C▒https://jucardus.github.io/c/r/o/croisee-f▓",
