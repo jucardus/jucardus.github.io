@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El poeta es...](https://jucardus.github.io/e/l/-/el-poeta-es)
 * [El pensamiento es la semilla...](https://jucardus.github.io/e/l/-/el-pensamiento-es-la-semilla)
 * [El oro es como las mujeres, que todos...](https://jucardus.github.io/e/l/-/el-oro-es-como-las-mujeres-que-todos)
 * [Animales puros e impuros en el cristianismo](https://jucardus.github.io/a/n/i/animales-puros-e-impuros-en-el-cristianismo)
