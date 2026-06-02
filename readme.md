@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Enlaces varios](https://jucardus.github.io/e/n/l/enlaces-varios)
 * [El progreso no es un accidente...](https://jucardus.github.io/e/l/-/el-progreso-no-es-un-accidente)
 * [El primer método para evaluar la inteligencia...](https://jucardus.github.io/e/l/-/el-primer-metodo-para-evaluar-la-inteligencia)
 * [El político debe ser capaz de predecir...](https://jucardus.github.io/e/l/-/el-politico-debe-ser-capaz-de-predecir)
