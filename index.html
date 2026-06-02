@@ -720,7 +720,8 @@
   }
 
   function recargar () {
-    window.location.href = 'https://jucardus.github.io/';
+    let urlLimpia = window.location.href.replace(/\/?\?.*$/, '').replace(/\/$/, '');
+   window.location.href = urlLimpia;
   }
     
 </script>
