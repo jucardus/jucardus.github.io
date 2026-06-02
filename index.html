@@ -401,11 +401,15 @@
   function buscarInicioExacto(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
     if (typeof enlaces === 'undefined') {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
@@ -426,6 +430,8 @@
     
     if (resultados.length === 0) {
       document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
@@ -440,11 +446,15 @@
   function buscarFinalExacto(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
     if (typeof enlaces === 'undefined') {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
@@ -465,6 +475,8 @@
     
     if (resultados.length === 0) {
       document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
@@ -628,11 +640,15 @@
   function buscar(recibido) {
     if (recibido.length <= 2) {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ MÍNIMO TRES CARACTERES DE BUSCA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
     if (typeof enlaces === 'undefined') {
       document.getElementById('mostrar').innerHTML = '<span class="previo">[ ERROR: Base de datos no cargada ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
@@ -652,6 +668,8 @@
     
     if (resultados.length === 0) {
       document.getElementById('mostrar').innerHTML = buscadoresHTML + '<span class="previo">[ NINGUNA COINCIDENCIA ]</span>';
+      document.getElementById("textInput").focus();
+      document.getElementById("textInput").select();
       return;
     }
     
@@ -718,11 +736,11 @@
     document.getElementById("textInput").focus();
     document.getElementById("textInput").select();
   }
-
-  function recargar() {
+  
+  function recargar () {
     window.location.href = 'https://jucardus.github.io';
-  }
-    
+  };
+
 </script>
 
 </body>
