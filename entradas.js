@@ -58,6 +58,7 @@ var entradas = [
   "▓El progreso no es un accidente... – Citas y proverbios, Citas y proverbios - E▒https://jucardus.github.io/e/l/-/el-progreso-no-es-un-accidente▓",
   "▓emmet [s.] – Entmlg - entomología, Sustantivos ingleses, Vocabulario inglés - E▒https://jucardus.github.io/e/m/m/emmet-s▓",
   "▓Enlaces varios – Subpáginas de este sitio▒https://jucardus.github.io/e/n/l/enlaces-varios▓",
+  "▓Entradas recientes – Subpáginas de este sitio▒https://jucardus.github.io/e/n/t/entradas-recientes▓",
   "▓en un abrir y cerrar de ojos [loc.] – Diccionario multilingüe - E, Locuciones multilingües▒https://jucardus.github.io/e/n/-/en-un-abrir-y-cerrar-de-ojos-loc▓",
   "▓Etiquetas de los diccionarios – Abreviaturas de los diccionarios▒https://jucardus.github.io/e/t/i/etiquetas-de-los-diccionarios▓",
   "▓fila [f.] – Diccionario multilingüe - F, Sustantivos multilingües, Sustantivos multilingües femeninos▒https://jucardus.github.io/f/i/l/fila-f▓",
