@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [El primer método para evaluar la inteligencia...](https://jucardus.github.io/e/l/-/el-primer-metodo-para-evaluar-la-inteligencia)
 * [El político debe ser capaz de predecir...](https://jucardus.github.io/e/l/-/el-politico-debe-ser-capaz-de-predecir)
 * [El poeta es...](https://jucardus.github.io/e/l/-/el-poeta-es)
 * [El pensamiento es la semilla...](https://jucardus.github.io/e/l/-/el-pensamiento-es-la-semilla)
