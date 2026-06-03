@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Categorías gramaticales](https://jucardus.github.io/c/a/t/categorias-gramaticales)
 * [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [島 (岛) dǎo [s.]](https://jucardus.github.io/2/3/7/島-岛-dao-s)
 * [isla [f.]](https://jucardus.github.io/i/s/l/isla-f)
