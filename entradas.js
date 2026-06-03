@@ -68,6 +68,7 @@ var entradas = [
   "▓Índices alfabéticos – Índices de este sitio, Subpáginas de este sitio▒https://jucardus.github.io/i/n/d/indices-alfabeticos▓",
   "▓inhabité [adj.] – Adjetivos franceses, Vocabulario francés - I▒https://jucardus.github.io/i/n/h/inhabite-adj▓",
   "▓inquiry [s.] – Sustantivos ingleses, Vocabulario inglés - I▒https://jucardus.github.io/i/n/q/inquiry-s▓",
+  "▓isla [f.] – Diccionario multilingüe - I, Sustantivos femeninos multilingües▒https://jucardus.github.io/i/s/l/isla-f▓",
   "▓La técnica de mostrar la otra mejilla... – Apotegmas▒https://jucardus.github.io/l/a/-/la-tecnica-de-mostrar-la-otra-mejilla▓",
   "▓ligueur, -euse [m.f.] – Sustantivos franceses, Sustantivos franceses femeninos, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/i/g/ligueur-euse-mf▓",
   "▓logis [m.] – Sustantivos franceses, Sustantivos franceses masculinos, Vocabulario francés - L▒https://jucardus.github.io/l/o/g/logis-m▓",
