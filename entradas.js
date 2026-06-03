@@ -109,6 +109,6 @@ var entradas = [
   "▓withal [adv.] – Adverbios ingleses, Vocabulario inglés - W▒https://jucardus.github.io/w/i/t/withal-adv▓",
   "▓他自稱是這封信的作者。 – Frases chinas desglosadas▒https://jucardus.github.io/2/0/1/他自稱是這封信的作者▓",
   "▓她自稱從未犯過錯。 – Frases chinas desglosadas▒https://jucardus.github.io/2/2/9/她自稱從未犯過錯▓",
-  "▓島 (岛) dǎo [s.] – Diccionario chino-español - D, Radical 46 山 shān - montaña▒https://jucardus.github.io/2/3/7/島-岛-dao-s▓",
+  "▓島 (岛) dǎo [s.] – Diccionario chino-español - D, Radical 046 山 shān - montaña▒https://jucardus.github.io/2/3/7/島-岛-dao-s▓",
   "▓沒有人自稱完美。 – Frases chinas desglosadas▒https://jucardus.github.io/2/7/7/沒有人自稱完美▓"
 ];
