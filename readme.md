@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [isla [f.]](https://jucardus.github.io/i/s/l/isla-f)
 * [El propósito de elegir funcionarios es...](https://jucardus.github.io/e/l/-/el-proposito-de-elegir-funcionarios-es)
 * [Vocabulario francés](https://jucardus.github.io/v/o/c/vocabulario-frances)
@@ -28,7 +29,6 @@
 * [Disculpen si les llamo caballeros, pero...](https://jucardus.github.io/d/i/s/disculpen-si-les-llamo-caballeros-pero)
 * [El destino del hombre está...](https://jucardus.github.io/e/l/-/el-destino-del-hombre-esta)
 * [El destino es el que baraja las cartas...](https://jucardus.github.io/e/l/-/el-destino-es-el-que-baraja-las-cartas)
-* [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [El dolor y el sufrimiento son siempre inevitables...](https://jucardus.github.io/e/l/-/el-dolor-y-el-sufrimiento-son-siempre-inevitables)
 * [El Estado es una banda de ladrones...](https://jucardus.github.io/e/l/-/el-estado-es-una-banda-de-ladrones)
 * [El filósofo es un hombre que no quiere creer...](https://jucardus.github.io/e/l/-/el-filosofo-es-un-hombre-que-no-quiere-creer)
