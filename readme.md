@@ -2,9 +2,9 @@
 
 ### Actividad reciente
 
+* [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [島 (岛) dǎo [s.]](https://jucardus.github.io/2/3/7/島-岛-dao-s)
 * [isla [f.]](https://jucardus.github.io/i/s/l/isla-f)
-* [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [El propósito de elegir funcionarios es...](https://jucardus.github.io/e/l/-/el-proposito-de-elegir-funcionarios-es)
 * [Vocabulario francés](https://jucardus.github.io/v/o/c/vocabulario-frances)
 * [Frases chinas desglosadas](https://jucardus.github.io/f/r/a/frases-chinas-desglosadas)
