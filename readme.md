@@ -2,6 +2,7 @@
 
 ### Actividad reciente
 
+* [島 (岛) dǎo [s.]](https://jucardus.github.io/2/3/7/島-岛-dao-s)
 * [Tareas pendientes](https://jucardus.github.io/t/a/r/tareas-pendientes)
 * [isla [f.]](https://jucardus.github.io/i/s/l/isla-f)
 * [El propósito de elegir funcionarios es...](https://jucardus.github.io/e/l/-/el-proposito-de-elegir-funcionarios-es)
