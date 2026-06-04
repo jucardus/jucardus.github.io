@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒agraz▒https://dle.rae.es/agraz▒3qtdm1as▓",
   "▓vocabulario español▒menaje▒https://dle.rae.es/menaje▒zjsknh7a▓",
   "▓herramientas▒generador de contraseñas seguras▒https://www.passwordwrench.com/Public/OnlinePasswordGenerator▒ayhpb49b▓",
   "▓herramientas▒generador de contraseñas seguras▒https://bitwarden.com/password-generator/▒scp16ze9▓",
