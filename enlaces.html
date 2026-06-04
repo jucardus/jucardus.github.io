@@ -465,7 +465,7 @@
     if (subtemaT && subtemaT.length >= 201) {subtemaT = subtemaT.slice(0, 200) + '...'}
     var enlaceT = lineaT[2];
     var idT = lineaT[3];
-    var plainTextT = (temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ jucardus.github.io/enlaces?qf=' + idT).replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+    var plainTextT = (temaT + ' ┋ ' + subtemaT + ' ┋ ' + enlaceT + ' ┋ jucardus.github.io/?qf=' + idT).replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
     var enlaceTuitear = generarTweetUrl(plainTextT);
     
     var plainText = entrada.replace(/▓/g,'').replace(/▒/g,' ┋ ').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
@@ -490,7 +490,7 @@
     var thumbYT = "";
     if (dominio == 'www.youtube.com' && url && url.indexOf('@') == -1) {
       var codigoYT = url.replace(/.*=/g,'').replace(/.*\//g,'');
-      thumbYT = '<div id="thumbYT"><a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></a></div>';
+      thumbYT = '<div id="thumbYT"><img class="thumbYT" src="https://img.youtube.com/vi/' + codigoYT + '/sddefault.jpg" /></div>';
     }
     
     var enlace = '<a class="enlacista" href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + url + '</a>';
@@ -679,7 +679,7 @@
   }
   
   function recargar () {
-    window.location.href = 'https://jucardus.github.io/enlaces';
+    window.location.href = 'https://jucardus.github.io';
   };
 
 </script>
