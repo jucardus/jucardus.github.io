@@ -3,7 +3,7 @@ a:link, a:visited {
   color: LightYellow;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 0.5px dotted color-mix(in srgb, Aquamarine, black 12%);
+  /*border-bottom: 0.5px dotted color-mix(in srgb, Aquamarine, black 12%);*/
 }
 
 a:hover {
