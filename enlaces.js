@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Vocabulario inglés *▒<b>cast candle [s.c.] vela fundida [f.c.] ¦Vls¦</b> → Accordingly, I was employed in cutting wick for the candles, filling the dipping mould and the moulds for cast candles, attending the shop, going of errands, etc. — <cite>Autobiography of Bejamin Franklin</cite>▒jucardus▒6v8gjse8▓",
   "▓Reflexiones *▒Buscamos a Dios porque hemos dejado de creer en él. En realidad estamos en el camino del retorno, del reencuentro, de la reconciliación.▒jucardus▒dvkrfc46▓",
   "▓Vocabulario francés *▒<b>boj [m.] (Buxus sempervirens) ¦Arbsts¦</b> → Que votre nom, vous dont le portrait est le plus bel ornement de cet ouvrage, soit ici comme une branche de buis bénit, prise on ne sait à quel arbre, mais certainement sanctifiée par la religion et renouvelée, toujours verte, par des mains pieuses, pour protéger la maison. — <cite>Eugénie Grandet. Scènes de la vie de Province. ~ Honoré de Balzac</cite>▒jucardus▒tsnnsopv▓",
   "▓Citas y proverbios *▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza.▒Papa León XIV▒d5xg3xgd▓",
