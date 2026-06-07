@@ -98,6 +98,11 @@ ol, ul {
   margin-top: 30px;
 }
 
+.temaBusca:hover {
+  color: Gold;
+  cursor: pointer;
+}
+
 /*¶¶¶¶¶¶¶¶¶¶*/
 .site-footer {
     background: #2c3e50;
