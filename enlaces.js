@@ -5,7 +5,6 @@ var enlaces = [
   "▓vocabulario inglés▒boulevard▒https://www.merriam-webster.com/dictionary/boulevard▒jvxz9e39▓",
   "▓debates cristianos▒DEBATE: La transustanciación en los Padres de la Iglesia (Dante Urbina vs. Edgar Pacheco)▒https://www.youtube.com/watch?v=UzCqErTu0WE▒7wt81q8h▓",
   "▓vocabulario español▒concupiscencia▒https://dle.rae.es/concupiscencia▒zm433e06▓",
-  "▓diccionario inglés-español▒<b>kowtow [v.]</b> /ˌkaʊˈtaʊ/ (Del chino 叩頭 (叩头) kòutóu [v.] dar un cabezazo; arrodillarse hasta tocar el suelo con la frente) adular servilmente, arrastrarse, arrodillarse servilmente (hasta tocar el suelo con la cabeza), doblegarse, hacer reverencias, hacer una reverencia (hasta tocar el suelo con la frente), hacer una reverencia profunda, rendir pleitesía, someterse▒jucardus▒cm9xoxwh▓",
   "▓vocabulario inglés▒kowtow▒https://www.merriam-webster.com/dictionary/kowtow▒8f25is9w▓",
   "▓mis sitios▒Citas y proverbios▒https://jucardus.github.io/citas▒df7hmpkx▓",
   "▓etopeya▒definición → Descripción de la personalidad, el ánimo, las costumbres, la psicologia de una persona.▒https://dle.rae.es/etopeya▒vz52t09u▓",
