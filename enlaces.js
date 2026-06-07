@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Frases chinas *▒我餓了，想吃東西。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • d. 想 (想) [xiang3] querer • e. 吃 (吃) [chi1] comer • f. 東西 (东西) [dong1 xi5] cosa, cosas, algo • {CS} 我饿了，想吃东西。 • {PY} Wǒ è le, xiǎng chī dōngxi. [fr.] • {TR} Tengo hambre y quiero comer algo. [fr.]▒jucardus▒04sktl7n▓",
   "▓Frases chinas *▒我餓了。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • {CS} 我饿了。 • {PY} Wǒ è le. [fr.] • {TR} Estoy hambriento. [fr.] • {TR} Tengo hambre. [fr.]▒jucardus▒p9d3h4u2▓",
   "▓Diccionario inglés-español *▒<b>kowtow [v.]</b> /ˌkaʊˈtaʊ/ (Del chino 叩頭 (叩头) kòutóu [v.] dar un cabezazo; arrodillarse hasta tocar el suelo con la frente) &mdash; adular servilmente, arrastrarse, arrodillarse servilmente (hasta tocar el suelo con la cabeza), doblegarse, hacer reverencias, hacer una reverencia (hasta tocar el suelo con la frente), hacer una reverencia profunda, rendir pleitesía, someterse▒jucardus▒e70spvci▓",
   "▓Seinfeld▒George Pretends to Meet Jerry | Seinfeld▒https://www.youtube.com/watch?v=7r8qXseXk_s▒nngiz4xh▓",
