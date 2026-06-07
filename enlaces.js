@@ -1,5 +1,4 @@
 var enlaces = [
-  "▓bbb▒bbb▒bbb▒gteiikja▓",
   "▓Diccionario multilingüe *▒<b>a lo largo de todo el año [loc.]</b> • AL. das ganze Jahr hindurch [loc.]; das ganze Jahr über [loc.] • CH. 一年到頭 (一年到头) yī nián dào tóu [loc.] • FR. toute l'année [loc.] • IN. all year round [loc.] • IT. tutto l'anno [loc.]▒jucardus▒3abtxcsx▓",
   "▓vocabulario español▒flagrar▒https://dle.rae.es/flagrar▒1yecb42d▓",
   "▓vocabulario inglés-español▒sizzling▒https://www.linguee.es/ingles-espanol/traduccion/sizzling.html▒igenfg4u▓",
