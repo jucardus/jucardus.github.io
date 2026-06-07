@@ -1668,7 +1668,6 @@ var enlaces = [
   "▓vídeos de Relojería▒Cómo funciona un reloj mecánico? Explicado con modelo 3D.▒https://youtu.be/Nso2eWhlsRA▒590n5gc2▓",
   "▓plataformas de vídeos▒El Otro Plano TV▒https://elotroplano.tv/▒yjvrzi1d▓",
   "▓vocabulario español▒eternal▒https://dle.rae.es/eternal▒fk641xiw▓",
-  "▓debates de Sucesión apostólica▒Segundo debate con el apologista bautista Salvador Barragan.▒https://youtu.be/3xZ5qVrbknY▒syhjofgm▓",
   "▓vocabulario inglés▒rat out▒https://en.wiktionary.org/wiki/rat_out▒uu7tfyf4▓",
   "▓vocabulario español▒condoro▒https://dle.rae.es/condoro▒7ooqm8kv▓",
   "▓vocabulario español▒mnemónico▒https://dle.rae.es/mnemónico▒4vu7zsqp▓",
