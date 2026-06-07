@@ -2694,7 +2694,6 @@ var enlaces = [
   "▓vocabulario español▒reivindicar▒https://dle.rae.es/reivindicar▒904ixr6m▓",
   "▓herramientas▒Hex to RGB Color Converter▒https://www.rapidtables.com/convert/color/hex-to-rgb.html▒sdm8xymy▓",
   "▓vocabulario inglés▒at large▒https://en.wiktionary.org/wiki/at_large▒mw9jhp6o▓",
-  "▓El diálogo, de santa Catalina▒definición▒https://www.holyrosaryprovince.org/index.php?option=com_content▒46kmyuar▓",
   "▓glosarios▒fobias▒https://docs.google.com/document/d/1CJlc_ByK7-vKgsxz_IirBkusQ5F3Qxm03YkWUEksTxc/mobilebasic▒rg3yugba▓",
   "▓vocabulario alemán-español▒textlich▒https://de.langenscheidt.com/deutsch-spanisch/textlich▒9jn0c13f▓",
   "▓vídeos de Política▒America is NOT a Democracy▒https://www.youtube.com/shorts/gazpRAkIYAc▒xs25opl1▓",
