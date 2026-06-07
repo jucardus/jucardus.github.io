@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒chumino▒https://dle.rae.es/chumino▒wscbl1sw▓",
   "▓vocabulario inglés▒boulevard▒https://www.merriam-webster.com/dictionary/boulevard▒jvxz9e39▓",
   "▓debates cristianos▒DEBATE: La transustanciación en los Padres de la Iglesia (Dante Urbina vs. Edgar Pacheco)▒https://www.youtube.com/watch?v=UzCqErTu0WE▒7wt81q8h▓",
   "▓vocabulario español▒concupiscencia▒https://dle.rae.es/concupiscencia▒zm433e06▓",
