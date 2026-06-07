@@ -1,6 +1,5 @@
 var enlaces = [
   "▓Diccionario inglés-español *▒<b>kowtow [v.]</b> /ˌkaʊˈtaʊ/ (Del chino 叩頭 (叩头) kòutóu [v.] dar un cabezazo; arrodillarse hasta tocar el suelo con la frente) &mdash; adular servilmente, arrastrarse, arrodillarse servilmente (hasta tocar el suelo con la cabeza), doblegarse, hacer reverencias, hacer una reverencia (hasta tocar el suelo con la frente), hacer una reverencia profunda, rendir pleitesía, someterse▒jucardus▒e70spvci▓",
-  "▓Diccionario inglés-español *▒<b>kowtow [v.]</b> /ˌkaʊˈtaʊ/ (Del chino 叩頭 (叩头) kòutóu [v.] dar un cabezazo; arrodillarse hasta tocar el suelo con la frente)<ul><li>adular servilmente</li><li>arrastrarse</li><li>arrodillarse servilmente (hasta tocar el suelo con la cabeza)</li><li>doblegarse</li><li>hacer reverencias</li><li>hacer una reverencia (hasta tocar el suelo con la frente)</li><li>hacer una reverencia profunda</li><li>rendir pleitesía</li><li>someterse</li></ul>▒jucardus▒7x83ur1v▓",
   "▓Seinfeld▒George Pretends to Meet Jerry | Seinfeld▒https://www.youtube.com/watch?v=7r8qXseXk_s▒nngiz4xh▓",
   "▓vocabulario inglés▒thoroughfare▒https://www.merriam-webster.com/dictionary/thoroughfare▒jf75dtp9▓",
   "▓vocabulario español▒chumino▒https://dle.rae.es/chumino▒wscbl1sw▓",
