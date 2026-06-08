@@ -55,7 +55,6 @@ var enlaces = [
   "▓citas▒Aquella teoría que no encuentre aplicacion práctica en la vida, es una acrobacia del pensamiento.▒Swami Vivekananda▒qfrm31o5▓",
   "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos.▒Anne Louise Germaine de Stäel▒49b5vdc3▓",
   "▓citas▒Amo la traición, pero odio al traidor.▒Cayo Julio César▒2yhzp22o▓",
-  "▓proverbios▒Al perro que tiene dinero se le llama Señor Perro. ~ Proverbio árabe▒jucardus▒g5kbmkpg▓",
   "▓citas▒Allí donde se cruzan tus talentos y las necesidades del mundo, está tu vocación.▒Aristóteles▒nynrvyxf▓",
   "▓celulares▒HONOR 600 🟧 El teléfono que APPLE QUISO pero NO PUDO HACER!!!▒https://www.youtube.com/watch?v=4QKObLfKOnk▒4mf8qtcw▓",
   "▓abreviaturas▒Abreviaturas y signos empleados (en el DRAE)▒https://dle.rae.es/contenido/abreviaturas-y-signos-empleados▒7gsq8o2o▓",
