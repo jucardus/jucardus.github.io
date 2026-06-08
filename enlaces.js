@@ -81,7 +81,6 @@ var enlaces = [
   "▓celulares pequeños▒REVIEW: Unihertz Atom L - Compact, Rugged Android Smartphone (4-Inch Display, Helio P60)▒https://www.youtube.com/watch?v=YtSzp72etbM▒7or4ys7v▓",
   "▓celulares pequeños▒AGM M10 | Stylish Powerful Rugged Smartphone 2025 Official Durability Test & Hands-on !!▒https://www.youtube.com/watch?v=tYF2ZDQhd_g▒y3s95esq▓",
   "▓celulares pequeños▒AGM M10 Rugged Flip Phone #AGMM10 #RuggedFlipPhone▒https://www.youtube.com/watch?v=XbaZrmuZon4▒oi44dlr7▓",
-  "▓Diccionario inglés-español▒good riddance [interj.] por fin; al fin; qué alivio▒jucardus▒i4zbe3kg▓",
   "▓Diccionario inglés-español▒spite [s.] despecho, rencor, resentimiento▒jucardus▒eyir5j0k▓",
   "▓vocabulario alemán▒Der Ausdruck „die rechte Seite betreffend“ lässt sich im Deutschen am prägnantesten mit dem Adjektiv „rechtsseitig“ oder der adverbialen Formulierung „auf der rechten Seite“ übersetzen. → The expression concerning the right side can be most concisely translated into German with the adjective right-hand or the adverbial phrase on the right side. ~ Gemini ~▒jucardus▒uh5i29vx▓",
   "▓vídeos de Filosofía▒¿Sabes que sólo te cuentan parte de las ideas de los grandes filósofos de la historia?▒https://www.youtube.com/watch?v=nBA2Z3p5vYU▒wwjlenw0▓",
