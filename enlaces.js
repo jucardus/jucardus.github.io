@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Diccionario inglés-español *▒<b>kowtow [v.]</b> /ˌkaʊˈtaʊ/ (Del chino 叩頭 (叩头) kòutóu [v.] dar un cabezazo; arrodillarse hasta tocar el suelo con la frente) -- adular servilmente, arrastrarse, arrodillarse servilmente (hasta tocar el suelo con la cabeza), doblegarse, hacer reverencias, hacer una reverencia (hasta tocar el suelo con la frente), hacer una reverencia profunda, rendir pleitesía, someterse▒jucardus▒cwp1k593▓",
   "▓Citas y proverbios *▒Cásate con un arqueólogo. Cuanto más vieja te hagas, más encantadora te encontrará.▒Agatha Christie▒5mro58q9▓",
   "▓Citas y proverbios *▒De todos los infortunios que afligen a la humanidad, el mรกs amargo es que hemos de tener conciencia de mucho y control de nada.▒Herodoto▒8yb4bp1y▓",
   "▓Citas y proverbios *▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa.▒Marie Louise de la Ramée▒8kku93le▓",
