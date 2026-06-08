@@ -89,7 +89,6 @@ var enlaces = [
   "▓celulares pequeños▒Why BLUEFOX NX1 Got Everyone Talking as The Smallest Smartphone in The World!▒https://www.youtube.com/watch?v=YDfwzF3Ku9o▒0swtwjd4▓",
   "▓vocabulario español▒irredento▒https://dle.rae.es/irredento▒06yri73k▓",
   "▓vídeos de celulares▒Xiaomi Did What Apple Couldn’t Do in 10 Years. I’m shocked…▒https://www.youtube.com/watch?v=hz4If5AndZM▒df6z7r27▓",
-  "▓diccionario francés-español▒devanture [f.] escaparate (Revêtement qui garnit et orne la façade d’une boutique.)▒jucardus▒k4dnfchq▓",
   "▓vocabulario francés▒devanture▒https://www.dictionnaire-academie.fr/article/A9D2188▒g89pxkbu▓",
   "▓casas en venta▒1601 C. 11, Villa Elisa, La Plata, Buenos Aires, Argentina▒https://www.google.com/maps/@-34.8561361,-58.0880797,3a,75y,187.28h,89.19t/data=!3m7!1e1!3m5!1sZoHuZg-5Df90fEZ8jFnP1w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0.8078626466487293%26panoid%3DZoHuZg-5Df90fEZ8jFnP1w%26yaw%3D187.27979005714099!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D▒iqawsg47▓",
   "▓lugares▒Plaza Luis Castells de Villa Elisa, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/iTRxpF42c6b2qtLP7▒7yqw41vr▓",
