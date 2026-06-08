@@ -170,41 +170,19 @@
             border: none;
             border-top: 1px solid #e0e0e0;
         }
-        
-        .progress-bar {
-            width: 100%;
-            height: 20px;
-            background-color: #e0e0e0;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 10px 0;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background-color: #4CAF50;
-            transition: width 0.3s;
-            width: 0%;
-        }
-        
-        .status-text {
-            margin: 10px 0;
-            color: #666;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🔍 Enlaces Complete Duplicate ID Checker</h1>
-        <p>This tool reads the complete <code>enlaces.js</code> file directly from GitHub and scans ALL entries for duplicate or missing IDs.</p>
+        <p>This tool loads <code>enlaces.js</code> directly and scans ALL entries for duplicate or missing IDs.</p>
         
         <button id="checkBtn">✅ Scan All Entries</button>
         
         <div id="result">
             <div class="stats">
-                <p>📌 Click the button to scan ALL entries in the enlaces array.</p>
-                <p>⚠️ <strong>Note:</strong> This may take 10-30 seconds depending on file size.</p>
+                <p>📌 Click the button to load and scan ALL entries in the enlaces array.</p>
+                <p>⚠️ <strong>Note:</strong> The entire array will be loaded into memory for scanning.</p>
             </div>
         </div>
     </div>
@@ -213,163 +191,129 @@
         const checkBtn = document.getElementById('checkBtn');
         const resultDiv = document.getElementById('result');
         
-        checkBtn.addEventListener('click', async function() {
+        checkBtn.addEventListener('click', function() {
             checkBtn.disabled = true;
             resultDiv.innerHTML = `
                 <div class="stats">
                     <div class="loading"></div>
-                    <span class="status-text">⏳ Fetching enlaces.js file from GitHub...</span>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill"></div>
-                    </div>
+                    <span>⏳ Loading enlaces.js...</span>
                 </div>
             `;
             
-            try {
-                // Fetch the raw file directly
-                const url = 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/refs/heads/main/enlaces.js';
-                const response = await fetch(url);
+            // Load enlaces.js dynamically
+            const script = document.createElement('script');
+            script.src = 'enlaces.js';
+            
+            script.onload = function() {
+                resultDiv.innerHTML = `
+                    <div class="stats">
+                        <div class="loading"></div>
+                        <span>⏳ Processing ${enlaces.length.toLocaleString()} entries...</span>
+                    </div>
+                `;
                 
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                }
-                
-                const content = await response.text();
-                updateProgress(25, 'File loaded, parsing array entries...');
-                
-                // Extract ALL entries using multiple methods to ensure completeness
-                let entries = [];
-                
-                // Method 1: Extract all quoted strings that start with "▓"
-                const regex = /"([^"\\]*(?:\\.[^"\\]*)*)"/g;
-                let match;
-                let extractedCount = 0;
-                
-                while ((match = regex.exec(content)) !== null) {
-                    const entry = match[1];
-                    if (entry.startsWith('▓')) {
-                        entries.push(entry);
-                        extractedCount++;
-                        
-                        // Update progress every 500 entries
-                        if (extractedCount % 500 === 0) {
-                            updateProgress(25 + Math.min(45, (extractedCount / 1000) * 45), `Extracted ${extractedCount} entries...`);
-                            await delay(0); // Allow UI to update
-                        }
-                    }
-                }
-                
-                updateProgress(70, `Extracted ${entries.length} entries, analyzing IDs...`);
-                
-                if (entries.length === 0) {
-                    throw new Error('No entries found starting with "▓"');
-                }
-                
-                // Analyze all entries
-                const idMap = new Map();
-                const emptyIdEntries = [];
-                const duplicateIds = new Map();
-                const allIds = [];
-                
-                for (let idx = 0; idx < entries.length; idx++) {
-                    const entry = entries[idx];
-                    
-                    // Extract ID (everything after the last ▒ and before the final ▓)
-                    const lastSeparator = entry.lastIndexOf('▒');
-                    if (lastSeparator === -1) {
-                        emptyIdEntries.push({ 
-                            index: idx + 1, 
-                            preview: entry.substring(0, 80) + (entry.length > 80 ? '...' : '')
-                        });
-                        continue;
-                    }
-                    
-                    let id = entry.substring(lastSeparator + 1);
-                    id = id.replace(/[▓]/g, '').trim();
-                    
-                    if (id === '') {
-                        emptyIdEntries.push({ 
-                            index: idx + 1, 
-                            preview: entry.substring(0, 80) + (entry.length > 80 ? '...' : '')
-                        });
-                        continue;
-                    }
-                    
-                    allIds.push(id);
-                    
-                    if (idMap.has(id)) {
-                        const existingIndices = duplicateIds.get(id) || [idMap.get(id)];
-                        if (!duplicateIds.has(id)) {
-                            duplicateIds.set(id, existingIndices);
-                        }
-                        duplicateIds.get(id).push(idx + 1);
-                    } else {
-                        idMap.set(id, idx + 1);
-                    }
-                    
-                    // Update progress for large files
-                    if (idx % 500 === 0) {
-                        updateProgress(70 + (idx / entries.length) * 25, `Analyzing entry ${idx + 1} of ${entries.length}...`);
-                        await delay(0);
-                    }
-                }
-                
-                updateProgress(95, 'Preparing results...');
-                
-                // Prepare results
-                const duplicatesList = [];
-                for (let [id, indices] of duplicateIds.entries()) {
-                    duplicatesList.push({
-                        id: id,
-                        occurrences: indices.length,
-                        positions: indices
-                    });
-                }
-                
-                // Sort duplicates by occurrence count (highest first)
-                duplicatesList.sort((a, b) => b.occurrences - a.occurrences);
-                
-                // Get verification samples
-                const samples = entries.slice(0, 5).map(e => e.substring(0, 100));
-                const lastIds = allIds.slice(-30);
-                const firstIds = allIds.slice(0, 30);
-                
-                updateProgress(100, 'Complete!');
-                await delay(200);
-                
-                // Display results
-                displayResults({
-                    totalEntries: entries.length,
-                    uniqueIds: idMap.size,
-                    duplicateCount: duplicateIds.size,
-                    duplicates: duplicatesList,
-                    emptyIdCount: emptyIdEntries.length,
-                    emptyIdExamples: emptyIdEntries.slice(0, 20),
-                    samples: samples,
-                    firstIds: firstIds,
-                    lastIds: lastIds
-                });
-                
-            } catch (error) {
-                displayError(error);
-            } finally {
+                // Allow UI to update
+                setTimeout(() => {
+                    processEnlacesArray();
+                }, 100);
+            };
+            
+            script.onerror = function() {
+                resultDiv.innerHTML = `
+                    <div class="error">
+                        ❌ Error loading enlaces.js<br>
+                        Make sure the file exists in the same directory as this HTML file.
+                    </div>
+                `;
                 checkBtn.disabled = false;
-            }
+            };
+            
+            document.head.appendChild(script);
         });
         
-        function updateProgress(percent, message) {
-            const progressFill = document.getElementById('progressFill');
-            if (progressFill) {
-                progressFill.style.width = percent + '%';
+        function processEnlacesArray() {
+            const entries = enlaces; // Direct access to the array from enlaces.js
+            
+            if (!entries || entries.length === 0) {
+                displayError(new Error('enlaces array is empty or not found'));
+                return;
             }
-            const statusText = document.querySelector('.status-text');
-            if (statusText && message) {
-                statusText.innerHTML = message;
+            
+            // Analyze all entries
+            const idMap = new Map();
+            const emptyIdEntries = [];
+            const duplicateIds = new Map();
+            const allIds = [];
+            
+            for (let idx = 0; idx < entries.length; idx++) {
+                const entry = entries[idx];
+                
+                // Extract ID (everything after the last ▒ and before the final ▓)
+                const lastSeparator = entry.lastIndexOf('▒');
+                if (lastSeparator === -1) {
+                    emptyIdEntries.push({ 
+                        index: idx + 1, 
+                        preview: entry.substring(0, 80) + (entry.length > 80 ? '...' : '')
+                    });
+                    continue;
+                }
+                
+                let id = entry.substring(lastSeparator + 1);
+                id = id.replace(/[▓]/g, '').trim();
+                
+                if (id === '') {
+                    emptyIdEntries.push({ 
+                        index: idx + 1, 
+                        preview: entry.substring(0, 80) + (entry.length > 80 ? '...' : '')
+                    });
+                    continue;
+                }
+                
+                allIds.push(id);
+                
+                if (idMap.has(id)) {
+                    const existingIndices = duplicateIds.get(id) || [idMap.get(id)];
+                    if (!duplicateIds.has(id)) {
+                        duplicateIds.set(id, existingIndices);
+                    }
+                    duplicateIds.get(id).push(idx + 1);
+                } else {
+                    idMap.set(id, idx + 1);
+                }
             }
-        }
-        
-        function delay(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
+            
+            // Prepare results
+            const duplicatesList = [];
+            for (let [id, indices] of duplicateIds.entries()) {
+                duplicatesList.push({
+                    id: id,
+                    occurrences: indices.length,
+                    positions: indices
+                });
+            }
+            
+            // Sort duplicates by occurrence count (highest first)
+            duplicatesList.sort((a, b) => b.occurrences - a.occurrences);
+            
+            // Get verification samples
+            const samples = entries.slice(0, 5).map(e => e.substring(0, 100));
+            const lastIds = allIds.slice(-30);
+            const firstIds = allIds.slice(0, 30);
+            
+            // Display results
+            displayResults({
+                totalEntries: entries.length,
+                uniqueIds: idMap.size,
+                duplicateCount: duplicateIds.size,
+                duplicates: duplicatesList,
+                emptyIdCount: emptyIdEntries.length,
+                emptyIdExamples: emptyIdEntries.slice(0, 20),
+                samples: samples,
+                firstIds: firstIds,
+                lastIds: lastIds
+            });
+            
+            checkBtn.disabled = false;
         }
         
         function displayResults(data) {
@@ -395,7 +339,7 @@
                         <div style="font-family: monospace; font-size: 11px; background-color: #f5f5f5; padding: 8px; border-radius: 4px; word-wrap: break-word; max-height: 100px; overflow-y: auto;">
                             ${data.lastIds.join(' · ')}
                         </div>
-                        <p style="font-size: 11px; margin-top: 10px; color: #666;">✓ If these are NOT the actual last IDs in your file, the scan was incomplete.</p>
+                        <p style="font-size: 11px; margin-top: 10px; color: #666;">✓ The last IDs shown above should match the end of your enlaces.js file.</p>
                     </div>
                 `;
             }
@@ -454,6 +398,7 @@
                     ${escapeHtml(error.message || error.toString())}
                 </div>
             `;
+            checkBtn.disabled = false;
         }
         
         function escapeHtml(text) {
