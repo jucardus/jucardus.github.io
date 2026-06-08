@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces Duplicate ID Checker</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 4px;
+            background-color: #fafafa;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .error {
+            color: #d32f2f;
+            background-color: #ffebee;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 4px solid #d32f2f;
+        }
+        
+        .success {
+            color: #388e3c;
+            background-color: #e8f5e9;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 4px solid #388e3c;
+        }
+        
+        .warning {
+            color: #f57c00;
+            background-color: #fff3e0;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 4px solid #f57c00;
+        }
+        
+        .stats {
+            background-color: #e3f2fd;
+            padding: 12px;
+            border-radius: 4px;
+            margin: 15px 0;
+            border-left: 4px solid #1976d2;
+        }
+        
+        .stats p {
+            margin: 8px 0;
+        }
+        
+        .stats .number {
+            font-weight: bold;
+            color: #1976d2;
+            font-size: 20px;
+        }
+        
+        .duplicate-list, .empty-list, .sample-list {
+            margin-top: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            background-color: white;
+        }
+        
+        .duplicate-item, .empty-item, .sample-item {
+            padding: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        
+        .duplicate-item:hover, .empty-item:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .badge-danger {
+            background-color: #d32f2f;
+            color: white;
+        }
+        
+        .badge-warning {
+            background-color: #f57c00;
+            color: white;
+        }
+        
+        .badge-info {
+            background-color: #1976d2;
+            color: white;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        h3 {
+            margin: 15px 0 5px 0;
+            font-size: 16px;
+        }
+        
+        hr {
+            margin: 15px 0;
+            border: none;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: #4CAF50;
+            transition: width 0.3s;
+            width: 0%;
+        }
+        
+        .status-text {
+            margin: 10px 0;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Enlaces Complete Duplicate ID Checker</h1>
+        <p>This tool reads the complete <code>enlaces.js</code> file directly from GitHub and scans ALL entries for duplicate or missing IDs.</p>
+        
+        <button id="checkBtn">✅ Scan All Entries</button>
+        
+        <div id="result">
+            <div class="stats">
+                <p>📌 Click the button to scan ALL entries in the enlaces array.</p>
+                <p>⚠️ <strong>Note:</strong> This may take 10-30 seconds depending on file size.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const checkBtn = document.getElementById('checkBtn');
+        const resultDiv = document.getElementById('result');
+        
+        checkBtn.addEventListener('click', async function() {
+            checkBtn.disabled = true;
+            resultDiv.innerHTML = `
+                <div class="stats">
+                    <div class="loading"></div>
+                    <span class="status-text">⏳ Fetching enlaces.js file from GitHub...</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            `;
+            
+            try {
+                // Fetch the raw file directly
+                const url = 'https://raw.githubusercontent.com/jucardus/jucardus.github.io/refs/heads/main/enlaces.js';
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const content = await response.text();
+                updateProgress(25, 'File loaded, parsing array entries...');
+                
+                // Extract ALL entries using multiple methods to ensure completeness
+                let entries = [];
+                
+                // Method 1: Extract all quoted strings that start with "▓"
+                const regex = /"([^"\\]*(?:\\.[^"\\]*)*)"/g;
+                let match;
+                let extractedCount = 0;
+                
+                while ((match = regex.exec(content)) !== null) {
+                    const entry = match[1];
+                    if (entry.startsWith('▓')) {
+                        entries.push(entry);
+                        extractedCount++;
+                        
+                        // Update progress every 500 entries
+                        if (extractedCount % 500 === 0) {
+                            updateProgress(25 + Math.min(45, (extractedCount / 1000) * 45), `Extracted ${extractedCount} entries...`);
+                            await delay(0); // Allow UI to update
+                        }
+                    }
+                }
+                
+                updateProgress(70, `Extracted ${entries.length} entries, analyzing IDs...`);
+                
+                if (entries.length === 0) {
+                    throw new Error('No entries found starting with "▓"');
+                }
+                
+                // Analyze all entries
+                const idMap = new Map();
+                const emptyIdEntries = [];
+                const duplicateIds = new Map();
+                const allIds = [];
+                
+                for (let idx = 0; idx < entries.length; idx++) {
+                    const entry = entries[idx];
+                    
+                    // Extract ID (everything after the last ▒ and before the final ▓)
+                    const lastSeparator = entry.lastIndexOf('▒');
+                    if (lastSeparator === -1) {
+                        emptyIdEntries.push({ 
+                            index: idx + 1, 
+                            preview: entry.substring(0, 80) + (entry.length > 80 ? '...' : '')
+                        });
+                        continue;
+                    }
+                    
+                    let id = entry.substring(lastSeparator + 1);
+                    id = id.replace(/[▓]/g, '').trim();
+                    
+                    if (id === '') {
+                        emptyIdEntries.push({ 
+                            index: idx + 1, 
+                            preview: entry.substring(0, 80) + (entry.length > 80 ? '...' : '')
+                        });
+                        continue;
+                    }
+                    
+                    allIds.push(id);
+                    
+                    if (idMap.has(id)) {
+                        const existingIndices = duplicateIds.get(id) || [idMap.get(id)];
+                        if (!duplicateIds.has(id)) {
+                            duplicateIds.set(id, existingIndices);
+                        }
+                        duplicateIds.get(id).push(idx + 1);
+                    } else {
+                        idMap.set(id, idx + 1);
+                    }
+                    
+                    // Update progress for large files
+                    if (idx % 500 === 0) {
+                        updateProgress(70 + (idx / entries.length) * 25, `Analyzing entry ${idx + 1} of ${entries.length}...`);
+                        await delay(0);
+                    }
+                }
+                
+                updateProgress(95, 'Preparing results...');
+                
+                // Prepare results
+                const duplicatesList = [];
+                for (let [id, indices] of duplicateIds.entries()) {
+                    duplicatesList.push({
+                        id: id,
+                        occurrences: indices.length,
+                        positions: indices
+                    });
+                }
+                
+                // Sort duplicates by occurrence count (highest first)
+                duplicatesList.sort((a, b) => b.occurrences - a.occurrences);
+                
+                // Get verification samples
+                const samples = entries.slice(0, 5).map(e => e.substring(0, 100));
+                const lastIds = allIds.slice(-30);
+                const firstIds = allIds.slice(0, 30);
+                
+                updateProgress(100, 'Complete!');
+                await delay(200);
+                
+                // Display results
+                displayResults({
+                    totalEntries: entries.length,
+                    uniqueIds: idMap.size,
+                    duplicateCount: duplicateIds.size,
+                    duplicates: duplicatesList,
+                    emptyIdCount: emptyIdEntries.length,
+                    emptyIdExamples: emptyIdEntries.slice(0, 20),
+                    samples: samples,
+                    firstIds: firstIds,
+                    lastIds: lastIds
+                });
+                
+            } catch (error) {
+                displayError(error);
+            } finally {
+                checkBtn.disabled = false;
+            }
+        });
+        
+        function updateProgress(percent, message) {
+            const progressFill = document.getElementById('progressFill');
+            if (progressFill) {
+                progressFill.style.width = percent + '%';
+            }
+            const statusText = document.querySelector('.status-text');
+            if (statusText && message) {
+                statusText.innerHTML = message;
+            }
+        }
+        
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        
+        function displayResults(data) {
+            let html = `
+                <div class="stats">
+                    <p>📊 <strong>Scan Complete</strong></p>
+                    <p>📝 Total entries scanned: <span class="number">${data.totalEntries.toLocaleString()}</span></p>
+                    <p>🔑 Unique IDs found: <span class="number">${data.uniqueIds.toLocaleString()}</span></p>
+                    <p>⚠️ Duplicate IDs detected: <span class="number">${data.duplicateCount}</span></p>
+                    <p>🚫 Empty/missing IDs: <span class="number">${data.emptyIdCount}</span></p>
+                </div>
+            `;
+            
+            // Verification: Show first and last IDs
+            if (data.firstIds && data.firstIds.length > 0) {
+                html += `
+                    <div class="stats">
+                        <p>🔍 <strong>Verification - First 30 IDs in file:</strong></p>
+                        <div style="font-family: monospace; font-size: 11px; background-color: #f5f5f5; padding: 8px; border-radius: 4px; word-wrap: break-word; max-height: 100px; overflow-y: auto;">
+                            ${data.firstIds.join(' · ')}
+                        </div>
+                        <p style="margin-top: 10px;">🔍 <strong>Verification - Last 30 IDs in file:</strong></p>
+                        <div style="font-family: monospace; font-size: 11px; background-color: #f5f5f5; padding: 8px; border-radius: 4px; word-wrap: break-word; max-height: 100px; overflow-y: auto;">
+                            ${data.lastIds.join(' · ')}
+                        </div>
+                        <p style="font-size: 11px; margin-top: 10px; color: #666;">✓ If these are NOT the actual last IDs in your file, the scan was incomplete.</p>
+                    </div>
+                `;
+            }
+            
+            // Sample entries
+            if (data.samples && data.samples.length > 0) {
+                html += `
+                    <h3>📋 Sample Entries (first 5)</h3>
+                    <div class="sample-list">
+                `;
+                data.samples.forEach((sample, i) => {
+                    html += `<div class="sample-item"><span class="badge badge-info">${i+1}</span> ${escapeHtml(sample)}...</div>`;
+                });
+                html += `</div>`;
+            }
+            
+            // Duplicates section
+            if (data.duplicateCount > 0) {
+                html += `<h3>🔁 Duplicate IDs (${data.duplicateCount} total)</h3><div class="duplicate-list">`;
+                data.duplicates.forEach(dup => {
+                    html += `<div class="duplicate-item">
+                        <code><strong>${escapeHtml(dup.id)}</strong></code>
+                        <span class="badge badge-danger">${dup.occurrences} times</span>
+                        <span style="color: #666; font-size: 11px; margin-left: 10px;">
+                            at positions: ${dup.positions.join(', ')}
+                        </span>
+                    </div>`;
+                });
+                html += `</div>`;
+            } else if (data.totalEntries > 0) {
+                html += `<div class="success">✅ No duplicate IDs found across all ${data.totalEntries.toLocaleString()} entries!</div>`;
+            }
+            
+            // Empty/missing IDs section
+            if (data.emptyIdCount > 0) {
+                html += `<h3>🚫 Entries with Missing/Empty IDs (${data.emptyIdCount} total)</h3><div class="empty-list">`;
+                data.emptyIdExamples.forEach(empty => {
+                    html += `<div class="empty-item">
+                        <span class="badge badge-warning">Position ${empty.index}</span>
+                        ${escapeHtml(empty.preview)}
+                    </div>`;
+                });
+                if (data.emptyIdCount > 20) {
+                    html += `<div class="empty-item" style="color: #999;">... and ${data.emptyIdCount - 20} more entries with empty IDs</div>`;
+                }
+                html += `</div>`;
+            }
+            
+            resultDiv.innerHTML = html;
+        }
+        
+        function displayError(error) {
+            resultDiv.innerHTML = `
+                <div class="error">
+                    ❌ <strong>Error:</strong><br>
+                    ${escapeHtml(error.message || error.toString())}
+                </div>
+            `;
+        }
+        
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
