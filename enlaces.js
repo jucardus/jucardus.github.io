@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vídeos de Cristianismo▒Peter J Williams vs Bart Ehrman • The story of Jesus: Are the Gospels historically reliable?▒https://www.youtube.com/watch?v=ZuZPPGvF_2I▒f50tunm5▓",
   "▓X Twitter *▒Mi cuenta en X Twitter, para difusión de mi actividad en este sitio y para ciertas interacciones; también accesible directamente mediante el enlace corto <b><i>x.jucardus.com</i></b>.▒https://x.com/jucardus▒m08547ac▓",
   "▓Repositorio *▒Carpetas y subcarpetas en Box, con herramientas diversas, diccionarios, algo de programación y algunos otros temas. Su contenido está siendo adaptado a este sitio.▒https://jucardus.github.io/repositorio▒fvol9ra0▓",
   "▓Música clásica *▒Lista de reproducción en YouTube, con compositores diversos y con la opción de reproducción aleatoria. También puede visitarse con el enlace corto <b><i>mus.jucardus.com</i></b>.▒https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p▒ov46sear▓",
