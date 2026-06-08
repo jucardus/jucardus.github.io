@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒Cásate con un arqueólogo. Cuanto más vieja te hagas, más encantadora te encontrará.▒Agatha Christie▒5mro58q9▓",
   "▓Citas y proverbios *▒De todos los infortunios que afligen a la humanidad, el mรกs amargo es que hemos de tener conciencia de mucho y control de nada.▒Herodoto▒8yb4bp1y▓",
   "▓Citas y proverbios *▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa.▒Marie Louise de la Ramée▒8kku93le▓",
   "▓Citas y proverbios *▒Democracy is the worst form of Government except for all those other forms that have been tried.▒Winston Churchill▒2gm8q2y2▓",
