@@ -75,7 +75,6 @@ var enlaces = [
   "▓Diccionario inglés-español▒<b>dandelion [s.]</b> /ˈdæn.dɪ.laɪ.ən/ diente de león (del francés «dent de lion») ¦Btnc¦▒https://x.com/cutecorestar/status/2057081147889209380▒doo6y0q1▓",
   "▓vocabulario inglés▒volley▒https://www.merriam-webster.com/dictionary/volley▒pdp88jpt▓",
   "▓vídeos de Cristianismo▒El cristianismo: ¿Culto mistérico? o ¿judaísmo mesiánico? | Dr Antonio Piñero v/s Irving Gatell▒https://www.youtube.com/watch?v=ExfcpO3d3Fo▒tm9mxnev▓",
-  "▓vocabulario samovar▒samovar▒https://dle.rae.es/samovar▒5yuij42j▓",
   "▓vocabulario español▒anagogía▒https://dle.rae.es/anagog%C3%ADa▒8scvkrii▓",
   "▓vocabulario español▒estamento▒https://dle.rae.es/estamento▒9j1bo992▓",
   "▓vocabulario español▒giste▒https://dle.rae.es/giste▒d10ygcof▓",
