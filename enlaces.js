@@ -1,5 +1,4 @@
 var enlaces = [
-  "▓tuqui▒otra prueba más▒chimichanga▒pfnlsp2m▓",
   "▓otra más pruebas▒otra prueba más▒chimichanga▒2oakeiyv▓",
   "▓más pruebas▒otra prueba más▒chimichanga▒1tx85hc0▓",
   "▓otra prueba▒otra prueba más▒jucardus▒oasjakoi▓",
