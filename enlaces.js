@@ -110,7 +110,6 @@ var enlaces = [
   "▓herramientas▒generador de códigos QR▒https://genqrcode.com/▒y761phiy▓",
   "▓herramientas▒códigos QR con imagen de fondo▒https://www.andrewt.net/dithered-qr-codes/index.html▒lbr7r5mr▓",
   "▓vocabulario español▒fimosis▒https://dle.rae.es/fimosis▒zkggxvnm▓",
-  "▓Diccionario inglés-español▒cellar [s.] /ˈsɛl.ər/ sótano; bodega; cava (bodega de vinos, _wine cellar_)▒jucardus▒0d46zeeo▓",
   "▓significado del número 3▒In Judaism, the number 3 represents harmony, stability, and the synthesis of opposing forces (like duality/conflict) into a new, balanced entity. It symbolizes structural completeness and chazaka (a confirmed status or strong presumption) when actions are repeated three times. It is associated with the Hebrew letter Gimel (), symbolizing growth, reward, and bridging differences. ~ Gemini ~▒jucardus▒es22vkuo▓",
   "▓vocabulario español▒execración▒https://dle.rae.es/execraci%C3%B3n▒sdnbx1mo▓",
   "▓mis sitios▒Diccionarios todos▒https://jucardus.github.io/diccionarios▒aqebr22c▓",
