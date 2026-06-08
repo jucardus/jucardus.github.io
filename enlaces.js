@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Diccionario inglés-español *▒<b>spite [s.]</b> despecho, rencor, resentimiento▒jucardus▒5o4498dp▓",
   "▓Diccionario inglés-español *▒<b>good riddance [interj.]</b> por fin; al fin; qué alivio▒jucardus▒bkbdzmh6▓",
   "▓Diccionario inglés-español *▒<b>cellar [s.]</b> /ˈsɛl.ər/ sótano; bodega; cava (bodega de vinos, <i>wine cellar</i>)▒jucardus▒zfm90fo9▓",
   "▓Diccionario francés-español *▒<b>devanture [f.]</b> escaparate (Revêtement qui garnit et orne la façade d’une boutique.)▒jucardus▒de7mugfg▓",
