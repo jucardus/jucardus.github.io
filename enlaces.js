@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario inglés▒scoundrel▒https://www.linguee.es/espanol-ingles/search?source=auto&query=scoundrel▒0x7iryhx▓",
   "▓mis sitios▒Repositorio Jucardus▒https://jucardus.github.io/repositorio▒w2nfq7ku▓",
   "▓películas▒School for Scoundrels | Ben Stiller, Billy Bob Thornton | COMEDY | Full Movie in English▒https://www.youtube.com/watch?v=oBClkITtHpg▒bwh21rpm▓",
   "▓películas▒The Promotion▒https://www.youtube.com/watch?v=Dz428Fr0YXw▒w8ax2avf▓",
