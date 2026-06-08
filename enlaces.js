@@ -1,5 +1,4 @@
 var enlaces = [
-  "▓más pruebas▒otra prueba más▒chimichanga▒1tx85hc0▓",
   "▓otra prueba▒otra prueba más▒jucardus▒oasjakoi▓",
   "▓prueba▒prueba▒prueba▒8s0q8sfd▓",
   "▓vocabulario español▒brindis al sol▒https://dle.rae.es/brindis#G9S23Eg▒xjn8zp3u▓",
