@@ -10,7 +10,6 @@ var enlaces = [
   "▓Citas y proverbios *▒El hombre muere en todos aquellos que mantienen silencio ante la tiranía.▒Wole Soyinka▒amxoh2bq▓",
   "▓Citas y proverbios *▒Cuando se trabaja no se tiene tiempo de ganar dinero.▒Proverbio judeo-polaco▒hkphne6y▓",
   "▓Citas y proverbios *▒El dolor y el sufrimiento son siempre inevitables para una gran inteligencia y un corazón profundo.▒Fiódor Dostoyevski▒n2n58oyp▓",
-  "▓Citas y proverbios *▒Cásate conun arqueólogo. Cuanto más vieja te hagas, más encantadora te encontrará.▒Agatha Christie▒lpxc5jr7▓",
   "▓Citas y proverbios *▒En el campo de la observación, la oportunidad sólo favorece a la mente preparada.▒Louis Pasteur▒9xqyg3q5▓",
   "▓Citas y proverbios *▒En la vejez se aprende mejor a esconder los fracasos; en la juventud, a soportarlos.▒Arthur Schoppenhauer▒3u1rngyy▓",
   "▓Citas y proverbios *▒El primer método para evaluar la inteligencia de un líder es observar a los hombres que lo rodean.▒Nicolás Maquiavelo▒lh1lyz3j▓",
