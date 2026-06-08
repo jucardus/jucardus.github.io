@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒samovar▒https://dle.rae.es/samovar▒ndvsajst▓",
   "▓Citas y proverbios *▒Al perro que tiene dinero se le llama Señor Perro.▒Proverbio árabe▒1wu3nrhz▓",
   "▓Diccionario inglés-español *▒<b>spite [s.]</b> despecho, rencor, resentimiento▒jucardus▒5o4498dp▓",
   "▓Diccionario inglés-español *▒<b>good riddance [interj.]</b> por fin; al fin; qué alivio▒jucardus▒bkbdzmh6▓",
