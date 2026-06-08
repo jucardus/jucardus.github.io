@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Diccionario francés-español *▒<b>devanture [f.]</b> escaparate (Revêtement qui garnit et orne la façade d’une boutique.)▒jucardus▒de7mugfg▓",
   "▓Citas y proverbios *▒Después de tantos años estudiando la ética, he llegado a la conclusión de que toda ella se resume en tres virtudes: coraje para vivir, generosidad para convivir y prudencia para sobrevivir.▒Fernando Savater▒dvl7s0cc▓",
   "▓Citas y proverbios *▒No puedes multiplicar la riqueza castigando a quienes la crean.▒Thomas Sowell▒bpvnmgf1▓",
   "▓vocabulario inglés▒scoundrel▒https://www.linguee.es/espanol-ingles/search?source=auto&query=scoundrel▒0x7iryhx▓",
