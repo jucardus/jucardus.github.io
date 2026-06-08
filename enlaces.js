@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Repositorio *▒Carpetas y subcarpetas en Box, con herramientas diversas, diccionarios, algo de programación y algunos otros temas. Su contenido está siendo adaptado a este sitio.▒https://jucardus.github.io/repositorio▒fvol9ra0▓",
   "▓Música clásica *▒Lista de reproducción en YouTube, con compositores diversos y con la opción de reproducción aleatoria. También puede visitarse con el enlace corto <b><i>mus.jucardus.com</i></b>.▒https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p▒ov46sear▓",
   "▓Fotografías *▒Mi álgum de fotografías, en sucesión vertical de cientos de fotos, también accesible mediante el enlace corto <b><i>fot.jucardus.com</i></b>.▒https://jucardus.github.io/fotos▒j33sl3gh▓",
   "▓vocabulario español▒brindis al sol▒https://dle.rae.es/brindis#G9S23Eg▒xjn8zp3u▓",
