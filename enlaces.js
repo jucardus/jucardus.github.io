@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒La democracia es la peor forma de gobierno, con excepción de todas las otras formas que han sido probadas.▒Winston Churchill▒ra0ofigu▓",
   "▓vocabulario español▒grecismo▒https://dle.rae.es/grecismo▒n6sh5lhv▓",
   "▓vocabulario español▒ridículo [m.] Bolsa manual que...▒https://dle.rae.es/rid%C3%ADculo▒u4gs6ysc▓",
   "▓vocabulario español▒completud▒https://dle.rae.es/completud▒fztuv2xa▓",
