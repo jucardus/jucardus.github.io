@@ -128,7 +128,6 @@ var enlaces = [
   "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
   "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
   "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento.▒William Shakespeare▒7lkosc7d▓",
-  "▓citas▒Aquellos que entregan su libertad a cambio de seguridad no tendrán, y no merecen, ninguna de las dos.▒Benjamin Franklin▒46ucl3tu▓",
   "▓citas▒Aquella teoría que no encuentre aplicacion práctica en la vida, es una acrobacia del pensamiento.▒Swami Vivekananda▒qfrm31o5▓",
   "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos.▒Anne Louise Germaine de Stäel▒49b5vdc3▓",
   "▓citas▒Amo la traición, pero odio al traidor.▒Cayo Julio César▒2yhzp22o▓",
