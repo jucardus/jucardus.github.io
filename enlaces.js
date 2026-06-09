@@ -99,7 +99,6 @@ var enlaces = [
   "▓debates cristianos▒DEBATE: La transustanciación en los Padres de la Iglesia (Dante Urbina vs. Edgar Pacheco)▒https://www.youtube.com/watch?v=UzCqErTu0WE▒7wt81q8h▓",
   "▓vocabulario español▒concupiscencia▒https://dle.rae.es/concupiscencia▒zm433e06▓",
   "▓vocabulario inglés▒kowtow▒https://www.merriam-webster.com/dictionary/kowtow▒8f25is9w▓",
-  "▓mis sitios▒Citas y proverbios▒https://jucardus.github.io/citas▒df7hmpkx▓",
   "▓etopeya▒definición → Descripción de la personalidad, el ánimo, las costumbres, la psicologia de una persona.▒https://dle.rae.es/etopeya▒vz52t09u▓",
   "▓vocabulario español▒<b>ridículo [m.]</b> Bolsa manual que...▒https://dle.rae.es/rid%C3%ADculo▒j9bophpp▓",
   "▓vocabulario inglés▒scupper▒https://www.merriam-webster.com/dictionary/scupper▒4hkeq82v▓",
