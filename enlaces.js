@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Mis sitios web *▒Diccionaris todos▒https://jucardus.github.io/diccionarios▒jg3p5d79▓",
   "▓Tareas pendientes *▒Modificar el código para que los favicones de los sitios con «*.jucardus.com» muestren el favicon de jucardus.github.io.▒jucardus▒hx1pmcke▓",
   "▓Música clásica *▒Lista de reproducción en YouTube, con compositores diversos y con la opción de reproducción aleatoria. También puedes encontrar muchos enlaces en este sitio, buscando «<b>música - </b>» para ver todas las entradas existentes clasificadas por autor.▒https://mus.jucardus.com▒usirwppu▓",
   "▓vocabulario inglés▒nitwit▒https://www.merriam-webster.com/dictionary/nitwit▒gia2lzf6▓",
