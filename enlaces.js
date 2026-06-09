@@ -163,7 +163,6 @@ var enlaces = [
   "▓lugares▒Plaza Luis Castells de Villa Elisa, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/iTRxpF42c6b2qtLP7▒7yqw41vr▓",
   "▓lugares▒Villa Elisa, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/F9WVz4bQQXAszi9w9▒74q5hi1k▓",
   "▓cuentas en X Twitter▒AlphaFo𝕏 - @Alphafox▒https://x.com/Alphafox▒qo9zh4pi▓",
-  "▓mis sitios▒Vocabulario inglés-español▒https://jucardus.github.io/vocabulary▒7o5cdvyv▓",
   "▓lugares▒La Glorieta, Plaza San Martín, La Plata, Buenos Aires, Argentina▒https://maps.app.goo.gl/9mJXaJugD7u1g9G58▒oipdcyte▓",
   "▓cuentas en X Twitter▒Science girl - @sciencegirl▒https://x.com/sciencegirl▒5t7g4qds▓",
   "▓vocabulario español▒farragoso▒https://dle.rae.es/farragoso▒6e8iv26g▓",
