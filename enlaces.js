@@ -225,7 +225,6 @@ var enlaces = [
   "▓vocabulario inglés▒briefing▒https://www.merriam-webster.com/dictionary/briefing▒i68wz81l▓",
   "▓herramientas▒Free Online Barcode Generator▒https://www.scandit.com/barcode-generator/▒0bvgi0hd▓",
   "▓herramientas▒Generate Free Barcodes Online▒https://barcode.tec-it.com/en/Code128▒vac50f6w▓",
-  "▓mis sitios▒Google Maps▒https://www.google.com/maps/contrib/108257229988469463200/photos▒kvjsfoy7▓",
   "▓lugares▒San José, Arequipa, Arequipa, Perú.▒https://maps.app.goo.gl/MTfuk6HwM9UtxjMT6▒bjkxpfpl▓",
   "▓música - Jean-Baptiste de Bousset▒Suzie LeBlanc - 'Pourquoy doux rossignol'▒https://www.youtube.com/watch?v=BN45XgrYbeU▒29685yhs▓",
   "▓música - Jean-Baptiste de Bousset▒Pourquoy doux Rossignol - Jean-Baptiste de Bousset▒https://www.youtube.com/watch?v=jS8d0xSWqec▒t3ys3qjl▓",
