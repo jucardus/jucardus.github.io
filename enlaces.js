@@ -22,7 +22,6 @@ var enlaces = [
   "▓Citas y proverbios *▒Cásate con un arqueólogo. Cuanto más vieja te hagas, más encantadora te encontrará.▒Agatha Christie▒5mro58q9▓",
   "▓Citas y proverbios *▒De todos los infortunios que afligen a la humanidad, el mรกs amargo es que hemos de tener conciencia de mucho y control de nada.▒Herodoto▒8yb4bp1y▓",
   "▓Citas y proverbios *▒Arrancad la esperanza del corazón del hombre y haréis de él un animal de presa.▒Marie Louise de la Ramée▒8kku93le▓",
-  "▓Citas y proverbios *▒Democracy is the worst form of Government except for all those other forms that have been tried.▒Winston Churchill▒2gm8q2y2▓",
   "▓Citas y proverbios *▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos.▒Anne Louise Germaine de Stäel▒5ew4ctv8▓",
   "▓Citas y proverbios *▒Cada generación se sonríe de los padres, se ríe de los abuelos y admira a los bisabuelos.▒William Somerset Maugham▒ot0qylbo▓",
   "▓Citas y proverbios *▒Disculpen si les llamo caballeros, pero es que no los conozco muy bien.▒Groucho Marx▒3kjtbswx▓",
