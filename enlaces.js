@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒desdar▒https://dle.rae.es/desdar▒7k1b2b7s▓",
   "▓vocabulario inglés▒decry▒https://www.merriam-webster.com/dictionary/decry▒88mia70c▓",
   "▓Mis sitios web *▒Linktree Jucardus▒https://linktr.ee/jucardus▒2qnq0n7x▓",
   "▓Mis sitios web *▒Google Maps▒https://www.google.com/maps/contrib/108257229988469463200/photos▒15a4je1n▓",
