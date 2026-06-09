@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Mis sitios web *▒Linktree Jucardus▒https://linktr.ee/jucardus▒2qnq0n7x▓",
   "▓Mis sitios web *▒Google Maps▒https://www.google.com/maps/contrib/108257229988469463200/photos▒15a4je1n▓",
   "▓Mis sitios web *▒Diccionaris todos▒https://jucardus.github.io/diccionarios▒jg3p5d79▓",
   "▓Tareas pendientes *▒Modificar el código para que los favicones de los sitios con «*.jucardus.com» muestren el favicon de jucardus.github.io.▒jucardus▒hx1pmcke▓",
