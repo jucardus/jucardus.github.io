@@ -263,7 +263,6 @@ var enlaces = [
   "▓herramientas▒convertidor de MP4 a MP3▒https://www.freeconvert.com/mp4-to-mp3▒3p7nnk0q▓",
   "▓vocabulario inglés▒finicky▒https://www.merriam-webster.com/dictionary/finicky▒h4mk6beq▓",
   "▓mis sitios▒X Twitter▒https://x.com/jucardus▒yl8e6o3z▓",
-  "▓mis sitios▒Linktree Jucardus▒https://linktr.ee/jucardus▒frsotd1t▓",
   "▓música - Johann Sebastian Bach▒J.S. Bach - Andante and Allegro from sonata in e minor▒https://www.youtube.com/watch?v=EDrpMA6_rw4▒wjnrbjqz▓",
   "▓vocabulario inglés▒phew▒https://www.merriam-webster.com/dictionary/phew▒v2c3ww7o▓",
   "▓vocabulario inglés▒snag▒https://www.merriam-webster.com/dictionary/snag▒8obpc35t▓",
