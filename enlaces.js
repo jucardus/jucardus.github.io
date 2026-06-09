@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒Existen verdades que pueden matar a un pueblo.▒Jean Giraudox▒hwshsm89▓",
   "▓Citas y proverbios *▒Es un déspota todo aquel que cree que ser opositor al gobierno es ser traidor a la patria.▒Juan Bautista Alberdi▒ka72ujew▓",
   "▓Citas y proverbios *▒Es mejor ser útil y provechoso que ser importante. El gran problema que atraviesa nuestra época, la presente y venidera generación es que muchos no quieren ser útiles, sino muy importantes.▒Winston Churchill▒vsomt9b3▓",
   "▓Citas y proverbios *▒Es mejor, por noble audacia, correr el riesgo de vernos expuestos a la mitad de los males que solemos anticipar que permanecer en una cobarde apatía por miedo a lo que nos pudiera suceder.▒Herodoto▒aefaw6jg▓",
