@@ -110,7 +110,6 @@ var enlaces = [
   "▓Diccionario multilingüe *▒<b>a lo largo de todo el año [loc.]</b> • AL. das ganze Jahr hindurch [loc.]; das ganze Jahr über [loc.] • CH. 一年到頭 (一年到头) yī nián dào tóu [loc.] • FR. toute l'année [loc.] • IN. all year round [loc.] • IT. tutto l'anno [loc.]▒jucardus▒3abtxcsx▓",
   "▓vocabulario español▒flagrar▒https://dle.rae.es/flagrar▒1yecb42d▓",
   "▓vocabulario inglés-español▒sizzling▒https://www.linguee.es/ingles-espanol/traduccion/sizzling.html▒igenfg4u▓",
-  "▓Frases chinas *▒我餓了，想吃東西。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • d. 想 (想) [xiang3] querer • e. 吃 (吃) [chi1] comer • f. 東西 (东西) [dong1 xi5] cosa, cosas, algo • {CS} 我饿了，想吃东西。 • {PY} Wǒ è le, xiǎng chī dōngxi. [fr.] • {TR} Tengo hambre y quiero comer algo. [fr.]▒jucardus▒04sktl7n▓",
   "▓Frases chinas *▒我餓了。 • a. 我 (我) [wo3] yo • b. 餓 (饿) [e4] hambriento • c. 了 (了) [le5] (partícula para indicar cambio de estado) • {CS} 我饿了。 • {PY} Wǒ è le. [fr.] • {TR} Estoy hambriento. [fr.] • {TR} Tengo hambre. [fr.]▒jucardus▒p9d3h4u2▓",
   "▓Seinfeld▒George Pretends to Meet Jerry | Seinfeld▒https://www.youtube.com/watch?v=7r8qXseXk_s▒nngiz4xh▓",
   "▓vocabulario inglés▒thoroughfare▒https://www.merriam-webster.com/dictionary/thoroughfare▒jf75dtp9▓",
