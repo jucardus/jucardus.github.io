@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒rapapolvo▒https://dle.rae.es/rapapolvo▒gw5hepci▓",
   "▓vocabulario inglés▒cynophilist▒https://www.merriam-webster.com/dictionary/cynophilist▒eac74lxx▓",
   "▓vocabulario español▒desdar▒https://dle.rae.es/desdar▒7k1b2b7s▓",
   "▓vocabulario inglés▒decry▒https://www.merriam-webster.com/dictionary/decry▒88mia70c▓",
