@@ -108,7 +108,6 @@ var enlaces = [
   "▓vocabulario español▒concupiscencia▒https://dle.rae.es/concupiscencia▒zm433e06▓",
   "▓vocabulario inglés▒kowtow▒https://www.merriam-webster.com/dictionary/kowtow▒8f25is9w▓",
   "▓etopeya▒definición → Descripción de la personalidad, el ánimo, las costumbres, la psicologia de una persona.▒https://dle.rae.es/etopeya▒vz52t09u▓",
-  "▓vocabulario español▒<b>ridículo [m.]</b> Bolsa manual que...▒https://dle.rae.es/rid%C3%ADculo▒j9bophpp▓",
   "▓vocabulario inglés▒scupper▒https://www.merriam-webster.com/dictionary/scupper▒4hkeq82v▓",
   "▓vocabulario español▒tranca▒https://dle.rae.es/tranca▒kr70vulp▓",
   "▓vocabulario español▒saeta▒https://dle.rae.es/saeta▒hnrh0gwy▓",
