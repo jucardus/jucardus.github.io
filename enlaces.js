@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒grecismo▒https://dle.rae.es/grecismo▒n6sh5lhv▓",
   "▓vocabulario español▒ridículo [m.] Bolsa manual que...▒https://dle.rae.es/rid%C3%ADculo▒u4gs6ysc▓",
   "▓vocabulario español▒completud▒https://dle.rae.es/completud▒fztuv2xa▓",
   "▓vocabulario inglés▒frolic▒https://www.merriam-webster.com/dictionary/frolic▒5u8mod48▓",
