@@ -181,7 +181,6 @@ var enlaces = [
   "▓vocabulario español▒fimosis▒https://dle.rae.es/fimosis▒zkggxvnm▓",
   "▓significado del número 3▒In Judaism, the number 3 represents harmony, stability, and the synthesis of opposing forces (like duality/conflict) into a new, balanced entity. It symbolizes structural completeness and chazaka (a confirmed status or strong presumption) when actions are repeated three times. It is associated with the Hebrew letter Gimel (), symbolizing growth, reward, and bridging differences. ~ Gemini ~▒jucardus▒es22vkuo▓",
   "▓vocabulario español▒execración▒https://dle.rae.es/execraci%C3%B3n▒sdnbx1mo▓",
-  "▓mis sitios▒Diccionarios todos▒https://jucardus.github.io/diccionarios▒aqebr22c▓",
   "▓vídeos de Cristianismo▒El Gnosticismo Es MUCHO Más Extraño de lo Que Piensas | Antonio Piñero Revela▒https://www.youtube.com/watch?v=o7UyvRla5Ec▒at7jg7kw▓",
   "▓terminales▒Terminal de Omnibus La Plata - PlataBus▒https://maps.app.goo.gl/CpHpUfGtkF1mfXSb9▒kawr5i4t▓",
   "▓canales en YouTube▒Tecnonauta - @Tecnonauta▒https://www.youtube.com/@Tecnonauta▒l79qzzp6▓",
