@@ -130,7 +130,6 @@ var enlaces = [
   "▓citas▒Disculpen si les llamo caballeros, pero es que no los conozco muy bien.▒Groucho Marx▒oj1baty5▓",
   "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
   "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
-  "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento.▒William Shakespeare▒7lkosc7d▓",
   "▓celulares▒HONOR 600 🟧 El teléfono que APPLE QUISO pero NO PUDO HACER!!!▒https://www.youtube.com/watch?v=4QKObLfKOnk▒4mf8qtcw▓",
   "▓abreviaturas▒Abreviaturas y signos empleados (en el DRAE)▒https://dle.rae.es/contenido/abreviaturas-y-signos-empleados▒7gsq8o2o▓",
   "▓celulares pequeños▒NUEVO NOKIA 3310... POR LOS AIRES!▒https://www.youtube.com/watch?v=frealGfiKgk▒bdbb4f1r▓",
