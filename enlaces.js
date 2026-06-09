@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Frases chinas *▒他自稱是這封信的作者。{CS} 他自称是这封信的作者。 {PY} Tā zìchēng shì zhè fēng xìn de zuòzhě. {TR} Él pretende ser el autor de la carta. <b>Desglose:</b> • 他 (他) tā: él • 自稱 (自称) zìchēng: pretender, fingir • 是 (是) shì: ser, estar • 這 (这) zhè: esto, esta • 封 (封) fēng: (clasificador para cartas) • 信 (信) xìn: carta, correspondencia • 的 (的) de (partícula posesiva) • 作者 (作者) zuòzhě: autor▒jucardus▒rg7z2wq4▓",
   "▓Citas y proverbios *▒Yo no escucho lo que dice la gente, solo observo lo que hacen. El comportamiento nunca miente.▒Winston Churchill▒wyi7albx▓",
   "▓Citas y proverbios *▒Existen verdades que pueden matar a un pueblo.▒Jean Giraudox▒hwshsm89▓",
   "▓Citas y proverbios *▒Es un déspota todo aquel que cree que ser opositor al gobierno es ser traidor a la patria.▒Juan Bautista Alberdi▒ka72ujew▓",
