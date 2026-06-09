@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒completud▒https://dle.rae.es/completud▒fztuv2xa▓",
   "▓vocabulario inglés▒frolic▒https://www.merriam-webster.com/dictionary/frolic▒5u8mod48▓",
   "▓vocabulario español▒rapapolvo▒https://dle.rae.es/rapapolvo▒gw5hepci▓",
   "▓vocabulario inglés▒cynophilist▒https://www.merriam-webster.com/dictionary/cynophilist▒eac74lxx▓",
