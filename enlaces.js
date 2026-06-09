@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒Es mejor, por noble audacia, correr el riesgo de vernos expuestos a la mitad de los males que solemos anticipar que permanecer en una cobarde apatía por miedo a lo que nos pudiera suceder.▒Herodoto▒aefaw6jg▓",
   "▓Citas y proverbios *▒Es más fácil engañar a la gente, que convencerlos que han sido engañados.▒Mark Twain▒gp2562gi▓",
   "▓Citas y proverbios *▒Es el cambio, no el amor, lo que hace avanzar al mundo. El amor sólo lo mantiene habitado.▒Anónimo▒w064z5h6▓",
   "▓Citas y proverbios *▒En un país bien gobernado, la pobreza es algo que avergüenza. En un país mal gobernado, la riqueza es algo que avergüenza.▒Confucio▒ozzmuub5▓",
