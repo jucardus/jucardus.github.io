@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Música clásica *▒Lista de reproducción en YouTube, con compositores diversos y con la opción de reproducción aleatoria.▒https://mus.jucardus.com▒v77ay8cu▓",
   "▓vocabulario inglés▒nitwit▒https://www.merriam-webster.com/dictionary/nitwit▒gia2lzf6▓",
   "▓vídeos de Cristianismo▒Peter J Williams vs Bart Ehrman • The story of Jesus: Are the Gospels historically reliable?▒https://www.youtube.com/watch?v=ZuZPPGvF_2I▒f50tunm5▓",
   "▓X Twitter *▒Mi cuenta en X Twitter, para difusión de mi actividad en este sitio y para ciertas interacciones; también accesible directamente mediante el enlace corto <b><i>x.jucardus.com</i></b>.▒https://x.com/jucardus▒m08547ac▓",
