@@ -128,7 +128,6 @@ var enlaces = [
   "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
   "▓vocabulario español▒costurón▒https://dle.rae.es/costur%C3%B3n▒ml1d6gb6▓",
   "▓citas▒Así, ¡oh conciencia!, de nosotros todos haces unos cobardes, y la ardiente resolución original decae al pálido mirar del pensamiento.▒William Shakespeare▒7lkosc7d▓",
-  "▓citas▒Ante las gentes de espíritu ligero nos avergonzamos de mostrar afectos profundos.▒Anne Louise Germaine de Stäel▒49b5vdc3▓",
   "▓citas▒Amo la traición, pero odio al traidor.▒Cayo Julio César▒2yhzp22o▓",
   "▓citas▒Allí donde se cruzan tus talentos y las necesidades del mundo, está tu vocación.▒Aristóteles▒nynrvyxf▓",
   "▓celulares▒HONOR 600 🟧 El teléfono que APPLE QUISO pero NO PUDO HACER!!!▒https://www.youtube.com/watch?v=4QKObLfKOnk▒4mf8qtcw▓",
