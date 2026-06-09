@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒En un país bien gobernado, la pobreza es algo que avergüenza. En un país mal gobernado, la riqueza es algo que avergüenza.▒Confucio▒ozzmuub5▓",
   "▓Citas y proverbios *▒En todas épocas los pequeños han tenido que expiar por la tontería de los grandes.▒Jean de la Fontaine▒0ea7ka9t▓",
   "▓Citas y proverbios *▒De todos los infortunios que afligen a la humanidad, el más amargo es que hemos de tener conciencia de mucho y control de nada.▒Herodoto▒iut73o74▓",
   "▓Citas y proverbios *▒La democracia es la peor forma de gobierno, con excepción de todas las otras formas que han sido probadas.▒Winston Churchill▒ra0ofigu▓",
