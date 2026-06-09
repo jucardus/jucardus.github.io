@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒Yo no escucho lo que dice la gente, solo observo lo que hacen. El comportamiento nunca miente.▒Winston Churchill▒wyi7albx▓",
   "▓Citas y proverbios *▒Existen verdades que pueden matar a un pueblo.▒Jean Giraudox▒hwshsm89▓",
   "▓Citas y proverbios *▒Es un déspota todo aquel que cree que ser opositor al gobierno es ser traidor a la patria.▒Juan Bautista Alberdi▒ka72ujew▓",
   "▓Citas y proverbios *▒Es mejor ser útil y provechoso que ser importante. El gran problema que atraviesa nuestra época, la presente y venidera generación es que muchos no quieren ser útiles, sino muy importantes.▒Winston Churchill▒vsomt9b3▓",
