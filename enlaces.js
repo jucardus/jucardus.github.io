@@ -120,7 +120,6 @@ var enlaces = [
   "▓música - F. Lazarevitch▒THE HIGH ROAD TO KILKENNY (Live) - Les Musiciens De St Julien, F. Lazarevitch▒https://www.youtube.com/watch?v=6ER7VQnKFKU▒xzu8zi1k▓",
   "▓citas▒El destino es el que baraja las cartas, pero nosotros somos los que jugamos.▒William Shakespeare▒xofq72nd▓",
   "▓citas▒Disculpen si les llamo caballeros, pero es que no los conozco muy bien.▒Groucho Marx▒oj1baty5▓",
-  "▓citas▒Admiro a los hombres que buscan el orden social ideal, pero temo a los que lo han encontrado.▒Ephraim Kishon▒jlhmfi00▓",
   "▓citas▒A veces buscamos respuestas rápidas, soluciones inmediatas. Pero Dios trabaja en lo profundo, en el tiempo lento de la confianza.▒Papa León XIV▒s8ahw2dp▓",
   "▓citas▒Una nación de ovejas pronto tendrá un gobierno de lobos.▒Edward R. Murrow▒l3poots1▓",
   "▓música - Cipriano de Rore▒Cipriano de Rore (c. 1515 - 1565): Mentre, lumi maggior del secol nostro▒https://www.youtube.com/watch?v=1R79mWCIym4▒v7gwd0p8▓",
