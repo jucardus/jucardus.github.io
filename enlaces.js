@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Tareas pendientes *▒sinownimos para give up [v.c.]▒jucardus▒kqq6if22▓",
   "▓Tareas pendientes *▒carawcter chino 聰 (聪)▒jucardus▒zrrra8kj▓",
   "▓vocabulario español▒escolano▒https://dle.rae.es/escolano▒bwy3ilub▓",
   "▓Tareas pendientes *▒Agregar el enlace de donaciones con el texto <code>[ pendiente ]</code>. Lo más probable es que sea de donaciones mediante Patreon.▒jucardus▒vinq6pr1▓",
