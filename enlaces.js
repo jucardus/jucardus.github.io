@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Tareas pendientes *▒Más frases con: 公園 (公园) [gōngyuán] parque 每天 (每天) [mei3 tian1] todos los días 玩 (玩) [wán] jugar 聰明 (聪明) [cōngmíng] listo, inteligente 蘋果汁 (苹果汁) [píngguǒ zhī] jugo de manzana y otras frutas 跑 (跑) [pao3] correr 那個 (那个) [nàgè] esa, aquella, ese aquel 開心 (开心) [kāixīn] feliz 需要 (需要) [xu1 yao4] necesitar, querer, requerir▒jucardus▒gpqgit7h▓",
   "▓Tareas pendientes *▒sinownimos para give up [v.c.]▒jucardus▒kqq6if22▓",
   "▓Tareas pendientes *▒carawcter chino 聰 (聪)▒jucardus▒zrrra8kj▓",
   "▓vocabulario español▒escolano▒https://dle.rae.es/escolano▒bwy3ilub▓",
