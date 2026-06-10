@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓Citas y proverbios *▒Un amigo es una persona con la que se puede pensar en voz alta.▒Ralph Waldo Emerson▒u573798m▓",
   "▓Citas y proverbios *▒Una amistad reanudada requiere más cuidados que la que nunca se ha roto.▒Duque de la Rochefoucauld▒l8rhoxiu▓",
   "▓Tareas pendientes *▒Desflosar las siguientes frases → Canis super lectum dormit · Flos super terram iacet · Fructus super arborem pendet · Pila super tectum est · 一隻小狗在街上跑。 · 他們在教室裡上課。 · 他的一只眼睛受伤了。 · 他的眼睛很大。 · 媽媽在廚房裡做飯。 · 小狗在箱子裡睡覺。 · 我在房間裡看書。 · 爺爺在公園裡散步。▒jucardus▒fn6hld7u▓",
   "▓Tareas pendientes *▒Más frases con: 公園 (公园) [gōngyuán] parque 每天 (每天) [mei3 tian1] todos los días 玩 (玩) [wán] jugar 聰明 (聪明) [cōngmíng] listo, inteligente 蘋果汁 (苹果汁) [píngguǒ zhī] jugo de manzana y otras frutas 跑 (跑) [pao3] correr 那個 (那个) [nàgè] esa, aquella, ese aquel 開心 (开心) [kāixīn] feliz 需要 (需要) [xu1 yao4] necesitar, querer, requerir▒jucardus▒gpqgit7h▓",
