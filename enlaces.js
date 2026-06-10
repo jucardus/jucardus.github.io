@@ -1,4 +1,5 @@
 var enlaces = [
+  "▓vocabulario español▒escolano▒https://dle.rae.es/escolano▒bwy3ilub▓",
   "▓Tareas pendientes *▒Agregar el enlace de donaciones con el texto <code>[ pendiente ]</code>. Lo más probable es que sea de donaciones mediante Patreon.▒jucardus▒vinq6pr1▓",
   "▓Frases chinas *▒他自稱是這封信的作者。{CS} 他自称是这封信的作者。 {PY} Tā zìchēng shì zhè fēng xìn de zuòzhě. {TR} Él pretende ser el autor de la carta. <b>Desglose:</b> • 他 (他) tā: él • 自稱 (自称) zìchēng: pretender, fingir • 是 (是) shì: ser, estar • 這 (这) zhè: esto, esta • 封 (封) fēng: (clasificador para cartas) • 信 (信) xìn: carta, correspondencia • 的 (的) de: (partícula posesiva) • 作者 (作者) zuòzhě: autor▒jucardus▒gxabnvn3▓",
   "▓Frases chinas *▒我餓了。 {CS} 我饿了。 {PY} Wǒ è le. {TR} Estoy hambriento. / Tengo hambre. <b>Desglose:</b> • 我 (我) wǒ: yo • 餓 (饿) è: hambriento • 了 (了) le: (partícula para indicar cambio de estado)▒jucardus▒xbbpfga3▓",
