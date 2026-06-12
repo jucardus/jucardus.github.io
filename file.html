@@ -4,18 +4,31 @@
     <title>Parent Page</title>
 </head>
 <body>
-    <iframe id="gasFrame" src="https://script.google.com/macros/s/AKfycbwhAXEDxe9xJIqQirW2lcZdsy4ImUMu4ikLqM1BTsgvbBVSZlc9tj3g368Z9N0dLvznVw/exec"></iframe>
+    <iframe id="gasFrame" src="https://script.google.com/macros/s/AKfycbxkabBevbqAFzC7nmysppLjhaIH07rPLWdCmeokUIlyEH_JxywQ-dBAoWWJ5MhD6BZ8ow/exec"></iframe>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const queryValue = urlParams.get('q');
         
         const iframe = document.getElementById('gasFrame');
-        iframe.addEventListener('load', function() {
-            if (queryValue) {
-                iframe.contentWindow.postMessage({type: 'QUERY', value: queryValue}, '*');
+        let iframeReady = false;
+        
+        // Listen for the "IFRAME_READY" signal from the iframe
+        window.addEventListener('message', function(event) {
+            if (event.data.type === 'IFRAME_READY') {
+                iframeReady = true;
+                if (queryValue) {
+                    iframe.contentWindow.postMessage({type: 'QUERY', value: queryValue}, '*');
+                }
             }
         });
+        
+        // Fallback: if iframe doesn't signal ready within 1 second, send anyway
+        setTimeout(function() {
+            if (!iframeReady && queryValue) {
+                iframe.contentWindow.postMessage({type: 'QUERY', value: queryValue}, '*');
+            }
+        }, 1000);
     </script>
 </body>
 </html>
