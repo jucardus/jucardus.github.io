@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parent Page</title>
+</head>
+<body>
+    <iframe id="gasFrame" src="https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"></iframe>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryValue = urlParams.get('q');
+        
+        const iframe = document.getElementById('gasFrame');
+        iframe.addEventListener('load', function() {
+            if (queryValue) {
+                iframe.contentWindow.postMessage({type: 'QUERY', value: queryValue}, '*');
+            }
+        });
+    </script>
+</body>
+</html>
