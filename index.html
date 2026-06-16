@@ -35,25 +35,24 @@
     </style>
 </head>
 <body>
-    <iframe id="mainFrame" src="https://script.google.com/macros/s/AKfycbwoq_JeYWta_npyNE9UMz_Cy4HWDhwMtcQ80CnRQUP2U1YS4x1TUInVONhXs_yylKPLFA/exec"></iframe>
+    <iframe id="mainFrame" src="https://script.google.com/macros/s/AKfycby18qo3WUbKha9auG8JJ6csdcCNK9ZGKnJFCNA0dWG4fgQOTwy-pwiD9MumMHrzXtupBg/exec"></iframe>
 
     <script>
         (function() {
             // Base URL of your Google Apps Script
-            const baseUrl = "https://script.google.com/macros/s/AKfycbwoq_JeYWta_npyNE9UMz_Cy4HWDhwMtcQ80CnRQUP2U1YS4x1TUInVONhXs_yylKPLFA/exec";
+            const baseUrl = "https://script.google.com/macros/s/AKfycby18qo3WUbKha9auG8JJ6csdcCNK9ZGKnJFCNA0dWG4fgQOTwy-pwiD9MumMHrzXtupBg/exec";
             
-            // Get the current URL and parse the query parameter
+            // Get the 'q' parameter from the URL
             const urlParams = new URLSearchParams(window.location.search);
             const queryValue = urlParams.get('q');
             
-            // If there's a 'q' parameter, pass it to the iframe
-            if (queryValue) {
+            // If there's a 'q' parameter, update the iframe
+            if (queryValue && queryValue.trim().length >= 1) {
                 const iframe = document.getElementById('mainFrame');
-                // Build the new iframe URL with the query parameter
+                // Build the new iframe URL with the parameter
                 iframe.src = baseUrl + "?q=" + encodeURIComponent(queryValue);
                 
-                // Clean the browser URL by removing the query string
-                // This uses replaceState to avoid a page reload
+                // Clean the browser URL (remove ?q= parameter)
                 const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 window.history.replaceState({}, document.title, cleanUrl);
             }
