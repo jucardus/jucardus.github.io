@@ -7,7 +7,8 @@
     var url = window.location.href;
     if (url.indexOf('g?=') >= 0) {
       var url = url.replace(/.*jucardus\.github\.io\/g\?=/g,'');
-      var exear = 'https://www.google.com/search?udm=50&aep=11&q=' + url;
+      //var exear = 'https://www.google.com/search?udm=50&aep=11&q=' + url;
+      var exear = 'https://www.google.com/search?udm=50&q=' + url;
       window.location.replace(exear);
     } else {
       window.location.replace('https://gemini.google.com');
