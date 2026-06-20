@@ -1,1 +1,1 @@
-### Sitio central: [Jucardus.com](https://jucardus.github.io)
+### [Jucardus.com](https://jucardus.github.io)
