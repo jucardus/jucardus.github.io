@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <style>html {background-color: #2A4747;}</style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-44Y9CNCHR8');
+    </script>
+    <meta content='jucardus punto com, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, traducciones, donaciones, pagos, actividad reciente, actividad, recientes, enlaces varios, enlaces, selección de enlaces, hipervínculos, vínculos, vínculos seleccionados, difusión, redes, redes de difusión, fotografías, invitación, invitación a la nube, invitación a pCloud, música, música clasica, canal de música, canal en YouTube, repositorio, cuenta en Twitter, cuenta en Tumblr, cuenta en Facebook, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlists, playlist, vocabulario, vocabularios, vocabulario francés, vocabulario francés-español, vocabulario inglés, vocabulario inglés-español' name='keywords'/>
+    <meta content='Mi sitio central, con todas mis páginas.' name='description'/>
+    <meta content='Jucardus ©' name='author'/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUCARDUS.COM</title>
+    <style>
+      @media (max-width: 768px) {
+        body {
+          /*max-width: 100%;*/
+          padding: 30px 4px 130px 4px !important;
+          width: auto !important;
+          overflow-x: hidden !important;
+          /*box-shadow: 0 0 0 1px red inset;*/
+        }
+        #contenido {
+          max-width: 100% !important;
+          /*overflow-x: hidden !important;*/
+        }
+        #estrella {
+          padding: 25px 0px 30px 0px !important;
+        }
+        #tituloo {
+          position: sticky !important;
+          top: 17px !important;
+          z-index: 1000 !important;
+          margin-top: 17px !important;
+          background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+          margin-bottom: 37px !important;
+        }
+      }
+      a:link, a:visited {
+        color: #f0f0f0;
+        text-decoration: none;
+      }
+      a:hover {
+        color: Gold;
+      }
+      a:focus, a:active {
+        color: Gold;
+      }
+      a.titulo:link, a.titulo:visited, a.titulo:hover, a.titulo:active {
+        color: #034;
+        font-size: 120%;
+        font-weight: bold;
+        text-decoration: none;
+        }
+      a.titulo:focus, a.titulo:hover {
+        color: OrangeRed;
+        text-decoration: none;
+        }
+      #barrita {
+        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+        height: 17px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+      }
+      #barrita {
+        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+        height: 17px;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 1000; /* Higher than titulo's 999 */
+      }
+      body {
+        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+        color: #b7c6cc;
+        color: #d3dce0;
+        font-family: 'Ubuntu';
+        font-size: 100%;
+        letter-spacing: 1.1px;
+        padding: 80px 28% 100px 27%;
+      }
+      #contenido {
+        text-align: center;
+      }
+      #estrella {
+        color: Ivory;
+        font-size: 130%;
+        font-weight: bold;
+        opacity: 0.8;
+        padding: 20px 0px 30px 0px;
+        text-align: center;
+        display: none!important;
+      }
+      img {
+        width: 100px;
+      }
+      #markdown-content {
+        font-size: 93%;
+        margin-top: 50px!important;
+        text-align: left!important;
+      }
+      .markdown-heading {
+        margin-bottom: 26px;
+      }
+      #prrfs {
+        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+        border-radius: 10px;
+          -webkit-transition: .5s all;
+          -webkit-transition-delay: .5s;
+          -moz-transition: .5s all;
+          -moz-transition-delay: .5s;
+          -ms-transition: .5s all;
+          -ms-transition-delay: .5s;
+          -o-transition: .5s all;
+          -o-transition-delay: .5s;
+          transition: .3s all;
+          transition-delay: 0.1s;
+        margin-bottom: 17px;
+        border: 1.5px solid #f0f0f0;
+        padding: 10px 12px 10px 12px;
+      }
+      #prrfs:hover {
+        background-color: color-mix(in srgb, DarkSlateGray, black 20%);
+        border: 1.5px solid DarkOrange;
+        border-radius: 10px;
+          -webkit-transition-delay: 0s;
+          -moz-transition-delay: 0s;
+          -ms-transition-delay: 0s;
+          -o-transition-delay: 0s;
+          transition-delay: 0s;
+      }
+      #prrfPrncpl {
+        background-color: #cfd9dd;
+        border-radius: 10px;
+          -webkit-transition: .5s all;
+          -webkit-transition-delay: .5s;
+          -moz-transition: .5s all;
+          -moz-transition-delay: .5s;
+          -ms-transition: .5s all;
+          -ms-transition-delay: .5s;
+          -o-transition: .5s all;
+          -o-transition-delay: .5s;
+          transition: .3s all;
+          transition-delay: 0.1s;
+        margin-bottom: 17px;
+        border: 1.5px solid #f0f0f0;
+        padding: 10px 12px 10px 12px;
+      }
+      #prrfPrncpl:hover {
+        background-color: color-mix(in srgb, #cfd9dd, black 10%);
+      }
+      #titulo {
+        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
+        margin-bottom: 37px !important;
+        position: sticky !important;
+        top: 17px !important;
+        z-index: 1000 !important;
+      }
+    </style>
+
+  </head>
+
+<body>
+
+<div id="contenido">
+
+<div id="barrita"></div>
+
+<div id="titulo"><a class='titulo' href='https://jucardus.github.io'><div id='prrfPrncpl'>JUCARDUS <wbr>PUNTO COM</div></a></div>
+
+<a href='https://jucardus.github.io/a/c/actividad-reciente'><div id='prrfs'>ACTIVIDAD RECIENTE</div></a>
+
+<a href='https://jucardus.github.io/autor'><div id='prrfs'>AUTOR Y CONTACTO</div></a>
+
+<!--a href='https://jucardus.github.io/busca'><div id='prrfs'>BUSCA EN EL SITIO</div></a-->
+
+<a href='https://jucardus.github.io/c/citas-y-proverbios'><div id='prrfs'>CITAS Y PROVERBIOS</div></a>
+
+<a href='https://jucardus.github.io/d/diccionario-multilingue'><div id='prrfs'>DICCIONARIO MULTILINGÜE</div></a>
+  
+<a href='https://jucardus.github.io/enlaces'><div id='prrfs'>ENLACES VARIOS</div></a>
+
+<a href='https://jucardus.github.io/recientes'><div id='prrfs'>ENTRADAS RECIENTES</div></a>
+
+<a href='https://jucardus.github.io/etiquetas'><div id='prrfs'>ETIQUETAS DEL SITIO</div></a>
+
+<a href='https://jucardus.github.io/fotos'><div id='prrfs'>FOTOGRAFÍAS MUCHAS</div></a>
+
+<a href='https://www.google.com/maps/contrib/108257229988469463200/photos'><div id='prrfs'>GOOGLE MAPS PICS</div></a>
+
+<a href='https://jucardus.github.io/indices'><div id='prrfs'>ÍNDICES ALFABÉTICOS</div></a>
+
+<a href='https://linktr.ee/jucardus'><div id='prrfs'>LINKTREE JUCARDUS</div></a>
+
+<a href='https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p'><div id='prrfs'>MÚSICA CLÁSICA</div></a>
+
+<a href='https://jucardus.github.io/v/vocabulario-frances'><div id='prrfs'>VOCABULARIO FRANCÉS</div></a>
+
+<a href='https://jucardus.github.io/v/vocabulario-ingles'><div id='prrfs'>VOCABULARIO INGLÉS</div></a>
+
+<a href='https://x.com/jucardus'><div id='prrfs'>X TWITTER</div></a>
+
+<div id='estrella'>&#10038;</div>
+
+<div id="markdown-content"></div>
+
+</div>
+
+</body>
+</html>
