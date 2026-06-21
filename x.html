@@ -6,7 +6,10 @@
   function hacer() {
     var url = window.location.href;
     if (url.indexOf('x?=') >= 0) {
-      var url = url.replace(/¶/g,'%0A%0A').replace(/.*jucardus\.github\.io\/x\?=/g,'');
+      var url = url.replace(/.*jucardus\.github\.io\/x\?=/g,'');
+      if (url.indexOf('http://') >= 0 || url.indexOf('https://') >= 0) {
+        url = '✶ ' + url + ' ✶';
+      }
       var exear = 'https://x.com/intent/tweet?text=' + url;
       window.location.replace(exear);
     } else {
