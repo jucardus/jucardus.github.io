@@ -36,23 +36,14 @@
 </head>
 <body>
     <iframe id="mainFrame" src="https://script.google.com/macros/s/AKfycbxv-o-UbwxSmcfpnJtFsU3J5QWU0LI1gSl1R0z30Txz1sDDkURZg3k9xrfehuN-D0Q7Lw/exec"></iframe>
-
     <script>
         (function() {
-            // Base URL of your Google Apps Script
             const baseUrl = "https://script.google.com/macros/s/AKfycbxv-o-UbwxSmcfpnJtFsU3J5QWU0LI1gSl1R0z30Txz1sDDkURZg3k9xrfehuN-D0Q7Lw/exec";
-            
-            // Get the 'q' parameter from the URL
             const urlParams = new URLSearchParams(window.location.search);
             const queryValue = urlParams.get('q');
-            
-            // If there's a 'q' parameter, update the iframe
             if (queryValue && queryValue.trim().length >= 1) {
                 const iframe = document.getElementById('mainFrame');
-                // Build the new iframe URL with the parameter
                 iframe.src = baseUrl + "?q=" + encodeURIComponent(queryValue);
-                
-                // Clean the browser URL (remove ?q= parameter)
                 const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
                 window.history.replaceState({}, document.title, cleanUrl);
             }
