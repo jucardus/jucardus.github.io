@@ -1,1 +1,1 @@
-### [Jucardus.com](https://jucardus.github.io)
+### Mi sitio central → [Jucardus.com](https://linktr.ee/jucardus)
