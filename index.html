@@ -157,6 +157,7 @@
             padding: 0 20px;
             display: flex;
             align-items: center;
+            justify-content: center;
             overflow: hidden;
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             z-index: 5;
@@ -164,7 +165,7 @@
 
         .div-d .tema-activo {
             background: #34495e;
-            padding: 4px 16px;
+            padding: 4px 20px;
             border-radius: 20px;
             font-size: 0.95rem;
             border: 1px solid #4a6178;
@@ -172,8 +173,8 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             cursor: default;
-            flex: 1;
-            min-width: 0;
+            text-align: center;
+            max-width: 90%;
         }
 
         .div-d .tema-activo span {
@@ -181,14 +182,28 @@
             color: #b0d4f0;
         }
 
-        /* Div B - Lista de entradas (parcial) */
+        .div-d .tema-activo .fecha-id {
+            font-weight: 400;
+            color: #8899aa;
+            margin-left: 8px;
+            font-size: 0.85rem;
+        }
+
+        .div-d .tema-activo .fecha-id::before {
+            content: "— ";
+            color: #5a6a7a;
+        }
+
+        /* Div B - Lista de entradas (parcial) - ANCHO FIJO */
         .div-b {
             grid-row: 2 / 3;
             grid-column: 1 / 2;
+            width: 300px;
             background: #e4eaf2;
             padding: 12px 12px;
             overflow-y: auto;
             border-right: 1px solid #ccd5e0;
+            flex-shrink: 0;
         }
 
         .div-b h3 {
@@ -245,13 +260,14 @@
             font-weight: 400;
         }
 
-        /* Div C - Contenido completo */
+        /* Div C - Contenido completo - OCUPA EL RESTO */
         .div-c {
             grid-row: 2 / 3;
             grid-column: 2 / 3;
             background: #ffffff;
             padding: 18px 24px;
             overflow-y: auto;
+            min-width: 0;
         }
 
         .div-c h2 {
@@ -633,6 +649,9 @@
             .div-a .header-a h1 {
                 font-size: 1.1rem;
             }
+            .div-b {
+                width: 260px;
+            }
         }
 
         /* Móviles - OCULTAR DIV D COMPLETAMENTE */
@@ -811,10 +830,11 @@
         <div class="div-d" id="divD">
             <div class="tema-activo" id="temaActivo">
                 <span id="tituloBanner">Inicio</span>
+                <span class="fecha-id" id="fechaBanner"></span>
             </div>
         </div>
 
-        <!-- Div B: Lista de entradas -->
+        <!-- Div B: Lista de entradas - ANCHO FIJO -->
         <div class="div-b" id="divB">
             <h3>📋 Entradas <span id="contadorEntradas">(0)</span></h3>
             <ul id="listaEntradasParciales">
@@ -822,7 +842,7 @@
             </ul>
         </div>
 
-        <!-- Div C: Contenido completo -->
+        <!-- Div C: Contenido completo - OCUPA EL RESTO -->
         <div class="div-c" id="divC">
             <div id="contenidoCompleto">
                 <h2>Bienvenido</h2>
@@ -969,6 +989,7 @@
     var contadorEntradasEl = document.getElementById('contadorEntradas');
     var contenidoCompletoEl = document.getElementById('contenidoCompleto');
     var tituloBannerEl = document.getElementById('tituloBanner');
+    var fechaBannerEl = document.getElementById('fechaBanner');
     var busquedaInput = document.getElementById('busquedaInput');
     var divB = document.getElementById('divB');
 
@@ -1015,7 +1036,7 @@
     }
 
     // ============================================================
-    //  FUNCIONES DE MANEJO DE URL
+    //  FUNCIONES DE MANEJO DE URL Y BANNER
     // ============================================================
 
     function actualizarURL(id) {
@@ -1032,6 +1053,22 @@
         var urlSinQuery = window.location.pathname;
         window.history.pushState({}, '', urlSinQuery);
         QUERY_ID = null;
+    }
+
+    function actualizarBanner(titulo, id) {
+        if (titulo && id) {
+            tituloBannerEl.textContent = titulo;
+            fechaBannerEl.textContent = id;
+            fechaBannerEl.style.display = 'inline';
+        } else if (titulo) {
+            tituloBannerEl.textContent = titulo;
+            fechaBannerEl.textContent = '';
+            fechaBannerEl.style.display = 'none';
+        } else {
+            tituloBannerEl.textContent = 'Inicio';
+            fechaBannerEl.textContent = '';
+            fechaBannerEl.style.display = 'none';
+        }
     }
 
     // ============================================================
@@ -1151,11 +1188,12 @@
 
     function mostrarEntradaCompleta(entrada, esMovil) {
         var targetEl = esMovil ? mobileContenidoCompletoEl : contenidoCompletoEl;
-        var tituloEl = esMovil ? null : tituloBannerEl;
 
         if (!entrada) {
             targetEl.innerHTML = '<h2>Entrada no encontrada</h2><p>No se pudo cargar la entrada.</p>';
-            if (tituloEl) tituloEl.textContent = 'Error';
+            if (!esMovil) {
+                actualizarBanner('Error', null);
+            }
             return;
         }
 
@@ -1184,16 +1222,11 @@
         html += '</div>';
 
         targetEl.innerHTML = html;
-        if (tituloEl) tituloEl.textContent = entrada.aaa || 'Entrada';
 
-        // Agregar event listeners para copiar
-        var botonesCopiar = targetEl.querySelectorAll('.copiar-btn');
-        botonesCopiar.forEach(function(boton) {
-            boton.addEventListener('click', function(e) {
-                var texto = this.getAttribute('data-texto-copiar');
-                copiarAlPortapapeles(texto, this);
-            });
-        });
+        // Actualizar banner en desktop
+        if (!esMovil) {
+            actualizarBanner(entrada.aaa, entrada.ddd);
+        }
     }
 
     // ============================================================
@@ -1256,7 +1289,7 @@
             }
         });
 
-        tituloBannerEl.textContent = 'Inicio';
+        actualizarBanner('Inicio', null);
         modoActual = 'inicio';
         renderizarEntradasParciales(entradasRecientes);
 
@@ -1285,7 +1318,7 @@
         });
 
         var displayName = limpiarEtiqueta(etiqueta);
-        tituloBannerEl.textContent = '🏷️ ' + displayName;
+        actualizarBanner('🏷️ ' + displayName, null);
         modoActual = 'etiqueta';
 
         listaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
@@ -1361,7 +1394,7 @@
                 } else {
                     contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
                     mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
-                    tituloBannerEl.textContent = 'Error';
+                    actualizarBanner('Error', null);
                 }
             })
             .catch(function(error) {
@@ -1407,7 +1440,7 @@
 
         modoActual = 'busqueda';
         var q = query.trim();
-        tituloBannerEl.textContent = '🔍 "' + q + '"';
+        actualizarBanner('🔍 "' + q + '"', null);
 
         listaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
         contadorEntradasEl.textContent = '(…)';
@@ -1470,6 +1503,7 @@
         } else {
             contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
             mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
+            actualizarBanner('Sin entradas', null);
         }
     }
 
@@ -1495,10 +1529,10 @@
                     mostrarEntradaCompleta(entrada, false);
                     mostrarEntradaCompleta(entrada, true);
                     renderizarEntradasParciales([entrada]);
-                    tituloBannerEl.textContent = '🔗 ' + entrada.aaa;
                 } else {
                     contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
                     mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                    actualizarBanner('Error: ID no encontrado', null);
                     renderizarEntradasParciales(entradasRecientes);
                 }
             })
@@ -1573,6 +1607,7 @@
     window.procesarQuery = procesarQuery;
     window.actualizarURL = actualizarURL;
     window.eliminarQueryDeURL = eliminarQueryDeURL;
+    window.actualizarBanner = actualizarBanner;
 
     console.log('Script cargado correctamente.');
 </script>
