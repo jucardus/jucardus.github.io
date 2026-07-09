@@ -145,7 +145,7 @@
             grid-row: 1 / 2;
             display: grid;
             grid-template-rows: 50px 1fr;
-            gap: 1px;
+            gap: 0;
             background: #d0d8e3;
             height: 100vh;
             width: 100%;
@@ -167,6 +167,7 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             z-index: 5;
             width: 100%;
+            flex-shrink: 0;
         }
 
         .div-d .tema-activo {
@@ -201,7 +202,7 @@
         }
 
         /* ============================================================
-           CONTENEDOR B + C (sin gap extra)
+           CONTENEDOR B + C (sin gap)
            ============================================================ */
         .contenedor-bc {
             grid-row: 2 / 3;
@@ -211,6 +212,7 @@
             gap: 0;
             background: #d0d8e3;
             height: 100%;
+            min-height: 0;
             overflow: hidden;
         }
 
@@ -228,6 +230,11 @@
             min-width: 300px;
             max-width: 300px;
             flex-shrink: 0;
+        }
+
+        /* Forzar que el scroll siempre esté visible */
+        .div-b {
+            overflow-y: scroll;
         }
 
         .div-b h3 {
@@ -294,6 +301,11 @@
             overflow-y: auto;
             height: 100%;
             min-width: 0;
+        }
+
+        /* Forzar que el scroll siempre esté visible */
+        .div-c {
+            overflow-y: scroll;
         }
 
         .div-c h2 {
@@ -395,11 +407,23 @@
             background: #d5dee9;
         }
 
-        /* Scrollbars personalizados */
-        ::-webkit-scrollbar { width: 5px; height: 5px; }
-        ::-webkit-scrollbar-track { background: #dbe1e9; border-radius: 8px; }
-        ::-webkit-scrollbar-thumb { background: #7f95b0; border-radius: 8px; }
-        ::-webkit-scrollbar-thumb:hover { background: #5a7493; }
+        /* Scrollbars personalizados - Siempre visibles */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #dbe1e9;
+            border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7f95b0;
+            border-radius: 8px;
+            min-height: 30px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a7493;
+        }
 
         /* Utilidades */
         .images-container {
@@ -725,7 +749,7 @@
             .mobile-sections .section#mobile-section-a .titulo-movil {
                 font-size: 1.2rem;
                 font-weight: 700;
-                color: #1e2b3c;
+                color: #1e2b3a;
                 letter-spacing: -0.5px;
                 margin-bottom: 8px;
                 cursor: default;
@@ -859,7 +883,7 @@
             </div>
         </div>
 
-        <!-- Contenedor B + C (sin gap extra) -->
+        <!-- Contenedor B + C (sin gap) -->
         <div class="contenedor-bc">
 
             <!-- Div B -->
