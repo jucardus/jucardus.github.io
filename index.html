@@ -36,14 +36,14 @@
         }
 
         /* ============================================================
-           COLUMNA A - Panel izquierdo (título + buscador + etiquetas)
+           COLUMNA A - Panel izquierdo
            ============================================================ */
         .div-a {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             background: #eef2f7;
             padding: 0;
-            overflow-y: auto; /* SCROLL */
+            overflow-y: auto;
             border-right: 1px solid #ccd5e0;
             display: flex;
             flex-direction: column;
@@ -72,7 +72,7 @@
             border-radius: 20px;
             border: 1px solid #ccd5e0;
             background: #ffffff;
-            color: #1e2b3a;
+            color: #1e2b3c;
             font-size: 0.85rem;
             font-family: 'Inter', sans-serif;
             outline: none;
@@ -90,7 +90,7 @@
         .div-a .etiquetas-container {
             padding: 10px 12px 12px 12px;
             flex: 1;
-            overflow-y: auto; /* SCROLL */
+            overflow-y: auto;
         }
 
         .div-a .etiquetas-container h3 {
@@ -152,7 +152,7 @@
         }
 
         /* ============================================================
-           Div D - Banner superior - ANCHO TOTAL (100% de la columna derecha)
+           Div D - Banner superior - ANCHO TOTAL
            ============================================================ */
         .div-d {
             grid-row: 1 / 2;
@@ -190,7 +190,7 @@
 
         .div-d .tema-activo .fecha-id {
             font-weight: 400;
-            color: #8899aa;
+            color: #b0d4f0;
             margin-left: 8px;
             font-size: 0.85rem;
         }
@@ -201,20 +201,33 @@
         }
 
         /* ============================================================
+           CONTENEDOR B + C (sin gap extra)
+           ============================================================ */
+        .contenedor-bc {
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 0;
+            background: #d0d8e3;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* ============================================================
            Div B - Lista de entradas - ANCHO FIJO
            ============================================================ */
         .div-b {
-            grid-row: 2 / 3;
             grid-column: 1 / 2;
+            background: #e4eaf2;
+            padding: 12px 12px;
+            overflow-y: auto;
+            border-right: 1px solid #ccd5e0;
+            height: 100%;
             width: 300px;
             min-width: 300px;
             max-width: 300px;
-            background: #e4eaf2;
-            padding: 12px 12px;
-            overflow-y: auto; /* SCROLL */
-            border-right: 1px solid #ccd5e0;
             flex-shrink: 0;
-            height: 100%;
         }
 
         .div-b h3 {
@@ -272,16 +285,15 @@
         }
 
         /* ============================================================
-           Div C - Contenido completo - OCUPA EL RESTO DEL ANCHO
+           Div C - Contenido completo
            ============================================================ */
         .div-c {
-            grid-row: 2 / 3;
             grid-column: 2 / 3;
             background: #ffffff;
             padding: 18px 24px;
-            overflow-y: auto; /* SCROLL */
-            min-width: 0;
+            overflow-y: auto;
             height: 100%;
+            min-width: 0;
         }
 
         .div-c h2 {
@@ -661,6 +673,9 @@
             .div-a .header-a h1 {
                 font-size: 1.1rem;
             }
+            .contenedor-bc {
+                grid-template-columns: 260px 1fr;
+            }
             .div-b {
                 width: 260px;
                 min-width: 260px;
@@ -844,8 +859,8 @@
             </div>
         </div>
 
-        <!-- Div B + Div C en grid interno -->
-        <div style="display:grid; grid-template-columns: auto 1fr; gap:1px; background:#d0d8e3; height:100%;">
+        <!-- Contenedor B + C (sin gap extra) -->
+        <div class="contenedor-bc">
 
             <!-- Div B -->
             <div class="div-b" id="divB">
@@ -1081,14 +1096,6 @@
             fechaBannerEl.textContent = '';
             fechaBannerEl.style.display = 'none';
         }
-    }
-
-    function abrirEntradaYActualizarBanner(entrada) {
-        if (!entrada) return;
-        mostrarEntradaCompleta(entrada, false);
-        mostrarEntradaCompleta(entrada, true);
-        actualizarURL(entrada.ddd);
-        actualizarBanner(entrada.aaa, entrada.ddd);
     }
 
     // ============================================================
@@ -1637,7 +1644,6 @@
     window.actualizarURL = actualizarURL;
     window.eliminarQueryDeURL = eliminarQueryDeURL;
     window.actualizarBanner = actualizarBanner;
-    window.abrirEntradaYActualizarBanner = abrirEntradaYActualizarBanner;
 
     console.log('Script cargado correctamente.');
 </script>
