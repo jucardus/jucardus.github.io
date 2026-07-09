@@ -196,9 +196,10 @@
             font-size: 0.85rem;
         }
 
+        /* Guion de separación - Color mejorado (menos opaco) */
         .div-d .tema-activo .fecha-id::before {
             content: "— ";
-            color: #5a6a7a;
+            color: #8aaac0;
         }
 
         /* ============================================================
@@ -223,18 +224,13 @@
             grid-column: 1 / 2;
             background: #e4eaf2;
             padding: 12px 12px;
-            overflow-y: auto;
+            overflow-y: scroll;
             border-right: 1px solid #ccd5e0;
             height: 100%;
             width: 300px;
             min-width: 300px;
             max-width: 300px;
             flex-shrink: 0;
-        }
-
-        /* Forzar que el scroll siempre esté visible */
-        .div-b {
-            overflow-y: scroll;
         }
 
         .div-b h3 {
@@ -298,14 +294,9 @@
             grid-column: 2 / 3;
             background: #ffffff;
             padding: 18px 24px;
-            overflow-y: auto;
+            overflow-y: scroll;
             height: 100%;
             min-width: 0;
-        }
-
-        /* Forzar que el scroll siempre esté visible */
-        .div-c {
-            overflow-y: scroll;
         }
 
         .div-c h2 {
@@ -1008,19 +999,24 @@
         c: document.getElementById('mobile-section-c')
     };
 
+    // Función para cambiar a una pestaña en móvil
+    function cambiarPestanaMovil(tab) {
+        tabButtons.forEach(function(b) { b.classList.remove('active'); });
+        document.querySelector('.tab-btn[data-tab="' + tab + '"]').classList.add('active');
+        for (var key in mobileSectionsList) {
+            if (mobileSectionsList[key]) {
+                mobileSectionsList[key].classList.remove('active');
+            }
+        }
+        if (mobileSectionsList[tab]) {
+            mobileSectionsList[tab].classList.add('active');
+        }
+    }
+
     tabButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
             var tab = this.dataset.tab;
-            tabButtons.forEach(function(b) { b.classList.remove('active'); });
-            this.classList.add('active');
-            for (var key in mobileSectionsList) {
-                if (mobileSectionsList[key]) {
-                    mobileSectionsList[key].classList.remove('active');
-                }
-            }
-            if (mobileSectionsList[tab]) {
-                mobileSectionsList[tab].classList.add('active');
-            }
+            cambiarPestanaMovil(tab);
         });
     });
 
@@ -1136,6 +1132,9 @@
         liTodas.addEventListener('click', function() {
             eliminarQueryDeURL();
             mostrarTodas();
+            if (isMobile) {
+                cambiarPestanaMovil('b');
+            }
         });
         listaEtiquetasEl.appendChild(liTodas);
 
@@ -1148,6 +1147,9 @@
         liTodasMobile.addEventListener('click', function() {
             eliminarQueryDeURL();
             mostrarTodas();
+            if (isMobile) {
+                cambiarPestanaMovil('b');
+            }
         });
         mobileListaEtiquetasEl.appendChild(liTodasMobile);
 
@@ -1173,6 +1175,9 @@
             li.addEventListener('click', function() {
                 eliminarQueryDeURL();
                 seleccionarEtiqueta(etq);
+                if (isMobile) {
+                    cambiarPestanaMovil('b');
+                }
             });
             listaEtiquetasEl.appendChild(li);
 
@@ -1183,6 +1188,9 @@
             liMobile.addEventListener('click', function() {
                 eliminarQueryDeURL();
                 seleccionarEtiqueta(etq);
+                if (isMobile) {
+                    cambiarPestanaMovil('b');
+                }
             });
             mobileListaEtiquetasEl.appendChild(liMobile);
         });
@@ -1204,6 +1212,9 @@
                 li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
                 li.addEventListener('click', function() {
                     abrirEntradaPorId(entrada.ddd);
+                    if (isMobile) {
+                        cambiarPestanaMovil('c');
+                    }
                 });
                 listaEntradasParcialesEl.appendChild(li);
             });
@@ -1227,7 +1238,7 @@
                 li.addEventListener('click', function() {
                     abrirEntradaPorId(entrada.ddd);
                     if (isMobile) {
-                        document.querySelector('.tab-btn[data-tab="c"]').click();
+                        cambiarPestanaMovil('c');
                     }
                 });
                 mobileListaEntradasParcialesEl.appendChild(li);
@@ -1616,6 +1627,9 @@
         busquedaInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 buscarTexto(this.value);
+                if (isMobile) {
+                    cambiarPestanaMovil('b');
+                }
             }
         });
 
@@ -1623,6 +1637,9 @@
         mobileBusquedaInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 buscarTexto(this.value);
+                if (isMobile) {
+                    cambiarPestanaMovil('b');
+                }
             }
         });
 
@@ -1668,6 +1685,7 @@
     window.actualizarURL = actualizarURL;
     window.eliminarQueryDeURL = eliminarQueryDeURL;
     window.actualizarBanner = actualizarBanner;
+    window.cambiarPestanaMovil = cambiarPestanaMovil;
 
     console.log('Script cargado correctamente.');
 </script>
