@@ -27,7 +27,7 @@
            ============================================================ */
         .app {
             display: grid;
-            grid-template-columns: 280px 1fr;
+            grid-template-columns: 220px 1fr;
             grid-template-rows: 1fr;
             height: 100vh;
             width: 100vw;
@@ -50,35 +50,29 @@
         }
 
         .div-a .header-a {
-            padding: 16px 16px 10px 16px;
+            padding: 14px 12px 10px 12px;
             background: #eef2f7;
             border-bottom: 1px solid #d5dee8;
             flex-shrink: 0;
         }
 
         .div-a .header-a h1 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: #1e2b3c;
             letter-spacing: -0.5px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             cursor: default;
         }
 
-        .div-a .header-a .busqueda-rapida {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-        }
-
         .div-a .header-a .busqueda-rapida input {
-            flex: 1;
-            padding: 8px 14px;
-            border-radius: 24px;
+            width: 100%;
+            padding: 6px 12px;
+            border-radius: 20px;
             border: 1px solid #ccd5e0;
             background: #ffffff;
             color: #1e2b3a;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-family: 'Inter', sans-serif;
             outline: none;
             transition: border-color 0.2s;
@@ -92,36 +86,18 @@
             color: #8899aa;
         }
 
-        .div-a .header-a .busqueda-rapida button {
-            background: #2c3e50;
-            border: none;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 24px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 0.95rem;
-            font-family: 'Inter', sans-serif;
-            transition: background 0.2s;
-            flex-shrink: 0;
-        }
-
-        .div-a .header-a .busqueda-rapida button:hover {
-            background: #1a2632;
-        }
-
         .div-a .etiquetas-container {
-            padding: 12px 16px 16px 16px;
+            padding: 10px 12px 12px 12px;
             flex: 1;
             overflow-y: auto;
         }
 
         .div-a .etiquetas-container h3 {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             color: #4a5a72;
-            margin-bottom: 10px;
-            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            letter-spacing: 0.6px;
             font-weight: 700;
         }
 
@@ -132,10 +108,10 @@
         }
 
         .div-a .etiquetas-container li {
-            padding: 7px 12px;
+            padding: 5px 10px;
             margin-bottom: 2px;
-            border-radius: 8px;
-            font-size: 0.95rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
             color: #1e2b3a;
             cursor: pointer;
             transition: background 0.15s;
@@ -161,20 +137,21 @@
         }
 
         /* ============================================================
-           COLUMNA DERECHA (D + (B + C))
+           COLUMNA DERECHA (D + (B + C) con grid)
            ============================================================ */
         .columna-derecha {
             grid-column: 2 / 3;
             grid-row: 1 / 2;
             display: grid;
-            grid-template-rows: 52px 1fr;
+            grid-template-rows: 50px 1fr;
             gap: 1px;
             background: #d0d8e3;
         }
 
-        /* Div D - Banner superior (transversal) - SOLO TÍTULO */
+        /* Div D - Banner superior (transversal) - OCUPA TODO EL ANCHO */
         .div-d {
             grid-row: 1 / 2;
+            grid-column: 1 / -1;
             background: #2c3e50;
             color: #ecf0f1;
             padding: 0 20px;
@@ -207,17 +184,19 @@
         /* Div B - Lista de entradas (parcial) */
         .div-b {
             grid-row: 2 / 3;
+            grid-column: 1 / 2;
             background: #e4eaf2;
             padding: 12px 12px;
             overflow-y: auto;
+            border-right: 1px solid #ccd5e0;
         }
 
         .div-b h3 {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             color: #4a5a72;
-            margin-bottom: 10px;
-            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            letter-spacing: 0.6px;
             font-weight: 700;
         }
 
@@ -228,16 +207,16 @@
         }
 
         .div-b li {
-            padding: 9px 14px;
-            margin-bottom: 4px;
+            padding: 8px 12px;
+            margin-bottom: 3px;
             background: #f8faff;
-            border-radius: 8px;
-            border-left: 4px solid #7f95b0;
+            border-radius: 6px;
+            border-left: 3px solid #7f95b0;
             cursor: pointer;
             transition: background 0.15s, border-color 0.15s;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.4;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
 
         .div-b li:hover {
@@ -248,11 +227,11 @@
         .div-b li .titulo-parcial {
             font-weight: 600;
             color: #1a2a3a;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
         .div-b li .etiquetas-parcial {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #4d637a;
             display: block;
             margin-top: 2px;
@@ -269,32 +248,33 @@
         /* Div C - Contenido completo */
         .div-c {
             grid-row: 2 / 3;
+            grid-column: 2 / 3;
             background: #ffffff;
-            padding: 20px 28px;
+            padding: 18px 24px;
             overflow-y: auto;
         }
 
         .div-c h2 {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 600;
             color: #1e2b3c;
             border-bottom: 2px solid #e6edf5;
-            padding-bottom: 12px;
-            margin-bottom: 16px;
+            padding-bottom: 10px;
+            margin-bottom: 14px;
             line-height: 1.3;
             letter-spacing: -0.3px;
         }
 
         .div-c .contenido-bbb {
             line-height: 1.6;
-            margin-bottom: 18px;
-            font-size: 1rem;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
         }
 
-        .div-c .contenido-bbb p { margin-bottom: 10px; }
+        .div-c .contenido-bbb p { margin-bottom: 8px; }
         .div-c .contenido-bbb ul, .div-c .contenido-bbb ol {
-            padding-left: 26px;
-            margin-bottom: 10px;
+            padding-left: 24px;
+            margin-bottom: 8px;
         }
         .div-c .contenido-bbb li { margin-bottom: 3px; }
         .div-c .contenido-bbb img {
@@ -305,16 +285,16 @@
 
         .div-c .etiquetas-completas {
             background: #f8faff;
-            padding: 12px 18px;
-            border-radius: 12px;
+            padding: 10px 16px;
+            border-radius: 10px;
             border: 1px solid #e2eaf3;
-            margin: 14px 0;
+            margin: 12px 0;
         }
 
         .div-c .etiquetas-completas h4 {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #4a5a72;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             font-weight: 600;
         }
 
@@ -322,15 +302,15 @@
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 4px;
             padding: 0;
         }
 
         .div-c .etiquetas-completas li {
             background: #eef2f7;
-            padding: 4px 14px;
-            border-radius: 18px;
-            font-size: 0.85rem;
+            padding: 3px 12px;
+            border-radius: 16px;
+            font-size: 0.8rem;
             color: #1e2b3a;
             cursor: pointer;
             transition: background 0.15s;
@@ -344,26 +324,26 @@
         .div-c .compartir {
             display: flex;
             align-items: center;
-            gap: 14px;
-            margin-top: 14px;
-            padding: 12px 0;
+            gap: 12px;
+            margin-top: 12px;
+            padding: 10px 0;
             border-top: 1px solid #e6edf5;
             flex-wrap: wrap;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .div-c .compartir b { font-weight: 600; }
         .div-c .compartir a, .div-c .compartir span {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .div-c .compartir .copiar-btn {
             background: #eef2f7;
             border: 1px solid #ccd5e0;
-            padding: 4px 16px;
-            border-radius: 20px;
+            padding: 3px 14px;
+            border-radius: 18px;
             cursor: pointer;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             transition: background 0.15s;
             font-weight: 500;
             font-family: 'Inter', sans-serif;
@@ -374,7 +354,7 @@
         }
 
         /* Scrollbars personalizados */
-        ::-webkit-scrollbar { width: 5px; height: 5px; }
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
         ::-webkit-scrollbar-track { background: #dbe1e9; border-radius: 8px; }
         ::-webkit-scrollbar-thumb { background: #7f95b0; border-radius: 8px; }
         ::-webkit-scrollbar-thumb:hover { background: #5a7493; }
@@ -388,7 +368,7 @@
         }
         .images-container img {
             max-width: 100%;
-            max-height: 280px;
+            max-height: 260px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
@@ -481,11 +461,11 @@
         }
 
         .mobile-sections .section h3 {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             color: #4a5a72;
-            margin-bottom: 10px;
-            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            letter-spacing: 0.6px;
             font-weight: 700;
         }
 
@@ -496,10 +476,10 @@
         }
 
         .mobile-sections .section#mobile-section-a li {
-            padding: 7px 12px;
+            padding: 5px 10px;
             margin-bottom: 2px;
-            border-radius: 8px;
-            font-size: 0.95rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
             color: #1e2b3a;
             cursor: pointer;
             transition: background 0.15s;
@@ -518,16 +498,16 @@
         }
 
         .mobile-sections .section#mobile-section-b li {
-            padding: 9px 12px;
-            margin-bottom: 4px;
+            padding: 8px 12px;
+            margin-bottom: 3px;
             background: #f8faff;
-            border-radius: 8px;
-            border-left: 4px solid #7f95b0;
+            border-radius: 6px;
+            border-left: 3px solid #7f95b0;
             cursor: pointer;
             transition: background 0.15s, border-color 0.15s;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             line-height: 1.4;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
 
         .mobile-sections .section#mobile-section-b li:hover {
@@ -538,37 +518,37 @@
         .mobile-sections .section#mobile-section-b li .titulo-parcial {
             font-weight: 600;
             color: #1a2a3a;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #4d637a;
             display: block;
             margin-top: 2px;
         }
 
         .mobile-sections .section#mobile-section-c h2 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 600;
             color: #1e2b3c;
             border-bottom: 2px solid #e6edf5;
             padding-bottom: 10px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
             line-height: 1.3;
             letter-spacing: -0.3px;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb {
             line-height: 1.6;
-            margin-bottom: 16px;
-            font-size: 0.95rem;
+            margin-bottom: 14px;
+            font-size: 0.9rem;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb p { margin-bottom: 8px; }
         .mobile-sections .section#mobile-section-c .contenido-bbb ul,
         .mobile-sections .section#mobile-section-c .contenido-bbb ol {
-            padding-left: 24px;
+            padding-left: 22px;
             margin-bottom: 8px;
         }
 
@@ -580,14 +560,14 @@
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas {
             background: #f8faff;
-            padding: 12px 16px;
-            border-radius: 12px;
+            padding: 10px 14px;
+            border-radius: 10px;
             border: 1px solid #e2eaf3;
-            margin: 12px 0;
+            margin: 10px 0;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #4a5a72;
             margin-bottom: 6px;
             font-weight: 600;
@@ -597,15 +577,15 @@
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 4px;
             padding: 0;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas li {
             background: #eef2f7;
-            padding: 4px 14px;
-            border-radius: 18px;
-            font-size: 0.85rem;
+            padding: 3px 12px;
+            border-radius: 16px;
+            font-size: 0.8rem;
             color: #1e2b3a;
             cursor: pointer;
             transition: background 0.15s;
@@ -615,27 +595,27 @@
         .mobile-sections .section#mobile-section-c .compartir {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-top: 12px;
-            padding: 10px 0;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 8px 0;
             border-top: 1px solid #e6edf5;
             flex-wrap: wrap;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .mobile-sections .section#mobile-section-c .compartir b { font-weight: 600; }
         .mobile-sections .section#mobile-section-c .compartir a,
         .mobile-sections .section#mobile-section-c .compartir span {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .mobile-sections .section#mobile-section-c .compartir .copiar-btn {
             background: #eef2f7;
             border: 1px solid #ccd5e0;
-            padding: 4px 14px;
-            border-radius: 20px;
+            padding: 3px 12px;
+            border-radius: 18px;
             cursor: pointer;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             transition: background 0.15s;
             font-weight: 500;
             font-family: 'Inter', sans-serif;
@@ -648,10 +628,10 @@
         /* Tablets */
         @media (max-width: 1024px) {
             .app {
-                grid-template-columns: 240px 1fr;
+                grid-template-columns: 200px 1fr;
             }
             .div-a .header-a h1 {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
             }
         }
 
@@ -680,51 +660,29 @@
             }
 
             /* El buscador está dentro de la sección A en móvil */
-            .mobile-sections .section#mobile-section-a .busqueda-movil {
-                display: flex;
-                gap: 8px;
-                margin-bottom: 12px;
-            }
-
             .mobile-sections .section#mobile-section-a .busqueda-movil input {
-                flex: 1;
-                padding: 8px 14px;
-                border-radius: 24px;
+                width: 100%;
+                padding: 6px 12px;
+                border-radius: 20px;
                 border: 1px solid #ccd5e0;
                 background: #ffffff;
                 color: #1e2b3a;
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 font-family: 'Inter', sans-serif;
                 outline: none;
+                margin-bottom: 10px;
             }
 
             .mobile-sections .section#mobile-section-a .busqueda-movil input:focus {
                 border-color: #2c3e50;
             }
 
-            .mobile-sections .section#mobile-section-a .busqueda-movil button {
-                background: #2c3e50;
-                border: none;
-                color: white;
-                padding: 8px 16px;
-                border-radius: 24px;
-                cursor: pointer;
-                font-weight: 600;
-                font-size: 0.95rem;
-                font-family: 'Inter', sans-serif;
-                flex-shrink: 0;
-            }
-
-            .mobile-sections .section#mobile-section-a .busqueda-movil button:hover {
-                background: #1a2632;
-            }
-
             .mobile-sections .section#mobile-section-a .titulo-movil {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 font-weight: 700;
                 color: #1e2b3c;
                 letter-spacing: -0.5px;
-                margin-bottom: 10px;
+                margin-bottom: 8px;
                 cursor: default;
             }
 
@@ -733,25 +691,25 @@
             }
 
             .mobile-sections .section#mobile-section-c h2 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
 
             .mobile-sections .section#mobile-section-c .contenido-bbb {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
             }
 
             .mobile-sections .section#mobile-section-a li {
-                font-size: 0.95rem;
-                padding: 6px 12px;
+                font-size: 0.85rem;
+                padding: 5px 10px;
             }
 
             .mobile-sections .section#mobile-section-b li {
-                font-size: 0.9rem;
-                padding: 8px 12px;
+                font-size: 0.85rem;
+                padding: 7px 10px;
             }
 
             .mobile-sections .section#mobile-section-b li .titulo-parcial {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
             }
 
             .mobile-tabs .tab-btn {
@@ -767,7 +725,7 @@
         /* Móviles muy pequeños */
         @media (max-width: 480px) {
             .mobile-tabs .tab-btn {
-                font-size: 0.8rem;
+                font-size: 0.75rem;
                 padding: 8px 4px;
             }
 
@@ -780,7 +738,7 @@
             }
 
             .mobile-sections .section#mobile-section-c .contenido-bbb {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
 
             .mobile-sections .section#mobile-section-a .titulo-movil {
@@ -788,17 +746,17 @@
             }
 
             .mobile-sections .section#mobile-section-a li {
-                font-size: 0.9rem;
-                padding: 5px 10px;
+                font-size: 0.8rem;
+                padding: 4px 8px;
             }
 
             .mobile-sections .section#mobile-section-b li {
-                font-size: 0.85rem;
-                padding: 6px 10px;
+                font-size: 0.8rem;
+                padding: 6px 8px;
             }
 
             .mobile-sections .section#mobile-section-b li .titulo-parcial {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
         }
 
@@ -813,17 +771,12 @@
             }
 
             .mobile-sections .section#mobile-section-c .contenido-bbb {
-                font-size: 0.85rem;
+                font-size: 0.8rem;
             }
 
             .mobile-sections .section#mobile-section-a .busqueda-movil input {
-                font-size: 0.85rem;
-                padding: 6px 10px;
-            }
-
-            .mobile-sections .section#mobile-section-a .busqueda-movil button {
-                font-size: 0.85rem;
-                padding: 6px 12px;
+                font-size: 0.8rem;
+                padding: 5px 10px;
             }
         }
     </style>
@@ -841,7 +794,6 @@
             <h1>📖 Jucardus.com</h1>
             <div class="busqueda-rapida">
                 <input type="text" id="busquedaInput" placeholder="Buscar..." maxlength="60">
-                <button id="buscarBtn">🔍</button>
             </div>
         </div>
         <div class="etiquetas-container">
@@ -855,7 +807,7 @@
     <!-- Columna derecha: D + (B + C) -->
     <div class="columna-derecha">
 
-        <!-- Div D: Solo título -->
+        <!-- Div D: Solo título - OCUPA TODO EL ANCHO -->
         <div class="div-d" id="divD">
             <div class="tema-activo" id="temaActivo">
                 <span id="tituloBanner">Inicio</span>
@@ -901,7 +853,6 @@
         <div class="titulo-movil">📖 Jucardus.com</div>
         <div class="busqueda-movil">
             <input type="text" id="mobileBusquedaInput" placeholder="Buscar..." maxlength="60">
-            <button id="mobileBuscarBtn">🔍</button>
         </div>
         <h3>📂 Etiquetas principales</h3>
         <ul id="mobileListaEtiquetas">
@@ -931,9 +882,9 @@
 
 <script>
     // ============================================================
-    //  CONFIGURACIÓN - URL DE TU GAS (CAMBIA ESTA URL)
+    //  CONFIGURACIÓN - URL DE TU GAS
     // ============================================================
-    var GAS_URL = 'https://script.google.com/macros/s/AKfycbwBRxYl...Z6AzFM_2g/exec';
+    var GAS_URL = 'https://script.google.com/macros/s/AKfycbyfbFmKGcIyGP8leyLFwH_t2-6qkz2S_cbp3n82TG3jr-G_AdK4kkhLMkBSnKqbrbGX/exec';
 
     // ============================================================
     //  OBTENER QUERY DESDE LA URL
@@ -1019,7 +970,6 @@
     var contenidoCompletoEl = document.getElementById('contenidoCompleto');
     var tituloBannerEl = document.getElementById('tituloBanner');
     var busquedaInput = document.getElementById('busquedaInput');
-    var buscarBtn = document.getElementById('buscarBtn');
     var divB = document.getElementById('divB');
 
     // Elementos móvil
@@ -1029,7 +979,6 @@
     var mobileContadorBadgeEl = document.getElementById('mobileContadorBadge');
     var mobileContenidoCompletoEl = document.getElementById('mobileContenidoCompleto');
     var mobileBusquedaInput = document.getElementById('mobileBusquedaInput');
-    var mobileBuscarBtn = document.getElementById('mobileBuscarBtn');
 
     // ============================================================
     //  FUNCIONES DE PROCESAMIENTO
@@ -1569,23 +1518,17 @@
         console.log('DOM cargado. QUERY_ID:', QUERY_ID);
         console.log('GAS_URL:', GAS_URL);
 
-        // Eventos desktop
-        buscarBtn.addEventListener('click', function() {
-            buscarTexto(busquedaInput.value);
-        });
+        // Evento desktop - SOLO ENTER
         busquedaInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                buscarTexto(busquedaInput.value);
+                buscarTexto(this.value);
             }
         });
 
-        // Eventos móvil
-        mobileBuscarBtn.addEventListener('click', function() {
-            buscarTexto(mobileBusquedaInput.value);
-        });
+        // Evento móvil - SOLO ENTER
         mobileBusquedaInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                buscarTexto(mobileBusquedaInput.value);
+                buscarTexto(this.value);
             }
         });
 
