@@ -1,1 +1,1438 @@
-<!DOCTYPE html><html><head><style>body {background-color: #3a3a3a;}</style><meta http-equiv="refresh" content="0;url=https://linktr.ee/jucardus"></head></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jucardus.com</title>
+    <style>
+        /* ============================================================
+           RESET Y ESTRUCTURA BASE - FUENTES MÁS GRANDES
+           ============================================================ */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            height: 100%;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            font-size: 17px;
+            background: #f4f7fb;
+            overflow: hidden;
+            line-height: 1.5;
+        }
+
+        /* ============================================================
+           LAYOUT PRINCIPAL (Desktop - 3 columnas)
+           ============================================================ */
+        .app {
+            display: grid;
+            grid-template-columns: 240px 300px 1fr;
+            grid-template-rows: 56px 1fr;
+            height: 100vh;
+            width: 100vw;
+            gap: 1px;
+            background: #d0d8e3;
+        }
+
+        /* Div D - Banner superior (transversal) */
+        .div-d {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            z-index: 5;
+        }
+        .div-d h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            white-space: nowrap;
+            cursor: default;
+            flex-shrink: 0;
+        }
+        .div-d .tema-activo {
+            background: #34495e;
+            padding: 6px 18px;
+            border-radius: 24px;
+            font-size: 1.05rem;
+            border: 1px solid #4a6178;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: default;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+        .div-d .tema-activo span { font-weight: 600; color: #b0d4f0; }
+        .div-d .busqueda-rapida {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .div-d .busqueda-rapida input {
+            padding: 6px 14px;
+            border-radius: 24px;
+            border: none;
+            background: #1e2b3a;
+            color: #ecf0f1;
+            width: 180px;
+            font-size: 1rem;
+        }
+        .div-d .busqueda-rapida input::placeholder { color: #8899aa; font-size: 0.95rem; }
+        .div-d .busqueda-rapida button {
+            background: #3a5a7a;
+            border: none;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 24px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .div-d .busqueda-rapida button:hover { background: #4a6a8a; }
+
+        /* Div A - Panel izquierdo (etiquetas) */
+        .div-a {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background: #eef2f7;
+            padding: 14px 12px;
+            overflow-y: auto;
+            border-right: 1px solid #ccd5e0;
+        }
+        .div-a h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #4a5a72;
+            margin-bottom: 12px;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+        .div-a ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .div-a li {
+            padding: 8px 14px;
+            margin-bottom: 3px;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            color: #1e2b3a;
+            cursor: pointer;
+            transition: background 0.15s;
+            word-break: break-word;
+            font-weight: 500;
+        }
+        .div-a li:hover { background: #d5dee9; }
+        .div-a li.activo {
+            background: #2c3e50;
+            color: white;
+            font-weight: 600;
+        }
+        .div-a li.cargando {
+            color: #6a7a8a;
+            font-style: italic;
+            cursor: default;
+            font-weight: 400;
+        }
+
+        /* Div B - Lista de entradas (parcial) */
+        .div-b {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background: #e4eaf2;
+            padding: 14px 12px;
+            overflow-y: auto;
+            border-right: 1px solid #ccd5e0;
+        }
+        .div-b h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #4a5a72;
+            margin-bottom: 12px;
+            letter-spacing: 0.8px;
+            font-weight: 700;
+        }
+        .div-b ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .div-b li {
+            padding: 10px 14px;
+            margin-bottom: 4px;
+            background: #f8faff;
+            border-radius: 8px;
+            border-left: 4px solid #7f95b0;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s;
+            font-size: 1rem;
+            line-height: 1.5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .div-b li:hover {
+            background: #d5dee9;
+            border-left-color: #2c3e50;
+        }
+        .div-b li .titulo-parcial { 
+            font-weight: 600; 
+            color: #1a2a3a;
+            font-size: 1.05rem;
+        }
+        .div-b li .etiquetas-parcial {
+            font-size: 0.85rem;
+            color: #4d637a;
+            display: block;
+            margin-top: 3px;
+        }
+        .div-b li.cargando {
+            color: #6a7a8a;
+            font-style: italic;
+            cursor: default;
+            border-left-color: #b0b8c4;
+            font-weight: 400;
+        }
+
+        /* Div C - Contenido completo */
+        .div-c {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            background: #ffffff;
+            padding: 24px 32px;
+            overflow-y: auto;
+        }
+        .div-c h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #1e2b3c;
+            border-bottom: 2px solid #e6edf5;
+            padding-bottom: 14px;
+            margin-bottom: 18px;
+            line-height: 1.3;
+        }
+        .div-c .contenido-bbb {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .div-c .contenido-bbb p { margin-bottom: 12px; }
+        .div-c .contenido-bbb ul, .div-c .contenido-bbb ol { 
+            padding-left: 28px; 
+            margin-bottom: 12px; 
+        }
+        .div-c .contenido-bbb li { margin-bottom: 4px; }
+        .div-c .contenido-bbb img { 
+            max-width: 100%; 
+            border-radius: 8px; 
+            margin: 10px 0; 
+        }
+        .div-c .etiquetas-completas {
+            background: #f8faff;
+            padding: 14px 20px;
+            border-radius: 12px;
+            border: 1px solid #e2eaf3;
+            margin: 16px 0;
+        }
+        .div-c .etiquetas-completas h4 {
+            font-size: 0.95rem;
+            color: #4a5a72;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .div-c .etiquetas-completas ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 0;
+        }
+        .div-c .etiquetas-completas li {
+            background: #eef2f7;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            color: #1e2b3a;
+            cursor: pointer;
+            transition: background 0.15s;
+            font-weight: 500;
+        }
+        .div-c .etiquetas-completas li:hover { background: #d0dbe9; }
+        .div-c .compartir {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 16px;
+            padding: 14px 0;
+            border-top: 1px solid #e6edf5;
+            flex-wrap: wrap;
+            font-size: 1.05rem;
+        }
+        .div-c .compartir b { font-weight: 600; }
+        .div-c .compartir a, .div-c .compartir span {
+            font-size: 1.05rem;
+        }
+        .div-c .compartir .copiar-btn {
+            background: #eef2f7;
+            border: 1px solid #ccd5e0;
+            padding: 5px 18px;
+            border-radius: 24px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background 0.15s;
+            font-weight: 500;
+        }
+        .div-c .compartir .copiar-btn:hover { background: #d5dee9; }
+
+        /* Scrollbars personalizados */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #dbe1e9; border-radius: 8px; }
+        ::-webkit-scrollbar-thumb { background: #7f95b0; border-radius: 8px; }
+        ::-webkit-scrollbar-thumb:hover { background: #5a7493; }
+
+        /* Utilidades */
+        .images-container { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0; }
+        .images-container img { 
+            max-width: 100%; 
+            max-height: 300px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+        }
+        .buscar-entrada { 
+            color: #1a6b9b; 
+            cursor: pointer; 
+            font-weight: 600; 
+            border-bottom: 2px dashed #1a6b9b; 
+            padding-bottom: 1px;
+        }
+        .buscar-entrada:hover { background: #e3f0fa; }
+
+        /* ============================================================
+           NAVEGACIÓN POR TABS (solo visible en móvil)
+           ============================================================ */
+        .mobile-tabs {
+            display: none;
+            background: #2c3e50;
+            color: #ecf0f1;
+            border-bottom: 2px solid #1a2632;
+            flex-shrink: 0;
+            z-index: 10;
+        }
+        .mobile-tabs .tab-btn {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #8899aa;
+            padding: 14px 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.2s, background 0.2s;
+            border-bottom: 3px solid transparent;
+            text-align: center;
+        }
+        .mobile-tabs .tab-btn:hover {
+            color: #ecf0f1;
+            background: rgba(255,255,255,0.05);
+        }
+        .mobile-tabs .tab-btn.active {
+            color: #ecf0f1;
+            border-bottom-color: #5a9fd4;
+            background: rgba(255,255,255,0.05);
+        }
+        .mobile-tabs .tab-btn .badge {
+            background: #3a5a7a;
+            border-radius: 12px;
+            padding: 1px 10px;
+            font-size: 0.8rem;
+            margin-left: 6px;
+            font-weight: 600;
+        }
+        .mobile-tabs .tab-btn.active .badge {
+            background: #4a7a9a;
+        }
+
+        /* Contenedor móvil para las secciones */
+        .mobile-sections {
+            display: none;
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+        .mobile-sections .section {
+            display: none;
+            height: 100%;
+            overflow-y: auto;
+            padding: 14px 12px;
+            background: #eef2f7;
+        }
+        .mobile-sections .section.active {
+            display: block;
+        }
+        .mobile-sections .section#mobile-section-c {
+            background: #ffffff;
+            padding: 20px 20px;
+        }
+
+        /* ============================================================
+           RESPONSIVE: MÓVIL Y TABLETA
+           ============================================================ */
+
+        /* Tablets y pantallas medianas */
+        @media (max-width: 1024px) {
+            .app {
+                grid-template-columns: 210px 250px 1fr;
+            }
+            .div-d .busqueda-rapida input {
+                width: 140px;
+            }
+        }
+
+        /* Móviles y pantallas pequeñas */
+        @media (max-width: 768px) {
+            .app {
+                display: none;
+            }
+
+            .mobile-tabs {
+                display: flex;
+            }
+            .mobile-sections {
+                display: flex;
+                flex-direction: column;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                overflow: hidden;
+                font-size: 17px;
+            }
+
+            .div-d {
+                flex-shrink: 0;
+                padding: 0 14px;
+                gap: 10px;
+                min-height: 56px;
+                height: auto;
+            }
+            .div-d h1 {
+                font-size: 1.2rem;
+            }
+            .div-d .tema-activo {
+                font-size: 0.95rem;
+                padding: 5px 14px;
+                max-width: 40%;
+            }
+            .div-d .busqueda-rapida input {
+                width: 120px;
+                font-size: 0.95rem;
+                padding: 5px 12px;
+            }
+            .div-d .busqueda-rapida button {
+                font-size: 0.95rem;
+                padding: 5px 14px;
+            }
+
+            .mobile-sections .section#mobile-section-a {
+                background: #eef2f7;
+                padding: 14px 12px;
+            }
+            .mobile-sections .section#mobile-section-b {
+                background: #e4eaf2;
+                padding: 14px 12px;
+            }
+            .mobile-sections .section#mobile-section-c {
+                background: #ffffff;
+                padding: 18px 18px;
+            }
+
+            .mobile-sections .section h3 {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                color: #4a5a72;
+                margin-bottom: 12px;
+                letter-spacing: 0.8px;
+                font-weight: 700;
+            }
+
+            .mobile-sections .section ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .mobile-sections .section#mobile-section-a li {
+                padding: 8px 14px;
+                margin-bottom: 3px;
+                border-radius: 8px;
+                font-size: 1.05rem;
+                color: #1e2b3a;
+                cursor: pointer;
+                transition: background 0.15s;
+                word-break: break-word;
+                font-weight: 500;
+            }
+            .mobile-sections .section#mobile-section-a li:hover { background: #d5dee9; }
+            .mobile-sections .section#mobile-section-a li.activo {
+                background: #2c3e50;
+                color: white;
+                font-weight: 600;
+            }
+
+            .mobile-sections .section#mobile-section-b li {
+                padding: 10px 14px;
+                margin-bottom: 4px;
+                background: #f8faff;
+                border-radius: 8px;
+                border-left: 4px solid #7f95b0;
+                cursor: pointer;
+                transition: background 0.15s, border-color 0.15s;
+                font-size: 1rem;
+                line-height: 1.5;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            }
+            .mobile-sections .section#mobile-section-b li:hover {
+                background: #d5dee9;
+                border-left-color: #2c3e50;
+            }
+            .mobile-sections .section#mobile-section-b li .titulo-parcial {
+                font-weight: 600;
+                color: #1a2a3a;
+                font-size: 1.05rem;
+            }
+            .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
+                font-size: 0.85rem;
+                color: #4d637a;
+                display: block;
+                margin-top: 3px;
+            }
+
+            .mobile-sections .section#mobile-section-c h2 {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #1e2b3c;
+                border-bottom: 2px solid #e6edf5;
+                padding-bottom: 12px;
+                margin-bottom: 16px;
+                line-height: 1.3;
+            }
+            .mobile-sections .section#mobile-section-c .contenido-bbb {
+                line-height: 1.8;
+                margin-bottom: 18px;
+                font-size: 1.05rem;
+            }
+            .mobile-sections .section#mobile-section-c .contenido-bbb p { margin-bottom: 10px; }
+            .mobile-sections .section#mobile-section-c .contenido-bbb ul, 
+            .mobile-sections .section#mobile-section-c .contenido-bbb ol { 
+                padding-left: 26px; 
+                margin-bottom: 10px; 
+            }
+            .mobile-sections .section#mobile-section-c .contenido-bbb img {
+                max-width: 100%;
+                border-radius: 8px;
+                margin: 8px 0;
+            }
+            .mobile-sections .section#mobile-section-c .etiquetas-completas {
+                background: #f8faff;
+                padding: 14px 18px;
+                border-radius: 12px;
+                border: 1px solid #e2eaf3;
+                margin: 14px 0;
+            }
+            .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
+                font-size: 0.95rem;
+                color: #4a5a72;
+                margin-bottom: 8px;
+                font-weight: 600;
+            }
+            .mobile-sections .section#mobile-section-c .etiquetas-completas ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                padding: 0;
+            }
+            .mobile-sections .section#mobile-section-c .etiquetas-completas li {
+                background: #eef2f7;
+                padding: 5px 16px;
+                border-radius: 20px;
+                font-size: 0.95rem;
+                color: #1e2b3a;
+                cursor: pointer;
+                transition: background 0.15s;
+                font-weight: 500;
+            }
+            .mobile-sections .section#mobile-section-c .compartir {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                margin-top: 14px;
+                padding: 12px 0;
+                border-top: 1px solid #e6edf5;
+                flex-wrap: wrap;
+                font-size: 1rem;
+            }
+            .mobile-sections .section#mobile-section-c .compartir b { font-weight: 600; }
+            .mobile-sections .section#mobile-section-c .compartir a,
+            .mobile-sections .section#mobile-section-c .compartir span {
+                font-size: 1rem;
+            }
+            .mobile-sections .section#mobile-section-c .compartir .copiar-btn {
+                background: #eef2f7;
+                border: 1px solid #ccd5e0;
+                padding: 5px 16px;
+                border-radius: 24px;
+                cursor: pointer;
+                font-size: 0.95rem;
+                transition: background 0.15s;
+                font-weight: 500;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .div-d .busqueda-rapida input {
+                width: 100px;
+                font-size: 0.9rem;
+            }
+            .div-d .tema-activo {
+                max-width: 35%;
+                font-size: 0.9rem;
+                padding: 4px 12px;
+            }
+            .div-d h1 {
+                font-size: 1.1rem;
+            }
+            .mobile-tabs .tab-btn {
+                font-size: 0.9rem;
+                padding: 12px 6px;
+            }
+            .mobile-sections .section#mobile-section-c {
+                padding: 14px 14px;
+            }
+            .mobile-sections .section#mobile-section-c h2 {
+                font-size: 1.4rem;
+            }
+            .mobile-sections .section#mobile-section-c .contenido-bbb {
+                font-size: 1rem;
+            }
+            .mobile-sections .section#mobile-section-a li {
+                font-size: 1rem;
+                padding: 6px 12px;
+            }
+            .mobile-sections .section#mobile-section-b li {
+                font-size: 0.95rem;
+                padding: 8px 12px;
+            }
+            .mobile-sections .section#mobile-section-b li .titulo-parcial {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .div-d .busqueda-rapida input {
+                width: 80px;
+                font-size: 0.8rem;
+                padding: 4px 8px;
+            }
+            .div-d .busqueda-rapida button {
+                font-size: 0.8rem;
+                padding: 4px 10px;
+            }
+            .div-d h1 {
+                font-size: 1rem;
+            }
+            .div-d .tema-activo {
+                font-size: 0.8rem;
+                padding: 3px 10px;
+                max-width: 30%;
+            }
+            .mobile-tabs .tab-btn {
+                font-size: 0.8rem;
+                padding: 10px 4px;
+            }
+            .mobile-sections .section#mobile-section-c h2 {
+                font-size: 1.2rem;
+            }
+            .mobile-sections .section#mobile-section-c .contenido-bbb {
+                font-size: 0.95rem;
+            }
+            .mobile-sections .section#mobile-section-c .etiquetas-completas li {
+                font-size: 0.85rem;
+                padding: 4px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================================
+     LAYOUT DESKTOP
+     ============================================================ -->
+<div class="app" id="app">
+
+    <div class="div-d">
+        <h1>📖 Jucardus.com</h1>
+        <div class="tema-activo" id="temaActivo">
+            <span id="tituloBanner">Inicio</span>
+        </div>
+        <div class="busqueda-rapida">
+            <input type="text" id="busquedaInput" placeholder="Buscar..." maxlength="60">
+            <button id="buscarBtn">🔍</button>
+        </div>
+    </div>
+
+    <div class="div-a" id="divA">
+        <h3>📂 Etiquetas principales</h3>
+        <ul id="listaEtiquetas">
+            <li class="cargando">Cargando etiquetas...</li>
+        </ul>
+    </div>
+
+    <div class="div-b" id="divB">
+        <h3>📋 Entradas <span id="contadorEntradas">(0)</span></h3>
+        <ul id="listaEntradasParciales">
+            <li class="cargando">Cargando entradas...</li>
+        </ul>
+    </div>
+
+    <div class="div-c" id="divC">
+        <div id="contenidoCompleto">
+            <h2>Bienvenido</h2>
+            <div class="contenido-bbb">
+                <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
+                <p style="color: #4d637a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ============================================================
+     LAYOUT MÓVIL
+     ============================================================ -->
+
+<div class="div-d" id="mobileBanner" style="display:none;">
+    <h1>📖 Jucardus.com</h1>
+    <div class="tema-activo" id="mobileTemaActivo">
+        <span id="mobileTituloBanner">Inicio</span>
+    </div>
+    <div class="busqueda-rapida">
+        <input type="text" id="mobileBusquedaInput" placeholder="Buscar..." maxlength="60">
+        <button id="mobileBuscarBtn">🔍</button>
+    </div>
+</div>
+
+<div class="mobile-tabs" id="mobileTabs" style="display:none;">
+    <button class="tab-btn active" data-tab="a">🏷️ Etiquetas</button>
+    <button class="tab-btn" data-tab="b">📋 Entradas <span class="badge" id="mobileContadorBadge">0</span></button>
+    <button class="tab-btn" data-tab="c">📄 Contenido</button>
+</div>
+
+<div class="mobile-sections" id="mobileSections" style="display:none;">
+    <div class="section active" id="mobile-section-a">
+        <h3>📂 Etiquetas principales</h3>
+        <ul id="mobileListaEtiquetas">
+            <li class="cargando">Cargando etiquetas...</li>
+        </ul>
+    </div>
+    <div class="section" id="mobile-section-b">
+        <h3>📋 Entradas <span id="mobileContadorEntradas">(0)</span></h3>
+        <ul id="mobileListaEntradasParciales">
+            <li class="cargando">Cargando entradas...</li>
+        </ul>
+    </div>
+    <div class="section" id="mobile-section-c">
+        <div id="mobileContenidoCompleto">
+            <h2>Bienvenido</h2>
+            <div class="contenido-bbb">
+                <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
+                <p style="color: #4d637a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ============================================================
+    //  CONFIGURACIÓN - URL DE TU GAS (CAMBIA ESTA URL)
+    // ============================================================
+    var GAS_URL = 'https://script.google.com/macros/s/AKfycbyfbFmKGcIyGP8leyLFwH_t2-6qkz2S_cbp3n82TG3jr-G_AdK4kkhLMkBSnKqbrbGX/exec';
+
+    // ============================================================
+    //  OBTENER QUERY DESDE LA URL
+    // ============================================================
+    var QUERY_ID = null;
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var q = params.get('q');
+        if (q && q.match(/^\d{12}$/)) {
+            QUERY_ID = q;
+        }
+        console.log('QUERY_ID desde URL:', QUERY_ID);
+    })();
+
+    // ============================================================
+    //  DETECTAR MÓVIL
+    // ============================================================
+    var isMobile = window.innerWidth <= 768;
+
+    function aplicarLayout() {
+        isMobile = window.innerWidth <= 768;
+        var desktopApp = document.getElementById('app');
+        var mobileBanner = document.getElementById('mobileBanner');
+        var mobileTabs = document.getElementById('mobileTabs');
+        var mobileSections = document.getElementById('mobileSections');
+
+        if (isMobile) {
+            desktopApp.style.display = 'none';
+            mobileBanner.style.display = 'flex';
+            mobileTabs.style.display = 'flex';
+            mobileSections.style.display = 'flex';
+            document.body.style.display = 'flex';
+            document.body.style.flexDirection = 'column';
+        } else {
+            desktopApp.style.display = 'grid';
+            mobileBanner.style.display = 'none';
+            mobileTabs.style.display = 'none';
+            mobileSections.style.display = 'none';
+            document.body.style.display = 'block';
+        }
+    }
+
+    aplicarLayout();
+    window.addEventListener('resize', aplicarLayout);
+
+    // ============================================================
+    //  TABS MÓVILES
+    // ============================================================
+    var tabButtons = document.querySelectorAll('.tab-btn');
+    var mobileSectionsList = {
+        a: document.getElementById('mobile-section-a'),
+        b: document.getElementById('mobile-section-b'),
+        c: document.getElementById('mobile-section-c')
+    };
+
+    tabButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var tab = this.dataset.tab;
+            tabButtons.forEach(function(b) { b.classList.remove('active'); });
+            this.classList.add('active');
+            for (var key in mobileSectionsList) {
+                if (mobileSectionsList[key]) {
+                    mobileSectionsList[key].classList.remove('active');
+                }
+            }
+            if (mobileSectionsList[tab]) {
+                mobileSectionsList[tab].classList.add('active');
+            }
+        });
+    });
+
+    // ============================================================
+    //  VARIABLES GLOBALES
+    // ============================================================
+    var entradasRecientes = [];
+    var etiquetasPrincipales = [];
+    var entradaActual = null;
+    var modoActual = 'inicio';
+    var datosCargados = false;
+
+    // Elementos desktop
+    var listaEtiquetasEl = document.getElementById('listaEtiquetas');
+    var listaEntradasParcialesEl = document.getElementById('listaEntradasParciales');
+    var contadorEntradasEl = document.getElementById('contadorEntradas');
+    var contenidoCompletoEl = document.getElementById('contenidoCompleto');
+    var tituloBannerEl = document.getElementById('tituloBanner');
+    var busquedaInput = document.getElementById('busquedaInput');
+    var buscarBtn = document.getElementById('buscarBtn');
+    var divB = document.getElementById('divB');
+
+    // Elementos móvil
+    var mobileListaEtiquetasEl = document.getElementById('mobileListaEtiquetas');
+    var mobileListaEntradasParcialesEl = document.getElementById('mobileListaEntradasParciales');
+    var mobileContadorEntradasEl = document.getElementById('mobileContadorEntradas');
+    var mobileContadorBadgeEl = document.getElementById('mobileContadorBadge');
+    var mobileContenidoCompletoEl = document.getElementById('mobileContenidoCompleto');
+    var mobileTituloBannerEl = document.getElementById('mobileTituloBanner');
+    var mobileBusquedaInput = document.getElementById('mobileBusquedaInput');
+    var mobileBuscarBtn = document.getElementById('mobileBuscarBtn');
+
+    // ============================================================
+    //  FUNCIONES DE PROCESAMIENTO
+    // ============================================================
+
+    function limpiarEtiqueta(etiqueta) {
+        return etiqueta.replace(' *', '').trim();
+    }
+
+    function procesarContenidoBBB(bbb) {
+        if (!bbb) return '';
+
+        var html = bbb;
+
+        html = html.replace(/@@(https?:\/\/[^\|]+)\|([^@]+)@@/g, function(match, url, texto) {
+            return '<a href="' + url + '" target="_blank" rel="noopener noreferrer nofollow">' + texto.trim() + ' ↗</a>';
+        });
+
+        html = html.replace(/@@(\d{12})\|([^@]+)@@/g, function(match, id, texto) {
+            return '<span class="buscar-entrada" onclick="buscarEntradaPorId(\'' + id + '\')">' + texto.trim() + '</span>';
+        });
+
+        html = html.replace(/¶¶(https?:\/\/[^\|]+)\|([^¶]+)¶¶/g, function(match, url, desc) {
+            return '<div class="images-container"><img src="' + url + '" alt="' + desc.trim() + '" loading="lazy" /></div>';
+        });
+
+        html = html.replace(/®®([^\|]+)\|([^®]+)®®/g, function(match, ruby, texto) {
+            return '<ruby>' + texto.trim() + '<rt>' + ruby.trim() + '</rt></ruby>';
+        });
+
+        html = html.replace(/\n/g, '<br>');
+
+        return html;
+    }
+
+    // ============================================================
+    //  FUNCIONES DE RENDERIZADO
+    // ============================================================
+
+    function renderizarEtiquetas(etiquetas) {
+        // Desktop
+        listaEtiquetasEl.innerHTML = '';
+        var liTodas = document.createElement('li');
+        liTodas.dataset.etiqueta = '*';
+        liTodas.textContent = '🏷️ Todas';
+        liTodas.className = 'activo';
+        liTodas.addEventListener('click', function() {
+            mostrarTodas();
+        });
+        listaEtiquetasEl.appendChild(liTodas);
+
+        // Móvil
+        mobileListaEtiquetasEl.innerHTML = '';
+        var liTodasMobile = document.createElement('li');
+        liTodasMobile.dataset.etiqueta = '*';
+        liTodasMobile.textContent = '🏷️ Todas';
+        liTodasMobile.className = 'activo';
+        liTodasMobile.addEventListener('click', function() {
+            mostrarTodas();
+        });
+        mobileListaEtiquetasEl.appendChild(liTodasMobile);
+
+        if (!etiquetas || etiquetas.length === 0) {
+            var li = document.createElement('li');
+            li.textContent = 'Sin etiquetas principales';
+            li.style.color = '#6a7a8a';
+            li.style.fontStyle = 'italic';
+            li.style.cursor = 'default';
+            listaEtiquetasEl.appendChild(li);
+            var liMobile = li.cloneNode(true);
+            mobileListaEtiquetasEl.appendChild(liMobile);
+            return;
+        }
+
+        var unique = [...new Set(etiquetas)];
+        unique.sort(function(a, b) { return a.localeCompare(b); });
+        unique.forEach(function(etq) {
+            // Desktop
+            var li = document.createElement('li');
+            li.dataset.etiqueta = etq;
+            li.textContent = limpiarEtiqueta(etq);
+            li.addEventListener('click', function() {
+                seleccionarEtiqueta(etq);
+            });
+            listaEtiquetasEl.appendChild(li);
+
+            // Móvil
+            var liMobile = document.createElement('li');
+            liMobile.dataset.etiqueta = etq;
+            liMobile.textContent = limpiarEtiqueta(etq);
+            liMobile.addEventListener('click', function() {
+                seleccionarEtiqueta(etq);
+            });
+            mobileListaEtiquetasEl.appendChild(liMobile);
+        });
+    }
+
+    function renderizarEntradasParciales(entradas) {
+        // Desktop
+        listaEntradasParcialesEl.innerHTML = '';
+        if (!entradas || entradas.length === 0) {
+            listaEntradasParcialesEl.innerHTML = '<li style="color:#6a7a8a; font-style:italic; cursor:default;">No hay entradas</li>';
+            contadorEntradasEl.textContent = '(0)';
+        } else {
+            contadorEntradasEl.textContent = '(' + entradas.length + ')';
+            entradas.forEach(function(entrada) {
+                var li = document.createElement('li');
+                li.dataset.id = entrada.ddd;
+                var titulo = entrada.aaa || 'Sin título';
+                var etiquetas = entrada.ccc || '';
+                li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
+                li.addEventListener('click', function() {
+                    abrirEntrada(entrada.ddd);
+                });
+                listaEntradasParcialesEl.appendChild(li);
+            });
+        }
+
+        // Móvil
+        mobileListaEntradasParcialesEl.innerHTML = '';
+        if (!entradas || entradas.length === 0) {
+            mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#6a7a8a; font-style:italic; cursor:default;">No hay entradas</li>';
+            mobileContadorEntradasEl.textContent = '(0)';
+            mobileContadorBadgeEl.textContent = '0';
+        } else {
+            mobileContadorEntradasEl.textContent = '(' + entradas.length + ')';
+            mobileContadorBadgeEl.textContent = entradas.length;
+            entradas.forEach(function(entrada) {
+                var li = document.createElement('li');
+                li.dataset.id = entrada.ddd;
+                var titulo = entrada.aaa || 'Sin título';
+                var etiquetas = entrada.ccc || '';
+                li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
+                li.addEventListener('click', function() {
+                    abrirEntrada(entrada.ddd);
+                    if (isMobile) {
+                        document.querySelector('.tab-btn[data-tab="c"]').click();
+                    }
+                });
+                mobileListaEntradasParcialesEl.appendChild(li);
+            });
+        }
+        
+        if (divB) divB.scrollTop = 0;
+    }
+
+    function mostrarEntradaCompleta(entrada, esMovil) {
+        var targetEl = esMovil ? mobileContenidoCompletoEl : contenidoCompletoEl;
+        var tituloEl = esMovil ? mobileTituloBannerEl : tituloBannerEl;
+
+        if (!entrada) {
+            targetEl.innerHTML = '<h2>Entrada no encontrada</h2><p>No se pudo cargar la entrada.</p>';
+            return;
+        }
+
+        var html = '<h2>' + entrada.aaa + '</h2>';
+        html += '<div class="contenido-bbb">' + procesarContenidoBBB(entrada.bbb) + '</div>';
+
+        var etiquetas = entrada.ccc.split(',').map(function(e) { return e.trim(); }).filter(function(e) { return e; });
+        if (etiquetas.length > 0) {
+            html += '<div class="etiquetas-completas"><h4>🏷️ Etiquetas</h4><ul>';
+            etiquetas.forEach(function(etq) {
+                var etqLimpia = limpiarEtiqueta(etq);
+                var etqEscapada = etqLimpia.replace(/'/g, "\\'");
+                html += '<li onclick="buscarPorEtiqueta(\'' + etqEscapada + '\')">' + etqLimpia + '</li>';
+            });
+            html += '</ul></div>';
+        }
+
+        var tweetText = encodeURIComponent(entrada.aaa + ' ¦ ' + entrada.ccc + ' ¦ jucardus.github.io/?q=' + entrada.ddd);
+        var tweetUrl = 'https://x.com/intent/tweet?text=' + tweetText;
+        var textoCopiar = entrada.aaa + ' ¦ ' + entrada.ccc + ' ¦ jucardus.github.io/?q=' + entrada.ddd;
+        
+        html += '<div class="compartir">';
+        html += '<b>Compartir:</b> ';
+        html += '<a href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">' + entrada.ddd + ' ↗</a>';
+        html += ' · <span class="copiar-btn" data-texto-copiar="' + textoCopiar.replace(/"/g, '&quot;') + '">📋 Copiar</span>';
+        html += '</div>';
+
+        targetEl.innerHTML = html;
+        tituloEl.textContent = entrada.aaa || 'Entrada';
+
+        // Agregar event listeners para copiar
+        var botonesCopiar = targetEl.querySelectorAll('.copiar-btn');
+        botonesCopiar.forEach(function(boton) {
+            boton.addEventListener('click', function(e) {
+                var texto = this.getAttribute('data-texto-copiar');
+                copiarAlPortapapeles(texto, this);
+            });
+        });
+    }
+
+    // ============================================================
+    //  FUNCIONES PARA COPIAR AL PORTAPAPELES
+    // ============================================================
+
+    function copiarAlPortapapeles(texto, elementoBoton) {
+        if (!texto) {
+            console.warn('No hay texto para copiar');
+            return;
+        }
+
+        var textarea = document.createElement('textarea');
+        textarea.value = texto;
+        textarea.style.position = 'fixed';
+        textarea.style.left = '-9999px';
+        textarea.style.top = '-9999px';
+        textarea.style.width = '1px';
+        textarea.style.height = '1px';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        
+        textarea.focus();
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        
+        if (elementoBoton) {
+            var original = elementoBoton.textContent;
+            elementoBoton.textContent = '✅ Copiado';
+            elementoBoton.style.background = '#d4edda';
+            elementoBoton.style.borderColor = '#28a745';
+            elementoBoton.style.color = '#155724';
+            setTimeout(function() {
+                elementoBoton.textContent = original;
+                elementoBoton.style.background = '';
+                elementoBoton.style.borderColor = '';
+                elementoBoton.style.color = '';
+            }, 2000);
+        }
+    }
+
+    // ============================================================
+    //  FUNCIONES DE INTERACCIÓN (con fetch)
+    // ============================================================
+
+    function mostrarTodas() {
+        var items = listaEtiquetasEl.querySelectorAll('li');
+        items.forEach(function(li) {
+            li.classList.remove('activo');
+            if (li.dataset.etiqueta === '*') {
+                li.classList.add('activo');
+            }
+        });
+        var mobileItems = mobileListaEtiquetasEl.querySelectorAll('li');
+        mobileItems.forEach(function(li) {
+            li.classList.remove('activo');
+            if (li.dataset.etiqueta === '*') {
+                li.classList.add('activo');
+            }
+        });
+        
+        tituloBannerEl.textContent = 'Inicio';
+        mobileTituloBannerEl.textContent = 'Inicio';
+        modoActual = 'inicio';
+        renderizarEntradasParciales(entradasRecientes);
+        
+        if (entradasRecientes.length > 0) {
+            abrirEntrada(entradasRecientes[0].ddd);
+        } else {
+            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>No hay entradas disponibles.</p>';
+            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>No hay entradas disponibles.</p>';
+        }
+    }
+
+    function seleccionarEtiqueta(etiqueta) {
+        var items = listaEtiquetasEl.querySelectorAll('li');
+        items.forEach(function(li) {
+            li.classList.remove('activo');
+            if (li.dataset.etiqueta === etiqueta) {
+                li.classList.add('activo');
+            }
+        });
+        var mobileItems = mobileListaEtiquetasEl.querySelectorAll('li');
+        mobileItems.forEach(function(li) {
+            li.classList.remove('activo');
+            if (li.dataset.etiqueta === etiqueta) {
+                li.classList.add('activo');
+            }
+        });
+        
+        var displayName = limpiarEtiqueta(etiqueta);
+        tituloBannerEl.textContent = '🏷️ ' + displayName;
+        mobileTituloBannerEl.textContent = '🏷️ ' + displayName;
+        modoActual = 'etiqueta';
+        
+        listaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
+        contadorEntradasEl.textContent = '(…)';
+        mobileListaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
+        mobileContadorEntradasEl.textContent = '(…)';
+        mobileContadorBadgeEl.textContent = '…';
+        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
+        
+        var url = GAS_URL + '?etiqueta=' + encodeURIComponent(etiqueta);
+        fetch(url)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Error en la búsqueda: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(function(data) {
+                var resultados = data.resultados || [];
+                renderizarEntradasParciales(resultados);
+                if (resultados && resultados.length > 0) {
+                    abrirEntrada(resultados[0].ddd);
+                } else {
+                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No hay entradas con la etiqueta "' + displayName + '".</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No hay entradas con la etiqueta "' + displayName + '".</p>';
+                }
+            })
+            .catch(function(error) {
+                console.error('Error al buscar por etiqueta:', error);
+                listaEntradasParcialesEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error</li>';
+                mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error</li>';
+            });
+    }
+
+    function abrirEntrada(id) {
+        modoActual = 'entrada';
+        contenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
+        
+        var url = GAS_URL + '?q=' + encodeURIComponent(id);
+        fetch(url)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Error al buscar entrada: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(function(data) {
+                var entrada = data.entrada || null;
+                if (entrada) {
+                    mostrarEntradaCompleta(entrada, false);
+                    mostrarEntradaCompleta(entrada, true);
+                    var items = listaEntradasParcialesEl.querySelectorAll('li');
+                    items.forEach(function(li) {
+                        li.style.background = '';
+                        if (li.dataset.id === id) {
+                            li.style.background = '#d5dee9';
+                        }
+                    });
+                    var mobileItems = mobileListaEntradasParcialesEl.querySelectorAll('li');
+                    mobileItems.forEach(function(li) {
+                        li.style.background = '';
+                        if (li.dataset.id === id) {
+                            li.style.background = '#d5dee9';
+                        }
+                    });
+                } else {
+                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
+                    tituloBannerEl.textContent = 'Error';
+                    mobileTituloBannerEl.textContent = 'Error';
+                }
+            })
+            .catch(function(error) {
+                console.error('Error al abrir entrada:', error);
+                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada.</p>';
+                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada.</p>';
+            });
+    }
+
+    function buscarPorEtiqueta(etiqueta) {
+        if (!etiqueta || etiqueta.trim() === '') return;
+
+        var items = listaEtiquetasEl.querySelectorAll('li');
+        var encontrada = false;
+        var etqLimpia = limpiarEtiqueta(etiqueta);
+        
+        items.forEach(function(li) {
+            var etq = li.dataset.etiqueta;
+            if (etq) {
+                var etqLimpiaLi = limpiarEtiqueta(etq);
+                if (etqLimpiaLi === etqLimpia) {
+                    li.click();
+                    encontrada = true;
+                }
+            }
+        });
+        
+        if (!encontrada) {
+            seleccionarEtiqueta(etiqueta);
+        }
+    }
+
+    function buscarEntradaPorId(id) {
+        abrirEntrada(id);
+    }
+
+    function buscarTexto(query) {
+        if (!query || query.trim() === '') {
+            mostrarTodas();
+            return;
+        }
+        
+        modoActual = 'busqueda';
+        var q = query.trim();
+        tituloBannerEl.textContent = '🔍 "' + q + '"';
+        mobileTituloBannerEl.textContent = '🔍 "' + q + '"';
+        
+        listaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
+        contadorEntradasEl.textContent = '(…)';
+        mobileListaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
+        mobileContadorEntradasEl.textContent = '(…)';
+        mobileContadorBadgeEl.textContent = '…';
+        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Buscando entradas que contengan "' + q + '"</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Buscando entradas que contengan "' + q + '"</p>';
+        
+        var url = GAS_URL + '?buscar=' + encodeURIComponent(q);
+        fetch(url)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Error en la búsqueda: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(function(data) {
+                var resultados = data.resultados || [];
+                renderizarEntradasParciales(resultados);
+                if (resultados && resultados.length > 0) {
+                    abrirEntrada(resultados[0].ddd);
+                } else {
+                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No se encontraron entradas que contengan "' + q + '".</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No se encontraron entradas que contengan "' + q + '".</p>';
+                }
+            })
+            .catch(function(error) {
+                console.error('Error en búsqueda de texto:', error);
+                listaEntradasParcialesEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error</li>';
+                mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error</li>';
+            });
+    }
+
+    // ============================================================
+    //  CARGA INICIAL DE DATOS (con fetch)
+    // ============================================================
+
+    function cargarDatosIniciales(datos) {
+        if (!datos || !datos.etiquetas || !datos.entradasRecientes) {
+            listaEtiquetasEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error al cargar datos</li>';
+            mobileListaEtiquetasEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error al cargar datos</li>';
+            return;
+        }
+
+        etiquetasPrincipales = datos.etiquetas || [];
+        entradasRecientes = datos.entradasRecientes || [];
+        datosCargados = true;
+        
+        renderizarEtiquetas(etiquetasPrincipales);
+        renderizarEntradasParciales(entradasRecientes);
+        
+        if (QUERY_ID) {
+            procesarQuery(QUERY_ID);
+            return;
+        }
+        
+        if (entradasRecientes.length > 0) {
+            abrirEntrada(entradasRecientes[0].ddd);
+        } else {
+            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
+            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
+        }
+    }
+
+    function procesarQuery(id) {
+        console.log('Procesando query:', id);
+        contenidoCompletoEl.innerHTML = '<h2>Cargando entrada...</h2><p style="color:#6a7a8a;">Buscando la entrada con ID: ' + id + '</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando entrada...</h2><p style="color:#6a7a8a;">Buscando la entrada con ID: ' + id + '</p>';
+        
+        var url = GAS_URL + '?q=' + encodeURIComponent(id);
+        fetch(url)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Error al buscar entrada: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(function(data) {
+                var entrada = data.entrada || null;
+                if (entrada) {
+                    mostrarEntradaCompleta(entrada, false);
+                    mostrarEntradaCompleta(entrada, true);
+                    renderizarEntradasParciales([entrada]);
+                    tituloBannerEl.textContent = '🔗 ' + entrada.aaa;
+                    mobileTituloBannerEl.textContent = '🔗 ' + entrada.aaa;
+                } else {
+                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                    renderizarEntradasParciales(entradasRecientes);
+                }
+            })
+            .catch(function(error) {
+                console.error('Error al buscar entrada por ID:', error);
+                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada solicitada.</p>';
+                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada solicitada.</p>';
+                renderizarEntradasParciales(entradasRecientes);
+            });
+    }
+
+    // ============================================================
+    //  INICIALIZACIÓN
+    // ============================================================
+
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM cargado. QUERY_ID:', QUERY_ID);
+        console.log('GAS_URL:', GAS_URL);
+        
+        // Eventos desktop
+        buscarBtn.addEventListener('click', function() {
+            buscarTexto(busquedaInput.value);
+        });
+        busquedaInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                buscarTexto(busquedaInput.value);
+            }
+        });
+
+        // Eventos móvil
+        mobileBuscarBtn.addEventListener('click', function() {
+            buscarTexto(mobileBusquedaInput.value);
+        });
+        mobileBusquedaInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                buscarTexto(mobileBusquedaInput.value);
+            }
+        });
+
+        // Sincronizar búsquedas
+        busquedaInput.addEventListener('input', function() {
+            mobileBusquedaInput.value = this.value;
+        });
+        mobileBusquedaInput.addEventListener('input', function() {
+            busquedaInput.value = this.value;
+        });
+
+        // Cargar datos con fetch
+        var url = GAS_URL + '?action=getData';
+        console.log('Cargando datos desde:', url);
+        fetch(url)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Error al obtener datos: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(function(datos) {
+                console.log('Datos obtenidos correctamente');
+                cargarDatosIniciales(datos);
+            })
+            .catch(function(error) {
+                console.error('Error al cargar datos iniciales:', error);
+                listaEtiquetasEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error al cargar datos</li>';
+                mobileListaEtiquetasEl.innerHTML = '<li style="color:#c0392b; font-style:italic; cursor:default;">❌ Error al cargar datos</li>';
+            });
+    });
+
+    // Exponer funciones globalmente
+    window.abrirEntrada = abrirEntrada;
+    window.mostrarTodas = mostrarTodas;
+    window.seleccionarEtiqueta = seleccionarEtiqueta;
+    window.buscarPorEtiqueta = buscarPorEtiqueta;
+    window.buscarEntradaPorId = buscarEntradaPorId;
+    window.buscarTexto = buscarTexto;
+    window.copiarAlPortapapeles = copiarAlPortapapeles;
+    window.cargarDatosIniciales = cargarDatosIniciales;
+    window.procesarQuery = procesarQuery;
+    
+    console.log('Script cargado correctamente.');
+</script>
+</body>
+</html>
