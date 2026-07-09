@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
         /* ============================================================
-           RESET Y ESTRUCTURA BASE - FUENTE INTER
+           RESET Y ESTRUCTURA BASE
            ============================================================ */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
@@ -23,7 +23,7 @@
         }
 
         /* ============================================================
-           LAYOUT PRINCIPAL (Desktop - 2 columnas: A + (D + B + C))
+           LAYOUT PRINCIPAL: A + (D + (B + C))
            ============================================================ */
         .app {
             display: grid;
@@ -31,7 +31,7 @@
             grid-template-rows: 1fr;
             height: 100vh;
             width: 100vw;
-            gap: 1px;
+            gap: 0;
             background: #d0d8e3;
         }
 
@@ -43,10 +43,11 @@
             grid-row: 1 / 2;
             background: #eef2f7;
             padding: 0;
-            overflow-y: auto;
+            overflow-y: auto; /* SCROLL */
             border-right: 1px solid #ccd5e0;
             display: flex;
             flex-direction: column;
+            height: 100vh;
         }
 
         .div-a .header-a {
@@ -89,7 +90,7 @@
         .div-a .etiquetas-container {
             padding: 10px 12px 12px 12px;
             flex: 1;
-            overflow-y: auto;
+            overflow-y: auto; /* SCROLL */
         }
 
         .div-a .etiquetas-container h3 {
@@ -137,7 +138,7 @@
         }
 
         /* ============================================================
-           COLUMNA DERECHA (D + (B + C) con grid)
+           COLUMNA DERECHA: D + (B + C)
            ============================================================ */
         .columna-derecha {
             grid-column: 2 / 3;
@@ -146,9 +147,13 @@
             grid-template-rows: 50px 1fr;
             gap: 1px;
             background: #d0d8e3;
+            height: 100vh;
+            width: 100%;
         }
 
-        /* Div D - Banner superior (transversal) - OCUPA TODO EL ANCHO */
+        /* ============================================================
+           Div D - Banner superior - ANCHO TOTAL (100% de la columna derecha)
+           ============================================================ */
         .div-d {
             grid-row: 1 / 2;
             grid-column: 1 / -1;
@@ -161,6 +166,7 @@
             overflow: hidden;
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             z-index: 5;
+            width: 100%;
         }
 
         .div-d .tema-activo {
@@ -194,16 +200,21 @@
             color: #5a6a7a;
         }
 
-        /* Div B - Lista de entradas (parcial) - ANCHO FIJO */
+        /* ============================================================
+           Div B - Lista de entradas - ANCHO FIJO
+           ============================================================ */
         .div-b {
             grid-row: 2 / 3;
             grid-column: 1 / 2;
             width: 300px;
+            min-width: 300px;
+            max-width: 300px;
             background: #e4eaf2;
             padding: 12px 12px;
-            overflow-y: auto;
+            overflow-y: auto; /* SCROLL */
             border-right: 1px solid #ccd5e0;
             flex-shrink: 0;
+            height: 100%;
         }
 
         .div-b h3 {
@@ -260,14 +271,17 @@
             font-weight: 400;
         }
 
-        /* Div C - Contenido completo - OCUPA EL RESTO */
+        /* ============================================================
+           Div C - Contenido completo - OCUPA EL RESTO DEL ANCHO
+           ============================================================ */
         .div-c {
             grid-row: 2 / 3;
             grid-column: 2 / 3;
             background: #ffffff;
             padding: 18px 24px;
-            overflow-y: auto;
+            overflow-y: auto; /* SCROLL */
             min-width: 0;
+            height: 100%;
         }
 
         .div-c h2 {
@@ -370,7 +384,7 @@
         }
 
         /* Scrollbars personalizados */
-        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar { width: 5px; height: 5px; }
         ::-webkit-scrollbar-track { background: #dbe1e9; border-radius: 8px; }
         ::-webkit-scrollbar-thumb { background: #7f95b0; border-radius: 8px; }
         ::-webkit-scrollbar-thumb:hover { background: #5a7493; }
@@ -401,7 +415,7 @@
         }
 
         /* ============================================================
-           NAVEGACIÓN POR TABS (solo visible en móvil)
+           NAVEGACIÓN POR TABS (móvil)
            ============================================================ */
         .mobile-tabs {
             display: none;
@@ -451,7 +465,6 @@
             background: #4a7a9a;
         }
 
-        /* Contenedor móvil para las secciones */
         .mobile-sections {
             display: none;
             flex: 1;
@@ -638,10 +651,9 @@
         }
 
         /* ============================================================
-           RESPONSIVE: MÓVIL Y TABLETA
+           RESPONSIVE
            ============================================================ */
 
-        /* Tablets */
         @media (max-width: 1024px) {
             .app {
                 grid-template-columns: 200px 1fr;
@@ -651,12 +663,12 @@
             }
             .div-b {
                 width: 260px;
+                min-width: 260px;
+                max-width: 260px;
             }
         }
 
-        /* Móviles - OCULTAR DIV D COMPLETAMENTE */
         @media (max-width: 768px) {
-            /* Ocultar layout desktop */
             .app {
                 display: none;
             }
@@ -678,7 +690,6 @@
                 font-size: 16px;
             }
 
-            /* El buscador está dentro de la sección A en móvil */
             .mobile-sections .section#mobile-section-a .busqueda-movil input {
                 width: 100%;
                 padding: 6px 12px;
@@ -741,7 +752,6 @@
             }
         }
 
-        /* Móviles muy pequeños */
         @media (max-width: 480px) {
             .mobile-tabs .tab-btn {
                 font-size: 0.75rem;
@@ -807,7 +817,7 @@
      ============================================================ -->
 <div class="app" id="app">
 
-    <!-- Div A: Título + Buscador + Etiquetas -->
+    <!-- Div A -->
     <div class="div-a" id="divA">
         <div class="header-a">
             <h1>📖 Jucardus.com</h1>
@@ -823,10 +833,10 @@
         </div>
     </div>
 
-    <!-- Columna derecha: D + (B + C) -->
+    <!-- Columna derecha -->
     <div class="columna-derecha">
 
-        <!-- Div D: Solo título - OCUPA TODO EL ANCHO -->
+        <!-- Div D -->
         <div class="div-d" id="divD">
             <div class="tema-activo" id="temaActivo">
                 <span id="tituloBanner">Inicio</span>
@@ -834,30 +844,35 @@
             </div>
         </div>
 
-        <!-- Div B: Lista de entradas - ANCHO FIJO -->
-        <div class="div-b" id="divB">
-            <h3>📋 Entradas <span id="contadorEntradas">(0)</span></h3>
-            <ul id="listaEntradasParciales">
-                <li class="cargando">Cargando entradas...</li>
-            </ul>
-        </div>
+        <!-- Div B + Div C en grid interno -->
+        <div style="display:grid; grid-template-columns: auto 1fr; gap:1px; background:#d0d8e3; height:100%;">
 
-        <!-- Div C: Contenido completo - OCUPA EL RESTO -->
-        <div class="div-c" id="divC">
-            <div id="contenidoCompleto">
-                <h2>Bienvenido</h2>
-                <div class="contenido-bbb">
-                    <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                    <p style="color: #4d637a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+            <!-- Div B -->
+            <div class="div-b" id="divB">
+                <h3>📋 Entradas <span id="contadorEntradas">(0)</span></h3>
+                <ul id="listaEntradasParciales">
+                    <li class="cargando">Cargando entradas...</li>
+                </ul>
+            </div>
+
+            <!-- Div C -->
+            <div class="div-c" id="divC">
+                <div id="contenidoCompleto">
+                    <h2>Bienvenido</h2>
+                    <div class="contenido-bbb">
+                        <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
+                        <p style="color: #4d637a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
 </div>
 
 <!-- ============================================================
-     LAYOUT MÓVIL (sin Div D)
+     LAYOUT MÓVIL
      ============================================================ -->
 
 <div class="mobile-tabs" id="mobileTabs" style="display:none;">
@@ -868,7 +883,6 @@
 
 <div class="mobile-sections" id="mobileSections" style="display:none;">
 
-    <!-- Sección A móvil: Título + Buscador + Etiquetas -->
     <div class="section active" id="mobile-section-a">
         <div class="titulo-movil">📖 Jucardus.com</div>
         <div class="busqueda-movil">
@@ -880,7 +894,6 @@
         </ul>
     </div>
 
-    <!-- Sección B móvil -->
     <div class="section" id="mobile-section-b">
         <h3>📋 Entradas <span id="mobileContadorEntradas">(0)</span></h3>
         <ul id="mobileListaEntradasParciales">
@@ -888,7 +901,6 @@
         </ul>
     </div>
 
-    <!-- Sección C móvil -->
     <div class="section" id="mobile-section-c">
         <div id="mobileContenidoCompleto">
             <h2>Bienvenido</h2>
@@ -1071,6 +1083,14 @@
         }
     }
 
+    function abrirEntradaYActualizarBanner(entrada) {
+        if (!entrada) return;
+        mostrarEntradaCompleta(entrada, false);
+        mostrarEntradaCompleta(entrada, true);
+        actualizarURL(entrada.ddd);
+        actualizarBanner(entrada.aaa, entrada.ddd);
+    }
+
     // ============================================================
     //  FUNCIONES DE RENDERIZADO
     // ============================================================
@@ -1152,7 +1172,7 @@
                 var etiquetas = entrada.ccc || '';
                 li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
                 li.addEventListener('click', function() {
-                    abrirEntrada(entrada.ddd);
+                    abrirEntradaPorId(entrada.ddd);
                 });
                 listaEntradasParcialesEl.appendChild(li);
             });
@@ -1174,7 +1194,7 @@
                 var etiquetas = entrada.ccc || '';
                 li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
                 li.addEventListener('click', function() {
-                    abrirEntrada(entrada.ddd);
+                    abrirEntradaPorId(entrada.ddd);
                     if (isMobile) {
                         document.querySelector('.tab-btn[data-tab="c"]').click();
                     }
@@ -1222,11 +1242,6 @@
         html += '</div>';
 
         targetEl.innerHTML = html;
-
-        // Actualizar banner en desktop
-        if (!esMovil) {
-            actualizarBanner(entrada.aaa, entrada.ddd);
-        }
     }
 
     // ============================================================
@@ -1270,7 +1285,7 @@
     }
 
     // ============================================================
-    //  FUNCIONES DE INTERACCIÓN (con fetch)
+    //  FUNCIONES DE INTERACCIÓN
     // ============================================================
 
     function mostrarTodas() {
@@ -1294,7 +1309,11 @@
         renderizarEntradasParciales(entradasRecientes);
 
         if (entradasRecientes.length > 0) {
-            abrirEntrada(entradasRecientes[0].ddd);
+            var entrada = entradasRecientes[0];
+            mostrarEntradaCompleta(entrada, false);
+            mostrarEntradaCompleta(entrada, true);
+            actualizarURL(entrada.ddd);
+            actualizarBanner(entrada.aaa, entrada.ddd);
         } else {
             contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>No hay entradas disponibles.</p>';
             mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>No hay entradas disponibles.</p>';
@@ -1318,7 +1337,6 @@
         });
 
         var displayName = limpiarEtiqueta(etiqueta);
-        actualizarBanner('🏷️ ' + displayName, null);
         modoActual = 'etiqueta';
 
         listaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
@@ -1341,10 +1359,15 @@
                 var resultados = data.resultados || [];
                 renderizarEntradasParciales(resultados);
                 if (resultados && resultados.length > 0) {
-                    abrirEntrada(resultados[0].ddd);
+                    var entrada = resultados[0];
+                    mostrarEntradaCompleta(entrada, false);
+                    mostrarEntradaCompleta(entrada, true);
+                    actualizarURL(entrada.ddd);
+                    actualizarBanner(entrada.aaa, entrada.ddd);
                 } else {
                     contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No hay entradas con la etiqueta "' + displayName + '".</p>';
                     mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No hay entradas con la etiqueta "' + displayName + '".</p>';
+                    actualizarBanner('🏷️ ' + displayName + ' (sin resultados)', null);
                 }
             })
             .catch(function(error) {
@@ -1354,12 +1377,9 @@
             });
     }
 
-    function abrirEntrada(id) {
+    function abrirEntradaPorId(id) {
         modoActual = 'entrada';
         entradaAbiertaId = id;
-
-        // Actualizar URL con el ID
-        actualizarURL(id);
 
         contenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
         mobileContenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
@@ -1377,6 +1397,8 @@
                 if (entrada) {
                     mostrarEntradaCompleta(entrada, false);
                     mostrarEntradaCompleta(entrada, true);
+                    actualizarURL(entrada.ddd);
+                    actualizarBanner(entrada.aaa, entrada.ddd);
                     var items = listaEntradasParcialesEl.querySelectorAll('li');
                     items.forEach(function(li) {
                         li.style.background = '';
@@ -1394,7 +1416,7 @@
                 } else {
                     contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
                     mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
-                    actualizarBanner('Error', null);
+                    actualizarBanner('Error: ID no encontrado', null);
                 }
             })
             .catch(function(error) {
@@ -1428,7 +1450,7 @@
     }
 
     function buscarEntradaPorId(id) {
-        abrirEntrada(id);
+        abrirEntradaPorId(id);
     }
 
     function buscarTexto(query) {
@@ -1462,7 +1484,11 @@
                 var resultados = data.resultados || [];
                 renderizarEntradasParciales(resultados);
                 if (resultados && resultados.length > 0) {
-                    abrirEntrada(resultados[0].ddd);
+                    var entrada = resultados[0];
+                    mostrarEntradaCompleta(entrada, false);
+                    mostrarEntradaCompleta(entrada, true);
+                    actualizarURL(entrada.ddd);
+                    actualizarBanner(entrada.aaa, entrada.ddd);
                 } else {
                     contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No se encontraron entradas que contengan "' + q + '".</p>';
                     mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No se encontraron entradas que contengan "' + q + '".</p>';
@@ -1476,7 +1502,7 @@
     }
 
     // ============================================================
-    //  CARGA INICIAL DE DATOS (con fetch)
+    //  CARGA INICIAL DE DATOS
     // ============================================================
 
     function cargarDatosIniciales(datos) {
@@ -1499,7 +1525,11 @@
         }
 
         if (entradasRecientes.length > 0) {
-            abrirEntrada(entradasRecientes[0].ddd);
+            var entrada = entradasRecientes[0];
+            mostrarEntradaCompleta(entrada, false);
+            mostrarEntradaCompleta(entrada, true);
+            actualizarURL(entrada.ddd);
+            actualizarBanner(entrada.aaa, entrada.ddd);
         } else {
             contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
             mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
@@ -1511,9 +1541,6 @@
         console.log('Procesando query:', id);
         contenidoCompletoEl.innerHTML = '<h2>Cargando entrada...</h2><p style="color:#6a7a8a;">Buscando la entrada con ID: ' + id + '</p>';
         mobileContenidoCompletoEl.innerHTML = '<h2>Cargando entrada...</h2><p style="color:#6a7a8a;">Buscando la entrada con ID: ' + id + '</p>';
-
-        // Actualizar URL con el query
-        actualizarURL(id);
 
         var url = GAS_URL + '?q=' + encodeURIComponent(id);
         fetch(url)
@@ -1529,6 +1556,8 @@
                     mostrarEntradaCompleta(entrada, false);
                     mostrarEntradaCompleta(entrada, true);
                     renderizarEntradasParciales([entrada]);
+                    actualizarURL(entrada.ddd);
+                    actualizarBanner(entrada.aaa, entrada.ddd);
                 } else {
                     contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
                     mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
@@ -1596,7 +1625,7 @@
     });
 
     // Exponer funciones globalmente
-    window.abrirEntrada = abrirEntrada;
+    window.abrirEntradaPorId = abrirEntradaPorId;
     window.mostrarTodas = mostrarTodas;
     window.seleccionarEtiqueta = seleccionarEtiqueta;
     window.buscarPorEtiqueta = buscarPorEtiqueta;
@@ -1608,6 +1637,7 @@
     window.actualizarURL = actualizarURL;
     window.eliminarQueryDeURL = eliminarQueryDeURL;
     window.actualizarBanner = actualizarBanner;
+    window.abrirEntradaYActualizarBanner = abrirEntradaYActualizarBanner;
 
     console.log('Script cargado correctamente.');
 </script>
