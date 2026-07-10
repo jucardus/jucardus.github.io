@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
         /* ============================================================
-           RESET Y ESTRUCTURA BASE
+           RESET Y ESTRUCTURA BASE - MODO NOCHE
            ============================================================ */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
             height: 100%;
             font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
             font-size: 17px;
-            background: #f4f7fb;
+            background: #1a1a2e;
             overflow: hidden;
-            line-height: 1.4;
+            line-height: 1.5;
+            color: #e0e0e0;
         }
 
         /* ============================================================
@@ -27,68 +28,107 @@
            ============================================================ */
         .app {
             display: grid;
-            grid-template-columns: 220px 1fr;
+            grid-template-columns: 240px 1fr;
             grid-template-rows: 1fr;
             height: 100vh;
             width: 100vw;
             gap: 0;
-            background: #d0d8e3;
+            background: #1a1a2e;
         }
 
         /* ============================================================
-           COLUMNA A - Panel izquierdo
+           COLUMNA A - Panel izquierdo - MODO NOCHE
            ============================================================ */
         .div-a {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-            background: #eef2f7;
+            background: #16213e;
             padding: 0;
             overflow-y: auto;
-            border-right: 1px solid #ccd5e0;
+            border-right: 1px solid #2a3a5a;
             display: flex;
             flex-direction: column;
             height: 100vh;
+            padding-bottom: 50px;
         }
 
         .div-a .header-a {
-            padding: 14px 12px 10px 12px;
-            background: #eef2f7;
-            border-bottom: 1px solid #d5dee8;
+            padding: 14px 14px 10px 14px;
+            background: #16213e;
+            border-bottom: 1px solid #2a3a5a;
             flex-shrink: 0;
         }
 
         .div-a .header-a h1 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: #1e2b3c;
+            color: #e0e0e0;
             letter-spacing: -0.5px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             cursor: default;
         }
 
         .div-a .header-a .busqueda-rapida input {
             width: 100%;
-            padding: 6px 12px;
-            border-radius: 20px;
-            border: 1px solid #ccd5e0;
-            background: #ffffff;
-            color: #1e2b3c;
-            font-size: 0.85rem;
+            padding: 8px 14px;
+            border-radius: 24px;
+            border: 1px solid #2a3a5a;
+            background: #0f3460;
+            color: #e0e0e0;
+            font-size: 0.9rem;
             font-family: 'Inter', sans-serif;
             outline: none;
-            transition: border-color 0.2s;
+            transition: border-color 0.2s, background 0.2s;
         }
 
         .div-a .header-a .busqueda-rapida input:focus {
-            border-color: #2c3e50;
+            border-color: #4a7a9a;
+            background: #1a3a6a;
         }
 
         .div-a .header-a .busqueda-rapida input::placeholder {
-            color: #8899aa;
+            color: #6a8aaa;
+        }
+
+        /* Navegación principal en A */
+        .div-a .nav-principal {
+            padding: 8px 14px 6px 14px;
+            border-bottom: 1px solid #2a3a5a;
+            flex-shrink: 0;
+        }
+
+        .div-a .nav-principal ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .div-a .nav-principal li {
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #8aaac0;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+            font-weight: 500;
+        }
+
+        .div-a .nav-principal li:hover {
+            background: #2a3a5a;
+            color: #e0e0e0;
+        }
+
+        .div-a .nav-principal li.activo {
+            background: #2c3e50;
+            color: #b0d4f0;
+            font-weight: 600;
         }
 
         .div-a .etiquetas-container {
-            padding: 10px 12px 12px 12px;
+            padding: 10px 14px 12px 14px;
             flex: 1;
             overflow-y: auto;
         }
@@ -96,7 +136,7 @@
         .div-a .etiquetas-container h3 {
             font-size: 0.7rem;
             text-transform: uppercase;
-            color: #4a5a72;
+            color: #6a8aaa;
             margin-bottom: 8px;
             letter-spacing: 0.6px;
             font-weight: 700;
@@ -109,36 +149,37 @@
         }
 
         .div-a .etiquetas-container li {
-            padding: 5px 10px;
+            padding: 6px 12px;
             margin-bottom: 2px;
             border-radius: 6px;
-            font-size: 0.85rem;
-            color: #1e2b3a;
+            font-size: 0.9rem;
+            color: #b0c8e0;
             cursor: pointer;
-            transition: background 0.15s;
+            transition: background 0.15s, color 0.15s;
             word-break: break-word;
             font-weight: 500;
         }
 
         .div-a .etiquetas-container li:hover {
-            background: #d5dee9;
+            background: #2a3a5a;
+            color: #e0e0e0;
         }
 
         .div-a .etiquetas-container li.activo {
             background: #2c3e50;
-            color: white;
+            color: #b0d4f0;
             font-weight: 600;
         }
 
         .div-a .etiquetas-container li.cargando {
-            color: #6a7a8a;
+            color: #6a8aaa;
             font-style: italic;
             cursor: default;
             font-weight: 400;
         }
 
         /* ============================================================
-           COLUMNA DERECHA: D + (B + C)
+           COLUMNA DERECHA: D + (B + C) - MODO NOCHE
            ============================================================ */
         .columna-derecha {
             grid-column: 2 / 3;
@@ -146,36 +187,36 @@
             display: grid;
             grid-template-rows: 50px 1fr;
             gap: 0;
-            background: #d0d8e3;
+            background: #1a1a2e;
             height: 100vh;
             width: 100%;
         }
 
         /* ============================================================
-           Div D - Banner superior - ANCHO TOTAL
+           Div D - Banner superior - MODO NOCHE
            ============================================================ */
         .div-d {
             grid-row: 1 / 2;
             grid-column: 1 / -1;
-            background: #2c3e50;
-            color: #ecf0f1;
+            background: #0f3460;
+            color: #e0e0e0;
             padding: 0 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
             z-index: 5;
             width: 100%;
             flex-shrink: 0;
         }
 
         .div-d .tema-activo {
-            background: #34495e;
+            background: #1a3a6a;
             padding: 4px 20px;
             border-radius: 20px;
             font-size: 0.95rem;
-            border: 1px solid #4a6178;
+            border: 1px solid #2a4a7a;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -196,48 +237,48 @@
             font-size: 0.85rem;
         }
 
-        /* Guion de separación - Color mejorado (menos opaco) */
         .div-d .tema-activo .fecha-id::before {
             content: "— ";
-            color: #8aaac0;
+            color: #6a8aaa;
         }
 
         /* ============================================================
-           CONTENEDOR B + C (sin gap)
+           CONTENEDOR B + C - MODO NOCHE
            ============================================================ */
         .contenedor-bc {
             grid-row: 2 / 3;
             grid-column: 1 / -1;
             display: grid;
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 320px 1fr;
             gap: 0;
-            background: #d0d8e3;
+            background: #1a1a2e;
             height: 100%;
             min-height: 0;
             overflow: hidden;
         }
 
         /* ============================================================
-           Div B - Lista de entradas - ANCHO FIJO
+           Div B - Lista de entradas - MODO NOCHE
            ============================================================ */
         .div-b {
             grid-column: 1 / 2;
-            background: #e4eaf2;
+            background: #16213e;
             padding: 12px 12px;
             overflow-y: scroll;
-            border-right: 1px solid #ccd5e0;
+            border-right: 1px solid #2a3a5a;
             height: 100%;
-            width: 300px;
-            min-width: 300px;
-            max-width: 300px;
+            width: 320px;
+            min-width: 320px;
+            max-width: 320px;
             flex-shrink: 0;
+            padding-bottom: 50px;
         }
 
         .div-b h3 {
             font-size: 0.7rem;
             text-transform: uppercase;
-            color: #4a5a72;
-            margin-bottom: 8px;
+            color: #6a8aaa;
+            margin-bottom: 10px;
             letter-spacing: 0.6px;
             font-weight: 700;
         }
@@ -249,206 +290,253 @@
         }
 
         .div-b li {
-            padding: 8px 12px;
-            margin-bottom: 3px;
-            background: #f8faff;
-            border-radius: 6px;
-            border-left: 3px solid #7f95b0;
+            padding: 10px 14px;
+            margin-bottom: 6px;
+            background: #1a2a4a;
+            border-radius: 8px;
+            border-left: 3px solid #3a5a7a;
             cursor: pointer;
-            transition: background 0.15s, border-color 0.15s;
+            transition: background 0.15s, border-color 0.15s, transform 0.1s;
             font-size: 0.9rem;
-            line-height: 1.4;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            line-height: 1.5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
 
         .div-b li:hover {
-            background: #d5dee9;
-            border-left-color: #2c3e50;
+            background: #2a3a5a;
+            border-left-color: #5a8aaa;
+            transform: translateX(2px);
         }
 
         .div-b li .titulo-parcial {
             font-weight: 600;
-            color: #1a2a3a;
+            color: #c8dce8;
             font-size: 0.95rem;
         }
 
         .div-b li .etiquetas-parcial {
             font-size: 0.75rem;
-            color: #4d637a;
+            color: #6a8aaa;
             display: block;
-            margin-top: 2px;
+            margin-top: 3px;
         }
 
         .div-b li.cargando {
-            color: #6a7a8a;
+            color: #6a8aaa;
             font-style: italic;
             cursor: default;
-            border-left-color: #b0b8c4;
+            border-left-color: #2a3a5a;
             font-weight: 400;
         }
 
+        .div-b li.destacado {
+            background: #2a4a6a;
+            border-left-color: #7ab0d4;
+            box-shadow: 0 0 12px rgba(90, 160, 210, 0.15);
+        }
+
         /* ============================================================
-           Div C - Contenido completo
+           Div C - Contenido completo - MODO NOCHE
            ============================================================ */
         .div-c {
             grid-column: 2 / 3;
-            background: #ffffff;
-            padding: 18px 24px;
+            background: #1a1a2e;
+            padding: 18px 28px;
             overflow-y: scroll;
             height: 100%;
             min-width: 0;
+            padding-bottom: 50px;
         }
 
         .div-c h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             font-weight: 600;
-            color: #1e2b3c;
-            border-bottom: 2px solid #e6edf5;
-            padding-bottom: 10px;
-            margin-bottom: 14px;
+            color: #d0dce8;
+            border-bottom: 2px solid #2a3a5a;
+            padding-bottom: 12px;
+            margin-bottom: 16px;
             line-height: 1.3;
             letter-spacing: -0.3px;
         }
 
         .div-c .contenido-bbb {
-            line-height: 1.6;
-            margin-bottom: 16px;
+            line-height: 1.7;
+            margin-bottom: 18px;
             font-size: 0.95rem;
+            color: #c8dce8;
         }
 
-        .div-c .contenido-bbb p { margin-bottom: 8px; }
+        .div-c .contenido-bbb p { margin-bottom: 10px; }
         .div-c .contenido-bbb ul, .div-c .contenido-bbb ol {
-            padding-left: 24px;
-            margin-bottom: 8px;
+            padding-left: 26px;
+            margin-bottom: 10px;
         }
-        .div-c .contenido-bbb li { margin-bottom: 3px; }
+        .div-c .contenido-bbb li { margin-bottom: 4px; }
         .div-c .contenido-bbb img {
             max-width: 100%;
             border-radius: 8px;
-            margin: 8px 0;
+            margin: 10px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Enlaces sin subrayado y con hover */
+        .div-c .contenido-bbb a {
+            color: #6ab0d4;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .div-c .contenido-bbb a:hover {
+            color: #8ac8e8;
+            text-decoration: none;
         }
 
         .div-c .etiquetas-completas {
-            background: #f8faff;
-            padding: 10px 16px;
+            background: #16213e;
+            padding: 12px 18px;
             border-radius: 10px;
-            border: 1px solid #e2eaf3;
-            margin: 12px 0;
+            border: 1px solid #2a3a5a;
+            margin: 14px 0;
         }
 
         .div-c .etiquetas-completas h4 {
             font-size: 0.8rem;
-            color: #4a5a72;
-            margin-bottom: 6px;
+            color: #6a8aaa;
+            margin-bottom: 8px;
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .div-c .etiquetas-completas ul {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-            gap: 4px;
+            gap: 6px;
             padding: 0;
         }
 
         .div-c .etiquetas-completas li {
-            background: #eef2f7;
-            padding: 3px 12px;
-            border-radius: 16px;
-            font-size: 0.8rem;
-            color: #1e2b3a;
+            background: #1a2a4a;
+            padding: 4px 14px;
+            border-radius: 18px;
+            font-size: 0.85rem;
+            color: #8ab0c8;
             cursor: pointer;
-            transition: background 0.15s;
+            transition: background 0.15s, color 0.15s;
             font-weight: 500;
         }
 
         .div-c .etiquetas-completas li:hover {
-            background: #d0dbe9;
+            background: #2a4a6a;
+            color: #b0d4f0;
         }
 
+        /* Sección de compartir - estilo similar a etiquetas */
         .div-c .compartir {
+            background: #16213e;
+            padding: 12px 18px;
+            border-radius: 10px;
+            border: 1px solid #2a3a5a;
+            margin: 14px 0;
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-top: 12px;
-            padding: 10px 0;
-            border-top: 1px solid #e6edf5;
             flex-wrap: wrap;
-            font-size: 0.9rem;
+            gap: 8px;
         }
 
-        .div-c .compartir b { font-weight: 600; }
-        .div-c .compartir a, .div-c .compartir span {
-            font-size: 0.9rem;
+        .div-c .compartir h4 {
+            font-size: 0.8rem;
+            color: #6a8aaa;
+            margin-right: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .div-c .compartir .copiar-btn {
-            background: #eef2f7;
-            border: 1px solid #ccd5e0;
-            padding: 3px 14px;
+        .div-c .compartir .btn-compartir {
+            background: #1a2a4a;
+            border: 1px solid #2a4a6a;
+            padding: 4px 16px;
             border-radius: 18px;
             cursor: pointer;
-            font-size: 0.8rem;
-            transition: background 0.15s;
+            font-size: 0.85rem;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
             font-weight: 500;
             font-family: 'Inter', sans-serif;
+            color: #8ab0c8;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
         }
 
-        .div-c .compartir .copiar-btn:hover {
-            background: #d5dee9;
+        .div-c .compartir .btn-compartir:hover {
+            background: #2a4a6a;
+            color: #b0d4f0;
+            border-color: #3a5a7a;
         }
 
-        /* Scrollbars personalizados - Siempre visibles */
+        .div-c .compartir .btn-compartir.copiar-exito {
+            background: #1a4a3a;
+            border-color: #3a7a5a;
+            color: #7ad4a0;
+        }
+
+        /* Scrollbars personalizados - MODO NOCHE */
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #dbe1e9;
+            background: #1a1a2e;
             border-radius: 8px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #7f95b0;
+            background: #2a4a6a;
             border-radius: 8px;
             min-height: 30px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #5a7493;
+            background: #3a5a7a;
         }
 
         /* Utilidades */
         .images-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin: 8px 0;
+            gap: 10px;
+            margin: 10px 0;
         }
         .images-container img {
             max-width: 100%;
-            max-height: 260px;
+            max-height: 300px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
         }
 
         .buscar-entrada {
-            color: #1a6b9b;
+            color: #6ab0d4;
             cursor: pointer;
             font-weight: 600;
-            border-bottom: 2px dashed #1a6b9b;
+            border-bottom: 2px dashed #3a6a8a;
             padding-bottom: 1px;
+            transition: color 0.2s, border-color 0.2s;
+            text-decoration: none;
         }
         .buscar-entrada:hover {
-            background: #e3f0fa;
+            color: #8ac8e8;
+            border-color: #5a8aaa;
         }
 
         /* ============================================================
-           NAVEGACIÓN POR TABS (móvil)
+           NAVEGACIÓN POR TABS (móvil) - MODO NOCHE
            ============================================================ */
         .mobile-tabs {
             display: none;
-            background: #2c3e50;
-            color: #ecf0f1;
-            border-bottom: 2px solid #1a2632;
+            background: #0f3460;
+            color: #e0e0e0;
+            border-bottom: 2px solid #1a3a6a;
             flex-shrink: 0;
             z-index: 10;
         }
@@ -457,7 +545,7 @@
             flex: 1;
             background: transparent;
             border: none;
-            color: #8899aa;
+            color: #6a8aaa;
             padding: 12px 8px;
             font-size: 0.9rem;
             font-weight: 600;
@@ -469,27 +557,29 @@
         }
 
         .mobile-tabs .tab-btn:hover {
-            color: #ecf0f1;
+            color: #b0d4f0;
             background: rgba(255,255,255,0.05);
         }
 
         .mobile-tabs .tab-btn.active {
-            color: #ecf0f1;
+            color: #b0d4f0;
             border-bottom-color: #5a9fd4;
             background: rgba(255,255,255,0.05);
         }
 
         .mobile-tabs .tab-btn .badge {
-            background: #3a5a7a;
+            background: #1a3a6a;
             border-radius: 12px;
             padding: 1px 10px;
             font-size: 0.75rem;
             margin-left: 6px;
             font-weight: 600;
+            color: #8ab0c8;
         }
 
         .mobile-tabs .tab-btn.active .badge {
-            background: #4a7a9a;
+            background: #2a4a7a;
+            color: #b0d4f0;
         }
 
         .mobile-sections {
@@ -497,6 +587,7 @@
             flex: 1;
             overflow: hidden;
             position: relative;
+            background: #1a1a2e;
         }
 
         .mobile-sections .section {
@@ -504,7 +595,8 @@
             height: 100%;
             overflow-y: auto;
             padding: 12px 10px;
-            background: #eef2f7;
+            background: #16213e;
+            padding-bottom: 50px;
         }
 
         .mobile-sections .section.active {
@@ -512,15 +604,16 @@
         }
 
         .mobile-sections .section#mobile-section-c {
-            background: #ffffff;
+            background: #1a1a2e;
             padding: 16px 16px;
+            padding-bottom: 50px;
         }
 
         .mobile-sections .section h3 {
             font-size: 0.7rem;
             text-transform: uppercase;
-            color: #4a5a72;
-            margin-bottom: 8px;
+            color: #6a8aaa;
+            margin-bottom: 10px;
             letter-spacing: 0.6px;
             font-weight: 700;
         }
@@ -531,154 +624,260 @@
             margin: 0;
         }
 
-        .mobile-sections .section#mobile-section-a li {
-            padding: 5px 10px;
-            margin-bottom: 2px;
+        .mobile-sections .section#mobile-section-a .nav-principal-movil {
+            margin-bottom: 10px;
+        }
+
+        .mobile-sections .section#mobile-section-a .nav-principal-movil ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .mobile-sections .section#mobile-section-a .nav-principal-movil li {
+            padding: 5px 12px;
             border-radius: 6px;
             font-size: 0.85rem;
-            color: #1e2b3a;
+            color: #8aaac0;
             cursor: pointer;
-            transition: background 0.15s;
+            transition: background 0.15s, color 0.15s;
+            font-weight: 500;
+            background: transparent;
+        }
+
+        .mobile-sections .section#mobile-section-a .nav-principal-movil li:hover {
+            background: #2a3a5a;
+            color: #e0e0e0;
+        }
+
+        .mobile-sections .section#mobile-section-a .nav-principal-movil li.activo {
+            background: #2c3e50;
+            color: #b0d4f0;
+            font-weight: 600;
+        }
+
+        .mobile-sections .section#mobile-section-a .busqueda-movil input {
+            width: 100%;
+            padding: 8px 14px;
+            border-radius: 24px;
+            border: 1px solid #2a3a5a;
+            background: #0f3460;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            margin-bottom: 10px;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .mobile-sections .section#mobile-section-a .busqueda-movil input:focus {
+            border-color: #4a7a9a;
+            background: #1a3a6a;
+        }
+
+        .mobile-sections .section#mobile-section-a .titulo-movil {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #e0e0e0;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+            cursor: default;
+        }
+
+        .mobile-sections .section#mobile-section-a li {
+            padding: 6px 12px;
+            margin-bottom: 2px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #b0c8e0;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
             word-break: break-word;
             font-weight: 500;
         }
 
         .mobile-sections .section#mobile-section-a li:hover {
-            background: #d5dee9;
+            background: #2a3a5a;
+            color: #e0e0e0;
         }
 
         .mobile-sections .section#mobile-section-a li.activo {
             background: #2c3e50;
-            color: white;
+            color: #b0d4f0;
             font-weight: 600;
         }
 
         .mobile-sections .section#mobile-section-b li {
-            padding: 8px 12px;
-            margin-bottom: 3px;
-            background: #f8faff;
-            border-radius: 6px;
-            border-left: 3px solid #7f95b0;
+            padding: 10px 12px;
+            margin-bottom: 6px;
+            background: #1a2a4a;
+            border-radius: 8px;
+            border-left: 3px solid #3a5a7a;
             cursor: pointer;
             transition: background 0.15s, border-color 0.15s;
-            font-size: 0.85rem;
-            line-height: 1.4;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
 
         .mobile-sections .section#mobile-section-b li:hover {
-            background: #d5dee9;
-            border-left-color: #2c3e50;
+            background: #2a3a5a;
+            border-left-color: #5a8aaa;
         }
 
         .mobile-sections .section#mobile-section-b li .titulo-parcial {
             font-weight: 600;
-            color: #1a2a3a;
-            font-size: 0.9rem;
+            color: #c8dce8;
+            font-size: 0.95rem;
         }
 
         .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
             font-size: 0.75rem;
-            color: #4d637a;
+            color: #6a8aaa;
             display: block;
-            margin-top: 2px;
+            margin-top: 3px;
+        }
+
+        .mobile-sections .section#mobile-section-b li.destacado {
+            background: #2a4a6a;
+            border-left-color: #7ab0d4;
         }
 
         .mobile-sections .section#mobile-section-c h2 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 600;
-            color: #1e2b3c;
-            border-bottom: 2px solid #e6edf5;
+            color: #d0dce8;
+            border-bottom: 2px solid #2a3a5a;
             padding-bottom: 10px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             line-height: 1.3;
             letter-spacing: -0.3px;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb {
-            line-height: 1.6;
-            margin-bottom: 14px;
-            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+            color: #c8dce8;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb p { margin-bottom: 8px; }
         .mobile-sections .section#mobile-section-c .contenido-bbb ul,
         .mobile-sections .section#mobile-section-c .contenido-bbb ol {
-            padding-left: 22px;
+            padding-left: 24px;
             margin-bottom: 8px;
+        }
+
+        .mobile-sections .section#mobile-section-c .contenido-bbb a {
+            color: #6ab0d4;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .mobile-sections .section#mobile-section-c .contenido-bbb a:hover {
+            color: #8ac8e8;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb img {
             max-width: 100%;
             border-radius: 8px;
-            margin: 6px 0;
+            margin: 8px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.3);
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas {
-            background: #f8faff;
-            padding: 10px 14px;
+            background: #16213e;
+            padding: 12px 16px;
             border-radius: 10px;
-            border: 1px solid #e2eaf3;
-            margin: 10px 0;
+            border: 1px solid #2a3a5a;
+            margin: 12px 0;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
             font-size: 0.8rem;
-            color: #4a5a72;
-            margin-bottom: 6px;
+            color: #6a8aaa;
+            margin-bottom: 8px;
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas ul {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
-            gap: 4px;
+            gap: 6px;
             padding: 0;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas li {
-            background: #eef2f7;
-            padding: 3px 12px;
-            border-radius: 16px;
-            font-size: 0.8rem;
-            color: #1e2b3a;
+            background: #1a2a4a;
+            padding: 4px 14px;
+            border-radius: 18px;
+            font-size: 0.85rem;
+            color: #8ab0c8;
             cursor: pointer;
-            transition: background 0.15s;
+            transition: background 0.15s, color 0.15s;
             font-weight: 500;
+        }
+
+        .mobile-sections .section#mobile-section-c .etiquetas-completas li:hover {
+            background: #2a4a6a;
+            color: #b0d4f0;
         }
 
         .mobile-sections .section#mobile-section-c .compartir {
+            background: #16213e;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border: 1px solid #2a3a5a;
+            margin: 12px 0;
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-top: 10px;
-            padding: 8px 0;
-            border-top: 1px solid #e6edf5;
             flex-wrap: wrap;
-            font-size: 0.85rem;
+            gap: 8px;
         }
 
-        .mobile-sections .section#mobile-section-c .compartir b { font-weight: 600; }
-        .mobile-sections .section#mobile-section-c .compartir a,
-        .mobile-sections .section#mobile-section-c .compartir span {
-            font-size: 0.85rem;
+        .mobile-sections .section#mobile-section-c .compartir h4 {
+            font-size: 0.8rem;
+            color: #6a8aaa;
+            margin-right: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .mobile-sections .section#mobile-section-c .compartir .copiar-btn {
-            background: #eef2f7;
-            border: 1px solid #ccd5e0;
-            padding: 3px 12px;
+        .mobile-sections .section#mobile-section-c .compartir .btn-compartir {
+            background: #1a2a4a;
+            border: 1px solid #2a4a6a;
+            padding: 4px 14px;
             border-radius: 18px;
             cursor: pointer;
-            font-size: 0.8rem;
-            transition: background 0.15s;
+            font-size: 0.85rem;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
             font-weight: 500;
             font-family: 'Inter', sans-serif;
+            color: #8ab0c8;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .mobile-sections .section#mobile-section-c .compartir .btn-compartir:hover {
+            background: #2a4a6a;
+            color: #b0d4f0;
+            border-color: #3a5a7a;
+        }
+
+        .mobile-sections .section#mobile-section-c .compartir .btn-compartir.copiar-exito {
+            background: #1a4a3a;
+            border-color: #3a7a5a;
+            color: #7ad4a0;
         }
 
         /* ============================================================
-           RESPONSIVE
+           RESPONSIVE - MODO NOCHE
            ============================================================ */
 
         @media (max-width: 1024px) {
@@ -689,12 +888,12 @@
                 font-size: 1.1rem;
             }
             .contenedor-bc {
-                grid-template-columns: 260px 1fr;
+                grid-template-columns: 280px 1fr;
             }
             .div-b {
-                width: 260px;
-                min-width: 260px;
-                max-width: 260px;
+                width: 280px;
+                min-width: 280px;
+                max-width: 280px;
             }
         }
 
@@ -718,67 +917,7 @@
                 height: 100vh;
                 overflow: hidden;
                 font-size: 16px;
-            }
-
-            .mobile-sections .section#mobile-section-a .busqueda-movil input {
-                width: 100%;
-                padding: 6px 12px;
-                border-radius: 20px;
-                border: 1px solid #ccd5e0;
-                background: #ffffff;
-                color: #1e2b3a;
-                font-size: 0.9rem;
-                font-family: 'Inter', sans-serif;
-                outline: none;
-                margin-bottom: 10px;
-            }
-
-            .mobile-sections .section#mobile-section-a .busqueda-movil input:focus {
-                border-color: #2c3e50;
-            }
-
-            .mobile-sections .section#mobile-section-a .titulo-movil {
-                font-size: 1.2rem;
-                font-weight: 700;
-                color: #1e2b3a;
-                letter-spacing: -0.5px;
-                margin-bottom: 8px;
-                cursor: default;
-            }
-
-            .mobile-sections .section#mobile-section-c {
-                padding: 14px 16px;
-            }
-
-            .mobile-sections .section#mobile-section-c h2 {
-                font-size: 1.2rem;
-            }
-
-            .mobile-sections .section#mobile-section-c .contenido-bbb {
-                font-size: 0.9rem;
-            }
-
-            .mobile-sections .section#mobile-section-a li {
-                font-size: 0.85rem;
-                padding: 5px 10px;
-            }
-
-            .mobile-sections .section#mobile-section-b li {
-                font-size: 0.85rem;
-                padding: 7px 10px;
-            }
-
-            .mobile-sections .section#mobile-section-b li .titulo-parcial {
-                font-size: 0.9rem;
-            }
-
-            .mobile-tabs .tab-btn {
-                font-size: 0.85rem;
-                padding: 10px 6px;
-            }
-
-            .mobile-sections .section#mobile-section-c .compartir {
-                font-size: 0.85rem;
+                background: #1a1a2e;
             }
         }
 
@@ -789,15 +928,15 @@
             }
 
             .mobile-sections .section#mobile-section-c {
-                padding: 10px 12px;
+                padding: 12px 14px;
             }
 
             .mobile-sections .section#mobile-section-c h2 {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .mobile-sections .section#mobile-section-c .contenido-bbb {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
 
             .mobile-sections .section#mobile-section-a .titulo-movil {
@@ -805,17 +944,22 @@
             }
 
             .mobile-sections .section#mobile-section-a li {
-                font-size: 0.8rem;
-                padding: 4px 8px;
+                font-size: 0.85rem;
+                padding: 5px 10px;
             }
 
             .mobile-sections .section#mobile-section-b li {
-                font-size: 0.8rem;
-                padding: 6px 8px;
+                font-size: 0.85rem;
+                padding: 8px 10px;
             }
 
             .mobile-sections .section#mobile-section-b li .titulo-parcial {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
+            }
+
+            .mobile-sections .section#mobile-section-c .compartir .btn-compartir {
+                font-size: 0.8rem;
+                padding: 3px 12px;
             }
         }
 
@@ -830,12 +974,12 @@
             }
 
             .mobile-sections .section#mobile-section-c .contenido-bbb {
-                font-size: 0.8rem;
+                font-size: 0.85rem;
             }
 
             .mobile-sections .section#mobile-section-a .busqueda-movil input {
                 font-size: 0.8rem;
-                padding: 5px 10px;
+                padding: 6px 10px;
             }
         }
     </style>
@@ -855,6 +999,16 @@
                 <input type="text" id="busquedaInput" placeholder="Buscar..." maxlength="60">
             </div>
         </div>
+
+        <!-- Navegación principal: Inicio, Aclaraciones, Autor -->
+        <div class="nav-principal">
+            <ul>
+                <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">🏷️ Inicio</li>
+                <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">🛠 Aclaraciones</li>
+                <li data-nav="autor" onclick="navegarA('autor')">👤 Autor</li>
+            </ul>
+        </div>
+
         <div class="etiquetas-container">
             <h3>📂 Etiquetas principales</h3>
             <ul id="listaEtiquetas">
@@ -874,7 +1028,7 @@
             </div>
         </div>
 
-        <!-- Contenedor B + C (sin gap) -->
+        <!-- Contenedor B + C -->
         <div class="contenedor-bc">
 
             <!-- Div B -->
@@ -891,7 +1045,7 @@
                     <h2>Bienvenido</h2>
                     <div class="contenido-bbb">
                         <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                        <p style="color: #4d637a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                        <p style="color: #6a8aaa;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
                     </div>
                 </div>
             </div>
@@ -918,6 +1072,16 @@
         <div class="busqueda-movil">
             <input type="text" id="mobileBusquedaInput" placeholder="Buscar..." maxlength="60">
         </div>
+
+        <!-- Navegación móvil -->
+        <div class="nav-principal-movil">
+            <ul>
+                <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">🏷️ Inicio</li>
+                <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">🛠 Aclaraciones</li>
+                <li data-nav="autor" onclick="navegarA('autor')">👤 Autor</li>
+            </ul>
+        </div>
+
         <h3>📂 Etiquetas principales</h3>
         <ul id="mobileListaEtiquetas">
             <li class="cargando">Cargando etiquetas...</li>
@@ -936,7 +1100,7 @@
             <h2>Bienvenido</h2>
             <div class="contenido-bbb">
                 <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                <p style="color: #4d637a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                <p style="color: #6a8aaa;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
             </div>
         </div>
     </div>
@@ -999,10 +1163,10 @@
         c: document.getElementById('mobile-section-c')
     };
 
-    // Función para cambiar a una pestaña en móvil
     function cambiarPestanaMovil(tab) {
         tabButtons.forEach(function(b) { b.classList.remove('active'); });
-        document.querySelector('.tab-btn[data-tab="' + tab + '"]').classList.add('active');
+        var targetBtn = document.querySelector('.tab-btn[data-tab="' + tab + '"]');
+        if (targetBtn) targetBtn.classList.add('active');
         for (var key in mobileSectionsList) {
             if (mobileSectionsList[key]) {
                 mobileSectionsList[key].classList.remove('active');
@@ -1021,32 +1185,142 @@
     });
 
     // ============================================================
-    //  VARIABLES GLOBALES
+    //  FUNCIÓN DE NAVEGACIÓN PRINCIPAL (Inicio, Aclaraciones, Autor)
     // ============================================================
-    var entradasRecientes = [];
-    var etiquetasPrincipales = [];
-    var entradaActual = null;
-    var modoActual = 'inicio';
-    var datosCargados = false;
-    var entradaAbiertaId = null;
+    function navegarA(destino) {
+        // Actualizar navegación en desktop
+        var navItems = document.querySelectorAll('.nav-principal li');
+        navItems.forEach(function(li) {
+            li.classList.remove('activo');
+            if (li.dataset.nav === destino) {
+                li.classList.add('activo');
+            }
+        });
 
-    // Elementos desktop
-    var listaEtiquetasEl = document.getElementById('listaEtiquetas');
-    var listaEntradasParcialesEl = document.getElementById('listaEntradasParciales');
-    var contadorEntradasEl = document.getElementById('contadorEntradas');
-    var contenidoCompletoEl = document.getElementById('contenidoCompleto');
-    var tituloBannerEl = document.getElementById('tituloBanner');
-    var fechaBannerEl = document.getElementById('fechaBanner');
-    var busquedaInput = document.getElementById('busquedaInput');
-    var divB = document.getElementById('divB');
+        // Actualizar navegación en móvil
+        var navItemsMovil = document.querySelectorAll('.nav-principal-movil li');
+        navItemsMovil.forEach(function(li) {
+            li.classList.remove('activo');
+            if (li.dataset.nav === destino) {
+                li.classList.add('activo');
+            }
+        });
 
-    // Elementos móvil
-    var mobileListaEtiquetasEl = document.getElementById('mobileListaEtiquetas');
-    var mobileListaEntradasParcialesEl = document.getElementById('mobileListaEntradasParciales');
-    var mobileContadorEntradasEl = document.getElementById('mobileContadorEntradas');
-    var mobileContadorBadgeEl = document.getElementById('mobileContadorBadge');
-    var mobileContenidoCompletoEl = document.getElementById('mobileContenidoCompleto');
-    var mobileBusquedaInput = document.getElementById('mobileBusquedaInput');
+        // Contenido según destino
+        if (destino === 'inicio') {
+            // Restaurar vista de inicio
+            if (entradasRecientes.length > 0) {
+                var entrada = entradasRecientes[0];
+                mostrarEntradaCompleta(entrada, false);
+                mostrarEntradaCompleta(entrada, true);
+                actualizarURL(entrada.ddd);
+                actualizarBanner(entrada.aaa, entrada.ddd);
+                renderizarEntradasParciales(entradasRecientes);
+                // Resaltar primera entrada en B
+                resaltarPrimeraEntradaEnB();
+            }
+            // Quitar resaltado de etiquetas
+            document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
+                li.classList.remove('activo');
+            });
+            // Marcar "Inicio" en etiquetas
+            document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
+                if (li.dataset && li.dataset.etiqueta === '*') {
+                    li.classList.add('activo');
+                }
+            });
+        } else if (destino === 'aclaraciones') {
+            var textoAclaraciones = '<h2>🛠 Aclaraciones</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a8aaa;">Esta sección estará disponible próximamente.</p></div>';
+            contenidoCompletoEl.innerHTML = textoAclaraciones;
+            mobileContenidoCompletoEl.innerHTML = textoAclaraciones;
+            actualizarBanner('🛠 Aclaraciones', null);
+            // En móvil cambiar a pestaña C
+            if (isMobile) cambiarPestanaMovil('c');
+        } else if (destino === 'autor') {
+            var textoAutor = '<h2>👤 Autor</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a8aaa;">Esta sección estará disponible próximamente.</p></div>';
+            contenidoCompletoEl.innerHTML = textoAutor;
+            mobileContenidoCompletoEl.innerHTML = textoAutor;
+            actualizarBanner('👤 Autor', null);
+            if (isMobile) cambiarPestanaMovil('c');
+        }
+
+        // Limpiar búsqueda
+        limpiarBusqueda();
+    }
+
+    // ============================================================
+    //  FUNCIÓN PARA FORMATEAR FECHA
+    // ============================================================
+    function formatearFecha(id) {
+        if (!id || id.length !== 12) return id;
+        var anio = id.substring(0, 2);
+        var mes = id.substring(2, 4);
+        var dia = id.substring(4, 6);
+        var hora = id.substring(6, 8);
+        var min = id.substring(8, 10);
+        var seg = id.substring(10, 12);
+        return '20' + anio + '·' + mes + '·' + dia + ' - ' + hora + ':' + min + ':' + seg;
+    }
+
+    // ============================================================
+    //  FUNCIONES DE LIMPIEZA DE BÚSQUEDA
+    // ============================================================
+    function limpiarBusqueda() {
+        busquedaInput.value = '';
+        mobileBusquedaInput.value = '';
+    }
+
+    function seleccionarTextoBusqueda() {
+        busquedaInput.select();
+        mobileBusquedaInput.select();
+    }
+
+    // ============================================================
+    //  FUNCIÓN PARA RESALTAR PRIMERA ENTRADA EN B
+    // ============================================================
+    function resaltarPrimeraEntradaEnB() {
+        var items = listaEntradasParcialesEl.querySelectorAll('li');
+        items.forEach(function(li, index) {
+            li.classList.remove('destacado');
+            if (index === 0 && li.dataset && li.dataset.id) {
+                li.classList.add('destacado');
+            }
+        });
+        var mobileItems = mobileListaEntradasParcialesEl.querySelectorAll('li');
+        mobileItems.forEach(function(li, index) {
+            li.classList.remove('destacado');
+            if (index === 0 && li.dataset && li.dataset.id) {
+                li.classList.add('destacado');
+            }
+        });
+    }
+
+    // ============================================================
+    //  FUNCIÓN PARA DESCARGAR ENTRADA COMO MD
+    // ============================================================
+    function descargarEntradaMD(entrada) {
+        if (!entrada) return;
+        var contenido = '# ' + entrada.aaa + '\n\n';
+        contenido += entrada.bbb + '\n\n';
+        contenido += '## Etiquetas\n\n';
+        var etiquetas = entrada.ccc.split(',').map(function(e) { return e.trim(); }).filter(function(e) { return e; });
+        etiquetas.forEach(function(etq) {
+            contenido += '- ' + etq + '\n';
+        });
+        contenido += '\n---\n';
+        contenido += 'ID: ' + entrada.ddd + '\n';
+        contenido += 'Fecha: ' + formatearFecha(entrada.ddd) + '\n';
+
+        var blob = new Blob([contenido], { type: 'text/markdown;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = entrada.aaa.substring(0, 30).replace(/[^a-zA-Z0-9]/g, '_') + '.md';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
 
     // ============================================================
     //  FUNCIONES DE PROCESAMIENTO
@@ -1054,6 +1328,21 @@
 
     function limpiarEtiqueta(etiqueta) {
         return etiqueta.replace(' *', '').trim();
+    }
+
+    function esEtiquetaPrincipal(etiqueta) {
+        return etiqueta.endsWith(' *');
+    }
+
+    function obtenerEtiquetaPrincipal(etiquetas) {
+        if (!etiquetas) return null;
+        var lista = etiquetas.split(',').map(function(e) { return e.trim(); });
+        for (var i = 0; i < lista.length; i++) {
+            if (esEtiquetaPrincipal(lista[i])) {
+                return lista[i];
+            }
+        }
+        return null;
     }
 
     function procesarContenidoBBB(bbb) {
@@ -1105,7 +1394,7 @@
     function actualizarBanner(titulo, id) {
         if (titulo && id) {
             tituloBannerEl.textContent = titulo;
-            fechaBannerEl.textContent = id;
+            fechaBannerEl.textContent = formatearFecha(id);
             fechaBannerEl.style.display = 'inline';
         } else if (titulo) {
             tituloBannerEl.textContent = titulo;
@@ -1125,38 +1414,11 @@
     function renderizarEtiquetas(etiquetas) {
         // Desktop
         listaEtiquetasEl.innerHTML = '';
-        var liTodas = document.createElement('li');
-        liTodas.dataset.etiqueta = '*';
-        liTodas.textContent = '🏷️ Todas';
-        liTodas.className = 'activo';
-        liTodas.addEventListener('click', function() {
-            eliminarQueryDeURL();
-            mostrarTodas();
-            if (isMobile) {
-                cambiarPestanaMovil('b');
-            }
-        });
-        listaEtiquetasEl.appendChild(liTodas);
-
-        // Móvil
-        mobileListaEtiquetasEl.innerHTML = '';
-        var liTodasMobile = document.createElement('li');
-        liTodasMobile.dataset.etiqueta = '*';
-        liTodasMobile.textContent = '🏷️ Todas';
-        liTodasMobile.className = 'activo';
-        liTodasMobile.addEventListener('click', function() {
-            eliminarQueryDeURL();
-            mostrarTodas();
-            if (isMobile) {
-                cambiarPestanaMovil('b');
-            }
-        });
-        mobileListaEtiquetasEl.appendChild(liTodasMobile);
 
         if (!etiquetas || etiquetas.length === 0) {
             var li = document.createElement('li');
             li.textContent = 'Sin etiquetas principales';
-            li.style.color = '#6a7a8a';
+            li.style.color = '#6a8aaa';
             li.style.fontStyle = 'italic';
             li.style.cursor = 'default';
             listaEtiquetasEl.appendChild(li);
@@ -1178,6 +1440,7 @@
                 if (isMobile) {
                     cambiarPestanaMovil('b');
                 }
+                limpiarBusqueda();
             });
             listaEtiquetasEl.appendChild(li);
 
@@ -1191,6 +1454,7 @@
                 if (isMobile) {
                     cambiarPestanaMovil('b');
                 }
+                limpiarBusqueda();
             });
             mobileListaEtiquetasEl.appendChild(liMobile);
         });
@@ -1200,7 +1464,7 @@
         // Desktop
         listaEntradasParcialesEl.innerHTML = '';
         if (!entradas || entradas.length === 0) {
-            listaEntradasParcialesEl.innerHTML = '<li style="color:#6a7a8a; font-style:italic; cursor:default;">No hay entradas</li>';
+            listaEntradasParcialesEl.innerHTML = '<li style="color:#6a8aaa; font-style:italic; cursor:default;">No hay entradas</li>';
             contadorEntradasEl.textContent = '(0)';
         } else {
             contadorEntradasEl.textContent = '(' + entradas.length + ')';
@@ -1212,6 +1476,7 @@
                 li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
                 li.addEventListener('click', function() {
                     abrirEntradaPorId(entrada.ddd);
+                    limpiarBusqueda();
                     if (isMobile) {
                         cambiarPestanaMovil('c');
                     }
@@ -1223,7 +1488,7 @@
         // Móvil
         mobileListaEntradasParcialesEl.innerHTML = '';
         if (!entradas || entradas.length === 0) {
-            mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#6a7a8a; font-style:italic; cursor:default;">No hay entradas</li>';
+            mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#6a8aaa; font-style:italic; cursor:default;">No hay entradas</li>';
             mobileContadorEntradasEl.textContent = '(0)';
             mobileContadorBadgeEl.textContent = '0';
         } else {
@@ -1237,6 +1502,7 @@
                 li.innerHTML = '<span class="titulo-parcial">' + titulo + '</span><span class="etiquetas-parcial">' + etiquetas + '</span>';
                 li.addEventListener('click', function() {
                     abrirEntradaPorId(entrada.ddd);
+                    limpiarBusqueda();
                     if (isMobile) {
                         cambiarPestanaMovil('c');
                     }
@@ -1248,11 +1514,11 @@
         if (divB) divB.scrollTop = 0;
     }
 
-    function mostrarEntradaCompleta(entrada, esMovil) {
+    function mostrarEntradaCompleta(entrada, esMovil, etiquetaPrincipal) {
         var targetEl = esMovil ? mobileContenidoCompletoEl : contenidoCompletoEl;
 
         if (!entrada) {
-            targetEl.innerHTML = '<h2>Entrada no encontrada</h2><p>No se pudo cargar la entrada.</p>';
+            targetEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">No se pudo cargar la entrada.</p>';
             if (!esMovil) {
                 actualizarBanner('Error', null);
             }
@@ -1268,26 +1534,32 @@
             etiquetas.forEach(function(etq) {
                 var etqLimpia = limpiarEtiqueta(etq);
                 var etqEscapada = etqLimpia.replace(/'/g, "\\'");
-                html += '<li onclick="buscarPorEtiqueta(\'' + etqEscapada + '\')">' + etqLimpia + '</li>';
+                // Marcar si es etiqueta principal
+                var esPrincipal = esEtiquetaPrincipal(etq);
+                var claseExtra = esPrincipal ? ' style="font-weight:700;color:#b0d4f0;"' : '';
+                html += '<li onclick="buscarPorEtiqueta(\'' + etqEscapada + '\')"' + claseExtra + '>' + etqLimpia + '</li>';
             });
             html += '</ul></div>';
         }
 
+        // Sección de compartir con estilo similar
         var tweetText = encodeURIComponent(entrada.aaa + ' ¦ ' + entrada.ccc + ' ¦ jucardus.github.io/?q=' + entrada.ddd);
         var tweetUrl = 'https://x.com/intent/tweet?text=' + tweetText;
         var textoCopiar = entrada.aaa + ' ¦ ' + entrada.ccc + ' ¦ jucardus.github.io/?q=' + entrada.ddd;
+        var textoCopiarEscapado = textoCopiar.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
 
         html += '<div class="compartir">';
-        html += '<b>Compartir:</b> ';
-        html += '<a href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">' + entrada.ddd + ' ↗</a>';
-        html += ' · <span class="copiar-btn" data-texto-copiar="' + textoCopiar.replace(/"/g, '&quot;') + '">📋 Copiar</span>';
+        html += '<h4>📤 Compartir</h4>';
+        html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">📋 Copiar</span>';
+        html += '<span class="btn-compartir" onclick="descargarEntradaActual()">⬇️ Descargar</span>';
+        html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">🐦 Tuitear ↗</a>';
         html += '</div>';
 
         targetEl.innerHTML = html;
     }
 
     // ============================================================
-    //  FUNCIONES PARA COPIAR AL PORTAPAPELES
+    //  FUNCIONES PARA COPIAR AL PORTAPAPELES (CORREGIDO)
     // ============================================================
 
     function copiarAlPortapapeles(texto, elementoBoton) {
@@ -1296,6 +1568,30 @@
             return;
         }
 
+        // Limpiar texto de caracteres especiales
+        var textoLimpio = texto
+            .replace(/\[\[\[espacio\]\]\]/g, ' ')
+            .replace(/\[\[\[comilla\]\]\]/g, "'")
+            .replace(/\[\[\[comillas\]\]\]/g, '"')
+            .replace(/\[\[\[et\]\]\]/g, '&')
+            .replace(/\[\[\[menor\]\]\]/g, '<')
+            .replace(/\[\[\[mayor\]\]\]/g, '>');
+
+        // Método 1: API moderna (solo funciona en HTTPS)
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(textoLimpio)
+                .then(function() {
+                    mostrarFeedbackCopiado(elementoBoton);
+                })
+                .catch(function() {
+                    copiarConTextarea(textoLimpio, elementoBoton);
+                });
+        } else {
+            copiarConTextarea(textoLimpio, elementoBoton);
+        }
+    }
+
+    function copiarConTextarea(texto, elementoBoton) {
         var textarea = document.createElement('textarea');
         textarea.value = texto;
         textarea.style.position = 'fixed';
@@ -1311,17 +1607,17 @@
         document.execCommand('copy');
         document.body.removeChild(textarea);
 
+        mostrarFeedbackCopiado(elementoBoton);
+    }
+
+    function mostrarFeedbackCopiado(elementoBoton) {
         if (elementoBoton) {
             var original = elementoBoton.textContent;
             elementoBoton.textContent = '✅ Copiado';
-            elementoBoton.style.background = '#d4edda';
-            elementoBoton.style.borderColor = '#28a745';
-            elementoBoton.style.color = '#155724';
+            elementoBoton.classList.add('copiar-exito');
             setTimeout(function() {
                 elementoBoton.textContent = original;
-                elementoBoton.style.background = '';
-                elementoBoton.style.borderColor = '';
-                elementoBoton.style.color = '';
+                elementoBoton.classList.remove('copiar-exito');
             }, 2000);
         }
     }
@@ -1330,20 +1626,21 @@
     //  FUNCIONES DE INTERACCIÓN
     // ============================================================
 
+    function descargarEntradaActual() {
+        var entrada = entradas.find(function(e) { return e.ddd === entradaAbiertaId; });
+        if (entrada) {
+            descargarEntradaMD(entrada);
+        }
+    }
+
     function mostrarTodas() {
         var items = listaEtiquetasEl.querySelectorAll('li');
         items.forEach(function(li) {
             li.classList.remove('activo');
-            if (li.dataset.etiqueta === '*') {
-                li.classList.add('activo');
-            }
         });
         var mobileItems = mobileListaEtiquetasEl.querySelectorAll('li');
         mobileItems.forEach(function(li) {
             li.classList.remove('activo');
-            if (li.dataset.etiqueta === '*') {
-                li.classList.add('activo');
-            }
         });
 
         actualizarBanner('Inicio', null);
@@ -1356,10 +1653,12 @@
             mostrarEntradaCompleta(entrada, true);
             actualizarURL(entrada.ddd);
             actualizarBanner(entrada.aaa, entrada.ddd);
+            resaltarPrimeraEntradaEnB();
         } else {
-            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>No hay entradas disponibles.</p>';
-            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>No hay entradas disponibles.</p>';
+            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">No hay entradas disponibles.</p>';
+            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">No hay entradas disponibles.</p>';
         }
+        limpiarBusqueda();
     }
 
     function seleccionarEtiqueta(etiqueta) {
@@ -1386,8 +1685,8 @@
         mobileListaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
         mobileContadorEntradasEl.textContent = '(…)';
         mobileContadorBadgeEl.textContent = '…';
-        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
+        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
 
         var url = GAS_URL + '?etiqueta=' + encodeURIComponent(etiqueta);
         fetch(url)
@@ -1406,9 +1705,10 @@
                     mostrarEntradaCompleta(entrada, true);
                     actualizarURL(entrada.ddd);
                     actualizarBanner(entrada.aaa, entrada.ddd);
+                    resaltarPrimeraEntradaEnB();
                 } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No hay entradas con la etiqueta "' + displayName + '".</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No hay entradas con la etiqueta "' + displayName + '".</p>';
+                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No hay entradas con la etiqueta "' + displayName + '".</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No hay entradas con la etiqueta "' + displayName + '".</p>';
                     actualizarBanner('🏷️ ' + displayName + ' (sin resultados)', null);
                 }
             })
@@ -1423,8 +1723,8 @@
         modoActual = 'entrada';
         entradaAbiertaId = id;
 
-        contenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
+        contenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a8aaa;">Obteniendo datos...</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a8aaa;">Obteniendo datos...</p>';
 
         var url = GAS_URL + '?q=' + encodeURIComponent(id);
         fetch(url)
@@ -1443,28 +1743,47 @@
                     actualizarBanner(entrada.aaa, entrada.ddd);
                     var items = listaEntradasParcialesEl.querySelectorAll('li');
                     items.forEach(function(li) {
-                        li.style.background = '';
+                        li.classList.remove('destacado');
                         if (li.dataset.id === id) {
-                            li.style.background = '#d5dee9';
+                            li.classList.add('destacado');
                         }
                     });
                     var mobileItems = mobileListaEntradasParcialesEl.querySelectorAll('li');
                     mobileItems.forEach(function(li) {
-                        li.style.background = '';
+                        li.classList.remove('destacado');
                         if (li.dataset.id === id) {
-                            li.style.background = '#d5dee9';
+                            li.classList.add('destacado');
                         }
                     });
+
+                    // Buscar y resaltar etiqueta principal en A
+                    var etiquetaPrincipal = obtenerEtiquetaPrincipal(entrada.ccc);
+                    if (etiquetaPrincipal) {
+                        var etqLimpia = limpiarEtiqueta(etiquetaPrincipal);
+                        document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
+                            li.classList.remove('activo');
+                            if (li.dataset && li.dataset.etiqueta) {
+                                var etqLi = limpiarEtiqueta(li.dataset.etiqueta);
+                                if (etqLi === etqLimpia) {
+                                    li.classList.add('activo');
+                                    // Scroll al elemento en desktop
+                                    if (li.closest('#listaEtiquetas')) {
+                                        li.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                                    }
+                                }
+                            }
+                        });
+                    }
                 } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID no corresponde a ninguna entrada.</p>';
+                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID no corresponde a ninguna entrada.</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID no corresponde a ninguna entrada.</p>';
                     actualizarBanner('Error: ID no encontrado', null);
                 }
             })
             .catch(function(error) {
                 console.error('Error al abrir entrada:', error);
-                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada.</p>';
-                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada.</p>';
+                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p style="color:#6a8aaa;">No se pudo cargar la entrada.</p>';
+                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p style="color:#6a8aaa;">No se pudo cargar la entrada.</p>';
             });
     }
 
@@ -1482,6 +1801,8 @@
                 if (etqLimpiaLi === etqLimpia) {
                     li.click();
                     encontrada = true;
+                    // Scroll al elemento en desktop
+                    li.scrollIntoView({ block: 'center', behavior: 'smooth' });
                 }
             }
         });
@@ -1489,6 +1810,8 @@
         if (!encontrada) {
             seleccionarEtiqueta(etiqueta);
         }
+
+        limpiarBusqueda();
     }
 
     function buscarEntradaPorId(id) {
@@ -1511,8 +1834,8 @@
         mobileListaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
         mobileContadorEntradasEl.textContent = '(…)';
         mobileContadorBadgeEl.textContent = '…';
-        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Buscando entradas que contengan "' + q + '"</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Buscando entradas que contengan "' + q + '"</p>';
+        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Buscando entradas que contengan "' + q + '"</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Buscando entradas que contengan "' + q + '"</p>';
 
         var url = GAS_URL + '?buscar=' + encodeURIComponent(q);
         fetch(url)
@@ -1531,10 +1854,13 @@
                     mostrarEntradaCompleta(entrada, true);
                     actualizarURL(entrada.ddd);
                     actualizarBanner(entrada.aaa, entrada.ddd);
+                    resaltarPrimeraEntradaEnB();
                 } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No se encontraron entradas que contengan "' + q + '".</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p>No se encontraron entradas que contengan "' + q + '".</p>';
+                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No se encontraron entradas que contengan "' + q + '".</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No se encontraron entradas que contengan "' + q + '".</p>';
                 }
+                // Seleccionar texto de búsqueda
+                seleccionarTextoBusqueda();
             })
             .catch(function(error) {
                 console.error('Error en búsqueda de texto:', error);
@@ -1562,58 +1888,109 @@
         renderizarEntradasParciales(entradasRecientes);
 
         if (QUERY_ID) {
-            procesarQuery(QUERY_ID);
+            // Con query: mostrar las 30 recientes en B, y la entrada del query en C
+            var id = QUERY_ID;
+            var url = GAS_URL + '?q=' + encodeURIComponent(id);
+            fetch(url)
+                .then(function(response) { return response.json(); })
+                .then(function(data) {
+                    var entrada = data.entrada || null;
+                    if (entrada) {
+                        mostrarEntradaCompleta(entrada, false);
+                        mostrarEntradaCompleta(entrada, true);
+                        actualizarURL(entrada.ddd);
+                        actualizarBanner(entrada.aaa, entrada.ddd);
+                        // Resaltar en B si la entrada está en las recientes
+                        var items = listaEntradasParcialesEl.querySelectorAll('li');
+                        items.forEach(function(li) {
+                            li.classList.remove('destacado');
+                            if (li.dataset.id === id) {
+                                li.classList.add('destacado');
+                            }
+                        });
+                        var mobileItems = mobileListaEntradasParcialesEl.querySelectorAll('li');
+                        mobileItems.forEach(function(li) {
+                            li.classList.remove('destacado');
+                            if (li.dataset.id === id) {
+                                li.classList.add('destacado');
+                            }
+                        });
+                        // Buscar y resaltar etiqueta principal en A
+                        var etiquetaPrincipal = obtenerEtiquetaPrincipal(entrada.ccc);
+                        if (etiquetaPrincipal) {
+                            var etqLimpia = limpiarEtiqueta(etiquetaPrincipal);
+                            document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
+                                li.classList.remove('activo');
+                                if (li.dataset && li.dataset.etiqueta) {
+                                    var etqLi = limpiarEtiqueta(li.dataset.etiqueta);
+                                    if (etqLi === etqLimpia) {
+                                        li.classList.add('activo');
+                                        if (li.closest('#listaEtiquetas')) {
+                                            li.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                        // En móvil, mostrar la pestaña C
+                        if (isMobile) {
+                            cambiarPestanaMovil('c');
+                        }
+                    } else {
+                        // Si no se encuentra la entrada, mostrar mensaje
+                        contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                        mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                        actualizarBanner('Error: ID no encontrado', null);
+                    }
+                })
+                .catch(function(error) {
+                    console.error('Error al procesar query:', error);
+                });
             return;
         }
 
+        // Sin query: mostrar primera entrada
         if (entradasRecientes.length > 0) {
             var entrada = entradasRecientes[0];
             mostrarEntradaCompleta(entrada, false);
             mostrarEntradaCompleta(entrada, true);
             actualizarURL(entrada.ddd);
             actualizarBanner(entrada.aaa, entrada.ddd);
+            resaltarPrimeraEntradaEnB();
         } else {
-            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
-            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p>La base de datos está vacía.</p>';
+            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">La base de datos está vacía.</p>';
+            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">La base de datos está vacía.</p>';
             actualizarBanner('Sin entradas', null);
         }
     }
 
-    function procesarQuery(id) {
-        console.log('Procesando query:', id);
-        contenidoCompletoEl.innerHTML = '<h2>Cargando entrada...</h2><p style="color:#6a7a8a;">Buscando la entrada con ID: ' + id + '</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando entrada...</h2><p style="color:#6a7a8a;">Buscando la entrada con ID: ' + id + '</p>';
+    // ============================================================
+    //  VARIABLES GLOBALES
+    // ============================================================
+    var entradasRecientes = [];
+    var etiquetasPrincipales = [];
+    var entradaActual = null;
+    var modoActual = 'inicio';
+    var datosCargados = false;
+    var entradaAbiertaId = null;
 
-        var url = GAS_URL + '?q=' + encodeURIComponent(id);
-        fetch(url)
-            .then(function(response) {
-                if (!response.ok) {
-                    throw new Error('Error al buscar entrada: ' + response.status);
-                }
-                return response.json();
-            })
-            .then(function(data) {
-                var entrada = data.entrada || null;
-                if (entrada) {
-                    mostrarEntradaCompleta(entrada, false);
-                    mostrarEntradaCompleta(entrada, true);
-                    renderizarEntradasParciales([entrada]);
-                    actualizarURL(entrada.ddd);
-                    actualizarBanner(entrada.aaa, entrada.ddd);
-                } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p>El ID "' + id + '" no corresponde a ninguna entrada.</p>';
-                    actualizarBanner('Error: ID no encontrado', null);
-                    renderizarEntradasParciales(entradasRecientes);
-                }
-            })
-            .catch(function(error) {
-                console.error('Error al buscar entrada por ID:', error);
-                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada solicitada.</p>';
-                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p>No se pudo cargar la entrada solicitada.</p>';
-                renderizarEntradasParciales(entradasRecientes);
-            });
-    }
+    // Elementos desktop
+    var listaEtiquetasEl = document.getElementById('listaEtiquetas');
+    var listaEntradasParcialesEl = document.getElementById('listaEntradasParciales');
+    var contadorEntradasEl = document.getElementById('contadorEntradas');
+    var contenidoCompletoEl = document.getElementById('contenidoCompleto');
+    var tituloBannerEl = document.getElementById('tituloBanner');
+    var fechaBannerEl = document.getElementById('fechaBanner');
+    var busquedaInput = document.getElementById('busquedaInput');
+    var divB = document.getElementById('divB');
+
+    // Elementos móvil
+    var mobileListaEtiquetasEl = document.getElementById('mobileListaEtiquetas');
+    var mobileListaEntradasParcialesEl = document.getElementById('mobileListaEntradasParciales');
+    var mobileContadorEntradasEl = document.getElementById('mobileContadorEntradas');
+    var mobileContadorBadgeEl = document.getElementById('mobileContadorBadge');
+    var mobileContenidoCompletoEl = document.getElementById('mobileContenidoCompleto');
+    var mobileBusquedaInput = document.getElementById('mobileBusquedaInput');
 
     // ============================================================
     //  INICIALIZACIÓN
@@ -1681,11 +2058,16 @@
     window.buscarTexto = buscarTexto;
     window.copiarAlPortapapeles = copiarAlPortapapeles;
     window.cargarDatosIniciales = cargarDatosIniciales;
-    window.procesarQuery = procesarQuery;
     window.actualizarURL = actualizarURL;
     window.eliminarQueryDeURL = eliminarQueryDeURL;
     window.actualizarBanner = actualizarBanner;
     window.cambiarPestanaMovil = cambiarPestanaMovil;
+    window.navegarA = navegarA;
+    window.descargarEntradaActual = descargarEntradaActual;
+    window.formatearFecha = formatearFecha;
+    window.limpiarBusqueda = limpiarBusqueda;
+    window.seleccionarTextoBusqueda = seleccionarTextoBusqueda;
+    window.resaltarPrimeraEntradaEnB = resaltarPrimeraEntradaEnB;
 
     console.log('Script cargado correctamente.');
 </script>
