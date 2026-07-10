@@ -37,6 +37,20 @@ html, body {
    COLUMNA A - Panel izquierdo
    ============================================================ */
 
+/* Enlace manual - misma apariencia que los automáticos */
+.enlace-manual {
+    color: #7abaca;
+    text-decoration: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    border-bottom: 1px solid rgba(90, 150, 180, 0.2);
+}
+
+.enlace-manual:hover {
+    color: #9ad4ea;
+    text-shadow: 0 0 8px rgba(90, 180, 210, 0.15);
+    border-bottom-color: rgba(90, 180, 210, 0.5);
+}
+
 /* Panel izquierdo: ocupa la primera columna, fondo oscuro, borde derecho, flex vertical, sin desbordamiento */
 .div-a {
     grid-column: 1 / 2;
