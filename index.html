@@ -27,7 +27,7 @@
     <!-- Div A -->
     <div class="div-a" id="divA">
         <div class="header-a">
-            <h1>📖 <a href="https://jucardus.github.io">Jucardus.com</a></h1>
+            <h1>📖 <a class="enlace-manual" href="https://jucardus.github.io">Jucardus.com</a></h1>
             <div class="busqueda-rapida">
                 <input type="text" id="busquedaInput" placeholder="Buscar..." maxlength="60">
             </div>
@@ -257,7 +257,7 @@
             actualizarBanner('🛠 Aclaraciones', null);
             if (isMobile) cambiarPestanaMovil('c');
         } else if (destino === 'autor') {
-            var textoAutor = '<h2>👤 Autor</h2><div class="contenido-bbb"><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Mis sitios web:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></div>';
+            var textoAutor = `<h2>👤 Autor</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Mis sitios web:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul></div>`;
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
             actualizarBanner('👤 Autor', null);
