@@ -534,23 +534,23 @@
             color: #7ac4a0;
         }
 
-        /* QR Container - Sin doble fondo */
+        /* QR Container - ajustado */
         #qr-container {
-            margin-top: 12px;
+            margin-top: 18px;
             padding: 0;
             border-radius: 7px;
             text-align: center;
             display: none;
-            transition: all 0.3s ease;
             background: transparent;
         }
 
         #qr-container img {
-            max-width: 220px;
+            max-width: 80%;
+            width: 220px;
             height: auto;
             border-radius: 7px;
-            background: #ffffff;
-            padding: 8px;
+            background: #d0d4d8;
+            padding: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             display: block;
             margin: 0 auto;
@@ -558,7 +558,7 @@
 
         #qr-container small {
             display: block;
-            margin-top: 8px;
+            margin-top: 4px;
             color: #8a9aaa;
             font-size: 0.8rem;
             font-weight: 400;
@@ -1000,9 +1000,9 @@
             color: #7ac4a0;
         }
 
-        /* QR en móvil - Sin doble fondo */
+        /* QR en móvil - ajustado */
         .mobile-sections .section#mobile-section-c #qr-container-movil {
-            margin-top: 12px;
+            margin-top: 18px;
             padding: 0;
             border-radius: 7px;
             text-align: center;
@@ -1011,11 +1011,12 @@
         }
 
         .mobile-sections .section#mobile-section-c #qr-container-movil img {
-            max-width: 200px;
+            max-width: 80%;
+            width: 180px;
             height: auto;
             border-radius: 7px;
-            background: #ffffff;
-            padding: 8px;
+            background: #d0d4d8;
+            padding: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             display: block;
             margin: 0 auto;
@@ -1023,7 +1024,7 @@
 
         .mobile-sections .section#mobile-section-c #qr-container-movil small {
             display: block;
-            margin-top: 8px;
+            margin-top: 4px;
             color: #8a9aaa;
             font-size: 0.75rem;
             font-weight: 400;
@@ -1661,10 +1662,10 @@
         html += '<div class="botones-compartir">';
         html += '<span class="btn-compartir" onclick="copiarEnlacePermanente(\'' + entrada.ddd + '\', this)">🔗 Enlace</span>';
         html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">📋 Copiar</span>';
-        html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this, \'' + esMovil + '\')">📱 QR</span>';
+        html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this)">📱 QR</span>';
         html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">🐦 Tuitear ↗</a>';
         html += '</div>';
-        html += '<div id="' + qrId + '" style="display:none;margin-top:12px;padding:0;border-radius:7px;text-align:center;background:transparent;"></div>';
+        html += '<div id="' + qrId + '" style="display:none;margin-top:18px;padding:0;border-radius:7px;text-align:center;background:transparent;"></div>';
         html += '</div>';
 
         targetEl.innerHTML = html;
@@ -1748,7 +1749,7 @@
         }
     }
 
-    function mostrarQR(id, containerId, elementoBoton, esMovil) {
+    function mostrarQR(id, containerId, elementoBoton) {
         var container = document.getElementById(containerId);
         if (!container) {
             console.warn('Contenedor QR no encontrado:', containerId);
@@ -1756,7 +1757,7 @@
         }
 
         var enlace = 'https://jucardus.github.io/?q=' + id;
-        var qrUrl = 'https://quickchart.io/qr?text=' + encodeURIComponent(enlace) + '&size=220&margin=4&ecLevel=H&dark=2a3a4a&light=ffffff';
+        var qrUrl = 'https://quickchart.io/qr?text=' + encodeURIComponent(enlace) + '&size=250&margin=4&ecLevel=H&dark=2a3a4a&light=d0d4d8';
 
         if (container.style.display !== 'none' && container.dataset.qrId === id) {
             container.style.display = 'none';
@@ -1766,14 +1767,30 @@
 
         container.dataset.qrId = id;
         container.style.display = 'block';
-        container.innerHTML = '<img src="' + qrUrl + '" alt="Código QR" style="max-width:220px;border-radius:7px;background:#ffffff;padding:8px;box-shadow:0 2px 8px rgba(0,0,0,0.2);display:block;margin:0 auto;" /><br><small style="display:block;margin-top:8px;color:#8a9aaa;font-size:0.8rem;font-weight:400;">Escanea para abrir esta entrada</small>';
+        container.innerHTML = '<img src="' + qrUrl + '" alt="Código QR" style="max-width:80%;width:220px;border-radius:7px;background:#d0d4d8;padding:12px;box-shadow:0 2px 8px rgba(0,0,0,0.2);display:block;margin:0 auto;" /><br><small style="display:block;margin-top:4px;color:#8a9aaa;font-size:0.8rem;font-weight:400;">Escanea para abrir esta entrada</small>';
 
-        // Scroll automático al final de la sección C
-        var targetSection = esMovil === 'true' ? document.getElementById('mobile-section-c') : document.getElementById('divC');
+        // Scroll automático al final de la sección C después de cargar la imagen
+        var targetSection = container.closest('.div-c') || container.closest('.section#mobile-section-c');
         if (targetSection) {
-            setTimeout(function() {
-                targetSection.scrollTop = targetSection.scrollHeight;
-            }, 100);
+            // Esperar a que la imagen se cargue
+            var img = container.querySelector('img');
+            if (img) {
+                img.onload = function() {
+                    setTimeout(function() {
+                        targetSection.scrollTop = targetSection.scrollHeight;
+                    }, 50);
+                };
+                // Si la imagen ya está cargada (cache), ejecutar inmediatamente
+                if (img.complete) {
+                    setTimeout(function() {
+                        targetSection.scrollTop = targetSection.scrollHeight;
+                    }, 50);
+                }
+            } else {
+                setTimeout(function() {
+                    targetSection.scrollTop = targetSection.scrollHeight;
+                }, 100);
+            }
         }
 
         if (elementoBoton) {
