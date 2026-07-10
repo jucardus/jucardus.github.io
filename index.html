@@ -391,7 +391,6 @@
             color: #c8d0d8;
         }
 
-        /* Enlaces internos y externos - más claros */
         .div-c .contenido-bbb a {
             color: #7abaca;
             text-decoration: none;
@@ -405,7 +404,6 @@
             border-bottom-color: rgba(90, 180, 210, 0.5);
         }
 
-        /* Estilo para <code> - fondo ligeramente más claro */
         .div-c .contenido-bbb code {
             background: #2d343a;
             padding: 2px 8px;
@@ -536,16 +534,15 @@
             color: #7ac4a0;
         }
 
-        /* QR Container */
+        /* QR Container - Sin doble fondo */
         #qr-container {
             margin-top: 12px;
-            padding: 16px;
-            background: #f0f2f4;
+            padding: 0;
             border-radius: 7px;
-            border: 1px solid #2d343a;
             text-align: center;
             display: none;
             transition: all 0.3s ease;
+            background: transparent;
         }
 
         #qr-container img {
@@ -555,14 +552,16 @@
             background: #ffffff;
             padding: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            display: block;
+            margin: 0 auto;
         }
 
         #qr-container small {
             display: block;
             margin-top: 8px;
-            color: #4a5a6a;
+            color: #8a9aaa;
             font-size: 0.8rem;
-            font-weight: 500;
+            font-weight: 400;
         }
 
         /* Scrollbars personalizados */
@@ -1001,30 +1000,33 @@
             color: #7ac4a0;
         }
 
-        /* QR en móvil */
-        .mobile-sections .section#mobile-section-c #qr-container {
+        /* QR en móvil - Sin doble fondo */
+        .mobile-sections .section#mobile-section-c #qr-container-movil {
             margin-top: 12px;
-            padding: 16px;
-            background: #f0f2f4;
+            padding: 0;
             border-radius: 7px;
-            border: 1px solid #2d343a;
             text-align: center;
             display: none;
+            background: transparent;
         }
 
-        .mobile-sections .section#mobile-section-c #qr-container img {
+        .mobile-sections .section#mobile-section-c #qr-container-movil img {
             max-width: 200px;
             height: auto;
             border-radius: 7px;
             background: #ffffff;
             padding: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            display: block;
+            margin: 0 auto;
         }
 
-        .mobile-sections .section#mobile-section-c #qr-container small {
+        .mobile-sections .section#mobile-section-c #qr-container-movil small {
             display: block;
             margin-top: 8px;
-            color: #4a5a6a;
+            color: #8a9aaa;
             font-size: 0.75rem;
+            font-weight: 400;
         }
 
         /* ============================================================
@@ -1659,10 +1661,10 @@
         html += '<div class="botones-compartir">';
         html += '<span class="btn-compartir" onclick="copiarEnlacePermanente(\'' + entrada.ddd + '\', this)">🔗 Enlace</span>';
         html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">📋 Copiar</span>';
-        html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this)">📱 QR</span>';
+        html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this, \'' + esMovil + '\')">📱 QR</span>';
         html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">🐦 Tuitear ↗</a>';
         html += '</div>';
-        html += '<div id="' + qrId + '" style="display:none;margin-top:12px;padding:16px;background:#f0f2f4;border-radius:7px;border:1px solid #2d343a;text-align:center;"></div>';
+        html += '<div id="' + qrId + '" style="display:none;margin-top:12px;padding:0;border-radius:7px;text-align:center;background:transparent;"></div>';
         html += '</div>';
 
         targetEl.innerHTML = html;
@@ -1746,7 +1748,7 @@
         }
     }
 
-    function mostrarQR(id, containerId, elementoBoton) {
+    function mostrarQR(id, containerId, elementoBoton, esMovil) {
         var container = document.getElementById(containerId);
         if (!container) {
             console.warn('Contenedor QR no encontrado:', containerId);
@@ -1764,7 +1766,15 @@
 
         container.dataset.qrId = id;
         container.style.display = 'block';
-        container.innerHTML = '<img src="' + qrUrl + '" alt="Código QR" style="max-width:220px;border-radius:7px;background:#ffffff;padding:8px;box-shadow:0 2px 8px rgba(0,0,0,0.2);" /><br><small style="display:block;margin-top:8px;color:#4a5a6a;font-size:0.8rem;font-weight:500;">Escanea para abrir esta entrada</small>';
+        container.innerHTML = '<img src="' + qrUrl + '" alt="Código QR" style="max-width:220px;border-radius:7px;background:#ffffff;padding:8px;box-shadow:0 2px 8px rgba(0,0,0,0.2);display:block;margin:0 auto;" /><br><small style="display:block;margin-top:8px;color:#8a9aaa;font-size:0.8rem;font-weight:400;">Escanea para abrir esta entrada</small>';
+
+        // Scroll automático al final de la sección C
+        var targetSection = esMovil === 'true' ? document.getElementById('mobile-section-c') : document.getElementById('divC');
+        if (targetSection) {
+            setTimeout(function() {
+                targetSection.scrollTop = targetSection.scrollHeight;
+            }, 100);
+        }
 
         if (elementoBoton) {
             var original = elementoBoton.textContent;
@@ -1778,16 +1788,6 @@
     // ============================================================
     //  FUNCIONES DE INTERACCIÓN
     // ============================================================
-
-    function descargarEntradaActual() {
-        var entrada = entradasRecientes.find(function(e) { return e.ddd === entradaAbiertaId; });
-        if (!entrada) {
-            alert('No hay ninguna entrada abierta para descargar.');
-            return;
-        }
-        // Función simplificada: mostrar mensaje
-        alert('La descarga de entradas estará disponible próximamente.');
-    }
 
     function mostrarTodas() {
         var items = listaEtiquetasEl.querySelectorAll('li');
