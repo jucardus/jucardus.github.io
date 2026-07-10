@@ -534,7 +534,7 @@
             color: #7ac4a0;
         }
 
-        /* QR Container - ajustado */
+        /* QR Container */
         #qr-container {
             margin-top: 18px;
             padding: 0;
@@ -1000,7 +1000,7 @@
             color: #7ac4a0;
         }
 
-        /* QR en móvil - ajustado */
+        /* QR en móvil */
         .mobile-sections .section#mobile-section-c #qr-container-movil {
             margin-top: 18px;
             padding: 0;
@@ -1772,7 +1772,6 @@
         // Scroll automático al final de la sección C después de cargar la imagen
         var targetSection = container.closest('.div-c') || container.closest('.section#mobile-section-c');
         if (targetSection) {
-            // Esperar a que la imagen se cargue
             var img = container.querySelector('img');
             if (img) {
                 img.onload = function() {
@@ -1780,7 +1779,6 @@
                         targetSection.scrollTop = targetSection.scrollHeight;
                     }, 50);
                 };
-                // Si la imagen ya está cargada (cache), ejecutar inmediatamente
                 if (img.complete) {
                     setTimeout(function() {
                         targetSection.scrollTop = targetSection.scrollHeight;
@@ -1800,6 +1798,40 @@
                 elementoBoton.textContent = original;
             }, 1500);
         }
+    }
+
+    // ============================================================
+    //  FUNCIÓN BUSCAR POR ETIQUETA (CORREGIDA)
+    // ============================================================
+    function buscarPorEtiqueta(etiqueta) {
+        if (!etiqueta || etiqueta.trim() === '') return;
+
+        var items = listaEtiquetasEl.querySelectorAll('li');
+        var encontrada = false;
+        var etqLimpia = limpiarEtiqueta(etiqueta);
+
+        items.forEach(function(li) {
+            var etq = li.dataset.etiqueta;
+            if (etq) {
+                var etqLimpiaLi = limpiarEtiqueta(etq);
+                if (etqLimpiaLi === etqLimpia) {
+                    li.click();
+                    encontrada = true;
+                    li.scrollIntoView({ block: 'center', behavior: 'smooth' });
+                }
+            }
+        });
+
+        if (!encontrada) {
+            seleccionarEtiqueta(etiqueta);
+        }
+
+        // En móvil, cambiar a la pestaña B siempre que se busque por etiqueta desde C
+        if (isMobile) {
+            cambiarPestanaMovil('b');
+        }
+
+        limpiarBusqueda();
     }
 
     // ============================================================
@@ -1884,6 +1916,10 @@
                     mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a7a8a;">No hay entradas con la etiqueta "' + displayName + '".</p>';
                     actualizarBanner('🏷️ ' + displayName + ' (sin resultados)', null);
                 }
+                // En móvil, cambiar a la pestaña B
+                if (isMobile) {
+                    cambiarPestanaMovil('b');
+                }
             })
             .catch(function(error) {
                 console.error('Error al buscar por etiqueta:', error);
@@ -1958,32 +1994,6 @@
             });
     }
 
-    function buscarPorEtiqueta(etiqueta) {
-        if (!etiqueta || etiqueta.trim() === '') return;
-
-        var items = listaEtiquetasEl.querySelectorAll('li');
-        var encontrada = false;
-        var etqLimpia = limpiarEtiqueta(etiqueta);
-
-        items.forEach(function(li) {
-            var etq = li.dataset.etiqueta;
-            if (etq) {
-                var etqLimpiaLi = limpiarEtiqueta(etq);
-                if (etqLimpiaLi === etqLimpia) {
-                    li.click();
-                    encontrada = true;
-                    li.scrollIntoView({ block: 'center', behavior: 'smooth' });
-                }
-            }
-        });
-
-        if (!encontrada) {
-            seleccionarEtiqueta(etiqueta);
-        }
-
-        limpiarBusqueda();
-    }
-
     function buscarEntradaPorId(id) {
         abrirEntradaPorId(id);
     }
@@ -2030,6 +2040,10 @@
                     mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a7a8a;">No se encontraron entradas que contengan "' + q + '".</p>';
                 }
                 seleccionarTextoBusqueda();
+                // En móvil, cambiar a la pestaña B
+                if (isMobile) {
+                    cambiarPestanaMovil('b');
+                }
             })
             .catch(function(error) {
                 console.error('Error en búsqueda de texto:', error);
