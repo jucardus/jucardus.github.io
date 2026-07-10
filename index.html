@@ -27,7 +27,7 @@
     <!-- Div A -->
     <div class="div-a" id="divA">
         <div class="header-a">
-            <h1>📖 Jucardus.com</h1>
+            <h1>📖 <a href="https://jucardus.github.io">Jucardus.com</a></h1>
             <div class="busqueda-rapida">
                 <input type="text" id="busquedaInput" placeholder="Buscar..." maxlength="60">
             </div>
@@ -251,13 +251,13 @@
                 li.classList.remove('activo');
             });
         } else if (destino === 'aclaraciones') {
-            var textoAclaraciones = '<h2>🛠 Aclaraciones</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a7a8a;">Esta sección estará disponible próximamente.</p></div>';
+            var textoAclaraciones = '<h2>🛠 Aclaraciones</h2><div class="contenido-bbb"><ul><li>Al abrir la página se muestran las treinta entradas más recientes, en la segunda columna, así como las etiquetas principales en la primera columna y la entrada más reciente hacia la derecha.</li><li>El cuadro de busca encuentra todas las coincidencias del término ingresado, pero hasta un máximo de setenta, con las más recientes a la cabeza.</li><li>Si clicas en cualquiera de las etiquetas, sea en la columna con las etiquetas principales o en una entrada abierta, se realizará una búsqueda de la etiqueta clicada en toda la base de datos, mostrando hasta un máximo de 70 coincidencias.</li><li>Las entradas completas y abiertas en la tercera columna, cuentan con una sección de etiquetas y otra inferior con herramientas de compartición (Enlace, Copiar, QR, Tuitear), de mucha utilidad para compartirlas en las redes.</li><li>Clica en el título principal para recargar el sitio y reiniciar todo.</li><li>Si deseas informar de algún enlace roto, hacer comentarios o correcciones acerca del contenido, no dudes en contactar conmigo mediante mi correo electrónico <b>jucardus en gmail punto com</b>.</li></ul></div>';
             contenidoCompletoEl.innerHTML = textoAclaraciones;
             mobileContenidoCompletoEl.innerHTML = textoAclaraciones;
             actualizarBanner('🛠 Aclaraciones', null);
             if (isMobile) cambiarPestanaMovil('c');
         } else if (destino === 'autor') {
-            var textoAutor = '<h2>👤 Autor</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a7a8a;">Esta sección estará disponible próximamente.</p></div>';
+            var textoAutor = '<h2>👤 Autor</h2><div class="contenido-bbb"><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Mis sitios web:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></div>';
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
             actualizarBanner('👤 Autor', null);
@@ -548,7 +548,7 @@
         html += '<span class="btn-compartir" onclick="copiarEnlacePermanente(\'' + entrada.ddd + '\', this)">🔗 Enlace</span>';
         html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">📋 Copiar</span>';
         html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this)">📱 QR</span>';
-        html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">🐦 Tuitear ↗</a>';
+        html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">𝕏 Tuitear ↗</a>';
         html += '</div>';
         html += '<div id="' + qrId + '" style="display:none;margin-top:18px;padding:0;border-radius:7px;text-align:center;background:transparent;"></div>';
         html += '</div>';
