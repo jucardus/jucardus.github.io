@@ -10,17 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
         /* ============================================================
-           RESET Y ESTRUCTURA BASE - MODO NOCHE
+           RESET Y ESTRUCTURA BASE - PALETA PIZARRA (verde-grisáceo)
            ============================================================ */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
             height: 100%;
             font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
             font-size: 17px;
-            background: #1a1a2e;
+            background: #1e2328;
             overflow: hidden;
             line-height: 1.5;
-            color: #e0e0e0;
+            color: #d0d4d8;
         }
 
         /* ============================================================
@@ -33,19 +33,19 @@
             height: 100vh;
             width: 100vw;
             gap: 0;
-            background: #1a1a2e;
+            background: #1e2328;
         }
 
         /* ============================================================
-           COLUMNA A - Panel izquierdo - MODO NOCHE
+           COLUMNA A - Panel izquierdo - PIZARRA
            ============================================================ */
         .div-a {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-            background: #16213e;
+            background: #1a1f24;
             padding: 0;
             overflow-y: auto;
-            border-right: 1px solid #2a3a5a;
+            border-right: 1px solid #2d343a;
             display: flex;
             flex-direction: column;
             height: 100vh;
@@ -54,15 +54,15 @@
 
         .div-a .header-a {
             padding: 14px 14px 10px 14px;
-            background: #16213e;
-            border-bottom: 1px solid #2a3a5a;
+            background: #1a1f24;
+            border-bottom: 1px solid #2d343a;
             flex-shrink: 0;
         }
 
         .div-a .header-a h1 {
             font-size: 1.3rem;
             font-weight: 700;
-            color: #e0e0e0;
+            color: #d0d4d8;
             letter-spacing: -0.5px;
             margin-bottom: 10px;
             cursor: default;
@@ -72,9 +72,9 @@
             width: 100%;
             padding: 8px 14px;
             border-radius: 24px;
-            border: 1px solid #2a3a5a;
-            background: #0f3460;
-            color: #e0e0e0;
+            border: 1px solid #2d343a;
+            background: #252b32;
+            color: #d0d4d8;
             font-size: 0.9rem;
             font-family: 'Inter', sans-serif;
             outline: none;
@@ -82,18 +82,18 @@
         }
 
         .div-a .header-a .busqueda-rapida input:focus {
-            border-color: #4a7a9a;
-            background: #1a3a6a;
+            border-color: #4a5a6a;
+            background: #2d343a;
         }
 
         .div-a .header-a .busqueda-rapida input::placeholder {
-            color: #6a8aaa;
+            color: #6a7a8a;
         }
 
         /* Navegación principal en A */
         .div-a .nav-principal {
             padding: 8px 14px 6px 14px;
-            border-bottom: 1px solid #2a3a5a;
+            border-bottom: 1px solid #2d343a;
             flex-shrink: 0;
         }
 
@@ -110,20 +110,20 @@
             padding: 5px 12px;
             border-radius: 6px;
             font-size: 0.85rem;
-            color: #8aaac0;
+            color: #8a9aaa;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
             font-weight: 500;
         }
 
         .div-a .nav-principal li:hover {
-            background: #2a3a5a;
-            color: #e0e0e0;
+            background: #2d343a;
+            color: #d0d4d8;
         }
 
         .div-a .nav-principal li.activo {
-            background: #2c3e50;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
             font-weight: 600;
         }
 
@@ -136,7 +136,7 @@
         .div-a .etiquetas-container h3 {
             font-size: 0.7rem;
             text-transform: uppercase;
-            color: #6a8aaa;
+            color: #6a7a8a;
             margin-bottom: 8px;
             letter-spacing: 0.6px;
             font-weight: 700;
@@ -153,7 +153,7 @@
             margin-bottom: 2px;
             border-radius: 6px;
             font-size: 0.9rem;
-            color: #b0c8e0;
+            color: #aab4c0;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
             word-break: break-word;
@@ -161,25 +161,25 @@
         }
 
         .div-a .etiquetas-container li:hover {
-            background: #2a3a5a;
-            color: #e0e0e0;
+            background: #2d343a;
+            color: #d0d4d8;
         }
 
         .div-a .etiquetas-container li.activo {
-            background: #2c3e50;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
             font-weight: 600;
         }
 
         .div-a .etiquetas-container li.cargando {
-            color: #6a8aaa;
+            color: #6a7a8a;
             font-style: italic;
             cursor: default;
             font-weight: 400;
         }
 
         /* ============================================================
-           COLUMNA DERECHA: D + (B + C) - MODO NOCHE
+           COLUMNA DERECHA: D + (B + C) - PIZARRA
            ============================================================ */
         .columna-derecha {
             grid-column: 2 / 3;
@@ -187,19 +187,19 @@
             display: grid;
             grid-template-rows: 50px 1fr;
             gap: 0;
-            background: #1a1a2e;
+            background: #1e2328;
             height: 100vh;
             width: 100%;
         }
 
         /* ============================================================
-           Div D - Banner superior - MODO NOCHE
+           Div D - Banner superior - PIZARRA
            ============================================================ */
         .div-d {
             grid-row: 1 / 2;
             grid-column: 1 / -1;
-            background: #0f3460;
-            color: #e0e0e0;
+            background: #252b32;
+            color: #d0d4d8;
             padding: 0 20px;
             display: flex;
             align-items: center;
@@ -212,11 +212,11 @@
         }
 
         .div-d .tema-activo {
-            background: #1a3a6a;
+            background: #2d343a;
             padding: 4px 20px;
             border-radius: 20px;
             font-size: 0.95rem;
-            border: 1px solid #2a4a7a;
+            border: 1px solid #3a434a;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -227,23 +227,23 @@
 
         .div-d .tema-activo span {
             font-weight: 600;
-            color: #b0d4f0;
+            color: #b0c4d8;
         }
 
         .div-d .tema-activo .fecha-id {
             font-weight: 400;
-            color: #b0d4f0;
+            color: #b0c4d8;
             margin-left: 8px;
             font-size: 0.85rem;
         }
 
         .div-d .tema-activo .fecha-id::before {
             content: "— ";
-            color: #6a8aaa;
+            color: #6a7a8a;
         }
 
         /* ============================================================
-           CONTENEDOR B + C - MODO NOCHE
+           CONTENEDOR B + C
            ============================================================ */
         .contenedor-bc {
             grid-row: 2 / 3;
@@ -251,33 +251,32 @@
             display: grid;
             grid-template-columns: 320px 1fr;
             gap: 0;
-            background: #1a1a2e;
+            background: #1e2328;
             height: 100%;
             min-height: 0;
             overflow: hidden;
         }
 
         /* ============================================================
-           Div B - Lista de entradas - MODO NOCHE
+           Div B - Lista de entradas - PIZARRA
            ============================================================ */
         .div-b {
             grid-column: 1 / 2;
-            background: #16213e;
-            padding: 12px 12px;
+            background: #1a1f24;
+            padding: 12px 12px 50px 12px;
             overflow-y: scroll;
-            border-right: 1px solid #2a3a5a;
+            border-right: 1px solid #2d343a;
             height: 100%;
             width: 320px;
             min-width: 320px;
             max-width: 320px;
             flex-shrink: 0;
-            padding-bottom: 50px;
         }
 
         .div-b h3 {
             font-size: 0.7rem;
             text-transform: uppercase;
-            color: #6a8aaa;
+            color: #6a7a8a;
             margin-bottom: 10px;
             letter-spacing: 0.6px;
             font-weight: 700;
@@ -292,9 +291,9 @@
         .div-b li {
             padding: 10px 14px;
             margin-bottom: 6px;
-            background: #1a2a4a;
+            background: #1e2328;
             border-radius: 8px;
-            border-left: 3px solid #3a5a7a;
+            border-left: 3px solid #3a434a;
             cursor: pointer;
             transition: background 0.15s, border-color 0.15s, transform 0.1s;
             font-size: 0.9rem;
@@ -303,56 +302,55 @@
         }
 
         .div-b li:hover {
-            background: #2a3a5a;
-            border-left-color: #5a8aaa;
+            background: #2d343a;
+            border-left-color: #5a6a7a;
             transform: translateX(2px);
         }
 
         .div-b li .titulo-parcial {
             font-weight: 600;
-            color: #c8dce8;
+            color: #c8d0d8;
             font-size: 0.95rem;
         }
 
         .div-b li .etiquetas-parcial {
             font-size: 0.75rem;
-            color: #6a8aaa;
+            color: #6a7a8a;
             display: block;
             margin-top: 3px;
         }
 
         .div-b li.cargando {
-            color: #6a8aaa;
+            color: #6a7a8a;
             font-style: italic;
             cursor: default;
-            border-left-color: #2a3a5a;
+            border-left-color: #2d343a;
             font-weight: 400;
         }
 
         .div-b li.destacado {
-            background: #2a4a6a;
-            border-left-color: #7ab0d4;
-            box-shadow: 0 0 12px rgba(90, 160, 210, 0.15);
+            background: #2d343a;
+            border-left-color: #7a9aaa;
+            box-shadow: 0 0 12px rgba(90, 120, 140, 0.15);
         }
 
         /* ============================================================
-           Div C - Contenido completo - MODO NOCHE
+           Div C - Contenido completo - PIZARRA
            ============================================================ */
         .div-c {
             grid-column: 2 / 3;
-            background: #1a1a2e;
-            padding: 18px 28px;
+            background: #1a1f24;
+            padding: 18px 28px 50px 28px;
             overflow-y: scroll;
             height: 100%;
             min-width: 0;
-            padding-bottom: 50px;
         }
 
         .div-c h2 {
             font-size: 1.6rem;
             font-weight: 600;
-            color: #d0dce8;
-            border-bottom: 2px solid #2a3a5a;
+            color: #d0d4d8;
+            border-bottom: 2px solid #2d343a;
             padding-bottom: 12px;
             margin-bottom: 16px;
             line-height: 1.3;
@@ -363,7 +361,7 @@
             line-height: 1.7;
             margin-bottom: 18px;
             font-size: 0.95rem;
-            color: #c8dce8;
+            color: #c8d0d8;
         }
 
         .div-c .contenido-bbb p { margin-bottom: 10px; }
@@ -379,29 +377,28 @@
             box-shadow: 0 2px 12px rgba(0,0,0,0.3);
         }
 
-        /* Enlaces sin subrayado y con hover */
         .div-c .contenido-bbb a {
-            color: #6ab0d4;
+            color: #6a9aaa;
             text-decoration: none;
             transition: color 0.2s;
         }
 
         .div-c .contenido-bbb a:hover {
-            color: #8ac8e8;
+            color: #8abaca;
             text-decoration: none;
         }
 
         .div-c .etiquetas-completas {
-            background: #16213e;
+            background: #1e2328;
             padding: 12px 18px;
             border-radius: 10px;
-            border: 1px solid #2a3a5a;
+            border: 1px solid #2d343a;
             margin: 14px 0;
         }
 
         .div-c .etiquetas-completas h4 {
             font-size: 0.8rem;
-            color: #6a8aaa;
+            color: #6a7a8a;
             margin-bottom: 8px;
             font-weight: 600;
             text-transform: uppercase;
@@ -417,46 +414,50 @@
         }
 
         .div-c .etiquetas-completas li {
-            background: #1a2a4a;
+            background: #1e2328;
             padding: 4px 14px;
             border-radius: 18px;
             font-size: 0.85rem;
-            color: #8ab0c8;
+            color: #8aaab8;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
             font-weight: 500;
+            border: 1px solid #2d343a;
         }
 
         .div-c .etiquetas-completas li:hover {
-            background: #2a4a6a;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
+            border-color: #3a4a5a;
         }
 
         /* Sección de compartir - estilo similar a etiquetas */
         .div-c .compartir {
-            background: #16213e;
+            background: #1e2328;
             padding: 12px 18px;
             border-radius: 10px;
-            border: 1px solid #2a3a5a;
+            border: 1px solid #2d343a;
             margin: 14px 0;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
         }
 
         .div-c .compartir h4 {
             font-size: 0.8rem;
-            color: #6a8aaa;
-            margin-right: 8px;
+            color: #6a7a8a;
+            margin-bottom: 8px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
+        .div-c .compartir .botones-compartir {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
         .div-c .compartir .btn-compartir {
-            background: #1a2a4a;
-            border: 1px solid #2a4a6a;
+            background: #1e2328;
+            border: 1px solid #2d343a;
             padding: 4px 16px;
             border-radius: 18px;
             cursor: pointer;
@@ -464,7 +465,7 @@
             transition: background 0.15s, color 0.15s, border-color 0.15s;
             font-weight: 500;
             font-family: 'Inter', sans-serif;
-            color: #8ab0c8;
+            color: #8aaab8;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -472,33 +473,33 @@
         }
 
         .div-c .compartir .btn-compartir:hover {
-            background: #2a4a6a;
-            color: #b0d4f0;
-            border-color: #3a5a7a;
+            background: #2d343a;
+            color: #b0c4d8;
+            border-color: #3a4a5a;
         }
 
         .div-c .compartir .btn-compartir.copiar-exito {
-            background: #1a4a3a;
-            border-color: #3a7a5a;
-            color: #7ad4a0;
+            background: #1a3a3a;
+            border-color: #3a5a5a;
+            color: #7ac4a0;
         }
 
-        /* Scrollbars personalizados - MODO NOCHE */
+        /* Scrollbars personalizados - PIZARRA */
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #1a1a2e;
+            background: #1a1f24;
             border-radius: 8px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #2a4a6a;
+            background: #2d343a;
             border-radius: 8px;
             min-height: 30px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #3a5a7a;
+            background: #3a434a;
         }
 
         /* Utilidades */
@@ -516,27 +517,27 @@
         }
 
         .buscar-entrada {
-            color: #6ab0d4;
+            color: #6a9aaa;
             cursor: pointer;
             font-weight: 600;
-            border-bottom: 2px dashed #3a6a8a;
+            border-bottom: 2px dashed #3a5a6a;
             padding-bottom: 1px;
             transition: color 0.2s, border-color 0.2s;
             text-decoration: none;
         }
         .buscar-entrada:hover {
-            color: #8ac8e8;
-            border-color: #5a8aaa;
+            color: #8abaca;
+            border-color: #5a7a8a;
         }
 
         /* ============================================================
-           NAVEGACIÓN POR TABS (móvil) - MODO NOCHE
+           NAVEGACIÓN POR TABS (móvil) - PIZARRA
            ============================================================ */
         .mobile-tabs {
             display: none;
-            background: #0f3460;
-            color: #e0e0e0;
-            border-bottom: 2px solid #1a3a6a;
+            background: #252b32;
+            color: #d0d4d8;
+            border-bottom: 2px solid #2d343a;
             flex-shrink: 0;
             z-index: 10;
         }
@@ -545,7 +546,7 @@
             flex: 1;
             background: transparent;
             border: none;
-            color: #6a8aaa;
+            color: #6a7a8a;
             padding: 12px 8px;
             font-size: 0.9rem;
             font-weight: 600;
@@ -557,29 +558,29 @@
         }
 
         .mobile-tabs .tab-btn:hover {
-            color: #b0d4f0;
+            color: #b0c4d8;
             background: rgba(255,255,255,0.05);
         }
 
         .mobile-tabs .tab-btn.active {
-            color: #b0d4f0;
-            border-bottom-color: #5a9fd4;
+            color: #b0c4d8;
+            border-bottom-color: #5a7a8a;
             background: rgba(255,255,255,0.05);
         }
 
         .mobile-tabs .tab-btn .badge {
-            background: #1a3a6a;
+            background: #1a1f24;
             border-radius: 12px;
             padding: 1px 10px;
             font-size: 0.75rem;
             margin-left: 6px;
             font-weight: 600;
-            color: #8ab0c8;
+            color: #8aaab8;
         }
 
         .mobile-tabs .tab-btn.active .badge {
-            background: #2a4a7a;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
         }
 
         .mobile-sections {
@@ -587,16 +588,15 @@
             flex: 1;
             overflow: hidden;
             position: relative;
-            background: #1a1a2e;
+            background: #1e2328;
         }
 
         .mobile-sections .section {
             display: none;
             height: 100%;
             overflow-y: auto;
-            padding: 12px 10px;
-            background: #16213e;
-            padding-bottom: 50px;
+            padding: 12px 10px 50px 10px;
+            background: #1a1f24;
         }
 
         .mobile-sections .section.active {
@@ -604,15 +604,14 @@
         }
 
         .mobile-sections .section#mobile-section-c {
-            background: #1a1a2e;
-            padding: 16px 16px;
-            padding-bottom: 50px;
+            background: #1a1f24;
+            padding: 16px 16px 50px 16px;
         }
 
         .mobile-sections .section h3 {
             font-size: 0.7rem;
             text-transform: uppercase;
-            color: #6a8aaa;
+            color: #6a7a8a;
             margin-bottom: 10px;
             letter-spacing: 0.6px;
             font-weight: 700;
@@ -638,7 +637,7 @@
             padding: 5px 12px;
             border-radius: 6px;
             font-size: 0.85rem;
-            color: #8aaac0;
+            color: #8a9aaa;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
             font-weight: 500;
@@ -646,13 +645,13 @@
         }
 
         .mobile-sections .section#mobile-section-a .nav-principal-movil li:hover {
-            background: #2a3a5a;
-            color: #e0e0e0;
+            background: #2d343a;
+            color: #d0d4d8;
         }
 
         .mobile-sections .section#mobile-section-a .nav-principal-movil li.activo {
-            background: #2c3e50;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
             font-weight: 600;
         }
 
@@ -660,9 +659,9 @@
             width: 100%;
             padding: 8px 14px;
             border-radius: 24px;
-            border: 1px solid #2a3a5a;
-            background: #0f3460;
-            color: #e0e0e0;
+            border: 1px solid #2d343a;
+            background: #252b32;
+            color: #d0d4d8;
             font-size: 0.9rem;
             font-family: 'Inter', sans-serif;
             outline: none;
@@ -671,14 +670,14 @@
         }
 
         .mobile-sections .section#mobile-section-a .busqueda-movil input:focus {
-            border-color: #4a7a9a;
-            background: #1a3a6a;
+            border-color: #4a5a6a;
+            background: #2d343a;
         }
 
         .mobile-sections .section#mobile-section-a .titulo-movil {
             font-size: 1.2rem;
             font-weight: 700;
-            color: #e0e0e0;
+            color: #d0d4d8;
             letter-spacing: -0.5px;
             margin-bottom: 10px;
             cursor: default;
@@ -689,7 +688,7 @@
             margin-bottom: 2px;
             border-radius: 6px;
             font-size: 0.9rem;
-            color: #b0c8e0;
+            color: #aab4c0;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
             word-break: break-word;
@@ -697,22 +696,22 @@
         }
 
         .mobile-sections .section#mobile-section-a li:hover {
-            background: #2a3a5a;
-            color: #e0e0e0;
+            background: #2d343a;
+            color: #d0d4d8;
         }
 
         .mobile-sections .section#mobile-section-a li.activo {
-            background: #2c3e50;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
             font-weight: 600;
         }
 
         .mobile-sections .section#mobile-section-b li {
             padding: 10px 12px;
             margin-bottom: 6px;
-            background: #1a2a4a;
+            background: #1e2328;
             border-radius: 8px;
-            border-left: 3px solid #3a5a7a;
+            border-left: 3px solid #3a434a;
             cursor: pointer;
             transition: background 0.15s, border-color 0.15s;
             font-size: 0.9rem;
@@ -721,33 +720,33 @@
         }
 
         .mobile-sections .section#mobile-section-b li:hover {
-            background: #2a3a5a;
-            border-left-color: #5a8aaa;
+            background: #2d343a;
+            border-left-color: #5a6a7a;
         }
 
         .mobile-sections .section#mobile-section-b li .titulo-parcial {
             font-weight: 600;
-            color: #c8dce8;
+            color: #c8d0d8;
             font-size: 0.95rem;
         }
 
         .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
             font-size: 0.75rem;
-            color: #6a8aaa;
+            color: #6a7a8a;
             display: block;
             margin-top: 3px;
         }
 
         .mobile-sections .section#mobile-section-b li.destacado {
-            background: #2a4a6a;
-            border-left-color: #7ab0d4;
+            background: #2d343a;
+            border-left-color: #7a9aaa;
         }
 
         .mobile-sections .section#mobile-section-c h2 {
             font-size: 1.4rem;
             font-weight: 600;
-            color: #d0dce8;
-            border-bottom: 2px solid #2a3a5a;
+            color: #d0d4d8;
+            border-bottom: 2px solid #2d343a;
             padding-bottom: 10px;
             margin-bottom: 14px;
             line-height: 1.3;
@@ -758,7 +757,7 @@
             line-height: 1.7;
             margin-bottom: 16px;
             font-size: 0.95rem;
-            color: #c8dce8;
+            color: #c8d0d8;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb p { margin-bottom: 8px; }
@@ -769,13 +768,13 @@
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb a {
-            color: #6ab0d4;
+            color: #6a9aaa;
             text-decoration: none;
             transition: color 0.2s;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb a:hover {
-            color: #8ac8e8;
+            color: #8abaca;
         }
 
         .mobile-sections .section#mobile-section-c .contenido-bbb img {
@@ -786,16 +785,16 @@
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas {
-            background: #16213e;
+            background: #1e2328;
             padding: 12px 16px;
             border-radius: 10px;
-            border: 1px solid #2a3a5a;
+            border: 1px solid #2d343a;
             margin: 12px 0;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
             font-size: 0.8rem;
-            color: #6a8aaa;
+            color: #6a7a8a;
             margin-bottom: 8px;
             font-weight: 600;
             text-transform: uppercase;
@@ -811,45 +810,49 @@
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas li {
-            background: #1a2a4a;
+            background: #1e2328;
             padding: 4px 14px;
             border-radius: 18px;
             font-size: 0.85rem;
-            color: #8ab0c8;
+            color: #8aaab8;
             cursor: pointer;
             transition: background 0.15s, color 0.15s;
             font-weight: 500;
+            border: 1px solid #2d343a;
         }
 
         .mobile-sections .section#mobile-section-c .etiquetas-completas li:hover {
-            background: #2a4a6a;
-            color: #b0d4f0;
+            background: #2d343a;
+            color: #b0c4d8;
+            border-color: #3a4a5a;
         }
 
         .mobile-sections .section#mobile-section-c .compartir {
-            background: #16213e;
+            background: #1e2328;
             padding: 12px 16px;
             border-radius: 10px;
-            border: 1px solid #2a3a5a;
+            border: 1px solid #2d343a;
             margin: 12px 0;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
         }
 
         .mobile-sections .section#mobile-section-c .compartir h4 {
             font-size: 0.8rem;
-            color: #6a8aaa;
-            margin-right: 8px;
+            color: #6a7a8a;
+            margin-bottom: 8px;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
+        .mobile-sections .section#mobile-section-c .compartir .botones-compartir {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
         .mobile-sections .section#mobile-section-c .compartir .btn-compartir {
-            background: #1a2a4a;
-            border: 1px solid #2a4a6a;
+            background: #1e2328;
+            border: 1px solid #2d343a;
             padding: 4px 14px;
             border-radius: 18px;
             cursor: pointer;
@@ -857,7 +860,7 @@
             transition: background 0.15s, color 0.15s, border-color 0.15s;
             font-weight: 500;
             font-family: 'Inter', sans-serif;
-            color: #8ab0c8;
+            color: #8aaab8;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
@@ -865,19 +868,19 @@
         }
 
         .mobile-sections .section#mobile-section-c .compartir .btn-compartir:hover {
-            background: #2a4a6a;
-            color: #b0d4f0;
-            border-color: #3a5a7a;
+            background: #2d343a;
+            color: #b0c4d8;
+            border-color: #3a4a5a;
         }
 
         .mobile-sections .section#mobile-section-c .compartir .btn-compartir.copiar-exito {
-            background: #1a4a3a;
-            border-color: #3a7a5a;
-            color: #7ad4a0;
+            background: #1a3a3a;
+            border-color: #3a5a5a;
+            color: #7ac4a0;
         }
 
         /* ============================================================
-           RESPONSIVE - MODO NOCHE
+           RESPONSIVE - PIZARRA
            ============================================================ */
 
         @media (max-width: 1024px) {
@@ -917,7 +920,7 @@
                 height: 100vh;
                 overflow: hidden;
                 font-size: 16px;
-                background: #1a1a2e;
+                background: #1e2328;
             }
         }
 
@@ -928,7 +931,7 @@
             }
 
             .mobile-sections .section#mobile-section-c {
-                padding: 12px 14px;
+                padding: 12px 14px 50px 14px;
             }
 
             .mobile-sections .section#mobile-section-c h2 {
@@ -1045,7 +1048,7 @@
                     <h2>Bienvenido</h2>
                     <div class="contenido-bbb">
                         <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                        <p style="color: #6a8aaa;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                        <p style="color: #6a7a8a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
                     </div>
                 </div>
             </div>
@@ -1100,7 +1103,7 @@
             <h2>Bienvenido</h2>
             <div class="contenido-bbb">
                 <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                <p style="color: #6a8aaa;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                <p style="color: #6a7a8a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
             </div>
         </div>
     </div>
@@ -1216,35 +1219,26 @@
                 actualizarURL(entrada.ddd);
                 actualizarBanner(entrada.aaa, entrada.ddd);
                 renderizarEntradasParciales(entradasRecientes);
-                // Resaltar primera entrada en B
                 resaltarPrimeraEntradaEnB();
             }
             // Quitar resaltado de etiquetas
             document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
                 li.classList.remove('activo');
             });
-            // Marcar "Inicio" en etiquetas
-            document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
-                if (li.dataset && li.dataset.etiqueta === '*') {
-                    li.classList.add('activo');
-                }
-            });
         } else if (destino === 'aclaraciones') {
-            var textoAclaraciones = '<h2>🛠 Aclaraciones</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a8aaa;">Esta sección estará disponible próximamente.</p></div>';
+            var textoAclaraciones = '<h2>🛠 Aclaraciones</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a7a8a;">Esta sección estará disponible próximamente.</p></div>';
             contenidoCompletoEl.innerHTML = textoAclaraciones;
             mobileContenidoCompletoEl.innerHTML = textoAclaraciones;
             actualizarBanner('🛠 Aclaraciones', null);
-            // En móvil cambiar a pestaña C
             if (isMobile) cambiarPestanaMovil('c');
         } else if (destino === 'autor') {
-            var textoAutor = '<h2>👤 Autor</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a8aaa;">Esta sección estará disponible próximamente.</p></div>';
+            var textoAutor = '<h2>👤 Autor</h2><div class="contenido-bbb"><p>[ en construcción ]</p><p style="color: #6a7a8a;">Esta sección estará disponible próximamente.</p></div>';
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
             actualizarBanner('👤 Autor', null);
             if (isMobile) cambiarPestanaMovil('c');
         }
 
-        // Limpiar búsqueda
         limpiarBusqueda();
     }
 
@@ -1418,7 +1412,7 @@
         if (!etiquetas || etiquetas.length === 0) {
             var li = document.createElement('li');
             li.textContent = 'Sin etiquetas principales';
-            li.style.color = '#6a8aaa';
+            li.style.color = '#6a7a8a';
             li.style.fontStyle = 'italic';
             li.style.cursor = 'default';
             listaEtiquetasEl.appendChild(li);
@@ -1464,7 +1458,7 @@
         // Desktop
         listaEntradasParcialesEl.innerHTML = '';
         if (!entradas || entradas.length === 0) {
-            listaEntradasParcialesEl.innerHTML = '<li style="color:#6a8aaa; font-style:italic; cursor:default;">No hay entradas</li>';
+            listaEntradasParcialesEl.innerHTML = '<li style="color:#6a7a8a; font-style:italic; cursor:default;">No hay entradas</li>';
             contadorEntradasEl.textContent = '(0)';
         } else {
             contadorEntradasEl.textContent = '(' + entradas.length + ')';
@@ -1488,7 +1482,7 @@
         // Móvil
         mobileListaEntradasParcialesEl.innerHTML = '';
         if (!entradas || entradas.length === 0) {
-            mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#6a8aaa; font-style:italic; cursor:default;">No hay entradas</li>';
+            mobileListaEntradasParcialesEl.innerHTML = '<li style="color:#6a7a8a; font-style:italic; cursor:default;">No hay entradas</li>';
             mobileContadorEntradasEl.textContent = '(0)';
             mobileContadorBadgeEl.textContent = '0';
         } else {
@@ -1518,7 +1512,7 @@
         var targetEl = esMovil ? mobileContenidoCompletoEl : contenidoCompletoEl;
 
         if (!entrada) {
-            targetEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">No se pudo cargar la entrada.</p>';
+            targetEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a7a8a;">No se pudo cargar la entrada.</p>';
             if (!esMovil) {
                 actualizarBanner('Error', null);
             }
@@ -1534,15 +1528,14 @@
             etiquetas.forEach(function(etq) {
                 var etqLimpia = limpiarEtiqueta(etq);
                 var etqEscapada = etqLimpia.replace(/'/g, "\\'");
-                // Marcar si es etiqueta principal
                 var esPrincipal = esEtiquetaPrincipal(etq);
-                var claseExtra = esPrincipal ? ' style="font-weight:700;color:#b0d4f0;"' : '';
+                var claseExtra = esPrincipal ? ' style="font-weight:700;color:#b0c4d8;"' : '';
                 html += '<li onclick="buscarPorEtiqueta(\'' + etqEscapada + '\')"' + claseExtra + '>' + etqLimpia + '</li>';
             });
             html += '</ul></div>';
         }
 
-        // Sección de compartir con estilo similar
+        // Sección de compartir con botones debajo del título
         var tweetText = encodeURIComponent(entrada.aaa + ' ¦ ' + entrada.ccc + ' ¦ jucardus.github.io/?q=' + entrada.ddd);
         var tweetUrl = 'https://x.com/intent/tweet?text=' + tweetText;
         var textoCopiar = entrada.aaa + ' ¦ ' + entrada.ccc + ' ¦ jucardus.github.io/?q=' + entrada.ddd;
@@ -1550,10 +1543,11 @@
 
         html += '<div class="compartir">';
         html += '<h4>📤 Compartir</h4>';
+        html += '<div class="botones-compartir">';
         html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">📋 Copiar</span>';
         html += '<span class="btn-compartir" onclick="descargarEntradaActual()">⬇️ Descargar</span>';
         html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">🐦 Tuitear ↗</a>';
-        html += '</div>';
+        html += '</div></div>';
 
         targetEl.innerHTML = html;
     }
@@ -1655,8 +1649,8 @@
             actualizarBanner(entrada.aaa, entrada.ddd);
             resaltarPrimeraEntradaEnB();
         } else {
-            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">No hay entradas disponibles.</p>';
-            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">No hay entradas disponibles.</p>';
+            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a7a8a;">No hay entradas disponibles.</p>';
+            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a7a8a;">No hay entradas disponibles.</p>';
         }
         limpiarBusqueda();
     }
@@ -1685,8 +1679,8 @@
         mobileListaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
         mobileContadorEntradasEl.textContent = '(…)';
         mobileContadorBadgeEl.textContent = '…';
-        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
+        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Obteniendo entradas con la etiqueta "' + displayName + '"</p>';
 
         var url = GAS_URL + '?etiqueta=' + encodeURIComponent(etiqueta);
         fetch(url)
@@ -1707,8 +1701,8 @@
                     actualizarBanner(entrada.aaa, entrada.ddd);
                     resaltarPrimeraEntradaEnB();
                 } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No hay entradas con la etiqueta "' + displayName + '".</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No hay entradas con la etiqueta "' + displayName + '".</p>';
+                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a7a8a;">No hay entradas con la etiqueta "' + displayName + '".</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a7a8a;">No hay entradas con la etiqueta "' + displayName + '".</p>';
                     actualizarBanner('🏷️ ' + displayName + ' (sin resultados)', null);
                 }
             })
@@ -1723,8 +1717,8 @@
         modoActual = 'entrada';
         entradaAbiertaId = id;
 
-        contenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a8aaa;">Obteniendo datos...</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a8aaa;">Obteniendo datos...</p>';
+        contenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Cargando...</h2><p style="color:#6a7a8a;">Obteniendo datos...</p>';
 
         var url = GAS_URL + '?q=' + encodeURIComponent(id);
         fetch(url)
@@ -1766,7 +1760,6 @@
                                 var etqLi = limpiarEtiqueta(li.dataset.etiqueta);
                                 if (etqLi === etqLimpia) {
                                     li.classList.add('activo');
-                                    // Scroll al elemento en desktop
                                     if (li.closest('#listaEtiquetas')) {
                                         li.scrollIntoView({ block: 'center', behavior: 'smooth' });
                                     }
@@ -1775,15 +1768,15 @@
                         });
                     }
                 } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID no corresponde a ninguna entrada.</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID no corresponde a ninguna entrada.</p>';
+                    contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a7a8a;">El ID no corresponde a ninguna entrada.</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a7a8a;">El ID no corresponde a ninguna entrada.</p>';
                     actualizarBanner('Error: ID no encontrado', null);
                 }
             })
             .catch(function(error) {
                 console.error('Error al abrir entrada:', error);
-                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p style="color:#6a8aaa;">No se pudo cargar la entrada.</p>';
-                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p style="color:#6a8aaa;">No se pudo cargar la entrada.</p>';
+                contenidoCompletoEl.innerHTML = '<h2>Error</h2><p style="color:#6a7a8a;">No se pudo cargar la entrada.</p>';
+                mobileContenidoCompletoEl.innerHTML = '<h2>Error</h2><p style="color:#6a7a8a;">No se pudo cargar la entrada.</p>';
             });
     }
 
@@ -1801,7 +1794,6 @@
                 if (etqLimpiaLi === etqLimpia) {
                     li.click();
                     encontrada = true;
-                    // Scroll al elemento en desktop
                     li.scrollIntoView({ block: 'center', behavior: 'smooth' });
                 }
             }
@@ -1834,8 +1826,8 @@
         mobileListaEntradasParcialesEl.innerHTML = '<li class="cargando">Buscando...</li>';
         mobileContadorEntradasEl.textContent = '(…)';
         mobileContadorBadgeEl.textContent = '…';
-        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Buscando entradas que contengan "' + q + '"</p>';
-        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a8aaa;">Buscando entradas que contengan "' + q + '"</p>';
+        contenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Buscando entradas que contengan "' + q + '"</p>';
+        mobileContenidoCompletoEl.innerHTML = '<h2>Buscando...</h2><p style="color:#6a7a8a;">Buscando entradas que contengan "' + q + '"</p>';
 
         var url = GAS_URL + '?buscar=' + encodeURIComponent(q);
         fetch(url)
@@ -1856,10 +1848,9 @@
                     actualizarBanner(entrada.aaa, entrada.ddd);
                     resaltarPrimeraEntradaEnB();
                 } else {
-                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No se encontraron entradas que contengan "' + q + '".</p>';
-                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a8aaa;">No se encontraron entradas que contengan "' + q + '".</p>';
+                    contenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a7a8a;">No se encontraron entradas que contengan "' + q + '".</p>';
+                    mobileContenidoCompletoEl.innerHTML = '<h2>Sin resultados</h2><p style="color:#6a7a8a;">No se encontraron entradas que contengan "' + q + '".</p>';
                 }
-                // Seleccionar texto de búsqueda
                 seleccionarTextoBusqueda();
             })
             .catch(function(error) {
@@ -1888,7 +1879,6 @@
         renderizarEntradasParciales(entradasRecientes);
 
         if (QUERY_ID) {
-            // Con query: mostrar las 30 recientes en B, y la entrada del query en C
             var id = QUERY_ID;
             var url = GAS_URL + '?q=' + encodeURIComponent(id);
             fetch(url)
@@ -1932,14 +1922,12 @@
                                 }
                             });
                         }
-                        // En móvil, mostrar la pestaña C
                         if (isMobile) {
                             cambiarPestanaMovil('c');
                         }
                     } else {
-                        // Si no se encuentra la entrada, mostrar mensaje
-                        contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID "' + id + '" no corresponde a ninguna entrada.</p>';
-                        mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a8aaa;">El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                        contenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a7a8a;">El ID "' + id + '" no corresponde a ninguna entrada.</p>';
+                        mobileContenidoCompletoEl.innerHTML = '<h2>Entrada no encontrada</h2><p style="color:#6a7a8a;">El ID "' + id + '" no corresponde a ninguna entrada.</p>';
                         actualizarBanner('Error: ID no encontrado', null);
                     }
                 })
@@ -1949,7 +1937,6 @@
             return;
         }
 
-        // Sin query: mostrar primera entrada
         if (entradasRecientes.length > 0) {
             var entrada = entradasRecientes[0];
             mostrarEntradaCompleta(entrada, false);
@@ -1958,8 +1945,8 @@
             actualizarBanner(entrada.aaa, entrada.ddd);
             resaltarPrimeraEntradaEnB();
         } else {
-            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">La base de datos está vacía.</p>';
-            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a8aaa;">La base de datos está vacía.</p>';
+            contenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a7a8a;">La base de datos está vacía.</p>';
+            mobileContenidoCompletoEl.innerHTML = '<h2>Sin entradas</h2><p style="color:#6a7a8a;">La base de datos está vacía.</p>';
             actualizarBanner('Sin entradas', null);
         }
     }
@@ -2000,7 +1987,6 @@
         console.log('DOM cargado. QUERY_ID:', QUERY_ID);
         console.log('GAS_URL:', GAS_URL);
 
-        // Evento desktop - SOLO ENTER
         busquedaInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 buscarTexto(this.value);
@@ -2010,7 +1996,6 @@
             }
         });
 
-        // Evento móvil - SOLO ENTER
         mobileBusquedaInput.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 buscarTexto(this.value);
@@ -2020,7 +2005,6 @@
             }
         });
 
-        // Sincronizar búsquedas
         busquedaInput.addEventListener('input', function() {
             mobileBusquedaInput.value = this.value;
         });
@@ -2028,7 +2012,6 @@
             busquedaInput.value = this.value;
         });
 
-        // Cargar datos con fetch
         var url = GAS_URL + '?action=getData';
         console.log('Cargando datos desde:', url);
         fetch(url)
