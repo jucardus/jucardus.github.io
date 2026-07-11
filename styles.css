@@ -106,7 +106,8 @@ html, body {
 
 /* Placeholder del campo de búsqueda: color gris tenue */
 .div-a .header-a .busqueda-rapida input::placeholder {
-    color: #6a7a8a;
+    color: #6a7a8a; // +++
+    color: #8094a8;
 }
 
 /* Contenedor scrollable del contenido de A (excluyendo la cabecera fija) */
@@ -168,7 +169,8 @@ html, body {
 .div-a .etiquetas-container h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8
     margin-bottom: 8px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -209,7 +211,8 @@ html, body {
 
 /* Etiqueta en estado de carga: texto gris, cursiva, sin interacción */
 .div-a .etiquetas-container li.cargando {
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8
     font-style: italic;
     cursor: default;
     font-weight: 400;
@@ -286,7 +289,8 @@ html, body {
 /* Guion separador antes de la fecha: contenido "— " y color gris tenue */
 .div-d .tema-activo .fecha-id::before {
     content: "— ";
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
 }
 
 
@@ -330,7 +334,8 @@ html, body {
 .div-b h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -374,14 +379,16 @@ html, body {
 /* Etiquetas parciales de la entrada en B: tamaño pequeño, color gris, bloque */
 .div-b li .etiquetas-parcial {
     font-size: 0.75rem;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     display: block;
     margin-top: 3px;
 }
 
 /* Entrada en estado de carga: texto gris, cursiva, sin interacción, borde izquierdo tenue */
 .div-b li.cargando {
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     font-style: italic;
     cursor: default;
     border-left-color: #2d343a;
@@ -522,7 +529,8 @@ html, body {
 /* Título de etiquetas completas: texto pequeño, mayúsculas, gris, negrita */
 .div-c .etiquetas-completas h4 {
     font-size: 0.8rem;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -575,7 +583,8 @@ html, body {
 /* Título de la sección de compartir: texto pequeño, mayúsculas, gris, negrita */
 .div-c .compartir h4 {
     font-size: 0.8rem;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -745,7 +754,8 @@ html, body {
     flex: 1;
     background: transparent;
     border: none;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     padding: 12px 8px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -819,7 +829,8 @@ html, body {
 .mobile-sections .section h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -956,7 +967,8 @@ html, body {
 /* Etiquetas parciales en B móvil: tamaño pequeño, color gris, bloque */
 .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
     font-size: 0.75rem;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     display: block;
     margin-top: 3px;
 }
@@ -1075,7 +1087,8 @@ html, body {
 /* Título de etiquetas completas en C móvil: texto pequeño, mayúsculas, gris */
 .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
     font-size: 0.8rem;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1123,7 +1136,8 @@ html, body {
 /* Título de compartir en C móvil: texto pequeño, mayúsculas, gris */
 .mobile-sections .section#mobile-section-c .compartir h4 {
     font-size: 0.8rem;
-    color: #6a7a8a;
+    color: #6a7a8a;  // +++
+    color: #8094a8;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
