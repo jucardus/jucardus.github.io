@@ -222,7 +222,7 @@
     });
 
     // ============================================================
-    //  FUNCIÓN DE NAVEGACIÓN PRINCIPAL
+    //  FUNCIÓN DE NAVEGACIÓN PRINCIPAL (CON SCROLL AL INICIO)
     // ============================================================
     function navegarA(destino) {
         var navItems = document.querySelectorAll('.nav-principal li');
@@ -240,6 +240,12 @@
                 li.classList.add('activo');
             }
         });
+
+        // Scroll al inicio de la sección C (desktop y móvil)
+        var divC = document.getElementById('divC');
+        var mobileDivC = document.getElementById('mobile-section-c');
+        if (divC) divC.scrollTop = 0;
+        if (mobileDivC) mobileDivC.scrollTop = 0;
 
         if (destino === 'inicio') {
             if (entradasRecientes.length > 0) {
