@@ -170,7 +170,8 @@ html, body {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: #6a7a8a;  /* +++ */
-    color: #8094a8
+    color: #8094a8;  /* +++ */
+    color: Gold;
     margin-bottom: 8px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -212,7 +213,7 @@ html, body {
 /* Etiqueta en estado de carga: texto gris, cursiva, sin interacción */
 .div-a .etiquetas-container li.cargando {
     color: #6a7a8a;  /* +++ */
-    color: #8094a8
+    color: #8094a8;
     font-style: italic;
     cursor: default;
     font-weight: 400;
