@@ -1,3 +1,7 @@
+h3 {
+    padding-bottom: +10px;
+}
+
 /* ============================================================
    RESET Y ESTRUCTURA BASE - PALETA PIZARRA
    ============================================================ */
@@ -171,7 +175,7 @@ html, body {
     text-transform: uppercase;
     color: #6a7a8a; /* +++ */
     color: #8094a8; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 8px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -337,7 +341,7 @@ html, body {
     text-transform: uppercase;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -533,7 +537,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -588,7 +592,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -835,7 +839,7 @@ html, body {
     text-transform: uppercase;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -986,7 +990,7 @@ html, body {
 
 /* Título de entrada en C móvil: tamaño grande, negrita, borde inferior */
 .mobile-sections .section#mobile-section-c h2 {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #d0d4d8;
     border-bottom: 2px solid #2d343a;
@@ -1094,7 +1098,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1144,7 +1148,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab;
+    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1308,7 +1312,7 @@ html, body {
 
     /* Título más pequeño en C móvil */
     .mobile-sections .section#mobile-section-c h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     /* Contenido más pequeño en C móvil */
