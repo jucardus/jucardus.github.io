@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta content='Citas y proverbios, Diccionario chino-español, Diccionario francés-español, Diccionario inglés-español, Diccionario multilingüe, Frases chinas desglosadas, Frases latinas desglosadas, Frases multilingües, Glosarios, Mis sitios web, Música, Radicales chinos, Reflexiones, Sinónimos españoles, Sinónimos ingleses, Tareas pendientes, Vocabulario francés-español, Vocabulario inglés-español' name='keywords'/>
+    <meta content='Mi sitio central, con diccionarios, citas, reflexiones, frases desglosadas y más.' name='description'/>
     <title>Jucardus.com</title>
 </head>
 <body>
@@ -38,7 +40,7 @@
                 <ul>
                     <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">🏷️ Inicio</li>
                     <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">🛠 Aclaraciones</li>
-                    <li data-nav="autor" onclick="navegarA('autor')">👤 Autor</li>
+                    <li data-nav="autor" onclick="navegarA('autor')">👤 Autor y contacto</li>
                 </ul>
             </div>
 
@@ -111,7 +113,7 @@
             <ul>
                 <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">🏷️ Inicio</li>
                 <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">🛠 Aclaraciones</li>
-                <li data-nav="autor" onclick="navegarA('autor')">👤 Autor</li>
+                <li data-nav="autor" onclick="navegarA('autor')">👤 Autor y contacto</li>
             </ul>
         </div>
 
@@ -257,10 +259,10 @@
             actualizarBanner('🛠 Aclaraciones', null);
             if (isMobile) cambiarPestanaMovil('c');
         } else if (destino === 'autor') {
-            var textoAutor = `<h2>👤 Autor</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Mis sitios web:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer" target="_blank">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul></div>`;
+            var textoAutor = `<h2>👤 Autor y contacto</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Mis sitios web:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer" target="_blank">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul></div>`;
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
-            actualizarBanner('👤 Autor', null);
+            actualizarBanner('👤 Autor y contacto', null);
             if (isMobile) cambiarPestanaMovil('c');
         }
 
