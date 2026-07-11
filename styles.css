@@ -351,7 +351,7 @@ html, body {
 /* Cada entrada en la lista: padding, borde redondeado, borde izquierdo, cursor pointer, con sombra */
 .div-b li {
     padding: 10px 14px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     background: #1e2328;
     border-radius: 8px;
     border-left: 3px solid #3a434a;
