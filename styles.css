@@ -107,7 +107,7 @@ html, body {
 /* Placeholder del campo de búsqueda: color gris tenue */
 .div-a .header-a .busqueda-rapida input::placeholder {
     color: #6a7a8a; /* +++ */
-    color: #899eb3;
+    color: Gold;
 }
 
 /* Contenedor scrollable del contenido de A (excluyendo la cabecera fija) */
@@ -290,7 +290,7 @@ html, body {
 .div-d .tema-activo .fecha-id::before {
     content: "— ";
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
 }
 
 
@@ -335,7 +335,7 @@ html, body {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -380,7 +380,7 @@ html, body {
 .div-b li .etiquetas-parcial {
     font-size: 0.75rem;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     display: block;
     margin-top: 3px;
 }
@@ -388,7 +388,7 @@ html, body {
 /* Entrada en estado de carga: texto gris, cursiva, sin interacción, borde izquierdo tenue */
 .div-b li.cargando {
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     font-style: italic;
     cursor: default;
     border-left-color: #2d343a;
@@ -530,7 +530,7 @@ html, body {
 .div-c .etiquetas-completas h4 {
     font-size: 0.8rem;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -584,7 +584,7 @@ html, body {
 .div-c .compartir h4 {
     font-size: 0.8rem;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -755,7 +755,7 @@ html, body {
     background: transparent;
     border: none;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     padding: 12px 8px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -830,7 +830,7 @@ html, body {
     font-size: 0.7rem;
     text-transform: uppercase;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -968,7 +968,7 @@ html, body {
 .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
     font-size: 0.75rem;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     display: block;
     margin-top: 3px;
 }
@@ -1088,7 +1088,7 @@ html, body {
 .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
     font-size: 0.8rem;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1137,7 +1137,7 @@ html, body {
 .mobile-sections .section#mobile-section-c .compartir h4 {
     font-size: 0.8rem;
     color: #6a7a8a;  /* +++ */
-    color: #899eb3;
+    color: Gold;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
