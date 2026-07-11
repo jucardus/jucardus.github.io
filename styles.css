@@ -171,7 +171,7 @@ html, body {
     text-transform: uppercase;
     color: #6a7a8a; /* +++ */
     color: #8094a8; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 8px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -337,7 +337,7 @@ html, body {
     text-transform: uppercase;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -533,7 +533,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -588,7 +588,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -835,7 +835,7 @@ html, body {
     text-transform: uppercase;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -1094,7 +1094,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1144,7 +1144,7 @@ html, body {
     font-size: 0.8rem;
     color: #6a7a8a; /* +++ */
     color: #899eb3; /* +++ */
-    color: LightYellow;
+    color: LightYellow; color: #6ec48b;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
