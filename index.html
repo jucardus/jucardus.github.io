@@ -212,6 +212,16 @@
         if (mobileSectionsList[tab]) {
             mobileSectionsList[tab].classList.add('active');
         }
+        
+        // ✅ Scroll al inicio de la sección C después de cambiar la pestaña
+        if (tab === 'c') {
+            var mobileDivC = document.getElementById('mobile-section-c');
+            if (mobileDivC) {
+                setTimeout(function() {
+                    mobileDivC.scrollTop = 0;
+                }, 50);
+            }
+        }
     }
 
     tabButtons.forEach(function(btn) {
@@ -241,11 +251,9 @@
             }
         });
 
-        // Scroll al inicio de la sección C (desktop y móvil)
+        // Scroll al inicio de la sección C (desktop)
         var divC = document.getElementById('divC');
-        var mobileDivC = document.getElementById('mobile-section-c');
         if (divC) divC.scrollTop = 0;
-        if (mobileDivC) mobileDivC.scrollTop = 0;
 
         if (destino === 'inicio') {
             if (entradasRecientes.length > 0) {
@@ -265,19 +273,27 @@
             contenidoCompletoEl.innerHTML = textoAclaraciones;
             mobileContenidoCompletoEl.innerHTML = textoAclaraciones;
             actualizarBanner('🛠 Aclaraciones', null);
-            if (isMobile) cambiarPestanaMovil('c');
+            if (isMobile) {
+                cambiarPestanaMovil('c');
+            } else {
+                // Desktop: scroll al inicio ya se hizo arriba
+            }
         } else if (destino === 'autor') {
             var textoAutor = `<h2>👤 Autor y contacto</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Linktree Jucardus:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer" target="_blank">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul><h3>Mis sitios web</h3><ul><li><b>Álbum de fotografías:</b> <a href="https://fot.jucardus.com" rel="noopener noreferrer" target="_blank">fot.jucardus.com ↗</a></li><li><b>Canal en YouTube:</b> <a href="https://you.jucardus.com" rel="noopener noreferrer" target="_blank">you.jucardus.com ↗</a></li><li><b>Facebook:</b> <a href="https://fac.jucardus.com" rel="noopener noreferrer" target="_blank">fac.jucardus.com ↗</a></li><li><b>Google Maps:</b> <a href="https://map.jucardus.com" rel="noopener noreferrer" target="_blank">map.jucardus.com ↗</a></li><li><b>Linktree:</b> <a href="https://lin.jucardus.com" rel="noopener noreferrer" target="_blank">lin.jucardus.com ↗</a></li><li><b>Música clásica:</b> <a href="https://mus.jucardus.com" rel="noopener noreferrer" target="_blank">mus.jucardus.com ↗</a></li><li><b>𝕏 Twitter:</b> <a href="https://x.jucardus.com" rel="noopener noreferrer" target="_blank">x.jucardus.com ↗</a></li></ul></div>`;
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
             actualizarBanner('👤 Autor y contacto', null);
-            if (isMobile) cambiarPestanaMovil('c');
+            if (isMobile) {
+                cambiarPestanaMovil('c');
+            }
         } else if (destino === 'donaciones') {
             var textoDonaciones = '<h2>🎁 Donaciones</h2><div class="contenido-bbb"><p style="color: #6a7a8a;">[ en preparación ]</p><p>Esta sección estará disponible próximamente para quienes deseen apoyar el proyecto.</p><p style="color: #6a7a8a;">¡Gracias por tu interés! 🙏</p></div>';
             contenidoCompletoEl.innerHTML = textoDonaciones;
             mobileContenidoCompletoEl.innerHTML = textoDonaciones;
             actualizarBanner('🎁 Donaciones', null);
-            if (isMobile) cambiarPestanaMovil('c');
+            if (isMobile) {
+                cambiarPestanaMovil('c');
+            }
         }
 
         limpiarBusqueda();
