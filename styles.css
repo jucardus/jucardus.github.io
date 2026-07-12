@@ -77,7 +77,12 @@ html, body {
 .div-a {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background: #1a1f24;
+    background: #171b20;
+    background: #1a2e31;
+    background: #1e2428;
+    background: #18211b;
+    background: #1a1f24;  /* +++ */
+    background-color: color-mix(in srgb, #1a1f24, black 12%);
     border-right: 1px solid #2d343a;
     display: flex;
     flex-direction: column;
@@ -88,7 +93,12 @@ html, body {
 /* Cabecera fija de la columna A: contiene título y buscador, sticky en la parte superior */
 .div-a .header-a {
     padding: 14px 14px 10px 14px;
-    background: #1a1f24;
+    background: #171b20;
+    background: #1a2e31;
+    background: #1e2428;
+    background: #18211b;
+    background: #1a1f24; /* +++ */
+    background-color: color-mix(in srgb, #1a1f24, black 12%);
     border-bottom: 1px solid #2d343a;
     flex-shrink: 0;
     position: sticky;
