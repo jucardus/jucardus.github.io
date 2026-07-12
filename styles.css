@@ -3,6 +3,22 @@ h3 {
     padding-top: +7px;
 }
 
+/* Propiedades de los span para busca interna de etiquetas, iguales a los enlaces */
+
+.buscar-etiqueta {
+    color: #7abaca;
+    text-decoration: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    border-bottom: 1px solid rgba(90, 150, 180, 0.2);
+}
+
+.buscar-etiqueta:hover {
+    color: #9ad4ea;
+    text-shadow: 0 0 8px rgba(90, 180, 210, 0.15);
+    border-bottom-color: rgba(90, 180, 210, 0.5);
+    cursor: pointer;
+}
+
 /* ============================================================
    RESET Y ESTRUCTURA BASE - PALETA PIZARRA
    ============================================================ */
