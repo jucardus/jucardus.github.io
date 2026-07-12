@@ -77,12 +77,8 @@ html, body {
 .div-a {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background: #171b20;
-    background: #1a2e31;
-    background: #1e2428;
-    background: #18211b;
     background: #1a1f24;  /* +++ */
-    background-color: color-mix(in srgb, #1a1f24, black 12%);
+    background-color: color-mix(in srgb, #1a1f24, black 15%);
     border-right: 1px solid #2d343a;
     display: flex;
     flex-direction: column;
@@ -93,12 +89,8 @@ html, body {
 /* Cabecera fija de la columna A: contiene título y buscador, sticky en la parte superior */
 .div-a .header-a {
     padding: 14px 14px 10px 14px;
-    background: #171b20;
-    background: #1a2e31;
-    background: #1e2428;
-    background: #18211b;
     background: #1a1f24; /* +++ */
-    background-color: color-mix(in srgb, #1a1f24, black 12%);
+    background-color: color-mix(in srgb, #1a1f24, black 15%);
     border-bottom: 1px solid #2d343a;
     flex-shrink: 0;
     position: sticky;
@@ -277,7 +269,9 @@ html, body {
 .div-d {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    background: #252b32;
+    background: #252b32; /* +++ */
+    /*background-color: color-mix(in srgb, #252b32, white 3%);*/
+    background: #2d343a; /* el mismo color que las entradas previas abiertas de la sección B */
     color: #d0d4d8;
     padding: 0 20px;
     display: flex;
@@ -292,7 +286,8 @@ html, body {
 
 /* Tema activo en el banner: badge con fondo y borde, texto centrado, sin desbordamiento */
 .div-d .tema-activo {
-    background: #2d343a;
+    background: #2d343a; /* +++ */
+    background-color: color-mix(in srgb, #2d343a, black 15%);
     padding: 4px 20px;
     border-radius: 20px;
     font-size: 0.95rem;
@@ -414,7 +409,6 @@ html, body {
 .div-b li .etiquetas-parcial {
     font-size: 0.75rem;
     color: #6a7a8a; /* +++ */
-    color: #899eb3;
     display: block;
     margin-top: 3px;
 }
