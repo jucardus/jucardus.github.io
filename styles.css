@@ -3,6 +3,9 @@ h3 {
     padding-top: +7px;
 }
 
+
+/* Propiedades para todos los enlaces de busca interna, tanto de identificadores como de etiquetas */
+
 .busca-interna {
     color: #7abaca;
     text-decoration: none;
