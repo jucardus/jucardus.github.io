@@ -29,7 +29,7 @@
     <!-- Div A -->
     <div class="div-a" id="divA">
         <div class="header-a">
-            <h1>📖 <a class="enlace-manual" href="https://jucardus.github.io">Jucardus.com</a></h1>
+            <h1><a class="enlace-manual" href="https://jucardus.github.io">Jucardus.com</a></h1>
             <div class="busqueda-rapida">
                 <input type="text" id="busquedaInput" placeholder="Buscar..." maxlength="60">
             </div>
@@ -38,15 +38,15 @@
         <div class="contenido-a">
             <div class="nav-principal">
                 <ul>
-                    <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">🏷️ Inicio</li>
-                    <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">🛠 Aclaraciones</li>
-                    <li data-nav="autor" onclick="navegarA('autor')">👤 Autor y contacto</li>
-                    <li data-nav="donaciones" onclick="navegarA('donaciones')">🎁 Donaciones</li>
+                    <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">Inicio</li>
+                    <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">Aclaraciones</li>
+                    <li data-nav="autor" onclick="navegarA('autor')">Autor y contacto</li>
+                    <li data-nav="donaciones" onclick="navegarA('donaciones')">Donaciones</li>
                 </ul>
             </div>
 
             <div class="etiquetas-container">
-                <h3>📂 Etiquetas principales</h3>
+                <h3>Etiquetas principales</h3>
                 <ul id="listaEtiquetas">
                     <li class="cargando">Cargando etiquetas...</li>
                 </ul>
@@ -70,7 +70,7 @@
 
             <!-- Div B -->
             <div class="div-b" id="divB">
-                <h3>📋 Entradas <span id="contadorEntradas">(0)</span></h3>
+                <h3>Entradas <span id="contadorEntradas">(0)</span></h3>
                 <ul id="listaEntradasParciales">
                     <li class="cargando">Cargando entradas...</li>
                 </ul>
@@ -82,7 +82,7 @@
                     <h2>Bienvenido</h2>
                     <div class="contenido-bbb">
                         <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                        <p style="color: #6a7a8a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                        <p style="color: #6a7a8a;"><em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
                     </div>
                 </div>
             </div>
@@ -97,36 +97,36 @@
      ============================================================ -->
 
 <div class="mobile-tabs" id="mobileTabs" style="display:none;">
-    <button class="tab-btn active" data-tab="a">🏷️ Etiquetas</button>
-    <button class="tab-btn" data-tab="b">📋 Entradas <span class="badge" id="mobileContadorBadge">0</span></button>
-    <button class="tab-btn" data-tab="c">📄 Contenido</button>
+    <button class="tab-btn active" data-tab="a">Etiquetas</button>
+    <button class="tab-btn" data-tab="b">Entradas <span class="badge" id="mobileContadorBadge">0</span></button>
+    <button class="tab-btn" data-tab="c">Contenido</button>
 </div>
 
 <div class="mobile-sections" id="mobileSections" style="display:none;">
 
     <div class="section active" id="mobile-section-a">
-        <div class="titulo-movil">📖 <a class="enlace-manual" href="https://jucardus.github.io">Jucardus.com</a></div>
+        <div class="titulo-movil"><a class="enlace-manual" href="https://jucardus.github.io">Jucardus.com</a></div>
         <div class="busqueda-movil">
             <input type="text" id="mobileBusquedaInput" placeholder="Buscar..." maxlength="60">
         </div>
 
         <div class="nav-principal-movil">
             <ul>
-                <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">🏷️ Inicio</li>
-                <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">🛠 Aclaraciones</li>
-                <li data-nav="autor" onclick="navegarA('autor')">👤 Autor y contacto</li>
-                <li data-nav="donaciones" onclick="navegarA('donaciones')">🎁 Donaciones</li>
+                <li class="activo" data-nav="inicio" onclick="navegarA('inicio')">Inicio</li>
+                <li data-nav="aclaraciones" onclick="navegarA('aclaraciones')">Aclaraciones</li>
+                <li data-nav="autor" onclick="navegarA('autor')">Autor y contacto</li>
+                <li data-nav="donaciones" onclick="navegarA('donaciones')">Donaciones</li>
             </ul>
         </div>
 
-        <h3>📂 Etiquetas principales</h3>
+        <h3>Etiquetas principales</h3>
         <ul id="mobileListaEtiquetas">
             <li class="cargando">Cargando etiquetas...</li>
         </ul>
     </div>
 
     <div class="section" id="mobile-section-b">
-        <h3>📋 Entradas <span id="mobileContadorEntradas">(0)</span></h3>
+        <h3>Entradas <span id="mobileContadorEntradas">(0)</span></h3>
         <ul id="mobileListaEntradasParciales">
             <li class="cargando">Cargando entradas...</li>
         </ul>
@@ -137,7 +137,7 @@
             <h2>Bienvenido</h2>
             <div class="contenido-bbb">
                 <p>Selecciona una entrada de la lista o una etiqueta para comenzar.</p>
-                <p style="color: #6a7a8a;">📌 <em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
+                <p style="color: #6a7a8a;"><em>Las entradas se cargan desde la base de datos en Google Drive.</em></p>
             </div>
         </div>
     </div>
@@ -269,28 +269,28 @@
                 li.classList.remove('activo');
             });
         } else if (destino === 'aclaraciones') {
-            var textoAclaraciones = '<h2>🛠 Aclaraciones</h2><div class="contenido-bbb"><h3>Propósito del sitio</h3><p>En este sitio encontrarás algunos diccionarios en desarrollo —como el de chino, inglés o el multilingüe—, así como ciertas herramientas para el estudio del latín y el chino con frases desglosadas y notas gramaticales sucintas. También estoy reuniendo citas de autores diversos, apotegmas y proverbios seleccionados con esmero. Otro tema de interés son los vocabularios de francés e inglés, en los que se muestran traducciones de términos en contextos principalmente literarios, para profundizar en el conocimiento de esas lenguas. — ¡Gracias por tu visita!</p><h3>Cómo funciona el sitio</h3><ul><li>Al abrir el sitio se muestran las treinta entradas más recientes, en la segunda columna, así como las etiquetas principales en la primera columna y la entrada más reciente hacia la derecha.</li><li>El cuadro de busca en la primera columna y debajo del título principal, encuentra en la base de datos todas las coincidencias del término ingresado, pero hasta un máximo de setenta, con las más recientes a la cabeza.</li><li>Si clicas en cualquiera de las etiquetas, sea en la columna con las etiquetas principales o en una entrada abierta, se realizará una búsqueda de la etiqueta clicada en toda la base de datos, mostrando hasta un máximo de setenta coincidencias.</li><li>Las entradas completas y abiertas en la tercera columna cuentan con una sección de etiquetas y otra inferior con herramientas de compartición (Enlace, Copiar, QR, Tuitear), de mucha utilidad para la difusión en las redes.</li><li>Clica en el título principal para recargar el sitio y reiniciar todo.</li><li>Si deseas informar de algún enlace roto, hacer comentarios o hacer correcciones acerca del contenido, no dudes en contactar conmigo mediante mi correo electrónico <b>jucardus en gmail punto com</b>.</li></ul></div>';
+            var textoAclaraciones = '<h2>Aclaraciones</h2><div class="contenido-bbb"><h3>Propósito del sitio</h3><p>En este sitio encontrarás algunos diccionarios en desarrollo —como el de chino, inglés o el multilingüe—, así como ciertas herramientas para el estudio del latín y el chino con frases desglosadas y notas gramaticales sucintas. También estoy reuniendo citas de autores diversos, apotegmas y proverbios seleccionados con esmero. Otro tema de interés son los vocabularios de francés e inglés, en los que se muestran traducciones de términos en contextos principalmente literarios, para profundizar en el conocimiento de esas lenguas. — ¡Gracias por tu visita!</p><h3>Cómo funciona el sitio</h3><ul><li>Al abrir el sitio se muestran las treinta entradas más recientes, en la segunda columna, así como las etiquetas principales en la primera columna y la entrada más reciente hacia la derecha.</li><li>El cuadro de busca en la primera columna y debajo del título principal, encuentra en la base de datos todas las coincidencias del término ingresado, pero hasta un máximo de setenta, con las más recientes a la cabeza.</li><li>Si clicas en cualquiera de las etiquetas, sea en la columna con las etiquetas principales o en una entrada abierta, se realizará una búsqueda de la etiqueta clicada en toda la base de datos, mostrando hasta un máximo de setenta coincidencias.</li><li>Las entradas completas y abiertas en la tercera columna cuentan con una sección de etiquetas y otra inferior con herramientas de compartición (Enlace, Copiar, QR, Tuitear), de mucha utilidad para la difusión en las redes.</li><li>Clica en el título principal para recargar el sitio y reiniciar todo.</li><li>Si deseas informar de algún enlace roto, hacer comentarios o hacer correcciones acerca del contenido, no dudes en contactar conmigo mediante mi correo electrónico <b>jucardus en gmail punto com</b>.</li></ul></div>';
             contenidoCompletoEl.innerHTML = textoAclaraciones;
             mobileContenidoCompletoEl.innerHTML = textoAclaraciones;
-            actualizarBanner('🛠 Aclaraciones', null);
+            actualizarBanner('Aclaraciones', null);
             if (isMobile) {
                 cambiarPestanaMovil('c');
             } else {
                 // Desktop: scroll al inicio ya se hizo arriba
             }
         } else if (destino === 'autor') {
-            var textoAutor = `<h2>👤 Autor y contacto</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Linktree Jucardus:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer" target="_blank">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul><h3>Mis sitios web</h3><ul><li><b>Álbum de fotografías:</b> <a href="https://fot.jucardus.com" rel="noopener noreferrer" target="_blank">fot.jucardus.com ↗</a></li><li><b>Canal en YouTube:</b> <a href="https://you.jucardus.com" rel="noopener noreferrer" target="_blank">you.jucardus.com ↗</a></li><li><b>Facebook:</b> <a href="https://fac.jucardus.com" rel="noopener noreferrer" target="_blank">fac.jucardus.com ↗</a></li><li><b>Google Maps:</b> <a href="https://map.jucardus.com" rel="noopener noreferrer" target="_blank">map.jucardus.com ↗</a></li><li><b>Linktree:</b> <a href="https://lin.jucardus.com" rel="noopener noreferrer" target="_blank">lin.jucardus.com ↗</a></li><li><b>Música clásica:</b> <a href="https://mus.jucardus.com" rel="noopener noreferrer" target="_blank">mus.jucardus.com ↗</a></li><li><b>𝕏 Twitter:</b> <a href="https://x.jucardus.com" rel="noopener noreferrer" target="_blank">x.jucardus.com ↗</a></li></ul></div>`;
+            var textoAutor = `<h2>Autor y contacto</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> <span class="shortLinksSpans" onclick="searchId('jucardus')">Jucardus ©</span></li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Linktree Jucardus:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer" target="_blank">linktr.ee/jucardus ↗</a></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul><h3>Mis sitios web</h3><ul><li><b>Álbum de fotografías:</b> <a href="https://fot.jucardus.com" rel="noopener noreferrer" target="_blank">fot.jucardus.com ↗</a></li><li><b>Canal en YouTube:</b> <a href="https://you.jucardus.com" rel="noopener noreferrer" target="_blank">you.jucardus.com ↗</a></li><li><b>Facebook:</b> <a href="https://fac.jucardus.com" rel="noopener noreferrer" target="_blank">fac.jucardus.com ↗</a></li><li><b>Google Maps:</b> <a href="https://map.jucardus.com" rel="noopener noreferrer" target="_blank">map.jucardus.com ↗</a></li><li><b>Linktree:</b> <a href="https://lin.jucardus.com" rel="noopener noreferrer" target="_blank">lin.jucardus.com ↗</a></li><li><b>Música clásica:</b> <a href="https://mus.jucardus.com" rel="noopener noreferrer" target="_blank">mus.jucardus.com ↗</a></li><li><b>𝕏 Twitter:</b> <a href="https://x.jucardus.com" rel="noopener noreferrer" target="_blank">x.jucardus.com ↗</a></li></ul></div>`;
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
-            actualizarBanner('👤 Autor y contacto', null);
+            actualizarBanner('Autor y contacto', null);
             if (isMobile) {
                 cambiarPestanaMovil('c');
             }
         } else if (destino === 'donaciones') {
-            var textoDonaciones = '<h2>🎁 Donaciones</h2><div class="contenido-bbb"><p style="color: #6a7a8a;">[ en preparación ]</p><p>Esta sección estará disponible próximamente para quienes deseen apoyar el proyecto.</p><p style="color: #6a7a8a;">¡Gracias por tu interés! 🙏</p></div>';
+            var textoDonaciones = '<h2>Donaciones</h2><div class="contenido-bbb"><p style="color: #6a7a8a;">[ en preparación ]</p><p>Esta sección estará disponible próximamente para quienes deseen apoyar el proyecto.</p><p style="color: #6a7a8a;">¡Gracias por tu interés!</p></div>';
             contenidoCompletoEl.innerHTML = textoDonaciones;
             mobileContenidoCompletoEl.innerHTML = textoDonaciones;
-            actualizarBanner('🎁 Donaciones', null);
+            actualizarBanner('Donaciones', null);
             if (isMobile) {
                 cambiarPestanaMovil('c');
             }
@@ -555,7 +555,7 @@
 
         var etiquetas = entrada.ccc.split(',').map(function(e) { return e.trim(); }).filter(function(e) { return e; });
         if (etiquetas.length > 0) {
-            html += '<div class="etiquetas-completas"><h4>🏷️ Etiquetas</h4><ul>';
+            html += '<div class="etiquetas-completas"><h4>Etiquetas</h4><ul>';
             etiquetas.forEach(function(etq) {
                 var etqLimpia = limpiarEtiqueta(etq);
                 var etqEscapada = etqLimpia.replace(/'/g, "\\'");
@@ -575,11 +575,11 @@
         var qrId = 'qr-container' + (esMovil ? '-movil' : '');
 
         html += '<div class="compartir">';
-        html += '<h4>📤 Compartir</h4>';
+        html += '<h4>Compartir</h4>';
         html += '<div class="botones-compartir">';
-        html += '<span class="btn-compartir" onclick="copiarEnlacePermanente(\'' + entrada.ddd + '\', this)">🔗 Enlace</span>';
-        html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">📋 Copiar</span>';
-        html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this)">📱 QR</span>';
+        html += '<span class="btn-compartir" onclick="copiarEnlacePermanente(\'' + entrada.ddd + '\', this)">Enlace</span>';
+        html += '<span class="btn-compartir" onclick="copiarAlPortapapeles(\'' + textoCopiarEscapado + '\', this)">Copiar</span>';
+        html += '<span class="btn-compartir" onclick="mostrarQR(\'' + entrada.ddd + '\', \'' + qrId + '\', this)">QR</span>';
         html += '<a class="btn-compartir" href="' + tweetUrl + '" target="_blank" rel="noopener noreferrer">𝕏 Tuitear ↗</a>';
         html += '</div>';
         html += '<div id="' + qrId + '" style="display:none;margin-top:18px;padding:0;border-radius:7px;text-align:center;background:transparent;"></div>';
@@ -710,7 +710,7 @@
 
         if (elementoBoton) {
             var original = elementoBoton.textContent;
-            elementoBoton.textContent = '📱 QR ✓';
+            elementoBoton.textContent = 'QR ✓';
             setTimeout(function() {
                 elementoBoton.textContent = original;
             }, 1500);

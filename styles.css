@@ -1,5 +1,6 @@
 h3 {
     padding-bottom: +10px;
+    padding-top: +7px;
 }
 
 /* ============================================================
@@ -80,7 +81,7 @@ html, body {
 
 /* Título principal "Jucardus.com" en la cabecera: tamaño grande, negrita, color claro */
 .div-a .header-a h1 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #d0d4d8;
     letter-spacing: -0.5px;
