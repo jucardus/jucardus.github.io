@@ -15,8 +15,33 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <!-- ============================================================
+         METADATOS ESTÁTICOS (base)
+         ============================================================ -->
     <meta content='Actividad reciente, Apotegmas, Citas y proverbios, Diccionario chino-español, Diccionario francés-español, Diccionario inglés-español, Diccionario multilingüe, Frases chinas desglosadas, Frases latinas desglosadas, Frases multilingües, Glosarios, Mis sitios web, Música clásica, Radicales chinos, Reflexiones, Sinónimos españoles, Sinónimos ingleses, Tareas pendientes, Vocabulario francés-español, Vocabulario inglés-español' name='keywords'/>
-    <meta content='Mi sitio central, con diccionarios, citas, reflexiones, frases desglosadas y más.' name='description'/>
+    <meta name="description" content="Mi sitio central, con diccionarios, citas, reflexiones, frases desglosadas y más."/>
+    
+    <!-- ============================================================
+         METADATOS DINÁMICOS (se actualizan con JavaScript)
+         ============================================================ -->
+    <title id="dynamicTitle">Jucardus.com</title>
+    
+    <!-- Open Graph (OG) tags -->
+    <meta property="og:title" content="Jucardus.com" id="ogTitle"/>
+    <meta property="og:description" content="Mi sitio central, con diccionarios, citas, reflexiones, frases desglosadas y más." id="ogDescription"/>
+    <meta property="og:url" content="https://jucardus.github.io" id="ogUrl"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://jucardus.github.io/og-image.jpg" id="ogImage"/>
+    <meta property="og:site_name" content="Jucardus.com"/>
+    
+    <!-- Twitter Card (para X/Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" id="twitterCard"/>
+    <meta name="twitter:title" content="Jucardus.com" id="twitterTitle"/>
+    <meta name="twitter:description" content="Mi sitio central, con diccionarios, citas, reflexiones, frases desglosadas y más." id="twitterDescription"/>
+    <meta name="twitter:image" content="https://jucardus.github.io/og-image.jpg" id="twitterImage"/>
+    <meta name="twitter:site" content="@jucardus"/>
+    
     <title>Jucardus.com</title>
 </head>
 <body>
@@ -232,6 +257,70 @@
     });
 
     // ============================================================
+    //  FUNCIÓN PARA ACTUALIZAR METADATOS (TITLE + OG)
+    // ============================================================
+    function actualizarMetadatos(titulo, descripcion, url, imagen) {
+        // Valores por defecto
+        var tituloBase = 'Jucardus.com';
+        var descripcionBase = 'Mi sitio central, con diccionarios, citas, reflexiones, frases desglosadas y más.';
+        var urlBase = 'https://jucardus.github.io';
+        var imagenBase = 'https://jucardus.github.io/og-image.jpg';
+
+        // Usar valores proporcionados o los por defecto
+        var tituloFinal = titulo || tituloBase;
+        var descripcionFinal = descripcion || descripcionBase;
+        var urlFinal = url || urlBase;
+        var imagenFinal = imagen || imagenBase;
+
+        // 1. Actualizar <title>
+        var titleEl = document.getElementById('dynamicTitle');
+        if (titleEl) {
+            titleEl.textContent = tituloFinal;
+        } else {
+            // Fallback: actualizar el primer <title> del head
+            var titles = document.getElementsByTagName('title');
+            if (titles.length > 0) {
+                titles[0].textContent = tituloFinal;
+            }
+        }
+
+        // 2. Actualizar OG:title
+        var ogTitle = document.getElementById('ogTitle');
+        if (ogTitle) ogTitle.content = tituloFinal;
+
+        // 3. Actualizar OG:description
+        var ogDesc = document.getElementById('ogDescription');
+        if (ogDesc) ogDesc.content = descripcionFinal;
+
+        // 4. Actualizar OG:url
+        var ogUrl = document.getElementById('ogUrl');
+        if (ogUrl) ogUrl.content = urlFinal;
+
+        // 5. Actualizar OG:image
+        var ogImage = document.getElementById('ogImage');
+        if (ogImage) ogImage.content = imagenFinal;
+
+        // 6. Actualizar Twitter Card
+        var twitterTitle = document.getElementById('twitterTitle');
+        if (twitterTitle) twitterTitle.content = tituloFinal;
+
+        var twitterDesc = document.getElementById('twitterDescription');
+        if (twitterDesc) twitterDesc.content = descripcionFinal;
+
+        var twitterImage = document.getElementById('twitterImage');
+        if (twitterImage) twitterImage.content = imagenFinal;
+
+        // 7. Twitter Card type (summary_large_image o summary)
+        var twitterCard = document.getElementById('twitterCard');
+        if (twitterCard) {
+            // Si hay imagen personalizada, usar summary_large_image, si no summary
+            twitterCard.content = imagenFinal !== imagenBase ? 'summary_large_image' : 'summary';
+        }
+
+        console.log('✅ Metadatos actualizados:', tituloFinal);
+    }
+
+    // ============================================================
     //  FUNCIÓN DE NAVEGACIÓN PRINCIPAL (CON SCROLL AL INICIO)
     // ============================================================
     function navegarA(destino) {
@@ -268,21 +357,25 @@
             document.querySelectorAll('#listaEtiquetas li, #mobileListaEtiquetas li').forEach(function(li) {
                 li.classList.remove('activo');
             });
+            // Metadatos: título por defecto
+            actualizarMetadatos('Jucardus.com', null, null, null);
         } else if (destino === 'aclaraciones') {
             var textoAclaraciones = `<h2>Aclaraciones</h2><div class="contenido-bbb"><h3>Propósito del sitio</h3><p>En este sitio encontrarás algunos diccionarios en desarrollo —como el de chino, inglés o el multilingüe—, así como ciertas herramientas para el estudio del latín y el chino con frases desglosadas y notas gramaticales sucintas. También estoy reuniendo citas de autores diversos, apotegmas y proverbios seleccionados con esmero. Otro tema de interés son los vocabularios de francés e inglés, en los que se muestran traducciones de términos en contextos principalmente literarios, para profundizar en el conocimiento de esas lenguas. — ¡Gracias por tu visita!</p><h3>Cómo funciona el sitio</h3><ul><li>Al abrir el sitio se muestran las treinta entradas más recientes, en la segunda columna, así como las etiquetas principales en la primera columna y la entrada más reciente hacia la derecha.</li><li>El cuadro de busca en la primera columna y debajo del título principal, encuentra en la base de datos todas las coincidencias del término ingresado, pero hasta un máximo de setenta, con las más recientes a la cabeza.</li><li>Si clicas en cualquiera de las etiquetas, sea en la columna con las etiquetas principales o en una entrada abierta, se realizará una búsqueda de la etiqueta clicada en toda la base de datos, mostrando hasta un máximo de setenta coincidencias.</li><li>Las entradas completas y abiertas en la tercera columna cuentan con una sección de etiquetas y otra inferior con herramientas de compartición (Enlace, Copiar, QR, Tuitear), de mucha utilidad para la difusión en las redes.</li><li>Clica en el título principal para recargar el sitio y reiniciar todo.</li><li>Si deseas informar de algún enlace roto, hacer comentarios o hacer correcciones acerca del contenido, no dudes en contactar conmigo mediante mi correo electrónico <b>jucardus en gmail punto com</b>.</li><li><b>Actividad reciente:</b> <span class="busca-interna" onclick="buscarEntradaPorId('260712112704')">¡Clícame!</span></li></ul></div>`;
             contenidoCompletoEl.innerHTML = textoAclaraciones;
             mobileContenidoCompletoEl.innerHTML = textoAclaraciones;
             actualizarBanner('Aclaraciones', null);
+            // Metadatos: Aclaraciones
+            actualizarMetadatos('Aclaraciones | Jucardus.com', 'Aclaraciones sobre el sitio Jucardus.com', null, null);
             if (isMobile) {
                 cambiarPestanaMovil('c');
-            } else {
-                // Desktop: scroll al inicio ya se hizo arriba
             }
         } else if (destino === 'autor') {
             var textoAutor = `<h2>Autor y contacto</h2><div class="contenido-bbb"><ul><li><b>Autor:</b> Jucardus ©</li><li><b>Contacto:</b> <a href="https://quickchart.io/qr?text=jucardus@gmail.com&size=250x250&margin=5&ecLevel=M&dark=185&light=f0f0f0&caption=%20jucardus@gmail.com&captionFontFamily=Verdana&captionFontSize=19&format=png" class="shortLinksSpans" target="_blank" rel="noopener noreferrer nofollow">jucardus en gmail punto com ↗</a></li><li><b>Linktree Jucardus:</b> <a href="https://linktr.ee/jucardus" rel="noopener noreferrer" target="_blank">linktr.ee/jucardus ↗</a></li><li><b>Mis sitios web:</b> <span class="busca-interna" onclick="buscarPorEtiqueta('Mis sitios web *')">¡Clícame!</span></li><li><b>Enlace corto:</b> jucardus.com</li><li><b>Donaciones:</b> [ pendiente ]</li></ul><p>Si deseas informar de algún enlace roto, hacer comentarios o hacer correcciones acerca del contenido de este sitio, o incluso solicitar el servicio de traducciones del inglés al español, no dudes en contactar conmigo mediante mi correo electrónico <b>jucardus en gmail punto com</b>.</p></div>`;
             contenidoCompletoEl.innerHTML = textoAutor;
             mobileContenidoCompletoEl.innerHTML = textoAutor;
             actualizarBanner('Autor y contacto', null);
+            // Metadatos: Autor
+            actualizarMetadatos('Autor y contacto | Jucardus.com', 'Información sobre el autor y contacto de Jucardus.com', null, null);
             if (isMobile) {
                 cambiarPestanaMovil('c');
             }
@@ -291,6 +384,8 @@
             contenidoCompletoEl.innerHTML = textoDonaciones;
             mobileContenidoCompletoEl.innerHTML = textoDonaciones;
             actualizarBanner('Donaciones', null);
+            // Metadatos: Donaciones
+            actualizarMetadatos('Donaciones | Jucardus.com', 'Apoya el proyecto Jucardus.com con tus donaciones', null, null);
             if (isMobile) {
                 cambiarPestanaMovil('c');
             }
@@ -555,17 +650,45 @@
         html += '<div class="contenido-bbb">' + procesarContenidoBBB(entrada.bbb) + '</div>';
 
         var etiquetas = entrada.ccc.split(',').map(function(e) { return e.trim(); }).filter(function(e) { return e; });
+        var etiquetaPrincipal = null;
         if (etiquetas.length > 0) {
             html += '<div class="etiquetas-completas"><h4>Etiquetas</h4><ul>';
             etiquetas.forEach(function(etq) {
                 var etqLimpia = limpiarEtiqueta(etq);
                 var etqEscapada = etqLimpia.replace(/'/g, "\\'");
                 var esPrincipal = esEtiquetaPrincipal(etq);
+                if (esPrincipal) {
+                    etiquetaPrincipal = etqLimpia;
+                }
                 var claseExtra = esPrincipal ? ' style="font-weight:700;color:#b0c4d8;"' : '';
                 html += '<li onclick="buscarPorEtiqueta(\'' + etqEscapada + '\')"' + claseExtra + '>' + etqLimpia + '</li>';
             });
             html += '</ul></div>';
         }
+
+        // 🔴 ACTUALIZAR METADATOS CON LA INFORMACIÓN DE LA ENTRADA
+        var tituloPagina = entrada.aaa;
+        if (etiquetaPrincipal) {
+            tituloPagina += ' | ' + etiquetaPrincipal;
+        }
+        tituloPagina += ' | Jucardus.com';
+        
+        // Descripción: primeras 150 caracteres del contenido (sin HTML)
+        var descripcionTemp = entrada.bbb || '';
+        descripcionTemp = descripcionTemp.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+        var descripcionPagina = descripcionTemp.substring(0, 150) + (descripcionTemp.length > 150 ? '…' : '');
+        
+        // URL de la entrada
+        var urlPagina = 'https://jucardus.github.io/?q=' + entrada.ddd;
+        
+        // Imagen: si la entrada tiene imágenes, usar la primera
+        var imagenPagina = null;
+        var imgMatch = entrada.bbb.match(/<img[^>]+src="([^"]+)"/);
+        if (imgMatch && imgMatch[1]) {
+            imagenPagina = imgMatch[1];
+        }
+        
+        actualizarMetadatos(tituloPagina, descripcionPagina, urlPagina, imagenPagina);
 
         // Sección de compartir con QR
         var enlacePermanente = 'https://jucardus.github.io/?q=' + entrada.ddd;
@@ -1162,6 +1285,7 @@
     window.limpiarBusqueda = limpiarBusqueda;
     window.seleccionarTextoBusqueda = seleccionarTextoBusqueda;
     window.resaltarPrimeraEntradaEnB = resaltarPrimeraEntradaEnB;
+    window.actualizarMetadatos = actualizarMetadatos;
 
     console.log('Script cargado correctamente.');
 </script>
