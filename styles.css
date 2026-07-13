@@ -77,8 +77,7 @@ html, body {
 .div-a {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: color-mix(in srgb, #1a1f24, black 15%);
-    background: #1a1f24;  /* +++ */
+    background: #1a1f24;
     border-right: 1px solid #2d343a;
     display: flex;
     flex-direction: column;
@@ -89,8 +88,7 @@ html, body {
 /* Cabecera fija de la columna A: contiene título y buscador, sticky en la parte superior */
 .div-a .header-a {
     padding: 14px 14px 10px 14px;
-    background-color: color-mix(in srgb, #1a1f24, black 15%);
-    background: #1a1f24; /* +++ */
+    background: #1a1f24;
     border-bottom: 1px solid #2d343a;
     flex-shrink: 0;
     position: sticky;
@@ -130,8 +128,7 @@ html, body {
 
 /* Placeholder del campo de búsqueda: color gris tenue */
 .div-a .header-a .busqueda-rapida input::placeholder {
-    color: #6a7a8a; /* +++ */
-    color: #899eb3;
+    color: #6a7a8a;
 }
 
 /* Contenedor scrollable del contenido de A (excluyendo la cabecera fija) */
@@ -193,9 +190,7 @@ html, body {
 .div-a .etiquetas-container h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #6a7a8a; /* +++ */
-    color: #8094a8; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a; /* verde claro de los subtítulos */
     margin-bottom: 8px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -223,20 +218,21 @@ html, body {
 
 /* Etiqueta al pasar el ratón: fondo más claro, texto más brillante */
 .div-a .etiquetas-container li:hover {
-    background: #2d343a;
+    background: #252b32;
+    border-left: 2px Solid #8aba9a; /* verde claro de subtítulos */
     color: #d0d4d8;
 }
 
 /* Etiqueta activa (seleccionada): fondo destacado, texto azulado */
 .div-a .etiquetas-container li.activo {
-    background: #2d343a;
+    /*background: #2d343a;*/
+    background: #252b32;
     color: #b0c4d8;
     font-weight: 600;
 }
 
 /* Etiqueta en estado de carga: texto gris, cursiva, sin interacción */
 .div-a .etiquetas-container li.cargando {
-    color: #6a7a8a; /* +++ */
     color: #8094a8;
     font-style: italic;
     cursor: default;
@@ -269,9 +265,7 @@ html, body {
 .div-d {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    /*background-color: color-mix(in srgb, #252b32, white 3%);*/
-    background: #2d343a; /* el mismo color que las entradas previas abiertas de la sección B */
-    background: #252b32; /* +++ */
+    background: #252b32;
     color: #d0d4d8;
     padding: 0 20px;
     display: flex;
@@ -286,8 +280,7 @@ html, body {
 
 /* Tema activo en el banner: badge con fondo y borde, texto centrado, sin desbordamiento */
 .div-d .tema-activo {
-    background-color: color-mix(in srgb, #2d343a, black 15%);
-    background: #2d343a; /* +++ */
+    background: #2d343a;
     padding: 4px 20px;
     border-radius: 20px;
     font-size: 0.95rem;
@@ -317,7 +310,6 @@ html, body {
 /* Guion separador antes de la fecha: contenido "— " y color gris tenue */
 .div-d .tema-activo .fecha-id::before {
     content: "— ";
-    color: #6a7a8a; /* +++ */
     color: #899eb3;
 }
 
@@ -362,9 +354,7 @@ html, body {
 .div-b h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #6a7a8a; /* +++ */
-    color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -393,12 +383,8 @@ html, body {
 
 /* Entrada al pasar el ratón: fondo más claro, borde izquierdo más brillante, ligero desplazamiento */
 .div-b li:hover {
-    background: #2d343a;
-    background: #1e2328;
-    border-left-color: #5a6a7a;
-    border-left-color: WhiteSmoke;
-    border-left-color: LightYellow;   
-    border-left-color: #8aba9a; /* el mismo verde de los subtítulos */
+    background: #252b32;
+    border-left-color: #8aba9a;
     transform: translateX(2px);
 }
 
@@ -412,14 +398,13 @@ html, body {
 /* Etiquetas parciales de la entrada en B: tamaño pequeño, color gris, bloque */
 .div-b li .etiquetas-parcial {
     font-size: 0.75rem;
-    color: #6a7a8a; /* +++ */
+    color: #8794a1;
     display: block;
     margin-top: 3px;
 }
 
 /* Entrada en estado de carga: texto gris, cursiva, sin interacción, borde izquierdo tenue */
 .div-b li.cargando {
-    color: #6a7a8a; /* +++ */
     color: #899eb3;
     font-style: italic;
     cursor: default;
@@ -429,7 +414,7 @@ html, body {
 
 /* Entrada destacada (seleccionada o resaltada): fondo más claro, borde azulado, sombra sutil */
 .div-b li.destacado {
-    background: #2d343a;
+    background: #252b32;
     border-left-color: #7a9aaa;
     box-shadow: 0 0 12px rgba(90, 120, 140, 0.15);
 }
@@ -555,7 +540,7 @@ html, body {
     padding: 12px 18px;
     border-radius: 10px;
     border: 1px solid #2d343a;
-    margin: 14px 0; +++++
+    margin: 14px 0;
     */
     margin: 35px 0 0 0;
     border-top: 2px solid #2d343a;
@@ -565,9 +550,7 @@ html, body {
 /* Título de etiquetas completas: texto pequeño, mayúsculas, gris, negrita */
 .div-c .etiquetas-completas h4 {
     font-size: 0.8rem;
-    color: #6a7a8a; /* +++ */
-    color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -615,7 +598,7 @@ html, body {
     padding: 12px 18px;
     border-radius: 10px;
     border: 1px solid #2d343a;
-    margin: 14px 0; +++++
+    margin: 14px 0;
     */
     margin-top: 10px;
     border-top: 2px solid #2d343a;
@@ -626,9 +609,7 @@ html, body {
 /* Título de la sección de compartir: texto pequeño, mayúsculas, gris, negrita */
 .div-c .compartir h4 {
     font-size: 0.8rem;
-    color: #6a7a8a; /* +++ */
-    color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -816,7 +797,6 @@ html, body {
     flex: 1;
     background: transparent;
     border: none;
-    color: #6a7a8a; /* +++ */
     color: #899eb3;
     padding: 12px 8px;
     font-size: 0.9rem;
@@ -891,9 +871,7 @@ html, body {
 .mobile-sections .section h3 {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #6a7a8a; /* +++ */
-    color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a;
     margin-bottom: 10px;
     letter-spacing: 0.6px;
     font-weight: 700;
@@ -1030,7 +1008,6 @@ html, body {
 /* Etiquetas parciales en B móvil: tamaño pequeño, color gris, bloque */
 .mobile-sections .section#mobile-section-b li .etiquetas-parcial {
     font-size: 0.75rem;
-    color: #6a7a8a; /* +++ */
     color: #899eb3;
     display: block;
     margin-top: 3px;
@@ -1140,7 +1117,6 @@ html, body {
 
 /* Etiquetas completas en C móvil: fondo, padding, borde redondeado, margen */
 .mobile-sections .section#mobile-section-c .etiquetas-completas {
-+++++
     /*
     background: #1e2328;
     padding: 12px 16px;
@@ -1156,9 +1132,7 @@ html, body {
 /* Título de etiquetas completas en C móvil: texto pequeño, mayúsculas, gris */
 .mobile-sections .section#mobile-section-c .etiquetas-completas h4 {
     font-size: 0.8rem;
-    color: #6a7a8a; /* +++ */
-    color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1196,7 +1170,7 @@ html, body {
 
 /* Sección de compartir en C móvil: fondo, padding, borde redondeado */
 .mobile-sections .section#mobile-section-c .compartir {
-/* +++++
+    /*
     background: #1e2328;
     padding: 12px 16px;
     border-radius: 10px;
@@ -1211,9 +1185,7 @@ html, body {
 /* Título de compartir en C móvil: texto pequeño, mayúsculas, gris */
 .mobile-sections .section#mobile-section-c .compartir h4 {
     font-size: 0.8rem;
-    color: #6a7a8a; /* +++ */
-    color: #899eb3; /* +++ */
-    color: LightYellow; color: #a8f7c3; color: #99cfab; color: #8aba9a;
+    color: #8aba9a;
     margin-bottom: 8px;
     font-weight: 600;
     text-transform: uppercase;
