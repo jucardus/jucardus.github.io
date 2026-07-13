@@ -546,12 +546,16 @@ html, body {
 
 /* Sección de etiquetas completas: fondo, padding, borde redondeado, borde tenue */
 .div-c .etiquetas-completas {
+    /*
     background: #1e2328;
     padding: 12px 18px;
     border-radius: 10px;
     border: 1px solid #2d343a;
-    margin: 14px 0; /* +++ */
-    margin: 35px 0 20px 0;
+    margin: 14px 0; +++++
+    */
+    margin: 35px 0 0 0;
+    border-top: 2px solid #2d343a;
+    padding: 22px 18px;
 }
 
 /* Título de etiquetas completas: texto pequeño, mayúsculas, gris, negrita */
@@ -602,11 +606,17 @@ html, body {
 
 /* Sección de compartir: fondo, padding, borde redondeado, borde tenue, margen */
 .div-c .compartir {
+    /*
     background: #1e2328;
     padding: 12px 18px;
     border-radius: 10px;
     border: 1px solid #2d343a;
-    margin: 14px 0;
+    margin: 14px 0; +++++
+    */
+    margin-top: 10px;
+    border-top: 2px solid #2d343a;
+    padding: 22px 18px;
+
 }
 
 /* Título de la sección de compartir: texto pequeño, mayúsculas, gris, negrita */
@@ -1126,11 +1136,17 @@ html, body {
 
 /* Etiquetas completas en C móvil: fondo, padding, borde redondeado, margen */
 .mobile-sections .section#mobile-section-c .etiquetas-completas {
++++++
+    /*
     background: #1e2328;
     padding: 12px 16px;
     border-radius: 10px;
     border: 1px solid #2d343a;
     margin: 12px 0;
+    */
+    margin-top: 45px;
+    border-top: 2px solid #2d343a;
+    padding: 22px 18px;
 }
 
 /* Título de etiquetas completas en C móvil: texto pequeño, mayúsculas, gris */
@@ -1176,11 +1192,16 @@ html, body {
 
 /* Sección de compartir en C móvil: fondo, padding, borde redondeado */
 .mobile-sections .section#mobile-section-c .compartir {
+/* +++++
     background: #1e2328;
     padding: 12px 16px;
     border-radius: 10px;
     border: 1px solid #2d343a;
     margin: 12px 0;
+    */
+    margin-top: 10px;
+    border-top: 2px solid #2d343a;
+    padding: 22px 18px;
 }
 
 /* Título de compartir en C móvil: texto pequeño, mayúsculas, gris */
