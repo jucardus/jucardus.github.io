@@ -394,7 +394,11 @@ html, body {
 /* Entrada al pasar el ratón: fondo más claro, borde izquierdo más brillante, ligero desplazamiento */
 .div-b li:hover {
     background: #2d343a;
+    background: #1e2328;
     border-left-color: #5a6a7a;
+    border-left-color: WhiteSmoke;
+    border-left-color: LightYellow;   
+    border-left-color: #8aba9a; /* el mismo verde de los subtítulos */
     transform: translateX(2px);
 }
 
