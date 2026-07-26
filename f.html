@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body onload="hacer()">
+<script>
+  function hacer() {
+    var url = window.location.href;
+    if (url.indexOf('f?=') >= 0) {
+      var url = url.replace(/.*jucardus\.github\.io\/f\?=/g,'');
+      var exear = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+      window.location.replace(exear);
+    } else {
+      window.location.replace('https://www.facebook.com');
+    }
+ }
+</script>
+</body>
+</html>
