@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body onload="hacer()">
+<script>
+  function hacer() {
+    var url = window.location.href;
+    if (url.indexOf('b?=') >= 0) {
+      var url = url.replace(/.*jucardus\.github\.io\/b\?=/g,'');
+      if (url.indexOf('http://') >= 0 || url.indexOf('https://') >= 0) {
+        url = '✶ ' + url + ' ✶';
+      }
+      var exear = 'https://bsky.app/intent/compose?text=' + url;
+      window.location.replace(exear);
+    } else {
+      window.location.replace('https://bsky.app/profile/jucardus.bsky.social');
+    }
+ }
+</script>
+</body>
+</html>
