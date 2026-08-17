@@ -40,16 +40,23 @@
     const baseUrl = "https://script.google.com/macros/s/AKfycbwhBmhCb5f0FZSvQuoJAG-QJngLGTII-IQcdXN0nX_8qEyeyDnhq6fPf_kSaP4034sVrQ/exec";
     const iframe = document.getElementById('mainFrame');
     
-    // Leer ?q= de la URL
+    // 1. LEER el query de la URL
     const urlParams = new URLSearchParams(window.location.search);
     let queryValue = urlParams.get('q');
     
-    // Si hay query, enviarlo al iframe
+    // 2. Si hay query, ACTUALIZAR el iframe
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
+        // Forzar la recarga del iframe con el nuevo src
         iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
+        
+        // 3. (Opcional) LIMPIAR la URL después de actualizar el iframe
+        // Comenta esta línea si quieres mantener el ?q= visible para depurar
+        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
     }
 })();
 </script>
+
 </body>
 </html>
