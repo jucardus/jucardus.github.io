@@ -1,210 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <style>html {background-color: #2A4747;}</style>
+<head>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-44Y9CNCHR8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-44Y9CNCHR8');
     </script>
-    <meta content='jucardus punto com, perfil, sitio central, mis páginas, páginas favoritas, favoritas, escritos, contacto, correo de contacto, traducciones, donaciones, actividad reciente, actividad, recientes, fotografías, todas mis fotografías, música, música clasica, canal de música, canal en YouTube, cuenta en Twitter, cuenta en Tumblr, traducciones, servicio de traducciones, diccionarios, listas de reproducción, playlist, classical playlist, vocabulario, vocabularios, vocabulario francés, vocabulario francés-español, vocabulario inglés, vocabulario inglés-español, diccionario multilingüe, vocabulario multilingüe, multilingüe, fotos en Google Maps' name='keywords'/>
-    <meta content='Mi sitio central, con todas mis páginas y subpáginas.' name='description'/>
-    <meta content='Jucardus ©' name='author'/>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUCARDUS.COM</title>
+    <meta content='Abreviaturas de los diccionarios, Acerca del sitio, Apotegmas, Citas y proverbios, Desgloses, Diccionario chino-español, Diccionario español, Diccionario francés-español, Diccionario inglés-español, Diccionario multilingüe, Enlaces varios, Entradas pendientes, Escritos varios, Etiquetas, Frases chinas desglosadas, Frases latinas desglosadas, Frases multilingües, Glosarios, Índice general, Mis sitios web, Radicales chinos, Reflexiones, Sinónimos españoles, Sinónimos ingleses, Tareas pendientes, Vocabulario francés-español, Vocabulario inglés-español' name='keywords'/>
+    <meta content='Portal de diccionarios multilingües: chino, inglés y francés. Glosarios especializados, frases célebres desglosadas y recursos para traductores.' name='description'/>
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta content='Jucardus ©' name='author'/>
+    <title>FOTOS - JUCARDUS.COM</title>
     <style>
-      @media (max-width: 768px) {
-        body {
-          /*max-width: 100%;*/
-          padding: 30px 4px 60px 4px !important;
-          width: auto !important;
-          overflow-x: hidden !important;
-          /*box-shadow: 0 0 0 1px red inset;*/
+        html, body {
+            background-color: #3a3a3a;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
-        #contenido {
-          max-width: 100% !important;
-          /*overflow-x: hidden !important;*/
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
-        #qr {
-          /*display: none;*/
-        }
-        #tituloo {
-          position: sticky !important;
-          top: 17px !important;
-          z-index: 1000 !important;
-          margin-top: 17px !important;
-          background-color: color-mix(in srgb, DarkSlateGray, black 10%);
-          margin-bottom: 37px !important;
-        }
-      }
-      a:link, a:visited {
-        color: #f0f0f0;
-        text-decoration: none;
-      }
-      a:hover {
-        color: Gold;
-      }
-      a:focus, a:active {
-        color: Gold;
-      }
-      a.titulo:link, a.titulo:visited, a.titulo:hover, a.titulo:active {
-        color: #034;
-        font-size: 120%;
-        font-weight: bold;
-        text-decoration: none;
-        }
-      a.titulo:focus, a.titulo:hover {
-        color: OrangeRed;
-        text-decoration: none;
-        }
-      #barrita {
-        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
-        height: 17px;
-        position: fixed;
-        width: 100%;
-        top: 0px;
-      }
-      #barrita {
-        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
-        height: 17px;
-        position: fixed;
-        width: 100%;
-        top: 0px;
-        z-index: 1000; /* Higher than titulo's 999 */
-      }
-      body {
-        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
-        color: #b7c6cc;
-        color: #d3dce0;
-        font-family: 'Ubuntu';
-        font-size: 100%;
-        letter-spacing: 1.1px;
-        padding: 80px 28% 100px 27%;
-      }
-      #contenido {
-        text-align: center;
-      }
-      img {
-        width: 100px;
-      }
-      #markdown-content {
-        font-size: 93%;
-        margin-top: 50px!important;
-        text-align: left!important;
-      }
-      .markdown-heading {
-        margin-bottom: 26px;
-      }
-      #prrfs {
-        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
-        border-radius: 10px;
-          -webkit-transition: .5s all;
-          -webkit-transition-delay: .5s;
-          -moz-transition: .5s all;
-          -moz-transition-delay: .5s;
-          -ms-transition: .5s all;
-          -ms-transition-delay: .5s;
-          -o-transition: .5s all;
-          -o-transition-delay: .5s;
-          transition: .3s all;
-          transition-delay: 0.1s;
-        margin-bottom: 17px;
-        border: 2.5px solid #cfd9dd;
-        padding: 10px 12px 10px 12px;
-      }
-      #prrfs:hover {
-        background-color: color-mix(in srgb, DarkSlateGray, black 20%);
-        border: 2.5px solid DarkOrange;
-        border-radius: 10px;
-          -webkit-transition-delay: 0s;
-          -moz-transition-delay: 0s;
-          -ms-transition-delay: 0s;
-          -o-transition-delay: 0s;
-          transition-delay: 0s;
-      }
-      #prrfPrncpl {
-        background-color: #cfd9dd;
-        border-radius: 10px;
-          -webkit-transition: .5s all;
-          -webkit-transition-delay: .5s;
-          -moz-transition: .5s all;
-          -moz-transition-delay: .5s;
-          -ms-transition: .5s all;
-          -ms-transition-delay: .5s;
-          -o-transition: .5s all;
-          -o-transition-delay: .5s;
-          transition: .3s all;
-          transition-delay: 0.1s;
-        margin-bottom: 17px;
-        border: 1.5px solid #f0f0f0;
-        padding: 10px 12px 10px 12px;
-      }
-      #prrfPrncpl:hover {
-        background-color: color-mix(in srgb, #cfd9dd, black 10%);
-      }
-      #qr {
-        margin-top: 40px;
-        text-align: center;
-      }
-      .qr {
-        border-radius: 9px;
-        width: 150px;
-      }
-      #titulo {
-        background-color: color-mix(in srgb, DarkSlateGray, black 10%);
-        margin-bottom: 37px !important;
-        position: sticky !important;
-        top: 17px !important;
-        z-index: 1000 !important;
-      }
     </style>
-
-  </head>
-
+</head>
 <body>
 
-<div id="contenido">
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbyLQKRpE5xV9RMjIWdUsDrYCCB37SxrmNvMWMDTXXz6CXqQp256gn4ylUkfNL_UYen8lw/exec'/>
 
-<div id="barrita"></div>
-
-<div id="titulo"><a class='titulo' href='https://jucardus.github.io'><div id='prrfPrncpl'>JUCARDUS <wbr>PUNTO COM</div></a></div>
-
-<a href='https://cor.jucardus.com' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>AUTOR Y CONTACTO</div></a>
-
-<!--a href='https://jucardus.blogspot.com' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>BLOGSPOT JUCARDUS</div></a-->
-
-<a href='https://bsky.app/profile/jucardus.bsky.social' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>BLUESKY JUCARDUS</div></a>
-
-<a href='https://jucardus.netlify.app/' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>FOTOGRAFÍAS MUCHAS</div></a>
-
-<a href='https://www.google.com/maps/contrib/108257229988469463200/photos' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>GOOGLE MAPS PICS</div></a>
-
-<!--a href='https://www.youtube.com/@jucardus' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>JUCARDUS EN YOUTUBE</div></a-->
-
-<!--a href='https://linktr.ee/largometrajes' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>LARGOMETRAJES / PELÍCULAS</div></a-->
-
-<a href='https://linktr.ee/jucardus' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>LINKTREE JUCARDUS</div></a>
-
-<a href='https://www.youtube.com/playlist?list=PLQnQS1Xke-YjCiBFK6Ym6W8JQrgUIxd6p' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>MÚSICA CLÁSICA</div></a>
-
-<a href='https://www.youtube.com/playlist?list=PLXkrqlq_tKXU' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>  PELÍCULAS EN YOUTUBE</div></a>
-
-<a href='https://postimg.cc/user/jucardus' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>POSTIMAGES JUCARDUS</div></a>
-
-<a href='https://linktr.ee/andesbit' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>PROGRAMACIÓN ANDESBIT</div></a>
-
-<a href='https://x.com/jucardus' target="_blank" rel="noopener noreferrer nofollow"><div id='prrfs'>X TWITTER</div></a>
-
-<div id='qr'><img class='qr' src="https://quickchart.io/qr?text=https://jucardus.github.io&size=300x300&margin=4&ecLevel=M&dark=2F4F4F&light=cfd9dd&format=png"/></div>
-  
-<div id="markdown-content"></div>
-
-</div>
-
+<script>
+    (function() {
+        // Base URL of your Google Apps Script
+        const baseUrl = &quot;https://script.google.com/macros/s/AKfycbyLQKRpE5xV9RMjIWdUsDrYCCB37SxrmNvMWMDTXXz6CXqQp256gn4ylUkfNL_UYen8lw/exec&quot;;
+        
+        const iframe = document.getElementById(&#39;mainFrame&#39;);
+        
+        // PRIMERO: Revisar si hay ?q= en la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        let queryValue = urlParams.get(&#39;q&#39;);
+        let isPathQuery = false;
+        
+        // SEGUNDO: Si no hay ?q=, revisar el path de la URL
+        // Ejemplo: jucardus.github.com/123456789012
+        if (!queryValue || queryValue.trim().length &lt; 1) {
+            const path = window.location.pathname;
+            const pathSegments = path.split(&#39;/&#39;).filter(segment =&gt; segment.length &gt; 0);
+            if (pathSegments.length &gt; 0) {
+                queryValue = pathSegments[0];
+                isPathQuery = true; // Recordamos que vino del path
+            }
+        }
+        
+        // Si encontramos un query, actualizar el iframe
+        if (queryValue &amp;&amp; queryValue.trim().length &gt;= 1) {
+            iframe.src = baseUrl + &quot;?q=&quot; + encodeURIComponent(queryValue);
+            
+            // Limpiar la URL del navegador
+            // Si vino del path, limpiamos completamente a la raíz
+            // Si vino de ?q=, solo quitamos el parámetro
+            if (isPathQuery) {
+                // Para queries del path, volvemos a la raíz del sitio
+                const cleanUrl = window.location.protocol + &quot;//&quot; + window.location.host;
+                window.history.replaceState({}, document.title, cleanUrl);
+            } else {
+                // Para queries con ?q=, solo quitamos el parámetro
+                const cleanUrl = window.location.protocol + &quot;//&quot; + window.location.host + window.location.pathname;
+                window.history.replaceState({}, document.title, cleanUrl);
+            }
+        }
+    })();
+</script>
 </body>
 </html>
