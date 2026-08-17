@@ -1,1 +1,1 @@
-### Mi sitio central → [jucardus.github.io](https://jucardus.github.io)
+### Mi sitio central → [jucardus.com](https://jucardus.com)
