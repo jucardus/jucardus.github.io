@@ -40,46 +40,18 @@
     const baseUrl = "https://script.google.com/macros/s/AKfycby68RzKM_F5nCwFwVDnXFC1AwDggGrxdPdVEWTbIVv3ID5ZFDGjlTO6OiFvzrLDXagfMQ/exec";
     const iframe = document.getElementById('mainFrame');
     
-    // Obtener el query de la URL de GitHub Pages
-    let queryValue = null;
-    let isPathQuery = false;
-    
-    // 1. Revisar ?q= en la URL
+    // SOLO procesar ?q= (404.html se encarga de convertir los paths)
     const urlParams = new URLSearchParams(window.location.search);
-    queryValue = urlParams.get('q');
+    let queryValue = urlParams.get('q');
     
-    // 2. Si no hay ?q=, revisar el path
-    if (!queryValue || queryValue.trim().length < 1) {
-        const path = window.location.pathname;
-        const pathSegments = path.split('/').filter(segment => segment.length > 0);
-        if (pathSegments.length > 0) {
-            queryValue = pathSegments[0];
-            isPathQuery = true;
-        }
-    }
-    
-    // 3. Si encontramos query, enviarlo al iframe
+    // Si encontramos query, enviarlo al iframe
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
+        iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
         
-        // IMPORTANTE: Usar pathInfo en lugar de ?q= para que GAS lo detecte
-        // GAS detecta automáticamente /exec/query como pathInfo
-        if (isPathQuery) {
-            // Si viene del path, usamos pathInfo (URL/query)
-            iframe.src = baseUrl + "/" + encodeURIComponent(cleanQuery);
-        } else {
-            // Si viene de ?q=, usamos el parámetro normal
-            iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
-        }
-        
-        // Limpiar la URL del navegador
-        if (isPathQuery) {
-            const cleanUrl = window.location.protocol + "//" + window.location.host;
-            window.history.replaceState({}, document.title, cleanUrl);
-        } else {
-            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-            window.history.replaceState({}, document.title, cleanUrl);
-        }
+        // Limpiar ?q= de la URL
+        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
     }
 })();
 </script>
