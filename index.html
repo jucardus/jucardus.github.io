@@ -35,12 +35,12 @@
 </head>
 <body>
 
-  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbyLQKRpE5xV9RMjIWdUsDrYCCB37SxrmNvMWMDTXXz6CXqQp256gn4ylUkfNL_UYen8lw/exec'/>
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbx6n0UgUZTNiIwdel3ckkMCaNlhyXy-2rfQNNyoO2R9KL0IuYIk1Oovu05JnFiklRlx8w/exec'/>
 
 <script>
     (function() {
         // Base URL of your Google Apps Script
-        const baseUrl = &quot;https://script.google.com/macros/s/AKfycbyLQKRpE5xV9RMjIWdUsDrYCCB37SxrmNvMWMDTXXz6CXqQp256gn4ylUkfNL_UYen8lw/exec&quot;;
+        const baseUrl = &quot;https://script.google.com/macros/s/AKfycbx6n0UgUZTNiIwdel3ckkMCaNlhyXy-2rfQNNyoO2R9KL0IuYIk1Oovu05JnFiklRlx8w/exec&quot;;
         
         const iframe = document.getElementById(&#39;mainFrame&#39;);
         
@@ -50,7 +50,7 @@
         let isPathQuery = false;
         
         // SEGUNDO: Si no hay ?q=, revisar el path de la URL
-        // Ejemplo: jucardus.github.com/123456789012
+        // Ejemplo: jucardus.github.io/123456789012
         if (!queryValue || queryValue.trim().length &lt; 1) {
             const path = window.location.pathname;
             const pathSegments = path.split(&#39;/&#39;).filter(segment =&gt; segment.length &gt; 0);
