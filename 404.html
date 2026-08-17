@@ -1,20 +1,72 @@
-<html>
-  <head>
-    <!--meta http-equiv="refresh" content="6; url=https://jucardus.github.io"-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo...</title>
     <style>
-      a {
-        color: Lime;
-      }
-      body {
-        background-color: #3a3a3a;
-        color: WhiteSmoke;
-        padding: 40px;
-        text-align: center;
-      }
+        body {
+            background-color: #3a3a3a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .loader {
+            text-align: center;
+        }
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            border-top: 4px solid #ffffff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
-  </head>
-  <body>
-    <h3>▒ SUBPÁGINA INEXISTENTE ▒</h3>
-    <h3>▒ <a href="https://jucardus.github.io">VOLVER AL INICIO</a> ▒</h3>
-  </body>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Redirigiendo...</p>
+    </div>
+
+    <script>
+        (function() {
+            // Obtener el path de la URL (ej: /260707120658)
+            const path = window.location.pathname;
+            
+            // Extraer el último segmento del path
+            const pathSegments = path.split('/').filter(segment => segment.length > 0);
+            
+            if (pathSegments.length > 0) {
+                // Tomar el último segmento como query
+                const queryValue = pathSegments[pathSegments.length - 1];
+                
+                // Limpiar el query (solo caracteres alfanuméricos y guiones)
+                const cleanQuery = queryValue.replace(/[^a-zA-Z0-9-]/g, '');
+                
+                if (cleanQuery && cleanQuery.length > 0) {
+                    // Redirigir a la página principal con el query como parámetro
+                    const targetUrl = window.location.origin + '/?q=' + encodeURIComponent(cleanQuery);
+                    window.location.replace(targetUrl);
+                } else {
+                    // Si no hay query válido, ir a la página principal
+                    window.location.replace(window.location.origin + '/');
+                }
+            } else {
+                // Si no hay path, ir a la página principal
+                window.location.replace(window.location.origin + '/');
+            }
+        })();
+    </script>
+</body>
 </html>
