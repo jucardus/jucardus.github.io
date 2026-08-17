@@ -7,7 +7,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-44Y9CNCHR8');
     </script>
     <meta charset="UTF-8">
@@ -17,7 +16,7 @@
     <meta name="robots" content="index, follow">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta content='Jucardus ©' name='author'/>
-    <title>FOTOS - JUCARDUS.COM</title>
+    <title>JUCARDUS.COM</title>
     <style>
         html, body {
             background-color: #3a3a3a;
@@ -34,50 +33,55 @@
     </style>
 </head>
 <body>
-
-  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbx6n0UgUZTNiIwdel3ckkMCaNlhyXy-2rfQNNyoO2R9KL0IuYIk1Oovu05JnFiklRlx8w/exec'/>
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycby68RzKM_F5nCwFwVDnXFC1AwDggGrxdPdVEWTbIVv3ID5ZFDGjlTO6OiFvzrLDXagfMQ/exec'/>
 
 <script>
-    (function() {
-        // Base URL of your Google Apps Script
-        const baseUrl = &quot;https://script.google.com/macros/s/AKfycbx6n0UgUZTNiIwdel3ckkMCaNlhyXy-2rfQNNyoO2R9KL0IuYIk1Oovu05JnFiklRlx8w/exec&quot;;
+(function() {
+    const baseUrl = "https://script.google.com/macros/s/AKfycby68RzKM_F5nCwFwVDnXFC1AwDggGrxdPdVEWTbIVv3ID5ZFDGjlTO6OiFvzrLDXagfMQ/exec";
+    const iframe = document.getElementById('mainFrame');
+    
+    // Obtener el query de la URL de GitHub Pages
+    let queryValue = null;
+    let isPathQuery = false;
+    
+    // 1. Revisar ?q= en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    queryValue = urlParams.get('q');
+    
+    // 2. Si no hay ?q=, revisar el path
+    if (!queryValue || queryValue.trim().length < 1) {
+        const path = window.location.pathname;
+        const pathSegments = path.split('/').filter(segment => segment.length > 0);
+        if (pathSegments.length > 0) {
+            queryValue = pathSegments[0];
+            isPathQuery = true;
+        }
+    }
+    
+    // 3. Si encontramos query, enviarlo al iframe
+    if (queryValue && queryValue.trim().length >= 1) {
+        const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
         
-        const iframe = document.getElementById(&#39;mainFrame&#39;);
-        
-        // PRIMERO: Revisar si hay ?q= en la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        let queryValue = urlParams.get(&#39;q&#39;);
-        let isPathQuery = false;
-        
-        // SEGUNDO: Si no hay ?q=, revisar el path de la URL
-        // Ejemplo: jucardus.github.io/123456789012
-        if (!queryValue || queryValue.trim().length &lt; 1) {
-            const path = window.location.pathname;
-            const pathSegments = path.split(&#39;/&#39;).filter(segment =&gt; segment.length &gt; 0);
-            if (pathSegments.length &gt; 0) {
-                queryValue = pathSegments[0];
-                isPathQuery = true; // Recordamos que vino del path
-            }
+        // IMPORTANTE: Usar pathInfo en lugar de ?q= para que GAS lo detecte
+        // GAS detecta automáticamente /exec/query como pathInfo
+        if (isPathQuery) {
+            // Si viene del path, usamos pathInfo (URL/query)
+            iframe.src = baseUrl + "/" + encodeURIComponent(cleanQuery);
+        } else {
+            // Si viene de ?q=, usamos el parámetro normal
+            iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
         }
         
-        // Si encontramos un query, actualizar el iframe
-        if (queryValue &amp;&amp; queryValue.trim().length &gt;= 1) {
-            iframe.src = baseUrl + &quot;?q=&quot; + encodeURIComponent(queryValue);
-            
-            // Limpiar la URL del navegador
-            // Si vino del path, limpiamos completamente a la raíz
-            // Si vino de ?q=, solo quitamos el parámetro
-            if (isPathQuery) {
-                // Para queries del path, volvemos a la raíz del sitio
-                const cleanUrl = window.location.protocol + &quot;//&quot; + window.location.host;
-                window.history.replaceState({}, document.title, cleanUrl);
-            } else {
-                // Para queries con ?q=, solo quitamos el parámetro
-                const cleanUrl = window.location.protocol + &quot;//&quot; + window.location.host + window.location.pathname;
-                window.history.replaceState({}, document.title, cleanUrl);
-            }
+        // Limpiar la URL del navegador
+        if (isPathQuery) {
+            const cleanUrl = window.location.protocol + "//" + window.location.host;
+            window.history.replaceState({}, document.title, cleanUrl);
+        } else {
+            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            window.history.replaceState({}, document.title, cleanUrl);
         }
-    })();
+    }
+})();
 </script>
 </body>
 </html>
