@@ -33,25 +33,21 @@
     </style>
 </head>
 <body>
-  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycby68RzKM_F5nCwFwVDnXFC1AwDggGrxdPdVEWTbIVv3ID5ZFDGjlTO6OiFvzrLDXagfMQ/exec'/>
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbwhBmhCb5f0FZSvQuoJAG-QJngLGTII-IQcdXN0nX_8qEyeyDnhq6fPf_kSaP4034sVrQ/exec'/>
 
 <script>
 (function() {
-    const baseUrl = "https://script.google.com/macros/s/AKfycby68RzKM_F5nCwFwVDnXFC1AwDggGrxdPdVEWTbIVv3ID5ZFDGjlTO6OiFvzrLDXagfMQ/exec";
+    const baseUrl = "https://script.google.com/macros/s/AKfycbwhBmhCb5f0FZSvQuoJAG-QJngLGTII-IQcdXN0nX_8qEyeyDnhq6fPf_kSaP4034sVrQ/exec";
     const iframe = document.getElementById('mainFrame');
     
-    // SOLO procesar ?q= (404.html se encarga de convertir los paths)
+    // Leer ?q= de la URL
     const urlParams = new URLSearchParams(window.location.search);
     let queryValue = urlParams.get('q');
     
-    // Si encontramos query, enviarlo al iframe
+    // Si hay query, enviarlo al iframe
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
         iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
-        
-        // Limpiar ?q= de la URL
-        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-        window.history.replaceState({}, document.title, cleanUrl);
     }
 })();
 </script>
