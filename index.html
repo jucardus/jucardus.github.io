@@ -33,27 +33,27 @@
     </style>
 </head>
 <body>
-  <iframe id='mainFrame'></iframe>
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbyE9J_EUa4G8PKsl7bSM-1T8nnt_qigW_8751Se_OiPu7tsX3TSVG6pFxCUnacRiRSnzA/exec'></iframe>
 
 <script>
 (function() {
-    const baseUrl = "https://script.google.com/macros/s/AKfycbzEo3-KoZ2afgj-bw2eT2TxYjYdsq1eTAfOm0Y4SmPm1VW-jD8WX59_quggtqz5j_E0Qg/exec";
+    const baseUrl = "https://script.google.com/macros/s/AKfycbyE9J_EUa4G8PKsl7bSM-1T8nnt_qigW_8751Se_OiPu7tsX3TSVG6pFxCUnacRiRSnzA/exec";
     const iframe = document.getElementById('mainFrame');
     
-    // Leer el query de la URL
+    // 1. LEER el query de la URL
     const urlParams = new URLSearchParams(window.location.search);
     let queryValue = urlParams.get('q');
     
-    // Si hay query, cargar el iframe con el query
+    // 2. Si hay query, ACTUALIZAR el iframe
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
         iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
         
-        // Limpiar la URL para que no persista el query
+        // 3. Limpiar la URL de la página principal
         const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
         window.history.replaceState({}, document.title, cleanUrl);
     } else {
-        // Si no hay query, cargar la página normal
+        // 4. Si no hay query, asegurarse de que el iframe esté sin query
         iframe.src = baseUrl;
     }
 })();
