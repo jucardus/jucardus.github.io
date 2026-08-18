@@ -34,36 +34,105 @@
 </head>
 <body>
 
-  <!-- Dejamos el iframe con su src base por defecto como respaldo seguro -->
-  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec'>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-JT627KMWEJ'/>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag(&#39;js&#39;, new Date());
+
+      gtag(&#39;config&#39;, &#39;G-JT627KMWEJ&#39;);
+    </script>
+    <meta charset='UTF-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <b:include data='blog' name='all-head-content'/>
+  	<link href='https://rsms.me/inter/inter.css' rel='stylesheet'/>
+  	<meta content='Jucardus @' name='author'/>
+    <meta content='Portal de diccionarios multilingües: chino, inglés y francés. Glosarios especializados, frases célebres desglosadas y recursos para traductores.' name='description'/>
+  	<!--meta content='https://jucardus.blogspot.com' property='og:image'/-->
+    <script type='application/ld+json'> <!--SEO-->
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;WebSite&quot;,
+      &quot;url&quot;: &quot;https://jucardus.blogspot.com/&quot;,
+      &quot;name&quot;: &quot;Jucardus - Diccionarios Multilingües y Recursos Lingüísticos&quot;,
+      &quot;description&quot;: &quot;Diccionarios chino-español, inglés-español, francés-español, glosarios, frases célebres, apotegmas y recursos lingüísticos&quot;,
+      &quot;author&quot;: {
+        &quot;@type&quot;: &quot;Person&quot;,
+        &quot;name&quot;: &quot;Jucardus&quot;
+      },
+      &quot;keywords&quot;: &quot;diccionario multilingüe, chino-español, inglés-español, francés-español, glosarios, frases latinas, apotegmas&quot;
+    }
+    </script>
+  	<title>Jucardus.com - Diccionarios Multilingües | Chino, Inglés, Francés | Frases y Glosarios</title>
+    <b:skin><![CDATA[
+        body {
+            background-color: #012a36;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+      	#navbar {
+      		display: none;
+      	}
+    ]]></b:skin>
+</head>
+<body>
+  
+  <!-- El iframe apunta a tu GAS de GitHub de manera nativa -->
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbxVbk8j8Ii_xEd7_ZgNNoUtrO3Aa9z8L8aLtDPGSZddQV9sWrxO1CRhKKhi_7--rcq_GA/exec'>
 
 <script>
 (function() {
-    const baseUrl = "https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec";
+    // Base URL de tu Google Apps Script para GitHub
+    const baseUrl = "https://script.google.com/macros/s/AKfycbxVbk8j8Ii_xEd7_ZgNNoUtrO3Aa9z8L8aLtDPGSZddQV9sWrxO1CRhKKhi_7--rcq_GA/exec";
     const iframe = document.getElementById('mainFrame');
     
-    // 1. Extraer inmediatamente el parámetro q de la URL
+    // PRIMERO: Revisar si hay ?q= en la URL
     const urlParams = new URLSearchParams(window.location.search);
-    const queryValue = urlParams.get('q');
+    let queryValue = urlParams.get('q');
+    let isPathQuery = false;
     
-    // 2. Si el query existe, actualizar el iframe antes de limpiar nada
+    // SEGUNDO: Si no hay ?q=, revisar el path de la URL
+    if (!queryValue || queryValue.trim().length < 1) {
+        const path = window.location.pathname;
+        const pathSegments = path.split('/').filter(segment => segment.length > 0 && segment !== 'index.html');
+        if (pathSegments.length > 0) {
+            queryValue = pathSegments[0];
+            isPathQuery = true; 
+        }
+    }
+    
+    // Si encontramos un query, actualizar el iframe sin filtros que lo rompan
     if (queryValue && queryValue.trim().length >= 1) {
-        const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
+        iframe.src = baseUrl + "?q=" + encodeURIComponent(queryValue.trim());
         
-        if (cleanQuery.length > 0) {
-            // Cambiamos el origen del iframe con el query sanitizado
-            iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
-            
-            // 3. RETARDO CRÍTICO: Esperamos 300ms para limpiar la URL de la barra de navegación.
-            // Esto le da tiempo al navegador de asimilar el origen del iframe y previene el bug.
-            setTimeout(function() {
-                const cleanUrl = window.location.protocol + "//" + window.location.host + "/";
-                window.history.replaceState({}, document.title, cleanUrl);
-            }, 300);
+        // Limpiar la URL del navegador de forma idéntica a Blogspot
+        if (isPathQuery) {
+            const cleanUrl = window.location.protocol + "//" + window.location.host + "/";
+            window.history.replaceState({}, document.title, cleanUrl);
+        } else {
+            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            window.history.replaceState({}, document.title, cleanUrl);
         }
     }
 })();
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
