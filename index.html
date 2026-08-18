@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbwhBmhCb5f0FZSvQuoJAG-QJngLGTII-IQcdXN0nX_8qEyeyDnhq6fPf_kSaP4034sVrQ/exec'/>
+  <iframe id='mainFrame'></iframe>
 
 <script>
 (function() {
@@ -44,16 +44,17 @@
     const urlParams = new URLSearchParams(window.location.search);
     let queryValue = urlParams.get('q');
     
-    // 2. Si hay query, ACTUALIZAR el iframe
+    // 2. Si hay query, enviarlo al iframe
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
-        // Forzar la recarga del iframe con el nuevo src
         iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
         
-        // 3. (Opcional) LIMPIAR la URL después de actualizar el iframe
-        // Comenta esta línea si quieres mantener el ?q= visible para depurar
+        // 3. Limpiar la URL (opcional)
         const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
         window.history.replaceState({}, document.title, cleanUrl);
+    } else {
+        // 4. Si no hay query, cargar la página normal
+        iframe.src = baseUrl;
     }
 })();
 </script>
