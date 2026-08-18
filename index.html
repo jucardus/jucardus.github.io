@@ -37,29 +37,29 @@
   <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec'/>
 
 <script>
-
 (function() {
-    const baseUrl = "https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec";
+    const baseUrl = "https://google.com";
     const iframe = document.getElementById('mainFrame');
     
-    // Leer el query de la URL
+    // 1. Leer el query de la URL (?q=)
     const urlParams = new URLSearchParams(window.location.search);
     let queryValue = urlParams.get('q');
     
-    // Si hay query, actualizar el iframe y limpiar la URL
+    // 2. Si hay un query válido, procesarlo
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
+        
         if (cleanQuery.length > 0) {
-            // Actualizar el iframe con el query
+            // Actualizar el origen del iframe pasándole el query a GAS
             iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
             
-            // Limpiar la URL (eliminar ?q=)
-            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            // 3. Limpiar de inmediato la barra de direcciones eliminando el "?q=..."
+            // Esto deja la URL limpia como "https://github.io" sin recargar la página
+            const cleanUrl = window.location.protocol + "//" + window.location.host + "/";
             window.history.replaceState({}, document.title, cleanUrl);
         }
     }
 })();
-
 </script>
 
 </body>
