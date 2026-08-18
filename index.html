@@ -34,36 +34,36 @@
 </head>
 <body>
 
-  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec'/>
+  <!-- Dejamos el iframe con su src base por defecto como respaldo seguro -->
+  <iframe id='mainFrame' src='https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec'>
 
 <script>
 (function() {
-    const baseUrl = "https://google.com";
+    const baseUrl = "https://script.google.com/macros/s/AKfycbwbSZ-ssJVdJ8ob8wOYW1z97yGhpOaEMnEZFbgCbqFeiEhZ-brWGk4czkTYXT_WrYWy7g/exec";
     const iframe = document.getElementById('mainFrame');
     
-    // 1. Capturar el query de forma inmediata y guardarlo en una constante fija
+    // 1. Extraer inmediatamente el parámetro q de la URL
     const urlParams = new URLSearchParams(window.location.search);
     const queryValue = urlParams.get('q');
     
-    // 2. Si el query existe y es válido, asignarlo al iframe primero
+    // 2. Si el query existe, actualizar el iframe antes de limpiar nada
     if (queryValue && queryValue.trim().length >= 1) {
         const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
         
         if (cleanQuery.length > 0) {
-            // Modificamos el iframe inmediatamente usando el valor aislado
+            // Cambiamos el origen del iframe con el query sanitizado
             iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
             
-            // 3. Retrasamos la limpieza de la barra de navegación unos milisegundos 
-            // para que no interfiera con el ciclo de renderizado inicial del navegador
+            // 3. RETARDO CRÍTICO: Esperamos 300ms para limpiar la URL de la barra de navegación.
+            // Esto le da tiempo al navegador de asimilar el origen del iframe y previene el bug.
             setTimeout(function() {
                 const cleanUrl = window.location.protocol + "//" + window.location.host + "/";
                 window.history.replaceState({}, document.title, cleanUrl);
-            }, 100);
+            }, 300);
         }
     }
 })();
 </script>
-
 
 </body>
 </html>
