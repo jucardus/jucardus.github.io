@@ -1,29 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirigiendo...</title>
-</head>
-<body>
-    <script>
-        (function() {
-            const path = window.location.pathname;
-            const pathSegments = path.split('/').filter(segment => segment.length > 0);
+<script>
+    (function() {
+        const path = window.location.pathname;
+        const pathSegments = path.split('/').filter(segment => segment.length > 0);
+        
+        if (pathSegments.length > 0) {
+            // Tomamos el último segmento de la ruta (el número de query)
+            const queryValue = pathSegments[pathSegments.length - 1];
+            const cleanQuery = queryValue.replace(/[^a-zA-Z0-9-]/g, '');
             
-            if (pathSegments.length > 0) {
-                const queryValue = pathSegments[pathSegments.length - 1];
-                const cleanQuery = queryValue.replace(/[^a-zA-Z0-9-]/g, '');
-                
-                if (cleanQuery && cleanQuery.length > 0) {
-                    window.location.replace(window.location.origin + '/?q=' + encodeURIComponent(cleanQuery));
-                } else {
-                    window.location.replace(window.location.origin + '/');
-                }
+            if (cleanQuery && cleanQuery.length > 0) {
+                // Redirección directa conservando el parámetro de manera limpia
+                window.location.replace(window.location.origin + '/?q=' + cleanQuery);
             } else {
                 window.location.replace(window.location.origin + '/');
             }
-        })();
-    </script>
-</body>
-</html>
+        } else {
+            window.location.replace(window.location.origin + '/');
+        }
+    })();
+</script>
