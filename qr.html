@@ -5,8 +5,8 @@
 <script>
   function hacer() {
     var url = window.location.href;
-    if (url.indexOf('q?=') >= 0) {
-      var url = url.replace(/.*jucardus\.github\.io\/q\?=/g,'');
+    if (url.indexOf('qr?=') >= 0) {
+      var url = url.replace(/.*jucardus\.github\.io\/qr\?=/g,'');
       var exear = 'https://quickchart.io/qr?text=' + url + '&size=400x400&margin=4&ecLevel=M';
       window.location.replace(exear);
     } else {
