@@ -34,43 +34,8 @@
 </head>
 <body>
 
-  <!-- Iframe con el src de tu último GAS ejecutable -->
-  <iframe id="mainFrame" src="https://script.google.com/macros/s/AKfycbxIb-Jf1RiydnMu2-BSJMCNfpDPeYkYI4KuoXPgJy6naBHiK7U0QPOMNFULSyLTEjhx/exec"></iframe>
-
-<script>
-(function() {
-    // Base URL de tu Google Apps Script
-    const baseUrl = "https://script.google.com/macros/s/AKfycbxIb-Jf1RiydnMu2-BSJMCNfpDPeYkYI4KuoXPgJy6naBHiK7U0QPOMNFULSyLTEjhx/exec";
-    const iframe = document.getElementById('mainFrame');
-    
-    // 1. Revisar si hay ?q= en la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    let queryValue = urlParams.get('q');
-    
-    // 2. Si no hay ?q=, revisar la ruta limpia de la URL
-    if (!queryValue || queryValue.trim().length < 1) {
-        const path = window.location.pathname;
-        const pathSegments = path.split('/').filter(segment => segment.length > 0 && segment !== 'index.html');
-        if (pathSegments.length > 0) {
-            queryValue = pathSegments[pathSegments.length - 1];
-        }
-    }
-    
-    // 3. Si encontramos un código, actualizar el iframe y limpiar la barra
-    if (queryValue && queryValue.trim().length >= 1) {
-        const cleanQuery = queryValue.trim().replace(/[^a-zA-Z0-9-]/g, '');
-        
-        if (cleanQuery.length > 0) {
-            // Asignamos el query al iframe de forma directa
-            iframe.src = baseUrl + "?q=" + encodeURIComponent(cleanQuery);
-            
-            // Limpiamos la URL respetando la ruta exacta de GitHub Pages
-            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-            window.history.replaceState({}, document.title, cleanUrl);
-        }
-    }
-})();
-</script>
+  <iframe id="mainFrame" src="https://script.google.com/macros/s/AKfycbx2QcOc9qgKpFJoB8m03L1Gm7wQzv84slAFOnLubL4raprEtorhY74heP8OpxQVSf7YQA/exec"></iframe>
 
 </body>
 </html>
+
