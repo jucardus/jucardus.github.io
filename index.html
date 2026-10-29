@@ -17,6 +17,38 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta content='Jucardus ©' name='author'/>
     <title>Jucardus.com - Diccionarios Multilingües | Chino, Inglés, Francés | Frases y Glosarios</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Portal de diccionarios multilingües",
+        "description": "Portal de diccionarios multilingües: chino, inglés y francés. Glosarios especializados, frases célebres desglosadas y recursos para traductores.",
+        "url": "https://jucardus.com/",
+        "keywords": "Abreviaturas de los diccionarios, Acerca del sitio, Apotegmas, Citas y proverbios, Desgloses, Diccionario chino-español, Diccionario español, Diccionario francés-español, Diccionario inglés-español, Diccionario multilingüe, Enlaces varios, Entradas pendientes, Escritos varios, Etiquetas, Frases chinas desglosadas, Frases latinas desglosadas, Frases multilingües, Glosarios, Índice general, Mis sitios web, Radicales chinos, Reflexiones, Sinónimos españoles, Sinónimos ingleses, Tareas pendientes, Vocabulario francés-español, Vocabulario inglés-español",
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Recursos del portal",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Álbum de fotografías" },
+            { "@type": "ListItem", "position": 1, "name": "Diccionario chino-español" },
+            { "@type": "ListItem", "position": 2, "name": "Diccionario inglés-español" },
+            { "@type": "ListItem", "position": 3, "name": "Diccionario francés-español" },
+            { "@type": "ListItem", "position": 3, "name": "Apotegmas" },
+            { "@type": "ListItem", "position": 3, "name": "Citas y proverbios" },
+            { "@type": "ListItem", "position": 3, "name": "Escritos varios" },
+            { "@type": "ListItem", "position": 3, "name": "Reflexiones" },
+            { "@type": "ListItem", "position": 3, "name": "Frases chinas desglosadas" },
+            { "@type": "ListItem", "position": 3, "name": "Frases latinas desglosadas" },
+            { "@type": "ListItem", "position": 3, "name": "Frases multilingües" },
+            { "@type": "ListItem", "position": 3, "name": "Glosarios" },
+            { "@type": "ListItem", "position": 3, "name": "Radicales chinos" },
+            { "@type": "ListItem", "position": 3, "name": "Vocabulario francés" },
+            { "@type": "ListItem", "position": 3, "name": "Vocabulario inglés" }
+            // ... aquí podrías añadir el resto de elementos si lo deseas
+          ]
+        }
+      }
+    </script>
     <style>
         html, body {
             background-color: #3a3a3a;
@@ -34,36 +66,7 @@
 </head>
 <body>
 
-    <iframe id="gas-iframe" src="" title="Repositorio Jucardus"></iframe>
-
-    <script>
-      (function() {
-        var baseUrl = 'https://script.google.com/macros/s/AKfycbwbFdWWMFth-Li59IeqfWGWt7ly1lM8xGumv0w_sxCAUHUSTV-2bogT1mX9-odjJue3Yg/exec';
-        var iframe = document.getElementById('gas-iframe');
-
-        // 1. Leer el parámetro 'p' que dejó el 404.html
-        var params = new URLSearchParams(window.location.search);
-        var redirectPath = params.get('p');
-
-        // 2. Construir la URL del iframe
-        var iframeUrl = baseUrl;
-        if (redirectPath) {
-          // El path viene como "/Autor y contacto" (con la barra inicial)
-          // Lo limpiamos y lo usamos como valor de 'q'
-          var cleanPath = redirectPath.replace(/^\//, '');
-          iframeUrl = baseUrl + '?q=' + encodeURIComponent(cleanPath);
-        }
-
-        // 3. Asignar el src al iframe
-        iframe.src = iframeUrl;
-
-        // 4. Opcional: limpiar la URL del navegador para que no se vea el ?p=...
-        //    y quede como si el usuario hubiera entrado directamente a la ruta bonita.
-        if (redirectPath) {
-          window.history.replaceState(null, '', '/');
-        }
-      })();
-    </script>
+    <iframe src="https://script.google.com/macros/s/AKfycbwbFdWWMFth-Li59IeqfWGWt7ly1lM8xGumv0w_sxCAUHUSTV-2bogT1mX9-odjJue3Yg/exec" title="Repositorio Jucardus"></iframe>
 
 </body>
 </html>
