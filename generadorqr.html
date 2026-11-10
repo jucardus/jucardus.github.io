@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>QR con QuickChart</title>
+  <style>
+    body {
+      background-color: DarkSlateBlue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      gap: 20px;
+    }
+
+    #qr {
+      display: inline-block;
+      padding: 20px;
+      background: #cfd9dd;
+      border-radius: 20px;
+      line-height: 0; /* Elimina espacio extra bajo la imagen */
+    }
+
+    #qr img {
+      display: block;
+      width: 250px;
+      height: 250px;
+    }
+
+    #texto {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #cfd9dd;
+      background: #cfd9dd;
+      color: #2A4747;
+      font-size: 16px;
+      resize: vertical;
+      outline: none;
+      font-family: sans-serif;
+      box-sizing: border-box;
+    }
+
+    #texto:focus {
+      border-color: #2A4747;
+    }
+  </style>
+</head>
+<body>
+  <div id="qr">
+    <img id="qr-imagen" alt="Código QR">
+  </div>
+  <textarea id="texto" placeholder="Escribe aquí el texto para el QR..."></textarea>
+
+  <script>
+    const qrImagen = document.getElementById('qr-imagen');
+    const textoInput = document.getElementById('texto');
+
+    function generarQR(texto) {
+      // Si el texto está vacío, usamos un espacio para que la API no falle
+      const contenido = texto && texto.trim() !== '' ? texto : ' ';
+
+      // Construimos la URL de QuickChart con los parámetros deseados
+      // Usamos encodeURIComponent para manejar caracteres especiales de forma segura
+      const url = `https://quickchart.io/qr?text=${encodeURIComponent(contenido)}&size=250&dark=2A4747&light=cfd9dd&margin=1`;
+
+      // Actualizamos la imagen
+      qrImagen.src = url;
+    }
+
+    // Valor inicial
+    textoInput.value = 'https://jucardus.com';
+    generarQR(textoInput.value);
+
+    // Actualizar en cada cambio
+    textoInput.addEventListener('input', () => {
+      generarQR(textoInput.value);
+    });
+  </script>
+</body>
+</html>
