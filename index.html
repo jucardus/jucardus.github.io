@@ -37,13 +37,11 @@
       var params = new URLSearchParams(window.location.search);
       var q = params.get('q');
 
-      // 2) Si no hay ?q=, intentar leer la ruta de pathname
-      //    (por si alguien llega a /Diccionarios/... directamente, aunque
-      //    eso lo maneja el 404.html; aquí es un fallback).
+      // 2) Si no hay ?q=, intentar leer la ruta de pathname (fallback)
       if (!q) {
         var path = (window.location.pathname || '').replace(/^\/+/, '').replace(/\/+$/, '');
         try { path = decodeURIComponent(path); } catch (e) {}
-        if (path && path.toLowerCase() !== 'index.html') {
+        if (path && path.toLowerCase() !== 'index.html' && path.toLowerCase() !== '404.html') {
           q = path;
         }
       }
@@ -51,6 +49,19 @@
       // 3) Cargar el iframe
       if (q) {
         iframe.src = BASE_URL + "?q=" + encodeURIComponent(q);
+
+        // 4) Limpiar la URL: convertir /?q=ruta en /ruta/segmentos
+        //    codificando solo lo necesario (espacios, acentos, corchetes…)
+        //    y conservando los "/" y los "=".
+        var segs = String(q).split('/').filter(function(s) { return s.length > 0; });
+        var encodedSegs = segs.map(function(s) { return encodeURIComponent(s); });
+        var cleanPath = '/' + encodedSegs.join('/');
+        try {
+          window.history.replaceState({}, document.title, cleanPath);
+        } catch (e) {
+          // Si replaceState falla (por ejemplo, por un origen distinto),
+          // no hacemos nada: la URL se queda como estaba.
+        }
       } else {
         iframe.src = BASE_URL;
       }
