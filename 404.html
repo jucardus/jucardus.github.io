@@ -2,44 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jucardus.com</title>
-  <style>
-    html, body {
-      background-color: #3a3a3a;
-      margin: 0; padding: 0;
-      height: 100%; overflow: hidden;
-    }
-    iframe { width: 100%; height: 100%; border: none; }
-  </style>
 </head>
 <body>
-  <iframe id="mainFrame"></iframe>
   <script>
     (function() {
-      var BASE_URL = "https://script.google.com/macros/s/AKfycbwIxrruWKRTratGs0hLQSqHQXqoON3THSThasE72LarMbsgB-MmHTG5Z4s2S97USW0/exec";
-      var iframe = document.getElementById('mainFrame');
-
       // 1) Extraer la ruta de window.location.pathname
-      //    Quitar la barra inicial y, si está, "404.html".
       var path = window.location.pathname || '';
       path = path.replace(/^\/+/, '');          // quitar "/" iniciales
       path = path.replace(/^404\.html$/i, '');   // por si acaso
       path = path.replace(/\/+$/, '');           // quitar "/" finales
-
-      // Decodificar por si el navegador ya la trae codificada
-      // (window.location.pathname puede venir con %XX en algunos casos).
       try { path = decodeURIComponent(path); } catch (e) {}
 
-      // 2) Si hay ruta, cargar el iframe con ?q=...
+      // 2) Redirigir a /?q=<ruta codificada>
+      //    Usamos encodeURIComponent para que la ruta viaje como un
+      //    único parámetro (los "/" se codifican como %2F, que es lo
+      //    que espera el ?q=).
       if (path) {
-        iframe.src = BASE_URL + "?q=" + encodeURIComponent(path);
+        window.location.replace(
+          window.location.origin + '/?q=' + encodeURIComponent(path)
+        );
       } else {
-        iframe.src = BASE_URL;
+        window.location.replace(window.location.origin + '/');
       }
-
-      // 3) NO redirigir. La URL se mantiene en /Diccionarios/...
-      //    para que sea "bonita" y compartible.
     })();
   </script>
 </body>

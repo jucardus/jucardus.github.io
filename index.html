@@ -30,32 +30,21 @@
   <iframe id="mainFrame"></iframe>
   <script>
     (function() {
-      var BASE_URL = "https://script.google.com/macros/s/AKfycbwIxrruWKRTratGs0hLQSqHQXqoON3THSThasE72LarMbsgB-MmHTG5Z4s2S97USW0/exec";
+      var BASE_URL = "https://script.google.com/macros/s/AKfycbxyXKN3tit7hrMyKy6MZMIGa1T7bQFMXNWCniMk-JMO4Y7vT-NYV0paMKj-TUByXzgI/exec";
       var iframe = document.getElementById('mainFrame');
 
       // 1) Leer ?q= de la URL
       var params = new URLSearchParams(window.location.search);
       var q = params.get('q');
 
-      // 2) Si no hay ?q=, intentar leer la ruta de pathname (fallback)
-      if (!q) {
-        var path = (window.location.pathname || '').replace(/^\/+/, '').replace(/\/+$/, '');
-        try { path = decodeURIComponent(path); } catch (e) {}
-        if (path && path.toLowerCase() !== 'index.html' && path.toLowerCase() !== '404.html') {
-          q = path;
-        }
-      }
-
-      // 3) Cargar el iframe
+      // 2) Cargar el iframe
       if (q) {
         iframe.src = BASE_URL + "?q=" + encodeURIComponent(q);
 
-        // 4) Limpiar la URL a la raíz: https://jucardus.github.io/
+        // 3) Limpiar la URL a la raíz (sin ?q=)
         try {
           window.history.replaceState({}, document.title, '/');
-        } catch (e) {
-          // Si replaceState falla, no hacemos nada.
-        }
+        } catch (e) {}
       } else {
         iframe.src = BASE_URL;
       }
