@@ -50,17 +50,11 @@
       if (q) {
         iframe.src = BASE_URL + "?q=" + encodeURIComponent(q);
 
-        // 4) Limpiar la URL: convertir /?q=ruta en /ruta/segmentos
-        //    codificando solo lo necesario (espacios, acentos, corchetes…)
-        //    y conservando los "/" y los "=".
-        var segs = String(q).split('/').filter(function(s) { return s.length > 0; });
-        var encodedSegs = segs.map(function(s) { return encodeURIComponent(s); });
-        var cleanPath = '/' + encodedSegs.join('/');
+        // 4) Limpiar la URL a la raíz: https://jucardus.github.io/
         try {
-          window.history.replaceState({}, document.title, cleanPath);
+          window.history.replaceState({}, document.title, '/');
         } catch (e) {
-          // Si replaceState falla (por ejemplo, por un origen distinto),
-          // no hacemos nada: la URL se queda como estaba.
+          // Si replaceState falla, no hacemos nada.
         }
       } else {
         iframe.src = BASE_URL;
